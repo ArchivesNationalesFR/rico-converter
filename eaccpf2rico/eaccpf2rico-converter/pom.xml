@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>fr.gouv.culture.archives-nationales</groupId>
+	<artifactId>eaccpf2rico-converter</artifactId>
+
+	<parent>
+		<groupId>fr.gouv.culture.archives-nationales</groupId>
+		<artifactId>eaccpf2rico-root-pom</artifactId>
+	    <version>0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+	</parent>
+
+
+	<name>EAC-CPF 2 RiC-O converter library</name>
+	<description>Library to convert EAC-CPF XML files to RiC-O RDF files (Records in Context).</description>
+
+	<dependencies>
+
+		<!-- EAC-CPF 2 RiC-O converter -->
+		<dependency>
+			<groupId>fr.gouv.culture.archives-nationales</groupId>
+			<artifactId>eaccpf2rico-converter</artifactId>
+			<version>0.1-SNAPSHOT</version>
+		</dependency>
+
+		<!-- logging -->
+		<dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+        </dependency>
+		
+	</dependencies>
+
+</project>

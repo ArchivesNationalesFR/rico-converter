@@ -1,0 +1,141 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>fr.gouv.culture.archives-nationales</groupId>
+	<artifactId>eaccpf2rico-cli</artifactId>
+	
+	<parent>
+		<groupId>fr.gouv.culture.archives-nationales</groupId>
+		<artifactId>eaccpf2rico-root-pom</artifactId>
+	    <version>0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+	</parent>
+
+	<name>EAC-CPF 2 RiC-O command-line converter</name>
+	<description>Command-line Tool to convert EAC-CPF XML files to RiC-O RDF files (Records in Context).</description>
+
+	<build>
+		<plugins>
+
+			<!-- Ce plugin ajoute les elements suivants dans le fichier META-INF/MANIFEST.MF 
+				du jar final : Implementation-Title: ${project.artifactId} Implementation-Version: 
+				${project.version} Implementation-Vendor-Id: ${project.groupId} Cela permet 
+				de récupérer la version Maven dans le code, via cette ligne : App.class.getPackage().getImplementationVersion(); 
+				L'autre possibilité est d'aller lire le fichier de properties généré automatiquement 
+				par Maven à cet endroit : META-INF/maven/${project.groupId}/${project.artifactId}/pom.properties -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+
+		    <plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-shade-plugin</artifactId>
+			<version>1.3.2</version>
+			<executions>
+			  <execution>
+			    <phase>package</phase>
+			    <goals>
+			      <goal>shade</goal>
+			    </goals>
+			    <configuration>
+			      <shadedArtifactAttached>true</shadedArtifactAttached>
+			      <shadedClassifierName>onejar</shadedClassifierName>
+			        <filters>
+				        <filter>
+				            <artifact>*:*</artifact>
+				            <excludes>
+				                <exclude>META-INF/*.SF</exclude>
+				                <exclude>META-INF/*.DSA</exclude>
+				                <exclude>META-INF/*.RSA</exclude>
+				            </excludes>
+				        </filter>
+				    </filters>            
+			      <transformers>
+					<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+						<manifestEntries>
+						  <Main-Class>fr.gouv.culture.an.eaccpf2rico.cli.Main</Main-Class>
+						  <Class-Path>.</Class-Path>
+						</manifestEntries>
+		 			</transformer>
+		 			<transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+	      				<resource>META-INF/services/org.eclipse.rdf4j.query.algebra.evaluation.function.Function</resource>
+	      			</transformer>
+		 			<transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+	      				<resource>META-INF/services/org.eclipse.rdf4j.query.parser.QueryParserFactory</resource>
+	      			</transformer>
+		 			<transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+	      				<resource>META-INF/services/org.eclipse.rdf4j.query.resultio.BooleanQueryResultParserFactory</resource>
+	      			</transformer>
+		 			<transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+	      				<resource>META-INF/services/org.eclipse.rdf4j.query.resultio.BooleanQueryResultWriterFactory</resource>
+	      			</transformer>
+		 			<transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+	      				<resource>META-INF/services/org.eclipse.rdf4j.query.resultio.TupleQueryResultParserFactory</resource>
+	      			</transformer>
+		 			<transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+	      				<resource>META-INF/services/org.eclipse.rdf4j.query.resultio.TupleQueryResultWriterFactory</resource>
+	      			</transformer>
+		 			<transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+	      				<resource>META-INF/services/org.eclipse.rdf4j.repository.config.RepositoryFactory</resource>
+	      			</transformer>
+		 			<transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+	      				<resource>META-INF/services/org.eclipse.rdf4j.rio.RDFParserFactory</resource>
+	      			</transformer>
+		 			<transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+	      				<resource>META-INF/services/org.eclipse.rdf4j.rio.RDFWriterFactory</resource>
+	      			</transformer>
+		 			<transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+	      				<resource>META-INF/services/org.eclipse.rdf4j.sail.config.SailFactory</resource>
+	      			</transformer>
+		 			<transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+	      				<resource>META-INF/services/org.eclipse.rdf4j.sail.rdbms.RdbmsProvider</resource>
+	      			</transformer>
+	      			<!-- accumulation des schemas Spring -->
+	      			<transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+						<resource>META-INF/spring.handlers</resource>
+					</transformer>
+					<transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+						<resource>META-INF/spring.schemas</resource>
+					</transformer>
+			      </transformers>
+			    </configuration>
+			  </execution>
+			</executions>
+		      </plugin>
+
+		</plugins>
+	</build>
+
+
+	<dependencies>
+
+		<!-- for command-line parsing -->
+		<dependency>
+			<groupId>com.beust</groupId>
+			<artifactId>jcommander</artifactId>
+		</dependency>
+
+		<!-- logging -->
+		<dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+        </dependency>
+		
+	</dependencies>
+
+</project>
