@@ -19,6 +19,16 @@
 	<build>
 		<plugins>
 
+			<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+
 			<!-- Ce plugin ajoute les elements suivants dans le fichier META-INF/MANIFEST.MF 
 				du jar final : Implementation-Title: ${project.artifactId} Implementation-Version: 
 				${project.version} Implementation-Vendor-Id: ${project.groupId} Cela permet 
@@ -112,13 +122,39 @@
 			    </configuration>
 			  </execution>
 			</executions>
-		      </plugin>
+		    </plugin>
+
+		    <plugin>
+		      <groupId>org.codehaus.mojo</groupId>
+		      <artifactId>exec-maven-plugin</artifactId>
+		      <version>1.2</version>
+		      <executions>
+		        <execution>
+		          <id>generate-command-properties</id>
+		          <phase>prepare-package</phase>
+		          <goals>
+		            <goal>java</goal>
+		          </goals>
+		        </execution>
+		      </executions>
+		      <configuration>
+		        <mainClass>fr.gouv.culture.an.eaccpf2rico.cli.ParameterFilesGenerator</mainClass>
+		        <arguments>${project.build.directory}/classes/parameters</arguments>
+		      </configuration>
+		    </plugin>
 
 		</plugins>
 	</build>
 
 
 	<dependencies>
+
+		<!-- converter -->
+		<dependency>
+			<groupId>fr.gouv.culture.archives-nationales</groupId>
+			<artifactId>eaccpf2rico-converter</artifactId>
+	    	<version>0.1-SNAPSHOT</version>
+		</dependency>
 
 		<!-- for command-line parsing -->
 		<dependency>
@@ -136,6 +172,19 @@
             <artifactId>logback-classic</artifactId>
         </dependency>
 		
+		<!-- commons io for parameter files writing -->
+		<dependency>
+		    <groupId>commons-io</groupId>
+		    <artifactId>commons-io</artifactId>
+		</dependency>
+
+		<!-- Progress bar -->
+		  <dependency>
+		      <groupId>me.tongfei</groupId>
+		      <artifactId>progressbar</artifactId>
+		      <version>0.7.2</version>
+		  </dependency>
+
 	</dependencies>
 
 </project>

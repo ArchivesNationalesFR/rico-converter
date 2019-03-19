@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    	<encoder>
+            <pattern>%d{HH:mm:ss.SSS} %-5level %logger{10} - %msg%n</pattern>
+        </encoder>
+    </appender>
+     
+    <appender name="ALL_FILE" class="ch.qos.logback.core.FileAppender">
+    	<file>log/eaccpf2rico-all.log</file>
+    	
+	    <encoder>
+	      <pattern>%d{HH:mm:ss.SSS} %-5level %logger{10} - %msg%n</pattern>
+	    </encoder>
+  	</appender>
+  	
+  	<appender name="ERROR_FILE" class="ch.qos.logback.core.FileAppender">
+    	<file>log/eaccpf2rico-errors.log</file>
+    	<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+	      <level>ERROR</level>
+	    </filter>
+
+	    <encoder>
+	      <pattern>%d{HH:mm:ss.SSS} %-5level %logger{10} - %msg%n</pattern>
+	    </encoder>
+  	</appender>
+  	
+  	<appender name="SAXON_FILE" class="ch.qos.logback.core.FileAppender">
+    	<file>log/eaccpf2rico-saxon.log</file>
+
+	    <encoder>
+	      <pattern>%d{HH:mm:ss.SSS} %-5level %logger{10} - %msg%n</pattern>
+	    </encoder>
+  	</appender>
+  	
+  	<appender name="REPORT_FILE" class="ch.qos.logback.core.FileAppender">
+    	<file>log/eaccpf2rico-report.log</file>
+
+	    <encoder>
+	      <pattern>%msg%n</pattern>
+	    </encoder>
+  	</appender>
+  
+    <logger name="fr.gouv.culture.an">
+        <appender-ref ref="ALL_FILE" />
+        <appender-ref ref="ERROR_FILE" />
+    </logger>
+    
+   <logger name="fr.gouv.culture.an.eaccpf2rico.cli.report">
+        <appender-ref ref="REPORT_FILE" />
+    </logger>
+    
+    <logger name="fr.gouv.culture.an.eaccpf2rico.cli.convert.SaxonErrorListener" additivity="false">
+    	<level>DEBUG</level>
+        <appender-ref ref="SAXON_FILE" />
+    </logger>
+    
+    <logger name="fr.gouv.culture.an.eaccpf2rico.convert.Eac2RicoConverterReportListener" additivity="false">
+        <appender-ref ref="REPORT_FILE" />
+        <appender-ref ref="STDOUT" />
+    </logger>
+    
+    
+         
+    <!-- ** -->
+     
+    <root level="DEBUG">
+        <level value="DEBUG" />
+    </root>
+
+</configuration>

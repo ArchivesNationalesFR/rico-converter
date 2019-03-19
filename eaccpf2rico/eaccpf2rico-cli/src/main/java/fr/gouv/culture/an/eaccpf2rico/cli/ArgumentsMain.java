@@ -15,6 +15,12 @@ public class ArgumentsMain {
 	private boolean help = false;
 	
 	@Parameter(
+			names = { "-v", "--version" },
+			description = "Prints the version and exit"
+	)
+	private boolean version = false;
+	
+	@Parameter(
 			names = { "-l", "--log" },
 			description = "Reference to a logback configuration file",
 			converter = FileConverter.class
@@ -35,6 +41,14 @@ public class ArgumentsMain {
 
 	public void setLog(File log) {
 		this.log = log;
+	}
+
+	public boolean isVersion() {
+		return version;
+	}
+
+	public void setVersion(boolean version) {
+		this.version = version;
 	}
 	
 }

@@ -5,6 +5,8 @@ import com.beust.jcommander.MissingCommandException;
 import com.beust.jcommander.ParameterException;
 
 import ch.qos.logback.classic.util.ContextInitializer;
+import fr.gouv.culture.an.eaccpf2rico.cli.convert.ArgumentsConvert;
+import fr.gouv.culture.an.eaccpf2rico.cli.convert.Convert;
 import fr.gouv.culture.an.eaccpf2rico.cli.version.ArgumentsVersion;
 import fr.gouv.culture.an.eaccpf2rico.cli.version.Version;
 
@@ -12,6 +14,7 @@ public class Main {
 
 	enum COMMAND {		
 		
+		CONVERT(new ArgumentsConvert(), new Convert()),
 		VERSION(new ArgumentsVersion(), new Version()),
 		;
 		
@@ -32,7 +35,7 @@ public class Main {
 		}		
 	}
 	
-	private void run(String[] args) throws Exception {
+	private void run(String[] args) {
 		ArgumentsMain main = new ArgumentsMain();
 		JCommander jc = new JCommander(main);
 		
@@ -45,24 +48,32 @@ public class Main {
 		// a mettre avant ParameterException car c'est une sous-exception
 		} catch (MissingCommandException e) {
 			// if no command was found, exit with usage message and error code
-			System.err.println("Unkwown command.");
+			System.err.println("ERROR : "+"Unkwown command.");
 			jc.usage();
 			System.exit(-1);
 		} catch (ParameterException e) {
-			System.err.println(e.getMessage());
-			jc.usage(jc.getParsedCommand());
+			System.err.println("ERROR : "+e.getMessage());
+			if(jc.getParsedCommand() != null) {
+				jc.usage(jc.getParsedCommand());
+			} else {
+				jc.usage();
+			}
 			System.exit(-1);
 		} 
 		
 		// configure logging
 		if(main.getLog() != null) {
 			System.setProperty(ContextInitializer.CONFIG_FILE_PROPERTY, main.getLog().getAbsolutePath());
-
 		}
 
 		// if help was requested, print it and exit with a normal code
 		if(main.isHelp()) {
 			jc.usage();
+			System.exit(0);
+		}
+		
+		if(main.isVersion()) {
+			COMMAND.VERSION.getCommand().execute(COMMAND.VERSION.getArguments());
 			System.exit(0);
 		}
 		
@@ -80,7 +91,7 @@ public class Main {
 		);
 	}
 	
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) {
 		Main me = new Main();
 		me.run(args);
 	}

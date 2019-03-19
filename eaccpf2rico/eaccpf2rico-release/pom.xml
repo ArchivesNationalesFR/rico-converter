@@ -35,7 +35,7 @@
                 </executions>
                 <configuration>
                     <descriptors>
-                        <descriptor>src/main/assembly/src.xml</descriptor>
+                        <descriptor>src/main/assembly/delivery.xml</descriptor>
                     </descriptors>
                     <attach>true</attach>
                 </configuration>
@@ -50,6 +50,13 @@
             <version>${project.version}</version>
             <type>jar</type>
             <classifier>onejar</classifier>
+        </dependency>
+        <dependency>
+            <groupId>fr.gouv.culture.archives-nationales</groupId>
+            <artifactId>eaccpf2rico-doc</artifactId>
+            <version>${project.version}</version>
+            <type>zip</type>
+            <classifier>documentation</classifier>
         </dependency>
     </dependencies>
 
