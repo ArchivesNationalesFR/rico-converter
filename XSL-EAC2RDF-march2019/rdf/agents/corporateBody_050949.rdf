@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/050949">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">Agence d'architecture du Conservatoire national des Arts et Métiers (Paris) (1798-1990)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050949_d4353e92"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/b5398f6f-f260-4f45-9cb0-4dc1b2ad1a37"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1798-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1990-12-31</RiC:endDate>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/050949-d4351e196"/>
+      <RiC:history xml:lang="fr">L'Agence d'architecture du CNAM fait la jonction entre l'État, ordonnateur et payeur des travaux, l'architecte en charge des travaux et les entrepreneurs qui les exécutent. Les agences publiques d'architecture, installées dans les bâtiments dont elles ont la charge, sont des administrations publiques dépendant de la Direction des bâtiments civils ou de la Maison du Souverain au XIXe siècle. Elles sont définitivement supprimées à partir des années 1990 quand la loi MOP et ses décrets d'application éteingnent le corps des architectes des bâtiments civils et palais nationaux. L'agence d'architecture du Conservatoire, créée lors de l'installation de celui-ci dans les bâtiments de l'ancien prieuré clunisien de Saint-Martin-des-Champs, en 1798, est dirigée par d'éminents architectes tout au long du XIXe siècle. Les documents d'archives permettent de reconstituer au moins approximativement la liste des architectes qui s'y sont succédés : François Jacques Delannoy (1755-1835): à partir de 1798;Claude Jean-Baptiste Jallier de Savault (1739-1806): jusqu'en 1806;Antoine-Marie Peyre (1770-1843): de 1811 à 1832;Jean-Antoine Alavoine (1778-1834): de 1832 à 1834;Dubois: de 1835 à 1837;Léon Vaudoyer (1803-1872): 1838 à 1872; auteur, entre autres, de la restauration-reconstruction du réfectoire médiéval pour y installer la bibliothèque.;Gabriel Ancelet : de 1872à 1893. Son empreinte y est également forte puisqu'on lui doit l'agrandissement du Conservatoire sur la rue Saint-Martin;Gustave Gerhardt : de 1893 à 1913, assisté de Félix-Eugène-Louis Boutron;Léon Jaussely (1875-1932): de 1913 à 1919, assisté par Gabriel Midy;Louis-Hippolyte Boileau: vers 1931-1934, assisté de Gabriel Midy et Roger Lardat;Jacques Debat-Ponsan (1882-1942): vers 1935-1939, assisté de Charles Musetti et Gustave Saacké;Pierre Sardou (1873-1952): vers 1940-1943. L'agence a aussi en charge l'Institut national d'orientation professionnelle (INOP, 41, rue Gay-Lussac); les architectes en étaient Pierre Bailly, Pierre Montenot, Gustave Saacké et Pierre Sardou (vers 1931-1945).</RiC:history>
+      <RiC:agentIsTargetOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/050949-d4351e283"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050949-d4351e262"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050949-d4351e298"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050949-d4351e319"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050949-d4351e340"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050949"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/050949-d4351e196">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d5bhvimbi4--1c33jbciwlk3b"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050949-d4351e340">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Agence d'architecture du Conservatoire national des Arts et Métiers (Paris) (1798-1990) et l'ensemble de documents "CONSERVATOIRE NATIONAL DES ARTS ET METIERS AGENCE DES TRAVAUX"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/029852-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050949_d4353e92">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050949-d4351e164"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050949">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/050949"/>
+      <RiC:creationDate>2015-02-05</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-07-03</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_050949</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Guide des sources de l'histoire de l'art aux Archives nationales et aux Archives de Paris, sous la dir. de M. Plouvier, CTHS, 2012, p 606.</RiC:source>
+      <RiC:source xml:lang="fr">la notice ISNI n'existe pas pour ce producteur</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050949"/>
+   </rdf:Description>
+</rdf:RDF>

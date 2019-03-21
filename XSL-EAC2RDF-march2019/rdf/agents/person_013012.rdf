@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/013012">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Boursier, Amable</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/013012_d3111e41"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1783-12-05</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1810-12-14</RiC:deathDate>
+      <RiC:history xml:lang="fr">Né le 29 janvier 1752 à Paris marié à Anne Danié (voir ET/XXXIII/683, 12 septembre 1784, contrat de mariage) père de Guy Boursier, qui lui succède d'abord principal clerc d'Etienne-Prosper de La Motte, notaire de l'étude LIV mort en charge le 7 janvier 1810 il est remplacé, en attendant la nomination de son successeur, par Louis Laisné, de l'étude XXVIII</RiC:history>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/010221-d318e293"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/013012-d3109e207"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/013012-d3109e213"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/013012-d3109e219"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/013012"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/013012-d3109e207">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Boursier, Amable et l'ensemble de documents "Minutes et répertoires du notaire Athanase Marie LEMOINE, 29 janvier 1811 - 12 décembre 1840 (étude CX)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/043298-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/013012-d3109e213">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Boursier, Amable et l'ensemble de documents "Images des répertoires du notaire Amable Boursier pour l'étude XCIV"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/055528-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/013012-d3109e219">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Boursier, Amable et l'ensemble de documents "Minutes et répertoires du notaire Amable BOURSIER, 5 décembre 1783 - 14 décembre 1810 (étude XCIV)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/042982-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/013012_d3111e41">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/013012-d3109e79"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/013012">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/013012"/>
+      <RiC:creationDate>2015-09-30</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_013012</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_013012"/>
+   </rdf:Description>
+</rdf:RDF>

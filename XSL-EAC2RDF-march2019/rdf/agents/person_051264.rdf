@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051264">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Revel, Nicolas (1966-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051264_d4550e41"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1966-05-01</RiC:birthDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051264-d4548e99"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051264-d4548e117"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051264-d4548e138"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051264-d4548e159"/>
+      <RiC:history xml:lang="fr">Diplômes : 
+     Diplômé de l’Institut d’études politiques de Paris Ancien élève de l’Ecole nationale d’administration (promotion Gambetta) Carrière : 
+     Auditeur de 2e classe à la Cour des comptes, 1993 Sous-préfet, secrétaire général de la préfecture des Hautes-Pyrénées, de 1997 à 2000 Conseiller technique au cabinet de Jean Glavany, ministre de l’Agriculture et de la pêche, de 2000 à 2002 Conseiller technique au cabinet de François Patriat, ministre de l’Agriculture et de la pêche, en 2002 Directeur adjoint du cabinet du maire de Paris, Bertrand Delanoë, de 2008 à 2012 Secrétaire général adjoint au cabinet de François Hollande, président de la République, de 2012 à 2014 directeur général de la Caisse nationale d'assurance maladie des travailleurs salariés, depuis 2014</RiC:history>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051264-d4548e187"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051264-d4548e242"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051264-d4548e260"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051264-d4548e281"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051264-d4548e299"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051264"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051264-d4548e99">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-01-01</RiC:beginningDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">directeur général de la Caisse nationale d'assurance maladie des travailleurs salariés</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d-l0jya1ik6x--16fn7glte863o"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051264-d4548e117">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-12-31</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">secrétaire général adjoint au cabinet de François Hollande</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d-11hasr639--1mmaoyj7hl5zc"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051264-d4548e138">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-12-31</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">conseiller technique au cabinet de Jean Glavany, ministre de l'Agriculture et de la Pêche</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051264-d4548e159">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1997-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-12-31</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">préfecture des Hautes-Pyrénées</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj9z2z-1l1dmark2fa5i"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051264_d4550e41">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051264-d4548e79"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051264">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051264"/>
+      <RiC:creationDate>2016-02-19</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_051264</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051264"/>
+   </rdf:Description>
+</rdf:RDF>

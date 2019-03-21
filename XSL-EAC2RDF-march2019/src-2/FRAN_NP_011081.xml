@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_011081</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00846</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_011081-d1178e67">
+            <part>Mareschal, Frédéric-Henri</part>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_011081-d1178e73">
+            <part>Maréchal, Frédéric</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1754-09-07">7 septembre 1754</fromDate>
+               <toDate standardDate="1766-07-02">2 juillet 1766</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place xml:id="FRAN_place_011081-d1178e102">
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="quartier"
+                           vocabularySource="d3nyvgazoq--1c50yrnvnvk9s"
+                           xml:id="FRAN_stdPlaceEntry_011081-d3nyvgazoq--1c50yrnvnvk9sd1178e107">luxembourg (quartier)</placeEntry>
+               <placeEntry localType="paroisse"
+                           vocabularySource="d3nyvpcbgs-1cppi2iacclig"
+                           xml:id="FRAN_stdPlaceEntry_011081-d3nyvpcbgs-1cppi2iaccligd1178e110">saint-sulpice (paroisse)</placeEntry>
+               <placeEntry localType="voie"
+                           vocabularySource="d3nz9mpz7b--u53aku88xgmu"
+                           xml:id="FRAN_stdPlaceEntry_011081-d3nz9mpz7b--u53aku88xgmud1178e113">condé (rue de)</placeEntry>
+               <placeEntry localType="nomLieu" xml:id="FRAN_placeEntry_011081-d1178e116">rue de Condé</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function xml:id="FRAN_activity_011081-d1178e123">
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1754-09-07">7 septembre 1754</fromDate>
+                  <toDate standardDate="1766-07-02">2 juillet 1766</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Notaire substituant dans l'étude XCI du 5 au 19 février 1762, en remplacement d'Aleaume, décédé.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010219"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_011081-d1178e148">
+            <relationEntry>Etude notariale XCII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1754-09-07">7 septembre 1754</fromDate>
+               <toDate standardDate="1766-07-02">2 juillet 1766</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other" xml:id="FRAN_relation_011081-d1178e163">
+            <relationEntry localType="archival">V/1/380 pièce 459, 27 mai 1754, lettre de provision d'office</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055634"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_011081-d1178e169">
+            <relationEntry localType="archival">Images du répertoire du notaire Frédéric Henri Mareschal pour l'étude XCII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042958"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_011081-d1178e175">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Frédéric Henri MARESCHAL, 7 septembre 1754 - 2 juillet 1766 (étude XCII)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

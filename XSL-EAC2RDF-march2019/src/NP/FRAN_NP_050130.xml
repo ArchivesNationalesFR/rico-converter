@@ -1,0 +1,113 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050130</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-08-13</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Raphael BAUMARD</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-07-25</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Constance DE VERGNETTE DE LAMOTTE</agent>
+            <eventDescription>Il n'existe ni notice BnF ni notice Wikipedia. Il n'y a pas de numéro d'ISNI.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2018-02-26</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Archives nationales, fonds Gilbert Peycelon : 370 AP.</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Informations extraites de l'introduction de l'inventaire.</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Peycelon, Gilbert-Antoine (1867-1940)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Peycelon, Gilbert</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1867-01-01">1867</fromDate>
+               <toDate standardDate="1940-12-31">1940</toDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Loire</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3ntb84vj6-1xuqcjld3ig9m">Loire (Rhône-Alpes , département)</placeEntry>
+            </place>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Paris</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d5bdppt147--176wwvjcctrx0">Paris (France)</placeEntry>
+            </place>
+         </places>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msj4ugz--1lgbq1d52vyvi">secrétaire</term>
+               <descriptiveNote>
+                  <p>Peycelon est secrétaire particulier de Briand aux ministères de l'Instruction publique, de la Justice, de l'Intérieur, des Affaires étrangères et à la Présidence du Conseil.</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Gilbert-Antoine Peycelon (1867-1940) occupe, de 1897 à 1906, les fonctions de chef de service de la comptabilité départementale à la Trésorerie général de la Loire. En 1906, Aristide Briand l’appelle auprès de lui à l’Instruction publique et en fait son secrétaire particulier, fonction que Peycelon conserve dans les autres ministères de Briand, à la Justice, à l’Intérieur, aux Affaires étrangères et à la Présidence du Conseil. Parallèlement, Peycelon est nommé sous-directeur de la Manufacture des Gobelins en 1907. Il devient directeur de la Manufacture de Beauvais en 1913. Directeur des Journaux officiels en 1916, il crée les deux éditions des Lois et Décrets et des Débats parlementaires. En 1926, les fonctions de directeur de l’Imprimerie nationale et de directeur des Journaux officiels sont réunies à son profit sous le titre de directeur des Publications officielles, poste qu’il occupe jusqu’en 1937. Sa carrière politique prend fin en 1932, avec le départ et la mort de Briand.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050386"
+                      xlink:type="simple">
+            <relationEntry>Briand, Aristide</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1906-01-01">1906</fromDate>
+               <toDate standardDate="1932-12-31">1932</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p> Peycelon est secrétaire particulier de Briand aux ministères de l'Instruction publique, de la Justice, de l'Intérieur, des Affaires étrangères et à la Présidence du Conseil.</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_004903"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Gilbert Peycelon (1834-1939)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050070">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Aunay, Charles de Mesgrigny (comte d')</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050070_d3700e34"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1682-01-01</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1763-12-31</RiC:deathDate>
+      <RiC:history xml:lang="fr">Petit-fils du maréchal de camp Nicolas de Mesgrigny, Charles de Mesgrigny, comte d’Aunay, entra en 1692 dans la compagnie des cadets, en garnison à Tournai. Aide de camp de Vauban, son aïeul maternel, il servit en cette qualité sur les côtes de Bretagne. Lieutenant en 1698, il servit au camp de Compiègne et à l’armée de Flandre, en 1701-1702. Nommé colonel du régiment d’infanterie de Croÿ en 1709, il le commanda à la bataille de Malplaquet, le 11 septembre, à l’armée de Flandre, en 1710-1711, aux sièges de Douai, du Quesnoy et de Bouchain, en 1712, de Landau et de Fribourg, en 1713. Son régiment fut réformé en 1714. Colonel du régiment de Vexin infanterie en 1732, le comte d’Aunay fut nommé brigadier en 1734 et servit aux sièges de Guastalla, de Reggiolo et de Révéré. Créé maréchal de camp en 1738, il commanda en chef à Dunkerque et servit aux sièges de Menin, d’Ypres et de Furnes. Lieutenant général des armées en 1744, il conserva le commandement de Dunkerque et de la Flandre française jusqu’en 1749. Il mourut en 1763.</RiC:history>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050070"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050070_d3700e34">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050070-d3698e64"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050070">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050070"/>
+      <RiC:creationDate>2013-10-16</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050070</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050070"/>
+   </rdf:Description>
+</rdf:RDF>

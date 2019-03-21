@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050162</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-10-15</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Raphael BAUMARD</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_050162-d3784e64">
+            <part>Académie Julian</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1868-01-01">1868</fromDate>
+               <toDate standardDate="1959-12-31">1959</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Rodolphe Julian (1839-1907) crée en 1868 une académie privée de peinture et de sculpture, l’Académie Julian, dans un local sis au 27, galerie Montmartre, passage des Panoramas, Paris-IIe ; en 1890, il ajouta de nouveaux ateliers sis au 31, rue du Dragon, Paris-VIe. Les femmes furent admises, à partir de 1880, dans un atelier particulier au 51, rue de Vivienne, Paris-IIe.</p>
+            <p>Des peintres de renom dirigeaient les ateliers, tels William Bouguereau ou Jean-Paul Laurens : l’Académie Julian acquit rapidement une grande réputation et fut fréquentée par de nombreux étudiants, français et étrangers (Allemagne, Angleterre, Autriche, États-Unis, Pologne, Suisse).</p>
+            <p>Fermée pendant la Seconde Guerre mondiale, l’Académie Julian vendit la plupart de ses ateliers en 1946. Elle fut rachetée en 1959 par Guillaume Met de Penninghen et Jacques d’Andon et prit le nom d’École supérieure d’arts graphiques (E.S.A.G.).</p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054799"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_050162-d3784e100">
+            <relationEntry localType="archival">Fonds de l'Académie JULIAN (1867-1946)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

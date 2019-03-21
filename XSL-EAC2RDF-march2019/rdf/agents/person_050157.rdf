@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050157">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Saint-Priest, Alexis Guignard (1805-1851 ; comte de)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050157_d3781e66"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050157_d3781e69"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1805-04-20</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1851-09-27</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050157-d3779e213"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050157-d3779e219"/>
+      <RiC:history xml:lang="fr">Alexis Guignard de Saint-Priest (1805-1851) est né à Saint-Petersbourg le 20 avril 1805, d'Armand Guignard de Saint-Priest (1782-1863) et de la princesse russe Sophie Galitzine. Gentilhomme de la chambre de Charles X, il devient diplomate sous Louis-Philippe : ministre plénipotentiaire au Brésil (1833) puis au Portugal (1835) et au Danemark (1838). Il succède à ses père et grand-père à la Chambre des pairs, en 1841. Il collabore à la R 
+     evue des Deux Mondes de 1844 à 1850, traduit du théâtre russe et s'intéresse à l'histoire. Il est élu à l'Académie française le 18 janvier 1849 au fauteuil de Jean Vatout, notamment contre Balzac. 
+     Il meurt lors d'un voyage à Moscou le 27 septembre 1851. Il a écrit de nombreux ouvrages dont 
+     Les Ruines françaises (1823), 
+     Athénaïs ou le souvenir d'une femme (1826), 
+     Le Présent et le Passé (1828), 
+     L'Espagne (1830), 
+     Histoire de la chute des jésuites du XVIIIe siècle (1844). 
+    </RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050157--d3779e155"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050157--d3779e167"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050157--d3779e179"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050157--d3779e191"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050157--d3779e203"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Alexis_Guignard_de_Saint-Priest"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb137440326#foaf:Person"/>
+      <isni:ISNIAssigned>0000000110379470</isni:ISNIAssigned>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/050157-d3779e274"/>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/050157-d3779e286"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050157"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050157-d3779e213">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050157-d3779e219">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1833-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1838-12-31</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">Alexis Guignard de Saint-Priest est nommé ministre plénipotentiaire au Brésil, puis au Portugal et enfin au Danemark.</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj12zg--s5xb7u1f4uq0"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050157_d3781e66">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050157-d3779e121"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050157_d3781e69">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050157-d3779e127"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050157--d3779e155">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Saint-Priest, Alexis Guignard (1805-1851 ; comte de)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050157-d3779e150"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050157--d3779e167">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Saint-Priest, Alexis Guignard (1805-1851 ; comte de)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050157-d3779e162"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050157--d3779e179">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Saint-Priest, Alexis Guignard (1805-1851 ; comte de)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050051-d3683e187"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050157--d3779e191">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Saint-Priest, Alexis Guignard (1805-1851 ; comte de)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050157-d3779e186"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050157--d3779e203">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Saint-Priest, Alexis Guignard (1805-1851 ; comte de)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050157-d3779e198"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050157">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050157"/>
+      <RiC:creationDate>2013-10-16</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-11-22</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_050157</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Archives nationales, fonds Guignard de Saint-Priest : 395 AP.</RiC:source>
+      <RiC:source xml:lang="fr">Notice biographique de l'Académie française.</RiC:source>
+      <RiC:source xml:lang="fr">Robert (Adolphe), Bourloton (Edgar) et Cougny (Gaston), Dictionnaire des parlementaires français, 1891, t. V, p. 245.</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000110379470"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050157"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Alexis_Guignard_de_Saint-Priest"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb137440326"/>
+   </rdf:Description>
+</rdf:RDF>

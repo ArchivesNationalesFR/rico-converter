@@ -1,0 +1,98 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012116</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01960</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Frémyn, Victor-Auguste</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1855-01-16">16 janvier 1855</fromDate>
+               <toDate standardDate="1875-09-22">22 septembre 1875</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="arrondissement_actuel"
+                           vocabularySource="d3nyv5m81r-3b9vn0frjmzw">07e arrondissement</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzbrwmo1-1aercz4pqof6k">lille (rue de)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nz8t1ls7--12ha94irytk43">bellechasse (rue de)</placeEntry>
+               <placeEntry localType="nomLieu">11 rue de Lille (de 1855 à 1864), 11 rue de Bellechasse (de 1864 à 1875)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1855-01-16">16 janvier 1855</fromDate>
+                  <toDate standardDate="1875-09-22">22 septembre 1875</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Né le 26 février 1827, fils et successeur de Valentin Frémyn</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010203"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale LXXVI</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1855-01-16">16 janvier 1855</fromDate>
+               <toDate standardDate="1875-09-22">22 septembre 1875</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">BB/10/1326/B, 4 janvier 1855, dossier de nomination</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_042688"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Victor Auguste FRÉMYN, 16 janvier 1855 - 22 septembre 1875 (étude LXXVI)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051465"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Victor Auguste Frémyn pour l'étude LXXVI</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

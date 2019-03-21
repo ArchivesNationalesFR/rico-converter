@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050228">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Maillard, Pierre (1916-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050228_d3834e68"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1916-01-01</RiC:birthDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050228-d3832e144"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050228-d3832e150"/>
+      <RiC:history xml:lang="fr">Licencié ès lettres et en droit, agrégé de l’Université, Pierre Maillard (né en 1916) est admis au concours d’entrée dans les carrières diplomatiques et consulaires en 1942.  Attaché d’ambassade à Berne (1942-1943), Pierre Maillard est ensuite membre de la représentation du Comité français de libération en Suisse (décembre 1943) et chef de l’Office français des réfugiés en Suisse (septembre 1944). Chef de cabinet du secrétaire général aux Affaires allemandes et autrichiennes (1945), deuxième secrétaire d’ambassade en Grande-Bretagne (1946), il rejoint l’administration centrale (Europe) du ministère des Affaires étrangères (1948), avant de regagner l’Autriche, comme adjoint au ministre plénipotentiaire, suppléant du ministre des Affaires étrangères pour la négociation du traité d’État autrichien (1949), puis comme premier secrétaire en Autriche (1950).  Affecté au secrétariat des conférences (1952), sous-directeur à l’administration centrale (Sarre) (1953), sous-directeur puis chef du service du Levant (1954), directeur politique du Conseil de l’Europe à Strasbourg (1958), ministre plénipotentiaire (1960), Pierre Maillard occupe successivement les fonctions de conseiller diplomatique au secrétariat général de la présidence de la République (1959-1964) et de secrétaire général adjoint de la Défense nationale (1964-1968).  Ambassadeur délégué permanent de la France auprès de l’Unesco (1970-1975), conseiller diplomatique du gouvernement chargé du dialogue euro-arabe (1975-1979), il devient ambassadeur de France au Canada en 1979 et a alors été élevé à la dignité d’ambassadeur de France.  Chargé de mission au ministère de la Recherche et de l’industrie en 1982, il est membre de l’Institut Charles de Gaulle depuis 1983.</RiC:history>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb11913974t#foaf:Person"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Pierre_Maillard_%28diplomate%29"/>
+      <isni:ISNIAssigned>0000000116248340</isni:ISNIAssigned>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050228-d3832e217"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050228"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050228-d3832e144">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj12zg--s5xb7u1f4uq0"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050228-d3832e150">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjqtlt--8qlp1v5rp9ov"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050228-d3832e217">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Maillard, Pierre (1916-....) et l'ensemble de documents "Fonds Pierre Maillard (1948-1989)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/003509-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050228_d3834e68">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050228-d3832e124"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050228">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050228"/>
+      <RiC:creationDate>2016-06-23</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-05-31</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_050228</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Archives nationales, Fonds Pierre Maillard, 583AP.</RiC:source>
+      <RiC:source xml:lang="fr">Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb11913974t</RiC:source>
+      <RiC:source xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Pierre_Maillard_%28diplomate%29</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000116248340"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050228"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb11913974t"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Pierre_Maillard_%28diplomate%29"/>
+   </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/050670">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">Conseil d'État (1799-....). Centre de coordination et de documentation (1953-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050670_d4162e50"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050670_d4162e53"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/a822c84e-b945-4139-b07e-c7234d6be25b"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1953-04-23</RiC:beginningDate>
+      <RiC:history xml:lang="fr">En 1946, le Conseil d'État voit fortement augmenter le nombre de recours porté devant lui. Afin d'accroître le nombre de jugements par une meilleure organisation du travail, la commission des fichiers est créée. Elle est chargée de réunir et de conserver les textes des décisions rendues. Cette commission est remplacée, le 23 avril 1953, par un centre de coordination et de documentation, créé par une décision du vice-président du Conseil d'État, sur la proposition du président de la section du contentieux. Le centre, lors de sa création, a été confié à François Gazier, maître des requêtes, qui abandonna ses fonctions de commissaire du gouvernement pour en assurer la direction. Le centre de coordination et de documentation du Conseil d'État diffuse rapidement à tous les membres du Conseil, aux avocats, aux membres des tribunaux administratifs et aux organismes universitaires intéressés, des fiches de jurisprudence. Ses membres assistent à tous les délibérés des formations de jugement. Ils rassemblent et conservent les conclusions des commissaires du gouvernement présentant un intérêt particulier. Ils jouent un rôle essentiel dans la composition du Recueil des arrêts du Conseil d'État. Ils publient souvent dans les revues juridiques des chroniques de jurisprudence d'autant plus appréciées que leurs auteurs connaissent bien, grâce à leur présence aux délibérés, les motifs et le sens exact des décisions rendues. Le centre a joué un rôle très important en 1954, en élaborant des directives pour le transfert aux tribunaux administratifs des 8500 dossiers en instance dont la connaissance leur avait été attribué par la réforme de 1953.</RiC:history>
+      <RiC:agentIsTargetOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/050670-d4160e147"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050670-d4160e159"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050670"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050670-d4160e159">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Conseil d'État (1799-....). Centre de coordination et de documentation (1953-....) et l'ensemble de documents "Archives du centre de coordination et de documentation du Conseil d'État (1957-1967)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/050351-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050670_d4162e50">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050670-d4160e91"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050670_d4162e53">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050670-d4160e97"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050670">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/050670"/>
+      <RiC:creationDate>2015-09-30</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050670</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050670"/>
+   </rdf:Description>
+</rdf:RDF>

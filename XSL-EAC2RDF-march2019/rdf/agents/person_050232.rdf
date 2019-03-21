@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050232">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Hervouet, Yves</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050232_d3838e50"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050232_d3838e53"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1921-01-01</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-12-31</RiC:deathDate>
+      <RiC:history xml:lang="fr">Né le 30 avril 1921 à Remouillé (Loire-Inférieure), diplômé de chinois de l’École nationale des langues orientales, docteur ès lettres, Yves Hervouet fut successivement boursier des relations culturelles à Pékin (1947-1949), membre scientifique de l’École française d’Extrême-Orient en poste à Hanoï (1950-1954) et boursier de la fondation Rockefeller (1954-1955). Bibliothécaire à l’Institut des hautes études chinoises de 1954 à 1959, il fut nommé, en 1959, à Bordeaux, dans la première chaire de chinois créée dans une université française, sur la recommandation d’Etiemble. Dix ans plus tard, il quitta Bordeaux pour participer à la fondation du département de chinois de l’université de Vincennes-Paris VIII, d’où il passa à Paris VII pour y terminer sa carrière. Secrétaire général du XIXe Congrès des orientalistes tenu à la Sorbonne en 1973, il fut aussi directeur de l’Institut des hautes études chinoises au Collège de France à partir de 1974, vice-président de la Société asiatique et président de la 55e section du Conseil national des universités (1975 à 1977 et 1979).  Yves Hervouet est mort en 1999. On lui doit des travaux sur deux grands poètes classiques chinois, Sima Xiangru, de l’époque des Han, et Li Shangying, de l’époque des Tang. Il établit des catalogues du fonds chinois de l’École française d’Extrême-Orient à Hanoï, des monographies locales chinoises et des périodiques chinois des bibliothèques européennes et il dirigea le programme européen de la Sung Bibliography initié par Balasz. </RiC:history>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050232"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050232_d3838e50">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050232-d3836e94"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050232_d3838e53">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050232-d3836e100"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050232">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050232"/>
+      <RiC:creationDate>2013-10-17</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050232</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050232"/>
+   </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,163 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_011532</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01334</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Lemoyne, Philippe</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1637-10-23">23 octobre 1637</fromDate>
+               <toDate standardDate="1676-10-15">15 octobre 1676</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">étude XIV : rue Saint-Séverin étude XXIX : rue Saint-Séverin, puis au Marché-Neuf</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvost68-1tq3k980risj5">saint-barthélemy (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvoxbpe-1o35tgfsdunvx">saint-germain-le-vieux (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvpbvqa-1q7k75sdt2gwp">saint-séverin (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd6u4hv--4zjhqdqfu1qq">saint-séverin (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzbx7zqf-v2ieo26jmuhp">marché-neuf (quai du)</placeEntry>
+            </place>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">etude XXXIII : rue Saint-Séverin</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvost68-1tq3k980risj5">saint-barthélemy (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvoxbpe-1o35tgfsdunvx">saint-germain-le-vieux (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvpbvqa-1q7k75sdt2gwp">saint-séverin (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd6u4hv--4zjhqdqfu1qq">saint-séverin (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzbx7zqf-v2ieo26jmuhp">marché-neuf (quai du)</placeEntry>
+            </place>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">étude CX : carrefour Saint-Séverin, puis au Marché-Neuf</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvost68-1tq3k980risj5">saint-barthélemy (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvoxbpe-1o35tgfsdunvx">saint-germain-le-vieux (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvpbvqa-1q7k75sdt2gwp">saint-séverin (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd6u4hv--4zjhqdqfu1qq">saint-séverin (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzbx7zqf-v2ieo26jmuhp">marché-neuf (quai du)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1637-10-23">23 octobre 1637</fromDate>
+                  <toDate standardDate="1676-10-15">15 octobre 1676</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>fils et successeur de François Lemoyne</p>
+            <p>marié à Marie Le Roy (voir ET/VI/224, 12 septembre 1638, contrat de mariage)</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010141"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XIV</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1637-10-25">25 octobre 1637</fromDate>
+               <toDate standardDate="1640-07-31">juillet 1640</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010156"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XXIX</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1640-01-01">1640</fromDate>
+               <toDate standardDate="1658-12-31">1658</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010160"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XXXIII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1640-01-01">1640</fromDate>
+               <toDate standardDate="1676-10-15">15 octobre 1676</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010237"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale CX</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1640-07-07">7 juillet 1640</fromDate>
+               <toDate standardDate="1676-10-15">15 octobre 1676</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041898"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Philippe LEMOYNE, 1640 - 4 septembre 1676 (étude XXXIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041814"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Philippe LEMOYNE, 23 octobre 1637 - 1658 (étude XXIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041421"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Philippe LEMOYNE, 25 octobre 1637 - juillet 1640 (étude XIV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054294"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Philippe Lemoyne pour l'étude XXXIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_053253"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Philippe Lemoyne pour l'étude CX</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

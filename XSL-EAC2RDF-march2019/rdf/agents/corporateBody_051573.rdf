@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/051573">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">Alliance Tibet-France (1996-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051573_d4788e50"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/f7742d1f-1699-45c7-804b-0277189a621d"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1996-03-18</RiC:beginningDate>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051573-d4786e143"/>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051573-d4786e161"/>
+      <RiC:history xml:lang="fr">Alliance Tibet-France est une association de type loi 1901, créée le 18 mars 1996 qui a pour objet principal « de mener une réflexion, et de contribuer à une meilleure connaissance ou à des actions concernant la préservation et le soutien de la culture tibétaine » ; son activité est essentiellement éditoriale.  Le siège social d’Alliance Tibet-France est situé au 37, rue Claude Bernard, dans le cinquième arrondissement de Paris. Ses membres fondateurs sont Jean-Marc Pottier, écrivain-journaliste, Michel Cool, conseil culturel, et Anne Crozier, sculpteur. En 2000, Alliance Tibet-France revendique 1744 adhérents.</RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051573--d4786e118"/>
+      <RiC:agentIsSourceOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/051572-d4785e220"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051572-d4785e235"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051573-d4786e225"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051573"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051573-d4786e143">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1996-03-18</RiC:beginningDate>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:description xml:lang="fr">Principalement éditoriale.</RiC:description>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d5bhvil20q--uuew3ia85vzc"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051573-d4786e161">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1996-03-18</RiC:beginningDate>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:description xml:lang="fr">Soutien à la culture tibétaine</RiC:description>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051573-d4786e225">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Alliance Tibet-France (1996-....) et l'ensemble de documents "Fonds de l'alliance Tibet-France (1990-2000)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/004526-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051573_d4788e50">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051573-d4786e93"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051573--d4786e118">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Alliance Tibet-France (1996-....)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/051572-d4785e116"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051573">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/051573"/>
+      <RiC:creationDate>2017-07-13</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-07-09</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051573</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Archives nationales, fonds de l'Alliance Tibet-France (112AS)</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051573"/>
+   </rdf:Description>
+</rdf:RDF>

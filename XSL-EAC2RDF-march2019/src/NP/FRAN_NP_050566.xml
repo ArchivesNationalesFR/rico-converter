@@ -1,0 +1,68 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050566</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-04-03</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>F. Clavaud, 2 avril 2014 : changé forme du nom et dates, ajouté n° notice BnF</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, fonds Dubois et Duguet (145AP).</p>
+               <p>Notice d'autorité BnF n° FRBNF11990562</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Duguet, Jacques Joseph (1649-1733)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Duguet (abbé)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1649-12-04">4 décembre 1649</fromDate>
+               <toDate standardDate="1733-10-25">25 octobre 1733</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>L’abbé Jacques-Joseph Duguet (1649-1733) connut Arnauld et Nicole. En 1685, il quitta l’Oratoire pour se réfugier à Bruxelles, auprès d’Arnauld. Il dirigea la conscience de plusieurs dames et écrivit pour Madame d’Aguesseau, mère du chancelier, la Conduite d’une dame chrétienne. Il a laissé des traités mystiques : Commentaires sur l’ouvrage des six jours (1731), Traité des scrupules… Sa nièce, Madame Mol, a laissé des Mémoires, jamais publiés.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_004324"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Dubois et Duguet (1668-1892)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

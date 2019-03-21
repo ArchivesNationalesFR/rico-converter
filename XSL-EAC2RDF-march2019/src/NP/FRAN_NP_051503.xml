@@ -1,0 +1,105 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051503</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2017-05-03</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-05-03</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
+            <eventDescription>F. Clavaud, 3 mai 2017 : création sur demande de la mission des archives auprès du Premier ministre ; ajout liens NP, indexation fonctions</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Club du Centre d'études prospectives et d'informations internationales (France ; 2001-....)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Club du CEPII</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="2001-04-04">4 avril 2001</fromDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>association</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d5bhvil20q--uuew3ia85vzc">activité associative</term>
+            </function>
+            <function>
+               <term vocabularySource="d5bhviluwl--h5xbasqtef53">économie</term>
+               <descriptiveNote>
+                  <p>économie mondiale, mutations structurelles</p>
+               </descriptiveNote>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Le Club du CEPII, association loi 1901, est issu de la scission des activités du Club d’information et de réflexion sur l’économie mondiale (CIREM), le 4 avril 2001. Il rassemble une quarantaine de membres (grandes entreprises, organisations professionnelles et syndicales, chambres de commerce ou encore banques). Il est dirigé par un Conseil d’administration de 12 membres, élus pour un mandat de trois ans.</p>
+            <p/>
+            <p>Créé pour poursuivre l’activité « club » du CIREM, il organise des rencontres et des conférences sur l’actualité internationale et les mutations structurelles qui affectent l’économie mondiale et invite régulièrement des économistes étrangers de renom. Il a également pour vocation de rendre les recherches du Centre d’études prospectives et d’informations internationales (CEPII) accessibles et utiles aux décideurs grâce aux rencontres annuelles qu’il organise.</p>
+            <p/>
+            <p>Le Club du CEPII est un lieu d’échange d’expériences et d’analyses entre dirigeants d’entreprises et experts économiques et financiers internationaux, sur les grandes tendances de la mondialisation et la situation économique internationale.</p>
+            <p/>
+            <p>Le Club a été successivement présidé par François David (2001-2003), Bruno Durieux (2003-2006) et Louis Gallois, président exécutif d’EADS (2007-2012). Depuis 2012, Pierre-André Chalendar, président directeur général de Saint-Gobain préside le Club.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_000272"
+                      xlink:type="simple">
+            <relationEntry>Centre d'études prospectives et d'informations internationales (France ; 1978-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2001-04-04">4 avril 2001</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>@isFunctionnallyLinkedTo@</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-earlier"
+                      xlink:href="FRAN_NP_051502"
+                      xlink:type="simple">
+            <relationEntry>Centre d'information et de recherche sur l'économie mondiale (France ; 1981-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2001-04-04">4 avril 2001</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>le Club du CEPII résulte de la scission des activités du CIREM, dont il poursuit l'activité "club".</p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,67 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051034</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-07-15</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marine ZELVERTE</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice BnF n° FRBNF14654913</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 0148 7923</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Batifoulier, Alain (1943-....)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1943-01-01">1943</fromDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Après ses études à l'école des Beaux-Arts de Lyon, Alain Batifoulier se consacre à la scénographie et à la création de costumes pour le spectacle vivant, à la muséographie, au design et au graphisme.</p>
+            <p>De 1965 à 2008, il crée des scénographies et costumes pour plus d'une centaine de spectacles en Île-de-France et en province (théâtre, opéra, ballet). </p>
+            <p>De 1986 à 2015, il réalise des scénographies et installations pour des expositions temporaires. Il investit ainsi de nombreux musées, la Bibliothèque nationale de France, des événements comme le Salon du Livre de jeunesse de Montreuil ou le Salon international de la Bande dessinée à Angoulême, ou divers autres lieux d'exposition. Il réalise également la muséographie de plusieurs institutions françaises, comme le château-musée de Bélesta, le musée de la Nature et de la Chasse de Thuir ou le musée Au fil du papier de Pont-à-Mousson. Enfin, il accomplit des missions d'expertise et produit des études pour la création d'institutions patrimoniales, en France et à l'étranger. </p>
+            <p>Alain Batifoulier exerce aussi la profession de graphiste, en indépendant ou dans des studios: Studio Artland de 1989 à 1994 (qu'il fonde et dont il est le directeur artistique), Studio Tovar. Il réalise alors plusieurs logos, affiches, brochures, notamment pour des théâtres ou à l'occasion d'expositions temporaires. </p>
+            <p>A partir de 1995, il écrit également des scénarios pour divers événements organisés par des sociétés privées (en particulier des lancements de produits).</p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054732"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Archives d'Alain Batifoulier, scénographe</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

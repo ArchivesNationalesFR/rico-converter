@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/family/051604">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Family"/>
+      <rdfs:label xml:lang="fr">Plœuc (famille de ; 1401-1900)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051604_d4816e52"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051604_d4816e55"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051604_d4816e64"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1401-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1900-12-31</RiC:endDate>
+      <RiC:history xml:lang="fr">Originaire du bourg de Plœuc-sur-Lié (Côtes-d’Armor), la famille de Plœuc tire son origine des ducs de Penthièvre dont elle semble être une branche cadette. Les Plœuc, qui apparaissaient comme purement terriens aux XVe et XVIe siècles, devinrent marins et militaires avec Vincent de Plœuc, chevalier de Kerharo (mort en 1753), capitaine de vaisseau. Son frère cadet, l’abbé Hyacinthe (1662-1739) fut pour sa part évêque de Quimper, de 1707 à 1739. Au XIXe siècle, Alexandre-Marie-Sébastien, marquis de Plœuc (1815-1888), après avoir gravi les échelons de l’Inspection des finances et avoir été l’un des fondateurs de la Banque ottomane, de 1857 à 1865, devint sous-gouverneur de la Banque de France. Populaire pour avoir su sauvegarder le stock d’or de la Banque de France en s’entendant avec le ministre des Finances de la Commune, le Breton Meslay, le marquis de Plœuc fut élu député de Paris en 1871, puis réélu en 1876, avant d’abandonner la carrière politique après le krach de l’Union générale, qu’il avait fondée.</RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051604--d4814e161"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Maison_de_Pl%C5%93uc"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051604-d4814e193"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051604"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051604-d4814e193">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Plœuc (famille de ; 1401-1900) et l'ensemble de documents "Fonds Ploeuc (1439-1912)."</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/000711-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051604_d4816e52">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051604-d4814e97"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051604_d4816e55">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1401-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1900-12-31</RiC:endDate>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051604-d4814e103"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051604_d4816e64">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1401-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1900-12-31</RiC:endDate>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051604-d4814e121"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051604--d4814e161">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Plœuc (famille de ; 1401-1900)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/051604-d4814e156"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051604">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/family/051604"/>
+      <RiC:creationDate>2017-07-20</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-08-01</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051604</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Historique rédigé d’après l’État sommaire des fonds d’archives privées, séries AP (1 à 629 AP) et AB XIX, Paris, Centre historique des Archives nationales, 2004, p. 487.</RiC:source>
+      <RiC:source xml:lang="fr">« Maison de Plœuc », in Wikipédia, encyclopédie collaborative, en ligne : https://fr.wikipedia.org/wiki/Maison_de_Pl%C5%93uc (consulté en juillet 2017).</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051604"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Maison_de_Pl%C5%93uc"/>
+   </rdf:Description>
+</rdf:RDF>

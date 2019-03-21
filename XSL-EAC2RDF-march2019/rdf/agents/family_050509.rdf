@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/family/050509">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Family"/>
+      <rdfs:label xml:lang="fr">Grossolles-Flamarens (famille de)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050509_d4040e66"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050509_d4040e69"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1466-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1879-01-08</RiC:endDate>
+      <RiC:history xml:lang="fr">La maison de Grossolles est une famille de noblesse ancienne de la province de Guyenne. Ses membres se sont surtout illustrés dans des emplois militaires et des dignités ecclésiastiques. Ils portent « d’or au lion de gueules issant d’une rivière d’argent, et un chef d’azur chargé de trois étoiles d’or ». Jean de Grossolles, chevalier, auteur de la branche de Flamarens, entreprend la construction du château du lieu en 1466. Herrard de Grossolles, évêque de Condom, est à l’origine de la construction de l’église de Flamarens en 1545 ; il fait également achever les travaux de la cathédrale de Condom, ainsi que la réalisation du cloître. Renaud de Grossolles est gouverneur de Mont-de-Marsan et chevalier de l’ordre de Saint-Michel en 1560. Jean de Grossolles épouse Françoise d’Albret, cousine d’Henri IV, en 1609. Les Grossolles poursuivent leur ascension par le métier des armes et s’intitulent marquis, puis comtes de Flamarens sous le règne de Louis XIV. Ils donnent plusieurs officiers militaires et évêques au cours du XVIIIe siècle. Les Grossolles-Flamarens sont également barons de Montastruc (Lot-et-Garonne) et seigneurs de Buzet (Lot-et-Garonne). Pendant la Révolution, plusieurs membres de la famille émigrent et servent dans l’armée des Princes. Ils s’allient aux Beaumont par le mariage de Joséphine de Grossolles-Flamarens avec Christophe, comte de Beaumont. La famille de Grossolles-Flamarens s’éteint à la fin du XIXe siècle avec la mort sans postérité de Jules de Grossolles (1806-1879), comte de Flamarens, conseiller général et sénateur du Gers. </RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050509--d4038e167"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050509--d4038e179"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050509--d4038e191"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050509--d4038e203"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050505-d4035e121"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050507-d4036e115"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050509-d4038e232"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050509"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050509-d4038e232">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Grossolles-Flamarens (famille de) et l'ensemble de documents "Fonds Noailles, de Beaumont, de Grossolles-Flamarens (1247-1913)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/004288-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050509_d4040e66">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050509-d4038e121"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050509_d4040e69">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1466-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1879-01-08</RiC:endDate>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050509-d4038e127"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050509--d4038e167">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Grossolles-Flamarens (famille de)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050509-d4038e162"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050509--d4038e179">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Grossolles-Flamarens (famille de)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050509-d4038e174"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050509--d4038e191">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Grossolles-Flamarens (famille de)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050509-d4038e186"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050509--d4038e203">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Grossolles-Flamarens (famille de)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050509-d4038e198"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050509">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/family/050509"/>
+      <RiC:creationDate>2014-02-04</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-03-14</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_050509</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">« Grossolles », in François-Alexandre Aubert de la Chesnaye des Bois, Dictionnaire de la noblesse, t. VII, Paris, Boudet, 1774, p. 482-488.</RiC:source>
+      <RiC:source xml:lang="fr">« Grossoles-Flamarens, Caprais de Saint-André, comte de » et « Grossoles-Flamarens, Jules-Agésilas-Alexandre-Marie-François, comte de », in Adolphe Robert, Edgar Bourloton et Gaston Cougny, Dictionnaire des parlementaires français, t. III, 1891, p. 264.</RiC:source>
+      <RiC:source xml:lang="fr">Archives nationales, fonds de Noiailles, de Beaumont, de Grossolles-Flamrens (111 AP).</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050509"/>
+   </rdf:Description>
+</rdf:RDF>

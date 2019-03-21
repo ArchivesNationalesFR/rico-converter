@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051773">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Agnel, Louis (1761-1840)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051773_d4902e54"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051773_d4902e57"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051773_d4902e66"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1761-06-14</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1840-07-09</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051773-d4900e216"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051773-d4900e237"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051773-d4900e258"/>
+      <RiC:history xml:lang="fr">Natif de la ville d'Embrun (Hautes-Alpes) le 14 juin 1761, Basile-Gaspard Agnel dit 
+     Louis Agnel est volontaire au premier bataillon des Hautes-Alpes en 1791. Agnel (1761-1840) prend part aux campagnes de l’armée des Alpes et des Pyrénées-Orientales. 
+     Il part ensuite à l’armée d’Italie, est blessé à Lodi (Lombardie), et entre, le 28 floréal an V (17 mai 1797), dans l’état-major de Masséna. Il accompagne le général Brune en Suisse et en Hollande. Le 6 germinal an X (27 mars 1802), Agnel entre au Corps législatif comme député des Hautes-Alpes. Il y siège trois ans, reprend du service, passe en Espagne, puis en 1807, il commande la place de Greifswald, en Poméranie suédoise. Il se fait admettre à la retraite, le 6 octobre 1815, comme adjudant général, chef de brigade.  Par ailleurs, Agnel est fait chevalier de la Légion d'honneur en février 1804 et officier en juin de la même année sous les prénoms de Louis-Gaspard-Basile qui lui sont restés depuis. Gaspard-Basile Agnel devient maire de Brunoy (Essonne) en 1831 jusqu'à son décès le 9 juillet 1840 également à Brunoy, à l'âge de 79 ans. </RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051773--d4900e164"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051773--d4900e191"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Louis_Agnel"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051773-d4900e322"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051773"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051773-d4900e216">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1831-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1840-07-09</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">maire de Brunoy (Essonne).</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051773-d4900e237">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1802-03-22</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1814-06-04</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">Membre du Corps législatif comme député des Hautes-Alpes.</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051773-d4900e258">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1791-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1815-12-31</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">volontaire en 1791, blessé à Lodi, entre dans l'état-major de Masséna, commandant de la place de Greifswald en poméranie suédoise, adjudant général, chef de brigade à la retraite.</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj53l0-1180obzunmkm7"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051773-d4900e322">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Agnel, Louis (1761-1840) et l'ensemble de documents "Papiers Louis Agnel (1806-1807)."</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/054207-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051773_d4902e54">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051773-d4900e100"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051773_d4902e57">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1761-06-14</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1840-07-09</RiC:endDate>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051773-d4900e106"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051773_d4902e66">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1804-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1816-12-31</RiC:endDate>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051773-d4900e124"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051773--d4900e164">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Agnel, Louis (1761-1840)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/051773-d4900e159"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051773--d4900e191">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Agnel, Louis (1761-1840)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/051773-d4900e186"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051773">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051773"/>
+      <RiC:creationDate>2017-10-20</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-11-14</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051773</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Archives nationales, fonds Louis Agnel (166AP).</RiC:source>
+      <RiC:source xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Louis_Agnel</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051773"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Louis_Agnel"/>
+   </rdf:Description>
+</rdf:RDF>

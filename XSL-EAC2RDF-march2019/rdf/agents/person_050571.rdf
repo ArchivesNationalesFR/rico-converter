@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050571">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Murat, Joachim Joseph Napoléon (1834-1901 ; prince)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050571_d4100e69"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1834-07-21</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1901-10-23</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050571-d4098e226"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050571-d4098e232"/>
+      <RiC:history xml:lang="fr">Joachim Joseph Napoléon Murat (1834-1901) est le fils aîné du prince Lucien Murat et de Caroline Frazer. Né le 21 juillet 1834 à Bordentown (États-Unis), il épouse en 1854 Malcy Louise Caroline Frédérique Berthier de Wagram (1832-1889), puis, en seconde noce, en 1894, Lydia Harvey, veuve d'Arthur Hainguerlot. Il a de son premier mariage 3 enfants : Eugénie (1855-1934), Joachim Murat (1856-1932), 5e prince Murat, et Anna Napoléone Caroline (1863-1940). Arrivé en France en 1848 avec son père, il s'engage dès l'âge de 18 ans au 3e chasseur d'Afrique. Il se distingue au cours de deux expéditions en Kabylie et d'une troisième dans le sud de la province de Constantine. Sa brillante conduite lui vaut le grade de sous-lieutenant. C'est alors qu'il passe au régiment des Guides. Neveu de Napoléon III, il est désigné pour servir auprès de l'Empereur en qualité d'ordonnance. En 1859 il participe avec le grade de capitaine à la Guerre d'Italie. Il est à Magenta et à Solférino. Lorsque éclate la Guerre de 1870, Joachim Murat vient d'être nommé général. Il prend part aux batailles de Gravelotte et de Saint-Privat. La chute du Second Empire marque la fin de sa carrière militaire. Il prend le titre de 4e prince Murat en 1878 après le décès de son père. Il décède au château de Chambly le 23 octobre 1901.</RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050571--d4098e155"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050571--d4098e167"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050571--d4098e179"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050571--d4098e191"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050571--d4098e203"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050571--d4098e216"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Joachim_Murat_(1834-1901)"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb16239779b#foaf:Person"/>
+      <isni:ISNIAssigned>0000000058970078</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050571-d4098e262"/>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/050571-d4098e268"/>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/050569-d4096e227"/>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/009280-d178e386"/>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/050571-d4098e319"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050571-d4098e346"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050571"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050571-d4098e226">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050571-d4098e232">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msk3a25-1xs3m641rhiyg"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050571-d4098e346">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Murat, Joachim Joseph Napoléon (1834-1901 ; prince) et l'ensemble de documents "Fonds Murat (1746-1965).#Papiers de Joachim IV Murat.#31AP/65-31AP/67"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/FRAN_IR_050305-G9319"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050571_d4100e69">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050571-d4098e127"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050571--d4098e155">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Murat, Joachim Joseph Napoléon (1834-1901 ; prince)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050571-d4098e150"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050571--d4098e167">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Murat, Joachim Joseph Napoléon (1834-1901 ; prince)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050571-d4098e162"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050571--d4098e179">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Murat, Joachim Joseph Napoléon (1834-1901 ; prince)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050571-d4098e174"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050571--d4098e191">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Murat, Joachim Joseph Napoléon (1834-1901 ; prince)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050571-d4098e186"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050571--d4098e203">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Murat, Joachim Joseph Napoléon (1834-1901 ; prince)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050571-d4098e198 http://data.archives-nationales.culture.gouv.fr/place/051669-d4862e159"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050571--d4098e216">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Murat, Joachim Joseph Napoléon (1834-1901 ; prince)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050571-d4098e211"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050571">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050571"/>
+      <RiC:creationDate>2015-10-26</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-05-04</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_050571</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Notice BnF n° FRBNF16239779.</RiC:source>
+      <RiC:source xml:lang="fr">TULARD (Jean), dir., Dictionnaire du Second Empire, Paris, Fayard, 1995.</RiC:source>
+      <RiC:source xml:lang="fr">Archives nationales, fonds Murat : 31 AP.</RiC:source>
+      <RiC:source xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Joachim_Murat_(1834-1901)</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000058970078"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050571"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Joachim_Murat_(1834-1901)"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb16239779b"/>
+   </rdf:Description>
+</rdf:RDF>

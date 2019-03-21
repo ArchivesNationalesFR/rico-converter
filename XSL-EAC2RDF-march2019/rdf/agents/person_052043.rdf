@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/052043">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Chassain de Marcilly, Henri (1867-1942)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/052043_d4991e49"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1867-02-21</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1942-12-31</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/052043-d4989e190"/>
+      <RiC:history xml:lang="fr">Henri Chassain de Marcilly (1867-1942), originaire de Montbrison (Loire), est le fils de François Xavier Chassain de Marcilly et de Claire Joséphine Marie de La Garde. Licencié es-lettres et agrégé d’histoire, il réussit le concours d’entrée au ministère des Affaires étrangères en 1890. Il débute sa carrière comme attaché à la Résidence générale de Tunis. Durant son séjour en Tunisie, il se lie d’une amitié durable avec Paul Bourde, administrateur à la tête de la direction de l’agriculture puis des contrôles civils en Tunisie. À son départ du pays, en 1893, il est vice-consul. Brièvement de retour au Quai d’Orsay, il intègre la direction des Consulats, avant de repartir rapidement en Afrique du Nord, à Fez, comme vice-consul en mai 1894. Fin 1897, il est réaffecté à la direction des Consulats, puis à celle de la politique et des protectorats. En 1900, il est nommé consul en Chine, à Hankou, et est fait chevalier de la Légion d’honneur. Il ne se plaît guère en Chine et demande à revenir en France en 1904. En septembre, il épouse Jeanne Henry, fille d’Arsène Henry, directeur des Consulats et affaires commerciales au ministère des Affaires étrangères. Il obtient dans la foulée un poste en vue au bureau des Affaires marocaines à la direction politique et des protectorats. Il est ensuite nommé consul général à Gênes (1912-1919), conseiller et chargé d’affaires, puis ministre plénipotentiaire à Berlin (1919-1920), envoyé extraordinaire et ministre plénipotentiaire à Athènes (1921-1924), puis à La Haye (1924-1928). Il est enfin nommé ambassadeur de Suisse en 1928. Il prend sa retraite en 1933 et se consacre à la publication posthume des 
+     Essais sur la révolution et la religion de son ami Paul Bourde. Il meurt en 1942. 
+    </RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/052043--d4989e119"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/052043--d4989e131"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/052043--d4989e143"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/052043--d4989e155"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/052043--d4989e167"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/052043--d4989e180"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/052043-d4989e218"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/052043-d4989e233"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/052043"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/052043-d4989e190">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1890-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1933-12-31</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjqtlt--8qlp1v5rp9ov"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/052043-d4989e233">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Chassain de Marcilly, Henri (1867-1942) et l'ensemble de documents "Fonds Chassain de Marcilly (XVIIIe siècle, 1876-1992)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/003518-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/052043_d4991e49">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/052043-d4989e91"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/052043--d4989e119">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Chassain de Marcilly, Henri (1867-1942)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050454-d4000e156"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/052043--d4989e131">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Chassain de Marcilly, Henri (1867-1942)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050150-d3773e144 http://data.archives-nationales.culture.gouv.fr/place/050203-d3816e168"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/052043--d4989e143">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Chassain de Marcilly, Henri (1867-1942)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050126-d3751e144"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/052043--d4989e155">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Chassain de Marcilly, Henri (1867-1942)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050161-d3783e159 http://data.archives-nationales.culture.gouv.fr/place/051336-d4600e211"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/052043--d4989e167">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Chassain de Marcilly, Henri (1867-1942)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/052043-d4989e162"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/052043--d4989e180">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Chassain de Marcilly, Henri (1867-1942)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/052043-d4989e175 http://data.archives-nationales.culture.gouv.fr/place/010099-d216e126"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/052043">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/052043"/>
+      <RiC:creationDate>2018-05-14</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-06-04</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_052043</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Les informations sont extraites de l’introduction à l’inventaire analytique du fonds Chassain de Marcilly conservé aux Archives nationales sous la cote 592AP</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052043"/>
+   </rdf:Description>
+</rdf:RDF>

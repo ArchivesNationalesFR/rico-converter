@@ -1,0 +1,111 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010353</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00055</otherRecordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2013-10-08</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Raphael BAUMARD</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Vavin, Alexis</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1792-09-12">12 septembre 1792</fromDate>
+               <toDate standardDate="1863-12-02">2 décembre 1863</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p/>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="voie" vocabularySource="d3nzdpu6vj-yf13o3f7zy40">vieille-du-temple (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzb8pnbe-ct55wat99mw3">grammont (rue de)</placeEntry>
+               <placeEntry localType="nomLieu">75 rue Vieille-du-Temple (de 1822 à 1827), 7 rue de Grammont (de 1827 à 1838)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1822-05-07">7 mai 1822</fromDate>
+                  <toDate standardDate="1838-01-25">25 janvier 1838</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Alexis Vavin naquit à Paris le 12 septembre 1792. Étudiant en droit, il exerça ensuite, de 1822 à 1838, la profession de notaire qu’il abandonna pour se présenter aux élections législatives en 1839. Trésorier de la Chambre des notaires, il devint député du onzième arrondissement (partie des quatrième, cinquième et sixième arrondissements actuels), où une rue porte son nom dans le quartier du Luxembourg. Constamment réélu, Vavin siégea d’abord dans les rangs de l’opposition libérale puis, à partir de 1849, vota avec la droite. Démissionnaire lors du coup d’État de Louis-Napoléon Bonaparte, il avait été nommé liquidateur des biens de la liste civile et de la Maison d’Orléans, le 9 mars 1848, et il le resta malgré son départ du Parlement. Ayant renoncé à la vie publique, Vavin mourut à Paris le 2 décembre 1863.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010226"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XCIX</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1822-05-07">7 mai 1822</fromDate>
+               <toDate standardDate="1838-01-25">25 janvier 1838</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">BB/10/709, 30 avril 1822, dossier de nomination</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/III/1182, 1er mars 1787, contrat de mariage entre Henri Vavin et Jeanne Victorine Lionnet.</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_005212"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Alexis Vavin (1830-1852)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055492"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Alexis Vavin pour l'étude XCIX</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043059"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Alexis VAVIN, 7 mai 1822 - 25 janvier 1838 (étude XCIX)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

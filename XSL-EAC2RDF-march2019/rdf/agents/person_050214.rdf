@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050214">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Capitant, René (1901-1970)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050214_d3825e45"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1901-08-19</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1970-05-23</RiC:deathDate>
+      <RiC:history xml:lang="fr">René Capitant est né en 1901 à La Tronche (Isère). Fils du grand juriste Henri Capitant, il entre lui-même dans l’enseignement supérieur. Reçu à l’agrégation de droit en 1930, il enseigne le droit constitutionnel et le droit public successivement dans les universités de Strasbourg (1930-1941), d’Alger (1942-1943) et de Paris (1951-1969). En 1936, il est nommé comme chargé de mission au cabinet de Léon Blum, président du Conseil, où il reste six mois avant de démissionner. Engagé dans la résistance dès 1941, il se fait muter à Alger où il a la charge secrète d’organiser en Afrique du Nord le mouvement Combat dont il est l’un des fondateurs. Il participe à ce titre à la prise de pouvoir des gaullistes à la faveur du débarquement allié en novembre 1942. En novembre 1943, il est nommé Commissaire à l’Éducation nationale et à la Jeunesse dans le Gouvernement provisoire de la République française puis devient ministre avec les même attributions en 1944 et jusqu’en 1945. En octobre 1945, il est élu député du Bas-Rhin dans la première assemblée constituante où il devient rapidement le porte-parole des vues gaullistes en matière de Constitution. Elu en 1946 député de Paris, après avoir appartenu à l’U.D.S.R. (Union démocratique et socialiste de la Résistance), il forme un groupe distinct préfiguration du R.P.F. (Rassemblement du Peuple français). Après son échec aux législatives de 1951 dans l’Isère, il retourne à son enseignement de droit à la Faculté de Paris, tout en continuant d’appartenir au R.P.F. dont il devient président du Conseil national. Partisan de l’indépendance de l’Algérie et adversaire de la torture, il suspend en 1957 ses cours après l’arrestation et la torture d’un de ses élèves algériens. Il est alors envoyé au Japon pour y diriger la maison franco-japonaise. Il y demeure jusqu’en 1960 et rentre à Paris où il retrouve sa chaire de professeur de la Faculté de Droit. Elu en 1962 député de Paris sous l’étiquette U.D.T. (Union démocratique du Travail), il contribue à la fusion de ce groupe avec l’U.N.R. (Union pour la nouvelle République). Il est président de la Commission des lois constitutionnelles et prend une part active à la préparation de plusieurs lois (droit de grève, objecteurs de conscience, etc.). Il se signale en particulier par une intense activité en faveur de la participation et l’intéressement des ouvriers dans l’entreprise dont il est l’un des militants les plus actifs. Elu conseiller municipal de Paris en 1965, il est à ce titre le président de la Commission permanente des Halles instituée au sein du Conseil de Paris pour examiner les projets d’urbanisme autour de ce quartier de Paris.  Réélu en 1967, il condamne vivement l’attitude du gouvernement Pompidou durant la crise de mai 1968 et, tout en restant fidèle au général de Gaulle, démissionne de son mandat parlementaire pour ne pas avoir à voter la confiance à Pompidou. Réélu député de Paris aux législatives de 1968, il entre au gouvernement comme garde des sceaux et ministre de la Justice, poste qu’il conserve jusqu’à sa démission en avril 1969, après le départ du général de Gaulle. Il meurt le 23 mai 1970.</RiC:history>
+      <isni:ISNIAssigned>0000000081407427</isni:ISNIAssigned>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050214"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050214_d3825e45">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050214-d3823e85"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050214">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050214"/>
+      <RiC:creationDate>2014-05-20</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050214</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000081407427"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050214"/>
+   </rdf:Description>
+</rdf:RDF>

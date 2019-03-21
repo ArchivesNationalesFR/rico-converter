@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050272</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-04-03</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Zénaïde ANDRIEU-ROMANEIX</agent>
+            <eventDescription>F. Clavaud, 2 avril 2014 : ajouté liens familiaux</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, Fonds Aurillac (365 AP).</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>family</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_050272-d3862e79">
+            <part>Aurillac (famille)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1901-01-01">XXe siècle</fromDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Jean Aurillac (1903-1967) est le père de Michel Aurillac (1928- )</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:type="simple"
+                      xlink:href="FRAN_NP_050269"
+                      xml:id="FRAN_relation_050272-d3862e106">
+            <relationEntry>Aurillac, Michel</relationEntry>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:type="simple"
+                      xlink:href="FRAN_NP_050268"
+                      xml:id="FRAN_relation_050272-d3862e112">
+            <relationEntry>Aurillac, Jean</relationEntry>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:type="simple"
+                      xlink:href="FRAN_NP_050268"
+                      xml:id="FRAN_relation_050272-d3862e118">
+            <relationEntry>Aurillac, Jean (1903-1967)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1903-01-01">1903</fromDate>
+               <toDate standardDate="1967-12-31">1967</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:type="simple"
+                      xlink:href="FRAN_NP_050269"
+                      xml:id="FRAN_relation_050272-d3862e133">
+            <relationEntry>Aurillac, Michel (1928-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1928-07-11">11 juillet 1928</fromDate>
+            </dateRange>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

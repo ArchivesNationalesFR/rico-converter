@@ -1,0 +1,87 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051224</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-12-04</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Magali LACOUSSE</agent>
+            <eventDescription>F. Clavaud, 4 décembre 2015 : revu le nom, ajouté n° notice BnF, lien d'association, revu indexation lieu.</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice d'autorité BnF n° FRBNF15850125</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 8201 8909</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Porquet, Charles (1823-1902)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1823-01-01">1823</fromDate>
+               <toDate standardDate="1902-12-31">1902</toDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">1, quai Voltaire, 1er arrondissement de Paris</placeEntry>
+               <placeEntry localType="arrondissement_actuel"
+                           vocabularySource="d3nyv8f3d4-ok53bz6domv3">01e arrondissement</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzdsa815-11mh5vw6z43ej">Voltaire (quai)</placeEntry>
+            </place>
+         </places>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msj2ak9-pn4dvydl4qfe">libraire</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Charles Porquet naît le 3 août 1823 et décède le 2 septembre 1902. C'est un libraire et un marchand d'estampes. Il est également libraire expert. Sa librairie est située au 1, qui Voltaire, dans le premier arrondissement de Paris. </p>
+            <p>Il s'associe avec Alphonse Picard.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_051220"
+                      xlink:type="simple">
+            <relationEntry>Éditions Picard (Paris)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1869-01-01">1869</fromDate>
+               <toDate standardDate="1902-12-31">1902</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Charles Porquet s'associe avec Alphonse Picard.</p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

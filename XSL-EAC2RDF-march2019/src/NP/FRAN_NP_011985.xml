@@ -1,0 +1,106 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_011985</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01823</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Guerreau, Pierre</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1599-04-01">1er avril 1599</fromDate>
+               <toDate standardDate="1636-12-31">1636</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvow9c3--1ln2rhczl581f">saint-eustache (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzafr492-8mpayj1nefi9">ferronnerie (rue de la)</placeEntry>
+               <placeEntry localType="nomLieu">étude LXXXVI : rue de la Ferronnerie</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1599-04-01">1er avril 1599</fromDate>
+                  <toDate standardDate="1636-12-31">1636</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>marié à Elisabeth Parque (voir ET/VI/356, 24 mars 1640, quittance par Elisabeth Parque, veuve de Pierre Guerreau), fille d'Edme Parque, notaire dans la même étude</p>
+            <p>de ce mariage sont issus : Gabriel Guerreau notaire, d'abord associé à son père, puis successeur de celui-ci, et François Guerreau, notaire dans l'étude C</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010213"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale LXXXVI</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1599-04-01">1er avril 1599</fromDate>
+               <toDate standardDate="1636-12-31">1636</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XXXIX/76 folio 81, 28 février 1644, testament d'Elisabeth Parque, sa veuve</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XXXIX/76 folio 106, 16 mars 1644, inventaire après décès d'Elisabeth Parque</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041968"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire notaires divers, 1603 - 1605 (étude XXXVI)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055678"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Pierre Guerreau pour l'étude LXXXVI</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042843"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Pierre GUERREAU, 1er avril 1599 - 1636 (étude LXXXVI)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

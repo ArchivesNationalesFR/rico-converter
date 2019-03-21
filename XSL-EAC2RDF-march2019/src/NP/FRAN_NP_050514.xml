@@ -1,0 +1,98 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050514</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-09-04</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Vanessa ASPART</agent>
+            <eventDescription>P. Charbonnier, 26/02/2018 : ajout identifiant ISNI, lien identité vers notice BnF et Wikipédia, ajout indexation activité</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2018-02-26</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 1875 6883</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Mangin, Claude (1786-1835)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1786-03-07">7 mars 1786</fromDate>
+               <toDate standardDate="1835-12-31">1835</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msj742x--12cnnohd8i9wj">avocat</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msjy3v4--oimn0b7kuvf4">magistrat</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Grand-père du général Charles Mangin, avocat à Metz, procureur à Poitiers, puis préfet de Police de Paris à la veille de la Révolution de juillet.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="https://fr.wikipedia.org/wiki/Claude_Mangin"
+                      xlink:type="simple">
+            <relationEntry>Claude Mangin</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1786-03-07">7 mars 1786</fromDate>
+               <toDate standardDate="1835-12-31">1835</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Lien vers notice Wikipédia</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_050508"
+                      xlink:type="simple">
+            <relationEntry>Mangin, Charles (1866-1925)</relationEntry>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb10619542w"
+                      xlink:type="simple">
+            <relationEntry>Mangin, Jean Henri Claude (1786-1835) </relationEntry>
+            <dateRange>
+               <fromDate standardDate="1786-03-07">7 mars 1786</fromDate>
+               <toDate standardDate="1835-12-31">1835</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Lien vers notice BnF</p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

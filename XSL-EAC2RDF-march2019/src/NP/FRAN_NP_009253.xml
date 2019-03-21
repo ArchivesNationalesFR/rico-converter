@@ -1,0 +1,80 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_009253</recordId>
+      <otherRecordId localType="Ancien_identifiant">9863/DESV</otherRecordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Import_SIA</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2015-10-23</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Vanessa ASPART</agent>
+            <eventDescription>F. Clavaud, 21 octobre 2015 : ajouté lien IR</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, Fonds Robert Desveaux, 703 AP.</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Desveaux, Robert</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1901-01-01">1901</fromDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Élève de l’Institut national agronomique (INA, promotion 1928), il est sorti 76e sur 101 au terme de sa seconde année d’études. Il est ensuite candidat à la section d’application de l’enseignement agricole et de la recherche agronomique, division B.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_009026"
+                      xlink:type="simple">
+            <relationEntry>Institut national agronomique</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1925-01-01">1925</fromDate>
+               <toDate standardDate="1928-12-31">1928</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_010075"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds privés du domaine de l'agriculture ; Archives personnelles et familiales ; Institut national agronomique de Paris-Grignon ; Fonds Robert Desvaux (1925-1928)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/052093">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">France. Ministère du Travail. Direction générale du travail. Service de l’animation territoriale de la politique du travail et de l’action de l’inspection du travail. Département du soutien et de l’appui au contrôle (2006-2015)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/052093_d5015e47"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/052093_d5015e50"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-08-22</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-07-22</RiC:endDate>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/052093-d5013e123"/>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/052093-d5013e129"/>
+      <RiC:history xml:lang="fr">Le Département du soutien et de l’appui au contrôle est instauré par l'arrêté du 22 août 2006. Au sein du Service de l’animation territoriale de la politique du travail et de l'action de l'inspection du travail (SAT), il conçoit et met en œuvre les modalités de l’animation des services déconcentrés dans le champ des relations du travail ainsi que les méthodes des référentiels adaptés à l’action de ces services. Il assure une expertise et un appui méthodologique aux services déconcentrés. Il apporte une expertise aux services déconcentrés en ce qui concerne les compétences respectives des différents contrôles. Il assure une expertise sur la communication des documents administratifs. Il accompagne l’évolution et l’adaptation de l’organisation de l’Inspection du travail. Il contribue à assurer l’appui aux agents de contrôle en situation d’urgence en liaison avec la DAGEMO. Il assure la maîtrise d’ouvrage des systèmes d’information utilisés pour la mise en œuvre de la politique du travail.</RiC:history>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/052092-d5012e142"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/052093-d5013e145"/>
+      <RiC:agentIsSourceOfAgentTemporalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentTemporalRelation/052093-d5013e163"/>
+      <RiC:agentIsSourceOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/052092-d5012e230"/>
+      <RiC:agentIsTargetOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/052093-d5013e196"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/052093"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/052093-d5013e123">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d3nyui03cb-w7bln4jba4fn"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/052093-d5013e129">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d5bhvimhyx--nnjhi6uln1zi"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/052093_d5015e47">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/052093-d5013e85"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/052093_d5015e50">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/052093-d5013e91"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/052093">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/052093"/>
+      <RiC:creationDate>2018-08-08</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-08-27</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_052093</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052093"/>
+   </rdf:Description>
+</rdf:RDF>

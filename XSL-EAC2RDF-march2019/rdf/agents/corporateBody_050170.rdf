@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/050170">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">Société des études historiques (France)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050170_d3793e43"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050170_d3793e46"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/f7742d1f-1699-45c7-804b-0277189a621d"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1833-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1940-12-31</RiC:endDate>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/050170-d3791e132"/>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/050170-d3791e138"/>
+      <RiC:history xml:lang="fr">Créée le 24 décembre 1833 sous le nom d’Institut historique, la Société des études historiques est reconstituée le 13 mars 1872 et reconnue d’utilité publique par décret du 3 mai 1872. Les statuts sont adoptés le 29 juin 1876 ; son but : «  encourager et propager les études historiques en France et à l’étranger ». La société est constituée de quatre classes : histoire générale et histoire de France (première classe), histoire des langues et des littératures (deuxième classe), histoire des sciences physiques, mathématiques, sociales et philosophiques (troisième classe), histoire des beaux-arts (quatrième classe). Ses membres se divisent en trois catégories : titulaires, associés et correspondants. Ils se réunissent tous les mois, de novembre à juin. La Société des études historiques fait paraître une revue, successivement appelée 
+     L’Investigateur : journal de l’Institut historique, 
+     Revue de la Société des études historiques et enfin 
+     Revue des études historiques ; par ailleurs, elle publie la 
+     Bibliothèque de bibliographies critiques. 
+     Chaque année, la Société des études historiques remet le prix Raymond (du nom du premier donateur) au lauréat d’un concours relatif à un sujet historique. Toutes les activités de la société cessent en 1940.</RiC:history>
+      <isni:ISNIAssigned>000000012154913X</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050170-d3791e182"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050170"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/050170-d3791e132">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d5bhvil20q--uuew3ia85vzc"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/050170-d3791e138">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d-25ub5bepd--1a98b90ydj2ye"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050170_d3793e43">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050170-d3791e82"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050170_d3793e46">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1833-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1872-12-31</RiC:endDate>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050170-d3791e88"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050170">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/050170"/>
+      <RiC:creationDate>2016-02-02</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050170</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/000000012154913X"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050170"/>
+   </rdf:Description>
+</rdf:RDF>

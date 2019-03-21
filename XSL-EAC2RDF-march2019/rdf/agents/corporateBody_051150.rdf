@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/051150">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">France. Ministère de l'Éducation nationale. Direction de l'architecture. Sous-direction des Monuments Historiques et des Sites (18 août 1945-8 janvier 1959)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051150_d4452e45"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051150_d4452e48"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051150_d4452e57"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1945-08-18</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-01-08</RiC:endDate>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051150-d4450e153"/>
+      <RiC:history xml:lang="fr">Le 18 août 1945 est créée au sein du ministère de l’Éducation nationale la direction générale de l’architecture (anciennement direction des services d'architecture sous le régime de Vichy). Elle a en charge les monuments historiques et les sites, mais aussi les bâtiments civils et palais nationaux, les fouilles archéologiques et l’architecture.  En janvier 1947, la direction générale de l'architecture rejoint temporairement le ministère de la Jeunesse, des Arts et des Lettres, nouvellement créé. Ce dernier prend au ministère de l'Éducation nationale les compétences en Beaux-Arts et en architecture. Après le remaniement d'octobre 1947, le ministère de la Jeunesse, des Arts et des Lettres est supprimé et le ministère de l’Éducation nationale retrouve ses attributions antérieures : les directions des arts, des lettres et de l'architecture. La sous-direction ou direction des monuments historiques restera au sein du ministère de l'Éducation nationale jusqu'à la création du ministère des Affaires culturelles le 26 juillet 1959.</RiC:history>
+      <RiC:noteOnStructureOrGenealogy xml:lang="fr">De 1945 à 1946, la direction des Monuments historiques est composée d’un directeur (André Lapeyre) et de quatre bureaux :  - Travaux et classements (chef de bureau : François Sorlin) - Documentation, Fouilles et Antiquités (chef de bureau : Joëlle Bromberger) - Marchés et la liquidation (chef de bureau : Pierre Decieux) - Contrôle technique (contrôleur général : Charles de Saint Jean) Un service des Sites, perspectives et paysages (chef : Mme Vallée) existe par ailleurs au sein de la direction de l'architecure. De 1947 à 1959, la sous-direction des monuments historiques et des sites est composée de trois bureaux : - Travaux et classements (Raymond Boquet) - Documentation générale, Fouilles et Antiquités (chef de bureau : Joëlle Bromberger, puis M. Brichet) - Sites (chef de bureau : Mme Vallée, puis Colette Meynier)</RiC:noteOnStructureOrGenealogy>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051150-d4450e166"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051150-d4450e169"/>
+      <RiC:agentIsTargetOfAgentTemporalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentTemporalRelation/051149-d4449e218"/>
+      <RiC:agentIsSourceOfAgentTemporalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentTemporalRelation/051150-d4450e239"/>
+      <RiC:agentIsTargetOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/051150-d4450e251"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051150-d4450e272"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051150"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051150-d4450e153">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051150_d4452e45">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051150-d4450e85"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051150_d4452e48">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1947-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1947-10-31</RiC:endDate>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051150-d4450e91"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051150_d4452e57">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1945-08-18</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1946-12-31</RiC:endDate>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051150-d4450e109"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051150">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/051150"/>
+      <RiC:creationDate>2015-12-09</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_051150</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051150"/>
+   </rdf:Description>
+</rdf:RDF>

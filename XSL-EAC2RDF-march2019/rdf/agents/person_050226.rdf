@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050226">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Mauco, Georges (1899-1988)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050226_d3832e43"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1899-01-01</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-12-31</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050226-d3830e105"/>
+      <RiC:history xml:lang="fr">D’origine modeste, Georges Mauco (1899-1988) réussit en 1924 le professorat des Écoles normales et passe en même temps le baccalauréat puis une licence d’histoire. Il enseigne quelques mois à l’École primaire supérieure Jean-Baptiste Say et y rencontre l’épouse du psychanalyste René Laforgue, qui crée avec la princesse Marie Bonaparte en 1926 la Société psychanalytique de Paris, où Mauco assiste puis participe aux conférences. C’est en compagnie de Laforgue qu’il rencontre Freud lui-même à Karlsbad, en Tchécoslovaquie. En 1928, Mauco entreprend, sous la direction d’Albert Demangeon, une thèse de doctorat sur les étrangers immigrés en France, qu’il soutient en 1932. Secrétaire général du Comité français de la population, il en organise le congrès international à Paris en 1937 et il collabore, entre 1935 et 1940, à de nombreux travaux au sein de la Commission de statistique générale, de la SDN, du Bureau international du travail ainsi qu’à la revue Géographie. Mauco participe en 1938 au Congrès international de psychanalyse qui a lieu à Paris.  Durant l’Occupation, il reste membre du Parti populaire français de Jacques Doriot, dont il démissionne en 1942. Il rejoint le groupe FFI Foch-Lyautey. A la Libération, il est appelé par de Gaulle pour ses compétences en matière de population. En septembre 1944, il propose au chef du gouvernement un texte sur la formation d’un haut comité consultatif de la famille et de la population. Le haut comité constitue en 1945 l’Office national d’immigration et donne, en 1946, un statut officiel aux travailleurs immigrés. Le 1er mai 1946 ouvre au lycée Claude-Bernard le premier Centre psycho-pédagogique. Cette création est bientôt suivie par celle des centres de Strasbourg, d’Avignon et de Tours. Georges Mauco dirige le centre Claude-Bernard jusqu’en 1971.  A partir de 1971, Mauco cesse toute activité officielle tout en continuant d’exercer jusqu’en 1981 à la Société française de psychanalyse (créée en 1953 par des analystes de la Société psychanalytique de Paris).</RiC:history>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050226-d3830e133"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050226"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050226-d3830e105">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">Psychanalyste. Spécialiste en psycho-pédagogie</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d-8o1o09an5--1hqno6l8gqwkw"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050226-d3830e133">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Mauco, Georges (1899-1988) et l'ensemble de documents "Fonds Georges Mauco (1914-1987)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/003503-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050226_d3832e43">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050226-d3830e82"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050226">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050226"/>
+      <RiC:creationDate>2016-07-28</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050226</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050226"/>
+   </rdf:Description>
+</rdf:RDF>

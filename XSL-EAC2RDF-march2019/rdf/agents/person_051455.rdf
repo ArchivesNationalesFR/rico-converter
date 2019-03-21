@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051455">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Delli Fiori, Julien (1943-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051455_d4701e45"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1943-01-01</RiC:birthDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051455-d4699e102"/>
+      <RiC:history xml:lang="fr">Julien Delli Fiori est né à Rome en 1943. Il effectue six années d’apprentissage en ateliers de haute couture et un séjour à Montréal avant d’entrer chez Hermès en 1967. En 1968, il est assistant de décoration et de costumes pour plusieurs productions théâtrales chez Rita Bayance. Il devient ensuite illustrateur sonore pour la télévision, notamment pour l’émission "Dim Dam Dom". Assistant de cinéma au début des années 1970, il participe à la création de Fip en 1971 en qualité de programmateur et devient rapidement l’un des présentateurs de "Jazz à Fip". Tout en poursuivant sa collaboration avec Fip, Julien Delli Fiori arrive sur France Inter en 1985 avec Clémentine Célarié pour "Jazz à tous les étages". Suivront "Certains l’aiment music music", "L’hippopotame fait des bulles de savon", "Tutti tout ouïe", "Extérieurs jazz" et "Ascenseur pour le jazz". A partir de 1991, il produit" Night and day", émission de France Inter en direct de festivals comme « Jazz à Vienne », « Jazz in Marciac », « Tempo latino », « Deauville jazz festival », le Festival d’Antibes Juan-les-Pins ou « Jazz sous les pommiers ». En 2002, il est nommé conseiller artistique, chargé de la couleur d’antenne auprès du directeur de France Inter. A partir de 2006, il assure également deux chroniques sur la chaîne : "Toc-Toc musical", les samedi et dimanche, et, le jeudi, dans "Et pourtant elle tourne". En février 2010, il est nommé directeur de FIP. Il reste à la tête de FIP jusqu'en mai 2014. Par ailleurs, Julien Delli Fiori consacre en 1990 quatre émissions de télévision à Dee Dee Bridgewater sur 52e rue et, en 1992, présente "Tant qu’il y aura du jazz", un rendez-vous hebdomadaire sur MCM-TV. Il est chroniqueur musical pour le mensuel JazzMan depuis 1991.</RiC:history>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb14092229b#foaf:Person"/>
+      <isni:ISNIAssigned>000000011936358X</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051455-d4699e136"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/000347-d13e585"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051455-d4699e178"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051455"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051455-d4699e102">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d-1axy38anu-1ua8su5ef37p1"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051455-d4699e178">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Delli Fiori, Julien (1943-....) et l'ensemble de documents "Radio France. France Inter. Archives papier des émissions de Julien Delli Fiori « Ascenseur pour le jazz » (1997-2010), « Extérieurs jazz » (1997-2006), « Night and day » (1992-2009), « Jazz à tous les étages » (1998), « Appellation Contrôlée » (2000). 1992-2010"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/055870-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051455_d4701e45">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051455-d4699e82"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051455">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051455"/>
+      <RiC:creationDate>2017-02-23</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-02-23</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051455</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/000000011936358X"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051455"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb14092229b"/>
+   </rdf:Description>
+</rdf:RDF>

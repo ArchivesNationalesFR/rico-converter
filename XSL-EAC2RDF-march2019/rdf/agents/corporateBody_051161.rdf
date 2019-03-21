@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/051161">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">France. Ministère d'État (1852-1869)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051161_d4462e60"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/52976160-9459-49db-94cb-245844db9dff"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1852-07-22</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1869-07-17</RiC:endDate>
+      <RiC:history xml:lang="fr">Le ministère d’État est créé par décret du 22 janvier 1852, avec les attributions suivantes : les rapports du Gouvernement avec le Sénat, le Corps législatif et le Conseil d’État, la correspondance du Président avec les divers ministères, le contreseing des décrets portant nomination des ministres, la nomination des présidents du Sénat et du Corps législatif, la nomination des sénateurs et concession des dotations qui peuvent leur être attribuées, la nomination des membres du Conseil d’État, le contreseing des décrets rendus par le Président, la rédaction et la conservation des procès-verbaux du Conseil des ministres, la direction du Moniteur, l’administration des palais nationaux et des manufactures nationales. On y annexe un peu plus tard les budgets et comptes de la Légion d’honneur (17 mars 1852), les bibliothèques des palais nationaux (27 mars 1852), les services des Beaux-Arts et des Archives impériales (14 février 1853), la création de la médaille commémorative de la campagne d’Italie (décret du 5 novembre 1859), les services du ministère de l’Instruction publique qui ne touchaient pas directement à l’enseignement public (essentiellement les bibliothèques), et le service des haras distrait du ministère de l’Agriculture, du Commerce et des Travaux Publics (décret du 24 novembre 1860). On y ajoute l’administration de l’Opéra (décret du 6 janvier 1861), la publication de la correspondance de Napoléon Ier (décret du 16 janvier 1861), l’exposition des oeuvres des artistes vivants (décret du 2 février 1861), la création de la médaille commémorative de l’expédition en Chine (décret du 2 août 1861). Le 23 juin 1863, un grand nombre de services est distrait du ministère d’État, ainsi dégagé de prérogatives administratives, pour être attribué au ministère de la Maison de l’Empereur, qui prend le nom de ministère de la maison de l’Empereur et des Beaux-Arts, le reste échouant au ministère de l’Instruction publique. La suppression du ministère d’État, par un décret du 17 juillet 1869, place dans les attributions du garde des Sceaux tout le service législatif. Quant aux services des Beaux-Arts passés en 1863 au ministère d’État, au ministère de la Maison de l’Empereur, puis au ministère de la Maison de l’Empereur et des Beaux-Arts, ils finissent par constituer le 2 janvier 1870 le ministère des Beaux-Arts avant de prendre le titre de ministère des Lettres, Sciences et Beaux-Arts, supprimé le 23 août 1870 dont les services sont réunis au ministère de l’Instruction publique le 5 septembre 1870. De nombreux documents sont mélangés et communs aux deux ministères : le ministère d’État et le ministère de la Maison de l’Empereur, en raison du fait que tous les deux eurent le même titulaire : Achille Fould.</RiC:history>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb11685064f#foaf:Organization"/>
+      <RiC:agentIsSourceOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/051156-d4455e272"/>
+      <RiC:agentIsSourceOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/051123-d4425e218"/>
+      <RiC:agentIsSourceOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/051164-d4463e621"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051159-d4458e245"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050583-d4110e280"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051161"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051161_d4462e60">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051161-d4460e109"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051161">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/051161"/>
+      <RiC:creationDate>2015-12-01</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-03-22</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051161</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">État général des fonds des Archives nationales (Paris) : F/70 ministère d'État (Second Empire). Disponible en ligne sur le site des Archives nationales : http://www.archivesnationales.culture.gouv.fr/chan/chan/series/pdf/F70-2009.pdf</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051161"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb11685064f"/>
+   </rdf:Description>
+</rdf:RDF>

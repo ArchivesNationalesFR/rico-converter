@@ -1,0 +1,70 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050292</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-05-06</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Vanessa ASPART</agent>
+            <eventDescription>F. Clavaud, 6 mai 2014 : changé forme du nom</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, Fonds Harispe (1794-1870), 623 AP.</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Harispe, Jean-Isidore (1768-1855)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1768-01-01">1768</fromDate>
+               <toDate standardDate="1855-12-31">1855</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Originaire des Basses-Pyrénées, Jean-Isidore Harispe (1768-1855) commença sa carrière militaire en 1793, comme capitaine commandant une compagnie franche organisée à Saint-Jean-Pied-de-Port. Il prit part aux guerres de la Révolution à la frontière des Pyrénées (1793-1799), puis à l’armée de réserve (1800). Colonel en 1802, il servit à l’armée d’Italie sous les ordres de Moncey et de Brune, puis il fut à la division Desjardins (corps Augereau) à la Grande Armée (1805-1806). Blessé à la jambe à Iéna, le 14 octobre 1806, Harispe fut nommé général de brigade, le 29 janvier 1807 et fut affecté au corps de Soult. Placé provisoirement au 1er corps sous Bernadotte, le 10 avril 1807, il fut affecté au Corps d’observation des Côtes de l’Océan puis fut envoyé en Espagne où il gagna le grade de général de division en 1810. Il n’en revint qu’en 1814. Commandant la 8e division d’infanterie à l’armée des Pyrénées, Harispe participa à la bataille de Toulouse, le 10 avril 1814. Après la chute de l’Empire, le général Harispe exerça différents commandements, mais son ralliement à l’Empereur pendant les Cent-Jours entraîna sa mise à l’écart sous la seconde Restauration. La monarchie de Juillet lui permit de reprendre du service actif et de renouer ainsi d’étroits rapports avec le maréchal Soult. Commandant des Hautes et Basses-Pyrénées (1830-1833), de la division active des Pyrénées occidentales (1833-1840) puis de la 20e division militaire (1840-1850), il dut, lors de la première guerre carliste, empêcher tout passage des légitimistes de France en Espagne et aider, discrètement, le gouvernement de Madrid contre Don Carlos. Député des Basses-Pyrénées de 1831 à 1835, grand-croix de la Légion d’honneur en 1833, Jean-Isidore Harispe fut nommé pair de France en 1835 et élevé à la dignité de maréchal de France par le prince-président, le 11 décembre 1851. Il entra de droit au Sénat du Second Empire en janvier 1852.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:type="simple"
+                      xlink:href="FRAN_NP_050276">
+            <relationEntry>Dutey-Harispe, Adrien</relationEntry>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_003549"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Harispe (1794-1870)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

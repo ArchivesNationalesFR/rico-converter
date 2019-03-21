@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050253">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Bouthillier, Yves (1901-1977)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050253_d3850e43"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1901-02-26</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1977-01-04</RiC:deathDate>
+      <RiC:history xml:lang="fr">Sorti de l’École centrale en 1922, licencié en droit en 1925, Yves Bouthillier est inspecteur des Finances en 1929, chef de cabinet du ministre des Finances en 1931, directeur du Budget en 1935. Paul Reynaud le nomme secrétaire général du ministère des Finances, le 1er novembre 1938, avant de lui confier le ministère lui-même le 5 juin 1940. Partisan de la signature de l’armistice, Bouthillier prône une politique de « révolution nationale ». Après avoir tenté vainement d’obtenir le départ de Laval, il démissionne le 17 avril 1942. Il est alors nommé procureur général près la Cour des comptes. Il participe à la rédaction de l’acte constitutionnel n° 4 instituant, le 27 septembre 1943, un collège de sept membres chargé d’exercer les fonctions de l’exécutif en cas d’empêchement de Pétain. Arrêté par la Gestapo et déporté en Allemagne, il est condamné, après la Libération, à trois ans de prison et à l’indignité nationale. Il devient ensuite administrateur de la Banque commerciale de Paris (groupe Marcel Dassault) et maire de Saint-Martin-de-Ré.</RiC:history>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050253"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050253_d3850e43">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050253-d3848e82"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050253">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050253"/>
+      <RiC:creationDate>2013-12-10</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050253</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050253"/>
+   </rdf:Description>
+</rdf:RDF>

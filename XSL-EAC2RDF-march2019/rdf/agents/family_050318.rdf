@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/family/050318">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Family"/>
+      <rdfs:label xml:lang="fr">Girardin (famille de)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050318_d3900e78"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1701-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1900-12-31</RiC:endDate>
+      <RiC:history xml:lang="fr">La famille de Girardin, d'origine italienne, s'installe en France au XVIIe siècle. Elle fait franciser son nom Gherardini en Girardin. Le premier ancêtre installé en France est Claude, anobli en 1643, qui a comme épouse Anne de Chaumont. Leur fils Pierre épouse en 1643 Anne de Villers. René-Louis Girardin de Vauvré (1647-1724), leur fils, est intendant de la Marine, conseiller de la Marine et conseiller d’État. Il supervise la réalisation de l’ensemble des travaux entrepris vers 1680-1690 au port de Toulon, en collaboration avec Abraham Duquesne et Vauban. Avec Louise-Françoise Bellinzani (1664-1752) qu'il épouse en 1680, il a deux fils, Alexandre-Louis (1685-1745) et Louis-Alexandre (1699-1782). Ce dernier épouse Catherine Hatte et est le père de René-Louis de Girardin (1735-1808), qui poursuit une brève carrière militaire, se met au service du roi Stanislas de Lorraine (vers 1760-1766), avant de devenir en 1766 seigneur d'Ermenonville (Oise) et créateur des jardins d'Ermenonville, premier jardin à l'anglaise sur le continent. Admirateur de Jean-Jacques Rousseau, le marquis de Girardin l'invite à séjourner dans sa propriété ; c'est là que le philosophe ami de la nature décède le 2 juillet 1778. De son mariage avec Brigitte-Adélaïde-Cécile Berthelot de Baye (1736-1818), le marquis de Girardin a six enfants : Cécile-Stanislas-Xavier de Girardin (1762-1827) ; Sophie de Girardin (1763-1845) qui épouse en 1781 Alexandre comte de Vassy puis en 1803 le comte de Bohm ; Alexandre-Louis de Girardin (1767-1848) ; Amable-Ours-Séraphin de Girardin (1769-1794) ; Alexandre-Robert de Girardin (1776-1855) dont le fils naturel Émile Delamothe dit Émile de Girardin (1806-1881) sera un célèbre journaliste et homme politique ; et Adelaïde de Girardin. Cécile- 
+     Stanislas-Xavier-Louis de Girardin (1762-1827), fils aîné de René-Louis de Girardin est le filleul du roi Stanislas de Lorraine et élève de Rousseau. Il est député de l'Oise à l'Assemblée législative (1791), membre du Tribunat (1799-1807), général en 1808, comte de l'Empire en 1811, préfet de Rouen puis de Dijon sous la Restauration, député de la Seine-Inférieure en 1819, réélu en 1824. Il épouse en 1807 Marie-Françoise Serres dont il a trois enfants : Ernest, Euphrasie et Stanislas. 
+     Son frère cadet Alexandre-François- 
+     Louis de Girardin (1767-1848) est capitaine dans l'armée royale et entre dans la garde nationale en 1789. Créé comte de l'Empire en 1810, il est député de l'Oise au Corps législatif de 1804 à 1815. Il épouse en 1793 Alexandrine Berthelot de Blaye dont il a un fils, Numance. De son deuxième mariage en 1801 avec Jeanne-Victoire-Henriette de Navailles, veuve d'Armand Désiré Vigneret du Plessis-Richelieu, duc d'Aiguillon, sont issus Euriale, Télésie et Éleuthère. 
+     Télésie de Girardin (1801-1886) épouse en premières noces Louis Pépin de Belle-Isle puis en secondes noces Auguste-Gabriel-Barthélémy, comte de Ludre.</RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050318--d3898e174"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050318-d3898e209"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050318-d3898e215"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050318"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050318-d3898e215">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Girardin (famille de) et l'ensemble de documents "Fonds Girardin (1786-1853)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/004387-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050318_d3900e78">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050318-d3898e146"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050318--d3898e174">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Girardin (famille de)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050318-d3898e169"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050318">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/family/050318"/>
+      <RiC:creationDate>2014-04-04</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-06-07</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_050318</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Archives nationales, Fonds Girardin (506 AP).</RiC:source>
+      <RiC:source xml:lang="fr">Généalogie sur le site Roglo (http://roglo.eu/roglo?lang=fr;i=4305726).</RiC:source>
+      <RiC:source xml:lang="fr">Article Louis Stanislas de Girardin de Wikipédia en français (http://fr.wikipedia.org/wiki/Louis_Stanislas_de_Girardin).</RiC:source>
+      <RiC:source xml:lang="fr">Article René-Louis de Girardin de Wikipédia en français (http://fr.wikipedia.org/wiki/Ren%C3%A9-Louis_de_Girardin).</RiC:source>
+      <RiC:source xml:lang="fr">Article Louis de Girardin de Wikipédia en français (http://fr.wikipedia.org/wiki/Louis_de_Girardin).</RiC:source>
+      <RiC:source xml:lang="fr">Notice d'autorité BnF n° FRBNF12196902 : Girardin, Stanislas (1762-1824 ; comte de) (http://catalogue.bnf.fr/ark:/12148/cb121969023)</RiC:source>
+      <RiC:source xml:lang="fr">Notice d'autorité BnF n° FRBNF11343708 : Girardin, Alexandre-François-Louis de (1767-1848) (http://catalogue.bnf.fr/ark:/12148/cb113437082)</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050318"/>
+   </rdf:Description>
+</rdf:RDF>

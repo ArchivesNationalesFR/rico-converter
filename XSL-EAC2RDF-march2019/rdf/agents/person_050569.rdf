@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050569">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Murat, Lucien (1803-1878 ; prince)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050569_d4098e48"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050569_d4098e51"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050569_d4098e54"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1803-05-16</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1878-04-11</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050569-d4096e123"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050569-d4096e144"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050569-d4096e165"/>
+      <RiC:history xml:lang="fr">Lucien Murat (1803-1878), 3e prince Murat, prince royal des Deux-Siciles, prince de Ponte-Corvo. Né à Milan le 16 mai 1803, Lucien Napoléon Charles Murat est le second fils de Joachim Murat et de Caroline Bonaparte. Il est élevé à Naples (Italie). Après les évènements de 1815 il suit sa mère aux environs de Trieste, réside à Venise et s'embarque en 1824 pour les États-Unis. Le navire qu'il monte ayant fait naufrage sur les côtes d'Espagne, il est retenu prisonnier et obtient sa mise en liberté à grand peine. Arrivé aux États-Unis il épouse, en 1831, une riche Américaine, miss Carolina Georgina Fraser (1810-1879) ; mais des revers de fortune obligent bientôt Mme Murat à fonder pour vivre un pensionnat de jeunes filles. Le couple a cinq enfants : Caroline (1833-1902), Joachim (1834-1901, 4e prince Murat), Anna (1841-1924), Achille (1847-1895) et Louis-Napoléon (1851-1912). Il vient en France par deux fois, en 1839 et 1844. Il regagne définitivement la mère patrie en 1848, et est élu député du Lot à la Constituante, puis député de la Seine à la Législative de 1849. Le 3 octobre 1849, il est ministre plénipotentiaire à Turin (1849-1850). Cette même année, il est choisi comme colonel par la garde nationale de la banlieue de Paris. Devenu sénateur à la suite du coup d'État par décret du 25 janvier 1852, il obtient en 1853 le titre de prince. Au lendemain du coup d'État de décembre 1851, les dignitaires du Grand Orient, Berville et Desanlis ne voient d'autres moyens pour sauver l'obédience que d'offrir la grande maîtrise au prince Murat qui l'accepte. Il fait voter la constitution de 1854 qui donne au Grand-Maître, élu pour sept ans, de grands pouvoirs. Il crée la Société civile pour l'édification du temple de la maçonnerie française (1853-1854) et fait l'achat de l'immeuble du 16, rue Cadet à Paris. En 1859, le prince se heurte à la majorité des membres du Grand Orient à propos de l'unité italienne et du pouvoir temporel du pape. À la suite d'incidents, à la demande de Napoléon III, il donne sa démission le 29 juillet 1861. Le prince Lucien reçoit en don de l'Empereur, outre une importante dotation, le château de Buzenval, près de Versailles (Yvelines), et l'hôtel qui est à l'extrémité du cours de la Reine. Il meurt à Paris le 11 avril 1878.</RiC:history>
+      <isni:ISNIAssigned>0000000029564273</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050569-d4096e215"/>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/050551-d4079e258"/>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/050569-d4096e227"/>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/050556-d4084e284"/>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/050553-d4081e228"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050569-d4096e251"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050569"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050569-d4096e123">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1852-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1870-12-31</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">Lucien Murat est sénateur sous le Second Empire (1852-1870).</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj9l7t-1gb5a09kkzrmp"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050569-d4096e144">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1849-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1850-12-31</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">Lucien Murat est ministre plénipotentiaire à Turin (Italie) (1849-1850).</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjqtlt--8qlp1v5rp9ov"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050569-d4096e165">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1848-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1851-12-31</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">Lucien Murat est député du Lot du 23 avril 1848 au 2 décembre 1851.</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050569-d4096e251">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Murat, Lucien (1803-1878 ; prince) et l'ensemble de documents "Fonds Murat (1746-1965).#Papiers de Lucien Murat (1803-1878).#31AP/57-31AP/64"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/FRAN_IR_050305-G9111"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050569_d4098e48">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050569-d4096e88"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050569_d4098e51">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050569-d4096e94"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050569_d4098e54">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050569-d4096e100"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050569">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050569"/>
+      <RiC:creationDate>2015-10-26</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050569</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000029564273"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050569"/>
+   </rdf:Description>
+</rdf:RDF>

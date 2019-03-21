@@ -1,0 +1,106 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012423</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE02299</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Noémie SANTACANA Les notaires au Châtelet de Paris à l'époque du Cardinal de Fleury, mémoire de maîtrise 2003-2004, dact., p. 257-258</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Doyen, Antoine-François</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1723-03-20">20 mars 1723</fromDate>
+               <toDate standardDate="1767-08-18">18 août 1767</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvox0hv--s68ql74wtyjp">saint-germain-l'auxerrois (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvh220l-1al4q54vj0iiz">sainte-opportune (quartier)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvganm6--1if1tsie3g2r">louvre (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzcypb7e-1qdyqzsq67dv4">roule (rue du)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzdhfjmx--10zreliwgalua">thibaud-aux-dés (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzc0g4id--1ors2repvlab3">mauvaises-paroles (rue des)</placeEntry>
+               <placeEntry localType="nomLieu">rue du Roule, (de 1723 à 1752), rue Thibaud-aux-Dés, derrière la Monnaie (de 1753 à 1762), rue des Mauvaises-Paroles, (de 1762 à 1767)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1723-03-20">20 mars 1723</fromDate>
+                  <toDate standardDate="1767-08-18">18 août 1767</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Baptisé le 22 mai 1693</p>
+            <p>marié à Geneviève Brochant (voir ET/VIII/966, 23 janvier 1725, contrat de mariage)</p>
+            <p>décédé le 15 octobre 1767 à Fontenay aux Roses</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010242"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale CXV</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1723-03-20">20 mars 1723</fromDate>
+               <toDate standardDate="1767-08-18">18 août 1767</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">V/1/256 pièce 80, 20 mars 1723, lettre de provision d'office</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XXIII/692, 26 octobre 1767, inventaire après décès</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_053424"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Antoine François Doyen pour l'étude CXV</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

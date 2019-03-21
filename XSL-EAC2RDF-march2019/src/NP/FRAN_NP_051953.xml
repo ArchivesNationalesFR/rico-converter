@@ -1,0 +1,100 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051953</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2018-01-29</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Samuel GIBIAT</agent>
+            <eventDescription>Notice créée par Samuel Gibiat le 29 janvier 2018.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2018-01-29</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Samuel GIBIAT</agent>
+            <eventDescription>Notice créée par Samuel Gibiat à la demande du service des Archvies de la Présidence de la République le 29 janvier 2018</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2018-02-02</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
+            <eventDescription>F. Clavaud, 2 février 218 : ajouté lien d'association</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Fiche documentaire du Service des archives et de l'information documentaire de la Présidence de la République</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Pas de numéro ISNI ni de notice d'autorité de la BnF.</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>France. Secrétariat particulier du Président de la République (1946-....)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Secrétariat particulier du Président de la République</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1946-01-01">1er janvier 1946</fromDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>présidence de la République</term>
+            </legalStatus>
+         </legalStatuses>
+         <biogHist>
+            <p>Le Président de la République dispose d’une équipe de secrétaires qui lui sont directement affectées. Celle-ci constitue le secrétariat particulier du Président de la République et occupe un bureau contigu au bureau présidentiel. </p>
+            <p/>
+            <p>
+               <span style="bold">Effectifs </span>
+            </p>
+            <p>L'effectif du secrétariat particulier est généralement composé de quatre personnes dont un chef du secrétariat particulier.</p>
+            <p/>
+            <p>
+               <span style="bold">Missions </span>
+            </p>
+            <p>Ce service exerce les fonctions habituelles d’un secrétariat. Cependant, certaines missions ont pu évoluer au fil des mandats présidentiels. </p>
+            <p>Ainsi, le secrétariat était chargé jusqu’en 1974 d’ouvrir et d’enregistrer le courrier adressé au Président et de le répartir entre les conseillers ou les services de la Présidence. Une fois la réponse rédigée, il se chargeait de la mettre à la signature du Président, puis de l’enregistrer avant de l’envoyer. Des minutiers chronologiques de ces courriers étaient conservés par le secrétariat particulier. Devant le volume croissant de la correspondance reçue à la présidence, cette tâche a été remplie par un service dédié, le secrétariat particulier ne gérant plus que la correspondance personnelle du Président.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_000001"
+                      xlink:type="simple">
+            <relationEntry>Présidence de la République</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1946-01-01">1946</fromDate>
+            </dateRange>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

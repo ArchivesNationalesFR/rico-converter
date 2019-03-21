@@ -1,0 +1,97 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050447</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-07-04</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>Elsa Camus, 4 juillet 2016 : modification forme autorisée du nom, ajout autres formes du nom, modification historique (verbes), ajout activités, ajout lieu, ajout lien d'association, modification sources</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, fonds Luxure-Luxeuil (72AP).</p>
+               <p>Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb12528917v</p>
+               <p>Notice Wikipedia : https://fr.wikipedia.org/wiki/Alexandre_de_Lameth</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Lameth, Alexandre de (1760-1829)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Lameth, Alexandre-Théodore-Victor (1760-1829)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Lameth, Alexandre Comte de (1760-1829)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Lameth, Comte de (1760-1829)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1760-10-28">28 octobre 1760</fromDate>
+               <toDate standardDate="1829-03-18">18 mars 1829</toDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="lieu" vocabularySource="d5bdpnc6n8--6t8agr79pl90">Etats-Unis</placeEntry>
+            </place>
+         </places>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msiribo--1dn34eg8lht4f">député</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msjpuqr-66gt6kmedjiv">officier (armée)</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Alexandre-Théodore-Victor, comte de Lameth, combat sous les ordres de Rochambeau en Amérique. Il suit La Fayette à l’armée du Nord en 1792 et partage sa disgrâce. Fait prisonnier par les Autrichiens, il subit une captivité de trois ans. Il revient en France en 1799. </p>
+            <p>Élu député pendant la Restauration, il siège parmi les libéraux.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050404"
+                      xlink:type="simple">
+            <relationEntry>Luxure-Luxeuil, François (1788-1829)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1816-01-01">1816</fromDate>
+               <toDate standardDate="1829-03-18">18 mars 1829</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>F. Luxure-Luxeuil travaille pour A. de Lameth</p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

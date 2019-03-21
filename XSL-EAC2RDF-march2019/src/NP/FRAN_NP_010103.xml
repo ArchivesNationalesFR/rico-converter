@@ -1,0 +1,66 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010103</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Import_SIA</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2013-10-08</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Virginie POTIN</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Febvre, Lucien</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1878-07-22">22 juillet 1878</fromDate>
+               <toDate standardDate="1956-09-25">25 septembre 1956</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Auteur d’une thèse sur Philippe II et la Franche-Comté (1911), fondateur avec Marc Bloch des Annales d’histoire économique et sociale (1929), Lucien Febvre (1878-1956) fut professeur au Collège de France (1933). Influencé par Paul Vidal de la Blache, il publia La Terre et l’évolution humaine (avec M. Bataillon, 1922) où il montra les liens existants entre l’histoire et la géographie. Il écrivit ensuite Un destin, Martin Luther (1928), Le Problème de l’incroyance au XVIe siècle, la Religion de Rabelais (1942), L’Apparition du livre (avec Henri-Jean Martin, 1957), Au cœur religieux du XVIe siècle (1957). Sa conception de l’histoire, comprise comme une synthèse des éléments politiques, économiques, sociaux, religieux, culturels et mentaux, est exposée dans ses Combats pour l’histoire (1953). Président du Comité d’histoire de la Deuxième Guerre mondiale, délégué de la France à la Conférence générale de l’Unesco successivement à Paris, Mexico et Beyrouth, président de la 6e section de l’École pratique des hautes études, Lucien Febvre dirigea aussi L’Encyclopédie française créée avec A. de Monzie (1935). </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_051423"
+                      xlink:type="simple">
+            <relationEntry>Bloch, Marc (1886-1944)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1929-01-01">1929</fromDate>
+               <toDate standardDate="1944-12-31">1944</toDate>
+            </dateRange>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

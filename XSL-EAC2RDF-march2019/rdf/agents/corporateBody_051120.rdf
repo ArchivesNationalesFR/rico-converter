@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/051120">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">France. Ministère de l'Intérieur. Direction des Beaux-Arts. Bureau des Monuments historiques (1839-1848)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051120_d4424e66"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1839-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1848-12-31</RiC:endDate>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051120-d4422e145"/>
+      <RiC:history xml:lang="fr">La fonction de conservation des monuments historiques est assurée par le département Beaux-Arts, qui voit le jour dès 1789 avec la nomination de François-Emmanuel Guignard de Saint-Priest comme ministre de la Maison du roi. Aucun service n’est véritablement dédié aux monuments historiques, mais dès 1819 le ministère de l’Intérieur consacre un budget à "la conservation des anciens monuments". Le 23 octobre 1830, un poste d’inspecteur général des monuments historiques est créé sur ordonnance royale au sein du bureau des Beaux-Arts. François Guizot, ministre et secrétaire d’État au département de l’Intérieur, propose au roi Louis-Philippe de nommer Ludovic Vitet comme premier inspecteur. Il est remplacé en 1834 par Prosper Mérimée. L'inspecteur général a pour mission de veiller à la conservation des monuments historiques. Le 29 septembre 1837, une commission des Monuments historiques est créée au ministère de l’Intérieur. Elle est chargée de sélectionner les monuments à entretenir et à restaurer, et répartit les crédits alloués à la sauvegarde. Elle publie en 1840 la première liste des monuments classés. Le bureau en charge des monuments historiques est créé le 19 février 1839 au sein de la direction des Monuments publics et historiques au ministère de l'Intérieur. Il est transféré à la direction des Beaux-Arts le 25 septembre de la même année pour y rester durablement. À sa création, le bureau regroupe l’inspecteur général ainsi que la commission des Monuments historiques. Ce premier bureau se maintient de 1839 à 1848, puis il est supprimé provisoirement. La fonction administrative continue à être exercée au sein de la division des Beaux-Arts (au bureau des Beaux-Arts, des Musées et des Monuments historiques) jusqu’à ce que le bureau en charge des monuments historiques soit rétabli en 1853.</RiC:history>
+      <RiC:noteOnStructureOrGenealogy xml:lang="fr">Le bureau des Monuments historiques est le deuxième bureau de la direction des Beaux-Arts. Il est composé d’un chef (M. Grille de Beuzelin puis M. de Courmont et enfin Eugène Viollet-le-Duc), d’une Inspection des Monuments historiques (constitué du seul inspecteur-général Prosper Mérimée) et de la Commission des Monuments historiques.</RiC:noteOnStructureOrGenealogy>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051120-d4422e158"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051120-d4422e161"/>
+      <RiC:agentIsSourceOfAgentTemporalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentTemporalRelation/051120-d4422e223"/>
+      <RiC:agentIsTargetOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/051120-d4422e202"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051120-d4422e235"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051120"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051120-d4422e145">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d5bhviikk9--y6te63k761ib"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051120_d4424e66">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051120-d4422e113"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051120">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/051120"/>
+      <RiC:creationDate>2015-12-08</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_051120</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051120"/>
+   </rdf:Description>
+</rdf:RDF>

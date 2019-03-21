@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050527">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Rostaing, Philippe-Joseph (comte de)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050527_d4057e43"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050527_d4057e46"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1719-01-01</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1796-04-21</RiC:deathDate>
+      <RiC:history xml:lang="fr">Philippe-Joseph, comte de Rostaing (1719-1796), fut commissaire ordinaire puis inspecteur général de l’artillerie, commanda tour à tour les écoles d’artillerie de Grenelle et d’Auxonne et mourut lieutenant-général. Il eut un grand rôle à l’île de France où, associé à un certain Jean-Auguste-Thomas-Gilles Hermans puis au comte de Latour de Saint-Igest, il créa et installa les premières forges de cette colonie, puis en Espagne, où il prit part, comme commandant des Équipages de l’artillerie, à la campagne de 1762 à 1764. Rentré en France en 1774, il commanda tour à tour les écoles d’artillerie de Grenelle et d’Auxonne. Inspecteur général d’artillerie en 1779, maréchal de camp en 1780, lieutenant général en 1791, il fut suspendu de ses fonctions le 25 août 1793 et arrêté le 3 décembre 1794. Il mourut le 9 germinal an IV (21 avril 1796), ne laissant que deux filles de son mariage avec Marie-Henriette de Lur de Saluces.</RiC:history>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050527"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050527_d4057e43">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050527-d4055e82"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050527_d4057e46">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050527-d4055e88"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050527">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050527"/>
+      <RiC:creationDate>2014-01-16</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050527</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050527"/>
+   </rdf:Description>
+</rdf:RDF>

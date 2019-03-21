@@ -1,0 +1,103 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012895</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE02810</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Béville, Charles-Louis</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1807-07-04">4 juillet 1807</fromDate>
+               <toDate standardDate="1813-01-07">7 janvier 1813</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="voie" vocabularySource="d3nzc3ddtx-undprrkvjiz6">mont-blanc (rue du)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzcb6q3y-uycw0x32zia8">orléans (rue d')</placeEntry>
+               <placeEntry localType="nomLieu">26 rue du Mont-Blanc (de 1807 à 1810), 28 rue d'Orléans, porte Saint-Denis (de 1811 à 1813)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1807-07-04">4 juillet 1807</fromDate>
+                  <toDate standardDate="1813-01-07">7 janvier 1813</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Né le 20 août 1780 à Saint-Denis (Seine-Saint-Denis)</p>
+            <p>D'abord principal clerc de maître Caigné-Desouches (étude XLIII)</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010163"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XXXVI</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1807-07-04">4 juillet 1807</fromDate>
+               <toDate standardDate="1813-01-07">7 janvier 1813</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">BB/10/347, 5 janvier 1807, dossier de nomination</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041979"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Charles Louis BÉVILLE, 4 juillet 1807 - 6 janvier 1813 (étude XXXVI)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_050942"
+                           xlink:type="simple">
+            <relationEntry localType="archival">«Mélanges» (dossiers de clients) de l’étude XXXVI. MC/ET/XXXVI/148, MC/ET/XXXVI/669, MC/ET/XXXVI/671, MC/ET/XXXVI/777/A-MC/ET/XXXVI/777/F (1551-1952)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051941"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Charles Louis Béville pour l'étude XXXVI</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

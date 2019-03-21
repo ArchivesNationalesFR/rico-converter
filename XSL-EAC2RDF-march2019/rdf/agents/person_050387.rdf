@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050387">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Caillaux, Joseph</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050387_d3952e34"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1863-01-01</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1944-12-31</RiC:deathDate>
+      <RiC:history xml:lang="fr">Fils d’Eugène Caillaux, qui fut lui-même parlementaire et ministre, Joseph Caillaux (1863-1944) fut député (Sarthe, 1898), plusieurs fois ministre des Finances et il contribua à faire voter, par la Chambre, l’impôt progressif sur le revenu. Président du Conseil (1911), il négocia avec l’Allemagne le traité de novembre après l’incident d’Agadir, puis reprit le portefeuille des Finances dans le cabinet Doumergue (1913). Sa politique d’impôt sur le revenu lui valut d’être violemment attaqué par le journal Le Figaro (soutenu par Barthou et Poincaré). L’assassinat du directeur du Figaro, Calmette, par sa femme, l’obligea à donner sa démission (1914). Envoyé en mission en Amérique du Sud, puis en Italie au cours de la Première Guerre mondiale, il fut suspecté par les nationalistes et arrêté par le gouvernement Clemenceau (1917). Condamné par la Haute Cour de justice pour aide involontaire à l’ennemi (1920), il fut amnistié quelques années plus tard. Réélu député, il fut nommé ministre des Finances dans le cabinet Painlevé (1925). Sénateur (1925), il resta président de la commission des Finances jusqu’en 1940. Il est l’auteur de Mémoires.</RiC:history>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050387-d3950e94"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050387"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050387_d3952e34">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050387-d3950e64"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050387">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050387"/>
+      <RiC:creationDate>2013-10-08</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050387</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050387"/>
+   </rdf:Description>
+</rdf:RDF>

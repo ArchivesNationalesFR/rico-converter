@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050081</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-08-13</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Raphael BAUMARD</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2013-10-16</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Raphael BAUMARD</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_050081-d3709e79">
+            <part>Malesherbes, Chrétien-Guillaume de Lamoignon de</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1721-12-06">6 décembre 1721</fromDate>
+               <toDate standardDate="1794-04-22">22 avril 1794</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Chrétien Guillaume de Lamoignon de Malesherbes (1721-1794), surtout connu pour avoir défendu Louis XVI, succéda à son père à la tête de la Cour des aides en 1749. Il fut directeur de la Librairie de 1750 à 1763, secrétaire d’État de la Maison du Roi sous le ministère Turgot de juillet 1775 à mai 1776, ministre sans portefeuille d’avril 1787 à août 1788. Homme des lumières, ami des philosophes, il correspondit avec tous les savants de l’époque et fut lui-même dans les domaines scientifiques plus qu’un amateur.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_050587"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_050081-d3709e109">
+            <relationEntry>Lamoignon de Blancmesnil (famille de)</relationEntry>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:type="simple"
+                      xlink:href="FRAN_NP_050080"
+                      xml:id="FRAN_relation_050081-d3709e115">
+            <relationEntry>Lamoignon, Guillaume de</relationEntry>
+            <descriptiveNote>
+               <p>Chrétien-Guillaume de Lamoignon de Malesherbes est le fils de Guillaume de Lamoignon.</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_000695"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_050081-d3709e127">
+            <relationEntry localType="archival">Archives Rosanbo, fonds Lamoignon (XVIIe-XVIIIe siècle)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

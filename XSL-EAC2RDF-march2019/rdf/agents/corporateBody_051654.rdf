@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/051654">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">France. Cabinet de Thierry Mandon, secrétaire d'Etat auprès du Premier ministre, chargé de la Réforme de l'Etat et de la simplification (2014-2015)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051654_d4850e56"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/fa50264b-439d-4fcc-9a1d-8587b1e82dba"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-06-03</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-06-17</RiC:endDate>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051654-d4848e132"/>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051654-d4848e138"/>
+      <RiC:history xml:lang="fr">Thierry Mandon est nommé secrétaire d'Etat auprès du Premier ministre, chargé de la Réforme de l'Etat et de la simplification par décret du 3 juin 2014, au sein du gouvernement I de Manuel Valls, sous la présidence de François Hollande. Il assure cette fonction jusqu'à sa nomination en qualité de secrétaire d'Etat chargé de l'Enseignement supérieur et de la recherche le 17 juin 2015.</RiC:history>
+      <RiC:noteOnStructureOrGenealogy xml:lang="fr">Le cabinet de Thierry Mandon, secrétaire d'Etat chargé de la Réforme de l'Etat et de la simplification, est organisé au cours des mois de juin et de juillet 2014 par six arrêtés de nomination. Célia Vérot, directrice de cabinet (12 juin 2014) Pascal Othéguy, directeur-adjoint de cabinet (30 juin 2014) Grégoire Potton, chef de cabinet (12 juin 2014) Barbara Pennamen, chargée de la communication et des relations avec la presse (12 juin 2014) Sébastien Podevyn, conseiller en charge des relations avec le Parlement (16 juin 2014) Muriel Metivet, conseillère pour la réforme de l'Etat (30 juin 2014) Boris Jamet-Fournier, conseiller pour le numérique et la participation (30 juin 2014) Elise Trebbia, conseillère, sans attribution précisée (4 juillet 2014) Cédric Grail, conseiller pour les territoires (10 juillet 2014) Laurent Fary, conseiller stratégie et communication (23 juillet 2014) Le cabinet ne connaît ensuite que peu d'évolutions : Mireille Colas, conseillère pour la performance et les énergies (1er août 2014) Elise Trebbia, cheffe de cabinet, en remplacement de Grégoire Potton (18 août 2014), qui reprend cette fonction le 22 septembre suivant Les membres du cabinet sont confirmés dans leurs fonctions le 26 août 2014</RiC:noteOnStructureOrGenealogy>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051654-d4848e160"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051654-d4848e163"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051654-d4848e231"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051654"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051654-d4848e132">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d3nyug261d--1cyxwnocz7hzo"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051654-d4848e138">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d3nyui3ce2-byd3yisqum1a"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051654_d4850e56">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051654-d4848e100"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051654">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/051654"/>
+      <RiC:creationDate>2017-09-04</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-10-02</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051654</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051654"/>
+   </rdf:Description>
+</rdf:RDF>

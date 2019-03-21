@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/051256">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">Commission sur les priorités stratégiques d’investissement et l’emprunt national (France ; 2009)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051256_d4544e36"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/4c64aab3-ebc0-4980-a43f-9f176693de38"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-07-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-11-30</RiC:endDate>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051256-d4542e99"/>
+      <RiC:history xml:lang="fr">Juin-juillet 2009 : genèse de la Commission  Le 22 juin 2009, le Président Nicolas Sarkozy annonce devant le Parlement réuni en Congrès, que l’État va lancer un nouveau programme d’investissement et envisage de mettre en place un grand emprunt national.  Pour la mise en œuvre de ce projet, le Président demande à deux anciens Premiers ministres, Alain Juppé et Michel Rocard, dans une lettre de mission datée du 6 juillet 2009, de présider une commission « qui procédera à une large consultation, … mènera tous les travaux d’expertise nécessaires, en s’inspirant des meilleures pratiques internationales. Sur ces bases, elle formulera des propositions sur le choix que le gouvernement arrêtera ensuite. » Le Président indique pour finir qu’il « souhaite que ces travaux soient achevés au 1er novembre pour une mise en œuvre concrète au plus tard au début de 2010 ».  Août-novembre 2009 : Travaux de la Commission  La « Commission sur les priorités stratégiques d’investissement et l’emprunt national » est officiellement installée par le Président de la République le 26 août 2009.  Ses deux coprésidents sont assistés par Philippe BOUYOUX, rapporteur général, par deux rapporteurs généraux adjoints et deux rapporteurs. Ils sont installés à l’Hôtel Marigny en face du Palais de l’Elysée.  La commission comprend une vingtaine de membres qui se réunissent pour la première séance plénière le 2 septembre 2009. Cette séance est suivie de sept autres, la dernière se tenant le 11 novembre 2009. La commission s’attache à recevoir et synthétiser les nombreuses contributions émanant d’institutions publiques, de grandes entreprises, d’experts et d’élus. Ces auditions se déroulent en la seule présence des co-présidents ou bien en commission plénière. Elles ont principalement lieu à Marigny. Novembre 2009 : remise du rapport au Président de la République Dans son rapport intitulé « Investir pour l’avenir, Priorités stratégiques d’investissement et emprunt national » et remis au Président de la République le 19 novembre 2009, la commission propose de ventiler les 35 G€ d’investissement et définit six axes stratégiques notamment pour soutenir l’enseignement supérieur, la recherche et l’innovation.</RiC:history>
+      <RiC:ruleFollowed xml:lang="fr">Lettre de mission du président de la République à Alain Juppé et Michel Rocard, 6 juillet 2009</RiC:ruleFollowed>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/009197-d166e109"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/010089-d214e224"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051256-d4542e213"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051256"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051256-d4542e99">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:description xml:lang="fr">étude sur les priorités stratégiques d'investissement et l'emprunt national</RiC:description>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d3nyuhp1um--qolq4osvi6b5"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051256_d4544e36">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051256-d4542e67"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051256">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/051256"/>
+      <RiC:creationDate>2016-02-16</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_051256</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051256"/>
+   </rdf:Description>
+</rdf:RDF>

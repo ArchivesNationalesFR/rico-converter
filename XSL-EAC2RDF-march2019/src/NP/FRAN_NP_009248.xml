@@ -1,0 +1,132 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_009248</recordId>
+      <otherRecordId localType="Ancien_identifiant">9854/KER</otherRecordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Import_SIA</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-08-10</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Virginie GREGOIRE</agent>
+            <eventDescription>- Ajout historique et n°ISNI, lien identité vers notice bnf et wikipédia, activités. Pas d'IR dans la SIV.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-10-26</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>- Fonds Georges-Yves Kervern 714 AP.</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>- Notice BNF n°FRBNF12227960</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>- Notice wikipédia https://fr.wikipedia.org/wiki/Georges-Yves_Kervern</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 0044 2723</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Kervern, Georges-Yves (1935-2008)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1935-01-01">1935</fromDate>
+               <toDate standardDate="2008-12-16">16 décembre 2008</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msjgtw3-1ton3i1q2op31">ingénieur</term>
+               <descriptiveNote>
+                  <p>expert en prévention des risques</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Georges-Yves Kervern (1935-2008) est un polytechnicien expert en risques. Après un cursus d'ingénieur à l'école des Mines, il effectue une grande partie de sa carrière dans le secteur privé. Après un passage au ministère de l'Industrie (1961-1968), il devient spécialiste de la gestion des risques et poursuit ses travaux de recherches et ses projets en ce sens.</p>
+            <p>En 1997, il est nommé au Conseil nationale d'évaluation de la Recherche (CNER).</p>
+            <p>Il est à l'origine avec d'autres chercheurs d'une démarche scientifique appelé la Cindynique (science du danger). Cette notion a vu le jour en 1987 à la suite d'un colloque international à l'UNESCO réunissant des experts de risques technologique majeurs et à l'initiative de l'Association française des cadres dirigeants pour le progrès social et économique (ACADI) présidée alors par Georges-Yves Kervern.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_003909"
+                      xlink:type="simple">
+            <relationEntry>Comité national d'évaluation de la recherche</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1989-01-01">1989</fromDate>
+               <toDate standardDate="2006-12-31">2006</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="https://fr.wikipedia.org/wiki/Georges-Yves_Kervern"
+                      xlink:type="simple">
+            <relationEntry>Georges-Yves Kervern</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1935-01-01">1935</fromDate>
+               <toDate standardDate="2008-12-31">2008</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Lien vers la notice Wikipédia.</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb122279607"
+                      xlink:type="simple">
+            <relationEntry>Kervern, Georges-Yves (1935?-2008)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1935-01-01">1935</fromDate>
+               <toDate standardDate="2008-12-31">2008</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Lien vers la notice d'autorité BnF. </p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_009247"
+                      xlink:type="simple">
+            <relationEntry>Institut pour la maîtrise des risques – Sûreté de fonctionnement – Management – Cindyniques</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1958-01-01">1958</fromDate>
+               <toDate standardDate="2008-12-16">16 décembre 2008</toDate>
+            </dateRange>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

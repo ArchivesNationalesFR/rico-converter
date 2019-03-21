@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/051113">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">France. Secrétariat d'Etat à la Production industrielle et au Travail (1940-1941)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051113_d4417e43"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/52976160-9459-49db-94cb-245844db9dff"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1940-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1941-12-31</RiC:endDate>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051113-d4415e114"/>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051113-d4415e126"/>
+      <RiC:history xml:lang="fr">À l’été 1940, après que le ministère du Commerce a été évacué à Vichy, une partie de l’administration se reconstitue à Paris.  La loi du 12 juillet 1940 et le décret du 27 septembre 1940 modifient en profondeur l’organisation du Ministère, rebaptisé secrétariat d’Etat à la Production industrielle et au Travail (1940-1941). D’une part, des directions «transversales» sont chargées de questions communes à toutes les branches de l’économie (Administration générale, Affaires extérieures). D’autre part, des directions « verticales » dites techniques contrôlent chaque industrie (mines, électricité, carburants, industries textiles, etc.), le commerce faisant l’objet d’une direction spécialisée. Les directions techniques sont réparties en deux secrétariats généraux chargés l’un de l’Energie, l’autre de l’Industrie et du Commerce intérieur. Le Ministère, sous sa nouvelle forme, perd en revanche le commerce extérieur, rattaché au ministère de l’Economie nationale et des Finances.</RiC:history>
+      <RiC:noteOnStructureOrGenealogy xml:lang="fr">Le Secrétariat d'Etat à la Production industrielle et au Travail était organisé en trois secrétariats généraux (à l'Energie, à l'Industrie et au Commerce, au Travail et aux Assurances sociales) aux côtés d'une Administration générale et de services extérieurs.</RiC:noteOnStructureOrGenealogy>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051113-d4415e139"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051113-d4415e142"/>
+      <isni:ISNIAssigned>0000000106701834</isni:ISNIAssigned>
+      <RiC:agentIsSourceOfAgentTemporalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentTemporalRelation/051113-d4415e173"/>
+      <RiC:agentIsSourceOfAgentTemporalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentTemporalRelation/051113-d4415e185"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051113-d4415e197"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051113"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051113-d4415e114">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:description xml:lang="fr">production industrielle</RiC:description>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d5bhvimlul-1gvgx3n53j0e"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051113-d4415e126">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d5bhvimhyx--nnjhi6uln1zi"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051113-d4415e197">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            France. Secrétariat d'Etat à la Production industrielle et au Travail (1940-1941) et l'ensemble de documents "Ministères de la Production industrielle puis de la Reconstruction et de l'Urbanisme ; Service des constructions provisoires. Traitement du personnel (1941-1950)."</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/017151-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051113_d4417e43">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051113-d4415e82"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051113">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/051113"/>
+      <RiC:creationDate>2015-09-30</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_051113</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000106701834"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051113"/>
+   </rdf:Description>
+</rdf:RDF>

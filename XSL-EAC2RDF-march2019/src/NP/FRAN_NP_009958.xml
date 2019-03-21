@@ -1,0 +1,139 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_009958</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Import_SIA</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2015-02-05</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Catherine MÉROT</agent>
+            <eventDescription>F. Clavaud, 5 février 2015 : changé nom, ajouté descripteur fonction</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2015-12-03</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Elsa CAMUS</agent>
+            <eventDescription>F. Clavaud, 2 décembre 2015 : revu le nom, supprimé liens hiérarchiques pour l'instant</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2015-12-10</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+            <eventDescription>F. Clavaud, 10 décembre 2015 : ajouté lien hiérarchique</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Agence d'architecture des Archives nationales (1838-1993 ; Paris)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1838-01-01">1838</fromDate>
+               <toDate standardDate="1993-12-31">1993</toDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term vocabularySource="d5bloohyrt--1xjp5y3h0mvzu">service extérieur</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d5bhvimbi4--1c33jbciwlk3b">gestion immobilière</term>
+            </function>
+         </functions>
+         <biogHist>
+            <p>L'Agence faisait la jonction entre l'État, ordonnateur et payeur des travaux, l'architecte en charge des travaux et les entrepreneurs qui les exécutaient.</p>
+            <p>Les agences publiques d'architecture, installées dans les bâtiments dont elles avaient la charge, étaient des administrations publiques dépendant de la Direction des bâtiments civils ou de la Maison du Souverain au XIXe s. Supprimées en 1908, elles ont été recréées après 1945 pour être définitivement supprimées à partir des années 1990 quand la loi MOP et ses décrets d'application ont éteint le corps des architectes des bâtiments civils et palais nationaux.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_005061"
+                      xlink:type="simple">
+            <relationEntry>Archives nationales (France ; 1790-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1838-01-01">1838</fromDate>
+               <toDate standardDate="1993-12-31">1993</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>
+      @isFunctionnallyLinkedTo@ 
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050328"
+                      xlink:type="simple">
+            <relationEntry>Aureau, Claude (1923-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1967-01-01">1967</fromDate>
+               <toDate standardDate="1988-12-31">1988</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Responsable de l'agence d'architectecture des Archives nationales. @isDirectedBy@</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050928"
+                      xlink:type="simple">
+            <relationEntry>Tournon, Paul (1881-1964)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1881-02-19">19 février 1881</fromDate>
+               <toDate standardDate="1947-12-31">1947</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Responsable de l'agence d'architecture des Archives nationales @isDirectedBy@</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_000051"
+                      xlink:type="simple">
+            <relationEntry>France. Ministère des affaires culturelles. Direction de l'architecture (1959-1978)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1959-01-01">1959</fromDate>
+               <toDate standardDate="1978-12-31">1978</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_005296"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Archives de l'Agence d'architecture des Archives nationales (1812-1950)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

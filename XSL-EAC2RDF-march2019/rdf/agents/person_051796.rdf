@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051796">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Iannetta, Nathalie (1972-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051796_d4915e45"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1972-05-15</RiC:birthDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051796-d4913e102"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051796-d4913e108"/>
+      <RiC:history xml:lang="fr">Née le 15 mai 1972 à Paris, Nathalie Iannetta est titulaire d'une maîtrise de sciences politiques. Journaliste à la rédaction de Canal+ (1995), puis rédacteur-reporter à Canal+ (1996-2000), elle devient présentatrice de la tranche d'informations du matin i&gt;Matin sur i&gt;Télé, de 2005 à 2008, puis de « L'Equipe du dimanche » sur Canal+, de 2008 à 2010 et enfin des Spécimens sur Canal+ Sport, de 2010 à 2012. Chargée de la Ligue des Champions dans l'émission Canal Football Club de 2013 à juin 2014, elle est nommée conseillère sport à la présidence de la République (François Hollande), de juin 2014 à mars 2016 (arrêté du 01.03.2016, JO du 05.03.2016), puis conseillère sport, jeunesse, engagement et vie associative à la présidence de la République (François Hollande), de mars à octobre 2016. Nathalie Iannetta est conseillère en chef pour les affaires gouvernementales et sociales auprès du secrétaire général de l'UEFA-Union des associations européennes de football, depuis octobre 2016.</RiC:history>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051796-d4913e121"/>
+      <RiC:ruleFollowed xml:lang="fr">https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000029095497&amp;fastPos=21&amp;fastReqId=1899733105&amp;categorieLien=id&amp;oldAction=rechTexte</RiC:ruleFollowed>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051796-d4913e127"/>
+      <RiC:ruleFollowed xml:lang="fr">https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000032153318&amp;fastPos=2&amp;fastReqId=967601222&amp;categorieLien=id&amp;oldAction=rechTexte</RiC:ruleFollowed>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051796-d4913e133"/>
+      <RiC:ruleFollowed xml:lang="fr">https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000033227151&amp;fastPos=20&amp;fastReqId=2029807506&amp;categorieLien=id&amp;oldAction=rechTexte</RiC:ruleFollowed>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Nathalie_Iannetta"/>
+      <RiC:agentIsSourceOfAgentTemporalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentTemporalRelation/051796-d4913e161"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051796"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051796-d4913e102">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d-1axy38anu-1ua8su5ef37p1"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051796-d4913e108">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d-31c1bj851u-1awh61xs7pwk3"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051796_d4915e45">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051796-d4913e82"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051796">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051796"/>
+      <RiC:creationDate>2017-11-14</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-11-15</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051796</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051796"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Nathalie_Iannetta"/>
+   </rdf:Description>
+</rdf:RDF>

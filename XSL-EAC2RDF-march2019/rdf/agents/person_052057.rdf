@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/052057">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Preschez, Philippe (1939-...)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/052057_d4998e54"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1939-06-03</RiC:birthDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/052057-d4996e120"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/052057-d4996e126"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/052057-d4996e132"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/052057-d4996e138"/>
+      <RiC:history xml:lang="fr"> Né le 3 juin 1939, au Havre (Seine-Maritime), Philippe Preschez est un haut fonctionnaire français ayant notamment exercé au ministère de la Culture et au ministère de l'Environnement et du Cadre de vie.  Formation :  Licencié ès lettres. Docteur en droit. Lauréat de la faculté de droit de Caen. Diplômé de l'Institut d'études politiques de Paris. Ancien élève de l'Ecole nationale d'administration (promotion "Montesquieu").  Carrière professionnelle : 1966-1969 : adjoint au chef du bureau des sites, puis chargé de mission auprès du directeur de l'architecture. 1969-1971 : chargé de mission auprès du sous-directeur des monuments historiques et parallèlement chef du bureau de la documentation et des objets mobiliers. 1972-1975 : détaché en mobilité au ministère du Tourisme. 1975-1978 : sous-directeur des sites et espaces protégés au ministère de la Culture. 1978-1981 : conseiller technique (à titre officieux) au cabinet de Michel d'Ornano, ministre de l'Environnement et du Cadre de vie (juin 1978 à mai 1981), parallèlement, chef de service, adjoint au délégué à l'architecture et à la construction. 1981-1984 : chef de service auprès du directeur du personnel du ministère de l'Équipement. 1985-1986 : chef de service à la direction de la flotte de commerce. 1986-1988 : chargé de mission auprès du secrétaire d'État au Tourisme. 1989-2001 : en disponibilité dans le secteur privé (banques et services financiers).  2002-2004 : inspecteur général de l'architecture et du patrimoine. 2004-2006 : chef de l'Inspection générale de l'architecture et du patrimoine. 2007-[2016] : secrétaire général de la Commission de récolement des dépôts d'œuvres d'art. Décoration : Chevalier de l'ordre national du mérite. Oeuvres : " 
+      Essai sur la démocratie au Cambodge" (1961). 
+     " 
+      Le Cambodge depuis 1941" (1961). 
+     " 
+      Les relations entre la France et la Birmanie au XVIIIème et XIXème siècles" (1967). 
+     </RiC:history>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb124836334#foaf:Person"/>
+      <isni:ISNIAssigned>0000000055115084</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/005198-d107e255"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/052057-d4996e292"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/052056-d4995e309"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/052057-d4996e334"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/052057"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/052057-d4996e120">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d3m0bl759we-1qfz4kgpyc2dp"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/052057-d4996e126">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d-1009896yv--378hf9s9l062"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/052057-d4996e132">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msk49pq-fqetp63zthtj"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/052057-d4996e138">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/052057-d4996e334">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Preschez, Philippe (1939-...) et l'ensemble de documents "Ministère de l'Environnement et du Cadre de vie ; cabinet de Michel d'Ornano. Archives de Philippe Preschez, conseiller technique chargé de l'architecture et de l'urbanisme (1978-1981)."</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/057151-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/052057_d4998e54">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/052057-d4996e100"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/052057">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/052057"/>
+      <RiC:creationDate>2018-06-07</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-06-22</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_052057</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">www.biographies.com</RiC:source>
+      <RiC:source xml:lang="fr">"L'expérience du ministère de l'Environnement et du Cadre de vie (1978-1981)", actes de la journée d'études du 15 février, hors-série, revue du comité d'histoire du ministère de l'Environnement, septembre 2007.</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000055115084"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052057"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb124836334"/>
+   </rdf:Description>
+</rdf:RDF>

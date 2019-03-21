@@ -1,0 +1,92 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050173</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-02-02</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Virginie POTIN</agent>
+            <eventDescription>F. Clavaud, 2 février 2016 : revu le nom, ajouté ISNI, notices BnF et Wikipédia, activités</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb119034340</p>
+               <p>Notice Wikipédia : https://fr.wikipedia.org/wiki/Andr%C3%A9_Fran%C3%A7ois-Poncet</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 1023 356X</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>François-Poncet, André (1887-1978)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1887-06-13">13 juin 1887</fromDate>
+               <toDate standardDate="1978-01-08">8 janvier 1978</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msj3i51--hevk1gms21cg">écrivain</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msjqtlt--8qlp1v5rp9ov">diplomate</term>
+               <dateRange>
+                  <fromDate standardDate="1931-01-01">1931</fromDate>
+                  <toDate standardDate="1955-12-31">1955</toDate>
+               </dateRange>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msj5les--1kxyfzhpd7g0m">secrétaire d'Etat</term>
+               <dateRange>
+                  <fromDate standardDate="1928-01-01">1928</fromDate>
+                  <toDate standardDate="1931-12-31">1931</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>sous-secrétaire d'Etat chargé de l'enseignement technique, des beaux-arts et de l'économie nationale</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Ancien élève du collège Stanislas et de l'Ecole normale supérieure, André François-Poncet (1887-1978) commence sa carrière dans le journalisme. Elu député d'union républicaine, il occupe les postes de sous-secrétaire d'Etat chargé de l'Enseignement technique, des Beaux-Arts et de l'Economie nationale, entre 1928 et 1931. Il avait été précédemment membre de la commission économique internationale aux Etats-Unis et avait fondé la Société d'information et d'études économiques. Il devient ensuite ambassadeur à Berlin, de 1931 à 1938, et à Rome de 1938 à 1940. De ces deux missions capitales, destinées à sauver la paix, il laisse la narration dans deux volumes de souvenirs. Après la Seconde Guerre mondiale, il est élu à l'Académie française au siège du maréchal Pétain. Haut-commissaire (1949) puis ambassadeur à Bonn (1953-1955), André François-Poncet est également président de la Commission permanente de la Croix-Rouge internationale (1949-1965) et de la Croix-Rouge française (1955-1967). Il est le père du ministre des Affaires étrangères du président Giscard d'Estaing.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_009213"
+                      xlink:type="simple">
+            <relationEntry>Peyrefitte, Alain (1925-1999)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1949-01-01">1949</fromDate>
+               <toDate standardDate="1952-12-31">1952</toDate>
+            </dateRange>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

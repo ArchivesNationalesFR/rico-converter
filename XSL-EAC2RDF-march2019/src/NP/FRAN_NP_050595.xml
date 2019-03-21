@@ -1,0 +1,67 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050595</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-02-04</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>F. Clavaud, 4 février 2014 : changé formes du nom</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, fonds Fourquevaux (159AP).</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>family</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Fourquevaux (famille de)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Beccaria de Fourquevaux (famille)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1301-01-01">XIVe siècle</fromDate>
+               <toDate standardDate="1900-12-31">XIXe siècle</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Raymond de Beccaria de Pavie de Rouër, baron de Fourquevaux (1508-1574), d’ascendance italienne, fut diplomate, homme de guerre et homme de lettres. En 1527, étudiant à Toulouse, il s’engagea dans une expédition destinée à délivrer le pape Clément VII, prisonnier des Espagnols. Fait prisonnier au siège de Naples en 1528, il parvint à s’échapper et rentra à Toulouse, où il reprit en 1530 ses études interrompues. Élu capitoul de Toulouse, Raymond de Beccaria de Fourquevaux fut envoyé en Écosse par le connétable de Montmorency en 1548, afin de secourir la reine Marie de Lorraine. Rentré en France, il fut nommé capitaine et gouverneur de Narbonne par Henri II. Dès 1550, il accompagna en Italie Charles de Cossé, comte de Brissac, nommé lieutenant général des armées du roi au-delà des monts. De 1550 à 1555, il effectua des missions diplomatiques et militaires auprès de Maximilien d’Autriche, roi de Bohême, et auprès d’Octave Farnèse, duc de Parme. En 1565, le baron de Fourquevaux remplaça Monsieur de Saint-Sulpice comme ambassadeur auprès du roi d’Espagne, Philippe II. Il resta à Madrid jusqu’à la fin de l’année 1572, date à laquelle il reprit ses fonctions de gouverneur à Narbonne, qu’il conserva jusqu’à sa mort, en 1574.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_001894"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Fourquevaux (XIVe-XIXe siècle)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

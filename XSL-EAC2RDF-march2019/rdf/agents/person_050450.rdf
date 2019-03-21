@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050450">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Demont, Henri (1877-1956)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050450_d4000e45"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1877-06-16</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-02-20</RiC:deathDate>
+      <RiC:history xml:lang="fr">Henri Demont, le créateur de l’Union universelle « pour supprimer ce crime, la guerre », est né le 16 juin 1877, à Feuquières (Oise) et décédé à Paris le 20 février 1959. Avocat à la cour d’appel de Paris, il soutint en 1908 deux thèses à l’École des hautes études sociales, où il exposait ses conceptions sur l’organisation de la paix ; mobilisé comme lieutenant en 1914, il fut raffermi dans ses convictions pacifistes par le spectacle de la guerre. Dès la fin de 1918, il présentait au président Wilson et aux alliés un plan de société générale des nations, qu’il soumettait aux plénipotentiaires réunis à Versailles. Il se consacra totalement à la propagation de ses plans de paix, parcourant la France et l’Europe, pour un total de 5 418 conférences devant plus de 20 millions d’auditeurs, entre 1922 et 1939. Par ailleurs, Demont a suscité la création de comités internationaux, de fédérations, d’associations locales (498 en 1938) et de groupes parlementaires. Au lendemain de la Seconde Guerre mondiale, il vit triompher ses idées avec la création de l’Organisation des nations unies (O.N.U.), mais sa propre œuvre ne lui survécut pas. Il n'obtint jamais le prix Nobel de la paix. Afin de lutter contre les nombreux plagiats des idées d’Henri Demont, le comité directeur de l’Union universelle créa le comité de défense du plan Henri Demont de 1908, le 12 janvier 1949.</RiC:history>
+      <isni:ISNIAssigned>0000000079716044</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050449-d3997e118"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050450"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050450_d4000e45">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050450-d3998e85"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050450">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050450"/>
+      <RiC:creationDate>2014-05-20</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050450</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000079716044"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050450"/>
+   </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050124</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-10-16</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Raphael BAUMARD</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_050124-d3749e64">
+            <part>Silvestre de Sacy, Antoine-Isaac (baron)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1768-01-01">1768</fromDate>
+               <toDate standardDate="1838-12-31">1838</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Conseiller à la Cour des monnaies dès 1781, l’orientaliste Antoine-Isaac Silvestre de Sacy (1768-1838) devint, en 1791 l’un des commissaires généraux des monnaies. Associé libre de l’Académie des inscriptions dès 1785, membre ordinaire en 1792, il en devint secrétaire perpétuel en 1833. À la création de l’École des langues orientales en 1795, il fut professeur d’arabe, et en 1806, professeur de persan au Collège de France. De 1808 à 1814, il siégea au Corps législatif, fut nommé de 1815 à 1820 membre de la Commission de l’instruction publique et administrateur de l’Académie de Paris, puis, en 1822, du Collège de France et de l’École des langues orientales. Il fonda la même année la Société asiatique, dont il fut élu président, et en 1832, devint pair de France, conservateur des manuscrits de la Bibliothèque royale et inspecteur des types orientaux de l’Imprimerie royale.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_050125"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_050124-d3749e94">
+            <relationEntry>Silvestre de Sacy, Ustazade</relationEntry>
+            <descriptiveNote>
+               <p> Ustazade Silvestre de Sacy est le fils du baron Antoine-Isaac de Sacy. </p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

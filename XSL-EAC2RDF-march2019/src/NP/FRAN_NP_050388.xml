@@ -1,0 +1,104 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050388</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-08-20</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+            <eventDescription>F. Clavaud, 20 août 2015 : changé nom, ajouté ISNI, n° notice BnF, indexation activités, vérifié liens</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Fonds 155 AP.</p>
+               <p>Notice d'autorité BnF n° FRBNF11893227</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 0908 4720</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Bougainville, Louis Antoine de (1729-1811)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1729-11-12">12 novembre 1729</fromDate>
+               <toDate standardDate="1811-08-31">31 août 1811</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msinuei--15vcl6i9uctzp">explorateur</term>
+               <descriptiveNote>
+                  <p>navigateur</p>
+               </descriptiveNote>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msj53l0-1180obzunmkm7">militaire</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msj9l7t-1gb5a09kkzrmp">sénateur</term>
+               <descriptiveNote>
+                  <p>sénateur sous le 1er Empire</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Louis-Antoine de Bougainville (1729-1811) se fit d’abord recevoir avocat, puis entra comme aide-major dans le régiment de Picardie (1753). Il fut peu après envoyé à Londres comme secrétaire d’ambassade, et la publication de son 
+     <span style="italic">Traité du calcul intégral</span> (1754-1756) l’y fit recevoir membre de la Société royale. Il suivit Montcalm en Nouvelle-France en 1756 et y devint colonel. Après la paix de Paris, Bougainville, avec des fonds familiaux et l’encouragement du roi, mit sur pied une expédition et fonda aux îles Malouines une colonie où, le 5 avril 1764, il fit reconnaître la souveraineté de Louis XV. Dans le cadre du Pacte de famille, Louis XV décida de l’abandon de cette jeune colonie à l’Espagne (2 avril 1767). Admis dans la marine royale avec grade de capitaine de vaisseau Bougainville entreprit avec la frégate la Boudeuse et la flûte l’Etoile un voyage de circumnavigation qui lui fit découvrir dans la mer du Sud différents archipels de la Polynésie, et qui fut raconté par lui dans son 
+     <span style="italic">Voyage autour du monde</span> (1771). Bougainville prit part à la guerre d’Amérique dans l’escadre du comte d’Estaing (1778-1779), puis fut promu chef d’escadre dans l’armée navale du comte de Grasse (1781-1782). Placé en 1790 à la tête de l’escadre de Brest, il démissionna bientôt et se consacra désormais à des études scientifiques. Membre de l’Institut et du Bureau des longitudes, il fut nommé sénateur puis comte par Napoléon Ier. 
+    </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_012979"
+                      xlink:type="simple">
+            <relationEntry>Bougainville, Pierre-Yves de (1688-1756)</relationEntry>
+            <descriptiveNote>
+               <p> Pierre-Yves de Bougainville, père de Louis Antoine de Bougainville </p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_050389"
+                      xlink:type="simple">
+            <relationEntry>Bougainville, Hyacinthe-Yves-Philippe-Potentien de (1781-1846)</relationEntry>
+            <descriptiveNote>
+               <p>Louis-Antoine de Bougainville, père de Hyacinthe de Bougainville</p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

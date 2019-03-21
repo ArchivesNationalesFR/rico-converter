@@ -1,0 +1,113 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_011130</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00898</otherRecordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2016-05-11</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marie-Françoise LIMON-BONNET</agent>
+            <eventDescription>F. Clavaud, 11 mai 2016 : revu forme autorisée du nom, note sur dates d'existence, activité</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Meignen, Louis Georges (18..-19..)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Meignen, Louis-Georges</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1878-03-20">20 mars 1878</fromDate>
+               <toDate standardDate="1904-05-04">4 mai 1904</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues ; les dates indiquées sont ses dates d'exercice en tant que notaire.</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">370 rue Saint-Honoré (de 1878 à 1882), 20 boulevard Malesherbes (de 1883 à 1904)</placeEntry>
+               <placeEntry localType="arrondissement_actuel"
+                           vocabularySource="d3nyv8f3d4-ok53bz6domv3">01e arrondissement</placeEntry>
+               <placeEntry localType="arrondissement_actuel"
+                           vocabularySource="d3nyv8i9m0-ys1mraoxv8ln">08e arrondissement</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd36jkq-2di11qojb16k">Saint-Honoré (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzbvrhhq--16dnogj657n5p">Malesherbes (boulevard)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à Paris</term>
+               <dateRange>
+                  <fromDate standardDate="1878-03-20">20 mars 1878</fromDate>
+                  <toDate standardDate="1904-05-04">4 mai 1904</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d3nyu9x713-9kcjiv44l4wh">notaire</term>
+               <dateRange>
+                  <fromDate standardDate="1878-03-20">20 mars 1878</fromDate>
+                  <toDate standardDate="1904-05-04">4 mai 1904</toDate>
+               </dateRange>
+            </occupation>
+         </occupations>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010181"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale LIV</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1878-03-20">20 mars 1878</fromDate>
+               <toDate standardDate="1904-05-04">4 mai 1904</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042302"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Louis Georges MEIGNEN, 21 mars 1878 - 27 octobre 1900 (étude LIV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055928"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Louis Georges Meignen pour l'étude LIV</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,116 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012757</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE02667</otherRecordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marie-Françoise LIMON-BONNET</agent>
+            <eventDescription>Dépouillement systématique de la collection de faire-part AD/XXc.</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Noémie SANTACANA, 
+      <span style="italic">Les notaires au Châtelet de Paris à l'époque du Cardinal de Fleury, mémoire de maîtrise 2003-2004</span>, dact., p. 227-228.
+     </p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Ballot, Sylvain</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Ballot, Sylvain l'aîné</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1719-03-21">21 mars 1719</fromDate>
+               <toDate standardDate="1750-12-17">17 décembre 1750</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgj653-pntrwb37dxqp">Palais-Royal (quartier)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvpb1c4--1dpne8gngxarf">Saint-Roch (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd36jkq-2di11qojb16k">Saint-Honoré (rue)</placeEntry>
+               <placeEntry localType="nomLieu">rue Saint-Honoré, au-dessus des Quinze-Vingts</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à Paris</term>
+               <dateRange>
+                  <fromDate standardDate="1719-03-21">21 mars 1719</fromDate>
+                  <toDate standardDate="1750-12-17">17 décembre 1750</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Sylvain Ballot est baptisé le 4 juillet 1683. Il épouse en premières noces Louise Elisabeth Lucas, laquelle meurt rue Saint-Honoré en février 1727 et est inhumée le 1er mars 1717 en l'église Saint-Roch, sa paroisse (faire-part de décès AD/XXc/96).</p>
+            <p>Sylvain Ballot épouse en secondes noces Marie Delhostel.</p>
+            <p>D'abord avocat en parlement, puis clerc chez Nicolas de Lambon (étude XLII) et chez Alexandre Lefèbvre (étude CXIII), il devient notaire en 1719.</p>
+            <p>Il fait faillite en 1749 et sa situation financière est telle que son frère cadet, Sylvain Ballot le jeune, doit l'aider (MC/ET/XXIII/577, 29 novembre 1751, don de meubles par Sylvain Ballot le jeune à Sylvain Ballot l'aîné, "considérant l'état fâcheux dans lequel se trouve réduit maître Sylvain Ballot et dame Marie Hyacinthe Marguerite Delhostel, son épouse".</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010243"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale CXVI</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1719-03-21">21 mars 1719</fromDate>
+               <toDate standardDate="1750-12-17">17 décembre 1750</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_050253"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Sylvain Ballot pour l'étude CXVI</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_053451"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Sylvain Ballot pour l'étude CXVI</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

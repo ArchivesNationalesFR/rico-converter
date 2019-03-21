@@ -1,0 +1,68 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050280</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-01-16</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Zénaïde ANDRIEU-ROMANEIX</agent>
+            <eventDescription>F. Clavaud, 16 janvier 2014 : changement forme du nom et ajout n° notice BnF</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, Fonds Braibant (366 AP).</p>
+               <p>Notice d'autorité BnF n° FRBNF12554795</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Braibant, Charles (1889-1976)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1889-03-31">31 mars 1889</fromDate>
+               <toDate standardDate="1976-04-23">23 avril 1976</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Charles Braibant (1889-1976) est le fils de Maurice braibant. Archiviste-paléographe et homme de lettres,il fut successivement chef du service des archives et bibliothèques de la Marine (1919-1944), inspecteur général (1945-1948), directeur général (1948-1959) puis directeur général honoraire des Archives de France, président (1950-1954) puis président d’honneur du Conseil international des archives et président-fondateur de la Table ronde internationale des archives (1954-1972). Membre du Conseil de l’ordre des Palmes académiques et du Conseil de l’ordre des Arts et Lettres (1957-1960), Charles Braibant fut également président d’honneur des écrivains de Champagne, des écrivains ardennais, des amis des Lettres, président de la fédération des sociétés d’écrivains du Nord et de l’Est (1949-1976), correspondant de l’Indian Historical Records Commission et président de la Société de l’histoire de France. Ses œuvres littéraires principales sont : Le roi dort, le Soleil de mars, le Rire des Dieux, Irène Soubeyran (romans), Un bourgeois sous trois républiques (mémoires), Resplendine (nouvelles), Lumière bleue, la guerre à Paris (journal), le Métier d’écrivain (anthologie), Félix Faure à l’Elysée, Histoire de la Tour Eiffel.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_009504"
+                      xlink:type="simple">
+            <relationEntry>Braibant, Guy</relationEntry>
+            <descriptiveNote>
+               <p>Charles, père de Guy</p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

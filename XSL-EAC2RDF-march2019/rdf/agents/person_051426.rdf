@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051426">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Vieu, Patrick (1964-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051426_d4675e51"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1964-12-02</RiC:birthDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051426-d4673e114"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051426-d4673e126"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051426-d4673e147"/>
+      <RiC:history xml:lang="fr">Diplômes Docteur en philosophie Diplômé de l'Institut d'études politiques de Paris (1988).  Ancien élève de l'Ecole nationale d'administration (promotion « Léon Gambetta ») Carrière - Adjoint puis chef du bureau de la programmation, du financement et de la concession des autoroutes à la direction des routes au ministère de l'Equipement, des Transports et du Tourisme de 1993 à 1997,  - Mis à disposition de la Cour des comptes en qualité de rapporteur, de 1997 à 1999 - Sous-directeur des autoroutes et des ouvrages concédés à la direction des routes, au ministère de l'Equipement, des Transports, de l'Aménagement du territoire, du Tourisme et de la Mer de 1999 à 2004,  - Détaché en qualité de premier conseiller de tribunal administratif et de cour administrative d'appel de 2004 à janvier 2005,  - Premier conseiller au tribunal administratif de Versailles (Yvelines), de janvier à mai 2005  - Directeur des transports ferroviaires et collectifs à la direction générale de la mer et des transports au ministère de l'Ecologie, de l'Energie, du Développement durable et de l'Aménagement du territoire, de mai 2005 à juillet 2008  - Directeur des services de transport, direction générale des infrastructures, des transports et de la mer, ministère de l'Ecologie, du Développement durable et des Transports et du Logement, de juillet 2008 à août 2011,  - Directeur de projet, chargé de coordonner la préfiguration et la mise en place opérationnelle de la mission « qualité de service dans les transports », Conseil général de l'environnement et du développement durable (CGEDD) au ministère de l'Ecologie, du Développement durable, des Transports et du Logement, de septembre 2011 à mai 2012,  - Conseiller environnement et territoires à la présidence de la République, de mai 2012 (arrêté du 17 mai 2012, JO du 19 mai 2012), à mai 2014 (arrêté du 29 mai 2014, JO du 01 juin 2014) - Conseiller du vice-président du Conseil général de l'environnement et du développement durable (CGEDD) depuis mai 2014</RiC:history>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb16737870w#foaf:Person"/>
+      <isni:ISNIAssigned>0000000359248820</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051426-d4673e224"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051426-d4673e245"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051426-d4673e266"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051426-d4673e287"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051426-d4673e308"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051426-d4673e330"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051426-d4673e348"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051426-d4673e369"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051426"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051426-d4673e114">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">docteur en philosophie</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj1t4q--erdp2b9cjr2g"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051426-d4673e126">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-05-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-05-31</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">conseiller environnement et territoires</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d-31c1bj851u-1awh61xs7pwk3"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051426-d4673e147">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-12-31</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d-1009896yv--378hf9s9l062"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051426_d4675e51">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051426-d4673e94"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051426">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051426"/>
+      <RiC:creationDate>2016-12-06</RiC:creationDate>
+      <RiC:lastUpdateDate>2016-12-06</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051426</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Mission des archives auprès de la Présidence de la République</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000359248820"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051426"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb16737870w"/>
+   </rdf:Description>
+</rdf:RDF>

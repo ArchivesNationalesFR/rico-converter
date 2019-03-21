@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050269</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-03-11</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Zénaïde ANDRIEU-ROMANEIX</agent>
+            <eventDescription>F. Clavaud, 11 mars 2014 : revu nom, ajouté n°s ISNI et notice BnF</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, Fonds Aurillac (365 AP).</p>
+               <p>Notice d'autorité BnF n° FRBNF11889584</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 8392 5367</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_050269-d3861e85">
+            <part>Aurillac, Michel (1928-....)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1928-07-11">11 juillet 1928</fromDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Michel Aurillac (né en 1928), fils de Jean Aurillac, ancien élève de l’École nationale d’administration et maître des requêtes au Conseil d’État, a fait partie en 1958 du groupe de travail, présidé par Michel Debré, chargé de préparer la nouvelle Constitution. Directeur de cabinet de Léopold Sédar Senghor (ministre-conseiller du gouvernement, 1959), Michel Aurillac a ensuite présidé la section du contentieux de la Cour suprême du Sénégal (1960). Réintégré au Conseil d’État (1963), il a été conseiller technique au cabinet de Georges Pompidou, alors Premier ministre, puis préfet de l’Indre (1965), secrétaire général de la préfecture de la région parisienne (1969), préfet de l’Essonne (1969), de la région Picardie et du département de la Somme (1973-1974), de la région Provence-Côte d’Azur et du département des Bouches-du-Rhône (1976-1977). Il a été député de l’Indre de 1978 à 1981 et à nouveau à partir de 1986, ainsi que vice-président du conseil général du même département de 1985 à 1992. Michel Aurillac a été ministre de la Coopération de 1986 à 1988, dans le gouvernement de Jacques Chirac. Depuis 1997, il est vice-président de la cour d’arbitrage de la chambre de commerce internationale.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_050272"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_050269-d3861e112">
+            <relationEntry>Aurillac (famille)</relationEntry>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050272"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_050269-d3861e118">
+            <relationEntry>Aurillac (famille)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1928-07-11">11 juillet 1928</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_050268"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_050269-d3861e130">
+            <relationEntry>Aurillac, Jean (1903-1967)</relationEntry>
+            <descriptiveNote>
+               <p>Jean, père de Michel</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_004899"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_050269-d3861e142">
+            <relationEntry localType="archival">Fonds Aurillac (1915-2006)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

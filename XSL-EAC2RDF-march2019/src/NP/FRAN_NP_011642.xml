@@ -1,0 +1,118 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_011642</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01453</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Noémie SANTACANA Les notaires au Châtelet de Paris à l'époque du Cardinal de Fleury, mémoire de maîtrise 2003-2004, dact., p. 280-281</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Loyson, Augustin</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1724-10-14">14 octobre 1724</fromDate>
+               <toDate standardDate="1761-10-28">28 octobre 1761</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvozckb-wk5djyktth83">saint-jacques-de-la-boucherie (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgvrw7--10kzknmxne1f3">saint-jacques-de-la-boucherie (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd3gcnv-x81q62dbdp9h">saint-jacques (rue)</placeEntry>
+               <placeEntry localType="nomLieu">rue Saint-Jacques-de-la-Boucherie</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1724-10-14">14 octobre 1724</fromDate>
+                  <toDate standardDate="1761-10-28">28 octobre 1761</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Baptisé le 15 août 1688</p>
+            <p>marié à Elisabeth Nau (voir ET/CXV/451, 9 mars 1727, contrat de mariage)</p>
+            <p>d'abord principal clerc de Guillaume Pillon, son cousin germain, auquel il succède</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010212"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale LXXXV</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1724-10-14">14 octobre 1724</fromDate>
+               <toDate standardDate="1761-10-28">28 octobre 1761</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XLI/391, 19 septembre 1724, traité d'office de notaire entre Guillaume Pillon et Augustin Loyson</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">V/1/261 pièce 252, 8 octobre 1724, lettre de provision d'office</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XXXIV/559, 15 avril 1755, inventaire après décès d'Elisabeth Nau, sa femme</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XC/407, 24 septembre 1761, traité d'office de notaire entre Augustin Loyson et Simon La Pille</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XXXIV/663, 30 décembre 1767, inventaire après décès</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042830"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Augustin LOYSON, 14 octobre 1724 - 28 octobre 1761 (étude LXXXV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055701"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Augustin Loyson pour l'étude LXXXV</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,141 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_011562</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01368</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Leroy, Étienne</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Le roy, Étienne</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1608-01-01">1608</fromDate>
+               <toDate standardDate="1644-10-24">24 octobre 1644</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">étude LXXXVII : rue de la Harpe</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvpbvqa-1q7k75sdt2gwp">saint-séverin (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvpcbgs-1cppi2iacclig">saint-sulpice (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzbc5kjb--uuj5xhibjpf4">harpe (rue de la)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzai09ii--1tdnegq96iwld">fossés-saint-germain-des-prés (rue des)</placeEntry>
+            </place>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">étude VI : rue des Fossés-Saint-Germain-des-Prés</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvpbvqa-1q7k75sdt2gwp">saint-séverin (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvpcbgs-1cppi2iacclig">saint-sulpice (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzbc5kjb--uuj5xhibjpf4">harpe (rue de la)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzai09ii--1tdnegq96iwld">fossés-saint-germain-des-prés (rue des)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1608-01-01">1608</fromDate>
+                  <toDate standardDate="1644-10-24">24 octobre 1644</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>frère de Claude Leroy, notaire de l'étude LXXXXVII (voir inventaire après décès)</p>
+            <p>marié à Madeleine Gaudion, dont il a un fils, Jean-Baptiste, qui lui succède dans l'étude VI et une fille, Marie, qui entre dans les ordres (voir ET/CXXII/350 folio 401, 20 mars 1640, profession de foi de Marie Leroy, fille d'Étienne Leroy et Madeleine Gaudion, au monastère de la congrégation de Notre-Dame)</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010214"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale LXXXVII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1608-01-01">1608</fromDate>
+               <toDate standardDate="1611-12-31">1611</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010133"
+                      xlink:type="simple">
+            <relationEntry>Etude VI</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1608-03-29">29 mars 1608</fromDate>
+               <toDate standardDate="1644-10-24">24 octobre 1644</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XXI/90 folio 222, 16 décembre 1617, contrat d'association avec Étienne Landry (étude VI)</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/CXXII/1636 folio 7, 12 novembre 1644, inventaire après décès</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/CXXII/1636 folio 11, 16 novembre 1644, vente de son office, par sa veuve, à son fils Jean-Baptiste Leroy</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/VIII/664, 21 octobre 1648, testament de Madeleine Gaudion, sa veuve</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041212"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Étienne LEROY, avril 1608 - 24 octobre 1644 (étude VI)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042864"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Étienne LEROY, 1608 - 1611 (étude LXXXVII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042072"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jacques MOREL, 27 mai 1605 - 13 novembre 1652 (étude XLII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051719"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Etienne Leroy pour l'étude VI</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

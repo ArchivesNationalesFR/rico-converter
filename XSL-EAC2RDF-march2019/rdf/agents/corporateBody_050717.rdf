@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/050717">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">Cercle Condorcet de Paris</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050717_d4194e68"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050717_d4194e71"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/f7742d1f-1699-45c7-804b-0277189a621d"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-11-09</RiC:beginningDate>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/050717-d4192e174"/>
+      <RiC:history xml:lang="fr">Le Cercle Condorcet de Paris, comme les cercles de province, est né d'une volonté de la Ligue française de l'enseignement de satisfaire à deux objectifs : « créer dans ce pays des lieux ouverts pour le débat d'idées et la démocratie afin de revivifier la démocratie" et "renouer avec la communauté intellectuelle [...] pour accélérer le processus de transformation de la Ligue elle-même » (rapport d'activités du Cercle de Paris, 1987-1988). En octobre 1986, la Ligue a sollicité une centaine d'universitaires, de responsables économiques, de syndicalistes et de militants associatifs pour engager « une réflexion commune sur le monde et voir comment peut s'instaurer une société nouvelle face aux mutations technologiques, à la mondialisation, à l'individualisme et à l'émergence d'une société à deux vitesses » (voir historique de l'association sur site internet).  Le lancement du Cercle Condorcet de Paris et de l'Ile-de-France, premier créé, date du 12 novembre 1986. Son acte de naissance politique, la charte constitutive, est adopté ce jour-là par les premiers membres fondateurs. Un an plus tard, le 9 novembre 1987, l'assemblée générale constitutive consacre la naissance juridique du Cercle, dont le président Claude Julien est alors directeur du 
+     Monde diplomatique. 
+     Les activités de l'association sont multiples : réunions plénières (rassemblement tous les mois de l'ensemble des adhérents pour débattre d'une question de société) ; commissions et groupes de travail constitués autour de thèmes jugés essentiels afin de produire une analyse et des propositions ; colloques et rencontres publiques. </RiC:history>
+      <RiC:noteOnStructureOrGenealogy xml:lang="fr">Le CCDP est localisé au 3, rue Récamier 75007 Paris (locaux communs à la Ligue de l'Enseignement).  Depuis 1986, les présidents successifs du Cercle Condorcet de Paris furent les personnes suivantes :  - Claude Julien (1986-1992) - Roger Lesgards (1992-1996) - Guy Raffi (1996-2000) - Jean Offredo (2000-2004) - Michel Cabirol et Jean-Pierre Pagé (2005-2015) - Bernard Wolfer et Jean-Pierre Pagé (2015-2016) - Bernard Wolfer depuis 2016</RiC:noteOnStructureOrGenealogy>
+      <RiC:ruleFollowed xml:lang="fr">Ancienne publication du CCDP La Lettre des Cercles (35 numéros entre 1988 et 1993).</RiC:ruleFollowed>
+      <RiC:ruleFollowed xml:lang="fr">Publication actuelle (depuis 1995), La Lettre du Cercle Condorcet de Paris.</RiC:ruleFollowed>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050717--d4192e155"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb12083474g#foaf:Organization"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Cercle_Condorcet_de_Paris"/>
+      <isni:ISNIAssigned>0000000121917414</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050676-d4166e325"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050717-d4192e306"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050717"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/050717-d4192e174">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d5bhvil20q--uuew3ia85vzc"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050717-d4192e306">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Cercle Condorcet de Paris et l'ensemble de documents "Archives du Cercle Condorcet"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/050948-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050717_d4194e68">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050717-d4192e124"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050717_d4194e71">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050717-d4192e130"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050717--d4192e155">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Cercle Condorcet de Paris"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050349-d3923e153 http://data.archives-nationales.culture.gouv.fr/place/009905-d195e177"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050717">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/050717"/>
+      <RiC:creationDate>2014-02-27</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-07-04</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_050717</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Guide des sources du PAJEP, consulté au mois de février 2014</RiC:source>
+      <RiC:source xml:lang="fr">Notice BnF n°FRBNF12083474</RiC:source>
+      <RiC:source xml:lang="fr">Brochure réalisée par le CCDP à l'occasion du 30e anniversaire du Cercle</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000121917414"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050717"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb12083474g"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Cercle_Condorcet_de_Paris"/>
+   </rdf:Description>
+</rdf:RDF>

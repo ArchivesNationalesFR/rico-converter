@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010221</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NAETUDE_094</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_010221-d318e67">
+            <part>Etude XCIV</part>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_010221-d318e73">
+            <part>75110</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1661-01-01">1661</fromDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place xml:id="FRAN_place_010221-d318e93">
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu" xml:id="FRAN_placeEntry_010221-d318e98">65, rue de Turbigo, 75003 PARIS</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function xml:id="FRAN_activity_010221-d318e105">
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1661-01-01">1661</fromDate>
+                  <toDate/>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Étude du quartier du Marais depuis son origine : en 1668, elle est rue Barré-le-Bec ; elle passe rue de la Verrerie en 1753 et y reste jusqu'à la Révolution (an III). Sous l'Empire, elle est rue des Francs-Bourgeois ; en 1813, rue du Grenier-Saint-Lazare ; en 1891, rue Turbigo.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010843"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010221-d318e129">
+            <relationEntry>Pascal, Louis-Marie</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1857-09-19">19 septembre 1857</fromDate>
+               <toDate standardDate="1875-02-11">11 février 1875</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011372"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010221-d318e144">
+            <relationEntry>Lauriau, Gilles</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1972-01-05">5 janvier 1972</fromDate>
+               <toDate standardDate="2006-04-23">23 avril 2006</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011345"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010221-d318e159">
+            <relationEntry>Langlois, François</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1664-06-18">18 juin 1664</fromDate>
+               <toDate standardDate="1668-09-01">1er septembre 1668</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010404"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010221-d318e174">
+            <relationEntry>Tansard, Michel</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1934-01-24">24 janvier 1934</fromDate>
+               <toDate standardDate="1972-01-05">5 janvier 1972</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011941"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010221-d318e189">
+            <relationEntry>Gossuin, Louis</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1661-09-07">7 septembre 1661</fromDate>
+               <toDate standardDate="1663-12-13">13 décembre 1663</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013013"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010221-d318e205">
+            <relationEntry>Boursier, Etienne</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1684-02-18">18 février 1684</fromDate>
+               <toDate standardDate="1715-12-17">17 décembre 1715</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013015"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010221-d318e220">
+            <relationEntry>Boursier, Étienne Simon II</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1751-06-22">22 juin 1751</fromDate>
+               <toDate standardDate="1753-03-07">7 mars 1753</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013016"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010221-d318e235">
+            <relationEntry>Boursier, Guy</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1810-12-14">14 décembre 1810</fromDate>
+               <toDate standardDate="1828-08-28">28 août 1828</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013153"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010221-d318e250">
+            <relationEntry>Aubert, Jean (17..-18..)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1776-06-11">11 juin 1776</fromDate>
+               <toDate standardDate="1783-10-22">22 octobre 1783</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012017"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010221-d318e265">
+            <relationEntry>Falque, Yvane</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1992-09-23">23 septembre 1992</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013014"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010221-d318e277">
+            <relationEntry>Boursier, Étienne Simon I</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1715-12-20">20 décembre 1715</fromDate>
+               <toDate standardDate="1751-06-15">15 juin 1751</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013012"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010221-d318e293">
+            <relationEntry>Boursier, Amable</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1783-12-05">5 décembre 1783</fromDate>
+               <toDate standardDate="1810-12-14">14 décembre 1810</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013317"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010221-d318e308">
+            <relationEntry>Clermont, Olivier</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2006-08-23">23 août 2006</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010403"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010221-d318e320">
+            <relationEntry>Tansard, Eugène</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1875-02-11">11 février 1875</fromDate>
+               <toDate standardDate="1901-12-11">11 décembre 1901</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010405"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010221-d318e335">
+            <relationEntry>Tansard, René</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1901-12-11">11 décembre 1901</fromDate>
+               <toDate standardDate="1934-01-24">24 janvier 1934</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011607"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010221-d318e350">
+            <relationEntry>Lhéritier, Augustin</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1753-03-10">10 mars 1753</fromDate>
+               <toDate standardDate="1776-06-05">5 juin 1776</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011685"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010221-d318e365">
+            <relationEntry>Jean, Dominique de</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1668-09-06">6 septembre 1668</fromDate>
+               <toDate standardDate="1684-01-03">3 janvier 1684</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012361"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010221-d318e381">
+            <relationEntry>Debière, Jean-Claude</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1828-12-16">16 décembre 1828</fromDate>
+               <toDate standardDate="1857-09-19">19 septembre 1857</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_042974"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e396">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Louis GOSSUIN, 7 septembre 1661 - 13 décembre 1663 (étude XCIV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_042980"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e402">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean AUBERT, 11 juin 1776 - 22 octobre 1783 (étude XCIV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_042975"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e408">
+            <relationEntry localType="archival">Minutes et répertoires du notaire François LANGLOIS, 18 juin 1664 - 1er septembre 1668 (étude XCIV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_042977"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e414">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Étienne BOURSIER, 19 février 1684 - 17 décembre 1715 (étude XCIV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054131"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e420">
+            <relationEntry localType="archival">«Mélanges» (dossiers de clients) de l’étude XCIV. MC/ET/XCIV/622 (1321-1857)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054713"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e427">
+            <relationEntry localType="archival">Images des répertoires du notaire René Tansard pour l'étude XCIV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042978"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e433">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Étienne Simon I BOURSIER, 20 décembre 1715 - 15 juin 1751 (étude XCIV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042979"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e439">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Étienne Simon II BOURSIER, 22 juin 1751 - 7 mars 1753 (étude XCIV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055104"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e445">
+            <relationEntry localType="archival">Archives de l'office notarial XCIV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042973"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e451">
+            <relationEntry localType="archival">Archives de l'étude XCIV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042976"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e457">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Dominique de JEAN, 7 septembre 1668 - 3 janvier 1684 (étude XCIV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052474"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e464">
+            <relationEntry localType="archival">Images des répertoires du notaire Louis Marie Pascal pour l'étude XCIV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052483"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e470">
+            <relationEntry localType="archival">Images des répertoires du notaire Guy Boursier pour l'étude XCIV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042984"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e476">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Guy BOURSIER, 14 décembre 1810 - 28 août 1828 (étude XCIV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042983"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e482">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Louis Marie PASCAL, 19 septembre 1857 - 11 février 1875 (étude XCIV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055522"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e488">
+            <relationEntry localType="archival">Images des répertoires du notaire Augustin Lhéritier pour l'étude XCIV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042981"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e494">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Augustin LHÉRITIER, 10 mars 1753 - 5 juin 1776 (étude XCIV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055528"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e501">
+            <relationEntry localType="archival">Images des répertoires du notaire Amable Boursier pour l'étude XCIV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042982"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e507">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Amable BOURSIER, 5 décembre 1783 - 14 décembre 1810 (étude XCIV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055541"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e513">
+            <relationEntry localType="archival">Images du répertoire du notaire Louis Gossuin pour l'étude XCIV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055546"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e519">
+            <relationEntry localType="archival">Images du répertoire du notaire François Langlois pour l'étude XCIV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055547"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e525">
+            <relationEntry localType="archival">Images du répertoire du notaire Etienne Boursier pour l'étude XCIV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055551"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e531">
+            <relationEntry localType="archival">Images des répertoires du notaire Jean Aubert pour l'étude XCIV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055553"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e538">
+            <relationEntry localType="archival">Images des répertoires du notaire Eugène Tansard pour l'étude XCIV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055558"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e544">
+            <relationEntry localType="archival">Images des répertoires du notaire Etienne Simon I Boursier pour l'étude XCIV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055559"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e550">
+            <relationEntry localType="archival">Images des répertoires du notaire Etienne Simon II Boursier pour l'étude XCIV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055562"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e556">
+            <relationEntry localType="archival">Images des répertoires du notaire Jean Claude Debière pour l'étude XCIV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042987"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e562">
+            <relationEntry localType="archival">Minutes et répertoires du notaire René TANSARD, 11 décembre 1901 - 9 juillet 1906 (étude XCIV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042986"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e568">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Eugène TANSARD, 11 février 1875 - 11 décembre 1901 (étude XCIV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042988"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e575">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Michel TANSARD, 1934 - 1971 (étude XCIV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042985"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010221-d318e581">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean Claude DEBIÈRE, 16 décembre 1828 - 19 septembre 1857 (étude XCIV)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

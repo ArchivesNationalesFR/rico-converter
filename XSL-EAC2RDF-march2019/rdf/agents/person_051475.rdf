@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051475">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Surville, Marie-Pierre de (1965-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051475_d4714e56"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1965-11-25</RiC:birthDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051475-d4712e120"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051475-d4712e126"/>
+      <RiC:history xml:lang="fr">Née le 25 novembre 1965, elle est une administratrice dans le domaine culturel. Elle a assuré différentes fonctions dans le spectacle vivant (l'Opéra de Paris, le Festival international d'art lyrique d'Aix-en-Provence, etc.), puis à Universcience. Elle est diplômée de l’Institut d’études politiques de Paris (1988). Elle obtient également en 1990 un DEA d’études soviétiques et est-européennes, toujours à l'IEP de Paris.  Son parcours professionnel commence chez Arthur Andersen en 1989. De 1991 à 1994, elle a assuré la direction de production de l'Opéra national de Paris. En 1994, elle devient programmatrice et administratrice de la Maison des arts de Créteil, puis conseillère artistique de Lille 2004, capitale européenne de la culture. De 2003 à 2006, elle est directrice de production du Festival international d'art lyrique d'Aix-en-Provence, puis directrice générale de la filiale des spectacles du château de Versailles en 2006. Elle est ensuite conseillère « spectacle vivant » au ministère de la Culture, dans le cabinet de Christine Albanel, en 2007 et y côtoie Mathieu Gallet, alors responsable de l’audiovisuel dans ce même cabinet. Puis elle devient directrice générale adjointe du projet Marseille-Provence 2013 en juin 2009, aux côtés de Bernard Latarjet. Elle quitte ce projet en décembre 2009 pour des raisons personnelles et devient directrice générale adjointe d'Universcience, aux côtés de Claudie Haigneré. En mai 2014, Mathieu Gallet l'appelle à la direction de France Musique. Le 10 juillet 2015 , elle quitte France Musique pour prendre en charge auprès de Mathieu Gallet une mission de préfiguration d'une direction culturelle à Radio France. Cette mission achevée, elle quitte Radio France le 29 février 2016.</RiC:history>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Marie-Pierre_de_Surville"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051475-d4712e181"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051475-d4712e199"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051475-d4712e220"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/005446-d132e463"/>
+      <RiC:personIsSourceOfLeadershipRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051475-d4712e263"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051475-d4712e281"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051475"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051475-d4712e120">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d-l0jya1ik6x--16fn7glte863o"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051475-d4712e126">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-12-31</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">conseillère "spectacle vivant" au cabinet de Ch. Albanel, ministre de la Culture</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051475-d4712e281">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Surville, Marie-Pierre de (1965-....) et l'ensemble de documents "Archives de Marie-Pierre de Surville, conseillère spectacle vivant chargée du théâtre, de la musique, de la danse et des arts de la rue auprès de Mme Christine Albanel, ministre de la Culture et de la Communication de 2007 à 2009"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/054803-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051475_d4714e56">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051475-d4712e100"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051475">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051475"/>
+      <RiC:creationDate>2017-03-08</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-06-21</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051475</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051475"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Marie-Pierre_de_Surville"/>
+   </rdf:Description>
+</rdf:RDF>

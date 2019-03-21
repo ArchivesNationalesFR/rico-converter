@@ -1,0 +1,105 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012591</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE02484</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Contesse, René II</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1586-10-17">17 octobre 1586</fromDate>
+               <toDate standardDate="1644-11-05">5 novembre 1644</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvox0hv--s68ql74wtyjp">saint-germain-l'auxerrois (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzai0kq1--i7jvzw2f3sgk">fossés-saint-germain-l'auxerrois (rue des)</placeEntry>
+               <placeEntry localType="nomLieu">rue des Fossés Saint-Germain-l'Auxerrois</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1586-10-17">17 octobre 1586</fromDate>
+                  <toDate standardDate="1644-11-05">5 novembre 1644</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>fils et sucesseur de René Contesse I, beau-frère d'Anne Carrel (voir ET/XXIV/401, 6 décembre 1614, transport de rentes)</p>
+            <p>marié à Catherine Tallot (voir ET/XXIII/266, 29 août 1628, consentement de René Contesse et Catherine Tallot)</p>
+            <p>seigneur d'Ourcières</p>
+            <p>secrétaire du prince de Condé</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010181"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale LIV</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1586-10-17">17 octobre 1586</fromDate>
+               <toDate standardDate="1644-11-05">5 novembre 1644</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XXIV/429 folio 250, 26 avril 1647, quittance de Catherine Tallot à Denis Pourcelle suite à la vente de l'office de notaire de René Contesse II, faite par ladite Tallot audit Pourcel le 24 décembre 1644</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XXIV/429 folio 537, 19 octobre 1647, testament de Catherine Tallot, veuve de René Contesse II</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XXIV/429 folio 555, 12 novembre 1647, inventaire après décès de Catherine Tallot</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_042707"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Regnault LUSSON, 23 décembre 1599 - 30 novembre 1605 (étude LXXVIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042283"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire René II CONTESSE, 17 octobre 1586 - 5 novembre 1644 (étude LIV)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

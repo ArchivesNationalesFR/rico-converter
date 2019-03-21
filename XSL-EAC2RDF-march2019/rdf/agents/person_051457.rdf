@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051457">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Nanteau, Olivier (1949-2009)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051457_d4703e45"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1949-01-01</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-12-31</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051457-d4701e105"/>
+      <RiC:history xml:lang="fr">Olivier Nanteau (1949-2009), ancien élève de l'école des Beaux-Arts de Paris, collabore avec France Inter pour la première fois en 1968. Il devient ensuite producteur, auteur et réalisateur d'émissions régulières sur cette même chaîne. Il lance « Le Charme discret de la gourmandise » en 1982 sur France Inter puis le programme sur l'Europe « Eureka » en septembre 1988. Suivent dès 1993 « Les Échos du bordel ambiant » et « C'est à vous » sur France Inter et les chroniques gastronomiques « Portraits toqués » de 1993 à 1999 sur France Info.  Parallèlement à ses activités sur les antennes de Radio France, Olivier Nanteau assume des fonctions administratives : il est adjoint de Jean Garretto directeur des programmes de France Inter de 1983 à 1988, puis conseiller de programmes à la direction des affaires internationales de Radio France de 1990 à 1996. C'est à la fin de l'année 1996 que Michel Boyon, président-directeur général de Radio France, le charge, aux côtés de Marc Garcia, Gilles Carretero et Joël Pons, d'une mission de réflexion sur la création d'une radio destinée à un jeune public. Ce projet voit le jour en juin 1997 avec le lancement du Mouv' dont Olivier Nanteau sera le premier directeur.  Esprit aux goûts éclectiques, Olivier Nanteau conçoit et anime des émissions innovantes et est l'un des premiers à comprendre que la libre antenne et l'interactivité répondent aux attentes du public. Il quitte Le Mouv' en 1999, quelques mois après l'arrivée de Jean-Marie Cavada à la tête de Radio France. Après son départ de Radio France, Olivier Nanteau collabore jusqu'à sa mort prématurée en 2009 à différents magazines et crée sa propre société de production, « JF2TS ou presque ». </RiC:history>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Olivier_Nanteau"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb135227755#foaf:Person"/>
+      <isni:ISNIAssigned>0000000046337291</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/000347-d13e425"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051457-d4701e190"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051457-d4701e211"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051457-d4701e224"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051457-d4701e236"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051457-d4701e248"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051457-d4701e260"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051457-d4701e272"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051457"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051457-d4701e105">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d-2pycceevo--1n3omf4gf5txm"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051457-d4701e211">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Nanteau, Olivier (1949-2009) et l'ensemble de documents "Culture ; Radio-France (1983-1996)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/009384-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051457-d4701e224">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Nanteau, Olivier (1949-2009) et l'ensemble de documents "Culture ; Radio-France (1989-1992)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/010595-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051457-d4701e236">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Nanteau, Olivier (1949-2009) et l'ensemble de documents "Culture ; Radio-France (1994-1995)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/010613-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051457-d4701e248">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Nanteau, Olivier (1949-2009) et l'ensemble de documents "Culture ; Radio-France (1995-1996)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/010614-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051457-d4701e260">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Nanteau, Olivier (1949-2009) et l'ensemble de documents "Culture ; Radio-France (1992-1992)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/009533-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051457-d4701e272">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Nanteau, Olivier (1949-2009) et l'ensemble de documents "Radio France. France Inter. Archives papier d'Olivier Nanteau: direction adjointe des programmes (1983-1988), relations avec l'Association AIDES (1994-1995). 1983-1995"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/054989-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051457_d4703e45">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051457-d4701e82"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051457">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051457"/>
+      <RiC:creationDate>2017-02-24</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-06-21</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051457</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000046337291"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051457"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Olivier_Nanteau"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb135227755"/>
+   </rdf:Description>
+</rdf:RDF>

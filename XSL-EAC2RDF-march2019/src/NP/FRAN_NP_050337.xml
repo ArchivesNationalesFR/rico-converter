@@ -1,0 +1,66 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050337</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-01-16</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Zénaïde ANDRIEU-ROMANEIX</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, Fonds Moreau (524 AP).</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Moreau, Jean-Bélizaire</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1828-01-01">1828</fromDate>
+               <toDate standardDate="1899-12-31">1899</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Inspecteur des travaux de restauration de la cathédrale de Moulins en 1874, l’architecte Jean-Bélizaire Moreau (1828-1899) restaura de nombreux châteaux : Brézé (Maine-et-Loire, 1855), Saint-Aignan (Loir-et-Cher, 1873), Avrilly (Allier, 1874), Chazeuil (Allier, 1874), Cornillon (Gard, 1875), Paray-le-Frésil (Allier, 1876) et Montigny-le-Comte (Saône-et-Loire, 1877). Il construisit la salle d’asile du dixième arrondissement de Paris (1846) et la station de chemin de fer d’Orléans (1847).</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_050338"
+                      xlink:type="simple">
+            <relationEntry>Moreau, René</relationEntry>
+            <descriptiveNote>
+               <p> Fils de Jean-Bélizaire Moreau </p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

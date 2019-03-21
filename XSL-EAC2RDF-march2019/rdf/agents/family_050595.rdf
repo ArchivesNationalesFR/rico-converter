@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/family/050595">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Family"/>
+      <rdfs:label xml:lang="fr">Fourquevaux (famille de)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050595_d4121e41"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050595_d4121e44"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1301-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1900-12-31</RiC:endDate>
+      <RiC:history xml:lang="fr">Raymond de Beccaria de Pavie de Rouër, baron de Fourquevaux (1508-1574), d’ascendance italienne, fut diplomate, homme de guerre et homme de lettres. En 1527, étudiant à Toulouse, il s’engagea dans une expédition destinée à délivrer le pape Clément VII, prisonnier des Espagnols. Fait prisonnier au siège de Naples en 1528, il parvint à s’échapper et rentra à Toulouse, où il reprit en 1530 ses études interrompues. Élu capitoul de Toulouse, Raymond de Beccaria de Fourquevaux fut envoyé en Écosse par le connétable de Montmorency en 1548, afin de secourir la reine Marie de Lorraine. Rentré en France, il fut nommé capitaine et gouverneur de Narbonne par Henri II. Dès 1550, il accompagna en Italie Charles de Cossé, comte de Brissac, nommé lieutenant général des armées du roi au-delà des monts. De 1550 à 1555, il effectua des missions diplomatiques et militaires auprès de Maximilien d’Autriche, roi de Bohême, et auprès d’Octave Farnèse, duc de Parme. En 1565, le baron de Fourquevaux remplaça Monsieur de Saint-Sulpice comme ambassadeur auprès du roi d’Espagne, Philippe II. Il resta à Madrid jusqu’à la fin de l’année 1572, date à laquelle il reprit ses fonctions de gouverneur à Narbonne, qu’il conserva jusqu’à sa mort, en 1574.</RiC:history>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050595-d4119e115"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050595"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050595-d4119e115">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Fourquevaux (famille de) et l'ensemble de documents "Fonds Fourquevaux (XIVe-XIXe siècle)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/001894-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050595_d4121e41">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050595-d4119e79"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050595_d4121e44">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050595-d4119e85"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050595">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/family/050595"/>
+      <RiC:creationDate>2014-02-04</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050595</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050595"/>
+   </rdf:Description>
+</rdf:RDF>

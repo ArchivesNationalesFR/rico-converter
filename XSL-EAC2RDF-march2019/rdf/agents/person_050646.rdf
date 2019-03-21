@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050646">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Fraisse, Robert</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050646_d4147e43"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1935-08-20</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-05-31</RiC:deathDate>
+      <RiC:history xml:lang="fr">Natif de Saint-Etienne (Loire) en 1935, après son service militaire en Algérie, Robert Fraisse poursuit ses études à l'Ecole Polytechnique (X 1956) puis à Sciences Po en section "Service public", où il fait la connaissance de Michel Rocard. Recruté en octobre 1962 au Commissariat au Plan par Jean Ripert, alors chef du service économique, il collabore au groupe "1985" prélude à une prospective de la France dans le cadre du Ve Plan. Entre 1965 et 1969, Robert Fraisse travail auprès de Jacques Delors au service des affaires sociales du Plan, où il participe à la planification des équipements collectifs, puis à la commission Malraux relative à "l'équipement culturel" de la France. Au cours de sa carrière au Commissariat au Plan, Robet Fraisse s'occupe notamment de recherches en sciences sociales aux cotés de Claude Gruson, Alain Touraine, Pierre Bourdieu, Michel Crozier et d'autres intellectuels. Par ailleurs, il est l'auteur de nombreux articles de sociologie ou d'économie publiés dans la revue "Esprit". Sous l'autorité du Commissariat général du Plan, Robert Fraisse devient le secrétaire général du CORDES (Comité d'organisation des recherches appliquées sur le développement économique et social), organisme créé oficiellement en mars 1966 et mit en route par lui 3 ans après. En août 2000 Robert Fraisse prend sa retraite du Commissarait au Plan, 12 ans plus tard il décède à Paris en mai 2012.</RiC:history>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050646"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050646_d4147e43">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050646-d4145e79"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050646">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050646"/>
+      <RiC:creationDate>2013-11-15</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050646</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050646"/>
+   </rdf:Description>
+</rdf:RDF>

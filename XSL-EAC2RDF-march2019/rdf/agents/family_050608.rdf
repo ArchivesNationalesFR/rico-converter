@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/family/050608">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Family"/>
+      <rdfs:label xml:lang="fr">Eprémesnil (famille Duval d')</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050608_d4125e39"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050608_d4125e42"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050608_d4125e45"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1401-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1900-12-31</RiC:endDate>
+      <RiC:history xml:lang="fr">Familles d’origine parlementaire, les Duval d’Eprémesnil et les Duval de Leyrit occupèrent de hautes fonctions dans les territoires français de l’Inde. Jacques II Duval d’Eprémesnil (1672-1748) fut directeur de la Compagnie des Indes. Son fils, Jacques III Duval d’Eprémesnil (1714-1764), fut gouverneur de Madras ; il était également le gendre de Madame Vincens, qui épousa en secondes noces Dupleix. Le frère cadet de Jacques III, Georges Duval de Leyrit, fut gouverneur général de Pondichéry. Fils de Jacques III, Jacques IV Duval d’Eprémesnil (1745-1794), conseiller au Parlement, élu député de la noblesse aux états généraux de 1789, se rendit célèbre pour son attitude violente contre la Cour au début de la Révolution. En 1778, il s’opposa à la réhabilitation de Thomas-Arthur, comte de Lally-Tollendal (1702-1766), accusé de trahison et condamné à mort suite à son échec devant Madras en 1758 et à sa reddition à Pondichéry en 1761. Jacques IV Duval d’Eprémesnil s’éleva ensuite contre la Constitution civile du clergé et fut guillotiné le 22 avril 1794. Son fils, Jacques V Duval d’Eprémesnil (1770-1838) fut colonel d’Empire. Le frère de Jacques V, Hippolyte-Léon d’Eprémesnil dit Bourbonnais (1788-1807), décéda à Varsovie comme sous-lieutenant au 9e régiment de hussards.</RiC:history>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050608"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050608_d4125e39">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050608-d4123e76"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050608_d4125e42">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050608-d4123e82"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050608_d4125e45">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050608-d4123e88"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050608">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/family/050608"/>
+      <RiC:creationDate>2015-09-30</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050608</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050608"/>
+   </rdf:Description>
+</rdf:RDF>

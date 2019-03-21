@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050454">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Deville, Gabriel (1854-1940)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050454_d4002e72"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1854-03-08</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1940-02-28</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050454-d4000e207"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050454-d4000e213"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050454-d4000e219"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050454-d4000e225"/>
+      <RiC:history xml:lang="fr">Originaire des Hautes-Pyrénées, Gabriel Deville (1854-1940) fait des études de droit à Toulouse et à Paris. Il devient journaliste à 
+     L'Égalité, le journal de Jules Guesde. Arrêté le 15 septembre 1878 avec J. Guesde pour leur participation à un congrès ouvrier interdit, ils sont emprisonnés à Sainte-Pélagie et co-signent le « Programme et Adresse des socialistes révolutionnaires de France ». Il est avec Jules Guesde, l'un des fondateurs en 1879 du Parti Ouvrier Français et écrit de nombreux ouvrages sur le marxisme et le socialisme : 
+     L’anarchisme (1887), 
+     Blanqui libre (1878), 
+     Le Capital, de Karl Marx, résumé et accompagné d’un aperçu sur le socialisme scientifique (1883), 
+     Cours d’économie sociale - L’évaluation du capital (1884), 
+     L’État et le Socialisme (1886), 
+     Principes socialistes (1896), 
+     Histoire socialiste - Thermidor et Directoire, et 
+     Socialisme, révolution, internationalisme (1893). 
+     Le 21 juin 1896, il est élu député dans le quatrième arrondissement de Paris (1ère circonscription). Battu dans la 2e circonscription en 1898, il est réélu le 22 mars 1903 dans la 4e circonscription. À la Chambre, Gabriel Deville siège au sein du groupe des socialistes parlementaires, aux côtés de Briand et Millerand. Secrétaire de la Commission de séparation de l’Église et de l’État en 1904, il prend part aux discussions de différents projets de lois (sur la suppression de l’enseignement congrégationiste, sur la réorganisation des Archives en France). Aux élections générales des 6 et 20 mai 1906, Deville ne se représente pas. En 1907, une nouvelle carrière s’ouvre devant lui : ministre plénipotentiaire de 2e classe, envoyé extraordinaire en Éthiopie le 29 avril 1907, il est nommé délégué de la France à la Commission européenne du Danube le 16 juillet 1907. Le 6 février 1909, il devient sous-directeur des affaires de chancellerie, puis il occupe le poste d’envoyé extraordinaire et ministre plénipotentiaire à Athènes, le 5 juin 1909. Gabriel Deville a été membre de la Commission centrale de recherche et de publication des documents sur l’histoire économique de la Révolution française (décembre 1903) ainsi que de la Commission d’organisation des bibliothèques et des archives (juin 1905).</RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050454--d4000e161"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050454--d4000e173"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050454--d4000e185"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050454--d4000e197"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb12516634x#foaf:Person"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Gabriel_Deville"/>
+      <isni:ISNIAssigned>0000000081252445</isni:ISNIAssigned>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050454-d4000e320"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050454"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050454-d4000e207">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj12zg--s5xb7u1f4uq0"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050454-d4000e213">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050454-d4000e219">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msizce3-1fkn61hd3lpjw"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050454-d4000e225">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msk3h6v--1a7obp35gqwv3"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050454-d4000e320">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Deville, Gabriel (1854-1940) et l'ensemble de documents "Fonds Gabriel Deville (XVIIe-XXe siècles)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/001830-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050454_d4002e72">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050454-d4000e133"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050454--d4000e161">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Deville, Gabriel (1854-1940)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050454-d4000e156"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050454--d4000e173">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Deville, Gabriel (1854-1940)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050454-d4000e168"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050454--d4000e185">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Deville, Gabriel (1854-1940)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050349-d3923e153 http://data.archives-nationales.culture.gouv.fr/place/009905-d195e177"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050454--d4000e197">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Deville, Gabriel (1854-1940)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050059-d3690e202"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050454">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050454"/>
+      <RiC:creationDate>2016-07-12</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-11-27</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_050454</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Jean Jolly (dir.), Dictionnaire des parlementaires français, notices biographiques sur les ministres, sénateurs et députés français de 1889 à 1940, Paris, PUF, 1960.</RiC:source>
+      <RiC:source xml:lang="fr">Archives nationales, Fonds DEVILLE 51 AP.</RiC:source>
+      <RiC:source xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Gabriel_Deville</RiC:source>
+      <RiC:source xml:lang="fr">Notice BnF : FRBNF12516634</RiC:source>
+      <RiC:source xml:lang="fr">Base de données des députés français depuis 1789 : http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2480</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000081252445"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050454"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb12516634x"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Gabriel_Deville"/>
+   </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,77 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050336</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Zénaïde ANDRIEU-ROMANEIX</agent>
+            <eventDescription>F. Clavaud, 10 décembre 2013 : ajouté lien d'association vers notice de l'Ecole de Grignon</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, Fonds Théodule Deslandes (523 AP) et Fonds de l'Ecole d'agriculture de Grignon (84 AJ).</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Deslandes, Théodule</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1801-01-01">XIXe siècle</fromDate>
+               <toDate standardDate="2000-12-31">XXe siècle</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates exactes de naissance et de mort ne sont pas connues</p>
+            </descriptiveNote>
+         </existDates>
+         <biogHist>
+            <p>Ancien élève de l’École nationale d’agriculture de Grignon, Théodule Deslandes fut professeur à l’École nationale d’agriculture du Chesnoy (Loiret).</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_009027"
+                      xlink:type="simple">
+            <relationEntry>École nationale supérieure agronomique de Grignon</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1827-01-01">1827</fromDate>
+               <toDate standardDate="1971-12-31">1971</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_005791"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Théodule Deslandes (1897-1941)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

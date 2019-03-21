@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051005</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-04-27</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>F. Clavaud, 27 avril 2015 : revu noms, ajouté indexation activités</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>CNAHES</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>family</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_051005-d4389e79">
+            <part>Brauner (famille)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1910-01-01">1910</fromDate>
+               <toDate standardDate="2002-12-31">2002</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation xml:id="FRAN_occupation_051005-d4389e102">
+               <term vocabularySource="d699msjarlu--l5x9bzdkopz8">médecin</term>
+               <descriptiveNote>
+                  <p>pédiatre</p>
+               </descriptiveNote>
+            </occupation>
+            <occupation xml:id="FRAN_occupation_051005-d4389e114">
+               <term vocabularySource="d3m0bl6wug5-uopxzo8mxp1p">travailleur social</term>
+               <descriptiveNote>
+                  <p>éducation des enfants autistes</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Alfred Brauner est docteur ès lettres, il est né à Saint-Mandé en 1910 ; Françoise Brauner (1911-2000) est pédiatre et pédo-psychiatre, elle est née à Vienne (Autriche) en 1911. Peu après leur mariage, en 1935, le couple commence à prendre en charge des enfants victimes de la guerre : en 1936, ils partent en Espagne où Françoise travaille dans un hôpital tandis qu’Alfred gère différents foyers d’accueil à Bénicassim ; en novembre 1938, ils prennent en charge un groupe d’enfants juifs ayant fui l’Allemagne au lendemain de la « nuit de Cristal ». Ces jeunes sont accueillis au château de la Guette, où le couple fonde une République d’enfants. Cette expérience dure environ 6 mois jusqu’au début de la guerre.</p>
+            <p>En 1945, après avoir été actifs dans la résistance, le couple participe à l’accueil d’enfants survivants des camps d’extermination d’Auschwitz et Buchenwald à Écouis dans l'Eure, expérience vécue comme décevante par manque de moyens. Juste après la guerre, Alfred travaille au Service colonies de vacances et maisons familiales de l’association Tourisme et Travail avant d’être engagé, en 1952, à l’Institut médico-pédagogique La Forge. De plus, en 1950, Alfred et Françoise Brauner font partie des créateurs du groupement de recherches pratiques pour l’enfance (GRPE). Cette association ouvre le Centre de traitement éducatif pour enfants et adolescents de Saint-Mandé, qui accueille principalement des enfants autistes. Le couple y travaille jusqu’en 1982. Parallèlement, Alfred et Françoise Brauner constituent une collection exceptionnelle de dessins d’enfants ayant vécu les principaux conflits du XXe siècle (Guerre d’Espagne, seconde guerre mondiale, guerre du Vietnam, conflit israelo-palestinien, Tchétchénie…). Françoise est décédée en septembre 2000 et Alfred en décembre 2002.</p>
+         </biogHist>
+      </description>
+   </cpfDescription>
+</eac-cpf>

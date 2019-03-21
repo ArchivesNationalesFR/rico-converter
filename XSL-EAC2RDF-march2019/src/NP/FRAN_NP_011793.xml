@@ -1,0 +1,117 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_011793</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01624</otherRecordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2016-05-11</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marie-Françoise LIMON-BONNET</agent>
+            <eventDescription>F. Clavaud, 11 mai 2016 : revu forme autorisée du nom, note sur dates, activité</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Huard de La Marre, Denis Victor (1783-18..)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1811-03-02">2 mars 1811</fromDate>
+               <toDate standardDate="1827-12-07">7 décembre 1827</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>La date de décès de la personne n'est pas connue ; les dates indiquées sont ses dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">422, rue Saint-Honoré</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd36jkq-2di11qojb16k">Saint-Honoré (rue)</placeEntry>
+               <placeEntry localType="arrondissement_ancien"
+                           vocabularySource="d3nyv5jo07--11vv6ggdeixfq">01e arrondissement</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à Paris</term>
+               <dateRange>
+                  <fromDate standardDate="1811-03-02">2 mars 1811</fromDate>
+                  <toDate standardDate="1827-12-07">7 décembre 1827</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d3nyu9x713-9kcjiv44l4wh">notaire</term>
+               <dateRange>
+                  <fromDate standardDate="1811-03-02">2 mars 1811</fromDate>
+                  <toDate standardDate="1827-12-07">7 décembre 1827</toDate>
+               </dateRange>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Né le 21 juillet 1783 à Chartres (Eure-et-Loir).</p>
+            <p>D'abord principal clerc de Me Ménard (BB/10/348 et 349, 7 février 1811, dossier de nomination comme notaire par la chancellerie).</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010152"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XXV</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1811-03-02">2 mars 1811</fromDate>
+               <toDate standardDate="1827-12-07">7 décembre 1827</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041738"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Denis Victor HUARD de LA MARRE, 2 mars 1811 - 6 décembre 1827 (étude XXV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051423"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Denis Victor Huard-Delamare pour l'étude XXV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_056454"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Denis Victor Huard de La Marre pour l'étude XXV</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

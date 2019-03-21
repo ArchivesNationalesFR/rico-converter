@@ -1,0 +1,116 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050884</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-11-03</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2014-11-26</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Informations fournies par A. Clergeau (mission des archives du ministère de la Culture) en octobre 2014</p>
+               <p>Notice d'autorité BnF n° FRBNF12106125</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 2110 1650</entityId>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Musée du Louvre (Paris). Laboratoire</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Laboratoire de recherche du musée du Louvre (Paris)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Institut Marini</part>
+            <useDates>
+               <dateRange>
+                  <fromDate standardDate="1931-01-01">1931</fromDate>
+                  <toDate standardDate="1935-12-31">1935</toDate>
+               </dateRange>
+            </useDates>
+         </nameEntry>
+         <nameEntry>
+            <part>Laboratoire d'études scientifiques du musée du Louvre (Paris)</part>
+            <useDates>
+               <dateRange>
+                  <fromDate standardDate="1935-01-01">1935</fromDate>
+                  <toDate standardDate="1968-12-31">1968</toDate>
+               </dateRange>
+            </useDates>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1931-01-01">1931</fromDate>
+               <toDate standardDate="1968-12-31">1968</toDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>établissement public</term>
+            </legalStatus>
+         </legalStatuses>
+         <biogHist>
+            <p>Le laboratoire du Louvre a été crée en 1931 avec le concours de deux docteurs argentins, Carlos Mainini, et Fernando Pérez, sous le nom d’Institut Marini. Il deviendra le Laboratoire d’études scientifiques du musée du Louvre, en 1935 à la mort du docteur Pérez et sera dirigé par le docteur en médecine Jacques Dupont. La guerre de 1939-1945 interrompt les activités du laboratoire, l’ensemble de son matériel étant stocké en zone libre. Le laboratoire reprit ses activités après la guerre, en 1946 et fut dirigé par Mme Magdeleine Hours à partir de 1950 jusqu’en 1982. Le laboratoire devient en 1968 le Laboratoire de recherche des musées de France. En 1970, le Laboratoire dispose d’une annexe itinérante : le Labobus, qui sert également de vitrine pour les activités du Laboratoire auprès du public. Suite à sa fusion avec le service de restauration, le laboratoire est devenu à partir du 1er janvier 1999 le Centre de recherche et de restauration des musées de France</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-later"
+                      xlink:href="FRAN_NP_050886"
+                      xlink:type="simple">
+            <relationEntry>Laboratoire de recherche des musées de France</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1968-01-01">1968</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_005223"
+                      xlink:type="simple">
+            <relationEntry>Musée du Louvre</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1931-01-01">1931</fromDate>
+               <toDate standardDate="1968-12-31">1968</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_053712"
+                           xlink:type="simple">
+            <relationEntry localType="archival">ARCHIVES DES MUSEES nationaux Laboratoire de recherche du Louvre (sous-série 5EE)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

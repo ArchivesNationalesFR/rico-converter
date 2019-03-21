@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/051302">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">France. Comité d’orientation et de sélection des archives orales des préfets (2004-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051302_d4574e36"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051302_d4574e39"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051302_d4574e42"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/f7742d1f-1699-45c7-804b-0277189a621d"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-10-08</RiC:beginningDate>
+      <RiC:history xml:lang="fr">Le ministère de l’Intérieur et de l’Aménagement du territoire se dote d’un comité d’orientation et de sélection des archives orales des préfets le 8 octobre 2004. Ce comité est instauré à la suite d’un rapport rendu par le sous-préfet Jean Fuerxer, chargé par le Directeur de la modernisation et de l’action territoriale, M. Comet, d’une étude sur la réalisation d’une campagne d’archives orales au sein du ministère de l’Intérieur. Le comité se compose du directeur du Centre d’études et de prévisions et du sous-directeur du corps préfectoral représentant le Secrétaire général, de représentants de l’association des membres du corps préfectoral et des hauts fonctionnaires du corps préfectoral du ministère de l’Intérieur et du chef de la Mission des Archives nationales.  Le comité d’orientation et de sélection des archives orales des préfets a pour mission de créer par des campagnes orales successives un corpus dont l’objectif est de concourir à une meilleure connaissance de l’histoire, de l’action et du fonctionnement de l’Etat. Ce recueil d’archives orales a pour but de garder une trace de l’existence des acteurs et des témoins, ainsi que de constituer une documentation historique pour la recherche. Le comité a en charge le pilotage de la campagne d’entretiens oraux d’anciens préfets. Deux campagnes sont réalisées et versées aux Archives nationales. La première est réalisée du 13 janvier au 26 mai 2005 (20060251) par Mme Terray, docteure en histoire, qui travaille dans le cadre d’une convention passée entre le ministère de l’Intérieur et un laboratoire du Centre national de la recherche scientifique (CNRS) et l’Institut d’histoire du temps présent (IHTP) dirigé par M. Henry Rousso. La seconde est réalisée entre 2006 et 2010 (20090414). Les contrats avec les témoins sollicités n'ayant pas été signés, ces entretiens ne sont pas communicables. L'Association du corps préfectoral et des hauts fonctionnaire auprès du ministère de l'Intérieur assure le suivi des versements de ces campagnes.</RiC:history>
+      <RiC:agentIsTargetOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/051302-d4572e134"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051302-d4572e146"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051302"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051302_d4574e36">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051302-d4572e67"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051302_d4574e39">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051302-d4572e73"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051302_d4574e42">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051302-d4572e79"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051302">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/051302"/>
+      <RiC:creationDate>2016-09-05</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_051302</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051302"/>
+   </rdf:Description>
+</rdf:RDF>

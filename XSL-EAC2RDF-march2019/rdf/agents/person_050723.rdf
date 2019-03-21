@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050723">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Douart, Georges</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050723_d4200e45"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1926-01-01</RiC:birthDate>
+      <RiC:history xml:lang="fr">Né à Nantes en 1926, Georges Douart est issu d’une famille ouvrière. Il commence sa professionnelle en 1943 comme apprenti électricien dans l’usine nantaise Brissonneau et Lotz. Il adhère au groupe nantais des auberges de jeunesse en novembre 1944. A partir de 1948, il encadre des caravanes ouvrières ajistes, où il anime des veillées et des danses folkloriques. En 1949, il rencontre le Service civil international et participe dans les années 1950 à de nombreux chantiers organisés par cette association à travers le monde (Afrique, Asie, Amériques, Europe). Il publie deux ouvrages chez Plon qui raconte ses expériences : « Opération "Amitié" » en 1958 et « Du kolkhoze au kibboutz » en 1961.  Au début des années 1960, il organise, dans toutes les régions de France, de nombreuses conférences sur les pays qu’il a visités. Ses conférences ont lieu dans des MJC, des foyers ruraux, des centres sociaux, des cercles culturels, des foyers de jeunes travailleurs, des Fédérations d’œuvres laïques, etc. A partir de 1963, il reprend le travail en usine, à Lyon, dans la région parisienne et à Nantes, pour rédiger un livre sur l’évolution de la condition ouvrière qui paraît en 1967 chez Plon sous le titre : « L’usine et l’homme ». Il reprend ensuite ses tournées de conférences, dans les mouvements de jeunesse et d’éducation populaire. En mai-juin 1968, il anime avec des militants de Peuple et culture des causeries dans les usines devant des ouvriers grévistes du secteur qui occupent les ateliers. A la fin des années 1960 et au début des années 1970, il reprend ses voyages d’études à travers le monde pour mettre à jour ses conférences. A partir de 1976, Georges Douart diminue ses tournées de conférences, réduit cette vie itinérante où l’on change de chambre et de lit presque tous les jours. Il entame sa reconversion dans la formation continue qui se met alors en place. Il donne des cours aux ouvrières et aux salariés des usines lyonnaises et stéphanoises. Il organise aussi des stages d’insertion et de formation pour les jeunes chômeurs. Durant ces années, il suit des cours à l’université Lyon 2, rédige un mémoire sur les autodidactes et obtient le diplôme universitaires des pratiques sociales. C’est aussi l’époque, où il milite activement dans les centres sociaux et socioculturels, particulièrement celui de La Duchère à Lyon, où il est formateur. En 1985, Georges Douart est licencié ainsi que toute l’équipe de formateurs par manque de subventions. Il est alors mis en pré-retraite à l’âge de 59 ans. En 1993, il sort son quatrième livre « Les civils sous l’occupation » chez un éditeur de l’Ouest. Georges Douart est aujourd’hui un militant actif de l’association Les anciens et amis des auberges de jeunesse de la région Rhône-Alpes (ANAAJ).</RiC:history>
+      <isni:ISNIAssigned>0000000083635458</isni:ISNIAssigned>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050723-d4198e136"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050723"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050723-d4198e136">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Douart, Georges et l'ensemble de documents "Archives de Georges Douart"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/050471-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050723_d4200e45">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050723-d4198e85"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050723">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050723"/>
+      <RiC:creationDate>2014-03-06</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050723</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000083635458"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050723"/>
+   </rdf:Description>
+</rdf:RDF>

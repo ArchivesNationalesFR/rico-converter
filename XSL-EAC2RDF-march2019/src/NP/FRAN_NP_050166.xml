@@ -1,0 +1,72 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050166</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-10-15</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Raphael BAUMARD</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Société de Saint-Vincent-de-Paul</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1833-01-01">1833</fromDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>association</term>
+            </legalStatus>
+         </legalStatuses>
+         <biogHist>
+            <p>Fondée à Paris en 1833 par Frédéric Ozanam et ses compagnons, la Société de Saint-Vincent-de-Paul est une organisation catholique internationale de laïcs. Elle a pour vocation de lutter contre la pauvreté et d’apporter un soutien spirituel, un appui moral ou une aide matérielle à toute personne en difficulté.</p>
+            <p>Les Vincentiens se retrouvent en équipes appelées « conférences ». Les conférences se réunissent en principe chaque semaine : elles sont animées par un président, élu pour 5 ans et assisté d’un bureau (vice-président, secrétaire, trésorier). Les recettes de la conférence proviennent des contributions personnelles, offrandes, dons et legs, subventions d’organismes publics et privés ; les dépenses consistent essentiellement en aides de toutes sortes, soutiens aux activités, solidarité, contributions aux charges des conseils (la conférence s’interdit toute thésaurisation et redistribue tout ce qu’elle reçoit).</p>
+            <p>Au niveau local, les conférences sont regroupées au sein de conseils particuliers, ceux-ci étant à leur tour dépendants du conseil central, au niveau départemental ou diocésain. Les conférences transmettent leur demande d’agrégation au Conseil national, par l’intermédiaire des conseils centraux.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_051849"
+                      xlink:type="simple">
+            <relationEntry>Ozanam, Frédéric (1813-1853)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1833-01-01">1833</fromDate>
+               <toDate standardDate="1853-08-22">22 août 1853</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_004505"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds de la société de Saint-Vincent-de-Paul, conférences de Paris (1830-1990)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

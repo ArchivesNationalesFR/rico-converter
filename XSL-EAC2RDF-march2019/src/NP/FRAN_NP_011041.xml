@@ -1,0 +1,104 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_011041</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00800</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>M. F. LIMON, Les notaires au Châtelet sous le règne de Louis XIV, Toulouse, presses universitaires du Mirail, 1992, p. 383</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Mahault, Antoine de</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1700-01-19">19 janvier 1700</fromDate>
+               <toDate standardDate="1728-12-29">29 décembre 1728</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvow9c3--1ln2rhczl581f">saint-eustache (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgeuq1--ys2q6qcqeojf">montmartre (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzc47wbl-1a2g6xqjbuj5s">montmartre (rue)</placeEntry>
+               <placeEntry localType="nomLieu">rue Montmartre, au coin de la rue Neuve-Saint-Eustache</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1700-01-19">19 janvier 1700</fromDate>
+                  <toDate standardDate="1728-12-29">29 décembre 1728</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Marié à Marie Baudin</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010147"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XX</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1700-01-19">19 janvier 1700</fromDate>
+               <toDate standardDate="1728-12-29">29 décembre 1728</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XX/554, 18 novembre 1734, inventaire après décès</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041633"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Antoine de MAHAULT, 19 janvier 1700 - 29 décembre 1728 (étude XX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052770"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Antoine de Mahault pour l'étude XX</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051581">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Sima, Isabelle (1970-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051581_d4796e49"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1970-09-05</RiC:birthDate>
+      <RiC:history xml:lang="fr">Née à Chanac-les-Mines (Corrèze) le 5 septembre 1970, Isabelle Sima est diplômée de l'Institut d'études politiques de Toulouse (promotion 1991) et titulaire d'un diplôme d'études supérieures spécialisées en droit fiscal de l'université de Toulouse-1 obtenu en 1994. Après avoir engagé une carrière juridique en qualité de chargée d'études de la société d'avocats "Prissette et associés" de 1994 à 1996 puis de juriste contentieux au sein de la caisse de retraite et de prévoyance des auxiliaires médicaux (CARPIMKO) de 1997 à 2000, elle s'engage en politique au sein du Parti socialiste. Coordinatrice du pôle "Fédérations, élections" du PS de 2000 à 2004, elle devient directrice du pôle "Fédérations, élections, relations extérieures et fichier" de 2004 à 2009. Conseillère politique et parlementaire au cabinet du président du Conseil régional de Bretagne, Jean-Yves Le Drian, de 2009 à 2011, elle est chargée des déplacements et des meetings auprès de Stéphane Le Foll, responsable de l'organisation à la direction de la campagne de François Hollande pour l'élection présidentielle. A la suite de l'élection de ce dernier à la présidence de la République, Isabelle Sima est nommée cheffe adjointe de cabinet du Président de la République le 22 mai 2012, fonction qu'elle exerce jusqu'au 12 juillet 2013, date de sa nomination en qualité de cheffe de Cabinet du Président de la République, jusqu'au 13 octobre 2016. Elle est nommée préfète du Cantal le 13 octobre 2016.</RiC:history>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051581-d4794e115"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051581-d4794e118"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051581-d4794e121"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051581-d4794e124"/>
+      <RiC:agentIsSourceOfAgentTemporalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentTemporalRelation/051581-d4794e151"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051581"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051581_d4796e49">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051581-d4794e91"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051581">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051581"/>
+      <RiC:creationDate>2017-07-17</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-08-01</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051581</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Présidence de la République, Service des archives et de l'information documentaire</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051581"/>
+   </rdf:Description>
+</rdf:RDF>

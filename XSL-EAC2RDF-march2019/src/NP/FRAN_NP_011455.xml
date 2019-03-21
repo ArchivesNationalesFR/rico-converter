@@ -1,0 +1,109 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_011455</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01249</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Leconte, Louis</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Lecomte, Louis</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1597-03-27">27 mars 1597</fromDate>
+               <toDate standardDate="1630-12-24">24 décembre 1630</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvow9c3--1ln2rhczl581f">saint-eustache (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp309r-fxzjuc9ul5cl">saint-leu-saint-gilles (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd1u57i-1h2qpz5x5m5i3">saint-denis (rue)</placeEntry>
+               <placeEntry localType="nomLieu">rue Saint-Denis</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1597-03-27">27 mars 1597</fromDate>
+                  <toDate standardDate="1630-12-24">24 décembre 1630</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>marié à Marie Houallet (voir inventaire après décès)</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010197"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale LXX</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1597-03-27">27 mars 1597</fromDate>
+               <toDate standardDate="1630-12-24">24 décembre 1630</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/II/138, 24 novembre 1631, inventaire après décès</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/II/138, 11 décembre 1631, vente par Marie Houallet, veuve de Louis Leconte, de l'office de notaire dudit Leconte à Georges Beurrey</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054133"
+                           xlink:type="simple">
+            <relationEntry localType="archival">«Mélanges» (dossiers de clients) de l’étude XCVI. MC/ET/XCVI/285/A-MC/ET/XCVI/285/B (1517-1723)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055875"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Louis Leconte pour l'étude LXX</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042578"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Louis LECONTE, 17 mars 1597 - 24 décembre 1630 (étude LXX)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

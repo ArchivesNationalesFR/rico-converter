@@ -1,0 +1,81 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051286</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-04-27</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Clotilde LEFORESTIER</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Réseau de transport d'électricité</part>
+         </nameEntry>
+         <nameEntry>
+            <part>RTE </part>
+         </nameEntry>
+         <nameEntry>
+            <part>RTE EDF Transport</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="2000-07-01"> 1er juillet 2000</fromDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>société commerciale</term>
+            </legalStatus>
+         </legalStatuses>
+         <mandates>
+            <mandate>
+               <descriptiveNote>
+                  <p> Directive européenne 96/92/CE2 de décembre 1996, transposée en droit français par la loi du 10 février 2000.</p>
+               </descriptiveNote>
+            </mandate>
+         </mandates>
+         <biogHist>
+            <p>Reprise des activités de l'ancien Service du Transport d'EDF à la suite de la création du marché européen de l'électricité qui impose, au sein d'EDF, la séparation des fonctions de production et de transport. Il a une mission de service public qui est de garantir un accès équitable au réseau à tous les acteurs du marché de l'électricité.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_051425"
+                      xlink:type="simple">
+            <relationEntry>Piechaczyk, Xavier (1969-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2015-10-01">octobre 2015</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>
+     X. Piechaczyk, membre du directoire de RTE, directeur adjoint réseaux, clients et territoires
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

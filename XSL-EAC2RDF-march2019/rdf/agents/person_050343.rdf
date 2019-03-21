@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050343">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Bourrut Lacouture, Étienne (1894-1959)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050343_d3920e60"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1894-05-07</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-03-16</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050343-d3918e159"/>
+      <RiC:history xml:lang="fr"> Étienne Bourrut Lacouture naît à Gurat (Charente), le 7 mai 1894, dans la maison familiale de Lémerie, où son père, Auguste Bourrut Lacouture (1853-1911) est propriétaire terrien.  Après des études de droit, il entre à l’École des Sciences Politiques où il étudie jusqu’à la Première Guerre mondiale. Engagé volontaire en août 1914, il est incorporé au 34e régiment d'infanterie en décembre 1914 puis au 249e régiment d'infanterie (son journal de guerre a été édité en 2005, éditions Galaxy à Versailles). Blessé grièvement à Verdun, devant Douaumont le 13 mai 1916, il finit la guerre à l’état-major du Gouvernement militaire de Paris. Il est nommé chevalier de la Légion d’honneur le 28 décembre 1916 et reçoit la croix de guerre. Après la guerre, Étienne Bourrut Lacouture reprend ses études à l’École des Sciences Politiques ; recalé au concours de l'inspection des finances, il entreprend une carrière préfectorale et devient en 1920, à Pau, chef de cabinet du préfet des Pyrénées-Atlantiques, Henri Maupoil, qu'il suit dans son affection suivante à Rennes, en Ille-et-Vilaine. C'est là qu'il rencontre sa future épouse, Marie-Thérèse Deniaud (1901-1997), avec qui il se marie le 27 juin 1922. Le couple aura quatre enfants : Nelly (née en 1924), Luc (né en 1927), Alain (né en 1929), Jean-François (né en 1942). Après son mariage, Étienne Bourrut Lacouture s’inscrit comme avocat à la Cour d’Appel de Rennes (Ille-et-Vilaine) et installe son cabinet à Rennes, rue Hoche.  Dès 1919, Étienne Bourrut Lacouture s'engage dans l'Union Nationale des Combattants, en devient le dirigeant départemental, anime la Mutuelle Retraite de l'UNC, ainsi que le groupement « Ceux de Verdun ». Il se présente aux élections législatives de 1928 en tant que candidat républicain d'Union Nationale mais n'est pas élu. Il adhère ensuite aux Croix de Feu et en 1937 au Parti Social Français (P.S.F.) du colonel de La Rocque. A la fin de la seconde guerre mondiale, il est interné durant six mois à Rennes sur une dénonciation et remis en liberté le 20 février 1945, sans jugement ni condamnation, le dossier étant vide. Étienne Bourrut Lacouture reprend son activité d'avocat à Rennes et est élu bâtonnier de l'ordre en 1957. Il décède à Rennes le 16 mars 1959. </RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050343--d3918e137"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050343--d3918e149"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050343"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050343-d3918e159">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj742x--12cnnohd8i9wj"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050343_d3920e60">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050343-d3918e109"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050343--d3918e137">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Bourrut Lacouture, Étienne (1894-1959)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050343-d3918e132"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050343--d3918e149">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Bourrut Lacouture, Étienne (1894-1959)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050343-d3918e144"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050343">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050343"/>
+      <RiC:creationDate>2016-06-22</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-02-05</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_050343</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Archives nationales, Fonds Bourrut Lacouture (1915-2006), 660 AP.</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050343"/>
+   </rdf:Description>
+</rdf:RDF>

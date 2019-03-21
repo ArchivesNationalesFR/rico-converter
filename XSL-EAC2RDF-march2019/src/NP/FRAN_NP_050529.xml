@@ -1,0 +1,59 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050529</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-02-04</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>F. Clavaud, 4 février 2014 : changé forme du nom</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, fonds d'Ajot et Frémond de la Merveillère (125AP).</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Dajot, Louis Lazare</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Ajot, Louis Lazare d'</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1717-01-10">10 janvier 1717</fromDate>
+               <toDate standardDate="1786-01-31">31 janvier 1786</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Louis-Lazare Dajot ou d’Ajot (1717-1786) servit pendant 6 ans dans le régiment d’infanterie de la Fère puis entra dans l’armée du génie. Il reçut son diplôme d’ingénieur en 1734. Ingénieur chef en 1755, il obtint la direction des fortifications de Flandres en 1768. Parallèlement, il fut promu capitaine (1744), puis lieutenant-colonel (1763). La même année, il fut envoyé à Vienne pour servir l’impératrice Marie-Thérèse, dans sa bataille contre le roi de Prusse. Rentré en France, il fut promu maréchal de camp en 1780.</p>
+         </biogHist>
+      </description>
+   </cpfDescription>
+</eac-cpf>

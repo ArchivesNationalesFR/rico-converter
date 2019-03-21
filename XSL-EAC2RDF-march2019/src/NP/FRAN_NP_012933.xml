@@ -1,0 +1,117 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012933</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE02848</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry scriptCode="Latn" localType="autorisée" xml:lang="fre">
+            <part>Boggio-Pola, Alain</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1970-09-02">2 septembre 1970</fromDate>
+               <toDate standardDate="2009-11-30">30 novembre 2009</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">étude CXVII : 28 rue Scheffer</placeEntry>
+               <placeEntry localType="arrondissement_actuel"
+                           vocabularySource="d3nyv8l7vr--1oyxkw6yfemf2">16e arrondissement</placeEntry>
+               <placeEntry localType="arrondissement_actuel"
+                           vocabularySource="d3nyv8ljb1--rjak82kccgxp">17e arrondissement</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzdadkoh--d8lfyg0msoka">scheffer (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzc9buqo-1afls8w3o05z5">niel (avenue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nz8hnvwp-xxyvvshmr0an">ampère (rue)</placeEntry>
+            </place>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">étude CLV : 1 avenue Niel puis 51 rue Ampère</placeEntry>
+               <placeEntry localType="arrondissement_actuel"
+                           vocabularySource="d3nyv8l7vr--1oyxkw6yfemf2">16e arrondissement</placeEntry>
+               <placeEntry localType="arrondissement_actuel"
+                           vocabularySource="d3nyv8ljb1--rjak82kccgxp">17e arrondissement</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzdadkoh--d8lfyg0msoka">scheffer (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzc9buqo-1afls8w3o05z5">niel (avenue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nz8hnvwp-xxyvvshmr0an">ampère (rue)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1970-09-02">2 septembre 1970</fromDate>
+                  <toDate standardDate="2009-11-30">30 novembre 2009</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>passe à l'étude CLV en 1987.</p>
+            <p>Admis à la retraite par arrêté du Ministre de la Justice du 30 novembre 2009 (JORF du 10 décembre 2009, p. 21342)</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010244"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale CXVII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1970-09-02">2 septembre 1970</fromDate>
+               <toDate standardDate="1987-06-17">17 juin 1987</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010263"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale CLV</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1987-06-17">17 juin 1987</fromDate>
+               <toDate standardDate="2009-11-30">30 novembre 2009</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="creatorOf">
+            <relationEntry localType="archival">étude CXVII, les minutes ont été versées à la Chambre des notaires de Paris du 16 juin 1906 au 22 juin 1948</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="creatorOf">
+            <relationEntry localType="archival">minutes</relationEntry>
+            <descriptiveNote>
+               <p>les minutes de ce notaire sont conservées à l'étude</p>
+            </descriptiveNote>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

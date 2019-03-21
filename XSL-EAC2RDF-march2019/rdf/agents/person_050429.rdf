@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050429">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Simon, Jules (1814-1896)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050429_d3989e45"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050429_d3989e48"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1814-12-27</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1896-06-08</RiC:deathDate>
+      <RiC:history xml:lang="fr">Élève et successeur de Victor Cousin à la Sorbonne, élu représentant des Côtes-du-Nord à la Constituante en 1848, François Simon Jules Suisse, dit Jules Simon (1814-1896), refusa comme professeur à la Sorbonne de prêter serment à l’empereur, après 1852. Il dut renoncer à l’enseignement public et publia plusieurs ouvrages : Le devoir, La religion naturelle, La liberté de conscience. Élu en 1863 député par la VIIIe circonscription de la Seine, puis en 1869 dans la Gironde, Jules Simon devint un des membres les plus actifs de l’opposition. La chute de l’Empire le fit passer de l’opposition au pouvoir. Ministre de l’Instruction publique dans le gouvernement de la Défense nationale, il fut élu député dans la Marne, et conserva sous le gouvernement de Thiers le portefeuille de l’Instruction publique. Il retourna dans l’opposition en avril 1873. En 1875, Jules Simon, déjà membre de l’Académie des sciences morales, fut élu membre de l’Académie française et nommé par l’Assemblée nationale sénateur à vie. Devenu chef de cabinet en 1876, il fut brutalement renvoyé par Mac-Mahon en 1877. En 1889, il combattit le boulangisme dans un pamphlet piquant : Souviens-toi du 2 Décembre. L’activité parlementaire des dernières années de Jules Simon fut consacrée aux problèmes de l’éducation et aux questions sociales.</RiC:history>
+      <isni:ISNIAssigned>0000000122800445</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050429-d3987e127"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050429-d3987e148"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050429"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050429-d3987e148">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Simon, Jules (1814-1896) et l'ensemble de documents "Fonds Simon (1831-1923)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/001868-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050429_d3989e45">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050429-d3987e85"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050429_d3989e48">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050429-d3987e91"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050429">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050429"/>
+      <RiC:creationDate>2014-04-03</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050429</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000122800445"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050429"/>
+   </rdf:Description>
+</rdf:RDF>

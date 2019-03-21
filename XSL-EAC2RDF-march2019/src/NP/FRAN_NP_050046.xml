@@ -1,0 +1,58 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050046</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-08-13</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>family</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Blau (famille de)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1701-01-01">XVIIIe siècle</fromDate>
+               <toDate standardDate="1900-12-31">XIXe siècle</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Marie-Madeleine de Saint-Paul de Seroskerque, de parents hollandais et protestants, fut élevée en France et y épousa, en 1704, Thomas de Blau, gentilhomme auvergnat. Restée en relation avec des personnes influentes dans sa patrie d’origine, elle y fut envoyée en mission secrète par Louis XIV, à l’époque où avaient lieu à Geertruydenberg des pourparlers en vue de mettre fin à la guerre de Succession d’Espagne, en 1710.</p>
+            <p>Son second fils, Louis-François, capitaine au régiment de Guyenne, fit campagne au Canada sous Montcalm durant la guerre de Sept Ans.</p>
+            <p>Le fils de Louis-François, Marie-Alexandre-Camille, émigra et servit dans l’armée de Condé où il fut blessé en 1796. Il rentra en France en 1806 et s’établit à Poitiers.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_000634"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Blau (1709-1825)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/family/050084">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Family"/>
+      <rdfs:label xml:lang="fr">Greffulhe (famille)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050084_d3714e58"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1501-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-12-31</RiC:endDate>
+      <RiC:history xml:lang="fr">Originaire de Sauve en Languedoc, la famille Greffulhe quitte la France au moment de la Révocation de l’Édit de Nantes. Réfugiée à Genève, elle s’installe ensuite à Amsterdam, où elle fonde une maison de commerce sous la raison sociale 
+     J. J. Greffulhe et Cie. 
+     En mai 1789, Louis Greffulhe (1741-1810) vient à Paris, et associé à Jacques-Marc Montz, sous la raison sociale 
+     Greffulhe, Montz et C°, reprend la suite des affaires de la banque Girardot et Haller, fondée au début du siècle et à laquelle avait été associé Necker. La banque est dissoute en 1793 et Louis Greffulhe part en Angleterre fonder une nouvelle maison de banque à Londres. 
+     La famille Greffulhe revient en France sous l'Empire. Jean-Louis (1774-1820), fils de Louis Greffulhe, se rallie aux Bourbons en 1815. Il acquiert des biens dans le département de Seine-et-Marne et en particulier le château de Bois-Boudran. Il fait partie en 1816 du groupe de banquiers français associés à Baring et Hope pour les emprunts de libération du territoire. En mai 1818, il reçoit le titre de comte et est nommé pair de France par Louis XVIII en décembre de la même année.  Marié au printemps 1810 à Célestine Gabrielle de Vintimille du Luc (1787-1862), Jean-Louis Greffulhe a deux fils : Charles (1814-1888) qui hérite de ses affaires et de la propriété de Bois-Boudran et qui se porte acquéreur vers 1867 des hôtels situés aux n° 8 et 10 de la rue d'Astorg, et Henri (1815-1879). Charles Greffulhe épouse le 29 avril 1846 Félicité Pauline de La Rochefoucauld (1824-1911). Ils ont trois enfants : Henri (1848-1932) ; Jeanne (1850-1891) qui épouse Auguste, duc d'Arenberg ; Louise (1852-1932) mariée à Robert des Acres de l'Aigle, marquis de L'Aigle. Henri épouse en 1878 Élisabeth, princesse de Caraman-Chimay (1860-1952), qui règne pendant plus d’un demi-siècle sur le Tout-Paris artistique, scientifique, politique et mondain. Leur fille unique Élaine (1882-1958) épouse Armand de Gramont (1879-1962).</RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050084--d3712e134"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationtoPlace/050084--d3712e146"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050084-d3712e181"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050083-d3711e277"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050065-d3694e91"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050084-d3712e193"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050084-d3712e214"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050084-d3712e221"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050084"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050084-d3712e214">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Greffulhe (famille) et l'ensemble de documents "Fonds comte Greffulhe (1861-1932)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/004277-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050084-d3712e221">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Greffulhe (famille) et l'ensemble de documents "Fonds de la banque Greffulhe (1736-1867)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/004467-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050084_d3714e58">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050084-d3712e106"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050084--d3712e134">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Greffulhe (famille)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050083-d3711e174"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationtoPlace/050084--d3712e146">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Greffulhe (famille)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050083-d3711e186"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050084">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/family/050084"/>
+      <RiC:creationDate>2013-10-17</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-02-28</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_050084</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Archives nationales : fonds Gramont (101AP) ; fonds comte Greffulhe (101AP(I)) ; fonds Greffulhe (101AP(II)) ; fonds de la banque Greffulhe (61AQ).</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050084"/>
+   </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/050830">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">Association des anciens élèves de l'Ecole des Roches et du Collège de Normandie (France)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050830_d4266e56"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050830_d4266e59"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/f7742d1f-1699-45c7-804b-0277189a621d"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1910-05-31</RiC:beginningDate>
+      <RiC:history xml:lang="fr">L'association des anciens élèves de l'Ecole des Roches et du Collège de Normandie procède de la fusion en 1952 de l'Association des anciens élèves de l'Ecole des Roches (constituée le 31 mai 1910) et de l'Association des anciens élèves du Collège de Normandie.  L'Ecole des Roches est un établissement privé d'enseignement primaire et secondaire non confessionnel fondé en 1899 par Edmond Demolins, sociologue, dans un but de formation d'élites, dans un contexte d'inspiration anglo-saxonne (le modèle de la 
+
+     public school anglaise y est prédominant). Installé à Verneuil-sur-Avre, en Normandie, cet établissement propose une pédagogie active, centrée sur l'enfant ; cet internat s'insère ainsi dans le mouvement de "l'éducation nouvelle". Les méthodes pédagogiques appliquées à l'Ecole des Roches sont résolument innovantes : en mars 1911, y est ainsi mise sur pied la première troupe des Eclaireurs de France, qui fut la première unité scoute créée en France dans le cadre d'un établissement scolaire. 
+
+     Cet établissement s'est ouvert à la mixité en 1969 et bénéficie actuellement d'un recrutement qui dépasse le cadre national. En 1990, elle devient un établissement d'enseignement privé sous contrat avec le ministère de l'Education nationale (régime de la loi sur l'enseignement privé de 1959).  Les anciens élèves (communément appelés "Rocheux" ou "Rocheuses") se retrouvent donc au sein de l'Association des anciens élèves pour maintenir des liens, préserver la mémoire et l'identité de l'établissement auxquels ils sont attachés.  L'association bénéficie d'un bulletin de liaison intitulé désormais 
+
+     Rocs et Rocheux. De même, l'association dispose d'un site internet depuis 1998, reconfiguré en 2011. Elle met à jour également l'annuaire des anciens élèves de l'Ecole des Roches. 
+
+    </RiC:history>
+      <RiC:noteOnStructureOrGenealogy xml:lang="fr">L'assemblée générale des membres de l'association est réunie tous les ans ; elle élit le bureau de l'association, appelé "comité". Ce comité se réunit une fois par mois et nomme chaque année le président, le secrétaire générale et le trésorier de l'association. </RiC:noteOnStructureOrGenealogy>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/050830-d4264e148"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050830"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050830_d4266e56">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050830-d4264e97"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050830_d4266e59">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1910-05-31</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-12-31</RiC:endDate>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050830-d4264e103"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050830">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/050830"/>
+      <RiC:creationDate>2014-07-30</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050830</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050830"/>
+   </rdf:Description>
+</rdf:RDF>

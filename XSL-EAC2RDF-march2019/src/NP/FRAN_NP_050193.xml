@@ -1,0 +1,149 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050193</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-02-10</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Virginie POTIN</agent>
+            <eventDescription>F. Clavaud, 10 février 2016 : revu nom, ajouté ISNI et notices BNF et Wikipédia, activités</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-10-26</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Virginie GREGOIRE</agent>
+            <eventDescription>Ajout : lien IR, liens identité (BnF, wikipédia)</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-12-04</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb11100223p</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Notice Wikipédia : https://fr.wikipedia.org/wiki/Louis_de_Chappedelaine</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Archives nationales, fonds Louis de Chappedelaine (564 AP).</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 6983 3300</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Chappedelaine, Louis de (1876-1939)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1876-01-01">1876</fromDate>
+               <toDate standardDate="1939-12-31">1939</toDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Côtes du Nord</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3ntb7hqlz-1wtyohr4yjr84">Côtes-d'Armor (Bretagne , département)</placeEntry>
+            </place>
+         </places>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msj742x--12cnnohd8i9wj">avocat</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msjnw86-64seh0fmw8hj">ministre</term>
+               <dateRange>
+                  <fromDate standardDate="1931-01-01">1931</fromDate>
+                  <toDate standardDate="1939-12-31">1939</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>plusieurs fois ministre (de la marine marchande, des colonies, de la marine militaire)</p>
+               </descriptiveNote>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msiribo--1dn34eg8lht4f">député</term>
+               <dateRange>
+                  <fromDate standardDate="1910-01-01">1910</fromDate>
+                  <toDate standardDate="1939-12-31">1939</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>député des Coôtes-du-Nord</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Né en 1876, fils d’officier de marine, le breton Louis de Chappedelaine (1876-1939) est avocat lorsqu’il entre au groupe d’action libérale à la Chambre. Il fait une très courte apparition au gouvernement en occupant moins d’une semaine le secrétariat à l’Agriculture dans le premier cabinet Chautemps en 1930. L’année suivante, il est chargé par Laval de la Marine marchande, sujet sur lequel il s’est penché depuis plus de vingt ans comme député des Côtes-du-Nord. Il travaille à la réorganisation de ses services, sur les questions sociales et sur la place de l’État aussi bien vis-à-vis des chantiers navals que des compagnies maritimes. Ministre des Colonies au moment de l’Exposition coloniale, il se préoccupe des impôts en Indochine et des taxes sur le rhum. Il retrouve deux fois le portefeuille de la Marine marchande (24 janvier-4 juin 1936, 10 avril 1938-13 septembre 1939) où il suit de près les dossiers sociaux. Il démissionne en septembre 1939 pour raison de santé et meurt deux mois plus tard.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_051213"
+                      xlink:type="simple">
+            <relationEntry>Mermaz, Louis (1931-....)</relationEntry>
+            <descriptiveNote>
+               <p>Louis Mermaz, fils de Louis de Chappedelaine</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="https://fr.wikipedia.org/wiki/Louis_de_Chappedelaine"
+                      xlink:type="simple">
+            <relationEntry>Louis de Chappeldelaine</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1876-01-01">1876</fromDate>
+               <toDate standardDate="1939-12-31">1939</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Lien vers notice wikipédia</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb11100223p"
+                      xlink:type="simple">
+            <relationEntry>Chappedelaine, Louis de</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1876-01-01">1876</fromDate>
+               <toDate standardDate="1939-12-31">1939</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Lien vers notice autorité BnF</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_003490"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Louis de Chappedelaine (1931-1939)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

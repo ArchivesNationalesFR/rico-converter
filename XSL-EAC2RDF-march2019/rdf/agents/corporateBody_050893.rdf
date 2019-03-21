@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/050893">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">Association France ESF (Economie Sociale Familiale)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050893_d4311e41"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050893_d4311e44"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/f7742d1f-1699-45c7-804b-0277189a621d"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1997-02-01</RiC:beginningDate>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/050893-d4309e114"/>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/050893-d4309e120"/>
+      <RiC:history xml:lang="fr">L'Association France ESF (Economie Sociale Familiale) est créée en février 1997.  Ses missions prioritaires sont de : - coordonner et fédérer les associations de professionnels en ESF, - représenter la profession auprès des pouvoirs publics, des différents organismes et partenaires, - développer la communication entre les adhérents, avec les partenaires.  Depuis 2009, le siège social se situe au Centre d'études, de documentation, d'information et d'action sociales (CEDIAS-musée Social), 5, rue Las cases, 75007 Paris. France ESF est l'héritière des actions de plusieurs associations. L'Union nationale des professeurs et monitrices d’enseignement ménager familial (UNPMEMF) est fondée le 1er mai 1944 par cinq personnes qui ont décidé de créer une association professionnelle de personnel d’enseignement ménager. La déclaration au Journal Officiel date du 18 octobre 1945. Puis, le 23 février 1969, l’Union nationale des professionnelles en économie sociale et familiale (UNPESF) fait apparaître les trois lettres du sigle ESF, qui prend la suite de l'association d’enseignement ménager et amorce la création du diplôme de CESF pour devenir le 27 novembre 1971, une association nationale (ANPESF). Dix-sept ans plus tard, le 27 avril 1988, est mise en place une nouvelle organisation pour mettre en relief l’existence régionale de chaque association et permettre un fonctionnement fédératif et de mutualisation ; cette fédération est dénommée : Fédération nationale des associations de professionnels en économie sociale et familiale (FNAPESF). Les principaux axes de sa mission, au-delà de la représentation des professionnels sur le plan national, sont de définir une véritable politique et une stratégie de communication interne et externe, et de mettre en place des outils opérationnels de communication. En 1995, lors de la dissolution de la FNAPESF, dix-sept associations régionales sont adhérentes (Alsace, Aquitaine, Auvergne, Centre, Cote d’Azur - Corse, Haute Normandie, Ile de France, Languedoc Roussillon, Lorraine, Limousin, Midi Pyrénées, Nord, Pays de Loire, Picardie, Poitou Charente, Rhône Alpes, Martinique) et deux membres associés (ESF services et ADAC). Elles sont regroupées au sein de la section ESF de la Confédération française des professions sociales (CFPS), que la Franche-Comté rejoint à ce moment, pour continuer les actions engagées et maintenir un réseau national.  De 1995 à 2007, l'association est hébergée par la CFPS et est partenaire de cette structure jusqu'à la dissolution de la CFPS en 2007. </RiC:history>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/050893-d4309e139"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050892-d4308e185"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050893"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/050893-d4309e114">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d5bhvil20q--uuew3ia85vzc"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/050893-d4309e120">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:description xml:lang="fr">économie sociale familiale</RiC:description>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d5bhvih1do--ryj2votztf8z"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050893_d4311e41">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050893-d4309e79"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050893_d4311e44">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050893-d4309e85"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050893">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/050893"/>
+      <RiC:creationDate>2015-02-12</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050893</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050893"/>
+   </rdf:Description>
+</rdf:RDF>

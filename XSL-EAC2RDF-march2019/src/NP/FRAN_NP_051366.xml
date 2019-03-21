@@ -1,0 +1,84 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051366</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-09-05</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marine ZELVERTE</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice BnF n° FRBNF16634561 : http://catalogue.bnf.fr/ark:/12148/cb166345616</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI: 0000000431814437</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Deschamps, Didier (1949-....)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1949-09-01">1er septembre 1949</fromDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msj02xm-19qbb7wdtto3j">enseignant</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msixdvh--wgctct8soc1y">membre de cabinet ministériel</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Né en 1949, agrégé d'allemand, Didier Deschamps a été successivement enseignant à l'Université de Munich (1975-1983), directeur de l'Institut français de Hambourg puis de Munich (1983-1993). Il est ensuite directeur des affaires culturelles de la région Centre (1993-1996) puis Midi-Pyrénées (1996-1999), et conseiller de coopération adjoint à l'Ambassade de France au Maroc en charge des affaires culturelles (1999-2002). Il est conseiller culturel de Philippe Douste-Blazy, maire de Toulouse. De 2004 à 2006, il est conseiller technique chargé des politiques culturelles et de l'éducation artistique au sein du cabinet de Renaud Donnedieu de Vabres, ministre de la Culture et de la Communication. En 2012, il est directeur régional des affaires culturelles de la région Languedoc-Roussillon, avant de prendre sa retraite. </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050961"
+                      xlink:type="simple">
+            <relationEntry>Donnedieu de Vabres, Renaud (1954-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2004-01-01">2004</fromDate>
+               <toDate standardDate="2006-12-31">2006</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Didier Deschamps est conseiller technique de Renaud Donnedieu de Vabres</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054204"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Dossiers de Didier Deschamps, conseiller chargé des politiques culturelles et de l’éducation artistique au sein du cabinet de Renaud Donnedieu de Vabres</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

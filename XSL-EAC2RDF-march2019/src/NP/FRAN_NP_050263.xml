@@ -1,0 +1,85 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050263</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-05-12</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Vanessa ASPART</agent>
+            <eventDescription>Elsa Camus : modifications (forme autorisée du nom, sources) ajout ISNI, relation</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, Fonds Henri Mondor (1863-1971), 675 AP. </p>
+               <p>Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb137377648</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 0880 6923</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Lamy, Marthe (1893-1979)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1893-06-03">3 juin 1893</fromDate>
+               <toDate standardDate="1979-07-13">13 juillet 1979</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msjarlu--l5x9bzdkopz8">médecin</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Le docteur Marthe Lamy est une ancienne élève d'Henri Mondor. </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050241"
+                      xlink:type="simple">
+            <relationEntry>Mondor, Henri (1885-1962)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1937-01-01">1937</fromDate>
+               <toDate standardDate="1962-04-06">6 avril 1962</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Elève de Mondor
+      Dates extrêmes des documents</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_050095"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Henri Mondor (1863-1971)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

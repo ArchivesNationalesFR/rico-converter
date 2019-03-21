@@ -1,0 +1,100 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050323</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-01-16</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Zénaïde ANDRIEU-ROMANEIX</agent>
+            <eventDescription>F. Clavaud, 16 janvier 2014 : changé forme du nom et ajouté n° notice BnF.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-07-17</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Zénaïde ANDRIEU-ROMANEIX</agent>
+            <eventDescription>Notice révisée le 17/07/2017 : ISNI, correction de la date de décès et de la notice d'autorité (BnF), descripteurs activités, lien identité vers BnF.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-11-14</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Archives nationales, Fonds Nimier (511 AP).</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Notice d'autorité BnF n° FRBNF12384639</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 4060 2725</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Nimier, Henri-Jacques (1857-1938)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Nimier, Henri (1857-1938)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1857-12-09">09 décembre 1857</fromDate>
+               <toDate standardDate="1938-12-31">1938</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msjarlu--l5x9bzdkopz8">médecin</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Originaire de Bretagne, Henri Nimier (1857-1938) a été médecin et inspecteur général des services de santé de l’armée, notamment en Indochine à la fin du XIXe siècle et sur le front pendant la guerre de 1914-1918. À partir de 1927, date de sa mise à la retraite, il entreprend de tenir un journal qu’il poursuit jusqu’au 7 octobre 1938, une semaine avant sa mort.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb123846398"
+                      xlink:type="simple">
+            <relationEntry>Nimier, Henri-Jacques (1857-1938) </relationEntry>
+            <dateRange>
+               <fromDate standardDate="1857-12-09">09 décembre 1857</fromDate>
+               <toDate standardDate="1938-12-31">1938</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Lien vers la notice d'autorité BnF.</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055935"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Papiers d'Henri Nimier (1927-1938).</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

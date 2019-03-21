@@ -1,0 +1,105 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051356</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-08-10</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID-DORMIEN</agent>
+            <eventDescription>Elsa Camus, 17 octobre 2016 : ajout lien identité, modification historique (conjugaison), ajout autres formes du nom</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2016-10-20</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice BNF: FRBNF11889823</p>
+               <p>Notice Wikipedia : https://fr.wikipedia.org/wiki/Roland_Bacri</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Bacri, Roland (1926-2014)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Roro de Bab-El-Oued (1926-2014)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Rol-Bac (1926-2014)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Bac, Rol- (1926-2014)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1926-04-01">1er avril 1926</fromDate>
+               <toDate standardDate="2014-05-24">24 mai 2014</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msizce3-1fkn61hd3lpjw">journaliste</term>
+               <descriptiveNote>
+                  <p>Canard enchaîné (1956-1999)</p>
+               </descriptiveNote>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msj3i51--hevk1gms21cg">écrivain</term>
+               <descriptiveNote>
+                  <p>Ouvrages humoristiques et divers</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Né à Alger en avril 1926, dans le quartier populaire européen de Bab-El-Oued, il entre dès 1953 au 
+     <span style="italic">Canard Sauvage</span> de Bernard Lacache à Alger, puis à Paris par intermittence au 
+     <span style="italic">Canard enchaîné</span> dès 1953 puis régulièrement trois ans plus tard. Il est collaborateur du journal jusqu'à sa retraite en 1999. 
+    </p>
+            <p>Humoriste et journaliste populaire, il est engagé auprès de la communauté "Pieds-noirs" et rapatriés après l'indépendance de l'Algérie en 1962.</p>
+            <p>Par ailleurs, il fait partie d'une équipe littéraire avec Pierre Dac, Pierre-Jean Vaillard et Edmond Brua sous le pseudonyme "Rol-Bac".</p>
+            <p>Son frère cadet est le compositeur et chef d'orchestre Jean-Claude Bacri, connu sous le pseudonyme de Jean Claudric.</p>
+            <p>Roland Bacri décède à Levallois-Perret (92) en mai 2014 à l'âge de 88 ans.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb11889823c"
+                      xlink:type="simple">
+            <relationEntry>Bacri, Roland (1926-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1926-04-01">1er avril 1926</fromDate>
+               <toDate standardDate="2014-05-24">24 mai 2014</toDate>
+            </dateRange>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

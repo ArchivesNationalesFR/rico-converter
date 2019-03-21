@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051567">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Martel, Philippe-André (1771-1849)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051567_d4782e58"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051567_d4782e61"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051567_d4782e64"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1771-07-31</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1849-09-06</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051567-d4780e144"/>
+      <RiC:history xml:lang="fr">Lieutenant au 4e bataillon de volontaires de l’Isère, Philippe-André Martel (1771-1849) sert en Savoie en 1792, à l’armée des Alpes en 1793, puis devant Toulon, à l’armée d’Italie, de 1794 à 1799. Fait prisonnier de guerre à Turin le 21 juin 1799 et emmené en Autriche, il recouvre sa liberté le 6 mars 1801. Aide de camp du général Fiorella, le 10 juillet suivant, il passe avec lui au service du royaume d’Italie. Chef d’escadrons en 1804, il est chef d’état-major de la division Fiorella pendant la campagne d’Italie de 1805, sert en Dalmatie comme chef d’état-major de Lauriston, puis de Clauzel, de 1806 à 1808. Chef d’état-major de la divison Serevoli à l’armée d’Italie en 1809, puis de la 1re division militaire du royaume d’Italie à Milan, fin 1810, il est envoyé en Espagne en 1811. Général de brigade le 11 juillet de la même année, il est rappelé en Italie. Commandant de brigade au 4e corps de la Grande Armée en Allemagne en 1813, il sert à Lutzen, Bautzen et Leipzig. Baron d’Empire en octobre 1813, il est fait prisonnier pendant la campagne de Russie, et ne revient en France qu’en juillet 1814. Maréchal de camp au service de la France, le 30 décembre 1814, il rentre dans ses foyers en non-activité. Il reprend du service pendant les Cent-Jours, mais est définitivement placé en non-activité le 1er août 1815. Il meurt à Lyon le 6 septembre 1849.</RiC:history>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Philippe_Andr%C3%A9_Martel"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051171-d4469e316"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051567-d4780e202"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051567"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051567-d4780e144">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msk3a25-1xs3m641rhiyg"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051567-d4780e202">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Martel, Philippe-André (1771-1849) et l'ensemble de documents "Fonds général Martel (1797-1846)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/004334-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051567_d4782e58">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051567-d4780e109"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051567_d4782e61">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051567-d4780e115"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051567_d4782e64">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051567-d4780e121"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051567">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051567"/>
+      <RiC:creationDate>2017-07-13</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-12-19</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051567</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Archives nationales, fonds du général Martel : 205 AP.</RiC:source>
+      <RiC:source xml:lang="fr">Notice BnF : FRBNF10571963</RiC:source>
+      <RiC:source xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Philippe_Andr%C3%A9_Martel</RiC:source>
+      <RiC:source xml:lang="fr">Six (Georges), Dictionnaire biographiques des généraux et amiraux français de la révolution et de l'Empire (1792-1814), 1934, t. 2, p. 160.</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051567"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Philippe_Andr%C3%A9_Martel"/>
+   </rdf:Description>
+</rdf:RDF>

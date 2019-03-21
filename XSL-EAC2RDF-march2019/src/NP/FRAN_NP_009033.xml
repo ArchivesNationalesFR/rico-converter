@@ -1,0 +1,149 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_009033</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Import_SIA</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2014-07-07</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+            <eventDescription/>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice d'autorité BnF n° FRBNF16262138</p>
+               <p>Site Internet de l'ANSES : http://www.anses.fr</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Agence nationale de sécurité sanitaire de l'alimentation, de l'environnement et du travail (France)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>ANSES</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="2010-01-01">2010</fromDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term vocabularySource="d5blonb3ky--u69ytier8ih6">établissement public à caractère administratif</term>
+            </legalStatus>
+         </legalStatuses>
+         <mandates>
+            <mandate>
+               <descriptiveNote>
+                  <p>Ordonnance n° 2010-18 du 7 janvier 2010</p>
+                  <p>Décret n° 2010-719 du 28 juin 2010</p>
+               </descriptiveNote>
+            </mandate>
+         </mandates>
+         <biogHist>
+            <p>L'Agence nationale de sécurité sanitaire de l'alimentation, de l'environnement et du travail (ANSES) est créé par l'ordonnance n° 2010-18 du 7 janvier 2010, et organisée par le décret 2010-719 du 28 juin 2010.</p>
+            <p>C’est un établissement public à caractère administratif placé sous la tutelle des ministères chargés de la Santé, de l'Agriculture, de l'Environnement, du Travail et de la Consommation. Elle est le résultat de la fusion de l'Agence française de sécurité sanitaire des aliments (Afssa) et de l’Agence française de sécurité sanitaire de l’environnement et du travail (Afsset).</p>
+            <p>L’Agence s’appuie sur un réseau de 11 laboratoires de référence et de recherche, répartis sur 16 implantations géographiques sur le territoire et reconnus au niveau international dans plusieurs domaines ou disciplines. Elle compte près de 1350 agents et mobilise environ 800 experts extérieurs via ses collectifs d’experts.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_000004"
+                      xlink:type="simple">
+            <relationEntry>Ministère de l'Agriculture</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2010-01-01">2010</fromDate>
+               <toDate/>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_007079"
+                      xlink:type="simple">
+            <relationEntry>Ministère de l'Économie et des Finances</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2010-01-01">2010</fromDate>
+               <toDate/>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_000006"
+                      xlink:type="simple">
+            <relationEntry>Ministère de l'Écologie et du Développement durable</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2010-01-01">2010</fromDate>
+               <toDate/>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-child"
+                      xlink:href="FRAN_NP_009019"
+                      xlink:type="simple">
+            <relationEntry>Laboratoire d'hydrologie de Nancy</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2010-07-01">1er juillet 2010</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_009838"
+                      xlink:type="simple">
+            <relationEntry>Ministère des Affaires sociales et de la Santé</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2012-05-16">16 mai 2012</fromDate>
+               <toDate/>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-earlier"
+                      xlink:href="FRAN_NP_004566"
+                      xlink:type="simple">
+            <relationEntry>Agence française de sécurité sanitaire de l'environnement et du travail</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2010-01-01">2010</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-earlier"
+                      xlink:href="FRAN_NP_009020"
+                      xlink:type="simple">
+            <relationEntry>Agence française de sécurité sanitaire des aliments</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2010-01-01">2010</fromDate>
+            </dateRange>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

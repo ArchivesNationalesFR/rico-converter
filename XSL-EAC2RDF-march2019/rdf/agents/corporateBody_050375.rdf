@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/050375">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">Syndicat de la boucherie en gros de la rive gauche de Paris - abattoirs de Vaugirard</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050375_d3943e34"/>
+      <RiC:hasLegalStatus rdf:resource=""/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1913-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1977-12-31</RiC:endDate>
+      <RiC:history xml:lang="fr">Les statuts du Syndicat de la boucherie en gros des abattoirs de la rive gauche de Paris-abattoirs de Vaugirard ont été adoptés lors de l’assemblée générale du 14 janvier 1913 ; son objet vise à étudier et défendre les intérêts généraux du commerce de la boucherie en gros, fournir aux tribunaux de commerce des arbitres compétents et représenter la corporation auprès des autorités. Au sein du conseil d’administration fonctionnent deux commissions spécialisées : la commission des arbitrages (chargée de régler les litiges) et la commission des constatations (chargée d’estimer les préjudices en cas de saisie ou de contusion du bétail). À la suite de la fermeture des abattoirs de Vaugirard, le 31 décembre 1976 (décision du Conseil de Paris du 24 juin 1976), le syndicat déclare cesser son activité lors de son assemblée générale du 12 mai 1977 et disparaît le 30 juin 1977. Le service médico-social interprofessionnel des abattoirs de Vaugirard est créé lors de l’assemblée générale du 28 avril 1954, conformément à la loi du 11 octobre 1946 et au décret du 27 novembre 1952 qui obligent l’employeur à faire partie d’un service médico-social ; son président est par ailleurs le président du Syndicat de la boucherie en gros des abattoirs de Vaugirard.</RiC:history>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050375"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050375_d3943e34">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050375-d3941e64"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050375">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/050375"/>
+      <RiC:creationDate>2013-10-08</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050375</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050375"/>
+   </rdf:Description>
+</rdf:RDF>

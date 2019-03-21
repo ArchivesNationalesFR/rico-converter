@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/010615">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Rameau, Augustin (1738-1808)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/010615_d714e113"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1738-11-19</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1808-03-15</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/010615-d712e273"/>
+      <RiC:history xml:lang="fr">Né le 19 novembre 1738 à Neuvy, dans la généralité de Dijon, baptisé à l'église Saint-Pierre (auj. Neuvy-sur-Loire, Nièvre). Il est d'abord clerc chez le notaire Augustin Jacques Lhéritier, qui devient secrétaire du roi (Arch. nationales, V/2/45, 14 mars 1775), puis principal clerc du successeur de Lhéritier, Jean Louis Aubert (étude XCIV). Il acquiert l'office de notaire de Louis Dominique Massuet-Du Quesnoy, étude XX (MC/ET/LXXXIV/566, 24 janvier 1782), auprès des héritiers de ce dernier. Les lettres de provisions sont datées du 30 janvier 1782 et la réception au Châtelet a lieu le 5 février 1782. Il est notaire substituant dans l'étude LXXXVI, du 1er janvier au 6 février 1794, en remplacement d'Augustin Aleaume, décédé. Il meurt le 15 mars 1808 sans avoir été marié. Son testament est déposé le 15 mars 1808, l'inventaire après décès est réalisé à partir du 4 avril 1808.</RiC:history>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/010147-d244e547"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/010615-d712e325"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/010615-d712e331"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/010615"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/010615-d712e273">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1782-02-05</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1805-10-09</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/010615-d712e325">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Rameau, Augustin (1738-1808) et l'ensemble de documents "Images des répertoires du notaire Augustin Rameau pour l'étude XX"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/052756-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/010615-d712e331">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Rameau, Augustin (1738-1808) et l'ensemble de documents "Minutes et répertoires du notaire Augustin RAMEAU, 5 février 1782 - 9 octobre 1805 (étude XX)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/041637-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/010615_d714e113">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/010615-d712e202"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/010615">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/010615"/>
+      <RiC:creationDate>2013-04-23</RiC:creationDate>
+      <RiC:lastUpdateDate>2016-11-23</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_010615</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Philippe BERTHOLET, Etudes et notaires parisiens en 1803, au moment de la loi du 25 ventôse an XI (16 mars 1803), Paris, 2004, p. 230-231</RiC:source>
+      <RiC:source xml:lang="fr">MC/ET/LXXXIV/566, 24 janvier 1782 : traité d'office.</RiC:source>
+      <RiC:source xml:lang="fr">Y/5090/A, 5 février 1782 : réception au Châtelet.</RiC:source>
+      <RiC:source xml:lang="fr">MC/ET/XLI/796, 15 mars 1808 : testament déposé.</RiC:source>
+      <RiC:source xml:lang="fr">MC/ET/XX/827, 4 avril 1808 : inventaire après décès.</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_010615"/>
+   </rdf:Description>
+</rdf:RDF>

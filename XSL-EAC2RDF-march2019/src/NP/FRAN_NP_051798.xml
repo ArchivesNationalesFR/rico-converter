@@ -1,0 +1,96 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051798</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2017-11-14</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Samuel GIBIAT</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-11-15</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Samuel GIBIAT</agent>
+            <eventDescription>Notice créée le 14 novembre 2017 par Samuel Gibiat</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Fiche documentaire du service des Archives et de l'Information documentaire de la Présidence de la République</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 0088 111X</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Trierweiler, Valérie (1965-....)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1965-02-16">16 février 1965</fromDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d-1axy38anu-1ua8su5ef37p1">animateur de radio ou de télévision</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msizce3-1fkn61hd3lpjw">journaliste</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Née Valérie Massonneau le 16 février 1965 à Angers (Maine-et-Loire), Valérie Trierweiler est titulaire d'un diplôme d'études supérieures spécialisées (DESS) de sciences politiques, obtenu à l'université de Paris-Sorbonne en 1988.</p>
+            <p>Journaliste à l'hebdomadaire « Profession Politique », de 1988 à 1989, puis journaliste politique à l'hebdomadaire « Paris-Match », de 1989 à 2005, elle devient présentatrice d’émissions sur Direct 8, de 2005 à avril 2012, et grand reporter à « Paris-Match », en charge de la critique littéraire et culturelle, depuis 2006.</p>
+            <p>Compagne de François Hollande, président de la République de mai 2012 à mai 2017, elle est ambassadrice de la Fondation France Libertés, depuis septembre 2012.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="https://fr.wikipedia.org/wiki/Val%C3%A9rie_Trierweiler"
+                      xlink:type="simple">
+            <relationEntry>Valérie Trierweiler</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1965-02-16">16 février 1965</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Lien vers la notice Wikipédia. </p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb144447395"
+                      xlink:type="simple">
+            <relationEntry>Trierweiler, Valérie (1965-....) </relationEntry>
+            <dateRange>
+               <fromDate standardDate="1965-02-16">16 février 1965</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Lien vers la notice d'autorité BnF.</p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

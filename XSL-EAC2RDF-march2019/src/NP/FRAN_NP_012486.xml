@@ -1,0 +1,119 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012486</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE02368</otherRecordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2014-02-04</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marie-Françoise LIMON-BONNET</agent>
+            <eventDescription>F. Clavaud, 4 janvier 2014 : modifié type de relation (passé de sujet à créateur)</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Cartier, Thomas</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1613-04-18">18 avril 1613</fromDate>
+               <toDate standardDate="1645-10-10">10 octobre 1645</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvox0hv--s68ql74wtyjp">Saint-Germain-l'Auxerrois (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd2y5sj-7sr9qedw4k60">Saint-Germain-l'Auxerrois (rue)</placeEntry>
+               <placeEntry localType="nomLieu">rue Saint-Germain-l'Auxerrois</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à Paris</term>
+               <dateRange>
+                  <fromDate standardDate="1613-04-18">18 avril 1613</fromDate>
+                  <toDate standardDate="1645-10-10">10 octobre 1645</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Marié à Marie Robinot, fille de Nicolas Robinot, aussi notaire (voir ET/CXXI/10, contrat de mariage de son fils Thomas le 2 août 1647)</p>
+            <p>ET/CXV/90, 24 octobre 1645, inventaire après décès et testament de Thomas Cartier</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010140"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XIII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1613-04-18">18 avril 1613</fromDate>
+               <toDate standardDate="1645-10-10">10 octobre 1645</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041401"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Thomas CARTIER, 18 avril 1613 - 10 octobre 1645 (étude XIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041403"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Thomas CARTIER, 18 avril 1613 - décembre 1632 (étude XIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041404"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Thomas CARTIER, janvier 1633 - décembre 1642 (étude XIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041405"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Thomas CARTIER, janvier 1643 - 10 octobre 1645 (étude XIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052961"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Thomas Cartier pour l'étude XIII</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

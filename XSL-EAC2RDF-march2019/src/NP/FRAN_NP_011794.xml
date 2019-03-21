@@ -1,0 +1,137 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_011794</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01625</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Huart, Antoine</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1641-06-17">17 juin 1641</fromDate>
+               <toDate standardDate="1681-04-25">25 avril 1681</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvpcbgs-1cppi2iacclig">saint-sulpice (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nz91dko1--1xtxzj891nbs9">buci (rue de)</placeEntry>
+               <placeEntry localType="nomLieu">étude VIII : rue de Buci étude VI : adresse indéterminée</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1641-06-17">17 juin 1641</fromDate>
+                  <toDate standardDate="1681-04-25">25 avril 1681</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>fils de Claude Huart, également notaire (voir ET/XXIV/423 folio 261, 19 septembre 1643, transport de rente par Antoine Huart, héritier de défunt Claude Huart, son père)</p>
+            <p>marié à Marguerite Pogey (voir ET/CV/790, 24 août 1646, bail par Elisabeth Moisy à Antoine Huart et Marguerite Pogey)</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010135"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale VIII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1641-06-17">17 juin 1641</fromDate>
+               <toDate standardDate="1681-04-25">25 avril 1681</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010133"
+                      xlink:type="simple">
+            <relationEntry>Etude VI</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1673-01-01">1673</fromDate>
+               <toDate standardDate="1678-12-31">1678</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/LXXIII/361, 10 mai 1641, vente par Charles Sadron de son office de notaire à Antoine Huart</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041302"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Antoine HUART, 2 juin 1641 - 25 avril 1681 (étude VIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041304"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Antoine HUART, 2 juin 1641 - 1657 (étude VIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041305"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Antoine HUART, janvier 1651 - décembre 1660 (étude VIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041306"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Antoine HUART, janvier 1661 - décembre 1680 (étude VIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041307"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Antoine HUART, janvier 1671 - 25 avril 1681 (étude VIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041219"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire notaires divers, 1648 - 1684 (étude VI)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051424"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Antoine Huart pour l'étude VIII</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

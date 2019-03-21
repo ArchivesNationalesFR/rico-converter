@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/family/050953">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Family"/>
+      <rdfs:label xml:lang="fr">Rambuteau (famille de)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050953_d4357e36"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050953_d4357e39"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050953_d4357e42"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1501-01-01</RiC:beginningDate>
+      <RiC:history xml:lang="fr">Originaire du Charollais en Bourgogne, la famille Barthelot se fixe durant le XVIe siècle sur le domaine et fief de Rambuteau dans la localité d'Ozolles (dép. Saône-et-Loire).  L'un des membres les plus connus de cette famille au XVIe siècle est Claude Barthelot de Rambuteau, procureur du roi en 1537, dont les descendants seront lieutenants royaux à Mâcon, conseillers au Parlement de Bourgogne et officiers aux armées. En 1722, Claude de Barthelot, marquis de Rambuteau et lieutenant de la ville de Mâcon, épouse Marguerite de Rotrou (1700-1775), par ailleurs il fait construire sur les fondations de l'ancien château de Rambuteau une nouvelle demeure. Après le premier Empire, le château de Rambuteau est restauré et son parc aménagé sous la direction de Claude-Philibert Barthelot (1781-1869), petit-fils des précédents, marié en 1808 à Marie-Adelaïde-Charlotte de Narbonne Lara (1790-1856), petite-fille naturelle de Louis XV, dont il aura deux filles. Ce dernier fut nommé en 1809 chambellan de Napoléon Ier, puis comte de l'Empire en 1810. Destitué après Waterloo, il se retire en Saône-et-Loire ; il est élu député en 1827, préfet de Paris entre 1833 et 1848, conseiller d'État et pair de France en 1835. En 1835, Amable-Françoise Barthelot, seconde fille du précédent, épouse Jean-Jacques-Louis Lombard de Buffières (1800-1875), dont le fils cadet, Philibert-Marie-Edouard Lombard de Buffières (1838-1912), préfet du Pas-de-Calais et de Haute-Garonne, relève le titre de comte de Rambuteau. Il sera sans postérité. Son petit-neveu, Amalric-Philibert-Emmanuel Lombard de Buffières (1890-1944) devient comte de Rambuteau, et épouse en 1921 Amélie de Mac Mahon de Magenta, fille de la princesse Marguerite d'Orléans (1869-1940) et du duc Patrice de Mac Mahon (1855-1927), dont il eut quatre enfants ; Françoise, Philibert, Henri et Maurice. Ce dernier épouse Yolande de Mitry. Ils eurent six enfants, dont l'actuel comte de Rambuteau. </RiC:history>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050953"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050953_d4357e36">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050953-d4355e67"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050953_d4357e39">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050953-d4355e73"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050953_d4357e42">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050953-d4355e79"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050953">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/family/050953"/>
+      <RiC:creationDate>2015-01-07</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050953</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050953"/>
+   </rdf:Description>
+</rdf:RDF>

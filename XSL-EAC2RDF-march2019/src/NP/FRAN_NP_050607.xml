@@ -1,0 +1,58 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050607</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-09-05</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+            <eventDescription>Elsa Camus, 22 août 2016 : modification forme autorisée du nom, modification historique (conjugaison)</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, Fonds Pierre-Charles PECOURT, 71 AP.</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>Aucun identifiant</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Pécourt, Pierre-Charles (18..-18..)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1801-01-01">XIXe siècle</fromDate>
+               <toDate standardDate="1900-12-31">XIXe siècle</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Pierre-Charles Pécourt liquide la succession d’Armand-Emmanuel du Plessis, duc de Richelieu (1766-1822), dont il est le procureur. </p>
+            <p>Il est également le liquidateur des successions de son aïeul, le maréchal Louis-François-Armand de Vignerot du Plessis, duc de Richelieu (1696-1788), et de son père, le duc de Richelieu-Fronsac.</p>
+         </biogHist>
+      </description>
+   </cpfDescription>
+</eac-cpf>

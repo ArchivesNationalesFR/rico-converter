@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050622">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Beauharnais, François de (1756-1846)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050622_d4134e83"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050622_d4134e86"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1756-08-10</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1846-03-03</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050622-d4132e223"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050622-d4132e235"/>
+      <RiC:history xml:lang="fr">Colonel à la fin de l’Ancien Régime, François de Beauharnais (1756-1846) est député aux états généraux. Il émigre après l’échec d’un complot visant à enlever le roi. Il sert à l’armée de Condé puis sollicite sa belle-sœur Joséphine, pour obtenir une amnistie après le 18 brumaire. Le 30 pluviôse an XIII (19 février 1805), il est nommé ministre plénipotentiaire en Étrurie. Le 10 avril 1806, il remplace Beurnonville comme ambassadeur à Madrid. Ayant percé le double jeu de Godoy, il prend parti pour le prince des Asturies contre le favori, essayant de faire épouser au futur Ferdinand VII une Tascher de La Pagerie, intrigue qui lui vaut la colère de Napoléon. Il est disgrâcié et exilé en Sologne.</RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050622--d4132e189"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050622--d4132e201"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050622--d4132e213"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb12449399v#foaf:Person"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Fran%C3%A7ois_de_Beauharnais_(1756-1846)"/>
+      <isni:ISNIAssigned>0000000079893497</isni:ISNIAssigned>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/050622-d4132e251"/>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/050622-d4132e281"/>
+      <RiC:agentIsTargetOfAgentTemporalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentTemporalRelation/050765-d4230e131"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050622-d4132e330"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050622"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050622-d4132e223">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">François de Beauharnais est ministre plénipotentiaire en Etrurie de 1805 à 1806 puis ambassadeur d'Espagne de 1806 à 1808.</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj12zg--s5xb7u1f4uq0"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050622-d4132e235">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050622-d4132e330">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Beauharnais, François de (1756-1846) et l'ensemble de documents "Fonds Beauharnais (1624-1843)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/004380-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050622_d4134e83">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050622-d4132e155"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050622_d4134e86">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050622-d4132e161"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050622--d4132e189">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Beauharnais, François de (1756-1846)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050281-d3869e184 http://data.archives-nationales.culture.gouv.fr/place/050555-d4083e147"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050622--d4132e201">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Beauharnais, François de (1756-1846)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050622-d4132e196"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050622--d4132e213">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Beauharnais, François de (1756-1846)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050622-d4132e208"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050622">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050622"/>
+      <RiC:creationDate>2014-05-06</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-06-07</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_050622</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">- Rép. num. détaillé dact. et ms., par M. Massot, S. d’Huart et S. Lacombe, 1964-1971 et 2004, 12 p.</RiC:source>
+      <RiC:source xml:lang="fr">- Aux Archives nationales (site de Paris), des papiers d’Eugène et d’Hortense de Beauharnais sont conservés dans le fonds Napoléon (400 AP).</RiC:source>
+      <RiC:source xml:lang="fr">- Le Musée national du château de Malmaison, à Rueil-Malmaison, conserve des archives de la famille Beauharnais.</RiC:source>
+      <RiC:source xml:lang="fr">- Le fonds Eugène de Beauharnais, détenu par la famille de Leuchtenberg, fut acquis le 5 mars 1934 par André de Coppet à une vente chez Sotheby’s à Londres, et cédé en 1941 à la Princeton University Library où il est conservé sous la cote C0645 [revu] (inventaire en ligne disponible sur le site de l’Université).</RiC:source>
+      <RiC:source xml:lang="fr">- notice d'autorité BnF n° FRBNF12449399 (qui donne 1846 comme date de décès)</RiC:source>
+      <RiC:source xml:lang="fr">Archives nationales, fonds Beauharnais : 251 AP.</RiC:source>
+      <RiC:source xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/François_de_Beauharnais_(1756-1846)</RiC:source>
+      <RiC:source xml:lang="fr">Tulard (Jean) (dir.), Dictionnaire Napoléon, Fayard, 1999, vol. 1, p. 186.</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000079893497"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050622"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb12449399v"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Fran%C3%A7ois_de_Beauharnais_(1756-1846)"/>
+   </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/052078">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Ellenberger, François (1915-2000)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/052078_d5007e57"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/052078_d5007e60"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1915-05-05</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-01-11</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/052078-d5005e192"/>
+      <RiC:history xml:lang="fr">François Ellenberger naît à Lealui, dans la région du Haut Zambèze (Zambie). Son père, Victor, d’origine suisse, est pasteur et missionnaire, spécialiste de l’histoire des Bushmen. Il a deux frères, Henri (1905-1993, psychiatre) et Paul (1919-2016, pasteur et missionnaire protestant au Lesotho, paléontologue). Après une scolarité à Montauban, François Ellenberger est admis à l'École normale supérieure en 1935, puis obtient l'agrégation en sciences naturelles en 1937. Ami d'enfance de Bernard Gèze et de Michel Durand-Delga, il oriente ses travaux de recherche vers la géologie et entre dans le laboratoire de Louis Barrabé à la Faculté des sciences de Paris, où il travaille sous la direction de Léon Bertrand. Fait prisonnier de guerre le 22 juin 1940, il passe 5 ans dans l'Oflag XVII-A à Edelbach (Basse-Autriche) où il participe activement à la vie intellectuelle du camp, en particulier au sein de l’Université de l’Oflag. Il poursuit ainsi ses travaux de recherche en géologie sur le territoire d’Edelbach. De retour à Paris, il s'attaque à la structure géologique des Alpes françaises, et en réalise une cartographie détaillée avec stratigraphie et paléontologie. Il lance l'idée d'un métamorphisme régional post-tectonique et invente le terme de «géosynclinal de nappes». Il soutient sa thèse en 1954 et obtient en 1960 le prix Viquesnel de la Société géologique de France. En 1959, il effectue un séjour de recherche au Lesotho en Afrique australe dont il rapporte notamment des enregistrements sonores de musiques traditionnelles. Nommé maître de conférences à la Sorbonne en 1957, il y devient professeur titulaire de la nouvelle chaire de Géologie structurale en 1962 et est hébergé avec son équipe dans un laboratoire de l'École normale supérieure, puis à partir de 1965 à Orsay, à la faculté des sciences de l’université de Paris. De 1967 à 1984, il est directeur du Laboratoire de géologie structurale de la Faculté des sciences d'Orsay. Il y est un témoin attentif des événements de mai 68 et effectue une œuvre de collecte de tracts, affiches, slogans, imprimés, etc., en provenance des étudiants comme des professeurs. En 1972, il préside la Société géologique de France. À partir de 1972, il se tourne vers l'histoire de la géologie et réalise une série de biographies détaillées de James Hutton, Louis Bourguet, Henri Gautier et de nombreux autres géologues de terrain. Il s'interroge sur la raison de la persistance d'erreurs dans les travaux géologiques et sur les fausses théories qui priment souvent sur le raisonnement. Il fonde en 1976 le Comité français de recherches sur l'histoire de la géologie (COFRHIGEO), pour lequel il obtient immédiatement le concours actif d’André Cailleux, René Taton, Franck Bourdier, Théodore Monod, Jean Orcel et d'autres personnalités connues. En 1984, il se voit décerner le prix Wegmann de la Société géologique de France. Après sa retraite il continue ses travaux et produit un grand nombre de publications, dont une 
+     Histoire de la géologie en deux tomes (1988 et 1994) qui fait référence. 
+     Il publie en 1990, sous le pseudonyme de Victor d’Aunemont, 
+     Dix-huit aventures inédites de Sherlock Holmes. 
+    </RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/052078--d5005e140"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/052078--d5005e167"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/François_Ellenberger"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb12079814z#foaf:Person"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb12166385b#foaf:Person"/>
+      <isni:ISNIAssigned>0000000114738178</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/052078-d5005e272"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/052078"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/052078-d5005e192">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">géologue</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msk5oth-xqvujelh8c39"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/052078_d5007e57">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/052078-d5005e106"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/052078_d5007e60">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/052078-d5005e112"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/052078--d5005e140">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Ellenberger, François (1915-2000)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/052078-d5005e135"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/052078--d5005e167">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Ellenberger, François (1915-2000)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/052078-d5005e162"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/052078">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/052078"/>
+      <RiC:creationDate>2018-07-20</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-07-23</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_052078</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Notice BnF FRBNF12079814 (http://catalogue.bnf.fr/ark:/12148/cb12079814z)</RiC:source>
+      <RiC:source xml:lang="fr">Notice Wikipedia (https://fr.wikipedia.org/wiki/François_Ellenberger)</RiC:source>
+      <RiC:source xml:lang="fr">Ressources en ligne du Comité français d’histoire de la géologie (COFRHIGEO) (http://www.annales.org/archives/cofrhigeo/francois-ellenberger.html)</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000114738178"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052078"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/François_Ellenberger"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb12079814z"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb12166385b"/>
+   </rdf:Description>
+</rdf:RDF>

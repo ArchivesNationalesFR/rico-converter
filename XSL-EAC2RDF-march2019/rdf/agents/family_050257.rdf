@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/family/050257">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Family"/>
+      <rdfs:label xml:lang="fr">Le Riche (famille)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050257_d3853e38"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1639-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1965-12-31</RiC:endDate>
+      <RiC:history xml:lang="fr">Originaire de Chinon, en Touraine, enrichie dans la finance, la famille Le Riche est anoblie au début du XVIIIe siècle. Fils de Pierre Le Riche, seigneur de la Blotière, gentilhomme de la Maison du Roi et valet de chambre de la Reine, Alexandre Le Riche (1663-1735), seigneur de Courgains, en Anjou, et de Brétignolles, en Touraine, est successivement secrétaire du roi, receveur général des finances à Montauban puis à Amiens, directeur général des fermes au Mans et fermier général.  De son premier mariage avec Anne Lebreton, Alexandre le Riche a un fils, Alexandre-Jean-Joseph de la Poupelinière (1692-1762), fermier général (1716-1718 et 1721-1762), homme de lettres, auteur d'un 
+     Journal de voyage en Hollande (1731) et des 
+     Tableaux et mœurs du temps, mécène et musicien. 
+     D'un deuxième mariage avec Madeleine-Thérèse Chevalier de la Chicaudière, Alexandre Le Riche a cinq enfants, dont Alexandre-Edme Le Riche de Cheveigné (1697-1768), conseiller au parlement, qui épousa en 1719 Claire-Elisabeth Le Pelletier de la Houssaye, et Alexandre-Pierre le Riche, seigneur de Vandy, directeur général des fermes au Mans en 1771. Le fils cadet d'Alexandre-Edme, Félix-Alexandre-Claude Le Riche du Perché de Cheveigné (né en 1720), conseiller au parlement de 1766 à 1771, a de son mariage (1775) avec Louise Adélaïde Toustain un fils, Alexandre-Etienne-Bonaventure, auditeur au Conseil d'Etat, qui épouse une petite-fille de Mathieu-Augustin, comte de Cornet, pair de France (1750-1832). Alexandre-Etienne-Bonaventure a un fils, Auguste-Alexandre, et un petit-fils, Alexandre-Fernand-Augustin.</RiC:history>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050257-d3851e124"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050257"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050257-d3851e124">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Le Riche (famille) et l'ensemble de documents "Fonds Le Riche (1639-1965)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/003555-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050257_d3853e38">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050257-d3851e73"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050257">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/family/050257"/>
+      <RiC:creationDate>2018-03-14</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050257</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Archives nationales, Fonds Le Riche (1639-1965), 629 AP.</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050257"/>
+   </rdf:Description>
+</rdf:RDF>

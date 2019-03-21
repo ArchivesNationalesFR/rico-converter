@@ -1,0 +1,107 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050406</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Complète</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-07-28</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+            <eventDescription>Elsa Camus, 28 juillet 2016 : modification forme autorisée du nom, ajout autres formes du nom, ajout activités, ajout lieu, ajout sources</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, Fonds Théodore DUCOS, 46 AP.</p>
+               <p>Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb10349911t</p>
+               <p>Notice Wikipedia : https://fr.wikipedia.org/wiki/Th%C3%A9odore_Ducos</p>
+               <p>Notice Assemblée nationale Sycomore : http://www2.assemblee-nationale.fr/sycomore/fiche/%28num_dept%29/9807</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 5243 8267</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Ducos, Théodore (1801-1855)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Ducos, Jean Étienne Théodore (1801-1855)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1801-08-22">22 août 1801</fromDate>
+               <toDate standardDate="1855-04-17">17 avril 1855</toDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="lieu" vocabularySource="d3ntb7rwey-p9op5y5cz1c6">Gironde (Aquitaine , département)</placeEntry>
+            </place>
+         </places>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msjyazt-1f0ggfyf3is8u">élu local</term>
+               <descriptiveNote>
+                  <p>conseiller général de la Gironde</p>
+               </descriptiveNote>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msj9l7t-1gb5a09kkzrmp">sénateur</term>
+               <dateRange>
+                  <fromDate standardDate="1853-01-01">1853</fromDate>
+                  <toDate standardDate="1855-04-17">17 avril 1855</toDate>
+               </dateRange>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msjnw86-64seh0fmw8hj">ministre</term>
+               <dateRange>
+                  <fromDate standardDate="1851-01-01">1851</fromDate>
+                  <toDate standardDate="1855-04-17">17 avril 1855</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>ministre de la Marine</p>
+               </descriptiveNote>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msiribo--1dn34eg8lht4f">député</term>
+               <dateRange>
+                  <fromDate standardDate="1834-01-01">1834</fromDate>
+                  <toDate standardDate="1851-12-31">1851</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>député de la Gironde puis de la Seine</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <mandates>
+            <mandate/>
+         </mandates>
+         <biogHist>
+            <p>Issu d’une famille de grands armateurs et négociants bordelais, Jean Étienne Théodore Ducos (1801-1855) est le neveu de l’ancien consul Roger Ducos. Conseiller général puis député de la Gironde en 1834, il est élu en février 1848 à la Constituante, où il vote pour le bannissement des Orléans, pour la loi réglementant les clubs et la presse. Il est battu aux élections de 1849 dans la Gironde mais retrouve un siège quelques mois après, à l’occasion d’une élection partielle dans la Seine. Il se rallie au « parti de l'Odre » puis se rapproche du prince-président qui le fait nommer ministre de la Marine et des Colonies à deux reprises, du 9 au 24 janvier 1851 et du 3 décembre 1851 jusqu’à sa mort en 1855. Son administration est marquée par le développement de la marine militaire à vapeur, l’installation française en Nouvelle-Calédonie et l’organisation des transports en Méditerranée lors de la guerre de Crimée. </p>
+         </biogHist>
+      </description>
+   </cpfDescription>
+</eac-cpf>

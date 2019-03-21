@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012464</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE02343</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Noémie SANTACANA Les notaires au Châtelet de Paris à l'époque du Cardinal de Fleury, mémoire de maîtrise 2003-2004, dact., p. 243</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_012464-d2561e79">
+            <part>Cadot, Pierre</part>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_012464-d2561e85">
+            <part>Cadot, Pierre François</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1697-09-11">11 septembre 1697</fromDate>
+               <toDate standardDate="1726-02-04">4 février 1726</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place xml:id="FRAN_place_012464-d2561e114">
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse"
+                           vocabularySource="d3nyvp0xwi-18dd5xg8fnnjr"
+                           xml:id="FRAN_stdPlaceEntry_012464-d3nyvp0xwi-18dd5xg8fnnjrd2561e119">saint-jean-en-grève (paroisse)</placeEntry>
+               <placeEntry localType="paroisse"
+                           vocabularySource="d3nyvoxn4o-1v8ltgercbj9c"
+                           xml:id="FRAN_stdPlaceEntry_012464-d3nyvoxn4o-1v8ltgercbj9cd2561e122">saint-gervais (paroisse)</placeEntry>
+               <placeEntry localType="quartier"
+                           vocabularySource="d3nyvg4hsz--1pxjpiihtogfj"
+                           xml:id="FRAN_stdPlaceEntry_012464-d3nyvg4hsz--1pxjpiihtogfjd2561e125">grève (quartier)</placeEntry>
+               <placeEntry localType="nomLieu" xml:id="FRAN_placeEntry_012464-d2561e128">place de la Grève</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function xml:id="FRAN_activity_012464-d2561e135">
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1697-09-11">11 septembre 1697</fromDate>
+                  <toDate standardDate="1726-02-04">4 février 1726</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Marié à Jeanne Marguerite Ancel (voir ET/LXXXV/418, 9 octobre 1726, contrat de mariage)</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010132"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_012464-d2561e160">
+            <relationEntry>Etude notariale V</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1697-09-11">11 septembre 1697</fromDate>
+               <toDate standardDate="1726-02-04">4 février 1726</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other" xml:id="FRAN_relation_012464-d2561e175">
+            <relationEntry localType="archival">ET/LXXXV/490, 4 mai 1742, inventaire après décès</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041188"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_012464-d2561e181">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Pierre CADOT, 12 septembre 1697 - 4 février 1726 (étude V)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_056771"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_012464-d2561e187">
+            <relationEntry localType="archival">Images du répertoire du notaire Pierre Cadot pour l'étude V</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,64 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050488</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2018-03-26</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Vanessa ASPART</agent>
+            <eventDescription>P. Charbonnier, 26/03/2018 : recherche notice d'autorité BnF et Wikipédia infructueuse</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>family</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Legoux (famille)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1668-01-01">1668</fromDate>
+               <toDate standardDate="1904-12-31">1904</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates citées concernent les dates extrêmes du fonds Legoux.</p>
+            </descriptiveNote>
+         </existDates>
+         <biogHist>
+            <p>Originaire de Côte d’Or, la famille Legoux est essentiellement formée de membres de la magistrature ou de la haute fonction publique.</p>
+            <p>Bernard Legoux (1763-1845), avocat originaire de Dijon, est nommé procureur général général près la Cour d'appel de Dijon en 1801, puis à la Cour d'appel de Gênes en 1806. En 1808, il est procureur général près la Cour de justice criminelle de la Seine ; en 1810 il est nommé procureur général près la cour impériale de Paris. Chevalier d'Empire en 1808, il est élevé au titre de baron d'Empire en 1813. Il prend sa retraite de la magistrature en 1815. Il épousa Louise-Jeanne-Thérèse Faton (+ 1832), qui lui donna plusieurs enfants : Claudius-Bernard-Victor (1799-1868), baron Legoux , Julien-Camille (1802-1876), et Hyppolite-Eugène (1811-1895).</p>
+            <p>Julien Camille Legoux (1802-1876) fit d'abord une carrière d'ingénieur au sein de la société de chemin de fer de Saint-Etienne à Lyon puis une carrière administrative : il fut sous-préfet de Saint-Amand-Montrond de 1831 à 1836, puis préfet de l'Aude en 1836 et préfet de la Haute-Loire de 1837 à 1839. Il épousa en 1835 Julie Monginet (+ 1888). </p>
+            <p>Emile Bernard Jules Legoux, leur fils, (1836-1908) suivit une carrière de magistrat : d'abord attaché au parquet de la Cour impériale de Paris (1859), substitut du procureur à Epinay (1865-1868), procureur impérial à Avallon (1869), procureur impérial à Corbeil (1869-1870), puis procureur de la République à Chartres (1876-1877). En 1877, il est nommé chef de cabinet du Garde des Sceaux. A partir de 1887, il poursuit une carrière politique en se présentant en 1887 aux élections municipales du 16e arrondissement de Paris, et en 1889, aux élections législatives, dans la 2e circonscription de Troyes, où il soutient le général Boulanger. De 1891 à 1899, il organise les comités plébiscitaires de la Seine.</p>
+            <p>Le baron Bernard Legoux épouse une demoiselle Chausson, qui compose un opéra sous le pseudonyme de Gilbert des Roches. Leur fille Marguerite épouse en 1888 Gabriel de La Poëze.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_051555"
+                      xlink:type="simple">
+            <relationEntry>Legoux, Jules (1836-1908)</relationEntry>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

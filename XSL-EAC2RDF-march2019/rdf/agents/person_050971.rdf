@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050971">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Marty-Lavauzelle, Arnaud (1946-2007)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050971_d4367e43"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1946-02-07</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-02-12</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050971-d4365e105"/>
+      <RiC:history xml:lang="fr">Né le 7 février 1946 à Paris et mort le 12 février 2007, Arnaud Marty-Lavauzelle était un médecin psychiatre et militant associatif français engagé dans la lutte contre le sida. En 1969, jeune psychiatre, il se rend au Biafra avec Bernard Kouchner. Touché par l'épidémie de Sida qui emporte plusieurs de ses proches amis, il décide en 1987 de devenir volontaire de l'association AIDES. En 1991, le président et créateur de l'association, Daniel Defert, le choisit pour prendre la relève à titre bénévole. Il développe considérablement cette association dans les années difficiles qui précèdent la généralisation des trithérapies. AIDES présente dans 99 villes devient avec 3 500 volontaires la plus grosse association de lutte contre le sida en Europe. Sa présence médiatique est également importante durant ces années. En 1991, il participe à la mise en place d'Ensemble contre le SIDA. Il quitte la présidence d'AIDES en juillet 1998. Parallèlement à ses activités associatives, il poursuit son travail de psychiatre hospitalier, spécialisé en thérapie familiale. Il travaille notamment sur la question du suicide. Nommé chevalier de la Légion d'honneur en 1998, il participe ensuite à la mise en place du Fonds mondial de lutte contre le sida, afin de favoriser l'accès aux traitements dans les pays émergents. Il est nommé conseiller à la mairie de Paris pour les questions de coopération par Bertrand Delanoë. Arnaud Marty-Lavauzelle qui était séropositif depuis une vingtaine d'années meurt du sida à l'âge de 61 ans, dans la nuit du 12 au 13 février 2007. Le ministre de la Santé et des Solidarités, Xavier Bertrand lui rend alors hommage en soulignant que « son témoignage de courage, de force, de vie, son combat pour une vie normale, pour l´évolution des comportements et des regards resteront dans nos mémoires ». Il rappelle également « son rôle crucial dans la promotion de la réduction des risques auprès des usagers de drogues ainsi que dans l´accès aux soins et aux traitements pour tous en France mais aussi dans les pays du Sud ».</RiC:history>
+      <isni:ISNIAssigned>0000000001368983</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/009217-d170e424"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050971-d4365e160"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050971"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050971-d4365e105">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">psychiatre</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjarlu--l5x9bzdkopz8"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050971-d4365e160">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Marty-Lavauzelle, Arnaud (1946-2007) et l'ensemble de documents "ASSOCIATION AIDES : PAPIERS ET DOCUMENTS réunis par Arnaud Marty-Lavauzelle sur le thème du sida 1991-2001"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/054540-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050971_d4367e43">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050971-d4365e82"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050971">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050971"/>
+      <RiC:creationDate>2015-02-25</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050971</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000001368983"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050971"/>
+   </rdf:Description>
+</rdf:RDF>

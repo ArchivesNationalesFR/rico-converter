@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050753">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Léon, Paul (1874-1962)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050753_d4222e88"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1874-10-02</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1962-08-01</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050753-d4220e180"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050753-d4220e186"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050753-d4220e198"/>
+      <RiC:history xml:lang="fr">Paul Léon est successivement : - professeur au Collège Chaptal de Paris (1901-1902) ; - attaché au cabinet du ministre des Travaux Publics (1901-1902) ; - professeur aux collèges Turgot et Lavoisier (1902) ; - chef du cabinet du sous-secrétaire d’Etat aux Beaux-arts, Etienne Dujardin-Beaumetz (1905) ; - professeur au lycée Carnot (1906) ; - chef de division du service d’architecture au sous-secrétariat d’Etat aux Beaux-arts (1906-1918) ; - directeur des Beaux-Arts (1919 -1928) ; - directeur général des Beaux-arts (1928-1933) ; - professeur d’histoire de l’Art monumental au Collège de France (1933-1940) ; - conservateur du musée Condé à Chantilly (1955) ; - commissaire général de l’Exposition internationale des Arts décoratifs et industriels modernes (1925) ; - commissaire général adjoint de l’Exposition internationale des arts et techniques dans la vie moderne (1937).</RiC:history>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Paul_L%C3%A9on"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb122381416#foaf:Person"/>
+      <isni:ISNIAssigned>0000000108780222</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050753-d4220e267"/>
+      <RiC:personIsSourceOfLeadershipRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050753-d4220e288"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050753"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050753-d4220e180">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d-1009896yv--378hf9s9l062"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050753-d4220e186">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">attaché au cabinet du ministre des travaux publics (1901-1902) ; chef de cabinet du sous-secrétaire d'etat aux Beaux-Arts (1905)</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050753-d4220e198">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1901-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1940-12-31</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">professeur</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050753_d4222e88">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050753-d4220e157"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050753">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050753"/>
+      <RiC:creationDate>2014-03-18</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-03-23</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_050753</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">- Paul LEON, Du Palais-Royal au Palais Bourbon, Souvenirs (1947).</RiC:source>
+      <RiC:source xml:lang="fr">- Françoise Bercé, « L’oeuvre de Paul Léon (1874-1962) dans Philippe Poirrier, Loïc Vadelorge (dir.), Pour une histoire des politiques du patrimoine, Comité d’histoire du ministère de la culture, Fondation Maison des sciences de l’homme, Paris, 2003.</RiC:source>
+      <RiC:source xml:lang="fr">- notice d'autorité BnF n°FRBNF12238141</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000108780222"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050753"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Paul_L%C3%A9on"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb122381416"/>
+   </rdf:Description>
+</rdf:RDF>

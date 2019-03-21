@@ -1,0 +1,109 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010461</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00168</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Philippe BERTHOLET, Etudes et notaires parisiens en 1803, au moment de la loi du 25 ventôse an XI (16 mars 1803), Paris, 2004, p. 356-357</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Tiron, Pierre</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Tiron, Pierre Gabriel</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1783-10-11">11 octobre 1783</fromDate>
+               <toDate standardDate="1812-03-28">28 mars 1812</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvpbcz5--gbtglbh0f8xm">saint-sauveur (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgrksc--1qyg7stzts74f">saint-denis (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd1u57i-1h2qpz5x5m5i3">saint-denis (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nz8q8fou--2g4s8nf5wy9e">basse (rue)</placeEntry>
+               <placeEntry localType="nomLieu">311 rue Saint-Denis, vis-à-vis rue du Ponceau (de 1783 à 1808), 10 rue Basse, porte Saint-Denis (de 1809 à 1812)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1783-10-11">11 octobre 1783</fromDate>
+                  <toDate standardDate="1812-03-28">28 mars 1812</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>né le 6 septembre 1752 à Paris</p>
+            <p>marié à Marie Vigoureux (voir ET/XXXIII/676, 13 janvier 1784, contrat de mariage</p>
+            <p>d'abord principal clerc d'Etienne Cartault, auquel il succède</p>
+            <p>contraint à la démission le 23 pluviôse de l'an II (11 février 1794), il reprend ses fonctions le 22 vendémiaire de l'an III (13 octobre 1794). l'interim est assuré par Pierre-Charles Moine de la Versine (étude LXXXIV)</p>
+            <p>décédé le 27 août 1819 à Paris</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010159"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XXXII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1783-10-11">11 octobre 1783</fromDate>
+               <toDate standardDate="1812-03-28">28 mars 1812</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/ LXXII/459, 2 octobre 1783, traité d'office de notaire entre Etienne Cartault et Pierre Tiron</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XXXII/231, 2 septembre 1819, inventaire après décès</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041869"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Pierre TIRON, 11 octobre 1783 - 27 mars 1812 (étude XXXII)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

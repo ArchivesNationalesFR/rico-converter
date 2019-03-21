@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050503">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Diouf, Galandou (1875-1941)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050503_d4035e68"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050503_d4035e71"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1875-09-14</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1941-08-06</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050503-d4033e165"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050503-d4033e177"/>
+      <RiC:history xml:lang="fr">Né en 1875 à Saint-Louis (Sénégal) d'une famille musulmane Galandou Diouf (1875-1941) suit une scolarité dans une structure catholique et entreprend une carrière d'enseignant puis d'employé. En 1909, il est le premier élu africain depuis le début de la colonisation, il représente la commune de Rufisque au Conseil général de Saint-Louis, alors capitale de l'Afrique francophone. Il devient maire de Rufisque en 1919. Cette commune fait partie des Quatre communes du Sénégal avec Saint-Louis, Gorée, et Dakar qui diffèrent des autres colonies dans la mesure où leurs habitants sont des citoyens français jusqu'à l'indépendance de l'Afrique occidentale française (AOF) dont elles font partie. Défenseur de l'égalité africaine et opposant à la discrimination, il collabore au journal 
+     La Démocratie. Il est le fondateur du journal 
+     Le Sénégal et parrain de Blaise Diagne (1872-1934), premier député africain noir à la Chambre des députés, élu en 1914 et à qui il succède à la Chambre en 1934. 
+     En tant que député, membre de la Commission de l’Algérie, des colonies et des pays du protectorat, Galandou Diouf dépose notamment une proposition de loi tendant à assurer la citoyenneté française à tous les habitants de l'Afrique occidentale française (AOF) et de l'Afrique équatoriale française (AEF) titulaires au titre militaire de la Légion d'honneur, de la médaille militaire ou encore pensionnés de guerre ou anciens combattants. En 1940, il ne prend pas part au vote sur le projet de loi constitutionnelle du 10 juillet 1940 à Vichy accordant les pleins pouvoirs au maréchal Pétain. En effet il embarque le 21 juin 1940 avec d'autres parlementaires, à bord du paquebot Le Massilia à destination de Casablanca (Maroc) dans le but de constituer un nouveau gouvernement en exil en opposition à celui de Vichy. Arrêté avec les autres parlementaires à leur arrivée à Casablanca, il n'est autorisé à regagner la France que le 18 juillet 1940. Galandou Diouf meurt le 6 août 1941 à Cannes (Alpes-Maritimes).</RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050503--d3ntxlm0fj--1uvyjh4y8ws6hd4033e158"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb16233775h#foaf:Person"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Galandou_Diouf"/>
+      <isni:ISNIAssigned>0000000428587712</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050503-d4033e220"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050503-d4033e235"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050503-d4033e292"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050503"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050503-d4033e165">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">maire</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050503-d4033e177">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1934-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1941-08-06</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050503-d4033e292">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Diouf, Galandou (1875-1941) et l'ensemble de documents "Fonds Galandou Diouf (1909-1939)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/050664-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050503_d4035e68">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050503-d4033e124"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050503_d4035e71">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050503-d4033e130"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationtoPlace/050503--d3ntxlm0fj--1uvyjh4y8ws6hd4033e158">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Diouf, Galandou (1875-1941)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/FRAN_RI_005-d3ntxlm0fj--1uvyjh4y8ws6h"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050503">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050503"/>
+      <RiC:creationDate>2016-07-12</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-09-07</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_050503</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Archives nationales, fonds Galandou Diouf (110AP).</RiC:source>
+      <RiC:source xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Galandou_Diouf</RiC:source>
+      <RiC:source xml:lang="fr">Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb16233775h</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000428587712"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050503"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb16233775h"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Galandou_Diouf"/>
+   </rdf:Description>
+</rdf:RDF>

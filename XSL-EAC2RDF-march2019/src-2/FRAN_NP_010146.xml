@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010146</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NAETUDE_019</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Poisson (Jean-Paul), " Une étude notariale parisienne à la fin du XVe siècle. Quelques pistes de recherche " étude XIX, Études notariales, 1996, p. 279. - " Quelques notations sur la clientèle d'un office notarial parisien à la fin du XVe siècle [Étude XIX], 1465-1500) ", Essais de notarialogie, 2002, p. 133.</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_010146-d243e79">
+            <part>Etude XIX</part>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_010146-d243e85">
+            <part>75107</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1465-01-01">1465</fromDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place xml:id="FRAN_place_010146-d243e105">
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu" xml:id="FRAN_placeEntry_010146-d243e110">8, avenue Bertie Albrecht, 75008 PARIS</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function xml:id="FRAN_activity_010146-d243e117">
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1465-01-01">1465</fromDate>
+                  <toDate/>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>De 1485 à 1783, les notaires de cette étude sont installés rue Saint-Antoine, paroisse Saint-Paul, jusqu'en 1627, paroisse Saint-Gervais ensuite. A la fin du XVIIIème siècle, l'étude déménage rue de la Verrerie, puis rue Saint-Merri. Début XIXème siècle, elle va rue Neuve-des-Petits-Champs. En 1874, elle est rue Saint-Honoré et en 1895, boulevard Haussmann.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010859"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e141">
+            <relationEntry>Payen, Guillaume I</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1530-05-16">16 mai 1530</fromDate>
+               <toDate standardDate="1567-01-27">27 janvier 1567</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010861"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e156">
+            <relationEntry>Payen, Jean</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1571-01-08">8 janvier 1571</fromDate>
+               <toDate standardDate="1584-02-01">1er février 1584</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010925"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e171">
+            <relationEntry>Pichon, Pierre I</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1465-01-14">14 janvier 1465</fromDate>
+               <toDate standardDate="1533-12-31">1533</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010926"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e186">
+            <relationEntry>Pichon, Pierre II</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1493-01-01">1493</fromDate>
+               <toDate standardDate="1560-12-31">1560</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010984"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e201">
+            <relationEntry>Potdevin, Nicolas</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1612-12-29">29 décembre 1612</fromDate>
+               <toDate standardDate="1623-03-05">5 mars 1623</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010542"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e217">
+            <relationEntry>Salle, Jean Georges</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1898-06-08">8 juin 1898</fromDate>
+               <toDate standardDate="1930-09-17">17 septembre 1930</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013236"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e232">
+            <relationEntry>Torlasco, Nathalie</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2003-07-24">24 juillet 2003</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011076"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e244">
+            <relationEntry>Marchi, Robert</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1958-10-01">1er octobre 1958</fromDate>
+               <toDate standardDate="1993-03-28">28 mars 1993</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010490"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e259">
+            <relationEntry>Trouvé, Jean</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1531-01-01">1531</fromDate>
+               <toDate standardDate="1578-12-31">1578</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013304"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e274">
+            <relationEntry>Collas, Michel</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1531-11-04">4 novembre 1531</fromDate>
+               <toDate standardDate="1534-06-15">15 juin 1534</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010727"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e289">
+            <relationEntry>Rossignol, Pierre de</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1578-10-09">9 octobre 1578</fromDate>
+               <toDate standardDate="1613-12-31">1613</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012871"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e305">
+            <relationEntry>Berruyer, Jean</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1713-07-19">19 juillet 1713</fromDate>
+               <toDate standardDate="1743-07-20">20 juillet 1743</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011746"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e320">
+            <relationEntry>Hatin, Jean-Baptiste</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1839-05-18">18 mai 1839</fromDate>
+               <toDate standardDate="1874-07-17">17 juillet 1874</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011745"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e335">
+            <relationEntry>Hatin, Eugène-Julien</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1874-07-17">17 juillet 1874</fromDate>
+               <toDate standardDate="1898-06-08">8 juin 1898</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011747"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e350">
+            <relationEntry>Haudry, Guillaume</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1579-10-13">13 octobre 1579</fromDate>
+               <toDate standardDate="1579-12-31">31 décembre 1579</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012801"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e365">
+            <relationEntry>Bauldry, Nicolas</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1623-07-06">6 juillet 1623</fromDate>
+               <toDate standardDate="1656-05-08">8 mai 1656</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011864"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e380">
+            <relationEntry>Gaudion, Pierre</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1656-05-08">8 mai 1656</fromDate>
+               <toDate standardDate="1685-01-10">10 janvier 1685</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010765"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e396">
+            <relationEntry>Quentin, Charles-Louis</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1743-07-23">23 juillet 1743</fromDate>
+               <toDate standardDate="1768-08-09">9 août 1768</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010397"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e411">
+            <relationEntry>Taboué, Nicolas</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1684-02-11">11 février 1684</fromDate>
+               <toDate standardDate="1713-06-14">14 juin 1713</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010491"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e426">
+            <relationEntry>Trouvé, René I</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1572-07-30">30 juillet 1572</fromDate>
+               <toDate standardDate="1583-08-07">7 août 1583</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013235"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e441">
+            <relationEntry>Lasnier, Arnaud</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2003-07-24">24 juillet 2003</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010543"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e453">
+            <relationEntry>Salle, Pierre</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1930-09-17">17 septembre 1930</fromDate>
+               <toDate standardDate="1958-10-01">1er octobre 1958</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010532"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e468">
+            <relationEntry>Saint-Paul, Louis-François de</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1768-08-20">20 août 1768</fromDate>
+               <toDate standardDate="1783-03-13">13 mars 1783</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011471"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e484">
+            <relationEntry>Lefebvre, Simon</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1783-03-15">15 mars 1783</fromDate>
+               <toDate standardDate="1798-09-13">13 septembre 1798</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012179"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e499">
+            <relationEntry>La Neziere, Bernard de</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1978-03-15">15 mars 1978</fromDate>
+               <toDate standardDate="2003-07-24">24 juillet 2003</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012180"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e514">
+            <relationEntry>Delacour, Alexandre</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1798-09-13">13 septembre 1798</fromDate>
+               <toDate standardDate="1824-12-04">4 décembre 1824</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012181"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e529">
+            <relationEntry>Delavigne, Nicolas</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1555-01-02">2 janvier 1555</fromDate>
+               <toDate standardDate="1571-01-08">8 janvier 1571</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012182"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010146-d243e544">
+            <relationEntry>Dulong, Louis-Henri</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1824-12-04">4 décembre 1824</fromDate>
+               <toDate standardDate="1839-05-08">8 mai 1839</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041564"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e559">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Pierre I PICHON, 14 janvier 1465 - 1533 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041565"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e566">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Pierre I PICHON, 14 janvier 1465 - 14 avril 1493 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041566"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e572">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Pierre I PICHON, 1484 - 1533 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041567"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e578">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Pierre I PICHON, 1er mai 1487 - 14 octobre 1533 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041568"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e584">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Pierre I PICHON, 23 avril 1495 - 28 novembre 1507 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041569"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e590">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Pierre I PICHON, 26 mars 1505 - 23 février 1518 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041570"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e596">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Pierre I PICHON, 1516 - 1533 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041571"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e603">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Pierre I PICHON, 19 avril 1525 - 16 octobre 1532 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041572"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e609">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Pierre II PICHON, 1484 - 1533 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041573"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e615">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Guillaume I PAYEN, 22 avril 1530 - juin 1566 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041582"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e621">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean PAYEN, 1571 - 14 mars 1586 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041585"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e627">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Guillaume HAUDRY, 1579 - 1579 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041574"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e633">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean TROUVÉ, 1533 - 25 mars 1578 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041575"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e640">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean TROUVÉ, 1533 - 1er février 1554 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041576"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e646">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean TROUVÉ, 27 mars 1543 - 1559 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041577"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e652">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean TROUVÉ, 12 janvier 1553 - 6 septembre 1574 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041578"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e658">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean TROUVÉ, 13 avril 1563 - 1577 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041579"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e664">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean TROUVÉ, janvier 1573 - 25 mars 1578 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041580"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e670">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Michel COLLAS, 28 février 1533 - mars 1534 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041581"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e677">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Nicolas DELAVIGNE, 3 janvier 1556 - 13 novembre 1570 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041583"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e683">
+            <relationEntry localType="archival">Minutes et répertoires du notaire René I TROUVÉ, 8 janvier 1574 - avril 1583 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041584"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e689">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Pierre de ROSSIGNOL, 9 octobre 1578 - 1612 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041586"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e695">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Nicolas POTDEVIN, 29 décembre 1612 - 8 mai 1623 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041587"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e701">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Nicolas BAULDRY, 6 juillet 1623 - 8 mai 1656 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041588"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e707">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Nicolas BAULDRY, 6 juillet 1623 - décembre 1632 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041589"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e714">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Nicolas BAULDRY, janvier 1633 - décembre 1642 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041590"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e720">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Nicolas BAULDRY, janvier 1643 - décembre 1652 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041591"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e726">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Nicolas BAULDRY, janvier 1653 - 8 mai 1656 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041592"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e732">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Pierre GAUDION, 8 mai 1656 - 16 juillet 1685 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041593"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e738">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Nicolas TABOUÉ, janvier 1684 - 14 juin 1713 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041594"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e744">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean BERRUYER, 14 avril 1713 - 20 juillet 1743 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041595"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e751">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Charles Louis QUENTIN, 23 juillet 1743 - 9 août 1768 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041596"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e757">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Louis François de SAINT-PAUL, 20 août 1768 - 13 mars 1783 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041597"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e763">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Simon LEFEBVRE, 17 mars 1783 - 10 septembre 1798 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041598"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e769">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Alexandre DELACOUR, 14 septembre 1798 - 2 décembre 1824 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041563"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e775">
+            <relationEntry localType="archival">Archives de l'étude XIX</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041599"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e781">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Louis Henri DULONG, 7 décembre 1824 - 17 mai 1839 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041600"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e788">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean-Baptiste HATIN, 22 mai 1839 - 17 juillet 1874 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041601"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e794">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Eugène Julien HATIN, 17 juillet 1874 - 22 février 1889 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051202"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e800">
+            <relationEntry localType="archival">Images des répertoires du notaire Nicolas Taboué pour l'étude XIX</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051412"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e806">
+            <relationEntry localType="archival">Images des répertoires du notaire Eugène Julien Hatin pour l'étude XIX</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051413"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e812">
+            <relationEntry localType="archival">Images des répertoires du notaire Jean-Baptiste Hatin pour l'étude XIX</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051474"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e818">
+            <relationEntry localType="archival">Images des répertoires du notaire Louis Henri Dulong pour l'étude XIX</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051475"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e825">
+            <relationEntry localType="archival">Images des répertoires du notaire Alexandre Delacour pour l'étude XIX</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051593"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e831">
+            <relationEntry localType="archival">Images du répertoire du notaire Jean Berruyer pour l'étude XIX</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051262"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e837">
+            <relationEntry localType="archival">Images du répertoire du notaire Charles Louis Quentin pour l'étude XIX</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051233"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e843">
+            <relationEntry localType="archival">Images des répertoires du notaire Louis François de Saint-Paul pour l'étude XIX</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051373"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e849">
+            <relationEntry localType="archival">Images du répertoire du notaire Simon Lefebvre pour l'étude XIX</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_056537"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e855">
+            <relationEntry localType="archival">Images des répertoires du notaire Nicolas Bauldry pour l'étude XIX</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_056990"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010146-d243e862">
+            <relationEntry localType="archival">Archives de l'office notarial XIX</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

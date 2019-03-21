@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/family/051816">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Family"/>
+      <rdfs:label xml:lang="fr">Andlau (famille d')</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051816_d4924e62"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1601-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1900-12-31</RiC:endDate>
+      <RiC:history xml:lang="fr">La famille d’Andlau appartient à la vieille noblesse d’Alsace. Ses membres, faits barons du saint Empire par diplôme du 16 mars 1676 et comtes par lettres patentes du roi Louis XV en 1750, tenaient un rang élevé dans cette province. Une branche de cette famille eut pour fondateur Antoine, chevalier d’Andlau au début du XVIIIe siècle.  Un de ses fils, François-Eléonore (1710-1763), épouse Marie-Henriette de Polastron, sous-gouvernante des enfants du roi. Il est page de Stanislas Leszczynski et suit une brillante carrière militaire : il se distingue lors de la campagne de Bohême (1741-1742), commande un régiment de cavalerie, est promu brigadier de cavalerie et est nommé chevalier de Saint-Louis (1743) puis lieutenant-général des armées du roi (1748) avant d’être fait comte par Louis XV (1750). Nommé conseiller du roi, il reprend du service en 1756 et contribue à la victoire de Clostercamp. Frédéric-Antoine-Marc (1736-1820), fils du précédent, épouse Geneviève-Adélaïde Hélvétius, fille du philosophe. Chevalier de Saint-Louis (1771) et brillant militaire, il finit sa carrière maréchal de camp et grand bailli d’épée. Il est également ambassadeur de France à Bruxelles (1783). Élu député de la noblesse le 4 avril 1789, il prend néanmoins le parti du Tiers-État. Radié des cadres de l’armée par la République, Louis XVIII le promeut au grade de lieutenant-général (1816). Armand-Gaston-Félix d’Andlau (1779-1860), fils aîné du précédent, participe à plusieurs des campagnes de l’Empire, est chambellan de l’Empereur, créé comte d’Empire le 14 avril 1810. Sous la Restauration, il est fait chevalier de Saint-Louis, colonel de cuirassiers puis maréchal de camp en 1825. Pair de France en 1827, il se retire de la chambre des pairs, mais reste en activité dans l’armée jusqu’en 1843, date à laquelle il se retire avec le grade de général de brigade. Il épouse le 4 février 1823 Pauline-Marie-Joséphine d’Hennezel,. Leur fils, Gaston, épouse en 1860 Thérèse-Marie-Rose-Berthe Le Pelletier de Saint-Rémy. Les Le Pelletier de Saint-Rémy et leurs alliés, les Josian de Granval dits de La Vigne, ont habité la Martinique, où ils ont occupé des fonctions civiles et militaires aux XVIIIe et XIXe siècles.</RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051816--d4922e147"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051816--d4922e159"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Frédéric-Antoine-Marc_d'Andlau"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Armand-Gaston-Félix_d'Andlau"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051816-d4922e239"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051816-d4922e245"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051816"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051816-d4922e239">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Andlau (famille d') et l'ensemble de documents "Fonds d’Andlau (1655-1886)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/000733-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051816-d4922e245">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Andlau (famille d') et l'ensemble de documents "Papiers d'origine privée. Volume 7."</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/026006-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051816_d4924e62">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051816-d4922e119"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051816--d4922e147">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Andlau (famille d')"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/051816-d4922e142"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051816--d4922e159">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Andlau (famille d')"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/051816-d4922e154 http://data.archives-nationales.culture.gouv.fr/place/050623-d4133e195"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051816">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/family/051816"/>
+      <RiC:creationDate>2017-11-21</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-06-01</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051816</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">ROBERT (Adolphe), COUGNY (Gaston), Dictionnaire des parlementaires, Paris, 1884, 5 volumes, tome 1, p. 60</RiC:source>
+      <RiC:source xml:lang="fr">Notice wikipedia :https://fr.wikipedia.org/wiki/Frédéric-Antoine-Marc_d'Andlau</RiC:source>
+      <RiC:source xml:lang="fr">Notice wikipedia : https://fr.wikipedia.org/wiki/Armand-Gaston-Félix_d'Andlau</RiC:source>
+      <RiC:source xml:lang="fr">Fonds d'Andlau aux Archives départementales du Haut-Rhin (II E).</RiC:source>
+      <RiC:source xml:lang="fr">Chartrier de Schoppenwihr aux Archives départementales du Bas-Rhin (fons C, familles de Berkheim et d'Andlau).</RiC:source>
+      <RiC:source xml:lang="fr">Fonds d'Andlau aux Archives nationales (294 AP).</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051816"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Frédéric-Antoine-Marc_d'Andlau"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Armand-Gaston-Félix_d'Andlau"/>
+   </rdf:Description>
+</rdf:RDF>

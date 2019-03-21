@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012076</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01919</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_012076-d2173e67">
+            <part>Forget, Léonard</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1523-01-01">1523</fromDate>
+               <toDate standardDate="1541-12-31">1541</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place xml:id="FRAN_place_012076-d2173e96">
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse"
+                           vocabularySource="d3nyvox0hv--s68ql74wtyjp"
+                           xml:id="FRAN_stdPlaceEntry_012076-d3nyvox0hv--s68ql74wtyjpd2173e101">saint-germain-l'auxerrois (paroisse)</placeEntry>
+               <placeEntry localType="paroisse"
+                           vocabularySource="d3nyvp8kqp-1nkkmfnvbsro4"
+                           xml:id="FRAN_stdPlaceEntry_012076-d3nyvp8kqp-1nkkmfnvbsro4d2173e104">sainte-opportune (paroisse)</placeEntry>
+               <placeEntry localType="paroisse"
+                           vocabularySource="d3nyvozckb-wk5djyktth83"
+                           xml:id="FRAN_stdPlaceEntry_012076-d3nyvozckb-wk5djyktth83d2173e107">saint-jacques-de-la-boucherie (paroisse)</placeEntry>
+               <placeEntry localType="paroisse"
+                           vocabularySource="d3nyvow9c3--1ln2rhczl581f"
+                           xml:id="FRAN_stdPlaceEntry_012076-d3nyvow9c3--1ln2rhczl581fd2173e110">saint-eustache (paroisse)</placeEntry>
+               <placeEntry localType="paroisse"
+                           vocabularySource="d3nyvpbcz5--gbtglbh0f8xm"
+                           xml:id="FRAN_stdPlaceEntry_012076-d3nyvpbcz5--gbtglbh0f8xmd2173e114">saint-sauveur (paroisse)</placeEntry>
+               <placeEntry localType="paroisse"
+                           vocabularySource="d3nyvp2o77-1wnswrnmvwf46"
+                           xml:id="FRAN_stdPlaceEntry_012076-d3nyvp2o77-1wnswrnmvwf46d2173e117">saint-laurent (paroisse)</placeEntry>
+               <placeEntry localType="paroisse"
+                           vocabularySource="d3nyvp6vb2-rsrcmgk1zmct"
+                           xml:id="FRAN_stdPlaceEntry_012076-d3nyvp6vb2-rsrcmgk1zmctd2173e120">saint-merri (paroisse)</placeEntry>
+               <placeEntry localType="paroisse"
+                           vocabularySource="d3nyvp309r-fxzjuc9ul5cl"
+                           xml:id="FRAN_stdPlaceEntry_012076-d3nyvp309r-fxzjuc9ul5cld2173e123">saint-leu-saint-gilles (paroisse)</placeEntry>
+               <placeEntry localType="paroisse"
+                           vocabularySource="d3nyvp76qc--1xdxyf9lzzthw"
+                           xml:id="FRAN_stdPlaceEntry_012076-d3nyvp76qc--1xdxyf9lzzthwd2173e126">saint-nicolas-des-champs (paroisse)</placeEntry>
+               <placeEntry localType="voie"
+                           vocabularySource="d3nzd1u57i-1h2qpz5x5m5i3"
+                           xml:id="FRAN_stdPlaceEntry_012076-d3nzd1u57i-1h2qpz5x5m5i3d2173e129">saint-denis (rue)</placeEntry>
+               <placeEntry localType="nomLieu" xml:id="FRAN_placeEntry_012076-d2173e133">rue Saint-Denis</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function xml:id="FRAN_activity_012076-d2173e140">
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1523-01-01">1523</fromDate>
+                  <toDate standardDate="1541-12-31">1541</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Greffier et Tabellion de la Justice de Saint-Magloire</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010249"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_012076-d2173e165">
+            <relationEntry>Etude notariale CXXII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1523-01-01">1523</fromDate>
+               <toDate standardDate="1541-12-31">1541</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043521"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_012076-d2173e180">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Léonard FORGET, 16 octobre 1521 - 27 août 1547 (étude CXXII)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

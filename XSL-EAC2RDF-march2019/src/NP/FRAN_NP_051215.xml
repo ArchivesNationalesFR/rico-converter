@@ -1,0 +1,86 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051215</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-11-10</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Archives nationales (France). Opération Grande Collecte (novembre 2013)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Archives nationales (France). Opération de collecte de souvenirs familiaux de la Grande Guerre (novembre 2013)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="2013-11-01">novembre 2013</fromDate>
+               <toDate standardDate="2013-11-30">novembre 2013</toDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>service à compétence nationale</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d5bhvik770--15ma0n1oncnzo">anciens combattants</term>
+               <descriptiveNote>
+                  <p>collecte de souvenirs familiaux de la Grande Guerre</p>
+               </descriptiveNote>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Dans le cadre des commémorations du centenaire de la Première Guerre mondiale, une vaste opération de</p>
+            <p>collecte des papiers privés de la Grande Guerre est menée en France, fin 2013, à l'initiative de la Bibliothèque nationale et du réseau des Archives de France. Elle est nommée Grande Collecte.</p>
+            <p>Elle s'est déroulée du 9 au 11 novembre 2013. Les particuliers étaient invités à apporter leurs documents</p>
+            <p>personnels de la guerre de 1914-1918, à les faire numériser et à laisser un témoignage. Témoignages et images numériques</p>
+            <p>doivent être publiés sur le site européen Europeana Collections 1914-1918, de la bibliothèque nationale universitaire</p>
+            <p>(BNU) de Strasbourg. </p>
+            <p>Environ 400 personnes ont participé à l'opération sur les deux sites des Archives nationales,</p>
+            <p>Paris et Pierrefitte ; un quart d'entre eux ont laissé leurs archives en don. Ces dons individuels ont constitué une collection homogène</p>
+            <p>d'archives privées se rapportant spécifiquement au premier grand conflit européen du vingtième siècle. L'ensemble de</p>
+            <p>ces documents, numériques et originaux, apportent désormais de nouveaux éclairages sur l'histoire et la vie</p>
+            <p>quotidienne durant les années de la guerre.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_005061"
+                      xlink:type="simple">
+            <relationEntry>Archives nationales</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2013-11-01">1er novembre 2013</fromDate>
+               <toDate standardDate="2013-11-30">30 novembre 2013</toDate>
+            </dateRange>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

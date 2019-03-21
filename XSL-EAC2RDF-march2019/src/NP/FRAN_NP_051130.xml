@@ -1,0 +1,107 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051130</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-12-04</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marine ZELVERTE</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice BnF n° FRBNF12404340</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0003 6466 5418</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Wallon, Dominique (1939-....)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1939-01-01">1939</fromDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msk49pq-fqetp63zthtj">fonctionnaire</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d-l0jya1ik6x--16fn7glte863o">responsable d'établissement public</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Dominique Wallon fut inspecteur général des finances, puis directeur à partir de 1982 de la direction du développement culturel (DDC) du ministère de la Culture. Il fut nommé directeur général du CNC le 11 juin 1989 et a mis en place une politique d’initiation au cinéma auprès des scolaires. Il est chevalier de la Légion d’honneur.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_005331"
+                      xlink:type="simple">
+            <relationEntry>Direction du développement culturel</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1982-01-01">1982</fromDate>
+               <toDate standardDate="1986-12-31">1986</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Dominique Wallon fut directeur de la direction du Développement culturel.</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_051127"
+                      xlink:type="simple">
+            <relationEntry>Centre national du cinéma et de l'image animée. Direction générale (1946-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1989-01-01">1989</fromDate>
+               <toDate standardDate="1995-12-31">1995</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Dominique Wallon fut directeur du CNC de 1989 à 1995.</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_005362"
+                      xlink:type="simple">
+            <relationEntry>Direction de la musique, de la danse, du théâtre et des spectacles</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1998-01-01">1998</fromDate>
+               <toDate standardDate="2010-12-31">2010</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054110"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Centre national du cinéma et de l'image animée. Fonds de la direction générale</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/051611">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">Union des Églises évangéliques libres de France (1849-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051611_d4820e70"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051611_d4820e73"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051611_d4820e82"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/f7742d1f-1699-45c7-804b-0277189a621d"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1849-01-01</RiC:beginningDate>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051611-d4818e228"/>
+      <RiC:history xml:lang="fr">L’Union des Églises évangéliques de France (UEEF) se constitue en septembre 1849 sous la présidence du pasteur Frédéric Monod (1794-1863), au moment où le régime du Concordat vient d’être reconduit par la constitution de la Deuxième République. En marge des courants majoritaires des réformés « orthodoxes » (qui refusent une confession de foi si elle met en péril l’unité de l’Église) et des « libéraux » (qui ne veulent aucune confession), ses premiers dirigeants soutiennent qu’il importe que les Églises confessent leur foi, même si leur unité doit en pâtir. L’UEEF fédère, lors de sa constitution, une partie des Églises protestantes indépendantes, qui sont « souvent de petites communautés issues de paroisses réformées, mais de tendance revivaliste affirmée et hostiles au lien concordataire [entre les Églises et l’État] » (A. Encrevé). Elle se dote d’une organisation « semi-synodale » où le rôle du synode et de ses commissions laisse une large autonomie aux Églises locales. En ajoutant l’adjectif « libre » à sa dénomination, en 1883, l’Union des Églises évangéliques libres de France (UEELF) réaffirme son indépendance vis-à-vis de l’État et son opposition au régime concordataire.  Les « libristes » jouent un rôle non négligeable dans la création de la Fédération protestante de France (FPF) en 1905, avant de connaître un certain repli dans l’entre-deux-guerres. Une partie des églises libres rejoint ainsi l’Église réformée de France (ERF) lors de sa création en 1938. En désaccord avec les orientations de la FPF, l’UEELF quitte la fédération en 1963, mais y fait retour en 1996. Elle est par ailleurs membre associé du Conseil national des évangéliques de France (CNEF) depuis 2011 et membre de la Fédération internationale des églises évangéliques libres (IFFEC).  L’Union des églises évangéliques libres de France compte, en 2017, une quarantaine de pasteurs, une cinquantaine de communautés paroissiales et revendique environ 2 400 membres professants et 2 500 sympathisants. Elle est implantée surtout dans le sud de la France, autour du noyau historique situé dans l’Ardèche, la Lozère, le Gard, l’Hérault et les Bouches-du-Rhône, ainsi que dans la Haute-Savoie et le Rhône, dans le Tarn, les Pyrénées-Atlantiques, la Dordogne et la Vienne, mais également dans l’Eure-et-Loir et en Île-de-France. Son siège, longtemps situé à Annonay (7, boulevard de la République), est désormais établi à Toulouse (12, rue Claude-Perrault).</RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051611--d4818e197"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051611--d4818e209"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Union_des_%C3%89glises_%C3%A9vang%C3%A9liques_libres"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb12117497t#foaf:Organization"/>
+      <isni:ISNIAssigned>0000000121132166</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051611-d4818e250"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051611"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051611-d4818e228">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d-awald6xki--1xbp9b7wb59wd"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051611_d4820e70">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051611-d4818e134"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051611_d4820e73">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1849-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1883-12-31</RiC:endDate>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051611-d4818e140"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051611_d4820e82">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1883-01-01</RiC:beginningDate>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051611-d4818e158"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051611--d4818e197">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Union des Églises évangéliques libres de France (1849-....)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/051611-d4818e192"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051611--d4818e209">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Union des Églises évangéliques libres de France (1849-....)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/051611-d4818e204"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051611">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/051611"/>
+      <RiC:creationDate>2017-07-24</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-09-06</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051611</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Archives nationales, 221AS : fonds de l’Union des Églises évangéliques libres de France.</RiC:source>
+      <RiC:source xml:lang="fr">Notice BnF : FRBNF12117497 (identifiant ARK : http://catalogue.bnf.fr/ark:/12148/cb12117497t).</RiC:source>
+      <RiC:source xml:lang="fr">BATY, Claude, Les Églises évangéliques libres de France : leur histoire à travers la genèse et l’évolution de leurs principes jusqu’en 1951, mémoire de maîtrise de théologie, Vaux-sur-Seine, 1981, 313 p. (dactyl.).</RiC:source>
+      <RiC:source xml:lang="fr">BATY, Claude, Les Églises évangéliques libres (1849-1999), Valence, Ligue pour la lecture de la Bible, 1999, 362-8 p.</RiC:source>
+      <RiC:source xml:lang="fr">ENCREVÉ, André, Protestants français au milieu du XIXe siècle. Les réformés de 1848 à 1870, Genève, Labor et fides, 1986, p. 274-296.</RiC:source>
+      <RiC:source xml:lang="fr">ENCREVÉ, André, « Les archives des Églises protestantes aux XIXe et XXe siècles », in Les religions et leurs archives : enjeux d’aujourd’hui. Journées d’études de la direction des Archives de France (Paris, collège de France, 11-12 mars 1999), Paris, Direction des Archives de France, 2001, p. 69-95.</RiC:source>
+      <RiC:source xml:lang="fr">« Union des Églises évangéliques libres », in Annuaire des Églises évangéliques, en ligne : http://www.eglises.org/types/ueel/ (consulté en août 2017).</RiC:source>
+      <RiC:source xml:lang="fr">« Union des Églises évangéliques libres », in Wikipédia, encyclopédie collaborative, en ligne : https://fr.wikipedia.org/wiki/Union_des_%C3%89glises_%C3%A9vang%C3%A9liques_libres (consulté en août 2017).</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000121132166"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051611"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Union_des_%C3%89glises_%C3%A9vang%C3%A9liques_libres"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb12117497t"/>
+   </rdf:Description>
+</rdf:RDF>

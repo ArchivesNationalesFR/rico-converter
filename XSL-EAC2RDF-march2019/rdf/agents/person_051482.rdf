@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051482">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Arnaud, Claude (1919-1991)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051482_d4721e49"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1919-11-09</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1991-05-20</RiC:deathDate>
+      <RiC:history xml:lang="fr"> Né le 9 novembre 1919 à Voiteur (Jura), Claude Arnaud est licencié ès lettres et en droit. Après avoir été mobilisé en 1940, il est admis au concours des attachés de consulat en septembre 1943, puis en octobre 1945 au concours d'entrée dans les carrières diplomatiques et consulaires. Ainsi commence une longue carrière au service de la diplomatie française. Attaché d’ambassade à Washington en 1945, Arnaud est mis à disposition de la Résidence générale de France au Maroc à partir de 1946 comme chargé de mission puis comme chef du cabinet diplomatique. Six ans plus tard, il est nommé à la direction Europe du ministère des Relations extérieures puis, la même année, à la direction des Affaires politiques du Haut-commissariat en Allemagne. En 1955, il devient premier secrétaire d'ambassade à Bonn. Il rejoint cependant en novembre de la même année l'administration centrale du ministères des Affaires étrangères (direction des Affaires économiques). De 1959 à 1962, il occupe le poste de premier conseiller puis de chargé d'affaires à l'ambassade de France à Belgrade. Le 30 octobre 1962, il est nommé premier conseiller à la mission permanente de la France auprès des Nations Unies, avant d'occuper ses premiers postes d'ambassadeur extraordinaire et plénipotentiaire à partir de 1966, au Laos, puis au Kenya. En août 1969, il rejoint l'administration centrale du ministère des Affaires étrangères où il est chargé des affaires d’Europe à la direction des Affaires politiques, dont il est promu directeur adjoint en septembre 1972. En février 1975, il rejoint Pékin comme ambassadeur extraordinaire et plénipotentiaire. Il est ensuite ambassadeur et représentant permanent de la France auprès du Conseil de l’OTAN (1979-1981), puis ambassadeur extraordinaire et plénipotentiaire à Moscou (1981-1985), fonctions qu'il cumule avec celles d'ambasseur en Mongolie de 1984 à 1985. En janvier 1985, le ministre des Relations extérieures Roland Dumas l'appelle auprès de lui comme conseiller. Parallèlement, il devient conseiller diplomatique du Gouvernement à partir d'avril 1985. Arnaud est admis à faire valoir ses droits à la retraite diplomatique en novembre 1987. Il ne met pas un terme à sa carrière pour autant. Secrétaire général de la Conférence de Paris sur l’interdiction des armes chimiques en janvier 1989, il est nommé chargé de mission auprès du président de la République pour les affaires africaines et malgaches jusqu’à sa mort, survenue le 20 mai 1991. Claude Arnaud est commandeur dans l'ordre de la Légion d'honneur et dans l'ordre national du Mérite, ainsi que titulaire de la croix de guerre (1939-1945).</RiC:history>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051482-d4719e118"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051482"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051482_d4721e49">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051482-d4719e91"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051482">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051482"/>
+      <RiC:creationDate>2017-03-31</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-11-14</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051482</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Who's who in France 1990-1991</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051482"/>
+   </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,86 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050913</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-04-23</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>F. Clavaud, 21 avril 2015 : changé nom, ajouté statut, fonctions, lieu, n° notice BnF</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Site internet de l'ARIFTS</p>
+               <p>Notice d'autorité BnF n° FRBNF12553045</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Institut de formation de recherche et d'animation des métiers éducatifs et sociaux (Rezé, Loire-Atlantique)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Institut de formation de recherche et d’animation des métiers éducatifs et sociaux</part>
+         </nameEntry>
+         <nameEntry>
+            <part>IFRAMES La Classerie</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1901-01-01">XXe siècle</fromDate>
+               <toDate standardDate="2009-01-01">01 janvier 2009</toDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="lieu" vocabularySource="d3ntiwrv1y--fxn0dqpifium">Rezé (Loire-Atlantique)</placeEntry>
+            </place>
+         </places>
+         <legalStatuses>
+            <legalStatus>
+               <term>association</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyug3e0g-1xzlvri8dg416">action sociale</term>
+               <descriptiveNote>
+                  <p>travail social</p>
+               </descriptiveNote>
+            </function>
+            <function>
+               <term vocabularySource="d3nyuhrig1--3acyzmp9v988">formation</term>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Association fondée il y a plus de trente ans, en vue de former des éducateurs spécialisés ou travailleurs sociaux notamment dans l'ouest de la France. </p>
+            <p>Installée d'abord à Angers, puis à Rezé (Loire-Atlantique), au manoir de la Classerie, près de Nantes, l'Institut de formation de recherche et d'animation des métiers éducatifs et sociaux (IFRAMES) fusionne avec d'autres associations pour constituer l'Association régionale des Instituts de formation en travail social (ARIFTS) en janvier 2009. </p>
+         </biogHist>
+      </description>
+   </cpfDescription>
+</eac-cpf>

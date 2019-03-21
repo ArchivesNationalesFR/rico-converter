@@ -1,0 +1,70 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051247</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-01-13</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Vanessa ASPART</agent>
+            <eventDescription>F. Clavaud, 13 janvier 2016 : changé forme du nom, temps de l'historique ; ajouté références BnF et Wikipédia et indexation activités</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb10331995j</p>
+               <p>Notice Wikipédia : https://fr.wikipedia.org/wiki/Jean_de_Selve</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Selve, Jean de (1475-1529)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1475-01-01">1475</fromDate>
+               <toDate standardDate="1529-12-31">1529</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msjqtlt--8qlp1v5rp9ov">diplomate</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msjy3v4--oimn0b7kuvf4">magistrat</term>
+               <descriptiveNote>
+                  <p>notamment premier président du Parlement de Paris</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Né en 1475 dans le Limousin d'où sa famille était oginaire, Jean de Selve, seigneur de Cromières (Haute-Vienne) et de Villiers-le-Châtel (Essonne), étudie la jurisprudence et devient premier Président des Parlements de Rouen, Bordeaux puis Paris. </p>
+            <p>Lorsque François Ier est fait prisonnier le 24 février 1525 durant la bataille de Pavie, Louise de Savoie, sa mère et régente, envoie Jean de Selve à Madrid pour négocier avec l'empereur Charles Quint la délivrance du roi et la paix. Cette négociation aboutit au traité de Madrid, signé en janvier 1526.</p>
+            <p>A sa mort, Jean de Selve est enterré à l'église Saint-Nicolas-du-Chardonnet à Paris. </p>
+         </biogHist>
+      </description>
+   </cpfDescription>
+</eac-cpf>

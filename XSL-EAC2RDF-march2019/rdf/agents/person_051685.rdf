@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051685">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Charton, Édouard (1807-1890)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051685_d4877e64"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1807-05-11</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1890-02-27</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051685-d4875e168"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051685-d4875e174"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051685-d4875e180"/>
+      <RiC:history xml:lang="fr">Reçu au barreau de Paris en 1827, Édouard Charton (1807-1890) n'exerce pas la profession d'avocat mais collabore aux bulletins de la Société pour l’Instruction élémentaire et de la Société de la Morale chrétienne et au journal 
+     Le Globe, devenu, en 1830, le 
+     Journal de la doctrine de Saint-Simon. Sympathisant du courant saint-simonien, il parcourt la Bretagne et la Vendée pour en prêcher les idées. Lors du schisme de 1831 qui voit le départ des saint-simoniens républicains, il rompt, comme ses amis Hippolyte Carnot et Jean Reynaud, avec Prosper Enfantin. 
+     Persuadé que l’illustration est indispensable à la compréhension et à l’agrément, il débute en 1833 une fructueuse carrière de directeur de publication avec le 
+     Magasin pittoresque, hebdomadaire illustré sur le modèle du 
+     Penny Magazine britannique. Il est aussi à l’origine en 1843, avec Joanne, Paulin et Dubochet du lancement de l'
+     Illustration, autre hebdomadaire à succès, dont il quitte rapidement la rédaction. 
+     Au début de 1848, il fonde une Haute Commission des Études Scientifiques et littéraires et à la chute du roi Louis-Philippe Ier en février 1848, il est appelé au secrétariat général du ministère de l’Instruction publique par son ami Hippolyte Carnot, ministre du gouvernement provisoire. Dans le même temps le département de l'Yonne le désigne comme eprésentant du Peuple à l'Assemblée Constituante. Durant l'époque impériale, Édouard Charton se tient à l'écart des activités politiques et continue son activité éditoriale. Après avoir fait paraître, de 1853 à 1855, les quatre volumes de l’
+     Histoire des voyageurs anciens et modernes, il publie en 1859, avec Henri Bordier, une 
+     Histoire de la France illustrée, saluée en termes élogieux pour le choix de ses illustrations dans le 
+     Bulletin de la bibliothèque de l’École des chartes. S’intéressant aux récits des voyageurs contemporains il lance, en 1860, la revue 
+     Le Tour du monde qui marque ses débuts chez Hachette. Cette revue à succès est suivie du lancement en 1864 de la 
+     Bibliothèque des Merveilles, collection de petits ouvrages de vulgarisation. Il fonde une bibliothèque populaire à Versailles en 1864 et devient membre correspondant de l’Institut de France en 1867. 
+     La chute de l'Empire marque son retour en politique. Nommé préfet de Seine-et-Oise le 6 septembre 1870, il est élu sous l'étiquette républicain dans l’Yonne en février 1871, et siège à l’Assemblée nationale. À partir de 1876, il représente sans interruption, jusqu’à sa mort en 1890, son département d’origine au Sénat.  En 1876 il est élu à l’Académie des sciences morales et politiques.</RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051685--d4875e146"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051685--d4875e158"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/%C3%89douard_Charton"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb12166434q#foaf:Person"/>
+      <isni:ISNIAssigned>0000000121281508</isni:ISNIAssigned>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/051685-d4875e278"/>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/051685-d4875e290"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050502-d4032e259"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051685-d4875e324"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051685"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051685-d4875e168">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051685-d4875e174">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj9l7t-1gb5a09kkzrmp"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051685-d4875e180">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjeadm-1itg66q91czf6"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051685-d4875e324">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Charton, Édouard (1807-1890) et l'ensemble de documents "Fonds Charton et Saglio (1827-1927)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/000720-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051685_d4877e64">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051685-d4875e118"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051685--d4875e146">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Charton, Édouard (1807-1890)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/051364-d4621e166 http://data.archives-nationales.culture.gouv.fr/place/050052-d3684e210"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051685--d4875e158">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Charton, Édouard (1807-1890)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/051685-d4875e153"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051685">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051685"/>
+      <RiC:creationDate>2017-09-08</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-06-01</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051685</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">- Archives nationales : fonds Charton et Saglio (281AP).</RiC:source>
+      <RiC:source xml:lang="fr">- Notice wikipédia https://fr.wikipedia.org/wiki/%C3%89douard_Charton</RiC:source>
+      <RiC:source xml:lang="fr">- Notice autorité BnF n°FRBNF12166434</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000121281508"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051685"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/%C3%89douard_Charton"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb12166434q"/>
+   </rdf:Description>
+</rdf:RDF>

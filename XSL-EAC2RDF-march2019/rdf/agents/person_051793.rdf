@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051793">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Cazalère, Marie France (1953-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051793_d4912e50"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1953-02-09</RiC:birthDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051793-d4910e113"/>
+      <RiC:history xml:lang="fr">Née le 9 février 1953 à Bordeaux (Gironde), Marie-France Cazalère est diplômée de l'Ecole nationale supérieure d'agronomie de Toulouse et de l'Ecole nationale supérieure des sciences appliquées de Dijon. Elle occupe successivement les fonctions de chargée de mission au bureau de la formation continue à la direction générale de l'enseignement et de la recherche (DGER), de 1979 à septembre 1980, chargée de mission au bureau des fruits et légumes à la direction de la production et des échanges (DPE), de septembre 1980 à janvier 1982, chargée de mission au bureau du vin à la direction de la production et des échanges (DPE) de janvier 1982 à juin 1986. Chef du bureau du porc, des volailles et des produits de diversification à la direction de la production et des échanges (DPE), de juillet 1986 à avril 1993, elle devient chef du secteur agriculture, alimentation, pêche (AGRAP) au secrétariat général du comité interministériel pour les questions économiques européennes (SGCI), de mai 1993 à mars 1998. Sous-directrice des cultures et des produits végétaux, service de la production et des marchés, direction des politiques économique et internationale, au ministère de l'Agriculture et de la Pêche devenu (mai 2002) ministère de l'Agriculture, de l'Alimentation, de la Pêche et des Affaires rurales, de mars 1998 à janvier 2004, elle est nommée directrice de l'Office national interprofessionnel des produits de la mer et de l'aquaculture (OFIMER), de janvier 2004 à décembre 2006. Chef du service officiel du contrôle de certification au Groupement national interprofessionnel des semences et des plants, de décembre 2006 au 30 mai 2016, elle est nommée conseillère agriculture, développement rural et pêche à la présidence de la République (François Hollande), du 30 mai 2016 au 14 mai 2017.  Elle a para ailleurs exercé les fonctions d'administratrice de l'Office nationale des forêts (ONF), du 30 juin 2016 au 23 juin 2017.</RiC:history>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051793-d4910e126"/>
+      <RiC:ruleFollowed xml:lang="fr">https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000032592477&amp;fastPos=1&amp;fastReqId=1777998166&amp;categorieLien=id&amp;oldAction=rechTexte</RiC:ruleFollowed>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051793"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051793-d4910e113">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d-31c1bj851u-1awh61xs7pwk3"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051793_d4912e50">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051793-d4910e93"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051793">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051793"/>
+      <RiC:creationDate>2017-11-14</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-11-15</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051793</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Fiche documentaire du service des Archives et de l'Information documentaire de la Présidence de la République</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051793"/>
+   </rdf:Description>
+</rdf:RDF>

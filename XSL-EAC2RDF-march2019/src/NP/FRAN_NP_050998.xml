@@ -1,0 +1,77 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050998</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-04-27</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Catherine MÉROT</agent>
+            <eventDescription>F. Clavaud, 26 avril 2015 : ajouté lieu</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Agence d'architecture de la Sorbonne (Paris, France)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1885-01-01">1885</fromDate>
+               <toDate standardDate="1903-12-31">1903</toDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="edifice" vocabularySource="d5bknwnozg-umxbennuvrnb">Sorbonne</placeEntry>
+            </place>
+         </places>
+         <legalStatuses>
+            <legalStatus>
+               <term>service extérieur</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d5bhvimbi4--1c33jbciwlk3b">gestion immobilière</term>
+            </function>
+         </functions>
+         <biogHist>
+            <p>L'Agence faisait la jonction entre l'État, ordonnateur et payeur des travaux, l'architecte en charge des travaux et les entrepreneurs qui les exécutaient.</p>
+            <p/>
+            <p>Les agences publiques d'architecture, installées dans les bâtiments dont elles avaient la charge, étaient des administrations publiques dépendant de la Direction des bâtiments civils ou de la Maison du Souverain au XIXe s. Elles ont été définitivement supprimées à partir des années 1990 quand la loi MOP et ses décrets d'application ont éteint le corps des architectes des bâtiments civils et palais nationaux.</p>
+            <p>L'agence des travaux de la Sorbonne a été placée sous la direction de l'architecte Henri-Paul Nénot de1885 à 1903. Ce dernier est resté l'architecte de l'Université jusqu'à la fin des années 1920.</p>
+            <p>Les archives de l'agence n'ont pas été retrouvées, seuls les plans (cotés en 85 AJ) ont été abandonnés puis retrouvés (par hasard semble-t-il) dans une cave de la Sorbonne attenante à la chaufferie.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_005478"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Agence d'architecture de la Sorbonne ; plans de la Sorbonne</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

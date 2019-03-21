@@ -1,0 +1,112 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012453</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE02332</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Philippe BERTHOLET, Etudes et notaires parisiens en 1803, au moment de la loi du 25 ventôse an XI (16 mars 1803), Paris, 2004, p. 574-576</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Cousin, Pierre</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Cousin, Pierre-Romain</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1798-07-17">17 juillet 1798</fromDate>
+               <toDate standardDate="1812-02-22">22 février 1812</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvpcbgs-1cppi2iacclig">saint-sulpice (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgazoq--1c50yrnvnvk9s">luxembourg (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzaiafyr-1l5ws1cb7s12g">four-saint-germain (rue du)</placeEntry>
+               <placeEntry localType="nomLieu">27 rue du Four-Saint-Germain</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1798-07-17">17 juillet 1798</fromDate>
+                  <toDate standardDate="1812-02-22">22 février 1812</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Né le 9 mai 1759 à Paris</p>
+            <p>marié en première noce à Agathe Louise Poulleau (voir ET/CXIX/567, 8 prairial an IX [28 mai 1801], contrat de mariage)</p>
+            <p>marié en seconde noce à Marie-Françoise Genty (voir ET/C/1126, 20 avril 1826, contrat de mariage)</p>
+            <p>d'abord principal clerc de Mélite Lemire (étude XXXIV)</p>
+            <p>contraint à la démission, après une faillitte retentissante, en 1812</p>
+            <p>décédé le 19 février 1839 à Paris</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010128"
+                      xlink:type="simple">
+            <relationEntry>Etude I</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1798-07-17">17 juillet 1798</fromDate>
+               <toDate standardDate="1812-02-22">22 février 1812</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/C/1185, 12 mars 1839, inventaire après décès</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041113"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Pierre COUSIN, 6 juillet 1798 - 14 avril 1812 (étude I)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051528"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Pierre Cousin pour l'étude I</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

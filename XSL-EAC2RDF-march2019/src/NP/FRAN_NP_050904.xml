@@ -1,0 +1,83 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050904</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-02-20</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>F. Clavaud, 20 février 2015 : revu nom, ajouté n° notice BnF, statut, indexation fonctions</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>CNAHES</p>
+               <p>Notice d'autorité BnF n° FRBNF12343780</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Fédération nationale des associations Croix-Marine d'aide à la santé mentale (France)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Fédération Croix-Marine</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1952-01-01">1952</fromDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>association</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d5bhvil20q--uuew3ia85vzc">activité associative</term>
+            </function>
+            <function>
+               <term vocabularySource="d5bhvih1do--ryj2votztf8z">affaires sociales</term>
+               <descriptiveNote>
+                  <p>handicap mental</p>
+               </descriptiveNote>
+            </function>
+            <function>
+               <term vocabularySource="d5bhviiyko--q661mlo9uy50">santé</term>
+               <descriptiveNote>
+                  <p>santé mentale</p>
+               </descriptiveNote>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Fondée en 1952, la Fédération Croix-Marine s’inscrit dans un vaste mouvement d’amélioration de l’assistance psychiatrique française. Elle est la conséquence du succès rencontré par deux sociétés locales : la Société d’hygiène mentale du Centre, créée en 1947 à Clermont-Ferrand, et la Société des Basses-Pyrénées mise en place en 1951. Le mouvement se donne comme principal objectif la désaliénation. La Fédération Croix-Marine développe plusieurs formes d’action pour y parvenir : l’action intra-hospitalière avec la mise en place de comités hospitaliers, et l’action extra-hospitalière qui regroupe toutes les actions de prise en charge des handicapés mentaux dans le milieu social ordinaire. </p>
+            <p>Par ailleurs, la Fédération se préoccupe de la formation du personnel soignant de santé mentale. C'est ainsi qu'elle compte parmi ses attributions, depuis 1979, celle de la formation professionnelle continue. </p>
+            <p>Grâce au nombre de ses adhérents, la Fédération est reconnue par l’ensemble des administrations compétentes en matière de santé mentale ce qui lui permet d’influer sur quelques textes législatifs et réglementaires. Puis son nom est modifié, pour devenir La Fédération d'Aide à la Santé Mentale "Croix-Marine" (FASM). Depuis février 1986, la Fédération Croix-Marine est reconnue d’utilité publique.</p>
+         </biogHist>
+      </description>
+   </cpfDescription>
+</eac-cpf>

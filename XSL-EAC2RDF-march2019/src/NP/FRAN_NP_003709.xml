@@ -1,0 +1,337 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_003709</recordId>
+      <otherRecordId localType="Ancien_identifiant">3213</otherRecordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Import_SIA</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2013-07-25</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Blandine WAGNER</agent>
+            <eventDescription>Anciens identifiants : 3213, 3200</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2016-03-01</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+            <eventDescription>F. Clavaud, 1er mars 2016 : révision a minima sur demande de la mission. Revu le nom et les dates, ajouté textes de référence, ISNI, n° BnF, fonction ; revu les liens IR et les liens producteurs</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb118639155</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 2188 0797</entityId>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>France. Direction générale pour l'enseignement supérieur et l'insertion professionnelle (1993-2014)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Direction générale de l'enseignement supérieur</part>
+            <useDates>
+               <dateRange>
+                  <fromDate standardDate="2006-01-01">2006</fromDate>
+                  <toDate standardDate="2009-12-31">2009</toDate>
+               </dateRange>
+            </useDates>
+         </nameEntry>
+         <nameEntry>
+            <part>Direction de l'enseignement supérieur</part>
+            <useDates>
+               <dateRange>
+                  <fromDate standardDate="1997-01-01">1997</fromDate>
+                  <toDate standardDate="2006-12-31">2006</toDate>
+               </dateRange>
+            </useDates>
+         </nameEntry>
+         <nameEntry>
+            <part>Direction générale des enseignements supérieurs</part>
+            <useDates>
+               <dateRange>
+                  <fromDate standardDate="1993-01-01">1993</fromDate>
+                  <toDate standardDate="1997-12-31">1997</toDate>
+               </dateRange>
+            </useDates>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1993-01-01">1993</fromDate>
+               <toDate standardDate="2014-02-28">février 2014</toDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term vocabularySource="d5blonaxbw--1mt8t42bokzts">service d'administration centrale</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d5bhvihxhx--1dol4k5w0lb2i">enseignement supérieur</term>
+            </function>
+         </functions>
+         <mandates>
+            <mandate>
+               <descriptiveNote>
+                  <p>Décret n° 93-898 du 12 juillet 1993</p>
+                  <p>Décret n° 97-1149 du 15 décembre 1997</p>
+                  <p>Décret n° 2006-572 du 17 mai 2006</p>
+                  <p>Décret n° 2009-293 du 16 mars 2009</p>
+                  <p>Décret n° 2014-133 du 17 février 2014</p>
+               </descriptiveNote>
+            </mandate>
+         </mandates>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-child"
+                      xlink:href="FRAN_NP_003647"
+                      xlink:type="simple">
+            <relationEntry>Service des formations et de l'insertion professionnelle (direction générale des enseignements supérieurs)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1993-01-01">1993</fromDate>
+               <toDate standardDate="1997-12-31">1997</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-child"
+                      xlink:href="FRAN_NP_003664"
+                      xlink:type="simple">
+            <relationEntry>Service des établissements (direction générale des enseignements supérieurs) (1993-1997)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1993-01-01">1993</fromDate>
+               <toDate standardDate="1997-12-31">1997</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-child"
+                      xlink:href="FRAN_NP_003676"
+                      xlink:type="simple">
+            <relationEntry>Service des contrats et des formations (direction de l'enseignement supérieur)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1997-01-01">1997</fromDate>
+               <toDate standardDate="2006-12-31">2006</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-child"
+                      xlink:href="FRAN_NP_003694"
+                      xlink:type="simple">
+            <relationEntry>Service de l'organisation et des moyens (direction de l'enseignement supérieur)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1997-01-01">1997</fromDate>
+               <toDate standardDate="2003-12-31">2003</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-child"
+                      xlink:href="FRAN_NP_003705"
+                      xlink:type="simple">
+            <relationEntry>Mission à l'emploi (direction de l'enseignement supérieur)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1997-01-01">1997</fromDate>
+               <toDate standardDate="2006-12-31">2006</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-child"
+                      xlink:href="FRAN_NP_003749"
+                      xlink:type="simple">
+            <relationEntry>Secrétariat du conseil national de l'enseignement supérieur et de la recherche et de la conférence des présidents d'universités</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1993-01-01">1993</fromDate>
+               <toDate standardDate="2014-02-28">février 2014</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-child"
+                      xlink:href="FRAN_NP_003704"
+                      xlink:type="simple">
+            <relationEntry>Mission scientifique universitaire (direction de l'enseignement supérieur)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1999-01-01">1999</fromDate>
+               <toDate standardDate="2003-12-31">2003</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-child"
+                      xlink:href="FRAN_NP_003706"
+                      xlink:type="simple">
+            <relationEntry>Mission aux relations internationales (direction de l'enseignement supérieur)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2000-01-01">2000</fromDate>
+               <toDate standardDate="2006-12-31">2006</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-child"
+                      xlink:href="FRAN_NP_003707"
+                      xlink:type="simple">
+            <relationEntry>Mission de l'éducation artistique et de l'action culturelle (direction de l'enseignement supérieur)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2000-01-01">2000</fromDate>
+               <toDate standardDate="2003-12-31">2003</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-later"
+                      xlink:href="FRAN_NP_051267"
+                      xlink:type="simple">
+            <relationEntry>France. Direction générale de l'enseignement supérieur et de l'insertion professionnelle (2014-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2014-01-01">2014</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_051354"
+                      xlink:type="simple">
+            <relationEntry>Institut universitaire de France (1991-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1993-01-01">1993</fromDate>
+               <toDate standardDate="2014-02-28">28 février 2014</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-child"
+                      xlink:href="FRAN_NP_003914"
+                      xlink:type="simple">
+            <relationEntry>Service des établissements (direction de l'enseignement supérieur) (2003-2006)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2003-01-01">2003</fromDate>
+               <toDate standardDate="2006-12-31">2006</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-child"
+                      xlink:href="FRAN_NP_003918"
+                      xlink:type="simple">
+            <relationEntry>Service de la recherche universitaire</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2006-01-01">2006</fromDate>
+               <toDate standardDate="2009-12-31">2009</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-child"
+                      xlink:href="FRAN_NP_003919"
+                      xlink:type="simple">
+            <relationEntry>Service des formations et de l'emploi (direction générale de l'enseignement supérieur)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2006-01-01">2006</fromDate>
+               <toDate standardDate="2009-12-31">2009</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-child"
+                      xlink:href="FRAN_NP_003928"
+                      xlink:type="simple">
+            <relationEntry>Service du pilotage et des contrats (direction générale de l'enseignement supérieur)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2006-01-01">2006</fromDate>
+               <toDate standardDate="2009-12-31">2009</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_009579"
+                      xlink:type="simple">
+            <relationEntry>Observatoire des coûts (ministère de l'Éducation nationale)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1993-07-12">12 juillet 1993</fromDate>
+               <toDate standardDate="1997-12-31">1997</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-earlier"
+                      xlink:href="FRAN_NP_003718"
+                      xlink:type="simple">
+            <relationEntry>Direction de la programmation et du développement universitaire</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1993-01-01">1993</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-earlier"
+                      xlink:href="FRAN_NP_003621"
+                      xlink:type="simple">
+            <relationEntry>Direction des enseignements supérieurs (1982-1993)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1993-01-01">1993</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_000007"
+                      xlink:type="simple">
+            <relationEntry>Administration centrale des ministères de l'Éducation nationale et de l'Enseignement supérieur et de la Recherche</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2007-05-18">18 mai 2007</fromDate>
+               <toDate standardDate="2014-02-28">février 2014</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_003113"
+                      xlink:type="simple">
+            <relationEntry>Commission des titres d'ingénieur</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1993-01-01">1993</fromDate>
+               <toDate standardDate="2014-02-28">février 2014</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_000017"
+                      xlink:type="simple">
+            <relationEntry>Ministère de l'Enseignement supérieur et de la Recherche</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2007-05-18">18 mai 2007</fromDate>
+               <toDate standardDate="2014-02-28">février 2014</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_018341"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Enseignement supérieur et universités ; Direction des enseignements supérieurs - Direction générale des enseignements supérieurs - Direction de l'enseignement supérieur (1974-1990)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_018830"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Enseignement supérieur et universités ; Direction des enseignements supérieurs ; Direction générale des enseignements supérieurs - Direction de l'enseignement supérieur (1973-1992)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

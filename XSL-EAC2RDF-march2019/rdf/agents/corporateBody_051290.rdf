@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/051290">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">France. Présidence de la République. Service de l'audiovisuel (1990-2008)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051290_d4569e41"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/c1ddb003-4095-4dc2-954e-e0f6eff413b9"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1990-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-12-31</RiC:endDate>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051290-d4567e111"/>
+      <RiC:history xml:lang="fr">Présidence de François MITTERRAND  En 1986, la vidéothèque de la Présidence de la République est rattachée au service « archives, bibliothèque vidéothèque » et est dirigée par Marc PARIS. Elle est chargée de l’enregistrement et de la conservation des reportages audiovisuels relatifs au Président de la République. En 1988, « la vidéothèque, régie audiovisuelle » est située au n°4, rue de l’Elysée, où un studio d’enregistrement est installé.  L’activité de la vidéothèque s’intensifiant, celle-ci devient autonome en 1990 et prend le nom de service audiovisuel en conservant Marc PARIS à sa tête. Le service est composé de trois agents et est définitivement localisé au n°4, rue de l’Elysée.  Présidence de Jacques CHIRAC  En 1998, Marc PARIS est remplacé par Michel BALOCHE. L’effectif du service augmente progressivement et passe en 2000 à douze agents. Le service audiovisuel doit en effet s’adapter aux évolutions médiatiques et technologiques et continue à se développer :  - il conçoit les plateaux techniques audiovisuels de la présidence de la République et en crée les éléments graphiques. Participant à chaque voyage présidentiel, il intervient lors des missions préparatoires, ensuite en précurseur et pendant les déplacements du chef de l'Etat ; - il assure, lors des prises de parole du Président, les prestations de sonorisation, éclairage, enregistrement et diffusion des discours, à l'Elysée et lors des déplacements du Président. Il assiste techniquement les chaînes de production et de télévision ; en effet hormis quelques reportages à usage interne de la Présidence, les prises de vue sont assurées alternativement par des équipes de France télévision ou de chaînes privées, appelées « pools » ; ce sont donc ces chaînes de télévision qui disposent des droits relatifs à ces enregistrements ; - il déploie des moyens spécifiques pour les manifestations officielles (visites d'Etat, conférences et points de presse, interventions télévisées en direct et en différé, réunions informelles, remises de décorations) et pour les collaborateurs (réunions des membres du Cabinet, tables rondes, remises de rapport) ;  - il assure chaque semaine la réalisation « en direct » du compte rendu du Conseil des ministres présenté par le porte-parole du Gouvernement ; - enfin, il conserve la veille médiatique audiovisuelle et dispose d’une vidéothèque pour la durée du mandat.  Le service de l'audiovisuel devient le service de l'audiovisuel et de l'organisation technique des déplacements (SAOTD) en 2008.</RiC:history>
+      <RiC:agentIsSourceOfAgentTemporalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentTemporalRelation/051290-d4567e186"/>
+      <RiC:agentIsTargetOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/051290-d4567e198"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051290"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051290-d4567e111">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1990-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-12-31</RiC:endDate>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:description xml:lang="fr">reportages audiovisuels relatifs à la présidence de la République</RiC:description>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d3nyugp6nd-1m2amxlhij5ib"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051290_d4569e41">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051290-d4567e79"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051290">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/051290"/>
+      <RiC:creationDate>2016-05-11</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_051290</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051290"/>
+   </rdf:Description>
+</rdf:RDF>

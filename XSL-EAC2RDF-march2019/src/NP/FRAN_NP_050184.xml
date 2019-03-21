@@ -1,0 +1,93 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050184</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Complète</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-02-03</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Virginie POTIN</agent>
+            <eventDescription>F. Clavaud, 3 février 2016 : revu le nom, ajouté n° notice BnF et activités</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb13752253f</p>
+               <p>Pas d'ISNI</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Bruant des Carrières, Louis (1621-1689)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1621-01-01">1621</fromDate>
+               <toDate standardDate="1689-04-11">11 avril 1689</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d3nyu9x713-9kcjiv44l4wh">notaire</term>
+               <descriptiveNote>
+                  <p>notaire apostolique</p>
+               </descriptiveNote>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d3m0bl6zq8n--1f1l0rfkekrar">commis d'administration (Ancien Régime)</term>
+               <dateRange>
+                  <fromDate standardDate="1658-01-01">1658</fromDate>
+                  <toDate standardDate="1661-12-31">1661</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>premier commis du surintendant des finances Nicolas Fouquet</p>
+               </descriptiveNote>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d3m0bl76dik--ncxjtjvkyzcv">avocat au parlement (Ancien Régime)</term>
+               <dateRange>
+                  <fromDate standardDate="1642-01-01">1642</fromDate>
+                  <toDate standardDate="1665-12-31">vers 1660</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>Avocat au parlement de Paris</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Louis Bruant est né en 1621 à Coiffy-la-Ville près de Langres. En 1642, il est avocat au parlement de Paris et notaire apostolique. En 1645, il épouse Marie du Quesnoy, fille de feu François du Quesnoy, marchand bourgeois de Paris, et d’Anne Martin. A la faveur des troubles de la Fronde, il se rapproche de Nicolas Fouquet, intendant de Paris depuis 1648, puis procureur général du parlement de Paris à partir de la fin de 1649. Il accompagne le futur surintendant dans l’administration des finances royales, d’abord comme simple commis. En 1658, Fouquet fait de Bruant son premier commis, après le renvoi de Delorme. Suite à l’arrestation du surintendant, Bruant quitte Paris pour l’Italie, avant de s’établir vers 1667 dans la principauté de Liège. En 1665, la chambre de justice le condamne à mort par contumace et à la confiscation de tous ses biens. Toutefois, en 1674, Louis XIV le désigne officiellement comme son résident de France à Liège, fonction qu’il assumait de fait depuis trois ans. En 1679, Bruant rentre à Paris et consacre les dernières années de sa vie à sa famille, à son hôtel parisien du Marais et à sa seigneurie de Bérengeville-la-Rivière (Eure), tout en cherchant à récupérer le patrimoine confisqué en 1665. Il meurt le 11 avril 1689 à Paris.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_003485"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Bruant des Carrières (1631-XIXe siècle)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

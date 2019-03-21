@@ -1,0 +1,94 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050404</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-07-04</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>Elsa Camus, 4 juillet 2016 : modification forme autorisée du nom, ajout autre forme du nom, ajout activité, ajout relations</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, fonds François Luxure-Luxeuil (72AP).</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Luxure-Luxeuil, François (1788-1829)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Luxure Luxeuil, François (1788-1829)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1788-01-01">1788</fromDate>
+               <toDate standardDate="1829-12-31">1829</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msjkyui--1wp8nqbjdsjfb">avoué</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Avoué à Paris sous la Restauration, François Luxure-Luxeuil (1788-1829) est l’agent d’affaires de Louis-François-Joseph de Bourbon-Conti et d’Alexandre de Lameth.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050447"
+                      xlink:type="simple">
+            <relationEntry>Lameth, Alexandre de (1760-1829)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1816-01-01">1816</fromDate>
+               <toDate standardDate="1829-03-18">18 mars 1829</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>
+     F. Luxure-Luxeuil travaille pour A. de Lameth
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050448"
+                      xlink:type="simple">
+            <relationEntry>Conti, Louis François de Bourbon (1734-1814 ; prince de)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1798-01-01">1798</fromDate>
+               <toDate standardDate="1813-12-31">1813</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>F. Luxure-Luxeuil travaille pour Louis François de Bourbon-Conti. Dates inconnues.</p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

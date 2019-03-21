@@ -1,0 +1,198 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_000272</recordId>
+      <otherRecordId localType="Ancien_identifiant">1220/CEPII</otherRecordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Import_SIA</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2013-10-09</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2013-10-22</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-05-03</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-05-03</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
+            <eventDescription>F. Clavaud, 3 mai 2017 : révision rapide. Ajout ISNI, liens d'identité et hiérarchique, texte de référence, source, indexation fonctions. Révision lien IR.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-05-03</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
+            <eventDescription>F. Clavaud, 3 mai 2017 : révision rapide : revu nom, date, liens NP, ajouté ISNI, texte de référence, source, lien d'identité, indexation fonctions, revu lien IR</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Site internet du CEPII : http://www.cepii.fr/</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0004 0639 272X</entityId>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Centre d'études prospectives et d'informations internationales (France ; 1978-....)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>CEPII</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1978-03-20">20 mars 1978</fromDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term vocabularySource="d5blonaxbw--1mt8t42bokzts">service d'administration centrale</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyuidsbr-1umshw9gnudo9">relations internationales</term>
+            </function>
+            <function>
+               <term vocabularySource="d5bhviluwl--h5xbasqtef53">économie</term>
+               <descriptiveNote>
+                  <p>économie mondiale, échanges internationaux</p>
+               </descriptiveNote>
+            </function>
+            <function>
+               <term vocabularySource="d3nyuhp1um--qolq4osvi6b5">étude</term>
+            </function>
+         </functions>
+         <mandates>
+            <mandate>
+               <descriptiveNote>
+                  <p>Décret n° 78-353 du 20 mars 1978 portant création du CEPII</p>
+               </descriptiveNote>
+            </mandate>
+         </mandates>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb11862740k"
+                      xlink:type="simple">
+            <relationEntry>Centre d'études prospectives et d'informations internationales (France)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1978-03-20">20 mars 1978</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice d'autorité BnF</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_000282"
+                      xlink:type="simple">
+            <relationEntry>Commissariat général du Plan</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1978-03-20">20 mars 1978</fromDate>
+               <toDate standardDate="2006-03-05">5 mars 2006</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_051502"
+                      xlink:type="simple">
+            <relationEntry>Centre d'information et de recherche sur l'économie mondiale (France ; 1981-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1981-11-13">13 novembre 1981</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>
+     @isFunctionnallyLinkedTo@
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_051503"
+                      xlink:type="simple">
+            <relationEntry>Club du Centre d'études prospectives et d'informations internationales (France ; 2001-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2001-04-04">4 avril 2001</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>
+     @isFunctionnallyLinkedTo@
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_000380"
+                      xlink:type="simple">
+            <relationEntry>Centre d'analyse stratégique</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2006-03-06">6 mars 2006</fromDate>
+               <toDate standardDate="2013-04-21">21 avril 2013</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_050638"
+                      xlink:type="simple">
+            <relationEntry>Commissariat général à la stratégie et à la prospective</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2013-04-22">22 avril 2013</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-earlier"
+                      xlink:href="FRAN_NP_000379"
+                      xlink:type="simple">
+            <relationEntry>Groupe d'études prospectives internationales</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1978-03-20">20 mars 1978</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_018879"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Premier ministre ; Commissariat général du plan ; Centre d'études prospectives et d'information internationale (1969-1996)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,65 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050573</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-12-10</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>F. Clavaud, 10 décembre 2013 : changement forme du nom et ajout n° notice BnF</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, fonds Ernest Noirot (148AP).</p>
+               <p>Notice d'autorité BnF n° FRBNF13090482</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Noirot, Ernest (1851-1913)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1851-08-18">18 août 1851</fromDate>
+               <toDate standardDate="1913-12-28">28 décembre 1913</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Ernest Noirot (1851-1913) fut comique aux Folies Dramatiques, mais c’est comme peintre photographe qu’il accompagna le docteur Bayol, en 1881, au Sénégal. Celui-ci était officiellement chargé par le gouvernement français d’établir les droits de la France sur le Fouta-Djalon (Afrique occidentale française, Guinée française). En 1883, le ministère des Colonies confia à Noirot l’administration du Fouta et particulièrement celle du cercle de Dagana. À ce titre, il fut chargé de représenter le Sénégal à l’exposition coloniale de 1887. Il fut ensuite administrateur du Siné-Saloum (Sénégal) de 1890 à 1896, du Fouta-Djalon de 1897 à 1900, et directeur des Affaires indigènes au gouvernement de la Guinée de 1901 à 1905. De 1908 à 1910, Ernest Noirot remplit diverses missions pour le gouvernement général de l’Afrique occidentale française.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_004327"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Ernest Noirot (1869-1912)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

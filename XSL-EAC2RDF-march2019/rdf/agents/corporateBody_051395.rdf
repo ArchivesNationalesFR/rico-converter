@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/051395">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">France. Délégation interministérielle pour l'hébergement et l'accès au logement des personnes sans abri ou mal logées (2005-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051395_d4650e52"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051395_d4650e55"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051395_d4650e62"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/da73c490-6383-45fc-9a74-8bb07d080845"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-09-29</RiC:beginningDate>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051395-d4648e159"/>
+      <RiC:history xml:lang="fr">Créée en 2005, la délégation interministérielle pour le développement de l'offre de logements voit ses missions évoluer en 2010 et devient la délégation interministérielle pour l'hébergement et l'accès au logement des personnes sans abri ou mal logées. Placée en 2005 auprès du ministre chargé du logement, elle est rattachée au premier ministre en 2010. Le délégué prépare les travaux du comité interministériel pour le développement de l'offre de logements, comité qui a pour objectif de fixer les orientations de la politique gouvernementale en matière de développement de l'offre de logements, de traiter des différents aspects de cette politique, et en particulier de la politique de mobilisation de la ressource foncière.  Il assure le secrétariat de ce comité interministériel, qui est présidé par le Premier Ministre ou, par délégation, par le ministre chargé du logement.  Il veille à la cohérence entre les orientations définies par le comité et celles qui sont arrêtées en matière de construction et d'urbanisme. Il fait réaliser toutes études nécessaires à l'accomplissement de ses missions.</RiC:history>
+      <RiC:noteOnStructureOrGenealogy xml:lang="fr">Pour l'exercice de ses missions, le délégué dispose du concours des services et organismes placés sous l'autorité des ministères concernés par la politique du logement et de l'hébergement des personnes sans abri et mal logées. Ces ministères mettent à sa disposition les moyens nécessaires à l'accomplissement de sa mission. Il peut faire appel aux services ou organismes compétents placés sous l'autorité de ces ministères (notamment, d'après l'article 2, depuis abrogé, du décret de 2005, des ministères chargés de l'urbanisme, de l'économie, du budget, de l'intérieur, de l'aménagement du territoire, des collectivités territoriales et de l'outre-mer) et aux établissements publics compétents ainsi qu'au représentant de l'Etat dans le département. Le délégué interministériel préside un comité des directeurs chargés de la mise en oeuvre de la politique gouvernementale en matière de développement de l'offre de logements.  Le délégué interministériel peut inviter à participer aux travaux du comité d'autres directeurs d'administration centrale ou des dirigeants d'organismes publics intéressés. Le comité des directeurs peut se réunir, à l'initiative du délégué interministériel, en formation restreinte aux seuls membres concernés par les questions portées à l'ordre du jour. </RiC:noteOnStructureOrGenealogy>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051395-d4648e172"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051395-d4648e175"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051395-d4648e178"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb16276824f#foaf:Organization"/>
+      <RiC:agentIsTargetOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/051395-d4648e242"/>
+      <RiC:agentIsTargetOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/051395-d4648e275"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051395-d4648e263"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051395"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051395-d4648e159">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d5bhviinso--996i3dnr2qrd"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051395_d4650e52">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051395-d4648e97"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051395_d4650e55">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-01-01</RiC:beginningDate>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051395-d4648e103"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051395_d4650e62">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-09-29</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-12-31</RiC:endDate>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051395-d4648e118"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051395">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/051395"/>
+      <RiC:creationDate>2016-09-26</RiC:creationDate>
+      <RiC:lastUpdateDate>2016-09-27</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051395</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051395"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb16276824f"/>
+   </rdf:Description>
+</rdf:RDF>

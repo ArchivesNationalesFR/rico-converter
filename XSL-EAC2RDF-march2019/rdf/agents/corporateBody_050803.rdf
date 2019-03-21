@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/050803">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">France Médias Monde</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050803_d4251e36"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050803_d4251e39"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050803_d4251e48"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/6a1fe8f2-1b81-4bfd-a423-03501c6e04f5"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-04-01</RiC:beginningDate>
+      <RiC:history xml:lang="fr">L’idée de regrouper dans une société holding les différentes entreprises de l’audiovisuel extérieur est née au milieu de la décennie 2000 et en 2007 une mission de concertation et de propositions est mise en place. Cette mission a débouché en décembre 2007 sur un rapport qui a préconisé une réforme d’ensemble afin d’assurer une présence accrue de la France dans le domaine de l’information internationale. Les statuts constitutifs de l’Audiovisuel Extérieur de la France sont déposés le 3 décembre 2007. La société AEF est créée en avril 2008 et regroupe deux radios et deux chaînes de télévision : - Radio France Internationale qui diffuse en modulation de fréquence, en ondes courtes et moyennes, sur le câble, par satellite et sur Internet des émissions en français et dans plus de dix langues étrangères ; - sa filiale Monte-Carlo Doualiya, diffusant en langue arabe dans le Moyen-Orient ; - la chaîne France 24, diffusant en français, en anglais et en arabe 24 heures sur 24 depuis 2010 et dont l’accès est gratuit sur le câble, le satellite et par liaison numérique asymétrique (ADSL) en Europe, au Proche-Orient, au Moyen-Orient, en Afrique, au Maghreb, à Washington DC et à New-York. Elle bénéficie également d’implantations en Asie et est accessible Outre-mer sur la télévision numérique terrestre (TNT) ; - la chaîne TV5 Monde qui diffuse des émissions en français et regroupe les participations de la France, de la Suisse, de la communauté française de Belgique, du Canada et du Québec. L’Etat Français étant l’actionnaire principal, l’AEF est sous la tutelle principale du ministère des Affaires étrangères puis en 2010 sous celle du ministère de la Culture et de la communication à direction générale des médias et des industries culturelles. Toutefois, le ministère des affaires étrangères et les ministères chargés du budget (direction du budget) et de l’économie (agence des participations de l’État) sont cotuteurs et représentés au conseil d’administration de l’entreprise. En 2012 les sociétés absorbées par l’AEF, RFI et France 24, sont dissoutes et radiées des registres du commerce et des sociétés. Le 27 juin 2013, l'Audiovisuel extérieur de la France (AEF) est rebaptisé France Médias Monde. Les enjeux de France Médias Monde sont la convergence des différents médias de diffusion (radio, télévision, Internet) et la contribution au rayonnement de la culture française en direction des publics francophones et francophiles, par l’offre d’un point de vue français sur l’actualité.</RiC:history>
+      <RiC:noteOnStructureOrGenealogy xml:lang="fr">Le siège social de France Médias Monde est au 80 rue Camille Desmoulins, 92130 Issy-les-Moulineaux</RiC:noteOnStructureOrGenealogy>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/050803-d4249e136"/>
+      <RiC:agentIsSourceOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/051516-d4745e287"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050803-d4249e188"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/005439-d131e492"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050803-d4249e245"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050803-d4249e263"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050803-d4249e276"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050803"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050803-d4249e276">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            France Médias Monde et l'ensemble de documents "France Médias monde. Fonds de Direction administrative et financière de Radio France Internationale"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/054374-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050803_d4251e36">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050803-d4249e67"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050803_d4251e39">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-04-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-12-31</RiC:endDate>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050803-d4249e73"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050803_d4251e48">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-04-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-12-31</RiC:endDate>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050803-d4249e91"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050803">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/050803"/>
+      <RiC:creationDate>2014-05-14</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050803</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050803"/>
+   </rdf:Description>
+</rdf:RDF>

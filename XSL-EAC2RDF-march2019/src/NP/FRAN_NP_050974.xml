@@ -1,0 +1,102 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050974</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-12-04</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+            <eventDescription>F. Clavaud, 25 février 2015 : création à l'occasion de l'arrivée aux AN des archives des musées nationaux. Informations en partie fournies par A. Clergeau (mission culture)</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Musée du Luxembourg (Paris ; 1979-....)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1979-01-01">1979</fromDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>établissement public</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d5bhviikk9--y6te63k761ib">culture</term>
+               <descriptiveNote>
+                  <p>organisation d'expositions</p>
+               </descriptiveNote>
+            </function>
+         </functions>
+         <biogHist>
+            <p>En 1979, le Sénat décide de rouvrir le musée du Luxembourg (disparu en 1937, ses collections étant alors dévolues au Musée national d'art moderne) afin qu'il accueille des expositions temporaires mettant en valeur les œuvres des musées de province, par exemple « Les peintres de la couleur en Provence », « Emile Gallé », « Jean Lurçat », « Trésor d’orfèvrerie gallo-romain ».</p>
+            <p>En 2010, le Sénat délègue la gestion du musée à la Réunion des musées nationaux, en privilégiant trois axes de programmation en lien avec son histoire : « la Renaissance en Europe », « Art et pouvoir » et « le Palais, le Jardin et le Musée : le Luxembourg au cœur de Paris, capitale des arts ».</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_005236"
+                      xlink:type="simple">
+            <relationEntry>Établissement public de la Réunion des musées nationaux et du Grand Palais des Champs-Élysées (France)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2010-01-01">2010</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>
+      le Sénat délègue la gestion du musée du Luxembourg à la RMN en 2010 
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050926"
+                      xlink:type="simple">
+            <relationEntry>Marek, Yves (1963-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1998-10-01">Octobre 1998</fromDate>
+               <toDate standardDate="2008-02-29">Février 2008</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>
+     Dirige le musée du Luxembourg
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_000067"
+                      xlink:type="simple">
+            <relationEntry>Sénat</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1979-01-01">1979</fromDate>
+            </dateRange>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

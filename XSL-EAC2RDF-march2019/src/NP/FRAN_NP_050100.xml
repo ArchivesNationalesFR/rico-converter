@@ -1,0 +1,68 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050100</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-08-09</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Raphael BAUMARD</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2013-10-15</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Raphael BAUMARD</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Lamy, Etienne</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1845-01-01">1845</fromDate>
+               <toDate standardDate="1919-12-31">1919</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Opposant à l’Empire, Étienne Lamy (1845-1919) fut député républicain du Jura de 1871 à 1881, et membre des commissions de la Marine, de l’Armée et des Colonies de l’Assemblée nationale. Catholique, champion du ralliement (1892), il fut également le fondateur de la Démocratie chrétienne et l’un des artisans de la condamnation de l’Action française. Chroniqueur de la 
+
+     <span style="italic">Revue des Deux-Mondes</span>, directeur du 
+
+     <span style="italic">Correspondant </span>(1904-1910), il fut chargé de l’administration des biens de l’Institut comme secrétaire perpétuel de l’Académie française (1913-1919). Les grandes questions religieuses posées par l’exil des Congrégations, les missions et la présence française outre-mer, la séparation des Églises et de l’État et les questions sociales firent partie des préoccupations d’Etienne Lamy, qui fonda un prix en faveur des familles nombreuses. 
+
+    </p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_005211"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Etienne Lamy (XVIIe siècle-1919)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    
+    <!-- Référentiel langues -->
+    
+    <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/language/FRAN_RI_100-name4">
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Language"/> 
+        <owl:sameAs rdf:resource="http://id.loc.gov/vocabulary/iso639-2/fra"/>
+        <RiC:identifier>Ancien identifiant SIA : FRAN_RI_100.xml#name4</RiC:identifier>
+        <rdfs:label xml:lang="fr">Français/fre</rdfs:label>
+        <skos:prefLabel xml:lang="fr">français</skos:prefLabel>
+        <skos:prefLabel xml:lang="rn">French</skos:prefLabel>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/language/FRAN_RI_100-d-6g899b3ht-jm6991yabdi">
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Language"/> 
+        <owl:sameAs rdf:resource="http://id.loc.gov/vocabulary/iso639-2/cat"/>
+        <RiC:identifier>Ancien identifiant SIA : FRAN_RI_100.xml#d-6g899b3ht-jm6991yabdi</RiC:identifier>
+        <rdfs:label xml:lang="fr">Catalan/cat</rdfs:label>
+        <skos:prefLabel xml:lang="fr">catalan | valencien</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Catalan | Valencian</skos:prefLabel>
+    </rdf:Description>
+    
+</rdf:RDF>

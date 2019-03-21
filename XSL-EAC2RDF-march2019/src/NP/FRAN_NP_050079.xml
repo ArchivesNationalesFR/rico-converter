@@ -1,0 +1,64 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050079</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-08-09</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Raphael BAUMARD</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2013-10-31</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Maurepas, Jean-Frédéric Phélypeaux (comte de)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1701-01-01">1701</fromDate>
+               <toDate standardDate="1781-12-31">1781</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Jean-Frédéric Phélypeaux, comte de Maurepas (1701-1781) reçoit de son père (après la mort de Louis XIV) la charge de secrétaire d’État de la Maison du roi. En 1723, il obtient en outre le département de la Marine. En janvier 1738, il est promu ministre d’État. Disgrâcié pour une épigramme contre Madame de Pompadour en 1749, Maurepas est exilé à Bourges puis à Pontchartrain. À l’avènement de Louis XVI, il est rappelé aux affaires en qualité de ministre d’État et de président du conseil des finances. Il s’adjoint des ministres réformateurs comme Turgot et Necker, mais il ne sait pas les défendre des intrigues de la Cour. Son secrétaire publia sous son nom des 
+     <span style="italic">Mémoires</span>. 
+    </p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_000689"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Maurepas (XVIe-XXe siècles)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

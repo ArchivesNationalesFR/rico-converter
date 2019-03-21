@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010339</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00040</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_010339-d436e67">
+            <part>Vassal, Philéas</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1857-12-10">10 décembre 1857</fromDate>
+               <toDate standardDate="1887-10-28">28 octobre 1887</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place xml:id="FRAN_place_010339-d436e96">
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="arrondissement_actuel"
+                           vocabularySource="d3nyv5kgoa--eky836cf0y0d"
+                           xml:id="FRAN_stdPlaceEntry_010339-d3nyv5kgoa--eky836cf0y0dd436e101">03e arrondissement</placeEntry>
+               <placeEntry localType="voie"
+                           vocabularySource="d3nzd7d23f--16y0tmjtun1zp"
+                           xml:id="FRAN_stdPlaceEntry_010339-d3nzd7d23f--16y0tmjtun1zpd436e104">sainte-anne (rue)</placeEntry>
+               <placeEntry localType="voie"
+                           vocabularySource="d3nzdaj6vi-1hdjv3gb308r4"
+                           xml:id="FRAN_stdPlaceEntry_010339-d3nzdaj6vi-1hdjv3gb308r4d436e107">sébastopol (boulevard de)</placeEntry>
+               <placeEntry localType="nomLieu" xml:id="FRAN_placeEntry_010339-d436e110">18 rue Sainte-Anne (de 1857 à 1859), 68 boulevard de Sébastopol (de 1859 à 1863) puis 58 (de 1863 à 1887)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function xml:id="FRAN_activity_010339-d436e117">
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1857-12-10">10 décembre 1857</fromDate>
+                  <toDate standardDate="1887-10-28">28 octobre 1887</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Né le 15 juillet 1828</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010222"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010339-d436e142">
+            <relationEntry>Etude notariale XCV</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1857-12-10">10 décembre 1857</fromDate>
+               <toDate standardDate="1887-10-28">28 octobre 1887</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other" xml:id="FRAN_relation_010339-d436e157">
+            <relationEntry localType="archival">BB/10/1370, 25 novembre 1857, dossier de nomination</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_043000"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010339-d436e163">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Philéas VASSAL, 10 décembre 1857 - 28 octobre 1887 (étude XCV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055499"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010339-d436e169">
+            <relationEntry localType="archival">Images des répertoires du notaire Philéas Vassal pour l'étude XCV</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

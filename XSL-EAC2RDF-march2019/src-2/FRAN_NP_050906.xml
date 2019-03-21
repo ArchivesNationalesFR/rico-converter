@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050906</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-04-23</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>F. Clavaud, 21 avril 2015 : changé forme du nom, ajouté n°s ISNI, notice BnF, activité</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>CNAHES</p>
+               <p>Notice d'autorité BnF n° FRBNF11925643</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 2772 2987</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_050906-d4322e85">
+            <part>Straus, Pierre (1915-1992)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1915-01-01">1915</fromDate>
+               <toDate standardDate="1992-01-29">29 janvier 1992</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation xml:id="FRAN_occupation_050906-d4322e108">
+               <term vocabularySource="d699msjarlu--l5x9bzdkopz8">médecin</term>
+               <descriptiveNote>
+                  <p>pédiatre</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Pierre Straus est né à Angers en 1915. Il passe un baccalauréat de droit en 1936, avant de se tourner vers la médecine. Pendant la seconde guerre mondiale, il est fait prisonnier par les Allemands. Libéré en 1941, il rejoint la résistance et aide par ce biais de nombreuses personnes à échapper à la Gestapo. Il termine la guerre en tant que médecin au dispensaire du siège de l’hôtel de ville de Paris. Après la guerre, Pierre Straus termine ses études de médecine. Il est interne des hôpitaux de Paris dès 1946. Son activité en pédiatrie sociale commence en 1950, quand l’Organisation Internationale des Réfugiés l’envoie en Australie pour convoyer des familles entières de personnes déplacées. Puis, il est médecin consultant dans les camps de réfugiés en Italie et en Allemagne.</p>
+            <p>De retour en France, il exerce la pédiatrie dans divers hôpitaux Parisiens. Ses publications cliniques sont nombreuses mais l’originalité de son parcours réside surtout dans ses travaux de pédiatrie sociale dont il est le principal initiateur. C’est ainsi qu’en 1961 il mène une vaste enquête sur l’hospitalisation des enfants dans la région parisienne, suivie par une étude sur la santé des enfants de travailleurs migrants. C’est pour eux et leurs parents qu’il met en place des consultations hospitalières du soir avec des interprètes. En travaillant sur les raisons de l’hospitalisation des enfants, son attention est attirée par la maltraitance. Cette douloureuse question va l’obséder de 1965 jusqu’à sa mort. Le problème de la maltraitance le pousse à faire des rencontres multiples tant en France qu’à l’étranger. Pierre Straus est à l’origine de plusieurs associations importantes dont la plus célèbre est l’Association française d'information et de recherche sur l'enfance maltraitée (AFIREM) fondée en 1980, et le fondateur de la Société internationale pour la prévention des mauvais traitements envers les enfants (IPSCAN). Pierre Straus décède dans la région parisienne, le 29 janvier 1992, à 76 ans. </p>
+         </biogHist>
+      </description>
+   </cpfDescription>
+</eac-cpf>

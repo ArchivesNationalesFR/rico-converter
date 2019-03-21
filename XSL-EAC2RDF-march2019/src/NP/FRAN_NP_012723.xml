@@ -1,0 +1,99 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012723</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE02629</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Charles, Jacques</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1545-02-18">18 février 1545</fromDate>
+               <toDate standardDate="1552-04-15">15 avril 1552</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvox0hv--s68ql74wtyjp">saint-germain-l'auxerrois (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd36jkq-2di11qojb16k">saint-honoré (rue)</placeEntry>
+               <placeEntry localType="nomLieu">rue Saint-Honoré, à la Croix-du-Trahoir, près la Tête-noire</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1545-02-18">18 février 1545</fromDate>
+                  <toDate standardDate="1552-04-15">15 avril 1552</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Marié à Guillemette Aubery (voir ET/CXXII/249 : 4 janvier 1551)</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010249"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale CXXII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1545-02-18">18 février 1545</fromDate>
+               <toDate standardDate="1552-04-15">15 avril 1552</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/CXXII/160, 18 novembre 1546, rétrocession de bail d'un hôtel et d'une étude sur le devant d'une maison rue de l'Arbre-Sec à Bernard Coulon, notaire au Châtelet</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/CXXII/249, 4 janvier 1551 (n. st.), donation mutuelle avec Guillemette Aubery son épouse.</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/CXXII/249, 24 décembre 1551, achat d'une maison rue Saint-Honoré près le Soleil d'or</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XC/118, 16 juin 1569, apprentissage de René Charles fils de défunt Jacques Charles</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043556"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jacques CHARLES, février 1546 - 8 février 1559 (étude CXXII)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

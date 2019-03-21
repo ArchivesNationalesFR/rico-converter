@@ -1,0 +1,125 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051573</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2017-07-13</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID-DORMIEN</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2018-07-09</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+            <eventDescription>P. Charbonnier, 09 juillet 2018 : pas d'identifiant ISNI ni de notice d'autorité BnF ou Wikipédia</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Archives nationales, fonds de l'Alliance Tibet-France (112AS)</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId/>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Alliance Tibet-France (1996-....)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1996-03-18">18 mars 1996</fromDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Tibet </placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3ntxm58dl-15htmdy8i12g1">Territoires et villes étrangers</placeEntry>
+               <descriptiveNote>
+                  <p>Région de la Chine</p>
+               </descriptiveNote>
+            </place>
+         </places>
+         <legalStatuses>
+            <legalStatus>
+               <term>association</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d5bhvil20q--uuew3ia85vzc">activité associative</term>
+               <dateRange>
+                  <fromDate standardDate="1996-03-18">18 mars 1996</fromDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>Principalement éditoriale. </p>
+               </descriptiveNote>
+            </function>
+            <function>
+               <term vocabularySource="d5bhviikk9--y6te63k761ib">culture</term>
+               <dateRange>
+                  <fromDate standardDate="1996-03-18">18 mars 1996</fromDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>Soutien à la culture tibétaine </p>
+               </descriptiveNote>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Alliance Tibet-France est une association de type loi 1901, créée le 18 mars 1996 qui a pour objet principal « de mener une réflexion, et de contribuer à une meilleure connaissance ou à des actions concernant la préservation et le soutien de la culture tibétaine » ; son activité est essentiellement éditoriale. </p>
+            <p>Le siège social d’Alliance Tibet-France est situé au 37, rue Claude Bernard, dans le cinquième arrondissement de Paris. Ses membres fondateurs sont Jean-Marc Pottier, écrivain-journaliste, Michel Cool, conseil culturel, et Anne Crozier, sculpteur.</p>
+            <p>En 2000, Alliance Tibet-France revendique 1744 adhérents.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-child"
+                      xlink:href="FRAN_NP_051572"
+                      xlink:type="simple">
+            <relationEntry>Tibet 98 (1997-1999)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1997-09-01">1er septembre 1997</fromDate>
+               <toDate standardDate="1999-06-02">2 juin 1999</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_051572"
+                      xlink:type="simple">
+            <relationEntry>Tibet 98 (1997-1999)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1997-09-01">1er septembre 1997</fromDate>
+               <toDate standardDate="1999-06-02">2 juin 1999</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_004526"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds de l'alliance Tibet-France (1990-2000)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

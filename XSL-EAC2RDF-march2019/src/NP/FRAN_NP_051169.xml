@@ -1,0 +1,97 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051169</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-09-03</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marine ZELVERTE</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice BnF n° FRBNF14081914</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 6115 2797</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Bourgine, Caroline (1962-....)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1962-02-26">26 février 1962</fromDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msizce3-1fkn61hd3lpjw">journaliste</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Caroline Bourgine est née le 26 février 1962 à Paris. Elle est journaliste diplômée de l'École supérieure de journalisme de Paris.</p>
+            <p>Elle s'initie à la radio en 1981 au moment de la libéralisation de la bande FM. Entre 1982 et 1984, elle débute sa carrière professionnelle en Guadeloupe pour les pages culture de Télé 7 Jours et exerce diverses collaborations à RFO et Radio Caraïbes Internationale. De 1984 à 1989, elle est correspondante de Radio France Internationale à Brazzaville pour l'Afrique centrale et collabore au journal Libération. En 1990, elle entame une collaboration avec RFI au service de la coopération, ainsi qu'avec France Culture et France Musique. En 1992, Claude Samuel, directeur de France Musique lui délègue l'émission hebdomadaire "La rose des vents" sur les musiques traditionnelles. En 1997, Patrice Gélinet, directeur de France Culture, lui confie la réalisation de l'émission hebdomadaire "Musiques du Monde", qui deviendra "Équinoxe" en janvier 2000, ainsi que la mise en œuvre de nombreuses opérations spéciales. Caroline Bourgine quitte France Culture à l'arrêt de l'émission "Équinoxe" en juin 2009. </p>
+            <p>De 2010 à 2012, elle est conseillère, chargée de mission au ministère de la Culture au Commissariat de l'année des outre-mer. </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_005419"
+                      xlink:type="simple">
+            <relationEntry>Radio France</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1982-01-01">1982</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Caroline Bourgine collabore avec Radio France.</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_000005"
+                      xlink:type="simple">
+            <relationEntry>France. Ministère de la Culture et de la Communication (1959-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2010-01-01">2010</fromDate>
+               <toDate standardDate="2012-12-31">2012</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>
+      Caroline Bourgine est conseillère, chargée de mission au ministère de la Culture au Commissariat de l'année des outre-mer. 
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054669"
+                           xlink:type="simple">
+            <relationEntry localType="archival">RADIO FRANCE, FRANCE CULTURE Archives papier de Caroline Bourgine. Émission « Équinoxe » (2000-2006), autres contributions (2001-2003) 2000-2006</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

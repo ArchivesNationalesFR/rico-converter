@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/050783">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">Haute Autorité pour la transparence de la vie publique</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050783_d4241e36"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050783_d4241e39"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/a822c84e-b945-4139-b07e-c7234d6be25b"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-10-11</RiC:beginningDate>
+      <RiC:history xml:lang="fr">La Haute Autorité pour la transparence de la vie publique (HATVP) est créée le 11 octobre 2013 (loi 2013-907 sur la transparence de la vie publique) ; elle remplace la Commission pour la transparence financière de la vie politique (1988-2013), supprimée par la loi ci-dessus.  C'est une autorité administrative indépendante (AAI) chargée de promouvoir la probité des responsables publics qui comporte un collège de neuf membres, un Secrétaire général, une dizaine de rapporteurs et une trentaine d’agents. M. Jean-Louis NADAL a été nommé Président de la Haute Autorité par décret du Président de la République en date du 19 décembre 2013. La Haute Autorité dispose de missions et de compétences nouvelles conférées par les lois du 11 octobre 2013 relatives à la transparence de la vie publique. Elle reçoit et contrôle les déclarations de situation patrimoniale et d'intérêts des 9 000 plus hauts responsables publics. Elle est également chargée d’une mission de conseil sur les questions de déontologie comme de recommandation à l’égard des membres du Gouvernement et du Parlement, des dirigeants d’entreprises publiques comme des emplois à décision du Gouvernement ainsi qu’à l’égard des autres autorités administratives indépendantes. Elle peut se saisir des situations de conflit d'intérêts et éventuellement prononcer une injonction d'y mettre fin. Elle se prononce sur la compatibilité de l'exercice d'une activité libérale ou d'une activité rémunérée dans le secteur concurrentiel parallèlement ou dans les trois années suivant l'exercice de fonctions gouvernementales ou de fonctions exécutives locales. Elle développe et conduit des actions de formation à destination des grandes écoles de service public. Elle est le point de contact des programmes internationaux de son champ (Commission et parlement européens, Conseil de l’Europe, OCDE, ONU). Elle publie un rapport annuel remis au Président de la République, au Premier ministre et au Parlement et peut formuler des recommandations pour l’application de la législation en matière notamment de relations avec les représentants d’intérêts. </RiC:history>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/050783-d4239e106"/>
+      <RiC:agentIsTargetOfAgentTemporalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentTemporalRelation/050783-d4239e143"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050783"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050783_d4241e36">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050783-d4239e67"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050783_d4241e39">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050783-d4239e73"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050783">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/050783"/>
+      <RiC:creationDate>2014-04-16</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050783</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050783"/>
+   </rdf:Description>
+</rdf:RDF>

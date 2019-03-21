@@ -1,0 +1,96 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050258</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-05-12</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Vanessa ASPART</agent>
+            <eventDescription>Elsa Camus : ajout dates à la forme autorisée du nom, relation, activités</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, Fonds Yvonne Jougla et Jacques Sauvage (XXe siècle), 630 AP.</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Jougla, Yvonne (1921-2002)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1921-01-01">1921</fromDate>
+               <toDate standardDate="2002-12-31">2002</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msjdbik--d0t57s3zykhu">attaché parlementaire</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msj742x--12cnnohd8i9wj">avocat</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msjy3v4--oimn0b7kuvf4">magistrat</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msk3h6v--1a7obp35gqwv3">militant politique</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msixdvh--wgctct8soc1y">membre de cabinet ministériel</term>
+               <dateRange>
+                  <fromDate standardDate="1958-01-01">1958</fromDate>
+                  <toDate standardDate="1967-12-31">1967</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>Membre de plusieurs cabinets ministériels</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Yvonne Jougla fut avocate, magistrat, vice-présidente au tribunal de Paris, attachée parlementaire, membre de plusieurs cabinets ministériels, auprès de Maurice Couve de Murville, ministre des Affaires étrangères (juin 1958-mai 1968) puis Premier ministre (juillet 1968-juin 1969), d'Edmond Michelet, garde des Sceaux, ministre de la Justice (janvier 1959-août 1961), puis ministre des Affaires culturelles (juin 1969-octobre 1970), de Michel Habib-Deloncle, secrétaire d'Etat à l'Education nationale (janvier 1966-avril 1967), enfin conseiller technique auprès de Marceau Long à l'O.R.T.F. </p>
+            <p>Yvonne Jougla était également membre de l'Union pour la Nouvelle république, déclarée en octobre 1958 afin de soutenir l'action du général de Gaulle, revenu au pouvoir en mai.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_000202"
+                      xlink:type="simple">
+            <relationEntry>Long, Marceau</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1973-01-01">1973</fromDate>
+               <toDate standardDate="1974-12-31">1974</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Conseiller technique auprès de M. Long</p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

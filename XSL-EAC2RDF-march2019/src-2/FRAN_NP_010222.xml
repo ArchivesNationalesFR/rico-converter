@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010222</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NAETUDE_095</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_010222-d319e67">
+            <part>Etude XCV</part>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_010222-d319e73">
+            <part>75102</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1650-01-01">1650</fromDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place xml:id="FRAN_place_010222-d319e93">
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu" xml:id="FRAN_placeEntry_010222-d319e98">16, rue des Pyramides, 75001 PARIS</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function xml:id="FRAN_activity_010222-d319e105">
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1650-01-01">1650</fromDate>
+                  <toDate/>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Les notaires de cette étude sont installés rue Coquillère depuis 1650. A partir de 1794, ils passent dans le quartier Saint-Roch et y restent jusqu'en 1863, à différents endroits (rue Neuve-des-Petits-Champs ; rue des Moulins ; rue Thérèse ; rue sainte-Anne). L'étude se transporte ensuite boulevard de Sébastopol et revient avenue de l'Opéra en 1892.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010339"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010222-d319e129">
+            <relationEntry>Vassal, Philéas</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1857-12-10">10 décembre 1857</fromDate>
+               <toDate standardDate="1887-10-28">28 octobre 1887</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010892"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010222-d319e144">
+            <relationEntry>Perret, Joachim</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1820-04-20">20 avril 1820</fromDate>
+               <toDate standardDate="1841-06-08">8 juin 1841</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010893"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010222-d319e159">
+            <relationEntry>Perret, Thomas-Simon</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1724-02-01">1er février 1724</fromDate>
+               <toDate standardDate="1753-01-22">22 janvier 1753</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011422"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010222-d319e174">
+            <relationEntry>Le pelletier, Denis</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1804-04-18">18 avril 1804</fromDate>
+               <toDate standardDate="1820-04-20">20 avril 1820</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011487"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010222-d319e189">
+            <relationEntry>Le fouin, François</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1650-02-20">20 février 1650</fromDate>
+               <toDate standardDate="1670-04-25">25 avril 1670</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011942"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010222-d319e205">
+            <relationEntry>Goudechaux, Léon</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1841-06-08">8 juin 1841</fromDate>
+               <toDate standardDate="1857-12-10">10 décembre 1857</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011878"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010222-d319e220">
+            <relationEntry>Geoffroy-Bergier, Marie-Anne</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1978-11-29">29 novembre 1978</fromDate>
+               <toDate standardDate="1995-03-07">7 mars 1995</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012891"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010222-d319e235">
+            <relationEntry>Bessonnet, Étienne-Claude</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1753-01-23">23 janvier 1753</fromDate>
+               <toDate standardDate="1759-11-07">7 novembre 1759</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012818"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010222-d319e250">
+            <relationEntry>Beauvais, Nicolas-Charles de</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1705-11-25">25 novembre 1705</fromDate>
+               <toDate standardDate="1723-12-29">29 décembre 1723</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013028"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010222-d319e265">
+            <relationEntry>Bouvet, Luc</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1997-04-02">2 avril 1997</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010651"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010222-d319e277">
+            <relationEntry>Revel, Robert Emile Jacques</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1914-04-01">1er avril 1914</fromDate>
+               <toDate standardDate="1946-10-29">29 octobre 1946</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010635"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010222-d319e293">
+            <relationEntry>Régnier, Jean-Luc</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1978-11-29">29 novembre 1978</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013142"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010222-d319e305">
+            <relationEntry>Aron, Armand</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1887-10-28">28 octobre 1887</fromDate>
+               <toDate standardDate="1914-04-01">1er avril 1914</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011775"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010222-d319e320">
+            <relationEntry>Hervet, Gérard</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1992-12-09">9 décembre 1992</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010634"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010222-d319e332">
+            <relationEntry>Régnier, Jean Louis</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1975-03-26">26 mars 1975</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012819"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010222-d319e344">
+            <relationEntry>Beauvais, Noël de</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1658-02-19">19 février 1658</fromDate>
+               <toDate standardDate="1705-10-20">20 octobre 1705</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013049"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010222-d319e359">
+            <relationEntry>Bricard, Charles</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1995-09-13">13 septembre 1995</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011821"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010222-d319e372">
+            <relationEntry>Hussenot-Desenonges, Michel</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1971-04-28">28 avril 1971</fromDate>
+               <toDate standardDate="1992-12-09">9 décembre 1992</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012778"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010222-d319e387">
+            <relationEntry>Baron, Marcel André Marie</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1946-10-29">29 octobre 1946</fromDate>
+               <toDate standardDate="1978-11-29">29 novembre 1978</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010423"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010222-d319e402">
+            <relationEntry>Thessieux, François</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1997-04-02">2 avril 1997</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012362"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010222-d319e414">
+            <relationEntry>Deherain, Pierre</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1770-10-06">6 octobre 1770</fromDate>
+               <toDate standardDate="1804-04-18">18 avril 1804</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012363"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010222-d319e429">
+            <relationEntry>Dulion de boissy, Jean-Baptiste</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1759-11-08">8 novembre 1759</fromDate>
+               <toDate standardDate="1770-09-29">29 septembre 1770</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013412"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010222-d319e444">
+            <relationEntry>Bédel, Ulrich</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2009-01-06">6 janvier 2009</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013502"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010222-d319e457">
+            <relationEntry>Fortassin, Nicolas</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2011-05-18">18 mai 2011</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013503"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010222-d319e469">
+            <relationEntry>Linet, Vincent</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2011-05-18">18 mai 2011</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_042994"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010222-d319e481">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Étienne Claude BESSONNET, 23 janvier 1753 - 7 novembre 1759 (étude XCV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_042996"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010222-d319e487">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Pierre DEHERAIN, 6 octobre 1770 - 18 avril 1804 (étude XCV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_042997"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010222-d319e493">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Denis LE PELLETIER, 18 avril 1804 - 20 avril 1820 (étude XCV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_043001"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010222-d319e499">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Armand ARON, 28 octobre 1887 - 8 novembre 1889 (étude XCV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_043000"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010222-d319e506">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Philéas VASSAL, 10 décembre 1857 - 28 octobre 1887 (étude XCV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_042992"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010222-d319e512">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Nicolas Charles de BEAUVAIS, 25 novembre 1705 - 29 décembre 1723 (étude XCV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_050213"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010222-d319e518">
+            <relationEntry localType="archival">Dossiers de clients de l'étude XCV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042993"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010222-d319e524">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Thomas Simon PERRET, février 1724 - 22 janvier 1753 (étude XCV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042990"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010222-d319e530">
+            <relationEntry localType="archival">Minutes et répertoires du notaire François LE FOUIN, 20 février 1650 - 25 avril 1670 (étude XCV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042991"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010222-d319e536">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Noël de BEAUVAIS, 19 février 1658 - 20 octobre 1705 (étude XCV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051282"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010222-d319e543">
+            <relationEntry localType="archival">Images des répertoires du notaire Thomas Simon Perret pour l'étude XCV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051585"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010222-d319e549">
+            <relationEntry localType="archival">Images des répertoires du notaire Nicolas Charles de Beauvais pour l'étude XCV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051636"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010222-d319e555">
+            <relationEntry localType="archival">Images du répertoire du notaire Armand Aron pour l'étude XCV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051440"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010222-d319e561">
+            <relationEntry localType="archival">Images des répertoires du notaire Léon Goudechaux pour l'étude XCV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051523"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010222-d319e567">
+            <relationEntry localType="archival">Images du répertoire du notaire Jean-Baptiste Dulion de Boissy pour l'étude XCV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052847"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010222-d319e573">
+            <relationEntry localType="archival">Images des répertoires du notaire Noël de Beauvais pour l'étude XCV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042989"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010222-d319e580">
+            <relationEntry localType="archival">Archives de l'étude XCV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051364"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010222-d319e586">
+            <relationEntry localType="archival">Images des répertoires du notaire Denis Le Pelletier pour l'étude XCV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052788"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010222-d319e592">
+            <relationEntry localType="archival">Images des répertoires du notaire François Le Fouin pour l'étude XCV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052828"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010222-d319e598">
+            <relationEntry localType="archival">Images des répertoires du notaire Pierre Deherain pour l'étude XCV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052848"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010222-d319e604">
+            <relationEntry localType="archival">Images du répertoire du notaire Etienne Claude Bessonnet pour l'étude XCV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052765"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010222-d319e610">
+            <relationEntry localType="archival">Images des répertoires du notaire Joachim Perret pour l'étude XCV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055499"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010222-d319e617">
+            <relationEntry localType="archival">Images des répertoires du notaire Philéas Vassal pour l'étude XCV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042999"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010222-d319e623">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Léon GOUDECHAUX, 8 juin 1841 - 10 décembre 1857 (étude XCV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042995"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010222-d319e629">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean-Baptiste DULION de BOISSY, 8 novembre 1759 - 29 septembre 1770 (étude XCV)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

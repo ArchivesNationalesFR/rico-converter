@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051255">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Isméolari, Jean (1901-198.)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051255_d4543e36"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1901-01-01</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1990-12-31</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051255-d4541e120"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051255-d4541e126"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051255-d4541e147"/>
+      <RiC:history xml:lang="fr">Jean Isméolari est né le 9 août 1901 à Pont-de-Beauvoisin dans le département de la Savoie, de Alexandre Isméolari, italien, né à Albiano dans la province de Turin et de Joséphine Bolla.  Jean Isméolari s'est engagé en 1917 dans la Marine nationale pour une durée de dix ans. Il est formé durant deux années à l'Ecole des apprentis mécaniciens de Lorient dans la spécialité de tourneur sur métaux.  De 1919 à 1924, il est employé comme mécanicien dans les ateliers de réparations et de constructions mécaniques de la Marine, à Toulon puis à Ajaccio (Corse). En août 1924, il est embauché comme mécanicien puis chef-mécanicien aux ateliers des "Lignes aériennes Latécoères", où il travaille jusqu'en août 1927 (à Toulouse, Alicante, Oran, Paris et Lorient). De novembre 1927 à septembre 1928, il travaille à la "Société générales des Alfas", comme chef d'atelier. En septembre 1928 il achète un fond de commerce de débit de boisson à Oran, qu'il revend fin août 1929, puis de septembre 1929 à mars 1930, sera à nouveau chef d'atelier, aux "Ateliers Oranais de constructions mécaniques". En avril 1930, il devient représentant à Oran pour la "Société de Condensation et d'applications mécaniques", où il reste employé jusqu'en 1938. Parallèlement, il travaille également comme représentant à Oran pour une autre société : "La Rûche", société Oranaise de timbres-primes, qu'il quitte en mai 1935 pour créer sa propre société de vente par primes, "Le Rex", qui fait faillite en janvier 1936. Il intentera un procès à son ancien employeur,"La Rûche", pour concurrence déloyale. En 1938, il passe avec succès le concours d'inspecteur du travail et de la main-d'oeuvre et est nommé en août inspecteur-adjoint du travail stagiaire. En août 1940, il manifeste à son commandant, le capitaine de vaisseau Holley-Williams, son intention de rejoindre les Forces Navales Françaises Libres, qui lui conseille au contraire de rentrer à Paris, où ses fonctions lui permettraient de rendre de plus grands services qu'en Angleterre. Il est nommé enseigne de vaisseau de réserve et rentre à Paris. Vers juin 1942, dès la mise en place du plan Sauckel, il fournit aux industriels les renseignements et moyens à utiliser pour faire échec aux commissions dites "de peignage". Fin septembre 1942, il met en place un service dit de renseignements qu'il installe à l'Inspection divisionnaire, 23 rue de Mogador, service destiné à la soustraction clandestine des ouvriers désignés pour l'Allemagne. Après l'institution du service du travail obligatoire pour l'Allemagne (1943) en février 1943, il conçoit et met en oeuvre le système des Commissions d'appel, chargée officiellement d'examiner les réclamations des désignés pour le STO, mais qui en réalité, sera destinée au sabotage des "Relève" et "STO". L'action de la Commission d'appel est reconnue par le ministère des Anciens Combattants et des Victimes de guerre (circulaire B-1662 du 1er août 1953). Il est ensuite inspecteur principal du Travail à Paris jusqu'en août 1960, date à laquelle il est nommé directeur départemental du travail et de la main-d'oeuvre de l'Ariège avec résidence à Foix. Il prend sa retraite en 1966. Sa date de disparition présumée se situe autour de 1985.</RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051255--d4541e95"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051255-d4541e215"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051255-d4541e236"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051255"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051255-d4541e120">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msivg5e-1j356f5zbcwfi"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051255-d4541e126">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1938-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1966-12-31</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">inspecteur du travail de 1938 à 1960, puis directeur départemental du travail de l'Ariège de 1960 à 1966.</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msk49pq-fqetp63zthtj"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051255-d4541e147">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1938-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1960-12-31</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">inspecteur du travail</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d3m0bl6svu0--1tubaqb9x6dwe"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051255-d4541e236">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Isméolari, Jean (1901-198.) et l'ensemble de documents "Fonds Jean Isméolari (Papiers personnels (1901-1979) et archives du STO au ministère du Travail (1941-1961)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/050035-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051255_d4543e36">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051255-d4541e67"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051255--d4541e95">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Isméolari, Jean (1901-198.)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/051255-d4541e90"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051255">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051255"/>
+      <RiC:creationDate>2016-02-25</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_051255</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051255"/>
+   </rdf:Description>
+</rdf:RDF>

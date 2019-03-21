@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050293">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Moch, Jules (1893-1985)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050293_d3880e43"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1893-03-15</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1985-08-01</RiC:deathDate>
+      <RiC:history xml:lang="fr">Major de sa promotion à Polytechnique et ingénieur de la Marine, Jules Moch (1893-1985) fut député socialiste de la Drôme (1928-1936) et de l’Hérault (1937-1940, 1946-1958, 1962-1967). Avant la guerre, il fit partie de deux gouvernements de Léon Blum comme secrétaire général de la Présidence du Conseil de 1936 à 1937 puis, comme ministre des Travaux publics en 1938. Il fut l’un des « 80 » à voter contre Pétain en 1940, ce qui lui valut d’être arrêté et détenu à Pellevoisin, Aubenas et Vals. Il fonda ensuite dès sa libération le groupe de résistance « 1793 », milita dans « Combat » avant de rallier, en 1943, les Forces navales françaises libres. Sitôt démobilisé en 1945, il entra dans le gouvernement de Gaulle et participa pendant six ans à tous les ministères. Pendant deux ans, ministre des Travaux publics et des Transports (novembre 1945-novembre 1947), il présida à la reconstruction des chemins de fer, ports, routes, marine marchande et aviation civile. Il passa au ministère de l’Intérieur lors des grandes grèves politiques de novembre 1947 et y resta deux ans et demi. Vice-président du Conseil, ministre de l’Intérieur du 28 octobre 1949 au 7 février 1950, Jules Moch fut ensuite chargé, lors de la guerre de Corée, comme ministre de la Défense nationale, de la modernisation de l’armée et de la mise en œuvre du Pacte Atlantique. Moch quitta le gouvernement en 1951. Il devint, à la Commission des affaires étrangères, rapporteur du projet de loi sur la C.E.D. (Communauté Européenne de Défense) et conclut au rejet du projet qui fut repoussé à 60 voix de majorité. Délégué de la France aux assemblées des Nations Unies en 1947, puis en permanence de 1951 à 1960, il se spécialisa dans la question du désarmement et fut nommé, en 1952, délégué de la France à la Commission du désarmement. Durant cette période, il refusa de rentrer au gouvernement et il ne fit qu’une exception, en mai 1958, où il accepta, en période troublée, de reprendre l’Intérieur dans le gouvernement Pfimlin, du 17 au 31 mai 1958.</RiC:history>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050293"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050293_d3880e43">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050293-d3878e82"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050293">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050293"/>
+      <RiC:creationDate>2013-12-10</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050293</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050293"/>
+   </rdf:Description>
+</rdf:RDF>

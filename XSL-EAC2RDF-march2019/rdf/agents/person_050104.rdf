@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050104">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Digeon, Emile</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050104_d3732e34"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1822-12-07</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1894-12-31</RiC:deathDate>
+      <RiC:history xml:lang="fr">Émile Digeon naquit le 7 décembre 1822 à Limoux (Aude), où son père, libéral et républicain, exerçait la profession d’avocat. Opposant au coup d’État du 2 décembre, Digeon, qui écrivait dans la presse locale, fut déporté en Algérie, s’évada et passa à Majorque. Rentré en France lors de l’amnistie qui suivit l’accession d’Émile Ollivier au ministère, Digeon devint rédacteur en chef du journal 
+
+     La Fraternité de Carcassonne et proclama la République dans l’Aude, tout en s’opposant aux républicains modérés représentés par les frères Raynal. C’est lui encore, qui proclama, le 24 mars 1871, la Commune de Narbonne et se dévoua à l’hôtel de ville de cette cité, abandonnée huit jours plus tard, lors de sa reprise par les tirailleurs algériens appelés pour suppléer les troupes régulières ralliées aux insurgés. Emprisonné, il fut jugé à Rodez et acquitté à la demande de ses propres adversaires. En 1883, il déclina l’offre faite par le Comité socialiste de l’Hérault, pour une élection législative partielle. Tout en préparant le retour des proscrits de 1871, Digeon rédigea une brochure sur 
+
+      Les droits et les devoirs de l’anarchie rationnelle, éditée à Londres en 1882, destinée à former et à mettre en garde les adhérents du mouvement anarchiste contre les conséquences aventureuses de leur action. Émile Digeon mourut en 1894. 
+
+    </RiC:history>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050104"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050104_d3732e34">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050104-d3730e64"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050104">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050104"/>
+      <RiC:creationDate>2013-08-13</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050104</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050104"/>
+   </rdf:Description>
+</rdf:RDF>

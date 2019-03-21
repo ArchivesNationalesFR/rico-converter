@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050419">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Michaud, Hélène (1920-1977)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050419_d3981e66"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1920-09-12</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1977-12-28</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050419-d3979e183"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050419-d3979e195"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050419-d3979e207"/>
+      <RiC:history xml:lang="fr">Née à Châtellerault (Vienne) le 12 septembre 1920, licenciée ès lettres, Hélène Michaud (1920-1977) est archiviste-paléographe, de la promotion 1944, avec une thèse d’École des chartes sur « Le Poitou et les croisades ». Hélène Michaud fait carrière dans les bibliothèques : elle est successivement bibliothécaire aux bibliothèques universitaires d’Alger et de Rennes, à la Bibliothèque nationale et à la Bibliothèque Thiers de l’Institut de France à Paris. Attachée de recherches au Centre national de la recherche scientifique (CNRS), Hélène Michaud soutient en 1968, une thèse de doctorat ès lettres sous la direction de Georges Tessier : 
+     La Grande chancellerie et les écritures royales au XVIe siècle (1515-1589), et écrit de nombreux articles sur les institutions militaires et les secrétaires du roi au XVIe siècle : « Les actes intitulés règlements sous l'Ancien Régime », dans 
+     Bibl. de l' École des chartes, t. CXV (1957), p. 156-167 ; « Les registres de Claude Pinart, secrétaire d'État (1570-1588) », dans 
+     Bibl. de l'École des chartes, t. CXX (1962), p. 130-152 ; « Les formulaires de grande chancellerie, 1500-1580 », Paris, 1972, in-4°, extr. des 
+     Notices et extraits des manuscrits de la Bibliothèque nationale et des autres bibliothèques ..., t. XLIV ; « Aux origines du secrétariat ď État à la guerre : les « règlements » de 1617 -1619 », dans 
+     Revue d'histoire moderne et contemporaine, t. XIX (1972), p. 389-413 ; « Les institutions militaires des guerres d'Italie aux guerres de religion », dans 
+     Revue historique, t. CCLVIII (1977), p. 29-43. 
+     Hélène Michaud décède à Clichy (Hauts-de-Seine) le 28 décembre 1977.</RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050419--d3979e149"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050419--d3979e161"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050419--d3979e173"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb135182035#foaf:Person"/>
+      <isni:ISNIAssigned>0000000039975199</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/009963-d202e573"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050419-d3979e278"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/005074-d78e579"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050419"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050419-d3979e183">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">attachée de recherches au CNRS.</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msk5oth-xqvujelh8c39"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050419-d3979e195">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">docteur ès lettres (doctorat d'état en 1968).</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj1t4q--erdp2b9cjr2g"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050419-d3979e207">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1967-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1977-12-28</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">historienne.</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050419_d3981e66">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050419-d3979e121"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050419--d3979e149">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Michaud, Hélène (1920-1977)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050203-d3816e144"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050419--d3979e161">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Michaud, Hélène (1920-1977)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050419-d3979e156"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050419--d3979e173">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Michaud, Hélène (1920-1977)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050343-d3918e144"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050419">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050419"/>
+      <RiC:creationDate>2013-10-08</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-02-08</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_050419</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Archives nationales, fonds Hélène Michaud (608AP).</RiC:source>
+      <RiC:source xml:lang="fr">Notice d'autorité BnF n° : FRBNF13518203.</RiC:source>
+      <RiC:source xml:lang="fr">Antoine (Michel), « Hélène Michaud (1920-1977) », dans Bibliothèque de l'école des chartes, 1978, tome 136, livraison 2, pp. 447-449 ; http://www.persee.fr/doc/bec_0373-6237_1978_num_136_2_460016.</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000039975199"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050419"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb135182035"/>
+   </rdf:Description>
+</rdf:RDF>

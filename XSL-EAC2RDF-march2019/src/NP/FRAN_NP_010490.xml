@@ -1,0 +1,142 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010490</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00199</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Trouvé, Jean</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1530-01-01">1530</fromDate>
+               <toDate standardDate="1580-12-31">1580</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">étude XIX : rue Saint-Antoine devant le Petit-Saint-Antoine</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp8zed--rdzkw0dkb1pg">saint-paul (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd15vbw-k0h1w454w4f8">saint-antoine (rue)</placeEntry>
+            </place>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">étude CVII : rue Saint-Antoine, devant le couvent du Petit-Saint-Antoine</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp8zed--rdzkw0dkb1pg">saint-paul (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd15vbw-k0h1w454w4f8">saint-antoine (rue)</placeEntry>
+            </place>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu"/>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp8zed--rdzkw0dkb1pg">saint-paul (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd15vbw-k0h1w454w4f8">saint-antoine (rue)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1530-01-01">1530</fromDate>
+                  <toDate standardDate="1580-12-31">1580</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Marié à Marguerite Bonnart (voir ET/CVII/14, 27 mai 1571, contrat de mariage de Marguerite Trouvé, leur fille)</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010146"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XIX</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1531-01-01">1531</fromDate>
+               <toDate standardDate="1578-12-31">1578</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010234"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale CVII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1536-01-01">1536</fromDate>
+               <toDate standardDate="1580-12-31">1580</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="creatorOf">
+            <relationEntry localType="archival">ZZ1/309 à ZZ1/310, actes divers</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041574"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean TROUVÉ, 1533 - 25 mars 1578 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041575"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean TROUVÉ, 1533 - 1er février 1554 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041576"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean TROUVÉ, 27 mars 1543 - 1559 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041577"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean TROUVÉ, 12 janvier 1553 - 6 septembre 1574 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041578"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean TROUVÉ, 13 avril 1563 - 1577 (étude XIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041579"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean TROUVÉ, janvier 1573 - 25 mars 1578 (étude XIX)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

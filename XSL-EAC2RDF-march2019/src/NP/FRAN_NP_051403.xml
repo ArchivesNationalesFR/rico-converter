@@ -1,0 +1,123 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051403</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-10-13</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
+            <eventDescription>Elsa Camus, 13 octobre 2016 : notice créée par Evelyne Van den Neste</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2016-10-14</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice Wikipedia : https://fr.wikipedia.org/wiki/Thierry_Rey</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Rey, Thierry (1959-....)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1959-06-01">1er juin 1959</fromDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msj9e34-s8p354ps6xjt">entraîneur sportif</term>
+               <descriptiveNote>
+                  <p>champion de judo</p>
+               </descriptiveNote>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msiydj2--15ch8dyky11sp">inspecteur général</term>
+               <dateRange>
+                  <fromDate standardDate="2014-01-01">2014</fromDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>inspecteur général de la jeunesse et des sports</p>
+               </descriptiveNote>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msixdvh--wgctct8soc1y">membre de cabinet ministériel</term>
+               <dateRange>
+                  <fromDate standardDate="2012-01-01">2012</fromDate>
+                  <toDate standardDate="2014-12-31">2014</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>conseiller sport, jeunesse et vie associative</p>
+               </descriptiveNote>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msizce3-1fkn61hd3lpjw">journaliste</term>
+               <dateRange>
+                  <fromDate standardDate="1992-01-01">1992</fromDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>journaliste spécialisé</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>
+               <span style="underline">Diplômes</span>
+            </p>
+            <p>Ancien élève de l’INSEP (Institut national du sport, de l’expertise et de la performance) ;</p>
+            <p/>
+            <p>
+               <span style="underline">Carrière</span>
+            </p>
+            <p>Ancien champion du monde (1979) et champion olympique (1980) de judo, Thierry Rey est nommé conseiller sport, jeunesse et vie associative le 22 mai 2012 (JO du 23 mai 2012).</p>
+            <p/>
+            <p>A partir de 1992, Thierry Rey est journaliste spécialisé sur Canal +. Entre 1996 et 1997, il est chargé de mission au cabinet de Guy Drut, ministre de la Jeunesse et des sports. De 2003 à 2005, il est conseiller sport de la candidature de Paris pour les Jeux Olympiques de 2012. De 2008 à 2012, il est également directeur du développement du sport de haut niveau du Lagardère Paris Racing et de TeamLagardère.</p>
+            <p/>
+            <p>En juin 2014, Thierry Rey quitte ses fonctions à la Présidence pour devenir inspecteur général de la jeunesse et des sports par décret du 26 juin 2014 (JO du 27 juin 2014).</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_005986"
+                      xlink:type="simple">
+            <relationEntry>Institut national du sport, de l'expertise et de la performance</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1977-01-01">1977</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>ancien élève. Dates inconnues</p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

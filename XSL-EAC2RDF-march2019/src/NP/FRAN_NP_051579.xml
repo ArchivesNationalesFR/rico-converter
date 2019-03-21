@@ -1,0 +1,92 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051579</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2017-07-17</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Samuel GIBIAT</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-09-07</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Samuel GIBIAT</agent>
+            <eventDescription>Soumis à validation par SG le 17 juillet 2017. Recherche identifiant ISNI infructueuse (07/09/2017). Il n'existe pas de notice d'autorité BnF pour l'entité; il n'existe pas de notice Wikipédia pour l'entité.</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Présidence de la République, Service des archives et de l'information documentaire</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Soum, Joëlle (1968-....)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1968-01-01">1968</fromDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msj9z2z-1l1dmark2fa5i">sous-préfet</term>
+            </occupation>
+         </occupations>
+         <mandates>
+            <mandate>
+               <descriptiveNote>
+                  <p>- Décret du 4 octobre 2016 portant nomination d'une sous-préfète hors cadre (NOR: INTA1623143D, https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000033189933)</p>
+                  <p>- Arrêté du 12 octobre 2016 portant nomination au cabinet du Président de la République (NOR : PREX1629415A, https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000033227151)</p>
+                  <p>- Arrêté du 9 mars 2017 portant cessation de fonctions au cabinet du Président de la République (NOR : PREX1701913A)</p>
+                  <p>- Arrêté du 9 mars 2017 portant nomination au cabinet du Président de la République (NOR : PREX1701913A, https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000034159836)</p>
+               </descriptiveNote>
+            </mandate>
+         </mandates>
+         <biogHist>
+            <p>Née en 1968, Joëlle Soum est diplômée de l'Institut d'études politiques de Toulouse depuis 1989.</p>
+            <p>De 1992 à 2016, elle conduit une carrière dans l'administration préfectorale. Successivement cheffe du bureau de la réglementation (devenu bureau de la réglementation, de l'urbanisme et de l'environnement en 1996) à la sous-préfecture de Saintes de 1992 à 2000, elle est nommée secrétaire générale de la sous-préfecture de Saint-Gaudens de 2000 à 2003 puis adjointe au directeur des actions interministérielles, responsable de la cellule des actions transversales, à la préfecture de la Haute-Garonne de 2003 à 2006. Directrice de la modernisation de 2006 à 2008 puis des politiques interministérielles de 2008 à 2009, elle est promue directrice des services administratifs du cabinet, adjointe du directeur de cabinet du préfet de la région Midi-Pyrénées, préfecture de Haute-Garonne, de 2009 à 2013. Elle assure ensuite les fonctions de directrice du cabinet du préfet de la Corrèze (Sophie Thibault, Bruno Delsol puis Bertrand Gaume) de juin 2013 à octobre 2016.</p>
+            <p>Nommée cheffe adjointe de cabinet du Président de la République, elle assure ces fonctions auprès de François Hollande du 13 octobre 2016 au 10 mars 2017, date à laquelle elle est promue cheffe de cabinet du Président de la République jusqu'au 14 mai 2017.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-earlier"
+                      xlink:href="FRAN_NP_051988"
+                      xlink:type="simple">
+            <relationEntry>Ceaux, Dominique (1962-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2017-03-10">10 mars 2017</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>
+     Chef de cabinet du Président de la République
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

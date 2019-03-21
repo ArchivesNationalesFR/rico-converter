@@ -1,0 +1,116 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_011329</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01107</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>M. F. LIMON, Les notaires au Châtelet sous le règne de Louis XIV, Toulouse, presses universitaires du Mirail, 1992, p.362-363</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Lambon, François-César de</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1697-06-18">18 juin 1697</fromDate>
+               <toDate standardDate="1715-12-13">13 décembre 1715</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvow9c3--1ln2rhczl581f">saint-eustache (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvoz0pi--1idcga804ix5n">saints-innocents (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvg5q7k-1815nk8q1azo8">halles (quartier)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvh220l-1al4q54vj0iiz">sainte-opportune (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzb96acu-8u04uzp1e5g3">grande-truanderie (rue de la)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzafr492-8mpayj1nefi9">ferronnerie (rue de la)</placeEntry>
+               <placeEntry localType="nomLieu">rue de la Truanderie (de 1697 à 1707), rue de la Ferronnerie (de 1708 à 1715)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1697-06-18">18 juin 1697</fromDate>
+                  <toDate standardDate="1715-12-13">13 décembre 1715</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Baptisé le 29 septembre 1672 en l'église Saint-Basile d'Etampes</p>
+            <p>frère cadet de Nicolas de Lambon, notaire de l'étude XLII, lequel le remplace dans l'étude LXXXVI durant sa minorité</p>
+            <p>marié à Agnès Poupard (voir ET/XLII/238, 3 juillet 1699, contrat de mariage de François Godin et Elisabeth Charron, en présence de François-César de Lambon et Agnès Poupard)</p>
+            <p>d'abord principal clerc de Pierre Parque II dont il rachète l'office</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010213"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale LXXXVI</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1697-06-18">18 juin 1697</fromDate>
+               <toDate standardDate="1715-12-13">13 décembre 1715</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XLII/225, 30 juin 1695, traité d'office de notaire entre Pierre Parque II et François-César de Lambon</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">V/1/ 125 pièce 397, 10 juin 1697, lettre de provision d'office (avec dispense d'âge)</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/CXVIII/301, 7 novembre 1715, traité d'office de notaire François-César de Lambon et Eloi-Jacques Bousquet</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051345"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire François César de Lambon pour l'étude LXXXVI</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042847"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire François César de LAMBON, 1er janvier 1697 - 13 décembre 1715 (étude LXXXVI)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

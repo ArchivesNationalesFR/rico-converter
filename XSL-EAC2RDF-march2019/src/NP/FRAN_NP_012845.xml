@@ -1,0 +1,99 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012845</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE02759</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Belot, Pierre</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1569-08-06">6 août 1569</fromDate>
+               <toDate standardDate="1610-10-11">11 octobre 1610</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvpbvqa-1q7k75sdt2gwp">saint-séverin (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd3gcnv-x81q62dbdp9h">saint-jacques (rue)</placeEntry>
+               <placeEntry localType="nomLieu">rue Saint-Jacques</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1569-08-06">6 août 1569</fromDate>
+                  <toDate standardDate="1610-10-11">11 octobre 1610</toDate>
+               </dateRange>
+            </function>
+         </functions>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010236"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale CIX</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1569-08-06">6 août 1569</fromDate>
+               <toDate standardDate="1610-10-11">11 octobre 1610</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XXXIII/198, n° 318, 16 juin 1582, bail d'une maison, grande rue Saint-Jacques près l'église Saint-Yves</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XXXIII/198, n° 378, 8 juillet 1582, mariage avec Noémie Crozon veuve de Mathurin Lardiere et fille d'Etiennette Desvaulx, veuve de François Crozon (notaire)</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XLIX/71, 10 décembre 1590, inventaire des biens de Pierre Belot, en préalable à sa séparation de biens d'avec sa femme</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043254"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Pierre BELOT, 1572 - 11 octobre 1610 (étude CIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_053569"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Pierre Belot pour l'étude CIX</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

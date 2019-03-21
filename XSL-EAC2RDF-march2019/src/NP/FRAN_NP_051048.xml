@@ -1,0 +1,114 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051048</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-12-04</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+            <eventDescription>F. Clavaud, 4 juin 2015 : création sur demande de F. Gaumont, mission agriculture. Indexation fonctions légère. Liens hiérarchique et chronologiques</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>France. Ministère de l'Agriculture. Mission développement agricole et rural (2007-2008)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="2007-01-01">2007</fromDate>
+               <toDate standardDate="2008-12-31">2008</toDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>service d'administration centrale</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyug261d--1cyxwnocz7hzo">action gouvernementale</term>
+            </function>
+            <function>
+               <term vocabularySource="d5bhvikz03--iqa08pprge9n">agriculture</term>
+               <descriptiveNote>
+                  <p>dévelopement agricole</p>
+               </descriptiveNote>
+            </function>
+         </functions>
+         <mandates>
+            <mandate>
+               <descriptiveNote>
+                  <p>Arrêté du 30 juin 2008 (NOR AGRS0812294A) portant organisation et attributions de la direction générale des politiques agricole, agroalimentaire et des territoires</p>
+                  <p>Arrêté du 30 juin 2008 (NOR AGRS0812276A) portant organisation et attributions de la direction générale de l'enseignement et de la recherche</p>
+               </descriptiveNote>
+            </mandate>
+         </mandates>
+         <biogHist>
+            <p>La Mission développement agricole et rural est chargée de la mise en œuvre des fonds du compte d'affectation spéciale-développement agricole et rural (CAS-DAR) dans le cadre du programme national. </p>
+            <p>Ce compte d'affectation spéciale est décliné en deux programmes (775 et 776). Le programme 775 « développement et transfert » assure le financement des programmes des chambres d’agriculture, de l’Assemblée permanente des chambres d’agriculture (APCA), de l'organisation professionnelle unitaire de la coopération agricole « Coop de France », des autres organismes de développement agricole et rural (ONVAR), des actions d’accompagnement portant sur des thématiques innovantes, des actions en faveur de la génétique animale et des appels à projets pour encourager l'innovation et faciliter le travail collaboratif entre organismes et améliorer le dispositif de développement agricole. Le programme 776 « recherche appliquée et innovation » assure le financement des programmes des instituts techniques agricoles et des actions d’accompagnement s’y rattachant ainsi que les appels à projets.</p>
+            <p>A la suite de l'arrêté du 30 juin 2008 portant organisation et attributions de la direction générale des politiques agricole, agroalimentaire et des territoires, le programme 775 est confié au bureau de l'aménagement des territoires et du développement agricole au sein de cette direction, tandis que le programme 776 est confié, au sein de la direction générale de l'enseignement et de la recherche, au bureau des initiatives de partenariats et d'innovations.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_051047"
+                      xlink:type="simple">
+            <relationEntry>France. Ministère de l'Agriculture. Sous-direction de la recherche, de l'innovation, du développement et de la coopération internationale (2005-2008)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2007-01-01">2007</fromDate>
+               <toDate standardDate="2008-12-31">2008</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>La mission développement agricole et rural est une subdivision de la sous-direction de la recherche, de l'innovation, du développement et de la coopération internationale</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-later"
+                      xlink:href="FRAN_NP_007988"
+                      xlink:type="simple">
+            <relationEntry>Bureau des initiatives de partenariats et d'innovations (direction générale de l'enseignement et de la recherche, ministère de l'Agriculture)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2008-01-01">2008</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>le bureau des iniatives de partenariats et d'innovations succède à la mission décrite pour ce qui concerne le programme 776 du compte d'affectation spéciale-développement agricole et rural (CAS-DAR) dans le cadre du programme national.</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-later"
+                      xlink:href="FRAN_NP_008909"
+                      xlink:type="simple">
+            <relationEntry>Bureau de l'aménagement des territoires et du développement agricole (ministère de l'Agriculture)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2008-06-30">30 juin 2008</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>le bureau de l'aménagement des territoires et du développement agricole succède à la mission décrite pour ce qui concerne le programme 775 du compte d'affectation spéciale-développement agricole et rural (CAS-DAR) dans le cadre du programme national.</p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

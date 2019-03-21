@@ -1,0 +1,111 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012134</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01981</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Philippe BERTHOLET, Etudes et notaires parisiens en 1803, au moment de la loi du 25 ventôse an XI (16 mars 1803), Paris, 2004, p. 324-325</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Estier, Charles</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Estier, Charles Alexis</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1799-05-22">22 mai 1799</fromDate>
+               <toDate standardDate="1819-07-02">2 juillet 1819</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvost68-1tq3k980risj5">saint-barthélemy (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvfvigs--1prphc6bemlqa">cité (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzdhoz55-l7807qwifz9o">thionville (place de)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzai0kq1--i7jvzw2f3sgk">fossés-saint-germain-l'auxerrois (rue des)</placeEntry>
+               <placeEntry localType="nomLieu">place de Thionville (de l'an VII à l'an XII), 29 rue des Fossés Saint-Germain-l'Auxerrois (de l'an XII à 1819)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1799-05-22">22 mai 1799</fromDate>
+                  <toDate standardDate="1819-07-02">2 juillet 1819</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>né le 4 mars 1764 à Paris</p>
+            <p>marié en premières noces à Marie-Antoinette Delaplace (voir ET/XCVII/634, 9 thermidor an XI [28 juillet 1803], contrat de mariage), décédée le 16 juillet 1804</p>
+            <p>marié en secondes noces à Victoire Dabit</p>
+            <p>décédé le 3 juillet 1821 à Paris</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010208"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale LXXXI</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1799-05-22">22 mai 1799</fromDate>
+               <toDate standardDate="1819-07-02">2 juillet 1819</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/LXXXI/724, 27 août 1821, inventaire après décès</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_042755"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Charles ESTIER, 22 mai 1799 - 2 juillet 1819 (étude LXXXI)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055762"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Charles Estier pour l'étude LXXXI</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

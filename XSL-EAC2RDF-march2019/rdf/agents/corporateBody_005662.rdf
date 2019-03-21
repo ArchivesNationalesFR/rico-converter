@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/005662">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">France. Ministère de la Culture et de la Communication. Direction de l'architecture et du patrimoine. Service de la connaissance, de la conservation et de la création (1998-2001)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/005662_d146e82"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1998-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-12-31</RiC:endDate>
+      <RiC:history xml:lang="fr">En application du décret n°98-840 du 21 septembre 1998, la direction de l'architecture et la direction du patrimoine fusionnent pour constituer la direction de l'architecture et du patrimoine (DAPA). Un arrêté du même jour vient préciser les missions de la nouvelle direction et son organisation en deux services, sans compter une inspection générale et une mission de la communication.  Le service de la connaissance, de la conservation et de la création "a pour mission de définir, de conduire et d'assurer la cohérence, sur le plan national, des politiques de recensement, de recherche, d'étude, de protection, de conservation et de valorisation du patrimoine archéologique, architectural, urbain, paysager et mobilier, ainsi que la promotion de la qualité architecturale et urbaine." Les arrêtés du 28 novembre 2001 modifient l'organisation de la direction de l'architecture et du patrimoine : le regroupement en services disparaît et les sous-directions et missions qui leur étaient rattachées sont directement placées au sein de la direction.</RiC:history>
+      <RiC:noteOnStructureOrGenealogy xml:lang="fr">Le service de la connaissance, de la conservation et de la création comprend : - la sous-direction des études, de la documentation et de l'inventaire ; - la sous-direction de la qualité des espaces et de l'architecture ; - la sous-direction des monuments historiques ; - la sous-direction de l'archéologie ; - la mission du patrimoine ethnologique ; - la mission du patrimoine photographique.</RiC:noteOnStructureOrGenealogy>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/005662-d144e184"/>
+      <RiC:ruleFollowed xml:lang="fr">http://www.legifrance.gouv.fr/jopdf/common/jo_pdf.jsp?numJO=0&amp;dateJO=19980922&amp;numTexte=&amp;pageDebut=</RiC:ruleFollowed>
+      <RiC:ruleFollowed xml:lang="fr">14437&amp;pageFin=220998 ; Arrêté du 21 septembre 1998 relatif à l'organisation de la direction</RiC:ruleFollowed>
+      <RiC:ruleFollowed xml:lang="fr">de l'architecture et du patrimoine : http://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000573951&amp;fastPos=28&amp;fastReqId=159816</RiC:ruleFollowed>
+      <RiC:ruleFollowed xml:lang="fr">9265&amp;categorieLien=id&amp;oldAction=rechTexte ; Arrêté du 21 septembre 1998 portant organisation des services de la direction de l'architecture et du patrimoine :</RiC:ruleFollowed>
+      <RiC:ruleFollowed xml:lang="fr">http://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000206064&amp;fastPos=12&amp;fastReqId=676744877&amp;categorieLien=id&amp;oldAction=rechTexte ; Arrêté du 28 novembre 2001 relatif à l'organisation de la direction de l'architecture et du patrmoine : http://www.legifrance.gouv.fr/jopdf/common/jo_pdf.jsp?numJO=0&amp;dateJO=20011130&amp;numTexte=31&amp;pageDebut=19056&amp;pageFin=19058</RiC:ruleFollowed>
+      <RiC:agentIsSourceOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/005662-d144e246"/>
+      <RiC:agentIsSourceOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/051151-d4451e469"/>
+      <RiC:agentIsTargetOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/005662-d144e282"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/005662"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/005662_d146e82">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/005662-d144e148"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/005662">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005662"/>
+      <RiC:creationDate>2013-04-23</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-04-04</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_005662</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Dardy-Cretin Michèle, Histoire administrative du Ministère de la culture et de la communication, 1959-2012 : les services de l'administration centrale, Paris, Comité d'histoire du Ministère de la Culture, 2012</RiC:source>
+      <RiC:source xml:lang="fr">Site Internet du ministère de la Culture et de la Communication. Disponible à l'adresse suivante : http://www.culturecommunication.gouv.fr/</RiC:source>
+      <RiC:source xml:lang="fr">Bottin administratif, Paris, 1998-2010.</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005662"/>
+   </rdf:Description>
+</rdf:RDF>

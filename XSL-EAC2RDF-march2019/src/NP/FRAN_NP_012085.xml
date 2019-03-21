@@ -1,0 +1,101 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012085</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01928</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Foucher, Philippe-Edme</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Foucher, Philippe Edme Ernest</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1834-08-30">30 août 1834</fromDate>
+               <toDate standardDate="1865-07-08">8 juillet 1865</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="arrondissement_actuel"
+                           vocabularySource="d3nyv5mvjm--gvfz3ej8yx8n">09e arrondissement</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzclfovw-1h046m8yg719h">poissonnière (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzcqe3p3-ckrkvtcyv9pg">provence (rue de)</placeEntry>
+               <placeEntry localType="nomLieu">5 rue Poissonnière (de 1833 à 1845), 44 rue de Provence (de 1846 à 1851) puis 56 (de 1852 à 1865)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1834-08-30">30 août 1834</fromDate>
+                  <toDate standardDate="1865-07-08">8 juillet 1865</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Né le 27 juin 1809 à Paris. Fils de Thomas Foucher, auquel il succède</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010140"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XIII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1834-08-30">30 août 1834</fromDate>
+               <toDate standardDate="1865-07-07">7 juillet 1865</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">BB/10/911, 30 juillet 1834, dossier de nomination</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041418"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Philippe Edme FOUCHER, septembre 1834 - 7 juillet 1865 (étude XIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051780"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Philippe Edme Foucher pour l'étude XIII</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

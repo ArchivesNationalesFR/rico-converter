@@ -1,0 +1,115 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010728</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00459</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Philippe BERTHOLET, Etudes et notaires parisiens en 1803, au moment de la loi du 25 ventôse an XI (16 mars 1803), Paris, 2004, p. 144-147</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Rouen, Denis-André</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1768-01-08">8 janvier 1768</fromDate>
+               <toDate standardDate="1811-12-19">19 décembre 1811</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvpb1c4--1dpne8gngxarf">saint-roch (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgeuq1--ys2q6qcqeojf">montmartre (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzc7wxeo-1qjxoicvrn0qn">neuve-des-petits-champs (rue)</placeEntry>
+               <placeEntry localType="nomLieu">rue Neuve-des-Petits-Champs, vis à vis la rue d'Antin</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1768-01-08">8 janvier 1768</fromDate>
+                  <toDate standardDate="1811-12-19">19 décembre 1811</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>né le 21 mars 1735 à Paris</p>
+            <p>marié à Marie Solle (voir ET/XCI/1136, 11 février 1776, contrat de mariage)</p>
+            <p>doyen de la compagnie des notaires de Paris</p>
+            <p>échevin de Paris (1788-1789)</p>
+            <p>démissionnaire, faute d'avoir pu fournir un certificat de civisme, le 21 pluviôse an II (9 février 1794)</p>
+            <p>remplacé en principe par Turrel, l'un des notaires reçus au concours de l'an II. En fait, Turrel ne pût jamais entrer en possession des minutes ni de l'étude de Rouen.</p>
+            <p>réintégré par le décret du 19 vendémiaire an III (10 octobre 1794)</p>
+            <p>maire du 5e puis du 9e arrondissement (anciens) (1808-1811)</p>
+            <p>décédé le 3 mars 1817 à Paris</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010198"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale LXXI</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1768-01-08">8 janvier 1768</fromDate>
+               <toDate standardDate="1811-12-19">19 décembre 1811</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/LXVI/558, 31 décembre 1767, traité d'office de notaire entre Charles Duclos-Dufresnoy et Denis-André Rouen</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/LXXI/200, 11 mars 1817, inventaire après décès</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042588"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Denis André ROUEN, 6 juillet 1768 - 19 décembre 1811 (étude LXXI)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055797"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Denis André Rouen pour l'étude LXXI</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

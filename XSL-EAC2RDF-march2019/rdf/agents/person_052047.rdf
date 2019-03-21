@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/052047">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Muglioni, Jacques (1921-1996)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/052047_d4993e57"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1921-07-31</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1996-01-22</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/052047-d4991e129"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/052047-d4991e141"/>
+      <RiC:history xml:lang="fr">Né à la Garenne-Colombes dans l'actuel département des Hauts-de-Seine en 1921, Jacques Muglioni est élève du lycée Louis-Pasteur de Neuilly-sur-Seine durant toute sa scolarité secondaire jusqu'en 1939. Il suit ensuite les cours d'hypokhâgne et de khâgne du lycée parisien Henri-IV de 1939 à 1941. En 1942, il est titulaire d'un diplôme d'études supérieures en philisophie, son directeur de mémoire est Émile Bréhier. L'année suivante, il obtient le certificat d'aptitude à l'enseignement des collèges, mention philosophie. Il est agrégé de philosophie en 1948. À partir d'octobre 1943, Jacques Muglioni enseigne en lettres et philosophie au collège de garçons de Charolles en Saône-et-Loire. Le 1er octobre 1945, il est nommé professeur de philosophie au lycée Lamartine de Mâcon. À la rentrée 1952, il est nommé à Janson-de-Sally à Paris où il enseigne durant 6 ans. Entre 1958 et 1961, il partage son temps d'enseignement entre la khâgne Saint-Cloud d'Henri-IV et l'hypokhâgne de Louis-Pasteur. En 1961, il est chargé de la khâgne classique d'Henri-IV. En septembre 1963, Jacques Muglioni est nommé inspecteur général de l'Éducation nationale. Il est doyen du groupe disciplinaire philosophie de 1971 à 1983. Il est admis à la retraite en juillet 1985, après avoir été élévé au grade d'officier de la Légion d'honneur en mai. Il est également chevalier de l'Ordre national du Mérite. À partir de 1946, Jacques Muglioni est rédacteur au 
+      Populaire de Saône-et-Loire, organe heddomadaire de la SFIO du département. Il milite à l'aile gauche du parti avec Marceau Pivert et le cercle Zimmerwald, jusqu'en octobre 1956. 
+     Le 14 mai 1980, Jacques Muglioni intervient aux journées franco-belges des collectivités d’éducation de Spa avec une communication intitulée 
+     La fin de l'école. En 1984, il organise un grand colloque philosophique, à Sèvres, regroupant des professeurs de tous ordres d’enseignement dont les actes sont publiés sous le titre 
+     Philosophie, École, même combat. En 1993, parait au CNDP 
+     L'école ou le loisir de penser. 
+     Jacques Miglioni a épousé Yvette Michel à Roanne en juillet 1945 et ils ont eu deux enfants.</RiC:history>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb120360177#foaf:Person"/>
+      <isni:ISNIAssigned>0000000109170397</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/052047-d4991e185"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/052047-d4991e242"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/052047"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/052047-d4991e129">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">Jacques Muglioni est professeur de philosophie.</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/052047-d4991e141">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msk3h6v--1a7obp35gqwv3"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/052047-d4991e242">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Muglioni, Jacques (1921-1996) et l'ensemble de documents "Fonds Jacques Muglioni (1921-1996)."</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/057244-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/052047_d4993e57">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/052047-d4991e106"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/052047">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/052047"/>
+      <RiC:creationDate>2018-05-18</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-07-26</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_052047</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Éléments biographiques fournis par Mathieu Muglioni, petit-fils de Jacques Muglioni</RiC:source>
+      <RiC:source xml:lang="fr">Notice Wikipédia https://fr.wikipedia.org/wiki/Jacques_Muglioni</RiC:source>
+      <RiC:source xml:lang="fr">Notice d'autorité de la BNF http://catalogue.bnf.fr/ark:/12148/cb120360177</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000109170397"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052047"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/w/index.php?title=Jacques_Muglioni&amp;oldid=142772819"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb120360177"/>
+   </rdf:Description>
+</rdf:RDF>

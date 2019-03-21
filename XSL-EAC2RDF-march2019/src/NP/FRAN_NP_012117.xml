@@ -1,0 +1,135 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012117</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01961</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Frenicle, François</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1538-09-25">25 septembre 1538</fromDate>
+               <toDate standardDate="1568-10-16">16 octobre 1568</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">étude XXXVI : rue Saint-Honoré, près la porte Saint-Honoré</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvox0hv--s68ql74wtyjp">saint-germain-l'auxerrois (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvow9c3--1ln2rhczl581f">saint-eustache (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd36jkq-2di11qojb16k">saint-honoré (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzcqca60--15myx6rt2iwr">prouvaires (rue des)</placeEntry>
+            </place>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">étude CXXII : rue des Prouvaires</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvox0hv--s68ql74wtyjp">saint-germain-l'auxerrois (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvow9c3--1ln2rhczl581f">saint-eustache (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd36jkq-2di11qojb16k">saint-honoré (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzcqca60--15myx6rt2iwr">prouvaires (rue des)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1538-09-25">25 septembre 1538</fromDate>
+                  <toDate standardDate="1568-10-16">16 octobre 1568</toDate>
+               </dateRange>
+            </function>
+         </functions>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010249"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale CXXII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1538-09-25">25 septembre 1538</fromDate>
+               <toDate standardDate="1568-10-16">16 octobre 1568</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010163"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XXXVI</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1546-01-01">1546</fromDate>
+               <toDate standardDate="1547-12-31">1547</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010135"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale VIII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1553-01-01">1553</fromDate>
+               <toDate standardDate="1554-12-31">1554</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/LIX/26, 17 août 1568, inventaire après décès</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041959"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire François FRENICLE, 1547 - 1567 (étude XXXVI)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041265"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean ANGIRARD, janvier 1535 - 3 décembre 1571 (étude VIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041256"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire notaires divers, 13 février 1471 - 3 mai 1577 (étude VIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043548"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire François FRENICLE, 1538 - 1568 (étude CXXII)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

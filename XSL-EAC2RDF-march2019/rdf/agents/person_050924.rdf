@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050924">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Peyre, Vincent (1930-2014)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050924_d4339e45"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1930-01-01</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-01-28</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050924-d4337e108"/>
+      <RiC:history xml:lang="fr">Vincent Peyre est fils d’enseignant, il a une formation de conseiller d’orientation professionnel. Métier qu’il exerce un temps à Nancy avant d’y renoncer pour des raisons familiales. Il trouve divers “petits boulots formateurs”, dont : un poste de six mois à la Mission française pour l’accroissement de la productivité, une fonction dans l’enseignement par correspondance, et notamment un poste, durant trois ans, au service du personnel d’un groupe industriel Palmolive, où il a en charge le recrutement des employés. Lorsque le Centre de Vaucresson le recrute comme agent technique en janvier 1960, il est loin d’être sociologue professionnel. Mais, par l’intermédiaire de son épouse (sociologue), et par la fréquentation du séminaire de Chombart de Lauwe à l’Ecole Pratique des Hautes Études, il affiche un vif intérêt pour la discipline sociologique et les problèmes sociaux. C’est ainsi, “par circonstances” dit Vincent Peyre, qu’il apprend son métier de sociologue : les manières de faire, les techniques, les méthodes, les choix personnels et une indispensable “sensibilité aux autres”. Il effectue ainsi des travaux de commande sous la direction de Jacques Selosse, et participe à la formation continue des travailleurs de l’Éducation surveillée, et le Centre de Vaucresson lui offre un précieux sentiment de liberté nécessaire à son militantisme politique et syndical. Ces années à Vaucresson sont à l’en croire, “une aventure professionnelle, sociale et personnelle”. Vincent Peyre décède en janvier 2014.</RiC:history>
+      <isni:ISNIAssigned>000000004101168X</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050859-d4284e166"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050924-d4337e148"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050924"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050924-d4337e108">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">sociologue</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msk5oth-xqvujelh8c39"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050924_d4339e45">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050924-d4337e85"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050924">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050924"/>
+      <RiC:creationDate>2015-11-16</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050924</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/000000004101168X"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050924"/>
+   </rdf:Description>
+</rdf:RDF>

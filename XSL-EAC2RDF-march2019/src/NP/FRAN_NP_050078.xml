@@ -1,0 +1,73 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050078</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-10-17</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Raphael BAUMARD</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2014-01-16</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Raphael BAUMARD</agent>
+            <eventDescription>F. Clavaud, 16 janvier 2014 : changement forme du nom et ajout n° de notice BnF.</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice d'autorité BnF n° FRBNF12063540</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>family</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Phélypeaux (famille)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Phélypeaux de Pontchartrain (famille)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1601-01-01">XVIIe siècle</fromDate>
+               <toDate standardDate="1800-12-31">XVIIIe siècle</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Les comtes de Pontchartrain constituent l'une des branches de la famille Phélypeaux (maison d'origine blésoise issue de Jean Le Picard, XIVe siècle). Entre l'acquisition du château de Pontchartrain en 1609 et l'extinction de la branche en 1781, cinq de ses membres s'illustreront comme secrétaires d'Etat : en particulier Jean-Frédéric Phélypeaux comte de Maurepas, secrétaire d'Etat à la marine de Louis XV puis ministre d'Etat de Louis XVI.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_000689"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Maurepas (XVIe-XXe siècles)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

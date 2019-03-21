@@ -1,0 +1,522 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010140</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NAETUDE_013</otherRecordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2014-03-31</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marie-Françoise LIMON-BONNET</agent>
+            <eventDescription>F. Clavaud, 31 mars 2014 : révision de l'indexation lieux et des liens IR</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Etude XIII</part>
+         </nameEntry>
+         <nameEntry>
+            <part>75075</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1581-01-01">1581</fromDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">3, rue Montalivet, 75008 PARIS</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzc3om7y-1tk102v3ximvi">Montalivet (rue)</placeEntry>
+               <placeEntry localType="arrondissement_actuel"
+                           vocabularySource="d3nyv8i9m0-ys1mraoxv8ln">08e arrondissement</placeEntry>
+            </place>
+         </places>
+         <legalStatuses>
+            <legalStatus>
+               <term>office notarial</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à Paris</term>
+               <dateRange>
+                  <fromDate standardDate="1581-01-01">1581</fromDate>
+                  <toDate/>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Étude fidèle à la rive droite, elle poursuit un lent glissement vers le nord qui, à partir de la rue Saint-Germain où elle est installée en 1625, la conduit rue Montmartre (1675), puis rue Poisonnière (1792) et rue de Provence (1846), et enfin rue Laffite (1874)</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011234"
+                      xlink:type="simple">
+            <relationEntry>Morin, Jean II</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1730-07-04">4 juillet 1730</fromDate>
+               <toDate standardDate="1757-07-05">5 juillet 1757</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011269"
+                      xlink:type="simple">
+            <relationEntry>Moyne, Victor Amédée</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1897-12-16">16 décembre 1897</fromDate>
+               <toDate standardDate="1927-01-17">17 janvier 1927</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011420"
+                      xlink:type="simple">
+            <relationEntry>Le noir, Jacques</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1757-07-07">7 juillet 1757</fromDate>
+               <toDate standardDate="1762-08-07">7 août 1762</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011587"
+                      xlink:type="simple">
+            <relationEntry>Letulle, Maurice</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1957-08-17">17 août 1957</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011588"
+                      xlink:type="simple">
+            <relationEntry>Letulle, Robert Jules Maurice</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1927-01-17">17 janvier 1927</fromDate>
+               <toDate standardDate="1957-08-14">14 août 1957</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010572"
+                      xlink:type="simple">
+            <relationEntry>Semilliard, François</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1762-10-08">8 octobre 1762</fromDate>
+               <toDate standardDate="1785-07-07">7 juillet 1785</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011063"
+                      xlink:type="simple">
+            <relationEntry>Malingre, Jules</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1675-11-19">19 novembre 1675</fromDate>
+               <toDate standardDate="1704-02-15">15 février 1704</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013335"
+                      xlink:type="simple">
+            <relationEntry>Drilhon-Jourdain, Véronique</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2007-07-31">31 juillet 2007</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013040"
+                      xlink:type="simple">
+            <relationEntry>Brelut de la grange, Louis</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1785-07-09">9 juillet 1785</fromDate>
+               <toDate standardDate="1802-11-09">9 novembre 1802</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012086"
+                      xlink:type="simple">
+            <relationEntry>Foucher, Thomas-Philippe</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1802-11-09">9 novembre 1802</fromDate>
+               <toDate standardDate="1834-08-30">30 août 1834</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012997"
+                      xlink:type="simple">
+            <relationEntry>Bourdin, Charles</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1674-08-09">9 août 1674</fromDate>
+               <toDate standardDate="1675-11-17">17 novembre 1675</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013110"
+                      xlink:type="simple">
+            <relationEntry>Allez, Marc</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1968-08-01">1er août 1968</fromDate>
+               <toDate standardDate="1977-11-09">9 novembre 1977</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013100"
+                      xlink:type="simple">
+            <relationEntry>Airault, Dominique</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2001-06-08">8 juin 2001</fromDate>
+               <toDate standardDate="2006-11-27">27 novembre 2006</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012085"
+                      xlink:type="simple">
+            <relationEntry>Foucher, Philippe-Edme</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1834-08-30">30 août 1834</fromDate>
+               <toDate standardDate="1865-07-07">7 juillet 1865</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011727"
+                      xlink:type="simple">
+            <relationEntry>Haffrey, Pierre</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1646-04-07">7 avril 1646</fromDate>
+               <toDate standardDate="1652-12-11">11 décembre 1652</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010761"
+                      xlink:type="simple">
+            <relationEntry>Ruin, Pierre</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1657-04-07">7 avril 1657</fromDate>
+               <toDate standardDate="1673-08-09">9 août 1673</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011943"
+                      xlink:type="simple">
+            <relationEntry>Goudin, Mathieu</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1704-02-19">19 février 1704</fromDate>
+               <toDate standardDate="1730-07-03">3 juillet 1730</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010566"
+                      xlink:type="simple">
+            <relationEntry>Segond, Louis-Ernest</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1865-07-08">8 juillet 1865</fromDate>
+               <toDate standardDate="1897-12-16">16 décembre 1897</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011589"
+                      xlink:type="simple">
+            <relationEntry>Letulle-Joly, Christiane</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1977-11-09">9 novembre 1977</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012165"
+                      xlink:type="simple">
+            <relationEntry>Deloison, Guy</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1977-11-09">9 novembre 1977</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012392"
+                      xlink:type="simple">
+            <relationEntry>Duchesne, Jacques</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1652-12-31">31 décembre 1652</fromDate>
+               <toDate standardDate="1657-04-04">4 avril 1657</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012486"
+                      xlink:type="simple">
+            <relationEntry>Cartier, Thomas</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1613-04-18">18 avril 1613</fromDate>
+               <toDate standardDate="1645-10-10">10 octobre 1645</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012487"
+                      xlink:type="simple">
+            <relationEntry>Choquillot, Nicolas</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1581-03-06">6 mars 1581</fromDate>
+               <toDate standardDate="1611-11-24">24 novembre 1611</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013521"
+                      xlink:type="simple">
+            <relationEntry>Deloison, Arnaud</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2011-11-07">7 novembre 2011</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041399"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Archives de l'étude XIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041400"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Nicolas CHOQUILLOT, janvier 1581 - 24 novembre 1611 (étude XIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041407"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Pierre HAFFREY, 7 avril 1646 - 11 décembre 1652 (étude XIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041406"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jacques DUCHESNE, 2 janvier 1653 - 4 avril 1657 (étude XIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041410"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Pierre RUIN, 7 avril 1657 - 9 août 1673 (étude XIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041409"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Charles BOURDIN, 3 août 1674 - 17 novembre 1675 (étude XIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041411"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jules MALINGRE, 22 novembre 1675 - 15 février 1704 (étude XIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041408"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Mathieu GOUDIN, 19 février 1704 - 3 juillet 1730 (étude XIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041412"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean II MORIN, 4 juillet 1730 - 5 juillet 1757 (étude XIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041414"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jacques LE NOIR, 7 juillet 1757 - 5 octobre 1762 (étude XIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041413"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire François SEMILLIARD, 8 octobre 1762 - 7 juillet 1785 (étude XIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041415"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Louis BRELUT de LA GRANGE, 9 juillet 1785 - 6 novembre 1802 (étude XIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041416"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Thomas Philippe FOUCHER, 9 novembre 1802 - 30 août 1834 (étude XIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041418"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Philippe Edme FOUCHER, septembre 1834 - 7 juillet 1865 (étude XIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041417"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Louis Ernest SEGOND, 8 juillet 1865 - décembre 1890 (étude XIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041401"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Thomas CARTIER, 18 avril 1613 - 10 octobre 1645 (étude XIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041403"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Thomas CARTIER, 18 avril 1613 - décembre 1632 (étude XIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041404"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Thomas CARTIER, janvier 1633 - décembre 1642 (étude XIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041405"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Thomas CARTIER, janvier 1643 - 10 octobre 1645 (étude XIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051784"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Nicolas Choquillot pour l'étude XIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052961"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Thomas Cartier pour l'étude XIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051778"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Pierre Haffrey pour l'étude XIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051781"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Jacques Duchesne pour l'étude XIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_053551"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Charles Bourdin pour l'étude XIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052958"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Mathieu Goudin pour l'étude XIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051774"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Pierre Ruin pour l'étude XIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051775"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Jules Malingre pour l'étude XIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052955"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Jean II Morin pour l'étude XIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052956"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Jacques Le Noir pour l'étude XIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052954"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire François Semilliard pour l'étude XIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052963"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Louis Brelut de La Grange pour l'étude XIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051782"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Thomas Philippe Foucher pour l'étude XIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051780"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Philippe Edme Foucher pour l'étude XIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051772"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Louis Ernest Segond pour l'étude XIII</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

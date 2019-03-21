@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051640">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Grunebaum, Jean-Michel (1914-2001)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051640_d4838e54"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1914-07-08</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-12-21</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051640-d4836e123"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051640-d4836e138"/>
+      <RiC:history xml:lang="fr">Jean-Michel Grunebaum effectue ses études aux lycées Condorcet et Louis-le grand à Paris avant de s'orienter vers des études de droit et de chosir le barreau qu'il abandonne pour se consacrer au journalimse. Il entre à la Radiodiffusion française au service des émissions à destination des colonies et des territoires d'Outre-mer (1935) avant d'être mobilisé en 1939. Blessé puis fait prisonnier en juin 1940, il s'enfuit et s'engage en grande-Bretagne dans les Forces françaises libres (FFL). En 1943, il est envoyé pour une mission en France où il est arrêté avant de s'enfuir en Espagne puis d'être de nouveau appréhendé et interné au camp de concentration de Miranda de Ebro. Il combat sur le front ialien avant d'être démobilisé le 30 juillet 1945. Par la suite il devient le chef de service de l'agence européenne de presse (1945-1947) avant d'être rédacteur au service politique de 
+     Libération (1947), 
+     Franc-tireur (1948), 
+     Populaire (1949). Il entre à Paris-Match en tant que redacteur (1949) avant de devenir chef des informations (1961). 
+     Également militant syndicaliste, il adhère à la Confédération général des travailleurs (CGT) en 1936, avant de prendre part en 1948 à la création du syndicat Force ouvrière des journalistes (FO). Il assume à la suite d'Armand Capocci la fonction de secrétaire général du syndicat national FO des journalsites, devenu par la suite syndicat général FO des journalistes. Durant la même période il est co-responsable avec Michel Agobet de la Fédération FO de la Presse. Au titre de force ouvrière, il siège dans différentes instances dont le conseil d'amdinsitration de l'ORTF, le conseil supérieur de l'Agence France presse (AFP), le Conseil économique et social (CES) ou la Comission supérieure de l'Enseignement technique.  Chevalier de la Légion d'honneur, il est également décoré de la croix de guerre 39-45, la rosette de la Résistance , la médaille des Évadés et la médaille d'Outre-mer.</RiC:history>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051640-d4836e188"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051640"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051640-d4836e123">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1936-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-12-21</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjmbyz-yxpcx7wpwsnq"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051640-d4836e138">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1935-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-12-21</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msizce3-1fkn61hd3lpjw"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051640-d4836e188">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Grunebaum, Jean-Michel (1914-2001) et l'ensemble de documents "Fonds Jean-Michel Grunebaum (1830-2002)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/004462-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051640_d4838e54">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051640-d4836e100"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051640">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051640"/>
+      <RiC:creationDate>2017-08-22</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-01-05</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051640</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">- Le Maitron, dictionnaire biographique Mouvement ouvrier, mouvement social, éditions de l'Atelier.</RiC:source>
+      <RiC:source xml:lang="fr">- Archives nationales, fonds Grunebaum (20 AR).</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051640"/>
+   </rdf:Description>
+</rdf:RDF>

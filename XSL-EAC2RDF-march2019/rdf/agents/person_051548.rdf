@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051548">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Suvée, Joseph Benoît (1743-1807)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051548_d4766e55"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1743-01-03</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1807-02-09</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051548-d4764e150"/>
+      <RiC:history xml:lang="fr">Joseph-Benoît Suvée, né le 3 janvier 1743 à Bruges, et mort le 9 février 1807 à Rome, est pensionnaire après avoir obtenu le premier prix de l’Académie de peinture en 1771, puis académicien en 1780, et professeur à l’École des Beaux-arts de Paris en 1792. Il est nommé, le 20 novembre 1792, directeur de l’Académie de France à Rome, en remplacement de François-Guillaume Ménageot, mais il est suspendu dès le 25 novembre à la suite d’une intervention du peintre David à la Convention nationale qui vise à supprimer le poste de directeur de l’Académie de France à Rome. Les pensionnaires quittent alors Rome pour Naples, pour Florence ou pour la France. Pendant la Terreur, Suvée est arrêté en 1794, puis détenu à la prison de Saint-Lazare. Joseph-Benoît Suvée est confirmé directeur en 1795. Entre 1795 et 1801, il lutte à Paris pour rétablir l’institution ; il constitue la collection des moulages et forme le noyau de la bibliothèque. C’est lui qui a la responsabilité du transfert du siège de l’Académie du palais Mancini, à la Villa Médicis située sur le Pincio. Joseph-Benoît Suvée écrit d’abondance. Il est un directeur attaché à l’ordre et se référant aux pratiques de l’Ancien Régime. Ses lettres sont pleines d’emphase, et portent le plus souvent des plaintes. Mais avant tout, Suvée se révèle tenace, soucieux de rétablir l’Académie de France. Il se montre dévoué envers les pensionnaires dont il défend les intérêts vivement. Il meurt brutalement le 9 février 1807, dans son bureau.</RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051548--d4764e131"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb122050062.public#foaf:Person"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Joseph-Beno%C3%AEt_Suv%C3%A9e"/>
+      <isni:ISNIAssigned>0000000066443251</isni:ISNIAssigned>
+      <RiC:agentIsSourceOfAgentTemporalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentTemporalRelation/051548-d4764e196"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051548-d4764e235"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051548-d4764e256"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051548"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051548-d4764e150">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msit6xq-1e7tbhtd3o7v6"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051548-d4764e256">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Suvée, Joseph Benoît (1743-1807) et l'ensemble de documents "Académie de France à Rome. Directorat de Joseph-Benoît Suvée (1792-1807)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/056124-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051548_d4766e55">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051548-d4764e103"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051548--d4764e131">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Suvée, Joseph Benoît (1743-1807)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/051548-d4764e126"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051548">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051548"/>
+      <RiC:creationDate>2017-07-10</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-07-11</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051548</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Notice du catalogue de la BnF : http://catalogue.bnf.fr/ark:/12148/cb122050062.public</RiC:source>
+      <RiC:source xml:lang="fr">Notice sur le site de l'Académie de France à Rome : http://www.villamedici.it/fr/villa-m%C3%A9dicis/directeurs/s/suv%C3%A9e-joseph/</RiC:source>
+      <RiC:source xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Joseph-Beno%C3%AEt_Suv%C3%A9e</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000066443251"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051548"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb122050062.public"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Joseph-Beno%C3%AEt_Suv%C3%A9e"/>
+   </rdf:Description>
+</rdf:RDF>

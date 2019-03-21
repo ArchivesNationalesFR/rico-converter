@@ -1,0 +1,160 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012185</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE02042</otherRecordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-05-19</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marie-Françoise LIMON-BONNET</agent>
+            <eventDescription>19 mai 2017 : ajouts bibliographiques, localisation de l'étude, liens IR (Marie-Françoise Limon-Bonnet)</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-05-22</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marie-Françoise LIMON-BONNET</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-06-07</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
+            <eventDescription>F. Clavaud, 7 juin 2017 : ajouté lien familial, revu activité, revu indexation lieux</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Deherain, Cléophile (1784-18..)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Deherain, Cléophile Michel</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1812-12-31">31 décembre 1812</fromDate>
+               <toDate standardDate="1827-12-14">14 décembre 1827</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates indiquées sont les dates d'exercice de la personne en tant que notaire.</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">rue de Grammont</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzb8pnbe-ct55wat99mw3">Grammont (rue de)</placeEntry>
+               <dateRange>
+                  <fromDate standardDate="1820-01-01">1820</fromDate>
+                  <toDate standardDate="1827-12-14">14 décembre 1827</toDate>
+               </dateRange>
+            </place>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">140 rue Montmartre</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzc47wbl-1a2g6xqjbuj5s">Montmartre (rue)</placeEntry>
+               <placeEntry localType="arrondissement_ancien"
+                           vocabularySource="d3nyv5kgoa--eky836cf0y0d">03e arrondissement</placeEntry>
+               <dateRange>
+                  <fromDate standardDate="1813-01-01">1813</fromDate>
+                  <toDate standardDate="1819-12-31">1819</toDate>
+               </dateRange>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à Paris</term>
+               <dateRange>
+                  <fromDate standardDate="1812-12-31">31 décembre 1812</fromDate>
+                  <toDate standardDate="1827-12-14">14 décembre 1827</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d3nyu9x713-9kcjiv44l4wh">notaire</term>
+               <dateRange>
+                  <fromDate standardDate="1812-12-31">31 décembre 1812</fromDate>
+                  <toDate standardDate="1827-12-14">14 décembre 1827</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>notaire à Paris</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <mandates>
+            <mandate>
+               <descriptiveNote>
+                  <p>BB/10/348 et 349, 21 décembre 1812 : dossier de nomination.</p>
+               </descriptiveNote>
+            </mandate>
+         </mandates>
+         <biogHist>
+            <p>Cléophile ou Cléophile Michel Dehérain est né le 29 août 1784 à Paris.</p>
+            <p>Il est le fils de Pierre Deherain (notaire de l'étude XCV) et d'Anne Leprévost de Saint-André.</p>
+            <p>D'abord principal clerc d'André Claude Noël (étude LXVIII), le notaire de la famille Bonaparte et de beaucoup de napoléonides, il acquiert sa charge en 1812 (étude XXI).</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010148"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XXI</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1812-12-31">31 décembre 1812</fromDate>
+               <toDate standardDate="1827-12-14">14 décembre 1827</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_012362"
+                      xlink:type="simple">
+            <relationEntry>Deherain, Pierre (1743-1806)</relationEntry>
+            <descriptiveNote>
+               <p>Cléophile Deherain est le fils de Pierre Deherain</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041657"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Cléophile DEHERAIN, 2 janvier 1813 - 13 décembre 1827 (étude XXI)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051476"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Cléophile Deherain pour l'étude XXI</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

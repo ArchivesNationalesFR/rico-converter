@@ -1,0 +1,66 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050316</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-02-12</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Zénaïde ANDRIEU-ROMANEIX</agent>
+            <eventDescription>F. Clavaud, 12 février 2014 : ajouté autre forme du nom.</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, Chartrier de Crillon (504 AP).</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>family</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Berton (famille de)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Berton de Crillon (famille de)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1501-01-01">XVIe siècle</fromDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Originaire de Quiers en Piémont, Gilles de Berton s’établit en 1456 à Avignon. Il épousa Marguerite de Seitre-Caumont. Gilles II de Berton, leur petit-fils, prit possession de la seigneurie de Crillon le 28 mars 1557. Parmi les sept enfants de ce dernier, on trouve Louis (1543-1615), compagnon d’armes du roi Henri IV, et Gilles III. Celui-ci fut capitaine de cent hommes d’armes. Il épousa Julie de Sade. Ils eurent deux enfants : Madeleine, fondatrice et première supérieure des Clarisses de Saint-Rémy de Provence, et Pierre, qui mourut sans alliance. Au XVIIIe siècle, le général Louis de Crillon (1717-1796) fit la guerre en Italie, puis en Bavière (1742) et se distingua à Fontenoy.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055899"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Chartrier de Crillon (1228-1720).</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

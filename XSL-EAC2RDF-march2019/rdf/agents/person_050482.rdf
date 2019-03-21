@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050482">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Baratier, Albert (1864-1917)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050482_d4023e43"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1864-07-11</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1917-10-17</RiC:deathDate>
+      <RiC:history xml:lang="fr">Né à Belfort en 1864, fils de l’intendant général Aristide-Émile-Anatole Baratier (1834-1918) qui avait fait la campagne du Tonkin, Albert Baratier entra à Saint-Cyr en 1883, puis fut affecté au 1er régiment de chasseurs d’Afrique. Après avoir servi en Algérie, il prit part avec le lieutenant-colonel Humbert aux opérations contre Samory et se distingua particulièrement dans l’attaque de Diamanko (1891-1892). Il fit ensuite partie de la colonne Monteil envoyée vers Kong et se lia avec le capitaine Marchand. Membre de la mission Marchand en 1896, il reçut pour principale tâche l’exploration du bas Soueh et du Bahr-el-Ghazal. Au prix de nombreuses difficultés, il réussit à traverser les marais et à atteindre le lac Nô. Il avait ainsi tracé à la mission la route qu’elle devait suivre pour passer du bassin du Congo dans celui du Nil et atteindre Fachoda. Commandant à son retour en France, il mit en lumière l’œuvre accomplie par la mission et dressa une carte du Haut-Oubangui. En 1912, il écrivit les Épopées africaines, et, en 1914, Au Congo. Souvenirs de la mission Marchand. Colonel au début de la Grande Guerre, il devint général de brigade le 10 septembre 1914 puis général de division en mai 1917. Il mourut peu après dans une tranchée de première ligne devant Reims.</RiC:history>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050482-d4021e112"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050482"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050482_d4023e43">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050482-d4021e82"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050482">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050482"/>
+      <RiC:creationDate>2013-12-10</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050482</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050482"/>
+   </rdf:Description>
+</rdf:RDF>

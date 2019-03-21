@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/012069">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Foacier, Anne Louis (17..-18..)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/012069_d2168e47"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/012069_d2168e50"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1775-08-05</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1785-04-21</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/012069-d2166e159"/>
+      <RiC:history xml:lang="fr">Anne Louis Foacier est le fils de Jean Anne Foacier, conseiller maître à la chambre des comptes de Franche-Comté, et de Marie Jeanne Guillon. Le 31 mars 1785, il vend son office de notaire à Charles Louis Farmain, principal clerc de Me Bro (MC/ET/XCII/871). Le 14 mars 1788 est constitué en faveur d'Anne Louis Foacier, ancien notaire, une rente viagère de 4000 livres, avec réversion sur la tête de deux de ses nièces (MC/ET/CXVI/568, 14 mars 1788). Lorsqu'il se marie, le 1er mai 1791, avec Angélique Marie Arnoult (MC/ET/XLVIII/347, contrat de mariage), il est déjà qualifié "d'ancien notaire à Paris". Angélique Marie Arnoult est fille de Nicolas Louis Guillaume Arnoult, ancien notaire à Paris, ancien secrétaire du roi, et de Jeanne Victoire Bergeot. Les témoins à leur mariage sont Françoise Foacier, soeur du futur, et son mari, Charles Louis Le Prince de Beaufond, négociant à Paris ; Jacques Le Noir de Bullon, oncle à la mode de Bretagne du futur, et sa femme Louise Antoinette Lacotte ; Jacques Michel Mony, notaire à Paris, ancien secrétaire du roi, et Catherine Marthe Jardin, son épouse, ainsi que Marguerite Charlotte Mony, Adélaïde Mony et Emilie Mony, amis du futur ; Madeleine Poggy, amie ; Antoine Lenfranc Arnoult, prêtre, ancien prieur et chanoine, oncle de la future ; Emmanuel Jacques Cavillier, marchand de drap à Paris, oncle de la future ; Urbain Firmin Piault, maréchal des logis du roi, et Angélique Victoire Arnoult, beau-frère et soeur de la future ; Alexis Louis Arnoult, frère de la future ; Emmanuel Louis Cavillier, Louis Eugène Cavillier, Marie Emilie Cavillier, Madeleine Adélaïde Cavillier, cousins germains de la future ; Antoine Claude Guillet Desise, cousin de la future ; Nicolas Laguerre, contrôleur des rentes de l'hôtel de ville de Paris ; Etienne Lamolère, commissaire des guerres ; Blaise Tripier, ancien procureur au parlement, amis de la future. Le futur habite alors rue de Grenelle-Saint-Honoré dans un appartement qu'il loue 1400 livres par an, la future habite même rue et paroisse, chez ses parents. La dot comprend le don de la maison rue de Grenelle Saint-Honoré vis-à-vis la rue des Deux-Ecus. Renonciation par Angélique Arnoult, sa femme, à la succession de son père, Nicolas Louis Guillaume Arnoult (RE/XLVIII/11,17 pluviôse an IX [6 février 1801]).</RiC:history>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/010243-d340e374"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/012069-d2166e211"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/012069-d2166e217"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/012069"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/012069-d2166e159">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1775-08-05</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1785-04-21</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/012069-d2166e211">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Foacier, Anne Louis (17..-18..) et l'ensemble de documents "Minutes et répertoires du notaire Anne Louis FOACIER, 5 août 1775 - 21 avril 1785 (étude CXVI)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/043422-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/012069-d2166e217">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Foacier, Anne Louis (17..-18..) et l'ensemble de documents "Images du répertoire du notaire Anne Louis Foacier pour l'étude CXVI"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/050243-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/012069_d2168e47">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/012069-d2166e85"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/012069_d2168e50">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/012069-d2166e91"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/012069">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/012069"/>
+      <RiC:creationDate>2013-04-23</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_012069</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_012069"/>
+   </rdf:Description>
+</rdf:RDF>

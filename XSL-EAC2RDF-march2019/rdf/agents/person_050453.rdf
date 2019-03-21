@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050453">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Honnorat, André (1868-1950)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050453_d4001e56"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1868-12-13</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1950-07-24</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050453-d3999e136"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050453-d3999e148"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050453-d3999e154"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050453-d3999e160"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050453-d3999e172"/>
+      <RiC:history xml:lang="fr">Originaire des Basses-Alpes, André Honnorat (1868-1950) débute comme journaliste, collaborant au 
+     XIXe siècle, au 
+     Rappel et au 
+     Siècle. Il entre dans l’administration, comme chef de cabinet de Jean-Marie de Lanessan, ministre de la Marine, de 1899 à 1902, devient ensuite directeur du cabinet de Jean-Baptiste Dubief, ministre du Commerce, puis ministre de l’Intérieur, en 1905-1906. Conseiller général du canton de Lauzet (arrondissement de Barcelonnette, Basses-Alpes), de 1907 à sa mort, André Honnorat est député des Basses-Alpes de 1910 à 1921. À l’Assemblée nationale, il fait partie des commissions de l’hygiène, de l’assurance, de la prévoyance sociale et des affaires extérieures. 
+     Il fait adopter l'heure d'été en 1917 et déploie toute son énergie dans la lutte contre la tuberculose : il fait voter des crédits permettant des installations sanitaires pour les soldats tuberculeux, il est le rapporteur de la loi qui créa les dispensaires (1915) et de celle sur l’organisation des sanatoriums (dite loi Honnorat) ; en 1920, il participe à la fondation de l'Union internationale contre la tuberculose. Au Sénat, où il entre en 1921, Honnorat a été membre des commissions de l’enseignement et des affaires extérieures.  Ministre de l’Instruction publique et des Beaux-Arts du 20 janvier 1920 au 12 janvier 1921, André Honnorat fait voter des textes permettant de mettre en congé de longue durée les maîtres d’écoles et de lycées atteints de tuberculose et d’accroître les ressources des musées par la perception d’un droit d’entrée.  Président de l’Office national de l’hygiène sociale, il succède en 1925 à Léon Bourgeois comme président du Comité national de défense contre la tuberculose, dont il a été, avec lui, l’un des fondateurs. Membre de l'Institut Pasteur de 1932 à 1934, il crée la fondation Roux qui attribue des bourses aux jeunes chercheurs étudiant à l'Institut. Son œuvre capitale reste la Cité internationale universitaire de Paris, construite à partir de 1923, avec le soutien d'Émile Deutsch de la Meurthe.  André Honnorat préside la Fondation nationale pour l’étude des sciences et des civilisations étrangères, la Fondation nationale pour la production des manuscrits précieux et pièces rares d’archives, l’Institut des études germaniques. On lui doit aussi la création, au Château de Vincennes, de la Bibliothèque et du Musée de la Grande Guerre ainsi que de la Bibliothèque de documentation internationale contemporaine. Il est élu à l'Académie des Sciences morales et politiques en 1947.</RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050453--d3nzuh6ttz--l40s15od0kqid3999e129"/>
+      <isni:ISNIAssigned>0000000108683772</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050453-d3999e224"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050453"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050453-d3999e136">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">député des Basses-Alpes</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050453-d3999e148">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msizce3-1fkn61hd3lpjw"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050453-d3999e154">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050453-d3999e160">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">sénateur des Basses-Alpes</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj9l7t-1gb5a09kkzrmp"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050453-d3999e172">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">conseiller général des Basses-Alpes</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d3m0bl780ji-ni4u6eapto5b"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050453_d4001e56">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050453-d3999e101"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationtoPlace/050453--d3nzuh6ttz--l40s15od0kqid3999e129">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Honnorat, André (1868-1950)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/FRAN_RI_026-d3nzuh6ttz--l40s15od0kqi"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050453">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050453"/>
+      <RiC:creationDate>2016-07-04</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050453</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000108683772"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050453"/>
+   </rdf:Description>
+</rdf:RDF>

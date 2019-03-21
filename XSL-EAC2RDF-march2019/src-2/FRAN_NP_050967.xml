@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050967</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-01-29</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_050967-d4361e64">
+            <part>Centre de formation et de recherches de l'Éducation surveillée (1958-1983)</part>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_050967-d4361e70">
+            <part>CFRES</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1958-01-01">1958</fromDate>
+               <toDate standardDate="1983-12-31">1983</toDate>
+            </dateRange>
+         </existDates>
+         <functions>
+            <function xml:id="FRAN_activity_050967-d4361e93">
+               <term vocabularySource="d3nyuic5p0-ktmsglhlnhvr">recherche</term>
+               <descriptiveNote>
+                  <p>recherche dans le domaine de l'éducation surveillée</p>
+               </descriptiveNote>
+            </function>
+         </functions>
+         <biogHist>
+            <p>La direction de l'Éducation surveillée du Ministère de la Justice crée en 1951 le Centre de formation et d'études de l'Éducation Surveillée (CFEES) qui a pour mission principale de former des éducateurs. </p>
+            <p>Par la suite le centre se développe autour de trois grands axes : la formation, la recherche et la documentation. </p>
+            <p>Officiellement, depuis le 13 mai 1958, il est doté d'un service de recherches : le Centre de formation et de recherches de l'Éducation surveillée (CFRES). En 1983, la réforme de la recherche au ministère de la Justice entraîne des modifications dans l'organisation du centre : le CFRES se subdivise en Centre de recherches interdisciplinaire de Vaucresson (CRIV), unité de recherche associée au CNRS qui fonctionne jusqu’en 1995, et en Centre de formation et d'études de l'Éducation surveillée (CFEES).</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-later"
+                      xlink:href="FRAN_NP_000736"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_050967-d4361e121">
+            <relationEntry>Centre de recherche interdisciplinaire (Vaucresson, Hauts-de-Seine)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1983-01-01">1983</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050859"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_050967-d4361e133">
+            <relationEntry>Sélosse, Jacques (1923-1995)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1958-01-01">1958</fromDate>
+               <toDate standardDate="1980-12-31">1980</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>
+     J. Sélosse, étudiant au CFRES puis directeur du centre, de 1975 à 1980
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050924"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_050967-d4361e154">
+            <relationEntry>Peyre, Vincent (1930-2014)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1960-01-01">1960</fromDate>
+               <toDate standardDate="1983-12-31">1983</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_000009"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_050967-d4361e169">
+            <relationEntry>Ministère de la Justice</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1958-01-01">1958</fromDate>
+               <toDate standardDate="1983-12-31">1983</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Le CFRES est sous la tutelle du ministère de la justice</p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

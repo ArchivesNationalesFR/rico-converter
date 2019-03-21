@@ -1,0 +1,80 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050448</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-01-16</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>F. Clavaud, 16 janvier 2014 : changement forme du nom et ajout n° de notice BnF.</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, fonds Luxure-Luxeuil (72AP).</p>
+               <p>Notice d'autorité BnF n° FRBNF12090227</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Conti, Louis François de Bourbon (1734-1814 ; prince de)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Bourbon, Louis-François-Joseph (prince de Conti)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Bourbon-Conti, Louis-François-Joseph</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1734-09-01">1 septembre 1734</fromDate>
+               <toDate standardDate="1814-03-13">13 mars 1814</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Louis-François-Joseph de Bourbon, prince de Conti (1734-1814) fit la guerre de Sept Ans. Il émigra, mais rentré en 1790, il prêta le serment civique. Devenu suspect, il fut enfermé au fort Saint-Jean, à Marseille. Il recouvra la liberté en 1795, mais dut sortir de France après le 18 fructidor, par ordre du Directoire. Avec lui s’éteignit la branche des princes de Conti.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050404"
+                      xlink:type="simple">
+            <relationEntry>Luxure-Luxeuil, François (1788-1829)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1798-01-01">1798</fromDate>
+               <toDate standardDate="1813-12-31">1813</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>
+     F. Luxure-Luxeuil travaille pour Louis François de Bourbon-Conti. Dates inconnues.
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

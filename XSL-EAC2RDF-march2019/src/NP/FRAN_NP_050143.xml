@@ -1,0 +1,61 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050143</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Complète</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-10-16</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Raphael BAUMARD</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Silvestre, Israël</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1621-01-01">1621</fromDate>
+               <toDate standardDate="1691-12-31">1691</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Israël Silvestre (1621-1691) était le fils du peintre nancéien Gilles Silvestre. Son maître fut Israël Henriet, ami et éditeur de Jacques Callot. De 1640 à 1653, Israël Silvestre voyagea en France et en Italie. Il dessina et grava pour Louis XIV les 
+     <span style="italic">Maisons royales</span>, ainsi que les 
+     <span style="italic">Fêtes données</span> et les 
+     <span style="italic">Places conquises </span>sous son règne. On lui doit aussi : les 
+     <span style="italic">Plaisirs de l’île enchantée</span>, une grande vue de Rome. En 1670, il entra à l’Académie royale. Ses trois fils, Louis de Silvestre l’Aîné, Louis de Silvestre le Jeune et Charles-François de Silvestre, furent peintres ou graveurs. 
+    </p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_056117"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Papiers de la famille Silvestre (1660-1968).</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

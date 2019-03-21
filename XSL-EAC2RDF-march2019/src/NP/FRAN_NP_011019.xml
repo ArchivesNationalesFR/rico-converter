@@ -1,0 +1,109 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_011019</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00773</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Provost, Simon</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1775-01-14">14 janvier 1775</fromDate>
+               <toDate standardDate="1789-08-14">14 août 1789</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvow9c3--1ln2rhczl581f">saint-eustache (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgrw7m-1ulx41q7n6nbj">saint-eustache (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nz9px21h--vv5gzjwzroxg">croix-des-petits-champs (rue)</placeEntry>
+               <placeEntry localType="nomLieu">rue Croix-des-Petits-Champs</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1775-01-14">14 janvier 1775</fromDate>
+                  <toDate standardDate="1789-08-14">14 août 1789</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>d'abord principal clerc de François-Henri Fournel, il lui succède après avoir acheté son office à sa veuve</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010186"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale LIX</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1775-01-14">14 janvier 1775</fromDate>
+               <toDate standardDate="1789-08-14">14 août 1789</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/CXV/882, 4 janvier 1775, vente par Michelle Larcher, veuve de François-Henri Fournel, de l'office de notaire dont était pourvu son mari à Simon Provost, son principal clerc</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042652"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Julien SIOT, 14 mai 1743 - 2 mai 1785 (étude LXXIV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042653"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire GÉRARD, 21 mai 1736 - 16 mars 1748 (étude LXXIV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042654"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire CARRÉ, 8 juillet 1729 - 3 octobre 1734 (étude LXXIV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052226"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Simon Provost pour l'étude LIX</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010368</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00070</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_010368-d465e67">
+            <part>Videl, Jean-Pierre</part>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_010368-d465e73">
+            <part>Videl, Jean-Pierre Justinien</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1787-12-15">15 décembre 1787</fromDate>
+               <toDate standardDate="1797-11-25">25 novembre 1797</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place xml:id="FRAN_place_010368-d465e102">
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse"
+                           vocabularySource="d3nyvox0hv--s68ql74wtyjp"
+                           xml:id="FRAN_stdPlaceEntry_010368-d3nyvox0hv--s68ql74wtyjpd465e107">saint-germain-l'auxerrois (paroisse)</placeEntry>
+               <placeEntry localType="paroisse"
+                           vocabularySource="d3nyvpb1c4--1dpne8gngxarf"
+                           xml:id="FRAN_stdPlaceEntry_010368-d3nyvpb1c4--1dpne8gngxarfd465e110">saint-roch (paroisse)</placeEntry>
+               <placeEntry localType="quartier"
+                           vocabularySource="d3nyvganm6--1if1tsie3g2r"
+                           xml:id="FRAN_stdPlaceEntry_010368-d3nyvganm6--1if1tsie3g2rd465e113">louvre (quartier)</placeEntry>
+               <placeEntry localType="quartier"
+                           vocabularySource="d3nyvgeuq1--ys2q6qcqeojf"
+                           xml:id="FRAN_stdPlaceEntry_010368-d3nyvgeuq1--ys2q6qcqeojfd465e116">montmartre (quartier)</placeEntry>
+               <placeEntry localType="voie"
+                           vocabularySource="d3nzd36jkq-2di11qojb16k"
+                           xml:id="FRAN_stdPlaceEntry_010368-d3nzd36jkq-2di11qojb16kd465e120">saint-honoré (rue)</placeEntry>
+               <placeEntry localType="voie"
+                           vocabularySource="d3nzc8dhuz-1spkuhtb16ps6"
+                           xml:id="FRAN_stdPlaceEntry_010368-d3nzc8dhuz-1spkuhtb16ps6d465e123">neuve-saint-augustin (rue)</placeEntry>
+               <placeEntry localType="voie"
+                           vocabularySource="d3nzakhbj3--689udokbmsvf"
+                           xml:id="FRAN_stdPlaceEntry_010368-d3nzakhbj3--689udokbmsvfd465e126">gaillon (rue)</placeEntry>
+               <placeEntry localType="nomLieu" xml:id="FRAN_placeEntry_010368-d465e129">rue Saint-Honoré, près la rue des Poulies (de 1787 à 1792), rue Neuve-Saint-Augustin (de 1792 à l'an II), 3 rue Gaillon (de l'an II à l'an VI)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function xml:id="FRAN_activity_010368-d465e136">
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1787-12-15">15 décembre 1787</fromDate>
+                  <toDate standardDate="1797-11-25">25 novembre 1797</toDate>
+               </dateRange>
+            </function>
+         </functions>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010187"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010368-d465e155">
+            <relationEntry>Etude notariale LX</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1787-12-15">15 décembre 1787</fromDate>
+               <toDate standardDate="1797-11-25">25 novembre 1797</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_042391"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010368-d465e170">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean Pierre VIDEL, 15 décembre 1787 - 28 octobre 1797 (étude LX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052231"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010368-d465e176">
+            <relationEntry localType="archival">Images des répertoires du notaire Jean Pierre Videl pour l'étude LX</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

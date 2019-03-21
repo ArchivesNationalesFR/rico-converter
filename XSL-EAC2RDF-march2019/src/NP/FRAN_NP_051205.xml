@@ -1,0 +1,87 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051205</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-11-03</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Catherine MÉROT</agent>
+            <eventDescription>F. Clavaud, 3 novembre 2015 : changé nom, ajouté descripteur activité et lien d'association au CNRS</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice BNF FRBNF11923876</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 1827 6126</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Sayad, Abdelmalek (1933-1998)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1933-11-24">24/11/1933</fromDate>
+               <toDate standardDate="1998-03-13">13/03/1998</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msk5oth-xqvujelh8c39">chercheur</term>
+               <descriptiveNote>
+                  <p>directeur de recherche au CNRS</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Abdelmalek Sayad est né à Aghbala, commune de Beni Djellil, en Algérie le 24 novembre 1933 et décédé en France le 13 mars 1998. </p>
+            <p>En 1963, il s'est installé en France. D'abord vacataire au Centre de sociologie européenne de l'École des hautes études en sciences sociales (EHESS), il a intégré en 1977 le Centre national de la recherche scientifique (CNRS), nommé Directeur de recherches en sociologie. Il a mené de nombreuses recherches sur l'immigration et particulièrement sur l'immigration en algérie, notamment le travail mené avec Pierre Bourdieu 
+     <span style="italic"> Le déracinement. La crise de l'agriculture traditionnelle en Algérie.</span>
+            </p>
+            <p>Il est l'auteur de très nombreuses publications.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_000048"
+                      xlink:type="simple">
+            <relationEntry>Centre national de la recherche scientifique</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1977-01-01">1977</fromDate>
+               <toDate standardDate="1998-03-13">13 mars 1998</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055005"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Archives d'Abdelmalek Sayad</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

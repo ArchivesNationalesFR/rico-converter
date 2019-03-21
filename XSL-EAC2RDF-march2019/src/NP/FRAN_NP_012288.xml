@@ -1,0 +1,103 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012288</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE02146</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Faustin FOIRET, Une corporation parisienne pendant la Révolution, les notaires, Paris, 1912, p.291-292</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Delacour, Pierre-Nicolas</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1788-10-21">21 octobre 1788</fromDate>
+               <toDate standardDate="1794-07-28">28 juillet 1794</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvow9c3--1ln2rhczl581f">saint-eustache (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgeuq1--ys2q6qcqeojf">montmartre (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzc8fmll--4q3lu6ksemua">neuve-saint-eustache (rue)</placeEntry>
+               <placeEntry localType="nomLieu">rue Neuve-Saint-Eustache</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1788-10-21">21 octobre 1788</fromDate>
+                  <toDate standardDate="1794-07-28">28 juillet 1794</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>D'abord principal clerc de maître Bro, il achète l'office de Jean Bancal des Issarts (voir ET/XII/437, traité d'office du 18 septembre 1788)</p>
+            <p>Arrêté, sur ordre de la Convention, comme membre de la Commune de Paris favorable à de Robespierre, le 10 thermidor an II (28 juillet 1794), guillotiné le 11 thermidor de l'an II (29 juillet 1794)</p>
+            <p>Il est remplacé par Culhat-Coreil, l'un des notaires reçus au concours de l'an II</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010184"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale LVII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1788-10-21">21 octobre 1788</fromDate>
+               <toDate standardDate="1794-07-28">28 juillet 1794</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_042340"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Pierre Nicolas DELACOUR, 21 octobre 1788 - 28 juillet 1794 (étude LVII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052204"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Pierre Nicolas Delacour pour l'étude LVII</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

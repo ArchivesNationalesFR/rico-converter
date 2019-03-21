@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050722">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Heller-Goldenberg, Lucette (1942-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050722_d4199e65"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1942-01-01</RiC:birthDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050722-d4197e138"/>
+      <RiC:history xml:lang="fr">Lucette Heller-Goldenberg est née en 1942. Enseignante et militante, elle exerce successivement à l'école de l'Alliance israélite universelle (AIU) de Nice, à l'école normale de Weingarten, aux universités de Clermont-Ferrand et de Cologne. Elle est professeur émérite à l’Université de Cologne où elle enseigne la littérature française et francophone. Elle dirige la revue 
+     Le Cahier d’études maghrébines qui paraît depuis 1989. Elle publie de nombreux ouvrages sur le sujet (dont en 1993 
+     La Poésie maghrébine d'expression française). Pour autant, elle commence sa carrière universitaire par des études sur l'histoire ajiste : Lucette Heller-Goldenberg est l’auteur d’une thèse intitulée 
+      Histoire des auberges de jeunesse en France des origines à la Libération (1929-1945), réalisée sous la direction d’André Nouschi à l’université de Nice et publiée pour la première fois en 1985. 
+    </RiC:history>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb124326346#foaf:Person"/>
+      <isni:ISNIAssigned>0000000117808311</isni:ISNIAssigned>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050722-d4197e186"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050722"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050722-d4197e138">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050722-d4197e186">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Heller-Goldenberg, Lucette (1942-....) et l'ensemble de documents "Archives de Heller-Goldenberg Lucette (1942-...)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/050930-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050722_d4199e65">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050722-d4197e118"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050722">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050722"/>
+      <RiC:creationDate>2014-03-06</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-05-03</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_050722</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Guide des sources du PAJEP, consulté au mois de février 2014</RiC:source>
+      <RiC:source xml:lang="fr">Notice d'autorité BnF n° FRBNF12432634</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000117808311"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050722"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb124326346"/>
+   </rdf:Description>
+</rdf:RDF>

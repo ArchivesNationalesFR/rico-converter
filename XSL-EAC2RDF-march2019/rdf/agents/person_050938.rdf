@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050938">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Borione, Delphine (1962-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050938_d4346e45"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1962-03-26</RiC:birthDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050938-d4344e156"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050938-d4344e162"/>
+      <RiC:history xml:lang="fr">Etudes et diplômes Institut d'études politiques de Paris (1982) Diplômée d'études approfondies d'histoire des relations internationales Licenciée en droit des affaires Ecole nationale d'administration (promotion "Michel de Montaigne") Carrière Chef du bureau au service des matières premières et du sous-sol à la direction générale de l’énergie et des matières premières (ministère de l’Industrie), de 1988 à 1989 Cellule environnement au service des relations industrielles et financières internationales à la direction des affaires économiques et financières (ministère des Affaires étrangères), de 1989 à 1993 Chargée de l’analyse des politiques alimentaires au programme alimentaire mondial des Nations Unies, de 1993 à 1999 Conseiller au cabinet du représentant spécial du secrétaire général des Nations Unies au Kosovo, de 1999 à 2000 Adjoint au sous-directeur des affaires financières internationales à la direction des affaires économiques et financières (ministère des Affaires étrangères), de 2000 à 2002 Chargée de mission à la Présidence de la République, de 2002 à 2003 Conseiller de coopération et d’action culturelle à Rome, de 2003 à 2006 Administrateur de l’Académie de France à Rome, de 2005 à 2006 Conseiller technique (cellule diplomatique : G8 et dossiers multilatéraux) à la présidence de la République, de 2006 à 2007</RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050938--d3ntxp6caw-udnctpnx3a0sd4344e110"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050938--d3ntxkx2ub--j49sgjww5le6d4344e134"/>
+      <isni:ISNIAssigned>0000000000631284</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050938-d4344e245"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050938-d4344e266"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050938"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050938-d4344e156">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjqtlt--8qlp1v5rp9ov"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050938-d4344e162">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-12-31</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">Conseiller technique (cellule diplomatique : G8 et dossiers multilatéraux)</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d-31c1bj851u-1awh61xs7pwk3"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050938_d4346e45">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050938-d4344e85"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationtoPlace/050938--d3ntxp6caw-udnctpnx3a0sd4344e110">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Borione, Delphine (1962-....)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/FRAN_RI_005-d3ntxp6caw-udnctpnx3a0s"/>
+      <RiC:description xml:lang="fr">D. Borione, conseiller de coopération et action culturelle puis administrateur de l'Académie de France à Rome</RiC:description>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-12-31</RiC:endDate>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationtoPlace/050938--d3ntxkx2ub--j49sgjww5le6d4344e134">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Borione, Delphine (1962-....)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/FRAN_RI_005-d3ntxkx2ub--j49sgjww5le6"/>
+      <RiC:description xml:lang="fr">D. Borione, conseiller Conseiller au cabinet du représentant spécial du secrétaire général des Nations Unies au Kosovo</RiC:description>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-12-31</RiC:endDate>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050938">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050938"/>
+      <RiC:creationDate>2014-12-16</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050938</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000000631284"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050938"/>
+   </rdf:Description>
+</rdf:RDF>

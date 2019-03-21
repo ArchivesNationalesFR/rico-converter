@@ -1,0 +1,76 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050450</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-05-20</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Vanessa ASPART</agent>
+            <eventDescription>F. Clavaud, 20 mai 2014 : modifié nom, ajouté n°s ISNI et notice BnF</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, Fonds de l'Union universelle "Pour supprimer ce crime, la guerre", 42 AS.</p>
+               <p>Notice d'autorité BnF n° FRBNF13003001</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 7971 6044</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Demont, Henri (1877-1956)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1877-06-16">16 juin 1877</fromDate>
+               <toDate standardDate="1959-02-20">20 février 1959</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Henri Demont, le créateur de l’Union universelle « pour supprimer ce crime, la guerre », est né le 16 juin 1877, à Feuquières (Oise) et décédé à Paris le 20 février 1959.</p>
+            <p>Avocat à la cour d’appel de Paris, il soutint en 1908 deux thèses à l’École des hautes études sociales, où il exposait ses conceptions sur l’organisation de la paix ; mobilisé comme lieutenant en 1914, il fut raffermi dans ses convictions pacifistes par le spectacle de la guerre. Dès la fin de 1918, il présentait au président Wilson et aux alliés un plan de société générale des nations, qu’il soumettait aux plénipotentiaires réunis à Versailles. Il se consacra totalement à la propagation de ses plans de paix, parcourant la France et l’Europe, pour un total de 5 418 conférences devant plus de 20 millions d’auditeurs, entre 1922 et 1939. Par ailleurs, Demont a suscité la création de comités internationaux, de fédérations, d’associations locales (498 en 1938) et de groupes parlementaires.</p>
+            <p>Au lendemain de la Seconde Guerre mondiale, il vit triompher ses idées avec la création de l’Organisation des nations unies (O.N.U.), mais sa propre œuvre ne lui survécut pas. Il n'obtint jamais le prix Nobel de la paix.</p>
+            <p>Afin de lutter contre les nombreux plagiats des idées d’Henri Demont, le comité directeur de l’Union universelle créa le comité de défense du plan Henri Demont de 1908, le 12 janvier 1949.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050449"
+                      xlink:type="simple">
+            <relationEntry>Union universelle "Pour supprimer ce crime : la guerre"</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1921-10-15">15 octobre 1921</fromDate>
+               <toDate standardDate="1959-02-20">20 février 1959</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p> Henri Demont, fondateur de l'Union universelle contre ce crime, la guerre </p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

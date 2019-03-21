@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/family/051005">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Family"/>
+      <rdfs:label xml:lang="fr">Brauner (famille)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051005_d4391e41"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1910-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-12-31</RiC:endDate>
+      <RiC:history xml:lang="fr">Alfred Brauner est docteur ès lettres, il est né à Saint-Mandé en 1910 ; Françoise Brauner (1911-2000) est pédiatre et pédo-psychiatre, elle est née à Vienne (Autriche) en 1911. Peu après leur mariage, en 1935, le couple commence à prendre en charge des enfants victimes de la guerre : en 1936, ils partent en Espagne où Françoise travaille dans un hôpital tandis qu’Alfred gère différents foyers d’accueil à Bénicassim ; en novembre 1938, ils prennent en charge un groupe d’enfants juifs ayant fui l’Allemagne au lendemain de la « nuit de Cristal ». Ces jeunes sont accueillis au château de la Guette, où le couple fonde une République d’enfants. Cette expérience dure environ 6 mois jusqu’au début de la guerre. En 1945, après avoir été actifs dans la résistance, le couple participe à l’accueil d’enfants survivants des camps d’extermination d’Auschwitz et Buchenwald à Écouis dans l'Eure, expérience vécue comme décevante par manque de moyens. Juste après la guerre, Alfred travaille au Service colonies de vacances et maisons familiales de l’association Tourisme et Travail avant d’être engagé, en 1952, à l’Institut médico-pédagogique La Forge. De plus, en 1950, Alfred et Françoise Brauner font partie des créateurs du groupement de recherches pratiques pour l’enfance (GRPE). Cette association ouvre le Centre de traitement éducatif pour enfants et adolescents de Saint-Mandé, qui accueille principalement des enfants autistes. Le couple y travaille jusqu’en 1982. Parallèlement, Alfred et Françoise Brauner constituent une collection exceptionnelle de dessins d’enfants ayant vécu les principaux conflits du XXe siècle (Guerre d’Espagne, seconde guerre mondiale, guerre du Vietnam, conflit israelo-palestinien, Tchétchénie…). Françoise est décédée en septembre 2000 et Alfred en décembre 2002.</RiC:history>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051005"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051005_d4391e41">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051005-d4389e79"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051005">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/family/051005"/>
+      <RiC:creationDate>2015-04-27</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_051005</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051005"/>
+   </rdf:Description>
+</rdf:RDF>

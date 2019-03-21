@@ -1,0 +1,97 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051270</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-03-14</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Martine SIN BLIMA-BARRU</agent>
+            <eventDescription>F. Clavaud, 14 mars 2016 : revu le nom ; déplacé des éléments du contexte vers l'organisation ; ajouté fonctions, n° notice BnF</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb12194631c</p>
+               <p>Site Internet : http://www.generiques.org (2010-03-15)</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Génériques (France ; 1987-....)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1987-01-01">1987</fromDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>association</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d5bhvil20q--uuew3ia85vzc">activité associative</term>
+            </function>
+            <function>
+               <term vocabularySource="d5bhvih1do--ryj2votztf8z">affaires sociales</term>
+               <descriptiveNote>
+                  <p>immigration</p>
+               </descriptiveNote>
+            </function>
+         </functions>
+         <structureOrGenealogy>
+            <p>Siège social : 34 rue de Cîteaux, 75012 Paris. Contact : 01 49 28 57 75. Télécopie : 01 49 28 09 30. Adresse électronique : generiques2@wanadoo.fr</p>
+            <p>Site Internet : http://www.generiques.org (2010-03-15)</p>
+         </structureOrGenealogy>
+         <generalContext/>
+         <biogHist>
+            <p>Créée en 1987, Génériques est une association loi 1901 spécialisée dans l’histoire et la mémoire de l’immigration, la sauvegarde, la préservation et l’inventaire des archives de l"immigration en France et en Europe. A travers son coeur de metier, Génériques s’est toujours donné pour mission de faire connaitre la manière dont le patrimoine culturel de la France s’est enrichi d’éléments liés aux apports de populations venues d’ailleurs.</p>
+            <p>Dès la naissance de l’association Génériques, ses fondateurs ont conscience de la problématique de la préservation de la mémoire orale de l‘immigration, les sources écrites sur le sujet étant parfois lacunaires, les conditions des migrations ou les conditions de vie parfois précaires des immigrés ayant pu contribuer à leur disparition. Ces témoignages offrent une vision de l’histoire différente des sources institutionnelles, ce qui rend leur conservation dans des centres d’archives plus que nécessaire.</p>
+            <p>ll s’agit de donner une voix à des hommes et des femmes dont la parole a trop souvent été marginalisée, ignorée et oubliée, et ainsi de redonner au témoin sa place dans l’histoire.</p>
+            <p>Pour aller dans ce sens, Génériques favorise la collecte et le classement de fonds d'archives par son équipe d'historiens et d'archivistes, et le don de certains d'entre eux à des institutions patrimoniales, comme le Fonds de l'Association des travailleurs maghrébins de France (ATMF) dont les archives ont été données aux Archives nationales en 2011 (116AS/1-116AS/122, CP/116AS/123).</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050161"
+                      xlink:type="simple">
+            <relationEntry>Association de culture berbère (1981-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1987-01-01">1987</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055910"
+                           xlink:type="simple">
+            <relationEntry localType="archival">"Histoire et mémoire de l'immigration, mobilisation et lutte pour l'égalité, 1968-1988", campagne d'archives orales collectées par Génériques</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

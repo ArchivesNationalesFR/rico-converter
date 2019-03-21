@@ -1,0 +1,102 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050751</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-03-11</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Informations fournies par la mission des archives auprès des services du Premier ministre le 7 mars 2014</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Conseil de la création artistique</part>
+         </nameEntry>
+         <nameEntry>
+            <part>CCA</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="2009-01-30">30 janvier 2009</fromDate>
+               <toDate standardDate="2011-05-27">27 mai 2011</toDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>présidence de la République</term>
+            </legalStatus>
+         </legalStatuses>
+         <mandates>
+            <mandate>
+               <descriptiveNote>
+                  <p>Décret 2009-113 du 30 janvier 2009</p>
+                  <p>Décret 2011-598 du 27 mai 2011</p>
+               </descriptiveNote>
+            </mandate>
+         </mandates>
+         <biogHist>
+            <p>Le Conseil de la création artistique est né de la volonté du président de la République Nicolas Sarkozy qui le présente lors de ses vœux au monde culturel du 13 janvier 2009 à Nîmes. Cette annonce est concrétisée dès le 30 janvier 2009 par la création officielle du CCA par décret.</p>
+            <p>Il y est précisé que la mission principale du CCA est « d’éclairer les choix des pouvoirs publics en vue d’assurer le développement et l’excellence de la création artistique française, de promouvoir sa diffusion la plus large, notamment internationale, et d’arrêter les orientations de nature à permettre leur mise en œuvre ». Il est notamment en charge de mener des travaux de prospective et d’identifier les bonnes pratiques et les projets innovants en matière de création artistique diffusée en France et à l’étranger, tout en participant au pilotage de certains projets. Le CCA mène par ailleurs des séries d’auditions de personnalités qualifiées afin d’orienter ses décisions. Cela lui permet notamment d’examiner des mesures pour le développement ou l’amélioration des sources de financement de la création artistique.</p>
+            <p>Animé par Marin Karmitz, son délégué général, le CCA est présidé par le président de la République, le Premier ministre et le ministre de la Culture étant membres de droit. 11 autres membres composent le CCA, choisis pour leurs compétences liées aux préoccupations de l’institution. Par ailleurs, afin d’assurer le fonctionnement quotidien du Conseil, Marie Descourtieux et Nathalie Sultant sont nommées au secrétariat général, tandis que Caroline Boidé, chargée de mission, et Solange Roussier, attachée de direction, complètent son équipe.</p>
+            <p>Le CCA a examiné 16 projets au cours de ses deux ans d’activité dont 9 ont pu être mené à bien. Le 29 avril 2011, le CCA remet son bilan au président de la République puis est supprimé.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_000001"
+                      xlink:type="simple">
+            <relationEntry>Présidence de la République</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2009-01-30">30 janvier 2009</fromDate>
+               <toDate standardDate="2011-05-27">27 mai 2011</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_000002"
+                      xlink:type="simple">
+            <relationEntry>Premier ministre</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2009-01-30">30 janvier 2009</fromDate>
+               <toDate standardDate="2011-05-27">27 mai 2011</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054785"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Premier Ministre, Direction générale : dossiers du Conseil de la Création artistique (CCA)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

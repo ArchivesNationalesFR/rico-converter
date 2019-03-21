@@ -1,0 +1,105 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012610</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE02503</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Faustin FOIRET, Une corporation parisienne pendant la Révolution, les notaires, Paris, 1912, p.129-152</p>
+            </descriptiveNote>
+         </source>
+         <source>
+            <descriptiveNote>
+               <p>Philippe BERTHOLET, Etudes et notaires parisiens en 1803, au moment de la loi du 25 ventôse an XI (16 mars 1803), Paris, 2004, p. 103)</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Chaudot, Vivant-Jean-Baptiste</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1781-05-08">8 mai 1781</fromDate>
+               <toDate standardDate="1794-01-12">12 janvier 1794</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvow9c3--1ln2rhczl581f">saint-eustache (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgrw7m-1ulx41q7n6nbj">saint-eustache (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzcqca60--15myx6rt2iwr">prouvaires (rue des)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzcktwgr-1t2uff8hj7oh7">plâtrière (rue)</placeEntry>
+               <placeEntry localType="nomLieu">rue des Prouvaires, (de 1781 à 1782), rue Plâtrière (de 1783 à l'an II)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1781-05-08">8 mai 1781</fromDate>
+                  <toDate standardDate="1794-01-12">12 janvier 1794</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Marié à Amélie Laulaigne</p>
+            <p>Notaire substituant dans l'étude LXXVII du 27 septembre au 6 octobre 1783</p>
+            <p>Arrêté sur ordre du Comité de Sûreté générale, le 23 nivose an II (12 janvier 1794), il est condamné à mort par le Tribunal révolutionnaire, et guillotiné le 29 pluviôse an II (17 février 1794).</p>
+            <p>Il est remplacé par Caffard-Durvilliers, l'un des notaires reçus au concours de l'an II</p>
+            <p>Sa veuve se remarie avec Jean Montaud, notaire de l'étude CVIII.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010188"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale LXI</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1781-05-08">8 mai 1781</fromDate>
+               <toDate standardDate="1794-01-12">12 janvier 1794</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055887"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Vivant Jean-Baptiste Chaudot pour l'étude LXI</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

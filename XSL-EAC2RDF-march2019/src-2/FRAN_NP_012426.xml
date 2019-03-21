@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012426</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE02302</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry scriptCode="Latn"
+                    localType="autorisée"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_012426-d2523e67">
+            <part>Dupont-Carriot, Jean</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1997-06-04">4 juin 1997</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place xml:id="FRAN_place_012426-d2523e93">
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu" xml:id="FRAN_placeEntry_012426-d2523e98">65 rue d'Anjou</placeEntry>
+               <placeEntry localType="arrondissement_actuel"
+                           vocabularySource="d3nyv5mj9a-19vhxeonx80mi"
+                           xml:id="FRAN_stdPlaceEntry_012426-d3nyv5mj9a-19vhxeonx80mid2523e101">08e arrondissement</placeEntry>
+               <placeEntry localType="voie"
+                           vocabularySource="d3nz8ivu45-crej177zq98t"
+                           xml:id="FRAN_stdPlaceEntry_012426-d3nz8ivu45-crej177zq98td2523e104">anjou (rue d')</placeEntry>
+               <placeEntry localType="voie"
+                           vocabularySource="d3nzc1foxm-1ckw8lzr0kvpe"
+                           xml:id="FRAN_stdPlaceEntry_012426-d3nzc1foxm-1ckw8lzr0kvped2523e107">messine (avenue de)</placeEntry>
+            </place>
+            <place xml:id="FRAN_place_012426-d2523e111">
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu" xml:id="FRAN_placeEntry_012426-d2523e116">depuis juin 2007 : 5 avenue de Messine</placeEntry>
+               <placeEntry localType="arrondissement_actuel"
+                           vocabularySource="d3nyv5mj9a-19vhxeonx80mi"
+                           xml:id="FRAN_stdPlaceEntry_012426-d3nyv5mj9a-19vhxeonx80mid2523e119">08e arrondissement</placeEntry>
+               <placeEntry localType="voie"
+                           vocabularySource="d3nz8ivu45-crej177zq98t"
+                           xml:id="FRAN_stdPlaceEntry_012426-d3nz8ivu45-crej177zq98td2523e122">anjou (rue d')</placeEntry>
+               <placeEntry localType="voie"
+                           vocabularySource="d3nzc1foxm-1ckw8lzr0kvpe"
+                           xml:id="FRAN_stdPlaceEntry_012426-d3nzc1foxm-1ckw8lzr0kvped2523e125">messine (avenue de)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function xml:id="FRAN_activity_012426-d2523e132">
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1997-06-04">4 juin 1997</fromDate>
+                  <toDate/>
+               </dateRange>
+            </function>
+         </functions>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010243"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_012426-d2523e150">
+            <relationEntry>Etude notariale CXVI</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1997-06-04">4 juin 1997</fromDate>
+               <toDate/>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="creatorOf"
+                           xml:id="FRAN_relation_012426-d2523e164">
+            <relationEntry localType="archival">minutes</relationEntry>
+            <descriptiveNote>
+               <p>les minutes de ce notaire sont conservées à l'étude</p>
+            </descriptiveNote>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/051216">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">Fédération interuniversitaire d'enseignement à distance (France)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051216_d4509e43"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/f7742d1f-1699-45c7-804b-0277189a621d"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-10-01</RiC:beginningDate>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051216-d4507e111"/>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051216-d4507e123"/>
+      <RiC:history xml:lang="fr">La Fédération interuniversitaire de l'enseignement à distance (FIED) a été créée le 27 octobre 1987 sur proposition de la Direction de l’Enseignement Supérieur (DES) du Ministère de l’Éducation Nationale et de l’Enseignement supérieur en avril 1987, à l’occasion de la création de l’Association Européenne des universités à Distance. Son siège est situé à l'Université Pierre et Marie Curie, 4 place Jussieu, boite courrier 202, 75252 Paris Cedex 05. Elle fédère en réseau les universités qui ont développé de l'enseignement à distance et en ligne. Elle rassemble actuellement 35 universités à distance et des partenaires associés. Elle favorise le développement de la formation tout au long de la vie et la coopération entre les établissements d’enseignement supérieur dans tous les domaines et toutes les formes de l’enseignement à distance. Outre ses missions fondamentales, elle a pour vocation de : - Valoriser les enseignements, les formations à distance, les recherches en matière de formations ouvertes et à distance (FOAD) et les nouveaux apprentissages, - Favoriser les échanges et rencontres sur le sujet de l’enseignement et de la formation à distance, - Développer en commun des cours et modules de formation et d’échanger de la documentation pédagogique, - Assurer la promotion et la veille dans le domaine des Technologies de l’Information et de la Communication dans l’Enseignement pour produire des ressources pédagogiques, en vue de les mutualiser, les diffuser et de coopérer. - Mutualiser la veille et l’expertise sur les dispositifs d’enseignement et formation à distance.  Elle propose plus de 500 formations diplômantes, plus de 400 modules autonomes et représente plus de 31.000 étudiants à distance en formation initiale et continue. Enfin, la FIED adhère à plusieurs réseaux internationaux : EDEN (European Distance and E-learning Network) depuis 2006, ICDE (International Council for Open and Distance Education) depuis 2007 et l’EADTU (European Association Distance Teaching Universities) depuis 1987. </RiC:history>
+      <isni:ISNIAssigned>0000000121883242</isni:ISNIAssigned>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051216-d4507e176"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051216-d4507e182"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051216"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051216-d4507e111">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:description xml:lang="fr">actions en faveur de l'enseignement à distance, coopération entre les établissements d'enseignement supérieur qui agissent dans ce domaine.</RiC:description>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d5bhvil20q--uuew3ia85vzc"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051216-d4507e123">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:description xml:lang="fr">enseignement à distance</RiC:description>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d5bhvihxhx--1dol4k5w0lb2i"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051216-d4507e176">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Fédération interuniversitaire d'enseignement à distance (France) et l'ensemble de documents "Archives de la Fédération interuniversitaire de l'enseignement à distance (Fied)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/055198-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051216-d4507e182">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Fédération interuniversitaire d'enseignement à distance (France) et l'ensemble de documents "Education, Fédération inter-universitaire de l'enseignement à distance (FIED) : archives électroniques et audiovisuelles"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/055932-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051216_d4509e43">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051216-d4507e82"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051216">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/051216"/>
+      <RiC:creationDate>2015-11-13</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_051216</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000121883242"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051216"/>
+   </rdf:Description>
+</rdf:RDF>

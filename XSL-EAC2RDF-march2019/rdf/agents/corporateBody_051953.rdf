@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/051953">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">France. Secrétariat particulier du Président de la République (1946-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051953_d4951e65"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051953_d4951e68"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/c1ddb003-4095-4dc2-954e-e0f6eff413b9"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1946-01-01</RiC:beginningDate>
+      <RiC:history xml:lang="fr">Le Président de la République dispose d’une équipe de secrétaires qui lui sont directement affectées. Celle-ci constitue le secrétariat particulier du Président de la République et occupe un bureau contigu au bureau présidentiel.  Effectifs  L'effectif du secrétariat particulier est généralement composé de quatre personnes dont un chef du secrétariat particulier. Missions  Ce service exerce les fonctions habituelles d’un secrétariat. Cependant, certaines missions ont pu évoluer au fil des mandats présidentiels.  Ainsi, le secrétariat était chargé jusqu’en 1974 d’ouvrir et d’enregistrer le courrier adressé au Président et de le répartir entre les conseillers ou les services de la Présidence. Une fois la réponse rédigée, il se chargeait de la mettre à la signature du Président, puis de l’enregistrer avant de l’envoyer. Des minutiers chronologiques de ces courriers étaient conservés par le secrétariat particulier. Devant le volume croissant de la correspondance reçue à la présidence, cette tâche a été remplie par un service dédié, le secrétariat particulier ne gérant plus que la correspondance personnelle du Président.</RiC:history>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051953-d4949e186"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051953"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051953_d4951e65">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051953-d4949e118"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051953_d4951e68">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051953-d4949e124"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051953">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/051953"/>
+      <RiC:creationDate>2018-01-29</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-02-02</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051953</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Fiche documentaire du Service des archives et de l'information documentaire de la Présidence de la République</RiC:source>
+      <RiC:source xml:lang="fr">Pas de numéro ISNI ni de notice d'autorité de la BnF.</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051953"/>
+   </rdf:Description>
+</rdf:RDF>

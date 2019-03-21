@@ -1,0 +1,100 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_011938</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01774</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Gondouin, Charles</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Gondouin, Charles Constantin</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1820-11-30">30 novembre 1820</fromDate>
+               <toDate standardDate="1841-06-08">8 juin 1841</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="voie" vocabularySource="d3nzbxa84y-1fj4ausbzkc4k">marché-saint-honoré (rue du)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzc7wxeo-1qjxoicvrn0qn">neuve-des-petits-champs (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nz9i5zoa--10786tbq0a8bq">choiseul (rue de)</placeEntry>
+               <placeEntry localType="nomLieu">11 rue du Marché-Saint-Honoré (de 1820 à 1825), 97 rue Neuve-des-Petits-Champs (de 1826 à 1832), 8 rue de Choiseul (de 1833 à 1841)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1820-11-30">30 novembre 1820</fromDate>
+                  <toDate standardDate="1841-06-08">8 juin 1841</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Né le 24 août 1788 à Paris</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010153"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XXVI</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1820-11-30">30 novembre 1820</fromDate>
+               <toDate standardDate="1841-06-08">8 juin 1841</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">BB/10/573, 17 novembre 1820, dossier de nomination</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041755"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Charles GONDOUIN, 30 novembre 1820 - 7 juin 1841 (étude XXVI)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051875"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Charles Gondouin pour l'étude XXVI</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

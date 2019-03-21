@@ -1,0 +1,142 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050004</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-05-03</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Michel THIBAULT</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-07-10</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID-DORMIEN</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2018-07-10</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Notice BNF : FRBNF11885120 </sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Notice Wikipédia : https://fr.wikipedia.org/w/index.php?title=Association_des_archivistes_fran%C3%A7ais&amp;oldid=149948139</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Site Internet : www.archivistes.org</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Association des archivistes français (1904-...)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>AAF</part>
+            <useDates>
+               <dateRange>
+                  <fromDate standardDate="1969-01-01">1969</fromDate>
+               </dateRange>
+            </useDates>
+         </nameEntry>
+         <nameEntry>
+            <part>Association amicale professionelle des archivistes français (1904-1969)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1904-04-10">10 avril 1904</fromDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>association</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d5bhvil20q--uuew3ia85vzc">activité associative</term>
+               <descriptiveNote>
+                  <p>promotion du métier d'archiviste</p>
+               </descriptiveNote>
+            </function>
+            <function>
+               <term vocabularySource="d3nyuhrig1--3acyzmp9v988">formation</term>
+               <descriptiveNote>
+                  <p>stage professionnel et formation permanente</p>
+               </descriptiveNote>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Association crée en avril 1904, sous le nom d'Association amicale professionnelle des archiviste français qui devient en juin 1969, l'Association des archivistes français (AAF).</p>
+            <p>Durant plus d'une soixantaine années l'AAF regroupe principalement des conservateurs des Archives nationales et des directeurs d'archives départementales, à partir des années 1970 elle recrute auprès des archivistes municipaux et des organismes privés, notamment dans les entreprises, les syndicats ou des fondations.</p>
+            <p>Les objectifs de l'AAF sont de promouvoir le métier d'archiviste dans le cadre administratif, de développer la formation permanente du personnel, et également sa participation dans les débats publics relatifs aux archives.</p>
+            <p>A l'occasion de la préparation du centenaire de l'AAF, la partie ancienne de ses archives (1904-1989) est déposée aux Archives nationales en juin 2002.</p>
+            <p>Par ailleurs, l'AAF publie une revue trimestrielle « La Gazette des archives », avec un bulletin d'information interne « Archivistes ! », de plus elle dispose d'un site internet sous son propre nom (www.archivistes.org/). </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb11885120f"
+                      xlink:type="simple">
+            <relationEntry>Association des archivistes français</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1904-04-10">10 avril 1904</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice d'autorité BnF</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="https://fr.wikipedia.org/w/index.php?title=Association_des_archivistes_fran%C3%A7ais&amp;oldid=149948139"
+                      xlink:type="simple">
+            <relationEntry>Association des archivistes français</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1904-04-10">10 avril 1904</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice Wikipédia</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_021904"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Association des archivistes français (1988-1988)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_004524"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds de l'association des archivistes Français (AAF) (1904-1989)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,110 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012086</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01929</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Philippe BERTHOLET, Etudes et notaires parisiens en 1803, au moment de la loi du 25 ventôse an XI (16 mars 1803), Paris, 2004, p. 284-286</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Foucher, Thomas-Philippe</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Foucher, Thomas-Philippe Edme</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1802-11-09">9 novembre 1802</fromDate>
+               <toDate standardDate="1834-08-30">30 août 1834</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="voie" vocabularySource="d3nzclfovw-1h046m8yg719h">poissonnière (rue)</placeEntry>
+               <placeEntry localType="nomLieu">5 rue Poissonnière</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1802-11-09">9 novembre 1802</fromDate>
+                  <toDate standardDate="1834-08-30">30 août 1834</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>né le 22 juin 1776 à Paris</p>
+            <p>marié à Sophie Gibert, nièce de Guillaume Gibert, notaire de l'étude CVIII (voir ET/XXIX/659, 1er floréal an XI [21 avril 1803], contrat de mariage)</p>
+            <p>de ce mariage est issu Philippe Foucher, qui lui succède en 1834</p>
+            <p>président de la Chambre des notaires en 1831</p>
+            <p>chevalier de la légion d'honneur</p>
+            <p>décédé le 3 juillet 1864 à Paris</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010140"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XIII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1802-11-09">9 novembre 1802</fromDate>
+               <toDate standardDate="1834-08-30">30 août 1834</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XX/1082, 7 juillet 1864, dépôt de testament</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041416"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Thomas Philippe FOUCHER, 9 novembre 1802 - 30 août 1834 (étude XIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051782"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Thomas Philippe Foucher pour l'étude XIII</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

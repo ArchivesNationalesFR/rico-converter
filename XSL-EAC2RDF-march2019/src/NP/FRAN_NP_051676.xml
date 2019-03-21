@@ -1,0 +1,109 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051676</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2017-09-07</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Zénaïde ANDRIEU-ROMANEIX</agent>
+            <eventDescription>Créée en septembre 2017. Pas de fiche Wikipedia. Pas d'IR en SIV.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2018-01-16</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Notice BnF n° FRBNF10716468. </sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>État sommaire des fonds d'archives privées. Séries AP et AB XIX, Paris, Centre historique des Archives nationales, p. 437 (notice 240 AP).</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 6148 6738</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Penne-Villemur, Adolphe-Raymond de (1791-1862)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Villemur, Adolphe-Raymond de Penne (1791-1862 ; comte)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Villemur, A.-R. (1791-1862 ; comte de )</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1791-01-01">1791</fromDate>
+               <toDate standardDate="1862-12-31">1862</toDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Espagne</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3ntxkj150-14qdrjsm01noe">Espagne</placeEntry>
+               <descriptiveNote>
+                  <p>Partisan des carlistes.</p>
+               </descriptiveNote>
+            </place>
+         </places>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msj3i51--hevk1gms21cg">écrivain</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Adolphe-Raymond, comte de Villemur (1791-1862) , est le fils de Louis de Penne-Villemur (1761-1836). Comme son père, il soutient en Espagne le parti carliste, sous le pseudonyme de M. de Saint-Georges, et est en relation avec les agents du parti légitimiste français pendant la monarchie de Juillet, notammnet René Thomassin. Il devient ministre de Parme à Vienne, où il continue de soutenir le parti légitimiste.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_050555"
+                      xlink:type="simple">
+            <relationEntry>Penne-Villemur, Louis de (1761-1836)</relationEntry>
+            <descriptiveNote>
+               <p>Adolphe-Raymond de Penne-Villemur est le fils de Louis de Penne-Villemur.</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb10716468r"
+                      xlink:type="simple">
+            <relationEntry>Villemur, Adolphe Raymond de Penne (Cte) </relationEntry>
+            <dateRange>
+               <fromDate standardDate="1791-01-01">1791</fromDate>
+               <toDate standardDate="1862-12-31">1862</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice d'autorité BnF</p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/050307">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">Manufacture de la Savonnerie (Paris)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050307_d3891e43"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1628-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1826-12-31</RiC:endDate>
+      <RiC:history xml:lang="fr">Première manufacture royale de tapis fondée en France, la Savonnerie tire son nom d’une ancienne maison de savonnerie à Chaillot, dans laquelle elle fut transférée en 1631. Elle était alors spécialisée dans la fabrication de tapis veloutés auxquels on adjoignit par la suite des tapis copiés de l’Orient. Cette manufacture fut fondée vers 1628 par deux associés : Pierre Dupont (1560-1640) et Simon Lourdet (vers 1590-1667). À leur suite, la manufacture fut divisée en deux ateliers distincts, dirigés chacun par les descendants des fondateurs : Louis puis Bertrand Dupont d’une part, Philippe Lourdet, sa veuve Jeanne Haffrey puis leur fils, d’autre part. En 1714, Bertrand Dupont réunit les deux ateliers. Son neveu par alliance, Jacques Noinville, devint régisseur de la Savonnerie de 1720 à 1742. De 1743 à 1826, trois Duvivier se succédèrent à la tête de l’entreprise : Pierre-Charles (1743-1773), Nicolas-Cyprien (1774-1807), et Ange-Pierre (1807-1826). C’est en 1826 que la manufacture fut réunie à la Manufacture nationale des Gobelins.</RiC:history>
+      <RiC:agentIsSourceOfAgentTemporalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentTemporalRelation/050307-d3889e121"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050307"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050307_d3891e43">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050307-d3889e82"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050307">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/050307"/>
+      <RiC:creationDate>2013-12-10</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050307</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050307"/>
+   </rdf:Description>
+</rdf:RDF>

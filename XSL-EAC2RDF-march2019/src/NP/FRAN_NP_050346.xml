@@ -1,0 +1,82 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050346</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-09-17</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Vanessa ASPART</agent>
+            <eventDescription>F. Clavaud, 17 sept. 2014 : changé forme du nom, ajouté n° notice BnF et date de décès</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, Fonds Simon (1671-1860), 679 AP.</p>
+               <p>Notice d'autorité BnF n° FRBNF12120943</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Simon, Edouard-Thomas (1740-1818)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1740-10-16">16 octobre 1740</fromDate>
+               <toDate standardDate="1818-04-04">4 avril 1818</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Édouard-Thomas Simon est un médecin, bibliothécaire, homme de lettres et professeur français né le 16 octobre 1740 à Troyes (Aube).</p>
+            <p>Destiné, à l’origine, à devenir notaire comme son père, E.-T. Simon préfère, à 19 ans, entreprendre des études de médecine. Il est tout d’abord placé en apprentissage chez Gabriel Brissot, maître en chirurgie à Troyes, de 1760 à 1762, puis devient élève de l’École de chirurgie et de l’Hôpital de la Charité à Paris. Il termine ses études en 1765 et revient à Troyes pour y exercer. Il est reçu maître en chirurgie par la communauté des chirurgiens de Troyes le 24 février 1766, et en 1785 docteur en médecine de l’université de Valence (Drôme). Il exerce à Troyes jusqu’en 1787. En même temps, il suit des études de droit à l’université de Reims, et devient, en 1783, avocat au barreau du parlement de Paris. Il ne semble cependant pas avoir pratiqué cette profession.</p>
+            <p>Il quitte en avril 1787 sa confortable situation pour “ venir jouir, à Paris, librement du commerce des gens de lettres ”. Il travaille d’abord avec la société savante “ le Musée de Paris ” puis devient en avril 1788 précepteur des neveux d’un certain Montessuy jusqu’au mois d’août 1790. En octobre 1790, E.-T. Simon est nommé commis au sein du comité de salubrité de l’Assemblée constituante. Il exerce ensuite cette fonction au sein des comités de mendicité et de secours public jusqu’en mars 1796. Soupçonné en 1792, à la suite d’accusation portée par le comte de Mirabeau, de conspirer contre la Révolution, il se dérobe aux persécutions en accompagnant dans le Calvados son ami Henri Gaspard Charles Bouret, conventionnel en mission. En 1795, il est nommé bibliothécaire du Corps législatif puis du Tribunat en 1799.</p>
+            <p>La suppression du Tribunat en 1808 le conduit à changer à nouveau de carrière. Il est d’abord nommé en avril 1808 censeur au lycée de Nancy, puis professeur d’éloquence latine à la faculté de lettres de Besançon en juillet 1809. Il obtient, le 28 février 1810, le grade de docteur es lettres.</p>
+            <p>Parallèlement à ses activités professionnelles, Édouard-Thomas Simon a une riche activité d’homme de lettres. Pendant son séjour à Troyes, il collabore à la rédaction du 
+
+     <span style="italic">Journal de Troyes</span>, de 1782 à 1786, et à la confection de l’ 
+
+     <span style="italic">Almanach de la Ville et du Diocèse de Troyes</span>, avec l’abbé Courtalon-Delaître, de 1776 à 1787. Il est l’auteur de nombreux ouvrages parmi lesquels des poésies traduites du grec, du latin, de l’italien. Il a écrit sous les noms de plume “ Edward Tom Yomns ”, “ M. S***D. M. ” et Béatrix de Barle. 
+
+    </p>
+            <p>Il a un fils : Edouard-François Simon (1769-1827). </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:type="simple"
+                      xlink:href="FRAN_NP_050347">
+            <relationEntry>Simon, Edouard-François</relationEntry>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_050097"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Simon (1671-1860)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

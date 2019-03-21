@@ -1,0 +1,87 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050694</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-03-20</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+            <eventDescription>F. Clavaud, 17 février 2014 : changé forme du nom, ajouté n°s ISNI et notice BnF</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Identifiant ISNI : ISNI 0000 0001 0908 7198</p>
+               <p>Notice d'autorité BnF n° FRBNF12120402</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Wallon, Henri (1812-1904)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1812-01-01">1812</fromDate>
+               <toDate standardDate="1904-12-31">1904</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Henri Alexandre Wallon (1812-1904), est connu comme historien et homme politique français. Catholique fervent, de tendance libérale (il s'opposa à l'esclavagisme et défendit la liberté de l'enseignement), il est célèbre pour avoir été à l'origine de l'amendement qui a fait entrer le mot « République » dans les projets de lois constitutionnelles de 1875, ce qui a été considéré comme le fondement de la IIIe République.</p>
+            <p>Né à Valenciennes, il devint en 1840 professeur à l'École normale supérieure et succéda à Guizot en 1846 comme professeur d'histoire à la Sorbonne. Ses travaux sur l'esclavage dans les colonies françaises (1847) et sur l'esclavage dans l'Antiquité (1848), le firent entrer après la Révolution de 1848 dans une commission pour la réglementation du travail dans les possessions coloniales françaises et, en novembre 1849, il fut élu représentant de la Guadeloupe à l'Assemblée législative, où il demanda à être représenté par un ancien esclave, Louisy Mathieu. Il démissionna en 1850 et ne revint à la vie politique qu'après la chute de l'Empire. Élu député du Nord (1871-1875), sénateur inamovible à partir de 1875, il présida les séances d'ouverture du Sénat comme doyen d 'âge jusqu'en 1903. Il fut aussi ministre de l'Instruction publique, des Cultes et des Beaux-Arts en 1875-1876. </p>
+            <p>En-dehors de son mandat parlementaire, il était membre de l'Intitut, secrétaire perpétuel de l'Académie des Inscriptions et Belles-Lettres, président du Conseil d'administration de l'Institut Pasteur, président de la Société anti-esclavagiste, doyen de la Faculté des lettres de Paris. Il publia de nombreux ouvrages tant religieux ( 
+     <span style="italic">La Bible résumée dans son histoire</span>, 1854-1859 ; 
+     <span style="italic">De la croyance due à l'Évangile</span>, 
+     <span style="italic">La Vie de Notre Seigneur Jésus</span>, 1865) qu'historiques ( 
+     <span style="italic">Histoire de l'esclavage dans l'Antiquité</span>, 1847 ; 
+     <span style="italic">Richard II, épisode de la rivalité de la France et en Angleterre</span>, 1864 ; 
+     <span style="italic">Jeanne d'Arc</span>, 1860 ; 
+     <span style="italic">Saint Louis et son temps</span>, 1871). 
+    </p>
+            <p>De son premier mariage avec Hortense Dupire (1814-1851), Henri Wallon eut sept enfants, et de son second mariage avec Pauline Boulan (1820-1878), trois enfants.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_050669"
+                      xlink:type="simple">
+            <relationEntry>Wallon (famille) (XIXe-XXe siècles)</relationEntry>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_050190"
+                      xlink:type="simple">
+            <relationEntry>Wallon, Henri (1879-1962)</relationEntry>
+            <descriptiveNote>
+               <p>
+      Henri Alexandre Wallon (1812-1904) est le grand-père de Henri Wallon (1879-1962) 
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

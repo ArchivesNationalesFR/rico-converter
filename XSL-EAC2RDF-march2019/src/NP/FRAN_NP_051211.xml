@@ -1,0 +1,65 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051211</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-11-26</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Patrice TRIBOUX</agent>
+            <eventDescription>F. Clavaud, 26 nov. 2015 : revu le nom</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Regley, Serge (1950-....)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1950-01-01">1950</fromDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Serge Régley est un ancien membre d'Arcadie, mouvement homophile français fondé par André Baudry en 1954. Il a été son collaborateur pour l'animation du groupe d'Arcadie dans l'Est de la France.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_051271"
+                      xlink:type="simple">
+            <relationEntry>Baudry, André (1922-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1970-01-01">1970</fromDate>
+               <toDate standardDate="1982-12-31">1982</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>
+     Serge Regley a été le correspondant et le collaborateur d'Arcadie pour l'Est de la France.
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

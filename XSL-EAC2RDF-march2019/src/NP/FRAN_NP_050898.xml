@@ -1,0 +1,81 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050898</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-11-26</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+            <eventDescription>Informations encore partielles fournies par A. Clergeau en novembre 2014</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Bureau des mouvements des collections (direction des musées de France)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1978-01-01">1978</fromDate>
+               <toDate standardDate="1979-12-31">1979</toDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>service d'administration centrale</term>
+            </legalStatus>
+         </legalStatuses>
+         <biogHist>
+            <p>Le bureau des mouvements des collections s'occupe en particulier du contrôle des exportations d'oeuvres d'art de 1978 à 1979 au sein de la Division des affaires générales et de l'équipement de la direction des musées de France. Un arrêté du 23 octobre 1979 réorganise la DMF et crée le bureau des collections, qui reprend cette mission, au sein du service de la muséologie et de l'action culturelle.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_050897"
+                      xlink:type="simple">
+            <relationEntry>Bureau des musées nationaux, affaires générales, de la planification et des travaux d'équipement (direction des musées de France)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1978-01-01">1978</fromDate>
+               <toDate standardDate="1979-12-31">1979</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-later"
+                      xlink:href="FRAN_NP_005733"
+                      xlink:type="simple">
+            <relationEntry>Bureau des collections et des opérations douanières (direction des musées de France)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1979-01-01">1979</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_053713"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Archives des musées nationaux Bureau des exportations d'œuvres et douanes de la direction des musées de France (Sous-série 4AA)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

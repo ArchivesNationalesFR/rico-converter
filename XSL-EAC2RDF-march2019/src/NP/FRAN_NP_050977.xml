@@ -1,0 +1,75 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050977</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-02-25</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+            <eventDescription>F. Clavaud, 25 février 2015 : création à l'occasion de l'arrivée aux AN des archives des musées nationaux. Infos fuornies par A. Clergeau (mission culture)</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Musée des souverains (Paris ; 1852-1872)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1852-02-15">15 février 1852</fromDate>
+               <toDate standardDate="1872-05-08">8 mai 1872</toDate>
+            </dateRange>
+         </existDates>
+         <functions>
+            <function>
+               <term vocabularySource="d5bhviikk9--y6te63k761ib">culture</term>
+               <descriptiveNote>
+                  <p>musée</p>
+               </descriptiveNote>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Par le décret du 15 février 1852, le Prince-Président Louis Napoléon crée un musée spécial destiné à recevoir tous les objets ayant appartenu aux souverains français, au sein du musée du Louvre. Le musée est supprimé par le décret du 8 mai 1872 et les objets rejoignent le département de Sculptures et Objets d’art du Louvre ou leurs institutions d’origine.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_005223"
+                      xlink:type="simple">
+            <relationEntry>Musée du Louvre</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1852-02-15">15 février 1852</fromDate>
+               <toDate standardDate="1872-05-08">8 mai 1872</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_053805"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Archives des musées nationaux, Musée des souverains (Série MS)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,94 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050742</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-03-06</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Emmanuelle GIRY</agent>
+            <eventDescription>F. Clavaud, 6 mars 2014 : modifié le nom, ajouté lien vers FSCF</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>
+                  <span style="italic">Guide de sources du PAJEP</span>, consulté au mois du février 2014 
+     </p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Fédération régionale des centres sociaux et socio-culturels de l’Ile-de-France</part>
+         </nameEntry>
+         <nameEntry>
+            <part>FIF</part>
+            <useDates>
+               <dateRange>
+                  <fromDate standardDate="1976-05-01">01/05/1976</fromDate>
+                  <toDate standardDate="1995-06-01">01/06/1995</toDate>
+               </dateRange>
+            </useDates>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1976-05-01">01/05/1976</fromDate>
+               <toDate standardDate="1995-06-01">01/06/1995</toDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>association</term>
+            </legalStatus>
+         </legalStatuses>
+         <mandates>
+            <mandate/>
+         </mandates>
+         <biogHist>
+            <p>En 1976, la Fédération des centres sociaux et socioculturels de France met en place la Fédération régionale des centres sociaux et socioculturels d’Ile-de-France (FIF), qui a pour objet d’animer un réseau de centres sociaux en plein développement, présentant un paysage de gestionnaires très diversifié, comprenant outre les centres en gestion associative, un nombre important de groupements de centres liés à des centres municipaux et des institutions, comme par exemple l’Association pour le logement familial et l’animation des grands ensembles, l’Association pour la gestion à l’animation des équipements résidentiels (ADER), etc. </p>
+            <p>La FIF est dissoute le 1er juin 1995, lorsque sont créées des fédérations départementales de centres sociaux. </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050741"
+                      xlink:type="simple">
+            <relationEntry>Fédération des centres sociaux et socio-culturels (France)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1976-05-01">1er mai 1976</fromDate>
+               <toDate standardDate="1995-06-01">1er juin 1995</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_050466"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Archives de la Fédération régionale des centres sociaux d'Ile-de-France</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

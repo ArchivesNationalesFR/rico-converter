@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/051204">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">Fondation de la mémoire de la déportation</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051204_d4501e34"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/6aef9140-e880-4d5e-b2b5-1a7db61f93e9"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1990-01-01</RiC:beginningDate>
+      <RiC:history xml:lang="fr">La Fondation pour la Mémoire de la Déportation, est la plus ancienne des Fondations de mémoire issue de la Seconde guerre mondiale. Elle s’est voulue, dès sa création, en 1990, comme le souhaitaient ses fondateurs, représentative des différents courants historiques de la déportation et donc porteuse de plusieurs mémoires. La composition de son Conseil d’administration traduit cette volonté puisqu’il est constitué de déportés dits de répression (résistants, otages, communistes, syndicalistes, militaires etc.) et de déportés dits de persécution, (parce que juifs selon les critères établis par le régime de l’Etat français de Vichy et les nazis). En outre le dosage équilibré des sensibilités politiques de ses administrateurs favorise l’expression des différents courants de pensée qui ont animé la résistance et l’opposition au nazisme et à l’Etat français de Vichy, puis alimenté la mémoire de l’après guerre. Elle demeure attachée à l’évocation équilibrée et différenciée des deux grands courants de déportation, envoyant dans des « usines de mise à mort » des êtres humains parce nés juifs ou tsiganes, et dans les camps de concentration des « ennemis du Reich allemand nazi » ( résistants, communistes, socialistes, chrétiens, témoins de Jéhovah, « asociaux » etc.), pour les briser et en faire des serviteurs zélés du nazisme , ou pour s’en débarrasser, non sans exploiter jusqu’au bout leur force de travail. Champs d'action Travail de Mémoire  Constitution depuis 1992 d'un fonds d'archives orales vidéos et audios, regroupant quelques cinq cents témoignages d'anciens internés et déportés.  Constitution d'une banque de données multimédia.  Réalisation du
+      Livre-Mémorial des déportés partis de France en application des mesures de répression prises par l'occupant et régime de Vichy.
+      Réalisation d'une étude sur les lieux d'internement de 1939 à 1945.  Coéditions de thèses, mémoires, ouvrages ou information sur les publications dès leur parution. Transmission de la Mémoire  Réalisation d'outils pédagogiques dont le DVD Rom
+      Mémoires de la Déportation et le livre Raconte moi... la Déportation.
+      Réalisation du dossier de préparation au Concours National de la Résistance et de la Déportation.  Partenariat avec l'Education Nationale.  De séminaires de mémoire (Séminaire annuel de la Mémoire). Défense de la Mémoire  Lutter contre négationnistes, notamment en recourant aux actions en justice.</RiC:history>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051204-d4499e203"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051204-d4499e218"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051204-d4499e224"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051204"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051204-d4499e218">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Fondation de la mémoire de la déportation et l'ensemble de documents "Archives sonores de la Fondation de la mémoire de la déportation"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/054498-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051204-d4499e224">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Fondation de la mémoire de la déportation et l'ensemble de documents "Fondation pour la Mémoire de la Déportation : mémoire vivante de la Déportation"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/054642-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051204_d4501e34">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051204-d4499e64"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051204">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/051204"/>
+      <RiC:creationDate>2015-10-15</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_051204</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051204"/>
+   </rdf:Description>
+</rdf:RDF>

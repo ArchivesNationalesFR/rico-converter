@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050699">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Mazé, Jacques</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050699_d4176e41"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1928-01-01</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-12-31</RiC:deathDate>
+      <RiC:history xml:lang="fr">Né en 1928, Jacques Mazé est décédé en 2010. Après avoir effectué un apprentissage comme horloger chez son père, Jacques Mazé exerce ce métier jusqu’en 1947 et est alors influencé par des mouvements assez divers : organisations anarchistes ; syndicalisme chrétien (CFTC) ; Economie et humanisme. En 1949, il entre à l’école d’éducateurs de Montesson (Yvelines) qu’il quitte en 1951 avec le diplôme en poche.  Peu après, il rencontre au sanatorium de Vallauris (Alpes-Maritimes), Charles Dusnasio, un militant de Jeunesse-Camping. Cette association est issue du catholicisme social, de l’éducation populaire et du mouvement ouvrier. Elle est alors solidement mais exclusivement implantée dans la région de Nice. Charles Dusnasio le convainc de se rendre à un camp organisé par l’association à Allos (Alpes-de-Haute-Provence), en 1952. Et c’est le coup de foudre : comme il le dit souvent « j’étais parti pour quinze jours, j’y suis resté dix ans ». Pour lui, c’est la rencontre avec le monde ouvrier et avec l’éducation populaire.  En 1962, il s’éloigne de Jeunesse-Camping et rejoint le champ de la protection de l’enfance et de l’adolescence pour être successivement éducateur spécialisé puis directeur d’une association de sauvegarde de l’enfance. Mais il reste toujours très proche de ce mouvement et de ses militants. </RiC:history>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050699"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050699_d4176e41">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050699-d4174e79"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050699">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050699"/>
+      <RiC:creationDate>2014-02-20</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050699</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050699"/>
+   </rdf:Description>
+</rdf:RDF>

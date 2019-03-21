@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050099">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Lapie, Pierre-Olivier</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050099_d3727e34"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1901-01-01</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1994-12-31</RiC:deathDate>
+      <RiC:history xml:lang="fr">Docteur en droit, avocat au barreau de Paris de 1925 à 1967, Pierre-Olivier Lapie (1901-1994) fut élu en 1936 député U.S.R. (Union socialiste et républicaine) de Nancy. Mobilisé en 1939, il participa à la campagne de Norvège, rejoignit le général de Gaulle à Londres le 20 juin 1940 et devint directeur des affaires extérieures de son cabinet en juillet. Gouverneur du Tchad de 1940 à 1942, il fut ensuite membre de l’Assemblée consultative d’Alger en 1943 puis de Paris en 1944. Rejoignant le parti SFIO (Section française de l’Internationale ouvrière) après la guerre, il fut élu sous cette étiquette député de Meurthe-et-Moselle jusqu’en 1958. Il entra au gouvernement comme sous-secrétaire d’État aux Affaires étrangères, du 16 décembre 1946 au 16 janvier 1947. Ministre de l’Education nationale du 12 juillet 1950 au 10 juillet 1951, il créa la première commission sur le problème des rapports entre l’enseignement privé et l’enseignement public, présidée par Joseph Paul-Boncour. Délégué aux Nations-Unies (ONU) de 1947 à 1954, au Conseil de l’Europe de 1949 à 1956, à l’Assemblée dite « Commune » contrôlant la CECA (Communauté européenne du charbon et de l’acier) de 1956 à 1958 et à l’Assemblée parlementaire européenne en 1958, il fut président de la délégation française à l’Unesco en 1951 et 1956. De 1956 à 1958, il fut vice-président de l’Assemblée nationale. En 1959, il devint président de la nouvelle Commission chargée de l’étude des rapports entre l’État et l’enseignement privé, préalable à la loi Debré. De 1959 à 1967, il fut membre français de la Haute-Autorité de la Communauté européenne du charbon et de l’acier. À ce titre, il fut président du Comité inter-exécutif européen de l’énergie de 1960 à 1967. De 1968 à 1978, il fut président de la Commission interministérielle pour les questions de coopération entre la France et la République fédérale d’Allemagne. En 1969, Pierre-Olivier Lapie fut élu membre de l’Institut (Académie des sciences morales et politiques).</RiC:history>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050099"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050099_d3727e34">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050099-d3725e64"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050099">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050099"/>
+      <RiC:creationDate>2013-08-09</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050099</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050099"/>
+   </rdf:Description>
+</rdf:RDF>

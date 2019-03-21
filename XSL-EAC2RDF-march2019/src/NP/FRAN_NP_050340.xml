@@ -1,0 +1,67 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050340</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-05-06</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Vanessa ASPART</agent>
+            <eventDescription>F. Clavaud, 6 mai 2014 : changé forme du nom, ajouté n°s ISNI et notice BnF</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, Fonds Max et Marie Brusset (1800-2000), 655 AP.</p>
+               <p>Notice d'autorité BnF n° FRBNF12396912</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 3125 6325</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Brusset, Max (1909-1992)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1909-01-01">1909</fromDate>
+               <toDate standardDate="1992-12-31">1992</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Après sa licence en histoire, Max Brusset (1909-1992) débute sa carrière dans les cabinets ministériels. Attaché au cabinet du ministre des Travaux Publics (1929-1931), il est ensuite chef adjoint du cabinet du ministre de la Santé publique (1931-1933). En 1934, il est chef de cabinet de Georges Mandel, successivement ministre des P.T.T. (1934-1936), ministre des Colonies (1938-1939), puis ministre de l’Intérieur (1939-1940). En 1938, il dirige la société Radio-Méditerranée qui succède à Radio-Côte d’Azur. En juillet 1944, il est arrêté par la Gestapo à Avallon puis libéré. Après la guerre, il est élu conseiller municipal de Paris (1945), conseiller général de la Seine (1945-1948), puis maire-adjoint du 1er arrondissement de Paris (1944-1948). Député républicain social et R.P.F. de la Charente-Maritime (1945-1958), il est élu maire de Royan (1953-1960) dont il participe à la reconstruction. Parallèlement il est président ou administrateur de nombreuses sociétés. Président-directeur-général de la S.A.T.A.S. (Société pour l’affranchissement et le timbrage automatiques) de 1959 à 1975, il est conseiller de la C.G.E. (Compagnie générale d’électricité), de Loréal et de Henkel-France. Vice-président du conseil d’administration de la fondation Simone et Cino Del Duca, il est président de l’Association des amis de Georges Mandel.</p>
+            <p>En 1936, Max Brusset épouse Marie Valléry-Radot, fille de Robert Valléry-Radot et de Marie Dordet. Marie Brusset (1913-2002) fut autant l’épouse que la collaboratrice de Max Brusset dans toutes ses activités professionnelles et politiques.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:type="simple"
+                      xlink:href="FRAN_NP_050341">
+            <relationEntry>Brusset, Marie</relationEntry>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

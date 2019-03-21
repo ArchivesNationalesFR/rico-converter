@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/010839">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Parque, Pierre I (15..-16..)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/010839_d938e64"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1612-10-17</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1663-03-01</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/010839-d936e176"/>
+      <RiC:history xml:lang="fr">Fils d'Edme Parque, notaire dans la même étude, et de Marie Patoillon. Frère de Jacques II Parque, notaire de l'étude VI, d'Elisabeth, qui épouse le notaire Pierre Guerreau, et de Marie, qui épouse Pierre Petit, architecte des bâtiments du roi. Pierre I Parque est pourvu de son office par lettres de provision du 26 juillet 1612. Il exerce durant 51 années. Il appartient à une famille de la petite bourgeoisie de robe parisienne qui donne pas moins de cinq notaires au Châtelet de Paris entre 1565 et 1696.  Pierre I Parque est sous doyen de la communauté des notaires parisiens de juillet 1660 à sa mort en mars 1663. A l'enseigne du Singe d'or, l'étude de la rue de la Ferronnerie, paroisse des Saints-Innocents, est très proche des Halles et particulièrement stable géographiquement. Elle ne bouge pas jusqu'en 1782. C'est l'étude de la fabrique de la paroisse des Saints-Innocents. Pierre I Parque est marié à Martine Audrenas (MC/ET/XXXVI/93, 8 janvier 1612, contrat de mariage) ; de ce mariage est issu Pierre Parque II, associé puis successeur de son père. Le testament olographe de Pierre I Parque, daté du 9 janvier 1662, est conservé au sein des minutes du notaire Bernard Mousnier (ET/CXII/96). Son inventaire après décès est ouvert le 23 mars 1663 (MC/ET/LXVII/156). Pierre I Parque avait pour client éminent le cardinal de Richelieu, ce qui assure sa fortune et sa notoriété. La duchesse d'Aiguillon reste fidèle à l'étude ainsi que le surintendant des finances Claude Bouthillier. Des membres des familles d'Aligre, Crevantd'Humières, Escoubleau de Sourdis, Goussainville, Potier de Novion, Particelli d'Hemery ou Ruzé d'Effiat se retrouvent aussi au fil des répertoires. Pierre I Parque a passé plus de 780 actes pour le compte du cardinal entre 1625 et 1642. Une partie d'entre eux a fait l'objet d'un répertoire à part et des liasses spécifiques de minutes ont été consacrées à ce client extraordinaire (MC/ET/LXXXVI/307-311). Les minutes antérieures à 1631 ont cependant été laissées au rang de la pratique courante.</RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationtoPlace/010839--d936e145"/>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/010839-d936e241"/>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/010835-d932e154"/>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/010836-d933e163"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/010213-d310e132"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/010839-d936e277"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/010839-d936e284"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/010839-d936e290"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/010839"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/010839-d936e176">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1612-10-17</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1663-03-01</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/010839-d936e277">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Parque, Pierre I (15..-16..) et l'ensemble de documents "Images des répertoires du notaire Pierre I Parque pour l'étude LXXXVI"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/052761-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/010839-d936e284">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Parque, Pierre I (15..-16..) et l'ensemble de documents "Minutes et répertoires du notaire Pierre I PARQUE, 17 octobre 1612 - 1er mars 1663 (étude LXXXVI)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/042844-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/010839-d936e290">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Parque, Pierre I (15..-16..) et l'ensemble de documents "Minutes et répertoires du notaire Bernard MOUSNIER, 1658 - 1683 (étude CXII)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/043324-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/010839_d938e64">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/010839-d936e111"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationtoPlace/010839--d936e145">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Parque, Pierre I (15..-16..)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/013018-d3115e144 http://data.archives-nationales.culture.gouv.fr/place/010839-d936e140 http://data.archives-nationales.culture.gouv.fr/place/010835-d932e108 http://data.archives-nationales.culture.gouv.fr/place/011038-d1135e102"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/010839">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/010839"/>
+      <RiC:creationDate>2015-09-30</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_010839</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_010839"/>
+   </rdf:Description>
+</rdf:RDF>

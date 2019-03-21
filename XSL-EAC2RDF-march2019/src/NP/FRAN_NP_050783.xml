@@ -1,0 +1,81 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050783</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-04-16</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+            <eventDescription>Création sur demande de C. Martin, mission des archives auprès des services du Premier ministre</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Haute Autorité pour la transparence de la vie publique</part>
+         </nameEntry>
+         <nameEntry>
+            <part>HATVP</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="2013-10-11">11 octobre 2013</fromDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>autorité indépendante</term>
+            </legalStatus>
+         </legalStatuses>
+         <mandates>
+            <mandate>
+               <descriptiveNote>
+                  <p>Loi 2013-907 du 11 octobre 2013 relative à la transparence de la vie publique (section IV)</p>
+               </descriptiveNote>
+            </mandate>
+         </mandates>
+         <biogHist>
+            <p>La Haute Autorité pour la transparence de la vie publique (HATVP) est créée le 11 octobre 2013 (loi 2013-907 sur la transparence de la vie publique) ; elle remplace la Commission pour la transparence financière de la vie politique (1988-2013), supprimée par la loi ci-dessus. </p>
+            <p>C'est une autorité administrative indépendante (AAI) chargée de promouvoir la probité des responsables publics qui comporte un collège de neuf membres, un Secrétaire général, une dizaine de rapporteurs et une trentaine d’agents.</p>
+            <p>M. Jean-Louis NADAL a été nommé Président de la Haute Autorité par décret du Président de la République en date du 19 décembre 2013.</p>
+            <p>La Haute Autorité dispose de missions et de compétences nouvelles conférées par les lois du 11 octobre 2013 relatives à la transparence de la vie publique.</p>
+            <p>Elle reçoit et contrôle les déclarations de situation patrimoniale et d'intérêts des 9 000 plus hauts responsables publics. Elle est également chargée d’une mission de conseil sur les questions de déontologie comme de recommandation à l’égard des membres du Gouvernement et du Parlement, des dirigeants d’entreprises publiques comme des emplois à décision du Gouvernement ainsi qu’à l’égard des autres autorités administratives indépendantes.</p>
+            <p>Elle peut se saisir des situations de conflit d'intérêts et éventuellement prononcer une injonction d'y mettre fin. Elle se prononce sur la compatibilité de l'exercice d'une activité libérale ou d'une activité rémunérée dans le secteur concurrentiel parallèlement ou dans les trois années suivant l'exercice de fonctions gouvernementales ou de fonctions exécutives locales.</p>
+            <p>Elle développe et conduit des actions de formation à destination des grandes écoles de service public. Elle est le point de contact des programmes internationaux de son champ (Commission et parlement européens, Conseil de l’Europe, OCDE, ONU).</p>
+            <p>Elle publie un rapport annuel remis au Président de la République, au Premier ministre et au Parlement et peut formuler des recommandations pour l’application de la législation en matière notamment de relations avec les représentants d’intérêts. </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-earlier"
+                      xlink:type="simple"
+                      xlink:href="FRAN_NP_000038">
+            <relationEntry>Commission pour la transparence financière de la vie politique</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2013-10-11">11 octobre 2013</fromDate>
+            </dateRange>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

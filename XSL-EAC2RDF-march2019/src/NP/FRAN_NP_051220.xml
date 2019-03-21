@@ -1,0 +1,113 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051220</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-11-26</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Magali LACOUSSE</agent>
+            <eventDescription>F. Clavaud, 26 novembre 2015 : revu le nom, ajouté indexation fonctions</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice BNF : FRBNF12522143</p>
+               <p>Les éditions A. et J. PICARD, société anonyme d’édition et de librairie. </p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0004 4667 6751</entityId>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Éditions Picard (Paris)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Picard (Paris)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1869-01-01">1869</fromDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>société commerciale</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d-25ub5bepd--1a98b90ydj2ye">édition</term>
+            </function>
+         </functions>
+         <mandates>
+            <mandate/>
+         </mandates>
+         <biogHist>
+            <p>Fondée en 1869 par Alphonse Picard, la librairie Picard est installée au 82 rue Bonaparte et Saint-Sulpice (sur l’emplacement de l’ancienne chapelle des Jésuites), à Paris.</p>
+            <p>Le 1er octobre 2015, la librairie Picard &amp; Epona et les éditions Picard s’installent au 18 rue Séguier, à Paris. </p>
+            <p/>
+            <p>La maison Picard a développé ses activités autour du livre : librairie, édition et diffusion. Ses collections sont centrées principalement sur l'archéologie, l'histoire et l'architecture.</p>
+            <p>Dans le domaine de l'architecture, elle propose notamment : 
+     <span style="italic">Les monuments de la France gothique</span>, 
+     <span style="italic">De Architectura</span> consacré à l'architecture de la Renaissance, les 
+     <span style="italic">Catalogues du Pavillon de l'Arsenal</span> centrés sur l'architecture parisienne contemporaine. 
+    </p>
+            <p>En archéologie, les 
+     <span style="italic">Grands manuels Picard</span> sont des ouvrages de référence sur les réalisations artistiques et architecturales grecques, romaines ou égyptiennes. 
+    </p>
+            <p>En histoire de l'art, l'iconographie et l'architecture religieuses sont abondamment traitées, sans oublier l'Extrême-Orient.</p>
+            <p>Parmi ses publications : 
+     <span style="italic">Hardouin-Mansart</span> de Bertrand Jestaz, 
+     <span style="italic">Du Cerceau</span> (sous la direction de Jean Guillaume), 
+     <span style="italic">l'Art médiéval</span> de Paolo Piva, 
+     <span style="italic">Les décors privés des romains</span> de Gilles Sauron, 
+     <span style="italic">L'architecture romaine</span> de Pierre Gros, 
+     <span style="italic">L'architecture grecque</span> de Marie-Christine Hellmann, 
+     <span style="italic">La sculpture grecque</span> de Claude Rolley, 
+     <span style="italic">L'art romain</span> de Filippo Coarelli, 
+     <span style="italic">La sculpture romane du Poitou</span> de Marie-Thérèse Camus. 
+    </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_051224"
+                      xlink:type="simple">
+            <relationEntry>Porquet, Charles (1823-1902)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1869-01-01">1869</fromDate>
+               <toDate standardDate="1902-12-31">1902</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>
+     Charles Porquet s'associe avec Alphonse Picard.
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

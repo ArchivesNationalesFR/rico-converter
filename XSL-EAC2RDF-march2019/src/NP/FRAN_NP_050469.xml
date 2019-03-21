@@ -1,0 +1,101 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050469</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2018-07-06</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Vanessa ASPART</agent>
+            <eventDescription>P. Charbonnier, 06 juillet 2018 : Modification forme autorisée du nom, ajout statut juridique , ajout lien FRAN_IR_004500, indexation fonction</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Archives nationales, Fonds de la Société des Amis de Léon Blum (1950-1977), 55 AS. </sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Voir aussi : Archives nationales, Fonds Léon Blum (XXe siècle), 570 AP.</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 9471 2252</entityId>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Société des Amis de Léon Blum (1950-....)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1950-01-01">1950</fromDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>association</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d5bhvil20q--uuew3ia85vzc">activité associative</term>
+            </function>
+         </functions>
+         <mandates>
+            <mandate>
+               <descriptiveNote>
+                  <p>P. Charbonnier, 06 juillet 2018 : ajout identifiant ISNI et relation d'identité vers notice d'autorité BnF</p>
+               </descriptiveNote>
+            </mandate>
+         </mandates>
+         <biogHist>
+            <p>La Société des Amis de Léon Blum a été constituée en association selon la loi de 1901 aussitôt après la disparition de Léon Blum le 30 mars 1950. Son objet est de perpétuer sa mémoire, notamment par la publication de l’ensemble de son oeuvre et par la diffusion, sous toutes les formes et par tous les moyens appropriés, de sa pensée et des souvenirs se rattachant à sa vie ; des colloques et manifestations diverses ont donc été organisés sur son initiative, en coopération avec d’autres organismes, comme le CNRS ou l’Institut français d’histoire sociale.</p>
+            <p>La Société a eu pour président Alexandre BRACKE-DESROUSSEAUX, pour vice-président Guy MOLLET et Julien CAIN, administrateur de la Bibliothèque nationale, et pour secrétaire général Cletta MAYER. </p>
+            <p>Elle publiait un périodique semestriel, le 
+     <span style="italic">Bulletin des amis de Léon Blum</span> (1952-1966), devenu le 
+     <span style="italic"> Bulletin de la Société des amis de Léon Blum</span> (1966-1973), puis les 
+     <span style="italic">Cahiers Léon Blum</span> (1973-1991). 
+    </p>
+            <p>Son siège social a été situé au 1, rue Le Goff, Paris-Ve, puis au 15, rue Gazan, Paris-XIVe.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb125078006"
+                      xlink:type="simple">
+            <relationEntry>Société des amis de Léon Blum </relationEntry>
+            <dateRange>
+               <fromDate standardDate="1950-01-01">1950</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice d'autorité BnF</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_004500"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds de la société des amis de Léon Blum (1950-1977)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

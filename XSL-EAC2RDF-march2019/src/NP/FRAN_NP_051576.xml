@@ -1,0 +1,127 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051576</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Complète</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2017-07-17</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Zénaïde ANDRIEU-ROMANEIX</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-11-29</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Archives nationales, Fonds Girardin (506 AP).</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Notice d'autorité BnF n° FRBNF12196902. </sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Notice Wikipédia (https://fr.wikipedia.org/wiki/Louis_Stanislas_de_Girardin).</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 1063 1154</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Girardin, Louis Stanislas de (1762-1827)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1762-01-19">19 janvier 1762</fromDate>
+               <toDate standardDate="1827-02-26">26 février 1827</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msiribo--1dn34eg8lht4f">député</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msjpuqr-66gt6kmedjiv">officier (armée)</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d3nyu9xige-1dbbvsqzr0tfp">préfet</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Louis-Stanislas de Girardin (né à Lunéville en 1762 et mort à Paris en 1827) eut comme parrain le roi Stanislas et comme précepteur Jean-Jacques Rousseau. Élu député à l’Assemblée législative de l’Oise le 1er septembre 1791, il dut se cacher après le 10 août 1792. Découvert, il fut emprisonné jusqu’au 9 thermidor. Après sa libération, il se lia avec Joseph Bonaparte qui venait d’acheter le château de Mortefontaine et il entra dans le cercle des Bonaparte. Nommé membre du Tribunat, il fut réintégré dans l’armée et partit, avec le grade de colonel, avec Joseph Bonaparte pour Naples et ensuite pour l’Espagne. Il fut premier écuyer du roi Joseph, et son épouse, dame d’honneur de la reine Julie. Rentré en France, il devint membre du Corps législatif en 1809, comte de l’Empire en 1810, préfet de la Seine-Inférieure en 1812, préfet de la Seine-et-Oise en 1815. Représentant aux Cent-Jours, inspecteur des haras, préfet de la Côte-d’Or, député en 1819 et 1824, il siégea jusqu’à sa mort dans l’opposition libérale. Louis-Stanislas avait épousé Jeanne-Victoire-Henriette de Navailles († 1818). Il en eut une fille, Télésie, en premières noces Madame de Belle-Isle, en secondes noces comtesse de Ludre.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_050318"
+                      xlink:type="simple">
+            <relationEntry>Girardin (famille de)</relationEntry>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050142"
+                      xlink:type="simple">
+            <relationEntry>Joseph Bonaparte (roi de Naples ; 1768-1844)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1794-01-01">1794</fromDate>
+               <toDate standardDate="1809-12-31">1809</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb121969023"
+                      xlink:type="simple">
+            <relationEntry>Girardin, Stanislas (1762-1827 ; comte de)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1762-01-19">19 janvier 1762</fromDate>
+               <toDate standardDate="1827-02-26">26 février 1827</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Lien vers la notice d'autorité BnF.</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="https://fr.wikipedia.org/wiki/Louis_Stanislas_de_Girardin"
+                      xlink:type="simple">
+            <relationEntry>Louis Stanislas de Girardin</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1762-01-19">19 janvier 1762</fromDate>
+               <toDate standardDate="1827-02-26">26 février 1827</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Lien vers la notice Wikipédia. </p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_004387"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Girardin (1786-1853)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

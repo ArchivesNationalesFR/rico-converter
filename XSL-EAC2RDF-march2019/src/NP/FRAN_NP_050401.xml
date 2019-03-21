@@ -1,0 +1,87 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050401</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-06-15</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+            <eventDescription>Elsa Camus, 13 juin 2016 : modification forme autorisée du nom, ajout ISNI, modification autres formes du nom, modification historique, ajout activités, modification sources</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, Fonds FAUCHER (Léon). 43AP.</p>
+               <p>Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb125109558</p>
+               <p>Notice Wikipedia : https://fr.wikipedia.org/wiki/L%C3%A9on_Faucher</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 2129 8289</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Faucher, Léon (1803-1854)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Faucher, Léonard Joseph Léon (1803-1854)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Faucher, Léon-Léonard-Joseph (1803-1854)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1803-09-08">8 septembre 1803</fromDate>
+               <toDate standardDate="1854-12-14">14 décembre 1854</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msiribo--1dn34eg8lht4f">député</term>
+               <descriptiveNote>
+                  <p>député de la Marne</p>
+               </descriptiveNote>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msizce3-1fkn61hd3lpjw">journaliste</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msjnw86-64seh0fmw8hj">ministre</term>
+               <dateRange>
+                  <fromDate standardDate="1848-01-01">1848</fromDate>
+                  <toDate standardDate="1851-12-31">1851</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>ministre des Travaux publics (20-29 décembre 1848), ministre de l'Intérieur (29 décembre 1848-2 juin 1849 puis avril-octobre 1851)</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Journaliste, économiste, député de la Marne en 1846, membre de l’Assemblée constituante, Léonard Joseph Léon Faucher (1803-1854) est ministre des Travaux publics du 20 au 29 décembre 1848. Il devient ministre de l’Intérieur le 29 décembre 1848, et il adresse aux préfets l’état nominatif des députés qui avaient voté la mise en accusation du président de la République à la suite de l’affaire de Rome. Cette initiative exaspère l’Assemblée qui l’oblige à démissionner, le 2 juin 1849. Il est réélu représentant de la Marne à la Législative en 1849 et retrouve le portefeuille de l’Intérieur en avril 1851. </p>
+            <p>Rentré dans la vie privée après le 2 décembre, il concourt avec son beau-frère Wolowski à la fondation du Crédit foncier.</p>
+         </biogHist>
+      </description>
+   </cpfDescription>
+</eac-cpf>

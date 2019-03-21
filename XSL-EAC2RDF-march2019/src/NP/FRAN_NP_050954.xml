@@ -1,0 +1,103 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050954</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-01-08</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+            <eventDescription>F. Clavaud, 8 janvier 2015 : création sur demande de C. Martin, mission des archives auprès des services du premier ministre ; n° ISNI et indexation fonctions</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice BnF n° FRBNF15025310</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 0669 9287</entityId>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>France. Conseil d'analyse de la société</part>
+         </nameEntry>
+         <nameEntry>
+            <part>CASOC</part>
+         </nameEntry>
+         <nameEntry>
+            <part>CAS</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="2004-07-08">8 juillet 2004</fromDate>
+               <toDate standardDate="2013-04-22">22 avril 2013</toDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>service d'administration centrale</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d5bhvih1do--ryj2votztf8z">affaires sociales</term>
+            </function>
+            <function>
+               <term vocabularySource="d3nyugsjkt--7vpbe5hqjvzi">conseil</term>
+            </function>
+         </functions>
+         <mandates>
+            <mandate>
+               <descriptiveNote>
+                  <p>Décret n° 2004-666 du 8 juillet 2004 portant création du CASOC.</p>
+                  <p>Décret n°2013-333 du 22 avril 2013 portant création du Commissariat général à la stratégie et à la prospective (article 13)</p>
+               </descriptiveNote>
+            </mandate>
+         </mandates>
+         <biogHist>
+            <p>Le Conseil d’analyse de la société (CASOC) est créé par le décret du 8 juillet 2004.</p>
+            <p>Placé auprès du Premier ministre, il a pour mission « d'éclairer les choix politiques du Gouvernement, par l'analyse et la confrontation des points de vue, lorsque les décisions à prendre présentent des enjeux liés à des faits de société. »</p>
+            <p>Il examine les questions soumises par le Premier ministre, ou dont il juge utile de se saisir.</p>
+            <p>Le CASOC est présidé par le Premier ministre ou un président délégué nommé par arrêté.</p>
+            <p>Il se compose de personnalités choisies en raison de leur compétence, nommées pour un mandat de 5 ans renouvelable. Le commissaire au Plan en est membre de droit.</p>
+            <p>Il peut en outre faire appel à des experts, à des administrations ou des organismes extérieurs pour ses travaux.</p>
+            <p>Le 12 juillet 2004, Luc Ferry, professeur des universités, ancien ministre de la Jeunesse, de l’éducation nationale et de la recherche de 2002 à 2004, est nommé président délégué. Il conserve cette fonction durant toute la période d’existence du CASOC. Le 7 octobre suivant, les 26 membres sont désignés, nombre ramené à 20 par l’arrêté du 2 novembre 2009.</p>
+            <p>Face au besoin de nouvelles approches, de recentrage des activités sur les questions stratégiques et suite au développement de polémiques sur la situation de Luc Ferry, le CASOC est supprimé par le décret du 22 avril 2013 portant création du Commissariat général à la stratégie et à la prospective ou « France stratégie ».</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_000002"
+                      xlink:type="simple">
+            <relationEntry>Premier ministre</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2004-07-08">8 juillet 2004</fromDate>
+               <toDate standardDate="2013-04-22">22 avril 2013</toDate>
+            </dateRange>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

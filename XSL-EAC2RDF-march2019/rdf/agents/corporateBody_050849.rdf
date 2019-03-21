@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/050849">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">Association psychanalytique de France (1964-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050849_d4277e71"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050849_d4277e74"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/f7742d1f-1699-45c7-804b-0277189a621d"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1964-05-26</RiC:beginningDate>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/050849-d4275e165"/>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/050849-d4275e177"/>
+      <RiC:history xml:lang="fr">L’ Association psychanalytique de France (APF), dont le siège social est situé à Paris, 24 place Dauphine, est crée le 26 mai 1964. Elle « a pour objet d’apporter sa contribution à la découverte freudienne et à la recherche en psychanalyse, et de former des psychanalystes selon les normes qui lui sont spécifiques. Elle fait partie de l’Association Psychanalytique Internationale (API) » depuis 1965.  La fondation de l’APF remonte à la scission en 1963 de Société Française de Psychanalyse (SFP) en deux groupes, opposés sur la doctrine et sur la formation psychanalytique. Par ailleurs la SFP est dissoute en janvier 1965.  L’APF rassemble autour de Daniel Lagache, son premier président, tous ceux en désaccord avec Jacques Lacan.  De son côté, Lacan fonde sa propre École Française de Psychanalyse, rapidement devenue École Freudienne de Paris (EFP).  L'APF compte en 1967 parmi les membres qui l'ont rejoint : Didier Anzieu, Jean Laplanche, Jean-Claude Lavie, Jean-Bertrand Pontalis, Victor Smirnoff, Daniel Widlöcher. Guy Rosolato. </RiC:history>
+      <RiC:ruleFollowed xml:lang="fr">Dépôt des statuts de l'APF le 9 juin 1964.</RiC:ruleFollowed>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb12045641q#foaf:Organization"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Association_psychanalytique_de_France"/>
+      <isni:ISNIAssigned>0000000089821403</isni:ISNIAssigned>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050849-d4275e259"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050849-d4275e265"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050849-d4275e271"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050849"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/050849-d4275e165">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:description xml:lang="fr">association scientifique</RiC:description>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d5bhvil20q--uuew3ia85vzc"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/050849-d4275e177">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:description xml:lang="fr">psychanalytique et freudienne</RiC:description>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d3nyuic5p0-ktmsglhlnhvr"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050849-d4275e259">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Association psychanalytique de France (1964-....) et l'ensemble de documents "Fonds d'archives scientifiques de l'unité 158 « Savoir et pratiques dans le champ médical, histoire, sociologie, psychanalyse »"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/050857-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050849-d4275e265">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Association psychanalytique de France (1964-....) et l'ensemble de documents "Fonds de l'Association psychanalytique de France (1944-2015)."</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/053875-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050849-d4275e271">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Association psychanalytique de France (1964-....) et l'ensemble de documents "Fonds de la Société psychanalytique de Paris (SPP) (1950-1995)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/004516-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050849_d4277e71">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050849-d4275e130"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050849_d4277e74">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050849-d4275e136"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050849">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/050849"/>
+      <RiC:creationDate>2014-10-06</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-07-06</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_050849</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Notice d'autorité BnF n° FRBNF12045641</RiC:source>
+      <RiC:source xml:lang="fr">Archives nationales, fonds de l'APF (209AS).</RiC:source>
+      <RiC:source xml:lang="fr">Notice Wikipedia sur l'APF : https://fr.wikipedia.org/wiki/Association_psychanalytique_de_France</RiC:source>
+      <RiC:source xml:lang="fr">Site Internet de l'APF : https://associationpsychanalytiquedefrance.org/</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000089821403"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050849"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb12045641q"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Association_psychanalytique_de_France"/>
+   </rdf:Description>
+</rdf:RDF>

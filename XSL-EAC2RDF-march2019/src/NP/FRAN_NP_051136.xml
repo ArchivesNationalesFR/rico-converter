@@ -1,0 +1,167 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051136</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-12-04</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marine ZELVERTE</agent>
+            <eventDescription>F. Clavaud, 28 juillet 2015 : revu les dates des liens, ajouté lien vers France 3</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice BnF n° FRBNF12411555</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 0890 6406</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Goudineau, Daniel (1949-....)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1949-01-01">1949</fromDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msk49pq-fqetp63zthtj">fonctionnaire</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d-l0jya1ik6x--16fn7glte863o">responsable d'établissement public</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Daniel Goudineau est diplômé de l’Institut d’études politiques de Paris et ancien élève de l’ENA, il débuta sa carrière professionnelle en 1977 au ministère de la Jeunesse et des Sports. Il rejoignit ensuite le ministère de la Culture en 1982 pour occuper successivement les postes de chef du département de l’enseignement et des formations à la direction de la musique et de la danse, puis de directeur adjoint de la musique et de la danse. En 1989, il est nommé directeur des programmes audiovisuels au CNC, puis directeur général adjoint en 1996. </p>
+            <p>Directeur Général délégué de France 5 en 2000, il en devient Directeur Général en 2004.</p>
+            <p>Depuis juillet 2006, Daniel Goudineau est Directeur Général de France 3 Cinéma.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_003781"
+                      xlink:type="simple">
+            <relationEntry>Institut d'études politiques de Paris</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1949-01-01">1949</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Daniel Goudineau est diplômé de l'IEP de Paris.</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_000165"
+                      xlink:type="simple">
+            <relationEntry>École nationale d'administration</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1949-01-01">1949</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>
+      Daniel Goudineau fut élève à l'ENA. 
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_000005"
+                      xlink:type="simple">
+            <relationEntry>Ministère de la Culture et de la Communication</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1982-01-01">1982</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_051127"
+                      xlink:type="simple">
+            <relationEntry>Centre national du cinéma et de l'image animée. Direction générale (1946-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1996-01-01">1996</fromDate>
+               <toDate standardDate="2000-12-31">2000</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Daniel Goudineau fut directeur général adjoint du CNC.</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010125"
+                      xlink:type="simple">
+            <relationEntry>France 3</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2006-01-01">2006</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>D. Goudineau, directeur général de France 3 Cinéma</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_005414"
+                      xlink:type="simple">
+            <relationEntry>Centre national de la cinématographie et de l'image animée, service du soutien à la production et à la diffusion</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1989-01-01">1989</fromDate>
+               <toDate standardDate="1994-12-31">1994</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Daniel Goudineau fut directeur des programmes audiovisuels du CNC.</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_005319"
+                      xlink:type="simple">
+            <relationEntry>Direction de la musique et de la danse</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1982-01-01">1982</fromDate>
+               <toDate standardDate="1989-12-31">1989</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_000020"
+                      xlink:type="simple">
+            <relationEntry>Ministère de la Jeunesse et des Sports</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1977-01-01">1977</fromDate>
+               <toDate standardDate="2007-05-15">15 mai 2007</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054110"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Centre national du cinéma et de l'image animée. Fonds de la direction générale</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

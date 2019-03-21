@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051044">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Turgot, Michel Étienne (1690-1751)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051044_d4413e48"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051044_d4413e51"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1690-06-09</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1751-02-01</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051044-d4411e131"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051044-d4411e146"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051044-d4411e161"/>
+      <RiC:history xml:lang="fr">Michel Étienne Turgot (1690-1751) naît le 9 juin 1690 à Paris. Il est le fils de Jacques Étienne Turgot de Sousmont (1670-1722), maître des requêtes, intendant des généralités de Metz, Tours puis Moulins, et de Marie-Claude Le Peletier de Souzy (1671-1711). Il est marquis de Sousmont, seigneur de Bons, d'Ussy et de Brucourt. Il entre au Parlement de Paris en 1711 et il devient président à la deuxième chambre des enquêtes en 1717.  Le 14 juillet 1729, Louis XV le nomme prévôt des marchands de Paris ; il le reste jusqu'en 1740. En concertation avec les échevins et le procureur du roi, il prend les mesures appropriées pour réorganiser l'administration de la ville. Nous lui devons notamment en 1737 la couverture du grand égout collecteur de la rive droite, l'aménagement du quai de l'Horloge (l'île de la Cité), la fontaine des Quatre-Saisons sculptée par Edmé Bouchardon en 1739-1745 (rue de Grenelle), l'estacade de la pointe orientale de l'île Louviers dans le but de dévier les glaces charriées par la Seine. Mais son nom reste surtout attaché au plan en perspective cavalière réalisé de 1734 à 1739, dit le Plan de Turgot. Ce plan se constitue de 20 planches gravées sur cuivre qui, assemblées, forment une feuille de 249 x 318,5 cm. Il donne une représentation, en fausse perspective, de l'ensemble de la ville.  Michel Étienne Turgot est nommé conseiller d'État par semestre en 1737 puis ordinaire en 1744. Il devient président au Grand Conseil en 1741, et est admis à l'Académie des inscriptions et belles-lettres en 1743 où il est membre honoraire en remplacement du cardinal de Fleury.  Michel Étienne Turgot épouse en 1718 Madeleine-Françoise Martineau de Brétignolles (1698-1764) avec qui il a quatre enfants : Michel Jacques Turgot (1719-1773), marquis de Sousmont, maître des requêtes, président à mortier, qui épouse en 1751 Gabrielle-Élisabeth Galland ;Étienne-François Turgot (1721-1789), dernier seigneur de Brucourt, chevalier de Malte, gouverneur de Guyane ;Anne Robert Jacques Turgot (1727-1781), baron de l'Aune, dit également l'abbé de Brucourt, homme politique et économiste français, ministre de Louis XVI ;Françoise Hélène Étiennette Turgot, épouse du duc de Saint Aignan. Il meurt à Paris le 1er février 1751. Il est enterré dans la chapelle de l'hospice des Incurables (ancien hôpital Laennec) à Paris.</RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051044--d5bdppt147--176wwvjcctrx0d4411e124"/>
+      <isni:ISNIAssigned>0000000083824160</isni:ISNIAssigned>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/051044-d4411e230"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051044"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051044-d4411e131">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1737-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1751-02-01</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d3m0bl6viii-ap38q0ys1umi"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051044-d4411e146">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1729-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1740-12-31</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d3m0bl6w89i-5ocs1mlz4kg8"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051044-d4411e161">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1717-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1751-02-01</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">Président de la deuxième chambre des enquêtes au Parlement de Paris</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d3m0bl72qsa--ekenid4c2nma"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051044_d4413e48">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051044-d4411e90"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051044_d4413e51">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051044-d4411e96"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationtoPlace/051044--d5bdppt147--176wwvjcctrx0d4411e124">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Turgot, Michel Étienne (1690-1751)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/FRAN_RI_005-d5bdppt147--176wwvjcctrx0"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051044">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051044"/>
+      <RiC:creationDate>2016-09-05</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_051044</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000083824160"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051044"/>
+   </rdf:Description>
+</rdf:RDF>

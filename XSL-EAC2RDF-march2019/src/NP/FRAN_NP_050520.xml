@@ -1,0 +1,69 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050520</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-12-03</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, fonds Langeron (118AP).</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Langeron, Charles Claude</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Andrault de Langeron, Charles Claude</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Langeron (marquis de)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1720-09-07">7 septembre 1720</fromDate>
+               <toDate standardDate="1792-09-11">11 septembre 1792</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Charles-Claude, comte puis marquis de Langeron (1720-1792) fut lieutenant-colonel du régiment de Condé en 1743, brigadier en 1748, maréchal de camp en 1758 et lieutenant général en 1762. De 1755 à 1790, il fut gouverneur des ports et châteaux de Brest. Son frère, Alexandre-Claude-Nicolas, comte de Langeron (né en 1732) fut capitaine en 1757, colonel du régiment Royal-Barrois en 1759, colonel du régiment de Foix puis brigadier en 1762, maréchal de camp en 1770 et lieutenant général en 1784.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_004295"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Langeron (1735-1784)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

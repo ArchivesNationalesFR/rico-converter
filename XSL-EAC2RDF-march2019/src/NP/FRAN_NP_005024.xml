@@ -1,0 +1,92 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_005024</recordId>
+      <otherRecordId localType="Ancien_identifiant">4406</otherRecordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Import_SIA</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2015-11-30</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Monique LEBLOIS-PECHON</agent>
+            <eventDescription>F. Clavaud, 28 août 2015 : revu le nom, les liens IR, ajouté indexation fonctions</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>France. Ministère des Anciens combattants et Victimes de guerre. Direction de l'administration générale (1946-1998)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Direction de l'administration centrale (ministère des Anciens Combattants et Victimes de guerre)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1946-01-01">1946</fromDate>
+               <toDate standardDate="1998-12-31">1998</toDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term vocabularySource="d5blonaxbw--1mt8t42bokzts">service d'administration centrale</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d5bhvik770--15ma0n1oncnzo">anciens combattants</term>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Créé en 1946, le ministère des Anciens Combattants et Victimes de guerre est organisé en 3 grandes directions qui sont, jusqu'en 1955, la Direction de l'administration générale, la Direction des pensions et des services médicaux et la Direction du contentieux, de l'état civil et des recherches. L'institution nationale des Invalides et l'Office national des anciens combattants et victimes de guerre dépendent également de ce ministère.</p>
+            <p>De 1955 à 1984, les 3 directions sont réorganisées en Direction de l'administration générale, Direction des pensions et Direction des statuts et des services médicaux.</p>
+            <p>A partir de 1984, la Direction des pensions devient Direction des pensions et de la réinsertion sociale et la Direction des statuts et des services médicaux devient Direction des statuts et de l'information historique. Cette dernière direction disparait en 1986, la sous-direction de la réglementation et des statuts est alors rattachée à la Direction des pensions et de la réinsertion sociale et une Délégation à la mémoire et à l'information historique est créée.</p>
+            <p>Depuis 1999 le Secrétariat d'État aux Anciens Combattants est rattaché au Ministère de la Défense.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_013705"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Anciens combattants et victimes de guerre ; Direction de l'administration générale (1977-1999)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_023476"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Anciens combattants et victimes de guerre, direction de l'administration générale : budget, comptabilité (1920-2000)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_023453"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Anciens combattants et victimes de guerre ; Direction de l'administration générale (1920-1998)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/family/050311">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Family"/>
+      <rdfs:label xml:lang="fr">Rougé (famille de)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050311_d3895e79"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1001-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-12-31</RiC:endDate>
+      <RiC:history xml:lang="fr">La famille de Rougé, originaire de Bretagne, Anjou et Touraine est citée dès 1045. Au XVIIe siècle en sont issues deux branches principales : celle des Plessis-Bellière, éteinte en 1794, et une branche cadette, dite des "vicomtes de Rougé", encore existante. Un des plus illustres membres de cette famille est Jacques de Rougé, marquis du Plessis-Bellière (1602-1654) : né en 1602, il est déjà colonel en 1628 et se distingue au siège de La Rochelle. Pendant la guerre de Trente Ans, il prend part à de nombreuses campagnes et se couvre de gloire lors du siège d’Armentières, dont il est gouverneur. Maréchal de camp puis lieutenant général en 1650, il se prononce pour la cause royale pendant la Fronde, combat à Rethel (1650), et est envoyé en Roussillon, en 1653, pour commander l’armée à la place du maréchal de La Mothe. En 1654, il fait partie de l’aventureuse expédition chargée de remettre le duc de Guise sur le trône de Naples, mais il est mortellement blessé à l’attaque de Castellamare. Un de ses descendants, Olivier de Rougé, comte du Plessis-Bellière, a, de son mariage avec Marie de Lignerac, une fille, Erminie (1785-1812), qui est religieuse au couvent du Sacré-Cœur, à Amiens.</RiC:history>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Famille_de_Roug%C3%A9"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050311-d3893e196"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050311"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050311-d3893e196">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Rougé (famille de) et l'ensemble de documents "Fonds Rougé (1193-1954)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/003671-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050311_d3895e79">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050311-d3893e142"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050311">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/family/050311"/>
+      <RiC:creationDate>2013-12-03</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-03-14</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_050311</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Archives nationales, Fonds Rougé (499 AP).</RiC:source>
+      <RiC:source xml:lang="fr">https://fr.wikipedia.org/wiki/Famille_de_Rougé</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050311"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Famille_de_Roug%C3%A9"/>
+   </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050186">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Pivert, Marceau</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050186_d3804e34"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1895-01-01</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1958-12-31</RiC:deathDate>
+      <RiC:history xml:lang="fr">Marceau Pivert est né le 2 octobre 1895. Jeune enseignant, sorti patriote de l’École normale, il subit le choc de la Première Guerre mondiale et devient pacifiste. Fondateur d’une association de défense des instituteurs anciens combattants (A.G.I.F.A.C.), syndicaliste enseignant, franc-maçon depuis 1919, il s’engage au Parti socialiste français, scission du Parti socialiste-Section française de l’Internationale ouvrière (PS-SFIO) dans l’Yonne, en 1922, puis à la SFIO, en 1924, à sa sortie de l’École normale supérieure de Saint-Cloud. Il milite à la XVe section dès son arrivée à Paris et rejoint la tendance de gauche, la “ Bataille socialiste ”, dont il devient rapidement un des principaux animateurs. Membre de la CAP de la SFIO, il fonde sa propre tendance, la “ Gauche révolutionnaire ”, en 1935. Animateur de “ l’équipe ” de cinéma socialiste avec Germaine Dulac et Robert Talpain, Marceau Pivert supervise la production de plusieurs films militants. En 1936, il participe au gouvernement du Front populaire, au secrétariat de la présidence du Conseil, chargé plus particulièrement de la presse, de la radio et du cinéma. Secrétaire de la fédération de la Seine, exclu de la SFIO à la fin de 1938, il fonde le Parti socialiste Ouvrier et Paysan (PSOP) qui ne résista pas à la guerre. Envoyé aux U.S.A. par la direction de son parti, il gagne le Mexique où il anime avec Gorkin et Victor Serge le Front ouvrier international. De retour en France au début de 1946, Marceau Pivert réintègre la SFIO, appuie la prise de contrôle du parti par Guy Mollet et Yves Dechézelles, entre l’année suivante au comité directeur du parti et participe à la constitution de la Troisième force, des mouvements européens et du Congrès des peuples contre l’impérialisme. Dès la fin des années 1940, il se sépare de Guy Mollet en se prononçant contre la participation au gouvernement. Malade, en 1950, il quitte la direction de la fédération de la Seine. Il conserve néanmoins une grande activité au comité directeur de la SFIO et dans les mouvements européens. Hostile à la Communauté européenne de défense et surtout à la Guerre d’Algérie conduite par Guy Mollet, écarté de la direction du parti peu après le voyage en URSS d’une délégation dont il fait partie, Marceau Pivert participe activement à la création de la minorité socialiste qui fit scission peu après son décès en juin 1958. La plupart de ses amis et sa femme ont poursuivi son action au Parti socialiste autonome.</RiC:history>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050186"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050186_d3804e34">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050186-d3802e64"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050186">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050186"/>
+      <RiC:creationDate>2013-10-15</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050186</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050186"/>
+   </rdf:Description>
+</rdf:RDF>

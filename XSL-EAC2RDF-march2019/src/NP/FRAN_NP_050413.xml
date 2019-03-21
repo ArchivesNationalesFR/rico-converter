@@ -1,0 +1,98 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050413</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-10-15</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Virginie POTIN</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-09-16</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID-DORMIEN</agent>
+            <eventDescription>Pas de notice wikipédia. Pas de notice d'autorité BnF. Pas de numéro ISNI.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2018-03-12</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>État sommaire des fonds d'archives privées. Séries AP et AB XIX, Paris, Centre historique des Archives nationales, 2004, p. 1114-1115 (notice 601 AP).</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>family</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Lescours (famille de)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Canolle de Lescours (de)</part>
+            <useDates>
+               <dateRange>
+                  <fromDate standardDate="1667-01-01">1667</fromDate>
+                  <toDate standardDate="1900-12-31">1900</toDate>
+               </dateRange>
+            </useDates>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1201-01-01">XIIIe siècle</fromDate>
+               <toDate standardDate="2000-12-31">XXe siècle</toDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Saint-Sulpice-de-Faleyrens</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3nthl6l0i--2z6xvivj8ad0">Saint-Sulpice-de-Faleyrens (Gironde)</placeEntry>
+               <dateRange>
+                  <fromDate standardDate="1201-01-01">XIIIe siècle</fromDate>
+                  <toDate standardDate="1900-12-31">XIXe siècle</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>localisation du château de Lescours.</p>
+               </descriptiveNote>
+            </place>
+         </places>
+         <biogHist>
+            <p>La famille de Canolle de Lescours, originaire de Guyenne, établit sa filiation depuis Pierre Ier, seigneur de Lescours, vivant vers 1250, près de Saint-Émilion à Saint-Sulpice-de-Faleyrens (localisation du château et domaine de Lescours) actuellement en Gironde. </p>
+            <p>Certaines obscurités apparaissent dans les origines de la famille. Suivant des généalogies établies au XIXe siècle, Brun de Lescours en serait le fondateur. Il est possible que Brun de Lescours soit le frère de Pierre Ier de Lescours : il aurait donc formé une seconde branche qui se serait éteinte à la 4e génération, avec Pierre de Lescours, fils d’Aycard vivant en 1353, lui-même fils de Brun. La famille s’éteint en 1869, à la 18e génération avec Jean-Baptiste Junien, qui, selon le vicomte A. Révérend, aurait laissé une postérité, non mentionnée dans les documents du fonds. Famille noble, la famille de Canolle de Lescours est maintenue en noblesse en 1667, érigée en marquisat en 1750 puis en comté au XIXe siècle. Certains membres ont été chevaliers de l’ordre de Saint-Jean de Jérusalem et de l’ordre de Saint-Louis. Les Lescours sont alliés aux familles de Gain, Saint-Laurent, Polignac, Chateauneuf, Verthamont, la Haye-Montbault, Montausier, Freuville, Blanpain, Green Saint-Marsault, Rechignevoisin, Duchatel et Ségur.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_003527"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Lescours (XIIIe-XXe siècle)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

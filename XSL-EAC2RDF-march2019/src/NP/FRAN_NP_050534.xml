@@ -1,0 +1,65 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050534</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-12-10</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>F. Clavaud, 10 décembre 2013 : changement forme du nom et ajout n° notice BnF</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, fonds Paulze et Lavoisier (129AP).</p>
+               <p>Notice d'autorité BnF n° FRBNF12079036</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Lavoisier, Antoine-Laurent de (1743-1794)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1743-08-26">26 août 1743</fromDate>
+               <toDate standardDate="1794-05-08">8 mai 1794</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>En 1775, Antoine Laurent de Lavoisier (1743-1794) fut nommé régisseur des poudres et salpêtres. Il s’installa à l’Arsenal qui devint, avec l’installation de son laboratoire, l’un des centres scientifiques les plus réputés d’Europe. Il est le créateur de la chimie moderne. Il fut le premier à faire progresser les conceptions théoriques de la chimie. Il découvrit le rôle de l’oxygène dans la combustion, étudia la formation des acides phosphorique, sulfurique et nitrique, ainsi que la composition du gaz carbonique. Il plaça l’oxygène au centre de son système. Fermier général depuis 1779, Lavoisier avait épousé Marie-Anne Pierrette Paulze, fille d’un fermier général. La loi du 7 août 1791 créa une commission chargée de liquider les affaires de la Ferme générale. Tous les fermiers généraux furent arrêtés le 24 décembre 1793 et traînés devant le tribunal révolutionnaire. Ils furent condamnés à la peine de mort. Lavoisier ayant demandé un délai de grâce pour terminer ses travaux, le président du tribunal lui aurait déclaré : « la République n’a pas besoin de savants ». Lavoisier périt sur l’échafaud en 1794.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_004307"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Paulze et Lavoisier (1623-1781)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

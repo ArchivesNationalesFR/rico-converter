@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050581">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Fortoul, Hippolyte (1811-1856)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050581_d4110e71"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050581_d4110e74"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1811-08-13</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1856-07-07</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050581-d4108e171"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050581-d4108e192"/>
+      <RiC:history xml:lang="fr">Hippolyte Fourtoul naît à Digne le 4 août 1811 d’Antoine Fortoul et de Gabrielle Ripert. Il fait ses études au collège de Lyon, puis à la faculté de droit. Docteur ès lettres en 1840, il est nommé professeur de littérature française à la faculté des lettres de Toulouse, et en 1846 à la faculté d’Aix-en-Provence où il devint doyen. L’appui de son beau-père, le député du Var Joseph Pascalis, le conduit dans la carrière politique. Il est élu le 14 janvier 1849 membre de l’Assemblée constituante par le département des Basses-Alpes, et en 1850 à l’Assemblée législative où le prince-président le nomme ministre de la Marine, le 26 octobre 1851. Sa participation à la préparation du coup d’État est récompensée le 3 décembre 1851 par sa nomination au ministère de l’Instruction publique et des Cultes, portefeuille qu’il conserve jusqu’à sa mort le 7 juillet 1856.</RiC:history>
+      <RiC:ruleFollowed xml:lang="fr">Paul (Raphaël) et Gontard (Maurice), Un ministre de l’Instruction publique sous l’Empire autoritaire : Hippolyte Fortoul 1851-1856. Paris. Presses universitaires de France, 1975.</RiC:ruleFollowed>
+      <RiC:ruleFollowed xml:lang="fr">Journal d’Hippolyte Fortoul, Geneviève Massa-Gille, dir. Genève : Droz, 1979.</RiC:ruleFollowed>
+      <RiC:ruleFollowed xml:lang="fr">Vaisse (Pierre), « La Connaissance des romantiques allemands en France ». In Un siècle de passions franco-allemandes : [catalogue de l’exposition], Paris, musée du Petit-Palais, 18 novembre 1997-15 février 1998, p. 56-64. Paris : Paris-Musées, 1997.</RiC:ruleFollowed>
+      <RiC:ruleFollowed xml:lang="fr">- « Hippolyte Fortoul ». Revue germanique internationale, 13/2000 (n° spécial Écrire l’histoire de l’art. France-Allemagne 1750-1920), p. 141-153.</RiC:ruleFollowed>
+      <RiC:ruleFollowed xml:lang="fr">http://www.inha.fr/spip.php?article2320</RiC:ruleFollowed>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb125108748#foaf:Person"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Hippolyte_Fortoul"/>
+      <isni:ISNIAssigned>0000000110676133</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050581-d4108e271"/>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/050581-d4108e277"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050581-d4108e250"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050581"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050581-d4108e171">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1851-12-03</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1856-07-07</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">Ministre de l'Instruction publique et des Cultes</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050581-d4108e192">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1851-10-26</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1851-12-03</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">Ministre de la Marine.</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050581_d4110e71">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050581-d4108e130"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050581_d4110e74">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1811-08-13</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1856-07-07</RiC:endDate>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050581-d4108e136"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050581">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050581"/>
+      <RiC:creationDate>2014-02-04</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-10-23</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_050581</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">- Les archives de la famille Bourgoing sont conservées aux Archives départementales de la Nièvre sous la cote 21 F.</RiC:source>
+      <RiC:source xml:lang="fr">- Le fonds Lyautey conservé aux Archives nationales (site de Paris) contient quelques lettres et photographies d’Inès de Bourgoing (475 AP 231, 279 et 320).</RiC:source>
+      <RiC:source xml:lang="fr">Numéro identifiant ISNI : ISNI 0000 0001 1067 6133</RiC:source>
+      <RiC:source xml:lang="fr">Notice d'autorité BnF n° FRBNF12510874</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000110676133"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050581"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb125108748"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Hippolyte_Fortoul"/>
+   </rdf:Description>
+</rdf:RDF>

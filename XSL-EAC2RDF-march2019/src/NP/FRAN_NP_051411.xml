@@ -1,0 +1,95 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051411</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-10-31</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Arnaud ROMONT</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2016-11-08</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle CHAVE</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2016-11-23</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
+            <eventDescription>F. Clavaud, 23 nov. 2016 : reformulé la description, ajouté lien d'association et lien d'identité</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Drago Roland, Imbert Jean, Tulard Jean, Monnier François, Dictionnaire biographique des membres du Conseil d'État : 1799-2002, Paris, Éditions Fayard, 2004, 998 p. </sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Identifiant ARK de la notice d’autorité BnF : http://catalogue.bnf.fr/ark:/12148/cb14483480c</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId> ISNI 0000 0000 8357 6638</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Boulatignier, Sébastien-Joseph (1805-1895)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1805-01-11">11 janvier 1805</fromDate>
+               <toDate standardDate="1895-03-15">15 mars 1895</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>S.-J. Boulatignier est élu conseiller d'État le 18 avril 1849.</p>
+            <p>Il est nommé conseil d'État attaché à la section du Contentieux du Conseil d'État le 25 janvier 1852.</p>
+            <p>Il devient président de la section du Contentieux du Conseil d'État le 5 mars 1870.</p>
+            <p>Le 15 septembre 1870, il est suspendu de ses fonctions au Conseil d'État, avec tous les autres membres, par décret du Gouvernement de la Défense nationale.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb14483480c"
+                      xlink:type="simple">
+            <relationEntry>Boulatignier, Sébastien-Joseph (1805-1895)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1805-01-11">11 janvier 1805</fromDate>
+               <toDate standardDate="1895-03-15">15 mars 1895</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_000080"
+                      xlink:type="simple">
+            <relationEntry>Conseil d'État</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1849-01-01">1849</fromDate>
+               <toDate standardDate="1870-12-31">1870</toDate>
+            </dateRange>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

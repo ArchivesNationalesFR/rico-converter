@@ -1,0 +1,115 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050649</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-11-28</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Vanessa ASPART</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-08-07</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Virginie GREGOIRE</agent>
+            <eventDescription>- Ajout date de mort, lien vers notice BNF, activité et lien IR Bédarida, n°ISNI. Pas de notice wikipedia.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-10-25</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>- Archives nationales : fonds François Bédarida (673AP).</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>- Notice BNF n°FRBNF12568119</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 1020 0805</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Bédarida, Renée (1919-2015)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Mély, Renée (1919-2015)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1919-01-01">1919</fromDate>
+               <toDate standardDate="2015-02-07">07 février 2015</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msj3i51--hevk1gms21cg">écrivain</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Née Renée Mély, Renée Bédarida (1919-2015) est originaire de la région lyonnaise. Visiteuse de prison, elle participe activement à la résistance française, par le biais de 
+     <span style="italic">Témoignage Chrétien</span>, hebdomadaire français d'inspiration religieuse fondé en 1941. Elle y rencontre son époux, François Bédarida, avec qui elle a une fille, Catherine Bédarida. Historienne de la résistance chrétienne, elle a notamment écrit 
+     <span style="italic">Les catholiques dans la Guerre 1939-1945</span>, 
+     <span style="italic"> entre Vichy et la Résistance</span> ; 
+     <span style="italic">Nous partons pour l'Irlande</span> ; 
+     <span style="italic"> Pierre Chaillet</span>, 
+     <span style="italic">témoin de la résistance spirituelle</span>. Elle a également rédigé en collaboration avec François Bédarida : « 
+     <span style="italic"> Témoignage chrétien </span>», 
+     <span style="italic">1941-1944</span> et 
+     <span style="italic">Nous partons pour la Grande-Bretagne</span>. 
+    </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_050234"
+                      xlink:type="simple">
+            <relationEntry>Bédarida, François</relationEntry>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb125681195"
+                      xlink:type="simple">
+            <relationEntry>Bédarida, Renée (1919-2015)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1919-01-01">1919</fromDate>
+               <toDate standardDate="2015-12-31">2015</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Lien vers la notcie d'autorité BnF</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_056260"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds François Bédarida (1926-2001)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

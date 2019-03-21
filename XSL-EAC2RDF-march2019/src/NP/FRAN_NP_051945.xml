@@ -1,0 +1,101 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051945</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2018-01-25</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Zénaïde ROMANEIX</agent>
+            <eventDescription>Absence de numéro d'ISNI, de notice BnF, de notice Wikipedia. Notice à compléter éventuellement après le classement du fonds.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2018-02-02</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Dossier de Légion d'Honneur LH/1622/59.</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Le Trocquer, Yves Marie (1833-1879)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1833-07-04">4 juillet 1833</fromDate>
+               <toDate standardDate="1879-06-28">28 juin 1879</toDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Gabon</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d5bdpjf19e--e0vhmv05pfbf">Afrique Equatoriale Française (1910-1958)</placeEntry>
+            </place>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Plouézec</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3ntftll55-1q08hu3haaesw">Plouézec (Côtes-d'Armor)</placeEntry>
+            </place>
+         </places>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msk0wvv--1bg7dn8l97jrf">marin</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msjpuqr-66gt6kmedjiv">officier (armée)</term>
+               <descriptiveNote>
+                  <p>Officier de marine.</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Yves Marie Le Trocquer (1833-1879) naît le 4 juillet 1833 à Plouézec (Côtes-d'Armor), de Yves Marie Le Trocquer et Marguerite Le Saux. Il entre dans la Marine en 1854 comme matelot de 1ère classe à Brest. Il est promu enseigne de vaisseau le 7 janvier 1865, lieutenant de vaisseau le 7 mars 1868. De 1874 à 1879, il est au Gabon, commandant de l'aviso 
+     <span style="italic">Marabout</span> de 1874 à 1876, puis commandant de la chaloupe-canonnière 
+     <span style="italic">Arbalète</span> en 1878. 
+    </p>
+            <p>Il meurt en mer le 28 juin 1879 à bord du trois-mâts de commerce 
+     <span style="italic">Amiral Charner</span> qui le ramenait en France. 
+    </p>
+            <p>Marié à Emma Guérin, il laisse à sa mort un fils, Yves Le Trocquer, âgé de 2 ans.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_051944"
+                      xlink:type="simple">
+            <relationEntry>Le Trocquer, Yves (1877-1938)</relationEntry>
+            <descriptiveNote>
+               <p>Yves-Marie Le Trocquer est le père de Yves Le Trocquer</p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

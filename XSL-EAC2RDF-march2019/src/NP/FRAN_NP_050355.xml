@@ -1,0 +1,80 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050355</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Vanessa ASPART</agent>
+            <eventDescription>F. Clavaud, 3 avril 2014 : changé forme du nom, ajouté n°s ISNI et notice BnF</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, Fonds Pierre Bessand-Massenet (1779-1984), 646 AP.</p>
+               <p>Notice d'autorité BnF n° FRBNF11891796</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 0877 6995</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Bessand-Massenet, Pierre (1899-1985)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1899-10-01">octobre 1899</fromDate>
+               <toDate standardDate="1985-03-31">mars 1985</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Pierre Bessand-Massenet est né à Paris en octobre 1899, fils de Léon Alloend-Bessand et de Juliette Massenet. En 1921, par un décret du Conseil d’État, il est autorisé à prendre le nom de Bessand-Massenet, car il descend, par sa mère, du compositeur Jules Massenet (1842-1912).</p>
+            <p>Après des études de lettres, il entreprend, dès 1920, ses premières recherches historiques sur la période révolutionnaire aux Archives nationales ou départementales. De 1926 à 1939, il devient l’un des collaborateurs des éditions Grasset pour les livres d’histoire, puis administrateur des éditions Plon et créateur avec Maurice Bourdel (propriétaire de Plon) des éditions La Palatine, qu’il dirige jusqu’en 1972.</p>
+            <p>Ancien élève de Théodore Gosselin, dit Georges Lenôtre (1857-1935), et plus tard collaborateur du célèbre historien, il contribue à la parution chez Grasset, de 1932 à 1939, dans la collection 
+     <span style="italic">La Petite Histoire</span>, de recueils d’articles publiés par G. Lenôtre. Il est l’éditeur scientifique de 
+     <span style="italic">Trois siècles d’histoire de France</span>, chez Perrin en 1977. 
+    </p>
+            <p>Pierre Bessand-Massenet est surtout connu par ses ouvrages consacrés à la Révolution française. Il s’est notamment spécialisé sur la période post-thermidorienne : 
+     <span style="italic"> Le chemin de César</span> (prix Femina d’histoire pour le premier tome et prix Gobert de l’Académie française pour le second) ; 
+     <span style="italic">Robespierre</span> ; 
+     <span style="italic">Le 18 brumaire</span> ; 
+     <span style="italic"> Quand la France attendait Bonaparte</span> ; etc. 
+    </p>
+            <p>Il était, par ailleurs, essayiste et aussi l’auteur de deux romans, dont le plus connu, 
+     <span style="italic"> Magie rose</span>, a été publié en 1955. Il est décédé à Paris en mars 1985. 
+    </p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_003572"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Pierre Bessand-Massenet (1779-1984)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

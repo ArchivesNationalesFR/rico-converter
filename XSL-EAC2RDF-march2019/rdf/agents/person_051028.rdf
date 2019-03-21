@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051028">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Oudinot, Nicolas Charles (1767-1847)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051028_d4403e51"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051028_d4403e54"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051028_d4403e57"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1767-04-25</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1847-09-13</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051028-d4401e129"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051028-d4401e135"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051028-d4401e141"/>
+      <RiC:history xml:lang="fr">Charles Nicolas Oudinot (1767-1847) s’engage en 1783 au régiment de Médoc et y demeur jusqu’en avril 1787. Entré dans la Garde nationale en juillet 1789, il participe, de 1792 à 1794, aux campagnes des armées de Rhin-et-Moselle. Blessé à Haguenau en décembre 1793, il assiste aux batailles de Kaiserslautern et de Morlautern (mai 1794) où sa brillante conduite lui vaut le titre provisoire de général de brigade. Blessé à Trèves le 6 août 1795, laissé pour mort devant Mannheim en octobre, il est fait prisonnier et est échangé après trois mois de captivité. Il commande en 1797 une brigade de l’armée d’Angleterre puis, en 1799, une brigade de l’armée d’Helvétie. Le 12 avril 1799, il est promu général de division. Chef d’état-major de Masséna, il contribue aux victoires de Zurich et de Marengo. Le 18 décembre 1801, il est nommé inspecteur général de la cavalerie, est élu député du Corps législatif le 29 novembre 1803 et fait les campagnes de 1805. Comte d’Empire le 2 juillet 1808, il prend part à la campagne du Danube en 1809. Il est fait maréchal de France le 12 juillet 1810, créé duc de Reggio le 4 avril 1810. Il participe à la campagne de Russie, et aussi aux campagnes de 1813 et 1814, en qualité de commandant du 12e corps de la Grande Armée puis des 4e, 7e et 12e corps. Il est nommé par Louis XVIII ministre d’État, pair de France et gouverneur de la 3e division militaire (Metz). Lors des Cent-Jours, il cherche à s’opposer à la marche de Napoléon sur Paris. Exilé par l’Empereur, il est, au retour de Gand, l’un des majors généraux de la garde royale (8 septembre 1815), membre du conseil privé (19 septembre), commandant de la garde nationale de Paris (9 octobre), puis gouverneur de la 3e division de Madrid. Après la révolution de 1830, il se retire dans ses terres. Nommé chancelier de la Légion d’honneur le 17 mai 1839, il participe à la tête des maréchaux à la cérémonie du retour des cendres de l’Empereur en 1840 et devient gouverneur des Invalides le 21 octobre 1842. Il meurt à Paris le 13 septembre 1847.</RiC:history>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Nicolas-Charles_Oudinot"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb133306351#foaf:Person"/>
+      <isni:ISNIAssigned>000000012281701X</isni:ISNIAssigned>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/051028-d4401e210"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051028-d4401e237"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051028"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051028-d4401e129">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051028-d4401e135">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msk3a25-1xs3m641rhiyg"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051028-d4401e141">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1803-11-30</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1804-07-01</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">Ch.-N. Oudinot est député de la Meuse au Corps législatif.</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051028-d4401e237">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Oudinot, Nicolas Charles (1767-1847) et l'ensemble de documents "Fonds maréchal Oudinot (1803-1855)."</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/004335-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051028_d4403e51">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051028-d4401e94"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051028_d4403e54">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051028-d4401e100"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051028_d4403e57">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051028-d4401e106"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051028">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051028"/>
+      <RiC:creationDate>2015-05-15</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-02-23</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051028</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Notice BnF n° FRBNF13330635.</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/000000012281701X"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051028"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Nicolas-Charles_Oudinot"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb133306351"/>
+   </rdf:Description>
+</rdf:RDF>

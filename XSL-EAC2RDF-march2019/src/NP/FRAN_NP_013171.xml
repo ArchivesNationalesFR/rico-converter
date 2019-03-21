@@ -1,0 +1,161 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_013171</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE03103</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Aveline, Pierre (16..-17..)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1687-04-09">9 avril 1687</fromDate>
+               <toDate standardDate="1719-12-05">5 décembre 1719</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">étude XXXVIII : rue Saint-Martin-des-Champs, devant Saint-Martin-des-Champs (de 1689 à 1708), rue Saint-Martin, devant Saint-Nicolas-des-Champs (de 1709 à 1719)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp2o77-1wnswrnmvwf46">saint-laurent (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgyd8c-1ivt7h45b41ah">saint-martin (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd5g0wr-1kg52lprlllks">saint-martin-des-champs (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd5fnbv--1fbmnb1c9dkph">saint-martin (rue)</placeEntry>
+            </place>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">étude CXXI : rue Saint-Martin, devant Saint-Nicolas-des-Champs</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp2o77-1wnswrnmvwf46">saint-laurent (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgyd8c-1ivt7h45b41ah">saint-martin (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd5g0wr-1kg52lprlllks">saint-martin-des-champs (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd5fnbv--1fbmnb1c9dkph">saint-martin (rue)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1687-04-09">9 avril 1687</fromDate>
+                  <toDate standardDate="1719-12-05">5 décembre 1719</toDate>
+               </dateRange>
+            </function>
+         </functions>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010165"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XXXVIII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1687-04-09">9 avril 1687</fromDate>
+               <toDate standardDate="1719-12-05">5 décembre 1719</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010248"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale CXXI</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1715-04-01">1er avril 1715</fromDate>
+               <toDate standardDate="1716-01-12">12 janvier 1716</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="creatorOf">
+            <relationEntry localType="archival">sous la cote ET/XXXV/597, expéditions signées par divers notaires dont Aveline et conservées dans le fonds de l'étude XXXV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041938"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Nicolas DOURNEL, 1606 - 21 juin 1629 (étude XXXV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041939"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Denis CAMUSET, 22 juin 1629 - 20 avril 1641 (étude XXXV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041942"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Nicolas II BOINDIN, 11 avril 1673 - 30 juin 1690 (étude XXXV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041940"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean COLAS, 8 janvier 1645 - 7 juin 1665 (étude XXXV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041943"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire René DESFORGES, 25 octobre 1684 - 8 octobre 1710 (étude XXXV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041941"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Gabriel MESNIL, 10 octobre 1710 - 22 février 1734 (étude XXXV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042001"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Pierre AVELINE, 22 avril 1687 - 5 décembre 1719 (étude XXXVIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_053488"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Pierre Aveline pour l'étude CXXI</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043500"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Pierre AVELINE, avril 1715 - 12 janvier 1716 (étude CXXI)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051968"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Pierre Aveline pour l'étude XXXVIII</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

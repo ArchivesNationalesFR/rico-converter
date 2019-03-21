@@ -1,0 +1,115 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012172</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE02027</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Philippe BERTHOLET, Etudes et notaires parisiens en 1803, au moment de la loi du 25 ventôse an XI (16 mars 1803), Paris, 2004, p. 250-252</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Deloche, Jean</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Deloche, Jean-Baptiste</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1794-08-14">14 août 1794</fromDate>
+               <toDate standardDate="1819-07-02">2 juillet 1819</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvow9c3--1ln2rhczl581f">saint-eustache (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgrw7m-1ulx41q7n6nbj">saint-eustache (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzc47wbl-1a2g6xqjbuj5s">montmartre (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzbd0a52-1viy4j5go3sbi">helvétius (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd7d23f--16y0tmjtun1zp">sainte-anne (rue)</placeEntry>
+               <placeEntry localType="nomLieu">rue Montmartre, près la rue Tiquetonne (de l' an II à l'an IX), rue Montmartre, vis-à-vis la rue du Jour (en l'an X), 2 rue Montmartre (de l'an X à l'an XII), 676 rue Helvétius (en an XIII), puis 57 (de l'an XIV à 1813), 57 rue Sainte-Anne (de 1814 à 1819)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1794-08-14">14 août 1794</fromDate>
+                  <toDate standardDate="1819-07-02">2 juillet 1819</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>né le 4 octobre 1762 à Paris</p>
+            <p>marié Marie Ledagre (voir ET/XCVII/596, 15 nivôse an II [4 janvier 1794], contrat de mariage)</p>
+            <p>d'abord principal clerc de maître Etienne-Prosper de La Motte (étude LIV) , il est reçu au concours du 25 thermidor an II (12 août 1794) et remplace maître Jean Dufouleur, guillotiné</p>
+            <p>décédé le 8 mai 1840 à Paris</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010143"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XVI</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1794-08-14">14 août 1794</fromDate>
+               <toDate standardDate="1819-07-02">2 juillet 1819</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/LXXXXVI/1082, 8 mai 1840, dépôt de testament</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/LXXXVI/1082, 25 mai 1840, inventaire après décès</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041474"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean DELOCHE, 14 août 1794 - 1er juillet 1819 (étude XVI)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051825"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Jean Deloche pour l'étude XVI</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

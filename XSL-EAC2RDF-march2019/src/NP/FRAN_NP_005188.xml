@@ -1,0 +1,89 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_005188</recordId>
+      <otherRecordId localType="Ancien_identifiant">5107/CAOE</otherRecordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Import_SIA</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2015-12-03</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+            <eventDescription>F. Clavaud, 3 décembre 2015 : revu les dates, ajouté historique et source, revu le lien hiérarchique</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2015-12-15</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>
+                  <span style="italic">Bottin administratif</span>, années 1967 et 1968 
+     </p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Bureau des maîtres d'ouvrage et des maîtres d'œuvre (direction de l'architecture)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1968-01-01">1968</fromDate>
+               <toDate standardDate="1978-12-31">1978</toDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term vocabularySource="d5blonaxbw--1mt8t42bokzts">service d'administration centrale</term>
+            </legalStatus>
+         </legalStatuses>
+         <biogHist>
+            <p>Le bureau des maîtres d'ouvrage et des maîtres d'oeuvre est créé en 1968 au sein de la nouvelle division de la création architecturale, elle-même instituée au sein de la sous-direction de la création architecturale et des constructions publiques de la direction de l'architecture.</p>
+            <p>Une partie de ses activités (réglementation de la profession d'architecte, ordre des Architectes, réglementation sur les conditions d'intervention des architectes pour les travaux exécutés pour le compte de l'Etat ou avec l'aide de l'Etat, comité consultatif des bâtiments civils et des palais nationaux) était auparavant assumée par le bureau de la réglementation et des affaires générales de la sous-direction des bâtiments civils.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_051239"
+                      xlink:type="simple">
+            <relationEntry>France. Ministère des affaires culturelles. Direction de l'architecture. Sous-direction de la création architecturale et des constructions publiques. Division de la création architecturale (1968-1978)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1968-01-01">1968</fromDate>
+               <toDate standardDate="1978-12-31">1978</toDate>
+            </dateRange>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

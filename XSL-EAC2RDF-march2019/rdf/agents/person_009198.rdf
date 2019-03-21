@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/009198">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Guillaume, Michel (1922-...)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/009198_d169e74"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1929-12-22</RiC:birthDate>
+      <RiC:history xml:lang="fr">Michel Guillaume, conseiller d’État, est né le 22 décembre 1929 à Strasbourg (Bas-Rhin). De 1951 à 1953, après des études de droit, il est élève à l’École nationale d'administration.  À sa sortie de l'ENA, il est affecté au Conseil d’État, où il est rapporteur à la section du Contentieux dès 1953, puis à nouveau en 1970 : il est alors également rapporteur à la section des Travaux publics. Il est nommé conseiller d’État en 1978. Outre ses activités au Conseil d’État, Michel Guillaume assume de nombreuses autres missions. Parallèlement à ses fonctions de chargé de mission au Secrétariat général du gouvernement, de 1958 à 1966, il est membre du groupe de travail chargé de la rédaction de la Constitution et des lois organiques auprès de Michel Debré, garde des Sceaux de juillet à décembre 1958.  Ses activités au sein du ministère du Travail et des Affaires sociales ont également été multiples ; directeur à la direction de l'assurance maladie et des caisses de sécurité sociale (1966-1970), il est ensuite membre du Comité d'histoire de la sécurité sociale. Il participe alors à la rédaction de La Sécurité sociale. Son histoire à travers les textes. Il devient le président du comité en 1997. En 1972, il est membre de la mission juridique du ministère de l'Industrie. De 1974 à 1982, il en est le président.</RiC:history>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb12130242q#foaf:Person"/>
+      <isni:ISNIAssigned>0000000023319541</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/000080-d11e896"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/009198-d167e195"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/009198-d167e216"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/009198-d167e237"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/009198"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/009198_d169e74">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/009198-d167e133"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/009198">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/009198"/>
+      <RiC:creationDate>2013-04-23</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-10-25</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_009198</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">- Notice BNF n°FRBNF12130242</RiC:source>
+      <RiC:source xml:lang="fr">- Archives nationales, fonds Michel Guillaume (707 AP).</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000023319541"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_009198"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb12130242q"/>
+   </rdf:Description>
+</rdf:RDF>

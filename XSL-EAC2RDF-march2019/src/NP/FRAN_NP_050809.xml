@@ -1,0 +1,106 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050809</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-07-15</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Sophie RAVARY</agent>
+            <eventDescription>F. Clavaud, 15 juillet 2014 : changé forme du nom et dates, ajouté n° ISNI, déplacé liste des oeuvres, ajouté n° notice BnF et lien d'association avec Paul Jury.</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Michel (André), 
+
+      <span style="italic">Psychanalyse freudienne du fait musical, de l'affect à l'acouée</span>, Gentilly, 1991. 
+
+     </p>
+               <p>Michel (André), 
+
+      <span style="italic">Décroire, fondement d'un rationalisme psychanalytique, Entretiens avec Paul Jury</span>, Paris, 1992. 
+
+     </p>
+               <p>Notice d'autorité BnF n° FRBNF11915964 </p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 0876 1304</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Michel, André (1922-2014)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1922-01-24">24 janvier 1922</fromDate>
+               <toDate standardDate="2014-04-10">10 avril 2014</toDate>
+            </dateRange>
+         </existDates>
+         <mandates>
+            <mandate/>
+         </mandates>
+         <biogHist>
+            <p>André Michel est né le 24 janvier 1922 à Briançon dans les Hautes-Alpes et décédé à Paris le 10 avril 2014. Sensible à la musique, il reçoit ses premières leçons de piano en 1926. Une fois bachelier, il étudie les Lettres classiques et poursuit sa vocation musicale et c'est au cours de ses études qu'il rencontre Paul Jury à Grenoble. Il s'intéresse à la psychologie du musicien au travers de la psychanalyse freudienne où ses premiers articles paraissent en 1948. Il enseigne les lettres classiques de 1947 et 1983 et contribue à la revue Psyché entre 1947 et 1952. Après le décès de Paul Jury en 1953, il préfaça, annota, fit éditer, édita lui-même plusieurs volumes dont il hérita. En parallèle de ses activités littéraires, il est président du jury au Conservatoire national supérieur de musique de Paris. </p>
+            <p>Principales oeuvres :</p>
+            <p>- Michel (André), 
+
+     <span style="italic"> Psychanalyse de la musique</span>, Paris, 1951. 
+
+    </p>
+            <p>- Michel (André), "L'acouée, Notes métapsychologiques sur la musique", dans 
+
+     <span style="italic">L'informationpsychiatrique</span>, vol. 63, n° 6, juin 1987, p. 793-804. 
+
+    </p>
+            <p>- Michel (André), 
+
+     <span style="italic">Psychanalyse freudienne du fait musical, de l'affect à l'acouée</span>, Gentilly, 1991. 
+
+    </p>
+            <p>- Michel (André), 
+
+     <span style="italic">Décroire, fondement d'un rationalisme psychanalytique, Entretiens avec Paul Jury</span>, Paris, 1992. 
+
+    </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:type="simple"
+                      xlink:href="FRAN_NP_050808">
+            <relationEntry>Jury, Paul (1878-1953)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1945-01-01">1945</fromDate>
+               <toDate standardDate="1953-03-24">24 mars 1953</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>André Michel, élève de Paul Jury, puis éditeur et préfacier de ses oeuvres</p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

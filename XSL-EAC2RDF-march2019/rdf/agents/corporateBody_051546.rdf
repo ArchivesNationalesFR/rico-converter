@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/051546">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">Abbaye Notre-Dame de Chelles (Seine-et-Marne, France ; 658?-1790)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051546_d4765e68"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051546_d4765e71"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051546_d4765e80"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051546_d4765e89"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/97e2f3de-95cd-40ad-be31-f2224372d940"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">0658-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1790-02-13</RiC:endDate>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051546-d4763e226"/>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051546-d4763e232"/>
+      <RiC:history xml:lang="fr">Autour de l’oratoire bâti par la reine Clotilde, épouse de Clovis, roi des Francs, dans la 
+     villa royale de Chelles au début du VIIe siècle, sainte Bathilde (626-680), veuve de Clovis II, roi de Neustrie et de Bourgogne, fonde vers 658-659 un monastère de femmes où elle se retire à la fin de sa vie. L’établissement voit se succéder, aux époques mérovingienne et carolingienne, plusieurs abbesses appartenant à la famille royale, et en particulier Gisèle (757-vers 810), sœur de l’empereur Charlemagne, qui joue un rôle intellectuel et religieux majeur dans l’histoire du monastère. Aux XIe-XIIIe siècles, on procède à la reconstruction de l’église abbatiale et du cloître (aujourd’hui détruits), ainsi que des églises Saint-Georges et Sainte-Croix. Placé sous la protection des rois de France, l’établissement paraît jouir d’une relative prospérité et compte toujours environ quatre-vingts religieuses entre le XIIIe et le XVIe siècle. L’abbaye est dévastée pendant la guerre de Cent Ans et les moniales trouvent refuge à Paris. Dès la fin du XVe siècle, le monastère connaît un renouveau important et réforme à sa suite plusieurs abbayes de l’Île-de-France dans les premières décennies du XVIe siècle. Le logis est reconstruit sous l’abbatiat de Louise-Adélaïde d’Orléans (1698-1743), fille du Régent. En supprimant les ordres religieux réguliers, le décret du 13 février 1790 met fin à l’existence de l’abbaye de Chelles. 
+     La plupart des bâtiments sont démolis après leur vente comme biens nationaux en 1796. Seuls subsistent quelques vestiges aujourd’hui intégrés dans l’hôtel de ville (bassin, éléments du cloître et de l’abbatiale) ou visibles à ses abords (églises Saint-Georges et Sainte-Croix). Les reliques de l’abbaye sauvées par des habitants de Chelles lors de la fermeture du monastère sont rassemblées, après la Révolution, dans la châsse dite de saint Florus conservée depuis lors dans l’église paroissiale Saint-André.</RiC:history>
+      <RiC:ruleFollowed xml:lang="fr">13-19 février 1790 : décret portant interdiction des vœux monastiques et suppression des ordres religieux réguliers.</RiC:ruleFollowed>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051546--d4763e207"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Abbaye_de_Chelles"/>
+      <owl:sameAs rdf:resource="http://www.cn-telma.fr/cartulR/producteur435/"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb12457264n#foaf:Organization"/>
+      <isni:ISNIAssigned>000000012158607X</isni:ISNIAssigned>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051546-d4763e330"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051546"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051546-d4763e226">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d-awald6xki--1xbp9b7wb59wd"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051546-d4763e232">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d-auq4a30s0-r177rhc3y1tk"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051546-d4763e330">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Abbaye Notre-Dame de Chelles (Seine-et-Marne, France ; 658?-1790) et l'ensemble de documents "Authentiques de reliques de l'abbaye de Chelles (VIIe-XVe siècle)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/052903-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051546_d4765e68">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051546-d4763e124"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051546_d4765e71">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">0658-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1790-02-13</RiC:endDate>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051546-d4763e130"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051546_d4765e80">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">0658-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1790-02-13</RiC:endDate>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051546-d4763e148"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051546_d4765e89">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">0658-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1790-02-13</RiC:endDate>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051546-d4763e167"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051546--d4763e207">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Abbaye Notre-Dame de Chelles (Seine-et-Marne, France ; 658?-1790)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/051546-d4763e202"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051546">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/051546"/>
+      <RiC:creationDate>2017-07-06</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-09-01</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051546</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Torchet, Charles, Histoire de l’abbaye royale de Notre-Dame de Chelles, Paris, Retaux-Bray, 1889, 2 vol. (327, 325 p.), en ligne : http://gallica.bnf.fr/ark:/12148/bpt6k551412 et http://gallica.bnf.fr/ark:/12148/bpt6k55142d</RiC:source>
+      <RiC:source xml:lang="fr">Valin-Johnson, Danielle, « Sculptures du XIIe siècle provenant de l’abbaye royale de Chelles », Bulletin monumental, t. 153, n° 1, année 1995, p. 23-46, en ligne : http://www.persee.fr/doc/bulmo_0007-473x_1995_num_153_1_3530.</RiC:source>
+      <RiC:source xml:lang="fr">« Abbaye de Chelles », in Wikipédia, encyclopédie collaborative, en ligne : https://fr.wikipedia.org/wiki/Abbaye_de_Chelles (consulté en juillet 2017).</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/000000012158607X"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051546"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Abbaye_de_Chelles"/>
+      <rdfs:seeAlso rdf:resource=""/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb12457264n"/>
+   </rdf:Description>
+</rdf:RDF>

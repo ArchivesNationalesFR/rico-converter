@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050920">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Laborie, Pierre Laurent (1767-1847)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050920_d4336e36"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1767-01-01</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1847-12-31</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050920-d4334e90"/>
+      <RiC:history xml:lang="fr">Pierre Laurent Laborie (1767-1847) est un théologien et homme de lettres. Né à Opoul (Pyrénées-Orientales), il suit des études de philosophie. Il enseigne par la suite la théologie à l'université de Perpignan de 1788 à 1791. En 1792, il émigre vers l'Espagne où il sert dans les corps mi-français, mi-espagnols. De retour en France en 1808, il occupe les fonctions de directeur au sein de plusieurs établissements notamment le collège de Saint-Mihiel (Meuse) de 1812 à 1814, puis le collège de Périgueux (Dordogne) de 1814 à 1819 et le collège royal de Toulouse (Haute-Garonne) en 1819. Nommé proviseur du collège royal d'Angers (Maine-et-Loire) en 1920, il consolide ses attaches périgourdines par son union avec Jeanne de Sanzillon de Mensignac.  Remarqué par Royer Collard, il est nommé en 1821 recteur de l'université de Strasbourg (Bas-Rhin). Il occupe ce poste jusqu'en 1824, période pendant laquelle il réorganise les collèges et crée les écoles primaires. En 1824, il est nommé par Charles X proviseur du Lycée Louis le Grand (Paris). En 1826, suite à la réforme de l'École normale supérieure alors créée sous le terme d' "École préparatoire", il est nommé premier directeur (1826-1830).  Il devient par la suite inspecteur général de l'Université. Homme d'influence et homme de cour, il est ainsi associé à la montée de l'enseignement voulue par le roi, autour de Monseigneur Denis Frayssinous, il est également lié à Ange Maxence Hyacinthe de Damas, gouverneur de l'héritier de la couronne.  Légitimiste fervent et catholique pratiquant, il finit par se retirer à Périgueux, où il s'occupe des œuvres diocésaines et d'une manière générale de la défense de l'enseignement catholique.  À sa mort en 1847, une bonne partie de sa bibliothèque fut léguée à l'évêque de Périgueux, tandis que certains ouvrages avaient été envoyés au lycée Louis le Grand et à l'École normale supérieure. Son influence dans le mileu de l'enseignement catholique fut considérable. </RiC:history>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050920-d4334e125"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050920"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050920-d4334e90">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d3m0bl7bbdy-s3moxyf8em8b"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050920_d4336e36">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050920-d4334e67"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050920">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050920"/>
+      <RiC:creationDate>2014-12-02</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050920</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050920"/>
+   </rdf:Description>
+</rdf:RDF>

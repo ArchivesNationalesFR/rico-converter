@@ -1,0 +1,62 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050068</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-10-17</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Raphael BAUMARD</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>family</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Le Peletier (famille)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1601-01-01">XVIIe siècle</fromDate>
+               <toDate standardDate="1800-12-31">XVIIIe siècle</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Les Le Peletier étaient originaires de la ville et de la région du Mans, où ils exerçaient au XVIe siècle la profession d’avocat. Vers la seconde moitié de ce siècle, certains se fixèrent à Paris, s’y faisant remarquer dans le barreau, l’église et les belles-lettres. Le mariage de Jean Le Peletier (mort en 1588), avocat en parlement, avec Madeleine Chauvelin permit aux Le Peletier de s’intégrer à la meilleure bourgeoisie robine de Paris. Au cours des XVIIe et XVIIIe siècles, le Parlement de Paris voit ainsi des générations de Le Peletier se succéder, notamment comme présidents au mortier.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_000691"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Archives Rosanbo, fonds Le Peletier (XVIIe-XVIIIe siècles)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_001870"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Archives du château de Saint-Fargeau (XIVe-XIXe siècles)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

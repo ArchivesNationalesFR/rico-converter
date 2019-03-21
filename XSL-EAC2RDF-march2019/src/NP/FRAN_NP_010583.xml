@@ -1,0 +1,125 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010583</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00302</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Philippe BERTHOLET, Etudes et notaires parisiens en 1803, au moment de la loi du 25 ventôse an XI (16 mars 1803), Paris, 2004, p. 206-208</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Silly, Abraham</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Silly, Abraham-Justin</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1781-11-06">6 novembre 1781</fromDate>
+               <toDate standardDate="1804-10-25">25 octobre 1804</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvox0hv--s68ql74wtyjp">saint-germain-l'auxerrois (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvow9c3--1ln2rhczl581f">saint-eustache (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvosba5--16qzzcu3058e5">saint-andré-des-arts (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgrw7m-1ulx41q7n6nbj">saint-eustache (quartier)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgpu25-95rr5q73ymvw">saint-andré-des-arts (quartier)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvganm6--1if1tsie3g2r">louvre (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd36jkq-2di11qojb16k">saint-honoré (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nz8yomrc-p22wy99pptd7">bouloi (rue du)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzb98tbm-1nylhhggf09fy">grands-augustins (rue des)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nz9nlgtw-8tyuqwot7a13">coquillière (rue)</placeEntry>
+               <placeEntry localType="nomLieu">rue Saint-Honoré près la rue du Roule (de 1781 à 1786), rue du Bouloi hôtel de la Reynie (de 1787 à l'an II), 24 rue des Grands-Augustins (de l'an III à l'an VI), rue Coquillère, au coin de la rue des Vieux-Augustins (de l'an VII à l'an XIII)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1781-11-06">6 novembre 1781</fromDate>
+                  <toDate standardDate="1804-10-25">25 octobre 1804</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>né le 13 mars 1751 à Paris</p>
+            <p>marié à Catherine Charpentier-Champigny (voir ET/XIV/539, 23 floréal an IV [12 mai 1796], contrat de mariage)</p>
+            <p>suspecté de royalisme, il est incarcéré de novembre 1793 à juillet 1794</p>
+            <p>maire de Sèvres en 1816</p>
+            <p>maire de Saint-Coud de 1816 à 1825</p>
+            <p>décédé le 28 février 1825</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010136"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale IX</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1781-11-06">6 novembre 1781</fromDate>
+               <toDate standardDate="1804-10-25">25 octobre 1804</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/CXV/923, 10 avril 1781, traité d'office de notaire entre Louis-Alexandre-François de Vaupré et Abraham Silly</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/IX/1111, 7 mars 1825, notoriété après décès</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/IX/1111, 26 avril 1825, dépôt du testament</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041338"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Abraham SILLY, 6 novembre 1781 - 25 octobre 1804 (étude IX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_056673"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Abraham Silly pour l'étude IX</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

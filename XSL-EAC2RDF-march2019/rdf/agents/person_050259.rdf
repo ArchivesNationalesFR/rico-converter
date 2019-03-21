@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050259">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Madelin, Louis (1871-1956)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050259_d3855e66"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1871-05-08</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1956-08-18</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050259-d3853e168"/>
+      <RiC:history xml:lang="fr">Agrégé d’histoire et de géographie, archiviste-paléographe, auteur d’une thèse de doctorat sur Fouché, Louis Madelin (1871-1956) fut chargé de cours à la Sorbonne de 1904-1910, période au cours de laquelle il publia de nombreux ouvrages historiques, dont 
+     La Révolution, et « Histoire politique de 1516 à 1804 » dans 
+     L’histoire de la nation française dirigée par Gabriel Hanoteaux. Pendant la Première Guerre mondiale, il fut d’abord simple sergent au 44e territorial puis attaché au quartier général de Chantilly. De ces quatre années, il retira la matière de plusieurs ouvrages : 
+     La Bataille de la Marne, 
+     La Mêlée des Flandres, 
+     La Bataille de France. Député des Vosges de 1924 à 1928, il appartint à la commission des Affaires étrangères et intervint dans les discussions budgétaires ou à propos de problèmes de politique étrangère, comme la ratification des accords de Locarno. Commandeur de la Légion d’honneur, Louis Madelin succéda en 1927 à Robert de Flers à l’Académie française. Il se retira de la vie politique et commença, en 1936, de publier la grande œuvre de sa vie : 
+     L’Histoire du Consulat et de l’Empire. 
+    </RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050259--d3853e149"/>
+      <owl:sameAs rdf:resource=""/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Louis_Madelin"/>
+      <isni:ISNIAssigned>000000008342786X</isni:ISNIAssigned>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050259-d3853e254"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050259"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050259-d3853e168">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1924-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1928-12-31</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msiribo--1dn34eg8lht4f"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050259-d3853e254">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Madelin, Louis (1871-1956) et l'ensemble de documents "Fonds Madelin (1792-1955)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/004889-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050259_d3855e66">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050259-d3853e121"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050259--d3853e149">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Madelin, Louis (1871-1956)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050259-d3853e144 http://data.archives-nationales.culture.gouv.fr/place/051189-d4487e141"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050259">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050259"/>
+      <RiC:creationDate>2014-02-04</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-11-15</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_050259</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Archives nationales, Fonds Madelin (355 AP).</RiC:source>
+      <RiC:source xml:lang="fr">Notice d'autorité BnF n° : FRBNF11913848</RiC:source>
+      <RiC:source xml:lang="fr">https://fr.wikipedia.org/wiki/Louis_Madelin</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/000000008342786X"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050259"/>
+      <rdfs:seeAlso rdf:resource=""/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Louis_Madelin"/>
+   </rdf:Description>
+</rdf:RDF>

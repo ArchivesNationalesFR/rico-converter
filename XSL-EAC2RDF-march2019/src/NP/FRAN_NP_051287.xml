@@ -1,0 +1,72 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051287</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-05-12</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal RIVIALE</agent>
+            <eventDescription>F. Clavaud, 12 mai 2016 : changé la forme autorisée du nom, revu un peu l'historique, ajouté fonction</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>notice BnF: http://catalogue.bnf.fr/ark:/12148/cb11877585d (notice du musée national des arts d'Afrique et d'Océanie, 1931-2003)</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI: 0000000121901789</entityId>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Musée de la France d'Outre-Mer (Paris ; 1935-1959)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1935-01-01">1935</fromDate>
+               <toDate standardDate="1959-12-31">1959</toDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>service extérieur</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d5bhviikk9--y6te63k761ib">culture</term>
+               <descriptiveNote>
+                  <p>musée</p>
+               </descriptiveNote>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Dans le cadre de l'exposition coloniale (inaugurée le 31 mai 1931 à Paris) est construit le palais des colonies, transformé en musée des colonies après la clôture de cette manifestation. En 1932 l'institution prend le nom de musée de la France extérieure, puis en 1935 celui de musée de la France d'Outre-Mer. </p>
+            <p>En 1960 ce musée devient le musée des arts africains et océaniens, puis en 1990 le musée national des arts d'Afrique et d'Océanie. En 2003 il ferme ses portes, ses collections rejoignent le musée du quai Branly. En 2004 le palais de la Porte dorée est affecté à la future Cité nationale de l'histoire de l'immigration (inaugurée en 2007).</p>
+            <p>Les archives du Musée de la France d'Outre-Mer ont été versées aux Archives nationales d'outre-mer.</p>
+         </biogHist>
+      </description>
+   </cpfDescription>
+</eac-cpf>

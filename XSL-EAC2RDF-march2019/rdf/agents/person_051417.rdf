@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051417">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Lemaigre-Dubreuil, Jacques (1894-1955)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051417_d4667e52"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1894-10-30</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1955-06-11</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051417-d4665e120"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051417-d4665e132"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051417-d4665e144"/>
+      <RiC:history xml:lang="fr">Jacques Lemaigre-Dubreuil est né à Solignac (haute-Vienne) en octobre 1894 ; il est le fils du maire de Solignac, Georges-Léon Lemaigre-Dubreuil (1864-1933) et de Louise Adèle Geneviève Labour. Après des études à l'École des Sciences politiques, il intègre l'armée française en 1914. Il participe pendant la 1ère Guerre mondiale à une mission en Roumanie. Il est affecté ensuite pendant 4 ans dans l'armée du Levant en Syrie. Il quitte l'armée en 1922 et entame une carrière d'homme d'affaires.  Il épouse en janvier 1926 Simone Lesieur, fille de Georges Lesieur (1848-1931) fondateur de la société des Huiles Lesieur, puis il intègre la même année le conseil d'administration de cette société. Il en devient le président directeur général en 1931 et s'occupe de son développement en France et à l'international.  Parallèlement, dans l'entre-deux-guerres, il devient militant de l'extrême-droite. Après la défaite de 1940, il transfère les activités commerciales des Huiles Lesieur à Casablanca avec l'approbation des autorités allemandes. Il joue un rôle important dans le débarquement allié en Afrique du Nord, le 8 novembre 1942 et contribue à l'arrivé du général Giraud sur la scène politique. Il prendra ses distances avec ce dernier lorsque le général Giraud prend ses distances avec le gouvernement de Vichy en 1943. Après la guerre, Jacques Lemaigre-Dubreuil continue à occuper une position influente au Maroc par le biais entre autres des articles qu'il écrit pour différents organes de presse (il devient propriétaire du journal Maroc-Presse). D'abord favorable au maintien de l'ordre établi, il évolue vers une position en faveur de l'autonomie du Maroc. Il est assassiné à Casablanca le 11 juin 1955.</RiC:history>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb15519501t#foaf:Person"/>
+      <isni:ISNIAssigned>0000000093788183</isni:ISNIAssigned>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051417-d4665e193"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051417"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051417-d4665e120">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">Société des Huiles Lesieur (1931-1955)</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjnphp--ogopux4anfqf"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051417-d4665e132">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">extrème droite (dans l'entre deux guerres)</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msk3h6v--1a7obp35gqwv3"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051417-d4665e144">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">fait partie du "groupe ou comité des cinq" qui prépare le débarquement des Alliés en Afrique du Nord en 1942.</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d-2dlouru40-16uts12xdm4zl"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051417-d4665e193">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Lemaigre-Dubreuil, Jacques (1894-1955) et l'ensemble de documents "Fonds Jacques Lemaigre Dubreuil (1914-2009)."</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/055792-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051417_d4667e52">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051417-d4665e97"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051417">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051417"/>
+      <RiC:creationDate>2016-11-10</RiC:creationDate>
+      <RiC:lastUpdateDate>2016-11-16</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051417</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000093788183"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051417"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb15519501t"/>
+   </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,113 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012193</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE02050</otherRecordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2015-08-13</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marie-Françoise LIMON-BONNET</agent>
+            <eventDescription>Dépouillement systématique de la collectiond e faire-part AD/XXc.</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Noémie SANTACANA, 
+      <span style="italic">Les notaires au Châtelet de Paris à l'époque du Cardinal de Fleury, mémoire de maîtrise 2003-2004</span>, dact., p. 259-260.
+     </p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Dupont, Damien-Louis</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1739-12-15">15 décembre 1739</fromDate>
+               <toDate standardDate="1766-07-02">2 juillet 1766</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="quartier" vocabularySource="d3nyvganm6--1if1tsie3g2r">Louvre (quartier)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvox0hv--s68ql74wtyjp">Saint-Germain-l'Auxerrois (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nz8jzpyg-yg18minb4oz4">Arbre-Sec (rue de l')</placeEntry>
+               <placeEntry localType="nomLieu">rue de l'Arbre-Sec, près le quai de l'Ecole</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à Paris</term>
+               <dateRange>
+                  <fromDate standardDate="1739-12-15">15 décembre 1739</fromDate>
+                  <toDate standardDate="1766-07-02">2 juillet 1766</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Damien Louis Dupont est baptisé le 10 septembre 1711. Il épouse Catherine Sophie Blanchard, fille de Louis Pierre Blanchard, commissaire enquêteur au Châtelet (lequel meurt rue Saint-Honoré, vis-à-vis la rue de l'Echelle, et est inhumé le 9 avril 1765 en l'église Saint-Roch, sa paroisse. Faire-part de décès AD/XXc/96) et de Marie Catherine Le François (morte rue Saint-Martin et inhumée le 15 janvier 1733 à Saint-Nicolas-des-Champs).</p>
+            <p>Les beaux-frères de Damien Louis Dupont sont M. de La Combe, bourgeois de Paris, et Desjobert, procureur au parlement.</p>
+            <p>Damien Louis Dupont devient secrétaire du Roi en la Grande Chancellerie de 1757 à 1778.</p>
+            <p>Il meurt en 1778</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010151"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XXIV</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1739-12-15">15 décembre 1739</fromDate>
+               <toDate standardDate="1766-07-02">2 juillet 1766</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041717"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Damien Louis DUPONT, 15 décembre 1739 - 2 juillet 1766 (étude XXIV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051481"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Damien Louis Dupont pour l'étude XXIV</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

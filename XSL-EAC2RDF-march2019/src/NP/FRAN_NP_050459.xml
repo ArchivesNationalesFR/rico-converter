@@ -1,0 +1,123 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050459</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-07-04</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+            <eventDescription>Elsa Camus, 4 juillet 2016 : modification forme autorisée du nom, ajout autres formes du nom, modification historique (verbes), ajout activités, ajout lieux, ajout lien familial</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-09-22</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+            <eventDescription>Pas de numéro ISNI, pas de notice wikipédia, pas de notice BnF. Ajout lien IR (septembre 2017).</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2018-02-15</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+            <eventDescription>Recherche d'identifiant ISNI infructueuse (22/11/17).</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>État sommaire des fonds d'archives privées. Séries AP et AB XIX, Paris, Centre historique des Archives nationales, 2004, p. 124 (notice 56 AP).</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Révilliod, Hippolyte Augustin (1859-19..)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Révilliod, Hippolyte (1859-19..)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Révilliod, Augustin (1859-19..)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Révilliod, Hippolyte-Augustin (1859-19..)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1859-08-28">28 août 1859</fromDate>
+               <toDate standardDate="2000-12-31">XXe siècle</toDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Grenoble</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3nti84ec1--1of75hdvnmqej">Grenoble (Isère)</placeEntry>
+            </place>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Tokyo</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3ntxpqzc4-mryr8jt3k3ar">Tokyo (Japon)</placeEntry>
+            </place>
+         </places>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msj742x--12cnnohd8i9wj">avocat</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msjrsv3--1jyvbnfetqx5m">conseil juridique</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msj02xm-19qbb7wdtto3j">enseignant</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msj4m5h-1b2buwj8z7npn">juge</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Docteur en droit, Hippolyte Augustin Révilliod (1859- ?) est avocat puis juge suppléant au tribunal civil de Grenoble en 1888. Il est ensuite conseiller légal au ministère de la Justice du Japon, puis professeur à l’université de Tokyo, de février 1889 à 1892. </p>
+            <p>Il est enfin mis à la disposition du président du Conseil, ministre des Affaires étrangères, le 6 août 1920, et détaché en qualité d’assistant juridique à la section d’Autriche de la Commission des réparations.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_050460"
+                      xlink:type="simple">
+            <relationEntry>Révilliod, Pierre (1895-1971)</relationEntry>
+            <descriptiveNote>
+               <p>
+      Père de Pierre Révilliod 
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_053994"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds RÉvilliod (1919-1938).</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

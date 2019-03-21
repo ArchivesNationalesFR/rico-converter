@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051594">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Law de Lauriston, Jean (1719-1797)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051594_d4808e75"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051594_d4808e78"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1719-10-05</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1797-07-16</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051594-d4806e208"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051594-d4806e214"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051594-d4806e220"/>
+      <RiC:history xml:lang="fr">Neveu du financier écossais John Law (1671-1729) et protégé de Louise-Françoise, duchesse de Bourbon (1673-1743), fille légitimée de Louis XIV, Jean Law, baron de Lauriston, s’établit en Inde vers 1742 et y fait une carrière d’officier et d’administrateur colonial. Il est d’abord colonel, puis brigadier d’infanterie. Directeur de la loge de Cossimbāzār en 1747, Jean Law de Lauriston devient conseiller au conseil supérieur de Pondichéry en 1752, commandant général des établissements français aux Indes orientales, puis gouverneur de Pondichéry et de l’Inde française (1764-1777). On lui doit un rapport sur l’ 
+     État politique de l’Inde en 1777. Rappelé en France, il est nommé maréchal de camp et décoré de la croix de l’ordre de Saint-Louis (1780). Sous la Constituante, il est élu député suppléant des comptoirs de l’Inde, mais ne siège pas. 
+    </RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051594--d4806e186"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051594--d4806e198"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Jean_Law_de_Lauriston"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb118426192#foaf:Person"/>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/051594-d4806e275"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051594-d4806e308"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051594"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051594-d4806e208">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d3m0bl759we-1qfz4kgpyc2dp"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051594-d4806e214">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051594-d4806e220">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1764-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1777-12-31</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">gouverneur de Pondichéry et de l'Inde française</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d3m0bl79y9j--1wpw5u7c5oc6l"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051594-d4806e308">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Law de Lauriston, Jean (1719-1797) et l'ensemble de documents "Fonds Law de Lauriston (1737-1847)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/004330-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051594_d4808e75">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051594-d4806e140"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051594_d4808e78">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1719-10-05</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1797-07-16</RiC:endDate>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051594-d4806e146"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051594--d4806e186">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Law de Lauriston, Jean (1719-1797)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/051594-d4806e181"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051594--d4806e198">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Law de Lauriston, Jean (1719-1797)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050764-d4229e186"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051594">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051594"/>
+      <RiC:creationDate>2017-07-19</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-10-06</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051594</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Historique rédigé d’après l’État sommaire des fonds d’archives privées, séries AP (1 à 629 AP) et AB XIX, Paris, Centre historique des Archives nationales, 2004, p. 377 : confusion entre Jean Law de Lauriston (1719-1797, père du maréchal) et son frère Jacques-François Law de Lauriston (1724-1767).</RiC:source>
+      <RiC:source xml:lang="fr">Notice BnF : FRBNF11842619 (identifiant ARK : http://catalogue.bnf.fr/ark:/12148/cb118426192).</RiC:source>
+      <RiC:source xml:lang="fr">« Jean Law de Lauriston », in Wikipédia, encyclopédie collaborative, en ligne : https://fr.wikipedia.org/wiki/Jean_Law_de_Lauriston (consulté en juillet 2017).</RiC:source>
+      <RiC:source xml:lang="fr">« Maison de Law (de Lauriston) », in Racines et histoire, en ligne : http://racineshistoire.free.fr/LGN/PDF/Law%20de%20Lauriston.pdf (consulté en juillet 2017).</RiC:source>
+      <RiC:source xml:lang="fr">Voir aussi la notice sur Jean Law de Lauriston dans le Si des Archives nationales d'Outre-Mer (http://anom.archivesnationales.culture.gouv.fr/nominatif/?nom=Law+de+Lauriston&amp;prenoms=&amp;q=)</RiC:source>
+      <RiC:source xml:lang="fr">Pas d'identifiant ISNI au 6 octobre 2017</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051594"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Jean_Law_de_Lauriston"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb118426192"/>
+   </rdf:Description>
+</rdf:RDF>

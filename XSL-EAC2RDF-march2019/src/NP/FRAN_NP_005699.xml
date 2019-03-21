@@ -1,0 +1,107 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_005699</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Import_SIA</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2015-10-02</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Elsa CAMUS</agent>
+            <eventDescription>Modification du nom, des liens entre producteurs. Ajout de l'historique, du texte de référence et des sources.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2016-10-20</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Dardy-Cretin Michèle, 
+      <span style="italic">Histoire administrative du Ministère de la culture et de la communication, 1959-2012 : les services de l'administration centrale</span>, Paris, Comité d'histoire du Ministère de la Culture, 2012 
+     </p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>France. Ministère de la Culture et de la Communication. Direction de l'architecture. Bureau des affaires générales (1996-1998)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1996-01-01">1996</fromDate>
+               <toDate standardDate="1998-12-31">1998</toDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term vocabularySource="d5blonaxbw--1mt8t42bokzts">service d'administration centrale</term>
+            </legalStatus>
+         </legalStatuses>
+         <mandates>
+            <mandate>
+               <descriptiveNote>
+                  <p>Arrêté du 6 mai 1996 relatif à l'organisation de la direction de l'architecture : http://www.legifrance.gouv.fr/jopdf/common/jo_pdf.jsp?numJO=0&amp;dateJO=19960508&amp;numTexte=&amp;pageDebut=06919&amp;pageFin=19960508</p>
+               </descriptiveNote>
+            </mandate>
+         </mandates>
+         <biogHist>
+            <p>Le bureau des affaires générales est créé en 1996 au sein de la direction de l'architecture, lorsque celle-ci rejoint le ministère de la Culture qu'elle avait quitté en 1978 pour intégrer le nouveau ministère de l'Environnement et du Cadre de vie. Ses missions sont décrites dans l'arrêté du 6 mai 1996 : le bureau doit "assurer la gestion des moyens budgétaires, matériels et humains de la direction".</p>
+            <p>Suite à la fusion de la direction de l'architecture et de la direction du patrimoine en 1998, le bureau des affaires générales rejoint la nouvelle direction de l'architecture et du patrimoine. Il devient le bureau des affaires générales et financières au sein de la sous-direction des ressources humaines et des affaires générales, elle-même placée (jusqu'en 2001) dans le service des enseignements, des ressources, des publics et des réseaux.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-later"
+                      xlink:href="FRAN_NP_005368"
+                      xlink:type="simple">
+            <relationEntry>Bureau « budget et affaires financières » (direction de l'architecture et du patrimoine)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1998-01-01">1998</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_005655"
+                      xlink:type="simple">
+            <relationEntry>France. Ministère de la Culture et de la Communication. Direction de l'architecture (1996-1998)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1996-01-01">1996</fromDate>
+               <toDate standardDate="1998-12-31">1998</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p/>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

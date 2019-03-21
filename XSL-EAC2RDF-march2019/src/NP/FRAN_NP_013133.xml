@@ -1,0 +1,134 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_013133</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE03061</otherRecordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-01-25</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marie-Françoise LIMON-BONNET</agent>
+            <eventDescription>P. Charbonnier, 19 juillet 2018 : indexation activité, modification dates d’existence, ajout dates dans forme autorisée du nom, historique revu, modification liens vers IR (creatorOf), ajout lien chronologique vers Maupas, Jean (FRAN_NP_011118).</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2018-07-19</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Philippe BERTHOLET, Etudes et notaires parisiens en 1803, au moment de la loi du 25 ventôse an XI (16 mars 1803), Paris, 2004, p. 395-396</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Antheaume, Adrien-François (1755-1824)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1755-03-16">16 mars 1755</fromDate>
+               <toDate standardDate="1824-04-15">15 avril 1824</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p/>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp6vb2-rsrcmgk1zmct">Saint-Merri (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp0xwi-18dd5xg8fnnjr">Saint-Jean-en-Grève (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvh1eiq-10kmxmcddmsfj">Sainte-Avoye (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzdokgfk-1anooamvc83ng">Verrerie (rue de la)</placeEntry>
+               <placeEntry localType="nomLieu">rue de la Verrerie, vis-à-vis la rue Barre-du-Bec</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à Paris</term>
+               <dateRange>
+                  <fromDate standardDate="1794-08-13">13 août 1794</fromDate>
+                  <toDate standardDate="1814-11-12">12 novembre 1814</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d3nyu9x713-9kcjiv44l4wh">notaire</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Né le 16 mars 1755 à Écouen (Seine-et-Oise). Il se marie en premières noces à Edmée Klesser (voir ET/XCIV/526, 26 thermidor an II [13 août 1794], contrat de mariage). Il se marir en secondes noces à Marie Lefèvre (voir ET/XXXII/246, 24 octobre 1821, contrat de mariage).</p>
+            <p>D'abord principal clerc de Jean Maupas, il est reçu au concours de l'an II et remplace Jean Maupas le 26 thermidor an II (13 août 1794).</p>
+            <p>Ce dernier est réintégré le 23 nivôse an III (12 janvier 1795), puis démissionne le le 4 brumaire an VIII (26 octobre 1799)</p>
+            <p>(En conséquence, du 23 nivôse an III au 4 brumaire an VIII, on trouve ensembles les actes reçus par Maupas et ceux reçus par Antheaume)</p>
+            <p>Il décéde à Paris le 15 avril 1824. </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010228"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale CI</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1794-08-13">13 août 1794</fromDate>
+               <toDate standardDate="1814-11-12">12 novembre 1814</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-earlier"
+                      xlink:href="FRAN_NP_011118"
+                      xlink:type="simple">
+            <relationEntry>Maupas, Jean</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1755-03-16">16 mars 1755</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Adrien-François Antheaume remplace Jean Maupas le 26 thermidor an II (13 août 1794).</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_053485"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Adrien François Antheaume pour l'étude CI</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043092"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Adrien François ANTHEAUME, 15 août 1794 - 12 novembre 1814 (étude CI)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

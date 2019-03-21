@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010259</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NAETUDE_151</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry scriptCode="Latn"
+                    localType="autorisée"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_010259-d356e67">
+            <part>Etude CLI</part>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_010259-d356e73">
+            <part>75178</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1965-09-22">22 septembre 1965</fromDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place xml:id="FRAN_place_010259-d356e93">
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu" xml:id="FRAN_placeEntry_010259-d356e98">22, avenue de Suffren, 75015 PARIS</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function xml:id="FRAN_activity_010259-d356e105">
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1965-09-22">22 septembre 1965</fromDate>
+                  <toDate/>
+               </dateRange>
+            </function>
+         </functions>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011039"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010259-d356e123">
+            <relationEntry>Magnin, Jean Louis</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1990-05-30">30 mai 1990</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013324"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010259-d356e135">
+            <relationEntry>Levy, Xavier</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1987-02-19">19 février 1987</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010685"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010259-d356e147">
+            <relationEntry>Rivoire, Marc</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1981-01-05">5 janvier 1981</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012732"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010259-d356e159">
+            <relationEntry>Chapellain, Jacques</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1965-09-22">22 septembre 1965</fromDate>
+               <toDate standardDate="1979-07-07">7 juillet 1979</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013507"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010259-d356e174">
+            <relationEntry>Lourme-Berthaut, Sophie</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2011-06-20">20 juin 2011</fromDate>
+            </dateRange>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

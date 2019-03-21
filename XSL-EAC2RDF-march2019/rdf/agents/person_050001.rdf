@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050001">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Faure Félix (1841-1899)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050001_d3653e69"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1841-02-01</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1899-02-16</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050001-d3651e150"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050001-d3651e165"/>
+      <RiC:history xml:lang="fr">Après avoir fait fortune dans le commerce du cuir au Havre, Félix Faure (1841-1899) est élu comme député républicain modéré (1881) avant de devenir sous-secrétaire d'État au Commerce et aux Colonies. réélu plusieurs fois en tant que député (1885 1889 et 1893), il poursuit son ascencion. À deux reprises il occupe le poste de sous-secrétaire d'État à la Marine et aux Colonies (1883-1885 et 1888) avant d'obtenir la consécration en tant que ministre de la Marine (1894-1895). Le 17 janvier 1895, il est élu président de la IIIe République par la coalition monarchiste et modérée. Son mandat est marqué par le renforcement de l’alliance avec la Russie (Félix Faure accueille le tsar Nicolas II à Paris en 1896 et se rend lui-même à Kronstadt en 1897), la poursuite de la colonisation de Madagascar, les difficultés diplomatiques avec la Grande-Bretagne à la suite de l’affaire de Fachoda, et la révision du procès Dreyfus à laquelle il se montra hostile.  Sa mort soudaine le 16 février 1899, survenue dans des conditions qui firent scandale, fut suivie d’une importante agitation politique.</RiC:history>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/F%C3%A9lix_Faure"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb12183684h#foaf:Person"/>
+      <owl:sameAs rdf:resource="http://www.elysee.fr/la-presidence/felix-faure/"/>
+      <isni:ISNIAssigned>0000000081008354</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050001-d3651e202"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050001-d3651e238"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050001-d3651e308"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050001"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050001-d3651e150">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1895-01-17</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1899-02-16</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj6vd5-1ixwzgwbq0xrs"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050001-d3651e165">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1894-05-30</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1895-01-17</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">Ministre de la Marine.</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050001-d3651e308">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Faure Félix (1841-1899) et l'ensemble de documents "Présidence de la République : archives du Secrétariat général civil et militaire, du Service intérieur, des services du Protocole et de la Sûreté (1870-1940.)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/003844-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050001_d3653e69">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050001-d3651e127"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050001">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050001"/>
+      <RiC:creationDate>2013-04-30</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-10-25</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_050001</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">- Notice wikipédia https://fr.wikipedia.org/wiki/F%C3%A9lix_Faure</RiC:source>
+      <RiC:source xml:lang="fr">- Notice elysée.fr : http://www.elysee.fr/la-presidence/felix-faure/</RiC:source>
+      <RiC:source xml:lang="fr">- Archives nationales : fonds Félix Faure (460AP) ; archives du secrétariat général civil et militaire du service intérieur, des services du protocole et de la sûreté (AG/1).</RiC:source>
+      <RiC:source xml:lang="fr">- Notice d'autorité BnF n°FRBNF12183684.</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000081008354"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050001"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/F%C3%A9lix_Faure"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb12183684h"/>
+      <rdfs:seeAlso rdf:resource=""/>
+   </rdf:Description>
+</rdf:RDF>

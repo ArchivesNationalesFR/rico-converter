@@ -1,0 +1,121 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051568</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2017-07-13</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Constance DE VERGNETTE DE LAMOTTE</agent>
+            <eventDescription>Il n'existe pas de notice BnF. Pas d'IR (juillet 2017).</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-10-30</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Archives nationales, fonds Baron de Vincent : 218 AP.</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Notice Wikipedia : https://fr.wikipedia.org/wiki/Nicolas-Charles_de_Vincent</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>TULARD (Jean) (dir.), Dictionnaire Napoléon, Fayard, 1999, t. II, p. 950.</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 7044 4951</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Vincent, Nicolas-Charles (1757-1834 ; baron de)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Baron de Vincent, Nicolas-Charles (1757-1834)</part>
+            <useDates>
+               <dateRange>
+                  <fromDate standardDate="1757-01-01">1757</fromDate>
+                  <toDate standardDate="1834-10-07">7 octobre 1834</toDate>
+               </dateRange>
+            </useDates>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1757-01-01">1757</fromDate>
+               <toDate standardDate="1834-10-07">7 octobre 1834</toDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Autriche</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3ntxm58dl-15htmdy8i12g1">Territoires et villes étrangers</placeEntry>
+            </place>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Erfurt</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3m08z7ok5t--rel140atx3w2">Erfurt (Allemagne)</placeEntry>
+            </place>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Paris</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d5bdppt147--176wwvjcctrx0">Paris (France)</placeEntry>
+            </place>
+         </places>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msj12zg--s5xb7u1f4uq0">ambassadeur</term>
+               <dateRange>
+                  <fromDate standardDate="1814-01-01">1814</fromDate>
+                  <toDate standardDate="1826-12-31">1826</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>Ambassadeur d'Autriche en France.</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Noble lorrain attaché à la Maison d’Autriche, Nicolas-Charles, baron de Vincent (1757-1834) a été aide de camp de François II et a joué un rôle dans les préliminaires de la paix de Campoformio, que Bonaparte signe avec l’archiduc Charles à Léoben, le 18 avril 1797.</p>
+            <p>On le retrouve comme diplomate à Paris en 1806 (il y précède Metternich) et à Erfurt. De 1814 à 1826, il est ambassadeur d’Autriche en France.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="https://fr.wikipedia.org/wiki/Nicolas-Charles_de_Vincent#cite_note-DS-1"
+                      xlink:type="simple">
+            <relationEntry>Nicolas-Charles de Vincent</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1757-01-01">1757</fromDate>
+               <toDate standardDate="1834-10-07">7 octobre 1834</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Lien vers la notice Wikipédia. </p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

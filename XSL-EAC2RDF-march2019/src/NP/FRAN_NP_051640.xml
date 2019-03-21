@@ -1,0 +1,97 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051640</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2017-08-22</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Virginie GREGOIRE</agent>
+            <eventDescription>- pas de n°ISNI, pas de notice BNF ou wikipédia</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2018-01-05</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+            <eventDescription>Recherche identifiant ISNI infructueuse (05/01/2018).</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>- Le Maitron, dictionnaire biographique Mouvement ouvrier, mouvement social, éditions de l'Atelier.</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>- Archives nationales, fonds Grunebaum (20 AR).</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Grunebaum, Jean-Michel (1914-2001)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1914-07-08">8 juillet 1914</fromDate>
+               <toDate standardDate="2001-12-21">21 décembre 2001</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msjmbyz-yxpcx7wpwsnq">syndicaliste</term>
+               <dateRange>
+                  <fromDate standardDate="1936-01-01">1936</fromDate>
+                  <toDate standardDate="2001-12-21">21 décembre 2001</toDate>
+               </dateRange>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msizce3-1fkn61hd3lpjw">journaliste</term>
+               <dateRange>
+                  <fromDate standardDate="1935-01-01">1935</fromDate>
+                  <toDate standardDate="2001-12-21">21 décembre 2001</toDate>
+               </dateRange>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Jean-Michel Grunebaum effectue ses études aux lycées Condorcet et Louis-le grand à Paris avant de s'orienter vers des études de droit et de chosir le barreau qu'il abandonne pour se consacrer au journalimse.</p>
+            <p>Il entre à la Radiodiffusion française au service des émissions à destination des colonies et des territoires d'Outre-mer (1935) avant d'être mobilisé en 1939. Blessé puis fait prisonnier en juin 1940, il s'enfuit et s'engage en grande-Bretagne dans les Forces françaises libres (FFL). En 1943, il est envoyé pour une mission en France où il est arrêté avant de s'enfuir en Espagne puis d'être de nouveau appréhendé et interné au camp de concentration de Miranda de Ebro. Il combat sur le front ialien avant d'être démobilisé le 30 juillet 1945.</p>
+            <p>Par la suite il devient le chef de service de l'agence européenne de presse (1945-1947) avant d'être rédacteur au service politique de 
+     <span style="italic">Libération </span>(1947), 
+     <span style="italic">Franc-tireur</span> (1948), 
+     <span style="italic">Populaire</span> (1949). Il entre à Paris-Match en tant que redacteur (1949) avant de devenir chef des informations (1961). 
+    </p>
+            <p>Également militant syndicaliste, il adhère à la Confédération général des travailleurs (CGT) en 1936, avant de prendre part en 1948 à la création du syndicat Force ouvrière des journalistes (FO). Il assume à la suite d'Armand Capocci la fonction de secrétaire général du syndicat national FO des journalsites, devenu par la suite syndicat général FO des journalistes. Durant la même période il est co-responsable avec Michel Agobet de la Fédération FO de la Presse.</p>
+            <p>Au titre de force ouvrière, il siège dans différentes instances dont le conseil d'amdinsitration de l'ORTF, le conseil supérieur de l'Agence France presse (AFP), le Conseil économique et social (CES) ou la Comission supérieure de l'Enseignement technique. </p>
+            <p>Chevalier de la Légion d'honneur, il est également décoré de la croix de guerre 39-45, la rosette de la Résistance , la médaille des Évadés et la médaille d'Outre-mer.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_004462"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Jean-Michel Grunebaum (1830-2002)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

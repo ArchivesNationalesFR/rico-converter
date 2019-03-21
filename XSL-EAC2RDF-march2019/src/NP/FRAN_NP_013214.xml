@@ -1,0 +1,108 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_013214</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE03165</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Delarue, Amable-Toussaint</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Delarue, Amable</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1761-06-26">26 juin 1761</fromDate>
+               <toDate standardDate="1798-07-17">17 juillet 1798</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvpcbgs-1cppi2iacclig">saint-sulpice (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzai8akv-16nhfbh8wayo7">four (rue du)</placeEntry>
+               <placeEntry localType="nomLieu">étude I : au marché Saint-Germain, au coin du Petit-Marché (de 1761 à 1771), rue du Four-Saint-Germain (de 1772 à l'an VI)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1761-06-26">26 juin 1761</fromDate>
+                  <toDate standardDate="1798-07-17">17 juillet 1798</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>notaire substituant dans l'étude LXV (du 28 août au 13 septembre 1763)</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010128"
+                      xlink:type="simple">
+            <relationEntry>Etude I</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1761-06-26">26 juin 1761</fromDate>
+               <toDate standardDate="1798-07-17">17 juillet 1798</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XCVIII/551, 4 juin 1761, traité d'office de notaire entre Antoine Quinquet et Amable-Toussaint Delarue</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XCI/1355, 11 prairial an VI (30 mai 1798), inventaire après décès</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041114"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Amable Toussaint DELARUE, 26 juin 1761 - 17 juillet 1798 (étude I)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054476"
+                           xlink:type="simple">
+            <relationEntry localType="archival">«Mélanges» (dossiers de clients) de l’étude CXV. MC/ET/CXV/1070-MC/ET/CXV/1071 (1762-1829)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052863"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Amable Toussaint Delarue pour l'étude I</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,92 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050223</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-05-11</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Vanessa ASPART</agent>
+            <eventDescription>Elsa Camus : ajout dates dans la forme autorisée du nom, ISNI, activités, lien d'association. Modification du champ Source</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, Fonds Maurice Durand-Barthez (1939-2012), 666 AP.</p>
+               <p>Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb12603740c</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 0178 1049</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Durand-Barthez, Maurice (1914-2012)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1914-04-18">18 avril 1914</fromDate>
+               <toDate standardDate="2012-02-16">16 février 2012</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d3m0bl6u27z--1eg4fqfkrzwxv">conservateur (patrimoine)</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msirr1g-3naumnfaswc">archiviste</term>
+               <dateRange>
+                  <fromDate standardDate="1938-01-01">1938</fromDate>
+                  <toDate standardDate="1979-12-31">1979</toDate>
+               </dateRange>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Né à Toulouse le 18 avril 1914, Maurice Durand-Barthez est licencié ès lettres. Il débute sa carrière dans le département de la Haute-Garonne en tant qu'archiviste-adjoint en 1938 puis travaille dans le département du Gers. Il est remplacé, pendant son emprisonnement de 1940 à 1941, par Yves Michel Metman (1913-1999). Nommé successivement archiviste en chef aux archives départementales du Gers (1947), puis promu chef de service aux archives du ministère de la Justice (1953), Durand-Barthez est nommé conservateur en chef honoraire en 1979. </p>
+            <p>Parallèlement, Maurice Durand-Barthez est secrétaire de la Compagnie des experts en écriture du ressort de la cour d'appel de Paris. </p>
+            <p>A plusieurs reprises, il obtient plusieurs distinctions : Croix de guerre en 1939-1945, chevalier de la Légion d'honneur en 1962 et des Arts et Lettres en 1966, puis officier du Mérite en 1969 et des Palmes Académiques en 1976. </p>
+            <p>Sa position de thèse à l’École de Chartes porte sur 
+     <span style="italic"> La maîtrise particulière des eaux et forêts de Comminges avant 1789</span>. 
+    </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_009963"
+                      xlink:type="simple">
+            <relationEntry>École nationale des chartes (Paris ; 1821-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1935-01-01">1935</fromDate>
+               <toDate standardDate="1938-12-31">1938</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>
+      Promotion 1937. Estimation pour la date de début 
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

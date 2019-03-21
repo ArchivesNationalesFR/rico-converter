@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051622</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2017-08-03</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Virginie GREGOIRE</agent>
+            <eventDescription>- Ajout n° ISNI, lien vers notices wikipédia et BNF, ajout lien IR.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-09-08</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>-Archives nationales : fonds Deschanel (151AP).</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>- Notice BNF n°FRBNF12307483.</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>- Notice wikipédia https://fr.wikipedia.org/wiki/Paul_Deschanel</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 0889 7607</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_051622-d4824e106">
+            <part>Deschanel, Paul (1855-1922)</part>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_051622-d4824e112">
+            <part>Paul Eugène Louis Deschanel (1855-1922)</part>
+            <useDates>
+               <dateRange>
+                  <fromDate standardDate="1855-02-13">13 février 1855</fromDate>
+                  <toDate standardDate="1922-04-28">28 avril 1922</toDate>
+               </dateRange>
+            </useDates>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1855-02-13">13 février 1855</fromDate>
+               <toDate standardDate="1922-04-28">28 avril 1922</toDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place xml:id="FRAN_place_051622-d4824e147">
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu" xml:id="FRAN_placeEntry_051622-d4824e152">Brest</placeEntry>
+               <placeEntry localType="lieu"
+                           vocabularySource="d3ntb7ow7c--5vehi4l7x7op"
+                           xml:id="FRAN_stdPlaceEntry_051622-d3ntb7ow7c--5vehi4l7x7opd4824e155">Finistère (Bretagne , département)</placeEntry>
+               <dateRange>
+                  <fromDate standardDate="1879-01-01">1879</fromDate>
+                  <toDate standardDate="1881-12-31">1881</toDate>
+               </dateRange>
+            </place>
+            <place xml:id="FRAN_place_051622-d4824e168">
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu" xml:id="FRAN_placeEntry_051622-d4824e173">Melun</placeEntry>
+               <placeEntry localType="lieu"
+                           vocabularySource="d3ntb8r1j8-pfqcs6tkazic"
+                           xml:id="FRAN_stdPlaceEntry_051622-d3ntb8r1j8-pfqcs6tkazicd4824e176">Seine-et-Marne (Ile-de-France , département)</placeEntry>
+               <dateRange>
+                  <fromDate standardDate="1879-01-01">1879</fromDate>
+                  <toDate standardDate="1879-12-31">1879</toDate>
+               </dateRange>
+            </place>
+            <place xml:id="FRAN_place_051622-d4824e189">
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu" xml:id="FRAN_placeEntry_051622-d4824e194">Dreux</placeEntry>
+               <placeEntry localType="lieu"
+                           vocabularySource="d3ntb7ok4s-1kvjezyly9q6g"
+                           xml:id="FRAN_stdPlaceEntry_051622-d3ntb7ok4s-1kvjezyly9q6gd4824e197">Eure-et-Loir (Centre , département)</placeEntry>
+               <dateRange>
+                  <fromDate standardDate="1877-01-01">1877</fromDate>
+                  <toDate standardDate="1878-12-31">1878</toDate>
+               </dateRange>
+            </place>
+            <place xml:id="FRAN_place_051622-d4824e210">
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu" xml:id="FRAN_placeEntry_051622-d4824e215">Eure-et-Loire</placeEntry>
+               <placeEntry localType="lieu"
+                           vocabularySource="d3ntb7ok4s-1kvjezyly9q6g"
+                           xml:id="FRAN_stdPlaceEntry_051622-d3ntb7ok4s-1kvjezyly9q6gd4824e218">Eure-et-Loir (Centre , département)</placeEntry>
+               <dateRange>
+                  <fromDate standardDate="1877-01-01">1877</fromDate>
+                  <toDate standardDate="1922-04-28">28 avril 1922</toDate>
+               </dateRange>
+            </place>
+         </places>
+         <occupations>
+            <occupation xml:id="FRAN_occupation_051622-d4824e234">
+               <term vocabularySource="d699msj9l7t-1gb5a09kkzrmp">sénateur</term>
+               <dateRange>
+                  <fromDate standardDate="1921-01-09">9 janvier 1921</fromDate>
+                  <toDate standardDate="1922-04-28">28 avril 1922</toDate>
+               </dateRange>
+            </occupation>
+            <occupation xml:id="FRAN_occupation_051622-d4824e249">
+               <term vocabularySource="d699msj6vd5-1ixwzgwbq0xrs">président de la République</term>
+               <dateRange>
+                  <fromDate standardDate="1920-02-01">février 1920</fromDate>
+                  <toDate standardDate="1920-09-30">septembre 1920</toDate>
+               </dateRange>
+            </occupation>
+            <occupation xml:id="FRAN_occupation_051622-d4824e264">
+               <term vocabularySource="d699msiribo--1dn34eg8lht4f">député</term>
+               <dateRange>
+                  <fromDate standardDate="1885-01-01">1885</fromDate>
+                  <toDate standardDate="1920-12-31">1920</toDate>
+               </dateRange>
+            </occupation>
+            <occupation xml:id="FRAN_occupation_051622-d4824e279">
+               <term vocabularySource="d699msj9z2z-1l1dmark2fa5i">sous-préfet</term>
+               <dateRange>
+                  <fromDate standardDate="1877-01-01">1877</fromDate>
+                  <toDate standardDate="1881-12-31">1881</toDate>
+               </dateRange>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Paul Eugène Louis Deschanel (1855-1922), fils d'Émile Auguste Etienne Deschanel (1819-1904) a d'abord suivi des études littéraires. Licencié en lettres puis en droit, il choisit finalement la voie de l'administration préfectorale. </p>
+            <p>Nommé sous-préfet à Dreux (Eure-et-Loir) le 30 novembre 1877, il continue en parallèle ses projets littéraires avec la publication de critiques littéraires. Ainsi, en 1875, il publie un article sur Rabelais dans la Revue bleue. D’autres articles suivront entre 1875 et 1880.</p>
+            <p>L’accueil à Dreux est au départ hostile aux idées républicaines de Paul Deschanel. Mais celui-ci n’entend pas se laisser abattre et entreprend de convaincre les élus en leur proposant avant tout l’apaisement. Il déclare ainsi : « J’arrive au milieu de vous, non seulement avec l’intention et le devoir de faire respecter les institutions républicaines que la France a définitivement consacrées, mais aussi avec le vif désir de les faire aimer ». Ainsi, il ne ménage pas ses efforts et se montre présent sur tout le territoire multipliant les discours et les déplacements, ce qui lui fait gagner en popularité. </p>
+            <p>Déterminé, Paul Deschanel s’est tracé un plan de carrière. Son ambition se tourne désormais vers les prochaines élections législatives. Mais avant cela, il doit occuper des postes qui ne conviennent pas à son ambition. En effet, le 3 mai 1879 il est nommé secrétaire général de la préfecture de Melun (Seine-et-Marne). Paul Deschanel montre des réticences à ce poste de second plan. Grâce à l’action de son père, la même année, il obtient le poste de sous-préfet de Brest (Finistère). À Brest également, il a l’impression de perdre son temps. Sa nomination, en avril 1881, au même poste à Meaux (Seine-et-Marne) le fait également fulminer malgré les justifications du ministère de l’Intérieur. Paul Deschanel ne perd pas de vue son objectif et si Meaux lui fait l’effet d’une ville « humide et triste » elle a le mérite d’être « à une heure de Paris et à six mois des élections ».</p>
+            <p>L’année des élections législatives, Paul Deschanel abandonne ses fonctions à Meaux et se présente à Dreux contre le député radical Ferdinand Gatineau. Paul Deschanel, candidat républicain, présente un programme modéré. La campagne électorale est mouvementée mais Paul Deschanel ne se laisse pas impressionner et multiplie les débats et les déplacements. Malgré tout, il échoue contre Gatineau.</p>
+            <p>En attendant une occasion politique plus propice, Paul Deschanel revient à l’écriture en rédigeant notamment deux livres consacrés à la politique coloniale : La question du Tonkin (1883), La politique française en Océanie à propos du canal de Panama (1884). Il s’initie également au théâtre et fréquente les salons mondains ce qui lui permet de parfaire son éloquence.</p>
+            <p>En 1885, Paul Deschanel, après un court séjour à Heidelberg (Allemagne), se présente à nouveau aux élections législatives en Eure-et-Loir. La campagne, bien que s’annonçant difficile, ne décourage pas Paul Deschanel qui entend triompher grâce à son éloquence. Il a pour la vie publique une image idéalisée et littéraire. Paul Deschanel remporte l’élection à la faveur d’une modification du mode de scrutin en 1883 mais aussi et surtout à la faveur de la mort de son adversaire Ferdinand Gatineau. Jusqu'à son élection présidentielle, il remportera successivement les élections législatives auxquelles il se présente.</p>
+            <p>Paul Deschanel siège ainsi au Palais Bourbon au fauteuil 44. Très vite son emploi du temps ne lui laisse guère de temps libre. Là encore, il entend se faire remarquer pour faire son entrée dans le sérail de l’Assemblée. Et pour cela, une intervention orale serait une occasion décisive. Cette intervention aura lieu le 22 juin 1886 au sujet des droits sur les blés. Il est alors chaleureusement applaudi lors de la séance et salué par certains de ses confrères. Il multipliera par la suite les interventions à la Chambre.</p>
+            <p>En 1889, il est réélu député en Eure-et-Loir. En 1893, il fait le choix du progressisme en choisissant le parti de la modération. Il maintient ce choix de n’être ni socialiste ni de droite , malgré les reproches que peuvent lui faire ses adversaires. Ce choix du progressisme permet à Paul Deschanel d’affirmer ses positions et d’apparaître auprès des électeurs comme un homme d’avenir. Sa renommée va ainsi grandissante et Paul Deschanel fait l’objet de nombreux articles et sujets dans les journaux entre 1893 et 1899.</p>
+            <p>L’événement de cette époque qui assoit l’importance politique de Paul Deschanel est sa confrontation orale en 1894 avec Georges Clémenceau autour du scandale de Panama. Ce différent se terminera par l’affrontement physique des deux hommes et la blessure au visage de Paul Deschanel. </p>
+            <p>En 1898, les députés l’élisent président de la Chambre, il a alors quarante trois ans. Partisan d’évolutions politiques de la IIIe République mais non de révolutions, Paul Deschanel défend le Sénat contre les pouvoirs de la Chambre trop larges selon lui. De plus, comme le radical Paul Doumer mais aussi les socialistes Jean Jaurès et Alexandre Millerand, il est favorable au changement du mode de scrutin. Il défend ainsi la proportionnelle à travers des interventions éloquentes en 1909.</p>
+            <p>La présidence de la Chambre lui ouvre la voie de l’Élysée. Paul Deschanel sait que pour y arriver il doit se démarquer des oppositions politiciennes et choisir la voie de la neutralité et de la prudence plutôt que du parti pris. C’est pour cela notamment qu’il refusera de donner son avis sur l’affaire Dreyfus qui agite la classe politique. Paul Deschanel ne prend pas parti et refuse également d’entrer au gouvernement, et ce, malgré les propositions d’Émile Loubet.</p>
+            <p>L’année 1899 est également l’année de son élection à l’Académie française où il occupe le siège du journaliste Édouard Hervé. La réception donnée en l’honneur de son entrée le 1er février 1900 donne à Paul Deschanel l’occasion d’un discours qui marque par son envolée lyrique mais aussi par sa volonté d’unité nationale et de réconciliation à l’heure où des tensions politiques règnent dans le pays.</p>
+            <p>En 1901, il se marie avec Germaine Brice de Ville, fille du député René Brice de Ville, un élu progressiste d’Ille-et-Vilaine.</p>
+            <p>Les élections législatives de 1902 marquent la fin de la présidence de la Chambre pour Paul Deschanel qui est battu par Léon Bourgeois, un député radical (303 voies contre 267). Déçu, Paul Deschanel se réfugie alors dans le travail et l’éducation de ses trois enfants : Renée-Antoinette (1902), Émile-Jean (1904) et Louis-Paul (1909). Entre 1902 et 1912, il publie six livres.</p>
+            <p>La traversée du désert s’achève en 1912, lorsque Raymond Poincaré, président du Conseil, lui propose le poste d’ambassadeur à Saint-Pétersbourg. Paul Deschanel décline la proposition car il sait que d’autres opportunités vont se présenter. En effet, l’année 1912 est l’année de l’élection du président de la Chambre. Paul Deschanel s’y représente et arrive en tête dès le premier tour.</p>
+            <p>La présidence de la République est depuis longtemps l’objectif de Paul Deschanel, il se verrait bien succéder en 1913 à Armand Fallières. Il se lance ainsi dans la campagne, mais suite à la réunion préparatoire qui précède le vote officiel du Parlement à Versailles, il renonce à se présenter au scrutin du 17 janvier 1913.</p>
+            <p>En juin 1914, suite à la démission de Paul Doumergue à la présidence du Conseil, le président Raymond Poincaré envisage de proposer le poste à Paul Deschanel qui refuse une nouvelle fois d’accéder à des fonctions qui pourraient le détourner de son objectif : « Je crois qu’en restant à la présidence de la Chambre, je servirai beaucoup mieux la cause de nos grands intérêts nationaux (…) Et puis, je serai franc. En m’offrant la présidence du Conseil, Poincaré n’a qu’une idée : me casser les reins ».</p>
+            <p>Durant le conflit contre l’Allemagne, Paul Deschanel président de la Chambre lutte pour défendre les prérogatives du Parlement face aux autorités militaires. Il multiplie les interventions et les discours face aux agressions que connaît alors le pays. Suite à la signature de l’armistice le 11 novembre 1918, les négociations sont entamées avec les différents pays. Deschanel ne considère pas que le traité de Versailles remplisse les conditions de paix nécessaires, cependant respectueux des convenances il ne manifeste pas son désaccord.</p>
+            <p>En 1920, Paul Deschanel réélu président de la Chambre prépare le terrain pour l’élection présidentielle en négociant avec ses adversaires. Georges Clémenceau, président du Conseil, est son principal concurrent dans cette course politique. Le 17 janvier 1920, à Versailles, les parlementaires votent massivement pour Paul Deschanel.</p>
+            <p>Depuis l’Élysée, Paul Deschanel veut jouer un rôle actif mais ses multiples refus au sein d’équipes gouvernementales mettent alors en lumière son inexpérience dans l’exercice du pouvoir. De plus, il a des rapports tendus avec le président du Conseil Alexandre Millerand. Il réalise son impuissance et manifeste alors très rapidement des signes de fatigue nerveuse. La fragilité de son état de santé sera révélée au grand jour suite à l’accident de train dans la nuit du 23 au 24 mai 1920. </p>
+            <p>Cet accident annonce le déclin physique et politique de Paul Deschanel. La crédibilité du Président est remise en cause par les journaux. Il sait alors qu’il n’est plus en mesure d’assurer ses fonctions. Il propose sa démission à Millerand, qui l’accepte le 21 septembre 1920.</p>
+            <p>Après avoir séjourné dans un sanatorium pour se reposer, il envisage un retour à la vie publique. Le 9 janvier 1921, il est élu sénateur d’Eure-et-Loir dès le premier tour. En janvier 1922 il succède à Raymond Poincaré à la présidence de la commission des Affaires étrangères du Sénat.</p>
+            <p>Paul Deschanel meurt le 28 avril 1922.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_050172"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_051622-d4824e377">
+            <relationEntry>Deschanel (Famille) (1700-1988)</relationEntry>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_000001"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_051622-d4824e383">
+            <relationEntry>Présidence de la République</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1920-02-01">février 1920</fromDate>
+               <toDate standardDate="1920-09-30">septembre 1920</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb123074838"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_051622-d4824e398">
+            <relationEntry>Deschanel, Paul (1856-1922)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1855-02-13">13 février 1855</fromDate>
+               <toDate standardDate="1922-04-28">28 avril 1922</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Lien vers la notice d'autorité BnF</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="https://fr.wikipedia.org/wiki/Paul_Deschanel"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_051622-d4824e419">
+            <relationEntry>Paul Deschanel</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1855-02-13">13 février 1855</fromDate>
+               <toDate standardDate="1922-04-28">28 avril 1922</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Lien vers la notice Wikipédia</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_001883"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_051622-d4824e440">
+            <relationEntry localType="archival">Fonds Deschanel (1700-1994)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

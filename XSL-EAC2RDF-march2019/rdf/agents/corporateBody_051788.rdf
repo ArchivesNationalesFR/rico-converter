@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/051788">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">France. Cabinet de Martine Aubry, ministre de l'emploi et de la solidarité (1997-2000)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051788_d4909e45"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/fa50264b-439d-4fcc-9a1d-8587b1e82dba"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1997-06-04</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-10-18</RiC:endDate>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051788-d4907e114"/>
+      <RiC:history xml:lang="fr">Cabinet de Martine Aubry, ministre de l'emploi et de la solidarité, au sein du gouvernement de Lionel Jospin, sous la présidence de Jacques Chirac. À ce titre, elle met notamment en œuvre la réforme des 35 heures, crée les emplois jeunes et instaure la couverture maladie universelle (CMU).  Le 18 octobre 2000, Martine Aubry démissionne de ses fonctions ministérielles pour se consacrer aux élections municipales à Lille </RiC:history>
+      <RiC:noteOnStructureOrGenealogy xml:lang="fr">Directeur de cabinet : Dominique Marcel Directeurs adjoints du cabinet : Didier Tabuteau puis Yves Barou Chef de cabinet : Thierry Le Lay Chefs adjoints de cabinet : Béatrice Hivernet, Alain Manville Conseillers :  Conseillère chargée de la santé : Anne Dux Conseillère chargée de la communication et de la presse : Catherine Martin Conseiller chargé de la protection sociale : Pierre-Louis Bras Conseiller chargé de l'action sociale : Philippe Coste Conseillère budgétaire : Sylviane Landais-Léger Conseiller chargé des relations avec le Parlement : Olivier Faure Conseillère chargée des relations européennes et internationales : Aurélie Lapidus Conseillers techniques chargés de l'emploi : Hubert Bouchet, Jean-Marc Germain, Benoît Hamon, Jean-Marie Marx, Yves Struillou, Nicolas Véron Conseillers techniques chargés de la protection sociale : Xavier Chastel, Joël Dessaint, Claude Lavigne, Bruno Maquart Conseillers techniques chargés de l'intégration : Christiane Ducastelle, Ahmed Ghayet Conseiller technique chargé du médicament : Gilles Duhamel Conseiller technique chargé du personnel : Gilles Lamoureux</RiC:noteOnStructureOrGenealogy>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051788-d4907e142"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051788-d4907e145"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051788-d4907e148"/>
+      <RiC:agentIsSourceOfAgentTemporalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentTemporalRelation/051788-d4907e226"/>
+      <RiC:agentIsTargetOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/051788-d4907e238"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051788-d4907e253"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051788"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051788-d4907e114">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1997-06-04</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-10-18</RiC:endDate>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:description xml:lang="fr">Cabinet du ministre de l'emploi et de la solidarité</RiC:description>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d5bhvikan6-574lz876edtw"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051788-d4907e253">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            France. Cabinet de Martine Aubry, ministre de l'emploi et de la solidarité (1997-2000) et l'ensemble de documents "Cabinets de Martine Aubry et d'Élisabeth Guigou, ministres de l'Emploi et de la Solidarité. : communiqués, discours, dossiers de presse et rapports (1997-2002)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/056866-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051788_d4909e45">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051788-d4907e82"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051788">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/051788"/>
+      <RiC:creationDate>2017-11-03</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-11-15</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051788</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051788"/>
+   </rdf:Description>
+</rdf:RDF>

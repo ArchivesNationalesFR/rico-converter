@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050069">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Vauban, Sébastien Le Prestre (marquis de)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050069_d3699e34"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1633-05-15</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1707-03-30</RiC:deathDate>
+      <RiC:history xml:lang="fr">Issu d’une famille pauvre quoique noble, Sébastien Le Prestre de Vauban (1633-1707) servit dans l’armée de Condé. Attaché aux fortifications, il se distingua au siège de Sainte-Menehould. Fait prisonnier par les troupes royales en 1653, Vauban fut gagné par Mazarin à la cause royale. En 1655, il reçut le brevet d’ingénieur du roi et de 1655 à 1659 prit une part active à la guerre de Flandre. Après la paix des Pyrénées, il travailla à plusieurs places de la frontière du Nord et, à la reprise des hostilités, en 1667, il dirigea les sièges de Tournai, Douai, Lille et Dôle. Les travaux qu’il fit à Lille consacrèrent sa réputation. Il dirigea en 1673 le siège de Maastricht qu’il obligea à capituler. En 1674, il prit Besançon et Dôle. Maréchal de camp en 1676, il obtint de Louvois la création du corps des ingénieurs du roi. Commissaire des fortifications (1678), il entoura le royaume de fortifications, le long de l’Escaut, de la Meuse et du Rhin. Il construisit aussi des grands ports, des canaux et l’aqueduc de Maintenon. Il s’intéressa au perfectionnement des techniques d’attaque et s’illustra lors de la Ligue d’Augsbourg en prenant Mons (1691), Namur et Steinkerque (1692). Il écrivit des ouvrages d’art militaire mais aussi de politique générale et sa liberté d’esprit provoqua sa disgrâce. Son 
+
+     Projet d’une dîme royale fut interdit en 1707. 
+
+    </RiC:history>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050069"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050069_d3699e34">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050069-d3697e64"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050069">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050069"/>
+      <RiC:creationDate>2013-08-13</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050069</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050069"/>
+   </rdf:Description>
+</rdf:RDF>

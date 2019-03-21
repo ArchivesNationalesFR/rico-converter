@@ -1,0 +1,123 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050547</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-07-18</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-07-20</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Constance DE VERGNETTE DE LAMOTTE</agent>
+            <eventDescription>Ajout lien IR et compléments. Juillet 2017. Pad de notice wikipedia.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-11-22</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb12521141t</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Informations extraites de la notice 138 de l'État sommaire des fonds d'archives privées. Séries AP et AB XIX, Paris, Archives nationales, 2004.</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 7833 8213</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Mopinot, Antoine-Rigobert de (1717-18..)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Mopinot de la Chapotte, Antoine Rigobert de (1717-18..)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>La Chapotte, Antoine-Rigobert Mopinot de (1717-18..)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Mopinot, Chevalier de (1717-18..)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Maupinot de la Chapotte, Antoine-Rigobert (1717-18..)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Mopinot de La Chapotte, Antoine-Rigobert (1717-18..)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1717-01-01">1717</fromDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msjgtw3-1ton3i1q2op31">ingénieur</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msjpuqr-66gt6kmedjiv">officier (armée)</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Le chevalier Antoine-Rigobert de Mopinot, ingénieur à la suite des armées et aide de camp du comte de Périgord, est l’auteur d’ouvrages militaires et moraux. Capitaine à l’armée de Soubise pendant la guerre de Sept Ans, il joue aussi un rôle dans la diplomatie secrète. </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050544"
+                      xlink:type="simple">
+            <relationEntry>Daru, Pierre (1767-1829)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1788-01-01">1788</fromDate>
+               <toDate standardDate="1829-09-05">5 septembre 1829</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://data.bnf.fr/12521141/antoine-rigobert_mopinot_de_la_chapotte/"
+                      xlink:type="simple">
+            <relationEntry>Antoine-Rigobert Mopinot de La Chapotte (1717-18..?)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1717-01-01">1717</fromDate>
+               <toDate standardDate="1949-10-29">29 octobre 1949</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Lien vers la notice d'autorité BnF.</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051115"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Daru (1709-1899).</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,135 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012099</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01942</otherRecordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2016-09-21</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marie-Françoise LIMON-BONNET</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2016-10-07</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marie-Françoise LIMON-BONNET</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2016-11-15</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
+            <eventDescription>F. Clavaud, 15 novembre 2016 : revu le nom, la note sur les dates, l'activité</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>MC/ET/CXV/741, 7 mai 1761 : contrat de mariage.</p>
+               <p>MC/ET/LXXXIV/538, 23 décembre 1774 : procès-verbal après décès. </p>
+               <p>MC/ET/CXV/882, 4 janvier 1775 : vente de l'office.</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Fournel, François Henri (17..-177.)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Fournel, François-Henri</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1760-09-20">20 septembre 1760</fromDate>
+               <toDate standardDate="1775-01-14">14 janvier 1775</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues ; les dates indiquées sont ses dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">rue Croix-des-Petits-Champs</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvow9c3--1ln2rhczl581f">Saint-Eustache (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgrw7m-1ulx41q7n6nbj">Saint-Eustache (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nz9px21h--vv5gzjwzroxg">Croix-des-Petits-Champs (rue)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à Paris</term>
+               <dateRange>
+                  <fromDate standardDate="1760-09-20">20 septembre 1760</fromDate>
+                  <toDate standardDate="1775-01-14">14 janvier 1775</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d3nyu9x713-9kcjiv44l4wh">notaire</term>
+               <dateRange>
+                  <fromDate standardDate="1760-09-20">20 septembre 1760</fromDate>
+                  <toDate standardDate="1775-01-14">14 janvier 1775</toDate>
+               </dateRange>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>François Henri Fournel épouse Michelle Larcher le 7 mai 1761 (MC/ET/CXV/741, contrat de mariage).</p>
+            <p>Le 23 décembre 1774, il y a procès-verbal après décès (MC/ET/LXXXIV/538). Son office est vendu par sa veuve à Simon Provost le 4 janvier 1775 (MC/ET/CXV/882) ; Simon Provost lui constitue une rente de 2000 livres au principal de 40000 livres.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010186"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale LIX</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1760-09-20">20 septembre 1760</fromDate>
+               <toDate standardDate="1775-01-14">14 janvier 1775</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042372"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire François Henri FOURNEL, 20 septembre 1760 - 14 janvier 1775 (étude LIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052232"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire François Henri Fournel pour l'étude LIX</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

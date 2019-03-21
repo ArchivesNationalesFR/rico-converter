@@ -1,0 +1,86 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051230</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Complète</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-12-17</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Monique LEBLOIS-PECHON</agent>
+            <eventDescription>F. Clavaud, 17 décembre 2015 : changé le nom</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Préface de l'inventaire des cotes F/9/2001 à 3693 par Marie-Thérèse Chabord.</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>France combattante. Comité français de la libération nationale. Commissariat aux prisonniers, déportés et réfugiés (1943-1944)</part>
+         </nameEntry>
+         <nameEntry localType="autres normes">
+            <part>Commissariat aux Prisonniers et Déportés</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1943-11-09">9 novembre 1943</fromDate>
+               <toDate standardDate="1944-09-10">10 septembre 1944</toDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>service d'administration centrale</term>
+            </legalStatus>
+         </legalStatuses>
+         <structureOrGenealogy>
+            <p>En plus du Cabinet, le Commissariat comprenait deux directions qui ont légèrement varié dans leurs attributions : un décret du 8 décembre 1943 créa la Direction des Secours et du Rapatriement et la Direction des Services généraux ; le décret du 23 mars 1944 en fit la Direction du Rapatriement et la Direction des Secours et Services généraux ; le décret du 6 juin 1944 les transforma en Direction de l'Organisation internationale du Rapatriement (M. MELAMEDE) et Direction de l'Organisation nationale du Rapatriement (Ct GUEDON). Ainsi, l'organisation du retour des exilés passa au premier plan des préoccupations. </p>
+            <p>Le Commissariat entretenait une Mission à Londres et une Délégation en Suisse qui continuèrent leur activité après la Libération ; leurs archives se trouvent, de ce fait, classées avec celles des missions extérieures du Ministère des Prisonniers, Déportés et Réfugiés qui succéda au Commissariat. </p>
+         </structureOrGenealogy>
+         <biogHist>
+            <p>Le Commissariat aux Prisonniers et Déportés du Comité français de la Libération nationale a été créé à Alger par un décret du 9 novembre 1943 et transformé, le 18 novembre, en Commissariat aux Prisonniers, Déportés et Réfugiés, sous la direction d'Henri Frenay, fondateur du mouvement "Combat". </p>
+            <p>Ses attributions furent définies par un décret du 8 décembre 1843 : il devait traiter toutes questions concernant les prisonniers de guerre français aux mains de l'ennemi, les ressortissants français envoyés hors de France au titre du travail obligatoire, les personnes détenues, déplacées ou déportées par les autorités d'occupation et, à partir de leur libération, toutes personnes ayant été détenues, déplacées ou déportées par le Gouvernement de Vichy, en vertu de leur opposition à ce dernier, enfin, les Français réfugiés dans la métropole, l'empire ou à l'étranger. Il devait fournir une aide matérielle et morale à tous les absents et à leur famille, organiser le rapatriement en préparant les plans nécessaires et en assurant leur exécution, préparer les mesures de réadaptation et de sauvegarde des droits de tous les "déracinés". </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-later"
+                      xlink:href="FRAN_NP_051231"
+                      xlink:type="simple">
+            <relationEntry>France. Ministère des prisonniers, déportés et réfugiés (1944-1946)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1944-09-10">10 septembre 1944</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_004493"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Affaires militaires, prisonniers de guerre. Tome 2 (1940-1945)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

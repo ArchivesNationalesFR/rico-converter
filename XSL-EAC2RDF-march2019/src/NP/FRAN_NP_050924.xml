@@ -1,0 +1,89 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050924</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-11-16</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>F. Clavaud, 23 avril 2015 : changé nom, ajouté n° ISNI, indexation activité, liens d'association, n° notice BnF</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>CNAHES</p>
+               <p>Notice d'autorité BnF n° FRBNF12631264</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 4101 168X</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Peyre, Vincent (1930-2014)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1930-01-01">1930</fromDate>
+               <toDate standardDate="2014-01-28">28 janvier 2014</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msk5oth-xqvujelh8c39">chercheur</term>
+               <descriptiveNote>
+                  <p>sociologue</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Vincent Peyre est fils d’enseignant, il a une formation de conseiller d’orientation professionnel. Métier qu’il exerce un temps à Nancy avant d’y renoncer pour des raisons familiales. Il trouve divers “petits boulots formateurs”, dont : un poste de six mois à la Mission française pour l’accroissement de la productivité, une fonction dans l’enseignement par correspondance, et notamment un poste, durant trois ans, au service du personnel d’un groupe industriel Palmolive, où il a en charge le recrutement des employés.</p>
+            <p>Lorsque le Centre de Vaucresson le recrute comme agent technique en janvier 1960, il est loin d’être sociologue professionnel. Mais, par l’intermédiaire de son épouse (sociologue), et par la fréquentation du séminaire de Chombart de Lauwe à l’Ecole Pratique des Hautes Études, il affiche un vif intérêt pour la discipline sociologique et les problèmes sociaux. C’est ainsi, “par circonstances” dit Vincent Peyre, qu’il apprend son métier de sociologue : les manières de faire, les techniques, les méthodes, les choix personnels et une indispensable “sensibilité aux autres”. Il effectue ainsi des travaux de commande sous la direction de Jacques Selosse, et participe à la formation continue des travailleurs de l’Éducation surveillée, et le Centre de Vaucresson lui offre un précieux sentiment de liberté nécessaire à son militantisme politique et syndical. Ces années à Vaucresson sont à l’en croire, “une aventure professionnelle, sociale et personnelle”. Vincent Peyre décède en janvier 2014.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050859"
+                      xlink:type="simple">
+            <relationEntry>Sélosse, Jacques (1923-1995)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1960-01-01">1960</fromDate>
+               <toDate standardDate="1980-12-31">1980</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050967"
+                      xlink:type="simple">
+            <relationEntry>Centre de formation et de recherches de l'Éducation surveillée (1958-1983)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1960-01-01">1960</fromDate>
+               <toDate standardDate="1983-12-31">1983</toDate>
+            </dateRange>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

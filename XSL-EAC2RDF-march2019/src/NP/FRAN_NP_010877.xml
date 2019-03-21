@@ -1,0 +1,111 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010877</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00623</otherRecordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2016-01-11</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marie-Françoise LIMON-BONNET</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Périer, Marie Gabriel</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Périer, Marie-Gabriel Louis François</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Périer, Marie-Gabriel</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Périer, Marin Gabriel Louis François</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1781-01-30">30 janvier 1781</fromDate>
+               <toDate standardDate="1789-03-28">28 mars 1789</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">place Dauphine</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvost68-1tq3k980risj5">Saint-Barthélemy (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvfvigs--1prphc6bemlqa">Cité (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nz9s7c1l-36lmrluf1zkk">Dauphine (place)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à Paris</term>
+               <dateRange>
+                  <fromDate standardDate="1781-01-30">30 janvier 1781</fromDate>
+                  <toDate standardDate="1789-03-28">28 mars 1789</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Il y a traité d'office le 15 mars 1789 entre Marie Gabriel Périer et Jean-Baptiste Lefèbvre de Saint-Maur, son successeur (MC/ET/CVIII/735).</p>
+            <p>Marie Gabriel Périer a laissé un seul héritier à sa mort en 1815, un fils, prénommé Amédée Gabriel Joseph, comme cela est stipulé dans l'acte notoriété du 27 mars 1815 (MC/ET/XCVII/688). </p>
+            <p>Amédée Gabriel Joseph Périer, demeurant 3, rue Vendôme au Marais, vend le 11 août 1837 (MC/ET/XCVII/829) la jouissance emphitéotique d'une maison et ses dépendances 17, rue d'Angoulême à Gabriel Gustave de Wailly, directeur de la division centrale à l'administration de la liste civile, demeurant rue du Faubourg-Saint-Honoré n°59, au palais de l'Elysée-Bourbon.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010224"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XCVII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1781-01-30">30 janvier 1781</fromDate>
+               <toDate standardDate="1789-03-28">28 mars 1789</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051279"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Marie Gabriel Périer pour l'étude XCVII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043023"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Marie Gabriel PÉRIER, 30 janvier 1781 - 28 mars 1789 (étude XCVII)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

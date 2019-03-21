@@ -1,0 +1,105 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050465</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2018-04-04</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Vanessa ASPART</agent>
+            <eventDescription>P. Charbonnier, 04/03/2018 : ajout liens d'identité vers BnF et Wikipédia, modification forme autorisée du nom, indexation lieu et activité</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Archives nationales, Fonds Reiset, 695AP et AB/XIX/4498.</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Reiset, Marie-Antoine de (1775-1836)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1775-11-29">29 novembre 1775</fromDate>
+               <toDate standardDate="1836-03-25">25 mars 1836</toDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Allemagne</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3ntxjxyl2-de3n2j7xfcc0">Allemagne</placeEntry>
+            </place>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Dresde</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3m08zjnabf-1f8cowtq54yom">Dresde (Allemagne)</placeEntry>
+            </place>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Espagne</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3ntxkj150-14qdrjsm01noe">Espagne</placeEntry>
+            </place>
+         </places>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msjpuqr-66gt6kmedjiv">officier (armée)</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Le vicomte Marie-Antoine de Reiset, issu d'une famille de Lorraine, est né à Colmar le 29 novembre 1775 et mort à Rouen le 25 mars 1836. D'abord destiné à l'état ecclésiastique, il s'engage dans l'armée en 1793 où il fait carrière et s'illustre comme l'un des meilleurs officiers de cavalerie. Il est chef d'escadron à la fin de la guerre d'Allemagne (1800), et à Iéna, il fit prisonnier le Prince Auguste de Prusse. Il combat aussi en Espagne et à Dresde.</p>
+            <p>Après la chute de l'Empire, il se rallie complètement aux Bourbons et s'engage dans la compagnie des gardes du corps du Roi dont le duc de Gramont est capitaine. Nommé lieutenant-général puis gentilhomme de la Chambre, il se retire après la révolution de 1830.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="https://fr.wikipedia.org/wiki/Marie_Antoine_de_Reiset"
+                      xlink:type="simple">
+            <relationEntry>Marie-Antoine de Reiset</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1775-11-29">29 novembre 1775</fromDate>
+               <toDate standardDate="1836-03-25">25 mars 1836</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice Wikipédia</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb10654615w"
+                      xlink:type="simple">
+            <relationEntry>Reiset, Marie Antoine (1775-1831)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1775-11-29">29 novembre 1775</fromDate>
+               <toDate standardDate="1836-03-25">25 mars 1836</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice d'autorité BnF</p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

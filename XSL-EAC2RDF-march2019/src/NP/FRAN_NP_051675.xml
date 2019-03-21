@@ -1,0 +1,102 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051675</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2017-09-07</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+            <eventDescription>Pas de NP Secrétariat d'Etat aux Beaux-Arts pour cette période. Pas de notice wikipédia.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-10-19</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>État sommaire des fonds d'archives privées. Séries AP et AB XIX, Paris, Centre historique des Archives nationales, 2004, p. 673 (notice 373 AP).</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Notice d'autorité BnF n° : FRBNF11257507.</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 7809 4669</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Antériou, Jacques-Louis (1920-1980)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Antériou, Jacques (1920-1980)</part>
+            <useDates>
+               <dateRange>
+                  <fromDate standardDate="1920-01-01">1920</fromDate>
+                  <toDate standardDate="1980-12-31">1980</toDate>
+               </dateRange>
+            </useDates>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1920-01-01">1920</fromDate>
+               <toDate standardDate="1980-12-31">1980</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Jacques-Louis Antériou (1920-1980), fils de Louis Antériou (1887-1931), est chef de cabinet du haut-commissaire de France pour l’Indochine, Émile Bollaert (1947), puis directeur de cabinet du secrétaire d’État à la présidence du Conseil (1948-1949). D’août 1951 à juin 1954, il est directeur de cabinet d'André Cornu, secrétaire d’État aux Beaux-Arts et s’occupe entre autres du cinéma et des théâtres parisiens. </p>
+            <p>Suivant l’exemple de son père, inscrit dès 1919 au groupe républicain socialiste de la Chambre, Jacques Antériou milite de bonne heure dans les rangs du parti radical-socialiste, présidant notamment les Jeunesses radicales socialistes en 1949-1951 et le Club des Montagnards en 1956-1959.</p>
+            <p>Avec Guillaume Hanoteau, il est l'auteur d'une série télévisée, Commandant X, série en 9 épisodes de 90 minutes, diffusée entre 1962 et 1965 sur la première chaîne de l’ORTF et mettant en scène les missions d’un agent de renseignement français pendant et après la Seconde Guerre mondiale.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb112575075"
+                      xlink:type="simple">
+            <relationEntry>Louis-Antériou, Jacques (1920-1980)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1920-01-01">1920</fromDate>
+               <toDate standardDate="1980-12-31">1980</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice d'autorité BnF</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_051665"
+                      xlink:type="simple">
+            <relationEntry>Antériou, Louis (1887-1931)</relationEntry>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_004906"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Antériou (1887-1959)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

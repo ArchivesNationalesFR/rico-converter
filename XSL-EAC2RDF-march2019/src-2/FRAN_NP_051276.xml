@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051276</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-04-08</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Magali LACOUSSE</agent>
+            <eventDescription>F. Clavaud, 8 avril 2016 : revu la forme autorisée du nom, ajouté autre forme, vérifié ISNI, ajouté source et fonctions</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb12190709h</p>
+               <p>Site Internet de la fédération : http://www.lespep.org/index.php</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 2157 073X</entityId>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_051276-d4559e85">
+            <part>Fédération générale des pupilles de l'enseignement public (France ; 1915-....)</part>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_051276-d4559e91">
+            <part>Fédération générale des associations départementales des pupilles de l'enseignement public (France ; 1915-....)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1915-01-01">1915</fromDate>
+               <toDate standardDate="2008-12-31">2008</toDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>association</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function xml:id="FRAN_activity_051276-d4559e123">
+               <term vocabularySource="d3nyug3e0g-1xzlvri8dg416">action sociale</term>
+               <descriptiveNote>
+                  <p>action sociale et médico-sociale ; éducation populaire</p>
+               </descriptiveNote>
+            </function>
+            <function xml:id="FRAN_activity_051276-d4559e135">
+               <term vocabularySource="d5bhvil20q--uuew3ia85vzc">activité associative</term>
+            </function>
+            <function xml:id="FRAN_activity_051276-d4559e141">
+               <term vocabularySource="d5bhvihtm9--ns6nvob8yr1s">enseignement scolaire</term>
+            </function>
+         </functions>
+         <occupations>
+            <occupation xml:id="FRAN_occupation_051276-d4559e150">
+               <term vocabularySource="d699msj02xm-19qbb7wdtto3j">enseignant</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Le mouvement des Pupilles de l'Enseignement public (PEP) s'ouvre en 1915, afin de venir en aide aux orphelins de Guerre. Progressivement, l'oeuvre des PEP s'élargit aux orphelins dits '"civils". Les PEP défendent les principes de la laicité, auxquels elles restent très attachées. Pendant l'entre-deux-guerres, elles se lancent dans l'implantation de sanatoriums, écoles de plein air, colonies de vacances.</p>
+            <p>Après la deuxième guerre mondiale, les PEP (déjà présentes en Algérie) essaiment en Allemagne et à Madagascar.</p>
+            <p>Elles prennent une part active à l'action sociale : développement, des consultations médico-psycho-pédagogiques ; intégration scolaire des handicapés.</p>
+            <p>Elles sont reconnues d'utilité publique.</p>
+            <p>La Fédération des PEP gère l'établissement héliothérapique de Font-Romeu, devenu Maison d'enfant à caractère sanitaire spécialisé en 1972.</p>
+         </biogHist>
+      </description>
+   </cpfDescription>
+</eac-cpf>

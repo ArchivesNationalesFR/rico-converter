@@ -1,0 +1,126 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_011271</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01044</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Muret, Jean</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Muret, Pierre</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1585-07-06">6 juillet 1585</fromDate>
+               <toDate standardDate="1614-10-07">7 octobre 1614</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">étude XXXIV : rue Saint-Côme puis rue de la Comtesse-d'Artois</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvow9c3--1ln2rhczl581f">saint-eustache (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvpbcz5--gbtglbh0f8xm">saint-sauveur (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd1p57s--pkcri30xgzsn">saint-côme (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nz9mmdng--nabw9ing3ahx">comtesse-d'artois (rue de la)</placeEntry>
+            </place>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">étude XX : rue de la Comtesse-d'Artois</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvow9c3--1ln2rhczl581f">saint-eustache (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvpbcz5--gbtglbh0f8xm">saint-sauveur (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd1p57s--pkcri30xgzsn">saint-côme (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nz9mmdng--nabw9ing3ahx">comtesse-d'artois (rue de la)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1585-07-06">6 juillet 1585</fromDate>
+                  <toDate standardDate="1614-10-07">7 octobre 1614</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>marié à Marie de La Rivière</p>
+            <p>père de Pierre Muret I, notaire dans l'étude XCI (voir ET/XI/108, folio 77, 11 août 1623, contrat de mariage de Pierre Muret I)</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010161"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XXXIV</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1585-07-06">6 juillet 1585</fromDate>
+               <toDate standardDate="1614-10-07">7 octobre 1614</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010147"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XX</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1609-01-01">1609</fromDate>
+               <toDate standardDate="1612-12-31">1612</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="creatorOf">
+            <relationEntry localType="archival">sous la cote ET/XXXV/597, expéditions signées par divers notaires dont Muret et conservées dans le fonds de l'étude XXXV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041935"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean I CHAPELLAIN, janvier 1580 - 24 octobre 1623 (étude XXXV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041917"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean MURET, 30 juillet 1585 - 7 octobre 1614 (étude XXXIV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041628"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean MURET, 1607 - 1613 (étude XX)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

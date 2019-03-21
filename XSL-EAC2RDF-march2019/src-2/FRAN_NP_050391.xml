@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050391</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-10-08</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Thierry GUILPIN</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-07-25</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Clément ARNAUD</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-09-01</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
+            <eventDescription>F. Clavaud, 1er septembre 2017 : revu forme du nom, ajouté ISNI, liens d'identité, lien d'association, revu historique, ajouté activités</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Archives nationales, fonds Camus (163AP).</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 8344 4459</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_050391-d3954e109">
+            <part>Camus, Armand-Gaston (1740-1804)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1740-04-02">2 avril 1740</fromDate>
+               <toDate standardDate="1804-11-02">2 novembre 1804</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation xml:id="FRAN_occupation_050391-d3954e132">
+               <term vocabularySource="d3m0bl76dik--ncxjtjvkyzcv">avocat au parlement (Ancien Régime)</term>
+            </occupation>
+            <occupation xml:id="FRAN_occupation_050391-d3954e138">
+               <term vocabularySource="d699msiribo--1dn34eg8lht4f">député</term>
+               <descriptiveNote>
+                  <p>député aux Etats généraux en 1789 ; député à la Convention en 1792</p>
+               </descriptiveNote>
+            </occupation>
+            <occupation xml:id="FRAN_occupation_050391-d3954e150">
+               <term vocabularySource="d699msj1bp7--sqw9bp2dwte7">juriste</term>
+            </occupation>
+            <occupation xml:id="FRAN_occupation_050391-d3954e156">
+               <term vocabularySource="d699msirr1g-3naumnfaswc">archiviste</term>
+               <dateRange>
+                  <fromDate standardDate="1789-08-01">août 1789</fromDate>
+                  <toDate standardDate="1804-11-02">2 novembre 1804</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>archiviste national</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Avocat du clergé de France au parlement de Paris au moment de la Révolution et membre de l’académie des inscriptions et belles-lettres depuis 1783, Armand-Gaston Camus (2 avril 1740-2 novembre 1804) est élu député du tiers aux états généraux par la ville de Paris, et il est l’un des premiers à prêter le serment du Jeu de Paume. Depuis le 14 août 1789, Camus était l’archiviste de la Constituante. Le 5 septembre 1792, il est élu par la Haute-Loire membre de la Convention. Absent lors du procès de Louis XVI, il adresse à l’assemblée son vote pour la mort du roi. Nommé membre du Comité de salut public, Camus propose de faire suspendre Dumouriez. Il est envoyé comme commissaire de la Convention près l’armée commandée par Dumouriez. Ce dernier le fait arrêter et livrer aux Autrichiens. Échangé à Bâle contre la fille de Louis XVI, la future duchesse d’Angoulême, Camus entre au Conseil des Cinq-Cents, qu’il préside par la suite. Son mandat terminé, Camus est nommé, le 4 thermidor an VIII (23 juillet 1800), garde des Archives générales. Il meurt dans l’exercice de ses fonctions. Le 6 fructidor an X (24 août 1802), Camus avait été nommé voyageur pour l’Institut dans les départements du Bas-Rhin, de la Belgique, du Nord, du Pas-de-Calais et de la Somme.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb12474288b"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_050391-d3954e187">
+            <relationEntry>Camus, Armand-Gaston (1740-1804)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1740-04-02">2 avril 1740</fromDate>
+               <toDate standardDate="1804-11-02">2 novembre 1804</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice d'autorité BnF</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="https://fr.wikipedia.org/wiki/Armand-Gaston_Camus"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_050391-d3954e208">
+            <relationEntry>Armand-Gaston Camus</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1740-04-02">2 avril 1740</fromDate>
+               <toDate standardDate="1804-11-02">2 novembre 1804</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice Wikipédia</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_005061"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_050391-d3954e229">
+            <relationEntry>Archives nationales (France ; 1790-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1790-01-01">1790</fromDate>
+               <toDate standardDate="1804-11-02">2 novembre 1804</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>A.-G. Camus, archiviste de la Constituante, à l'origine de la création des Archives nationales. Nommé "garde des Archives générales" le 24 août 1802</p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

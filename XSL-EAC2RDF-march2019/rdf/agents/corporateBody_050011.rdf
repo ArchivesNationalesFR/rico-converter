@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/050011">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">Institut de veille sanitaire</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050011_d3658e36"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050011_d3658e39"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/63ff6870-c6dd-44e9-8774-c9c4faa9a35c"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-01-01</RiC:beginningDate>
+      <RiC:history xml:lang="fr">L'Institut de veille sanitaire (InVS) est un établissement public à caractère administratif sous tutelle du ministre chargé de la santé. Il a été créé par la loi n° 98-535 du 1er juillet 1998 relative au renforcement de la veille sanitaire et du contrôle de la sécurité sanitaire des produits destinés à l'homme. Il reprend et consolide les missions du Réseau national de santé publique (créé en 1992) et développe de nouvelles missions. L’InVS a en charge la surveillance et l’observation permanentes de l’état de santé de la population. Pour cela, il participe au recueil et au traitement des données sur l’état de santé de la population à des fins épidémiologiques, en s’appuyant notamment sur des correspondants publics et privés qui constituent le réseau national de santé publique. Il met en œuvre la veille et la vigilance sanitaires. À ce titre, il rassemble, analyse et actualise les connaissances sur les risques sanitaires, leurs causes et leur évolution. Il détecte aussi de manière prospective les facteurs de risque susceptibles de modifier ou d’altérer la santé de la population ou de certaines de ses composantes, de manière soudaine ou diffuse. Enfin, il étudie et répertorie, pour chaque type de risque, les populations les plus fragiles ou menacées. Il est responsable de l’alerte sanitaire. Dans ce cadre, il doit informer sans délai le ministre chargé de la santé en cas de menace pour la santé de la population ou de certaines de ses composantes, quelle qu’en soit l’origine, et lui recommander toute mesure ou action appropriée pour prévenir la réalisation ou atténuer l’impact de cette menace. Enfin, l’InVS apporte une contribution à la gestion des situations de crise sanitaire, en proposant aux pouvoirs publics toute mesure ou action nécessaire. Dans le cadre de ses missions, il participe également à l’action européenne et internationale de la France, notamment par des collaborations avec des réseaux internationaux de santé publique dédiés à la surveillance et à l’alerte sanitaires.</RiC:history>
+      <RiC:agentIsSourceOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/050011-d3656e121"/>
+      <RiC:agentIsSourceOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/050011-d3656e133"/>
+      <RiC:agentIsSourceOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/050011-d3656e145"/>
+      <RiC:agentIsSourceOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/050011-d3656e157"/>
+      <RiC:agentIsSourceOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/050011-d3656e169"/>
+      <RiC:agentIsSourceOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/050011-d3656e182"/>
+      <RiC:agentIsTargetOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/050011-d3656e194"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050011"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050011_d3658e36">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050011-d3656e67"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050011_d3658e39">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050011-d3656e73"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050011">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/050011"/>
+      <RiC:creationDate>2013-06-17</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050011</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050011"/>
+   </rdf:Description>
+</rdf:RDF>

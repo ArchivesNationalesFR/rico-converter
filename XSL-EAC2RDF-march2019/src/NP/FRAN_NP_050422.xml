@@ -1,0 +1,71 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050422</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-01-16</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>F. Clavaud, 16 janvier 2014 : changement forme du nom et ajout n° notice BnF</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, fonds Rambaud (81AP).</p>
+               <p>Notice d'autorité BnF n° FRBNF12429540</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Rambaud, Alfred (1842-1905)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Rambaud, Alfred Nicolas</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1842-07-02">2 juillet 1842</fromDate>
+               <toDate standardDate="1905-11-10">10 novembre 1905</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Historien, journaliste et universitaire, Alfred Nicolas Rambaud (1842-1905) fit des études au lycée de Besançon puis à Louis-le-Grand. En 1861, il entra à l’École normale supérieure et fut reçu agrégé d’histoire en 1864. En 1870, il fut admis au grade de docteur ès lettres, grade qui lui ouvrit les portes de l’enseignement supérieur. En 1879, il fit une première incursion dans le monde politique en exerçant les fonctions de chef du cabinet de son ami Jules Ferry, avant de retrouver sa chaire à l’École normale supérieure et à la Sorbonne.</p>
+            <p>Parallèlement à cette carrière universitaire, Alfred Rambaud collabora au Temps, à la Revue des Deux Mondes et à diverses revues historiques. On le trouvait, en 1871, rédacteur en chef du Progrès de l’Est et en 1888, directeur de la Revue bleue.</p>
+            <p>Les ouvrages historiques qu’il a laissés sont très nombreux : L’Empire grec au xe siècle (1870), L’Allemagne sous Napoléon Ier (1874), L’Histoire de la Russie (1878), L’Histoire de la Révolution française (1883), L’Histoire de la civilisation française (1885-1888), La France coloniale (1886), Jules Ferry (1903).</p>
+            <p>Devenu sénateur républicain libéral dans le Doubs en 1895, il fut appelé quelques mois plus tard à la tête de l’Instruction publique (1895-1898) par Méline. Il fit voter la loi sur la construction d’universités et ordonna le transfert au Panthéon des restes de Voltaire et de Rousseau. Il déposa également une proposition de loi sur la réforme de l’enseignement secondaire et l’organisation du baccalauréat (1898) et prit part à la discussion du projet de loi sur les associations (1901). Moins de trois ans après avoir perdu son mandat sénatorial (1903), il mourut à l’âge de 63 ans.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_001860"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Rambaud (1801-1905)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

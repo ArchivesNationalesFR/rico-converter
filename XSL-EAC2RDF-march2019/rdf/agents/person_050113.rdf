@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050113">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Arago, François</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050113_d3740e34"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1786-01-01</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1853-12-31</RiC:deathDate>
+      <RiC:history xml:lang="fr">François Arago (1786-1853) fut admis à l’âge de dix-sept ans à l’École polytechnique. Secrétaire du Bureau des Longitudes, il fut adjoint à Biot, chargé d’achever la mesure de l’arc du méridien terrestre (1806). Membre titulaire de l’Académie des sciences à vingt-trois ans, il fut nommé professeur d’analyse et de géodésie à l’École polytechnique où il exerça ces fonctions pendant vingt ans. Devenu directeur de l’Observatoire, il donna des cours d’astronomie restés célèbres par leur clarté. En 1830, Arago remplaça Fourier comme secrétaire perpétuel de l’Académie pour les sciences mathématiques. Après 1830, il entra à la Chambre comme député des Pyrénées-Orientales et siégea à l’extrême-gauche. En février 1848, Arago fut porté par l’acclamation populaire au Gouvernement provisoire et chargé de diriger les ministères de la Marine et de la Guerre. Il fit adopter l’abolition de l’esclavage dans les colonies françaises. Député à la Constituante, il appartint à la Commission exécutive, qui se démit en juin, puis il siégea à la Législative. En 1852, il ne voulut pas prêter serment au gouvernement nouveau.</RiC:history>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/050113-d3738e94"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050113"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050113_d3740e34">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050113-d3738e64"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050113">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050113"/>
+      <RiC:creationDate>2013-10-16</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050113</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050113"/>
+   </rdf:Description>
+</rdf:RDF>

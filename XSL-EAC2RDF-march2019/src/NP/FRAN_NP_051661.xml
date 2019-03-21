@@ -1,0 +1,131 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051661</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2017-09-05</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+            <eventDescription>Il existe très peu de mots d'indexation "Activités" adaptés.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-09-19</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-10-25</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Notice d'autorité BnF n° : FRBNF13009569.</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>État sommaire des fonds d'archives privées. Séries AP et AB XIX, Paris, Centre Historique des Archives nationales, 2004, p. 438 (notice 234 AP).</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Article Édouard Mounier de Wikipédia en français (http://fr.wikipedia.org/wiki/%C3%89douard_Mounier).</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 1469 4101</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Mounier, Édouard (1784-1843)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Baron Mounier</part>
+            <useDates>
+               <dateRange>
+                  <fromDate standardDate="1810-01-01">1810</fromDate>
+                  <toDate standardDate="1843-05-11">11 mai 1843</toDate>
+               </dateRange>
+            </useDates>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1784-12-02">2 décembre 1784</fromDate>
+               <toDate standardDate="1843-05-11">11 mai 1843</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Fils du député Jean-Joseph Mounier (1758-1806), Claude Philibert 
+     <span style="italic">Édouard</span> Mounier (1784-1843) suit sa famille en émigration en 1790 et ne rentre en France qu’après le 18 Brumaire. Nommé en 1806 auditeur au Conseil d’État, il est en 1807 et 1808 intendant à Weimar puis en Silésie. Adjoint en 1809 du secrétaire de cabinet de l’Empereur avec le titre de secrétaire, il reçoit le 31 décembre de la même année la dignité de baron. Maître des requêtes en 1810, intendant des bâtiments de la couronne en 1813, Mounier est confirmé dans ses fonctions en 1814 et se retire en Allemagne pendant les Cent-Jours. Conseiller d’État en 1816, président de la commission mixte de liquidation en 1817, directeur général de l’administration départementale et de la police en 1818, il perd ses fonctions à la chute du ministère Richelieu. Pair de France le 5 mars 1819, il reprend en 1820 la direction de la police après avoir refusé le ministère de l’Intérieur. Il conserve ces fonctions jusqu’en 1822, année où est supprimé le ministère de la Police. 
+    </p>
+            <p>Les 
+     <span style="italic">Souvenirs intimes et notes du baron Mounier</span> ont été publiés en 1896 par le comte d'Hérisson. 
+    </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb130095693"
+                      xlink:type="simple">
+            <relationEntry>Mounier, Édouard (1784-1843)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1784-12-02">2 décembre 1784</fromDate>
+               <toDate standardDate="1843-05-11">11 mai 1843</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice d'autorité BnF.</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_000080"
+                      xlink:type="simple">
+            <relationEntry>France. Conseil d'État (1799-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1806-01-01">1806</fromDate>
+               <toDate standardDate="1843-05-11">11 mai 1843</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="https://fr.wikipedia.org/wiki/%C3%89douard_Mounier"
+                      xlink:type="simple">
+            <relationEntry>Édouard Mounier</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1784-12-02">2 décembre 1784</fromDate>
+               <toDate standardDate="1843-05-11">11 mai 1843</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice wikipédia.</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_004363"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds baron Mounier (1807-1842).</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

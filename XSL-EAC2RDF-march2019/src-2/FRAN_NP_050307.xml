@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050307</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-12-10</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Zénaïde ANDRIEU-ROMANEIX</agent>
+            <eventDescription>F. Clavaud, 10 décembre 2013 : changement forme du nom et ajout n° notice BnF</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, Fonds Duvivier (497 AP) ; série O ( O1 2036 à 2058 et O2 907 à 912).</p>
+               <p>Notice d'autorité BnF n° FRBNF11957862</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_050307-d3889e82">
+            <part>Manufacture de la Savonnerie (Paris)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1628-01-01">1628</fromDate>
+               <toDate standardDate="1826-12-31">1826</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Première manufacture royale de tapis fondée en France, la Savonnerie tire son nom d’une ancienne maison de savonnerie à Chaillot, dans laquelle elle fut transférée en 1631. Elle était alors spécialisée dans la fabrication de tapis veloutés auxquels on adjoignit par la suite des tapis copiés de l’Orient.</p>
+            <p>Cette manufacture fut fondée vers 1628 par deux associés : Pierre Dupont (1560-1640) et Simon Lourdet (vers 1590-1667). À leur suite, la manufacture fut divisée en deux ateliers distincts, dirigés chacun par les descendants des fondateurs : Louis puis Bertrand Dupont d’une part, Philippe Lourdet, sa veuve Jeanne Haffrey puis leur fils, d’autre part.</p>
+            <p>En 1714, Bertrand Dupont réunit les deux ateliers. Son neveu par alliance, Jacques Noinville, devint régisseur de la Savonnerie de 1720 à 1742.</p>
+            <p>De 1743 à 1826, trois Duvivier se succédèrent à la tête de l’entreprise : Pierre-Charles (1743-1773), Nicolas-Cyprien (1774-1807), et Ange-Pierre (1807-1826). C’est en 1826 que la manufacture fut réunie à la Manufacture nationale des Gobelins.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-later"
+                      xlink:type="simple"
+                      xlink:href="FRAN_NP_005472"
+                      xml:id="FRAN_relation_050307-d3889e121">
+            <relationEntry>Mobilier national et manufactures nationales des Gobelins, de Beauvais et de la Savonnerie</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2003-01-01">2003</fromDate>
+            </dateRange>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

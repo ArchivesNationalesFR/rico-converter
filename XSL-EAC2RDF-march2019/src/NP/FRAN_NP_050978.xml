@@ -1,0 +1,89 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050978</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+            <eventDescription>F. Clavaud, 25 février 2015 : création à l'occasion de l'arrivée aux AN des archives de musées nationaux. Infos fournies en partie par A. Clergeau (mission culture)</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice d'autorité BnF n° FRBNF13327512</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Musée du cheval de courses (Maisons-Laffitte, Yvelines ; 1911-....)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Maisons-Laffitte (Yvelines). Musée du cheval de courses</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1911-01-01">1911</fromDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="lieu" vocabularySource="d3m08zxsvot-169jsnlf6vj5n">Maisons-Laffitte (Yvelines , château de)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d5bhviikk9--y6te63k761ib">culture</term>
+               <descriptiveNote>
+                  <p>musée d'histoire hippique</p>
+               </descriptiveNote>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Le musée est situé dans le château de Maisons-Laffitte, construit par Mansart en 1641. Le château est acquis par l’État en 1905, afin d'éviter la destruction du monument. En 1911, le chateau-musée est rattaché aux musées nationaux. Il abrite le musée du cheval de course, situé aux sous-sols du château (décret du 28 février 1911). Après 1967, le domaine est géré par le Centre des monuments nationaux.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_005420"
+                      xlink:type="simple">
+            <relationEntry>Centre des monuments nationaux</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1967-01-01">1967</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_053996"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Archives des musées nationaux, Château et musée de Maisons-Laffitte (série W)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

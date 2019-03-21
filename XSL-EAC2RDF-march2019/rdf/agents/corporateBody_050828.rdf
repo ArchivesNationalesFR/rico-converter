@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/050828">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">Fonds de coopération de la jeunesse et de l'éducation populaire (France)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050828_d4264e43"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050828_d4264e46"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/f7742d1f-1699-45c7-804b-0277189a621d"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1964-01-31</RiC:beginningDate>
+      <RiC:history xml:lang="fr">Le FONJEP, créé le 31 janvier 1964, est une association fondée sur la cogestion et la coopération, gérée par les associations, l’État et les collectivités territoriales. La cogestion s'inscrit dans une volonté de Maurice HERZOG, secrétaire d’État à la Jeunesse et aux Sports entre 1958 et 1966, d'instaurer un partenariat actif avec les mouvements de jeunesse et d'éducation populaire. Le FONJEP participe aux dépenses de formation et de rémunération des animateurs d'éducation populaire et de jeunesse. Il est une instance de concertation qui permet le dialogue et la rencontre entre associations afin de débattre de problèmes communs. Il conduit également des études et des recherches dans le domaine de l'animation.</RiC:history>
+      <RiC:noteOnStructureOrGenealogy xml:lang="fr">Au sein du conseil d'administration du FONJEP se trouvent des membres de droit qui disposent de 25 voix (soit la moitié des voix) : les ministères et administrations partenaires du FONJEP, ainsi que, pour représenter les collectivités territoriales, leurs associations (ex.: l'Association des maires de France, l'Association des départements de France, l'Association des régions de France). L'autre moitié des voix (25 également) est détenue par les membres actifs qui représentent le monde associatif. Ce sont 25 mouvements ou fédérations qui illustrent bien la diversité associative. </RiC:noteOnStructureOrGenealogy>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/050828-d4262e121"/>
+      <isni:ISNIAssigned>0000000122070155</isni:ISNIAssigned>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050828"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050828_d4264e43">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050828-d4262e82"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050828_d4264e46">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050828-d4262e88"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050828">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/050828"/>
+      <RiC:creationDate>2014-07-18</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050828</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000122070155"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050828"/>
+   </rdf:Description>
+</rdf:RDF>

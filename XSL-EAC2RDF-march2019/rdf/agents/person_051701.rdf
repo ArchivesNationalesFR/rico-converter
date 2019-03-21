@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051701">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Coutrot, Jean (1895-1941)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051701_d4890e58"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1895-03-27</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1941-05-19</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051701-d4888e171"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051701-d4888e177"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051701-d4888e183"/>
+      <RiC:history xml:lang="fr">Né en 1895 à Paris, Jean Coutrot fait ses études au lycée Carnot. Reçu premier à l’Ecole polytechnique en 1913, il part pour le front en août 1914. Grièvement blessé, il passe sa convalescence à préparer une licence en droit et à suivre des cours à l’Ecole libre des sciences politiques. A sa démobilisation, il renonce à faire sa deuxième année de Polytechnique, pour des raisons familiales. Il est associé par son beau-père à la direction de l’affaire familiale Gaut-Blancan, fabrique de papier et de matières colorantes, et il commence à s’intéresser à l’Organisation scientifique du travail (O.S.T.). Parallèlement, de 1920 à 1930, Coutrot et sa femme se lient d’amitié avec des peintres et des poètes : les Delaunay, Picasso, Braque, André Lhôte, Jules Supervielle, l’anthropologue P. Teilhard de Chardin...  En 1931, un appel de trois anciens polytechniciens dans 
+     X-Information aboutit à la formation du groupe “ X-Crise ”, devenu peu après Centre polytechnicien d’études économiques (C.P.E.E.), et dont le but est d’étudier les raisons de la crise économique. Tout en menant de front la direction de l’entreprise familiale et celle du Bureau d’ingénieurs conseils en rationalisation (B.I.C.R.A.), qu’il a créé en 1930, Coutrot enseigne à l’Ecole d’organisation scientifique du travail, collabore au Comité national de l’Organisation française (C.N.O.F.), à l’Agence française de normalisation, au C.P.E.E., écrit de nombreux articles et un essai, 
+     Quoi vivre (paru chez Grasset en 1935), et prononce des conférences. En 1936, il crée un nouveau groupe d’études, le Centre d’étude des problèmes humains (C.E.P.H.), qui se réunit pour la première fois à Pontigny et voit, de 1936 à 1941, la création de l’Institut de psychologie appliquée et de commissions et de groupes spécialisés. 
+     Charles Spinasse, ministre de l’Economie et des finances dans le gouvernement du Front populaire, appelle Coutrot auprès de lui. Ce dernier crée et anime le Centre national d’organisation scientifique du travail (C.N.O.S.T.), dont la finalité est l’abaissement des prix de revient français sans compression des salaires, par l’introduction de l’Organisation scientifique du travail dans les programmes des écoles professionnelles et par une meilleure organisation des entreprises, des administrations et de la recherche scientifique. Les activités du C.N.O.S.T. se ralentissent après le départ de Spinasse. Coutrot suit le gouvernement à Bordeaux et à Vichy, jusqu’au 10 juillet 1940. Il se suicide en mai 1941, peu après sa nomination dans la commission du plan comptable.</RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051701--d4888e137"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051701--d4888e149"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051701--d4888e161"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb137480712#foaf:Person"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Jean_Coutrot"/>
+      <isni:ISNIAssigned>0000000051140944</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051701-d4888e232"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051701-d4888e268"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051701"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051701-d4888e171">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjj72d-1dedn4099xfyy"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051701-d4888e177">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjgtw3-1ton3i1q2op31"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051701-d4888e183">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051701-d4888e268">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Coutrot, Jean (1895-1941) et l'ensemble de documents "Fonds Jean Coutrot (1929-1979)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/003643-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051701_d4890e58">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051701-d4888e109"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051701--d4888e137">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Coutrot, Jean (1895-1941)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050940-d4346e93"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051701--d4888e149">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Coutrot, Jean (1895-1941)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050349-d3923e153 http://data.archives-nationales.culture.gouv.fr/place/009905-d195e177"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051701--d4888e161">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Coutrot, Jean (1895-1941)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/051615-d4819e168"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051701">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051701"/>
+      <RiC:creationDate>2017-09-12</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-02-05</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051701</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Archives nationales, fonds Jean Coutrot : 468 AP.</RiC:source>
+      <RiC:source xml:lang="fr">Notice BnF : FRBNF13748071</RiC:source>
+      <RiC:source xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Jean_Coutrot</RiC:source>
+      <RiC:source xml:lang="fr">Dard (Olivier), Jean Coutrot : de l'ingénieur au prophète, Besançon, Presses universitaires franc-comtoises, coll. « Annales littéraires de l'Université de Franche-Comté. Série Historiques » (no 15), 1999.</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000051140944"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051701"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb137480712"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Jean_Coutrot"/>
+   </rdf:Description>
+</rdf:RDF>

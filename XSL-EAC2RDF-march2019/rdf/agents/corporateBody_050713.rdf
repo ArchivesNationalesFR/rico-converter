@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/050713">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">Compagnons Bâtisseurs (France)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050713_d4190e66"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050713_d4190e69"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050713_d4190e76"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/f7742d1f-1699-45c7-804b-0277189a621d"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1957-04-13</RiC:beginningDate>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/050713-d4188e171"/>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/050713-d4188e177"/>
+      <RiC:history xml:lang="fr">Les Compagnons bâtisseurs ont été fondés en Belgique par le père Van Straaten, de l’ordre des Prémontrés, en 1953. L’association s’implante dans différents pays, et les différentes branches se réunissent au sein d’une association internationale du nom d’Internationale boworde (IBO, ordre international des bâtisseurs ou association internationale des Compagnons bâtisseurs). Son objectif est de mobiliser de jeunes travailleurs volontaires pour construire des maisons pour les sans-logis et les mal-logés, mais également de bâtir des églises ou d’apporter une aide matérielle à des associations et autres oeuvres.  L’association française est officiellement créée en 1957 après deux années d’activités (organisation de chantiers et envoi de volontaires). Contrairement aux autres organisations de chantiers qui réunissent des volontaires de différentes nationalités, les Compagnons bâtisseurs constituent des équipes nationales envoyées dans un autre pays. Ce mode de recrutement évolue dans les années 1970 vers l’adoption du système des équipes internationales.  Au milieu des années 1960 apparaissent les premiers groupes locaux. Certains de ces groupes se constituent en associations locales, puis en associations régionales (Bretagne en 1968, Provence en 1979, etc.). Cette régionalisation, ainsi que l’arrêt des chantiers en Ile-de-France, conduit l’association nationale à une restructuration. En 1996, elle est organisée comme une union d’associations régionales (six en 2007 après la liquidation de l’association CB Centre). Certaines prennent en charge les différents secteurs d’activités nationaux, le siège social de l’association nationale est transféré à Tours puis à Rennes en 2004, et les chantiers internationaux sont organisés directement par les associations régionales.  Dans le cadre des chantiers internationaux se développe une expérience originale de volontariat à long terme (VLT). Au sein des équipes de volontaires à long terme sont accueillis des objecteurs de conscience en service à partir de 1966. Si quelques actions sont menées avec les pays du Sud - au niveau international est fondé le COOPIBO, l’institut de coopération de l’IBO -, il n'existe pas de secteur Coopération au niveau national. Pour répondre aux besoins de qualification de ces travailleurs volontaires se constitue à la fin des années 1970 un service Formation, dont les stages d’initiation aux techniques du bâtiment sont peu à peu ouverts à tout type de public. Au cours des années 1980 sont organisés les premiers chantiers d’insertion et un nouveau secteur se constitue sous le nom d’Insertion par l’activité économique. A la fin des années 1990, le développement des actions d’atelier de quartier (mobilisation collective d’habitants pour la réhabilitation de leur logement) conduit à l’apparition d’un service Insertion par l’habitat.  Les Compagnons bâtisseurs sont membres fondateurs de Cotravaux, organisme de cogestion puis de coordination du travail volontaire des jeunes (1959), et du Comité de coordination du service civil, réunissant les associations accueillant des objecteurs en service (1972). Au début des années 2000, la branche française a quitté l’IBO et a rejoint l’Alliance des organisations de service volontaire d’Europe de l’Ouest. Elle est également membre du Comité de coordination du service volontaire international et de l’ 
+     Association of voluntary service organisations. 
+    </RiC:history>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb121303571#foaf:Organization"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050713-d4188e231"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050713"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/050713-d4188e171">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d5bhvil20q--uuew3ia85vzc"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/050713-d4188e177">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d3nyuh22j7-1un996fsc6m08"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050713-d4188e231">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Compagnons Bâtisseurs (France) et l'ensemble de documents "Archives de l'Association nationale des compagnons batisseurs"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/050482-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050713_d4190e66">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050713-d4188e121"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050713_d4190e69">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1957-04-13</RiC:beginningDate>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050713-d4188e127"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050713_d4190e76">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050713-d4188e142"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050713">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/050713"/>
+      <RiC:creationDate>2014-02-20</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-07-04</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_050713</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Guide des sources du PAJEP, consulté au mois de février 2014</RiC:source>
+      <RiC:source xml:lang="fr">Notice d'autorité BnF n° FRBNF12130357</RiC:source>
+      <RiC:source xml:lang="fr">LOUSTALOT (Arnaud), "Mutation du volontariat à long terme au sein des compagnons bâtisseurs", dans Agora Débats/ Jeunesse, 2008, n°47, p. 34-44.</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050713"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb121303571"/>
+   </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,104 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_011546</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01352</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>M. F. LIMON, Les notaires au Châtelet sous le règne de Louis XIV, Toulouse, presses universitaires du Mirail, 1992, p. 374-375</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Lequin, Denis</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1684-05-15">15 mai 1684</fromDate>
+               <toDate standardDate="1703-10-04">4 octobre 1703</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvozckb-wk5djyktth83">saint-jacques-de-la-boucherie (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgvrw7--10kzknmxne1f3">saint-jacques-de-la-boucherie (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd5fnbv--1fbmnb1c9dkph">saint-martin (rue)</placeEntry>
+               <placeEntry localType="nomLieu">rue Saint-Martin</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1684-05-15">15 mai 1684</fromDate>
+                  <toDate standardDate="1703-10-04">4 octobre 1703</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>marié à Anne de La Coste (voir ET/III/780, 12 juin 1699, contrat de mariage)</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010239"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale CXII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1684-05-15">15 mai 1684</fromDate>
+               <toDate standardDate="1703-10-04">4 octobre 1703</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/CXIII/120, 3 mai 1684, traité d'office de notaire entre Nicolas Mory et Denis Lequin</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043330"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Denis LEQUIN, 15 mai 1684 - 5 mai 1702 (étude CXII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_053257"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Denis Lequin pour l'étude CXII</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

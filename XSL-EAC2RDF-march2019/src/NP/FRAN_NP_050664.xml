@@ -1,0 +1,142 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050664</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-02-04</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>F. Clavaud, 4 février 2014 : changé forme du nom</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2014-04-01</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>F. Clavaud, 4 février 2014 : changé forme du nom</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-08-18</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID-DORMIEN</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-11-21</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Notice d'autorité BnF : FRBNF11893168 </sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Notice Wikipedia : https://fr.wikipedia.org/wiki/Paul_Bouchet</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Archives nationales, fonds Paul Bouchet (203 AS IV).</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 1634 2214</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Bouchet, Paul (1924-....)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1924-08-02">2 août 1924</fromDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msj742x--12cnnohd8i9wj">avocat</term>
+               <descriptiveNote>
+                  <p>Barreau de Lyon</p>
+               </descriptiveNote>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msk3h6v--1a7obp35gqwv3">militant politique</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msjmbyz-yxpcx7wpwsnq">syndicaliste</term>
+               <dateRange>
+                  <fromDate standardDate="1945-01-01">1945</fromDate>
+                  <toDate standardDate="1952-12-31">1952</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>Adhésion à l'AGE de Lyon, membre et conseiller juridique de l'UNEF </p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Paul Bouchet nait en août 1924 à Saint-Etienne (Loire). Après s’être engagé dans la résistance au sein du groupe Témoignage chrétien puis comme responsable d’une unité des Forces françaises de l’intérieur (FFI), il s’inscrit à la faculté de droit et adhère en 1945 à l’Association générale des étudiants de Lyon. Élu président de l’AGE entre 1945 et 1948, il sera l’un des principaux rédacteurs de la Charte de Grenoble adoptée par l’Union nationale des étudiants de France (UNEF) en 1946. Désigné par le conseil d’administration de l’UNEF en janvier 1946, il fut membre de la délégation française à l’Union internationale des étudiants (UIE), et participant au « comité préparatoire international » du congrès de l’UIE en novembre 1946 à Prague (Tchécoslovaquie). </p>
+            <p>Paul Bouchet participe également à l’Entr’aide universitaire internationale. Devenu avocat au barreau de Lyon, il continue à siéger comme conseiller juridique de l’UNEF auprès de son conseil d’administration de 1947 à 1952 et suit notamment les dossiers relatifs à la sécurité sociale étudiante et à l’allocation d’étude. </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb118931685"
+                      xlink:type="simple">
+            <relationEntry>Paul Bouchet</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1924-08-02">2 août 1924</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice d'autorité BnF.</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050734"
+                      xlink:type="simple">
+            <relationEntry>Cité des mémoires étudiantes (Paris ; 2008-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2008-11-17">17 novembre 2008</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="https://fr.wikipedia.org/wiki/Paul_Bouchet"
+                      xlink:type="simple">
+            <relationEntry>Paul Bouchet</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1924-08-02">2 août 1924</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice Wikipédia.</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054653"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Paul BOUCHET (1945-1955)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

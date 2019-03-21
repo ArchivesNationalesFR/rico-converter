@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/050785">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">Association Maurice Utrillo</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050785_d4242e41"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/f7742d1f-1699-45c7-804b-0277189a621d"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1963-11-01</RiC:beginningDate>
+      <RiC:history xml:lang="fr"> Né le lendemain de Noël 1883 dans le quartier de la Butte Montmartre, Maurice Utrillo est le fils naturel de Marie-Clémentine Valadon, dite Suzanne. En 1891, il est reconnu par le peintre et écrivain catalan Miguel Utrillo (1862-1934). Très tôt, il interrompt ses études pour se consacrer à l'apprentissage de divers métiers, sous l'égide de son beau-père, Paul Mousis, agent de change, mais sans succès. Il sombre rapidement dans l'éthylisme et, en 1901, à l'âge de dix-huit ans, il est interné à l'hôpital Sainte-Anne où il subit une première cure de désintoxication. Une fois son traitement achevé, il se consacre à la peinture et, dès 1903, produit ses premières toiles à Montmartre et Montmagny. Six ans plus tard, en 1909, Louis Libaude, un marchand d'art, remarque son travail, exposé dans la galerie de Clovis Sagot (?-1913), l'un des premiers marchands de Pablo Picasso. En échange de faibles revenus, il s'approprie une partie de ses peintures. En 1910, il participe au Salon d'automne. Entre 1912 et 1914, tandis qu'il continue d'exposer dans des galeries, il séjourne de nouveau à l'hôpital Sainte-Anne ainsi que dans l'hôpital de Villejuif et dans une clinique privée à Sannois, où il rencontre le docteur Revertégat. Le calme des lieux est propice à la production picturale et Maurice Utrillo finit par rencontrer le succès. Dégagé de toute contignence matérielle, il s'installe au château de Saint-Bernard, dans l'Ain, avec sa mère et André Utter (1886-1948), un ami de jeunesse devenu son beau-père en 1914. En 1925 puis en 1948, il reçoit des commandes de décors de Serge de Diaghilev et de l'Opéra-Comique et, en 1937, il passe un contrat avec le marchand d'art et collectionneur Paul Pétridès (1901-1993), qui rédige par aillaurs le catalogue raisonné des oeuvres d'Utrillo. En 1935, il épouse Lucie Veau (1878-1965), dite Lucie Valore, la veuve du banquier belge Robert Pauwels, collectionneur de ses oeuvres, et s'installe au Vésinet, où il est l'objet des soins constants de son épouse qui tente de le préserver de son alcoolisme. Le 5 novembre 1955, alors qu'il était en cure à Dax avec Lucie Valore, Maurice Utrillo décède.  Huit ans plus tard, en novembre 1963, Lucie Valore, qui continue de gérer les affaires de son époux, fonde avec Jean Fabris l'association Maurice Utrillo. En 1965, elle décède à son tour ; Jean Fabris, devenu légataire universel de Lucie Valore et détenteur du droit moral de Maurice Utrillo et Suzanne Valadon, poursuit les objectifs fixés : rassembler de la documentation et des archives sur Maurice Utrillo et son entourage, principalement Suzanne Valadon, André Utter et Lucie Valore, diffuser l'oeuvre de ces artistes et organiser des expositions en France et à l'étranger, notamment au Japon.</RiC:history>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050785"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050785_d4242e41">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050785-d4240e79"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050785">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/050785"/>
+      <RiC:creationDate>2014-05-05</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050785</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050785"/>
+   </rdf:Description>
+</rdf:RDF>

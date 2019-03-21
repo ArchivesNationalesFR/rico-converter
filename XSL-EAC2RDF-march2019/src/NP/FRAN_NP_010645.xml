@@ -1,0 +1,107 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010645</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00371</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>M. F. LIMON, Les notaires au Châtelet sous le règne de Louis XIV, Toulouse, presses universitaires du Mirail, 1992, p. 410-411</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Renard, Etienne</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1710-07-08">8 juillet 1710</fromDate>
+               <toDate standardDate="1715-04-10">10 avril 1715</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp6vb2-rsrcmgk1zmct">saint-merri (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvozckb-wk5djyktth83">saint-jacques-de-la-boucherie (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp1p2a--wp1m57bskhhm">saint-josse (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgyd8c-1ivt7h45b41ah">saint-martin (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd5fnbv--1fbmnb1c9dkph">saint-martin (rue)</placeEntry>
+               <placeEntry localType="nomLieu">rue Saint-Martin, au coin de la rue Aubry-le-Boucher, puis au coin de la rue Neuve-Saint-Merry</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1710-07-08">8 juillet 1710</fromDate>
+                  <toDate standardDate="1715-04-10">10 avril 1715</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Marié à Marie Madeleine Jesseaume</p>
+            <p>mort en fonction le 23 avril 1715</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010248"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale CXXI</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1710-07-08">8 juillet 1710</fromDate>
+               <toDate standardDate="1715-04-10">10 avril 1715</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/LI/767, 16 juin 1710, traité d'office de notaire entre Toussaint Bellanger et Etienne Renard</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/LI/767, 16 juin 1710, vente, par Alexandre Lefèvre, de la pratique de Gabriel Raveneau à Etienne Renard, et achat, par le même Lefèvre, de la pratique de Toussaint Bellanger</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/CXVIII/699, 2 mai 1715, traité d'office de notaire entre les héritiers d'Etienne Renard et Jean Acher, ledit Acher revendant l'office à François-Noël Demarandel</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043499"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Étienne RENARD, 8 juillet 1710 - 10 avril 1715 (étude CXXI)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

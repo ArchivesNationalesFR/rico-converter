@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051480">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Achard, Ghislain (1948-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051480_d4719e52"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1948-02-14</RiC:birthDate>
+      <RiC:history xml:lang="fr">Né le 14 février 1948 à Alger, Ghislain Achard est un responsable audiovisuel. Titulaire d'une maîtrise de droit public, il commence sa carrière en 1973 en entrant comme assistant au service juridique de l'ORTF. Il devient ensuite responsable commercial à la direction régionale Sud-Est de Télédiffusion de France S.A. (TDF) de 1975 à 1985, avant d'y recevoir la charge de la gestion et du développement des ressources humaines (1985-1989). En juin 1989, il est nommé conseiller technique au cabinet de Paul Quilès, ministre des Postes, des Télécommunications et de l’Espace, puis conseiller auprès de Georges Kiejman, ministre délégué à la Communication deux ans plus tard. Directeur commercial de Télédiffusion de France S.A. en janvier 1992, il rentre dès le 19 février de la même année au cabinet du président de la République François Mitterrand comme conseiller technique à l'audiovisuel et à la communication, succédant dans ces fonctions à Bruno Chetaille. Après son départ de l'Élysée en mai 1995, il occupe le poste de directeur général adjoint d’AB Sat (groupe AB) de 1996 à 1997, puis se met au service de la chaîne de télévision France 2 comme directeur délégué à la coordination de l’antenne (1998) puis comme conseiller de son président (1998-1999). Il occupe parallèlement de 1998 à 2005 le poste de président-directeur général de Méditerranée films production (MFP), devenue Multimédia France Productions en 2001. Poursuivant sa carrière dans l'audiovisuel public, il est nommé secrétaire général (1999-2000), directeur général délégué (200-2004) , puis directeur général de France Télévisions (2004-2005), en même temps quue président de la chaîne France 4 et de France Télévisions Interactive (2004-2005) . Il est par ailleurs le fondateur de la société de conseil et de production Gammes (Groupe audiovisuel multimédia d'études et services) ainsi que de Ma chaîne étudiante. De 2006 à 2012, il est membre du Comité stratégique pour le numérique et, depuis 2015, président de Vodinn.</RiC:history>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051480-d4717e121"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051480"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051480_d4719e52">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051480-d4717e97"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051480">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051480"/>
+      <RiC:creationDate>2017-03-31</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-12-21</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051480</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Article du 2 juillet 2004 du journal Les Échos : https://www.lesechos.fr/02/07/2004/LesEchos/19192-037-ECH_ghislain-achard-marc-schwartz.htm</RiC:source>
+      <RiC:source xml:lang="fr">Who's Who in France 2017</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051480"/>
+   </rdf:Description>
+</rdf:RDF>

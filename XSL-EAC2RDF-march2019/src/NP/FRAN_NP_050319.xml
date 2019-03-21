@@ -1,0 +1,129 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050319</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-02-04</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Zénaïde ANDRIEU-ROMANEIX</agent>
+            <eventDescription>F. Clavaud, 4 février 2014 : modifié forme du nom, ajouté n°s ISNI et notice BnF</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-07-17</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Zénaïde ANDRIEU-ROMANEIX</agent>
+            <eventDescription>Notice révisée le 17/07/2017 : lien IR, ISNI, sources (Wikipédia), descripteurs activités, lien identité vers BnF et Wikipédia.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2018-01-16</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Archives nationales, Fonds Corentin Calvez (507 AP).</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Notice BnF n° : FRBNF15764096</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Notice Wikipédia (https://fr.wikipedia.org/wiki/Corentin_Calvez)</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 2291 5413</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Calvez, Corentin (1920-1985)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1920-06-26">26 juin 1920</fromDate>
+               <toDate standardDate="1985-01-12">12 janvier 1985</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msjgtw3-1ton3i1q2op31">ingénieur</term>
+               <descriptiveNote>
+                  <p>diplômé du Conservatoire national des Arts et métiers</p>
+               </descriptiveNote>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msjmbyz-yxpcx7wpwsnq">syndicaliste</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msiribo--1dn34eg8lht4f">député</term>
+               <dateRange>
+                  <fromDate standardDate="1979-01-01">1979</fromDate>
+                  <toDate standardDate="1984-12-31">1984</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>Député européen</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Corentin Calvez (1920-1985) mena une double carrière syndicale puis politique, fondée sur les compétences qu’il avait acquises comme élève au Conservatoire national des arts et métiers, puis comme cadre de l’industrie pétrolière. Il s’engagea dans de multiples mouvements associatifs et s’orienta très tôt vers l’action syndicale, au sein principalement de la Confédération générale des cadres (C.G.C.), dont il fut membre du Comité confédéral en 1959, du Comité directeur en 1961, du Bureau en 1965, secrétaire général en 1969 et délégué général en 1973. Il quitta ses fonctions à la C.G.C. en 1979 pour se lancer dans la vie politique au niveau européen, étant élu à l’Assemblée des Communautés européennes sur la liste « Union pour la France en Europe ». Il resta député européen jusqu’à sa mort, en 1985. Dès les années soixante, Corentin Calvez avait également été membre de nombreuses commissions administratives, notamment du Conseil économique et social.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb157640964"
+                      xlink:type="simple">
+            <relationEntry>Calvez, Corentin</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1920-06-26">26 juin 1920</fromDate>
+               <toDate standardDate="1985-01-12">12 janvier 1985</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Lien vers la notice d'autorité BnF</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="https://fr.wikipedia.org/wiki/Corentin_Calvez"
+                      xlink:type="simple">
+            <relationEntry>Corentin Calvez</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1920-06-26">26 juin 1920</fromDate>
+               <toDate standardDate="1985-01-12">12 janvier 1985</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Lien vers la notice Wikipédia</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_028104"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Corentin Calvez, supplément (1958-1983)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

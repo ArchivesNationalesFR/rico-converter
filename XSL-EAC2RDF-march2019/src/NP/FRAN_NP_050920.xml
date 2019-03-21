@@ -1,0 +1,77 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050920</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-12-02</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Virginie GREGOIRE</agent>
+            <eventDescription>F. Clavaud, 2 décembre 2014 : revu forme du nom, ajouté indexation activité et lien d'association avec la notice de l'ENS</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Laborie, Pierre Laurent (1767-1847)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1767-01-01">1767</fromDate>
+               <toDate standardDate="1847-12-31">1847</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d3m0bl7bbdy-s3moxyf8em8b">directeur d'établissement d'enseignement</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Pierre Laurent Laborie (1767-1847) est un théologien et homme de lettres. Né à Opoul (Pyrénées-Orientales), il suit des études de philosophie. Il enseigne par la suite la théologie à l'université de Perpignan de 1788 à 1791. En 1792, il émigre vers l'Espagne où il sert dans les corps mi-français, mi-espagnols. De retour en France en 1808, il occupe les fonctions de directeur au sein de plusieurs établissements notamment le collège de Saint-Mihiel (Meuse) de 1812 à 1814, puis le collège de Périgueux (Dordogne) de 1814 à 1819 et le collège royal de Toulouse (Haute-Garonne) en 1819. Nommé proviseur du collège royal d'Angers (Maine-et-Loire) en 1920, il consolide ses attaches périgourdines par son union avec Jeanne de Sanzillon de Mensignac. </p>
+            <p>Remarqué par Royer Collard, il est nommé en 1821 recteur de l'université de Strasbourg (Bas-Rhin). Il occupe ce poste jusqu'en 1824, période pendant laquelle il réorganise les collèges et crée les écoles primaires.</p>
+            <p>En 1824, il est nommé par Charles X proviseur du Lycée Louis le Grand (Paris). En 1826, suite à la réforme de l'École normale supérieure alors créée sous le terme d' "École préparatoire", il est nommé premier directeur (1826-1830). </p>
+            <p>Il devient par la suite inspecteur général de l'Université. Homme d'influence et homme de cour, il est ainsi associé à la montée de l'enseignement voulue par le roi, autour de Monseigneur Denis Frayssinous, il est également lié à Ange Maxence Hyacinthe de Damas, gouverneur de l'héritier de la couronne. </p>
+            <p>Légitimiste fervent et catholique pratiquant, il finit par se retirer à Périgueux, où il s'occupe des œuvres diocésaines et d'une manière générale de la défense de l'enseignement catholique. </p>
+            <p>À sa mort en 1847, une bonne partie de sa bibliothèque fut léguée à l'évêque de Périgueux, tandis que certains ouvrages avaient été envoyés au lycée Louis le Grand et à l'École normale supérieure.</p>
+            <p>Son influence dans le mileu de l'enseignement catholique fut considérable. </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_003779"
+                      xlink:type="simple">
+            <relationEntry>École normale supérieure</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1826-01-01">1826</fromDate>
+               <toDate standardDate="1830-12-31">1830</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>
+      Pierre Laurent Laborie fut directeur de l'Ecole normale supérieure de 1826 à 1830 
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

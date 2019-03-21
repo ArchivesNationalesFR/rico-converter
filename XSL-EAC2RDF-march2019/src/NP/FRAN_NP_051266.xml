@@ -1,0 +1,108 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051266</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-02-25</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID-DORMIEN</agent>
+            <eventDescription>F. Clavaud, 25 février 2016 : revu le nom, l'historique, ajouté lien BnF, supprimé fonction</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-07-27</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Constance DE VERGNETTE DE LAMOTTE</agent>
+            <eventDescription>Il n'y a pas de notice Wikipedia.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-11-27</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Notice BNF : http://catalogue.bnf.fr/ark:/12148/cb12089588w</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Archives nationales, fonds Louisette Battais : 758 AP.</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 8391 2267</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Battais, Louisette (1953-....)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1953-06-10">10 juin 1953</fromDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msirr1g-3naumnfaswc">archiviste</term>
+               <descriptiveNote>
+                  <p>responsable du service des archives confédérales (CFDT)</p>
+               </descriptiveNote>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msj1t4q--erdp2b9cjr2g">docteur d'université</term>
+               <descriptiveNote>
+                  <p>Doctorat de 3e cycle</p>
+               </descriptiveNote>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msjmbyz-yxpcx7wpwsnq">syndicaliste</term>
+               <descriptiveNote>
+                  <p>Secrétaire confédérale de la CFDT</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Louisette Battais est née à Paris en juin 1953.</p>
+            <p>Titulaire d'un doctorat de 3e cycle en histoire et civilisations, elle est professeur d’histoire et de géographie, actuellement en poste au lycée Fénelon, Paris 6e.</p>
+            <p>Elle intervient au CELSA (université Paris IV (Sorbonne)), comme membre de jury de soutenance Maitrise GRH ; elle est aussi membre de la commission d’admission en DESS GRH, 1991-2000.</p>
+            <p>Elle devient secrétaire confédérale de la CFDT, membre du Bureau de recherches BRAEC, chargée des études historiques et de la formation à l’histoire de la CFDT, responsable du service des archives confédérales. Elle crée et organise deux services d’archives pour la CFDT, confédéral et fédéral. Elle anime des sessions de formation, accueille les chercheurs, s'occupe des relations avec les centres de recherches, de 1985 à 1996.</p>
+            <p>Par ailleurs, de 1986 à 2008 Louisette Battais publie divers guides bibliographiques, articles ou interventions liés à l'histoire de la CFDT ou du syndicalisme militant.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb12089588w"
+                      xlink:type="simple">
+            <relationEntry>Battais, Louisette (1953-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1953-06-10">10 juin 1953</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Lien vers la notice d'autorité BnF.</p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

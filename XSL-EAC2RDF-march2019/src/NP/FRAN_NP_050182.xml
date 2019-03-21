@@ -1,0 +1,116 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050182</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-10-15</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Virginie POTIN</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-10-24</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Virginie GREGOIRE</agent>
+            <eventDescription>- ajout lien identité (BnF, wikipédia), ajout lien IR, ajout n°ISNI</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-11-14</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Notice wikipédia https://fr.wikipedia.org/wiki/Antoine_Prost</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Notice autorité BnF n° FRBNF11920698</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Archives nationales : fonds Antoine Prost (550AP)</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 2096 8279</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Prost, Antoine (1933-....)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1933-10-29">29 octobre 1933</fromDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="lieu" vocabularySource="d3ntj3sufy--1gdg82iquvnqh">Orléans (Loiret)</placeEntry>
+            </place>
+         </places>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msj02xm-19qbb7wdtto3j">enseignant</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Agrégé d’histoire et docteur ès lettres, professeur à l’université d’Orléans (1966-1979) puis à l’université de Paris I-Panthéon Sorbonne (depuis 1979), directeur du Centre d’histoire du syndicalisme, Antoine Prost (né en 1933) a été successivement membre de la commission de l’éducation nationale du Ve Plan (1964-1965) puis du VIe Plan (1969-1971) au titre de la C.F.D.T., membre de la commission d’étude de la fonction enseignante dite commission Joxe (1972) et de la commission de Peretti sur la formation des personnels de l’Education nationale (1982). Antoine Prost a ensuite présidé le groupe de travail national sur les lycées (1982) et le conseil d’administration et le conseil scientifique de l’Institut national de recherches pédagogiques (1982-1984).</p>
+            <p>Spécialiste des questions d'éducation, il contribue régulièrement aux débats qui entoure ce domaine.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="https://fr.wikipedia.org/wiki/Antoine_Prost"
+                      xlink:type="simple">
+            <relationEntry>Antoine Prost</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1933-10-29">29 octobre 1933</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Lien vers notice wikipédia</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb11920698g"
+                      xlink:type="simple">
+            <relationEntry>Prost, Antoine</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1933-10-29">29 octobre 1933</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Lien vers notice autorité BnF</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_004426"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Antoine Prost (1956-2001)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

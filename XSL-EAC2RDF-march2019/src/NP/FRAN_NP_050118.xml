@@ -1,0 +1,63 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050118</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-08-13</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Raphael BAUMARD</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2013-10-31</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Raphael BAUMARD</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Bonnard, Bernard de</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1740-01-01">1740</fromDate>
+               <toDate standardDate="1784-12-31">1784</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Né en Bourgogne, le 22 octobre 1740, Bernard de Bonnard servit dès l’âge de 15 ans dans le corps royal de l’artillerie. Après avoir été élève à l’école d’artillerie de Bapaume, il fut lieutenant au régiment royal de Besançon. Par les Mortemart, le chevalier de Bonnard connut les ducs d’Harcourt et de Gramont, les comtes de Buffon et de Maillebois, ainsi que Madame Necker. Madame de Genlis l’introduisit chez le duc et la duchesse de Chartres qui lui confièrent en 1777 l’éducation de leurs trois fils, le duc de Valois, futur Louis-Philippe, le duc de Montpensier et le comte de Beaujolais. Révoqué en 1782 et après avoir essayé en vain de retrouver un emploi militaire, le chevalier de Bonnard mourut en 1784. Il a laissé une œuvre littéraire imprimée et manuscrite. </p>
+            <p>Bernard de Bonnard avait épousé Anne-Charlotte-Sophie Silvestre, fille de Jacques-Augustin Silvestre, maître de dessin du roi. Son fils Augustin, sorti de l’École polytechnique en 1799, fut inspecteur et secrétaire général du conseil des mines. Il publia de nombreux ouvrages sur les salines, les minéraux, la géologie.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_004886"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Bonnard (XVIIIe siècle)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

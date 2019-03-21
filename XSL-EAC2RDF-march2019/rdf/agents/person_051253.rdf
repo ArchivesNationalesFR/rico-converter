@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051253">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Heurgon, Jacques (1903-1995)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051253_d4541e45"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1903-01-25</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-10-27</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051253-d4539e123"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051253-d4539e135"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051253-d4539e147"/>
+      <RiC:history xml:lang="fr">Né à Paris en janvier 1903, Jacques Heurgon est issu d'une famille parisienne de joailliers, après des études au lycée Condorcet, il entre en 1923 à l'École normale supérieure, où il est reçu premier à l'agrégation de lettres en 1927. Libéré du service militaire, il est nommé membre de l'École française de Rome de 1928 à 1930. D'abord enseignant à Nancy, il devient chargé de cours de langue et littérature latines à la faculté d'Alger de 1932 à 1945, il y rencontre Albert Camus alors étudiant. Intervient la seconde Guerre mondiale au cours de laquelle il s'engage, il participe notamment à la prise de Cassino durant la campagne d'Italie. Puis de 1944 à 1945, il est nommé attaché culturel à l'ambassade de France à Rome.  Jacques Heurgon devient docteur ès lettres en 1945, après avoir soutenu sa thèse « La civilisation de Capoue pré-romaine des origines à la deuxième guerre punique », plus une thèse complémentaire « Études sur les inscritions osques de Capoue dites Iuvilas ». De 1945 à 1951, il est professeur à la Faculté des lettres de Lille, puis de 1947 à 1952, directeur de la 1ère Circonscription des Antiquités historiques et de 1953 à 1971, professeur de langue et littérature latines à la Sorbonne.  Universitaire français, latiniste, philologue et historien de l'antiquité classique et du monde Italique, particulièrement de la civilisation étrusque, dès 1942, il publie ses travaux scientifiques qui sont encore aujourd'hui des ouvrages de référence, dont certains traduits dans une douzaine de langues et d'autres réédités régulièrement. Par ailleurs, Jacques Heurgon, est également membre de nombreuses sociétés savantes européennes, dont : la Société d’Études latines, la Société nationale des Antiquaires de France (Paris), la Society for the Promotion of Roman Studies (Londres), l’Istituto nazionale di Studi Etruschi ed Italici (Florence) et le Deutsches Archäologisches Institut (Berlin).  Il est également membre du Comité des Travaux historiques et scientifiques, puis élu à l'Académie des inscriptions et belles-lettres en décembre 1968. Membre de l’Accademia nazionale dei Lincei (Rome), de la Pontificia Accademia romana di Archeologia (Rome), de l’Accademia delle Scienze di Torino, de l’Accademia Etrusca (Cortone), de la British Academy (Londres), et Docteur honoris causa de l’Université libre de Bruxelles. Il est aussi décoré de la Croix de guerre 1939-1945, chevalier de la Légion d'Honneur en 1956, puis officier en 1975, commandeur des Palmes académiques et officier des Arts et Lettres, à l'étranger il reçoit la médaille d'or du Cultor Romae (Italie).  En 1926, Jacque Heurgon épouse Anne Desjardins (1899-1977), fille du professeur et journaliste Paul Desjardins (1859-1940), d'où naissent, Marc Heurgon (1927-2001) homme politique et historien, et deux filles Catherine († 2006) et Édith Heurgon, continuatrices des « colloques de Cerisy », au château de Cerisy-la-Salle dans le département de la Manche, depuis 1952 sous le nom de, Centre culturel international de Cerisy-la-Salle (CCIC). Jacques Heurgon décède à Paris le 27 octobre 1995 à l'âge de 92 ans.</RiC:history>
+      <isni:ISNIAssigned>0000000121430630</isni:ISNIAssigned>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051253"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051253-d4539e123">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">Docteur ès lettres (1945)</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj1t4q--erdp2b9cjr2g"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051253-d4539e135">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">Latiniste</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051253-d4539e147">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">Historien (étruscologue)</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj3i51--hevk1gms21cg"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051253_d4541e45">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051253-d4539e85"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051253">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051253"/>
+      <RiC:creationDate>2016-02-19</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_051253</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000121430630"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051253"/>
+   </rdf:Description>
+</rdf:RDF>

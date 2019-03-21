@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050842">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Boudon, Raymond (1934-2013)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050842_d4274e54"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1934-01-27</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-10</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050842-d4272e123"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050842-d4272e135"/>
+      <RiC:history xml:lang="fr">Né en 1934 à Paris, normalien, agrégé de philosophie et docteur ès lettres et sciences humaines, Raymond Boudon est tout d'abord attaché de recherche au Centre national de la recherche scientifique (CNRS) en 1961-1962, puis chargé de recherche l'année suivante. Maître de conférences à l'université de Bordeaux (1963-1967), il devient ensuite professeur à la Sorbonne (1967-1971). À la même période, il est directeur du Centre d'études sociologiques du CNRS (1968-1971).    En 1971, il crée le Groupe d'étude des méthodes de l'analyse sociologique (GEMAS) dont il devient le premier directeur. Cette année-là, il est aussi nommé professeur à l'université Paris V-Descartes. De 1978 à 2002, il est professeur à l'université de Paris-IV Sorbonne, et en sera émérite jusqu'à son décès en 2013. Sociologue de renommée internationale, Raymond Boudon a par ailleurs animé de nombreux cycles d'enseignement dans des universités étrangères (faculté latino-américaine des sciences sociales, fondation Getulio Vargas, Institut universitaire européen de Florence, universités de Laval, Harvard, Genève, Stockholm, New York, Lisbonne ou encore Chicago). Missionné par divers ministères, (Affaires étrangères, Recherche, Education nationale), il participe également à de nombreuses conférences et des colloques sur des thèmes très divers. Il est invité par plusieurs institutions et gouvernements étrangers à s’exprimer, en Allemagne, au Brésil, en Belgique, au Canada, en Algérie, en Egypte, aux Etats-Unis, en Espagne, en Italie, au Mexique, en Norvège, en Pologne, au Portugal, en Suède ou encore en Suisse.    Raymond Boudon a une grande activité éditoriale. Il est président du Comité de rédaction de 
+     L'Année sociologique (président d'honneur après 2002) et rédacteur en chef adjoint de 
+     Quality and Quantity (Amsterdam). Par ailleurs, il est aussi membre du comité de rédaction de nombreuses revues scientifiques françaises et étrangères : 
+     Revue française de sociologie (Paris), 
+     Commentaire (Paris), 
+     Rationality and Society et The American Journal of Sociology (Chicago), 
+     Theory and Decision (Berlin), 
+     European Sociological Review (Oxford), 
+     Thesis (Moscou). Il dirige également la collection 
+     Sociologies aux Presses universitaires de France (PUF) à Paris, et appartenait au comité de direction des collections Metodos (Barcelone) et Episteme (Dordrecht / Boston / Londres). Membre de l’Institut (Académie des Sciences morales et politique), il appartient également à de très nombreuses académies étrangères : Academia Europaea dont il a été membre fondateur, Académie américaine des arts et des sciences, British Academy, Académie des sciences et des arts d'Europe centrale, Académie internationale des sciences humaines de Saint-Pétersbourg, Académie internationale de philosophie des sciences, Académie internationale d'éducation (Oxford / Bruxelles) à la fondation de laquelle il a participé. Raymond Boudon a été également membre de la Société royale du Canada. 
+     A partir de 2006, et jusqu’à sa mort le 10 avril 2013 à Paris, il est membre du Haut conseil de la science et de la technologie.</RiC:history>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb11893208k#foaf:Person"/>
+      <isni:ISNIAssigned>0000000110512841</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050842-d4272e195"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/003773-d40e367"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050842-d4272e240"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050842-d4272e255"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050842"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050842-d4272e123">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">sociologue</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msk5oth-xqvujelh8c39"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050842-d4272e135">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050842_d4274e54">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050842-d4272e100"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050842">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050842"/>
+      <RiC:creationDate>2014-09-12</RiC:creationDate>
+      <RiC:lastUpdateDate>2016-10-20</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_050842</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000110512841"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050842"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb11893208k"/>
+   </rdf:Description>
+</rdf:RDF>

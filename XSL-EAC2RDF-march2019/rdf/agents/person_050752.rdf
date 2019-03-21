@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050752">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Painlevé, Paul (1863-1933)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050752_d4221e43"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1863-01-01</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1933-12-31</RiC:deathDate>
+      <RiC:history xml:lang="fr">Professeur agrégé à l'École polytechnique et docteur ès sciences, membre de l'Académie des sciences dès 1900, Paul Painlevé (1863-1933) entra dans la vie politique avec l'affaire Dreyfus. Député radical-socialiste dans le Ve arrondissement de Paris, de 1910 à 1928, puis dans l'Ain, de 1928 à sa mort en 1933, il s'occupa à la Chambre de toutes les questions militaires. Il fut ministre de l'Instruction publique et des Beaux-Arts du 29 octobre au 15 novembre 1915, ministre de l'Instruction publique, des Beaux-Arts et des inventions intéressant la Défense nationale du 15 novembre 1915 au 11 décembre 1916, ministre de la Guerre du 20 mars au 15 novembre 1917, du 17 avril 1925 au 22 juin 1926 et du 19 juillet 1926 au 2 novembre 1929, ministre des Finances du 29 octobre au 27 novembre 1925. Parallèlement, Painlevé fut président du Conseil à deux reprises, du 12 septembre au 15 novembre 1917 et du 17 avril au 27 novembre 1925. Il finit sa carrière ministérielle comme ministre de l'Air du 13 décembre 1930 au 26 janvier 1931.</RiC:history>
+      <isni:ISNIAssigned>0000000110639279</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050290-d3875e324"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050752-d4219e133"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050752"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050752_d4221e43">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050752-d4219e82"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050752">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050752"/>
+      <RiC:creationDate>2014-03-14</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050752</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000110639279"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050752"/>
+   </rdf:Description>
+</rdf:RDF>

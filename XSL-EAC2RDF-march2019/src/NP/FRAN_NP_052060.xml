@@ -1,0 +1,104 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_052060</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2018-06-14</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Zénaïde ROMANEIX</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2018-06-15</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Notice BnF FRBNF15620784</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Notice Wikipedia (https://fr.wikipedia.org/wiki/Bernard_Jouanneau)</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Site de l’association Mémoire 2000 (https://memoire2000.org/)</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 4739 7202</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Jouanneau, Bernard (1941-2017)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1941-05-28">28 mai 1941</fromDate>
+               <toDate standardDate="2017-06-06">6 juin 2017</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msj742x--12cnnohd8i9wj">avocat</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Bernard Jouanneau est avocat au barreau de Paris. Il œuvre en particulier pour la défense et la reconnaissance des génocides et s’illustre dans plusieurs affaires en lien avec le négationisme (génocide des juifs, cause arménienne, génocide des Tutsi au Rwanda).</p>
+            <p>Nommé au conseil juridique de la Ligue internationale contre le racisme et l'antisémitisme (LICRA) en 1970, il prend ses distances lors de la première « affaire Siné » en 1983 et démissionne en 1992 lors de « l'affaire L'Oréal ». </p>
+            <p>Il fonde l'association Mémoire 2000 qui cherche à sensibiliser les jeunes publics à la question des atteintes aux droits de l'homme.</p>
+            <p>Ami et collaborateur de Robert Badinter, il est son avocat lors du procès contre Robert Faurisson en 2007. Leurs relations se distendent ensuite, notamment autour de la question des génocides et de la loi Gayssot.</p>
+            <p>En 2004, il participe à la Commission d'enquête citoyenne (CEC) créée sous l'impulsion de plusieurs ONG afin de chercher à établir la responsabilité de la France dans le génocide des Tutsi au Rwanda en 1994.</p>
+            <p>Bernard Jouanneau s’intéresse également aux rapports entre art, science et droit et défend à plusieurs reprises les intérêts des artistes de rue.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb156207843"
+                      xlink:type="simple">
+            <relationEntry>Jouanneau, Bernard</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1941-05-28">28 mai 1941</fromDate>
+               <toDate standardDate="2017-06-06">6 juin 2017</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice BnF</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="https://fr.wikipedia.org/wiki/Bernard_Jouanneau"
+                      xlink:type="simple">
+            <relationEntry>Bernard Jouanneau</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1941-05-28">28 mai 1941</fromDate>
+               <toDate standardDate="2017-06-06">6 juin 2017</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice Wikipedia</p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

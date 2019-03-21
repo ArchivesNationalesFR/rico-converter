@@ -1,0 +1,94 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050780</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-04-09</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+            <eventDescription>F. Clavaud, 8 avril 2014 : création sur la base d'informations fournies par la mission des archives du ministère du développement durable</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2014-05-19</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+            <eventDescription>F. Clavaud, 19 mai 2014 : création des liens hiérarchiques ascendants</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Inspection générale territoriale (ministère de l'équipement)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1972-12-22">22 décembre 1972</fromDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>service d'administration centrale</term>
+            </legalStatus>
+         </legalStatuses>
+         <mandates>
+            <mandate>
+               <descriptiveNote>
+                  <p>Décret n°72-1259 du 22 décembre 1972 (ministère de l'aménagement du territoire, de l'équipement, du logement et du tourisme), relatif au conseil général des ponts et chaussées et à l'inspection générale de l'équipement.</p>
+                  <p>Arrêté du ministre de l'équipement du 26 novembre 1974 sur le fonctionnement du conseil général des ponts et chaussées et de l'inspection générale de l'équipement.</p>
+                  <p>Décret n° 86-1175 du 31 octobre 1986 (ministère de l'équipement, du logement, de l'aménagement du territoire et des transports) relatif au conseil général des ponts et chaussées et à l'inspection générale de l'équipement et de l'environnement.</p>
+                  <p>Décret n°79-589 du 2 juillet 1979 (ministère de l'environnement et du cadre de vie) modifiant le décret de 1972, relatif au conseil général des ponts et chaussées et à l'inspection générale de l'équipement et de l'environnement.</p>
+                  <p>Décret n° 86-1175 du 31 octobre 1986 (ministère de l'équipement, du logement, de l'aménagement du territoire et des transports) relatif au conseil général des ponts et chaussées et à l'inspection générale de l'équipement et de l'environnement).</p>
+               </descriptiveNote>
+            </mandate>
+         </mandates>
+         <biogHist>
+            <p>L'inspection générale territoriale du ministère de l'équipement et de l'environnement est l'une des formations d'inspection de l'inspection générale de l'équipement (créée en décembre 1972) puis de l'inspection générale de l'équipement et de l'environnement (à partir de 1979). Cette formation apparaît comme telle dans les différents organigrammes de l'IG.</p>
+            <p>Elle a pour mission d'inspecter - périodiquement - l'ensemble des services territoriaux, en ce qui concerne l'organisation générale des services, l'utilisation des moyens et personnels et l'application des directives ministérielles. Elle est organisée en 23 circonscriptions, qui sont remplacées en 1986 par des missions générales d'inspection territoriale (MIGT).</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:type="simple"
+                      xlink:href="FRAN_NP_007050">
+            <relationEntry>Inspection générale de l'équipement</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1972-12-22">22 décembre 1972</fromDate>
+               <toDate standardDate="1979-07-01">1er juillet 1979</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:type="simple"
+                      xlink:href="FRAN_NP_006649">
+            <relationEntry>Inspection générale de l'équipement et de l'environnement</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1979-07-02">2 juillet 1979</fromDate>
+               <toDate standardDate="2005-12-31">2005</toDate>
+            </dateRange>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

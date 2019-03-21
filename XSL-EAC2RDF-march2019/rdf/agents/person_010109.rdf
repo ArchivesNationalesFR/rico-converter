@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/010109">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Libois, Louis-Joseph (1921-2009)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/010109_d222e75"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1921-07-22</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-10-23</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/010109-d220e189"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/010109-d220e210"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/010109-d220e231"/>
+      <RiC:history xml:lang="fr">Polytechnicien en 1941, Louis-Joseph Libois (1921-2009) sort premier de l'École nationale supérieure des télécommunications en 1945 pour entrer l'année suivante au S.R.C.T. (Service des recherches et du contrôle technique), prédécesseur du C.N.E.T. (Centre nationale d'étude des télécommunication). L.-J. Libois est d'abord affecté aux études sur les faisceaux hertziens où il obtient en 1953, suite à ses recherches, le prix « Général Ferrié ». A partir de 1957, la direction du C.N.E.T. est assumé par Pierre Marzin ; à la demande de ce dernier, L.-J. Libois monte le département « Recherche sur les machines électroniques » (R.M.E.), qui traite de technologies innovantes, calculateurs et centraux téléphoniques ; il devient ensuite responsable du programme de recherche du C.N.E.T. en commutation électronique, particulièrement en commutation électronique temporelle. Entre 1963 et 1968, L.-J. Libois dirige le C.N.E.T. Lannion dans les Côtes-d'Armor qui vient d'être inauguré, puis il prend la direction générale du C.N.E.T, tandis que Pierre Marzin est nommé directeur général des Télécommunications. A partir d'octobre 1971, L.-J. Libois lui succède au même poste jusqu'en 1974. Président de la Caisse nationale des Télécommunications (C.N.T.) de 1971 à 1990, il est aussi conseiller maître puis conseiller maître honoraire à la Cour des comptes de 1977 à 1986. Par ailleurs, il assume diverses fonctions d'administrateur, de présidence ou de censeur d'établissements et d'associations liés principalement aux télécommunications, dont : la Société française des électroniciens et radioélectriciens (1970), la Section française de l'I.E.E.E (1981-1983), la Banque de Bretagne (1982-1989), Alcatel-Cit (1982-1996), le Comité interministériel de l'informatique et de la bureautique dans l'administration (1984-1985) et de la fondation Louis Leprince Ringuet dont il est président d'honneur. Membre puis membre émérite du Conseil pour les applications de l'Académie des sciences (C.A.D.A.S.), membre fondateur de l'Académie des technologies (2000). En reconnaissance de son travail, L.-J. Libois obtient la médaille d'or de l'industrie nationale (1968) ; il est aussi commandeur de la Légion d'honneur (1984), [chevalier en 1961 et officier en 1967], officier de l'ordre national du Mérite (1967), et chevalier des Palmes académiques (1968).</RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/010109--d220e164"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Louis-Joseph_Libois"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb11912966z#foaf:Person"/>
+      <isni:ISNIAssigned>0000000045727415</isni:ISNIAssigned>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/010109-d220e304"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/010109"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/010109-d220e189">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1970-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1996-12-31</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">présidence ou censeur d'établissements et d'associations liés aux télécommunications.</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d3m0bl759we-1qfz4kgpyc2dp"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/010109-d220e210">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1946-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1968-12-31</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">études sur les faisceaux hertziens, la commutation électronique, etc.</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msk5oth-xqvujelh8c39"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/010109-d220e231">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1945-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-12-31</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">diplômé de l'École nationale supérieure des télécommunications.</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjgtw3-1ton3i1q2op31"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/010109-d220e304">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Libois, Louis-Joseph (1921-2009) et l'ensemble de documents "Fonds Louis-Joseph Libois (1941-2006)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/050293-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/010109_d222e75">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/010109-d220e136"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/010109--d220e164">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Libois, Louis-Joseph (1921-2009)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/010109-d220e159"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/010109">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/010109"/>
+      <RiC:creationDate>2013-04-23</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-11-22</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_010109</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Archives nationales, fonds Louis-Joseph Libois (694AP).</RiC:source>
+      <RiC:source xml:lang="fr">Notice d'autorité BnF n° FRBNF11912966</RiC:source>
+      <RiC:source xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Louis-Joseph_Libois</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000045727415"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_010109"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Louis-Joseph_Libois"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb11912966z"/>
+   </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/050720">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">Youth Planet</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050720_d4197e41"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050720_d4197e44"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/f7742d1f-1699-45c7-804b-0277189a621d"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1997-06-21</RiC:beginningDate>
+      <RiC:history xml:lang="fr">Youth planet a pour origine le colloque « Participation des jeunes européens à la vie de leur cité » organisé à Strasbourg en novembre 1995 par l’Association nationale des conseils d’enfants et de jeunes. Cet événement rassemble 150 jeunes européens impliqués au niveau local dans leur pays. Il a deux objectifs : d’une part, établir un bilan des différentes formes de participation des jeunes à la vie locale dans les pays européens ; d’autre part, former un réseau européen de conseils d’enfants et de jeunes.  Après ce rassemblement, des liens se tissent entre les structures nationales de conseils de jeunes de cinq pays : outre la France, figurent aussi la Hongrie, l’Italie, la Roumanie et la Suisse. Et c’est les 21-22 juin 1997 à Monte Porzio Catone en Italie, qu’est constituée l’association Youth planet aussi appelée : Association européenne pour la participation des jeunes à la démocratie locale.  Youth planet a pour but de promouvoir, au niveau européen, la citoyenneté par la participation des jeunes à la démocratie locale, dans l’esprit de la charte de la participation des jeunes à la vie locale et régionale adoptée par le Conseil de l’Europe en 1992.  Le rôle de l’ANACEJ dans la création de Youth planet est fondamental. Jusqu’en 2000, les deux associations ont d’ailleurs le même siège social, et c’est la structure française qui fournit l’essentiel des moyens matériels et humains. Youth planet a organisé quelques journées d’études, des stages européens de formation et quelques grandes manifestations, comme à Lamoura (France) en 2000. Néanmoins, elle n’a jamais réussi à se développer et l’association est mise en sommeil à partir de 2005. </RiC:history>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050698-d4173e167"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050720-d4195e147"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050720"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050720-d4195e147">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Youth Planet et l'ensemble de documents "Archives de l'association Youth Planet"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/050476-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050720_d4197e41">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050720-d4195e79"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050720_d4197e44">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050720-d4195e85"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050720">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/050720"/>
+      <RiC:creationDate>2014-03-06</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050720</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050720"/>
+   </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,94 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010638</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00364</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Rémond, Etienne</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1663-10-13">13 octobre 1663</fromDate>
+               <toDate standardDate="1665-12-16">16 décembre 1665</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp6vb2-rsrcmgk1zmct">saint-merri (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvozckb-wk5djyktth83">saint-jacques-de-la-boucherie (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp1p2a--wp1m57bskhhm">saint-josse (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp76qc--1xdxyf9lzzthw">saint-nicolas-des-champs (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp2o77-1wnswrnmvwf46">saint-laurent (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd5fnbv--1fbmnb1c9dkph">saint-martin (rue)</placeEntry>
+               <placeEntry localType="nomLieu">rue Saint-Martin</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1663-10-13">13 octobre 1663</fromDate>
+                  <toDate standardDate="1665-12-16">16 décembre 1665</toDate>
+               </dateRange>
+            </function>
+         </functions>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010143"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XVI</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1663-10-13">13 octobre 1663</fromDate>
+               <toDate standardDate="1665-12-16">16 décembre 1665</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041462"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Étienne RÉMOND, 12 octobre 1663 - 14 décembre 1665 (étude XVI)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051813"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Etienne Rémond pour l'étude XVI</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

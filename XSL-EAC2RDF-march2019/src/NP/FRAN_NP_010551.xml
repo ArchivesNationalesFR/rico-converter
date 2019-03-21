@@ -1,0 +1,104 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010551</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00267</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Savalete, Pierre</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Savalette, Pierre</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1670-06-11">11 juin 1670</fromDate>
+               <toDate standardDate="1722-04-10">10 avril 1722</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp8zed--rdzkw0dkb1pg">saint-paul (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvoxn4o-1v8ltgercbj9c">saint-gervais (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgqi79--17v2l85hhq4ey">saint-antoine (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd15vbw-k0h1w454w4f8">saint-antoine (rue)</placeEntry>
+               <placeEntry localType="nomLieu">rue Saint-Antoine</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1670-06-11">11 juin 1670</fromDate>
+                  <toDate standardDate="1722-04-10">10 avril 1722</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>marié à Marie Bonneau</p>
+            <p>sa fille Marie-Jeanne épouse Guillaume de Laleu, qui exerce en association avec son beau-père de 1706 à 1721 (voir ETLXII/283, 18 avril 1706, contrat de mariage)</p>
+            <p>capitoul de Toulouse</p>
+            <p>échevin de Paris</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010232"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale CV</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1670-06-11">11 juin 1670</fromDate>
+               <toDate standardDate="1722-04-10">10 avril 1722</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/C/300, 24 mai 1670, vente à Pierre Savalette de l'office de notaire de François Le Fouin, acquis précédemment par Noël de Beauvais</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043185"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Pierre SAVALETE, 11 juin 1670 - 10 avril 1722 (étude CV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_053151"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Pierre Savalete pour l'étude CV</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

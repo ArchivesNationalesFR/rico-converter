@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051706">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Chauveau-Lagarde, Claude-François (1756-1841)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051706_d4895e58"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1756-01-21</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1841-02-20</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051706-d4893e147"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051706-d4893e153"/>
+      <RiC:history xml:lang="fr">Claude-François Chauveau-Lagarde (1765-1841) naît à Chartres le 21 janvier 1756. Après des études au collège de Chartres, il part étudier le droit à Paris. Avocat au parlement de Paris. Quand les États généraux sont convoqués, il se laisse gagner par les idées révolutionnaires et publie une 
+     Théorie des États généraux ou la France régénérée. Sous la Révolution, il continue à exercer sa profession sous le nouveau nom de défenseur officieux qu'on avait donné à l'avocat. En 1793, il défend le général Miranda et le fait acquitter par le tribunal révolutionnaire. Il échoue dans la défense de Brissot et des Girondins modérés ainsi que de Charlotte Corday. Il est également l’avocat de Marie-Antoinette et de Madame Élisabeth. Après le vote de la loi du 22 prairial an II (10 juin 1794) qui supprime le recours à un avocat, il se retire à Chartres. Arrêté comme suspect, il ne recouvre sa liberté qu’après le 9 Thermidor (27 juillet 1794). 
+     Lors de l'insurrection royaliste du 13 vendémiaire an IV (5 octobre 1795), il est condamné par coutumace pour sa participation mais il se cache jusqu'à ce que la sentence soit levée. Il reprend son métier d'avocat et défend surtout des royalistes accusés de conspiration, comme l'abbé Brottier. Il devient avocat au Conseil d’État sous l’Empire, et il reçoit la Légion d’honneur le 23 août 1814. Sous la Restauration, il est nommé avocat au Conseil du roi et président du Conseil de l'ordre des avocats. Il défend notamment le général Jean-Gérard Bonnaire, « les déportés de la Martinique » (Bissette, Volny et Fabien), François-André Isambert. Nommé conseiller à la Cour de cassation (section criminelle) en 1828, il meurt en février 1841. On a de lui une 
+     Note historique sur le procès de Marie Antoinette et de Madame Élisabeth (1816). 
+     De son mariage avec Scholastique Mélanie Thérèse Meslier, sont issus plusieurs enfants dont François-Olivier-Léon, conservateur des hypothèques à Issoudun.</RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051706--d5bdpjzh6i-udgjpjglwnmwd4893e137"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051706--d5bdppt147--176wwvjcctrx0d4893e140"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb12449288x#foaf:Person"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Claude_François_Chauveau-Lagarde"/>
+      <isni:ISNIAssigned>0000000080700701</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051364-d4621e274"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051706-d4893e250"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051706"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051706-d4893e147">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj742x--12cnnohd8i9wj"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051706-d4893e153">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d3m0bl76dik--ncxjtjvkyzcv"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051706-d4893e250">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Chauveau-Lagarde, Claude-François (1756-1841) et l'ensemble de documents "Fonds Chauveau-Lagarde (XVe-XXe siècle)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/005419-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051706_d4895e58">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051706-d4893e109"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051706--d5bdpjzh6i-udgjpjglwnmwd4893e137">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Chauveau-Lagarde, Claude-François (1756-1841)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/FRAN_RI_005-d5bdpjzh6i-udgjpjglwnmw"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051706--d5bdppt147--176wwvjcctrx0d4893e140">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Chauveau-Lagarde, Claude-François (1756-1841)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/FRAN_RI_005-d5bdppt147--176wwvjcctrx0"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051706">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051706"/>
+      <RiC:creationDate>2017-09-13</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-11-08</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051706</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Archives nationales, fonds Chauveau-Lagarde : 476 AP.</RiC:source>
+      <RiC:source xml:lang="fr">Notice BnF : FRBNF12449288</RiC:source>
+      <RiC:source xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Claude_François_Chauveau-Lagarde</RiC:source>
+      <RiC:source xml:lang="fr">Tulard (Jean), Fayard (Jean-François), Fierro (Alfred), Histoire et dictionnaire de la Révolution française 1789-1799, Éditions Robert Laffont, collection Bouquins, Paris, 1987, p. 645.</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000080700701"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051706"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb12449288x"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Claude_François_Chauveau-Lagarde"/>
+   </rdf:Description>
+</rdf:RDF>

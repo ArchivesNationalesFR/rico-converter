@@ -1,0 +1,124 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050160</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-08-13</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Michel THIBAULT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Délégué interministériel à la lutte contre la grippe aviaire</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Délégation interministérielle à la lutte contre la grippe aviaire</part>
+         </nameEntry>
+         <nameEntry>
+            <part>DILGA</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="2005-01-01">2005</fromDate>
+               <toDate standardDate="2012-12-31">2012</toDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>service d'administration centrale</term>
+            </legalStatus>
+         </legalStatuses>
+         <mandates>
+            <mandate>
+               <descriptiveNote>
+                  <p>Décret n° 2005-1057 du 30 août 2005 instituant un délégué interministériel à la lutte contre la grippe aviaire, abrogé par le décret n° 2012-302 du 5 mars 2012.</p>
+               </descriptiveNote>
+            </mandate>
+         </mandates>
+         <biogHist>
+            <p>Le délégué interministériel à la lutte contre la grippe aviaire (DILGA) est placé auprès du Premier ministre. Il rend compte de ses travaux au Premier ministre et aux ministres chargés de l'agriculture et de la santé.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:type="simple"
+                      xlink:href="FRAN_NP_000002">
+            <relationEntry>Premier ministre</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2005-01-01">2005</fromDate>
+               <toDate standardDate="2012-12-31">2012</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:type="simple"
+                      xlink:href="FRAN_NP_009623">
+            <relationEntry>Ministère du Travail, de l'Emploi et de la Santé</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2010-11-14">14 novembre 2010</fromDate>
+               <toDate standardDate="2012-03-05">5 mars 2012</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:type="simple"
+                      xlink:href="FRAN_NP_009650">
+            <relationEntry>Ministère de la Santé et des Sports</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2007-05-18">18 mai 2007</fromDate>
+               <toDate standardDate="2010-11-13">13 novembre 2010</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:type="simple"
+                      xlink:href="FRAN_NP_000025">
+            <relationEntry>Ministère de la Santé et des Solidarités</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2005-08-30">30 août 2005</fromDate>
+               <toDate standardDate="2007-05-15">15 mai 2007</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:type="simple"
+                      xlink:href="FRAN_NP_000004">
+            <relationEntry>Ministère de l'Agriculture</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2005-08-30">30 août 2005</fromDate>
+               <toDate standardDate="2012-03-05">5 mars 2012</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_050299"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Délégation interministérielle à la lutte contre la grippe aviaire</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,66 @@
+<!-- DTD Référentiels d'indexation SIA  V1.1 -->
+<!--DTD utilisee par le SIA pour la production des référentiels d'indexation des archives nationales.-->
+<!-- Mise à jour du 15/07/2011 Suppression de nom, prenom et surnom de la noticep, suppression pays de la noyicel -->
+<!-- Racine du référentiel -->
+<!ELEMENT r 		(d*)>
+<!ATTLIST r 		id ID #REQUIRED>
+<!ATTLIST r 		nom CDATA #REQUIRED>
+<!-- MT : Matière -->
+<!-- LI : Lieux -->
+<!-- PR : Personnes  -->
+<!-- PM : Personnes  morales-->
+<!-- RO : Rôles-->
+<!-- FO : Fonctions-->
+<!-- AC : Activités-->
+<!-- SD : Support doc  -->
+<!-- TD : Typologie doc  -->
+<!-- GE : Générique  -->
+<!ATTLIST r 		type (MT|LI|PR|PM|RO|FO|AC|SD|TD|GE|LP) #REQUIRED>
+<!-- cat  du référentiel H = Hiérarchique NH = Nom hiérarchique-->
+<!ATTLIST r 		cat (H|NH) #REQUIRED>
+
+<!-- Entrée descripteur -->
+<!ELEMENT d 		(terme, def?, app?, interdits?, associes?, (noticel|noticep)?, d*)>
+<!ATTLIST d 		id ID #REQUIRED>
+
+<!ELEMENT terme 	(#PCDATA)>
+<!ELEMENT def 		(#PCDATA)>
+<!ELEMENT app 		(#PCDATA)>
+
+<!-- Groupe des termes interdits -->
+<!ELEMENT interdits (i+)>
+<!ELEMENT i 		(#PCDATA)>
+
+<!-- Groupes des liens descripteurs associés -->
+<!ELEMENT associes 	(a+)>
+<!ELEMENT a 		(#PCDATA)>
+<!ATTLIST a 		href IDREF #REQUIRED>
+
+<!-- Un notice d'autorité pour une pesronne -->
+<!ELEMENT noticep 	(forms?, datedeb?, datefin?, bio?, biblio?)>
+
+<!-- Un notice d'autorité pour un lieu -->
+<!ELEMENT noticel 	(forms?, geo?, reg?, dpt?, arr?, canton?, insee?, commune?)>
+
+
+<!-- Groupe des autres formes de (noms ou anciens noms de commune dans le cas d'un lieu-->
+<!ELEMENT forms		(f+)>
+<!ELEMENT f			(#PCDATA)>
+
+<!-- Les balises d'une notice Personne -->
+<!ELEMENT commune 	(#PCDATA)>
+<!ELEMENT geo		(#PCDATA)>
+<!ELEMENT insee		(#PCDATA)>
+<!ELEMENT reg		(#PCDATA)>
+<!ELEMENT dpt		(#PCDATA)>
+<!ELEMENT arr		(#PCDATA)>
+<!ELEMENT canton	(#PCDATA)>
+
+<!ELEMENT datedeb	(#PCDATA)>
+<!ATTLIST datedeb normal CDATA #IMPLIED>
+
+<!ELEMENT datefin	(#PCDATA)>
+<!ATTLIST datefin normal CDATA #IMPLIED>
+
+<!ELEMENT bio		(#PCDATA)>
+<!ELEMENT biblio	(#PCDATA)>

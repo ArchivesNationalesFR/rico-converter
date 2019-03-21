@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_011182</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00950</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_011182-d1279e67">
+            <part>Miller, Jacques</part>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_011182-d1279e73">
+            <part>Miller, Jacques Thomas</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1751-03-17">17 mars 1751</fromDate>
+               <toDate standardDate="1771-12-20">20 décembre 1771</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place xml:id="FRAN_place_011182-d1279e102">
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse"
+                           vocabularySource="d3nyvpbvqa-1q7k75sdt2gwp"
+                           xml:id="FRAN_stdPlaceEntry_011182-d3nyvpbvqa-1q7k75sdt2gwpd1279e107">saint-séverin (paroisse)</placeEntry>
+               <placeEntry localType="paroisse"
+                           vocabularySource="d3nyvovxws-1r3061wzh7bqc"
+                           xml:id="FRAN_stdPlaceEntry_011182-d3nyvovxws-1r3061wzh7bqcd1279e110">saint-etienne-du-mont (paroisse)</placeEntry>
+               <placeEntry localType="quartier"
+                           vocabularySource="d3nyvgqtes--1wrsaggwbjmzu"
+                           xml:id="FRAN_stdPlaceEntry_011182-d3nyvgqtes--1wrsaggwbjmzud1279e113">saint-benoît (quartier)</placeEntry>
+               <placeEntry localType="voie"
+                           vocabularySource="d3nzakijpx--1vrywvrnzpbop"
+                           xml:id="FRAN_stdPlaceEntry_011182-d3nzakijpx--1vrywvrnzpbopd1279e116">galande (rue)</placeEntry>
+               <placeEntry localType="nomLieu" xml:id="FRAN_placeEntry_011182-d1279e120">rue Galande</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function xml:id="FRAN_activity_011182-d1279e127">
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1751-03-17">17 mars 1751</fromDate>
+                  <toDate standardDate="1771-12-20">20 décembre 1771</toDate>
+               </dateRange>
+            </function>
+         </functions>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010145"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_011182-d1279e146">
+            <relationEntry>Etude notariale XVIII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1751-03-17">17 mars 1751</fromDate>
+               <toDate standardDate="1771-12-20">20 décembre 1771</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other" xml:id="FRAN_relation_011182-d1279e161">
+            <relationEntry localType="archival">ET/XLVIII/133, 11 mars 1753, traité d'office de notaire entre Etienne Regnault et Jacques Miller</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other" xml:id="FRAN_relation_011182-d1279e167">
+            <relationEntry localType="archival">ET/XLVII/266, 12 décembre 1772, vente de son office à Jean-Nicolas Giard, son principal clerc</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041552"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_011182-d1279e173">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jacques MILLER, 19 mars 1751 - 18 décembre 1771 (étude XVIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052967"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_011182-d1279e179">
+            <relationEntry localType="archival">Images des répertoires du notaire Jacques Miller pour l'étude XVIII</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

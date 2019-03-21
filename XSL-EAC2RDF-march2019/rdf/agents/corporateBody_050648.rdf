@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/050648">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">Chambre des notaires de Paris</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050648_d4148e49"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/ccd8bd98-fd5b-4074-ad5a-0c7431fe4910"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1803-01-01</RiC:beginningDate>
+      <RiC:history xml:lang="fr">Les chambres des notaires, d'abord appelées chambres de discipline, sont organisées par l'arrêté du 2 nivose an XII (24 décembre 1803), à la suite de la loi du 25 ventôse an XI qui prévoit en sa section III, art. 50 que "Les chambres qui seront établies pour la discipline intérieure des notaires seront organisées par des règlements". L'organisation des chambres, calée sur celle de la justice, vient confirmer l'essence judiciaire de la fonction notariale. Les missions du notaire et l'organisation de la profession sont aujourd'hui définies par l'ordonnance 45-2590 du 2 novembre 1945 et par son décret d'application 45-0117 du 19 décembre 1945. Les chambres ont le statut particulier d' "établissement d'utilité publique", proche de celui d'une personne morale de droit privé chargée d'une mission de service public, en l'occurence celle de l'organisation du notariat dans son ressort de compétence. Elles disposent de la personnalité juridique. Les chambres élisent leurs représentants, exercent la discipline sur les notaires qui en dépendent et règlent leurs différends, mais constituent surtout des lieux d'échange et de diffusion des informations juridiques, ainsi que des centres de décisions réglant et animant la vie de la compagnie des notaires de leur ressort. Dans le cadre de leurs actions disciplinaires (contrôle des offices, réponses aux réclamations, contentieux), les chambres relèvent du procureur de la République du tribunal de grande instance du ressort de leur siège, mais également du ministre de la Justice, garde des sceaux, pour tout ce qui concerne les nominations des notaires, la création des sociétés d'exercice notarial et l'évolution des carrières des notaires. Il faut noter que depuis 2004 les chambres ont vu leurs pouvoirs disciplinaires transférés à une commission disciplinaire constituée au sein de chaque conseil régional des notaires. A Paris, la Chambre des notaires s'installe sur l'emplacement de l'ancien Châtelet. L'immeuble du 12 avenue Victoria, érigé en 1855-1856, à l'époque du percement du boulevard de Sébastopol, est dû aux architectes Jules Pellechet et Charles Rohault de Fleury. Il porte fièrement sur la façade quatre dates, qui sont autant de jalons de l'histoire de la profession : 805 (capitulaire de Charlemagne), 1270 (création de la confrérie sous le règne de saint Louis), 1539 (édit de Villers-Cotterêts), 1803 (loi du 25 ventôse an XI). A Paris, comme parfois dans d'autres villes, la Chambre est l'héritère d'institutions communautaires professionnelles bien plus anciennes : des documents font remonter à saint Louis la création d'une confrérie de clercs jurés notaires du roi au Châtelet de Paris. Sous l'Ancien Régime, la communauté des notaires au Châtelet de Paris est très active. Ses représentants se réunissaient tous les dimanches et leurs assemblées plénières avaient lieu à la Saint-Nicolas d'été (9 mai) et à la Saint-Nicolas d'hiver (6 décembre). Des jetons de présence sont frappés et distribués, avec la devise de la compagnie adoptée sous Louis XIV "Lex est quodcumque notamus", portant sur une face le profile du souverain, sur l'autre un gnomon.</RiC:history>
+      <RiC:noteOnStructureOrGenealogy xml:lang="fr">La chambre des notaires de Paris est l'héritière d'institutions plus anciennes : confrérie des clercs jurés notaires au Châtelet de Paris, communauté puis compagnie des conseillers du roi notaires au Châtelet de Paris sous l'Ancien Régime. Elle comprend un président, un premier vice-président, un vice-président, un premeir syndic, trois syndics, un secrétaire, un secrétaire et délégué à la communication, un trésorier, un rapporteur délégué au TIC et comité mixte, 16 membres.</RiC:noteOnStructureOrGenealogy>
+      <RiC:ruleFollowed xml:lang="fr">arrêté du 2 nivose an XII (24 décembre 1803)</RiC:ruleFollowed>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/050648-d4146e124"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050648-d4146e163"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050648"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050648-d4146e163">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Chambre des notaires de Paris et l'ensemble de documents "Enregistrement des contrats de mariage de commerçants à la chambre des notaires de Paris (1829-1934)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/50229-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050648_d4148e49">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050648-d4146e88"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050648">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/050648"/>
+      <RiC:creationDate>2015-09-30</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050648</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050648"/>
+   </rdf:Description>
+</rdf:RDF>

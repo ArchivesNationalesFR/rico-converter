@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/051859">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">France. Commission d'organisation du Conseil d'État (1830-1831)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051859_d4938e69"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/4c64aab3-ebc0-4980-a43f-9f176693de38"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1830-08-20</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1831-12-16</RiC:endDate>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051859-d4936e163"/>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051859-d4936e169"/>
+      <RiC:history xml:lang="fr">Le 25 janvier 1830, une commission, présidée par Georges Cuvier, achevait l’élaboration d’un projet de loi sur le Conseil d’État. Quelques mois plus tard, à la suite de la Révolution de Juillet, l'existence du Conseil d’État fut mise en cause. Nouvellement nommé ministre de l'Instruction publique et des cultes et président du Conseil d’État par Louis-Philippe, le duc de Broglie soumit au roi, le 20 août 1830, un rapport dans lequel il établissait « en termes catégoriques la nature du Conseil d’État en tant que ressort essentiel à l’établissement monarchique, la nécessité dans les circonstances présentes d’en déclarer le maintien, l’urgence de lui rendre immédiatement vie et action ». Le même jour, il fit signer au roi deux ordonnances, la première relative à la réorganisation provisoire du Conseil d’État, la seconde instituant une commission chargée de préparer un projet de loi sur la réforme à introduire dans l’organisation et les attributions du Conseil. La première ordonnance, dictée par la double nécessité de « pourvoir à l'exécution [des] affaires » et de procéder à une épuration administrative, modifia considérablement la composition du Conseil.  La seconde ordonnance institua la commission d'organisation du Conseil d’État, placée sous la présidence de Benjamin Constant, par ailleurs membre de la Chambre des députés et président de la section de Législation et de justice administrative au Conseil d’État. MM. Le comte d’Argout, pair de France, Béranger, Devaux et Vatismenil, membres de la Chambre des députés, le baron Zangiacomi, conseiller à la Cour de cassation, le baron de Fréville, conseiller d’État, Macarel et de Rémusat, furent nommés membres de la commission. M. Taillandier, avocat, en fut quant à lui nommé secrétaire. Néanmoins, en raison du décès de Benjamin Constant, le duc de Broglie assura la présidence de la commission. La commission d'organisation du Conseil d’État tint séance du 5 novembre 1830 au 16 décembre 1831. Elle rédigea deux versions successives du projet de loi – la première composée de 245 articles et la seconde constituant une version finale plus concise du projet proposé par la commission. Néanmoins, selon Louis Fougère, ce projet de loi « – dont les auteurs avaient essayé de déterminer avec beaucoup de précision la compétence de la juridiction administrative en énumérant les catégories d’affaires qui en ressortissaient – n’eut pas de suite. » De 1833 à 1845, plusieurs projets de loi furent en effet inscrits aux ordres du jour des législatures ayant pour objet la réorganisation du Conseil d’État, jusqu'à la loi du 21 juillet 1845, qui lui donna de nouvelles règles d'organisation et de fonctionnement.</RiC:history>
+      <RiC:ruleFollowed xml:lang="fr">Rapport du 20 août 1830.</RiC:ruleFollowed>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/000080-d11e720"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051859-d4936e229"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051859"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051859-d4936e163">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d3nyui1pz3--1xo3byar8jzxv"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051859-d4936e169">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d3nyui3zvx--1xxdtpjeecb6p"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051859-d4936e229">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            France. Commission d'organisation du Conseil d'État (1830-1831) et l'ensemble de documents "Archives de la Commission d'organisation du Conseil d'État. Procès-verbaux des séances (1830-1831)."</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/056775-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051859_d4938e69">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051859-d4936e131"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051859">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/051859"/>
+      <RiC:creationDate>2017-12-15</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-01-16</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051859</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">AUCOC (Léon), Le Conseil d’État avant et depuis 1789 : ses transformations, ses travaux et son personnel, Paris, Imprimerie nationale, 1876.</RiC:source>
+      <RiC:source xml:lang="fr">BROGLIE (Victor de), Souvenirs, 1785-1870, du feu duc de Broglie, [publiés par son fils le duc C.-J.-V.-A. de Broglie], 4 tomes, Paris, C. Lévy, 1886.</RiC:source>
+      <RiC:source xml:lang="fr">Bulletin des ordonnances IXe série, 2e partie – n°4, p. 52-58, in Bulletin des Lois du royaume de France, tome 36 n°1 à 17, Paris, Imprimerie royale, 1830.</RiC:source>
+      <RiC:source xml:lang="fr">FOUGÈRE (Louis) (dir.), Le Conseil d’État, son histoire à travers les documents d'époque, 1799-1974, Paris, Éditions du CNRS, 1974.</RiC:source>
+      <RiC:source xml:lang="fr">JANICOT (Daniel), « Benjamin Constant au Conseil d’État », Études et documents du Conseil d’État, n° 31, 1979-1980, Paris, Imprimerie nationale, p. 139-149.</RiC:source>
+      <RiC:source xml:lang="fr">ROLIN (Frédéric), « Les projets de réforme du Conseil d’État établis par Benjamin Constant en 1830 », La Revue administrative, 53e année, n° 317 (septembre-octobre 2000), pp. 463-477.</RiC:source>
+      <RiC:source xml:lang="fr">La Commission d'organisation du Conseil d'État ne possède pas de numéro ISNI.</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051859"/>
+   </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050516</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-01-16</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>F. Clavaud, 16 janvier 2014 : ajout n° notice BnF et changement forme du nom.</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, fonds Montholon et Sémonville (115AP).</p>
+               <p>Notice d'autorité BnF n° FRBNF15096360</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>family</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_050516-d4045e82">
+            <part>Montholon (famille de)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1501-01-01">XVIe siècle</fromDate>
+               <toDate standardDate="2000-12-31">XXe siècle</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Originaire de Montholon, en Bourgogne près d’Autun, la famille de Montholon appartenait à la noblesse de robe. Au xvie siècle, François de Montholon (1490-1543) fut avocat général, président à mortier puis garde des Sceaux (1542). Son fils, lui aussi prénommé François (mort en 1558), fut avocat puis garde des Sceaux (1558). Au xixe siècle, Charles-Tristan, comte de Montholon (1783-1853) participa aux guerres de Prusse et de Pologne en 1806-1807, d’Espagne en 1808 et fut à Eckmühl et Wagram en 1809. Il fut créé comte et chambellan de l’Empereur, nommé général de brigade en 1811 et ministre plénipotentiaire à Wurtzbourg en 1812. Le comte de Montholon rejoignit Napoléon Ier après le retour de l’île d’Elbe et le suivit comme aide de camp à Waterloo puis à Sainte-Hélène, où il ne le quitta plus qu’à la mort.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_004292"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_050516-d4045e112">
+            <relationEntry localType="archival">Fonds Montholon et Sémonville (1243-1951)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

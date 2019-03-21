@@ -1,0 +1,78 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050505</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-01-16</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>F. Clavaud, 16 janvier 2014 : changement forme du nom et ajout n° notice BnF</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, fonds Noailles, de Beaumont, de Grossolles-Flamarens (111AP).</p>
+               <p>Notice d'autorité BnF n° FRBNF12087526</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>family</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Noailles (famille de)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1001-01-01">XIe siècle</fromDate>
+               <toDate standardDate="2000-12-31">XXe siècle</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Originaire du petit bourg de Noailles près de Brive, la famille de Noailles est connue depuis le xie siècle. Ses principaux membres furent Antoine de Noailles (1504-1562), maître d’hôtel de François Ier, grand chambellan des Enfants de France, gouverneur et maire de Bordeaux, amiral de Guyenne, son frère François (1519-1585), évêque d’Aix (1555), ambassadeur à Venise (1557-1569) puis à Constantinople (1572), Anne-Jules, duc de Noailles (1650-1708), maréchal de France en 1693, et son fils Adrien-Maurice (1678-1766), maréchal de France en 1734 et ambassadeur extraordinaire en Espagne en 1746.</p>
+            <p>Les ducs de Noailles descendent du premier fils d’Adrien-Maurice, Louis (1713-1793), duc d’Ayen puis duc et maréchal de Noailles. Les ducs de Mouchy sont issus du deuxième fils d’Adrien-Maurice, Philippe (1715-1794), maréchal de France en 1755. Second fils de Philippe, duc de Mouchy et beau-frère de Lafayette, Louis-Marie, vicomte de Noailles (1756-1804), fit la campagne d’Amérique sous les ordres de l’amiral d’Estaing et périt à Saint-Domingue sous le Consulat. Son fils, Louis Joseph Alexis (1783-1835) prit une part très active aux intrigues des royalistes contre Napoléon Ier, fut arrêté puis relâché, passa à l’étranger et alla offrir ses services à Louis XVIII. Député en 1815, il se rallia à Louis-Philippe après 1830. En 1852, le fils d’Alexis, Alfred, épousa Marie de Beaumont du Repaire, issue d’une famille du Périgord. La famille de Noailles était également alliée aux Grossolles-Flamarens, originaires de Guyenne.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_050067"
+                      xlink:type="simple">
+            <relationEntry>Lafayette, Gilbert Du Motier (1757-1834 ; marquis de)</relationEntry>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_050509"
+                      xlink:type="simple">
+            <relationEntry>Grossolles-Flamarens (famille de)</relationEntry>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_051681"
+                      xlink:type="simple">
+            <relationEntry>La Force, Auguste de Caumont (1878-1961 ; duc de)</relationEntry>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

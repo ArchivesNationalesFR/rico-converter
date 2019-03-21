@@ -1,0 +1,101 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_005008</recordId>
+      <otherRecordId localType="Ancien_identifiant">4403/SM</otherRecordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Import_SIA</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Monique LEBLOIS-PECHON</agent>
+            <eventDescription>F. Clavaud, 28 août 2015 : revu le nom, le lien IR, ajouté indexation fonctions</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>France. Ministère des Anciens Combattants et Victimes de guerre. Direction des statuts et des services médicaux. Sous-direction des services médicaux (1955-1984)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1955-01-01">1955</fromDate>
+               <toDate standardDate="1984-12-31">1984</toDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term vocabularySource="d5blonaxbw--1mt8t42bokzts">service d'administration centrale</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d5bhvik770--15ma0n1oncnzo">anciens combattants</term>
+            </function>
+            <function>
+               <term vocabularySource="d5bhviiyko--q661mlo9uy50">santé</term>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Créé en 1946, le Ministère des Anciens Combattants et Victimes de guerre est organisé en trois grandes directions qui sont, jusqu'en 1955, la Direction de l'administration générale, la Direction des pensions et des services médicaux et la Direction du contentieux, de l'état civil et des recherches. L'institution nationale des Invalides et l'Office national des anciens combattants et victimes de guerre dépendent également de ce ministère.</p>
+            <p>De 1955 à 1984, les trois directions sont réorganisées en Direction de l'administration générale, Direction des pensions et Direction des statuts et des services médicaux.</p>
+            <p>La Direction des pensions comprend deux sous-directions : la sous-direction de la liquidation des pensions et la sous-direction du contentieux des pensions. La Direction des statuts et des services médicaux comprend également deux sous-directions : la sous-direction des statuts de combattants et victimes de guerre et la sous-direction des services médicaux. Le bureau technique central de l'appareillage des handicapés dépend de cette dernière sous-direction.</p>
+            <p>A partir de 1984, la Direction des pensions devient Direction des pensions et de la réinsertion sociale et la Direction des statuts et des services médicaux devient Direction des statuts et de l'information historique.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-child"
+                      xlink:href="FRAN_NP_005007"
+                      xlink:type="simple">
+            <relationEntry>Bureau technique central de l'appareillage des handicapés (ministère des Anciens Combattants et Victimes de guerre)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1955-01-01">1955</fromDate>
+               <toDate standardDate="1984-12-31">1984</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_005014"
+                      xlink:type="simple">
+            <relationEntry>Direction des statuts et des services médicaux (ministère des Anciens Combattants et Victimes de guerre)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1955-01-01">1955</fromDate>
+               <toDate standardDate="1984-12-31">1984</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_020789"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Anciens Combattants et Victimes de guerre, Direction des statuts et des services
+     médicaux, sous-direction des services médicaux : appareillage (1945-1978)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

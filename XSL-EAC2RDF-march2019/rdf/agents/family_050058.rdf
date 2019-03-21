@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/family/050058">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Family"/>
+      <rdfs:label xml:lang="fr">Loménie de Brienne (famille de)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050058_d3691e61"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050058_d3691e64"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1401-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1800-12-31</RiC:endDate>
+      <RiC:history xml:lang="fr">La famille de Loménie est originaire de la paroisse de Flavignac (Haute-Vienne), où elle est attestée dès le milieu du XVe siècle. Elle s'est divisée en plusieurs branches, les Loménie de Faye (branche aînée), les Loménie de Brienne, les Loménie de Puyrenon. Par le mariage d'Henri-Auguste de Loménie avec Louise de Béon, comtesse héritière du comté de Brienne en 1623, l'une des branches Loménie entra en possession du comté de Brienne, dont elle porta le nom. De cette branche sont issus plusieurs grands hommes d'État et d'Église : Henri Auguste (1595-1666), secrétaire d'État aux Affaires étrangères en 1643 ; Louis Henri (1636-1698), secrétaire d'État aux Affaires Extérieures à partir de 1651 ; Étienne Charles (1727-1794), archevêque de Toulouse en 1763, cardinal en 1788, chef du Conseil des finances en 1787, rapporteur de la commission des Réguliers de 1766 à 1780 ; Louis Marie Athanase (1730-1794), secrétaire d'État à la Guerre de 1787 à 1788. Le dernier Loménie de Brienne, Louis Marie Athanase, est guillotiné en 1794 avec ses trois fils, François Alexandre Antoine, Pierre François Martial et Charles de Loménie de Brienne. Il avait reconstruit le château de Brienne et acheté à Paris un hôtel rue Saint-Dominique appelé depuis hôtel de Brienne, actuelle résidence officielle du ministre de la Défense. Le château de Brienne, à la mort de Mme de Monbreton, veuve de François-Alexandre-Antoine de Loménie, vicomte de Brienne (&#x8f;&#x8f;† 1794), est vendu en 1851 à la famille de Bauffrémont. Une branche cadette de la famille de Loménie, les Loménie de Puyrenon, se maintient jusqu'au début du XXe siècle. Louis de Loménie est élu le 30 décembre 1871 à l'Académie française où il succède à Mérimée. Il est, entre autres, l'auteur d'un grand ouvrage sur les Mirabeau. Son petit-fils, Louis de Loménie, attaché à la bibliothèque de l'Arsenal, est mobilisé lors de la Première Guerre mondiale, au 413e régiment d'infanterie. Grièvement blessé le 9 mai 1917 durant la bataille du Chemin des Dames, il est ensuite porté disparu. Sa soeur Louise de Loménie a été autorisée en 1924 à relever le nom de Loménie ; mariée à Henri Beau, sa descendance mâle porte désormais le nom de Beau de Loménie.</RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050058--d3689e146"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050058--d3689e158"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Famille_de_Lom%C3%A9nie"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050058-d3689e184"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050026-d3659e259"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050058-d3689e211"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050058"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050058-d3689e211">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Loménie de Brienne (famille de) et l'ensemble de documents "Chartrier du comté de Brienne (XIe-XIXe siècles)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/000612-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050058_d3691e61">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050058-d3689e112"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050058_d3691e64">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050058-d3689e118"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050058--d3689e146">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Loménie de Brienne (famille de)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050026-d3659e153"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050058--d3689e158">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Loménie de Brienne (famille de)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050058-d3689e153"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050058">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/family/050058"/>
+      <RiC:creationDate>2013-08-09</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-06-29</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_050058</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Archives nationales, fonds 4 AP.</RiC:source>
+      <RiC:source xml:lang="fr">Source : Article Famille de Loménie de Wikipédia en français (http://fr.wikipedia.org/wiki/Famille_de_Lom%C3%A9nie).</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050058"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Famille_de_Lom%C3%A9nie"/>
+   </rdf:Description>
+</rdf:RDF>

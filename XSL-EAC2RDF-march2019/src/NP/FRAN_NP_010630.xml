@@ -1,0 +1,116 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010630</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00356</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Noémie SANTACANA Les notaires au Châtelet de Paris à l'époque du Cardinal de Fleury, mémoire de maîtrise 2003-2004, dact., p. 294-295</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Regnault, Etienne</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1710-10-04">4 octobre 1710</fromDate>
+               <toDate standardDate="1751-03-17">17 mars 1751</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgkuxg-xwxqi5i0uhjf">place maubert (quartier)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvovxws-1r3061wzh7bqc">saint-etienne-du-mont (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzbzvirq-hijvubm3y502">maubert (place)</placeEntry>
+               <placeEntry localType="nomLieu">place Maubert</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1710-10-04">4 octobre 1710</fromDate>
+                  <toDate standardDate="1751-03-17">17 mars 1751</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Baptisé le 11 mai 1676</p>
+            <p>marié à Marie Pierron (voir ET/CXII/631, 12 juin 1712, contrat de mariage)</p>
+            <p>d'abord principal clerc d'Antoine de Lafosse (étude X), son beau-frère</p>
+            <p>décédé le 29 juin 1751 à Paris</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010145"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XVIII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1710-10-04">4 octobre 1710</fromDate>
+               <toDate standardDate="1751-03-17">17 mars 1751</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/X/296, 7 septembre 1710, traité d'office de notaire entre Antoine Bobusse et Etienne Regnault</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XLVIII/133, 11 mars 1753, traité d'office de notaire entre Etienne Regnault et Jacques Miller</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XVIII/618, 15 juillet 1751, inventaire après décès</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XVIII/619, 14 octobre 1751, partage de sa succession</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041528"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Étienne REGNAULT, 5 octobre 1710 - 18 mars 1751 (étude XVIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052965"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Etienne Regnault pour l'étude XVIII</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

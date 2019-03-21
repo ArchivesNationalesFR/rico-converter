@@ -1,0 +1,65 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050363</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2018-03-26</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Vanessa ASPART</agent>
+            <eventDescription>P. Charbonnier, 26/03/2018 : recherche notice BnF et Wikipédia infructueuse, ajout lien IR </eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Archives nationales, Fonds La Pomélie (XIVe-XXe siècles), 633 AP. </sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>family</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>La Pomélie (famille)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1301-01-01">XIVe siècle</fromDate>
+               <toDate standardDate="2000-12-31">XXe siècle</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates mentionnées sont les dates extrêmes du fonds de la famille La Pomélie.</p>
+            </descriptiveNote>
+         </existDates>
+         <biogHist>
+            <p>Le château du Montjoffre, dont on retrouve la trace écrite dès le XIIIe siècle, est situé à quelques kilomètres de Millevaches, en Corrèze. Le domaine appartient, à la fin du XIIe siècle, à la maison des Mauriac, descendants de Vulgrin, comte de Périgord et d’Angoulême sous Charles le Chauve, puis il passe au XVIe siècle aux Daniel, seigneurs du Muraud : Jacques Daniel le Jeune est possesseur en 1519 du château et des seigneuries du Montjoffre et de Las Roussarias. En 1556, Guillaume de Razac, époux de Gabrielle Trompedon, “ ayant droit des Daniel ” entre en possession du château du Montjoffre. Le château du Montjoffre est habité par les Razac de 1556 à 1601. Le domaine passe ensuite aux Guytard, seigneurs de La Borye, puis aux Carbonnières, seigneurs de Saint-Brice. Peu avant la Révolution, cette famille s’éteint sans postérité. En 1804, le Montjoffre échoit aux Germain de La Pomélie, propriétaires terriens en Haute-Vienne.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_003559"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds La Pomélie</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

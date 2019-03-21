@@ -1,0 +1,78 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050740</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-08-26</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Thibaut GIRARD</agent>
+            <eventDescription>F. Clavaud, 26 août 2014 : changé forme du nom et dates, ajouté n° ISNI, indexation activité et n° notice BnF</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Thomas Jumin et Paul Chemetoff, 
+
+      <span style="italic">Paul Chemetov, architectures, 1964/2005</span>, Paris, Éditions Le Moniteur, 2006 
+
+     </p>
+               <p>Notice d'autorité BnF n° FRBNF11896499</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 0875 8690</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Chemetov, Paul (1928-....)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1928-09-06">6 septembre 1928</fromDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d3nyu9yq7p-8zx3tnvrcpf0">architecte</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Né le 6 septembre 1928 à Paris, l'architecte Paul Chemetov est diplômé de l'Ecole des Beaux-arts en 1959. Il rejoint l'Atelier d'urbanisme et d'architecture (AUA) en 1961. En 1998, il crée l'agence C+H+ avec Borja Huidobro.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050872"
+                      xlink:type="simple">
+            <relationEntry>Huidobro, Borja (1936-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1998-01-01">1998</fromDate>
+               <toDate standardDate="2001-12-31">2001</toDate>
+            </dateRange>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

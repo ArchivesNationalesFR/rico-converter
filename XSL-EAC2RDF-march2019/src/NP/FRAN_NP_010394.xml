@@ -1,0 +1,97 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010394</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00096</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Vivien, Jean-Baptiste</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1748-04-04">4 avril 1748</fromDate>
+               <toDate standardDate="1781-05-21">21 mai 1781</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp6vb2-rsrcmgk1zmct">saint-merri (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp0xwi-18dd5xg8fnnjr">saint-jean-en-grève (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgyd8c-1ivt7h45b41ah">saint-martin (quartier)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvh1eiq-10kmxmcddmsfj">sainte-avoye (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzdokgfk-1anooamvc83ng">verrerie (rue de la)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nz8w5k3k--3z6dcwbuuu20">blancs-manteaux (rue des)</placeEntry>
+               <placeEntry localType="nomLieu">rue de la Verrerie, près l'église (de 1748 à 1776), rue des Blancs-Manteaux, près l'église (de 1776 à 1781)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1748-04-04">4 avril 1748</fromDate>
+                  <toDate standardDate="1781-05-21">21 mai 1781</toDate>
+               </dateRange>
+            </function>
+         </functions>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010136"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale IX</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1748-04-04">4 avril 1748</fromDate>
+               <toDate standardDate="1781-05-21">21 mai 1781</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">V/1/356 pièce 102, 29 mars 1748, lettre de provision d'office</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041336"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean-Baptiste VIVIEN, 4 avril 1748 - 17 mai 1781 (étude IX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_056668"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Jean-Baptiste Vivien pour l'étude IX</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

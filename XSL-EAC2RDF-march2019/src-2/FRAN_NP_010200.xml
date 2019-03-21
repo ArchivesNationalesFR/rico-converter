@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010200</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NAETUDE_073</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_010200-d297e67">
+            <part>Etude LXXIII</part>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_010200-d297e73">
+            <part>75070</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1538-01-01">1538</fromDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place xml:id="FRAN_place_010200-d297e93">
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu" xml:id="FRAN_placeEntry_010200-d297e98">23, rue de Bourgogne, 75007 PARIS</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function xml:id="FRAN_activity_010200-d297e105">
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1538-01-01">1538</fromDate>
+                  <toDate/>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Cette étude rassemble plusieurs fonds des XVIème et XVIIème siècles provenant d'études installées rue Saint-Jacques. Parallèlement sont conservées les minutes de Mathieu Bontemps, qui demeure rue Sain-André-des-Arts, où ses successeurs vont exercer jusqu'en 1808. L'étude s'installe alors rue des Petits-Augustins, puis rue de l'Université (1854), rue Saint-Dominique (1866), boulevard Saint-Germain (1871) et enfin rue de Bourgogne.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010328"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e129">
+            <relationEntry>Vallée, Guillaume</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1558-04-01">avril 1558</fromDate>
+               <toDate standardDate="1575-01-01">1er janvier 1575</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011369"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e144">
+            <relationEntry>Laurent, Auguste-Marie Louis</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1903-06-11">11 juin 1903</fromDate>
+               <toDate standardDate="1932-07-28">28 juillet 1932</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011370"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e159">
+            <relationEntry>Laurent, Denys Hippolyte</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1932-07-28">28 juillet 1932</fromDate>
+               <toDate standardDate="1967-04-05">5 avril 1967</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011406"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e174">
+            <relationEntry>Le falher, Jean-François</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1999-02-17">17 février 1999</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011416"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e186">
+            <relationEntry>Le maistre, Noël</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1667-02-16">16 février 1667</fromDate>
+               <toDate standardDate="1687-08-11">11 août 1687</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011438"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e202">
+            <relationEntry>Le breton, Emile</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1967-04-05">5 avril 1967</fromDate>
+               <toDate standardDate="2001-05-24">24 mai 2001</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011439"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e217">
+            <relationEntry>Le breton, Jérôme</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1996-01-04">4 janvier 1996</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010534"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e229">
+            <relationEntry>Saint-Vaast, Jacques de</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1589-09-19">19 septembre 1589</fromDate>
+               <toDate standardDate="1637-07-20">20 juillet 1637</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011146"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e244">
+            <relationEntry>Merlin, François-Ernest</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1866-05-09">9 mai 1866</fromDate>
+               <toDate standardDate="1894-07-25">25 juillet 1894</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012634"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e259">
+            <relationEntry>Chapelain, Jacques</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1560-08-17">17 août 1560</fromDate>
+               <toDate standardDate="1589-09-18">18 septembre 1589</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012635"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e274">
+            <relationEntry>Crucé, Jean II</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1557-08-01">1er août 1557</fromDate>
+               <toDate standardDate="1572-11-25">25 novembre 1572</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013206"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e290">
+            <relationEntry>Nourry, Jean-Paul</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2000-12-20">20 décembre 2000</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012983"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e302">
+            <relationEntry>Boulard, Henri-Simon</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1808-09-15">15 septembre 1808</fromDate>
+               <toDate standardDate="1823-07-15">15 juillet 1823</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012960"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e317">
+            <relationEntry>Bontemps, Mathieu</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1580-02-01">février 1580</fromDate>
+               <toDate standardDate="1621-11-12">12 novembre 1621</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012029"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e332">
+            <relationEntry>Faucon, François</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1989-09-13">13 septembre 1989</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012938"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e344">
+            <relationEntry>Boisseau, Louis</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1687-09-04">4 septembre 1687</fromDate>
+               <toDate standardDate="1720-02-23">23 février 1720</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012982"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e359">
+            <relationEntry>Boulard, Antoine-Marie</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1782-01-04">4 janvier 1782</fromDate>
+               <toDate standardDate="1808-09-15">15 septembre 1808</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012984"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e375">
+            <relationEntry>Boulard, Henri</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1745-08-11">11 août 1745</fromDate>
+               <toDate standardDate="1782-01-01">1er janvier 1782</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012616"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e390">
+            <relationEntry>Crucé, Jean I</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1538-12-14">14 décembre 1538</fromDate>
+               <toDate standardDate="1557-07-31">31 juillet 1557</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012633"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e405">
+            <relationEntry>Chapellain, Adrien</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1549-02-01">1er février 1549</fromDate>
+               <toDate standardDate="1570-09-09">9 septembre 1570</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011148"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e420">
+            <relationEntry>Merlin, Louis-François</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1894-07-25">25 juillet 1894</fromDate>
+               <toDate standardDate="1903-06-11">11 juin 1903</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010570"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e435">
+            <relationEntry>Sellier, Nicolas-Henri</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1720-03-27">27 mars 1720</fromDate>
+               <toDate standardDate="1745-08-10">10 août 1745</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010533"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e450">
+            <relationEntry>Saint-Vaast, Charles-François de</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1621-11-18">18 novembre 1621</fromDate>
+               <toDate standardDate="1667-02-15">15 février 1667</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011440"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e466">
+            <relationEntry>Le breton, Marie-Claude</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1980-07-09">9 juillet 1980</fromDate>
+               <toDate standardDate="2008-09-26">26 septembre 2008</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011639"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e481">
+            <relationEntry>Louvel, Marc Henri</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1992-01-29">29 janvier 1992</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012168"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e493">
+            <relationEntry>Dequesne, Virginie</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2000-12-04">4 décembre 2000</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012324"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e505">
+            <relationEntry>Defresne, Jean-Germain</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1854-03-09">9 mars 1854</fromDate>
+               <toDate standardDate="1866-05-09">9 mai 1866</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012325"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e520">
+            <relationEntry>Defresne, Jean-Jacques</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1823-07-15">15 juillet 1823</fromDate>
+               <toDate standardDate="1854-03-09">9 mars 1854</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012326"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e535">
+            <relationEntry>Dubois, Marin</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1569-07-30">30 juillet 1569</fromDate>
+               <toDate standardDate="1590-01-01">1er janvier 1590</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012327"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010200-d297e551">
+            <relationEntry>Dumarc, Barthélemy</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1573-12-01">décembre 1573</fromDate>
+               <toDate standardDate="1590-12-31">31 décembre 1590</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_042621"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e566">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Charles François de SAINT-VAAST, 18 novembre 1621 - décembre 1626 (étude LXXIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_042622"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e572">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Charles François de SAINT-VAAST, janvier 1627 - décembre 1636 (étude LXXIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_042619"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e578">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Charles François de SAINT-VAAST, 18 novembre 1621 - 10 février 1667 (étude LXXIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_042632"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e584">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Henri Simon BOULARD, 15 septembre 1808 - 15 juillet 1823 (étude LXXIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_042634"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e590">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean Germain DEFRESNE, 9 mars 1854 - 9 mai 1866 (étude LXXIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_053956"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e597">
+            <relationEntry localType="archival">«Mélanges» (dossiers de clients) de l’étude LXXIII. MC/ET/LXXIII/1237-MC/ET/LXXIII/1238 (1604-1713)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042630"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e603">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Henri BOULARD, 11 août 1745 - 1er janvier 1782 (étude LXXIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051605"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e609">
+            <relationEntry localType="archival">Images des répertoires du notaire Mathieu Bontemps pour l'étude LXXIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051606"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e615">
+            <relationEntry localType="archival">Images des répertoires du notaire Louis Boisseau pour l'étude LXXIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051615"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e621">
+            <relationEntry localType="archival">Images des répertoires du notaire Henri Boulard pour l'étude LXXIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051505"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e627">
+            <relationEntry localType="archival">Images des répertoires du notaire Jean Jacques Defresne pour l'étude LXXIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051614"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e634">
+            <relationEntry localType="archival">Images des répertoires du notaire Antoine Marie Boulard pour l'étude LXXIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051501"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e640">
+            <relationEntry localType="archival">Images des répertoires du notaire Jean Germain Defresne pour l'étude LXXIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051238"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e646">
+            <relationEntry localType="archival">Images des répertoires du notaire Nicolas Henri Sellier pour l'étude LXXIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051235"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e652">
+            <relationEntry localType="archival">Images du répertoire du notaire Charles François de Saint-Vaast pour l'étude LXXIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051322"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e658">
+            <relationEntry localType="archival">Images des répertoires du notaire François Ernest Merlin pour l'étude LXXIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051362"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e664">
+            <relationEntry localType="archival">Images du répertoire du notaire Noël Le Maistre pour l'étude LXXIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042611"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e671">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean I CRUCÉ, 8 septembre 1539 - 25 juillet 1556 (étude LXXIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042612"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e677">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean II CRUCÉ, 1er août 1557 - 29 octobre 1572 (étude LXXIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042613"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e683">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Adrien CHAPELLAIN, 16 février 1550 - 9 septembre 1570 (étude LXXIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042614"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e689">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jacques CHAPELAIN, 17 août 1560 - 18 septembre 1589 (étude LXXIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042615"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e695">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Marin DUBOIS, 30 juillet 1569 - 1589 (étude LXXIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042616"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e701">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Barthélemy DUMARC, décembre 1573 - décembre 1590 (étude LXXIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042618"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e708">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jacques de SAINT-VAAST, 23 septembre 1589 - 20 juillet 1637 (étude LXXIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052853"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e714">
+            <relationEntry localType="archival">Images des répertoires du notaire Henri Simon Boulard pour l'étude LXXIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042610"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e720">
+            <relationEntry localType="archival">Archives de l'étude LXXIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042624"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e726">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Charles François de SAINT-VAAST, janvier 1647 - 1659 (étude LXXIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_056371"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e732">
+            <relationEntry localType="archival">Images des répertoires du notaire Jacques de Saint-Vaast pour l'étude LXXIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042629"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e738">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Nicolas Henri SELLIER, 27 mars 1720 - 10 août 1745 (étude LXXIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042633"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e745">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean Jacques DEFRESNE, 15 juillet 1823 - 9 mars 1854 (étude LXXIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042623"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e751">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Charles François de SAINT-VAAST, janvier 1637 - décembre 1646 (étude LXXIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042635"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010200-d297e757">
+            <relationEntry localType="archival">Minutes et répertoires du notaire François Ernest MERLIN, 9 mai 1866 - août 1892 (étude LXXIII)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

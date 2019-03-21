@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050205">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Philip, André (1902-1970)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050205_d3820e45"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1902-06-28</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1970-07-05</RiC:deathDate>
+      <RiC:history xml:lang="fr">Après des études universitaires, André Philip (1902-1970) devient professeur d’économie. En 1920, il adhère au parti socialiste-S.F.I.O. En 1936, il est élu député du Rhône et rédige le rapport sur la loi des 40 heures. Le 10 juillet 1940, il fait partie du « groupe des 80 » qui votent contre les pleins pouvoirs au maréchal Pétain puis reprend ses cours à l’université de Lyon et entre dans la Résistance où il devient l’un des chefs du mouvement Libération-Sud. Il fonde alors des groupes d’études clandestins et les Amitiés chrétiennes. En 1942, André Philip gagne Londres, où le général de Gaulle le nomme commissaire à l’Intérieur au sein du Comité national français. En septembre 1944, Philip devient commissaire d’État chargé des relations entre l’Assemblée consultative provisoire et le Comité français de libération nationale. Directeur politique du journal 
+
+     Cité-Soir, il devient ministre des Finances et de l’Économie nationale dans les cabinets Gouin et Blum (1946-1947), puis ministre de l’Économie nationale dans le cabinet Ramadier (janvier-novembre 1947). Membre du comité directeur du parti socialiste, il est élu député du Rhône à la première Assemblée nationale de la IVe République et désigné membre de l’Assemblée consultative européenne de Strasbourg. De 1947 à 1948, il préside la commission de la Constitution à l’Assemblée. De 1947 à 1951, il est membre du Conseil de l’Europe et chef de la délégation française à la commission économique européenne de l’Organisation des Nations unies. Il est délégué général du mouvement européen et président du mouvement pour les États-Unis socialistes d’Europe. Battu aux législatives de juin 1951, il est désigné comme membre du Conseil économique et social où il appartient à la commission des affaires économiques en tant que membre du groupe de la Pensée française. En 1952, il est nommé professeur de politique sociale comparée à la faculté de Droit de Paris et président de la délégation française au G.A.T.T. (General Agreement on Tariffs and Trade, l’Accord général sur les tarifs douaniers et le commerce). Exclu de la S.F.I.O. en 1958, André Philip trouve refuge au P.S.U., dont il devient, d’avril 1960 à juin 1962, membre du comité politique national. Il évolue ensuite vers le gaullisme où il pense trouver un renouvellement de la gauche et, dans le même temps, tente en vain de créer une fédération des démocrates-socialistes. En 1964, il préside la délégation française à la Conférence mondiale sur le commerce et le développement, en 1967, le centre de développement de l’Organisation de coopération et de développement économique (O.C.D.E.) En avril 1968, il abandonne ses fonctions de président de la Fédération française des Maisons de Jeunes et de la Culture pour protester contre la politique du ministre de la Jeunesse, François Missoffe, et contre l’attitude du syndicat C.G.T. du personnel. André Philip a publié, entre autres ouvrages, 
+
+     L’Europe unie en 1953, 
+
+     La Démocratie industrielle en 1955 et 
+
+      Le Socialisme trahi en 1958. 
+
+    </RiC:history>
+      <isni:ISNIAssigned>0000000108909786</isni:ISNIAssigned>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050205"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050205_d3820e45">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050205-d3818e85"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050205">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050205"/>
+      <RiC:creationDate>2014-05-20</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050205</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000108909786"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050205"/>
+   </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,90 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050752</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Complète</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-03-14</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Virginie GREGOIRE</agent>
+            <eventDescription>F. Clavaud, 14 mars 2014 : changement forme du nom, ajout n°s ISNI et notice BnF</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice d'auorité BnF n° FRBNF12334608</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 1063 9279</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Painlevé, Paul (1863-1933)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1863-01-01">1863</fromDate>
+               <toDate standardDate="1933-12-31">1933</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Professeur agrégé à l'École polytechnique et docteur ès sciences, membre de l'Académie des sciences dès 1900, Paul Painlevé (1863-1933) entra dans la vie politique avec l'affaire Dreyfus. Député radical-socialiste dans le Ve arrondissement de Paris, de 1910 à 1928, puis dans l'Ain, de 1928 à sa mort en 1933, il s'occupa à la Chambre de toutes les questions militaires. Il fut ministre de l'Instruction publique et des Beaux-Arts du 29 octobre au 15 novembre 1915, ministre de l'Instruction publique, des Beaux-Arts et des inventions intéressant la Défense nationale du 15 novembre 1915 au 11 décembre 1916, ministre de la Guerre du 20 mars au 15 novembre 1917, du 17 avril 1925 au 22 juin 1926 et du 19 juillet 1926 au 2 novembre 1929, ministre des Finances du 29 octobre au 27 novembre 1925. Parallèlement, Painlevé fut président du Conseil à deux reprises, du 12 septembre au 15 novembre 1917 et du 17 avril au 27 novembre 1925. Il finit sa carrière ministérielle comme ministre de l'Air du 13 décembre 1930 au 26 janvier 1931.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050290"
+                      xlink:type="simple">
+            <relationEntry>Bonnet, Georges (1889-1973)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1925-04-17">17 avril 1925</fromDate>
+               <toDate standardDate="1925-11-28">28 novembre 1925</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>
+     Ministre dans le gouvernement Painlevé
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050836"
+                      xlink:type="simple">
+            <relationEntry>Jaujard, Jacques (1895-1967)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1922-01-01">1922</fromDate>
+               <toDate standardDate="1933-12-31">1933</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_003456"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Paul Painlevé (1889-1995)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

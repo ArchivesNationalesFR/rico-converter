@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/013057">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Brillon, Antoine (1...-1761)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/013057_d3156e106"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/013057_d3156e109"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1733-11-28</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1761-06-03</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/013057-d3154e266"/>
+      <RiC:history xml:lang="fr">Il épouse Thérèse Geneviève Legras (MC/ET/LXXXV/461, contrat de mariage du 16 janvier 1737), fille de Philippe Legras, ancien échevin. De ce mariage naissent trois fils qui survivent à leur mère : Antoine Charles, mort à 18 ans et 4 mois, le 1er novembre 1757, au Petit-Charenton, chez son aïeule maternellen en présence de ses deux frères, Pierre et Alexandre ; il n'y a pas d'inventaire après décès d'Antoine Charles, mais un extrait mortuaire déposé le 12 novembre 1757 (MC/ET/LXXXVI/674, 12 novembre 1757). Pierre, qui a alors 14 ans, est émancipé par lettres de bénéfice d'âge du 11 décembre 1754 entérinées le 31 décembre (Y/4750/B) et achète pour 74000 livres une charge d'auditeur des comptes, sur avis de parents (sentence du Châtelet du 15 novembre 1762 ; Y/4846). Antoine Brillon traite de son office en 1733 avec Jacques de Saint-Jean (MC/ET/CXII/601, 15 juin 1733), et obtient ses lettres de provision d'office le 26 novembre 1733 (V/1/294 pièce 139).  Il acquiert plusieurs rentes sur la ville (ET/LXXXVI/636, 23 juillet et 11 septembre 1748), transporte une rente le 21 avril 1755 (MC/ET/LXXXVI/664) et une rente sur les domaines de la ville de 400 livres est constituée en sa faveur le 15 décembre 1757 (MC/ET/LXXXVI/674). Il fait un testament (MC/ET/LXXXVI/690, 3 mai 1761) et vend son office à François Pierre Fournier, son principal clerc (MC/ET/LXXXVI/690, 3 mai 1761). Le 19 mai 1761 est effectué un procès-verbal pour la conservation de ses minutes (MC/ET/LXXXVI/690).  Greffier de la compagnie des notaires au Châtelet de Paris, marguillier et commissaire des pauvres de la paroisse Sainte-Opportuneil meurt rue de l'Eguillerie, cloître Sainte-Opportune, église où il est inhumé le 20 mai 1761 (faire-part de décès AD/XXc/96). Son inventaire après décès est réalisé le 10 juin 1761 (MC/ET/XLI/572).</RiC:history>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/013057-d3154e279"/>
+      <RiC:agentIsSourceOfAgentTemporalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentTemporalRelation/013057-d3154e322"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/010168-d265e268"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/013057-d3154e340"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/013057-d3154e346"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/013057"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/013057-d3154e266">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d3nyu9x713-9kcjiv44l4wh"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/013057-d3154e340">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Brillon, Antoine (1...-1761) et l'ensemble de documents "Images du répertoire du notaire Antoine Brillon pour l'étude XLI"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/052005-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/013057-d3154e346">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Brillon, Antoine (1...-1761) et l'ensemble de documents "Minutes et répertoires du notaire Antoine BRILLON, 28 novembre 1733 - 27 mai 1761 (étude XLI)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/042061-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/013057_d3156e106">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/013057-d3154e192"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/013057_d3156e109">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/013057-d3154e198"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/013057">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/013057"/>
+      <RiC:creationDate>2013-04-23</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-07-19</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_013057</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">ET/CXII/601, 15 juin 1733 : traité d'office de notaire entre Jacques de Saint-Jean et Antoine Brillon</RiC:source>
+      <RiC:source xml:lang="fr">ET/LXXXVI/690, 3 mai 1761 : testament</RiC:source>
+      <RiC:source xml:lang="fr">ET/LXXXVI/690, 3 mai 1761 : vente de son office à François-Pierre Fournier, son principal clerc</RiC:source>
+      <RiC:source xml:lang="fr">ET/LXXXVI/690, 19 mai 1761 : procès-verbal pour la conservation de ses minutes après son décès</RiC:source>
+      <RiC:source xml:lang="fr">ET/XLI/572, 10 juin 1761 : inventaire après décès</RiC:source>
+      <RiC:source xml:lang="fr">ET/LXXXV/461, 16 janvier 1737 : contrat de mariage</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_013057"/>
+   </rdf:Description>
+</rdf:RDF>

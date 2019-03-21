@@ -1,0 +1,71 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050570</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-04-04</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, fonds Gourdon (146AP).</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Shaw-Ferreira, Augusto</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Shaw, Augusto</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1881-01-01">1881</fromDate>
+               <toDate standardDate="1957-12-31">1957</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Augusto Shaw Ferreira, plus connu sous le nom d’Augusto Shaw (San Salvador de Bahia, Brésil, 1881-Paris, 1957), fit d’abord carrière au sein de la Marine de Guerre brésilienne (1898-1914), étudia l’hydraulique à l’École spéciale des travaux publics de la ville de Paris (1911-1913), puis devint vers 1930 correspondant de presse des grands journaux latino-américains à Paris, dont le Correio da Manha, de Rio de Janeiro. Attaché de presse de l’ambassade du Brésil à Paris de 1932 à 1944 et en 1952-1955, il fut du 13 février 1943 au 28 mars 1944, emprisonné à Bade-Godesberg avec le corps diplomatique brésilien, à la suite de la déclaration de guerre du Brésil à l’Allemagne. Il est l’auteur d’œuvres littéraires, essentiellement théâtrales, en brésilien et en français, en partie publiées.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_050568"
+                      xlink:type="simple">
+            <relationEntry>Shaw-Gourdon, André (1920-1996 ?)</relationEntry>
+            <descriptiveNote>
+               <p>
+     Fils d'Augusto Shaw-Ferreira
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051663">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Rapatel, Paul Marie (1782-1852)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051663_d4858e52"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1782-03-13</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1852-01-02</RiC:deathDate>
+      <RiC:history xml:lang="fr">Entré au service le 19 février 1798, dans la compagnie territoriale d'Ille-et-Vilaine, Paul-Marie Rapatel (1782-1852) obtient tous les grades subalternes dans l'armée de l'Ouest, est nommé sous-lieutenant le 21 mai 1800, passe dans la 52e demi-brigade à l'armée d'Italie, y reste jusqu'en 1806 et s'y distingue en plusieurs occasions. Il est blessé au passage du Mincio, à l'affaire de Caldiero sous Vérone.  En 1806, Rapatel entre avec son grade de lieutenant dans la garde du roi de Naples Joseph Bonaparte. Rapatel sert ensuite le roi Joseph Bonaparte en Espagne. Il y fait les campagnes de 1808 à 1813. Colonel en juin 1814, il participe à la bataille de Waterloo (18 juin 1815).  À la seconde Restauration, le colonel Rapatel reçoit le commandement de la légion de l'Ariège (devenue 5e léger le 17 novembre 1820) et reçoit le titre de baron en 1816. Il commande ce régiment lors des troubles de Nantes, le 15 juillet 1822 et lors de la campagne d'Espagne de 1823. Il est nommé, cette même année, maréchal de camp. Il commande ensuite la 2e brigade de la 11e division du 8e corps de l'armée des Pyrénées, puis la 2e brigade de la 11e division d'occupation de la Catalogne. Après la révolution de Juillet, Rapatel est d'abord appelé au commandement d'une brigade de l'armée du Nord. Nommé lieutenant-général en 1833 au siège d'Anvers, il est envoyé l'année suivante en Afrique avec le titre de commandant de toutes les troupes et inspecteur général. Gouverneur par intérim de la colonie en 1836, il rentre en France en 1837. Il est élevé à la pairie le 21 juillet 1846, se voit confier le commandement de la 2e légion de la garde nationale parisienne après le 15 mai 1848 et réprime les insurrections parisiennes de juin. Le 13 mai 1849, les électeurs conservateurs de la Seine l’envoient siéger à l’Assemblée nationale dont il se retire après le 2 décembre.</RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051663--d4856e125"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051663--d4856e146"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051663--d4856e167"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Paul_Marie_Rapatel"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050142-d3765e214"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051663-d4856e238"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051663"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051663-d4856e238">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Rapatel, Paul Marie (1782-1852) et l'ensemble de documents "Fonds Rapatel (1782-1845)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/004365-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051663_d4858e52">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051663-d4856e97"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051663--d4856e125">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Rapatel, Paul Marie (1782-1852)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050161-d3783e147"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051663--d4856e146">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Rapatel, Paul Marie (1782-1852)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050281-d3869e184 http://data.archives-nationales.culture.gouv.fr/place/050555-d4083e147"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051663--d4856e167">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Rapatel, Paul Marie (1782-1852)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/051550-d4765e168 http://data.archives-nationales.culture.gouv.fr/place/050052-d3684e186"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051663">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051663"/>
+      <RiC:creationDate>2017-09-05</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-09-25</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051663</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">État sommaire des fonds d'archives privées. Séries AP et AB XIX, Paris, Centre historique des Archives nationales, 2004, p. 431 (notice 236 AP).</RiC:source>
+      <RiC:source xml:lang="fr">Article Paul Marie Rapatel de Wikipédia en français (http://fr.wikipedia.org/wiki/Paul_Marie_Rapatel).</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051663"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Paul_Marie_Rapatel"/>
+   </rdf:Description>
+</rdf:RDF>

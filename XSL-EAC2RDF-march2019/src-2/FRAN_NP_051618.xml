@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051618</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2017-07-31</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Constance DE VERGNETTE DE LAMOTTE</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2018-06-29</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Archives nationales, fonds Lucien Bonaparte et ses descendants : 103 AP.</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Notice BnF : FRBNF12316896</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Notice Wikipedia : https://fr.wikipedia.org/wiki/Roland_Bonaparte</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 8339 0710</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_051618-d4821e103">
+            <part>Bonaparte, Roland (1858-1924)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1858-05-19">19 mai 1858</fromDate>
+               <toDate standardDate="1924-04-14">14 avril 1924</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation xml:id="FRAN_occupation_051618-d4821e126">
+               <term vocabularySource="d699msk5oth-xqvujelh8c39">chercheur</term>
+            </occupation>
+            <occupation xml:id="FRAN_occupation_051618-d4821e132">
+               <term vocabularySource="d699msjpuqr-66gt6kmedjiv">officier (armée)</term>
+            </occupation>
+            <occupation xml:id="FRAN_occupation_051618-d4821e138">
+               <term vocabularySource="d699msj3i51--hevk1gms21cg">écrivain</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Roland Napoléon est né en 1858, fils de Pierre-Napoléon Bonaparte et d'Eléonore-Justine Ruflin. A 19 ans, il entre à l'Ecole spéciale militaire de Saint-Cyr d'où il sort sous-lieutenant dans l'infanterie. Cependant, l'interdiction faite aux ressortissants des familles ayant régné sur la France de servir dans l'armée en 1886 le conduit à renoncer à cette carrière militaire.</p>
+            <p>Il se consacre alors à des recherches scientifiques. Sa première entreprise est la réalisation d'un inventaire anthropologique des populations humaines. Il abandonne ce projet pour constituer le plus grand herbier privé, qu'il installe dans l'hôtel particulier qu'il fait construire avenue d'Iéna et qui deviendra par la suite le siège de la Société de géographie. En 1895, il est l'un des fondateurs de la Société de spéléologie, dont il est élu président l'année suivante. De 1910 à sa mort en 1924, il est président de la Société de géographie. En 1907, il devient membre de l'Académie des sciences. Il meurt en 1924 à Paris.</p>
+            <p>Ce grand voyageur épouse en 1880 Marie Blanc, fille du fondateur du casino de Monte-Carlo et de la Société des bains de mer de Monaco, dont il a une fille, Marie (1882-1962). Cette dernière se marie au prince Georges de Grèce (1869-1957) en 1907. En 1925, à Vienne, Marie Bonaparte rencontra Sigmund Freud par l’intermédiaire de René Laforgue et Otto Rank, et entreprend avec lui une analyse. Elle fonde en 1934 la Société psychanalytique de Paris, traduit plusieurs des livres de Freud et participe activement au développement de la psychanalyse en France. Marie et Georges de Grèce ont une fille, Eugénie.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb12316896p"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_051618-d4821e160">
+            <relationEntry>Bonaparte, Roland (1858-1924)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1858-05-19">19 mai 1858</fromDate>
+               <toDate standardDate="1924-04-14">14 avril 1924</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice d'autorité BnF</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_051617"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_051618-d4821e181">
+            <relationEntry>Bonaparte, Pierre-Napoléon (1815-1881)</relationEntry>
+            <descriptiveNote>
+               <p>
+     Pierre-Napoléon Bonaparte est le père de Roland Bonaparte.
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="https://fr.wikipedia.org/wiki/Roland_Bonaparte"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_051618-d4821e193">
+            <relationEntry>Roland Bonaparte</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1858-05-19">19 mai 1858</fromDate>
+               <toDate standardDate="1924-04-14">14 avril 1924</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice Wikipédia</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_051173"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_051618-d4821e214">
+            <relationEntry>Bonaparte, Lucien (1775-1840)</relationEntry>
+            <descriptiveNote>
+               <p>Roland Bonaparte est le petit-fils de Lucien Bonaparte.</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_004280"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_051618-d4821e226">
+            <relationEntry localType="archival">Fonds Lucien Bonaparte et ses descendants (1792-1907)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

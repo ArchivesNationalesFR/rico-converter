@@ -1,0 +1,82 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050356</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-05-26</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Vanessa ASPART</agent>
+            <eventDescription>E. Camus, 23 mai 2016 : modification forme autorisée du nom (dates), historique (conjugaison des verbes) ; ajout activités, relations. F. Clavaud, 26 mai : supprimé pour l'instant les relations</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, Fonds Daumard – Fondation Jean moulin (XIXe siècle-2003), 648 AP. </p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Daumard, Victor-Léon (1898-1965)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1898-04-23">23 avril 1898</fromDate>
+               <toDate standardDate="1965-12-31">1965</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msiydj2--15ch8dyky11sp">inspecteur général</term>
+               <dateRange>
+                  <fromDate standardDate="1955-01-01">1955</fromDate>
+                  <toDate standardDate="1959-12-31">1959</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>Inspecteur général de la Radiodiffusion</p>
+               </descriptiveNote>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msjgtw3-1ton3i1q2op31">ingénieur</term>
+               <dateRange>
+                  <fromDate standardDate="1920-01-01">1920</fromDate>
+                  <toDate standardDate="1955-12-31">1955</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>Ingénieur à la Radiodiffusion nationale</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Victor-Léon Daumard est né à Thiers (Puy-de-Dôme) le 23 avril 1898. Il est le fils de Louis Daumard, gardien de prison. </p>
+            <p>Il combat durant la Première Guerre mondiale et fait des études d’ingénieur à l’École polytechnique (promotion 1920). Il fait ensuite carrière au sein de la Radiodiffusion nationale, d’abord en tant qu’ingénieur à la direction du service d’études et de recherches techniques. En 1936 il est nommé ingénieur en chef à la direction du service de la radiodiffusion. Pendant la Seconde Guerre mondiale, il est chef du service de la radiodiffusion en zone occupée. Il achève sa carrière au poste d’inspecteur général de la Radiodiffusion (1955-1959). </p>
+            <p>Il meurt en 1965. </p>
+            <p>Marié à Amélie Renaudie le 27 octobre 1923, ils ont deux enfants, Adeline et Jacques.</p>
+         </biogHist>
+      </description>
+      <relations/>
+   </cpfDescription>
+</eac-cpf>

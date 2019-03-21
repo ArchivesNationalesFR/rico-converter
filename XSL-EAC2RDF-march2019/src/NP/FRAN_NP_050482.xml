@@ -1,0 +1,80 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050482</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-12-10</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>F. Clavaud, 10 décembre 2013 : changement forme du nom et ajout n° notice BnF</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, fonds général Baratier (99AP).</p>
+               <p>Notice d'autorité BnF n° FRBNF12945405</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Baratier, Albert (1864-1917)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1864-07-11">11 juillet 1864</fromDate>
+               <toDate standardDate="1917-10-17">17 octobre 1917</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Né à Belfort en 1864, fils de l’intendant général Aristide-Émile-Anatole Baratier (1834-1918) qui avait fait la campagne du Tonkin, Albert Baratier entra à Saint-Cyr en 1883, puis fut affecté au 1er régiment de chasseurs d’Afrique. Après avoir servi en Algérie, il prit part avec le lieutenant-colonel Humbert aux opérations contre Samory et se distingua particulièrement dans l’attaque de Diamanko (1891-1892). Il fit ensuite partie de la colonne Monteil envoyée vers Kong et se lia avec le capitaine Marchand. Membre de la mission Marchand en 1896, il reçut pour principale tâche l’exploration du bas Soueh et du Bahr-el-Ghazal. Au prix de nombreuses difficultés, il réussit à traverser les marais et à atteindre le lac Nô. Il avait ainsi tracé à la mission la route qu’elle devait suivre pour passer du bassin du Congo dans celui du Nil et atteindre Fachoda. Commandant à son retour en France, il mit en lumière l’œuvre accomplie par la mission et dressa une carte du Haut-Oubangui. En 1912, il écrivit les Épopées africaines, et, en 1914, Au Congo. Souvenirs de la mission Marchand. Colonel au début de la Grande Guerre, il devint général de brigade le 10 septembre 1914 puis général de division en mai 1917. Il mourut peu après dans une tranchée de première ligne devant Reims.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_051541"
+                      xlink:type="simple">
+            <relationEntry>Largeau, Victor Emmanuel (1867-1916)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1895-01-01">1895</fromDate>
+               <toDate standardDate="1898-12-31">1898</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>
+     Participe avec Albert baratier à la mission Kong conduite par le colonel Monteil puis à la mission Marchand.
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_001880"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds général Baratier (1882-1918)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051998</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2018-02-21</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Véronique AUBER</agent>
+            <eventDescription>Pas d'ISNI</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2018-06-01</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>ROBERT (Adolphe) et COUGNY (Gaston), Dictionnaire des parlementaires français comprenant tous les Mémoires des Assemblées françaises et tous les Ministres français, depuis le 1er mai 1789 jusqu’au 1er mai 1889, avec leurs noms, état civil, états de services, actes politiques, votes parlementaires, etc., , Paris, éditeur Bourloton, 1889, tome IV, p. 437</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Notice wikipedia : https://fr.wikipedia.org/wiki/Augustin_de_Mornay</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Notice BNF :  FRBNF10718071 </sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Archives nationales, fonds Mornay et Soult (402 AP).</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_051998-d4968e109">
+            <part>Mornay, Augustin de (1831-1893)</part>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_051998-d4968e115">
+            <part>Mornay, Augustin Napoléon Philippe (1831-1893)</part>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_051998-d4968e121">
+            <part>Mornay, Auguste Napoléon Philippe (1831-1893)</part>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_051998-d4968e127">
+            <part>Mornay, Marquis de (1831-1893)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1831-03-27">27 mars 1831</fromDate>
+               <toDate standardDate="1893-09-15">15 septembre 1893</toDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place xml:id="FRAN_place_051998-d4968e150">
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu" xml:id="FRAN_placeEntry_051998-d4968e155">Oise</placeEntry>
+               <placeEntry localType="lieu"
+                           vocabularySource="d3ntb8gs2c-r7m1xcm91zhq"
+                           xml:id="FRAN_stdPlaceEntry_051998-d3ntb8gs2c-r7m1xcm91zhqd4968e158">Oise (Picardie , département)</placeEntry>
+            </place>
+         </places>
+         <occupations>
+            <occupation xml:id="FRAN_occupation_051998-d4968e165">
+               <term vocabularySource="d699msiribo--1dn34eg8lht4f">député</term>
+               <dateRange>
+                  <fromDate standardDate="1871-01-01">1871</fromDate>
+                  <toDate standardDate="1876-12-31">1876</toDate>
+               </dateRange>
+            </occupation>
+            <occupation xml:id="FRAN_occupation_051998-d4968e180">
+               <term vocabularySource="d699msjyazt-1f0ggfyf3is8u">élu local</term>
+               <dateRange>
+                  <fromDate standardDate="1861-01-01">1861</fromDate>
+                  <toDate standardDate="1871-12-31">1871</toDate>
+               </dateRange>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Augustin de Mornay (1831-1893) est le fils d'Auguste de Mornay (1798-1852), député du Tarn puis de l'Oise, et le petit-fils du maréchal Soult. Il est conseiller général de l'Oise en 1861 et est élu représentant de l'Oise à l’Assemblée nationale de 1871 à 1876.</p>
+            <p>Il est aussi le fondateur en 1865 et le président de la Société hippique de France.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_051993"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_051998-d4968e208">
+            <relationEntry>Mornay (famille de)</relationEntry>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_050478"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_051998-d4968e214">
+            <relationEntry>Caulaincourt (famille de)</relationEntry>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_051997"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_051998-d4968e220">
+            <relationEntry>Mornay, Auguste-Joseph-Christophe-Jules (1798-1852 ; marquis de)</relationEntry>
+            <descriptiveNote>
+               <p>
+     Auguste de Mornay (1798-1852) est le père d'Augustin de Mornay (1831-1893).
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_051996"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_051998-d4968e232">
+            <relationEntry>Mornay, Charles Léonce de (1792-1849)</relationEntry>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_051995"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_051998-d4968e238">
+            <relationEntry>Mornay, Charles de (1803-1878)</relationEntry>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_051994"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_051998-d4968e245">
+            <relationEntry>Mornay, Philippe de (1549-1623)</relationEntry>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb107180711"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_051998-d4968e251">
+            <relationEntry>Mornay, Augustin de (1831-1893) </relationEntry>
+            <dateRange>
+               <fromDate standardDate="1831-03-27">27 mars 1831</fromDate>
+               <toDate standardDate="1893-09-15">15 septembre 1893</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice d'autorité de la BnF</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="https://fr.wikipedia.org/wiki/Augustin_de_Mornay"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_051998-d4968e272">
+            <relationEntry>Augustin de Mornay</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1831-03-27">27 mars 1831</fromDate>
+               <toDate standardDate="1893-09-15">15 septembre 1893</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice wikipedia</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_004935"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_051998-d4968e293">
+            <relationEntry localType="archival">Fonds Mornay et Soult (XIVe-XXe siècles).</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

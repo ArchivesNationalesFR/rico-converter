@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051922">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Arnauld, Marie-Paule (1946-2015)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051922_d4943e47"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1946-08-08</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-04-12</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051922-d4941e129"/>
+      <RiC:history xml:lang="fr">Née le 8 août 1946 à Cognac où son père, M. Noël-Gabriel Cancel est médecin, elle arrive à Paris en 1963 et prépare au lycée Henri V le concours d'entrée à l’École des chartes. Reçue, elle en sort archiviste paléographe en 1971 après avoir soutenu une thèse portant sur Le huitième livre de la chronique du trouvère Hélinand de Froidmont. Marie-Paule Arnauld se tourne vers une carrière de conservateur d'archives. Suivant les affectations de son époux, le général François Arnauld, elle est successivement conservateur aux Archives départementales du Doubs en 1974-1975, de la Côte-d’Or de 1980 à 1983, directeur des Archives départementales de Seine-Saint-Denis et conservateur des Antiquités et objets d’art de ce même département en 1983. De 1987 à 1990, elle est conservateur à la direction des Archives de France, puis est nommée directeur des Archives départementales de la Haute-Vienne de 1990 à 1992. Promue conservateur en chef, elle revient à la direction des Archives de France comme chargée de mission d’inspection, puis devient conservateur général, chef du service de l'Inspection générale des Archives de France.  Nommée en mars 1998 par le directeur des Archives de France, Alain Erlande-Brandenburg, à la direction du Centre historique des Archives nationales, elle est chargée de mettre en œuvre la nouvelle organisation élaborée avec ses collaborateurs, en particulier la mise en place d'un département spécifiquement consacré aux questions de conservation. Elle suscite un remarquable esprit d’équipe et fédère autour d’elle les chefsde service du Centre historique des Archives nationales, dont elle vante l’excellence et l’enthousiasme, pour préparer activement un statut pour le Centre. Mettant en avant le caractère d’établissement scientifique et culturel des Archives nationales, elle crée un conseil scientifique, en organise les réunions et développe une politique scientifique (publications, colloques, expositions). Elle participe au lancement de l’association « Une cité pour les archives », destinée à faire évoluer la situation préoccupante des Archives nationales. Elle est nommée chevalier dans l’ordre de la Légion d’honneur en 2002. Toutefois, son intérêt pour l'archéologie et l'histoire de l'art la mène à terminer sa carrière dans un autre domaine du patrimoine et elle devient directeur du Musée des monuments français de 2004 à 2007 dont elle assure la rénovation et la réouverture dans le cadre de la Cité de l’architecture et du patrimoine. Marie-Paule Arnauld s'est toujours impliquée dans les mouvements associatifs où elle savait mettre ses compétences au service de tous et où ses qualités humaines s’épanouissaient. Membre de plusieurs d'entre elles comme l'Association des archivistes français dont elle fut secrétaire générale de 1988 à 1992, la Société de l'Histoire de France, elle était aussi présidente de la Société de l'École des chartes qu'elle avait dynamisée et rajeunie et de la Société française d'archéologie. </RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051922--d3ntb7ldge-9pxjgbcvrjpgd4941e113"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051922--d3ntb7heyx--g2riisb6ka8jd4941e116"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051922--d3ntb8t74v--1wxzypxi8r7lmd4941e119"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051922--d3ntb7w81r-miez66yyo6nwd4941e122"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb11889162b#foaf:Person"/>
+      <isni:ISNIAssigned>0000000061316114</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/005073-d77e526"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/009963-d202e557"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051922"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051922-d4941e129">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msirr1g-3naumnfaswc"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051922_d4943e47">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051922-d4941e85"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051922--d3ntb7ldge-9pxjgbcvrjpgd4941e113">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Arnauld, Marie-Paule (1946-2015)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/FRAN_RI_005-d3ntb7ldge-9pxjgbcvrjpg"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051922--d3ntb7heyx--g2riisb6ka8jd4941e116">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Arnauld, Marie-Paule (1946-2015)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/FRAN_RI_005-d3ntb7heyx--g2riisb6ka8j"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051922--d3ntb8t74v--1wxzypxi8r7lmd4941e119">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Arnauld, Marie-Paule (1946-2015)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/FRAN_RI_005-d3ntb8t74v--1wxzypxi8r7lm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051922--d3ntb7w81r-miez66yyo6nwd4941e122">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Arnauld, Marie-Paule (1946-2015)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/FRAN_RI_005-d3ntb7w81r-miez66yyo6nw"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051922">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051922"/>
+      <RiC:creationDate>2018-01-16</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-01-17</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051922</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000061316114"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051922"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb11889162b"/>
+   </rdf:Description>
+</rdf:RDF>

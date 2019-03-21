@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050328">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Aureau, Claude (1923-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050328_d3907e39"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1923-01-01</RiC:birthDate>
+      <RiC:history xml:lang="fr">Architecte diplômé par le gouvernement, Claude Aureau (né en 1923) a été architecte rapporteur à la commission régionale des opérations immobilières et de l’architecture de la région parisienne (1972-1978), inspecteur général des Bâtiments civils et palais nationaux, membre titulaire de la Commission supérieure des Monuments historiques à Paris (1981-1989), architecte en chef de la Préfecture de police et membre permanent de la commission centrale de sécurité du ministère de l’Intérieur (1979-1989). A titre privé, Claude Aureau a été architecte de la caisse primaire centrale de Sécurité sociale de la région parisienne (1950-1982) et de la Compagnie générale transatlantique (1956-1970), puis de la Compagnie générale maritime (1970-1987).</RiC:history>
+      <RiC:personIsSourceOfLeadershipRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/009958-d201e190"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050328"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050328_d3907e39">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050328-d3905e76"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050328">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050328"/>
+      <RiC:creationDate>2014-04-01</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050328</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050328"/>
+   </rdf:Description>
+</rdf:RDF>

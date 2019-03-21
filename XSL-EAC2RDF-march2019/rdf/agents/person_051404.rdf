@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051404">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Gueydan, Geneviève (1963-….)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051404_d4657e45"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1963-04-08</RiC:birthDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051404-d4655e102"/>
+      <RiC:history xml:lang="fr">Diplômes Agrégée d'histoire ; Ancienne élève de l'Ecole normale supérieure (1983) ; Lauréate de l'Institut d'études politiques de Paris (1988) ; Ancienne élève de l'Ecole nationale d'administration (promotion Victor Hugo) Carrière - Cheffe de mission adjoint du Fonds national de l'emploi, de 1991 à 1992. - Cheffe de mission du Fonds national de l'emploi, de 1992 à 1995. - Chargée de mission pour la politique de la ville auprès du préfet du Val-d'Oise (Philippe Deslandes), de 1995 à 1997. - Cheffe de cabinet et conseillère technique (emploi, DOM-TOM, dossiers ponctuels de politique de la ville) au cabinet du secrétaire d'Etat au Logement (Louis Besson), de 1997 à 1999. - Conseillère (politique de la ville, politiques locales de l'habitat, contrats de plan) auprès du secrétaire d'Etat au Logement (Louis Besson), de 1999 à 2001. - Détachée en qualité de sous-directrice de la Commune de Paris et affectée au cabinet du maire, de 2001 à 2004 ; - Directrice adjointe du cabinet du maire de Paris (Bertrand Delanoë), chargée de la culture, la santé, les handicapés, les sports, la famille, les solidarités et la politique de la ville, de 2001 à 2004. - Directrice de l'action sociale, de l'enfance et de la santé de la Ville de Paris, de 2004 à 2012.  - Détachée en qualité de directrice générale de la Commune de Paris, de 2007 à 2012.  - Experte auprès du secrétaire général adjoint de la Ville de Paris chargé du Pôle « fonctions support et appui aux directions, de 2012 à 2013.  - Conseillère politique de solidarité et du logement à la présidence de la République, de 2013 (arrêté du 13.05.2013, JO du 14.05.2013), à 2014 (arrêté du 30.07.2014, JO du 01.08.2014). - Directrice de la Caisse nationale de solidarité pour l'autonomie (CNSA), depuis 2014 (Décret du 31.07.2014, JO du 01.08.2014).</RiC:history>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051404-d4655e195"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051404-d4655e213"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051404-d4655e231"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051404-d4655e249"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051404"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051404-d4655e102">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1997-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-12-31</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">cheffe de cabinet puis conseillère au Logement</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msixdvh--wgctct8soc1y"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051404_d4657e45">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051404-d4655e82"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051404">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051404"/>
+      <RiC:creationDate>2016-10-13</RiC:creationDate>
+      <RiC:lastUpdateDate>2016-10-14</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051404</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051404"/>
+   </rdf:Description>
+</rdf:RDF>

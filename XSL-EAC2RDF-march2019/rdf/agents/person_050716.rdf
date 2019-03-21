@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050716">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Sedes, René (1932-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050716_d4193e47"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1932-01-01</RiC:birthDate>
+      <RiC:history xml:lang="fr">Né à Paris en 1932, René Sedes commence sa vie professionnelle comme ouvrier typographe au service du Cadastre et militant au syndicat du Livre CGT. Il adhère en 1950 au Centre laïque des auberges de jeunesse et du plein air, puis à la Fédération nationale des auberges de jeunesse.  Membre du groupe ajiste d’Issy-les-Moulineaux, il en devient le responsable en 1951. Un an après, il fait partie du conseil d’administration de la Région parisienne de la Fédération nationale des auberges de jeunesse, puis crée le groupe « Paris-Chahut. » En 1954, après son service militaire, il entre au comité directeur de la FNAJ et devient permanent au siège national. Élu secrétaire général à la fin 1955, il participe aux pourparlers conduisant à la création de la Fédération unie des auberges de jeunesse, mais voit son action interrompue en 1956 par son rappel en Algérie.  A son retour, il reprend ses responsabilités. Dénonçant l’orientation trop technique de la nouvelle fédération, il contribue à la constitution du courant d’opposition « Pour un ajisme éducatif ». Après les « Accords de Bagneux » en 1962, René Sedes devient secrétaire général de la FUAJ.  Atteint par la limitation statutaire du mandat dont il refuse la réforme, il quitte ses responsabilités en 1967 et reprend une activité professionnelle principalement dans le secteur de l’édition et de la documentation, tout en militant à la CGT - Force Ouvrière. Sa présence au sein des auberges cesse en 1973, après la création du groupe culturel « Paris mon Ami ».  Autodidacte, il prend en 1980 le chemin de l’université où il obtient plusieurs diplômes en sciences sociales et en sciences de l’éducation. Pendant quelques années, il enseigne l’histoire et les techniques de l’imprimerie à Paris VIII, avant de prendre sa retraite en 1993 et de se consacrer à la peinture et à l’écriture, tout en poursuivant son activité syndicale au sein de la fédération de l’Action sociale Force Ouvrière. Il publie alors plusieurs ouvrages historiques et sociaux. </RiC:history>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050716"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050716_d4193e47">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050716-d4191e88"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050716">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050716"/>
+      <RiC:creationDate>2014-02-20</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050716</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050716"/>
+   </rdf:Description>
+</rdf:RDF>

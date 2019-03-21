@@ -1,0 +1,104 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051033</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-05-22</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+            <eventDescription>F. Clavaud, 22 mai 2015 : changé nom, déplacé n° notice BnF dans sources</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice d'autorité BnF n° FRBNF11293395</p>
+               <p>Fontenay (Pierre Nicolas de), 
+      <span style="italic">Lettres à Babeth</span>. 
+      <span style="italic">Chroniques de l'Assemblée nationale par un Normand 1789-1791</span>, introduction, transcription, mise en forme et annotation par A. Mézin et H. de Boissieu, L'Harmattan, 2015. 
+     </p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId/>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Fontenay, Pierre Nicolas de (1743-1806)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Defontenay, Pierre-Nicolas</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1743-01-01">1743</fromDate>
+               <toDate standardDate="1806-12-31">1806</toDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="lieu" vocabularySource="d3ntspntio-paw9mmh7emrq">Rouen (Seine-Maritime)</placeEntry>
+            </place>
+         </places>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d3m0bl75klh--1t7fg4aiisk0f">négociant</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msj9l7t-1gb5a09kkzrmp">sénateur</term>
+               <dateRange>
+                  <fromDate standardDate="1804-01-01">1804</fromDate>
+                  <toDate standardDate="1806-12-31">1806</toDate>
+               </dateRange>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msjyazt-1f0ggfyf3is8u">élu local</term>
+               <dateRange>
+                  <fromDate standardDate="1791-01-01">1791</fromDate>
+                  <toDate standardDate="1804-12-31">1804</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p> maire de Rouen </p>
+               </descriptiveNote>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msiribo--1dn34eg8lht4f">député</term>
+               <dateRange>
+                  <fromDate standardDate="1789-01-01">1789</fromDate>
+                  <toDate standardDate="1791-12-31">1791</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>député aux États généraux (1789) député à l'Assemblée constituante (1789-1791)</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Pierre Nicolas de Fontenay (27 septembre 1743-14 février 1806), négociant de Rouen, après avoir rempli des fonctions d'administrateur de l'hôtel-Dieu, d'échevin de Rouen, de président de la chambre de commerce et de membre de la commission intermédiaire de l'assemblée provinciale de Haute-Normandie, est élu député du Tiers-État aux États généraux de 1789 par la ville de Rouen et siège ensuite à l'Assemblée constituante, de juillet 1789 à septembre 1791, où il fait partie des comités d'agriculture et de commerce.</p>
+            <p>Il est ensuite élu maire de Rouen, fonction qu'il occupe de novembre 1791 à novembre 1792, puis d'octobre à novembre 1793, et de mai 1800 à mai 1804. En l'an IX, il est nommé membre du conseil général des manufactures et du commerce ; le 18 février 1804 il est élu sénateur. Il reçoit la légion d'honneur en l'an XII (1804) dont il sera fait commandeur.</p>
+            <p>Pierre Nicolas de Fontenay épouse en 1776 Élisabeth Ribard (1757-1859), dont il a deux enfants, Catherine et Félix. </p>
+         </biogHist>
+      </description>
+   </cpfDescription>
+</eac-cpf>

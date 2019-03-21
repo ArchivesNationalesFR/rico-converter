@@ -1,0 +1,106 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050170</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-02-02</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Raphael BAUMARD</agent>
+            <eventDescription>F. Clavaud, 2 février 2016 : revu le nom, ajouté ISNI, n° notice BnF, fonctions</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb13184755k</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 2154 913X</entityId>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Société des études historiques (France)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Institut historique</part>
+            <useDates>
+               <dateRange>
+                  <fromDate standardDate="1833-01-01">1833</fromDate>
+                  <toDate standardDate="1872-12-31">1872</toDate>
+               </dateRange>
+            </useDates>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1833-01-01">1833</fromDate>
+               <toDate standardDate="1940-12-31">1940</toDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>association</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d5bhvil20q--uuew3ia85vzc">activité associative</term>
+            </function>
+            <function>
+               <term vocabularySource="d-25ub5bepd--1a98b90ydj2ye">édition</term>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Créée le 24 décembre 1833 sous le nom d’Institut historique, la Société des études historiques est reconstituée le 13 mars 1872 et reconnue d’utilité publique par décret du 3 mai 1872. Les statuts sont adoptés le 29 juin 1876 ; son but : «  encourager et propager les études historiques en France et à l’étranger ».</p>
+            <p>La société est constituée de quatre classes : histoire générale et histoire de France (première classe), histoire des langues et des littératures (deuxième classe), histoire des sciences physiques, mathématiques, sociales et philosophiques (troisième classe), histoire des beaux-arts (quatrième classe).</p>
+            <p>Ses membres se divisent en trois catégories : titulaires, associés et correspondants. Ils se réunissent tous les mois, de novembre à juin.</p>
+            <p>La Société des études historiques fait paraître une revue, successivement appelée 
+     <span style="italic">L’Investigateur : journal de l’Institut historique</span>, 
+     <span style="italic">Revue de la Société des études historiques</span> et enfin 
+     <span style="italic">Revue des études historiques</span> ; par ailleurs, elle publie la 
+     <span style="italic">Bibliothèque de bibliographies critiques</span>. 
+    </p>
+            <p>Chaque année, la Société des études historiques remet le prix Raymond (du nom du premier donateur) au lauréat d’un concours relatif à un sujet historique.</p>
+            <p>Toutes les activités de la société cessent en 1940.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050420"
+                      xlink:type="simple">
+            <relationEntry>Mirot, Léon (1870-1946)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1870-06-06">6 juin 1870</fromDate>
+               <toDate standardDate="1940-12-31">1940</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>
+     Président. Dates inconnues.
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051653">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Chenot, Bernard (1909-1995)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051653_d4849e55"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1909-05-20</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-06-05</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051653-d4847e126"/>
+      <RiC:history xml:lang="fr">Licencié en droit et diplômé de l’École libre des sciences politiques, Bernard Chenot (1909-1995), entre en 1932 au Conseil d’État comme auditeur et dirige plusieurs cabinets ministériels, avant d’être délégué général au Tourisme (1938-1942). Après la Guerre, il devient secrétaire général des Houillères du Nord (1945-1946), puis secrétaire général du Conseil économique en 1951. Parallèlement, il est maître de conférences à l’Institut d’études politiques de Paris. En juin 1958, le général de Gaulle le nomme ministre de la Santé publique (1958-1961), puis garde des Sceaux (1961-1962). Lorsque Georges Pompidou arrive à Matignon en 1962, Bernard Chenot le remplace pendant deux ans au Conseil constitutionnel. Il effectue ensuite un détour dans le secteur privé. En 1964, il est nommé à la présidence de la Compagnie des assurances générales qui devient sous son autorité les AGF. En janvier 1971, il réintègre le Conseil d’État, dont il devient six mois plus tard vice-président. Il assume cette fonction jusqu’en 1978, date à laquelle il est admis à la retraite. Grand-croix de la Légion d’honneur, secrétaire perpétuel de l’Académie des sciences morales et politiques, Bernard Chenot a laissé plusieurs ouvrages, notamment : 
+     Les entreprises nationalisées (1956), 
+     Être ministre (1967), 
+     Référendum (1969), 
+     L’hôpital en question (1970), 
+     Réflexions sur la cité (1981). 
+    </RiC:history>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Bernard_Chenot"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb11896536c#foaf:Person"/>
+      <isni:ISNIAssigned>0000000109068739</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/000080-d11e648"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051653-d4847e229"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051653-d4847e244"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051653-d4847e260"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051653"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051653-d4847e126">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1958-01-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1962-12-31</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">ministre de la Santé publique (1958-1961), garde des Sceaux (1961-1962)</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjnw86-64seh0fmw8hj"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051653-d4847e260">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Chenot, Bernard (1909-1995) et l'ensemble de documents "Papiers Bernard Chenot (1932-1979)."</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/056807-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051653_d4849e55">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051653-d4847e103"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051653">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051653"/>
+      <RiC:creationDate>2017-09-01</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-11-21</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051653</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">État sommaire des fonds d'archives privées, séries AP et AB XIX, Paris, Centre historique des Archives nationales, 2004, p. 737-738 (notice 406 AP).</RiC:source>
+      <RiC:source xml:lang="fr">Notice d'autorité BnF n° : FRBNF11896536.</RiC:source>
+      <RiC:source xml:lang="fr">Article Bernard Chenot de Wikipédia en français (http://fr.wikipedia.org/wiki/Bernard_Chenot).</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000109068739"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051653"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Bernard_Chenot"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb11896536c"/>
+   </rdf:Description>
+</rdf:RDF>

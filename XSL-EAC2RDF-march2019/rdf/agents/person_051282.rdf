@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051282">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Colbert, Louis Pierre Alphonse de (1776-1843)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051282_d4565e42"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051282_d4565e45"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1776-06-29</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1843-06-02</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051282-d4563e110"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051282-d4563e122"/>
+      <RiC:history xml:lang="fr">Louis Pierre Alphonse de Colbert (1776-1843), comte de Chabanais, est né le 29 juin 1776 à Paris, paroisse Saint-Eustache, il est le fils puîné de Louis Henri François de Colbert (1737-1792) et de Jeanne David. Engagé volontaire, il sert de l'an II à l'an IX aux armées de l'Ouest, de Sambre-et-Meuse, d'Italie et d'Orient. Passé à Saint-Domingue, il y remplit les fonctions d'ordonnateur pendant les ans X à XI. Rentré en France, il est nommé membre de la légion d'honneur le 4 germinal an XIII (il sera promu commandeur le 20 avril 1831).  Vers 1810, il épouse Isidore Eugénie Petiet (1788-1869), fille du Ministre de la Guerre Claude Louis Petiet (1749-1806), dont il a trois filles. Chef d'escadron au régiment des vélites à cheval de la garde du roi de Naples, il en démissionne et est admis au service de la France avec le grade de colonel le 11 janvier 1812. Fait partie de l'armée d'Espagne. Est nommé général de brigade le 3 avril 1814 ; confirmé dans ce grade par Louis XVIII, il est mis en non-activité le 9 juillet 1814, et fait chevalier de Saint-Louis le 19 juillet 1814. Pour arrêter la marche de Napoléon, il prend le commandement d'une brigade de l'armée organisée sous Paris le 6 mars 1815, mais il suit le mouvement des troupes sous ses ordres et se range sous la bannière de l'Empereur. Il commande ensuite le corps de l'armée du Nord, puis commandant à l'armée de Belgique, il sert à la bataille de Ligny. Nommé adjoint à l'inspection générale de cavalerie dans le 12e division militaire, le 12 juillet 1818, il est nommé membre de la commission de défense du royaume le 17 novembre 1824. Commandant la 3e subdivision (Var) de la 8e division militaire, le 14 août 1829 ; Commandant le département du Gard en 1831 et le département de l'Herault le 29 juin 1831 ; nommé lieutement général et commandant de la 13e division militaire le 18 mai 1838, à Rennes (Ille-et-Vilaine), où il décède le 2 juin 1843 dans l'exercice de ses fonctions. </RiC:history>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051282"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051282-d4563e110">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">adjoint à l'inspection générale de cavalerie (1818)</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msiydj2--15ch8dyky11sp"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051282-d4563e122">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">Colonel, général de brigade, commandant</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj53l0-1180obzunmkm7"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051282_d4565e42">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051282-d4563e81"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051282_d4565e45">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051282-d4563e87"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051282">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051282"/>
+      <RiC:creationDate>2016-04-22</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_051282</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051282"/>
+   </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,88 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050876</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+            <eventDescription>F. Clavaud, 10 octobre 2014 : création sur demande d'A. Facon (mission des archives du ministère de l'Education nationale)</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Page web : http://www.cahiers-pedagogiques.com/-Le-Cercle-de-recherche-et-d-action-pedagogiques-</p>
+               <p>Notice d'autorité BnF n° FRBNF11883701</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 2108 4336</entityId>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Cercle de recherche et d'action pédagogiques (Paris)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>CRAP</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1945-01-01">1945</fromDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>association</term>
+            </legalStatus>
+         </legalStatuses>
+         <biogHist>
+            <p>Le Cercle de Recherche et d’Action Pédagogiques (CRAP) est une association française loi 1901 de recherche en pédagogie, membre du CLIMOPE. Elle publie la revue mensuelle Les Cahiers pédagogiques.</p>
+            <p>Le CRAP et « Les Cahiers pédagogiques » s'inscrivent dans la mouvance des mouvements d'éducation nouvelle. Le premier numéro de la revue est paru en décembre 1945, puis les rédacteurs ont fondé en 1963 l'association conforme à la loi de 1901 qui l'édite depuis. Les " textes fondateurs " du CRAP – le premier article des Cahiers Pédagogiques de François Goblot en décembre 1945 sur " les méthodes nouvelles dans l’enseignement du second degré ", le Manifeste pour l'Éducation nationale en 1963, le Manifeste Demain l’école en 1995 ne sont pas des textes définitifs, mais des étapes dans une réflexion continue. Aux côtés de mouvements tels les CEMEA, les Francas, l'ICEM (pédagogie Freinet), le CRAP mène un combat pédagogique qui se poursuit depuis plus d'un demi-siècle. Dans une structure très ouverte, artisanale à ses débuts (essentiellement l’œuvre de François Goblot), ils publient réflexions et instruments de travail. Orientés au début vers le second degré, les Cahiers pédagogiques couvrent maintenant tout le champ de l’éducation - maternelle, élémentaire, secondaire, professionnel, supérieur - et de la formation. Le CRAP - Cercle de recherche et d’action pédagogiques - est le nom actuel de l’association qui publie les Cahiers pédagogiques. Le mouvement et la revue sont très actifs, organisant des colloques pendant l'année scolaire et des rencontres l'été pendant lesquelles les réflexions sur les pratiques pédagogiques sont très riches.</p>
+            <p>Par arrêté du ministre de l'Éducation nationale en date du 26 janvier 2009, l'association « Cercle de recherche et d'action pédagogique » qui apporte son concours à l'enseignement public, est agréée pour une durée de cinq ans. En 2010, le CRAP subit une réduction de ses subventions de 17 %. </p>
+            <p>N° de SIRET : 317 804 698 0049</p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054033"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Archives du Cercle de Recherche et d'Action pédagogiques (CRAP)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054044"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Cercle de recherche et d'action pédagogiques (CRAP), illustrations</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054045"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Cercle de recherche et d'action pédagogiques (CRAP), Photographies</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

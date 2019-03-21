@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/051002">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">France. Secrétariat général de la présidence française des sommets du G8 et du G20 (2010-2011)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051002_d4388e52"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-07-22</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-12-31</RiC:endDate>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051002-d4386e129"/>
+      <RiC:history xml:lang="fr">Cette instance interministérielle temporaire, dotée d'une structure administrative légère, a été chargée de coordonner, en liaison avec les ministères concernés, l'élaboration et l'organisation des événements, réunions et manifestations relevant de la présidence française du G20 et du G8 et d'en évaluer le coût. La France a en effet assuré la présidence du G20 à partir de novembre 2010 et celle du G8 à partir du 1er janvier 2011. Pour ces occasions, un secrétariat général a été créé par le décret n° 2010-833 du 22 juillet 2010. Il est composé d'une équipe d'une dizaine de personnes, avec à sa tête un secrétaire général (qui est en même temps le chef du protocole de la Présidence de la République), assisté dans l'exercice de ses fonctions par les personnes suivantes : - un secrétaire général adjoint  - quatre conseillers chargés respectivement de la coordination des sommets, des affaires budgétaires et financières, de l'organisation des réunions ministérielles et des réunions de sherpas, et des questions de sécurité. Le Secrétariat général de la présidence française du G20 et du G8 est institué auprès du Premier Ministre. Le secrétaire général rend compte au Président de la République et au Premier Ministre. Des personnels lui sont mis à disposition par les ministères suivants : - celui des Affaires Etrangères,  - celui de l’économie, de l’industrie et de l’emploi,  - celui de l’intérieur, de l’outre-mer et des collectivités territoriales.  Il est rattaché, pour sa gestion administrative, au Secrétariat Général du Gouvernement. Il coordonne l’élaboration, en lien avec les ministères concernés, de la liste des évènements, dont il doit évaluer le coût avec les administrations concernées, au titre de la Présidence française. La programmation des crédits correspondants à ces évènements lui est soumise, il est tenu informé des engagements de crédits. Il lui est rendu compte de leur exécution. Il est chargé notamment de la communication, de la recherche de partenariats avec les entreprises et les collectivités territoriales, de la définition des modalités d’accréditation, de la définition des modalités d’association de la société civile aux évènements et activités de la présidence française. Il procède, en liaison avec les ministères concernés, à l’évaluation des opérations de la présidence et de leur coût final. Le Secrétariat Général a ses bureaux situés avenue de Marigny (dans les locaux de la Présidence de la République), et ce dès le 9 juillet 2010. Le responsable du secrétariat général est en même temps le chef du protocole de la Présidence de la République.</RiC:history>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051002-d4386e157"/>
+      <RiC:agentIsTargetOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/051002-d4386e206"/>
+      <RiC:agentIsTargetOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/051002-d4386e227"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051002-d4386e248"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051002"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051002-d4386e129">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-07-22</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-12-31</RiC:endDate>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:description xml:lang="fr">présidence des sommets du G8 et du G20</RiC:description>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d3nyuidsbr-1umshw9gnudo9"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051002_d4388e52">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051002-d4386e97"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051002">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/051002"/>
+      <RiC:creationDate>2015-04-27</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_051002</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051002"/>
+   </rdf:Description>
+</rdf:RDF>

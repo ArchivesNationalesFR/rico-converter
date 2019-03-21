@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050918</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-04-23</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>F. Clavaud, 21 avril 2015 : ajouté noms, statut, n° ISNI, n° notice BnF, fonctions</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>CNAHES</p>
+               <p>Notice d'autorité BnF n° FRBNF11881664</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 2108 4248</entityId>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_050918-d4332e85">
+            <part>Fédération internationale pour l'économie familiale</part>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_050918-d4332e91">
+            <part>FIEF</part>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_050918-d4332e97">
+            <part>Fédération internationale pour le développement de l'enseignement ménager</part>
+            <useDates>
+               <dateRange>
+                  <fromDate standardDate="1922-01-01">1922</fromDate>
+                  <toDate standardDate="1970-12-31">1970</toDate>
+               </dateRange>
+            </useDates>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_050918-d4332e116">
+            <part>FIEM</part>
+            <useDates>
+               <dateRange>
+                  <fromDate standardDate="1922-01-01">1922</fromDate>
+                  <toDate standardDate="1970-12-31">1970</toDate>
+               </dateRange>
+            </useDates>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1922-01-01">1922</fromDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>association</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function xml:id="FRAN_activity_050918-d4332e157">
+               <term vocabularySource="d3nyug3e0g-1xzlvri8dg416">action sociale</term>
+            </function>
+            <function xml:id="FRAN_activity_050918-d4332e163">
+               <term vocabularySource="d5bhviluwl--h5xbasqtef53">économie</term>
+               <descriptiveNote>
+                  <p>économie familiale</p>
+               </descriptiveNote>
+            </function>
+         </functions>
+         <biogHist>
+            <p>La Fédération Internationale pour l’Economie Familiale (FIEF) est une association créée en 1922 sous le nom de Fédération Internationale pour le Développement de l’Enseignement Ménager (FIEM). Elle connaît une activité croissante durant l’entre-deux-guerres avec la publication régulière d’un bulletin à partir de 1927, puis l’organisation de congrès réunissant des membres du monde entier. A partir de 1946, la Suisse organise des journées d’étude pour faire le point sur l’enseignement ménager après les bouleversements de la guerre. La FIEM obtient de plus le statut consultatif auprès de l’Organisation des Nations Unies (ONU) et oriente ses activités vers les pays en voie de développement et les problèmes de la femme et de l’enfant. En 1970, la FIEM, remise en cause dans son enseignement, et donc dans son utilité même, obtient de nouveaux statuts et devient la Fédération Internationale pour l’Economie Familiale. Parallèlement, en 1957, la Section française de la FIEF est créée. Son but est de regrouper les organismes français adhérents de la FIEF en qualité de membres collectifs et de réaliser ensemble des travaux préparatoires aux réunions et aux congrès internationaux.</p>
+         </biogHist>
+      </description>
+   </cpfDescription>
+</eac-cpf>

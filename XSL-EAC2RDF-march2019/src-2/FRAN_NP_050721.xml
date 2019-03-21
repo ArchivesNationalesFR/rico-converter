@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050721</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-03-06</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Emmanuelle GIRY</agent>
+            <eventDescription>F. Clavaud, 6 mars 2014 : modifié la date, ajouté lien vers notice PACTES-CIRASTI</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>
+                  <span style="italic">Guide des sources du PAJEP</span>, consulté au mois de février 2014 
+     </p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_050721-d4196e82">
+            <part>Mouvement international des loisirs scientifiques et techniques</part>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_050721-d4196e88">
+            <part>MILSET</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1987-07-16">16 juillet 1987</fromDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>association</term>
+            </legalStatus>
+         </legalStatuses>
+         <mandates>
+            <mandate/>
+         </mandates>
+         <biogHist>
+            <p>Le MILSET est une organisation non gouvernementale, internationale et à but non lucratif, qui vise à développer la culture scientifique chez les jeunes personnes à travers l’organisation d’expériences et de programmes scientifiques, y compris les foires scientifiques, les camps scientifiques, les expositions, les congrès, etc. </p>
+            <p>Le MILSET a été créé au cours de la première exposition scientifique internationale qui s’est tenue au Québec en 1987. Par la suite, le MILSET a créé des bureaux régionaux, comme le MILSET Afrique, le MILSET Europe, l’Amlat MILSET (Amérique latine), le Noram MILSET (Amérique du Nord). </p>
+            <p>Le siège de l’association est situé en France, et l’association française qui adhère au MILSET s’appelle Promotion des activités culturelles techniques et scientifiques - Collectif Interassociatif pour la réalisation d’activités scientifiques et techniques internationales. </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050704"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_050721-d4196e135">
+            <relationEntry>Collectif inter associatif pour la réalisation d’activités scientifiques et techniques à l’international (France)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1987-07-16">16 juillet 1987</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_050869"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_050721-d4196e147">
+            <relationEntry localType="archival">Archives du Mouvement international des loisirs scientifiques et techniques (MILSET)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

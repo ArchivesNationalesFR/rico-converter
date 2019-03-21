@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!--  Les AN vont constituer un référentiel de textes juridiques
+    En RDF, RiC-O, avec la classe Rule sur la base des ELI ou des NOR quand le ELI n’existe pas dans Legifrance
+    -->
+    
+    <!-- ELI -->
+    <rdf:Description rdf:about="https://www.legifrance.gouv.fr/eli/arrete/2015/7/22/ETST1517477A/jo/texte">
+        <RiC:identifier>https://www.legifrance.gouv.fr/eli/arrete/2015/7/22/ETST1517477A/jo/texte</RiC:identifier>
+        <RiC:identifier>NOR: ETST1517477A</RiC:identifier>
+        <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/eli/arrete/2015/7/22/ETST1517477A/jo/texte"/>
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
+        <RiC:title xml:lang="fr">Arrêté de création du 22 juillet 2015 relatif à l'organisation de la direction générale du travail, article 5. (https://www.legifrance.gouv.fr/eli/arrete/2015/7/22/ETST1517477A/jo/texte)</RiC:title>
+        <rdfs:label xml:lang="fr">Arrêté de création du 22 juillet 2015 relatif à l'organisation de la direction générale du travail, article 5. (https://www.legifrance.gouv.fr/eli/arrete/2015/7/22/ETST1517477A/jo/texte)</rdfs:label>
+</rdf:Description>
+    
+    <!-- NP_003117.xml -->
+    <rdf:Description rdf:about="https://www.legifrance.gouv.fr/eli/decret/2010/12/28/MENF1029733D/jo/texte">
+        <RiC:identifier>https://www.legifrance.gouv.fr/eli/decret/2010/12/28/MENF1029733D/jo/texte</RiC:identifier>
+        <RiC:identifier>NOR: MENF1029733D</RiC:identifier>
+        <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/eli/decret/2010/12/28/MENF1029733D/jo/texte"/>
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
+        <RiC:title xml:lang="fr">Décret n° 2010-1649 du 28 décembre 2010 portant dissolution de l'Institut national de recherche pédagogique (NOR: MENF1029733D ; ELI: https://www.legifrance.gouv.fr/eli/decret/2010/12/28/MENF1029733D/jo/texte).</RiC:title>
+        <rdfs:label xml:lang="fr">Décret n° 2010-1649 du 28 décembre 2010 portant dissolution de l'Institut national de recherche pédagogique (NOR: MENF1029733D ; ELI: https://www.legifrance.gouv.fr/eli/decret/2010/12/28/MENF1029733D/jo/texte).</rdfs:label>
+    </rdf:Description>
+    
+    <!-- NP_051261.xml -->
+    <rdf:Description rdf:about="https://www.legifrance.gouv.fr/eli/decret/2008/12/30/MTST0829782D/jo/texte">
+        <RiC:identifier>https://www.legifrance.gouv.fr/eli/decret/2008/12/30/MTST0829782D/jo/texte</RiC:identifier>        
+        <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/eli/decret/2008/12/30/MTST0829782D/jo/texte"/>
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
+        <RiC:title xml:lang="fr">- décret no 2008-1503 du 30 décembre 2008 relatif à la fusion des services d'inspection du travail (ELI : https://www.legifrance.gouv.fr/eli/decret/2008/12/30/MTST0829782D/jo/texte)</RiC:title>
+        <rdfs:label xml:lang="fr">- décret no 2008-1503 du 30 décembre 2008 relatif à la fusion des services d'inspection du travail (ELI : https://www.legifrance.gouv.fr/eli/decret/2008/12/30/MTST0829782D/jo/texte)</rdfs:label>
+    </rdf:Description>
+    
+   <!-- NP_051395.xml -->
+    <rdf:Description rdf:about="https://www.legifrance.gouv.fr/eli/decret/2005/9/29/PRMX0508756D/jo/texte">
+        <RiC:identifier>https://www.legifrance.gouv.fr/eli/decret/2005/9/29/PRMX0508756D/jo/texte</RiC:identifier>        
+        <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/eli/decret/2005/9/29/PRMX0508756D/jo/texte"/>
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
+        <RiC:title xml:lang="fr">Décret n° 2005-1243 du 29 septembre 2005 (ELI: https://www.legifrance.gouv.fr/eli/decret/2005/9/29/PRMX0508756D/jo/texte) instituant un comité interministériel et un délégué interministériel pour le développement de l'offre de logements.</RiC:title>
+        <rdfs:label xml:lang="fr">Décret n° 2005-1243 du 29 septembre 2005 (ELI: https://www.legifrance.gouv.fr/eli/decret/2005/9/29/PRMX0508756D/jo/texte) instituant un comité interministériel et un délégué interministériel pour le développement de l'offre de logements.</rdfs:label>
+    </rdf:Description>
+    
+    <!-- NP_051395.xml -->
+    <rdf:Description rdf:about="https://www.legifrance.gouv.fr/eli/decret/2009/10/13/DEVK0921591D/jo/texte">
+        <RiC:identifier>https://www.legifrance.gouv.fr/eli/decret/2009/10/13/DEVK0921591D/jo/texte</RiC:identifier>        
+        <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/eli/decret/2009/10/13/DEVK0921591D/jo/texte"/>
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
+        <RiC:title xml:lang="fr">Décret n° 2009-1220 du 13 octobre 2009 (ELI: https://www.legifrance.gouv.fr/eli/decret/2009/10/13/DEVK0921591D/jo/texte) modifiant le décret n° 2005-1243 du 29 septembre 2005 instituant un comité interministériel et un délégué interministériel pour le développement de l'offre de logements.</RiC:title>
+        <rdfs:label xml:lang="fr">Décret n° 2009-1220 du 13 octobre 2009 (ELI: https://www.legifrance.gouv.fr/eli/decret/2009/10/13/DEVK0921591D/jo/texte) modifiant le décret n° 2005-1243 du 29 septembre 2005 instituant un comité interministériel et un délégué interministériel pour le développement de l'offre de logements.</rdfs:label>
+    </rdf:Description>
+    
+    <!-- NP_051395.xml -->
+    <rdf:Description rdf:about="https://www.legifrance.gouv.fr/eli/decret/2010/7/14/DEVK1014646D/jo/texte">
+        <RiC:identifier>https://www.legifrance.gouv.fr/eli/decret/2010/7/14/DEVK1014646D/jo/texte</RiC:identifier>        
+        <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/eli/decret/2010/7/14/DEVK1014646D/jo/texte"/>
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
+        <RiC:title xml:lang="fr">Décret n° 2010-817 du 14 juillet 2010 (ELI: https://www.legifrance.gouv.fr/eli/decret/2010/7/14/DEVK1014646D/jo/texte) instituant un délégué interministériel pour l'hébergement et l'accès au logement des personnes sans abri ou mal logées</RiC:title>
+        <rdfs:label xml:lang="fr">Décret n° 2010-817 du 14 juillet 2010 (ELI: https://www.legifrance.gouv.fr/eli/decret/2010/7/14/DEVK1014646D/jo/texte) instituant un délégué interministériel pour l'hébergement et l'accès au logement des personnes sans abri ou mal logées</rdfs:label>
+    </rdf:Description>
+    
+    <!--NP_051439.xml-->
+    <rdf:Description rdf:about="https://www.legifrance.gouv.fr/eli/decret/2005/12/30/ECOP0500973D/jo/texte">
+        <RiC:identifier>https://www.legifrance.gouv.fr/eli/decret/2005/12/30/ECOP0500973D/jo/texte</RiC:identifier>
+        <RiC:identifier>NOR : ECOP0500973D</RiC:identifier>        
+        <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/eli/decret/2005/12/30/ECOP0500973D/jo/texte"/>
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
+        <RiC:title xml:lang="fr">- Décret n° 2005-1792 du 30 décembre 2005 (NOR : ECOP0500973D ; ELI : https://www.legifrance.gouv.fr/eli/decret/2005/12/30/ECOP0500973D/jo/texte) portant création d'une direction générale de la modernisation de l'Etat au ministère de l'économie, des finances et de l'industrie</RiC:title>
+        <rdfs:label xml:lang="fr">- Décret n° 2005-1792 du 30 décembre 2005 (NOR : ECOP0500973D ; ELI : https://www.legifrance.gouv.fr/eli/decret/2005/12/30/ECOP0500973D/jo/texte) portant création d'une direction générale de la modernisation de l'Etat au ministère de l'économie, des finances et de l'industrie</rdfs:label>
+    </rdf:Description>
+    
+    <!-- NP_050116.xml -->
+    <rdf:Description rdf:about="https://www.legifrance.gouv.fr/eli/arrete/2011/9/9/MENE1121599A/jo/texte">
+        <RiC:identifier>https://www.legifrance.gouv.fr/eli/arrete/2011/9/9/MENE1121599A/jo/texte</RiC:identifier>        
+        <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/eli/arrete/2011/9/9/MENE1121599A/jo/texte"/>
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
+        <RiC:title xml:lang="fr">Arrêté du 9 septembre 2011 portant suppression de l'Observatoire national de la lecture (NOR: MENE1121599A ; ELI: https://www.legifrance.gouv.fr/eli/arrete/2011/9/9/MENE1121599A/jo/texte).</RiC:title>
+        <rdfs:label xml:lang="fr">Arrêté du 9 septembre 2011 portant suppression de l'Observatoire national de la lecture (NOR: MENE1121599A ; ELI: https://www.legifrance.gouv.fr/eli/arrete/2011/9/9/MENE1121599A/jo/texte).</rdfs:label>
+    </rdf:Description>
+    
+    <!-- NP_005439.xml -->
+    <rdf:Description rdf:about="https://www.legifrance.gouv.fr/eli/arrete/2012/1/19/MCCB1130198A/jo/texte">
+        <RiC:identifier>https://www.legifrance.gouv.fr/eli/arrete/2012/1/19/MCCB1130198A/jo/texte</RiC:identifier>
+        <RiC:identifier>NOR: MCCB0922702A</RiC:identifier>            
+        <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/eli/arrete/2012/1/19/MCCB1130198A/jo/texte"/>
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
+        <RiC:title xml:lang="fr">Arrêté du 19 janvier 2012 modifiant l'arrêté du 17 novembre 2009 relatif aux missions et à l'organisation de la direction générale des médias et des industries culturelles (https://www.legifrance.gouv.fr/eli/arrete/2012/1/19/MCCB1130198A/jo/texte).</RiC:title>
+        <rdfs:label xml:lang="fr">Arrêté du 19 janvier 2012 modifiant l'arrêté du 17 novembre 2009 relatif aux missions et à l'organisation de la direction générale des médias et des industries culturelles (https://www.legifrance.gouv.fr/eli/arrete/2012/1/19/MCCB1130198A/jo/texte).</rdfs:label>
+    </rdf:Description>
+    
+    <!-- NP_005439.xml -->
+    <rdf:Description rdf:about="https://www.legifrance.gouv.fr/eli/arrete/2009/11/17/MCCB0922702A/jo/texte">
+        <RiC:identifier>https://www.legifrance.gouv.fr/eli/arrete/2009/11/17/MCCB0922702A/jo/texte</RiC:identifier>
+        <RiC:identifier>NOR: MCCB0922702A</RiC:identifier>            
+        <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/eli/arrete/2009/11/17/MCCB0922702A/jo/texte"/>
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
+        <RiC:title xml:lang="fr">Arrêté du 17 novembre 2009 relatif aux missions et à l'organisation de la direction générale des médias et des industries culturelles (https://www.legifrance.gouv.fr/eli/arrete/2009/11/17/MCCB0922702A/jo/texte)</RiC:title>
+        <rdfs:label xml:lang="fr">Arrêté du 17 novembre 2009 relatif aux missions et à l'organisation de la direction générale des médias et des industries culturelles (https://www.legifrance.gouv.fr/eli/arrete/2009/11/17/MCCB0922702A/jo/texte)</rdfs:label>
+    </rdf:Description>
+    
+    <!--FRAN_NP_052046.xml-->
+    <rdf:Description rdf:about="https://www.legifrance.gouv.fr/eli/decret/2014/4/30/OMES1409293D/jo/texte">
+        <RiC:identifier>https://www.legifrance.gouv.fr/eli/decret/2014/4/30/OMES1409293D/jo/texte</RiC:identifier>
+        <RiC:identifier>NOR: OMES1409293D</RiC:identifier>            
+        <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/eli/decret/2014/4/30/OMES1409293D/jo/texte"/>
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
+        <RiC:title xml:lang="fr">Décret du 30 avril 2014 (NOR : OMES1409293D) portant délégation de signature (bureau du cabinet de la ministre des outre-mer) (ELI : https://www.legifrance.gouv.fr/eli/decret/2014/4/30/OMES1409293D/jo/texte)</RiC:title>
+        <rdfs:label xml:lang="fr">Décret du 30 avril 2014 (NOR : OMES1409293D) portant délégation de signature (bureau du cabinet de la ministre des outre-mer) (ELI : https://www.legifrance.gouv.fr/eli/decret/2014/4/30/OMES1409293D/jo/texte)</rdfs:label>
+    </rdf:Description>
+    
+    <!--FRAN_NP_051261.xml-->
+    <rdf:Description rdf:about="https://www.legifrance.gouv.fr/eli/decret/2008/12/30/MTST0829782D/jo/texte">
+        <RiC:identifier>https://www.legifrance.gouv.fr/eli/decret/2008/12/30/MTST0829782D/jo/texte</RiC:identifier>
+        <RiC:identifier>NOR: MTST0829782D</RiC:identifier>            
+        <rdfs:seeAlso rdf:resource="https://www.legifrance.gouv.fr/eli/decret/2008/12/30/MTST0829782D/jo/texte"/>
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
+        <RiC:title xml:lang="fr">Décret no 2008-1503 du 30 décembre 2008 relatif à la fusion des services d'inspection du travail (ELI : https://www.legifrance.gouv.fr/eli/decret/2008/12/30/MTST0829782D/jo/texte)</RiC:title>
+        <rdfs:label xml:lang="fr">Décret no 2008-1503 du 30 décembre 2008 relatif à la fusion des services d'inspection du travail (ELI : https://www.legifrance.gouv.fr/eli/decret/2008/12/30/MTST0829782D/jo/texte)</rdfs:label>
+    </rdf:Description>
+    
+    <!-- NOR
+    <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/rule/NOR_PREX0925009A">
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Rule"/>
+        <RiC:identifier>NOR : PREX0925009A</RiC:identifier>
+        <RiC:title xml:lang="fr">Arrêté de la présidence de la République du 19 octobre 2009 (NOR : PREX0925009A).</RiC:title>
+        <rdfs:label xml:lang="fr">Arrêté de la présidence de la République du 19 octobre 2009 (NOR : PREX0925009A).</rdfs:label>
+    </rdf:Description> -->
+    
+ 
+    
+</rdf:RDF>

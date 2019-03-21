@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/009248">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Kervern, Georges-Yves (1935-2008)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/009248_d177e68"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1935-01-01</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-12-16</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/009248-d175e147"/>
+      <RiC:history xml:lang="fr">Georges-Yves Kervern (1935-2008) est un polytechnicien expert en risques. Après un cursus d'ingénieur à l'école des Mines, il effectue une grande partie de sa carrière dans le secteur privé. Après un passage au ministère de l'Industrie (1961-1968), il devient spécialiste de la gestion des risques et poursuit ses travaux de recherches et ses projets en ce sens. En 1997, il est nommé au Conseil nationale d'évaluation de la Recherche (CNER). Il est à l'origine avec d'autres chercheurs d'une démarche scientifique appelé la Cindynique (science du danger). Cette notion a vu le jour en 1987 à la suite d'un colloque international à l'UNESCO réunissant des experts de risques technologique majeurs et à l'initiative de l'Association française des cadres dirigeants pour le progrès social et économique (ACADI) présidée alors par Georges-Yves Kervern.</RiC:history>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Georges-Yves_Kervern"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb122279607#foaf:Person"/>
+      <isni:ISNIAssigned>0000000000442723</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/009248-d175e175"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/009248-d175e232"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/009248"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/009248-d175e147">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">expert en prévention des risques</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjgtw3-1ton3i1q2op31"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/009248_d177e68">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/009248-d175e124"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/009248">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/009248"/>
+      <RiC:creationDate>2013-04-23</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-10-26</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_009248</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">- Fonds Georges-Yves Kervern 714 AP.</RiC:source>
+      <RiC:source xml:lang="fr">- Notice BNF n°FRBNF12227960</RiC:source>
+      <RiC:source xml:lang="fr">- Notice wikipédia https://fr.wikipedia.org/wiki/Georges-Yves_Kervern</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000000442723"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_009248"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Georges-Yves_Kervern"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb122279607"/>
+   </rdf:Description>
+</rdf:RDF>

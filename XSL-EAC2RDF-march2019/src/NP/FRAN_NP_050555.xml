@@ -1,0 +1,110 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050555</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-07-28</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Eric LANDGRAF</agent>
+            <eventDescription>Elsa Camus, 28 juillet 2016 : modification forme autorisée du nom, ajout autre forme du nom, modification historique, ajout activités, ajout sources</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-09-07</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Zénaïde ANDRIEU-ROMANEIX</agent>
+            <eventDescription>Révisée en septembre 2017. Biographie et indexation "Activités" précisées. Absence de n° ISNI, de notice BnF, de notice Wikipedia. IR non publié en SIV.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2018-01-16</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+            <eventDescription>Recherche identifiant ISNI infructueuse (16/01/18). La notice d'autorité de la BnF et la notice Wikipédia n'existent pas pour cette entité (16/01/18).</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Archives nationales, Fonds Villemur (Louis de Penne), 240AP.</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Penne-Villemur (Adolphe-Raymond), Biographie du lieutenant-général comte de Villemur, ancien ministre de la guerre de S.M.C. Charles V, roi d'Espagne, par M. le comte Adolphe de Villemur, Paris : G.-A. Dentu, 1836.</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Penne-Villemur, Louis de (1761-1836)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Villemur, Louis de Penne (1761-1836)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1761-01-01">1761</fromDate>
+               <toDate standardDate="1836-12-31">1836</toDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Espagne</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3ntxm58dl-15htmdy8i12g1">Territoires et villes étrangers</placeEntry>
+               <descriptiveNote>
+                  <p>Partisan des carlistes.</p>
+               </descriptiveNote>
+            </place>
+         </places>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msjnw86-64seh0fmw8hj">ministre</term>
+               <descriptiveNote>
+                  <p>Ministre de la Guerre de Charles de Bourbon (1788-1855), infant d'Espagne, prétendant au trône espagnol sous le nom de Charles V. </p>
+               </descriptiveNote>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msjpuqr-66gt6kmedjiv">officier (armée)</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Louis de Penne-Villemur (1761-1836) est un officier militaire français. Émigré à la Révolution, il s'installe ensuite en Espagne et prend parti, lors de la première guerre carliste, pour Charles de Bourbon (1788-1855), infant d'Espagne, qui se proclame roi des Espagnes sous le nom de Charles V en 1833. Louis de Penne devient lieutenant général puis ministre de la Guerre de Charles V.</p>
+            <p>De son premier mariage en 1790 avec Joséphine Angélique Soüyn (†1805), il a un fils, Adolphe-Raymond.</p>
+            <p>Il épouse en secondes noces une Espagnole, Polycarpe Françoise Julienne de Morales Arzé y Reynoso, dont il a également un fils, Guillaume Justinien Théodore de Penne-Villemur.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_051676"
+                      xlink:type="simple">
+            <relationEntry>Penne-Villemur, Adolphe-Raymond de (1791-1862)</relationEntry>
+            <descriptiveNote>
+               <p>
+     Adolphe-Raymond de Penne-Villemur est le fils de Louis de Penne-Villemur.
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

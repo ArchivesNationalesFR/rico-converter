@@ -1,0 +1,76 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050449</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-05-20</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Vanessa ASPART</agent>
+            <eventDescription>F. Clavaud, 20 mai 2014 : modifié le nom, ajouté n° de notice BnF et lien vers notice de H. Demont</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, Fonds de l'Union universelle "Pour supprimer ce crime, la guerre", 42 AS.</p>
+               <p>Notice d'autorité BnF n° FRBNF13565123</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Union universelle "Pour supprimer ce crime : la guerre"</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1921-10-15">15 octobre 1921</fromDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>association</term>
+            </legalStatus>
+         </legalStatuses>
+         <biogHist>
+            <p>Cette association, fondée le 15 octobre 1921 par Henri Demont, avocat à la Cour d’Appel de Paris, avait pour objet la réalisation du plan Henri Demont de 1908, présenté comme thèse à l’Ecole des Hautes études sociales en 1909 et soumis dès septembre 1918 au Président Wilson et aux gouvernements alliés ; il visait à instituer une « vraie Société générale des Nations » « qui aurait aboli à tout jamais la guerre » et aurait été basée sur un droit des nations et une constitution mondiale aux organes législatif, exécutif et judiciaire, comportant des tribunaux internationaux, une police mondiale et des commissions de contrôle. Son siège social était sis au 130, rue de Rennes, Paris-VIe.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:type="simple"
+                      xlink:href="FRAN_NP_050450">
+            <relationEntry>Demont, Henri</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1921-10-15">15 octobre 1921</fromDate>
+               <toDate standardDate="1959-02-20">20 février 1959</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Henri Demont, fondateur de l'Union universelle contre ce crime, la guerre</p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

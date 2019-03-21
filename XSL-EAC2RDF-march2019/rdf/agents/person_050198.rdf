@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050198">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Cloulas, Ivan (1932-2013)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050198_d3814e45"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1932-01-01</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-12-31</RiC:deathDate>
+      <RiC:history xml:lang="fr">Archiviste-paléographe, docteur ès lettres, Ivan Cloulas a été successivement conservateur aux Archives nationales à Paris (1957), membre de l’École française de Rome (1957-1959), membre de la section scientifique de la Casa de Vélasquez à Madrid (1965-1968), directeur des services d’archives de l’Eure (1968-1972) et conservateur des antiquités et objets d’art de l’Eure (1969-1972), membre de la Commission supérieure des monuments historiques (1975), conservateur chargé du service de l’informatique des Archives de France (1972-1985), conservateur en chef (1985) puis général (1990) de la Section ancienne des Archives nationales. Ivan Cloulas a fait partie de différentes sociétés savantes : il a été, en effet, correspondant national de la Société des antiquaires de France (1959), secrétaire adjoint de la Société de l’École nationale des chartes (1962-1965), secrétaire de l’Association pour l’action culturelle en Haute-Normandie (1968), membre correspondant de l’Académie de Rouen et président de l’association Culture et Patrimoine en Limousin (1987-1993). Il préside l’association de la Route historique des Plantagenêts depuis 1992. Ses travaux d’érudition et articles d’histoire médiévale et moderne concernant l’Italie, l’Espagne et la France, particulièrement la Normandie et le Limousin, sont abondants. Citons notamment : 
+     Catherine de Médicis (1979), 
+     Laurent le Magnifique (1982), Henri II (1985), 
+     Charles VIII et le mirage italien (1986), 
+     Les Borgia (1987), 
+      Chambord, rêve des rois (1989), 
+     Jules II (1990), 
+     l’Italie de la Renaissance (1990), 
+     Philippe II d’Espagne (1992), 
+      La France de la Renaissance (1993), 
+     Savonarole ou la Révolution de Dieu (1994), 
+     Diane de Poitiers (1997), et 
+     Bérangère et Richard Cœur de Lion (1999). 
+    </RiC:history>
+      <isni:ISNIAssigned>0000000115595834</isni:ISNIAssigned>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050198-d3812e153"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050198"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050198-d3812e153">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Cloulas, Ivan (1932-2013) et l'ensemble de documents "Fonds Ivan Cloulas (1957-1998)."</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/003548-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050198_d3814e45">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050198-d3812e85"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050198">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050198"/>
+      <RiC:creationDate>2015-09-30</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050198</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000115595834"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050198"/>
+   </rdf:Description>
+</rdf:RDF>

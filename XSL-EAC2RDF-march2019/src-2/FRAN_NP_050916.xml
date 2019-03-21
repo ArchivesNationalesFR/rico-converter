@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050916</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-04-23</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>F. Clavaud, 23 avril 2015 : changé nom, ajouté statut, informations sur l'organisation, indexation fonctions et lieux, n° notice BnF sur l'ANAS</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>CNAHES</p>
+               <p>Notice d'autorité de la BnF sur l'ANAS (n° FRBNF11883046)</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_050916-d4331e82">
+            <part>Association nationale des assistants de service social (France). Comité départemental de Maine-et-Loire</part>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_050916-d4331e88">
+            <part>ANAS</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1944-01-01">1944</fromDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place xml:id="FRAN_place_050916-d4331e108">
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="lieu"
+                           vocabularySource="d3ntb8763b-1xnp7km7qrb2k"
+                           xml:id="FRAN_stdPlaceEntry_050916-d3ntb8763b-1xnp7km7qrb2kd4331e113">Maine-et-Loire (Pays-de-la-Loire , département)</placeEntry>
+            </place>
+         </places>
+         <legalStatuses>
+            <legalStatus>
+               <term>association</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function xml:id="FRAN_activity_050916-d4331e129">
+               <term vocabularySource="d3nyug3e0g-1xzlvri8dg416">action sociale</term>
+               <descriptiveNote>
+                  <p>travail social</p>
+               </descriptiveNote>
+            </function>
+            <function xml:id="FRAN_activity_050916-d4331e141">
+               <term vocabularySource="d5bhvil20q--uuew3ia85vzc">activité associative</term>
+            </function>
+         </functions>
+         <structureOrGenealogy/>
+         <biogHist>
+            <p>L’Association Nationale des Assistants de Service Social (ANAS), a été fondée en 1944 afin de regrouper les assistantes sociales diplômées d’Etat. Après sa création l’ANAS s’est fixée comme tâche d’élaborer un code de déontologie sur le modèle du code de déontologie médicale. Le premier code sera adopté en 1949 mais il n’aboutira pas à la création d’un conseil de l’ordre professionnel. De plus, la création du Conseil Supérieur du Service social (devenu le Conseil Supérieur du Travail Social), mis en place par le décret du 4 avril 1950, met un terme à ce projet. En 2007, l’ANAS compte environ un millier d’adhérents, tous bénévoles, assistant(e)s de Service Social diplômés d’Etat. </p>
+            <p>L'association se compose, au niveau national, d'un Conseil d'administration et d'un bureau. Ce bureau comprend le président de l'association, deux vices-présidents, un secrétaire général et un trésorier.</p>
+            <p>Des commissions existent également au niveau national afin de produire une réflexion et une expertise sur différents sujets : Déontologie, Travail, Formation, Santé, International.</p>
+            <p>La vie de l'association sur le territoire est largement assurée par les sections locales. </p>
+         </biogHist>
+      </description>
+   </cpfDescription>
+</eac-cpf>

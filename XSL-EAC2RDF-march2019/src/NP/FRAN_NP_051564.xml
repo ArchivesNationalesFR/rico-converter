@@ -1,0 +1,100 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051564</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2017-07-13</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Constance DE VERGNETTE DE LAMOTTE</agent>
+            <eventDescription>Il n'existe pas de numéro d'ISNI. Il n'y a pas de notice d'autorité de la BnF, ni de notice Wikipedia pour T. Sallantin.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-12-04</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+            <eventDescription>Recherche identifiant ISNI infructueuse (04/12/2017)</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Archives nationales, 53 AP : fonds Sallantin.</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Reinach (Joseph), Histoire de l'affaire Dreyfus, Paris, 1901-1911, 7 vol.</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Etat sommaire des fonds d'archives privées. Séries AP et AB XIX., Paris, Archives nationales, 2004.</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Site Internet geneanet.org.</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Sallantin, Théodore (1824-1907)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Sallantin, Théodore, René, Louis (1824-1907)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1824-10-24">24 octobre 1824</fromDate>
+               <toDate standardDate="1907-02-03">3 février 1907</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Ce sont les dates du fonds parce que les dates de Sallantin ne sont pas connues.</p>
+            </descriptiveNote>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msjy3v4--oimn0b7kuvf4">magistrat</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Après des études de droit, Théodore Sallantin (1824-1907) est substitut à Rambouillet (1849), puis, quatre mois après, chef du cabinet du ministre de la Justice, Odilon Barrot, et, dès le 31 octobre de la même année, substitut au Tribunal de la Seine. En 1871, il prend la direction du parquet de la Seine. Il est appelé à la Cour de cassation comme conseiller le 2 décembre 1876.</p>
+            <p>Doyen de la Chambre criminelle, il assiste à l'enquête et au deuxième procès du capitaine Dreyfus en 1898-1899, après s'être opposé à la demande en révision du procès de 1891.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_000088"
+                      xlink:type="simple">
+            <relationEntry>Cour de cassation, greffe criminel</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1898-01-01">1898</fromDate>
+               <toDate standardDate="1904-12-31">1904</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_050078"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Sallantin (1898-1904).</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050158">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Estaing, Charles-Henri (comte et amiral d')</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050158_d3782e34"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1729-01-01</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1794-12-31</RiC:deathDate>
+      <RiC:history xml:lang="fr">Né à Ravel (Puy-de-Dôme) le 20 novembre 1729, Charles-Henri, comte d’Estaing entra aux mousquetaires en mai 1738. Lieutenant au régiment de Rouergue en septembre 1745, il fit la campagne de Flandre de 1746 et 1747 et fut promu capitaine en novembre 1747. Colonel au régiment de Rouergue en janvier 1748, blessé au siège de Maestricht, il effectua après la paix une mission en Angleterre. Brigadier d’infanterie en octobre 1756, il partit pour les Indes sur le 
+     Zodiaque dans l’escadre d’Aché, servit dans l’armée commandée par Lally-Tollendal et se distingua en 1758 aux combats de Gondelour, d’Arcote et à la prise du fort Saint-David. Blessé et fait prisonnier à l’attaque de Madras, il fut libéré sur parole et gagna l’île de France où il arma deux navires pour organiser un expédition contre les établissements anglais du golfe Persique. Il détruisit deux forts, prit un bâtiment anglais de 40 canons puis alla ravager les comptoirs anglais de la côte de Sumatra. Maréchal de camp en février 1761, lieutenant général en juillet 1762, il reçut le commandement d’une expédition qui se préparait à Brest contre les colonies portugaises du Brésil, mais qui fut annulée par la signature du traité de Paris. 
+     Nommé lieutenant général des armées navales en décembre 1763, gouverneur général des îles sous le Vent à Saint-Domingue en février 1763, il fut inspecteur général commandant la marine à Brest en 1772 et l’année suivante commandant l’escadre de Toulon. Vice-amiral en février 1777, il reçut en avril 1778 le commandement de l’escadre chargée d’aller porter aide et assistance aux insurgés américains. Il fut ensuite nommé commandant en chef de la grande escadre franco-espagnole réunie à Cadix en vue d’opérations aux Antilles (août 1780). Gouverneur de Touraine en 1785, membre de l’Assemblée des notables de 1787, commandant de la garde nationale de Versailles en 1789, il joua un rôle équivoque dans les journées des 5 et 6 octobre. Nommé amiral de France le 1er janvier 1792, il refusa de servir à terre mais fut à nouveau promu en janvier 1793. Arrêté comme suspect, il fut condamné à mort et exécuté à Paris le 28 avril 1794.</RiC:history>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050158-d3780e100"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050158"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050158_d3782e34">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050158-d3780e64"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050158">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050158"/>
+      <RiC:creationDate>2013-10-16</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050158</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050158"/>
+   </rdf:Description>
+</rdf:RDF>

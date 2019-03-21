@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/051270">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">Génériques (France ; 1987-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051270_d4556e43"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/f7742d1f-1699-45c7-804b-0277189a621d"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-01-01</RiC:beginningDate>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051270-d4554e111"/>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051270-d4554e117"/>
+      <RiC:history xml:lang="fr">Créée en 1987, Génériques est une association loi 1901 spécialisée dans l’histoire et la mémoire de l’immigration, la sauvegarde, la préservation et l’inventaire des archives de l"immigration en France et en Europe. A travers son coeur de metier, Génériques s’est toujours donné pour mission de faire connaitre la manière dont le patrimoine culturel de la France s’est enrichi d’éléments liés aux apports de populations venues d’ailleurs. Dès la naissance de l’association Génériques, ses fondateurs ont conscience de la problématique de la préservation de la mémoire orale de l‘immigration, les sources écrites sur le sujet étant parfois lacunaires, les conditions des migrations ou les conditions de vie parfois précaires des immigrés ayant pu contribuer à leur disparition. Ces témoignages offrent une vision de l’histoire différente des sources institutionnelles, ce qui rend leur conservation dans des centres d’archives plus que nécessaire. ll s’agit de donner une voix à des hommes et des femmes dont la parole a trop souvent été marginalisée, ignorée et oubliée, et ainsi de redonner au témoin sa place dans l’histoire. Pour aller dans ce sens, Génériques favorise la collecte et le classement de fonds d'archives par son équipe d'historiens et d'archivistes, et le don de certains d'entre eux à des institutions patrimoniales, comme le Fonds de l'Association des travailleurs maghrébins de France (ATMF) dont les archives ont été données aux Archives nationales en 2011 (116AS/1-116AS/122, CP/116AS/123).</RiC:history>
+      <RiC:noteOnStructureOrGenealogy xml:lang="fr">Siège social : 34 rue de Cîteaux, 75012 Paris. Contact : 01 49 28 57 75. Télécopie : 01 49 28 09 30. Adresse électronique : generiques2@wanadoo.fr Site Internet : http://www.generiques.org (2010-03-15)</RiC:noteOnStructureOrGenealogy>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050161-d3783e260"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051270-d4554e172"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051270"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051270-d4554e111">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d5bhvil20q--uuew3ia85vzc"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051270-d4554e117">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:description xml:lang="fr">immigration</RiC:description>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d5bhvih1do--ryj2votztf8z"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051270-d4554e172">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Génériques (France ; 1987-....) et l'ensemble de documents ""Histoire et mémoire de l'immigration, mobilisation et lutte pour l'égalité, 1968-1988", campagne d'archives orales collectées par Génériques"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/055910-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051270_d4556e43">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051270-d4554e82"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051270">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/051270"/>
+      <RiC:creationDate>2016-03-14</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_051270</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051270"/>
+   </rdf:Description>
+</rdf:RDF>

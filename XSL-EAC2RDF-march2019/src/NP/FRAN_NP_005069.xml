@@ -1,0 +1,114 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_005069</recordId>
+      <otherRecordId localType="Ancien_identifiant">5102/IG</otherRecordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Import_SIA</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2016-02-24</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Catherine MÉROT</agent>
+            <eventDescription>F. Clavaud, 24 février 2016 : revu le nom</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>introduction de l'IR 20111094</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>France. Inspection générale des archives (1853-2010)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1853-01-01">1853</fromDate>
+               <toDate standardDate="2010-12-31">2010</toDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term vocabularySource="d5blonaxbw--1mt8t42bokzts">service d'administration centrale</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui03cb-w7bln4jba4fn">inspection</term>
+            </function>
+         </functions>
+         <mandates>
+            <mandate>
+               <descriptiveNote>
+                  <p> décret du 21 juillet 1853 : création au sein du ministère de l'Intérieur (section de l'inspection générale des services administratifs)</p>
+                  <p> décret du 21 mars 1884 : transfert au ministère de l'Instruction publique et des Beaux-arts sous le nom d'inspection générale des bibliothèques et archives.</p>
+                  <p>décret du 13 septembre 1945 : séparation d'avec les bibliothèques dans une inspection générale des archives</p>
+                  <p>arrêté du 23 octobre 1979 : place l'inspection sous l'autorité du directeur des Archives de France</p>
+               </descriptiveNote>
+            </mandate>
+         </mandates>
+         <biogHist/>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-later"
+                      xlink:href="FRAN_NP_005564"
+                      xlink:type="simple">
+            <relationEntry>Inspection des patrimoines (direction générale des patrimoines)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2010-01-01">2010</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_005073"
+                      xlink:type="simple">
+            <relationEntry>Direction des archives de France</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1897-01-01">1897</fromDate>
+               <toDate standardDate="2010-12-31">2010</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_026535"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Culture ; Direction des Archives de France ; Inspection générale des Archives (1959-2000)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054825"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Inspection des Archives de france</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

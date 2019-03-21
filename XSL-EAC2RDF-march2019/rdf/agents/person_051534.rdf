@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051534">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Foch, Ferdinand (1851-1929)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051534_d4758e55"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051534_d4758e58"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051534_d4758e61"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051534_d4758e64"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1851-10-02</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1929-03-20</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051534-d4756e160"/>
+      <RiC:history xml:lang="fr">Polytechnicien, commandant (1907) de l’École supérieure de Guerre, Ferdinand Foch (1851-1929) publie des traités militaires exposant ses conceptions stratégiques (Principes de la guerre, 1903 ; Conduite de la guerre, 1904). Commandant du 20e corps d’armée de Nancy, il participe à la bataille des frontières au début de la Première Guerre mondiale (août 1914) qui bloque l’avance des armées allemandes en Lorraine. Placé par Joffre à la tête de la 9e armée, il contribue, par son attaque dans les marais de Saint-Gond, à la première victoire de la Marne (septembre 1914). Il dirige ensuite le groupe d’armées du Nord, coordonnant les actions des troupes françaises, belges et britanniques, qui permettent d’arrêter la « course à la mer » des forces ennemies, puis il livre la bataille d’Artois en 1915. Mis quelque temps à l’écart, après la bataille de la Somme (1916), il remplaçe Pétain à la tête de l’état-major général de l’armée (1917) et est envoyé en Italie pour rétablir la situation après le désastre de Caporetto et y préparer la formation du Conseil suprême de la guerre (conférence de Rapallo, novembre 1917). Face à la gravité de la situation consécutive à l’attaque allemande d’Amiens (1918), Foch est nommé, avec l’appui de Clemenceau et de lord Milner, ministre britannique de la guerre, généralissime des armées alliées (conférence franco-britannique de Doullens, mars 1918). Après avoir arrêté l’offensive de la Somme (avril 1918), il contre-attaque les forces allemandes de Ludendorff à Villers-Cotterêts et remporte la seconde victoire de la Marne (juillet 1918), puis déclenche l’offensive générale (8 août) qui s’achève par la défaite allemande. Promu maréchal de France dès le début du mois d’août, Foch signe l’armistice mettant fin à la Première Guerre mondiale (11 novembre 1918). Président du Conseil supérieur de la guerre (1919), il défend, pendant les négociations pour la paix, la thèse du Rhin comme frontière militaire de la France, mais se heurte à l’opposition des gouvernements alliés. Il laisse des Mémoires de guerre, publiés en 1931, deux ans après sa mort.</RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051534--d4756e150"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb121577755#foaf:Person"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Ferdinand_Foch"/>
+      <isni:ISNIAssigned>0000000080862946</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050313-d3895e453"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051534-d4756e235"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051534"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051534-d4756e160">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051534-d4756e235">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Foch, Ferdinand (1851-1929) et l'ensemble de documents "Fonds du maréchal Foch (XIXe-XXe siècles)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/004949-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051534_d4758e55">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051534-d4756e103"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051534_d4758e58">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051534-d4756e109"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051534_d4758e61">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051534-d4756e115"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051534_d4758e64">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051534-d4756e122"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051534--d4756e150">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Foch, Ferdinand (1851-1929)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050149-d3772e196"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051534">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051534"/>
+      <RiC:creationDate>2017-06-23</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-02-26</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051534</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Article Ferdinand Foch de Wikipédia en français (http://fr.wikipedia.org/wiki/Ferdinand_Foch).</RiC:source>
+      <RiC:source xml:lang="fr">État sommaire des fonds d'archives privées, séries AP et AB XIX, Paris, Centre historique des Archives nationales, 2004, p. 754-755 (notice 414 AP).</RiC:source>
+      <RiC:source xml:lang="fr">Notice d'autorité BnF n° : FRBNF12157775.</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000080862946"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051534"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb121577755"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Ferdinand_Foch"/>
+   </rdf:Description>
+</rdf:RDF>

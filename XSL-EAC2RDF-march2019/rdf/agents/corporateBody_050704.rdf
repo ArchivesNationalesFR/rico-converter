@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/050704">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">Collectif inter associatif pour la réalisation d’activités scientifiques et techniques à l’international (France)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050704_d4181e43"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050704_d4181e46"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050704_d4181e49"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/f7742d1f-1699-45c7-804b-0277189a621d"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1985-01-01</RiC:beginningDate>
+      <RiC:history xml:lang="fr">A partir des années 1960, certaines associations ouvertes aux jeunes, comme Planète sciences (voir notice), développent des « clubs » scientifiques et techniques autour de l’espace et de l’astronomie.  En 1974, les premières expériences réalisées par les jeunes et les animateurs de ces clubs, permettent d’étayer une réflexion qui aboutit à la notion de culture scientifique et technique : en complément à l’activité ludique, les clubs ouvrent les jeunes à une nouvelle culture contemporaine. Cette notion de culture scientifique et technique engendre de nouvelles actions.  En effet, les associations d’éducation populaire interviennent pour une part importante à ce niveau. Il s’agit pour elles de permettre à tous l’accès à la culture scientifique et technique pour maîtriser le monde en mutation qui nous entoure et ne pas se laisser dominer par les technologies.  En 1980, à l’annonce de l’Année internationale de la jeunesse, 18 des plus grandes associations françaises d’éducation et de loisir pour les jeunes se regroupent à l’initiative de de Planète Sciences, sous le sigle de CIRAST : Comité interassociatif pour la réalisation des assises scientifiques et techniques. Les assises ont lieu cinq ans plus tard à Toulouse.  Rassemblant 800 jeunes de 35 pays différents pendant 8 jours en septembre 1985, ce rendez-vous est un énorme succès. En plus de Planète Sciences, participent à l’organisation du premier rendez-vous mondial des sciences et de la jeunesse, de nombreux mouvements d’éducation populaire comme par exemple :   Centre d’entraînement aux méthodes d’éducation active ;   Eclaireuses et éclaireurs de France ;   Fédération nationale Léo-Lagrange ;   Fédération française des Maisons des jeunes et de la culture ;   Fédération nationale des Francas ;   Fédération des oeuvres éducatives et de vacances de l’Education nationale ;   Guides de France ;   Institut coopératif de l’école moderne ;   Ligue française de l’enseignement ;   Scouts de France ;   Société d’astronomie populaire (SAP) ;   Union française des centres de vacances (UFCV) ;   Union nationale des fédérations régionales des Maisons des jeunes et de la culture ;   Union nationale des centres permanents d’initiation à l’environnement (UNCPIE).  Fort du succès des assises, le CIRAST, transformé en Collectif inter associatif pour la réalisation d’activités scientifiques et techniques internationales (CIRASTI), se donne un double but :   promouvoir le développement des exposciences en France ;   préparer la participation française aux exposciences internationales et contribuer à la création de l’organisation internationale prévue à Toulouse : le MILSET.  Des collectifs régionaux coordonnés par le CIRASTI se mettent progressivement en place, dont une des principales actions est de réaliser des exposciences régionales et départementales. L’exposcience est ainsi reconnue comme un moyen privilégié de développement de la pratique de l’activité scientifique et technique chez les jeunes.  Les exposciences connaissent en France un réel développement. Elles sont largement ouvertes aux jeunes des clubs, des Projets d’action éducative (PAE), ou d’autres formes de loisirs scientifiques et techniques. Le rôle du CIRASTI est de coordonner les actions régionales et nationales et les mettre en cohérence dans un programme d’action. </RiC:history>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/050704-d4179e127"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050704-d4179e219"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050704"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050704_d4181e43">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050704-d4179e82"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050704_d4181e46">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050704-d4179e88"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050704_d4181e49">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050704-d4179e94"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050704">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/050704"/>
+      <RiC:creationDate>2014-02-21</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050704</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050704"/>
+   </rdf:Description>
+</rdf:RDF>

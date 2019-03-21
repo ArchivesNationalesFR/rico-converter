@@ -1,0 +1,89 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051232</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-12-04</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marine ZELVERTE</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Radio France. Service des relations avec la presse et le public (1944-1983)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1944-01-01">1944</fromDate>
+               <toDate standardDate="1983-12-31">1983</toDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>société commerciale</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyugp6nd-1m2amxlhij5ib">communication</term>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Le service des relations avec la presse et le public de la RDF, puis de la RTF, puis de l'ORTF, puis de Radio France, dont le nom et les attributions ont peu évolué entre 1944 et 1983 a pour principales missions, d'une part, d'informer les différents médias français et étrangers sur tout ce qui concerne l'institution et, d'autre part, d'informer les directions et les services intéressés sur les réactions des médias vis-à-vis de l'institution.</p>
+            <p>Pour renseigner sur ses réalisations, la RDF, puis la RTF, puis l'ORTF, puis Radio France publie et envoie à la presse des « avant-programmes », des « programmes définitifs », des communiqués ou textes divers concernant plus spécialement une émission ou un fait quelconque sur lequel l'attention du public doit être attirée. Parmi les envois réguliers, une importance particulière revient aux bulletins hebdomadaires d'informations.</p>
+            <p>L'information sur les réactions de la presse se fait essentiellement par les revues de presse établies chaque jour comportant des extraits de la presse quotidienne nationale ou régionale, de la presse périodique, d'information générale ou spécialisée.</p>
+            <p>Les reportages photographiques sur les productions les plus importantes et l'action promotionnelle (campagnes publicitaires tous supports, opérations extérieures, jeux concours, conception d'objets promotionnelles...) sont aujourd'hui assurées par la direction de la communication externe de Radio France ou par les services de communication des chaînes et des formations musicales.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_000347"
+                      xlink:type="simple">
+            <relationEntry>Office de radiodiffusion-télévision française</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1964-01-01">1964</fromDate>
+               <toDate standardDate="1974-12-31">1974</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_005419"
+                      xlink:type="simple">
+            <relationEntry>Radio France</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1975-01-01">1975</fromDate>
+               <toDate standardDate="1983-12-31">1983</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054644"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Informations, Informations Radio, Informations Presse puis Bulletin informations presse. Publication du service en charge des relations avec la presse de la RTF, de l'ORTF puis de Radio France 1950-1983</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,79 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050793</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-06-12</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Raphael BAUMARD</agent>
+            <eventDescription>F. Clavaud, 12 juin 2014 : changé forme du nom, ajouté n°s ISNI et notice BnF</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice d'autorité BnF n° FRBNF11915344</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 2103 4873</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Mayeur, Jean-Marie (1933-2013)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1933-08-28">28 août 1933</fromDate>
+               <toDate standardDate="2013-10-08">8 octobre 2013</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Jean-Marie Mayeur (1933-2013), originaire de Moselle, effectue ses études au lycée Louis-le-Grand puis à Sciences Po Paris. Il soutient sa thèse d'histoire - sous la direction de Paul Renouvin - sur Jules-Auguste Lemire, prêtre puis député du Nord, figure de la démocratie chrétienne à la fin du XIXe siècle. Celle-ci a contribué au renouveau de l'histoire politique en France.</p>
+            <p>Il devient alors spécialiste des questions politico-religieuses de la fin du XIXe siècle et de la première moitié du XXe siècle, et n'hésite pas également à s'impliquer dans les débats les plus contemporains sur la laïcité. Il enseignera successivement aux universités de Lyon II, Paris XII et Paris IV, prenant part aux conseils de direction ou d'administration de celles-ci. Il donne également des cours à l'Institut d'études politiques (IEP) de Paris et dirige l'Institut d'histoire moderne et contemporaine du CNRS de 1978 à 1983</p>
+            <p>Les publications de Jean-Marie Mayeur ont été nombreuses, qu'il s'agisse de ses recherches propres ou de synthèses destinées au grand public. On citera seulement les vastes 
+     <span style="italic">Histoire du christianisme des origines à nos jours</span> (Desclée/Fayard) et le 
+     <span style="italic">Dictionnaire du monde religieux dans la France contemporaine</span> (1985-2000), qu'il a tous deux codirigés. 
+    </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_051351"
+                      xlink:type="simple">
+            <relationEntry>France. Comité d’organisation du bicentenaire du corps préfectoral (1995-1998)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1995-01-01">1995</fromDate>
+               <toDate standardDate="1998-12-31">1998</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>
+     Président du groupe de travail sur l'histoire du corps préfectoral
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

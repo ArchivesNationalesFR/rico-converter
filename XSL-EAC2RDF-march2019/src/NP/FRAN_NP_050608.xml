@@ -1,0 +1,69 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050608</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, fonds d'Eprémesnil (158AP).</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>family</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Eprémesnil (famille Duval d')</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Duval d'Eprémesnil (famille)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Duval de Leyrit (famille)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1401-01-01">XVe siècle</fromDate>
+               <toDate standardDate="1900-12-31">XIXe siècle</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Familles d’origine parlementaire, les Duval d’Eprémesnil et les Duval de Leyrit occupèrent de hautes fonctions dans les territoires français de l’Inde. Jacques II Duval d’Eprémesnil (1672-1748) fut directeur de la Compagnie des Indes. Son fils, Jacques III Duval d’Eprémesnil (1714-1764), fut gouverneur de Madras ; il était également le gendre de Madame Vincens, qui épousa en secondes noces Dupleix. Le frère cadet de Jacques III, Georges Duval de Leyrit, fut gouverneur général de Pondichéry. Fils de Jacques III, Jacques IV Duval d’Eprémesnil (1745-1794), conseiller au Parlement, élu député de la noblesse aux états généraux de 1789, se rendit célèbre pour son attitude violente contre la Cour au début de la Révolution. En 1778, il s’opposa à la réhabilitation de Thomas-Arthur, comte de Lally-Tollendal (1702-1766), accusé de trahison et condamné à mort suite à son échec devant Madras en 1758 et à sa reddition à Pondichéry en 1761. Jacques IV Duval d’Eprémesnil s’éleva ensuite contre la Constitution civile du clergé et fut guillotiné le 22 avril 1794. Son fils, Jacques V Duval d’Eprémesnil (1770-1838) fut colonel d’Empire. Le frère de Jacques V, Hippolyte-Léon d’Eprémesnil dit Bourbonnais (1788-1807), décéda à Varsovie comme sous-lieutenant au 9e régiment de hussards.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_001893"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds d'Éprémesnil (XVe siècle-1900)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

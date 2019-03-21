@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050003">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Rueff, Jacques</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050003_d3654e43"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1896-01-01</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1978-12-31</RiC:deathDate>
+      <RiC:history xml:lang="fr">Polytechnicien, inspecteur des finances en 1923, Jacques Rueff (1896-1980) fut chargé de mission dans le cabinet de Raymond Poincaré, président du Conseil et ministre des Finances en 1926. Il fit partie de la section financière de la Société des nations (1927-1930) et il effectua différentes missions, en Bulgarie, en Grèce et au Portugal. Conseiller financier à l’ambassade de France à Londres de 1930 à 1936, directeur du Mouvement général des fonds au ministère des Finances et conseiller d’État en service extraordinaire de 1936 à 1939, Jacques Rueff fut nommé sous-gouverneur de la Banque de France en 1939. Il démissionna en 1941 et, à la Libération, il devint président de la délégation économique et financière ainsi que conseiller économique auprès du commandement en chef en Allemagne. Délégué de la France à la commission interalliée des réparations à Moscou en 1945, il présida la conférence des réparations à Paris (1945) et l’Agence interalliée des réparations de 1946 à 1952. Rueff fut président de chambre à la cour de justice de la Communauté européenne du charbon et de l’acier (1952) et juge à la Cour de Justice des Communautés européennes (1958-1962). Président du Comité d’experts pour la réforme économique et financière de septembre à décembre 1958, il anima le Comité français pour la suppression des obstacles à l’expansion économique en 1960. Professeur à l’Institut de statistique de l’université de Paris, il enseigna également à l’Institut d’études politiques de 1945 à 1948. Membre de l’Académie française, président de l’Académie des sciences morales et politiques, Jacques Rueff a laissé de nombreuses œuvres : Des sciences physiques aux sciences morales (1922), Théorie des phénomènes monétaires (1927), L’Ordre social (1945), Épître aux dirigistes (1949), l’Age de l’inflation (1964), le lancinant problème de la balance des paiements (1966), les Dieux et les rois (essai sur le pouvoir créateur) (1967), le Péché monétaire de l’Occident (1971), Combats pour l’ordre financier (1972).</RiC:history>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050003"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050003_d3654e43">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050003-d3652e79"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050003">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050003"/>
+      <RiC:creationDate>2013-05-03</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050003</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050003"/>
+   </rdf:Description>
+</rdf:RDF>

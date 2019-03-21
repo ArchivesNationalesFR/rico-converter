@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050056">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Enghien, Louis Antoine de Bourbon (1772-1804 ; duc d')</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050056_d3690e72"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050056_d3690e75"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1772-08-02</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1804-03-22</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050056-d3688e186"/>
+      <RiC:history xml:lang="fr">Fils unique de Louis Henri Joseph de Bourbon, duc de Bourbon (1756-1830) et de Bathilde d'Orléans, Louis Antoine Henri de Bourbon-Condé, duc d’Enghien (1772-1804), émigre dès juillet 1789 avec sa famille. A partir de 1792, il fait partie de l’armée de Condé sous le commandement de son père, le duc de Bourbon, et de son grand-père, le prince de Condé. Quand elle est licenciée en 1801, le duc d’Enghien se retire dans le Grand-Duché de Bade, à Ettenheim, où il vit ouvertement avec la femme de sa vie, Charlotte de Rohan-Rochefort, ses projets de mariage avec la princesse Caroline de Bade ayant été contrariés par le margrave Charles-Frédéric. Il s’y trouve encore en 1804, lorsque les conspirations royalistes contre Bonaparte incitent le Premier consul à se saisir de lui. Enlevé le 15 mars à Ettenheim par une troupe de soldats menés par le général Ordener, le duc d’Enghien est conduit à Vincennes. Traduit devant un conseil de guerre présidé par Pierre-Augustin Hulin, il est, après un simulacre de jugement, condamné à mort et fusillé dans les fossés du château de Vincennes le 21 mars 1804.</RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050056--d3ntxfqxqs-hiibmu39cc86d3688e167"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050056--d3688e176"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb11974335r#foaf:Person"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Louis-Antoine_de_Bourbon-Cond%C3%A9"/>
+      <isni:ISNIAssigned>000000011874011X</isni:ISNIAssigned>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/050054-d3686e236"/>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/050055-d3687e288"/>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/050053-d3685e244"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/050056-d3688e272"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050056"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050056-d3688e186">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjpuqr-66gt6kmedjiv"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/050056-d3688e272">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Enghien, Louis Antoine de Bourbon (1772-1804 ; duc d') et l'ensemble de documents "Correspondance des princes de Condé et du duc de Bourbon (1789-1825)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/000643-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050056_d3690e72">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050056-d3688e133"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050056_d3690e75">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050056-d3688e139"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationtoPlace/050056--d3ntxfqxqs-hiibmu39cc86d3688e167">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Enghien, Louis Antoine de Bourbon (1772-1804 ; duc d')"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/FRAN_RI_005-d3ntxfqxqs-hiibmu39cc86"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/050056--d3688e176">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Enghien, Louis Antoine de Bourbon (1772-1804 ; duc d')"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/050056-d3688e171"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050056">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050056"/>
+      <RiC:creationDate>2013-08-13</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-12-27</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_050056</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Archives nationales, correspondance des princes de Condé et du duc de Bourbon : 34 AP.</RiC:source>
+      <RiC:source xml:lang="fr">Notice BnF : FRBNF11974335</RiC:source>
+      <RiC:source xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Louis-Antoine_de_Bourbon-Cond%C3%A9</RiC:source>
+      <RiC:source xml:lang="fr">Crétineau-Joly (J.), Histoire des trois derniers princes de la maison de Condé. Prince de Condé, Duc de Bourbon, Duc d'Enghien, Paris, 1867, 2 vol.</RiC:source>
+      <RiC:source xml:lang="fr">Robinet (Dr), Robert (Adolphe) et Le Chaplain (J.), Dictionnaire historique et biographique de la Révolution et de l'Empire, 1789-1815, Paris, t. I, p. 455.</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/000000011874011X"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050056"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb11974335r"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Louis-Antoine_de_Bourbon-Cond%C3%A9"/>
+   </rdf:Description>
+</rdf:RDF>

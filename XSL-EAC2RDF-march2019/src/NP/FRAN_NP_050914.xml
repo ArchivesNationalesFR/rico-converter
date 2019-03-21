@@ -1,0 +1,76 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050914</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-04-23</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>F. Clavaud, 21 avril 2015 : changé nom, ajouté statut, fonctions, n° notice BnF</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Site internet de l'EFPP</p>
+               <p>Notice d'autorité BnF n° FRBNF16579885</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>École de formation psycho pédagogique (Paris)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>EFPP</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1946-01-01">1946</fromDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>association</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyug3e0g-1xzlvri8dg416">action sociale</term>
+               <descriptiveNote>
+                  <p>éducation spécialisée</p>
+               </descriptiveNote>
+            </function>
+            <function>
+               <term vocabularySource="d3nyuhrig1--3acyzmp9v988">formation</term>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Créée en 1946, l’EFPP est une école du secteur social et médico-social préparant aux professions d’éducateur spécialisé et d’éducateur de jeunes enfants. Organisme de formation continue, membre de l'Union Nationale des Associations de Formation et de Recherche en Intervention Sociale (UNAFORIS), l’EFPP accompagne des professionnels en exercice dans le cadre de la formation tout au long de la vie. </p>
+            <p>Par ailleurs, elle est gérée par l’association (loi 1901) « Ecole de Formation Psycho Pédagogique ». De plus l'EFPP est associée à l’Institut Catholique de Paris dans le cadre d’un protocole qui définit des valeurs communes dans le respect de la neutralité laïque, et au titre de ce lien elle bénéficie d’une localisation parisienne.</p>
+         </biogHist>
+      </description>
+   </cpfDescription>
+</eac-cpf>

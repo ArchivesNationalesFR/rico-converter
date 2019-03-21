@@ -1,0 +1,90 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050971</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-02-25</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+            <eventDescription>F. Clavaud, 25 février 2015 : création de la notice sur demande d'A. Duru, mission archives des ministères sociaux ; ajout n° ISNI, notice BnF, lien association AIDES, descripteur activité</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice d'autorité BnF n° FRBNF13982015</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 0136 8983</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Marty-Lavauzelle, Arnaud (1946-2007)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1946-02-07">7 février 1946</fromDate>
+               <toDate standardDate="2007-02-12">12 février 2007</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msjarlu--l5x9bzdkopz8">médecin</term>
+               <descriptiveNote>
+                  <p>psychiatre</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Né le 7 février 1946 à Paris et mort le 12 février 2007, Arnaud Marty-Lavauzelle était un médecin psychiatre et militant associatif français engagé dans la lutte contre le sida.</p>
+            <p>En 1969, jeune psychiatre, il se rend au Biafra avec Bernard Kouchner. Touché par l'épidémie de Sida qui emporte plusieurs de ses proches amis, il décide en 1987 de devenir volontaire de l'association AIDES. En 1991, le président et créateur de l'association, Daniel Defert, le choisit pour prendre la relève à titre bénévole. Il développe considérablement cette association dans les années difficiles qui précèdent la généralisation des trithérapies. AIDES présente dans 99 villes devient avec 3 500 volontaires la plus grosse association de lutte contre le sida en Europe. Sa présence médiatique est également importante durant ces années. En 1991, il participe à la mise en place d'Ensemble contre le SIDA. Il quitte la présidence d'AIDES en juillet 1998.</p>
+            <p>Parallèlement à ses activités associatives, il poursuit son travail de psychiatre hospitalier, spécialisé en thérapie familiale. Il travaille notamment sur la question du suicide.</p>
+            <p>Nommé chevalier de la Légion d'honneur en 1998, il participe ensuite à la mise en place du Fonds mondial de lutte contre le sida, afin de favoriser l'accès aux traitements dans les pays émergents. Il est nommé conseiller à la mairie de Paris pour les questions de coopération par Bertrand Delanoë.</p>
+            <p>Arnaud Marty-Lavauzelle qui était séropositif depuis une vingtaine d'années meurt du sida à l'âge de 61 ans, dans la nuit du 12 au 13 février 2007. Le ministre de la Santé et des Solidarités, Xavier Bertrand lui rend alors hommage en soulignant que « son témoignage de courage, de force, de vie, son combat pour une vie normale, pour l´évolution des comportements et des regards resteront dans nos mémoires ». Il rappelle également « son rôle crucial dans la promotion de la réduction des risques auprès des usagers de drogues ainsi que dans l´accès aux soins et aux traitements pour tous en France mais aussi dans les pays du Sud ».</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_009217"
+                      xlink:type="simple">
+            <relationEntry>AIDES (France)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1987-01-01">1987</fromDate>
+               <toDate standardDate="1998-12-31">1998</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>A. Marty-Lavauzelle, memrbe puis président de l'association AIDES de 1987 à 1998.</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054540"
+                           xlink:type="simple">
+            <relationEntry localType="archival">ASSOCIATION AIDES : PAPIERS ET DOCUMENTS réunis par Arnaud Marty-Lavauzelle sur le thème du sida 1991-2001</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

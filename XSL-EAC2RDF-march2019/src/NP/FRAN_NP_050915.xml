@@ -1,0 +1,75 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050915</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-04-23</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>F. Clavaud, 23 avril 2015 : changé nom, ajouté statut, indexation fonctions</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>CNAHES</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>École normale sociale de l'ouest (Angers, Maine-et-Loire ; ....-2009)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>ENSO</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1901-01-01">XXe siècle</fromDate>
+               <toDate standardDate="2009-01-01">01 janvier 2009</toDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>association</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyug3e0g-1xzlvri8dg416">action sociale</term>
+               <descriptiveNote>
+                  <p>travail social</p>
+               </descriptiveNote>
+            </function>
+            <function>
+               <term vocabularySource="d3nyuhrig1--3acyzmp9v988">formation</term>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Association installée sur Angers depuis longtemps, l'École normale sociale de l'Ouest (ENSO) avait en gestion deux centres de formation de travailleurs sociaux, l'un sur Angers, et l'autre à Rezé (Loire-Atlantique). L'ENSO était le seul établissement formant des assistants sociaux dans la région des Pays de la Loire. En janvier 2009, elle fusionne avec d'autres associations pour constituer l'Association régionale des Instituts de formation en travail social (ARIFTS). </p>
+         </biogHist>
+      </description>
+   </cpfDescription>
+</eac-cpf>

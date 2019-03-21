@@ -1,0 +1,113 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051359</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-08-16</eventDateTime>
+            <agentType>human</agentType>
+            <agent>null MISSION.REFERENTIELS</agent>
+            <eventDescription>Elsa Camus, 11 août 2016 : notice rédigée par Evelyne Van den Neste, Mission Présidence de la République</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb133373754</p>
+               <p>Notice Wikipedia : https://fr.wikipedia.org/wiki/Laurence_Boone</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 3915 3806</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Boone, Laurence (1969-....)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1969-05-15">15 mai 1969</fromDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d3nyu9s4o0--xm3ygup3bbb1">banquier</term>
+               <descriptiveNote>
+                  <p>analyste économique et financier</p>
+               </descriptiveNote>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d-11hasr639--1mmaoyj7hl5zc">membre du cabinet du président de la République</term>
+               <dateRange>
+                  <fromDate standardDate="2014-07-01">juillet 2014</fromDate>
+                  <toDate standardDate="2016-03-31">mars 2016</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>conseiller économie</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>
+               <span style="bold">Diplômes</span>
+            </p>
+            <list>
+               <item>Titulaire d’un master d’économie et d’un master d’économétrie ;</item>
+               <item>Diplômé de l’Institut d’études politiques de Paris ;</item>
+               <item>Ancien élève de l’Ecole nationale d’administration (promotion Léopold Sédar Senghor) ;</item>
+               <item>Titulaire d’un diplôme d’études approfondies d’analyse quantitative et de modélisation PhD d’économétrie appliquée de la London Business School</item>
+            </list>
+            <p/>
+            <p>
+               <span style="bold">Carrière</span>
+            </p>
+            <list>
+               <item>Analyste à Merill Lynch Asset Management, de 1995 à 1996 ;</item>
+               <item>Chercheur au Centre d’études prospectives et d’informations internationales (CEPII), de 1996 à 1998 ;</item>
+               <item>Economiste à l’Organisation de coopération et de développement économique (OCDE), de 1998 à 2004 ;</item>
+               <item>Chef économiste à Barclays Capital France, de 2004 à 2011 ;</item>
+               <item>Chef économiste Europe de Bank of America Merill Lynch, de 2011 à 2014 ;</item>
+               <item>Gérant à la banque Rothschild et Compagnie, de 2009 à 2010 ;</item>
+               <item>Conseillère économie et Finances à la Présidence de la République, de 2014 (arrêté du 12 juillet 2014) à 2016 (arrêté du 1er mars 2016)</item>
+            </list>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_000165"
+                      xlink:type="simple">
+            <relationEntry>École nationale d'administration</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2002-01-01">2002</fromDate>
+               <toDate standardDate="2004-12-31">2004</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>
+      Promotion Léopold Sédar Senghor 
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

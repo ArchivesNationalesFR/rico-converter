@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050906">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Straus, Pierre (1915-1992)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050906_d4324e45"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1915-01-01</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1992-01-29</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050906-d4322e108"/>
+      <RiC:history xml:lang="fr">Pierre Straus est né à Angers en 1915. Il passe un baccalauréat de droit en 1936, avant de se tourner vers la médecine. Pendant la seconde guerre mondiale, il est fait prisonnier par les Allemands. Libéré en 1941, il rejoint la résistance et aide par ce biais de nombreuses personnes à échapper à la Gestapo. Il termine la guerre en tant que médecin au dispensaire du siège de l’hôtel de ville de Paris. Après la guerre, Pierre Straus termine ses études de médecine. Il est interne des hôpitaux de Paris dès 1946. Son activité en pédiatrie sociale commence en 1950, quand l’Organisation Internationale des Réfugiés l’envoie en Australie pour convoyer des familles entières de personnes déplacées. Puis, il est médecin consultant dans les camps de réfugiés en Italie et en Allemagne. De retour en France, il exerce la pédiatrie dans divers hôpitaux Parisiens. Ses publications cliniques sont nombreuses mais l’originalité de son parcours réside surtout dans ses travaux de pédiatrie sociale dont il est le principal initiateur. C’est ainsi qu’en 1961 il mène une vaste enquête sur l’hospitalisation des enfants dans la région parisienne, suivie par une étude sur la santé des enfants de travailleurs migrants. C’est pour eux et leurs parents qu’il met en place des consultations hospitalières du soir avec des interprètes. En travaillant sur les raisons de l’hospitalisation des enfants, son attention est attirée par la maltraitance. Cette douloureuse question va l’obséder de 1965 jusqu’à sa mort. Le problème de la maltraitance le pousse à faire des rencontres multiples tant en France qu’à l’étranger. Pierre Straus est à l’origine de plusieurs associations importantes dont la plus célèbre est l’Association française d'information et de recherche sur l'enfance maltraitée (AFIREM) fondée en 1980, et le fondateur de la Société internationale pour la prévention des mauvais traitements envers les enfants (IPSCAN). Pierre Straus décède dans la région parisienne, le 29 janvier 1992, à 76 ans. </RiC:history>
+      <isni:ISNIAssigned>0000000027722987</isni:ISNIAssigned>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050906"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/050906-d4322e108">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">pédiatre</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjarlu--l5x9bzdkopz8"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050906_d4324e45">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050906-d4322e85"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050906">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050906"/>
+      <RiC:creationDate>2015-04-23</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050906</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000027722987"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050906"/>
+   </rdf:Description>
+</rdf:RDF>

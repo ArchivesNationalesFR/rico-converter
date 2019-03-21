@@ -1,0 +1,102 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012758</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE02668</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Faustin FOIRET, Une corporation parisienne pendant la Révolution, les notaires, Paris, 1912, p. 293-297</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Bancal des issarts, Jean-Henri</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1783-10-11">11 octobre 1783</fromDate>
+               <toDate standardDate="1788-10-21">21 octobre 1788</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvow9c3--1ln2rhczl581f">saint-eustache (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgrw7m-1ulx41q7n6nbj">saint-eustache (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzai8akv-16nhfbh8wayo7">four (rue du)</placeEntry>
+               <placeEntry localType="nomLieu">rue du Four, près Saint-Eustache</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1783-10-11">11 octobre 1783</fromDate>
+                  <toDate standardDate="1788-10-21">21 octobre 1788</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Né à Saint-Martin-de-Londres (Hérault) le 3 novembre 1750</p>
+            <p>élu à la Convention, il siège parmi les Girondins et fréquente Madame Rolland</p>
+            <p>envoyé comme représentant en mission auprès de Dumouriez, il est livré par celui-ci aux autrichiens et ne rentre en France qu'en décembre 1795</p>
+            <p>membre du Conseil des Cinq Cents en 1796-1797</p>
+            <p>mort en juin 1826 à Clermont-Ferrand</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010184"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale LVII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1783-10-11">11 octobre 1783</fromDate>
+               <toDate standardDate="1788-10-21">21 octobre 1788</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XCII/940, 18 septembre 1788, vente d'office à Pierre-Nicolas Delacour, principal clerc de maître Bro)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052208"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Image du répertoire du notaire Jean Henri Bancal des Issarts pour l'étude LVII</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

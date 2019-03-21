@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012217</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE02074</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_012217-d2314e67">
+            <part>Desmeure, François</part>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_012217-d2314e73">
+            <part>Desmeure, François Claude</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1727-05-16">16 mai 1727</fromDate>
+               <toDate standardDate="1756-04-04">4 avril 1756</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place xml:id="FRAN_place_012217-d2314e102">
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse"
+                           vocabularySource="d3nyvpbcz5--gbtglbh0f8xm"
+                           xml:id="FRAN_stdPlaceEntry_012217-d3nyvpbcz5--gbtglbh0f8xmd2314e107">saint-sauveur (paroisse)</placeEntry>
+               <placeEntry localType="quartier"
+                           vocabularySource="d3nyvgrksc--1qyg7stzts74f"
+                           xml:id="FRAN_stdPlaceEntry_012217-d3nyvgrksc--1qyg7stzts74fd2314e110">saint-denis (quartier)</placeEntry>
+               <placeEntry localType="voie"
+                           vocabularySource="d3nzd1u57i-1h2qpz5x5m5i3"
+                           xml:id="FRAN_stdPlaceEntry_012217-d3nzd1u57i-1h2qpz5x5m5i3d2314e113">saint-denis (rue)</placeEntry>
+               <placeEntry localType="nomLieu" xml:id="FRAN_placeEntry_012217-d2314e116">rue Saint-Denis, près de l'église Saint-Sauveur</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function xml:id="FRAN_activity_012217-d2314e123">
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1727-05-16">16 mai 1727</fromDate>
+                  <toDate standardDate="1756-04-04">4 avril 1756</toDate>
+               </dateRange>
+            </function>
+         </functions>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010157"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_012217-d2314e142">
+            <relationEntry>Etude notariale XXX</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1727-05-16">16 mai 1727</fromDate>
+               <toDate standardDate="1756-04-04">4 avril 1756</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other" xml:id="FRAN_relation_012217-d2314e157">
+            <relationEntry localType="archival">ET/LXXIII/680, 5 mai 1727, traité d'office de notaire entre Hugues Cuillerier et François Claude Desmeures</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041841"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_012217-d2314e163">
+            <relationEntry localType="archival">Minutes et répertoires du notaire François DESMEURE, 19 mai 1727 - 4 avril 1756 (étude XXX)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

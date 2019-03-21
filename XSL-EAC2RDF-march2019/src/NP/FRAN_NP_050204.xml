@@ -1,0 +1,93 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050204</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-03-31</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Vanessa ASPART</agent>
+            <eventDescription>F. Clavaud, 31 mars 2014 : modification des dates, ajout identifiant ISNI, n° notice d'autorité BnF et lien d'association avec notice EHESS</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, Fonds Jean-Louis Flandrin (XXe siècle), 624 AP.</p>
+               <p>Notice d'autorité BnF n° FRBNF11902888</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 1479 7936</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Flandrin, Jean-Louis</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1931-07-04">4 juillet 1931</fromDate>
+               <toDate standardDate="2001-08-08">8 août 2001</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Après des études secondaires à Alger et des études supérieures à Paris, Jean-Louis Flandrin (1931-2001) fut reçu à l’agrégation d’histoire en 1956. Enseignant aux lycées de Constantine puis d’Alger, il entreprit, en 1960, une thèse d’histoire sur le thème de l’histoire de la sexualité et de la famille. Sa 
+     <span style="italic">Contribution à une histoire de l’amour et de la sexualité en Occident</span> lui valut l’obtention du doctorat d’État sur travaux à Paris IV en 1979. Chef de travaux à l’École pratique des hautes études, en 1964, puis maître-assistant à la Sorbonne de 1967 à 1981, "visiting fellow" au Davis Center de Princeton en 1976-1977, Jean-Louis Flandrin participa à la création du centre universitaire de Vincennes en 1968 et enseigna à l’Université de Paris VIII jusqu’en 1995. Directeur d’études à l’École des hautes études en sciences sociales, il y anima un séminaire de 1983 à 2001. Spécialiste mondialement connu de la sexualité et de la famille, Jean-Louis Flandrin publia 
+     <span style="italic"> L’Église et le contrôle des naissances</span> (1970), 
+     <span style="italic">Les Amours paysannes</span>
+               <span style="italic">XVIe-XIXe siècles</span> (1975), 
+     <span style="italic"> Familles. Parenté, maison, sexualité dans l’ancienne société</span> (1976), 
+     <span style="italic"> Le Sexe et l’Occident</span> (1981) et 
+     <span style="italic">Un temps pour embrasser</span> (1983). Il se tourna ensuite vers l’histoire des goûts et des pratiques alimentaires. Il fut ainsi l’auteur d’une monumentale 
+     <span style="italic">Histoire de l’alimentation</span>, ouvrage collectif de quarante signatures codirigée avec Massimo Montanari (1996) ainsi que de 
+     <span style="italic">Tables d’hier</span>, 
+     <span style="italic"> tables d’ailleurs</span>. 
+     <span style="italic"> Histoire et ethnologie du repas</span> (1999). 
+    </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_003773"
+                      xlink:type="simple">
+            <relationEntry>École des hautes études en sciences sociales</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1983-01-01">1983</fromDate>
+               <toDate standardDate="2001-08-08">8 août 2001</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>
+      J.-Louis Flandrin, directeur d'études à l'EHESS, y anime un séminaire de 1983 à 2001. 
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_003550"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Jean-Louis Flandrin (XXe siècle)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

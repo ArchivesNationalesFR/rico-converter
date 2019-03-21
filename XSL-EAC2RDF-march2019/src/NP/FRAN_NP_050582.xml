@@ -1,0 +1,106 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050582</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-02-04</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Eric LANDGRAF</agent>
+            <eventDescription>F. Clavaud, 4 février 2014 : changement forme du nom</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2014-02-04</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-08-03</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Virginie GREGOIRE</agent>
+            <eventDescription>- Ajout source, ajout lien familial avec NP Inès de Bourgoing, révision notice historique concernant Inès de Bourgoing. Pas de notice wikipédia.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2018-03-09</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>- Archives nationales : fonds Fortoul (246AP).</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>family</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Fortoul (famille)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1811-08-04">4 août 1811</fromDate>
+               <toDate standardDate="1885-12-31">1885</toDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Jausiers</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3ntb71ye9-13lxy96a9y8yw">Alpes-de-Haute-Provence (Provence-Alpes-Côte-d'Azur , département)</placeEntry>
+            </place>
+         </places>
+         <biogHist>
+            <p>Les Fortoul sont originaires de Jausiers, dans la vallée de Barcelonnette où ils exercent la profession de notaire royal. </p>
+            <p>Hippolyte Fourtoul (1811-1856), fils d’Antoine Fortoul et de Gabrielle Ripert, après des études de droit, est nommé professeur de littérature française à la faculté des lettres de Toulouse, et en 1846 à la faculté d’Aix-en-Provence où il devient doyen. Il est élu le 14 janvier 1849 à l’Assemblée constituante par le département des Basses-Alpes, et en 1850 à l’Assemblée législative. Le 26 octobre 1851 il est nommé ministre de la Marine. Du 3 décembre 1851 jusqu’à sa mort le 7 juillet 1856 il occupe le portefeuille de ministre de l’Instruction publique et des Cultes.</p>
+            <p>Son fils Joseph Fortoul († 1900), polytechnicien, chef d’état-major du général Négrier pendant la campagne du Tonkin en 1883-1885, épouse en 1880 Inès de Bourgoing (1862-1953), filleule de l’impératrice Eugénie avec qui il a trois enfants : Antoine, Mathieu et Victoire.</p>
+            <p>Devenue veuve en 1900, Inès de Bourgoing se remarie en secondes noces avec le général futur maréchal Lyautey.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_050581"
+                      xlink:type="simple">
+            <relationEntry>Fortoul, Hippolyte (1811-1856)</relationEntry>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_051642"
+                      xlink:type="simple">
+            <relationEntry>Bourgoing, Inès de (1862-1953)</relationEntry>
+            <descriptiveNote>
+               <p/>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_051646"
+                      xlink:type="simple">
+            <relationEntry>Lyautey, Hubert (1854-1934 ; maréchal)</relationEntry>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

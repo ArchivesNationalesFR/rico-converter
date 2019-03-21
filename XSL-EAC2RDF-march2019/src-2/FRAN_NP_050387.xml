@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050387</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-10-08</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Virginie POTIN</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_050387-d3950e64">
+            <part>Caillaux, Joseph</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1863-01-01">1863</fromDate>
+               <toDate standardDate="1944-12-31">1944</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Fils d’Eugène Caillaux, qui fut lui-même parlementaire et ministre, Joseph Caillaux (1863-1944) fut député (Sarthe, 1898), plusieurs fois ministre des Finances et il contribua à faire voter, par la Chambre, l’impôt progressif sur le revenu. Président du Conseil (1911), il négocia avec l’Allemagne le traité de novembre après l’incident d’Agadir, puis reprit le portefeuille des Finances dans le cabinet Doumergue (1913). Sa politique d’impôt sur le revenu lui valut d’être violemment attaqué par le journal Le Figaro (soutenu par Barthou et Poincaré). L’assassinat du directeur du Figaro, Calmette, par sa femme, l’obligea à donner sa démission (1914). Envoyé en mission en Amérique du Sud, puis en Italie au cours de la Première Guerre mondiale, il fut suspecté par les nationalistes et arrêté par le gouvernement Clemenceau (1917). Condamné par la Haute Cour de justice pour aide involontaire à l’ennemi (1920), il fut amnistié quelques années plus tard. Réélu député, il fut nommé ministre des Finances dans le cabinet Painlevé (1925). Sénateur (1925), il resta président de la commission des Finances jusqu’en 1940. Il est l’auteur de Mémoires.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_052068"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_050387-d3950e94">
+            <relationEntry>Parti radical (France ; 1901-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1913-01-01">1913</fromDate>
+               <toDate standardDate="1914-12-31">1914</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>
+     Président du parti radical de 1913 à 1914.
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

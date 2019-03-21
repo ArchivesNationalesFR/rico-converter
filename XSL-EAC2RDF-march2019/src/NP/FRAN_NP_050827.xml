@@ -1,0 +1,86 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050827</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-07-09</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+            <eventDescription>Notice créée sur demande de la mission des archives auprès des services du Premier ministre (C. Martin)</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Commission de rénovation et de déontologie de la vie publique (France)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Commission Jospin</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="2012-07-16">16 juillet 2012</fromDate>
+               <toDate standardDate="2012-11-09">9 novembre 2012</toDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>organisme consultatif</term>
+            </legalStatus>
+         </legalStatuses>
+         <mandates>
+            <mandate>
+               <descriptiveNote>
+                  <p>Décret n°2012-785 (NOR : PRMX1229595D) portant création d'une commission de rénovation et de déontologie de la vie publique</p>
+               </descriptiveNote>
+            </mandate>
+         </mandates>
+         <biogHist>
+            <p>La Commission de rénovation et de déontologie de la vie publique est créée par décret le 16 juillet 2012. Elle est présidée par Lionel Jospin, ancien Premier ministre. Sa création avait été annoncée par François Hollande, président de la République, lors de son discours du 14 juillet 2012. </p>
+            <p>La Commission compte 14 membres nommés de manière paritaire. Elle regroupe des personnalités issues du monde universitaire ou possédant une expérience forte du fonctionnement de l’Etat et de la vie publique comme Roselyne Bachelot, ancienne ministre, ou Olivier Schrameck, président de section au Conseil d’Etat.</p>
+            <p>La « Commission Jospin », comme elle est surnommée, reprend des sujets de réflexion de précédentes instances dont le Comité de réflexion et de proposition sur la modernisation et le rééquilibrage des institutions (« Commission Balladur ») de 2007, ou encore la Commission Vedel de 1992. En effet, comme le précise la lettre de mission de François Hollande à Lionel Jospin, la Commission a vocation à formuler des propositions de réformes sur différents thèmes :</p>
+            <p>- le déroulement de l’élection présidentielle : parrainage citoyen des candidats, modes de financement de la campagne, règles d’expression des candidats dans les médias ;</p>
+            <p>- les règles applicables aux élections législatives et sénatoriales : calendrier, insertion d’une part de proportionnelle ;</p>
+            <p>- le statut juridictionnel du chef de l’Etat ;</p>
+            <p>- la suppression de la Cour de justice de la République ;</p>
+            <p>- le non-cumul des mandats ;</p>
+            <p>- la prévention des conflits d’intérêts.</p>
+            <p>Le rapport de la Commission est remis au président de la République le 9 novembre 2012. Il regroupe 35 propositions de réforme concernant les thèmes abordés. Certaines mesures ont été mises en œuvre de manière effective. Les lois du 22 juillet 2013 relative à la représentation des Français établis hors de France et du 2 août 2013 relative à l’élection des sénateurs ont été promulguées. C’est également le cas de la loi organique et de la loi du 14 février 2014 interdisant le cumul de fonctions exécutives locales avec un mandat de député, de sénateur ou de représentant au Parlement européen. A l’inverse, plusieurs mesures phares du rapport n’ont pas été mises en oeuvre, dont le statut pénal du chef de l’Etat.</p>
+            <p>A la suite de l’affaire Cahuzac, enfin, la loi organique et la loi du 11 octobre 2013 relatives à la transparence de la vie publique ont été promulguées. La Haute autorité pour la transparence de la vie publique qui est alors instaurée est chargée de vérifier les déclarations de patrimoine de certains élus, reprenant ainsi des propositions de la Commission Jospin.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:type="simple"
+                      xlink:href="FRAN_NP_000002">
+            <relationEntry>Premier ministre</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2012-07-16">16 juillet 2012</fromDate>
+               <toDate standardDate="2012-11-09">9 novembre 2012</toDate>
+            </dateRange>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

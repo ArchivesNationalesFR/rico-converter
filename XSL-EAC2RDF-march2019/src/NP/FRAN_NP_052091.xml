@@ -1,0 +1,118 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_052091</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2018-08-08</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Raphaëlle BOISSARD</agent>
+            <eventDescription>Pas de n° ISNI. Pas de notice BnF.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2018-08-27</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Vanessa SZOLLOSI</agent>
+            <eventDescription>P. Charbonnier, 27/08/2018 : ajout liens légifrance</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>France. Ministère du Travail. Direction générale du travail. Service de l’animation territoriale de la politique du travail et de l’action de l’inspection du travail. Département de l’appui au système d’inspection du travail (2015-....)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>DASIT</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="2015-07-22">22 juillet 2015</fromDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>service d'administration centrale</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui03cb-w7bln4jba4fn">inspection</term>
+            </function>
+            <function>
+               <term vocabularySource="d5bhvimhyx--nnjhi6uln1zi">travail</term>
+            </function>
+         </functions>
+         <mandates>
+            <mandate>
+               <descriptiveNote>
+                  <p>Arrêté de création du 22 juillet 2015 relatif à l'organisation de la direction générale du travail, article 5. (https://www.legifrance.gouv.fr/eli/arrete/2015/7/22/ETST1517477A/jo/texte)</p>
+               </descriptiveNote>
+            </mandate>
+         </mandates>
+         <biogHist>
+            <p>Le département du pilotage du système d’inspection du travail (DASIT) est instauré par l'arrêté du 22 juillet 2015 relatif à l’organisation de la direction générale du travail.</p>
+            <p>Il est chargé de :</p>
+            <list>
+               <item>préparer et veiller à la mise en œuvre, par les services déconcentrés, des orientations nationales de la politique du travail ; dans ce cadre, il détermine, en lien avec les autres services de la direction, la programmation nationale du contrôle, en assure la coordination et veille à la cohérence globale de l'action de l'inspection du travail ;</item>
+               <item>assurer, dans le cadre des procédures et du programme budgétaires, l'amélioration de la qualité de l'emploi et des relations du travail, le suivi et le bilan des actions déconcentrées, le dialogue de gestion avec les services déconcentrés et le contrôle de gestion ;</item>
+               <item>concevoir et mettre en œuvre les modalités de l'animation des services déconcentrés dans le champ des relations du travail et de la santé au travail ;</item>
+               <item>définir, en liaison avec les autres directions du ministère, les indicateurs permettant d'assurer le suivi de la politique du travail, contribuer à l'évaluation de cette politique et de l'action de l'inspection du travail en lien avec la DARES ;</item>
+               <item>assurer l'observation des suites pénales réservées aux procès-verbaux dressés par les services d'inspection du travail dans le cadre du contrôle de la législation du travail.</item>
+            </list>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_052094"
+                      xlink:type="simple">
+            <relationEntry>France. Ministère du Travail. Direction générale du travail. Service de l’animation territoriale de la politique du travail et de l’action de l’inspection du travail (2006-)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2015-07-22">22 juillet 2015</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>fait partie de</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-child"
+                      xlink:href="FRAN_NP_052090"
+                      xlink:type="simple">
+            <relationEntry>France. Ministère du Travail. Direction générale du travail. Département de l’appui au système d’inspection du travail. Bureau des outils méthodologiques et de la légalité du cadre d’intervention du système d’inspection du travail (2015-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2015-07-22">22 juillet 2015</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-earlier"
+                      xlink:href="FRAN_NP_052093"
+                      xlink:type="simple">
+            <relationEntry>France. Ministère du Travail. Direction générale du travail. Service de l’animation territoriale de la politique du travail et de l’action de l’inspection du travail. Département du soutien et de l’appui au contrôle (2006-2015)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2015-07-22">22 juillet 2015</fromDate>
+            </dateRange>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

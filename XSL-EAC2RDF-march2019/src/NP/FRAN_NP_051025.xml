@@ -1,0 +1,150 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051025</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-05-22</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Magali LACOUSSE</agent>
+            <eventDescription>F. Clavaud, 22 mai 2015 : changé nom, ajouté descripteurs fonction et n°s des 2 notices BnF</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-07-29</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID-DORMIEN</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2018-07-10</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+            <eventDescription>P. Charbonnier, 10 juillet 2018 : ajout identifiant ISNI</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Notices d'autorité BnF n°s FRBNF15031207 et FRBNF12484757</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Archives nationales, fonds de l'Union nationale France-Russie-CEI-États-Baltes (212AS).</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Site internet de l'association : http://francerussie.cei.free.fr/</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 9061 7901</entityId>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Union nationale France-Russie-Communauté des Etats indépendants-États baltes (France) (1993-....)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>UNFR-CEI-ÉB</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Union nationale France-Russie-CEI-Etats baltes</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1993-05-16">16 mai 1993</fromDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Russie</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3ntxlhlzu--xk25nxgg86yz">Russie</placeEntry>
+               <descriptiveNote>
+                  <p>C.E.I.</p>
+               </descriptiveNote>
+            </place>
+         </places>
+         <legalStatuses>
+            <legalStatus>
+               <term>association</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d5bhvil20q--uuew3ia85vzc">activité associative</term>
+            </function>
+            <function>
+               <term vocabularySource="d3nyuidsbr-1umshw9gnudo9">relations internationales</term>
+               <descriptiveNote>
+                  <p>amitié entre France, Russie, CEI et états baltes</p>
+               </descriptiveNote>
+            </function>
+         </functions>
+         <mandates>
+            <mandate>
+               <descriptiveNote>
+                  <p>Statuts : adoptés à Ivry-sur-Seine (94) le 16 mai 1993.</p>
+               </descriptiveNote>
+            </mandate>
+         </mandates>
+         <structureOrGenealogy/>
+         <biogHist>
+            <p>Cette fédération d'associations a été créée en 1993.</p>
+            <p>Ses objectifs sont les suivants : </p>
+            <list>
+               <item>promouvoir des formes de coopérations spécifiques</item>
+               <item>agir pour la pousuite des relations traditionnelles et amicales entre les peuples de France, de la Fédération de Russie, de la CEI et des Etats baltes.</item>
+               <item>agir dans les conditions nouvelles des peuples de France, de la Fédération de Russie, de la CEI et des Etats baltes pour la connaissance de leurs situations, de leurs besoins, de leurs langues et de leurs cultures, en vue d'une meileure compréhension réciproque.</item>
+               <item>mieux faire connaître la France, sa langue, sa culture, sa diversité.</item>
+            </list>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-earlier"
+                      xlink:href="FRAN_NP_050171"
+                      xlink:type="simple">
+            <relationEntry>Association France-URSS (1945-1992)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1993-05-16">16 mai 1993</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb12484757n"
+                      xlink:type="simple">
+            <relationEntry>Union nationale France-Russie-CEI</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1993-05-16">16 mai 1993</fromDate>
+               <toDate standardDate="2003-01-20">20 janvier 2003</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice d'autorité BnF</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_004510"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds de l'association France-URSS (1932, 1945-1992)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

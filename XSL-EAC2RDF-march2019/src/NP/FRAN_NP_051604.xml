@@ -1,0 +1,106 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051604</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2017-07-20</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Alexis DOUCHIN</agent>
+            <eventDescription>ISNI inexistant. Notice d’autorité BnF inexistante.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-08-01</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Historique rédigé d’après l’État sommaire des fonds d’archives privées, séries AP (1 à 629 AP) et AB XIX, Paris, Centre historique des Archives nationales, 2004, p. 487.</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>« Maison de Plœuc », in Wikipédia, encyclopédie collaborative, en ligne : https://fr.wikipedia.org/wiki/Maison_de_Pl%C5%93uc (consulté en juillet 2017).</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>family</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Plœuc (famille de ; 1401-1900)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Plœuc de Kerharo (famille de)</part>
+            <useDates>
+               <dateRange>
+                  <fromDate standardDate="1401-01-01">1401</fromDate>
+                  <toDate standardDate="1900-12-31">1900</toDate>
+               </dateRange>
+            </useDates>
+         </nameEntry>
+         <nameEntry>
+            <part>Plœuc de Timeur (famille de)</part>
+            <useDates>
+               <dateRange>
+                  <fromDate standardDate="1401-01-01">1401</fromDate>
+                  <toDate standardDate="1900-12-31">1900</toDate>
+               </dateRange>
+            </useDates>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1401-01-01">1401</fromDate>
+               <toDate standardDate="1900-12-31">1900</toDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Plœuc-sur-Lié</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3ntftgwkq-10aox4wrqb0e6">Ploeuc-sur-Lié (Côtes-d'Armor)</placeEntry>
+            </place>
+         </places>
+         <biogHist>
+            <p>Originaire du bourg de Plœuc-sur-Lié (Côtes-d’Armor), la famille de Plœuc tire son origine des ducs de Penthièvre dont elle semble être une branche cadette. Les Plœuc, qui apparaissaient comme purement terriens aux XVe et XVIe siècles, devinrent marins et militaires avec Vincent de Plœuc, chevalier de Kerharo (mort en 1753), capitaine de vaisseau. Son frère cadet, l’abbé Hyacinthe (1662-1739) fut pour sa part évêque de Quimper, de 1707 à 1739. Au XIXe siècle, Alexandre-Marie-Sébastien, marquis de Plœuc (1815-1888), après avoir gravi les échelons de l’Inspection des finances et avoir été l’un des fondateurs de la Banque ottomane, de 1857 à 1865, devint sous-gouverneur de la Banque de France. Populaire pour avoir su sauvegarder le stock d’or de la Banque de France en s’entendant avec le ministre des Finances de la Commune, le Breton Meslay, le marquis de Plœuc fut élu député de Paris en 1871, puis réélu en 1876, avant d’abandonner la carrière politique après le krach de l’Union générale, qu’il avait fondée.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="https://fr.wikipedia.org/wiki/Maison_de_Pl%C5%93uc"
+                      xlink:type="simple">
+            <relationEntry>Maison de Plœuc</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1401-01-01">1401</fromDate>
+               <toDate standardDate="1900-12-31">1900</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_000711"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Ploeuc (1439-1912).</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

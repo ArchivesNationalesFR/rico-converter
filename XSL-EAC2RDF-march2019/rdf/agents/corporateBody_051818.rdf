@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/051818">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">France. Ambassadeur, haut représentant pour la réalisation en France du projet international de réacteur expérimental thermonucléaire (2005-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051818_d4926e45"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051818_d4926e48"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/a822c84e-b945-4139-b07e-c7234d6be25b"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-01-01</RiC:beginningDate>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051818-d4924e117"/>
+      <RiC:history xml:lang="fr">L'ambassadeur, haut représentant pour la réalisation en France du projet international de réacteur expérimental thermonucléaire dit " projet ITER " est une fonction instituée par décret du 21 novembre 2005 (décret n°2005-1438) auprès du ministre chargé des Affaires étrangères, du ministre de l'Industrie, et du ministre de l'Enseignement supérieur et de la Recherche. L'ambassadeur a pour rôle de coordonner l'action des administrations et des organismes d'enseignement et de recherche chargés de la réalisation en France du projet ITER. Il prépare la position de la France et représente le pays auprès des instances internationales compétentes, de l'Union européenne et des Etats étrangers. Le projet ITER (International Thermonuclear Experimental Reactor), est un projet de réacteur de recherche civil à fusion nucléaire en cours de réalisation à Cadarache dans les Bouches-du-Rhône. Le projet de recherche s'inscrit dans une démarche à long terme et associe 35 pays : ceux de l'Union Européenne mais aussi l'Inde, le Japon, la Chine, la Russie, la Corée du Sud, les Etats-Unis et la Suisse. le projet est initialement proposé en novembre 1985 lors du sommet de Genève par Mikhaïl Gorbatchev. Les Etats-Unis, l'Europe et le Japon rejoignent le projet en 1986. Plusieurs sites avaient été initialement proposés pour la construction du réacteur. C'est finalement le site de Cadarache qui est retenu le 28 juin 2005 lors de la signature d'une déclaration commune de tous les membres du programme à Moscou. Le 21 novembre 2006 est signé à l'Elysée l'accord final sur la construction d'ITER, par les représentants de la Chine, de la Corée du Sud, des États-Unis, de l'Inde, du Japon, de la Russie et de l'Union européenne. Parmi les différentes instances décisionnelles du projet (Conseil ITER, comité scientifique et technique, comité de gestion), l'ambassadeur jour un rôle de coordination auprès des organisations nationales chargées de mettre en oeuvre le projet, et un rôle de représentation auprès des partenaires internationaux. François d'Aubert est nommé premier ambassadeur, haut représentant pour la réalisation du projet ITER le 25 novembre 2005. Il garde ses fonctions jusqu'en 2007.</RiC:history>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051818-d4924e130"/>
+      <RiC:ruleFollowed xml:lang="fr">https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=LEGITEXT000006052726</RiC:ruleFollowed>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051818-d4924e138"/>
+      <RiC:ruleFollowed xml:lang="fr">https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000000634761&amp;fastPos=7&amp;fastReqId=1442230083&amp;categorieLien=id&amp;oldAction=rechTexte</RiC:ruleFollowed>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051818-d4924e167"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/000016-d3e1794"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051818"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051818-d4924e117">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d5bhvil6bx-16xdm3apll64m"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051818_d4926e45">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051818-d4924e82"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051818_d4926e48">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051818-d4924e88"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051818">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/051818"/>
+      <RiC:creationDate>2017-11-22</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-01-10</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051818</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051818"/>
+   </rdf:Description>
+</rdf:RDF>

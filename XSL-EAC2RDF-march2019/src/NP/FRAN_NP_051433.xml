@@ -1,0 +1,98 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051433</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-12-14</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
+            <eventDescription>F. Clavaud, 15 décembre 2016 : création sur demande de la mission des archives auprès du MEEM. Ajout lien hiérarchique et indexation fonction</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2016-12-15</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Site Internet du ministère de l’Écologie, du développement durable et de l’Énergie. </sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>France. Ministère de l'Ecologie, du Développement durable et de l'Energie. Secrétariat général du débat national sur la transition énergétique (2012-2013)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>SGDNTE</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="2012-01-01">2012</fromDate>
+               <toDate standardDate="2013-12-31">2013</toDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>service d'administration centrale</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d5bhvil6bx-16xdm3apll64m">énergie</term>
+               <descriptiveNote>
+                  <p>débat national sur la transition énergétique</p>
+               </descriptiveNote>
+            </function>
+         </functions>
+         <structureOrGenealogy>
+            <p>Le SGDNTE est assisté d’un comité de pilotage du débat chargé de suivre les travaux des différentes instances de celui-ci, notamment le Conseil national du débat (CNDTE) et le comité citoyen.</p>
+         </structureOrGenealogy>
+         <biogHist>
+            <p>Créé lors de la tenue de la conférence environnementale des 14 et 15 septembre 2012, le SGDNTE est chargé de la supervision du débat national sur la transition énergétique (DNTE). </p>
+            <p>Il disparaît après la clôture de ce débat. </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_000006"
+                      xlink:type="simple">
+            <relationEntry>Ministère de l'Écologie et du Développement durable</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2012-01-01">2012</fromDate>
+               <toDate standardDate="2013-12-31">2013</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_056116"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Ministère de l'Ecologie, du Développement durable et de l'Energie. Archives du Secrétariat général du débat national sur la transition énergétique (2012-2013).</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

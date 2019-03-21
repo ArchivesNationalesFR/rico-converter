@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050908</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-04-23</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>F. Clavaud, 21 avril 2015 : ajouté n° ISNI, fonction, statut, n° notice BnF</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Site internet du BICE</p>
+               <p>Notice d'autorité BnF n° FRBNF12043105</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 0943 0654</entityId>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_050908-d4324e85">
+            <part>Bureau international catholique de l'enfance</part>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_050908-d4324e91">
+            <part>BICE</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1948-01-01">1948</fromDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>association</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function xml:id="FRAN_activity_050908-d4324e120">
+               <term vocabularySource="d3nyug3e0g-1xzlvri8dg416">action sociale</term>
+               <descriptiveNote>
+                  <p>défense de la dignité et des droits de l’enfant</p>
+               </descriptiveNote>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Créé en 1948, le Bureau International Catholique de l'Enfance (BICE) est un réseau international catholique d'organisations engagées pour la promotion et la protection de la dignité et des droits de l'enfant. Association non gouvernementale sans but lucratif et de droit français (loi 1901), le Bureau International Catholique de l'Enfance est présent dans 66 pays sur 4 continents, à travers les organisations membres qui le constituent avec ses partenaires de terrain.</p>
+            <p>L'association de protection de l'enfance bénéficie d'un statut consultatif auprès du Conseil économique et social des Nations Unies (ECOSOC). De ce fait, elle participe activement au Conseil des droits de l'homme et au Comité des droits de l'enfant. Par ailleurs, Le BICE est également une organisation catholique reconnue par le Saint-Siège.</p>
+            <p>En résumé, le BICE est une organisation non gouvernementale (ONG) de protection des droits de l’enfant qui agit en Afrique, en Asie, en ex-URSS et en Amérique Latine. </p>
+         </biogHist>
+      </description>
+   </cpfDescription>
+</eac-cpf>

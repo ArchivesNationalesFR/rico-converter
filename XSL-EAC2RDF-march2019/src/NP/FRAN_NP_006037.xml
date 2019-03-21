@@ -1,0 +1,152 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_006037</recordId>
+      <otherRecordId localType="Ancien_identifiant">5402/7</otherRecordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Import_SIA</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2016-06-13</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+            <eventDescription>F. Clavaud, 13 juin 2016 : mise à jour : revu le nom, ajouté historique, n° notice BnF, textes de référence, lien hiérarchique, fonction</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Notice d'autorité BnF : http://catalogue.bnf.fr/ark:/12148/cb16191584h</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Institut de formation de l'environnement (Paris)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>IFORE</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="2001-01-01">2001</fromDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term vocabularySource="d5blokqhb2-71c8sqtdbid4">service à compétence nationale</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyuhrig1--3acyzmp9v988">formation</term>
+               <descriptiveNote>
+                  <p>dans le domaine de l'environnement</p>
+               </descriptiveNote>
+            </function>
+         </functions>
+         <mandates>
+            <mandate>
+               <descriptiveNote>
+                  <p>Arrêté ministériel du 9 juillet 2001 (NOR : ATEG0100213A ) portant création de l'Institut de formation de l'environnement.</p>
+                  <p>Arrêté du 9 juillet 2008 (NOR: DEVK0815773A) portant organisation de l'administration centrale du ministère de l'écologie, de l'énergie, du développement durable et de l'aménagement du territoire (art. 10)</p>
+               </descriptiveNote>
+            </mandate>
+         </mandates>
+         <biogHist>
+            <p>Créé par arrêté ministériel du 9 juillet 2001 sous la forme d'un service à compétence nationale du ministère chargé de l'environnement, l’institut de formation de l’environnement (IFORE) a pour mission :</p>
+            <p>- de concevoir et organiser la formation initiale des agents techniques et techniciens de l’environnement dans les spécialités prévues par leurs statuts ;</p>
+            <p>- d’assurer des actions de formation continue au profit des agents du ministère chargé de l’environnement ou des services et établissements publics placés sous sa tutelle ainsi qu’au profit de tous les agents ayant en charge les missions du ministère chargé de l’environnement ;</p>
+            <p>- de contribuer au renforcement de la prise en compte de l’environnement et du développement durable dans l’élaboration des formations dispensées par les écoles et centres de formation relevant d’autres ministères ou de collectivités territoriales ;</p>
+            <p>- de développer des cycles supérieurs de formation ;</p>
+            <p>- de réaliser tous travaux d’étude, d’expertise et de suivi s’inscrivant dans le cadre de son activité ou qui pourraient lui être confiés par le directeur général de l’administration, des finances et des affaires internationales ;</p>
+            <p>- d’évaluer les techniques et les résultats de la formation ;</p>
+            <p>- de rassembler et de diffuser la documentation nécessaire à la formation des élèves et stagiaires et à l’information des agents déjà en poste ;</p>
+            <p>- de mener, au niveau international, des actions propres à concourir à l’efficacité des formations ou à promouvoir la collaboration avec des organismes étrangers.</p>
+            <p>En 2008 l'IFORE est rattaché au chef du service du pilotage et de l'évolution des services (SPSE).</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-child"
+                      xlink:href="FRAN_NP_006036"
+                      xlink:type="simple">
+            <relationEntry>Institut de formation de l'environnement, département de la formation continue</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2001-01-01">2001</fromDate>
+               <toDate standardDate="2008-12-31">2008</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-child"
+                      xlink:href="FRAN_NP_006034"
+                      xlink:type="simple">
+            <relationEntry>Institut de formation de l'environnement, secrétariat général</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2001-01-01">2001</fromDate>
+               <toDate standardDate="2008-12-31">2008</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-child"
+                      xlink:href="FRAN_NP_006035"
+                      xlink:type="simple">
+            <relationEntry>Institut de formation de l'environnement, département de la formation initiale</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2001-01-01">2001</fromDate>
+               <toDate standardDate="2008-12-31">2008</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_006057"
+                      xlink:type="simple">
+            <relationEntry>Direction générale de l'administration (ministère chargé de l'environnement)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2001-01-01">2001</fromDate>
+               <toDate standardDate="2007-12-31">2007</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_051326"
+                      xlink:type="simple">
+            <relationEntry>France. Secrétariat général des ministères chargés de l'écologie, du développement durable, de l'énergie, du logement, de l'égalité des territoires et de la ruralité. Service du pilotage et de l’évolution des services (2008-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2008-01-01">2008</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055024"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Institut de formation de l'environnement (1989-2011).</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

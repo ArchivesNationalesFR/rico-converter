@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010139</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NAETUDE_012</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Poisson (Jean-Paul), " L'activité notariale comme indicateur socio-économique : l'exemple de la Fronde " études III, XII et XCI (1645 à 1655), Notaires et société. Travaux d'histoire et de sociologie notariales, t. I, 1985, p. 229.</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_010139-d236e79">
+            <part>Etude XII</part>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_010139-d236e85">
+            <part>75043</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1587-01-01">1587</fromDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place xml:id="FRAN_place_010139-d236e105">
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu" xml:id="FRAN_placeEntry_010139-d236e110">5, quai Voltaire, 75007 PARIS</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function xml:id="FRAN_activity_010139-d236e117">
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1587-01-01">1587</fromDate>
+                  <toDate/>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Cette étude est d'abord établie rue de la Tissanderie (1587-1637). Elle gagne ensuite l'Île-Saint-Louis où elle demeure rue des Deux-Ponts jusqu'en 1642, puis quai d'Orléans qu'elle quitte en 1852 pour le quai Voltaire.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011604"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010139-d236e141">
+            <relationEntry>Levoyer, Claude</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1587-04-15">15 avril 1587</fromDate>
+               <toDate standardDate="1637-03-30">30 mars 1637</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012118"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010139-d236e156">
+            <relationEntry>Frezon, Pierre</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1658-01-30">30 janvier 1658</fromDate>
+               <toDate standardDate="1658-02-23">23 février 1658</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012163"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010139-d236e171">
+            <relationEntry>Deshayes, André-Guillaume</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1728-02-26">26 février 1728</fromDate>
+               <toDate standardDate="1764-01-09">9 janvier 1764</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012162"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010139-d236e186">
+            <relationEntry>Delattre de colliville, Jacques-Toussaint</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1764-01-13">13 janvier 1764</fromDate>
+               <toDate standardDate="1777-07-01">1er juillet 1777</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010370"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010139-d236e201">
+            <relationEntry>Viefville, Louis-François</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1834-06-26">26 juin 1834</fromDate>
+               <toDate standardDate="1869-08-04">4 août 1869</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013482"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010139-d236e217">
+            <relationEntry>Lanfranchi, Jean-Baptiste</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2010-09-13">13 septembre 2010</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011314"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010139-d236e229">
+            <relationEntry>Lair, Félix</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1637-04-03">3 avril 1637</fromDate>
+               <toDate standardDate="1645-12-31">31 décembre 1645</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011085"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010139-d236e244">
+            <relationEntry>Marion, Georges</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1659-02-18">18 février 1659</fromDate>
+               <toDate standardDate="1667-12-21">21 décembre 1667</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011937"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010139-d236e259">
+            <relationEntry>Goguier, Philippe</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1598-01-01">1er janvier 1598</fromDate>
+               <toDate standardDate="1621-12-31">31 décembre 1621</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010395"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010139-d236e274">
+            <relationEntry>Voitey, Gérard</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1973-08-16">16 août 1973</fromDate>
+               <toDate standardDate="1994-12-31">1994</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010718"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010139-d236e289">
+            <relationEntry>Roiena, Frédéric</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1988-05-04">4 mai 1988</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011739"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010139-d236e302">
+            <relationEntry>Hargenvilliers, Claude-Etienne</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1724-03-28">28 mars 1724</fromDate>
+               <toDate standardDate="1728-02-25">25 février 1728</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013128"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010139-d236e317">
+            <relationEntry>Angot, Germain</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1701-07-05">5 juillet 1701</fromDate>
+               <toDate standardDate="1724-03-27">27 mars 1724</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012986"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010139-d236e332">
+            <relationEntry>Boullaire, Emile Maurice</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1897-12-16">16 décembre 1897</fromDate>
+               <toDate standardDate="1906-05-23">23 mai 1906</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011784"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010139-d236e347">
+            <relationEntry>Hocquet, Jules Ernest René</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1906-05-23">23 mai 1906</fromDate>
+               <toDate standardDate="1919-11-05">5 novembre 1919</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010738"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010139-d236e362">
+            <relationEntry>Roussel, Vincent</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1998-09-30">30 septembre 1998</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011936"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010139-d236e374">
+            <relationEntry>Goguier, Jacques</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1646-01-16">16 janvier 1646</fromDate>
+               <toDate standardDate="1656-10-05">5 octobre 1656</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011946"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010139-d236e390">
+            <relationEntry>Goupil, Auguste-Paul</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1869-08-04">4 août 1869</fromDate>
+               <toDate standardDate="1897-12-16">16 décembre 1897</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011203"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010139-d236e405">
+            <relationEntry>Monnerat, Claude</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1681-03-26">26 mars 1681</fromDate>
+               <toDate standardDate="1701-07-04">4 juillet 1701</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013454"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010139-d236e420">
+            <relationEntry>Zecevic, Stéphane</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2010-04-28">28 avril 2010</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011366"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010139-d236e432">
+            <relationEntry>Launay, Louis de</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1667-12-22">22 décembre 1667</fromDate>
+               <toDate standardDate="1680-10-02">2 octobre 1680</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010968"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010139-d236e447">
+            <relationEntry>Poisson, Jean-Baptiste</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1814-01-29">29 janvier 1814</fromDate>
+               <toDate standardDate="1834-06-25">25 juin 1834</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012164"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010139-d236e462">
+            <relationEntry>Destrem, Raymond</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1919-11-05">5 novembre 1919</fromDate>
+               <toDate standardDate="1948-02-17">17 février 1948</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012128"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010139-d236e478">
+            <relationEntry>Ellain, Henri</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1656-11-06">6 novembre 1656</fromDate>
+               <toDate standardDate="1658-01-25">25 janvier 1658</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011693"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010139-d236e493">
+            <relationEntry>Josset, Paul Germain Gustave</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1948-02-17">17 février 1948</fromDate>
+               <toDate standardDate="1973-08-16">16 août 1973</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011610"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010139-d236e508">
+            <relationEntry>Liénard, Pierre</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1777-07-01">1er juillet 1777</fromDate>
+               <toDate standardDate="1812-08-07">7 août 1812</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041383"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e523">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Philippe GOGUIER, janvier 1598 - 20 février 1622 (étude XII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041382"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e529">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Claude LEVOYER, 15 avril 1587 - 30 mars 1637 (étude XII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041384"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e535">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Félix LAIR, 3 avril 1637 - 16 janvier 1646 (étude XII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041385"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e542">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jacques GOGUIER, 16 janvier 1646 - 5 octobre 1656 (étude XII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041386"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e548">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Henri ELLAIN, 6 novembre 1656 - 25 janvier 1658 (étude XII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041387"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e554">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Pierre FREZON, 30 janvier 1658 - 23 février 1658 (étude XII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041388"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e560">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Georges MARION, 18 février 1659 - 21 décembre 1667 (étude XII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041389"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e566">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Louis de LAUNAY, 22 décembre 1667 - 2 octobre 1680 (étude XII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041390"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e572">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Claude MONNERAT, 26 mars 1681 - 4 juillet 1701 (étude XII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041391"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e579">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Germain ANGOT, 5 juillet 1701 - 27 mars 1724 (étude XII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041392"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e585">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Claude Étienne HARGENVILLIERS, 28 mars 1724 - 25 février 1728 (étude XII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041394"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e591">
+            <relationEntry localType="archival">Minutes et répertoires du notaire André Guillaume DESHAYES, 26 février 1728 - 9 janvier 1764 (étude XII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041393"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e597">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jacques Toussaint DELATTRE de COLLIVILLE, 11 janvier 1764 - 26 juin 1777 (étude XII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041395"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e603">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Pierre LIÉNARD, 1er juillet 1777 - 28 janvier 1814 (étude XII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041396"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e609">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean-Baptiste POISSON, 31 janvier  1814 - 24 juin 1834 (étude XII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041397"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e616">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Louis François VIEFVILLE, 25 juin 1834 - 3 août 1869 (étude XII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041398"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e622">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Auguste Paul GOUPIL, 4 août 1869 - 20 juillet 1897 (étude XII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041381"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e628">
+            <relationEntry localType="archival">Archives de l'étude XII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_050323"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e634">
+            <relationEntry localType="archival">«Mélanges» (dossiers de clients) de l’étude XII. MC/ET/XII/843/A-MC/ET/XII/843/C (1567-1800)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051766"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e640">
+            <relationEntry localType="archival">Images des répertoires du notaire Auguste Paul Goupil pour l'étude XII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055322"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e646">
+            <relationEntry localType="archival">Images des répertoires du notaire Louis François Viefville pour l'étude XII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054811"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e653">
+            <relationEntry localType="archival">Dossiers de clients de l'étude XII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052953"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e659">
+            <relationEntry localType="archival">Images du répertoire du notaire Félix Lair pour l'étude XII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051765"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e665">
+            <relationEntry localType="archival">Images du répertoire du notaire Jacques Goguier pour l'étude XII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051768"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e671">
+            <relationEntry localType="archival">Images du répertoire du notaire Henri Ellain pour l'étude XII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051759"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e677">
+            <relationEntry localType="archival">Images des répertoires du notaire Georges Marion pour l'étude XII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_056609"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e683">
+            <relationEntry localType="archival">Images du répertoire du notaire Pierre Frezon pour l'étude XII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051760"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e690">
+            <relationEntry localType="archival">Images du répertoire du notaire Claude Monnerat pour l'étude XII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051771"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e696">
+            <relationEntry localType="archival">Images du répertoire du notaire Germain Angot pour l'étude XII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051764"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e702">
+            <relationEntry localType="archival">Images du répertoire du notaire Claude Etienne Hargenvilliers pour l'étude XII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051770"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e708">
+            <relationEntry localType="archival">Images des répertoires du notaire André Guillaume Deshayes pour l'étude XII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051769"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e714">
+            <relationEntry localType="archival">Images du répertoire du notaire Jacques Toussaint Delattre de Colliville pour l'étude XII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051763"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e720">
+            <relationEntry localType="archival">Images des répertoires du notaire Pierre Liénard pour l'étude XII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051758"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e727">
+            <relationEntry localType="archival">Images des répertoires du notaire Jean-Baptiste Poisson pour l'étude XII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_056611"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010139-d236e733">
+            <relationEntry localType="archival">Images du répertoire du notaire Louis de Launay pour l'étude XII</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

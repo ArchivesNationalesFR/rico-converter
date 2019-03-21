@@ -1,0 +1,125 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_011871</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01705</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Gaultier, Olivier</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1630-06-14">14 juin 1630</fromDate>
+               <toDate standardDate="1649-04-14">14 avril 1649</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">étude LXVIII : rue Barre-du-Bec</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp6vb2-rsrcmgk1zmct">saint-merri (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvozckb-wk5djyktth83">saint-jacques-de-la-boucherie (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp1p2a--wp1m57bskhhm">saint-josse (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp76qc--1xdxyf9lzzthw">saint-nicolas-des-champs (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp2o77-1wnswrnmvwf46">saint-laurent (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nz8pidkp-12yk4wcotzq25">barre-du-bec (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd5fnbv--1fbmnb1c9dkph">saint-martin (rue)</placeEntry>
+            </place>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">étude IX : rue Saint-Martin</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp6vb2-rsrcmgk1zmct">saint-merri (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvozckb-wk5djyktth83">saint-jacques-de-la-boucherie (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp1p2a--wp1m57bskhhm">saint-josse (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp76qc--1xdxyf9lzzthw">saint-nicolas-des-champs (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp2o77-1wnswrnmvwf46">saint-laurent (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nz8pidkp-12yk4wcotzq25">barre-du-bec (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd5fnbv--1fbmnb1c9dkph">saint-martin (rue)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1630-06-14">14 juin 1630</fromDate>
+                  <toDate standardDate="1649-04-14">14 avril 1649</toDate>
+               </dateRange>
+            </function>
+         </functions>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010195"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale LXVIII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1630-06-14">14 juin 1630</fromDate>
+               <toDate standardDate="1634-06-30">30 juin 1634</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010136"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale IX</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1635-01-23">23 janvier 1635</fromDate>
+               <toDate standardDate="1649-04-14">14 avril 1649</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XXIV/340 folio 725, 15 juin 1634, vente par Gaultier de son office à Nicolas Herbin, clerc chez Guillaume Herbin</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041331"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Olivier GAULTIER, 23 janvier 1635 - 30 mai 1649 (étude IX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042532"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Olivier GAULTIER, 16 juin 1630 - 29 juin 1634 (étude LXVIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_056662"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Olivier Gaultier pour l'étude IX</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

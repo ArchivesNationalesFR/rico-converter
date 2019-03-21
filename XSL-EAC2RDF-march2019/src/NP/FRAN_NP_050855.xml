@@ -1,0 +1,79 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050855</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-01-16</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>F. Clavaud, 16 janvier 2015 : revu forme du nom, ajouté n°s ISNI et notice BnF, descripteurs activités</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>CNAHES</p>
+               <p>Notice d'autorité BnF n° FRBNF11911653</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 3138 604X</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Le Guillant, Louis (1900-1968)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1900-02-26">26 février 1900</fromDate>
+               <toDate standardDate="1968-02-08">8 février 1968</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msjarlu--l5x9bzdkopz8">médecin</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msixdvh--wgctct8soc1y">membre de cabinet ministériel</term>
+               <dateRange>
+                  <fromDate standardDate="1944-01-01">1944</fromDate>
+                  <toDate standardDate="1947-12-31">1947</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>conseiller technique auprès du ministre de la Santé</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Né le 26 février 1900 à Lorient (Finistère), Louis Le Guillant devient médecin des hôpitaux psychiatriques en 1931. En 1943 et 1944, il est membre du Conseil technique de l'enfance déficiente et en danger moral, que dirige le professeur Heuyer. De 1944 à 1947, il est conseiller technique auprès du ministre de la Santé, François Billoux, notamment chargé de la coordination des services de l'enfance déficiente et en danger moral. De 1945 à 1968, Louis Le Guillant devient membre du conseil d'administration des Centres d'Entraînement aux Méthodes d'Éducation Active (CEMEA). En 1949 et 1950, il prend la direction médicale du Centre d'observation de Vitry-sur-Seine (Val-de-Marne).</p>
+            <p>Par ailleurs, Louis Le Guillant participe aussi à de nombreuses publications, dont la fondation en 1946 de la revue 
+     <span style="italic">Sauvegarde</span>, revue des Associations régionales de sauvegarde de l'enfance et de l'adolescence (ARSEA). En 1948 il est membre du comité de rédaction de la revue 
+     <span style="italic">Enfance</span>, fondée par H. Wallon. En 1951 il est cofondateur de la revue 
+     <span style="italic">La Raison</span>. 
+    </p>
+            <p> En 1965, Louis Le Guillant prend sa retraite, puis il décède à Paris le 8 février 1968.</p>
+         </biogHist>
+      </description>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050808">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Jury, Paul (1878-1953)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050808_d4255e47"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1878-09-20</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1953-03-24</RiC:deathDate>
+      <RiC:history xml:lang="fr">Paul Jury est né le 20 septembre 1878 à Bergerac en Dordogne et décédé à Paris le 24 mars 1953. Entre 1880 et 1887 sa famille vécut en Cochinchine. Pensionnaire au lycée Michelet de Vanves, il passe son baccalauréat à Pau. Il se convertit à l'âge de 13 ans au catholicisme, et devenu bachelier, il entre dans la Compagnie de Jésus de Toulouse en 1896. Suite à la loi de 1905, Paul Jury part aux Pays-Bas, puis en Belgique où il est ordonné prêtre en 1909. L'année suivante, il est promu docteur en théologie. Rédacteur dans des journaux et des revues, il quitte les Jésuites en 1923, leur reprochant de censurer ses recherches mais restera prêtre jusqu'à la fin de sa vie. Féru de littérature, il fonde en 1913 avec Gaétan Bernoville, la revue Les Lettres. Il étudie ensuite la psychanalyse et participe aux travaux de la Société psychanalytique de Paris. Il traduit des essais de Freud et de Karl Abraham et les publie avec de nombreux articles dans la Revue française de psychanalyse et Psyché. Il compte parmi ses élèves André Michel auquel il lèguera ses oeuvres et ses documents. Principales oeuvres de Paul Jury : - Jury (Paul), 
+
+      Le catholique d'action, Paris, 1908. 
+
+     - Jury (Paul), "De la prière à la beauté" dans 
+
+     Bibliothèque des lettres françaises, Paris, 1914, 24 p. 
+
+     - Jury (Paul), "Les Idées d'aujourd'hui. La peur de juger" dans 
+
+     Les Lettres, 1920, p. 543-562. 
+
+     - Jury (Paul), "Le secret de Léon Bloy" dans 
+
+     La Revue catholique des idées et des faits, Bruxelles, 1930. 
+
+     - Jury (Paul), 
+
+     Journal d'un prêtre, Paris, 1956. 
+
+     - Jury (Paul), 
+
+     Ceci est mon corps, ceci est mon sang ?, Montpellier, 1963. 
+
+     - Jury (Paul), 
+
+     Les débuts de l'évangile ou les quatres légendes de Jean-Baptiste, Montpellier, 1964. 
+
+    </RiC:history>
+      <isni:ISNIAssigned>0000000066449434</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050808-d4253e169"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050808"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050808_d4255e47">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050808-d4253e88"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050808">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050808"/>
+      <RiC:creationDate>2014-07-15</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050808</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000066449434"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050808"/>
+   </rdf:Description>
+</rdf:RDF>

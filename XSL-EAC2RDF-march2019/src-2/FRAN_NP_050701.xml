@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050701</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-02-21</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Emmanuelle GIRY</agent>
+            <eventDescription>F. Clavaud, 21 février 2014 : ajouté n°s ISNI et notice BnF</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>
+                  <span style="italic">Guide des sources du PAJEP</span>, consulté au mois de février 2014 
+     </p>
+               <p>Identifiant ISNI : ISNI 0000 0001 1562 5335</p>
+               <p>Notice d'autorité BnF n° FRBNF12533255</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_050701-d4176e88">
+            <part>Gardet, Mathias</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1954-01-01">1954</fromDate>
+            </dateRange>
+         </existDates>
+         <mandates>
+            <mandate/>
+         </mandates>
+         <biogHist>
+            <p>Mathias Gardet est historien, maître de conférences à l’université Paris 8 Vincennes/Saint-Denis et membre du Centre interdisciplinaire de recherche « Culture, éducation, formation, travail » (CIRCEFT). </p>
+            <p>Ses recherches se sont toutes centrées sur les politiques sociales à l’égard de l’enfance et de la jeunesse que ce soit celles qualifiées d’éducation populaire ou celles dénommées d’éducation spéciale ou spécialisée pour les jeunes dits « inadaptés » (orphelins, délinquants, arriérés, cas sociaux, handicapés, etc.). Après avoir travaillé sur les partenaires ministériels (Justice, Santé, Education nationale, Jeunesse et sport), les familles ou courants de pensée (laïques, confessionnels, catholiques sociaux, etc.), les gestionnaires privés avec la prédominance des acteurs associatifs ; les professionnels (éducateurs, assistantes sociales, résidentes sociales, animateurs, juges…), il a étudié dernièrement les populations prises en charge - ceux que l’on appelle les usagers. </p>
+            <p>En 1996, il a soutenu une thèse en histoire qui a été publiée en 2003 : 
+     <span style="italic">Jeunesse d’Eglise, jeunesse d’État au Mexique (1929-1945). Action des catholiques et fastes révolutionnaires</span>, Paris, L’Harmattan, 314 p. 
+    </p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_050891"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_050701-d4176e129">
+            <relationEntry localType="archival">Archives de Mathias Gardet</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

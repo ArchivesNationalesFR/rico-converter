@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010207</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NAETUDE_080</otherRecordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2014-03-31</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marie-Françoise LIMON-BONNET</agent>
+            <eventDescription>F. Clavaud, 31 mars 2014 : révision liens IR</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>
+                  <span style="bold">Voir : </span>
+               </p>
+               <p>Limon-Bonnet (M.-F.) [dir.], 
+      <span style="italic">122 minutes d'histoire. Actes des notaires de Paris, XVIe-XXe siècle</span>, Paris, 2012, pp. 164-165. 
+     </p>
+               <p>
+                  <span style="italic">Annuaire officiel du notariat</span>, 2012. 
+     </p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_010207-d304e112">
+            <part>Etude LXXX</part>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_010207-d304e118">
+            <part>75058</part>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_010207-d304e124">
+            <part>Monassier et Associés. MONASSIER Bernard et BURTHE-MIQUE Sylvie, SELAFA DARMON Arlette et HONORE Cécilia, notaires au sein de l'étude</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1778-01-01">1778</fromDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place xml:id="FRAN_place_010207-d304e144">
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu" xml:id="FRAN_placeEntry_010207-d304e149">1, rue de Monttessuy, 75340 PARIS Cedex 07</placeEntry>
+            </place>
+         </places>
+         <legalStatuses>
+            <legalStatus>
+               <term>office notarial</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function xml:id="FRAN_activity_010207-d304e165">
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à Paris</term>
+               <dateRange>
+                  <fromDate standardDate="1778-01-01">1778</fromDate>
+                  <toDate/>
+               </dateRange>
+            </function>
+         </functions>
+         <mandates>
+            <mandate/>
+         </mandates>
+         <biogHist>
+            <p>Ancien notariat de La Villette dont les minutes ne commencent qu'en 1789, l'étude fut rattachée à Paris en 1859 et s'installa rue de Flandres jusqu'en 1957, puis rue Duvergier jusqu'au tournant des années 2000 ; elle se situe aujourd'hui 1, rue de Monttessuy dans le VIIe arrondissement. Au XIXe siècle, sa clientèle se compose de commerçants et de professions liées à l'agriculture : cultivateurs et jardiniers côtoient nourrisseurs et marchands de vin. Retenons le nombre important d'inventaires après décès d'aubergistes, qui rappelllent que ces commerces fleurissaient aux portes de la capitale, car non soumis à l'octroi. Notons ces inventaires de deux porteurs d'eau du canal de l'Ourcq : Stanislas Pépin (5 août 1809) et François Pécoul (8 septembre 1834). Cette étude draine les populations établies dans l'est de l'actuelle Seine-Saint-Denis. Les communes du Pré-Saint-Gervais, Pantin, Aubervilliers, La Courneuve, Gennevilliers, Le Bourget sont très souvent indiquées.</p>
+            <p>Le Minutier central conserve les minutes de l'étude LXXX à partir de l'année 1789. Les six premiers articles correspondent à la période 1789-1806.</p>
+            <p>Les minutes de cette étude ont été versées aux Archives nationales (2013) jusqu'au 31 décembre 1938, mais elles ne sont pas encore cotées. Leur communication en salle de lecture n'est donc pas encore possible.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011196"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010207-d304e201">
+            <relationEntry>Monassier, Bernard</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1970-10-21">21 octobre 1970</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013213"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010207-d304e213">
+            <relationEntry>Soreau, Paul-André</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2002-12-18">18 décembre 2002</fromDate>
+               <toDate standardDate="2005-10-29">29 octobre 2005</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013405"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010207-d304e228">
+            <relationEntry>Honoré, Cécilia</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2008-06-20">20 juin 2008</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011801"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010207-d304e240">
+            <relationEntry>Hubert, Jean-Louis</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1816-03-14">14 mars 1816</fromDate>
+               <toDate standardDate="1821-09-25">25 septembre 1821</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013067"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010207-d304e255">
+            <relationEntry>Broquisse, Claude Georges Emile</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1957-02-27">27 février 1957</fromDate>
+               <toDate standardDate="1991-02-13">13 février 1991</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011791"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010207-d304e271">
+            <relationEntry>Houy, Jean-Baptiste</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1806-10-01">1er octobre 1806</fromDate>
+               <toDate standardDate="1816-03-14">14 mars 1816</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011744"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010207-d304e286">
+            <relationEntry>Hasselmann, Roland Alfred Marie Joseph Louis</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1926-12-23">23 décembre 1926</fromDate>
+               <toDate standardDate="1957-02-27">27 février 1957</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013155"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010207-d304e301">
+            <relationEntry>Aubron, Georges</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1899-12-07">7 décembre 1899</fromDate>
+               <toDate standardDate="1926-12-23">23 décembre 1926</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013186"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010207-d304e316">
+            <relationEntry>Darmon, Arlette</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2002-12-18">18 décembre 2002</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012052"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010207-d304e328">
+            <relationEntry>Ferrière, Thomas-Jacques</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1821-09-26">26 septembre 1821</fromDate>
+               <toDate standardDate="1839-02-19">19 février 1839</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010608"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010207-d304e343">
+            <relationEntry>Ragot, Lucien-Isidore</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1855-12-01">1er décembre 1855</fromDate>
+               <toDate standardDate="1873-03-15">15 mars 1873</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011783"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010207-d304e359">
+            <relationEntry>Hocquet, Constant</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1873-03-15">15 mars 1873</fromDate>
+               <toDate standardDate="1899-12-07">7 décembre 1899</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013088"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010207-d304e374">
+            <relationEntry>Burthe-Mique, Sylvie</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1993-09-22">22 septembre 1993</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013096"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010207-d304e386">
+            <relationEntry>Agasse, Gilles</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1987-02-18">18 février 1987</fromDate>
+               <toDate standardDate="1999-12-31">1999</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012650"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010207-d304e401">
+            <relationEntry>Castel-Dumarais, Jean</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1778-09-19">19 septembre 1778</fromDate>
+               <toDate standardDate="1806-10-01">1er octobre 1806</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010556"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010207-d304e416">
+            <relationEntry>Savouré, Bertrand</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2000-04-26">26 avril 2000</fromDate>
+               <toDate standardDate="2008-07-17">17 juillet 2008</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012334"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_010207-d304e431">
+            <relationEntry>Desmanèches, Jean-Baptiste</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1839-02-19">19 février 1839</fromDate>
+               <toDate standardDate="1855-12-01">1er décembre 1855</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042744"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010207-d304e447">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Constant HOCQUET, 15 mars 1873 - 7 décembre 1899 (étude LXXX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_042738"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010207-d304e453">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean CASTEL-DUMARAIS, septembre 1789 - 1er octobre 1806 (étude LXXX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_042741"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010207-d304e459">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Thomas Jacques FERRIÈRE, 26 septembre 1821 - 19 février 1839 (étude LXXX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_042739"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010207-d304e465">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean-Baptiste HOUY, 1er octobre 1806 - 14 mars 1816 (étude LXXX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_042740"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010207-d304e471">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean Louis HUBERT, 14 mars 1816 - 25 septembre 1821 (étude LXXX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042743"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010207-d304e477">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Lucien Isidore RAGOT, 1er décembre 1855 - 15 mars
+     1873 (étude LXXX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051245"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010207-d304e484">
+            <relationEntry localType="archival">Images des répertoires du notaire Lucien Isidore Ragot pour l'étude LXXX</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051421"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010207-d304e490">
+            <relationEntry localType="archival">Images des répertoires du notaire Constant Hocquet pour l'étude LXXX</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051422"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010207-d304e496">
+            <relationEntry localType="archival">Images des répertoires du notaire Jean-Baptiste Houy pour l'étude LXXX</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051425"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010207-d304e502">
+            <relationEntry localType="archival">Images du répertoire du notaire Jean Louis Hubert pour l'étude LXXX</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051557"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010207-d304e508">
+            <relationEntry localType="archival">Images du répertoire du notaire Jean Castel-Dumarais pour l'étude LXXX</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051506"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010207-d304e514">
+            <relationEntry localType="archival">Images des répertoires du notaire Jean-Baptiste Desmanèches pour l'étude LXXX</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051456"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010207-d304e521">
+            <relationEntry localType="archival">Images des répertoires du notaire Thomas Jacques Ferrière pour l'étude LXXX</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042737"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010207-d304e527">
+            <relationEntry localType="archival">Archives de l'étude LXXX</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042742"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_010207-d304e533">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean-Baptiste DESMANÈCHES, 19 février 1839 - 1er décembre 1855 (étude LXXX)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

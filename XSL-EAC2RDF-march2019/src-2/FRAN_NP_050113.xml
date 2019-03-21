@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050113</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-10-16</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Raphael BAUMARD</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_050113-d3738e64">
+            <part>Arago, François</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1786-01-01">1786</fromDate>
+               <toDate standardDate="1853-12-31">1853</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>François Arago (1786-1853) fut admis à l’âge de dix-sept ans à l’École polytechnique. Secrétaire du Bureau des Longitudes, il fut adjoint à Biot, chargé d’achever la mesure de l’arc du méridien terrestre (1806). Membre titulaire de l’Académie des sciences à vingt-trois ans, il fut nommé professeur d’analyse et de géodésie à l’École polytechnique où il exerça ces fonctions pendant vingt ans. Devenu directeur de l’Observatoire, il donna des cours d’astronomie restés célèbres par leur clarté. En 1830, Arago remplaça Fourier comme secrétaire perpétuel de l’Académie pour les sciences mathématiques. Après 1830, il entra à la Chambre comme député des Pyrénées-Orientales et siégea à l’extrême-gauche. En février 1848, Arago fut porté par l’acclamation populaire au Gouvernement provisoire et chargé de diriger les ministères de la Marine et de la Guerre. Il fit adopter l’abolition de l’esclavage dans les colonies françaises. Député à la Constituante, il appartint à la Commission exécutive, qui se démit en juin, puis il siégea à la Législative. En 1852, il ne voulut pas prêter serment au gouvernement nouveau.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_050114"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_050113-d3738e94">
+            <relationEntry>Arago, Étienne</relationEntry>
+            <descriptiveNote>
+               <p> François et Étienne Arago sont frères. </p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012114</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01958</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_012114-d2211e67">
+            <part>Fremyn, Nicolas</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1751-02-12">12 février 1751</fromDate>
+               <toDate standardDate="1761-03-05">5 mars 1761</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place xml:id="FRAN_place_012114-d2211e96">
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse"
+                           vocabularySource="d3nyvovxws-1r3061wzh7bqc"
+                           xml:id="FRAN_stdPlaceEntry_012114-d3nyvovxws-1r3061wzh7bqcd2211e101">saint-etienne-du-mont (paroisse)</placeEntry>
+               <placeEntry localType="quartier"
+                           vocabularySource="d3nyvgqtes--1wrsaggwbjmzu"
+                           xml:id="FRAN_stdPlaceEntry_012114-d3nyvgqtes--1wrsaggwbjmzud2211e104">saint-benoît (quartier)</placeEntry>
+               <placeEntry localType="voie"
+                           vocabularySource="d3nzc3mtjw-1ba0ccyicv9sx"
+                           xml:id="FRAN_stdPlaceEntry_012114-d3nzc3mtjw-1ba0ccyicv9sxd2211e107">montagne-sainte-geneviève (rue de la)</placeEntry>
+               <placeEntry localType="nomLieu" xml:id="FRAN_placeEntry_012114-d2211e110">rue de la Montagne Sainte Geneviève</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function xml:id="FRAN_activity_012114-d2211e117">
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1751-02-12">12 février 1751</fromDate>
+                  <toDate standardDate="1761-03-05">5 mars 1761</toDate>
+               </dateRange>
+            </function>
+         </functions>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010144"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_012114-d2211e136">
+            <relationEntry>Etude notariale XVII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1751-02-12">12 février 1751</fromDate>
+               <toDate standardDate="1761-03-05">5 mars 1761</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041492"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_012114-d2211e151">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Nicolas FREMYN, 12 février 1751 - 3 mars 1761 (étude XVII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_053963"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_012114-d2211e157">
+            <relationEntry localType="archival">«Mélanges» (dossiers de clients) de l’étude LXXV. MC/ET/LXXV/1004-MC/ET/LXXV/1005 (1731-1825)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051836"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_012114-d2211e163">
+            <relationEntry localType="archival">Images du répertoire du notaire Nicolas Fremyn pour l'étude XVII</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

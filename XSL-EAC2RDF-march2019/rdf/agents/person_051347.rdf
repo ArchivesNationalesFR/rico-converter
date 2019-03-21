@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051347">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Faure, Roland (1926-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051347_d4611e43"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1926-10-10</RiC:birthDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051347-d4609e102"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051347-d4609e108"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051347-d4609e114"/>
+      <RiC:history xml:lang="fr">Roland Faure est né le 10 octobre 1926 à Montélimar (Drôme). Diplômé de la faculté de droit d'Aix-en-Provence, il débute sa carrière en 1947 comme journaliste au « Méridional-La France » à Marseille. Il est délégué de l'Association de la presse latine d'Europe et d'Amérique en 1951 et est le fondateur et rédacteur en chef du « Journal français du Brésil » à Rio de Janeiro entre 1952 et 1953. Il entre à « L'Aurore » en 1954 et y est successivement rédacteur diplomatique (1954), chef du service diplomatique (1959), rédacteur en chef (1962) puis directeur-rédacteur en chef du quotidien (1968-1978).  Après avoir été attaché au Cabinet du ministre des Travaux publics (1957-1958), il est notamment directeur de l'hebdomadaire « Toutes les nouvelles de Versailles » (1954-1986), secrétaire-général de l'Association de la presse latine d'Europe et d'Amérique depuis 1954, membre du conseil d'Antenne 2 (1975-1979), directeur de l'Information de Radio France (1979-1981), fondateur et directeur de la radio CVS Canal Versailles Stéréo (1982-1986), président-directeur général de Radio France (1986-1989), président de l'Union radiophonique et télévisuelle internationale (URTI) (1987-1997), président de la Communauté des radios de langue française (CRPLF) (1987-1989), administrateur de l'Agence France-Presse (1987-1989). À la création du Conseil supérieur de l'audiovisuel en janvier 1989, Roland Faure est désigné par le président du Sénat pour siéger au CSA dont il reste membre jusqu'en janvier 1997. Il est par ailleurs président d'honneur du Centre méditerranéen de la communication audiovisuelle (CMCA) depuis 1996 et de la Conférence permanente de l'audiovisuel méditerranéen (COPEAM), président du conseil d'administration de la fondation Marguerite Long-Jacques Thibaud et du concours international de piano et violon (1991-2006), président du Club Dab pour la radio numérique (1991-2002), président fondateur du Symposium du Sportel de Monaco (1991), médiateur à la cour d'appel de Paris pour l'attribution des droits de télévision du football (2003). Journaliste reconnu, Roland Faure reçoit le Prix du meilleur jeune journaliste de France en 1950 ainsi que le Prix international du grand reportage en 1962. Il est Commandeur de la Légion d'honneur, Officier de l'Ordre national du Mérite et Commandeur des Arts et des Lettres. </RiC:history>
+      <isni:ISNIAssigned>0000000362059625</isni:ISNIAssigned>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051347-d4609e133"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051347-d4609e154"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051347-d4609e175"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051347-d4609e196"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051347"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051347-d4609e102">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msk49pq-fqetp63zthtj"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051347-d4609e108">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msizce3-1fkn61hd3lpjw"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051347-d4609e114">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d-l0jya1ik6x--16fn7glte863o"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051347-d4609e196">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Faure, Roland (1926-....) et l'ensemble de documents "Radio France. Archives papier de Roland Faure, président-directeur général de Radio France de 1986 à 1989 (1971-1989)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/054983-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051347_d4611e43">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051347-d4609e82"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051347">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051347"/>
+      <RiC:creationDate>2016-08-01</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_051347</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000362059625"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051347"/>
+   </rdf:Description>
+</rdf:RDF>

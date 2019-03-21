@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/052002">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">Fédération Française de Triathlon (1989-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/052002_d4972e66"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/052002_d4972e69"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/f7742d1f-1699-45c7-804b-0277189a621d"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1989-10-21</RiC:beginningDate>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/052002-d4970e165"/>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/052002-d4970e177"/>
+      <RiC:history xml:lang="fr">La Fédération française de triathlon (FFTri) et des disciplines enchaînées est une association loi de 1901, fondée en 1989, chargée 1) de l'organisation, de la direction et du développement du triathlon, de ses pratiques dérivées et de diverses pratiques enchaînées de sports de pleine nature, en France, 2) d'orienter et de contrôler l'activité de toutes les associations ou unions d'associations s'intéressant aux pratiques dont elle a la gestion par délégation ministérielle, comme le cross triathlon, le duathlon, l'aquathlon, le run and bike et les raids nature.  Elle organise les championnats de France de ces diverses spécialités ainsi que le championnat et la coupe de France des clubs qui lui sont affiliés. La FFTri est affiliée au Comité national olympique et sportif français (CNOSF), au Comité paralympique et sportif français (CPSF) à la Fédération européenne de triathlon (ETU) et à la Fédération internationale de triathlon (ITU). Elle est structurée en 26 ligues régionales qui servent de relais pour la gestion des clubs et des organisations de compétitions ainsi que pour la mise en œuvre des règlements et projets de la fédération qui gère le triathlon en France. La Fédération française de triathlon est née de la transformation de son ancêtre, le « Comité National pour de Développement du triathlon » (Conadet), imaginé en 1984 et créé en 1985. Lors de l'assemblée générale extraordinaire du CONADET du 21 octobre 1989, rassemblant l'ensemble de ses membres, deux représentants du ministère des sports, deux du CNOSF et un de chacune des fédérations associées, la transformation en « Fédération française de triathlon » (FFTri) est officialisée et vingt-trois membres sont élus, auxquels il faut ajouter les quatre sièges des fédérations et celui du CNOSF pour obtenir le premier comité directeur de la FFTri, qui compte donc au total vingt-huit membres.  Le 1er mars 1994, la fédération intègre dans sa gestion le duathlon et propose dans les années qui suivent des compétitions et des championnats nationaux dédiés à cette pratique.  En 2006 lors de son assemblée générale, la fédération rajoute à son intitulé d'origine la mention « et des disciplines enchaînées », au regard de certaines activités de sport de pleine nature dont elle à également la gestion par décret ministériel. En 2009, le ministère des sports accorde la délégation de l'aquathlon à la fédération mais aussi de manière plus inattendue, celle du run and bike, des championnats de France sont dès lors organisés pour ces pratiques. L’arrêté portant intégration des raids natures qui intègre également le Swimrun dans la fédération est promulgué le 31 décembre 2016 ; à ces pratiques le ministère octroie également la gestion du triathlon et du duathlon pour les personnes en situation de handicap, le paratriathlon et le paraduathlon. Le siège de la FFTri se trouve à Saint-Denis-La-Plaine (93) et Philippe Lescure en est le président depuis mars 2001.</RiC:history>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Fédération_française_de_triathlon"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb13015697v#foaf:Organization"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/052002"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/052002-d4970e165">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1989-10-21</RiC:beginningDate>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d5bhvil20q--uuew3ia85vzc"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/052002-d4970e177">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1989-10-21</RiC:beginningDate>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:description xml:lang="fr">organisation du triathlon en France, dont : championnat et coupe de France.</RiC:description>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d5bhvimp30-1crwo1pfymd1z"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/052002_d4972e66">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/052002-d4970e121"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/052002_d4972e69">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1989-10-21</RiC:beginningDate>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/052002-d4970e127"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/052002">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/052002"/>
+      <RiC:creationDate>2018-03-06</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-03-23</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_052002</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Notice BnF : FRBNF13015697</RiC:source>
+      <RiC:source xml:lang="fr">Notice Wikipedia : https://fr.wikipedia.org/wiki/Fédération_française_de_triathlon</RiC:source>
+      <RiC:source xml:lang="fr">Site officiel de la FFTri : www.fftri.com/</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_052002"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Fédération_française_de_triathlon"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb13015697v"/>
+   </rdf:Description>
+</rdf:RDF>

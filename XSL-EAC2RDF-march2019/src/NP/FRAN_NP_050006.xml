@@ -1,0 +1,83 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050006</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-05-22</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Michel THIBAULT</agent>
+            <eventDescription>Notice rédigée avec la contribution d'Évelyne VAN DEN NESTE.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2013-06-14</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Michel THIBAULT</agent>
+            <eventDescription>Notice rédigée avec la contribution d'Évelyne VAN DEN NESTE.</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>État-major particulier du président de la République</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1959-01-08">8 janvier 1959</fromDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>présidence de la République</term>
+            </legalStatus>
+         </legalStatuses>
+         <biogHist>
+            <p>L’État-major particulier (EMP) du président de la République est l’héritier du secrétariat général militaire de la présidence de la République qui était chargé, sous la IVe République, des questions d’ordre militaire. </p>
+            <p>L’article 15 de la Constitution de 1958 et l’ordonnance du 7 janvier 1959 stipulent que l’EMP doit préparer l’ordre du jour du Conseil de défense. Il informe le président de la République et le conseille dans ses fonctions de chef des armées. L’EMP prépare également les cérémonies militaires auxquelles participe le président de la République, répond aux associations adressant une demande de soutien ou de haut-patronage à la présidence de la République et instruit les demande de décorations des personnels militaires.</p>
+            <p>Sous la présidence du Général de Gaulle, l’EMP est dirigé par un général de corps d’armée, assisté par deux officiers généraux et huit officiers supérieurs. L’arrêté du 20 juin 1969 fixe la composition de l’EMP au sein duquel, sous l’autorité d’un officier général, servent quatre officiers supérieurs : un adjoint « air », un adjoint « terre », un adjoint « mer » et un commissaire de la Marine. Les aides de camp du Président de la République ainsi que le chef du service médical sont traditionnellement rattachés à l’EMP.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-child"
+                      xlink:href="FRAN_NP_050651"
+                      xlink:type="simple">
+            <relationEntry>Aides de camp de Nicolas Sarkozy, président de la République</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2007-05-16">16 mai 2007</fromDate>
+               <toDate standardDate="2012-05-15">15 mai 2012</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:type="simple"
+                      xlink:href="FRAN_NP_000001">
+            <relationEntry>Présidence de la République</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1959-01-08">8 janvier 1959</fromDate>
+            </dateRange>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

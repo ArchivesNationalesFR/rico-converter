@@ -1,0 +1,460 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010224</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NAETUDE_097</otherRecordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2013-07-24</eventDateTime>
+            <agentType>human</agentType>
+            <agent>null MEIBO</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marie-Françoise LIMON-BONNET</agent>
+            <eventDescription>F. Clavaud, 20 août 2015 : revu dates, historique, tous les liens IR, ajouté indexation lieux et lien chronologique vers étude CLV</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Etude XCVII</part>
+         </nameEntry>
+         <nameEntry>
+            <part>indéterminé</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1650-01-01">1650</fromDate>
+               <toDate standardDate="1997-09-18">18 septembre 1997</toDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">Rue de Rennes, Paris</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzcvqk7l--1b9d961enqqai">Rennes (rue de)</placeEntry>
+               <dateRange>
+                  <fromDate standardDate="1897-01-01">1897</fromDate>
+                  <toDate standardDate="1997-09-18">18 septembre 1997</toDate>
+               </dateRange>
+            </place>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">Place Dauphine, Paris</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nz9s7c1l-36lmrluf1zkk">Dauphine (place)</placeEntry>
+               <dateRange>
+                  <fromDate standardDate="1703-01-01">1703</fromDate>
+                  <toDate standardDate="1897-12-31">1897</toDate>
+               </dateRange>
+            </place>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">Ile de la Cité, Paris</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d5bi93acgi-13bo3jn5ojefn">Cité (île de la)</placeEntry>
+               <dateRange>
+                  <fromDate standardDate="1650-01-01">1650</fromDate>
+                  <toDate standardDate="1703-12-31">1703</toDate>
+               </dateRange>
+            </place>
+         </places>
+         <legalStatuses>
+            <legalStatus>
+               <term>office notarial</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à Paris</term>
+               <dateRange>
+                  <fromDate standardDate="1650-01-01">1650 au 18 septembre 1997</fromDate>
+                  <toDate standardDate="1997-09-18"/>
+               </dateRange>
+            </function>
+         </functions>
+         <mandates>
+            <mandate>
+               <descriptiveNote>
+                  <p>Arrêté du Ministre de la Justice du 8 septembre 1997 (J.O. du 18 septembre 1997, p. 13561) supprimant l'office.</p>
+               </descriptiveNote>
+            </mandate>
+         </mandates>
+         <biogHist>
+            <p>L'étude est établie en continu dans la Cité, à l'exception d'un court séjour rue de l'Arbre-Sec à la fin du XVIIème siècle. A partir de 1703, elle est installée place Dauphine, jusqu'à son transfert rue de Rennes (1897). </p>
+            <p>Le notaire Robert Blanc est destitué en 1993. L'office est alors d'abord placé sous administration judiciaire, puis supprimé en 1997 (arrêté du Ministre de la Justice du 8 septembre 1997, J.O. du 18 septembre 1997, p. 13561). Les minutes sont attribuées à l'étude CLV.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010822"
+                      xlink:type="simple">
+            <relationEntry>Paillat, Marcel Louis Auguste</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1924-01-04">4 janvier 1924</fromDate>
+               <toDate standardDate="1953-12-09">9 décembre 1953</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010877"
+                      xlink:type="simple">
+            <relationEntry>Périer, Marie-Gabriel</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1781-01-30">30 janvier 1781</fromDate>
+               <toDate standardDate="1789-03-28">28 mars 1789</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011337"
+                      xlink:type="simple">
+            <relationEntry>Lan, Jean-Louis de</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1735-01-05">5 janvier 1735</fromDate>
+               <toDate standardDate="1755-12-02">2 décembre 1755</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012674"
+                      xlink:type="simple">
+            <relationEntry>Choiseau, Antoine</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1650-01-08">8 janvier 1650</fromDate>
+               <toDate standardDate="1661-12-27">27 décembre 1661</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011961"
+                      xlink:type="simple">
+            <relationEntry>Gresle, Paul Jean Henri</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1896-09-23">23 septembre 1896</fromDate>
+               <toDate standardDate="1924-01-04">4 janvier 1924</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013097"
+                      xlink:type="simple">
+            <relationEntry>Agasse, Henry</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1810-12-21">21 décembre 1810</fromDate>
+               <toDate standardDate="1837-02-01">1er février 1837</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012835"
+                      xlink:type="simple">
+            <relationEntry>Bellanger, Jérôme</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1671-06-20">20 juin 1671</fromDate>
+               <toDate standardDate="1703-02-27">27 février 1703</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012914"
+                      xlink:type="simple">
+            <relationEntry>Blanc, Robert François</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1953-12-09">9 décembre 1953</fromDate>
+               <toDate standardDate="1993-07-28">28 juillet 1993</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012910"
+                      xlink:type="simple">
+            <relationEntry>Bioche, Guillaume-Charles</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1755-12-03">3 décembre 1755</fromDate>
+               <toDate standardDate="1770-05-10">10 mai 1770</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012000"
+                      xlink:type="simple">
+            <relationEntry>Guillot, Jean</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1662-02-28">28 février 1662</fromDate>
+               <toDate standardDate="1668-05-24">24 mai 1668</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010742"
+                      xlink:type="simple">
+            <relationEntry>Roussel, Jacques II</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1703-03-20">20 mars 1703</fromDate>
+               <toDate standardDate="1734-12-29">29 décembre 1734</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010426"
+                      xlink:type="simple">
+            <relationEntry>Thiac, Jean-Baptiste</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1837-02-01">1er février 1837</fromDate>
+               <toDate standardDate="1858-02-02">2 février 1858</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010402"
+                      xlink:type="simple">
+            <relationEntry>Tandeau de marsac, Gabriel-Jean</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1858-02-02">2 février 1858</fromDate>
+               <toDate standardDate="1896-09-23">23 septembre 1896</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011152"
+                      xlink:type="simple">
+            <relationEntry>Mesnier, Jean</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1668-06-04">4 juin 1668</fromDate>
+               <toDate standardDate="1669-10-26">26 octobre 1669</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_011466"
+                      xlink:type="simple">
+            <relationEntry>Lefèbvre de saint-Maur, Jean-Baptiste</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1789-03-28">28 mars 1789</fromDate>
+               <toDate standardDate="1810-12-21">21 décembre 1810</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012367"
+                      xlink:type="simple">
+            <relationEntry>Durand, Louis-Henri</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1770-05-12">12 mai 1770</fromDate>
+               <toDate standardDate="1781-01-27">27 janvier 1781</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_012436"
+                      xlink:type="simple">
+            <relationEntry>Duparc, Noël</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1670-12-14">14 décembre 1670</fromDate>
+               <toDate standardDate="1671-06-19">19 juin 1671</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_013006"
+                      xlink:type="simple">
+            <relationEntry>Bourin, Jacques</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1663-01-01">1er janvier 1663</fromDate>
+               <toDate standardDate="1664-04-30">30 avril 1664</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-later"
+                      xlink:href="FRAN_NP_010263"
+                      xlink:type="simple">
+            <relationEntry>Etude CLV</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1997-09-18">18 septembre 1997</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>A la suppression de l'office, ses minutes sont attribuées à l'étude CLV.</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043014"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Archives de l'étude XCVII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051204"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Gabriel Jean Tandeau de Marsac pour l'étude XCVII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051629"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Henry Agasse pour l'étude XCVII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051371"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Jean-Baptiste Lefèbvre de Saint-Maur pour l'étude XCVII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051210"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Jean-Baptiste Thiac pour l'étude XCVII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051347"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Jean Louis de Lan pour l'étude XCVII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051279"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Marie Gabriel Périer pour l'étude XCVII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051566"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Antoine Choiseau pour l'étude XCVII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051598"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Guillaume Charles Bioche pour l'étude XCVII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051259"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Jacques II Roussel pour l'étude XCVII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051590"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Jérôme Bellanger pour l'étude XCVII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051524"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Louis Henri Durand pour l'étude XCVII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043016"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Antoine CHOISEAU, 29 janvier 1650 - 27 décembre 1661 (étude XCVII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043018"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jacques BOURIN, janvier 1663 - 30 avril 1664 (étude XCVII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043020"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jacques II ROUSSEL, 20 mars 1703 - 29 décembre 1734 (étude XCVII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043017"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean GUILLOT, 28 février 1662 - 24 mai 1668 (étude XCVII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043019"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean MESNIER, 4 juin 1668 - 26 octobre 1669 (étude XCVII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043015"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jérôme BELLANGER, 20 juin 1671 - 27 février 1703 (étude XCVII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043022"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Louis Henri DURAND, 12 mai 1770 - 27 janvier 1781 (étude XCVII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054193"
+                           xlink:type="simple">
+            <relationEntry localType="archival">«Mélanges» (dossiers de clients) de l’étude XCVII. MC/ET/XCVII/125/B (XVIIe siècle)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043024"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean Louis de LAN, 10 janvier 1735 - 2 décembre 1755 (étude XCVII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043027"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean-Baptiste THIAC, avril 1837 - 2 février 1858 (étude XCVII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043026"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Henry AGASSE, 21 décembre 1810 - 1er février 1837 (étude XCVII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043028"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Gabriel Jean TANDEAU de MARSAC, 2 février 1858 - juin 1890 (étude XCVII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043025"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean-Baptiste LEFÈBVRE de SAINT-MAUR, 28 mars 1789 - novembre 1810 (étude XCVII)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

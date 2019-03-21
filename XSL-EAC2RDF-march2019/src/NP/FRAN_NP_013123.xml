@@ -1,0 +1,108 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_013123</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE03048</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Faustin FOIRET, Une corporation parisienne pendant la Révolution, les notaires, Paris, 1912, p.111, 298 et 303</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Andelle, Joseph-Roch</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1781-04-03">3 avril 1781</fromDate>
+               <toDate standardDate="1794-01-24">24 janvier 1794</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp0xwi-18dd5xg8fnnjr">saint-jean-en-grève (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvh3cks--4ikah9uckyb2">temple (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzcr72sf-bhjh0f1oxwbl">quatre-fils (rue des)</placeEntry>
+               <placeEntry localType="nomLieu">rue des Quatre-Fils</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1781-04-03">3 avril 1781</fromDate>
+                  <toDate standardDate="1794-01-24">24 janvier 1794</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Démissionnaire le 5 pluviôse an II (24 janvier 1794), faute d'avoir pu fournir un certificat de civisme, il est remplacé par Faugé, l'un des notaires reçus au concours de l'an II.</p>
+            <p>Réintégré par le décret du 19 vendémiaire an III (10 octobre 1794), il renonce finalement au notariat et laisse son étude à Faugé.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010215"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale LXXXVIII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1781-04-03">3 avril 1781</fromDate>
+               <toDate standardDate="1794-01-24">24 janvier 1794</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_042897"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Joseph Roch ANDELLE, avril 1781 - 24 janvier 1794 (étude LXXXVIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054032"
+                           xlink:type="simple">
+            <relationEntry localType="archival">«Mélanges» (dossiers de clients) de l’étude LXXXVIII. MC/ET/LXXXVIII/1127, MC/ET/LXXXVIII/1136, MC/ET/LXXXVIII/1157, MC/ET/LXXXVIII/1178, MC/ET/LXXXVIII/1181, MC/ET/LXXXVIII/1195, MC/ET/LXXXVIII/1266-MC/ET/LXXXVIII/1339/A (1354-1868)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051633"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Joseph Roch Andelle pour l'étude LXXXVIII</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/051801">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">France. Cabinet d'Élisabeth Guigou, ministre de l'emploi et de la solidarité (2000-2002)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051801_d4918e43"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/fa50264b-439d-4fcc-9a1d-8587b1e82dba"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-10-18</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-05-06</RiC:endDate>
+      <RiC:agentIsSourceOfActivityRealizationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051801-d4916e111"/>
+      <RiC:history xml:lang="fr">Cabinet d'Élisabeth Guigou ministre de l'emploi et de la solidarité, au sein du gouvernement de Lionel Jospin, sous la présidence de Jacques Chirac. Le 18 octobre 2000, Élisabeth Guigou reprend les fonctions ministérielles exercées par Martine Aubry suite à sa démission. Elle poursuit les chantiers engagés par sa prédécesseure. </RiC:history>
+      <RiC:noteOnStructureOrGenealogy xml:lang="fr">Directeur de cabinet : Christian Vigouroux Directeurs adjoints du cabinet : Agnès Jeannet – Bernard Krynen Chef de cabinet : Jean-Louis Géraud Chefs adjoints de cabinet : Franck Dumontel – Anne-Marie Heloir Chargée de mission auprès de la ministre : Lucile Schmid Chargés de mission auprès de la ministre :  Roland Cecchi-Tenerini : action sociale et aide sociale Eric Gissler : affaires budgétaires et financières Gildas Le Coz : gestion des ressources humaines, administration générale Françoise Monard : responsable du secteur communications Stéphane Pellet : affaires politiques Conseillers techniques :  Jean Alegre : relations avec les associations et initiatives civiques et sociales Pierre Bilger : courrier et questions parlementaires Amanda Jones : communication Fabienne Klein-Donati : droit et sécurité juridique. Naturalisation, lutte contre les discriminations, rapatriés, mineurs (mineurs étrangers , demandeurs d'asile isolés, errants, victimes), suivi des conseils de sécurité intérieure, politique de la ville Aurélie Lapidus : affaires européennes et internationales Hugues Nancy : affaires politiques Rodolphe Pesce : relations avec les élus Jérôme Saddier : relations avec le Parlement Pierre-Yves Bocquet : famille, accidents du travail et maladies professionnelles, organismes de sécurité sociale, mutualité et institutions de prévoyance Laurent Caussat : finances sociales et couverture maladie universelle Muriel Lejeune : questions hospitalières et fonction publique hospitalière Dr Odile Picard : sécurité sanitaire et santé publique, affaires médicales François Romaneix : assurance maladie, professions de santé, cliniques privées, médicaments/dispositifs médicaux Vincent Champain : macroéconomie, analyse économique et emploi, réduction du temps de travail, assurance chômage et emploi précaire Catherine d'Hervé : services déconcentrés, inspection du travail Hervé Gosselin : relations du travail, santé et sécurité au travail, égalité professionnelles Delphine Lévy : lutte contre les exclusions, insertion par l'économique, accompagnement des demandeurs d'emploi (TRACE, CES, CEC, nouveau départ, RMI, urgence sociale (sans abri, CHRS) Christine Reffet : emplois jeunes, ANPE et AFPA, formation professionnelle Christiane Ducastelle : immigration, OMI, haut conseil à l'intégration Ahmed Ghayet : jeunes des banlieues, associations, sport et culture</RiC:noteOnStructureOrGenealogy>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051788-d4907e145"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051788-d4907e148"/>
+      <RiC:agentIsTargetOfAgentTemporalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentTemporalRelation/051788-d4907e226"/>
+      <RiC:agentIsSourceOfAgentTemporalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentTemporalRelation/051801-d4916e296"/>
+      <RiC:agentIsTargetOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/051801-d4916e269"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051801-d4916e308"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051801"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityRealizationRelation/051801-d4916e111">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityRealizationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-10-18</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-05-06</RiC:endDate>
+      <RiC:activityRealizationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Activity"/>
+            <RiC:description xml:lang="fr">Cabinet du ministre de l'emploi et de la solidarité</RiC:description>
+            <RiC:hasActivityType rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d5bhvikan6-574lz876edtw"/>
+         </rdf:Description>
+      </RiC:activityRealizationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051801-d4916e308">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            France. Cabinet d'Élisabeth Guigou, ministre de l'emploi et de la solidarité (2000-2002) et l'ensemble de documents "Cabinets de Martine Aubry et d'Élisabeth Guigou, ministres de l'Emploi et de la Solidarité. : communiqués, discours, dossiers de presse et rapports (1997-2002)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/056866-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051801_d4918e43">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051801-d4916e79"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051801">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/051801"/>
+      <RiC:creationDate>2017-11-15</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-11-15</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051801</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051801"/>
+   </rdf:Description>
+</rdf:RDF>

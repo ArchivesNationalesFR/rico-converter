@@ -1,0 +1,87 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051372</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-09-08</eventDateTime>
+            <agentType>human</agentType>
+            <agent>null MISSION.REFERENTIELS</agent>
+            <eventDescription>Elsa Camus, 8 septembre 2016 : notice créée par Evelyne Van den Neste</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Naerhuysen, Hervé (1971-....)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1971-01-01">1971</fromDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d-11hasr639--1mmaoyj7hl5zc">membre du cabinet du président de la République</term>
+               <dateRange>
+                  <fromDate standardDate="2012-01-01">2012</fromDate>
+                  <toDate standardDate="2015-12-31">2015</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>conseiller</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>
+               <span style="underline">Diplômes</span>
+            </p>
+            <list>
+               <item>Ancien élève de l’Ecole nationale d’administration (promotion République) ;</item>
+            </list>
+            <p/>
+            <p>
+               <span style="underline">Carrière</span>
+            </p>
+            <list>
+               <item>Adjoint au chef du bureau fipul (synthèse finances publiques) de la direction générale du Trésor et de la politique économique au ministère de l’Economie, des finances et de l’industrie, de 2007 à 2009 ;</item>
+               <item>Responsable de la trésorerie de l’Etat et des procédures budgétaires à l’Agence France Trésor de 2009 à 2012 ;</item>
+               <item>Conseiller au cabinet du président de la République, de 2012 à 2015 ;</item>
+               <item>Chargé de mission auprès du directeur général de Pro BTP, en 2015</item>
+            </list>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_000165"
+                      xlink:type="simple">
+            <relationEntry>École nationale d'administration</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2006-01-01">2006</fromDate>
+               <toDate standardDate="2007-12-31">2007</toDate>
+            </dateRange>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

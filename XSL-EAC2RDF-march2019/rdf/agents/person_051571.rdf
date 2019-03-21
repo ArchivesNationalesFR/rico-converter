@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051571">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Berry, Charles Ferdinand de Bourbon (1778-1820 ; duc de)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051571_d4786e55"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051571_d4786e58"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051571_d4786e61"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1778-01-24</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1820-02-14</RiC:deathDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051571-d4784e177"/>
+      <RiC:history xml:lang="fr">Deuxième fils du comte d’Artois (futur Charles X) et de Marie-Thérèse de Savoie, Charles-Ferdinand, duc de Berry (1778-1820) émigre dès les débuts de la Révolution, sert dans l’armée de Condé (1792), puis passe en Angleterre où il épouse Anne Brown, dont il a deux filles : Charlotte Marie Augustine de Bourbon (1808-1886), qui sera comtesse d'Issoudun et princesse de Faucigny-Lucinge, et Louise Charlotte Marie de Bourbon (1809-1891), qui sera comtesse de Vierzon et baronne de Charette. De retour en France au moment de la Première Restauration, il suit son oncle Louis XVIII à Gand pendant les Cent-Jours. Son premier mariage n’ayant pas été reconnu par sa famille, il épouse, en 1816, la princesse Marie-Caroline de Bourbon-Siciles (1798-1870), dont il a une fille, Louise d'Artois (1819-1864), qui épouse en 1845 Charles III de Parme, duc de Parme, et un fils posthume, Henri d'Artois (29 septembre 1820-1883), duc de Bordeaux, puis « comte de Chambord », qui épouse en 1846 Marie Thérèse de Modène (1817-1886). Le duc de Berry et sa jeune épouse s'installent en 1816 au palais de l’Elysée et achètent le 14 août 1818 le château de Rosny (Yvelines) qui devient leur résidence d’été. Ils reçoivent également le château de Bagatelle, dans le bois de Boulogne, construit en 1777, par le comte d'Artois. Le duc de Berry est poignardé à sa sortie de l’Opéra de la rue de Richelieu le dimanche gras 13 février 1820, vers onze heures du soir, par l’ouvrier Louvel, qui veut éteindre en lui la race des Bourbons. Quelques mois plus tard naît son fils posthume, Henri, duc de Bordeaux, « l'enfant du miracle », dernier représentant de la branche aînée, qui s'éteint avec lui, faute de descendance. Le duc de Berry est inhumé dans la basilique de Saint-Denis mais son coeur repose dans la chapelle de l'hospice de Rosny.</RiC:history>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051571--d4784e143"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051571--d4784e155"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051571--d4784e167"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb12169291q#foaf:Person"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Charles-Ferdinand_d%27Artois"/>
+      <isni:ISNIAssigned>0000000107999492</isni:ISNIAssigned>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/051364-d4621e295"/>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/051571-d4784e208"/>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051571-d4784e256"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051571"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051571-d4784e177">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj53l0-1180obzunmkm7"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051571-d4784e256">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Berry, Charles Ferdinand de Bourbon (1778-1820 ; duc de) et l'ensemble de documents "Fonds du château de Rosny / archives du duc et de la duchesse de Berry (1796-1869)"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/050086-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051571_d4786e55">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051571-d4784e103"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051571_d4786e58">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051571-d4784e109"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051571_d4786e61">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051571-d4784e115"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051571--d4784e143">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Berry, Charles Ferdinand de Bourbon (1778-1820 ; duc de)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/051705-d4892e171 http://data.archives-nationales.culture.gouv.fr/place/051571-d4784e138"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051571--d4784e155">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Berry, Charles Ferdinand de Bourbon (1778-1820 ; duc de)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/051571-d4784e150"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051571--d4784e167">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Berry, Charles Ferdinand de Bourbon (1778-1820 ; duc de)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/051571-d4784e162"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051571">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051571"/>
+      <RiC:creationDate>2017-07-13</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-12-27</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051571</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Archives nationales, fonds duc et duchesse de Berry (371 AP).</RiC:source>
+      <RiC:source xml:lang="fr">BnF notice n° : FRBNF12169291.</RiC:source>
+      <RiC:source xml:lang="fr">Article Charles-Ferdinand d'Artois de Wikipédia en français (http://fr.wikipedia.org/wiki/Charles-Ferdinand_d%27Artois).</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000107999492"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051571"/>
+      <rdfs:seeAlso rdf:resource="http://data.bnf.fr/ark:/12148/cb12169291q"/>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Charles-Ferdinand_d%27Artois"/>
+   </rdf:Description>
+</rdf:RDF>

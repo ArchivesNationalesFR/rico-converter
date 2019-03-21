@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050227">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Viansson-Ponté, Pierre</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050227_d3833e34"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1920-01-01</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1979-12-31</RiC:deathDate>
+      <RiC:history xml:lang="fr">Le journaliste Pierre Viansson-Ponté (1920-1979) fut successivement directeur régional à Nancy à l’agence France-Presse (1945), premier secrétaire de rédaction à Paris (1946-1947), éditorialiste et chef adjoint du service politique (1948-1952), avant de devenir rédacteur en chef de L’Express (1953-1958), puis chef du service politique (1958), rédacteur en chef adjoint (1969), éditorialiste et conseiller de direction (1972-1977) du journal Le Monde.  Parallèlement, Pierre Viansson-Ponté exerça un mandat de conseiller municipal à Bazoches-sur-Guyonne (Yvelines) et enseigna à l’Université de Paris I-Sorbonne.  Il est l’auteur de plusieurs essais : Risques et chances de la Ve République, Plon, 1959 ; Les Gaullistes : rituel et annuaire, Paris, le Seuil, 1963 ; Lettre ouverte aux hommes politiques, Paris, Albin Michel, 1976 ; Changer la mort, en collaboration avec Léon Schwartzenberg, Paris, Albin Michel, 1977 ; Histoire de la République gaullienne, Fayard, 1981. </RiC:history>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050227"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050227_d3833e34">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050227-d3831e64"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050227">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050227"/>
+      <RiC:creationDate>2013-10-15</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050227</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050227"/>
+   </rdf:Description>
+</rdf:RDF>

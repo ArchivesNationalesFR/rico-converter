@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051115</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-06-18</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Frédérique LE DU</agent>
+            <eventDescription>F. Clavaud, 18 juin 2015 : revu lien chronologique, et temps des verbes dans la description</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, versement n°20090397, article 30 : correspondance du Ministre de l'Industrie et du Commerce au Secrétaire d'Etat aux Finances et aux Affaires économiques [mai 1950].</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_051115-d4417e79">
+            <part>France. Ministère de la Production industrielle (1944-1947)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1944-01-01">1944</fromDate>
+               <toDate standardDate="1947-12-31">1947</toDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>ministère</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function xml:id="FRAN_activity_051115-d4417e111">
+               <term vocabularySource="d5bhvimlul-1gvgx3n53j0e">industrie</term>
+            </function>
+         </functions>
+         <mandates>
+            <mandate>
+               <descriptiveNote>
+                  <p xml:id="FRAN_rule_051115-d4417e124">Ordonnance du 28 septembre 1944 relative à l'organisation du ministère de la Production industrielle.</p>
+               </descriptiveNote>
+            </mandate>
+         </mandates>
+         <structureOrGenealogy>
+            <p>A la suite de l'ordonnance du 28 septembre 1944, les différents services et directions étaient les suivants :</p>
+            <list>
+               <item>le Cabinet du ministre et le Bureau du Cabinet,</item>
+               <item>le Service central de l'Inspection générale de la Production industrielle,</item>
+               <item>la Direction de l'Administration générale,</item>
+               <item>la Direction de la Coordination industrielle,</item>
+               <item>le Secrétariat général à la Production industrielle,</item>
+               <item>le Secrétariat général au Commerce et à l'organisation économique.</item>
+            </list>
+         </structureOrGenealogy>
+         <biogHist>
+            <p>Les réformes organisationnelles opérées pendant la Seconde Guerre mondiale sont confirmées après la Libération par l’ordonnance du 28 septembre 1944 qui crée le ministère de la Production industrielle. Cette ordonnance y maintient deux secrétariats généraux chargés l’un de la Production, l’autre du Commerce et de l’Organisation économique, qui se partagent les mêmes directions verticales et transversales.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-earlier"
+                      xlink:href="FRAN_NP_051114"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_051115-d4417e168">
+            <relationEntry>France. Secrétariat d'Etat à la Production industrielle (1941-1944)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1944-01-01">1944</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_017062"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_051115-d4417e180">
+            <relationEntry localType="archival">Ministère de la Production industrielle : contrats dits « Bourkaïb » pour travaux
+     exceptionnels (1944-1945).</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_017151"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_051115-d4417e186">
+            <relationEntry localType="archival">Ministères de la Production industrielle puis de la Reconstruction et de
+          l'Urbanisme ; Service des constructions provisoires. Traitement du personnel
+          (1941-1950).</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

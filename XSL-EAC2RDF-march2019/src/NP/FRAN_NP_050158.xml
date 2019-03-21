@@ -1,0 +1,69 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050158</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Complète</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-10-16</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Raphael BAUMARD</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Estaing, Charles-Henri (comte et amiral d')</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1729-01-01">1729</fromDate>
+               <toDate standardDate="1794-12-31">1794</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Né à Ravel (Puy-de-Dôme) le 20 novembre 1729, Charles-Henri, comte d’Estaing entra aux mousquetaires en mai 1738. Lieutenant au régiment de Rouergue en septembre 1745, il fit la campagne de Flandre de 1746 et 1747 et fut promu capitaine en novembre 1747. Colonel au régiment de Rouergue en janvier 1748, blessé au siège de Maestricht, il effectua après la paix une mission en Angleterre. Brigadier d’infanterie en octobre 1756, il partit pour les Indes sur le 
+     <span style="italic">Zodiaque</span> dans l’escadre d’Aché, servit dans l’armée commandée par Lally-Tollendal et se distingua en 1758 aux combats de Gondelour, d’Arcote et à la prise du fort Saint-David. Blessé et fait prisonnier à l’attaque de Madras, il fut libéré sur parole et gagna l’île de France où il arma deux navires pour organiser un expédition contre les établissements anglais du golfe Persique. Il détruisit deux forts, prit un bâtiment anglais de 40 canons puis alla ravager les comptoirs anglais de la côte de Sumatra. Maréchal de camp en février 1761, lieutenant général en juillet 1762, il reçut le commandement d’une expédition qui se préparait à Brest contre les colonies portugaises du Brésil, mais qui fut annulée par la signature du traité de Paris. 
+    </p>
+            <p>Nommé lieutenant général des armées navales en décembre 1763, gouverneur général des îles sous le Vent à Saint-Domingue en février 1763, il fut inspecteur général commandant la marine à Brest en 1772 et l’année suivante commandant l’escadre de Toulon. Vice-amiral en février 1777, il reçut en avril 1778 le commandement de l’escadre chargée d’aller porter aide et assistance aux insurgés américains. Il fut ensuite nommé commandant en chef de la grande escadre franco-espagnole réunie à Cadix en vue d’opérations aux Antilles (août 1780). Gouverneur de Touraine en 1785, membre de l’Assemblée des notables de 1787, commandant de la garde nationale de Versailles en 1789, il joua un rôle équivoque dans les journées des 5 et 6 octobre. Nommé amiral de France le 1er janvier 1792, il refusa de servir à terre mais fut à nouveau promu en janvier 1793. Arrêté comme suspect, il fut condamné à mort et exécuté à Paris le 28 avril 1794.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_051667"
+                      xlink:type="simple">
+            <relationEntry>Grandjean, Balthazar (1760-1824)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1782-01-01">1782</fromDate>
+               <toDate standardDate="1783-12-31">1783</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_003488"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds amiral d’Estaing (XVIIIe siècle)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

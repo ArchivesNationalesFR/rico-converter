@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/corporateBody/003285">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdfs:label xml:lang="fr">France. Ministères de l'Éducation nationale et de l'Enseignement supérieur et de la Recherche. Mission de la modernisation et des politiques locales (2009-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/003285_d32e60"/>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/003285_d32e63"/>
+      <RiC:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-01-01</RiC:beginningDate>
+      <RiC:history xml:lang="fr">La Mission de la modernisation et des politiques locales (MMPL) est chargée de l'animation de la modernisation de l'action administrative et des mesures de décentralisation. Elle assure le suivi à la fois des politiques interministérielles de modernisation et des réformes des politiques territoriales de l’État. Par ailleurs, elle soutient et accompagne les projets de modernisation des services académiques et centraux. Enfin, elle a pour objectif d'animer et de suivre les mesures de décentralisation, de renforcer les relations avec les collectivités territoriales et d'assurer le suivi des politiques locales en matière éducative. Entre 1986 et 1995, la Direction des personnels administratifs et de service (DPAOS) dirige la mission de modernisation. À partir du 20 avril 1995, et jusqu'au 14 décembre 1997, cette dernière est placée sous l'autorité de la Direction de l'administration et des personnels (DAP), puis, jusqu'en 2000, de la Direction de l'administration, Mission de la modernisation (DA MIMOD). Entre 2000 et 2003, la mission de modernisation est dirigée par la Direction de l'administration, Service du pilotage des services académiques et de la modernisation, Mission de la modernisation (DA SPSAM MIMOD). Du 7 avril 2003 au 16 mai 2006, les missions de modernisation et des politiques locales sont attribuées aux départements de la décentralisation (DPMA A8) et de la modernisation (DPMA A9), sous l'autorité de la Sous-direction de la modernisation (SDDM). Du 17 mai 2006 au 3 septembre 2009, le SAAM B1 constitue le département des politiques locales ; le SAAM B2 correspond au département de la modernisation. Les deux départements sont dirigés par la sous-direction des politiques locales et de la modernisation (SDPLM). Du 4 septembre 2009 au 18 février 2014, la Mission de modernisation et des politiques locales dépend du Service de l'action administrative et des moyens (SAAM), qui est rattaché au Secrétariat général. Depuis le 18 février 2014, la Mission de la modernisation et des politiques locales est directement rattachée au Secrétariat général.</RiC:history>
+      <RiC:noteOnStructureOrGenealogy xml:lang="fr">La Mission de la modernisation et des politiques locales se compose de deux départements qui se partagent les attributions de la Mission :  - Le département de la modernisation (MMPL1) contribue à l'amélioration de la qualité du service rendu aux usagers et l'optimisation du fonctionnement de l'administration. En ce sens, il accompagne les mesures de simplification administrative dans le contexte de la déconcentration et de l'évolution des systèmes d'information. Il participe également à la mise en œuvre de projets de simplification pour les usagers et les agents. Il soutient des études portant sur le fonctionnement des services centraux et déconcentrés ; - Le département des politiques locales (MMPL2) pilote les mesures de décentralisation. De plus, il est chargé de l'analyse des politiques éducatives locales, et veille à assurer le partage des compétences entre les collectivités territoriales et le ministère. Il assure le secrétariat du Conseil territorial de l’Éducation nationale (CTEN) et prépare le rapport du Gouvernement au Parlement sur les questions de modernisation des politiques locales. Au plan interministériel, il participe aux travaux sur la réforme de l'administration territoriale de l’État, qui contribue à partir de 2004 à renforcer le rôle des préfets.</RiC:noteOnStructureOrGenealogy>
+      <RiC:agentIsTargetOfAgentTemporalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentTemporalRelation/003285-d30e217"/>
+      <RiC:agentIsSourceOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/003285-d30e193"/>
+      <RiC:agentIsSourceOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/003285-d30e205"/>
+      <RiC:agentIsTargetOfHierarchicalRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentHierarchicalRelation/003285-d30e179"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/003285"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/003285_d32e60">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/003285-d30e109"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/003285_d32e63">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/003285-d30e115"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/003285">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/003285"/>
+      <RiC:creationDate>2013-04-23</RiC:creationDate>
+      <RiC:lastUpdateDate>2018-09-20</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_003285</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:source xml:lang="fr">Informations fournies par la Mission des archives et du patrimoine culturel du MENESR.</RiC:source>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_003285"/>
+   </rdf:Description>
+</rdf:RDF>

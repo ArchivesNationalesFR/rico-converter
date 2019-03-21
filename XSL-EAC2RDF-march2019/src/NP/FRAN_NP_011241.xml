@@ -1,0 +1,116 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_011241</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01011</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Philippe BERTHOLET, Etudes et notaires parisiens en 1803, au moment de la loi du 25 ventôse an XI (16 mars 1803), Paris, 2004, p. 539-541</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Morisseau, Jean</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1799-11-09">9 novembre 1799</fromDate>
+               <toDate standardDate="1827-07-24">24 juillet 1827</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="voie" vocabularySource="d3nzd0ranp--1xongjhkzd5q5">saint-andré-des-arts (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzchg5xa-1tqhdsvsbhe21">petits-pères (passage des)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzcwmjaq--1qk0szy1p6z1n">richelieu (rue de)</placeEntry>
+               <placeEntry localType="nomLieu">rue Saint-André-des-Arts (de l'an VIII à 1812), 59 passage des Petits-Pères (de 1813 à 1826), 5 rue de Richelieu, puis 60 (en 1827)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1799-11-09">9 novembre 1799</fromDate>
+                  <toDate standardDate="1827-07-24">24 juillet 1827</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Né le 23 juin 1767 à Montoire (Loir-et-Cher)</p>
+            <p>marié à Joséphine Leroy (voir ET/LXX/678, 2 ventôse an VIII [5 février 1800], contrat de mariage)</p>
+            <p>les époux divorcent en 1808</p>
+            <p>de ce mariage est issu un fils, Jean-Ambroise, qui lui succède</p>
+            <p>d'abord principal clerc d'Alexandre Honnet auquel il succède</p>
+            <p>chevalier de la Légion d'Honneur</p>
+            <p>décédé le 18 juin 1839 à Bagneux (Seine)</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010150"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XXIII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1799-11-09">9 novembre 1799</fromDate>
+               <toDate standardDate="1827-07-24">24 juillet 1827</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XLV/810, 26 juillet 1839, inventaire après décès</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041695"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean MORISSEAU, 12 novembre 1799 - 24 juillet 1827 (étude XXIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_053023"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Archives de l'office notarial XXIII</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051331"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Jean Morisseau pour l'étude XXIII</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

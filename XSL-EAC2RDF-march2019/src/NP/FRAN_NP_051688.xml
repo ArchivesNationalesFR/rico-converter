@@ -1,0 +1,98 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051688</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2017-09-08</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Vanessa SZOLLOSI</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-10-12</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Vanessa SZOLLOSI</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Notice d'autorité BnF : FRBNF11919077 </sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Benamouzig (Daniel). La santé au miroir de l'économie. Paris : Presses universitaires de France, 2005. 496 p.</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Identifiant ISNI : http://www.isni.org/isni/0000000110405384</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 1040 5384 </entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Péquignot, Henri (1914-2003)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1914-08-14">14 août 1914</fromDate>
+               <toDate standardDate="2003-09-20">20 septembre 2003</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msixdvh--wgctct8soc1y">membre de cabinet ministériel</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msjarlu--l5x9bzdkopz8">médecin</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Né en 1914, Henri Péquignot effectue ses études de médecine dans les années 1930. Durant son internat, il se spécialise en « médecine clinique ». En 1939, encore interne, il est mobilisé comme médecin militaire. Il rejoint Alger après la défaite et l'occupation allemande.</p>
+            <p>À la Libération, il rejoint Paris et le ministère de la santé. Il y exerce d'abord comme médecin avant d'être nommé au cabinet du ministre en 1951. </p>
+            <p>Il devient médecin des hôpitaux en 1950 puis professeur agrégé en 1960.</p>
+            <p>Henri Péquignot contribue activement à la création de la première équipe française d'économie médicale. Proche du Centre de recherche et de documentation sur la consommation (CREDOC), organisme de recherche rattaché au Plan, il y rejoint la division d'économie médicale.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://data.bnf.fr/11919077/henri_pequignot/"
+                      xlink:type="simple">
+            <relationEntry>Henri Péquignot (1914-2003)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1914-08-14">14 août 1914</fromDate>
+               <toDate standardDate="2003-09-20">20 septembre 2003</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Lien vers la notice d'autorité BnF.</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_057314"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Papiers d'Henri Péquignot 1878, 1939-1983</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

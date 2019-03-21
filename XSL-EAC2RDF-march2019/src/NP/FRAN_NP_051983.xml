@@ -1,0 +1,92 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051983</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2018-02-23</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+            <eventDescription>Pas de notice wikipédia. Pas d'IR.</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Notice d'autorité BnF n° FRBNF10738384.</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Madeleine Lassère, « Moi, Eugénie de Coucy, Maréchale Oudinot, duchesse de Reggio », Paris, Perrin, 200.</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 2137 929X</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Oudinot, Eugénie (1793-1868)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Coucy, Eugénie de (1793-1868)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Reggio, Eugénie Oudinot (1793-1868 ; duchesse de)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Reggio, Duchesse de (1793-1868)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Oudinot, Maréchale (1793-1868)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1793-01-01">1793</fromDate>
+               <toDate standardDate="1868-05-31">mai 1868</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Issue d'une ancienne famille aristocratique de l'Est de la France, Eugénie de Coucy (1791-1868) épouse à vingt ans le 19 janvier 1812 le maréchal Oudinot (1767-1847), duc de Reggio, veuf d'un premier mariage et déjà père de sept enfants. Ils ont ensemble quatre autre enfants : Louise Oudinot de Reggio (1816-1909), mariée à Ludovic de Lévezou de Vesins ; Caroline Oudinot de Reggio (1817-1896), mariée à Joseph Cuiller-Perron ; Charles Oudinot de Reggio (1819-1858) ; et Henry Oudinot de Reggio (1822-1891). </p>
+            <p>En 1812, elle suit courageusement la campagne de Russie. Elle est ensuite, de 1816 à 1830, dame d'honneur de la duchesse de Berry, belle-fille du roi Charles X et mère de l'héritier du trône, le duc de Bordeaux.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb10738384m"
+                      xlink:type="simple">
+            <relationEntry>Oudinot, Eugénie (1793-1868)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1793-01-01">1793</fromDate>
+               <toDate standardDate="1868-05-31">31 mai 1868</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice d'autorité BnF</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_051028"
+                      xlink:type="simple">
+            <relationEntry>Oudinot, Nicolas Charles (1767-1847)</relationEntry>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

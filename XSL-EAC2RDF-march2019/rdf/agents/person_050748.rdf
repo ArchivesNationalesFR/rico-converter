@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050748">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Bartoli, Pierre (1913-2008)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050748_d4218e36"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1913-01-01</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-12-31</RiC:deathDate>
+      <RiC:history xml:lang="fr">Licencié en droit et diplômé de l’École des sciences politiques (section Finances publiques) de Paris à l’âge de vingt ans, Pierre Bartoli fait son service militaire. Il présente les concours de rédacteurs des ministères et des assemblées. Reçu premier à celui de l’Éducation nationale, il le choisit et entre à la direction de l’Enseignement supérieur jusqu’à sa mobilisation. Démobilisé en mai 1940, il retourne à la direction de l’enseignement supérieur, puis en 1942 entre au bureau du Cabinet du ministre, Abel Bonnard, dont il est chassé par sanction disciplinaire et muté au service administratif et financier en 1943. Nommé secrétaire provisoire de l’administration générale à la Libération, il crée et dirige le Bureau du budget et des affaires financières à la Direction de l’administration générale. Intégré lors du statut de la Fonction publique et la création de l’ENA dans le corps des administrateurs civils, il devient sous-directeur à la direction générale de l’Enseignement technique le 1er mars 1950.  En 1951, le recteur Jean Sarrailh, cherche un collaborateur jeune, mais expérimenté, capable de l’aider à conduire le changement et l’adaptation de l’académie et de l’université de Paris. René Capitant lui recommande Pierre Bartoli. Il est alors détaché dans les fonctions de secrétaire général de l’académie et de l’université de Paris le 1er octobre 1951. Il y restera jusqu’en 1976 et participera à la démocratisation de l’enseignement secondaire et supérieur, l’accueil des étudiants, la réorganisation administrative et la construction des bâtiments scolaires et universitaires, la crise de mai 1968, la loi d’orientation de l’enseignement supérieur et la partition de l’université de Paris.</RiC:history>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050748"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050748_d4218e36">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050748-d4216e67"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050748">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050748"/>
+      <RiC:creationDate>2014-04-14</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050748</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050748"/>
+   </rdf:Description>
+</rdf:RDF>

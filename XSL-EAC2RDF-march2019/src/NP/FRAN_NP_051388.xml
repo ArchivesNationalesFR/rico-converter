@@ -1,0 +1,105 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051388</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-09-20</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Elsa CAMUS</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2016-10-14</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Revue forestière française, 
+      <span style="italic">Nécrologie : Eugène Martin Gallevier de Mierry</span>, 1965, p.461-462. Disponible en ligne à cette adresse : http://documents.irevues.inist.fr/bitstream/handle/2042/24749/RFF_1965_6_461.pdf?sequence=1&amp;isAllowed=y 
+     </p>
+               <p/>
+               <p>Fiche sur la base Leonore : http://www.culture.gouv.fr/public/mistral/leonore_fr?ACTION=CHERCHER&amp;FIELD_1=REF&amp;VALUE_1=%20c-314918</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Martin Gallevier de Mierry, Eugène (1877-1964)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1877-01-01">1877</fromDate>
+               <toDate standardDate="1964-12-31">1964</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msiydj2--15ch8dyky11sp">inspecteur général</term>
+               <descriptiveNote>
+                  <p>inspecteur général honoraire</p>
+               </descriptiveNote>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d3m0bl6svu0--1tubaqb9x6dwe">inspecteur</term>
+               <dateRange>
+                  <fromDate standardDate="1907-01-01">1907</fromDate>
+                  <toDate standardDate="1938-12-31">1938</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>inspecteur des eaux et forêts</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Né à Romorantin (Loir-et-Cher), Eugène Martin Gallevier de Mierry entre à l'Ecole nationale des eaux et forêts de Nancy en 1898, dans la 74e promotion. A sa sortie de l'école, il est nommé garde général à Yssingeaux (Haute-Loire). Promu Inspecteur-adjoint en 1907 à Argelès (Hautes-Pyrénées), il est mis à la dispostion du Gouvernement tunisien en 1912. Elevé au grade de conservateur en 1929, il passe quelques mois à Alençon (Orne) avant de prendre la direction de la Conservation de Bourges (Cher) qu'il ne quitte plus jusqu'à son admission à la retraite en 1938. </p>
+            <p>Nommé Inspecteur général honoraire, il était officier du Mérite agricole et chevalier de la Légion d'Honneur.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_009031"
+                      xlink:type="simple">
+            <relationEntry>École nationale des eaux et forêts</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1898-01-01">1898</fromDate>
+               <toDate standardDate="1901-12-31">1901</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>74e promotion</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055073"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Ministère de l'Agriculture. Restauration des Terrains en Montagne (RTM). Département de la Savoie (1885-1963)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

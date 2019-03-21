@@ -1,0 +1,75 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050360</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-02-12</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Vanessa ASPART</agent>
+            <eventDescription>F. Clavaud, 11 février 2014 : changé forme du nom et ajouté n° notice BnF</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales,Fonds Maurice Thorez et Jeannette Vermeersch (XXe siècle), 626 AP. </p>
+               <p>Notice d'autorité BnF n° FRBNF13331401</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Thorez-Vermeersch, Jeannette (1910-2001)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Julie Marie</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Jeanette Vermeersch</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1910-11-26">26 novembre 1910</fromDate>
+               <toDate standardDate="2001-11-05">5 novembre 2001</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Fille d'ouvrière textile, elle-même tisserande de 1922 à 1930, Julie Marie dite Jeannette Thorez-Vermeersch (1910-2001) se lança très tôt dans la vie politique. Membre du secrétariat des Jeunesses communistes du Nord (1930-1931), de la commission nationale des jeunes syndiqués de la CGTU (1931-1932) puis du bureau national des Jeunesses communistes (1932-1934), co-directrice de l'Union des jeunes filles de France (1934-1935), Jeannette Thorez-Vermeersch fut député (1946-1958) puis sénateur de la Seine (1959-1968). Membre du bureau politique du Parti communiste français depuis 1950, elle en démissionna en octobre 1968. Elle fut également vice-présidente de l'Union des femmes françaises de 1945 à 1974. Jeannette Vermeersch est l'auteur de : 
+     <span style="italic">Vers quels lendemains ? </span>(1979) et 
+     <span style="italic"> La vie en rouge</span> (1998). 
+    </p>
+            <p>Epouse de Maurice Thorez, elle eut avec lui trois enfants : Jean, né en 1936, Paul, né en 1940 à Moscou, et Pierre, né en 1946.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_050359"
+                      xlink:type="simple">
+            <relationEntry>Thorez, Maurice (1900-1964)</relationEntry>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,121 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_011046</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00805</otherRecordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2016-01-11</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marie-Françoise LIMON-BONNET</agent>
+            <eventDescription>F. Clavaud, 11 janvier 2016 : ajouté activité, revu liens IR</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Mahieu, Jacques</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1611-07-15">15 juillet 1611</fromDate>
+               <toDate standardDate="1621-12-20">20 décembre 1621</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">adresse indéterminée</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à Paris</term>
+               <dateRange>
+                  <fromDate standardDate="1611-07-15">15 juillet 1611</fromDate>
+                  <toDate standardDate="1621-12-20">20 décembre 1621</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d3nyu9x713-9kcjiv44l4wh">notaire</term>
+               <dateRange>
+                  <fromDate standardDate="1611-07-15">15 juillet 1611</fromDate>
+                  <toDate standardDate="1621-12-20">20 décembre 1621</toDate>
+               </dateRange>
+            </occupation>
+         </occupations>
+         <generalContext>
+            <p>Toutes les minutes de ce notaire ont disparu, sans doute à une date ancienne. Son existence en tant que notaire nous est connue par quelques brevets (MC/ET/LXI/108) sur lesquels figurent sa signature et parce que son nom est mentionné, pour l'étude CXI, dans l'ouvrage de Me Delarue :</p>
+            <p>
+               <span style="italic">Registre des offices et pratiques des conseillers du roi notaires... au Châtelet de Paris, précédé de la liste des 113 notaires en exercice au premier janvier 1786 et suivi d'une table alphabétique</span> par M. Delarue, notaire [au Châtelet de Paris], délégué et ancien syndic [de la compagnie des notaires au Châtelet], imprimé aux dépens de la Compagnie des notaires, à Paris, 1786, 152 p. 
+    </p>
+         </generalContext>
+         <biogHist>
+            <p>Marié à Marie de Hemant (voir ET/II/149, 25 janvier 1635, bail par Marie de Hemant, veuve de Jacques Mahieu). </p>
+            <p>Il a été reçu le 15 juillet 1611, exerçant après Jean Mahieu, et a eu pour successeur François Reversé, le 20 décembre 1621 (étude CXI). A François Reversé a succédé Claude Drouyn, puis Pierre Muret, ce dernier étant le premier à avoir laissé, à partir de 1700, des minutes pour l'étude CXI).</p>
+            <p>Jacques Mahieu, malheureusement, ne nous a laissé aucune minute. La seule trace matérielle concrète de son activité consiste en quelques brevets de 1619 signés de lui dans la liasse MC/ET/LXI/168 (la plupart de ces brevets étant d'ailleurs signés de Pierre Doujat ou Simon I Moufle, d'où leur rattachement à leurs instruments de recherche).</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010238"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale CXI</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1611-07-15">15 juillet 1611</fromDate>
+               <toDate standardDate="1621-12-20">20 décembre 1621</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042409#c1p70ztlnsyz-8ahkoteg0czl"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Pierre DOUJAT, 8 août 1583 - 17 juin 1623 (étude LXI)#Brevets. 1619#MC/ET/LXI/168</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042411#c1p70zwsb6mb--1i7ndv4223110"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Simon I MOUFLE, 10 décembre 1604 - 22 décembre 1638 (étude LXI)#Brevets. 1619#MC/ET/LXI/168</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042411"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Simon I MOUFLE, 10 décembre 1604 - 22 décembre 1638 (étude LXI)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

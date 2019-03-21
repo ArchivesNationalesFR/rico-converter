@@ -1,0 +1,103 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050311</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-12-03</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Zénaïde ANDRIEU-ROMANEIX</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-07-17</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Zénaïde ANDRIEU-ROMANEIX</agent>
+            <eventDescription>Notice révisée le 17/07/2017 : lien IR, sources (Wikipédia), lien identité vers Wikipédia.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-07-19</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-07-19</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2018-03-14</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Archives nationales, Fonds Rougé (499 AP).</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>https://fr.wikipedia.org/wiki/Famille_de_Rougé</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>family</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Rougé (famille de)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1001-01-01">XIe siècle</fromDate>
+               <toDate standardDate="2000-12-31">XXe siècle</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>La famille de Rougé, originaire de Bretagne, Anjou et Touraine est citée dès 1045. Au XVIIe siècle en sont issues deux branches principales : celle des Plessis-Bellière, éteinte en 1794, et une branche cadette, dite des "vicomtes de Rougé", encore existante.</p>
+            <p>Un des plus illustres membres de cette famille est Jacques de Rougé, marquis du Plessis-Bellière (1602-1654) : né en 1602, il est déjà colonel en 1628 et se distingue au siège de La Rochelle. Pendant la guerre de Trente Ans, il prend part à de nombreuses campagnes et se couvre de gloire lors du siège d’Armentières, dont il est gouverneur. Maréchal de camp puis lieutenant général en 1650, il se prononce pour la cause royale pendant la Fronde, combat à Rethel (1650), et est envoyé en Roussillon, en 1653, pour commander l’armée à la place du maréchal de La Mothe. En 1654, il fait partie de l’aventureuse expédition chargée de remettre le duc de Guise sur le trône de Naples, mais il est mortellement blessé à l’attaque de Castellamare. Un de ses descendants, Olivier de Rougé, comte du Plessis-Bellière, a, de son mariage avec Marie de Lignerac, une fille, Erminie (1785-1812), qui est religieuse au couvent du Sacré-Cœur, à Amiens.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="https://fr.wikipedia.org/wiki/Famille_de_Roug%C3%A9"
+                      xlink:type="simple">
+            <relationEntry>Famille de Rougé</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1201-01-01">1201</fromDate>
+               <toDate standardDate="1826-12-31">1826</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice Wikipédia</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_003671"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Rougé (1193-1954)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

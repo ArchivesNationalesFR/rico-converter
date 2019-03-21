@@ -1,0 +1,105 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012124</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01970</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Philippe BERTHOLET, Etudes et notaires parisiens en 1803, au moment de la loi du 25 ventôse an XI (16 mars 1803), Paris, 2004, p. 460-462</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Édon, Antoine-Joseph</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1784-11-27">27 novembre 1784</fromDate>
+               <toDate standardDate="1818-03-17">17 mars 1818</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp8zed--rdzkw0dkb1pg">saint-paul (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgzo81-ac33i47d7v7m">saint-paul (quartier)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgqi79--17v2l85hhq4ey">saint-antoine (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd15vbw-k0h1w454w4f8">saint-antoine (rue)</placeEntry>
+               <placeEntry localType="nomLieu">rue Saint-Antoine, vis-à-vis la rue Royale (de 1784 à l'an II), puis près la rue Beautreillis (de l'an III à l'an VII), puis près la rue de Fourcy (de l'an VII à l'an X) puis près la rue Percée, puis 110 (de l'an X à 1810)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1784-11-27">27 novembre 1784</fromDate>
+                  <toDate standardDate="1818-03-17">17 mars 1818</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Né le 2 juin 1755 à Villiers-en-Beauce (Eure-et-Loir)</p>
+            <p>marié à Marie Cheret (voir ET/XCVII/539 ter, 27 décembre 1784, contrat de mariage)</p>
+            <p>d'abord principal clerc de Nicolas-Charles Pijeau, auquel il succède</p>
+            <p>décédé le 20 avril 1827 à Paris</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010232"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale CV</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1784-11-27">27 novembre 1784</fromDate>
+               <toDate standardDate="1818-03-17">17 mars 1818</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XCVII/538, 9 avril 1784, traité d'office de notaire entre Nicolas-Charles Pijeau et Antoine Edon</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/LXIX/982, 26 avril 1827, inventaire après décès</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_053415"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Antoine Joseph Édon pour l'étude CV</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

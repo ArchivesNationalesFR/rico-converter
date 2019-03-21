@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050461</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-07-12</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+            <eventDescription>Elsa Camus, 11 juillet 2016 : modification forme autorisée du nom, modification dates (date de fin), modification historique (verbes), ajout activité</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, Fonds Pesme (famille), 57 AP.</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_050461-d4006e79">
+            <part>Pesme, Louis Pierre (1776-1866)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1776-01-01">1776</fromDate>
+               <toDate standardDate="1866-12-31">1866</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation xml:id="FRAN_occupation_050461-d4006e102">
+               <term vocabularySource="d699msjpuqr-66gt6kmedjiv">officier (armée)</term>
+               <dateRange>
+                  <fromDate standardDate="1791-01-01">1791</fromDate>
+                  <toDate standardDate="1834-12-31">1834</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>sous-lieutenant, lieuntenant, adjudant-major, capitaine, lieutenant-colonel</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Louis Pierre Pesme (1776-1866) fait carrière dans l’armée. Il est sous-lieutenant successivement au 17e régiment d’infanterie de ligne (1791-1793), dans la 34e demi-brigade de ligne (1794-1799), dans le 4e dragons (mars-août 1800). </p>
+            <p>En 1802, Pesme est promu lieutenant puis adjudant-major. Capitaine en 1803, il est attaché en 1806 au général Huffin en qualité de capitaine aide de camp. Il sert au 4e et au 12e dragons (1808), au 135e régiment de ligne (janvier 1813), au 24e dragons (février 1813), au 12e dragons (1814) puis au régiment de dragons de la Garonne en 1816. Chef d’escadron du 5e régiment des hussards du Bas-Rhin en 1819, il termine sa carrière militaire comme lieutenant-colonel du 2e régiment de chasseurs en 1832. </p>
+            <p>Il obtient sa retraite par ancienneté en 1834. </p>
+            <p>Ses parents, les frères Adolphe et Charles Pesme, sont généraux.</p>
+         </biogHist>
+      </description>
+   </cpfDescription>
+</eac-cpf>

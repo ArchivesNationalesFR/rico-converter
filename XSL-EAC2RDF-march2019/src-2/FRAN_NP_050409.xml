@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050409</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-06-17</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+            <eventDescription>Elsa Camus, 16 juin 2016 : modification forme autorisée du nom, modification autres formes du nom, modification historique, ajout ISNI, ajout Activités, modification Sources, ajout lien d'association</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-07-13</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Constance DE VERGNETTE DE LAMOTTE</agent>
+            <eventDescription>Il n'y a pas de notice Wikipedia pour Jean Destrem. Pas d'IR.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-11-24</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Archives nationales, Fonds DESTREM (Jean-Marie) et ROCHEFORT (Henri) 48 AP.</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb12729774q</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 6128 2874</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_050409-d3969e118">
+            <part>Destrem, Jean (1842-1929)</part>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_050409-d3969e124">
+            <part>Destrem, Jean-Marie (1842-1929)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1842-01-01">1842</fromDate>
+               <toDate standardDate="1929-12-31">1929</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation xml:id="FRAN_occupation_050409-d3969e147">
+               <term vocabularySource="d3m0bl6u27z--1eg4fqfkrzwxv">conservateur (patrimoine)</term>
+               <descriptiveNote>
+                  <p>conservateur au Musée de la marine</p>
+               </descriptiveNote>
+            </occupation>
+            <occupation xml:id="FRAN_occupation_050409-d3969e159">
+               <term vocabularySource="d699msizce3-1fkn61hd3lpjw">journaliste</term>
+            </occupation>
+            <occupation xml:id="FRAN_occupation_050409-d3969e165">
+               <term vocabularySource="d699msj3i51--hevk1gms21cg">écrivain</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Jean-Marie Destrem (1842-1929) est le tuteur légal d’Henri, marquis de Rochefort-Luçay, plus connu sous le nom d'Henri Rochefort (1831-1913). </p>
+            <p>Il est conservateur au Musée de la marine de Paris, romancier, journaliste (à la 
+     <span style="italic">Revue politique et littéraire</span>) et historien. 
+    </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050410"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_050409-d3969e187">
+            <relationEntry>Rochefort, Henri (1831-1913)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1842-01-01">1842</fromDate>
+               <toDate standardDate="1913-07-01">1er juillet 1913</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p> Jean Destrem est le tuteur d'Henri Rochefort. Dates de la relation d'association inconnues. </p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb12729774q"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_050409-d3969e208">
+            <relationEntry>Destrem, Jean</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1842-01-01">1842</fromDate>
+               <toDate standardDate="1929-12-31">1929</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Lien vers la notice d'autorité BnF.</p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050531">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Vigouroux, Alexandre</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050531_d4061e39"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1761-01-01</RiC:birthDate>
+      <RiC:history xml:lang="fr">Alexandre Vigouroux (1761- ? ) commença sa carrière militaire au régiment de Pondichery, en garnison à Lorient, avec lequel il s’embarqua pour les Grandes Indes. En 1784, il était à l’Ile de France, actuelle Ile Maurice. En 1787, il accompagna Coutrai, gouverneur de Pondichery, comme secrétaire. De retour en France en 1789, il trouva un poste à la caisse d’escompte puis à la comptabilité générale de la trésorerie. Inspecteur des monnaies à Ancône (1799), sous-chancelier à Corfou, chargé du commissariat général des relations commerciales (1804-1806), chargé de l’administration générale des biens nationaux et des séquestres, il fut consul à Venise (1810-1814), à Bassorah puis à Bagdad (1816-1828). Alexandre Vigouroux fut mis en retraite, le 1er janvier 1824. En 1828, on savait de lui qu’il était à Venise mais le lieu et la date de sa mort sont inconnus.</RiC:history>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050531"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050531_d4061e39">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050531-d4059e76"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050531">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050531"/>
+      <RiC:creationDate>2013-12-10</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050531</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050531"/>
+   </rdf:Description>
+</rdf:RDF>

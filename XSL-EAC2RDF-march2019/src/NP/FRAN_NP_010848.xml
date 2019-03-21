@@ -1,0 +1,104 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010848</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00589</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Passez, Édouard Victor</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1810-06-15">15 juin 1810</fromDate>
+               <toDate standardDate="1825-01-22">22 janvier 1825</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="voie" vocabularySource="d3nzcr72sf-bhjh0f1oxwbl">quatre-fils (rue des)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzdjih5c--x8dkqwj1rcuk">trainée (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzdgb9zy--1wyz2smwi6dz8">temple (rue du)</placeEntry>
+               <placeEntry localType="nomLieu">9 rue des Quatre-Fils (de 1810 à 1813), rue Trainée (de 1813 à 1817), 40 rue du Temple (de 1818 à 1825)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1810-06-15">15 juin 1810</fromDate>
+                  <toDate standardDate="1825-01-22">22 janvier 1825</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Né le 12 juillet 1778 à Arcis-sur-Aube (Aube)</p>
+            <p>D'abord principal clerc de maître Lemaire</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010215"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale LXXXVIII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1810-06-15">15 juin 1810</fromDate>
+               <toDate standardDate="1825-01-22">22 janvier 1825</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">BB/10/348 et 349, 11mai 1810, dossier de nomination</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_042899"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Édouard Victor PASSEZ, 16 juin 1810 - 22 janvier 1825 (étude LXXXVIII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054032"
+                           xlink:type="simple">
+            <relationEntry localType="archival">«Mélanges» (dossiers de clients) de l’étude LXXXVIII. MC/ET/LXXXVIII/1127, MC/ET/LXXXVIII/1136, MC/ET/LXXXVIII/1157, MC/ET/LXXXVIII/1178, MC/ET/LXXXVIII/1181, MC/ET/LXXXVIII/1195, MC/ET/LXXXVIII/1266-MC/ET/LXXXVIII/1339/A (1354-1868)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051275"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Edouard Victor Passez pour l'étude LXXXVIII</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/050694">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Wallon, Henri (1812-1904)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050694_d4172e43"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1812-01-01</RiC:birthDate>
+      <RiC:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1904-12-31</RiC:deathDate>
+      <RiC:history xml:lang="fr">Henri Alexandre Wallon (1812-1904), est connu comme historien et homme politique français. Catholique fervent, de tendance libérale (il s'opposa à l'esclavagisme et défendit la liberté de l'enseignement), il est célèbre pour avoir été à l'origine de l'amendement qui a fait entrer le mot « République » dans les projets de lois constitutionnelles de 1875, ce qui a été considéré comme le fondement de la IIIe République. Né à Valenciennes, il devint en 1840 professeur à l'École normale supérieure et succéda à Guizot en 1846 comme professeur d'histoire à la Sorbonne. Ses travaux sur l'esclavage dans les colonies françaises (1847) et sur l'esclavage dans l'Antiquité (1848), le firent entrer après la Révolution de 1848 dans une commission pour la réglementation du travail dans les possessions coloniales françaises et, en novembre 1849, il fut élu représentant de la Guadeloupe à l'Assemblée législative, où il demanda à être représenté par un ancien esclave, Louisy Mathieu. Il démissionna en 1850 et ne revint à la vie politique qu'après la chute de l'Empire. Élu député du Nord (1871-1875), sénateur inamovible à partir de 1875, il présida les séances d'ouverture du Sénat comme doyen d 'âge jusqu'en 1903. Il fut aussi ministre de l'Instruction publique, des Cultes et des Beaux-Arts en 1875-1876.  En-dehors de son mandat parlementaire, il était membre de l'Intitut, secrétaire perpétuel de l'Académie des Inscriptions et Belles-Lettres, président du Conseil d'administration de l'Institut Pasteur, président de la Société anti-esclavagiste, doyen de la Faculté des lettres de Paris. Il publia de nombreux ouvrages tant religieux ( 
+     La Bible résumée dans son histoire, 1854-1859 ; 
+     De la croyance due à l'Évangile, 
+     La Vie de Notre Seigneur Jésus, 1865) qu'historiques ( 
+     Histoire de l'esclavage dans l'Antiquité, 1847 ; 
+     Richard II, épisode de la rivalité de la France et en Angleterre, 1864 ; 
+     Jeanne d'Arc, 1860 ; 
+     Saint Louis et son temps, 1871). 
+     De son premier mariage avec Hortense Dupire (1814-1851), Henri Wallon eut sept enfants, et de son second mariage avec Pauline Boulan (1820-1878), trois enfants.</RiC:history>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/050669-d4159e150"/>
+      <RiC:personHasFamilyRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/familyRelation/050190-d3806e227"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/050694"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/050694_d4172e43">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/050694-d4170e82"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/050694">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/050694"/>
+      <RiC:creationDate>2014-03-20</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_050694</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050694"/>
+   </rdf:Description>
+</rdf:RDF>

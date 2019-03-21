@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_011525</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01321</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée"
+                    scriptCode="Latn"
+                    xml:lang="fre"
+                    xml:id="FRAN_agentName_011525-d1622e67">
+            <part>Lemoine, Athanase</part>
+         </nameEntry>
+         <nameEntry xml:id="FRAN_agentName_011525-d1622e73">
+            <part>Lemoine, Athanase Pierre</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1775-02-11">11 février 1775</fromDate>
+               <toDate standardDate="1801-06-16">16 juin 1801</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place xml:id="FRAN_place_011525-d1622e102">
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse"
+                           vocabularySource="d3nyvoxn4o-1v8ltgercbj9c"
+                           xml:id="FRAN_stdPlaceEntry_011525-d3nyvoxn4o-1v8ltgercbj9cd1622e107">saint-gervais (paroisse)</placeEntry>
+               <placeEntry localType="quartier"
+                           vocabularySource="d3nyvgqi79--17v2l85hhq4ey"
+                           xml:id="FRAN_stdPlaceEntry_011525-d3nyvgqi79--17v2l85hhq4eyd1622e110">saint-antoine (quartier)</placeEntry>
+               <placeEntry localType="voie"
+                           vocabularySource="d3nzdpu6vj-yf13o3f7zy40"
+                           xml:id="FRAN_stdPlaceEntry_011525-d3nzdpu6vj-yf13o3f7zy40d1622e113">vieille-du-temple (rue)</placeEntry>
+               <placeEntry localType="nomLieu" xml:id="FRAN_placeEntry_011525-d1622e116">rue Vieille-du-Temple, vis-à-vis de la rue Sainte-Croix-de-la-Bretonnerie</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function xml:id="FRAN_activity_011525-d1622e123">
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1775-02-11">11 février 1775</fromDate>
+                  <toDate standardDate="1801-06-16">16 juin 1801</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Marié à Elisabeth Gallet</p>
+            <p>De ce mariage est issu Athanase Marie François Lemoine, notaire dans l'étude CX</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010130"
+                      xlink:type="simple"
+                      xml:id="FRAN_relation_011525-d1622e151">
+            <relationEntry>Etude notariale III</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1775-02-11">11 février 1775</fromDate>
+               <toDate standardDate="1801-06-16">16 juin 1801</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041159"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_011525-d1622e166">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Athanase LEMOINE, 11 février 1775 - 16 juin 1801 (étude III)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_056802"
+                           xlink:type="simple"
+                           xml:id="FRAN_relation_011525-d1622e172">
+            <relationEntry localType="archival">Images des répertoires du notaire Athanase Lemoine pour l'étude III</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

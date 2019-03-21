@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051034">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Batifoulier, Alain (1943-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051034_d4405e41"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1943-01-01</RiC:birthDate>
+      <RiC:history xml:lang="fr">Après ses études à l'école des Beaux-Arts de Lyon, Alain Batifoulier se consacre à la scénographie et à la création de costumes pour le spectacle vivant, à la muséographie, au design et au graphisme. De 1965 à 2008, il crée des scénographies et costumes pour plus d'une centaine de spectacles en Île-de-France et en province (théâtre, opéra, ballet).  De 1986 à 2015, il réalise des scénographies et installations pour des expositions temporaires. Il investit ainsi de nombreux musées, la Bibliothèque nationale de France, des événements comme le Salon du Livre de jeunesse de Montreuil ou le Salon international de la Bande dessinée à Angoulême, ou divers autres lieux d'exposition. Il réalise également la muséographie de plusieurs institutions françaises, comme le château-musée de Bélesta, le musée de la Nature et de la Chasse de Thuir ou le musée Au fil du papier de Pont-à-Mousson. Enfin, il accomplit des missions d'expertise et produit des études pour la création d'institutions patrimoniales, en France et à l'étranger.  Alain Batifoulier exerce aussi la profession de graphiste, en indépendant ou dans des studios: Studio Artland de 1989 à 1994 (qu'il fonde et dont il est le directeur artistique), Studio Tovar. Il réalise alors plusieurs logos, affiches, brochures, notamment pour des théâtres ou à l'occasion d'expositions temporaires.  A partir de 1995, il écrit également des scénarios pour divers événements organisés par des sociétés privées (en particulier des lancements de produits).</RiC:history>
+      <isni:ISNIAssigned>0000000001487923</isni:ISNIAssigned>
+      <RiC:thingIsTargetOfOriginationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/originationRelation/051034-d4403e118"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051034"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/originationRelation/051034-d4403e118">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OriginationRelation"/>
+      <rdfs:label xml:lang="fr">Relation de provenance entre l'agent "
+                                            Batifoulier, Alain (1943-....) et l'ensemble de documents "Archives d'Alain Batifoulier, scénographe"</rdfs:label>
+      <RiC:originationRelationHasSource rdf:resource="http://data.archives-nationales.culture.gouv.fr/recordSet/054732-top"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051034_d4405e41">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051034-d4403e79"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051034">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051034"/>
+      <RiC:creationDate>2015-07-15</RiC:creationDate>
+      <RiC:identifier>FRAN_NP_051034</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="http://isni.org/isni/0000000001487923"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051034"/>
+   </rdf:Description>
+</rdf:RDF>

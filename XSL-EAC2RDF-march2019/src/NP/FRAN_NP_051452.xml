@@ -1,0 +1,106 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051452</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Complète</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2017-02-22</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marine ZELVERTE</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-02-23</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marine ZELVERTE</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI : 0000 0001 1055 171X</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Laurentin, Emmanuel (1960-....)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1960-02-21">21 février 1960</fromDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d-1axy38anu-1ua8su5ef37p1">animateur de radio ou de télévision</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msizce3-1fkn61hd3lpjw">journaliste</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Emmanuel Laurentin est né le 21 février 1960 à Poitiers. Il arrive sur les ondes de Radio France en 1986, après des études d'histoire médiévale à Poitiers et de journalisme à l'École supérieure de journalisme de Lille. Après avoir brièvement travaillé pour France Inter, Emmanuel Laurentin rejoint France Culture. Il y travaille d'abord en tant que rédacteur, avant de rejoindre l'équipe de Culture Matin, dont il fait la revue de presse de 1990 à 1996, et reprend en 1996 l’émission de Patrice Gélinet "L'Histoire en direct". Depuis 1999, Emmanuel Laurentin anime l'émission "La Fabrique de l'histoire", dont il est le créateur et également le producteur. Il a également été critique de romans policiers et s'est intéressé au thème de la détention. Emmanuel Laurentin fait également partie du comité de rédaction de la revue L'Histoire.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb127386314"
+                      xlink:type="simple">
+            <relationEntry>Laurentin, Emmanuel (1960-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1960-02-21">21 février 1960</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice d'autorité de la BnF</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="https://fr.wikipedia.org/wiki/Emmanuel_Laurentin"
+                      xlink:type="simple">
+            <relationEntry>Emmanuel Laurentin</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1960-02-21">21 février 1960</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice Wikipédia</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_005419"
+                      xlink:type="simple">
+            <relationEntry>Radio France</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1986-01-01">1986</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>@isEmployeeOf@</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055858"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Radio France. France Culture. Archives papier de Patrice Gélinet. Émissions « L'histoire en direct » (1987-1999), « Le Grand débat » (1990-1997), émissions spéciales et manifestations extérieures (1990-1994). 1987-1999</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

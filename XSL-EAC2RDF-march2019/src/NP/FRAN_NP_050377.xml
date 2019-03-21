@@ -1,0 +1,60 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050377</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-10-08</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Raphael BAUMARD</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Ordre maçonnique mixte international "Le Droit humain"</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Le Droit humain</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1893-01-01">1893</fromDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>L'obédience maçonnique du Droit humain est fondée en 1893 par Maria Deraismes et Georges Martin. Issue d'une scission avec La Grande loge symbolique écossaise, elle naît de la volonté de pouvoir initier des femmes à la franc-maçonnerie et est de fait la première obédience mixte créée dans le Monde.</p>
+            <p> Ayant son siège à Paris (rue Jules Breton), elle affirme une vocation internationale avec très tôt la création de loges en Europe et dans le monde, qui se regrouperont ensuite sous la tutelle de « fédérations nationales » (la Fédération française est créée en 1921, elle est de loin la première en termes de nombre d'adhérents). Le « Suprême conseil » demeure l'instance décisionnelle suprême, coiffant l'ensemble des fédérations et des ateliers.</p>
+            <p> Le « Droit humain » est interdit pendant la Seconde Guerre mondiale (lois de Vichy contre les sociétés secrètes) et ne reprend ses activités qu'à la libération. L'obédience compte aujourd'hui 28 000 membres et est présente dans 50 pays.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_050101"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds du Droit humain (Ordre maçonnique mixte international et Fédération française) (1778-1980)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

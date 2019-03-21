@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:RiC="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:eac="urn:isbn:1-931666-33-4"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/person/051464">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdfs:label xml:lang="fr">Lamdaoui, Faouzi (1962-....)</rdfs:label>
+      <RiC:thingIsSourceOfRelationToAppellation rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051464_d4709e45"/>
+      <RiC:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1962-11-14</RiC:birthDate>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051464-d4707e132"/>
+      <RiC:personIsSourceOfOccupationRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051464-d4707e147"/>
+      <RiC:history xml:lang="fr">Diplômes Ingénieur logisticien Carrière Entre 2005 et 2008, Faouzi Lamdaoui occupe plusieurs postes au sein du Parti socialiste (PS) :  - secrétaire national adjoint du PS, chargé du partenariat équitable et de l'égalité des chances de novembre 2005 à août 2007 ;  - responsable du groupe de travail sur la lutte contre les discriminations dans l'équipe de campagne du Parti socialiste pour l'élection présidentielle décembre 2006 à février 2007 ;  - secrétaire national du PS, chargé de l'égalité, de la diversité et de la prévention sociale, d’août 2007 à décembre 2008 ;  - coordinateur de la commission « renouvellement et diversité » du PS de mars à décembre 2008.  En 2007, il entame parallèlement une carrière électorale sous l’étiquette du PS : - Candidat aux élections législatives de juin 2007 dans la 5ème circonscription du Val-d'Oise,  - Elu conseiller municipal d'Argenteuil (Val-d'Oise) en mars 2008, il est nommé adjoint au maire, chargé des relations internationales et des jumelages, jusqu’en décembre 2009. Il devient également vice-président de la Communauté d'agglomération Argenteuil-Bezons (CAAB) en avril 2008.  Auprès de François Hollande, Faouzi Lamdaoui prend les fonctions de : - conseiller presse dans l’équipe de campagne du candidat aux primaires du PS pour l'élection présidentielle de 2012 en juillet 2011,  - chef de cabinet dans l'équipe de campagne de François Hollande pour l'élection présidentielle, en novembre 2011.  A l’élection de celui-ci en mai 2012, Faouzi Lamdaoui est nommé conseiller à la présidence de la République par arrêté du 17 mai 2012 publié au Journal officiel du 19 mai 2012. Il est chargé de suivre les questions liées à l'égalité et à la diversité. Il occupe ces fonctions jusqu’en décembre 2014 (arrêté du 3 décembre 2014, publié au Journal officiel du 4 décembre 2014).  En octobre 2012, Faouzi Lamdaoui est par ailleurs désigné membre du conseil national du PS. </RiC:history>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051464-d4707e175"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/051464-d4707e178"/>
+      <RiC:thingIsSourceOfRelationToPlace rdf:resource="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051464--d4707e107"/>
+      <RiC:agentIsConnectedToAgentRelation rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentRelation/051464-d4707e257"/>
+      <RiC:describedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/description/051464"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051464-d4707e132">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-05-17</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-12-03</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d-31c1bj851u-1awh61xs7pwk3"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/occupationRelation/051464-d4707e147">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#OccupationRelation"/>
+      <RiC:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-03-01</RiC:beginningDate>
+      <RiC:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-12-31</RiC:endDate>
+      <RiC:occupationRelationHasTarget>
+         <rdf:Description>
+            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Occupation"/>
+            <RiC:description xml:lang="fr">conseiller municipal d'Argenteuil (Val-d'Oise), adjoint au maire</RiC:description>
+            <RiC:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msjyazt-1f0ggfyf3is8u"/>
+         </rdf:Description>
+      </RiC:occupationRelationHasTarget>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToAppellation/051464_d4709e45">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToAppellation"/>
+      <RiC:certainty xml:lang="fr">certain</RiC:certainty>
+      <RiC:relationToAppellationHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/agentName/051464-d4707e82"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/relationToPlace/051464--d4707e107">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RelationToPlace"/>
+      <rdfs:label xml:lang="fr">Relation de localisation concernant l'entité "Lamdaoui, Faouzi (1962-....)"</rdfs:label>
+      <RiC:relationToPlaceHasTarget rdf:resource="http://data.archives-nationales.culture.gouv.fr/place/051464-d4707e102"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/description/051464">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Description"/>
+      <RiC:describes rdf:resource="http://data.archives-nationales.culture.gouv.fr/person/051464"/>
+      <RiC:creationDate>2017-03-01</RiC:creationDate>
+      <RiC:lastUpdateDate>2017-03-02</RiC:lastUpdateDate>
+      <RiC:identifier>FRAN_NP_051464</RiC:identifier>
+      <RiC:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005601"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <RiC:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_051464"/>
+   </rdf:Description>
+</rdf:RDF>
