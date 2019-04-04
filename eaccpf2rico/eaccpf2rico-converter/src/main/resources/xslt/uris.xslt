@@ -11,11 +11,10 @@
 	xmlns:isni="http://isni.org/ontology#"
 	xmlns:eac="urn:isbn:1-931666-33-4"
 >
-		
-	<xsl:function name="eac2rico:URI-Agent">
-		<xsl:param name="recordId" />
-		<xsl:value-of select="substring-after($recordId, 'FRAN_NP_')" />
-	</xsl:function>	
+	
+	<xsl:template name="URI-Agent">
+		<xsl:value-of select="concat(/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType, '/', substring-after(/eac:eac-cpf/eac:control/eac:recordId, 'FRAN_NP_'))" />
+	</xsl:template>	
 		
 	<xsl:function name="eac2rico:URI-Description">
 		<xsl:param name="recordId" />
@@ -23,54 +22,44 @@
 	</xsl:function>
 	
 	<xsl:function name="eac2rico:URI-AgentName">
-		<xsl:param name="recordId" />
+		<xsl:param name="baseUri" />
 		<xsl:param name="label" />
 		<xsl:param name="fromDate" />
 		<xsl:param name="toDate" />
 		
 		<xsl:choose>
 			<xsl:when test="$fromDate != '' and $toDate != ''">
-				<xsl:value-of select="concat(substring-after($recordId, 'FRAN_NP_'), '/AgentName/', encode-for-uri($label), '-', translate($fromDate, '-', ''), '-', translate($toDate, '-', ''))" />
+				<xsl:value-of select="concat($baseUri, '/AgentName/', encode-for-uri($label), '-', translate($fromDate, '-', ''), '-', translate($toDate, '-', ''))" />
 			</xsl:when>
 			<xsl:when test="$fromDate != ''">
-				<xsl:value-of select="concat(substring-after($recordId, 'FRAN_NP_'), '/AgentName/', encode-for-uri($label), '-', translate($fromDate, '-', ''), '-', 'unknown')" />
+				<xsl:value-of select="concat($baseUri, '/AgentName/', encode-for-uri($label), '-', translate($fromDate, '-', ''), '-', 'unknown')" />
 			</xsl:when>
 			<xsl:when test="$toDate != ''">
-				<xsl:value-of select="concat(substring-after($recordId, 'FRAN_NP_'), '/AgentName/', encode-for-uri($label), '-', 'unknown', '-', translate($toDate, '-', ''))" />
+				<xsl:value-of select="concat($baseUri, '/AgentName/', encode-for-uri($label), '-', 'unknown', '-', translate($toDate, '-', ''))" />
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:value-of select="concat(substring-after($recordId, 'FRAN_NP_'), '/AgentName/', encode-for-uri($label))" />
+				<xsl:value-of select="concat($baseUri, '/AgentName/', encode-for-uri($label))" />
 			</xsl:otherwise>
 		</xsl:choose>
-		<!--
-		<xsl:choose>
-			<xsl:when test="$authorized = true()">
-				<xsl:value-of select="concat(substring-after($recordId, 'FRAN_NP_'), '/AgentName/', 'authorized')" />
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:value-of select="concat(substring-after($recordId, 'FRAN_NP_'), '/AgentName/', $offset)" />
-			</xsl:otherwise>
-		</xsl:choose>
-		 -->
 	</xsl:function>
 	
 	<xsl:function name="eac2rico:URI-ActivityRealizationRelation">
-		<xsl:param name="recordId" />
+		<xsl:param name="baseUri" />
 		<xsl:param name="functionId" />
 		<xsl:param name="fromDate" />
 		<xsl:param name="toDate" />
 		<xsl:choose>
 			<xsl:when test="$fromDate != '' and $toDate != ''">
-				<xsl:value-of select="concat(substring-after($recordId, 'FRAN_NP_'), '/ActivityRealizationRelation/', $functionId, '-', translate($fromDate, '-', ''), '-', translate($toDate, '-', ''))" />
+				<xsl:value-of select="concat($baseUri, '/ActivityRealizationRelation/', $functionId, '-', translate($fromDate, '-', ''), '-', translate($toDate, '-', ''))" />
 			</xsl:when>
 			<xsl:when test="$fromDate != ''">
-				<xsl:value-of select="concat(substring-after($recordId, 'FRAN_NP_'), '/ActivityRealizationRelation/', $functionId, '-', translate($fromDate, '-', ''), '-', 'unknown')" />
+				<xsl:value-of select="concat($baseUri, '/ActivityRealizationRelation/', $functionId, '-', translate($fromDate, '-', ''), '-', 'unknown')" />
 			</xsl:when>
 			<xsl:when test="$toDate != ''">
-				<xsl:value-of select="concat(substring-after($recordId, 'FRAN_NP_'), '/ActivityRealizationRelation/', $functionId, '-', 'unknown', '-', translate($toDate, '-', ''))" />
+				<xsl:value-of select="concat($baseUri, '/ActivityRealizationRelation/', $functionId, '-', 'unknown', '-', translate($toDate, '-', ''))" />
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:value-of select="concat(substring-after($recordId, 'FRAN_NP_'), '/ActivityRealizationRelation/', $functionId)" />
+				<xsl:value-of select="concat($baseUri, '/ActivityRealizationRelation/', $functionId)" />
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:function>
@@ -78,6 +67,32 @@
 	<xsl:function name="eac2rico:URI-ActivityType">
 		<xsl:param name="vocabularySource" />
 		<xsl:value-of select="concat('http://data.archives-nationales.culture.gouv.fr', '/activityType/', 'FRAN_RI_', $vocabularySource)" />
+	</xsl:function>
+	
+	<xsl:function name="eac2rico:URI-OccupationRelation">
+		<xsl:param name="baseUri" />
+		<xsl:param name="occupationId" />
+		<xsl:param name="fromDate" />
+		<xsl:param name="toDate" />
+		<xsl:choose>
+			<xsl:when test="$fromDate != '' and $toDate != ''">
+				<xsl:value-of select="concat($baseUri, '/OccupationRelation/', $occupationId, '-', translate($fromDate, '-', ''), '-', translate($toDate, '-', ''))" />
+			</xsl:when>
+			<xsl:when test="$fromDate != ''">
+				<xsl:value-of select="concat($baseUri, '/OccupationRelation/', $occupationId, '-', translate($fromDate, '-', ''), '-', 'unknown')" />
+			</xsl:when>
+			<xsl:when test="$toDate != ''">
+				<xsl:value-of select="concat($baseUri, '/OccupationRelation/', $occupationId, '-', 'unknown', '-', translate($toDate, '-', ''))" />
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="concat($baseUri, '/OccupationRelation/', $occupationId)" />
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:function>
+	
+	<xsl:function name="eac2rico:URI-OccupationType">
+		<xsl:param name="vocabularySource" />
+		<xsl:value-of select="concat('http://data.archives-nationales.culture.gouv.fr', '/occupationType/', 'FRAN_RI_', $vocabularySource)" />
 	</xsl:function>
 	
 	<xsl:template name="rdf-about">

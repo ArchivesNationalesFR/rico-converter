@@ -3,32 +3,32 @@
          xml:base="http://data.archives-nationales.culture.gouv.fr/"
          xmlns:rico="http://www.ica.org/standards/RiC/ontology#">
    <rico:Description rdf:about="description/005205">
-   	  <rico:describes rdf:resource="005205"/>
+   	  <rico:describes rdf:resource="person/005205"/>
    </rico:Description>
-   <rico:Person rdf:about="005205">
+   <rico:Person rdf:about="person/005205">
       <rico:isDescribedBy rdf:resource="description/005205"/>
       <rdfs:label xml:lang="fr">Parque, Edmé</rdfs:label>
       <rico:hasAgentName>
-         <rico:AgentName rdf:about="005205/AgentName/Parque%2C%20Edm%C3%A9">
+         <rico:AgentName rdf:about="person/005205/AgentName/Parque%2C%20Edm%C3%A9">
             <rdfs:label xml:lang="fr">Parque, Edmé</rdfs:label>
             <rico:textualValue xml:lang="fr">Parque, Edmé</rico:textualValue>
-            <rico:isAgentNameOf rdf:resource="description/005205"/>
+            <rico:isAgentNameOf rdf:resource="person/005205"/>
             <rico:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl002"/>
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasAgentName>
       <rico:hasAgentName>
-         <rico:AgentName rdf:about="005205/AgentName/Edm%C3%A9%20Parque">
+         <rico:AgentName rdf:about="person/005205/AgentName/Edm%C3%A9%20Parque">
             <rdfs:label xml:lang="fr">Edmé Parque</rdfs:label>
             <rico:textualValue xml:lang="fr">Edmé Parque</rico:textualValue>
-            <rico:isAgentNameOf rdf:resource="description/005205"/>
+            <rico:isAgentNameOf rdf:resource="person/005205"/>
          </rico:AgentName>
       </rico:hasAgentName>
       <rico:hasAgentName>
-         <rico:AgentName rdf:about="005205/AgentName/Minist%C3%A8re%20de%20la%20Culture-19950518-19970602">
+         <rico:AgentName rdf:about="person/005205/AgentName/Minist%C3%A8re%20de%20la%20Culture-19950518-19970602">
             <rdfs:label xml:lang="fr">Ministère de la Culture</rdfs:label>
             <rico:textualValue xml:lang="fr">Ministère de la Culture</rico:textualValue>
-            <rico:isAgentNameOf rdf:resource="description/005205"/>
+            <rico:isAgentNameOf rdf:resource="person/005205"/>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-05-18</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1997-06-02</rico:endDate>
          </rico:AgentName>

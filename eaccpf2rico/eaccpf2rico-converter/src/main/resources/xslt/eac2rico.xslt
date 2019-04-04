@@ -26,6 +26,9 @@
 	<xsl:param name="ERROR_CODES_FILE">eac2rico-errorCodes.xml</xsl:param>
 	<xsl:variable name="ERROR_CODES" select="document($ERROR_CODES_FILE)" />
 	
+	<!--  Global variable for the Agent URI -->
+	<xsl:variable name="agentUri"><xsl:call-template name="URI-Agent" /></xsl:variable>
+	
 	<xsl:template match="/">
 		<rdf:RDF>
 			<!-- Sets xml:base on root this way, so that compilation of XSLT does not fail because it is not a URI -->
@@ -45,7 +48,7 @@
 		</xsl:if>
 		<rico:Description>
 			<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-Description(eac:recordId)" /></xsl:call-template>
-			<rico:describes><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-Agent(eac:recordId)" /></xsl:call-template></rico:describes>
+			<rico:describes><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template></rico:describes>
 			
 			<xsl:apply-templates />
 			<xsl:apply-templates select="../eac:cpfDescription/eac:identity/eac:entityId" mode="description" />
@@ -115,7 +118,7 @@
 		</xsl:variable>	
 	
 		<xsl:element name="{$descriptionElement}">
-			<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-Agent(../eac:control/eac:recordId)" /></xsl:call-template>
+			<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
 			<rico:isDescribedBy><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-Description(../eac:control/eac:recordId)" /></xsl:call-template></rico:isDescribedBy>
 			
 			<xsl:apply-templates />		
@@ -136,6 +139,13 @@
 			</xsl:when>
 			<xsl:when test="@localType = 'ISNI'">
 				<isni:ISNIAssigned><xsl:value-of select="translate(text(), ' ', '')" /></isni:ISNIAssigned>
+			</xsl:when>
+			<xsl:when test="starts-with(text(), 'SIRET')">
+				<!-- Removes whitespace and potential column after "SIRET :" -->
+				<rico:identifier><xsl:value-of select="normalize-space(translate(substring-after(text(), 'SIRET'), ':', ''))" /></rico:identifier>
+			</xsl:when>
+			<xsl:when test="@localType = 'SIRET'">
+				<rico:identifier><xsl:value-of select="text()" /></rico:identifier>
 			</xsl:when>
 			<xsl:otherwise>
 				<!-- output a warning ? -->
@@ -163,11 +173,11 @@
 	<xsl:template match="eac:nameEntry[@localType = 'autorisée']">
 		<rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="eac:part" /></rdfs:label>
 		<rico:hasAgentName>
-			<rico:AgentName>
-				<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-AgentName(/eac:eac-cpf/eac:control/eac:recordId, eac:part, eac:useDates/eac:dateRange/eac:fromDate//@standardDate, eac:useDates/eac:dateRange/eac:toDate//@standardDate)" /></xsl:call-template>
+			<rico:AgentName>				
+				<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-AgentName($agentUri, eac:part, eac:useDates/eac:dateRange/eac:fromDate//@standardDate, eac:useDates/eac:dateRange/eac:toDate//@standardDate)" /></xsl:call-template>
 				<rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="eac:part" /></rdfs:label>
 				<rico:textualValue xml:lang="{$LITERAL_LANG}"><xsl:value-of select="eac:part" /></rico:textualValue>
-				<rico:isAgentNameOf><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-Description(/eac:eac-cpf/eac:control/eac:recordId)" /></xsl:call-template></rico:isAgentNameOf>
+				<rico:isAgentNameOf><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template></rico:isAgentNameOf>
 				<!-- Authorized name are linked to the regulation depending on entityType -->
 				<xsl:choose>
 					<xsl:when test="/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType = 'corporateBody' or /eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType = 'family'">
@@ -186,10 +196,10 @@
 	<xsl:template match="eac:nameEntry[not(@localType != '')]">
 		<rico:hasAgentName>
 			<rico:AgentName>
-				<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-AgentName(/eac:eac-cpf/eac:control/eac:recordId, eac:part, eac:useDates/eac:dateRange/eac:fromDate//@standardDate, eac:useDates/eac:dateRange/eac:toDate//@standardDate)" /></xsl:call-template>
+				<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-AgentName($agentUri, eac:part, eac:useDates/eac:dateRange/eac:fromDate//@standardDate, eac:useDates/eac:dateRange/eac:toDate//@standardDate)" /></xsl:call-template>
 				<rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="eac:part" /></rdfs:label>
 				<rico:textualValue xml:lang="{$LITERAL_LANG}"><xsl:value-of select="eac:part" /></rico:textualValue>
-				<rico:isAgentNameOf><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-Description(/eac:eac-cpf/eac:control/eac:recordId)" /></xsl:call-template></rico:isAgentNameOf>
+				<rico:isAgentNameOf><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template></rico:isAgentNameOf>
 				<xsl:apply-templates />
 			</rico:AgentName>
 		</rico:hasAgentName>
@@ -286,21 +296,22 @@
 	</xsl:template>
 	
 	
-	<!-- ** functions ** -->
+	<!-- ** Functions ** -->
 	<xsl:template match="eac:functions">
 		<xsl:apply-templates />
 	</xsl:template>
 	<xsl:template match="eac:function">
+		
 		<rico:agentIsSourceOfActivityRealizationRelation>
 			<rico:ActivityRealizationRelation>
-				<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-ActivityRealizationRelation(/eac:eac-cpf/eac:control/eac:recordId, eac:term/@vocabularySource, eac:dateRange/eac:fromDate/@standardDate, eac:dateRange/eac:toDate/@standardDate )" /></xsl:call-template>
+				<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-ActivityRealizationRelation($agentUri, eac:term/@vocabularySource, eac:dateRange/eac:fromDate/@standardDate, eac:dateRange/eac:toDate/@standardDate )" /></xsl:call-template>
 				<rico:activityRealizationRelationHasSource>
-					<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-Agent(/eac:eac-cpf/eac:control/eac:recordId)" /></xsl:call-template>
+					<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
 				</rico:activityRealizationRelationHasSource>
 				<rico:activityRealizationRelationHasTarget>
 					<rico:Activity>
 						<rico:activityIsTargetOfActivityRealizationRelation>
-							<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-ActivityRealizationRelation(/eac:eac-cpf/eac:control/eac:recordId, eac:term/@vocabularySource, eac:dateRange/eac:fromDate/@standardDate, eac:dateRange/eac:toDate/@standardDate )" /></xsl:call-template>
+							<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-ActivityRealizationRelation($agentUri, eac:term/@vocabularySource, eac:dateRange/eac:fromDate/@standardDate, eac:dateRange/eac:toDate/@standardDate )" /></xsl:call-template>
 						</rico:activityIsTargetOfActivityRealizationRelation>
 						<rico:hasActivityType>
 							<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-ActivityType(eac:term/@vocabularySource)" /></xsl:call-template>
@@ -311,7 +322,36 @@
 			</rico:ActivityRealizationRelation>
 		</rico:agentIsSourceOfActivityRealizationRelation>
 	</xsl:template>
+	
+	<!-- ** Occupations ** -->
+	<xsl:template match="eac:occupations">
+		<xsl:apply-templates />
+	</xsl:template>
+	<xsl:template match="eac:occupation">
+		<rico:personIsSourceOfOccupationRelation>
+			<rico:OccupationRelation>
+				<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-OccupationRelation($agentUri, eac:term/@vocabularySource, eac:dateRange/eac:fromDate/@standardDate, eac:dateRange/eac:toDate/@standardDate )" /></xsl:call-template>
+				<rico:relationToOccupationHasSource>
+					<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
+				</rico:relationToOccupationHasSource>
+				<rico:relationToOccupationHasTarget>
+					<rico:Occupation>
+						<rico:occupationIsTargetOfOccupationRelation>
+							<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-OccupationRelation($agentUri, eac:term/@vocabularySource, eac:dateRange/eac:fromDate/@standardDate, eac:dateRange/eac:toDate/@standardDate )" /></xsl:call-template>
+						</rico:occupationIsTargetOfOccupationRelation>
+						<rico:hasOccupationType>
+							<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-OccupationType(eac:term/@vocabularySource)" /></xsl:call-template>
+						</rico:hasOccupationType>
+					</rico:Occupation>					
+				</rico:relationToOccupationHasTarget>
+				<xsl:apply-templates />
+			</rico:OccupationRelation>
+		</rico:personIsSourceOfOccupationRelation>
+	</xsl:template>
 
+	<xsl:template match="eac:descriptiveNote">
+		<rico:description rdf:parseType="Literal"><xsl:apply-templates /></rico:description>
+	</xsl:template>
 
 	<!-- Traitement des balises de mise en forme p, list, item, span -->
 	<xsl:template match="eac:p">
@@ -369,8 +409,7 @@
 		<xsl:value-of select="normalize-space($dateToUse)"/>
 
     </xsl:template>
-		
-		
+	
 	<xsl:function name="eac2rico:error">
 		<xsl:param name="code" />
 		<xsl:value-of select="error(

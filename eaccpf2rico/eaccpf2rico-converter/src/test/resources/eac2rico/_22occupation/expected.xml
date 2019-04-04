@@ -1,0 +1,39 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:rico="http://www.ica.org/standards/RiC/ontology#">
+   <rico:Description rdf:about="description/005205">
+      <rico:describes rdf:resource="person/005205"/>
+   </rico:Description>
+   <rico:Person rdf:about="person/005205">
+      <rico:isDescribedBy rdf:resource="description/005205"/>
+      <rico:personIsSourceOfOccupationRelation>
+         <rico:OccupationRelation rdf:about="person/005205/OccupationRelation/d699msj02xm-19qbb7wdtto3j">
+            <rico:relationToOccupationHasSource rdf:resource="person/005205"/>
+            <rico:relationToOccupationHasTarget>
+               <rico:Occupation>
+                  <rico:occupationIsTargetOfOccupationRelation rdf:resource="person/005205/OccupationRelation/d699msj02xm-19qbb7wdtto3j"/>
+                  <rico:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_d699msj02xm-19qbb7wdtto3j"/>
+               </rico:Occupation>
+            </rico:relationToOccupationHasTarget>
+         </rico:OccupationRelation>
+      </rico:personIsSourceOfOccupationRelation>
+      <rico:personIsSourceOfOccupationRelation>
+         <rico:OccupationRelation rdf:about="person/005205/OccupationRelation/d3nyub73ic-1g5es55lb2lpf-19880101-20031231">
+            <rico:relationToOccupationHasSource rdf:resource="person/005205"/>
+            <rico:relationToOccupationHasTarget>
+               <rico:Occupation>
+                  <rico:occupationIsTargetOfOccupationRelation rdf:resource="person/005205/OccupationRelation/d3nyub73ic-1g5es55lb2lpf-19880101-20031231"/>
+                  <rico:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_d3nyub73ic-1g5es55lb2lpf"/>
+               </rico:Occupation>
+            </rico:relationToOccupationHasTarget>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-12-31</rico:endDate>
+            <rico:description rdf:parseType="Literal">
+               <html:p>Recteur de l'académie d'Orléans (1988-1991), de Nantes (1997-1998), de Montpellier (1998-2000), de Reims (2000-2003).</html:p>
+            </rico:description>
+         </rico:OccupationRelation>
+      </rico:personIsSourceOfOccupationRelation>
+   </rico:Person>
+</rdf:RDF>

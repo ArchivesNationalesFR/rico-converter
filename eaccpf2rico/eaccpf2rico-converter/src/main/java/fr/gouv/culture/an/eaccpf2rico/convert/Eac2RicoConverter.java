@@ -5,6 +5,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import javax.xml.transform.Result;
@@ -141,38 +143,46 @@ public class Eac2RicoConverter {
 		}
 	}
 	
-	public void unitTests(File unitTestsDirectory) throws Eac2RicoConverterException {
+	public void unitTests(File unitTestsDirectory) {
 		log.info("Converter ran on unit tests directory "+unitTestsDirectory.getAbsolutePath());
 		
 		// for each file in the unit tests directory...
-		for(File f : unitTestsDirectory.listFiles()) {
+		List<File> sortedTestDirs = Arrays.asList(unitTestsDirectory.listFiles());
+        Collections.sort(sortedTestDirs);
+		for(File f : sortedTestDirs) {
 			if(f.isDirectory()) {
 				File inputFile = new File(f, "input.xml");
 				File expectedFile = new File(f, "expected.xml");
-				if(inputFile.exists()) {
+				if(inputFile.exists() && expectedFile.exists()) {
 					File outputFile = new File(f, "result.xml");
-					try(FileOutputStream out = new FileOutputStream(outputFile)) {
-						log.info("Processing test : "+f.getName()+"...");
-						this.convert(new StreamSource(new FileInputStream(inputFile)), new StreamResult(out));
+					try {
+						try(FileOutputStream out = new FileOutputStream(outputFile)) {
+							log.info("Processing test : "+f.getName()+"...");
+							this.convert(new StreamSource(new FileInputStream(inputFile)), new StreamResult(out));
 
-						Diff diff = DiffBuilder
-								.compare(Input.fromFile(expectedFile).build())
-								.ignoreWhitespace()
-								.ignoreComments()
-								.checkForSimilar()
-								.withTest(Input.fromFile(outputFile).build())
-								.build();
-						if(diff.hasDifferences()) {
-							System.out.println(f.getName()+" : "+"FAILURE");
-							System.out.println(diff.toString());
-						} else {
-							System.out.println(f.getName()+" : "+"success");
+							Diff diff = DiffBuilder
+									.compare(Input.fromFile(expectedFile).build())
+									.ignoreWhitespace()
+									.ignoreComments()
+									.checkForSimilar()
+									.withTest(Input.fromFile(outputFile).build())
+									.build();
+							if(diff.hasDifferences()) {
+								System.out.println(f.getName()+" : "+"FAILURE");
+								System.out.println(diff.toString());
+							} else {
+								System.out.println(f.getName()+" : "+"success");
+							}
+
+						} catch (FileNotFoundException e) {
+							throw new Eac2RicoConverterException(ErrorCode.SHOULD_NEVER_HAPPEN_EXCEPTION, e);
+						} catch (IOException e1) {
+							throw new Eac2RicoConverterException(ErrorCode.DIRECTORY_OR_FILE_HANDLING_EXCEPTION, e1);
+						} catch (Eac2RicoConverterException e) {
+							throw new Eac2RicoConverterException(ErrorCode.XSLT_TRANSFORM_ERROR, e);
 						}
-
-					} catch (FileNotFoundException e) {
-						throw new Eac2RicoConverterException(ErrorCode.SHOULD_NEVER_HAPPEN_EXCEPTION, e);
-					} catch (IOException e1) {
-						throw new Eac2RicoConverterException(ErrorCode.DIRECTORY_OR_FILE_HANDLING_EXCEPTION, e1);
+					} catch (Eac2RicoConverterException e) {
+						System.out.println(f.getName()+" : "+"FAILURE");
 					}
 				}
 			}

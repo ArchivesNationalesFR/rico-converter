@@ -4,15 +4,15 @@
          xmlns:isni="http://isni.org/ontology#"
          xmlns:rico="http://www.ica.org/standards/RiC/ontology#">
    <rico:Description rdf:about="description/005205">
-   	  <rico:describes rdf:resource="005205"/>
+   	  <rico:describes rdf:resource="corporateBody/005205"/>
    	  <rdfs:seeAlso rdf:resource="http://isni.org/isni/0001000200031111" />
    	  <rdfs:seeAlso rdf:resource="http://isni.org/isni/0001000200032222" />
    	  <rdfs:seeAlso rdf:resource="http://isni.org/isni/0001000200039999" />
    </rico:Description>
-   <rdf:Description rdf:about="005205">
+   <rico:CorporateBody rdf:about="corporateBody/005205">
       <rico:isDescribedBy rdf:resource="description/005205"/>
       <isni:ISNIAssigned>0001000200031111</isni:ISNIAssigned>
       <isni:ISNIAssigned>0001000200032222</isni:ISNIAssigned>
       <isni:ISNIAssigned>0001000200039999</isni:ISNIAssigned>
-   </rdf:Description>
+   </rico:CorporateBody>
 </rdf:RDF>

@@ -4,9 +4,9 @@
          xmlns:html="http://www.w3.org/1999/xhtml"
          xmlns:rico="http://www.ica.org/standards/RiC/ontology#">
    <rico:Description rdf:about="description/005205">
-   	  <rico:describes rdf:resource="005205"/>
+   	  <rico:describes rdf:resource="corporateBody/005205"/>
    </rico:Description>
-   <rdf:Description rdf:about="005205">
+   <rico:CorporateBody rdf:about="corporateBody/005205">
       <rico:isDescribedBy rdf:resource="description/005205"/>
 	  <rico:history rdf:parseType="Literal">
          <html:p>1</html:p>
@@ -20,5 +20,5 @@
             <html:u>underline</html:u> et <html:b>bold</html:b> et <html:em>italic</html:em>
          </html:p> 
 	  </rico:history>
-   </rdf:Description>
+   </rico:CorporateBody>
 </rdf:RDF>
