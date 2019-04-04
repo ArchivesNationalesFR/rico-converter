@@ -1,0 +1,64 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050500</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>F. Clavaud, 3 avril 2014 : changé forme du nom</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, fonds Galliffet (107AP).</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>family</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Galliffet (famille de)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1501-01-01">XVIe siècle</fromDate>
+               <toDate standardDate="1900-12-31">XIXe siècle</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>La famille de Galliffet était originaire du Dauphiné. Les principaux représentants de la branche aînée sont : Alexandre de Galliffet, chef de la branche aînée au xvie siècle, conseiller du roi, trésorier des cardinaux de Bourbon, oncle et neveu, et receveur de leurs décimes à Rouen et à Pontoise, et ses descendants, Louis-François-Alexandre, qui émigra à Pise sous la Révolution et de là correspondit avec ses hommes d’affaires, Alexandre-Justin-Marie, colonel sous Charles X, qui tenta une carrière politique à Arles et Tarascon, et le général, ministre de la Guerre en 1899. Les Galliffet s’allièrent aux Féret, Trichaud de Saint-Martin, de Clapier-Séguiran, de Vento et d’Augustines, de Gaultier de Girenton, Léotard d’Entraigues, Chaussegros, de Trimond, Lenfant et des Roys d’Asport. Alexandre et ses descendants possédèrent les terres de Galliffet et autres localités du Comtat Venaissin, mais aussi les seigneuries de Castellane et de Sieyes dans les Basses-Alpes, de Buoux et de Bonnieux dans le Vaucluse, de Salerne dans le Var, du Tholonet, près d’Aix-en-Provence, et divers biens en Champagne et en Touraine. À Paris, le marquis Louis-François-Alexandre de Galliffet acheta en 1771 le château des Ternes, ainsi que l’hôtel de Galliffet, actuellement ambassade d’Italie. Au xviiie siècle, plusieurs membres de cette famille acquirent à Saint-Domingue des propriétés et y exercèrent le commerce du sucre.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_004284"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Galliffet (XIIIe-XXe siècle)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

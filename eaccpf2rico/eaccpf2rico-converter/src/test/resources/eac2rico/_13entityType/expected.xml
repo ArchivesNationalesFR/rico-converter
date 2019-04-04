@@ -4,8 +4,7 @@
    <rico:Description rdf:about="description/005205">
    	  <rico:describes rdf:resource="005205"/>
    </rico:Description>
-   <rdf:Description rdf:about="005205">
+   <rico:CorporateBody rdf:about="005205">
       <rico:isDescribedBy rdf:resource="description/005205"/>
-      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody" />
-   </rdf:Description>
+   </rico:CorporateBody>
 </rdf:RDF>

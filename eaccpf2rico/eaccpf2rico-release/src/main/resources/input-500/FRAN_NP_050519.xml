@@ -1,0 +1,66 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050519</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2014-02-04</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID</agent>
+            <eventDescription>F. Clavaud, 4 février 2014 : modifié forme du nom, ajouté n°s ISNI et notice BnF</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Archives nationales, fonds Jean-Baptiste Treilhard (117AP).</p>
+               <p>Numéro identifiant ISNI : ISNI 0000 0000 8365 2063</p>
+               <p>Notice d'autorité BnF n° FRBNF12211844</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Treilhard, Jean-Baptiste (1742-1810)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1742-01-03">3 janvier 1742</fromDate>
+               <toDate standardDate="1810-12-01">1 décembre 1810</toDate>
+            </dateRange>
+         </existDates>
+         <biogHist>
+            <p>Avocat au parlement de Paris, en 1761, protégé par Turgot, Jean-Baptiste Treilhard (1742-1810) fut élu député du Tiers de Paris aux états généraux. Membre du Comité ecclésiastique, il joua un rôle important dans les débats qui précédèrent la nationalisation des biens de l’Église et la Constitution civile du clergé. Après la séparation de la Constituante, il présida le tribunal criminel de Paris. En 1792, le département de Seine-et-Oise l’envoya siéger à la Convention. Lors du procès de Louis XVI, il se prononça pour la mort avec sursis. Élu au Conseil des Cinq-Cents le 23 vendémiaire an IV, il s’y illustra par son célèbre serment comme président : « Je jure haine à la royauté ». Après avoir quitté le Conseil, le 20 mai 1797, il fut appelé à se rendre au congrès de Rastadt. Le 15 mai 1798, il devint membre du Directoire exécutif, en remplacement de François de Neufchâteau, mais son élection fut cassée lors du coup d’État de prairial. Vice-président du tribunal d’appel de Paris après le coup d’État du 18 brumaire, il fut appelé au Conseil d’État en 1802. Inspirateur des principaux codes entre 1808 et 1810, Treilhard fut créé comte, sénateur, puis ministre d’État par Napoléon Ier.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_004294"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Treilhard (1795-1804)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

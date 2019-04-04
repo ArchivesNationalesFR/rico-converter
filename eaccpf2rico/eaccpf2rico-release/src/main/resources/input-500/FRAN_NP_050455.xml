@@ -1,0 +1,129 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050455</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-07-12</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+            <eventDescription>Elsa Camus, 11 juillet 2016 : modification forme autorisée du nom, ajout ISNI, modification autres formes du nom, ajout lieux, ajout activités, modification historique (verbes), modification sources</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-07-13</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Constance DE VERGNETTE DE LAMOTTE</agent>
+            <eventDescription>Ajout du lien IR le 13 juillet 2017.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2018-02-09</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Notice BnF : http://catalogue.bnf.fr/ark:/12148/cb100114659</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Archives nationales, fonds abbé de Gesne (52 AP).</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0000 2064 3186</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Gesne, Pierre-Henri de (1816-1895)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Gesne, Abbé de (1816-1895)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Degesne, Pierre-Henri (1816-1895)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1816-09-07">7 septembre 1816</fromDate>
+               <toDate standardDate="1895-06-20">20 juin 1895</toDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Raizeux</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3ntu4j8ri-1sct6gg7p208o">Raizeux (Yvelines)</placeEntry>
+            </place>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Saint-Martin-du-Tertre</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3ntxhdk2k-1x2eszls6l758">Saint-Martin-du-Tertre (Val-d'Oise)</placeEntry>
+            </place>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Saint-Prix</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3ntxhe6pd--1hd7ipy0vjchz">Saint-Prix (Val-d'Oise)</placeEntry>
+            </place>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Versailles</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3ntu51cee--wrvelxp49su1">Versailles (Yvelines)</placeEntry>
+            </place>
+         </places>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msjs6q9-di60ge9dhxaa">curé</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msjd4dv--14ekvu9jh4wb9">prêtre</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Après des études au séminaire de Versailles, l’abbé Pierre-Henri de Gesne ou Degesne (1816-1895) exerce son ministère à Ablon de 1842 à 1850, à Saint-Martin-du-Tertre de 1850 à 1851, à Raizeux, de 1851 à 1856, puis à Saint-Prix (Val-d’Oise), jusqu’à sa mort. </p>
+            <p>À Saint-Prix, l’abbé de Gesne tient un journal, divisé en cahiers mensuels, où il consigne ses impressions du moment ainsi que des extraits de sa correspondance et de ses prônes.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb100114659"
+                      xlink:type="simple">
+            <relationEntry>Gesne, Pierre-Henri de</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1816-09-07">7 septembre 1816</fromDate>
+               <toDate standardDate="1895-06-20">20 juin 1895</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice BnF</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_050077"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds de l'abbé de Gesne (1869-1895)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

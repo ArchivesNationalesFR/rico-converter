@@ -1,0 +1,133 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_005482</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Import_SIA</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2015-12-04</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+            <eventDescription>F. Clavaud, 17 janvier 2014 : ajout d'informations historiques et du texte de référence, lien vers DMF</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Service des bibliothèques, des archives et de la documentation générale des musées de France</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Service des bibliothèques et archives des musées nationaux</part>
+            <useDates>
+               <dateRange>
+                  <fromDate standardDate="1979-01-01">1979</fromDate>
+                  <toDate standardDate="1998-12-31">1998</toDate>
+               </dateRange>
+            </useDates>
+         </nameEntry>
+         <nameEntry>
+            <part>SBADG</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1979-01-01">1979</fromDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term vocabularySource="d5blokqhb2-71c8sqtdbid4">service à compétence nationale</term>
+            </legalStatus>
+         </legalStatuses>
+         <mandates>
+            <mandate>
+               <descriptiveNote>
+                  <p> Arrêté du 16 décembre 1998 (NOR: MCCB9800657A) érigeant divers services de la direction des musées de France en services à compétence nationale.</p>
+               </descriptiveNote>
+            </mandate>
+         </mandates>
+         <biogHist>
+            <p>Le SBADG existe depuis le 1er janvier 1999 par regroupement du service des bibliothèques et des archives des musées nationaux d'une part, et du centre de documentation d'autre part en un service à compétence nationale.</p>
+            <p>Ses missions, définies par l'arrêté du 16 décembre 1998, prenant effet au 1er janvier 1999, sont les suivantes :</p>
+            <p> - constituer, conserver, cataloguer et offrir à la consultation les collections documentaires nécessaires aux travaux de recherches menés dans les musées nationaux</p>
+            <p>- rassembler dans un centre ouvert au public une documentation générale relative aux musées.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_005437"
+                      xlink:type="simple">
+            <relationEntry>Direction générale des patrimoines</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2010-01-13">13 janvier 2010</fromDate>
+               <toDate/>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_005237"
+                      xlink:type="simple">
+            <relationEntry>Direction des musées de France</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1979-01-01">1979</fromDate>
+               <toDate standardDate="2010-01-12">12 janvier 2010</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054027"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Archives des musées nationaux Fichiers et documents hors-format</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054227"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Archives des musées nationaux, Microfilms (Série Mi)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054511"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Archives des musées nationaux MESSAGERIE ELECTRONIQUE DU SERVICE</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054507"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Archives des musées nationaux - hors-formats</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054481"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Archives des musées nationaux</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

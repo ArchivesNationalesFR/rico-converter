@@ -1,0 +1,105 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051268</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-03-01</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Florence CLAVAUD</agent>
+            <eventDescription>F. Clavaud, 1er mars 2016 : création sur demande de la mission</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>France. Direction générale de l'enseignement supérieur et de l'insertion professionnelle (2014-....). Service de la stratégie des formations et de la vie étudiante (2014-....)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="2014-01-01">2014</fromDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term>service d'administration centrale</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d5bhvihxhx--1dol4k5w0lb2i">enseignement supérieur</term>
+            </function>
+         </functions>
+         <mandates>
+            <mandate>
+               <descriptiveNote>
+                  <p>Arrêté du 17 février 2014 fixant l'organisation de l'administration centrale des ministères de l'éducation nationale et de l'enseignement supérieur et de la recherche (ELI: https://www.legifrance.gouv.fr/eli/arrete/2014/2/17/MENA1330825A/jo/texte)</p>
+               </descriptiveNote>
+            </mandate>
+         </mandates>
+         <structureOrGenealogy>
+            <p>Le service de la stratégie des formations et de la vie étudiante comprend, outre la mission du numérique pour l'enseignement supérieur :</p>
+            <p>- la sous-direction des formations et de l'insertion professionnelle (ex département de la stratégie de la formation et de l'emploi créé en mars 2009), qui se compose :</p>
+            <p> - du département du lien formation-emploi ;</p>
+            <p> - du département des formations du cycle licence ;</p>
+            <p> - du département des formations des cycles master et doctorat ;</p>
+            <p> - du département des formations de santé ;</p>
+            <p> - du département des écoles supérieures et de l'enseignement supérieur privé.</p>
+            <p/>
+            <p>-la sous-direction de la vie étudiante (ex départements de l'architecture et de la qualité des formations de niveau licence et de niveau master créés en mars 2009), qui se compose :</p>
+            <p> - du département des aides aux étudiants ;</p>
+            <p> - du département de l'orientation et de la vie des campus.</p>
+         </structureOrGenealogy>
+         <biogHist>
+            <p>Le service de la stratégie des formations et de la vie étudiante élabore la stratégie de développement des formations supérieures et la politique d'insertion professionnelle et en assure la diffusion.</p>
+            <p>Il anime la réflexion autour de la pédagogie dans l'enseignement supérieur, notamment en intégrant la dimension numérique.</p>
+            <p>Il définit la politique des formations de santé.</p>
+            <p>Il définit les politiques qui contribuent à la réussite de tous et à l'amélioration de la vie étudiante.</p>
+            <p>Il participe au processus d'accompagnement et de contractualisation des opérateurs de l'Etat et au processus d'accréditation de leur offre de formation.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_051267"
+                      xlink:type="simple">
+            <relationEntry>France. Direction générale de l'enseignement supérieur et de l'insertion professionnelle (2014-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2014-01-01">2014</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055472"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Archives de la Mission des formations de santé</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055493"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Archives de la direction générale pour l'enseignement supérieur et l'insertion professionnelle. Mission des écoles supérieures et de l'enseignement supérieur privé</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,91 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010665</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00392</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Richer, Charles (16..-16..)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1636-01-01">1636</fromDate>
+               <toDate standardDate="1654-12-31">1654</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="commune_rattachee"
+                           vocabularySource="d3nyv22tl8-ax6fgbv5uatj">batignolles-monceaux (ancienne commune)</placeEntry>
+               <placeEntry localType="nomLieu">adresse indéterminée</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1636-01-01">1636</fromDate>
+                  <toDate standardDate="1654-12-31">1654</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Greffier et tabellion de la prévôté de Chaillot.</p>
+            <p>Il ne doit pas être confondu avec son homonyme qui exerçait dans l'étude LI entre 1607 et 1658</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010201"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale LXXIV</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1636-01-01">1636</fromDate>
+               <toDate standardDate="1654-12-31">1654</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="creatorOf">
+            <relationEntry localType="archival">ZZ1/61 à ZZ1/65, actes divers entre 1636 et 1655</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042643"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire notaires divers, 1611 - 1718 (étude LXXIV)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

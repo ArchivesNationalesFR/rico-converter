@@ -1,0 +1,18 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:rico="http://www.ica.org/standards/RiC/ontology#">
+   <rico:Description rdf:about="description/005205">
+   	  <rico:describes rdf:resource="005205"/>
+   	  <rdfs:seeAlso rdf:resource="http://isni.org/isni/0001000200031111" />
+   	  <rdfs:seeAlso rdf:resource="http://isni.org/isni/0001000200032222" />
+   	  <rdfs:seeAlso rdf:resource="http://isni.org/isni/0001000200039999" />
+   </rico:Description>
+   <rdf:Description rdf:about="005205">
+      <rico:isDescribedBy rdf:resource="description/005205"/>
+      <isni:ISNIAssigned>0001000200031111</isni:ISNIAssigned>
+      <isni:ISNIAssigned>0001000200032222</isni:ISNIAssigned>
+      <isni:ISNIAssigned>0001000200039999</isni:ISNIAssigned>
+   </rdf:Description>
+</rdf:RDF>

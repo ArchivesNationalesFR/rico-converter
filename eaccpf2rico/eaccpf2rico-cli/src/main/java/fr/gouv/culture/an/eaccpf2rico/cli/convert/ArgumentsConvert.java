@@ -31,7 +31,7 @@ public class ArgumentsConvert {
 			converter = FileConverter.class,
 			required = false
 	)
-	private File output = new File("output"+"-"+new SimpleDateFormat("YYYYMMDD").format(new Date()));
+	private File output = new File("output"+"-"+new SimpleDateFormat("yyyyMMdd").format(new Date()));
 
 	@Parameter(
 			names = { "error" },
@@ -40,7 +40,7 @@ public class ArgumentsConvert {
 			converter = FileConverter.class,
 			required = false
 	)
-	private File error = new File("error"+"-"+new SimpleDateFormat("YYYYMMDD").format(new Date()));
+	private File error = new File("error"+"-"+new SimpleDateFormat("yyyyMMdd").format(new Date()));
 	
 	@Parameter(
 			names = { "xslt" },

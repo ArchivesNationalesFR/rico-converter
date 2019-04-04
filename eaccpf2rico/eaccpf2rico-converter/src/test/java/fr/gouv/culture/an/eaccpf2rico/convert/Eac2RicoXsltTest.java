@@ -1,6 +1,9 @@
 package fr.gouv.culture.an.eaccpf2rico.convert;
 
 import java.io.File;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.AllTests;
@@ -18,7 +21,9 @@ public class Eac2RicoXsltTest {
         TestSuite ts = new TestSuite();
 
         File testDir = new File("src/test/resources/eac2rico");
-        for (File aDir : testDir.listFiles()) {
+        List<File> sortedList = Arrays.asList(testDir.listFiles());
+        Collections.sort(sortedList);
+        for (File aDir : sortedList) {
         	if(aDir.isDirectory()) {
         		ts.addTest(new Eac2RicoXsltTestExecution(aDir));
         	}

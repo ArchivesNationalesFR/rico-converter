@@ -1,0 +1,135 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_005010</recordId>
+      <otherRecordId localType="Ancien_identifiant">4403/ST2</otherRecordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Import_SIA</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Monique LEBLOIS-PECHON</agent>
+            <eventDescription>F. Clavaud, 28 août 2015 : revu le nom, le lien hiérarchique, les liens IR, ajouté indexation fonctions</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>France. Ministère des Anciens Combattants et Victimes de guerre. Bureau des cartes de déportés et d'internés (1955-1984)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Bureau des déportés</part>
+            <useDates>
+               <dateRange>
+                  <fromDate standardDate="1955-01-01">1955</fromDate>
+                  <toDate standardDate="1966-12-31">1966</toDate>
+               </dateRange>
+            </useDates>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1955-01-01">1955</fromDate>
+               <toDate standardDate="1984-12-31">1984</toDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term vocabularySource="d5blonaxbw--1mt8t42bokzts">service d'administration centrale</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d5bhvik770--15ma0n1oncnzo">anciens combattants</term>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Quatre bureaux dépendent de la Sous-direction des statuts de combattants et victimes de guerre : le Bureau de l'état civil, des recherches et des successions (1er bureau), le Bureau des cartes de déportés et d'internés (2è bureau), le Bureau des indemnisations et de la documentation (3è bureau) et le Bureau des nécropoles nationales et de la restitution de corps (4è bureau).</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_005013"
+                      xlink:type="simple">
+            <relationEntry>France. Ministère des Anciens Combattants et Victimes de guerre. Direction des statuts et des services médicaux. Sous-direction des statuts des combattants et victimes de guerre (1955-1984)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1955-01-01">1955</fromDate>
+               <toDate standardDate="1984-12-31">1984</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_013692"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Anciens combattants et victimes de guerre, Direction des statuts et des services
+     médicaux, sous-direction des statuts de combattants et victimes de guerre, bureau cartes de
+     déportés et d'internés : demandes individuelles de reconnaissance au titre de la résistance
+     intérieure française rejetées par la commission d’homologation (1949-1953)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_013640"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Anciens combattants et victimes de guerre : commissions nationales d'examen des
+     demandes d'attribution des titres de déporté ou interné résistant ou politique
+     (1949-1979)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_020790"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Anciens combattants et victimes de guerre ; Direction des statuts et des personnels médicaux ; Sous-Direction des statuts des combattants et victimes de guerre ; Bureau cartes de déportés et d'internés (1948-1983)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_007167"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Microfilms de registres de camps de concentration en Allemagne, Pologne, Autriche et France, de prisons allemandes et de camps et prisons en France (1937-1948)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_007367"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Microfilms des fiches médicales de rapatriement des prisonniers de guerre et des Alsaciens-Mosellans après la seconde guerre mondiale (1945-1946)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_013693"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Ministère des Anciens Combattants et Victimes de Guerre : demandes d'attribution du titre de déporté ou interné résistant et de déporté ou interné politique rejetées (1949-1972)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_020757"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Guerre 1914-1918. Dossiers individuels de titulaires de la Médaille des évadés
+     civils (1947-1968)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

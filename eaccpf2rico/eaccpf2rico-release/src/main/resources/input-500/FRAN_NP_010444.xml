@@ -1,0 +1,120 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010444</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00149</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Philippe BERTHOLET, Etudes et notaires parisiens en 1803, au moment de la loi du 25 ventôse an XI (16 mars 1803), Paris, 2004, p. 170-172</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Thion de la chaume, Auguste</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Thion de la chaume, Auguste Victor</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1788-10-21">21 octobre 1788</fromDate>
+               <toDate standardDate="1809-02-07">7 février 1809</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvow9c3--1ln2rhczl581f">saint-eustache (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvpb1c4--1dpne8gngxarf">saint-roch (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgrw7m-1ulx41q7n6nbj">saint-eustache (quartier)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgj653-pntrwb37dxqp">palais-royal (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nz9nfwcy-19c4nnaw0zqgz">coq-héron (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzcjwvft-1i35dd90awzgm">piques (place des)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzdo046d-13yk108b3sqj7">vendôme (place)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nz8j7d2f--1k7c9cmajtuuh">antin (rue d')</placeEntry>
+               <placeEntry localType="nomLieu">rue Coq-Héron (de 1788 à l'an III), places des Piques, place Vendôme (de l'an IV à l'an VII), 9 rue d'Antin (de l'an VIII à 1809)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1788-10-21">21 octobre 1788</fromDate>
+                  <toDate standardDate="1809-02-07">7 février 1809</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>né le 21 octobre 1753 à Paris</p>
+            <p>marié à Adélaïde Bro, fille de Jean-Louis Bro, notaire de l'étude XCII (voir ET/LVIII/583, 22 juin 1793, contrat de mariage)</p>
+            <p>de ce mariage est issu Auguste-Louis Thion de La Chaume, notaire de l'étude CXII</p>
+            <p>décédé le 25 octobre 1818 à Passy</p>
+            <p>destitué, faute d'avoir pu fournir un certificat de civisme, le 6 pluviose an II (30 janvier 1794), il est réintégré le 19 vendémaire an III (10 octobre 1794)</p>
+            <p>membre du conseil municipal de Passy sous la Restauration</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010162"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XXXV</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1788-10-21">21 octobre 1788</fromDate>
+               <toDate standardDate="1809-02-07">7 février 1809</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/LVI/353, 2 octobre 1788, traité d'office de notaire entre Antoine Belurgey et Auguste Thion de La Chaume</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XXXV/1057, 7 novembre 1818, inventaire après décès</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041951"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Auguste THION de LA CHAUME, 21 octobre 1788 - 6 février 1809 (étude XXXV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051912"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Auguste Thion de La Chaume pour l'étude XXXV</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

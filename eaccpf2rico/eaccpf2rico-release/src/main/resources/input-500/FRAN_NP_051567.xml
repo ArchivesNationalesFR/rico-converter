@@ -1,0 +1,113 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051567</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2017-07-13</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Constance DE VERGNETTE DE LAMOTTE</agent>
+            <eventDescription>Il n'existe pas de numéro d'ISNI.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-12-19</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Archives nationales, fonds du général Martel : 205 AP.</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Notice BnF : FRBNF10571963</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Notice Wikipedia : https://fr.wikipedia.org/wiki/Philippe_Andr%C3%A9_Martel</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Six (Georges), Dictionnaire biographiques des généraux et amiraux français de la révolution et de l'Empire (1792-1814), 1934, t. 2, p. 160. </sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Martel, Philippe-André (1771-1849)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Général Martel, Philippe-André (1771-1849)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Martel, Philippe-André (1771-1849 ; baron)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1771-07-31">31 juillet 1771</fromDate>
+               <toDate standardDate="1849-09-06">6 septembre 1849</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msk3a25-1xs3m641rhiyg">officier général</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Lieutenant au 4e bataillon de volontaires de l’Isère, Philippe-André Martel (1771-1849) sert en Savoie en 1792, à l’armée des Alpes en 1793, puis devant Toulon, à l’armée d’Italie, de 1794 à 1799. Fait prisonnier de guerre à Turin le 21 juin 1799 et emmené en Autriche, il recouvre sa liberté le 6 mars 1801.</p>
+            <p>Aide de camp du général Fiorella, le 10 juillet suivant, il passe avec lui au service du royaume d’Italie. Chef d’escadrons en 1804, il est chef d’état-major de la division Fiorella pendant la campagne d’Italie de 1805, sert en Dalmatie comme chef d’état-major de Lauriston, puis de Clauzel, de 1806 à 1808. Chef d’état-major de la divison Serevoli à l’armée d’Italie en 1809, puis de la 1re division militaire du royaume d’Italie à Milan, fin 1810, il est envoyé en Espagne en 1811. Général de brigade le 11 juillet de la même année, il est rappelé en Italie. Commandant de brigade au 4e corps de la Grande Armée en Allemagne en 1813, il sert à Lutzen, Bautzen et Leipzig.</p>
+            <p>Baron d’Empire en octobre 1813, il est fait prisonnier pendant la campagne de Russie, et ne revient en France qu’en juillet 1814. Maréchal de camp au service de la France, le 30 décembre 1814, il rentre dans ses foyers en non-activité. Il reprend du service pendant les Cent-Jours, mais est définitivement placé en non-activité le 1er août 1815. Il meurt à Lyon le 6 septembre 1849.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_051171"
+                      xlink:type="simple">
+            <relationEntry>Napoléon Ier (empereur des Français ; 1769-1821)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1801-01-01">1801</fromDate>
+               <toDate standardDate="1814-12-31">1814</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="https://fr.wikipedia.org/wiki/Philippe_Andr%C3%A9_Martel"
+                      xlink:type="simple">
+            <relationEntry>Philippe André Martel</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1771-07-31">31 juillet 1771</fromDate>
+               <toDate standardDate="1849-09-06">6 septembre 1849</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice Wikipédia.</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_004334"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds général Martel (1797-1846)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

@@ -1,0 +1,116 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012819</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE02732</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>M. F. LIMON, Les notaires au Châtelet sous le règne de Louis XIV, Toulouse, presses universitaires du Mirail, 1992, p.328-329</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Beauvais, Noël de</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1658-02-19">19 février 1658</fromDate>
+               <toDate standardDate="1705-10-20">20 octobre 1705</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgrw7m-1ulx41q7n6nbj">saint-eustache (quartier)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvow9c3--1ln2rhczl581f">saint-eustache (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nz9nlgtw-8tyuqwot7a13">coquillière (rue)</placeEntry>
+               <placeEntry localType="nomLieu">rue Coquillère</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1658-02-19">19 février 1658</fromDate>
+                  <toDate standardDate="1705-10-20">20 octobre 1705</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Fils de Nicolas de Beauvais et Jeanne Aquet (voir ET/II/297, délaissement par Jeanne Aquet de la succession de son époux en faveur de ses enfants le 11 août 1688)</p>
+            <p>Marié à Geneviève Philiponnat (voir ET/XCV/1, contrat de mariage du 29 octobre 1656)</p>
+            <p>son fils Nicolas-Charles lui succède</p>
+            <p>mort en charge le 10 novembre 1705</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010222"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XCV</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1658-02-19">19 février 1658</fromDate>
+               <toDate standardDate="1705-10-20">20 octobre 1705</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/VII/97, 30 janvier 1658, traité d'office de notaire entre Claude Chaperon et Noël de Beauvais</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/C/300, 24 mai 1670, vente à Pierre Savalette de l'office de notaire de François Le Fouin, acquis précédemment par Noël de Beauvais</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/II/354, 17 novembre 1705, dépôt du testament olographe, daté du 15 juillet 1704</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/II/354, 1er décembre 1705, inventaire après décès</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/II/387, 9 mars 1717, dépôt du testament olographe de Geneviève Philiponnat, sa femme, daté du 17 novembre 1716</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XIV/229, 12 avril 1717, inventaire après décès de Geneviève Philiponnat</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052847"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Noël de Beauvais pour l'étude XCV</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

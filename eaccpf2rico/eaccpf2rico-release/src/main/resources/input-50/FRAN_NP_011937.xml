@@ -1,0 +1,140 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_011937</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01773</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Goguier, Philippe</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1598-01-01">1er janvier 1598</fromDate>
+               <toDate standardDate="1621-12-31">31 décembre 1621</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp6vb2-rsrcmgk1zmct">saint-merri (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvot58t--198f1uuwdsl99">saint-benoît (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvpbvqa-1q7k75sdt2gwp">saint-séverin (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp76qc--1xdxyf9lzzthw">saint-nicolas-des-champs (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd5mlt5--oyds4h1k7v8u">saint-merri (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd3gcnv-x81q62dbdp9h">saint-jacques (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd5fnbv--1fbmnb1c9dkph">saint-martin (rue)</placeEntry>
+               <placeEntry localType="nomLieu">étude XII : rue Saint-Merri (en 1598), rue Saint-Jacques (de 1599 à 1603), rue Saint-Martin (de 1604 à 1622) étude IX : adresse indéterminée</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1598-01-01">1er janvier 1598</fromDate>
+                  <toDate standardDate="1621-12-31">31 décembre 1621</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>marié à Gilberte Feillet (voir ET/XXI/74 folio 176, 17 janvier 1609, obligation envers Philippe Goguier et Gilberte Feillet, sa femme)</p>
+            <p>pourvu de son office par lettres patentes du 20 décembre 1593</p>
+            <p>reçu dans son office le 14 janvier 1597 (voir traité d'office)</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010139"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1598-01-01">1er janvier 1598</fromDate>
+               <toDate standardDate="1621-12-31">31 décembre 1621</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010136"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale IX</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1608-01-01">1608</fromDate>
+               <toDate standardDate="1610-12-31">1610</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XCI/190 folio 8, 13 janvier 1622, vente de son office à François Ogier</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XCI/190 folio 204, 6 juillet 1622, contrat de mariage entre Marie Goguier, sa fille, et Daniel Cocha</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041383"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Philippe GOGUIER, janvier 1598 - 20 février 1622 (étude XII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041326"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Claude FILESAC, 18 novembre 1589 - 4 octobre 1611 (étude IX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041325"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Claude de LA MORLIÈRE, 1573 - 20 mai 1609 (étude IX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041327"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Claude HUART, 22 mai 1609 - 22 août 1631 (étude IX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043051"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Anne CARREL, 15 janvier 1563 - 19 juillet 1585 (étude XCIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043050"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jacques de SAINT-FUSSIEN, 20 février 1614 - 27 novembre 1635 (étude XCIX)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

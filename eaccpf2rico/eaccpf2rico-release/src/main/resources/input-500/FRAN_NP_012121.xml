@@ -1,0 +1,123 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012121</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01966</otherRecordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-06-06</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marie-Françoise LIMON-BONNET</agent>
+            <eventDescription>6 juin 2017 : ajout historique, révision liens IR et indexation.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-06-06</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marie-Françoise LIMON-BONNET</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-06-29</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
+            <eventDescription>F. Clavaud, 29 juin 2017 : revu indexation activité</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Fromont, Jean (16..-17..)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Fromont, Jean François</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1701-05-20">20 mai 1701</fromDate>
+               <toDate standardDate="1730-01-17">17 janvier 1730</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues ; les dates indiquées sont ses dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">rue de la Montagne-Sainte-Geneviève, devant la petite porte des Carmes</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvovxws-1r3061wzh7bqc">Saint-Etienne-du-Mont (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgqtes--1wrsaggwbjmzu">Saint-Benoît (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzc3mtjw-1ba0ccyicv9sx">Montagne-Sainte-Geneviève (rue de la)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à Paris</term>
+               <dateRange>
+                  <fromDate standardDate="1701-05-20">20 mai 1701</fromDate>
+                  <toDate standardDate="1730-01-17">17 janvier 1730</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d3nyu9x713-9kcjiv44l4wh">notaire</term>
+               <dateRange>
+                  <fromDate standardDate="1701-05-20">20 mai 1701</fromDate>
+                  <toDate standardDate="1730-01-17">17 janvier 1730</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>notaire à Paris</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Jean ou Jean François Fromont (étude XVII) épouse Madeleine Bellanger. Cette dernière, à sa mort en 1737, laisse trois garçons mineurs : Antoine (24 ans), Charles Thomas (16 ans 1/2), Anne Jean (13 ans), dont Jean Fromont a été élu tuteur par sentence du Châtelet du 1er mars 1737 (Y//4357A), sur avis de parents en date du 26 février 1737, passé en brevet (étude XVII), où comparaissent deux cousins germains maternels, Jacques Nicolas Bellanger, notaire (étude XLIX), et Angélique François Bellanger (étude XLIX), ainsi qu'un autre cousin, Nicolas Duport, notaire (étude XXVII), ainsi qu'un oncle à la mode de Bretagne, Christophe Fromont, ex secrétaire du Régent, précepteur du duc d'Orléans.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010144"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XVII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1701-05-20">20 mai 1701</fromDate>
+               <toDate standardDate="1730-01-17">17 janvier 1730</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041490"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean FROMONT, 20 mai 1701 - 24 janvier 1730 (étude XVII)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

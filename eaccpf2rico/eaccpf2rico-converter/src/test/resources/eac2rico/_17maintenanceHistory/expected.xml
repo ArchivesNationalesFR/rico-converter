@@ -1,0 +1,13 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/"
+         xmlns:rico="http://www.ica.org/standards/RiC/ontology#">
+   <rico:Description rdf:about="description/005205">
+      <rico:describes rdf:resource="005205"/>
+      <rico:wasCreatedAtDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:wasCreatedAtDate>
+      <rico:lastUpdateDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-28</rico:lastUpdateDate>
+   </rico:Description>
+   <rdf:Description rdf:about="005205">
+      <rico:isDescribedBy rdf:resource="description/005205"/>
+   </rdf:Description>
+</rdf:RDF>

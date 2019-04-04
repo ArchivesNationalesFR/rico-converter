@@ -1,0 +1,116 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050351</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2018-05-04</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Vanessa ASPART</agent>
+            <eventDescription>P.Charbonnier, 4 mai 2018 : forme autorisée du nom revue, ajout indexation activités et lieux, ajout lien d'identité vers notice Wikipédia, recherche indentifiant ISNI et BnF infructueuse</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Archives nationales, Fonds Simon (1671-1860), 679 AP. </sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Morel, Philippe (1756-1837)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Morel, Philippe Martin Antoine</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1756-01-15">15 janvier 1756</fromDate>
+               <toDate standardDate="1837-12-31">1837</toDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Falaise</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3nteaksc2-1ji6wcnsnl1xz">Falaise (Calvados)</placeEntry>
+            </place>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Paris</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d5bdppt147--176wwvjcctrx0">Paris (France)</placeEntry>
+            </place>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Pertheville</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3nted3sep-63zs2t3hnkfb">Pertheville-Ners (Calvados)</placeEntry>
+            </place>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Rouen</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3ntspntio-paw9mmh7emrq">Rouen (Seine-Maritime)</placeEntry>
+            </place>
+         </places>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d3m0bl76dik--ncxjtjvkyzcv">avocat au parlement (Ancien Régime)</term>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msjy3v4--oimn0b7kuvf4">magistrat</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Philippe Martin Antoine Morel est un magistrat et homme politique français né à Lisieux le 15 janvier 1756. </p>
+            <p>Reçu avocat au Parlement de Paris le 3 septembre 1781 puis admis dans le collège des avocats du Parlement de Rouen le 1er août 1782, il y exerce ses fonctions jusqu’en 1789. Après la Révolution, il intègre tout d’abord la municipalité de Falaise (procureur puis agent national) avant d’être élu en 1795 juge au Tribunal civil du département du Calvados puis de l’arrondissement de Falaise. Élu pour figurer sur la liste des notables du département, il sera le candidat du collège électoral de l’arrondissement de Falaise aux élections du Corps législatif (1810). Le 13 mai 1815, il est élu député de la Chambre des représentants qui ne siégera que deux mois. Il est nommé maire de la commune de Pertheville (Calvados) en 1825, 1831 et 1834. Il meurt à Pertheville en 1837.</p>
+            <p>Un des fils de Philippe Morel, Florent Morel, épouse en 1830 Julie Adélaïde Simon, fille cadette du général Édouard-François Simon.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_050347"
+                      xlink:type="simple">
+            <relationEntry>Simon, Edouard-François</relationEntry>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="https://fr.wikipedia.org/wiki/Philippe_Morel_(homme_politique)"
+                      xlink:type="simple">
+            <relationEntry>Philippe Morel (homme politique)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1756-01-15">15 janvier 1756</fromDate>
+               <toDate standardDate="1837-12-31">1837</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice Wikipédia</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_050097"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Simon (1671-1860)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

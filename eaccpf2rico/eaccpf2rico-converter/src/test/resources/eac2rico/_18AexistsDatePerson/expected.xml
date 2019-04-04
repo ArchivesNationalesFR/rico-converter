@@ -1,0 +1,12 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/"
+         xmlns:rico="http://www.ica.org/standards/RiC/ontology#">
+   <rico:Description rdf:about="description/005205">
+      <rico:describes rdf:resource="005205"/>
+   </rico:Description>
+   <rico:Person rdf:about="005205">
+      <rico:isDescribedBy rdf:resource="description/005205"/>
+      <rico:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-01-08</rico:birthDate>
+   </rico:Person>
+</rdf:RDF>

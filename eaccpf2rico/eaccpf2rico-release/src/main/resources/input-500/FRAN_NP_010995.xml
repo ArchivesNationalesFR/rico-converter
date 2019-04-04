@@ -1,0 +1,118 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010995</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00747</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Pourcel, Claude</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1591-03-08">8 mars 1591</fromDate>
+               <toDate standardDate="1623-11-28">28 novembre 1623</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp309r-fxzjuc9ul5cl">saint-leu-saint-gilles (paroisse)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzcc1j5v--1okzozrtrn1">ours (rue aux)</placeEntry>
+               <placeEntry localType="nomLieu">étude LXIX : rue aux Ours, au coin de la rue du Bourg-l'abbé étude IX : adresse indéterminée</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1591-03-08">8 mars 1591</fromDate>
+                  <toDate standardDate="1623-11-28">28 novembre 1623</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>marié en premières noces à Robine Bouthery</p>
+            <p>de ce mariage est issu Louis Pourcel qui succède à son père</p>
+            <p>marié en secondes noces à Marie Passart (voir ET/XCI/195 : 14 mai 1626, arbitrage entre Marie Passart, veuve de Claude Pourcel, et Louis Pourcel, fils et héritier de Robine Bouthery, épouse en premières noces de Claude Poucel)</p>
+            <p>de ce mariage sont issus cinq enfants, dont Jean Pourcel, également notaire (voir ET/X/88 : 30 décembre 1641, inventaire après décès de Claude Pourcel le jeune, fils de Claude Pourcel, notaire, et Marie Passart)</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010196"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale LXIX</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1591-03-08">8 mars 1591</fromDate>
+               <toDate standardDate="1623-11-28">28 novembre 1623</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010136"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale IX</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1591-03-08">8 mars 1591</fromDate>
+               <toDate standardDate="1611-12-31">1611</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041326"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Claude FILESAC, 18 novembre 1589 - 4 octobre 1611 (étude IX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041325"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Claude de LA MORLIÈRE, 1573 - 20 mai 1609 (étude IX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041327"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Claude HUART, 22 mai 1609 - 22 août 1631 (étude IX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042546"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Claude POURCEL, 16 mai 1597 - 2 mars 1623 (étude LXIX)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

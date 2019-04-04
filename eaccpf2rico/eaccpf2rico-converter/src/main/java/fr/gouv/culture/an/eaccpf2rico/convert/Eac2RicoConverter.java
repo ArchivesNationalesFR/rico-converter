@@ -3,6 +3,8 @@ package fr.gouv.culture.an.eaccpf2rico.convert;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.List;
 
 import javax.xml.transform.Result;
@@ -14,6 +16,9 @@ import javax.xml.transform.stream.StreamSource;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.xmlunit.builder.DiffBuilder;
+import org.xmlunit.builder.Input;
+import org.xmlunit.diff.Diff;
 
 import fr.gouv.culture.an.eaccpf2rico.Eac2RicoConverterException;
 import fr.gouv.culture.an.eaccpf2rico.Eac2RicoConverterListenerException;
@@ -95,15 +100,16 @@ public class Eac2RicoConverter {
 			
 			File outputFile = createOutputFile(inputFile);
 			
-			try {
-				this.convert(new StreamSource(new FileInputStream(inputFile)), new StreamResult(outputFile));
+			boolean success = false;
+			try(FileOutputStream out = new FileOutputStream(outputFile)) {
+				this.convert(new StreamSource(new FileInputStream(inputFile)), new StreamResult(out));
 				
 				try {
 					notifyEndProcessing(inputFile);
 				} catch (Eac2RicoConverterListenerException e) {
 					log.error("Error in listener notifyEndProcessing for "+inputFile.getName(), e);
 				}
-				
+				success = true;
 			} catch (FileNotFoundException e) {
 				throw new Eac2RicoConverterException(ErrorCode.SHOULD_NEVER_HAPPEN_EXCEPTION, e);
 			} catch (Eac2RicoConverterException e2) {
@@ -114,6 +120,14 @@ public class Eac2RicoConverter {
 				} catch (Eac2RicoConverterListenerException e) {
 					log.error("Error in listener notifyError for "+inputFile.getName(), e);
 				}
+			} catch (IOException e1) {
+				throw new Eac2RicoConverterException(ErrorCode.DIRECTORY_OR_FILE_HANDLING_EXCEPTION, e1);
+			}
+			
+			if(!success) {
+				// if an error happens, delete output file
+				log.info("Deleting outputFile "+outputFile.getAbsolutePath());
+				outputFile.delete();
 			}
 		}
 	}
@@ -125,6 +139,46 @@ public class Eac2RicoConverter {
 		} catch (TransformerException e) {
 			throw new Eac2RicoConverterException(ErrorCode.XSLT_TRANSFORM_ERROR, e);
 		}
+	}
+	
+	public void unitTests(File unitTestsDirectory) throws Eac2RicoConverterException {
+		log.info("Converter ran on unit tests directory "+unitTestsDirectory.getAbsolutePath());
+		
+		// for each file in the unit tests directory...
+		for(File f : unitTestsDirectory.listFiles()) {
+			if(f.isDirectory()) {
+				File inputFile = new File(f, "input.xml");
+				File expectedFile = new File(f, "expected.xml");
+				if(inputFile.exists()) {
+					File outputFile = new File(f, "result.xml");
+					try(FileOutputStream out = new FileOutputStream(outputFile)) {
+						log.info("Processing test : "+f.getName()+"...");
+						this.convert(new StreamSource(new FileInputStream(inputFile)), new StreamResult(out));
+
+						Diff diff = DiffBuilder
+								.compare(Input.fromFile(expectedFile).build())
+								.ignoreWhitespace()
+								.ignoreComments()
+								.checkForSimilar()
+								.withTest(Input.fromFile(outputFile).build())
+								.build();
+						if(diff.hasDifferences()) {
+							System.out.println(f.getName()+" : "+"FAILURE");
+							System.out.println(diff.toString());
+						} else {
+							System.out.println(f.getName()+" : "+"success");
+						}
+
+					} catch (FileNotFoundException e) {
+						throw new Eac2RicoConverterException(ErrorCode.SHOULD_NEVER_HAPPEN_EXCEPTION, e);
+					} catch (IOException e1) {
+						throw new Eac2RicoConverterException(ErrorCode.DIRECTORY_OR_FILE_HANDLING_EXCEPTION, e1);
+					}
+				}
+			}
+		}
+		
+		log.info("Done unit-tests.");
 	}
 	
 	public List<Eac2RicoConverterListener> getListeners() {

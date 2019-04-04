@@ -1,0 +1,139 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051775</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Élémentaire</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2017-10-24</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Virginie GREGOIRE</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2018-06-01</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>- Notice BnF n° FRBNF12284163</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>- Notice wikipédia https://fr.wikipedia.org/wiki/Edmond_Saglio</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>- Archives nationales, fonds Charton et Saglio (281 AP).</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 2134 9410</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Saglio, Edmond (1828-1911)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1828-06-09">9 juin 1828</fromDate>
+               <toDate standardDate="1911-12-07">7 décembre 1911</toDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Musée de Cluny</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d5bdppt147--176wwvjcctrx0">Paris (France)</placeEntry>
+            </place>
+         </places>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d3m0bl6u27z--1eg4fqfkrzwxv">conservateur (patrimoine)</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Médiéviste et archéologue de formation, Edmond Saglio (1828-1911) est nommé conservateur des objets d'art du Moyen-Age et de la Renaissance de 1879 à 1893 avant d'être nommé directeur du musée de Cluny. Il est, avec Charles Darembert, l'un des principaux rédacteur du 
+     <span style="italic">Dictionnaire des Antiquités grecques et romaines</span>. 
+    </p>
+            <p>En 1862, il épouse Julie Charton, fille d'Édouard Charton, fondateur du 
+     <span style="italic">Magasin pittoresque</span>. Ensemble ils ont 5 enfants dont 2 fils artistes : Édouard Saglio (1868-1940) et André Saglio, dit Jacques Drésa (1869-1929). 
+    </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb12284163k"
+                      xlink:type="simple">
+            <relationEntry>Saglio, Edmond</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1828-06-09">9 juin 1828</fromDate>
+               <toDate standardDate="1911-12-07">7 décembre 1911</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Lien vers notice autorité BnF</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_051685"
+                      xlink:type="simple">
+            <relationEntry>Charton, Édouard (1807-1890)</relationEntry>
+            <descriptiveNote>
+               <p>
+     Edmond Saglio épouse en 1862 Julie Charton, fille d'Édouard Charton.
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_051686"
+                      xlink:type="simple">
+            <relationEntry>Saglio, André (1869-1929)</relationEntry>
+            <descriptiveNote>
+               <p>
+     André Saglio est le second fils d'Edmond Saglio (1828-1911)
+    </p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="https://fr.wikipedia.org/wiki/Edmond_Saglio"
+                      xlink:type="simple">
+            <relationEntry>Edmond Saglio</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1828-06-09">9 juin 1828</fromDate>
+               <toDate standardDate="1911-12-07">7 décembre 1911</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Lien vers notice wikipédia</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_000720"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Charton et Saglio (1827-1927)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

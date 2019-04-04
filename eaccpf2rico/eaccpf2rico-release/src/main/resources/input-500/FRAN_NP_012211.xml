@@ -1,0 +1,148 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012211</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE02068</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Philippe BERTHOLET, Etudes et notaires parisiens en 1803, au moment de la loi du 25 ventôse an XI (16 mars 1803), Paris, 2004, p. 514-516</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Denis de villiers, Charles</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Denis de villières, Charles Nicolas</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1780-10-26">26 octobre 1780</fromDate>
+               <toDate standardDate="1822-05-07">7 mai 1822</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvpcbgs-1cppi2iacclig">saint-sulpice (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgazoq--1c50yrnvnvk9s">luxembourg (quartier)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgthrl--hvyqbcsiyfvj">saint-germain-des-prés (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzb9s3fa-d5zgox35862v">grenelle (rue de)</placeEntry>
+               <placeEntry localType="nomLieu">rue des Boucheries, au faubourg Saint-Germain (de 1780 à 1785), 3 rue de Grenelle-Saint-Germain (de 1786 à 1822)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1780-10-26">26 octobre 1780</fromDate>
+                  <toDate standardDate="1822-05-07">7 mai 1822</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Né le 8 juin 1751 à Paris</p>
+            <p>n'a jamais été marié</p>
+            <p>doyen des notaires de Paris en 1811</p>
+            <p>président de la Chambre des notaires de Paris de 1815 à sa mort</p>
+            <p>élu député pendant les Cent-Jours (voir Nouvelle histoire de Paris, le Consulat et l'Empire, Jean Tulard, Paris, 1970, p. 398)</p>
+            <p>chevalier de la Légion d'Honneur le 23 août 1814</p>
+            <p>chevalier de l'ordre de Saint-Michel le 31 décembre 1816</p>
+            <p>mort en fonction le 5 avril 1822 à Paris</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010156"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XXIX</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1780-10-26">26 octobre 1780</fromDate>
+               <toDate standardDate="1822-05-07">7 mai 1822</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/VII/1245, 5 octobre 1780, traité d'office de notaire entre les héritiers de François Bouron et Charles Denis de Villiers</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/CXIX/681, 12 avril 1822, inventaire après décès</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041826"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Charles DENIS de VILLIERS, 2 octobre 1780 - 6 mai 1822 (étude XXIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041827"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Charles DENIS de VILLIERS, 2 octobre 1780 - décembre 1789 (étude XXIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041828"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Charles DENIS de VILLIERS, janvier 1790 - 20 janvier 1800 (étude XXIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041829"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Charles DENIS de VILLIERS, 21 janvier 1800 - décembre 1809 (étude XXIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041830"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Charles DENIS de VILLIERS, janvier 1810 - décembre 1819 (étude XXIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041831"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Charles DENIS de VILLIERS, janvier 1820 - 6 mai 1822 (étude XXIX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051490"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Charles Denis de Villiers pour l'étude XXIX</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

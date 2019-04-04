@@ -1,0 +1,117 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051440</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2017-01-11</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Pascal DAVID-DORMIEN</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-01-12</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+            <eventDescription>Nouvelle notice pour valider une entrée.</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-01-23</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
+            <eventDescription>F. Clavaud, 23 janvier 2017 : revu la forme du nom, ajouté lien d'association</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Fonds Combarieu 410 AP.</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Pas de numéro ISNI</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId/>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Combarieu, Thérèse (1896-1965)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Combarieu (Marie Louise Thérèse)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1896-10-09">9 octobre 1896</fromDate>
+               <toDate standardDate="1965-03-04">4 mars 1965</toDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msjsrq5--1mbyt7s1ucsrc">musicien</term>
+               <dateRange>
+                  <fromDate standardDate="1914-01-01">1914</fromDate>
+                  <toDate standardDate="1930-12-31">1930</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>Violoniste au Conservatoire de Paris. </p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p> Thérèse Combarieu (1896-1965) est la fille aînée d'Abel Combarieu et de Marguerite Charrier, et la nièce de Jules Combarieu, musicologue et professeur d’Histoire de la musique au Collège de France. </p>
+            <p>Grâce aux cours de violon qu'elle suit au Conservatoire, elle obtient les récompenses suivantes : 2e accessit de violon en 1914, 1er accessit en 1915, 2e prix en 1916 et 1er prix en 1917.</p>
+            <p>Son père, Abel, a toujours manifesté un grand goût pour la musique classique : pianiste amateur, il est profondément heureux de voir sa fille Thérèse se consacrer au violon. C’est probablement peu de temps après son installation rue Pierre le Grand qu’il achète son piano (Klein) dont il joue seul, en duo avec sa fille ou en quatuor avec ses amis. Un violoncelle, deux altos et deux violons font également partie du patrimoine familial. Les relations professionnelles qu’il noue et les amitiés de son frère Jules ou celles de sa fille Thérèse au Conservatoire, attirent de nombreux musiciens dans l’appartement de la rue Pierre le Grand : la proximité de la salle Pleyel permet également des répétitions « en chambre » des quatuors Lowenguth et Bouillon avant d’aller se produire juste à côté dans la salle de la rue du Faubourg Saint-Honoré. </p>
+            <p>De nombreux musiciens fréquentent régulièrement la maison entre 1910 et 1930, dont : Alfred Bruneau, les Casadesus, Alfred Cortot, Georges Enesco, Arthur Honegger, Jacques Ibert, Serge Koussevitzky, Darius Milhaud, Charles Munch, Francis Poulenc et Paul Tortellier. </p>
+            <p>Thérèse Combarieu épouse en août 1924 Jean-Émile Gueullette, et elle décède le 4 mars 1965 à Paris.</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_005286"
+                      xlink:type="simple">
+            <relationEntry>Conservatoire national supérieur de musique et de danse de Paris</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1914-01-01">1914</fromDate>
+               <toDate standardDate="1965-03-04">4 mars 1965</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="family"
+                      xlink:href="FRAN_NP_051441"
+                      xlink:type="simple">
+            <relationEntry>Combarieu, Abel (1856-1944)</relationEntry>
+            <descriptiveNote>
+               <p/>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055903"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Fonds Combarieu (1840-1981).</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

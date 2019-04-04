@@ -1,0 +1,137 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_009886</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Import_SIA</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2016-05-11</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle PEREZ BASTIE</agent>
+            <eventDescription>F. Clavaud, 11 mai 2016 : revu la forme autorisée du nom, la date, ajouté fonction et lien chronologique</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>service des archives et de l'information documentaire de la Présidence de la République</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>corporateBody</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>France. Présidence de la République. Service de l'audiovisuel et de l'organisation technique des déplacements (2008-....)</part>
+         </nameEntry>
+         <nameEntry>
+            <part>SAOTD</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="2008-01-01">2008</fromDate>
+            </dateRange>
+         </existDates>
+         <legalStatuses>
+            <legalStatus>
+               <term vocabularySource="d5blolsbn6--1v8dkhwwncgqp">présidence de la République</term>
+            </legalStatus>
+         </legalStatuses>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyugp6nd-1m2amxlhij5ib">communication</term>
+               <dateRange>
+                  <fromDate standardDate="2008-01-01">2008</fromDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p> Reportages audiovisuels et photographiques relatifs à la présidence de la République </p>
+               </descriptiveNote>
+            </function>
+         </functions>
+         <structureOrGenealogy>
+            <p>Le service audiovisuel et de l'organisation technique succède au service de l'audiovisuel (1990-2007)</p>
+         </structureOrGenealogy>
+         <biogHist>
+            <p>
+               <span style="bold">Présidence de Nicolas SARKOZY</span>
+            </p>
+            <p>En 2008, Bernard GOLDSTEIN remplace Michel BALOCHE à la tête du service qui est officiellement renommé Service audiovisuel et de l’organisation technique des déplacements, mais cette appellation est rarement utilisée dans les faits. </p>
+            <p>En complément de ses activités traditionnelles, le service audiovisuel connait les modifications suivantes :</p>
+            <p>- il procède dorénavant à l’encodage des discours du Président pour le site www.elysee.fr. ; </p>
+            <p>- il intègre l’ancien service photographique qui devient la cellule photographique.;</p>
+            <p>Afin d’assurer ces missions, le service audiovisuel est structuré de la manière suivante : </p>
+            <p>- Pôle administratif : chargé de l’organisation et du suivi administratif et financier des prestations effectuées par des entreprises ou par des membres du service ; </p>
+            <p>- Pôle technique Palais : chargé de la mise en place technique des enregistrements audiovisuels des prises de parole du Président au Palais de l’Elysée, </p>
+            <p>- Pôle technique VO (VO pour voyages officiels) : chargé de la mise en place technique des enregistrements audiovisuels des prises de parole du Président lors de ses déplacements, </p>
+            <p>- Pôle technique vidéo : chargé de la réalisation, de la production, du montage des enregistrements audiovisuels des prises de parole du Président et de la gestion de la vidéothèque du Président en exercice. </p>
+            <p>- Cellule photographique : chargée des prises de vues officielles du Président à l’Elysée ou lors de ses déplacements, de leur conservation et de leur diffusion. </p>
+            <p/>
+            <p>
+               <span style="bold">Présidence de François HOLLANDE</span>
+            </p>
+            <p>En mai 2012, André LONCLE est nommé chef du service jusqu’en avril 2014 où il est remplacé par Claude VAVASSORI, qui fut successivement adjoint de Bernard GOLDSTEIN puis d’André LONCLE. </p>
+            <p>En 2016, le service audiovisuel comprend vingt-six agents dont six chefs de projets et onze coordinateurs techniques. Il est toujours réparti en quatre pôles, mais a perdu la cellule photographique, redevenue autonome avec le titre de service image. </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="hierarchical-parent"
+                      xlink:href="FRAN_NP_010031"
+                      xlink:type="simple">
+            <relationEntry>Direction générale des services (présidence de la République)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2008-01-31">31 janvier 2008</fromDate>
+               <toDate standardDate="2012-05-15">15 mai 2012</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-earlier"
+                      xlink:href="FRAN_NP_051290"
+                      xlink:type="simple">
+            <relationEntry>France. Présidence de la République. Service de l'audiovisuel (1990-2008)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2008-01-01">2008</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-earlier"
+                      xlink:href="FRAN_NP_009918"
+                      xlink:type="simple">
+            <relationEntry>France. Présidence de la République. Service photographique (1952-2008)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2008-01-01">2008</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054171"
+                           xlink:type="simple">
+            <relationEntry localType="archival"> Présidence de Nicolas Sarkozy, vidéothèque du service de l'audiovisuel et de l'organisation technique : revues de presse et enregistrements vidéos liés à l'activité du Président</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

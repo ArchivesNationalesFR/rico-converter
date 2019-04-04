@@ -1,0 +1,123 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_051365</recordId>
+      <maintenanceStatus>new</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2016-09-01</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marine ZELVERTE</agent>
+            <eventDescription>Elsa Camus, 22 septembre 2016 : modification forme autorisée du nom</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2016-09-27</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Site Internet des Archives contemporaines de la Justice (http://www.archives-judiciaires.justice.gouv.fr/index.php?rubrique=10774&amp;ssrubrique=10820&amp;article=14370)</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Blouet, Jean-Luc (19..-....)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1901-01-01">XXe siècle</fromDate>
+            </dateRange>
+         </existDates>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msixdvh--wgctct8soc1y">membre de cabinet ministériel</term>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Jean-Luc Blouet est diplômé de l'École des Hautes Etudes Commerciales en 1984 et de l’Institut national des langues et civilisations orientales. Il débute sa carrière en tant qu'attaché de coopération culturelle, scientifique et technique à Hong Kong (de 1984 à 1986), puis crée sa propre entreprise de négoce et de prospection en Chine pour des entreprises françaises et européennes. Il devient Directeur logistique pour l’Asie de la société Together Ltd. </p>
+            <p>En octobre 1989, il débute sa carrière administrative en occupant le poste de Secrétaire des débats du Sénat. Le 29 mai 2002, il est nommé conseiller du Garde des Sceaux (Dominique Perben) pour les questions de société et les études législatives. D'avril 2004 à mai 2007, il est conseiller technique chargé des discours et des préfaces de catalogues au sein du cabinet de Renaud Donnedieu de Vabres, ministre de la Culture et de la Communication. Il est ensuite attaché culturel au ministère des Affaires étrangères jusqu'en 2011, puis conseiller au Sénat. </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_050961"
+                      xlink:type="simple">
+            <relationEntry>Donnedieu de Vabres, Renaud (1954-....)</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2004-01-01">2004</fromDate>
+               <toDate standardDate="2007-12-31">2007</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Jean-Luc Bouet est conseiller technique de R. Donnedieu de Vabres.</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_000067"
+                      xlink:type="simple">
+            <relationEntry>Sénat</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1989-01-01">1989</fromDate>
+               <toDate standardDate="2002-12-31">2002</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Jean-Luc Blouet est secrétaire des débats au Sénat.</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_000067"
+                      xlink:type="simple">
+            <relationEntry>Sénat</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2011-01-01">2011</fromDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Jean-Luc Blouet est conseiller au Sénat</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_000393"
+                      xlink:type="simple">
+            <relationEntry>Cabinet du garde des Sceaux, ministre de la Justice</relationEntry>
+            <dateRange>
+               <fromDate standardDate="2002-01-01">2002</fromDate>
+               <toDate standardDate="2004-12-31">2004</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_053933"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Archives de Jean-Luc Blouet, conseiller technique chargé des discours et des article, auprès de Renaud Donnedieu de Vabres, ministre de la Culture et de la communication de 2004 à 2007.</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

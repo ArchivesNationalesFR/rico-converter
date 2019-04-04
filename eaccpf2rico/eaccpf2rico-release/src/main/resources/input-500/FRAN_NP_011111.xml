@@ -1,0 +1,117 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_011111</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00877</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Philippe BERTHOLET, Etudes et notaires parisiens en 1803, au moment de la loi du 25 ventôse an XI (16 mars 1803), Paris, 2004, p. 109-112</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Mathieu de heudolsheim, Joseph-François</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Mathieu de heudelsheim, Joseph Ignace</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1789-03-29">29 mars 1789</fromDate>
+               <toDate standardDate="1805-12-31">31 décembre 1805</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvpb1c4--1dpne8gngxarf">saint-roch (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvox0hv--s68ql74wtyjp">saint-germain-l'auxerrois (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgj653-pntrwb37dxqp">palais-royal (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzccgzb1--19itncynl0qwt">palais-royal (place du)</placeEntry>
+               <placeEntry localType="nomLieu">place du Palais-Royal, puis Palais-Egalité (de 1789 à 1796), rue de l'Echelle-Honoré (de 1797 à 1801), rue Saint-Honoré, vis-à-vis le terrains des ci-devant Jacobins (de 1802 à 1805)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1789-03-29">29 mars 1789</fromDate>
+                  <toDate standardDate="1805-12-31">31 décembre 1805</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>né le 31 juillet 1754 à Sélestat</p>
+            <p>marié à Aimée Françoise Samocet-Du Tillet (voir ET/CVIII/782, 8 messidor an V, [26 juin 1797], contrat de mariage)</p>
+            <p>nommé baron de Mauvières le 2 novembre 1810</p>
+            <p>décédé le 25 juin 1833 à Paris</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010172"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XLV</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1789-03-29">29 mars 1789</fromDate>
+               <toDate standardDate="1805-12-31">31 décembre 1805</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/LXXXIII/646, 12 mars 1789, traité d'office de notaire entre Charles Mainnemarre et Joseph Mathieu de Heidolsheim</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XLV/788, 27 juin 1833, dépôt de son testament olographe (rédigé le 30 janvier 1821)</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/LXII/902, inventaire après décès</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_042130"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Joseph François MATHIEU de HEUDOLSHEIM, 29 mars 1786 - 29 décembre 1805 (étude XLV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_052042"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Joseph François Mathieu de Heudolsheim pour l'étude XLV</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

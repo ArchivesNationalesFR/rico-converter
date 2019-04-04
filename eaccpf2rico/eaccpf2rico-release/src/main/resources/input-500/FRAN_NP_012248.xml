@@ -1,0 +1,124 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012248</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE02105</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Philippe BERTHOLET, Etudes et notaires parisiens en 1803, au moment de la loi du 25 ventôse an XI (16 mars 1803), Paris, 2004, p. 218-220</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Doulcet, Louis</part>
+         </nameEntry>
+         <nameEntry>
+            <part>Doulcet, Louis Sébastien François</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1790-03-06">6 mars 1790</fromDate>
+               <toDate standardDate="1813-11-06">6 novembre 1813</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvow9c3--1ln2rhczl581f">saint-eustache (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgeuq1--ys2q6qcqeojf">montmartre (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzahz1bo--gtp67f5aofs">fossés-montmartre (rue des)</placeEntry>
+               <placeEntry localType="nomLieu">11 rue des Fossés-Montmartre</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1790-03-06">6 mars 1790</fromDate>
+                  <toDate standardDate="1813-11-06">6 novembre 1813</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>né le 30 juillet 1755 à Paris</p>
+            <p>marié à Claude de Loynes, sa nièce (voir ET/XXIX/633, 28 ventôse an IV [17 mars 1796], contrat de mariage</p>
+            <p>d'abord principal clerc de maître Denis (étude LX), il succède à Jean-Simon Le Go</p>
+            <p>notaire substituant dans l'étude XX (du 1er au 15 nivôse an VIII)</p>
+            <p>suspendu quelques mois durant la Terreur</p>
+            <p>décédé le 26 juin 1822 à Gouvernes (Seine-et-Marne)</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010168"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XLI</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1790-03-06">6 mars 1790</fromDate>
+               <toDate standardDate="1813-11-06">6 novembre 1813</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XXIX/597, 18 février 1790, achat de l'office de Jean Le Go</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XLI/758, 22 pluviôse an II [10 février 1794], suspendu</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XLI/758, 21 vendémiaire an III [12 octobre 1794], réintégré</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XLI/861, 29 juin 1822, dépôt de testament</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/III/1407, 3 septembre 1822, inventaire après décès</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042064"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Louis DOULCET, 5 mars 1790 - 5 novembre 1813 (étude XLI)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_056072"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Louis Doulcet pour l'étude XLI</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

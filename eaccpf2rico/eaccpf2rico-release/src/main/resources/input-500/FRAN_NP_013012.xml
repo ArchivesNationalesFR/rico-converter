@@ -1,0 +1,120 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_013012</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE02929</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Philippe BERTHOLET, Etudes et notaires parisiens en 1803, au moment de la loi du 25 ventôse an XI (16 mars 1803), Paris, 2004, p. 443-445</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Boursier, Amable</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1783-12-05">5 décembre 1783</fromDate>
+               <toDate standardDate="1810-12-14">14 décembre 1810</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp6vb2-rsrcmgk1zmct">saint-merri (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvozckb-wk5djyktth83">saint-jacques-de-la-boucherie (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvoxn4o-1v8ltgercbj9c">saint-gervais (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp8zed--rdzkw0dkb1pg">saint-paul (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvh1eiq-10kmxmcddmsfj">sainte-avoye (quartier)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgqi79--17v2l85hhq4ey">saint-antoine (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzdokgfk-1anooamvc83ng">verrerie (rue de la)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzaj2p6v--hrd7lqok52tn">francs-bourgeois (rue des)</placeEntry>
+               <placeEntry localType="nomLieu">rue de la Verrerie, près la rue Barre-du-Bec (de 1783 à l'an III), 14 rue des Francs-Bourgeois (de l'an IV à 1810)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1783-12-05">5 décembre 1783</fromDate>
+                  <toDate standardDate="1810-12-14">14 décembre 1810</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>Né le 29 janvier 1752 à Paris</p>
+            <p>marié à Anne Danié (voir ET/XXXIII/683, 12 septembre 1784, contrat de mariage)</p>
+            <p>père de Guy Boursier, qui lui succède</p>
+            <p>d'abord principal clerc d'Etienne-Prosper de La Motte, notaire de l'étude LIV</p>
+            <p>mort en charge le 7 janvier 1810</p>
+            <p>il est remplacé, en attendant la nomination de son successeur, par Louis Laisné, de l'étude XXVIII</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010221"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XCIV</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1783-12-05">5 décembre 1783</fromDate>
+               <toDate standardDate="1810-12-14">14 décembre 1810</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XCIV/570, 20 janvier 1810, notoriété après décès</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_043298"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Athanase Marie LEMOINE, 29 janvier 1811 - 12 décembre 1840 (étude CX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_055528"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Amable Boursier pour l'étude XCIV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_042982"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Amable BOURSIER, 5 décembre 1783 - 14 décembre 1810 (étude XCIV)</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

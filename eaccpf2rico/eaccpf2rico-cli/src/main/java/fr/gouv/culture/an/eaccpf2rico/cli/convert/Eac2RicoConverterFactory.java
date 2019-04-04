@@ -1,8 +1,6 @@
 package fr.gouv.culture.an.eaccpf2rico.cli.convert;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +8,8 @@ import java.util.List;
 import javax.xml.transform.Source;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.URIResolver;
 import javax.xml.transform.stream.StreamSource;
 
 import org.apache.commons.io.FileUtils;
@@ -18,6 +18,7 @@ import org.slf4j.LoggerFactory;
 
 import fr.gouv.culture.an.eaccpf2rico.Eac2RicoConverterException;
 import fr.gouv.culture.an.eaccpf2rico.ErrorCode;
+import fr.gouv.culture.an.eaccpf2rico.cli.test.ArgumentsTest;
 import fr.gouv.culture.an.eaccpf2rico.convert.Eac2RicoConverter;
 import fr.gouv.culture.an.eaccpf2rico.convert.Eac2RicoConverterErrorListener;
 import fr.gouv.culture.an.eaccpf2rico.convert.Eac2RicoConverterListener;
@@ -52,14 +53,6 @@ public class Eac2RicoConverterFactory {
 	}
 
 	public Eac2RicoConverter createConverter(File xslt, File outputDirectory, File errorDirectory, File inputDirectory) throws Eac2RicoConverterException {
-		try {
-			return createConverter(new StreamSource(new FileInputStream(xslt)), outputDirectory, errorDirectory, inputDirectory);
-		} catch (FileNotFoundException e) {
-			throw new Eac2RicoConverterException(ErrorCode.SHOULD_NEVER_HAPPEN_EXCEPTION, e);
-		}
-	}
-	
-	public Eac2RicoConverter createConverter(Source converterSource, File outputDirectory, File errorDirectory, File inputDirectory) throws Eac2RicoConverterException {
 		// create output directory if it does not exists
 		if(!outputDirectory.exists()) {
 			log.info("Creating output directory {}", outputDirectory.getAbsolutePath());
@@ -68,7 +61,14 @@ public class Eac2RicoConverterFactory {
 		
 		Transformer transformer;
 		try {
-			transformer = TransformerBuilder.createSaxonProcessor().createTransformer(converterSource);
+			transformer = TransformerBuilder.createSaxonProcessor().setUriResolver(new URIResolver() {
+
+				@Override
+				public Source resolve(String href, String base) throws TransformerException {
+					return new StreamSource(new File(xslt.getParentFile(), href));
+				}
+				
+			}).createTransformer(new StreamSource(xslt));
 			// disable error listener to prevent messing with the progress bar
 			transformer.setErrorListener(new SaxonErrorListener());
 		} catch (TransformerConfigurationException e) {

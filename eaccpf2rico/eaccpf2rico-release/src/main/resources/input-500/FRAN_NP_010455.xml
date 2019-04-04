@@ -1,0 +1,121 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_010455</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE00161</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2015-09-30</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <descriptiveNote>
+               <p>Philippe BERTHOLET, Etudes et notaires parisiens en 1803, au moment de la loi du 25 ventôse an XI (16 mars 1803), Paris, 2004, p. 238-240</p>
+            </descriptiveNote>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Thomé, Etienne</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1787-03-31">31 mars 1787</fromDate>
+               <toDate standardDate="1805-08-29">29 août 1805</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp8zed--rdzkw0dkb1pg">saint-paul (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvoxn4o-1v8ltgercbj9c">saint-gervais (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp8zed--rdzkw0dkb1pg">saint-paul (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp76qc--1xdxyf9lzzthw">saint-nicolas-des-champs (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp0xwi-18dd5xg8fnnjr">saint-jean-en-grève (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgqi79--17v2l85hhq4ey">saint-antoine (quartier)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvh3cks--4ikah9uckyb2">temple (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd15vbw-k0h1w454w4f8">saint-antoine (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzdpu6vj-yf13o3f7zy40">vieille-du-temple (rue)</placeEntry>
+               <placeEntry localType="nomLieu">rue Saint-Antoine, près la rue de Fourcy (de 1787 à l'an VII), 88 rue Vieille-du-Temple (de l'an VIII à l'an XIII)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1787-03-31">31 mars 1787</fromDate>
+                  <toDate standardDate="1805-08-29">29 août 1805</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <biogHist>
+            <p>né le 26 janvier 1751 à Coulommiers (Seine-et-Marne)</p>
+            <p>marié à Louise Cavillier (voir ET/LV/78 : 10 avril 1787, contrat de mariage), dont il divorce en 1800</p>
+            <p>décédé le 20 avril 1815 à Paris</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010214"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale LXXXVII</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1787-03-31">31 mars 1787</fromDate>
+               <toDate standardDate="1805-08-29">29 août 1805</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/LV/78, 15 mars 1787, traité d'office de notaire entre Claude-Hyacinte Goullet et Etienne Thomé</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XXII/205, 29 avril 1815, inventaire après décès</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="subjectOf"
+                           xlink:href="FRAN_IR_042881"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Étienne THOMÉ, 31 mars 1787 - 29 août 1805 (étude LXXXVII)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_054375"
+                           xlink:type="simple">
+            <relationEntry localType="archival">«Mélanges» (dossiers de clients) de l’étude CVII. MC/ET/CVII/699-MC/ET/CVII/703, MC/ET/CVII/872-MC/ET/CVII/880 (XVe-XIXe siècles)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051218"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Etienne Thomé pour l'étude LXXXVII</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

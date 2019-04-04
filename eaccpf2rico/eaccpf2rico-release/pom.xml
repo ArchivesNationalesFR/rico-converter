@@ -58,6 +58,13 @@
             <type>zip</type>
             <classifier>documentation</classifier>
         </dependency>
+        <dependency>
+            <groupId>fr.gouv.culture.archives-nationales</groupId>
+            <artifactId>eaccpf2rico-converter</artifactId>
+            <version>${project.version}</version>
+            <type>zip</type>
+            <classifier>unit-tests</classifier>
+        </dependency>
     </dependencies>
 
 </project>

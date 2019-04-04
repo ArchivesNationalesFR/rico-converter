@@ -54,6 +54,16 @@
                 <include>${project.groupId}:eaccpf2rico-doc:zip:documentation:${project.version}</include>
             </includes>
         </dependencySet>
+        <!-- unzip the unit-tests -->
+        <dependencySet>
+            <useProjectArtifact>true</useProjectArtifact>
+            <useProjectAttachments>false</useProjectAttachments>
+            <unpack>true</unpack>
+            <outputDirectory>/</outputDirectory>
+            <includes>
+                <include>${project.groupId}:eaccpf2rico-converter:zip:unit-tests:${project.version}</include>
+            </includes>
+        </dependencySet>
     </dependencySets>
     <fileSets>
         <!-- copy the src/main/resources directory in the zip -->
@@ -62,6 +72,12 @@
           <filtered>true</filtered>
           <outputDirectory>/</outputDirectory>
           <directory>src/main/resources</directory>
+        </fileSet>
+        <!-- copy the input-50 into input -->
+        <fileSet>
+          <filtered>true</filtered>
+          <outputDirectory>/input</outputDirectory>
+          <directory>src/main/resources/input-50</directory>
         </fileSet>
     </fileSets>
 </assembly>

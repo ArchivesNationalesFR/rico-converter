@@ -1,0 +1,128 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_050255</recordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation> Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z44-061 juin 1986 Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés et NF Z 44-060, décembre 1996 Catalogue d'auteurs et d'anonymes – Forme et structure des vedettes de collectivités-auteurs. </citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>created</eventType>
+            <eventDateTime>2013-12-10</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Zénaïde ANDRIEU-ROMANEIX</agent>
+            <eventDescription>F. Clavaud, 10 décembre 2013 : changement forme du nom, ajout n° notice BnF</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-07-11</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Zénaïde ANDRIEU-ROMANEIX</agent>
+            <eventDescription>Ajout ISNI et lien Wikipedia, activités et lieux</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2018-02-26</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Isabelle ARISTIDE-HASTIR</agent>
+            <eventDescription>P. Charbonnier : ajout lien d'identité vers notice Wikipédia</eventDescription>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>Archives nationales, Fonds Dreyfus (346 AP).</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Notice d'autorité BnF n° FRBNF11900601</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>https://fr.wikipedia.org/wiki/Ferdinand_Dreyfus</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityId>ISNI 0000 0001 1071 4056</entityId>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Dreyfus, Ferdinand (1849-1915)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1849-05-05">5 mai 1849</fromDate>
+               <toDate standardDate="1915-07-15">15 juillet 1915</toDate>
+            </dateRange>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu général</placeRole>
+               <placeEntry localType="nomLieu">Seine-et-Oise</placeEntry>
+               <placeEntry localType="lieu" vocabularySource="d3ntb6zxjb--1k1thm4e2xtmv">Départements français</placeEntry>
+            </place>
+         </places>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d699msj9l7t-1gb5a09kkzrmp">sénateur</term>
+               <dateRange>
+                  <fromDate standardDate="1909-01-01">1909</fromDate>
+                  <toDate standardDate="1915-07-15">15 juillet 1915</toDate>
+               </dateRange>
+            </occupation>
+            <occupation>
+               <term vocabularySource="d699msiribo--1dn34eg8lht4f">député</term>
+               <dateRange>
+                  <fromDate standardDate="1880-01-01">1880</fromDate>
+                  <toDate standardDate="1885-12-31">1885</toDate>
+               </dateRange>
+            </occupation>
+         </occupations>
+         <biogHist>
+            <p>Avocat, rédacteur du 
+     <span style="italic">Siècle</span>, Ferdinand Dreyfus (1849-1915), sans lien familial avec le capitaine Alfred Dreyfus, est député (1880-1885) puis sénateur de Seine-et-Oise (1909-1915). Inscrit au groupe de l’Union républicaine, Ferdinand Dreyfus prend part, le plus souvent comme rapporteur, à toutes les discussions sur les retraites ouvrières, la mutualité, l’assistance aux familles nombreuses, les caisses des écoles, et il s’intéresse plus particulièrement aux tribunaux spéciaux pour enfants. Son fils, Jacques-Ferdinand, a été directeur général des Assurances sociales. 
+    </p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb11900601v"
+                      xlink:type="simple">
+            <relationEntry>Dreyfus, Ferdinand</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1849-05-05">5 mai 1849</fromDate>
+               <toDate standardDate="1915-07-15">15 juillet 1915</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice BnF</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="https://fr.wikipedia.org/wiki/Ferdinand_Dreyfus"
+                      xlink:type="simple">
+            <relationEntry>Ferdinand Dreyfus</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1849-05-05">5 mai 1849</fromDate>
+               <toDate standardDate="1915-07-15">15 juillet 1915</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice Wikipédia</p>
+            </descriptiveNote>
+         </cpfRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

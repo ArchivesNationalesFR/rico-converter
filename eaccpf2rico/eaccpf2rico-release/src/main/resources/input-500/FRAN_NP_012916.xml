@@ -1,0 +1,140 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_012916</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE02831</otherRecordId>
+      <maintenanceStatus>derived</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Blanchard, Antoine</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1681-01-30">30 janvier 1681</fromDate>
+               <toDate standardDate="1701-08-22">22 août 1701</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvpbcz5--gbtglbh0f8xm">saint-sauveur (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgrksc--1qyg7stzts74f">saint-denis (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd6pzrd--sesg234co7t4">saint-sauveur (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd1u57i-1h2qpz5x5m5i3">saint-denis (rue)</placeEntry>
+               <placeEntry localType="nomLieu">rue Saint-Sauveur, rue Saint-Denis, vis-à-vis l'église de la Trinité (en 1687)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à paris</term>
+               <dateRange>
+                  <fromDate standardDate="1681-01-30">30 janvier 1681</fromDate>
+                  <toDate standardDate="1701-08-22">22 août 1701</toDate>
+               </dateRange>
+            </function>
+         </functions>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010157"
+                      xlink:type="simple">
+            <relationEntry>Etude notariale XXX</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1681-01-30">30 janvier 1681</fromDate>
+               <toDate standardDate="1701-08-22">22 août 1701</toDate>
+            </dateRange>
+         </cpfRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/LXXXVIII/340, 25 juillet 1701, traité d'office de notaire entre Antoine Blanchard et Hugues Cuillerier</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XXX/198, 4 mai 1712, testament</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="other">
+            <relationEntry localType="archival">ET/XXX/198, 6 mai 1712, inventaire après décès</relationEntry>
+         </resourceRelation>
+         <resourceRelation resourceRelationType="creatorOf">
+            <relationEntry localType="archival">sous la cote ET/XXXV/597, expéditions signées par divers notaires dont Blanchard et conservées dans le fonds de l'étude XXXV</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041938"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Nicolas DOURNEL, 1606 - 21 juin 1629 (étude XXXV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041939"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Denis CAMUSET, 22 juin 1629 - 20 avril 1641 (étude XXXV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041942"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Nicolas II BOINDIN, 11 avril 1673 - 30 juin 1690 (étude XXXV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041940"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Jean COLAS, 8 janvier 1645 - 7 juin 1665 (étude XXXV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041943"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire René DESFORGES, 25 octobre 1684 - 8 octobre 1710 (étude XXXV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041941"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Gabriel MESNIL, 10 octobre 1710 - 22 février 1734 (étude XXXV)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041839"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Antoine BLANCHARD, 30 janvier 1681 - 22 août 1701 (étude XXX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_051600"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images du répertoire du notaire Antoine Blanchard pour l'étude XXX</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

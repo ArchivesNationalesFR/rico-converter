@@ -1,0 +1,174 @@
+<eac-cpf xmlns="urn:isbn:1-931666-33-4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+   <control>
+      <recordId>FRAN_NP_011350</recordId>
+      <otherRecordId localType="Ancien_identifiant">FRDAFANCH00MC_NANOTAIRE01132</otherRecordId>
+      <maintenanceStatus>revised</maintenanceStatus>
+      <maintenanceAgency>
+         <agencyName>Archives nationales de France</agencyName>
+      </maintenanceAgency>
+      <languageDeclaration>
+         <language languageCode="fre">Français</language>
+         <script scriptCode="Latn"/>
+      </languageDeclaration>
+      <conventionDeclaration>
+         <citation>Notice établie conformément à la norme ICA-ISAAR (CPF) 2004, aux normes ISO 8601 pour le système de normalisation des dates utilisé, ainsi que AFNOR NF Z 44-061, juin 1986. Catalogage : forme et structure des vedettes noms de personne, des vedettes titres, des rubriques de classement et des titres forgés.</citation>
+      </conventionDeclaration>
+      <localControl localType="niveau_de_detail">
+         <term>Moyenne</term>
+      </localControl>
+      <maintenanceHistory>
+         <maintenanceEvent>
+            <eventType>derived</eventType>
+            <eventDateTime>2013-04-23</eventDateTime>
+            <agentType>machine</agentType>
+            <agent>Migration ETANOT</agent>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>revised</eventType>
+            <eventDateTime>2017-05-19</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marie-Françoise LIMON-BONNET</agent>
+            <eventDescription>19 mai 2017, ajouts biographiques, sources, liens IR (Marie-Françoise Limon-Bonnet)</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-05-22</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Marie-Françoise LIMON-BONNET</agent>
+            <eventDescription>F. Clavaud, 29 juin 2017 : ajout lien d'identité et revision activité</eventDescription>
+         </maintenanceEvent>
+         <maintenanceEvent>
+            <eventType>updated</eventType>
+            <eventDateTime>2017-06-29</eventDateTime>
+            <agentType>human</agentType>
+            <agent>Mission.referentiels MISSION.REFERENTIELS</agent>
+         </maintenanceEvent>
+      </maintenanceHistory>
+      <sources>
+         <source>
+            <sourceEntry>M. F. LIMON, Les notaires au Châtelet sous le règne de Louis XIV, Toulouse, presses universitaires du Mirail, 1992, p. 364-365</sourceEntry>
+         </source>
+         <source>
+            <sourceEntry>Notice BnF numéro : FRBNF10604331 http://catalogue.bnf.fr/ark:/12148/cb106043318</sourceEntry>
+         </source>
+      </sources>
+   </control>
+   <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+         <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+            <part>Langloix, Simon François (1685-1739)</part>
+         </nameEntry>
+      </identity>
+      <description>
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1685-03-06">6 mars 1685</fromDate>
+               <toDate standardDate="1739-12-15">15 décembre 1739</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p/>
+            </descriptiveNote>
+         </existDates>
+         <places>
+            <place>
+               <placeRole>Lieu de Paris</placeRole>
+               <placeEntry localType="nomLieu">rue des Arcis (de 1712 à 1723), rue Saint-Martin, au coin de la rue de la Verrerie (de 1724 à 1727), rue de la Verrerie (de 1728 à 1739)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvozckb-wk5djyktth83">Saint-Jacques-de-la-Boucherie (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp6vb2-rsrcmgk1zmct">Saint-Merri (paroisse)</placeEntry>
+               <placeEntry localType="paroisse" vocabularySource="d3nyvp0xwi-18dd5xg8fnnjr">Saint-Jean-en-Grève (paroisse)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvg4hsz--1pxjpiihtogfj">Grève (quartier)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvgyd8c-1ivt7h45b41ah">Saint-Martin (quartier)</placeEntry>
+               <placeEntry localType="quartier" vocabularySource="d3nyvh1eiq-10kmxmcddmsfj">Sainte-Avoye (quartier)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nz8kbmx5-11k4h2qhftgd8">Arcis (rue des)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzd5fnbv--1fbmnb1c9dkph">Saint-Martin (rue)</placeEntry>
+               <placeEntry localType="voie" vocabularySource="d3nzdokgfk-1anooamvc83ng">Verrerie (rue de la)</placeEntry>
+            </place>
+         </places>
+         <functions>
+            <function>
+               <term vocabularySource="d3nyui3o8w--11y7jgy8q3wnt">notaire à Paris</term>
+               <dateRange>
+                  <fromDate standardDate="1712-04-28">28 avril 1712</fromDate>
+                  <toDate standardDate="1739-12-15">15 décembre 1739</toDate>
+               </dateRange>
+            </function>
+         </functions>
+         <occupations>
+            <occupation>
+               <term vocabularySource="d3nyu9x713-9kcjiv44l4wh">notaire</term>
+               <dateRange>
+                  <fromDate standardDate="1712-04-28">28 avril 1712</fromDate>
+                  <toDate standardDate="1739-12-15">15 décembre 1739</toDate>
+               </dateRange>
+               <descriptiveNote>
+                  <p>notaire à Paris</p>
+               </descriptiveNote>
+            </occupation>
+         </occupations>
+         <mandates>
+            <mandate>
+               <descriptiveNote>
+                  <p>V/1/208, pièce 76, 24 avril 1712 : lettres de provision d'office.</p>
+               </descriptiveNote>
+            </mandate>
+         </mandates>
+         <biogHist>
+            <p>Simon François Langloix est baptisé à Paris le 6 mars 1685.</p>
+            <p>D'abord principal clerc de Louis Auvray (étude IX), il en rachète l'office en 1712 (MC/ET/XCIV/139, 11 avril 1712, traité d'office de notaire entre Louis Auvray et Simon François Langloix). Il est nommé le 24 avril 1712 (V/1/208, pièce 76).</p>
+            <p>Il épouse en premières noces Elisabeth Boursier, fille d'Etienne Boursier (notaire de l'étude XCIV), mariage dont il a deux enfants, et en secondes noces, Marguerite Gillet, avec laquelle il a quatre enfants, dont François, qui lui succède en 1739 (MC/ET/CXII/681, 21 décembre 1739, traité d'office de notaire entre les héritiers et la veuve de Simon François Langloix et son fils François).</p>
+            <p>Simon François Langloix a au moins une soeur, Marguerite, laquelle rédige un testament olographe le 15 juin 1738, déposé le 10 octobre 1739 (MC/ET/CXII/531/B) ; un compte d'exécution testamentaire est arrêté le 4 avril 1740 (MC/ET/CXII/682/B).</p>
+            <p>Il est commissaire des pauvres et marguilliers de sa paroisse, Saint-Merri.</p>
+            <p>Il meurt à son domicile, rue de la Verrerie, avant le 15 décembre 1739 et est inhumé à Saint-Merri, sa paroisse, ce jour-là (MC/PL//18, n° 2676).</p>
+            <p>Simon François Langloix fut syndic de la compagnie des notaires en 1738 et composa au moins deux traités juridico-historiques :</p>
+            <p>-l'un sur les droits et privilèges des notaires au Châtelet de Paris 
+     <span style="italic">Traité des droits, privilèges et fonctions des conseillers du Roy, notaires, gardes-notes et gardes-scel de Sa Majesté au Châtelet de Paris. Avec le recueil de leurs chartres et titres</span>, 1738, ouvrage qui en fait l'un des premiers historiens parisiens de sa profession après Guillaume Levesque ; 
+    </p>
+            <p>-l'autre sur la coutume de Paris 
+     <span style="italic">Principes généraux de la Coutume de Paris, où les articles du texte, et les ordonnances qui y ont rapport, sont rangés dans un ordre méthodique...</span>, 1740. 
+    </p>
+            <p>Son inventaire après décès est commencé le 5 janvier 1740 (MC/ET/CXII/682).</p>
+            <p>La chambre des notaires de Paris conserve un portrait le représentant (portrait vraissemblablement postérieur à l'existence du personnage).</p>
+         </biogHist>
+      </description>
+      <relations>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="associative"
+                      xlink:href="FRAN_NP_010136"
+                      xlink:type="simple">
+            <relationEntry>Etude IX</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1712-04-28">28 avril 1712</fromDate>
+               <toDate standardDate="1739-12-15">15 décembre 1739</toDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="identity"
+                      xlink:href="http://catalogue.bnf.fr/ark:/12148/cb106043318"
+                      xlink:type="simple">
+            <relationEntry>Langloix, Simon François </relationEntry>
+            <dateRange>
+               <fromDate standardDate="1685-03-06">6 mars 1685</fromDate>
+               <toDate standardDate="1739-12-15">15 décembre 1739</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Notice d'autorité BnF (notice élémentaire)</p>
+            </descriptiveNote>
+         </cpfRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_041334"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Minutes et répertoires du notaire Simon François LANGLOIX, 27 avril 1712 - décembre 1739 (étude IX)</relationEntry>
+         </resourceRelation>
+         <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                           resourceRelationType="creatorOf"
+                           xlink:href="FRAN_IR_056666"
+                           xlink:type="simple">
+            <relationEntry localType="archival">Images des répertoires du notaire Simon François Langloix pour l'étude IX</relationEntry>
+         </resourceRelation>
+      </relations>
+   </cpfDescription>
+</eac-cpf>

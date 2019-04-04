@@ -28,6 +28,27 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
+
+			<plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.6</version>
+                <executions>
+                    <execution>
+                        <id>assemble</id>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <descriptors>
+                        <descriptor>src/main/assembly/unit-tests.xml</descriptor>
+                    </descriptors>
+                    <attach>true</attach>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
 
@@ -44,7 +65,8 @@
 		  <groupId>org.xmlunit</groupId>
 		  <artifactId>xmlunit-core</artifactId>
 		  <version>2.6.2</version>
-		  <scope>test</scope>
+		  <!-- Note : we need this for runtime, too -->
+		  <!-- <scope>test</scope> -->
 		</dependency>
 		<dependency>
 		    <groupId>org.xmlunit</groupId>

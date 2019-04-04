@@ -67,8 +67,9 @@ public class TransformerBuilder {
 		return uriResolver;
 	}
 
-	public void setUriResolver(URIResolver uriResolver) {
+	public TransformerBuilder setUriResolver(URIResolver uriResolver) {
 		this.uriResolver = uriResolver;
+		return this;
 	}
 	
 }
