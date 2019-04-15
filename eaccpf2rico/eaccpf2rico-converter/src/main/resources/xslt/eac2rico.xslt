@@ -10,6 +10,7 @@
 	xmlns:eac2rico="http://data.archives-nationales.culture.gouv.fr/eac2rico/"
 	xmlns:isni="http://isni.org/ontology#"
 	xmlns:eac="urn:isbn:1-931666-33-4"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
 	xmlns:html="http://www.w3.org/1999/xhtml"
 >
 	<xsl:output indent="yes" method="xml" />
@@ -22,10 +23,12 @@
 	<xsl:param name="AUTHOR_URI">http://data.archives-nationales.culture.gouv.fr/corporateBody/005061</xsl:param>
 	<xsl:param name="LITERAL_LANG">fr</xsl:param>
 	
-	<!-- Load Error Codes from companion file -->
-	<xsl:param name="ERROR_CODES_FILE">eac2rico-errorCodes.xml</xsl:param>
-	<xsl:variable name="ERROR_CODES" select="document($ERROR_CODES_FILE)" />
+	<!-- Load Codes from companion file -->
+	<xsl:param name="CODES_FILE">eac2rico-codes.xml</xsl:param>
+	<xsl:variable name="CODES" select="document($CODES_FILE)" />
 	
+	<!--  Global variable for recordId to reference it in functions -->
+	<xsl:variable name="recordId" select="/eac:eac-cpf/eac:control/eac:recordId" />
 	<!--  Global variable for the Agent URI -->
 	<xsl:variable name="agentUri"><xsl:call-template name="URI-Agent" /></xsl:variable>
 	
@@ -34,6 +37,8 @@
 			<!-- Sets xml:base on root this way, so that compilation of XSLT does not fail because it is not a URI -->
 			<xsl:attribute name="xml:base" select="$BASE_URI" />
 			<xsl:apply-templates />
+			<xsl:apply-templates mode="relations" select="eac:eac-cpf/eac:cpfDescription/eac:description/eac:relations/eac:cpfRelation" />
+			<xsl:apply-templates mode="relations" select="eac:eac-cpf/eac:cpfDescription/eac:description/eac:relations/eac:resourceRelation" />
 		</rdf:RDF>
 	</xsl:template>
 	
@@ -214,10 +219,10 @@
 	<xsl:template match="eac:useDates">
 		<xsl:apply-templates />
 	</xsl:template>
-	<xsl:template match="eac:dateRange">
+	
+	<xsl:template match="eac:dateRange" mode="#all">
 		<xsl:apply-templates />
 	</xsl:template>
-	
 	<!-- Processing the fromDate / toDate for death and birth of Persons - otherwise the generic templates below for fromDate/toDate will be used -->
 	<xsl:template match="eac:existDates/eac:dateRange/eac:fromDate[/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType = 'person']">
 		<rico:birthDate>
@@ -296,7 +301,7 @@
 	</xsl:template>
 	
 	
-	<!-- ** Functions ** -->
+	<!-- *** Functions *** -->
 	<xsl:template match="eac:functions">
 		<xsl:apply-templates />
 	</xsl:template>
@@ -323,7 +328,7 @@
 		</rico:agentIsSourceOfActivityRealizationRelation>
 	</xsl:template>
 	
-	<!-- ** Occupations ** -->
+	<!-- *** Occupations *** -->
 	<xsl:template match="eac:occupations">
 		<xsl:apply-templates />
 	</xsl:template>
@@ -347,6 +352,288 @@
 				<xsl:apply-templates />
 			</rico:OccupationRelation>
 		</rico:personIsSourceOfOccupationRelation>
+	</xsl:template>
+	
+	<!-- *** LegalStatuses *** -->
+	<xsl:template match="eac:legalStatuses">
+		<xsl:apply-templates />
+	</xsl:template>
+	<xsl:template match="eac:legalStatus">
+		<xsl:if test="not(eac:term/@vocabularySource)">
+			<xsl:value-of select="eac2rico:warning('MISSING_VOCABULARYSOURCE_ON_LEGAL_STATUS')" />
+		</xsl:if>
+		<rico:hasLegalStatus><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-LegalStatus(eac:term/@vocabularySource)" /></xsl:call-template></rico:hasLegalStatus>
+	</xsl:template>
+
+	<!-- *** RELATIONS *** -->
+	<xsl:template match="eac:relations">
+		<xsl:apply-templates />
+	</xsl:template>
+	
+	<!-- cpfRelation cpfRelationType ='identity' -->
+	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'identity']">
+        <owl:sameAs>
+        	<xsl:call-template name="rdf-resource"><xsl:with-param name="uri">
+        		<xsl:call-template name="URI-cpfRelationIdentity">
+        			<xsl:with-param name="lnk" select="normalize-space(@xlink:href)" />
+        			<xsl:with-param name="entityType" select="/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType" />
+        		</xsl:call-template>
+        	</xsl:with-param></xsl:call-template>
+        </owl:sameAs>
+	</xsl:template>
+	
+	
+	<!-- cpfRelation cpfRelationType ='hierarchical-child' -->
+	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'hierarchical-child']">
+        <rico:agentIsSourceOfHierarchicalRelation>
+        	<xsl:call-template name="rdf-resource">
+        		<xsl:with-param name="uri" select="eac2rico:URI-AgentHierarchicalRelation(
+        			$recordId,
+        			@xlink:href,
+        			eac:dateRange/eac:fromDate/@standardDate,
+        			eac:dateRange/eac:toDate/@standardDate )"
+        		/>	
+        	</xsl:call-template>
+        </rico:agentIsSourceOfHierarchicalRelation>
+	</xsl:template>	
+	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'hierarchical-child']" mode="relations">
+       	<rico:AgentHierarchicalRelation>
+        	<xsl:call-template name="rdf-about">
+        		<xsl:with-param name="uri" select="eac2rico:URI-AgentHierarchicalRelation(
+        			$recordId,
+        			@xlink:href,
+        			eac:dateRange/eac:fromDate/@standardDate,
+        			eac:dateRange/eac:toDate/@standardDate )"
+        		/>	
+        	</xsl:call-template>
+        	<rico:hierarchicalRelationHasTarget>
+        		<!-- Note : we suppose the type of referenced entity is the same as the type of this one -->
+        		<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-Agent(/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType, @xlink:href)" /></xsl:call-template>
+        	</rico:hierarchicalRelationHasTarget>
+        	<rico:hierarchicalRelationHasSource>
+        		<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
+        	</rico:hierarchicalRelationHasSource>
+        	<xsl:variable name="thisName" select="normalize-space(//eac:nameEntry[@localType = 'autorisée']/eac:part)" />
+        	<rdfs:label xml:lang="{$LITERAL_LANG}">Relation hiérarchique entre le parent "<xsl:value-of select="$thisName" />" et l'enfant "<xsl:value-of select="normalize-space(eac:relationEntry)" />", <xsl:value-of select="eac2rico:dateRangeLabel(eac:dateRange/eac:fromDate, eac:dateRange/eac:toDate)" /></rdfs:label>
+        	<xsl:apply-templates />
+       	</rico:AgentHierarchicalRelation>        
+	</xsl:template>
+	
+	<!-- cpfRelation cpfRelationType ='hierarchical-parent' -->
+	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'hierarchical-parent']">
+        <rico:agentIsTargetOfHierarchicalRelation>
+        	<xsl:call-template name="rdf-resource">
+        		<xsl:with-param name="uri" select="eac2rico:URI-AgentHierarchicalRelation(
+        			@xlink:href,
+        			$recordId,
+        			eac:dateRange/eac:fromDate/@standardDate,
+        			eac:dateRange/eac:toDate/@standardDate )"
+        		/>	
+        	</xsl:call-template>
+        </rico:agentIsTargetOfHierarchicalRelation>
+	</xsl:template>	
+	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'hierarchical-parent']" mode="relations">
+       	<rico:AgentHierarchicalRelation>
+        	<xsl:call-template name="rdf-about">
+        		<xsl:with-param name="uri" select="eac2rico:URI-AgentHierarchicalRelation(
+        			@xlink:href,
+        			$recordId,
+        			eac:dateRange/eac:fromDate/@standardDate,
+        			eac:dateRange/eac:toDate/@standardDate )"
+        		/>	
+        	</xsl:call-template>
+        	<rico:hierarchicalRelationHasTarget>
+        		<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
+        	</rico:hierarchicalRelationHasTarget>
+        	<rico:hierarchicalRelationHasSource>
+        		<!-- Note : we suppose the type of referenced entity is the same as the type of this one -->
+        		<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-Agent(/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType, @xlink:href)" /></xsl:call-template>
+        	</rico:hierarchicalRelationHasSource>
+        	<xsl:variable name="thisName" select="normalize-space(//eac:nameEntry[@localType = 'autorisée']/eac:part)" />
+        	<rdfs:label xml:lang="{$LITERAL_LANG}">Relation hiérarchique entre le parent "<xsl:value-of select="normalize-space(eac:relationEntry)" />" et l'enfant "<xsl:value-of select="$thisName" />", <xsl:value-of select="eac2rico:dateRangeLabel(eac:dateRange/eac:fromDate, eac:dateRange/eac:toDate)" /></rdfs:label>
+        	<xsl:apply-templates />
+       	</rico:AgentHierarchicalRelation>
+	</xsl:template>
+	
+	<!-- cpfRelation cpfRelationType ='temporal-later' -->
+	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'temporal-later']">
+        <rico:agentIsSourceOfAgentTemporalRelation>
+        	<xsl:call-template name="rdf-resource">
+        		<xsl:with-param name="uri" select="eac2rico:URI-AgentTemporalRelation(
+        			$recordId,
+        			@xlink:href,
+        			eac:dateRange/eac:fromDate/@standardDate,
+        			eac:dateRange/eac:toDate/@standardDate )"
+        		/>	
+        	</xsl:call-template>
+        </rico:agentIsSourceOfAgentTemporalRelation>
+	</xsl:template>	
+	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'temporal-later']" mode="relations">
+       	<rico:AgentTemporalRelation>
+        	<xsl:call-template name="rdf-about">
+        		<xsl:with-param name="uri" select="eac2rico:URI-AgentTemporalRelation(
+        			$recordId,
+        			@xlink:href,
+        			eac:dateRange/eac:fromDate/@standardDate,
+        			eac:dateRange/eac:toDate/@standardDate )"
+        		/>	
+        	</xsl:call-template>
+        	<rico:agentTemporalRelationHasTarget>
+        		<!-- Note : we suppose the type of referenced entity is the same as the type of this one -->
+        		<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-Agent(/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType, @xlink:href)" /></xsl:call-template>
+        	</rico:agentTemporalRelationHasTarget>
+        	<rico:agentTemporalRelationHasSource>
+        		<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
+        	</rico:agentTemporalRelationHasSource>
+        	<xsl:variable name="thisName" select="normalize-space(//eac:nameEntry[@localType = 'autorisée']/eac:part)" />
+        	<rdfs:label xml:lang="{$LITERAL_LANG}">Relation temporelle entre le précédent "<xsl:value-of select="$thisName" />" et le suivant "<xsl:value-of select="normalize-space(eac:relationEntry)" />", <xsl:value-of select="eac2rico:dateRangeLabel(eac:dateRange/eac:fromDate, eac:dateRange/eac:toDate)" /></rdfs:label>
+        	<xsl:apply-templates />
+       	</rico:AgentTemporalRelation>        
+	</xsl:template>
+
+
+	<!-- cpfRelation cpfRelationType ='temporal-earlier' -->
+	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'temporal-earlier']">
+        <rico:agentIsTargetOfAgentTemporalRelation>
+        	<xsl:call-template name="rdf-resource">
+        		<xsl:with-param name="uri" select="eac2rico:URI-AgentTemporalRelation(
+        			@xlink:href,
+        			$recordId,
+        			eac:dateRange/eac:fromDate/@standardDate,
+        			eac:dateRange/eac:toDate/@standardDate )"
+        		/>	
+        	</xsl:call-template>
+        </rico:agentIsTargetOfAgentTemporalRelation>
+	</xsl:template>	
+	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'temporal-earlier']" mode="relations">
+       	<rico:AgentTemporalRelation>
+        	<xsl:call-template name="rdf-about">
+        		<xsl:with-param name="uri" select="eac2rico:URI-AgentTemporalRelation(
+        			@xlink:href,
+        			$recordId,
+        			eac:dateRange/eac:fromDate/@standardDate,
+        			eac:dateRange/eac:toDate/@standardDate )"
+        		/>	
+        	</xsl:call-template>
+        	<rico:agentTemporalRelationHasTarget>
+        		<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
+        	</rico:agentTemporalRelationHasTarget>
+        	<rico:agentTemporalRelationHasSource>
+        		<!-- Note : we suppose the type of referenced entity is the same as the type of this one -->
+        		<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-Agent(/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType, @xlink:href)" /></xsl:call-template>     		
+        	</rico:agentTemporalRelationHasSource>
+        	<xsl:variable name="thisName" select="normalize-space(//eac:nameEntry[@localType = 'autorisée']/eac:part)" />
+        	<rdfs:label xml:lang="{$LITERAL_LANG}">Relation temporelle entre le précédent "<xsl:value-of select="normalize-space(eac:relationEntry)" />" et le suivant "<xsl:value-of select="$thisName" />", <xsl:value-of select="eac2rico:dateRangeLabel(eac:dateRange/eac:fromDate, eac:dateRange/eac:toDate)" /></rdfs:label>
+        	<xsl:apply-templates />
+       	</rico:AgentTemporalRelation>        
+	</xsl:template>
+
+
+	<!-- cpfRelation cpfRelationType ='assocative' with xlink:href higher -->
+	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'associative' and @xlink:href &gt; /eac:eac-cpf/eac:control/eac:recordId]">
+        <rico:agentIsConnectedToAgentRelation>
+        	<xsl:call-template name="rdf-resource">
+        		<xsl:with-param name="uri" select="eac2rico:URI-AgentRelation(
+        			$recordId,
+        			@xlink:href,
+        			eac:dateRange/eac:fromDate/@standardDate,
+        			eac:dateRange/eac:toDate/@standardDate )"
+        		/>	
+        	</xsl:call-template>
+        </rico:agentIsConnectedToAgentRelation>
+	</xsl:template>	
+	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'associative' and @xlink:href &gt; /eac:eac-cpf/eac:control/eac:recordId]" mode="relations">
+       	<rico:AgentRelation>
+        	<xsl:call-template name="rdf-about">
+        		<xsl:with-param name="uri" select="eac2rico:URI-AgentRelation(
+        			$recordId,
+        			@xlink:href,
+        			eac:dateRange/eac:fromDate/@standardDate,
+        			eac:dateRange/eac:toDate/@standardDate )"
+        		/>	
+        	</xsl:call-template>
+        	<rico:agentRelationConnects>
+        		<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
+        	</rico:agentRelationConnects>
+        	<rico:agentRelationConnects>
+        		<!-- TODO - A REVOIR ICI : we suppose the type of referenced entity is the same as the type of this one -->
+        		<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-Agent(/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType, @xlink:href)" /></xsl:call-template>     		
+        	</rico:agentRelationConnects>
+        	<xsl:variable name="thisName" select="normalize-space(//eac:nameEntry[@localType = 'autorisée']/eac:part)" />
+        	<rdfs:label xml:lang="{$LITERAL_LANG}">Relation associative entre "<xsl:value-of select="$thisName" />" et "<xsl:value-of select="normalize-space(eac:relationEntry)" />", <xsl:value-of select="eac2rico:dateRangeLabel(eac:dateRange/eac:fromDate, eac:dateRange/eac:toDate)" /></rdfs:label>
+        	<xsl:apply-templates />
+       	</rico:AgentRelation>        
+	</xsl:template>
+
+
+	<!-- cpfRelation cpfRelationType ='assocative' with xlink:href lower -->
+	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'associative' and @xlink:href &lt; /eac:eac-cpf/eac:control/eac:recordId]">
+        <rico:agentIsConnectedToAgentRelation>
+        	<xsl:call-template name="rdf-resource">
+        		<xsl:with-param name="uri" select="eac2rico:URI-AgentRelation(
+        			@xlink:href,
+        			$recordId,
+        			eac:dateRange/eac:fromDate/@standardDate,
+        			eac:dateRange/eac:toDate/@standardDate )"
+        		/>	
+        	</xsl:call-template>
+        </rico:agentIsConnectedToAgentRelation>
+	</xsl:template>	
+	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'associative' and @xlink:href &lt; /eac:eac-cpf/eac:control/eac:recordId]" mode="relations">
+       	<rico:AgentRelation>
+        	<xsl:call-template name="rdf-about">
+        		<xsl:with-param name="uri" select="eac2rico:URI-AgentRelation(
+        			@xlink:href,
+        			$recordId,        			
+        			eac:dateRange/eac:fromDate/@standardDate,
+        			eac:dateRange/eac:toDate/@standardDate )"
+        		/>	
+        	</xsl:call-template>
+        	<rico:agentRelationConnects>
+        		<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
+        	</rico:agentRelationConnects>
+        	<rico:agentRelationConnects>
+        		<!-- TODO - A REVOIR ICI : we suppose the type of referenced entity is the same as the type of this one -->
+        		<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-Agent(/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType, @xlink:href)" /></xsl:call-template>     		
+        	</rico:agentRelationConnects>
+        	<xsl:variable name="thisName" select="normalize-space(//eac:nameEntry[@localType = 'autorisée']/eac:part)" />
+        	<rdfs:label xml:lang="{$LITERAL_LANG}">Relation associative entre "<xsl:value-of select="normalize-space(eac:relationEntry)" />" et "<xsl:value-of select="$thisName" />", <xsl:value-of select="eac2rico:dateRangeLabel(eac:dateRange/eac:fromDate, eac:dateRange/eac:toDate)" /></rdfs:label>
+        	<xsl:apply-templates />
+       	</rico:AgentRelation>        
+	</xsl:template>
+
+
+	<!-- resourceRelation -->
+	<xsl:template match="eac:resourceRelation">
+        <rico:thingIsTargetOfOriginationRelation>
+        	<xsl:call-template name="rdf-resource">
+        		<xsl:with-param name="uri" select="eac2rico:URI-OriginationRelation(
+        			@xlink:href,
+        			$recordId,
+        			eac:dateRange/eac:fromDate/@standardDate,
+        			eac:dateRange/eac:toDate/@standardDate )"
+        		/>	
+        	</xsl:call-template>
+        </rico:thingIsTargetOfOriginationRelation>
+	</xsl:template>
+	<xsl:template match="eac:resourceRelation" mode="relations">
+        <rico:OriginationRelation>
+        	<xsl:call-template name="rdf-about">
+        		<xsl:with-param name="uri" select="eac2rico:URI-OriginationRelation(
+        			@xlink:href,
+        			$recordId,
+        			eac:dateRange/eac:fromDate/@standardDate,
+        			eac:dateRange/eac:toDate/@standardDate )"
+        		/>	
+        	</xsl:call-template>
+        	<rico:originationRelationHasSource>
+        		<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-RecordResource(@xlink:href)" /></xsl:call-template>
+        	</rico:originationRelationHasSource>
+        	<rico:originationRelationHasTarget>
+        		<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
+        	</rico:originationRelationHasTarget>
+        	<xsl:apply-templates />
+        </rico:OriginationRelation>
 	</xsl:template>
 
 	<xsl:template match="eac:descriptiveNote">
@@ -376,6 +663,9 @@
 		<html:em><xsl:apply-templates /></html:em>
 	</xsl:template>
 	<xsl:template match="eac:span/text()"><xsl:value-of select="." /></xsl:template>
+	<!-- Matching of text that is directly inserted under a tag that can contain mixed content -->
+	<xsl:template match="eac:descriptiveNote/text()"><xsl:value-of select="." /></xsl:template>
+	<xsl:template match="eac:biogHist/text()"><xsl:value-of select="." /></xsl:template>
 	
 	<xsl:template name="outputDate">
         <xsl:param name="date"/>
@@ -414,16 +704,42 @@
 		<xsl:param name="code" />
 		<xsl:value-of select="error(
 			xs:QName(concat('eac2rico:', $code)),
-			concat($ERROR_CODES/ErrorCodes/ErrorCode[@code = $code]/message, ' (code : ', $code, ')')
+			concat($recordId, ' - ', $CODES/Codes/Code[@code = $code]/message, ' (code : ', $code, ')')
 		)">
 		</xsl:value-of>
 	</xsl:function>	
 	
+	<xsl:function name="eac2rico:warning">
+		<xsl:param name="code" />
+		<xsl:message><xsl:value-of select="concat($recordId, ' - ', $CODES/Codes/Code[@code = $code]/message)" /></xsl:message>
+	</xsl:function>
+	
+	<xsl:function name="eac2rico:dateRangeLabel">
+		<xsl:param name="fromDate" />
+		<xsl:param name="toDate" />
+		<xsl:choose>
+			<xsl:when test="$fromDate != '' and $toDate != ''">
+				<xsl:value-of select="concat('début : ', $fromDate, ', fin : ', $toDate)" />
+			</xsl:when>
+			<xsl:when test="$fromDate != ''">
+				<xsl:value-of select="concat('début : ', $fromDate)" />
+			</xsl:when>
+			<xsl:when test="$toDate != ''">
+				<xsl:value-of select="concat('fin : ', $toDate)" />
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:text></xsl:text>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:function>
+	
 	<!-- Overwrite built-in template to match all unmatched elements and discard them -->
-	<xsl:template match="*" />
+	<!-- Note the #all special keyword to apply this template to all modes -->
+	<xsl:template match="*" mode="#all" />
 	
 	<!-- Overwrite built-in template to match all text nodes -->
 	<!-- Otherwise line breaks are inserted in resulting XML files -->
-	<xsl:template match="text()|@*"></xsl:template>
-	
+	<!-- Note the #all special keyword to apply this template to all modes -->
+	<xsl:template match="text()|@*" mode="#all"></xsl:template>
+		
 </xsl:stylesheet>

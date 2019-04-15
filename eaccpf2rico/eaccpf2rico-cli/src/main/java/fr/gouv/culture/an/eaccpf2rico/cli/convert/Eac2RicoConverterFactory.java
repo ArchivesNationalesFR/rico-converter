@@ -24,6 +24,7 @@ import fr.gouv.culture.an.eaccpf2rico.convert.Eac2RicoConverterErrorListener;
 import fr.gouv.culture.an.eaccpf2rico.convert.Eac2RicoConverterListener;
 import fr.gouv.culture.an.eaccpf2rico.convert.Eac2RicoConverterReportListener;
 import fr.sparna.commons.xml.TransformerBuilder;
+import net.sf.saxon.serialize.MessageWarner;
 
 public class Eac2RicoConverterFactory {
 
@@ -71,6 +72,9 @@ public class Eac2RicoConverterFactory {
 			}).createTransformer(new StreamSource(xslt));
 			// disable error listener to prevent messing with the progress bar
 			transformer.setErrorListener(new SaxonErrorListener());
+			// direct Saxon message output to the JAXP ErrorListener as warnings
+			((net.sf.saxon.jaxp.TransformerImpl)transformer).getUnderlyingController().setMessageEmitter(new MessageWarner());			
+			
 		} catch (TransformerConfigurationException e) {
 			throw new Eac2RicoConverterException(ErrorCode.XSLT_PARSING_ERROR, e);
 		}

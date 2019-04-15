@@ -1,0 +1,15 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#">
+   <rico:Description rdf:about="description/005205">
+      <rico:describes rdf:resource="corporateBody/005205"/>
+   </rico:Description>
+   <rico:CorporateBody rdf:about="corporateBody/005205">
+      <rico:isDescribedBy rdf:resource="description/005205"/>
+      <owl:sameAs rdf:resource="http://data.bnf.fr/ark:/12148/cb11868511w#foaf:Organization"/>
+      <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Minist%C3%A8re_de_la_Culture_%28France%29"/>
+   </rico:CorporateBody>
+</rdf:RDF>

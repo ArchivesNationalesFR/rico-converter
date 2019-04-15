@@ -10,12 +10,15 @@
 		<xsl:apply-templates />
 	</xsl:template>
 	
-	<xsl:template match="ErrorCodes">
-		<xsl:apply-templates />
+	<xsl:template match="Codes">
+## Warning codes and messages
+		<xsl:apply-templates select="Code[@level = 'warning']" />
+## Error codes and messages
+		<xsl:apply-templates select="Code[@level = 'error']" />
 	</xsl:template>
 
-	<xsl:template match="ErrorCode">
-## <xsl:value-of select="@code"></xsl:value-of>
+	<xsl:template match="Code">
+### <xsl:value-of select="@code"></xsl:value-of>
   - code : <xsl:value-of select="@code"></xsl:value-of>
   - message : <xsl:value-of select="message"></xsl:value-of>
 	</xsl:template>

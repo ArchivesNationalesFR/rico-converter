@@ -26,8 +26,8 @@
 	    </encoder>
   	</appender>
   	
-  	<appender name="SAXON_FILE" class="ch.qos.logback.core.FileAppender">
-    	<file>log/eaccpf2rico-saxon.log</file>
+  	<appender name="XSLT_FILE" class="ch.qos.logback.core.FileAppender">
+    	<file>log/eaccpf2rico-xslt.log</file>
 
 	    <encoder>
 	      <pattern>%d{HH:mm:ss.SSS} %-5level %logger{10} - %msg%n</pattern>
@@ -53,7 +53,7 @@
     
     <logger name="fr.gouv.culture.an.eaccpf2rico.cli.convert.SaxonErrorListener" additivity="false">
     	<level>DEBUG</level>
-        <appender-ref ref="SAXON_FILE" />
+        <appender-ref ref="XSLT_FILE" />
     </logger>
     
     <logger name="fr.gouv.culture.an.eaccpf2rico.convert.Eac2RicoConverterReportListener" additivity="false">

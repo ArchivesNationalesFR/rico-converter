@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eac-cpf 
+	xmlns="urn:isbn:1-931666-33-4"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd"
+>
+ <control>
+  <recordId>FRAN_NP_005205</recordId>
+ </control>
+ <cpfDescription>
+       <identity>
+         <entityType>corporateBody</entityType>
+      </identity>
+    <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+       <part>The entity</part>
+    </nameEntry>
+	<description>
+		  <relations>
+		  <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-earlier"
+                      xlink:href="FRAN_NP_111111"
+                      xlink:type="simple">
+            <relationEntry>The entity Before</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1995-05-18">18 mai 1995</fromDate>
+            </dateRange>
+         </cpfRelation>
+         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+                      cpfRelationType="temporal-later"
+                      xlink:href="FRAN_NP_999999"
+                      xlink:type="simple">
+            <relationEntry>The entity After</relationEntry>
+            <dateRange>
+               <fromDate standardDate="1974-06-08">8 juin 1974</fromDate>
+            </dateRange>
+            <descriptiveNote>This is a note on a relation</descriptiveNote>
+         </cpfRelation>
+		  </relations>
+	</description>
+ </cpfDescription>
+</eac-cpf>
