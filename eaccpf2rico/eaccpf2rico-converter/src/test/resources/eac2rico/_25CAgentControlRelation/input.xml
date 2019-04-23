@@ -16,21 +16,19 @@
     </nameEntry>
 	<description>
 		  <relations>
-	         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
-	                      cpfRelationType="associative"
-	                      xlink:href="FRAN_NP_111111"
+			<cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+	                      cpfRelationType="hierarchical-parent"
+	                      xlink:href="FRAN_NP_999999"
 	                      xlink:type="simple">
-	            <relationEntry>The associated entity with higher ID</relationEntry>
-	            <dateRange>
-	               <fromDate standardDate="2010-11-14">14 novembre 2010</fromDate>
-	               <toDate standardDate="2011-12-31">2011</toDate>
-	            </dateRange>
+	            <relationEntry>The parent of the entity</relationEntry>
+	            <descriptiveNote><p>This note contains the word tutelle</p></descriptiveNote>
 	         </cpfRelation>
 	         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
-	                      cpfRelationType="associative"
-	                      xlink:href="FRAN_NP_000000"
+	                      cpfRelationType="hierarchical-child"
+	                      xlink:href="FRAN_NP_111111"
 	                      xlink:type="simple">
-	            <relationEntry><p>The associated entity with lower ID</p></relationEntry>
+	            <relationEntry>The child of the entity</relationEntry>
+	            <descriptiveNote><p>This note contains the word <span style="bold">contrôle</span> in a span</p></descriptiveNote>
 	         </cpfRelation>
 		  </relations>
 	</description>

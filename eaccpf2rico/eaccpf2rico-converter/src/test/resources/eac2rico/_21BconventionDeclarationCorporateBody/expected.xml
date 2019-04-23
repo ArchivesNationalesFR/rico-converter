@@ -3,11 +3,11 @@
          xmlns:rico="http://www.ica.org/standards/RiC/ontology#">
    <rico:Description rdf:about="description/005205">
       <rico:describes rdf:resource="corporateBody/005205"/>
-      <rico:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
-      <rico:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl003"/>
-      <rico:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl004"/>
+      <rico:isRegulatedBy rdf:resource="rule/rl001"/>
+      <rico:isRegulatedBy rdf:resource="rule/rl003"/>
+      <rico:isRegulatedBy rdf:resource="rule/rl004"/>
    </rico:Description>
    <rico:CorporateBody rdf:about="corporateBody/005205">
-      <rico:isDescribedBy rdf:resource="description/005205"/>
+      <rico:describedBy rdf:resource="description/005205"/>
    </rico:CorporateBody>
 </rdf:RDF>

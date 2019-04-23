@@ -7,10 +7,11 @@
    	  <rico:describes rdf:resource="corporateBody/005205"/>
    </rico:Description>
    <rico:CorporateBody rdf:about="corporateBody/005205">
-      <rico:isDescribedBy rdf:resource="description/005205"/>
+      <rico:describedBy rdf:resource="description/005205"/>
 	  <rico:history rdf:parseType="Literal">
          <html:p>1</html:p>
          <html:p>2</html:p>
+         <html:h2>This is a header</html:h2>
          <html:ul>
             <html:li>item1</html:li>
             <html:li>item2</html:li>

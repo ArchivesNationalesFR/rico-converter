@@ -8,14 +8,14 @@
       <rico:describes rdf:resource="corporateBody/005205"/>
    </rico:Description>
    <rico:CorporateBody rdf:about="corporateBody/005205">
-      <rico:isDescribedBy rdf:resource="description/005205"/>
+      <rico:describedBy rdf:resource="description/005205"/>
       <rdfs:label xml:lang="fr">The entity</rdfs:label>
       <rico:hasAgentName>
-         <rico:AgentName rdf:about="corporateBody/005205/AgentName/The%20entity">
+         <rico:AgentName rdf:about="agentName/005205-The%20entity">
             <rdfs:label xml:lang="fr">The entity</rdfs:label>
             <rico:textualValue xml:lang="fr">The entity</rico:textualValue>
             <rico:isAgentNameOf rdf:resource="corporateBody/005205"/>
-            <rico:isRegulatedBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/rule/rl001"/>
+            <rico:isRegulatedBy rdf:resource="rule/rl001"/>
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasAgentName>
@@ -32,6 +32,6 @@
    <rico:AgentRelation rdf:about="agentRelation/000000-005205">
       <rico:agentRelationConnects rdf:resource="corporateBody/005205"/>
       <rico:agentRelationConnects rdf:resource="corporateBody/000000"/>
-      <rdfs:label xml:lang="fr">Relation associative entre "The associated entity with lower ID" et "The entity", </rdfs:label>
+      <rdfs:label xml:lang="fr">Relation associative entre "The associated entity with lower ID" et "The entity"</rdfs:label>
    </rico:AgentRelation>
 </rdf:RDF>

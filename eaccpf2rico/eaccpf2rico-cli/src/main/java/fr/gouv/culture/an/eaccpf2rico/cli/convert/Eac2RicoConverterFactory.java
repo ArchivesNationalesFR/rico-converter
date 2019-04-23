@@ -2,6 +2,7 @@ package fr.gouv.culture.an.eaccpf2rico.cli.convert;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,6 +34,7 @@ public class Eac2RicoConverterFactory {
 	private static final String XSLT_PARAMETER_BASE_URI = "BASE_URI";
 	private static final String XSLT_PARAMETER_AUTHOR_URI = "AUTHOR_URI";
 	private static final String XSLT_PARAMETER_LITERAL_LANG = "LITERAL_LANG";
+	private static final String XSLT_PARAMETER_INPUT_FOLDER = "INPUT_FOLDER";
 	
 	private String baseRdfUri;
 	private String authorUri;
@@ -66,7 +68,15 @@ public class Eac2RicoConverterFactory {
 
 				@Override
 				public Source resolve(String href, String base) throws TransformerException {
-					return new StreamSource(new File(xslt.getParentFile(), href));
+					// if href looks like an absolute file path, then read it as such
+					File test = new File(href);
+					if(test.exists()) {
+						// this is the case when running unit tests command
+						return new StreamSource(test);
+					} else {
+						return new StreamSource(new File(xslt.getParentFile(), href));
+					}
+					
 				}
 				
 			}).createTransformer(new StreamSource(xslt));
@@ -88,6 +98,9 @@ public class Eac2RicoConverterFactory {
 		if(this.literalLang != null) {
 			transformer.setParameter(XSLT_PARAMETER_LITERAL_LANG, this.literalLang);
 		}
+		String relativeInputFolder = xslt.getParentFile().toPath().relativize(inputDirectory.toPath()).toString();
+		log.info("Found relative path of input folder from XSLT : {}", relativeInputFolder);
+		transformer.setParameter(XSLT_PARAMETER_INPUT_FOLDER, relativeInputFolder);
 		
 		Eac2RicoConverter c = new Eac2RicoConverter(transformer, outputDirectory);
 		// sets the error listener
