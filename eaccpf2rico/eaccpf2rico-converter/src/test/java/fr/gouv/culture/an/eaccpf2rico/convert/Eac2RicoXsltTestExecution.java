@@ -3,8 +3,13 @@ package fr.gouv.culture.an.eaccpf2rico.convert;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringWriter;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
 
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Source;
@@ -51,13 +56,31 @@ public class Eac2RicoXsltTestExecution implements Test {
 
 				@Override
 				public Source resolve(String href, String base) throws TransformerException {
-					return new StreamSource(Eac2RicoXsltTestExecution.class.getResourceAsStream("/xslt/"+href));
+					// if we are given an absolute path, then read it as a File/URL, instead of classpath resource
+					if(href.startsWith("file://")) {
+						try {
+							URL fileUrl = new URL(href);
+							return new StreamSource(fileUrl.openStream());
+						} catch (Exception e) {
+							throw new TransformerException(e);
+						}
+					} else {
+						return new StreamSource(Eac2RicoXsltTestExecution.class.getResourceAsStream("/xslt/"+href));
+					}
+					
 				}
 				
 			}).createTransformer(new StreamSource(xsltSource));
 
+			URI relative = this.getClass().getResource("/xslt/eac2rico.xslt").toURI().relativize(this.testFolder.toURI());
+			System.out.println(new File(relative).getAbsolutePath());
+			t.setParameter("INPUT_FOLDER", "file://"+new File(relative).getAbsolutePath());
+			
 			this.converter = new Eac2RicoConverter(t);
 		} catch (TransformerConfigurationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (URISyntaxException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

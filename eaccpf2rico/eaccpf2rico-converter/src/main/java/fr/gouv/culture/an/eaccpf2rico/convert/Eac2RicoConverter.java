@@ -158,6 +158,9 @@ public class Eac2RicoConverter {
 					try {
 						try(FileOutputStream out = new FileOutputStream(outputFile)) {
 							log.info("Processing test : "+f.getName()+"...");
+							log.info("Overriding input folder XSLT param with "+f.getAbsolutePath());
+							this.eac2ricoTransformer.setParameter("INPUT_FOLDER", f.getAbsolutePath());
+							
 							this.convert(new StreamSource(new FileInputStream(inputFile)), new StreamResult(out));
 
 							Diff diff = DiffBuilder

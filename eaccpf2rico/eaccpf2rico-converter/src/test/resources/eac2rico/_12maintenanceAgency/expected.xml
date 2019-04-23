@@ -3,9 +3,9 @@
          xmlns:rico="http://www.ica.org/standards/RiC/ontology#">
    <rico:Description rdf:about="description/005205">
    		<rico:describes rdf:resource="corporateBody/005205"/>
-   		<rico:authoredBy rdf:resource="http://data.archives-nationales.culture.gouv.fr/corporateBody/005061" />
+   		<rico:authoredBy rdf:resource="corporateBody/005061" />
    </rico:Description>
    <rico:CorporateBody rdf:about="corporateBody/005205">
-      <rico:isDescribedBy rdf:resource="description/005205"/>
+      <rico:describedBy rdf:resource="description/005205"/>
    </rico:CorporateBody>
 </rdf:RDF>

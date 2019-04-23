@@ -7,25 +7,25 @@
       <rico:describes rdf:resource="person/005205"/>
    </rico:Description>
    <rico:Person rdf:about="person/005205">
-      <rico:isDescribedBy rdf:resource="description/005205"/>
+      <rico:describedBy rdf:resource="description/005205"/>
       <rico:personIsSourceOfOccupationRelation>
-         <rico:OccupationRelation rdf:about="person/005205/OccupationRelation/d699msj02xm-19qbb7wdtto3j">
+         <rico:OccupationRelation rdf:about="occupationRelation/005205-d699msj02xm-19qbb7wdtto3j">
             <rico:relationToOccupationHasSource rdf:resource="person/005205"/>
             <rico:relationToOccupationHasTarget>
                <rico:Occupation>
-                  <rico:occupationIsTargetOfOccupationRelation rdf:resource="person/005205/OccupationRelation/d699msj02xm-19qbb7wdtto3j"/>
-                  <rico:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_d699msj02xm-19qbb7wdtto3j"/>
+                  <rico:occupationIsTargetOfOccupationRelation rdf:resource="occupationRelation/005205-d699msj02xm-19qbb7wdtto3j"/>
+                  <rico:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
                </rico:Occupation>
             </rico:relationToOccupationHasTarget>
          </rico:OccupationRelation>
       </rico:personIsSourceOfOccupationRelation>
       <rico:personIsSourceOfOccupationRelation>
-         <rico:OccupationRelation rdf:about="person/005205/OccupationRelation/d3nyub73ic-1g5es55lb2lpf-19880101-20031231">
+         <rico:OccupationRelation rdf:about="occupationRelation/005205-d3nyub73ic-1g5es55lb2lpf-19880101-20031231">
             <rico:relationToOccupationHasSource rdf:resource="person/005205"/>
             <rico:relationToOccupationHasTarget>
                <rico:Occupation>
-                  <rico:occupationIsTargetOfOccupationRelation rdf:resource="person/005205/OccupationRelation/d3nyub73ic-1g5es55lb2lpf-19880101-20031231"/>
-                  <rico:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_d3nyub73ic-1g5es55lb2lpf"/>
+                  <rico:occupationIsTargetOfOccupationRelation rdf:resource="occupationRelation/005205-d3nyub73ic-1g5es55lb2lpf-19880101-20031231"/>
+                  <rico:hasOccupationType rdf:resource="http://data.archives-nationales.culture.gouv.fr/occupationType/FRAN_RI_010-d3nyub73ic-1g5es55lb2lpf"/>
                </rico:Occupation>
             </rico:relationToOccupationHasTarget>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-01-01</rico:beginningDate>
