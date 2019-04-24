@@ -8,29 +8,35 @@
   <recordId>FRAN_NP_005205</recordId>
  </control>
  <cpfDescription>
-       <identity>
-         <entityType>corporateBody</entityType>
-      </identity>
-    <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
-       <part>The entity</part>
-    </nameEntry>
-	<description>
-		  <relations>
-			<cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
-	                      cpfRelationType="hierarchical-parent"
-	                      xlink:href="FRAN_NP_999999"
-	                      xlink:type="simple">
-	            <relationEntry>The parent of the entity</relationEntry>
-	            <descriptiveNote><p>This note contains the word tutelle</p></descriptiveNote>
-	         </cpfRelation>
-	         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
-	                      cpfRelationType="hierarchical-child"
-	                      xlink:href="FRAN_NP_111111"
-	                      xlink:type="simple">
-	            <relationEntry>The child of the entity</relationEntry>
-	            <descriptiveNote><p>This note contains the word <span style="bold">contrôle</span> in a span</p></descriptiveNote>
-	         </cpfRelation>
-		  </relations>
-	</description>
+	<identity>
+		<entityType>corporateBody</entityType>
+		<nameEntry localType="autorisée" scriptCode="Latn"
+			xml:lang="fre">
+			<part>The entity</part>
+		</nameEntry>
+	</identity>
+    
+	<relations>
+		<cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+			cpfRelationType="hierarchical-parent" xlink:href="FRAN_NP_999999"
+			xlink:type="simple">
+			<relationEntry>The parent of the entity</relationEntry>
+			<descriptiveNote>
+				<p>This note contains the word tutelle</p>
+			</descriptiveNote>
+		</cpfRelation>
+		<cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+			cpfRelationType="hierarchical-child" xlink:href="FRAN_NP_111111"
+			xlink:type="simple">
+			<relationEntry>The child of the entity</relationEntry>
+			<descriptiveNote>
+				<p>
+					This note contains the word
+					<span style="bold">contrôle</span>
+					in a span
+				</p>
+			</descriptiveNote>
+		</cpfRelation>
+	</relations>
  </cpfDescription>
 </eac-cpf>

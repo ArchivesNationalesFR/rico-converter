@@ -7,37 +7,37 @@
  <control>
   <recordId>FRAN_NP_005205</recordId>
  </control>
- <cpfDescription>
-       <identity>
-         <entityType>corporateBody</entityType>
-      </identity>
-    <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
-       <part>The entity</part>
-    </nameEntry>
-	<description>
-		  <relations>
-			<cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
-	                      cpfRelationType="hierarchical-parent"
-	                      xlink:href="FRAN_NP_999999"
-	                      xlink:type="simple">
-	            <relationEntry>The parent of the entity</relationEntry>
-	            <dateRange>
-	               <fromDate standardDate="1947-01-01">1947</fromDate>
-	               <toDate standardDate="1964-12-31">1964</toDate>
-	            </dateRange>
-	         </cpfRelation>
-	         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
-	                      cpfRelationType="hierarchical-child"
-	                      xlink:href="FRAN_NP_111111"
-	                      xlink:type="simple">
-	            <relationEntry>The child of the entity</relationEntry>
-	            <dateRange>
-	               <fromDate standardDate="1947-01-01">1947</fromDate>
-	               <toDate standardDate="1964-12-31">1964</toDate>
-	            </dateRange>
-	            <descriptiveNote><p>This is a note on a relation</p></descriptiveNote>
-	         </cpfRelation>
-		  </relations>
-	</description>
+	<cpfDescription>
+	<identity>
+		<entityType>corporateBody</entityType>
+		<nameEntry localType="autorisée" scriptCode="Latn"
+			xml:lang="fre">
+			<part>The entity</part>
+		</nameEntry>
+	</identity>
+
+	<relations>
+		<cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+			cpfRelationType="hierarchical-parent" xlink:href="FRAN_NP_999999"
+			xlink:type="simple">
+			<relationEntry>The parent of the entity</relationEntry>
+			<dateRange>
+				<fromDate standardDate="1947-01-01">1947</fromDate>
+				<toDate standardDate="1964-12-31">1964</toDate>
+			</dateRange>
+		</cpfRelation>
+		<cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+			cpfRelationType="hierarchical-child" xlink:href="FRAN_NP_111111"
+			xlink:type="simple">
+			<relationEntry>The child of the entity</relationEntry>
+			<dateRange>
+				<fromDate standardDate="1947-01-01">1947</fromDate>
+				<toDate standardDate="1964-12-31">1964</toDate>
+			</dateRange>
+			<descriptiveNote>
+				<p>This is a note on a relation</p>
+			</descriptiveNote>
+		</cpfRelation>
+	</relations>
  </cpfDescription>
 </eac-cpf>

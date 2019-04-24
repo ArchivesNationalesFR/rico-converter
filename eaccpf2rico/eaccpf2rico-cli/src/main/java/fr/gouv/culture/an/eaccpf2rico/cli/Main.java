@@ -7,6 +7,8 @@ import com.beust.jcommander.ParameterException;
 import ch.qos.logback.classic.util.ContextInitializer;
 import fr.gouv.culture.an.eaccpf2rico.cli.convert.ArgumentsConvert;
 import fr.gouv.culture.an.eaccpf2rico.cli.convert.Convert;
+import fr.gouv.culture.an.eaccpf2rico.cli.convertAndArrange.ArgumentsConvertAndArrange;
+import fr.gouv.culture.an.eaccpf2rico.cli.convertAndArrange.ConvertAndArrange;
 import fr.gouv.culture.an.eaccpf2rico.cli.test.ArgumentsTest;
 import fr.gouv.culture.an.eaccpf2rico.cli.test.Test;
 import fr.gouv.culture.an.eaccpf2rico.cli.version.ArgumentsVersion;
@@ -17,6 +19,7 @@ public class Main {
 	enum COMMAND {		
 		
 		CONVERT(new ArgumentsConvert(), new Convert()),
+		CONVERT_ARRANGE(new ArgumentsConvertAndArrange(), new ConvertAndArrange()),
 		TEST(new ArgumentsTest(), new Test()),
 		VERSION(new ArgumentsVersion(), new Version()),
 		;

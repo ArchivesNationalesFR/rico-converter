@@ -21,6 +21,7 @@ public class ParameterFilesGenerator {
 			
 			StringBuffer sb = new StringBuffer();
 			Field[] fields = aCommand.getArguments().getClass().getDeclaredFields();
+			
 			for (Field aField : fields) {
 				Parameter parameters = aField.getAnnotation(Parameter.class);
 				if(parameters != null) {
@@ -30,6 +31,20 @@ public class ParameterFilesGenerator {
 					sb.append("#"+"\n");
 					sb.append((!parameters.required()?"#":"")+parameters.names()[0]+"="+"\n");
 					sb.append("\n");
+				}
+			}
+			
+			if(aCommand.getArguments().getClass().getSuperclass() != null) {
+				for (Field aField : aCommand.getArguments().getClass().getSuperclass().getDeclaredFields()) {
+					Parameter parameters = aField.getAnnotation(Parameter.class);
+					if(parameters != null) {
+						sb.append("#"+"\n");
+						sb.append("# "+parameters.description()+"\n");
+						sb.append(parameters.required()?"# Required"+"\n":"# Optional"+"\n");
+						sb.append("#"+"\n");
+						sb.append((!parameters.required()?"#":"")+parameters.names()[0]+"="+"\n");
+						sb.append("\n");
+					}
 				}
 			}
 			

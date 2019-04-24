@@ -23,7 +23,7 @@ public class ArgumentsConvert {
 			required = false,
 			validateWith = ExistingFileValidator.class
 	)
-	private File input = new File("input");
+	protected File input = new File("input");
 	
 	@Parameter(
 			names = { "output" },
@@ -31,7 +31,7 @@ public class ArgumentsConvert {
 			converter = FileConverter.class,
 			required = false
 	)
-	private File output = new File("output"+"-"+new SimpleDateFormat("yyyyMMdd").format(new Date()));
+	protected File output = new File("output"+"-"+new SimpleDateFormat("yyyyMMdd").format(new Date()));
 
 	@Parameter(
 			names = { "error" },
@@ -40,7 +40,7 @@ public class ArgumentsConvert {
 			converter = FileConverter.class,
 			required = false
 	)
-	private File error = new File("error"+"-"+new SimpleDateFormat("yyyyMMdd").format(new Date()));
+	protected File error = new File("error"+"-"+new SimpleDateFormat("yyyyMMdd").format(new Date()));
 	
 	@Parameter(
 			names = { "xslt" },
@@ -49,28 +49,28 @@ public class ArgumentsConvert {
 			required = false,
 			validateWith = ExistingFileValidator.class
 	)
-	private File xslt = new File("xslt/eac2rico.xslt");
+	protected File xslt = new File("xslt/eac2rico.xslt");
 	
 	@Parameter(
 			names = { "xslt.BASE_URI" },
 			description = "The BASE_URI parameter for the XSLT conversion. Indicates the root of the URI that will be generated. If not set, defaults to 'http://data.archives-nationales.culture.gouv.fr/'.",
 			required = false
 	)
-	private String xsltBaseUri = "http://data.archives-nationales.culture.gouv.fr/";
+	protected String xsltBaseUri = "http://data.archives-nationales.culture.gouv.fr/";
 
 	@Parameter(
 			names = { "xslt.AUTHOR_URI" },
 			description = "The AUTHOR_URI parameter for the XSLT conversion. Indicates the URI to be used as value for authors. If not set, defaults to 'http://data.archives-nationales.culture.gouv.fr/corporateBody/005061'.",
 			required = false
 	)
-	private String xsltAuthorUri = "http://data.archives-nationales.culture.gouv.fr/corporateBody/005061";
+	protected String xsltAuthorUri = "http://data.archives-nationales.culture.gouv.fr/corporateBody/005061";
 
 	@Parameter(
 			names = { "xslt.LITERAL_LANG" },
 			description = "The LITERAL_LANG parameter for the XSLT conversion. Indicates the language code that will be inserted for literal values. If not set, defaults to 'fr'.",
 			required = false
 	)
-	private String xsltLiteralLang = "fr";
+	protected String xsltLiteralLang = "fr";
 	
 	public File getInput() {
 		return input;

@@ -8,34 +8,34 @@
   <recordId>FRAN_NP_005205</recordId>
  </control>
  <cpfDescription>
-       <identity>
-         <entityType>corporateBody</entityType>
-      </identity>
-    <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
-       <part>The entity</part>
-    </nameEntry>
-	<description>
-		  <relations>
-		  <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
-                      cpfRelationType="temporal-earlier"
-                      xlink:href="FRAN_NP_111111"
-                      xlink:type="simple">
-            <relationEntry>The entity Before</relationEntry>
-            <dateRange>
-               <fromDate standardDate="1995-05-18">18 mai 1995</fromDate>
-            </dateRange>
-         </cpfRelation>
-         <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
-                      cpfRelationType="temporal-later"
-                      xlink:href="FRAN_NP_999999"
-                      xlink:type="simple">
-            <relationEntry>The entity After</relationEntry>
-            <dateRange>
-               <fromDate standardDate="1974-06-08">8 juin 1974</fromDate>
-            </dateRange>
-            <descriptiveNote><p>This is a note on a relation</p></descriptiveNote>
-         </cpfRelation>
-		  </relations>
-	</description>
+	<identity>
+		<entityType>corporateBody</entityType>
+		<nameEntry localType="autorisée" scriptCode="Latn"
+			xml:lang="fre">
+			<part>The entity</part>
+		</nameEntry>
+	</identity>
+    
+	<relations>
+		<cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+			cpfRelationType="temporal-earlier" xlink:href="FRAN_NP_111111"
+			xlink:type="simple">
+			<relationEntry>The entity Before</relationEntry>
+			<dateRange>
+				<fromDate standardDate="1995-05-18">18 mai 1995</fromDate>
+			</dateRange>
+		</cpfRelation>
+		<cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+			cpfRelationType="temporal-later" xlink:href="FRAN_NP_999999"
+			xlink:type="simple">
+			<relationEntry>The entity After</relationEntry>
+			<dateRange>
+				<fromDate standardDate="1974-06-08">8 juin 1974</fromDate>
+			</dateRange>
+			<descriptiveNote>
+				<p>This is a note on a relation</p>
+			</descriptiveNote>
+		</cpfRelation>
+	</relations>
  </cpfDescription>
 </eac-cpf>

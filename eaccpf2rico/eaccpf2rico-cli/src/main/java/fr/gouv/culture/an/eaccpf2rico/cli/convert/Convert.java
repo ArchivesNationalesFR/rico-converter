@@ -20,6 +20,12 @@ public class Convert implements CommandIfc {
 		log.info("  Input folder : {}", args.getInput().getAbsolutePath());
 		log.info("  Output folder : {}", args.getOutput().getAbsolutePath());
 		
+		doConvert(args);
+		
+		log.info("Command : "+this.getClass().getSimpleName()+" finished successfully in {} ms", (System.currentTimeMillis() - start));			
+	}
+	
+	public void doConvert(ArgumentsConvert args) {
 		try {
 			// check that input is a directory
 			if(!args.getInput().isDirectory()) {
@@ -29,12 +35,9 @@ public class Convert implements CommandIfc {
 			Eac2RicoConverterFactory factory = new Eac2RicoConverterFactory(args);			
 			Eac2RicoConverter converter = factory.createConverter(args.getXslt(), args.getOutput(), args.getError(), args.getInput());
 			converter.processDirectory(args.getInput());
-			log.info("Command : "+this.getClass().getSimpleName()+" finished successfully in {} ms", (System.currentTimeMillis() - start));
 		} catch (Eac2RicoConverterException e) {
 			log.error("Exception "+e.getCode().name()+" (code "+e.getCode().getCode()+") : ", e.getMessage(), e);
-		}		
-		
-		
+		}	
 	}
 
 }

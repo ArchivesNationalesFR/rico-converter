@@ -43,8 +43,8 @@
 			<!-- Sets xml:base on root this way, so that compilation of XSLT does not fail because it is not a URI -->
 			<xsl:attribute name="xml:base" select="$BASE_URI" />
 			<xsl:apply-templates />
-			<xsl:apply-templates mode="relations" select="eac:eac-cpf/eac:cpfDescription/eac:description/eac:relations/eac:cpfRelation" />
-			<xsl:apply-templates mode="relations" select="eac:eac-cpf/eac:cpfDescription/eac:description/eac:relations/eac:resourceRelation" />
+			<xsl:apply-templates mode="relations" select="eac:eac-cpf/eac:cpfDescription/eac:relations/eac:cpfRelation" />
+			<xsl:apply-templates mode="relations" select="eac:eac-cpf/eac:cpfDescription/eac:relations/eac:resourceRelation" />
 		</rdf:RDF>
 	</xsl:template>
 	
@@ -63,7 +63,7 @@
 			
 			<xsl:apply-templates />
 			<xsl:apply-templates select="../eac:cpfDescription/eac:identity/eac:entityId" mode="description" />
-			<xsl:apply-templates select="../eac:cpfDescription/eac:description/eac:relations/eac:cpfRelation[@cpfRelationType = 'identity']" mode="description" />
+			<xsl:apply-templates select="../eac:cpfDescription/eac:relations/eac:cpfRelation[@cpfRelationType = 'identity']" mode="description" />
 		</rico:Description>
 	</xsl:template>
 
