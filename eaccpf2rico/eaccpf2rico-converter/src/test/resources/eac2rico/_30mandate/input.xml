@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+      <control>
+            <recordId>FRAN_NP_123456</recordId>
+      </control>
+      <cpfDescription>
+            <identity>
+                  <entityType>corporateBody</entityType>
+            </identity>
+            <description>
+                  <mandates>
+                        <mandate>
+                              <descriptiveNote>
+                                    <p>Arrêté du 6 juillet 1970 portant nomination d'un haut
+                                          fonctionnaire chargé de l'histoire de l'éducation.</p>
+                                    <p>Arrêté du 3 mars 1977 - Moyens et services de l'Institut
+                                          national de recherche pédagogique (INRP) et du Centre
+                                          national de documentation pédagogique
+                                          (https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000000325912).</p>
+                                    <!-- the following mandate is described in the ANF list of rules -->
+                                    <p>Décret n° 2010-1649 du 28 décembre 2010 portant dissolution
+                                          de l'Institut national de recherche pédagogique (NOR:
+                                          MENF1029733D ; ELI:
+                                          https://www.legifrance.gouv.fr/eli/decret/2010/12/28/MENF1029733D/jo/texte).</p>
+                              </descriptiveNote>
+                        </mandate>
+                        <mandate>
+                              <descriptiveNote>
+                                    <p>Décret n°2013-728 du 12 août 2013 modifiant l'organisation de
+                                          l'administration du ministère de l'Intérieur et du
+                                          ministère des Outre-mer, <span style="italic"> Journal
+                                                officiel</span> du 14 août 2013,
+                                          (https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000027838041)
+                                    </p>
+                              </descriptiveNote>
+                        </mandate>
+                        <mandate>
+                              <!-- this mandate is described in the ANF list of rules -->
+                              <descriptiveNote>
+                                    <p>Arrêté de création du 22 juillet 2015 relatif à
+                                          l'organisation de la direction générale du travail,
+                                          article 5.
+                                          (https://www.legifrance.gouv.fr/eli/arrete/2015/7/22/ETST1517477A/jo/texte)</p>
+                              </descriptiveNote>
+                        </mandate>
+                        <mandate>
+                              <!-- this mandate is described in the ANF list of rules -->
+                              <dateRange>
+                                    <!-- for now, SIA does not use @standardDate attributes here-->
+                                    <fromDate>2009</fromDate>
+                                    <toDate>2012-06-14</toDate>
+                              </dateRange>
+                              <citation
+                                    xlink:href="https://www.legifrance.gouv.fr/eli/decret/2008/12/30/MTST0829782D/jo/texte"
+                                    >décret no 2008-1503 du 30 décembre 2008 relatif à la fusion des services d'inspection du travail</citation>
+                              <descriptiveNote>
+                                    <p>une note</p>
+                              </descriptiveNote>
+
+                        </mandate>
+                        <mandate>
+                              <!-- this mandate is not described in the ANF list of rules, but has a ELI URI-->
+                              <dateRange>
+                                    <!-- for now, SIA does not use @standardDate attributes here-->
+                                    <fromDate>2012</fromDate>
+                                    <toDate>2016-11-07</toDate>
+                              </dateRange>
+                              <citation
+                                    xlink:href="https://www.legifrance.gouv.fr/eli/decret/2012/08/03/ABCDEFBLA/jo/texte"
+                                    >Décret n° blablabla</citation>
+                              <descriptiveNote>
+                                    <p>une note</p>
+                              </descriptiveNote>
+                              
+                        </mandate>
+                        <mandate>
+                              <dateRange>
+                                    <!-- for now, SIA does not use @standardDate attributes here-->
+                                    <fromDate>1950</fromDate>
+                                    <toDate>1967</toDate>
+                              </dateRange>
+                              <citation>Décret n° etc.</citation>
+                              <descriptiveNote>
+                                    <p>article 5</p>
+                              </descriptiveNote>
+
+                        </mandate>
+                  </mandates>
+            </description>
+      </cpfDescription>
+</eac-cpf>
