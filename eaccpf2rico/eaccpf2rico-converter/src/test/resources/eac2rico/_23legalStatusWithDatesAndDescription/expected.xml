@@ -1,0 +1,38 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xml:base="http://data.archives-nationales.culture.gouv.fr/"
+   xmlns:html="http://www.w3.org/1999/xhtml" xmlns:rico="http://www.ica.org/standards/RiC/ontology#">
+   <rico:Description rdf:about="description/005061">
+      <rico:describes rdf:resource="corporateBody/005061"/>
+   </rico:Description>
+   <rico:CorporateBody rdf:about="corporateBody/005061">
+      <rico:describedBy rdf:resource="description/005061"/>
+      <rico:thingIsSourceOfRelationToType>
+         <rico:RelationToType
+            rdf:about="relationToType/005061-d5blonaxbw--1mt8t42bokzts-18500101-20061223">
+            <rico:relationToTypeHasSource rdf:resource="corporateBody/005061"/>
+            <rico:relationToTypeHasTarget
+               rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+               >1850-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+               >2006-12-23</rico:endDate>
+         </rico:RelationToType>
+      </rico:thingIsSourceOfRelationToType>
+      <rico:thingIsSourceOfRelationToType>
+         <rico:RelationToType rdf:about="relationToType/005061-d5blokqhb2-71c8sqtdbid4-20061224-*">
+            <rico:relationToTypeHasSource rdf:resource="corporateBody/005061"/>
+            <rico:relationToTypeHasTarget
+               rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/9be2dd2a-28eb-4bc5-8e2b-b09bcf02d411"/>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+               >2006-12-24</rico:beginningDate>
+            <rico:description xml:lang="fr">Arrêté du 24 décembre 2006</rico:description>
+            <!-- ou bien, en utilisant html:p histoire de traiter tous les éléments p de la même manière (sachant que pour les AN actuellement c'est inutile : il n'y a pas de contenu mixte dans descriptiveNote/p, juste du texte) -->
+             <!-- <rico:description rdf:parseType="Literal" xml:lang="fr">
+              <html:p>Arrêté du 24 décembre 2006</html:p>
+              </rico:description>
+            
+            -->
+         </rico:RelationToType>
+      </rico:thingIsSourceOfRelationToType> </rico:CorporateBody>
+</rdf:RDF>
