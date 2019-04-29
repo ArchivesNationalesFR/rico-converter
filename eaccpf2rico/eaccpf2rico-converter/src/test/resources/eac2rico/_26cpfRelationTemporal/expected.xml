@@ -28,11 +28,14 @@
       <rdfs:label xml:lang="fr">Relation temporelle entre le précédent "The entity Before" et le suivant "The entity", début : 18 mai 1995</rdfs:label>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-05-18</rico:beginningDate>
    </rico:AgentTemporalRelation>
-   <rico:AgentTemporalRelation rdf:about="agentTemporalRelation/005205-999999-19740608">
+<!--   <rico:AgentTemporalRelation rdf:about="agentTemporalRelation/005205-999999-19740608">-->
+      <rico:AgentTemporalRelation rdf:about="agentTemporalRelation/005205-999999-19740608-20170102">
       <rico:agentTemporalRelationHasTarget rdf:resource="agent/999999"/>
       <rico:agentTemporalRelationHasSource rdf:resource="corporateBody/005205"/>
       <rdfs:label xml:lang="fr">Relation temporelle entre le précédent "The entity" et le suivant "The entity After", début : 8 juin 1974</rdfs:label>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-06-08</rico:beginningDate>
+      <!-- ajouté endDate -->
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-01-02</rico:endDate>
       <rico:description rdf:parseType="Literal"><html:p>This is a note on a relation</html:p></rico:description>
    </rico:AgentTemporalRelation>
 </rdf:RDF>

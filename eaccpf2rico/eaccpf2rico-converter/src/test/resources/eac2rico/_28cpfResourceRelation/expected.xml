@@ -20,9 +20,16 @@
          </rico:AgentName>
       </rico:hasAgentName>
       <rico:thingIsTargetOfOriginationRelation rdf:resource="originationRelation/111111-005205"/>
+      <!-- ajout de relation vers une autre relation de provenance -->
+      <rico:thingIsTargetOfOriginationRelation rdf:resource="originationRelation/057306-c-grmqcmjabh-1fkw1foh8y5qu-005205"/>
    </rico:CorporateBody>
    <rico:OriginationRelation rdf:about="originationRelation/111111-005205">
       <rico:originationRelationHasSource rdf:resource="recordSet/111111-top"/>
+      <rico:originationRelationHasTarget rdf:resource="corporateBody/005205"/>
+   </rico:OriginationRelation>
+   <!-- ajout de originationRelation -->
+   <rico:OriginationRelation rdf:about="originationRelation/057306-c-grmqcmjabh-1fkw1foh8y5qu-005205">
+      <rico:originationRelationHasSource rdf:resource="recordSet/057306-c-grmqcmjabh-1fkw1foh8y5qu"/>
       <rico:originationRelationHasTarget rdf:resource="corporateBody/005205"/>
    </rico:OriginationRelation>
 </rdf:RDF>
