@@ -6,7 +6,7 @@
    <rico:Description rdf:about="description/050172">
       <rico:describes rdf:resource="family/050172"/>
    </rico:Description>
-   <rico:Person rdf:about="family/050172">
+   <rico:Family rdf:about="family/050172">
       <rico:describedBy rdf:resource="description/050172"/>
       <rdfs:label xml:lang="fr">The entity</rdfs:label>
       <rico:hasAgentName>
@@ -21,7 +21,7 @@
       <rico:groupIsTargetOfAgentMembershipRelation
          rdf:resource="agentMembershipRelation/051622-050172"/>
       <rico:agentIsConnectedToAgentRelation rdf:resource="AgentRelation/010112-050172"/>
-   </rico:Person>
+   </rico:Family>
    <rico:agentMembershipRelation rdf:about="agentMembershipRelation/051622-050172">
       <rico:agentMembershipRelationHasTarget rdf:resource="family/050172"/>
       <rico:agentMembershipRelationHasSource rdf:resource="person/051622"/>
