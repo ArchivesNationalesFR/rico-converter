@@ -6,7 +6,7 @@
    <rico:Description rdf:about="description/050172">
       <rico:describes rdf:resource="family/050172"/>
    </rico:Description>
-   <rico:Person rdf:about="family/050172">
+   <rico:Family rdf:about="family/050172">
       <rico:describedBy rdf:resource="description/050172"/>
       <rdfs:label xml:lang="fr">The entity</rdfs:label>
       <rico:hasAgentName>
@@ -20,16 +20,16 @@
       </rico:hasAgentName>
       <rico:groupIsTargetOfAgentMembershipRelation
          rdf:resource="agentMembershipRelation/051622-050172"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="AgentRelation/010112-050172"/>
-   </rico:Person>
-   <rico:agentMembershipRelation rdf:about="agentMembershipRelation/051622-050172">
-      <rico:agentMembershipRelationHasTarget rdf:resource="family/050172"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentRelation/010112-050172"/>
+   </rico:Family>
+   <rico:AgentMembershipRelation rdf:about="agentMembershipRelation/051622-050172">
       <rico:agentMembershipRelationHasSource rdf:resource="person/051622"/>
-      <rdfs:label xml:lang="fr">Relation familiale entre les agents "Deschanel, Paul (1855-1922)"et "Deschanel (famille de)".</rdfs:label>
-   </rico:agentMembershipRelation>
-   <rico:AgentRelation rdf:about="AgentRelation/010112-050172">
-      <rico:agentRelationConnects rdf:resource="family/050172"/>
+      <rico:agentMembershipRelationHasTarget rdf:resource="family/050172"/>
+      <rdfs:label xml:lang="fr">Relation familiale entre "Deschanel, Paul (1855-1922)" et "The entity"</rdfs:label>
+   </rico:AgentMembershipRelation>
+   <rico:AgentRelation rdf:about="agentRelation/010112-050172">
       <rico:agentRelationConnects rdf:resource="family/010112"/>
-      <rdfs:label xml:lang="fr">Relation entre les familles "Panon-Desbassayns (famille)" et "Deschanel (famille de)".</rdfs:label>
+      <rico:agentRelationConnects rdf:resource="family/050172"/>
+      <rdfs:label xml:lang="fr">Relation entre les familles entre "Panon-Desbassayns (famille)" et "The entity"</rdfs:label>
    </rico:AgentRelation>
 </rdf:RDF>

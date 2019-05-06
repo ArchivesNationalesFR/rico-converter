@@ -1,5 +1,7 @@
 package fr.gouv.culture.an.eaccpf2rico.convert;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -33,7 +35,7 @@ public class Eac2RicoConverter {
 	/**
 	 * Path to output directory
 	 */
-	protected File outputDirectory;
+	protected File convertOutputDirectory;
 	
 	/**
 	 * The XSLT transformer to be used
@@ -44,24 +46,34 @@ public class Eac2RicoConverter {
 	 * The listeners that listen to the process
 	 */
 	protected List<Eac2RicoConverterListener> listeners;
+	
+	/**
+	 * Path to output directory
+	 */
+	protected File arrangeOutputDirectory;
+	
+	/**
+	 * The XSLT transformer to group relations
+	 */
+	protected Transformer arrangeTransformer;
 
 	public Eac2RicoConverter(
 			Transformer eac2ricoTransformer,
-			File outputDirectory
+			File convertOutputDirectory
 	) {
 		super();
 		this.eac2ricoTransformer = eac2ricoTransformer;
-		this.outputDirectory = outputDirectory;
+		this.convertOutputDirectory = convertOutputDirectory;
 	}
 	
 	public Eac2RicoConverter(Transformer eac2ricoTransformer) {
 		this(eac2ricoTransformer, null);
 	}
 
-	public void processDirectory(File inputDirectory) throws Eac2RicoConverterException {
+	public void convertDirectory(File inputDirectory) throws Eac2RicoConverterException {
 		log.info("Converter ran on inputDirectory "+inputDirectory.getAbsolutePath());
 		
-		if(this.outputDirectory == null) {
+		if(this.convertOutputDirectory == null) {
 			throw new Eac2RicoConverterException(ErrorCode.CONFIGURATION_EXCEPTION, "Output directory is null - cannot process input directory");
 		}
 		
@@ -74,6 +86,43 @@ public class Eac2RicoConverter {
 		// for each file in the input directory...
 		for(File f : inputDirectory.listFiles()) {
 			processFileOrDirectory(f);
+		}
+		
+		try {
+			notifyStop();
+		} catch (Eac2RicoConverterListenerException e) {
+			log.error("Error in listener notifyStop for "+inputDirectory.getName(), e);
+		}
+		
+		log.info("Done converting.");
+	}
+	
+	public void convertDirectoryAndArrange(File inputDirectory) throws Eac2RicoConverterException {
+		log.info("Converter ran on inputDirectory "+inputDirectory.getAbsolutePath()+" with arrange option");
+		
+		if(this.convertOutputDirectory == null) {
+			throw new Eac2RicoConverterException(ErrorCode.CONFIGURATION_EXCEPTION, "Output directory is null - cannot process input directory");
+		}
+		
+		try {
+			notifyStart(inputDirectory);
+		} catch (Eac2RicoConverterListenerException e) {
+			log.error("Error in listener notifyStart for "+inputDirectory.getName(), e);
+		}
+		
+		// for each file in the input directory...
+		for(File f : inputDirectory.listFiles()) {
+			processFileOrDirectory(f);
+		}
+		
+		// then arrange
+		log.info("Running arrange transformer from "+this.convertOutputDirectory.getAbsolutePath()+" to "+this.arrangeOutputDirectory.getAbsolutePath());
+		this.arrangeTransformer.setParameter("INPUT_FOLDER", this.convertOutputDirectory.toURI());
+		this.arrangeTransformer.setParameter("OUTPUT_FOLDER", this.arrangeOutputDirectory.toURI());
+		try {
+			this.arrangeTransformer.transform(new StreamSource(new ByteArrayInputStream("<dummy />".getBytes())), new StreamResult(new ByteArrayOutputStream()));
+		} catch (TransformerException e) {
+			throw new Eac2RicoConverterException(ErrorCode.XSLT_TRANSFORM_ERROR, e);
 		}
 		
 		try {
@@ -203,7 +252,7 @@ public class Eac2RicoConverter {
 	}
 
 	private File createOutputFile(File inputFile) {
-		return new File(outputDirectory, inputFile.getName().substring(0, inputFile.getName().lastIndexOf('.'))+".rdf");
+		return new File(convertOutputDirectory, inputFile.getName().substring(0, inputFile.getName().lastIndexOf('.'))+".rdf");
 	}
 	
 	private void notifyStart(File inputFile) throws Eac2RicoConverterListenerException {
@@ -235,4 +284,21 @@ public class Eac2RicoConverter {
 			aListener.handleError(inputFile);
 		}
 	}
+
+	public File getArrangeOutputDirectory() {
+		return arrangeOutputDirectory;
+	}
+
+	public void setArrangeOutputDirectory(File arrangeOutputDirectory) {
+		this.arrangeOutputDirectory = arrangeOutputDirectory;
+	}
+
+	public Transformer getArrangeTransformer() {
+		return arrangeTransformer;
+	}
+
+	public void setArrangeTransformer(Transformer arrangeTransformer) {
+		this.arrangeTransformer = arrangeTransformer;
+	}
+	
 }

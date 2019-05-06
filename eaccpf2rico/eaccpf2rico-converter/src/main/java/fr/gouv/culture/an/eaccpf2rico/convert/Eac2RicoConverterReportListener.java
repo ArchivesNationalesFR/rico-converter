@@ -90,7 +90,7 @@ public class Eac2RicoConverterReportListener extends Eac2RicoConverterListenerBa
 
 	public String printReport() {
 		StringBuffer sb = new StringBuffer();
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:MM:ss");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 		long duration = this.endTime.getTime() - this.startTime.getTime();
 		long durationInSeconds = duration / 1000;
 		sb.append("--- EAC2RicO Report ---"+"\n");

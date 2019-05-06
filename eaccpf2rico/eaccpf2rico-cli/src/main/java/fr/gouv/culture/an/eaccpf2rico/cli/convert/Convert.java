@@ -34,7 +34,7 @@ public class Convert implements CommandIfc {
 			
 			Eac2RicoConverterFactory factory = new Eac2RicoConverterFactory(args);			
 			Eac2RicoConverter converter = factory.createConverter(args.getXslt(), args.getOutput(), args.getError(), args.getInput());
-			converter.processDirectory(args.getInput());
+			converter.convertDirectory(args.getInput());
 		} catch (Eac2RicoConverterException e) {
 			log.error("Exception "+e.getCode().name()+" (code "+e.getCode().getCode()+") : ", e.getMessage(), e);
 		}	

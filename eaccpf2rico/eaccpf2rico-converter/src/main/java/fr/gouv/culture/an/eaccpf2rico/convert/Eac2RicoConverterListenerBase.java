@@ -32,4 +32,9 @@ public class Eac2RicoConverterListenerBase implements Eac2RicoConverterListener 
 
 	}
 
+	@Override
+	public void handleStartArrange() throws Eac2RicoConverterListenerException {
+		
+	}
+
 }

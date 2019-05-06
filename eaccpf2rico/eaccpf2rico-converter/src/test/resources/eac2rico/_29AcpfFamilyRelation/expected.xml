@@ -15,7 +15,7 @@
             <rdfs:label xml:lang="fr">The entity</rdfs:label>
             <rico:textualValue xml:lang="fr">The entity</rico:textualValue>
             <rico:isAgentNameOf rdf:resource="person/050571"/>
-            <rico:isRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:isRegulatedBy rdf:resource="rule/rl002"/>
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasAgentName>
@@ -23,17 +23,17 @@
       <rico:personIsSourceOfAgentMembershipRelation rdf:resource="agentMembershipRelation/050571-050172"/>
    </rico:Person>
    
-   <rico:familyRelation rdf:about="familyRelation/009280-050571">
+   <rico:FamilyRelation rdf:about="familyRelation/009280-050571">
       <rico:familyRelationConnects rdf:resource="person/009280"/>
       <rico:familyRelationConnects rdf:resource="person/050571"/>
-      <rdfs:label xml:lang="fr">Relation familiale entre les agents "Berthier, Alexandre (1753-1815)" et "Murat, Joachim Joseph Napoléon (1834-1901 ; prince)"</rdfs:label>
-      <rico:description  rdf:parseType="Literal" xml:lang="fr"><html:p>Joachim Joseph Napoléon Murat a épousé la petite-fille du maréchal Berthier, Malcy Berthier de Wagram.</html:p>
+      <rdfs:label xml:lang="fr">Relation familiale entre "Berthier, Alexandre (1753-1815)" et "The entity"</rdfs:label>
+      <rico:description  rdf:parseType="Literal"><html:p>Joachim Joseph Napoléon Murat a épousé la petite-fille du maréchal Berthier, Malcy Berthier de Wagram.</html:p>
       </rico:description>
-   </rico:familyRelation>
+   </rico:FamilyRelation>
    
-   <rico:agentMembershipRelation rdf:about="agentMembershipRelation/050571-050172">
+   <rico:AgentMembershipRelation rdf:about="agentMembershipRelation/050571-050172">
       <rico:agentMembershipRelationHasSource rdf:resource="person/050571"/>
       <rico:agentMembershipRelationHasTarget rdf:resource="family/050172"/>
-      <rdfs:label xml:lang="fr">Relation familiale entre les agents "Murat, Joachim Joseph Napoléon (1834-1901 ; prince)" et "Deschanel (famille)"</rdfs:label>      
-   </rico:agentMembershipRelation>
+      <rdfs:label xml:lang="fr">Relation familiale entre "The entity" et "Deschanel (famille)"</rdfs:label>      
+   </rico:AgentMembershipRelation>
 </rdf:RDF>

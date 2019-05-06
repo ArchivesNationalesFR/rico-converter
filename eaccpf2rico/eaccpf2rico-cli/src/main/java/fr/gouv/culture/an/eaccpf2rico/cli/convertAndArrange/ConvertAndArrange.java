@@ -8,9 +8,9 @@ import org.slf4j.LoggerFactory;
 
 import fr.gouv.culture.an.eaccpf2rico.Eac2RicoConverterException;
 import fr.gouv.culture.an.eaccpf2rico.ErrorCode;
-import fr.gouv.culture.an.eaccpf2rico.arrange.Eac2RicoArranger;
 import fr.gouv.culture.an.eaccpf2rico.cli.CommandIfc;
-import fr.gouv.culture.an.eaccpf2rico.cli.convert.Convert;
+import fr.gouv.culture.an.eaccpf2rico.cli.convert.Eac2RicoConverterFactory;
+import fr.gouv.culture.an.eaccpf2rico.convert.Eac2RicoConverter;
 
 public class ConvertAndArrange implements CommandIfc {
 
@@ -35,26 +35,18 @@ public class ConvertAndArrange implements CommandIfc {
 				throw new Eac2RicoConverterException(ErrorCode.DIRECTORY_OR_FILE_HANDLING_EXCEPTION, e);
 			}
 			
-			log.info("Running conversion ...");
-			long startConvert = System.currentTimeMillis();
-			ArgumentsConvertAndArrange argsCopy = new ArgumentsConvertAndArrange(args);
-			// make sure we call the conversion with the work folder as output
-			argsCopy.setOutput(args.getWork());
-			new Convert().doConvert(argsCopy);
-			log.info("Cone conversoin in {} ms", (System.currentTimeMillis() - startConvert));	
+			log.info("Running conversion and arranging output...");
 			
-			log.info("Arranging output files ...");
-			long startArrange = System.currentTimeMillis();
-			Eac2RicoArrangerFactory af = new Eac2RicoArrangerFactory();
-			Eac2RicoArranger arranger = af.createArranger(
+			Eac2RicoConverterFactory factory = new Eac2RicoConverterFactory(args);
+			// make sure we call the conversion with the work folder as output
+			Eac2RicoConverter converter = factory.createConverter(args.getXslt(), args.getWork(), args.getError(), args.getInput());
+			factory.adaptConverterForArrange(
+					converter,
 					args.getXsltArrange(),
-					// output is final output directory
 					args.getOutput(),
 					args.getError()
 			);
-			// input is work directory
-			arranger.processDirectory(args.getWork());
-			log.info("Done arranging in {} ms", (System.currentTimeMillis() - startArrange));	
+			converter.convertDirectoryAndArrange(args.getInput());
 			
 			log.info("Command : "+this.getClass().getSimpleName()+" finished successfully in {} ms", (System.currentTimeMillis() - start));
 		} catch (Eac2RicoConverterException e) {

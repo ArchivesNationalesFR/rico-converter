@@ -68,14 +68,21 @@
     <fileSets>
         <!-- copy the src/main/resources directory in the zip -->
         <fileSet>
+          <filtered>false</filtered>
+          <outputDirectory>/</outputDirectory>
+          <directory>src/main/resources/</directory>
+          <excludes><exclude>eaccpf2rico.bat</exclude></excludes>
+        </fileSet>
+        <fileSet>
           <!-- remplace les placeholders par les valeurs du build -->
           <filtered>true</filtered>
           <outputDirectory>/</outputDirectory>
           <directory>src/main/resources</directory>
+          <includes><include>eaccpf2rico.bat</include></includes>
         </fileSet>
         <!-- copy the input-50 into input -->
         <fileSet>
-          <filtered>true</filtered>
+          <filtered>false</filtered>
           <outputDirectory>/input</outputDirectory>
           <directory>src/main/resources/input-50</directory>
         </fileSet>

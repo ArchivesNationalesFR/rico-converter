@@ -7,13 +7,8 @@
    </rico:Description>
    <rico:CorporateBody rdf:about="corporateBody/123456">
       <rico:describedBy rdf:resource="description/123456"/>
-      <rico:ruleFollowed rdf:parseType="Literal" xml:lang="fr"><html:p>Arrêté du 6 juillet 1970
-            portant nomination d'un haut fonctionnaire chargé de l'histoire de
-         l'éducation.</html:p></rico:ruleFollowed>
-      <rico:ruleFollowed rdf:parseType="Literal" xml:lang="fr"><html:p>Arrêté du 3 mars 1977 -
-            Moyens et services de l'Institut national de recherche pédagogique (INRP) et du Centre
-            national de documentation pédagogique
-            (https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000000325912).</html:p></rico:ruleFollowed>
+      <rico:ruleFollowed rdf:parseType="Literal"><html:p>Arrêté du 6 juillet 1970 portant nomination d'un haut fonctionnaire chargé de l'histoire de l'éducation.</html:p></rico:ruleFollowed>
+      <rico:ruleFollowed rdf:parseType="Literal"><html:p>Arrêté du 3 mars 1977 - Moyens et services de l'Institut national de recherche pédagogique (INRP) et du Centre national de documentation pédagogique (https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000000325912).</html:p></rico:ruleFollowed>
       <rico:thingIsSourceOfRegulationRelation>
          <rico:RelationToRule rdf:about="relationToRule/123456-34def-dklmno">
             <rico:relationToRuleHasSource rdf:resource="corporateBody/123456"/>
@@ -23,10 +18,7 @@
          <rico:isRegulatedBy rdf:resource="rule/34def-dklmno"/>
          -->
       </rico:thingIsSourceOfRegulationRelation>
-      <rico:ruleFollowed rdf:parseType="Literal" xml:lang="fr"><html:p>Décret n°2013-728 du 12 août
-            2013 modifiant l'organisation de l'administration du ministère de l'Intérieur et du
-            ministère des Outre-mer, <i> Journal officiel</i> du 14 août 2013,
-            (https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000027838041)
+      <rico:ruleFollowed rdf:parseType="Literal"><html:p>Décret n°2013-728 du 12 août 2013 modifiant l'organisation de l'administration du ministère de l'Intérieur et du ministère des Outre-mer, <html:i> Journal officiel</html:i> du 14 août 2013, (https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000027838041)
          </html:p></rico:ruleFollowed>
       <rico:thingIsSourceOfRegulationRelation>
          <rico:RelationToRule rdf:about="relationToRule/123456-12abc-defghij">
@@ -41,12 +33,11 @@
          <rico:RelationToRule rdf:about="relationToRule/123456-56ghi-pqrstuv">
             <rico:relationToRuleHasSource rdf:resource="corporateBody/123456"/>
             <rico:relationToRuleHasTarget rdf:resource="rule/56ghi-pqrstuv"/>
-            <rico:description rdf:parseType="Literal" xml:lang="fr"><html:p>Une
-               note</html:p></rico:description>
-            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-               >2009-01-01</rico:beginningDate>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear"
+               >2009</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
                >2012-06-14</rico:endDate>
+            <rico:description rdf:parseType="Literal"><html:p>une note</html:p></rico:description>
          </rico:RelationToRule>
       </rico:thingIsSourceOfRegulationRelation>
       <rico:thingIsSourceOfRegulationRelation>
@@ -55,12 +46,12 @@
             <rico:relationToRuleHasSource rdf:resource="corporateBody/123456"/>
             <rico:relationToRuleHasTarget
                rdf:resource="https://www.legifrance.gouv.fr/eli/decret/2012/08/03/ABCDEFBLA/jo/texte"/>
-            <rico:description rdf:parseType="Literal" xml:lang="fr"><html:p>une
-               note</html:p></rico:description>
-            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-               >2012-01-01</rico:beginningDate>
+            
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear"
+               >2012</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
                >2016-11-07</rico:endDate>
+            <rico:description rdf:parseType="Literal"><html:p>une note</html:p></rico:description>
          </rico:RelationToRule>
       </rico:thingIsSourceOfRegulationRelation>
       <rico:thingIsSourceOfRegulationRelation>
@@ -71,12 +62,12 @@
                   <rico:title>Décret n° etc.</rico:title>
                </rico:Rule>
             </rico:relationToRuleHasTarget>
-            <rico:description rdf:parseType="Literal" xml:lang="fr"><html:p>article
-               5</html:p></rico:description>
-            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-               >1950-01-01</rico:beginningDate>
-            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-               >1967-12-31</rico:endDate>
+            
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear"
+               >1950</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear"
+               >1967</rico:endDate>
+            <rico:description rdf:parseType="Literal"><html:p>article 5</html:p></rico:description>
          </rico:RelationToRule>
       </rico:thingIsSourceOfRegulationRelation>
    </rico:CorporateBody>

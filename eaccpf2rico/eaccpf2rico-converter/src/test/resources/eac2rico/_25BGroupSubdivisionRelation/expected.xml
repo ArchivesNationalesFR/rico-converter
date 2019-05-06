@@ -20,32 +20,24 @@
          </rico:AgentName>
       </rico:hasAgentName>
       <rico:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
-    <!--  <rico:agentIsTargetOfHierarchicalRelation rdf:resource="agentHierarchicalRelation/999999-005205-19470101-19641231"/>-->
-      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="groupSubdivisionRelation/999999-005205-19470101-19641231"/>
-      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="groupSubdivisionRelation/005205-111111-19470101-19641231"/>
-     <!-- <rico:agentIsSourceOfHierarchicalRelation rdf:resource="agentHierarchicalRelation/005205-111111-19470101-19641231"/>-\->-->
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/999999-005205-19470101-19641231"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005205-111111-19470101-19641231"/>
    </rico:CorporateBody>
- <!--  <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/999999-005205-19470101-19641231">-->
-   <rico:GroupSubdivisionRelation rdf:about="groupSubdivisionRelation/999999-005205-19470101-19641231">
-   	  <!--<rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>-->
-     <!-- <rico:hierarchicalRelationHasTarget rdf:resource="corporateBody/005205"/>
-      <rico:hierarchicalRelationHasSource rdf:resource="corporateBody/999999"/>-->
+   <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/999999-005205-19470101-19641231">
+   	  <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>
       <rico:groupSubdivisionRelationHasTarget rdf:resource="corporateBody/005205"/>
       <rico:groupSubdivisionRelationHasSource rdf:resource="corporateBody/999999"/>
-      <rdfs:label xml:lang="fr">Relation hiérarchique entre le parent "The parent of the entity" et l'enfant "The entity", début : 1947, fin : 1964</rdfs:label>
+      <rdfs:label xml:lang="fr">Relation de subdivision entre le parent "The parent of the entity" et l'enfant "The entity", début : 1947, fin : 1964</rdfs:label>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1947-01-01</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1964-12-31</rico:endDate>
-   </rico:GroupSubdivisionRelation>
-  <!-- <rico:AgentHierarchicalRelation rdf:about="groupSubdivisionRelation/005205-111111-19470101-19641231">-->
-      <rico:GroupSubdivisionRelation rdf:about="groupSubdivisionRelation/005205-111111-19470101-19641231">
-     <!-- <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>-->
-     <!-- <rico:hierarchicalRelationHasTarget rdf:resource="corporateBody/111111"/>
-      <rico:hierarchicalRelationHasSource rdf:resource="corporateBody/005205"/>-->
-         <rico:groupSubdivisionRelationHasTarget rdf:resource="corporateBody/111111"/>
-         <rico:groupSubdivisionRelationHasSource rdf:resource="corporateBody/005205"/>
-      <rdfs:label xml:lang="fr">Relation hiérarchique entre le parent "The entity" et l'enfant "The child of the entity", début : 1947, fin : 1964</rdfs:label>
+   </rico:AgentHierarchicalRelation>
+   <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/005205-111111-19470101-19641231">
+     <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>
+      <rico:groupSubdivisionRelationHasTarget rdf:resource="corporateBody/111111"/>
+      <rico:groupSubdivisionRelationHasSource rdf:resource="corporateBody/005205"/>
+      <rdfs:label xml:lang="fr">Relation de subdivision entre le parent "The entity" et l'enfant "The child of the entity", début : 1947, fin : 1964</rdfs:label>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1947-01-01</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1964-12-31</rico:endDate>
       <rico:description rdf:parseType="Literal"><html:p>This is a note on a relation</html:p></rico:description>
-   </rico:GroupSubdivisionRelation>
+   </rico:AgentHierarchicalRelation>
 </rdf:RDF>

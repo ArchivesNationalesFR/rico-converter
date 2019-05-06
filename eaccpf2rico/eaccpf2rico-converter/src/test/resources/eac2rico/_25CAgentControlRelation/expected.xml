@@ -19,29 +19,21 @@
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasAgentName>
-   <!--   <rico:agentIsTargetOfHierarchicalRelation rdf:resource="agentHierarchicalRelation/999999-005205"/>
-      <rico:agentIsSourceOfHierarchicalRelation rdf:resource="agentHierarchicalRelation/005205-111111"/>-->
-      <rico:agentIsTargetOfAgentControlRelation rdf:resource="agentControlRelation/999999-005205"/>
-      <rico:agentIsSourceOfAgentControlRelation rdf:resource="agentControlRelation/005205-111111"/>
+      <rico:agentIsTargetOfAgentControlRelation rdf:resource="agentHierarchicalRelation/999999-005205"/>
+      <rico:agentIsSourceOfAgentControlRelation rdf:resource="agentHierarchicalRelation/005205-111111"/>
    </rico:CorporateBody>
- <!--  <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/999999-005205">-->
-      <rico:AgentControlRelation rdf:about="agentControlRelation/999999-005205">
-   	<!--  <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentControlRelation"/>-->
-    <!--  <rico:hierarchicalRelationHasTarget rdf:resource="corporateBody/005205"/>
-      <rico:hierarchicalRelationHasSource rdf:resource="corporateBody/999999"/>-->
-         <rico:agentControlRelationHasTarget rdf:resource="corporateBody/005205"/>
-         <rico:agentControlRelationHasSource rdf:resource="corporateBody/999999"/>
-      <rdfs:label xml:lang="fr">Relation hiérarchique entre le parent "The parent of the entity" et l'enfant "The entity"</rdfs:label>
-      <rico:description rdf:parseType="Literal"><html:p>This note contains the word tutelle</html:p></rico:description>
-   </rico:AgentControlRelation>
-   <!--<rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/005205-111111">-->
-      <rico:AgentControlRelation rdf:about="agentControlRelation/005205-111111">
-  <!--    <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentControlRelation"/>-->
-    <!--  <rico:hierarchicalRelationHasTarget rdf:resource="corporateBody/111111"/>
-      <rico:hierarchicalRelationHasSource rdf:resource="corporateBody/005205"/>-->
-         <rico:agentControlRelationHasTarget rdf:resource="corporateBody/111111"/>
-         <rico:agentControlRelationHasSource rdf:resource="corporateBody/005205"/>
-      <rdfs:label xml:lang="fr">Relation hiérarchique entre le parent "The entity" et l'enfant "The child of the entity"</rdfs:label>
-      <rico:description rdf:parseType="Literal"><html:p>This note contains the word <html:b>contrôle</html:b> in a span</html:p></rico:description>
-   </rico:AgentControlRelation>
+   <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/999999-005205">
+	<rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentControlRelation"/>
+    <rico:agentControlRelationHasTarget rdf:resource="corporateBody/005205"/>
+    <rico:agentControlRelationHasSource rdf:resource="corporateBody/999999"/>
+    <rdfs:label xml:lang="fr">Relation de contrôle entre le parent "The parent of the entity" et l'enfant "The entity"</rdfs:label>
+    <rico:description rdf:parseType="Literal"><html:p>This note contains the word tutelle</html:p></rico:description>
+   </rico:AgentHierarchicalRelation>
+   <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/005205-111111">
+    <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentControlRelation"/>
+    <rico:agentControlRelationHasTarget rdf:resource="corporateBody/111111"/>
+    <rico:agentControlRelationHasSource rdf:resource="corporateBody/005205"/>
+      <rdfs:label xml:lang="fr">Relation de contrôle entre le parent "The entity" et l'enfant "The child of the entity"</rdfs:label>
+      <rico:description rdf:parseType="Literal"><html:p>This note contains the word <html:b>CoNtrôLe</html:b> in a span and with upper case letters</html:p></rico:description>
+   </rico:AgentHierarchicalRelation>
 </rdf:RDF>

@@ -2,36 +2,26 @@
    xml:base="http://data.archives-nationales.culture.gouv.fr/"
    xmlns:rico="http://www.ica.org/standards/RiC/ontology#" xmlns:html="http://www.w3.org/1999/xhtml">
    <rico:Description rdf:about="description/000051">
-      <rico:describes rdf:resource="corporateBody/00051"/>
+      <rico:describes rdf:resource="corporateBody/000051"/>
       <rico:source rdf:parseType="Literal" xml:lang="fr"><html:p>Dardy-Cretin Michèle,
-               <html:i>Histoire administrative du Ministère de la culture et de la communication,
-               1959-2012 : les services de l'administration centrale</html:i>, Paris, Comité
-            d'histoire du Ministère de la Culture, 2012. </html:p></rico:source>
-      <rico:source rdf:parseType="Literal" xml:lang="fr"><html:p>Site Internet du ministère de la
-            Culture et de la Communication. Disponible à l'adresse suivante :
-            http://www.culturecommunication.gouv.fr/</html:p></rico:source>
-      <rico:source rdf:parseType="Literal"><html:p>
+               <html:i>Histoire administrative du Ministère de la culture et de la communication, 1959-2012 : les services de l'administration centrale</html:i>, Paris, Comité d'histoire du Ministère de la Culture, 2012. </html:p></rico:source>
+      <rico:source rdf:parseType="Literal" xml:lang="fr"><html:p>Site Internet du ministère de la Culture et de la Communication. Disponible à l'adresse suivante : http://www.culturecommunication.gouv.fr/</html:p></rico:source>
+      <rico:source rdf:parseType="Literal" xml:lang="fr"><html:p>
             <html:i>Bottin administratif</html:i>, Paris, 1959-1978. </html:p></rico:source>
       <rico:source rdf:parseType="Literal" xml:lang="fr"><html:p>
-            <html:i>État général des fonds des Archives nationales : F/21 Beaux-Arts</html:i>.
-            Disponible en ligne sur le site des Archives nationales :
-            http://www.archivesnationales.culture.gouv.fr/chan/chan/series/pdf/F21-2010.pdf
+            <html:i>État général des fonds des Archives nationales : F/21 Beaux-Arts</html:i>. Disponible en ligne sur le site des Archives nationales : http://www.archivesnationales.culture.gouv.fr/chan/chan/series/pdf/F21-2010.pdf
          </html:p></rico:source>
-      <rico:source rdf:parseType="Literal" xml:lang="fr"><html:p>Archives nationales, fonds de la
-            famille LALLY-TOLENDAL, 737AP</html:p></rico:source>
-      <rico:source rdf:parseType="Literal"><html:p>Notice d'autorité BnF n° FRBNF10642461 :
-            http://catalogue.bnf.fr/ark:/12148/cb10642461t</html:p></rico:source>
+      <rico:source rdf:parseType="Literal" xml:lang="fr"><html:p>Archives nationales, fonds de la famille LALLY-TOLENDAL, 737AP</html:p></rico:source>
+      <rico:source rdf:parseType="Literal" xml:lang="fr"><html:p>Notice d'autorité BnF n° FRBNF10642461 : http://catalogue.bnf.fr/ark:/12148/cb10642461t</html:p></rico:source>
       <!-- ou bien, A DISCUTER : 
       <rico:hasSource rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb10642461t"/>
       -->
-      <rico:source rdf:parseType="Literal" xml:lang="fr"><html:p>Article Thomas Arthur de
-            Lally-Tollendal de Wikipédia en français
-            (http://fr.wikipedia.org/wiki/Thomas_Arthur_de_Lally-Tollendal).</html:p></rico:source>
+      <rico:source rdf:parseType="Literal" xml:lang="fr"><html:p>Article Thomas Arthur de Lally-Tollendal de Wikipédia en français (http://fr.wikipedia.org/wiki/Thomas_Arthur_de_Lally-Tollendal).</html:p></rico:source>
       <!-- ou bien, A DISCUTER : 
       <rico:hasSource rdf:resource="http://fr.wikipedia.org/wiki/Thomas_Arthur_de_Lally-Tollendal"/>
       -->
    </rico:Description>
    <rico:CorporateBody rdf:about="corporateBody/000051">
-      <rico:isDescribedBy rdf:resource="description/000051"/>
+      <rico:describedBy rdf:resource="description/000051"/>
    </rico:CorporateBody>
 </rdf:RDF>

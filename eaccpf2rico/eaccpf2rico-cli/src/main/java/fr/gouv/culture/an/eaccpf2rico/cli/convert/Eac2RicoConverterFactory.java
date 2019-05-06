@@ -2,7 +2,6 @@ package fr.gouv.culture.an.eaccpf2rico.cli.convert;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,7 +18,6 @@ import org.slf4j.LoggerFactory;
 
 import fr.gouv.culture.an.eaccpf2rico.Eac2RicoConverterException;
 import fr.gouv.culture.an.eaccpf2rico.ErrorCode;
-import fr.gouv.culture.an.eaccpf2rico.cli.test.ArgumentsTest;
 import fr.gouv.culture.an.eaccpf2rico.convert.Eac2RicoConverter;
 import fr.gouv.culture.an.eaccpf2rico.convert.Eac2RicoConverterErrorListener;
 import fr.gouv.culture.an.eaccpf2rico.convert.Eac2RicoConverterListener;
@@ -128,6 +126,29 @@ public class Eac2RicoConverterFactory {
 		
 		c.setListeners(listeners);
 		return c;
+	}
+	
+	public void adaptConverterForArrange(Eac2RicoConverter converter, File arrangeXslt, File outputDirectory, File errorDirectory) throws Eac2RicoConverterException {
+		// create output directory if it does not exists
+		if(!outputDirectory.exists()) {
+			log.info("Creating output directory {}", outputDirectory.getAbsolutePath());
+			outputDirectory.mkdirs();
+		}
+		
+		Transformer transformer;
+		try {
+			transformer = TransformerBuilder.createSaxonProcessor().createTransformer(new StreamSource(arrangeXslt));
+			// disable error listener to prevent messing with the progress bar
+			transformer.setErrorListener(new SaxonErrorListener());
+			// direct Saxon message output to the JAXP ErrorListener as warnings
+			((net.sf.saxon.jaxp.TransformerImpl)transformer).getUnderlyingController().setMessageEmitter(new MessageWarner());			
+			
+		} catch (TransformerConfigurationException e) {
+			throw new Eac2RicoConverterException(ErrorCode.XSLT_PARSING_ERROR, e);
+		}
+		
+		converter.setArrangeTransformer(transformer);
+		converter.setArrangeOutputDirectory(outputDirectory);
 	}
 	
 }

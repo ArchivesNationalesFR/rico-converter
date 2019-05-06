@@ -47,5 +47,10 @@ public class Eac2RicoConverterProgressListener extends Eac2RicoConverterListener
 		this.progress.step();
 	}
 
+	@Override
+	public void handleStartArrange() throws Eac2RicoConverterListenerException {
+
+	}
+
 	
 }

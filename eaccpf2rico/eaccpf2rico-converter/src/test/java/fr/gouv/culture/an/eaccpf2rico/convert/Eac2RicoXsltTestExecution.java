@@ -140,4 +140,11 @@ public class Eac2RicoXsltTestExecution implements Test {
 		return sw.toString();
 	}
 
+	@Override
+	public String toString() {
+		return testFolder.getName();
+	}
+	
+	
+
 }

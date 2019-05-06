@@ -20,8 +20,8 @@ if %jver% LSS 180000 (
 	exit
 )
 
-SET command=convert
-set /p command=Enter command to execute (convert, test, version) [press enter for "%command%"]:
+SET command=convert_arrange
+set /p command=Enter command to execute (convert_arrange, convert, test, version) [press enter for "%command%"]:
 
 SET parameterFile=parameters/%command%.properties
 set /p parameterFile=Enter parameter file location [press enter for "%parameterFile%"]:
