@@ -19,20 +19,20 @@
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasAgentName>
-      <rico:thingIsTargetOfOriginationRelation rdf:resource="originationRelation/111111-005205"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/111111-005205"/>
       <!-- ajout de relation vers une autre relation de provenance -->
-      <rico:thingIsTargetOfOriginationRelation rdf:resource="originationRelation/057306-c-grmqcmjabh-1fkw1foh8y5qu-005205"/>
+      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057306-c-grmqcmjabh-1fkw1foh8y5qu-005205"/>
    </rico:CorporateBody>
-   <rico:OriginationRelation rdf:about="originationRelation/111111-005205">
-      <rico:originationRelationHasSource rdf:resource="recordSet/111111"/>
-      <rico:originationRelationHasTarget rdf:resource="corporateBody/005205"/>
-   </rico:OriginationRelation>
+   <rico:AgentOriginationRelation rdf:about="agentOriginationRelation/111111-005205">
+      <rico:agentOriginationRelationHasSource rdf:resource="recordSet/111111"/>
+      <rico:agentOriginationRelationHasTarget rdf:resource="corporateBody/005205"/>
+   </rico:AgentOriginationRelation>
    <!-- ajout de originationRelation -->
-   <rico:OriginationRelation rdf:about="originationRelation/057306-c-grmqcmjabh-1fkw1foh8y5qu-005205">
-      <rico:originationRelationHasSource rdf:resource="recordSet/057306-c-grmqcmjabh-1fkw1foh8y5qu"/>
-      <rico:originationRelationHasTarget rdf:resource="corporateBody/005205"/>
+   <rico:AgentOriginationRelation rdf:about="agentOriginationRelation/057306-c-grmqcmjabh-1fkw1foh8y5qu-005205">
+      <rico:agentOriginationRelationHasSource rdf:resource="recordSet/057306-c-grmqcmjabh-1fkw1foh8y5qu"/>
+      <rico:agentOriginationRelationHasTarget rdf:resource="corporateBody/005205"/>
       <rico:description rdf:parseType="Literal">
          <html:p>Archives de l'UNVDC</html:p>
       </rico:description>
-   </rico:OriginationRelation>
+   </rico:AgentOriginationRelation>
 </rdf:RDF>
