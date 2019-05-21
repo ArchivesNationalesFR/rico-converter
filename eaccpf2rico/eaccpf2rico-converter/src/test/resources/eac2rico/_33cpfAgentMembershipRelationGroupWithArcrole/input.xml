@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+	<control>
+		<recordId>FRAN_NP_456789</recordId>
+	</control>
+	<cpfDescription>
+		<identity>
+			<entityType>corporateBody</entityType>
+			<nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+				<part>The entity</part>
+			</nameEntry>
+		</identity>
+
+		<relations>
+			
+			
+			<!-- has member a person -->
+			<cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink" cpfRelationType="associative"
+				xlink:href="FRAN_NP_050171" xlink:type="simple" xlink:arcrole="hasAsPersonMember">
+				<relationEntry>The person member</relationEntry>
+				<dateRange>
+					<fromDate standardDate="1946-01-01">1946</fromDate>
+					<toDate standardDate="1950-02-23">23 février 1950</toDate>
+				</dateRange>
+				<descriptiveNote>
+					<p>"The entity" a compté parmi ses membres "The entity" dès sa création.</p>
+				</descriptiveNote>
+			</cpfRelation>
+		</relations>
+	</cpfDescription>
+</eac-cpf>

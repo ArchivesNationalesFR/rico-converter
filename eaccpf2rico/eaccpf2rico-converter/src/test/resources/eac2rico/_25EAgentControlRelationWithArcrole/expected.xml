@@ -21,20 +21,20 @@
          </rico:AgentName>
       </rico:hasAgentName>
       <rico:agentIsTargetOfAgentControlRelation rdf:resource="agentHierarchicalRelation/999999-005205"/>
-      <rico:agentIsSourceOfAgentControlRelation rdf:resource="agentHierarchicalRelation/005205-111111"/>
+      <rico:agentIsSourceOfAgentControlRelation rdf:resource="agentHierarchicalRelation/005205-123456"/>
    </rico:Agent>
    <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/999999-005205">
 	<rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentControlRelation"/>
     <rico:agentControlRelationHasTarget rdf:resource="agent/005205"/>
     <rico:agentControlRelationHasSource rdf:resource="agent/999999"/>
-    <rdfs:label xml:lang="fr">Relation de contrôle entre le parent "The parent of the entity" et l'enfant "The entity"</rdfs:label>
-    <rico:description rdf:parseType="Literal"><html:p>This note contains the word tutelle</html:p></rico:description>
+    <rdfs:label xml:lang="fr">Relation de contrôle entre "The controlling entity" et "The entity"</rdfs:label>
+      <rico:description rdf:parseType="Literal"><html:p xml:lang="fr">Cette entité a été sous l'autorité de l'entité cible</html:p></rico:description>
    </rico:AgentHierarchicalRelation>
-   <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/005205-111111">
+   <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/005205-123456">
     <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentControlRelation"/>
-    <rico:agentControlRelationHasTarget rdf:resource="agent/111111"/>
+    <rico:agentControlRelationHasTarget rdf:resource="agent/123456"/>
     <rico:agentControlRelationHasSource rdf:resource="agent/005205"/>
-      <rdfs:label xml:lang="fr">Relation de contrôle entre le parent "The entity" et l'enfant "The child of the entity"</rdfs:label>
-      <rico:description rdf:parseType="Literal"><html:p>This note contains the word <html:b>CoNtrôLe</html:b> in a span and with upper case letters</html:p></rico:description>
+      <rdfs:label xml:lang="fr">Relation de contrôle entre "The entity" et "The controlled entity"</rdfs:label>
+      <rico:description rdf:parseType="Literal"><html:p xml:lang="fr">Cette entité a exercé un contrôle sur les activités de l'entité cible etc.</html:p></rico:description>
    </rico:AgentHierarchicalRelation>
 </rdf:RDF>

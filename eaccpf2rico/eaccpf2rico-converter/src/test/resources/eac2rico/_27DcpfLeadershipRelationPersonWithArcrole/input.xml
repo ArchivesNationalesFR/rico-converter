@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eac-cpf 
+	xmlns="urn:isbn:1-931666-33-4"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd"
+>
+ <control>
+  <recordId>FRAN_NP_111111</recordId>
+ </control>
+ <cpfDescription>
+	<identity>
+		<entityType>person</entityType>
+		<nameEntry localType="autorisée" scriptCode="Latn"
+			xml:lang="fre">
+			<part>The entity</part>
+		</nameEntry>
+	</identity>
+    
+	<relations>
+		<cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+			cpfRelationType="associative" xlink:href="FRAN_NP_005205"
+			xlink:type="simple" xlink:arcrole="isLeaderOf">
+			<relationEntry>The associated corporate body</relationEntry>
+			<dateRange>
+				<fromDate standardDate="1945-01-01">1945</fromDate>
+				<toDate standardDate="1950-11-30">novembre 1950</toDate>
+			</dateRange>
+			<descriptiveNote>
+				<p>Cette personne a été responsable de cette institution etc.</p>
+			</descriptiveNote>
+		</cpfRelation>
+	</relations>
+ </cpfDescription>
+</eac-cpf>

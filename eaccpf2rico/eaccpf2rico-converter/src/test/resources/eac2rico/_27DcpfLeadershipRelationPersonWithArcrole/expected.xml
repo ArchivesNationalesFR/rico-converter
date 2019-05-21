@@ -1,0 +1,39 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#">
+   <rico:Description rdf:about="description/111111">
+      <rico:describes rdf:resource="agent/111111"/>
+   </rico:Description>
+   <rico:Agent rdf:about="agent/111111">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rico:describedBy rdf:resource="description/111111"/>
+      <rdfs:label xml:lang="fr">The entity</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/111111-The%20entity">
+            <rdfs:label xml:lang="fr">The entity</rdfs:label>
+            <rico:textualValue xml:lang="fr">The entity</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/111111"/>
+            <rico:isRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+     
+      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/111111-005205-19450101-19501130"/>
+   </rico:Agent>
+   <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/111111-005205-19450101-19501130">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#LeadershipRelation"/>
+      <rico:leadershipRelationHasSource rdf:resource="agent/111111"/>
+      <rico:leadershipRelationHasTarget rdf:resource="agent/005205"/>
+      <rdfs:label xml:lang="fr">Relation de direction (leadership) entre "The entity" et "the associated corporate body", début : 1945, fin : novembre 1950</rdfs:label>
+      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+         >1945-01-01</rico:beginningDate>
+      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+         >1950-11-30</rico:endDate>
+      <rico:description rdf:parseType="Literal">
+         <html:p xml:lang="fr">Cette personne a été responsable de cette institution etc.</html:p>
+      </rico:description>
+   </rico:AgentHierarchicalRelation>
+</rdf:RDF>

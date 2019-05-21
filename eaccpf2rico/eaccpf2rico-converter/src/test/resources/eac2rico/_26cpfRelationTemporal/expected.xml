@@ -5,32 +5,33 @@
          xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
          xmlns:owl="http://www.w3.org/2002/07/owl#">
    <rico:Description rdf:about="description/005205">
-      <rico:describes rdf:resource="corporateBody/005205"/>
+      <rico:describes rdf:resource="agent/005205"/>
    </rico:Description>
-   <rico:CorporateBody rdf:about="corporateBody/005205">
+   <rico:Agent rdf:about="agent/005205">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:describedBy rdf:resource="description/005205"/>
       <rdfs:label xml:lang="fr">The entity</rdfs:label>
       <rico:hasAgentName>
          <rico:AgentName rdf:about="agentName/005205-The%20entity">
             <rdfs:label xml:lang="fr">The entity</rdfs:label>
             <rico:textualValue xml:lang="fr">The entity</rico:textualValue>
-            <rico:isAgentNameOf rdf:resource="corporateBody/005205"/>
+            <rico:isAgentNameOf rdf:resource="agent/005205"/>
             <rico:isRegulatedBy rdf:resource="rule/rl001"/>
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasAgentName>
       <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/111111-005205-19950518-*"/>
       <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005205-999999-19740608-20170102"/>
-   </rico:CorporateBody>
+   </rico:Agent>
    <rico:AgentTemporalRelation rdf:about="agentTemporalRelation/111111-005205-19950518-*">
-      <rico:agentTemporalRelationHasTarget rdf:resource="corporateBody/005205"/>
-      <rico:agentTemporalRelationHasSource rdf:resource="corporateBody/111111"/>
+      <rico:agentTemporalRelationHasTarget rdf:resource="agent/005205"/>
+      <rico:agentTemporalRelationHasSource rdf:resource="agent/111111"/>
       <rdfs:label xml:lang="fr">Relation temporelle entre le précédent "The entity Before" et le suivant "The entity", début : 18 mai 1995</rdfs:label>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-05-18</rico:beginningDate>
    </rico:AgentTemporalRelation>
    <rico:AgentTemporalRelation rdf:about="agentTemporalRelation/005205-999999-19740608-20170102">
-      <rico:agentTemporalRelationHasTarget rdf:resource="corporateBody/999999"/>
-      <rico:agentTemporalRelationHasSource rdf:resource="corporateBody/005205"/>
+      <rico:agentTemporalRelationHasTarget rdf:resource="agent/999999"/>
+      <rico:agentTemporalRelationHasSource rdf:resource="agent/005205"/>
       <rdfs:label xml:lang="fr">Relation temporelle entre le précédent "The entity" et le suivant "The entity After", début : 8 juin 1974, fin : 2 janvier 2017</rdfs:label>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1974-06-08</rico:beginningDate>
       <!-- ajouté endDate -->

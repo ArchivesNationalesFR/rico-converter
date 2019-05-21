@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+	<control>
+		<recordId>FRAN_NP_005205</recordId>
+	</control>
+	<cpfDescription>
+		<identity>
+			<entityType>corporateBody</entityType>
+			<nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+				<part>The entity</part>
+			</nameEntry>
+		</identity>
+
+
+		<relations>
+			<cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+				cpfRelationType="hierarchical-parent" xlink:href="FRAN_NP_999999"
+				xlink:type="simple" xlink:arcrole="isSubdivisionOf">
+				<relationEntry>The parent of the entity</relationEntry>
+				<dateRange>
+					<fromDate standardDate="1947-01-01">1947</fromDate>
+					<toDate standardDate="1964-12-31">1964</toDate>
+				</dateRange>
+			</cpfRelation>
+			<cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+				cpfRelationType="hierarchical-child" xlink:href="FRAN_NP_111111" xlink:type="simple"
+				xlink:arcrole="hasSubdivision">
+				<relationEntry>The child of the entity</relationEntry>
+				<dateRange>
+					<fromDate standardDate="1950-01-01">1950</fromDate>
+					<toDate standardDate="1966-12-31">1966</toDate>
+				</dateRange>
+				<descriptiveNote>
+					<p>This is a note on a relation</p>
+				</descriptiveNote>
+			</cpfRelation>
+		</relations>
+	</cpfDescription>
+</eac-cpf>
