@@ -1,0 +1,87 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xml:base="http://data.archives-nationales.culture.gouv.fr/"
+   xmlns:html="http://www.w3.org/1999/xhtml" xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#">
+   <rico:Description rdf:about="description/123456">
+      <rico:describes rdf:resource="agent/123456"/>
+   </rico:Description>
+   <rico:Agent rdf:about="agent/123456">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="description/123456"/>
+      <rdfs:label xml:lang="fr">The entity</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/123456-The%20entity">
+            <rdfs:label xml:lang="fr">The entity</rdfs:label>
+            <rico:textualValue xml:lang="fr">The entity</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/123456"/>
+            <rico:isRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <!-- case 1 -->
+      <rico:thingIsSourceOfRelationToPlace>
+         <rico:RelationToPlace>
+            <rico:relationToPlaceHasSource rdf:resource="agent/123456"/>
+            <rico:relationToPlaceHasTarget
+               rdf:resource="place/29%20rue%20d%27Ulm%2C%2075230%20Paris%2005"/>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+               >1963-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+               >1968-12-31</rico:endDate>
+            <rico:description rdf:parseType="Literal">
+               <html:p>A note.</html:p>
+            </rico:description>
+         </rico:RelationToPlace>
+      </rico:thingIsSourceOfRelationToPlace>
+      <!-- case 2 -->
+      <rico:thingIsSourceOfRelationToPlace>
+         <rico:RelationToPlace>
+            <rico:relationToPlaceHasSource rdf:resource="agent/123456"/>
+            <rico:relationToPlaceHasTarget rdf:resource="place/24%2C%20rue%20La%20Fayette"/>
+         </rico:RelationToPlace>
+      </rico:thingIsSourceOfRelationToPlace>
+      <!-- case 3 -->
+      <rico:thingIsSourceOfRelationToPlace>
+         <rico:RelationToPlace>
+            <rico:relationToPlaceHasSource rdf:resource="agent/123456"/>
+            <rico:relationToPlaceHasTarget> <rico:Place>
+                  <rdfs:label xml:lang="fr">lieu dont l'adresse précise est
+                     indéterminée</rdfs:label>
+                  <rico:hasLocation rdf:resource="place/FRAN_RI_020-d3nyv28v37--w6fed6mpjd5r"/>
+               </rico:Place>
+            </rico:relationToPlaceHasTarget> </rico:RelationToPlace>
+      </rico:thingIsSourceOfRelationToPlace>
+      <!-- case 4 -->
+      <rico:thingIsSourceOfRelationToPlace>
+         <rico:RelationToPlace>
+            <rico:relationToPlaceHasSource rdf:resource="agent/123456"/>
+            <rico:relationToPlaceHasTarget rdf:resource="place/au%20March%C3%A9-Neuf"/>
+         </rico:RelationToPlace>
+      </rico:thingIsSourceOfRelationToPlace>
+      <!-- case 5 : not processed -->
+      <!-- case 6 -->
+      <rico:thingIsSourceOfRelationToPlace>
+         <rico:RelationToPlace>
+            <rico:relationToPlaceHasSource rdf:resource="agent/123456"/>
+            <rico:relationToPlaceHasTarget rdf:resource="place/FRAN_RI_026-d5bknx4v7j-1wqddent61siy"
+            /> </rico:RelationToPlace>
+      </rico:thingIsSourceOfRelationToPlace>
+      <!-- cases 7 and 8: not processed -->
+   </rico:Agent>
+   <!-- the places below should be output in a separated file, like the relations, since they can be referenced to by many place relations -->
+   <rico:Place rdf:about="place/29%20rue%20d%27Ulm%2C%2075230%20Paris%2005">
+      <rdfs:label xml:lang="fr">29 rue d'Ulm, 75230 Paris 05</rdfs:label>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_025-d3nzdlud4x--106llaae0lz0b"/>
+   </rico:Place>
+   <rico:Place rdf:about="place/24%2C%20rue%20La%20Fayette">
+      <rdfs:label xml:lang="fr">24, rue La Fayette</rdfs:label>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_025-d3nzbmscto--2k2q239mkocu"/>
+   </rico:Place>
+   <rico:Place rdf:about="place/au%20March%C3%A9-Neuf">
+      <rdfs:label xml:lang="fr">au Marché-Neuf</rdfs:label>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_025-d3nzbx7zqf-v2ieo26jmuhp"/>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_024-d3nyvoxbpe-1o35tgfsdunvx"/>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_024-d3nyvost68-1tq3k980risj5"/>
+   </rico:Place>
+</rdf:RDF>
