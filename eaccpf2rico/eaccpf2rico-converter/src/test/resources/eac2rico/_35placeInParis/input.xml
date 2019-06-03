@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+	<control>
+		<recordId>FRAN_NP_123456</recordId>
+	</control>
+	<cpfDescription>
+		<identity>
+			<entityType>corporateBody</entityType>
+			<nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+				<part>The entity</part>
+			</nameEntry>
+		</identity>
+		<description>
+			<!-- unit tests for processing places : places in Paris - placeRole="Lieu de Paris" -->
+			<!-- the existing authoritative lists for Parisian places are provided :
+				- in their XML source format, in the eac-cpf2ric-o\XSL-EAC2RDF-march2019\src\RI\places folder. 
+				- in their RDF format, in the
+				eac-cpf2ric-o\XSL-EAC2RDF-march2019\rdf\places folder. See the "FRAN_Paris_*.rdf" files. 
+				Below, and in the EAC files, the value of place/placeEntry/@localType (apart from 'nomLieu') can be mapped to the name of the RDF place file.
+				@localType='voie' > FRAN_Paris_voies.rdf (FRAN_RI_025 source file)
+				@localType='commune_rattachee' > FRAN_Paris_communesRattachees.rdf (FRAN_RI_020 source file)
+				@localType='paroisse' > FRAN_Paris_paroisses.rdf (FRAN_RI_024 source file)
+				@localType='quartier' > FRAN_Paris_quartiers.rdf (FRAN_RI_023 source file)
+				@localType='edifice' > FRAN_Paris_edifices.rdf (FRAN_RI_026 source file)
+				@localType='arrondissement_actuel'  > FRAN_Paris_arrondissementsActuels.rdf (FRAN_RI_022 source file)
+				@localType='arrondissement_ancien'  > FRAN_Paris_arrondissementsAnciens.rdf (FRAN_RI_021 source file)
+			-->
+			<places>
+				
+				<!-- case 1 (normal) : one placeEntry (@localType='nomLieu') for the name of the place - string label ; one placeEntry for a link to an authority list (example taken from FRAN_NP_003117 and adapted) -->
+				<place>
+					<placeRole>Lieu de Paris</placeRole>
+					<placeEntry localType="nomLieu">29 rue d'Ulm, 75230 Paris 05</placeEntry>
+					<placeEntry localType="voie" vocabularySource="d3nzdlud4x--106llaae0lz0b">Ulm
+						(rue d')</placeEntry>
+					<dateRange>
+						<fromDate standardDate="1963-01-01">1963</fromDate>
+						<toDate standardDate="1968-12-31">1968</toDate>
+					</dateRange>
+					<descriptiveNote>
+						<p>A note.</p>
+					</descriptiveNote>
+				</place>
+				<!-- case 2 (normal) : same case, very frequent use case in the files that describe Parisian notaries or notarial offices (example taken from FRAN_NP_010122) -->
+
+				<place>
+					<placeRole>Lieu de Paris</placeRole>
+					<placeEntry localType="nomLieu">24, rue La Fayette</placeEntry>
+					<placeEntry localType="voie" vocabularySource="d3nzbmscto--2k2q239mkocu"
+						>La-Fayette (rue)</placeEntry>
+				</place>
+				<!-- case 3 (normal) : a placeEntry (@localType='nomLieu') containing the string 'indéterminé' with one placeEntry linking to the authority list (example taken from FRAN_NP_013109)-->
+				<place>
+					<placeRole>Lieu de Paris</placeRole>
+					<placeEntry localType="commune_rattachee"
+						vocabularySource="d3nyv28v37--w6fed6mpjd5r">saint-ouen (ancienne commune)</placeEntry>
+					<placeEntry localType="nomLieu">adresse indéterminée</placeEntry>
+				</place>
+				<!-- case 4 (normal) : one placeEntry (@localType='nomLieu') for the name of the place + more than 1 link to several entries in the authority list, one only being a link to a street (@localType='voie')
+				Consider that there is one place only, so process it
+				Example taken from FRAN_NP_010836
+				-->
+				<place>
+					<placeRole>Lieu de Paris</placeRole>
+					<placeEntry localType="paroisse" vocabularySource="d3nyvost68-1tq3k980risj5">saint-barthélemy (paroisse)</placeEntry>
+					<placeEntry localType="paroisse" vocabularySource="d3nyvoxbpe-1o35tgfsdunvx">saint-germain-le-vieux (paroisse)</placeEntry>
+					<placeEntry localType="voie" vocabularySource="d3nzbx7zqf-v2ieo26jmuhp">marché-neuf (quai du)</placeEntry>
+					<placeEntry localType="nomLieu">au Marché-Neuf</placeEntry>
+				</place>
+				<!-- case 5 (error) : bad use of the element place. One placeEntry (@localType='nomLieu') for the name of several places (with dates) + more than 1 link to several entries in the authority list, more than one being a link to a street (@localType='voie')... -->
+				<!-- example taken from FRAN_NP_011309-->
+				<!-- not to be processed (output a warning)-->
+				<place>
+					<placeRole>Lieu de Paris</placeRole>
+					<placeEntry localType="paroisse" vocabularySource="d3nyvovxws-1r3061wzh7bqc">saint-etienne-du-mont (paroisse)</placeEntry>
+					<placeEntry localType="quartier" vocabularySource="d3nyvgkuxg-xwxqi5i0uhjf">place maubert (quartier)</placeEntry>
+					<placeEntry localType="paroisse" vocabularySource="d3nyvpbvqa-1q7k75sdt2gwp">saint-séverin (paroisse)</placeEntry>
+					<placeEntry localType="paroisse" vocabularySource="d3nyvosba5--16qzzcu3058e5">saint-andré-des-arts (paroisse)</placeEntry>
+					<placeEntry localType="quartier" vocabularySource="d3nyvgpu25-95rr5q73ymvw">saint-andré-des-arts (quartier)</placeEntry>
+					<placeEntry localType="voie" vocabularySource="d3nz8v9o12--th1st5c6ereg">bièvre (rue de)</placeEntry>
+					<placeEntry localType="voie" vocabularySource="d3nzd6u4hv--4zjhqdqfu1qq">saint-séverin (rue)</placeEntry>
+					<placeEntry localType="voie" vocabularySource="d3nz9id4em--bamg2clsfah2">christine (rue)</placeEntry>
+					<placeEntry localType="nomLieu">au coin de la rue de Bièvre (de 1732 à 1741), rue Saint-Séverin (en 1742), rue Christine (de 1743 à 1744)</placeEntry>
+				</place>
+				
+				<!-- case 6 : no name for the placeEntry (@localType='nomLieu')  and one link to the authority lists : can be processed, but output a warning -->
+				<!-- example taken from FRAN_NP_051466-->
+				<place>
+					<placeRole>Lieu de Paris</placeRole>
+					<placeEntry localType="edifice" vocabularySource="d5bknx4v7j-1wqddent61siy">Palais Royal</placeEntry>
+				</place>
+				<!-- cases  7  and 8 (error) : placeEntry (@localType='nomLieu') and zero link to the authority lists : not to be processed, output a warning --> 
+				<!-- examples taken from FRAN_NP_013299 and FRAN_NP_010135-->
+				<place>
+					<placeRole>Lieu de Paris</placeRole>
+					<placeEntry localType="nomLieu">indeterminée</placeEntry>
+				</place>
+				<place>
+					<placeRole>Lieu de Paris</placeRole>
+					<placeEntry localType="nomLieu">60, rue de la Chaussée d'Antin, 75009 PARIS</placeEntry>
+				</place>
+			</places>
+		
+		</description>
+
+	</cpfDescription>
+</eac-cpf>
