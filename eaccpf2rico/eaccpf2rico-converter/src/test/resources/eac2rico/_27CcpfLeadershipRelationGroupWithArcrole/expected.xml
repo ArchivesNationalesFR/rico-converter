@@ -22,7 +22,7 @@
       </rico:hasAgentName>
       <rico:groupIsTargetOfLeadershipRelation rdf:resource="agentHierarchicalRelation/111111-005205-19450101-19501130"/>
    </rico:Agent>
-   <rico:AgentRelation rdf:about="agentHierarchicalRelation/111111-005205-19450101-19501130">
+   <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/111111-005205-19450101-19501130">
       <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#LeadershipRelation"/>
       <rico:leadershipRelationHasSource rdf:resource="agent/111111"/>
       <rico:leadershipRelationHasTarget rdf:resource="agent/005205"/>
@@ -34,5 +34,5 @@
       <rico:description rdf:parseType="Literal">
          <html:p xml:lang="fr">Cette entité a été dirigée par la personne etc.</html:p>
       </rico:description>
-   </rico:AgentRelation>
+   </rico:AgentHierarchicalRelation>
 </rdf:RDF>

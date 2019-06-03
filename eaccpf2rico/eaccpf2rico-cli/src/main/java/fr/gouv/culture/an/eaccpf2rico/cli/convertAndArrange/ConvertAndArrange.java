@@ -1,5 +1,6 @@
 package fr.gouv.culture.an.eaccpf2rico.cli.convertAndArrange;
 
+import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
@@ -43,7 +44,9 @@ public class ConvertAndArrange implements CommandIfc {
 			factory.adaptConverterForArrange(
 					converter,
 					args.getXsltArrange(),
-					args.getOutput(),
+					args.getXsltDeduplicate(),
+					new File(args.getOutput(), args.getAgentsSubfolder()),
+					new File(args.getOutput(), args.getRelationsSubfolder()),
 					args.getError()
 			);
 			converter.convertDirectoryAndArrange(args.getInput());

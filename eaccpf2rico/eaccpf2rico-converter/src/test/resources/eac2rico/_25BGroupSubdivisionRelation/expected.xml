@@ -28,7 +28,7 @@
    	  <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>
       <rico:groupSubdivisionRelationHasTarget rdf:resource="agent/005205"/>
       <rico:groupSubdivisionRelationHasSource rdf:resource="agent/999999"/>
-      <rdfs:label xml:lang="fr">Relation de subdivision entre le parent "The parent of the entity" et l'enfant "The entity", début : 1947, fin : 1964</rdfs:label>
+      <rdfs:label xml:lang="fr">Relation de subdivision entre "The parent of the entity" et "The entity", début : 1947, fin : 1964</rdfs:label>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1947-01-01</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1964-12-31</rico:endDate>
    </rico:AgentHierarchicalRelation>
@@ -36,9 +36,9 @@
      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>
       <rico:groupSubdivisionRelationHasTarget rdf:resource="agent/111111"/>
       <rico:groupSubdivisionRelationHasSource rdf:resource="agent/005205"/>
-      <rdfs:label xml:lang="fr">Relation de subdivision entre le parent "The entity" et l'enfant "The child of the entity", début : 1947, fin : 1964</rdfs:label>
+      <rdfs:label xml:lang="fr">Relation de subdivision entre "The entity" et "The child of the entity", début : 1947, fin : 1964</rdfs:label>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1947-01-01</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1964-12-31</rico:endDate>
-      <rico:description rdf:parseType="Literal"><html:p>This is a note on a relation</html:p></rico:description>
+      <rico:description rdf:parseType="Literal"><html:p xml:lang="fr">This is a note on a relation</html:p></rico:description>
    </rico:AgentHierarchicalRelation>
 </rdf:RDF>

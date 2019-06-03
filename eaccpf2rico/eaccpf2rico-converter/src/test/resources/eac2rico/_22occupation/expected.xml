@@ -4,13 +4,14 @@
          xmlns:html="http://www.w3.org/1999/xhtml"
          xmlns:rico="http://www.ica.org/standards/RiC/ontology#">
    <rico:Description rdf:about="description/005205">
-      <rico:describes rdf:resource="person/005205"/>
+      <rico:describes rdf:resource="agent/005205"/>
    </rico:Description>
-   <rico:Person rdf:about="person/005205">
+   <rico:Agent rdf:about="agent/005205">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:describedBy rdf:resource="description/005205"/>
       <rico:personIsSourceOfOccupationRelation>
          <rico:OccupationRelation rdf:about="occupationRelation/005205-d699msj02xm-19qbb7wdtto3j">
-            <rico:relationToOccupationHasSource rdf:resource="person/005205"/>
+            <rico:relationToOccupationHasSource rdf:resource="agent/005205"/>
             <rico:relationToOccupationHasTarget>
                <rico:Occupation>
                   <rico:occupationIsTargetOfOccupationRelation rdf:resource="occupationRelation/005205-d699msj02xm-19qbb7wdtto3j"/>
@@ -21,7 +22,7 @@
       </rico:personIsSourceOfOccupationRelation>
       <rico:personIsSourceOfOccupationRelation>
          <rico:OccupationRelation rdf:about="occupationRelation/005205-d3nyub73ic-1g5es55lb2lpf-19880101-20031231">
-            <rico:relationToOccupationHasSource rdf:resource="person/005205"/>
+            <rico:relationToOccupationHasSource rdf:resource="agent/005205"/>
             <rico:relationToOccupationHasTarget>
                <rico:Occupation>
                   <rico:occupationIsTargetOfOccupationRelation rdf:resource="occupationRelation/005205-d3nyub73ic-1g5es55lb2lpf-19880101-20031231"/>
@@ -31,9 +32,9 @@
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-12-31</rico:endDate>
             <rico:description rdf:parseType="Literal">
-               <html:p>Recteur de l'académie d'Orléans (1988-1991), de Nantes (1997-1998), de Montpellier (1998-2000), de Reims (2000-2003).</html:p>
+               <html:p xml:lang="fr">Recteur de l'académie d'Orléans (1988-1991), de Nantes (1997-1998), de Montpellier (1998-2000), de Reims (2000-2003).</html:p>
             </rico:description>
          </rico:OccupationRelation>
       </rico:personIsSourceOfOccupationRelation>
-   </rico:Person>
+   </rico:Agent>
 </rdf:RDF>

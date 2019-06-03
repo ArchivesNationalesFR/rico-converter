@@ -49,8 +49,13 @@ public class Eac2RicoConverterProgressListener extends Eac2RicoConverterListener
 
 	@Override
 	public void handleStartArrange() throws Eac2RicoConverterListenerException {
-
+		this.progress.close();
+		System.out.println("Grouping relations...");
 	}
 
-	
+	@Override
+	public void handleStartDeduplicating() throws Eac2RicoConverterListenerException {
+		System.out.println("Deduplicating relations...");
+	}
+
 }

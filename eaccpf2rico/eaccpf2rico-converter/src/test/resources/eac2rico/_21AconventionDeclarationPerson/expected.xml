@@ -2,12 +2,13 @@
          xml:base="http://data.archives-nationales.culture.gouv.fr/"
          xmlns:rico="http://www.ica.org/standards/RiC/ontology#">
    <rico:Description rdf:about="description/005205">
-      <rico:describes rdf:resource="person/005205"/>
+      <rico:describes rdf:resource="agent/005205"/>
       <rico:isRegulatedBy rdf:resource="rule/rl002"/>
       <rico:isRegulatedBy rdf:resource="rule/rl003"/>
       <rico:isRegulatedBy rdf:resource="rule/rl004"/>
    </rico:Description>
-   <rico:Person rdf:about="person/005205">
+   <rico:Agent rdf:about="agent/005205">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:describedBy rdf:resource="description/005205"/>
-   </rico:Person>
+   </rico:Agent>
 </rdf:RDF>

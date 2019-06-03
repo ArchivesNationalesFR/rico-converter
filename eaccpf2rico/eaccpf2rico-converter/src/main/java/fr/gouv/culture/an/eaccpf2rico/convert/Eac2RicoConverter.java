@@ -18,6 +18,7 @@ import javax.xml.transform.TransformerException;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
+import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.xmlunit.builder.DiffBuilder;
@@ -48,14 +49,24 @@ public class Eac2RicoConverter {
 	protected List<Eac2RicoConverterListener> listeners;
 	
 	/**
-	 * Path to output directory
+	 * Path to output directory for agents files
 	 */
-	protected File arrangeOutputDirectory;
+	protected File arrangeOutputAgentsDirectory;
+	
+	/**
+	 * Path to output directory for relation files
+	 */
+	protected File arrangeOutputRelationsDirectory;
 	
 	/**
 	 * The XSLT transformer to group relations
 	 */
 	protected Transformer arrangeTransformer;
+	
+	/**
+	 * The XSLT transformer to deduplicate relations
+	 */
+	protected Transformer deduplicateTransformer;
 
 	public Eac2RicoConverter(
 			Transformer eac2ricoTransformer,
@@ -115,14 +126,49 @@ public class Eac2RicoConverter {
 			processFileOrDirectory(f);
 		}
 		
-		// then arrange
-		log.info("Running arrange transformer from "+this.convertOutputDirectory.getAbsolutePath()+" to "+this.arrangeOutputDirectory.getAbsolutePath());
+		// then arrange	
+		log.info("Running arrange transformer from "+this.convertOutputDirectory.getAbsolutePath()+" to "+this.arrangeOutputAgentsDirectory.getAbsolutePath()+" and "+this.arrangeOutputRelationsDirectory.getAbsolutePath());
 		this.arrangeTransformer.setParameter("INPUT_FOLDER", this.convertOutputDirectory.toURI());
-		this.arrangeTransformer.setParameter("OUTPUT_FOLDER", this.arrangeOutputDirectory.toURI());
+		this.arrangeTransformer.setParameter("OUTPUT_AGENTS_FOLDER", this.arrangeOutputAgentsDirectory.toURI());
+		this.arrangeTransformer.setParameter("OUTPUT_RELATIONS_FOLDER", this.arrangeOutputRelationsDirectory.toURI());
+
 		try {
+			this.notifyStartArrange();
 			this.arrangeTransformer.transform(new StreamSource(new ByteArrayInputStream("<dummy />".getBytes())), new StreamResult(new ByteArrayOutputStream()));
 		} catch (TransformerException e) {
 			throw new Eac2RicoConverterException(ErrorCode.XSLT_TRANSFORM_ERROR, e);
+		} catch (Eac2RicoConverterListenerException e) {
+			log.error("Error in listener notifyStartArrange", e);
+		}
+		
+		
+		File relationsBeforeDeduplicateFolder = new File(this.arrangeOutputRelationsDirectory.getParent(), this.arrangeOutputRelationsDirectory.getName()+"-before-deduplicate");
+		try {
+			log.info("Backing up relations folder...");
+			// back up relations folder
+			FileUtils.copyDirectory(this.arrangeOutputRelationsDirectory, relationsBeforeDeduplicateFolder);
+		} catch (IOException e1) {
+			throw new Eac2RicoConverterException(ErrorCode.DIRECTORY_OR_FILE_HANDLING_EXCEPTION, e1);
+		}
+		
+		// deduplicate
+		try {
+			this.notifyStartDeduplicate();
+			for (File aRelationFile : relationsBeforeDeduplicateFolder.listFiles()) {
+				log.info("Deduplicate "+aRelationFile.getName()+"...");
+				File outputFile = new File(this.arrangeOutputRelationsDirectory, aRelationFile.getName());
+				try(FileOutputStream fos = new FileOutputStream(outputFile)) {
+					this.deduplicateTransformer.transform(new StreamSource(new FileInputStream(aRelationFile)), new StreamResult(fos));
+				} catch (TransformerException e) {
+					throw new Eac2RicoConverterException(ErrorCode.XSLT_TRANSFORM_ERROR, e);
+				} catch (FileNotFoundException e1) {
+					throw new Eac2RicoConverterException(ErrorCode.DIRECTORY_OR_FILE_HANDLING_EXCEPTION, e1);
+				} catch (IOException e1) {
+					throw new Eac2RicoConverterException(ErrorCode.DIRECTORY_OR_FILE_HANDLING_EXCEPTION, e1);
+				}
+			}
+		} catch (Eac2RicoConverterListenerException e) {
+			log.error("Error in listener notifyStartDeduplicate", e);
 		}
 		
 		try {
@@ -284,13 +330,33 @@ public class Eac2RicoConverter {
 			aListener.handleError(inputFile);
 		}
 	}
-
-	public File getArrangeOutputDirectory() {
-		return arrangeOutputDirectory;
+	
+	private void notifyStartArrange() throws Eac2RicoConverterListenerException {
+		for (Eac2RicoConverterListener aListener : listeners) {
+			aListener.handleStartArrange();
+		}
+	}
+	
+	private void notifyStartDeduplicate() throws Eac2RicoConverterListenerException {
+		for (Eac2RicoConverterListener aListener : listeners) {
+			aListener.handleStartDeduplicating();
+		}
 	}
 
-	public void setArrangeOutputDirectory(File arrangeOutputDirectory) {
-		this.arrangeOutputDirectory = arrangeOutputDirectory;
+	public File getArrangeOutputAgentsDirectory() {
+		return arrangeOutputAgentsDirectory;
+	}
+
+	public void setArrangeOutputAgentsDirectory(File arrangeOutputAgentsDirectory) {
+		this.arrangeOutputAgentsDirectory = arrangeOutputAgentsDirectory;
+	}
+
+	public File getArrangeOutputRelationsDirectory() {
+		return arrangeOutputRelationsDirectory;
+	}
+
+	public void setArrangeOutputRelationsDirectory(File arrangeOutputRelationsDirectory) {
+		this.arrangeOutputRelationsDirectory = arrangeOutputRelationsDirectory;
 	}
 
 	public Transformer getArrangeTransformer() {
@@ -299,6 +365,14 @@ public class Eac2RicoConverter {
 
 	public void setArrangeTransformer(Transformer arrangeTransformer) {
 		this.arrangeTransformer = arrangeTransformer;
+	}
+
+	public Transformer getDeduplicateTransformer() {
+		return deduplicateTransformer;
+	}
+
+	public void setDeduplicateTransformer(Transformer deduplicateTransformer) {
+		this.deduplicateTransformer = deduplicateTransformer;
 	}
 	
 }

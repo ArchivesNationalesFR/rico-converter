@@ -25,12 +25,14 @@
 	
 	<!-- We have both a template and a function 'URI-Agent'. The template works on the current notice, the function is used to compute the URI is relation values -->
 	<xsl:template name="URI-Agent">
-		<xsl:value-of select="eac2rico:URI-Agent(/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType, /eac:eac-cpf/eac:control/eac:recordId)" />
+<!-- 		<xsl:value-of select="eac2rico:URI-Agent(/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType, /eac:eac-cpf/eac:control/eac:recordId)" /> -->
+		<xsl:value-of select="eac2rico:URI-Agent('agent', /eac:eac-cpf/eac:control/eac:recordId)" />
 	</xsl:template>	
 	<xsl:function name="eac2rico:URI-Agent">
 		<xsl:param name="entityType" />
 		<xsl:param name="recordId" />		
-		<xsl:value-of select="concat($entityType, '/', substring-after($recordId, 'FRAN_NP_'))" />
+<!-- 		<xsl:value-of select="concat($entityType, '/', substring-after($recordId, 'FRAN_NP_'))" /> -->
+		<xsl:value-of select="concat('agent', '/', substring-after($recordId, 'FRAN_NP_'))" />
 	</xsl:function>	
 	
 	<!-- URI for an Agent described in an external file : lookup the file of this Agent based on its ID in the input folder, and reads the entityType in it -->
@@ -38,6 +40,8 @@
 		<xsl:param name="externalEntityId" />
 		<xsl:param name="externalEntityDescription" />
 
+		<!-- Disable the type fetching to built external Agent URI. Keeping always '/agent' -->
+		<!--
 		<xsl:variable name="externalEntityTypeValue" select="$externalEntityDescription/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType" />
 
 		<xsl:variable name="externalEntityType">
@@ -52,6 +56,8 @@
 		</xsl:variable>
 
 		<xsl:value-of select="eac2rico:URI-Agent($externalEntityType, $externalEntityId)" />
+		-->
+		<xsl:value-of select="eac2rico:URI-Agent('agent', $externalEntityId)" />
 	</xsl:function>	
 	
 	<!--  re-extract Agent ID from Agent URI -->
@@ -151,35 +157,93 @@
 	</xsl:function>
 
 	<xsl:function name="eac2rico:URI-AgentRelation">
+		<xsl:param name="baseType" />
 		<xsl:param name="first" />
 		<xsl:param name="second" />
 		<xsl:param name="fromDate" />
 		<xsl:param name="toDate" />
 		
-		<xsl:value-of select="eac2rico:URI-Anything(
-			'agentRelation',
-   			$first,
-   			$second,
-   			$fromDate,
-   			$toDate)"
-   		/>
+		<xsl:choose>
+			<xsl:when test="$baseType = 'rico:AgentHierarchicalRelation'">
+				<xsl:value-of select="eac2rico:URI-Anything(
+					'agentHierarchicalRelation',
+		   			$first,
+		   			$second,
+		   			$fromDate,
+		   			$toDate)"
+		   		/>
+			</xsl:when>
+			<xsl:when test="$baseType = 'rico:AgentMembershipRelation'">
+				<xsl:value-of select="eac2rico:URI-Anything(
+					'agentMembershipRelation',
+		   			$first,
+		   			$second,
+		   			$fromDate,
+		   			$toDate)"
+		   		/>
+			</xsl:when>
+			<xsl:when test="$baseType = 'rico:ProfessionalRelation'">
+				<xsl:value-of select="eac2rico:URI-Anything(
+					'professionalRelation',
+		   			$first,
+		   			$second,
+		   			$fromDate,
+		   			$toDate)"
+		   		/>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="eac2rico:URI-Anything(
+					'agentRelation',
+		   			$first,
+		   			$second,
+		   			$fromDate,
+		   			$toDate)"
+		   		/>
+			</xsl:otherwise>
+		</xsl:choose>
+			
 	</xsl:function>
 
 	<!-- special case : the URI prefix is passed from the outside and not defined here -->
 	<xsl:function name="eac2rico:URI-FamilyRelation">
-		<xsl:param name="prefix" />
+		<xsl:param name="baseType" />
 		<xsl:param name="first" />
 		<xsl:param name="second" />
 		<xsl:param name="fromDate" />
 		<xsl:param name="toDate" />
 		
-		<xsl:value-of select="eac2rico:URI-Anything(
-			$prefix,
-   			$first,
-   			$second,
-   			$fromDate,
-   			$toDate)"
-   		/>
+		
+		<xsl:choose>
+			<xsl:when test="$baseType = 'rico:FamilyRelation'">
+				<xsl:value-of select="eac2rico:URI-Anything(
+					'familyRelation',
+		   			$first,
+		   			$second,
+		   			$fromDate,
+		   			$toDate)"
+		   		/>
+			</xsl:when>
+			<xsl:when test="$baseType = 'rico:AgentMembershipRelation'">
+				<xsl:value-of select="eac2rico:URI-Anything(
+					'agentMembershipRelation',
+		   			$first,
+		   			$second,
+		   			$fromDate,
+		   			$toDate)"
+		   		/>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="eac2rico:URI-Anything(
+					'agentRelation',
+		   			$first,
+		   			$second,
+		   			$fromDate,
+		   			$toDate)"
+		   		/>
+			</xsl:otherwise>
+		</xsl:choose>
+		
+
 	</xsl:function>
 
 
@@ -194,7 +258,7 @@
 		<xsl:variable name="entityId" select="substring-after($entity, 'FRAN_NP_')" />
 		
 		<xsl:value-of select="eac2rico:URI-Anything(
-			'originationRelation',
+			'agentOriginationRelation',
    			$recordResourceId,
    			$entityId,
    			$fromDate,

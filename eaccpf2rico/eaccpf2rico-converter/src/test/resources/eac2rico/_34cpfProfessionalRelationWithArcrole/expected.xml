@@ -20,16 +20,13 @@
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasAgentName>
-      <rico:agentHasProfessionalRelation rdf:resource="professionalRelation/005205-999999-19950101-"/>
+      <rico:agentHasProfessionalRelation rdf:resource="professionalRelation/005205-999999"/>
    
    </rico:Agent>
-   <rico:ProfessionalRelation rdf:about="professionalRelation/005205-999999-19950101-">
-	
+   <rico:ProfessionalRelation rdf:about="professionalRelation/005205-999999">	
       <rico:professionalRelationConnects rdf:resource="agent/005205"/>
       <rico:professionalRelationConnects rdf:resource="agent/999999"/>
       <rdfs:label xml:lang="fr">Relation professionnelle (de travail) entre "The entity" et "Bibliothèque nationale de France"</rdfs:label>
-      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-01-01</rico:beginningDate>
-    
       <rico:description rdf:parseType="Literal"><html:p xml:lang="fr">Ces deux entités travaillent ensemble pour gérer le dépôt légal du web.</html:p></rico:description>
    </rico:ProfessionalRelation>
   

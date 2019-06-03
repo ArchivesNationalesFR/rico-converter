@@ -10,6 +10,8 @@ public interface Eac2RicoConverterListener {
 	
 	public void handleStartArrange() throws Eac2RicoConverterListenerException;
 	
+	public void handleStartDeduplicating() throws Eac2RicoConverterListenerException;
+	
 	public void handleStop() throws Eac2RicoConverterListenerException;
 	
 	public void handleBeginProcessing(File inputFile) throws Eac2RicoConverterListenerException;

@@ -36,5 +36,10 @@ public class Eac2RicoConverterListenerBase implements Eac2RicoConverterListener 
 	public void handleStartArrange() throws Eac2RicoConverterListenerException {
 		
 	}
+	
+	@Override
+	public void handleStartDeduplicating() throws Eac2RicoConverterListenerException {
+		
+	}
 
 }

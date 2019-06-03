@@ -1,13 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Keywords>
+<AgentRelation>
 	<AgentControlRelation>
-		<Keyword>tutelle</Keyword>
-		<Keyword>contrôle</Keyword>	
+		<Keywords>
+			<Keyword>tutelle</Keyword>
+			<Keyword>contrôle</Keyword>
+		</Keywords>	
+		<Arcroles>
+			<Arcrole>isControlledBy</Arcrole>
+			<Arcrole>controls</Arcrole>
+		</Arcroles>
 	</AgentControlRelation>
 	<LeadershipRelation>
-		<Keyword>directeur</Keyword>
-		<Keyword>isDirectorOf</Keyword>
-		<Keyword>directedBy</Keyword>
-		<Keyword>président</Keyword>
+		<Keywords>
+			<Keyword>directeur</Keyword>
+			<Keyword>isDirectorOf</Keyword>
+			<Keyword>directedBy</Keyword>
+			<Keyword>président</Keyword>
+		</Keywords>
+		<Arcroles>
+			<Arcrole currentEntityRole="target">isLeadBy</Arcrole>
+			<Arcrole currentEntityRole="source">isLeaderOf</Arcrole>
+		</Arcroles>
 	</LeadershipRelation>
-</Keywords>
+	<GroupSubdivisionRelation>
+		<Arcroles>
+			<Arcrole>isSubdivisionOf</Arcrole>
+			<Arcrole>hasSubdivision</Arcrole>
+		</Arcroles>
+	</GroupSubdivisionRelation>
+	<AgentSubordinationRelation>
+		<Arcroles>
+			<Arcrole currentEntityRole="source">isSuperiorOf</Arcrole>
+			<Arcrole currentEntityRole="target">isInferiorOf</Arcrole>
+		</Arcroles>
+	</AgentSubordinationRelation>
+	<AgentMembershipRelation>
+		<Arcroles>
+			<Arcrole currentEntityRole="source">personIsMemberOf</Arcrole>
+			<Arcrole currentEntityRole="target">hasAsPersonMember</Arcrole>
+		</Arcroles>
+	</AgentMembershipRelation>
+	<ProfessionalRelation>
+		<Arcroles>
+			<Arcrole currentEntityRole="unspecified">hasProfessionalRelationWith</Arcrole>
+		</Arcroles>
+	</ProfessionalRelation>
+	
+</AgentRelation>

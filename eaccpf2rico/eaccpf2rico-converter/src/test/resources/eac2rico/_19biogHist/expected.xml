@@ -4,22 +4,25 @@
          xmlns:html="http://www.w3.org/1999/xhtml"
          xmlns:rico="http://www.ica.org/standards/RiC/ontology#">
    <rico:Description rdf:about="description/005205">
-   	  <rico:describes rdf:resource="corporateBody/005205"/>
+   	  <rico:describes rdf:resource="agent/005205"/>
    </rico:Description>
-   <rico:CorporateBody rdf:about="corporateBody/005205">
+   <rico:Agent rdf:about="agent/005205">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:describedBy rdf:resource="description/005205"/>
 	  <rico:history rdf:parseType="Literal">
-         <html:p>1</html:p>
-         <html:p>2</html:p>
-         <html:h2>This is a header</html:h2>
-         <html:ul>
-            <html:li>item1</html:li>
-            <html:li>item2</html:li>
-            <html:li>item3</html:li>
-         </html:ul>
-         <html:p>
-            <html:u>underline</html:u> et <html:b>bold</html:b> et <html:i>italic</html:i>
-         </html:p> 
+	  	 <html:div xml:lang="fr">
+	         <html:p>1</html:p>
+	         <html:p>2</html:p>
+	         <html:h2>This is a header</html:h2>
+	         <html:ul>
+	            <html:li>item1</html:li>
+	            <html:li>item2</html:li>
+	            <html:li>item3</html:li>
+	         </html:ul>
+	         <html:p>
+	            <html:u>underline</html:u> et <html:b>bold</html:b> et <html:i>italic</html:i>
+	         </html:p> 
+         </html:div>
 	  </rico:history>
-   </rico:CorporateBody>
+   </rico:Agent>
 </rdf:RDF>

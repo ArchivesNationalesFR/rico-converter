@@ -15,23 +15,19 @@
          <rico:AgentName rdf:about="agentName/456789-The%20entity">
             <rdfs:label xml:lang="fr">The entity</rdfs:label>
             <rico:textualValue xml:lang="fr">The entity</rico:textualValue>
-            <rico:isAgentNameOf rdf:resource="agent/050171"/>
+            <rico:isAgentNameOf rdf:resource="agent/456789"/>
             <rico:isRegulatedBy rdf:resource="rule/rl001"/>
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasAgentName>
       <rico:groupIsTargetOfAgentMembershipRelation
-        rdf:resource="agentMembershipRelation/050171-456789-19460101-19500223"/>
+        rdf:resource="agentMembershipRelation/111111-456789"/>
    </rico:Agent>
   
-   <rico:AgentMembershipRelation rdf:about="agentMembershipRelation/050171-456789-19460101-19500223">
-      <rico:agentMembershipRelationHasSource rdf:resource="agent/050171"/>
+   <rico:AgentMembershipRelation rdf:about="agentMembershipRelation/111111-456789">
+      <rico:agentMembershipRelationHasSource rdf:resource="agent/111111"/>
       <rico:agentMembershipRelationHasTarget rdf:resource="agent/456789"/>
-      <rdfs:label xml:lang="fr">Relation d'appartenance entre "The person member" et "The entity", début : 1946, fin : 23 février 1950</rdfs:label>
-      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-         >1946-01-01</rico:beginningDate>
-      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-         >1950-02-23</rico:endDate>
+      <rdfs:label xml:lang="fr">Relation d'appartenance entre "The person member" et "The entity"</rdfs:label>
       <rico:description rdf:parseType="Literal">
          <html:p xml:lang="fr">"The entity" a compté parmi ses membres "The entity" dès sa création.</html:p>
       </rico:description>

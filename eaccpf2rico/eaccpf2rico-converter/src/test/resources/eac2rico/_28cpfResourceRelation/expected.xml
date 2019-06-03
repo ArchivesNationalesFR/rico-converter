@@ -5,16 +5,17 @@
          xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
          xmlns:owl="http://www.w3.org/2002/07/owl#">
    <rico:Description rdf:about="description/005205">
-      <rico:describes rdf:resource="corporateBody/005205"/>
+      <rico:describes rdf:resource="agent/005205"/>
    </rico:Description>
-   <rico:CorporateBody rdf:about="corporateBody/005205">
+   <rico:Agent rdf:about="agent/005205">
+   	  <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:describedBy rdf:resource="description/005205"/>
       <rdfs:label xml:lang="fr">The entity</rdfs:label>
       <rico:hasAgentName>
          <rico:AgentName rdf:about="agentName/005205-The%20entity">
             <rdfs:label xml:lang="fr">The entity</rdfs:label>
             <rico:textualValue xml:lang="fr">The entity</rico:textualValue>
-            <rico:isAgentNameOf rdf:resource="corporateBody/005205"/>
+            <rico:isAgentNameOf rdf:resource="agent/005205"/>
             <rico:isRegulatedBy rdf:resource="rule/rl001"/>
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
@@ -22,17 +23,17 @@
       <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/111111-005205"/>
       <!-- ajout de relation vers une autre relation de provenance -->
       <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057306-c-grmqcmjabh-1fkw1foh8y5qu-005205"/>
-   </rico:CorporateBody>
+   </rico:Agent>
    <rico:AgentOriginationRelation rdf:about="agentOriginationRelation/111111-005205">
       <rico:agentOriginationRelationHasSource rdf:resource="recordSet/111111"/>
-      <rico:agentOriginationRelationHasTarget rdf:resource="corporateBody/005205"/>
+      <rico:agentOriginationRelationHasTarget rdf:resource="agent/005205"/>
    </rico:AgentOriginationRelation>
    <!-- ajout de originationRelation -->
    <rico:AgentOriginationRelation rdf:about="agentOriginationRelation/057306-c-grmqcmjabh-1fkw1foh8y5qu-005205">
       <rico:agentOriginationRelationHasSource rdf:resource="recordSet/057306-c-grmqcmjabh-1fkw1foh8y5qu"/>
-      <rico:agentOriginationRelationHasTarget rdf:resource="corporateBody/005205"/>
+      <rico:agentOriginationRelationHasTarget rdf:resource="agent/005205"/>
       <rico:description rdf:parseType="Literal">
-         <html:p>Archives de l'UNVDC</html:p>
+         <html:p xml:lang="fr">Archives de l'UNVDC</html:p>
       </rico:description>
    </rico:AgentOriginationRelation>
 </rdf:RDF>

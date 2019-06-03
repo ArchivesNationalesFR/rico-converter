@@ -4,10 +4,11 @@
          xmlns:isni="http://isni.org/ontology#"
          xmlns:rico="http://www.ica.org/standards/RiC/ontology#">
    <rico:Description rdf:about="description/005205">
-   	  <rico:describes rdf:resource="corporateBody/005205"/>
+   	  <rico:describes rdf:resource="agent/005205"/>
    </rico:Description>
-   <rico:CorporateBody rdf:about="corporateBody/005205">
+   <rico:Agent rdf:about="agent/005205">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:describedBy rdf:resource="description/005205"/>
       <rico:identifier>SIRET 501 524 029 00086</rico:identifier>
-   </rico:CorporateBody>
+   </rico:Agent>
 </rdf:RDF>

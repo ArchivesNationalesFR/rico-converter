@@ -6,4 +6,13 @@
 	<Code code="MISSING_VOCABULARYSOURCE_ON_LEGAL_STATUS" level="warning">
 		<message xml:lang="en">Missing @vocabularySource on legalStatus</message>
 	</Code>
+	<Code code="RELATION_IN_ONE_DIRECTION_ONLY" level="warning">
+		<message xml:lang="en">A relation was found only once, indicating it was in one direction only</message>
+	</Code>
+	<Code code="MORE_THAN_TWO_RELATIONS" level="warning">
+		<message xml:lang="en">A relation was found more than twice</message>
+	</Code>
+	<Code code="RELATION_SUCCESSFULLY_DEDUPLICATED" level="warning">
+		<message xml:lang="en">Relation was sucessfully deduplicated</message>
+	</Code>
 </Codes>

@@ -21,18 +21,18 @@
          </rico:AgentName>
       </rico:hasAgentName>
       <rico:agentIsTargetOfAgentControlRelation rdf:resource="agentHierarchicalRelation/999999-005205"/>
-      <rico:agentIsSourceOfAgentControlRelation rdf:resource="agentHierarchicalRelation/005205-123456"/>
+      <rico:agentIsSourceOfAgentControlRelation rdf:resource="agentHierarchicalRelation/005205-111111"/>
    </rico:Agent>
    <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/999999-005205">
 	<rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentControlRelation"/>
     <rico:agentControlRelationHasTarget rdf:resource="agent/005205"/>
     <rico:agentControlRelationHasSource rdf:resource="agent/999999"/>
     <rdfs:label xml:lang="fr">Relation de contrôle entre "The controlling entity" et "The entity"</rdfs:label>
-      <rico:description rdf:parseType="Literal"><html:p xml:lang="fr">Cette entité a été sous l'autorité de l'entité cible</html:p></rico:description>
+    <rico:description rdf:parseType="Literal"><html:p xml:lang="fr">Cette entité a été sous l'autorité de l'entité cible</html:p></rico:description>
    </rico:AgentHierarchicalRelation>
-   <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/005205-123456">
+   <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/005205-111111">
     <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentControlRelation"/>
-    <rico:agentControlRelationHasTarget rdf:resource="agent/123456"/>
+    <rico:agentControlRelationHasTarget rdf:resource="agent/111111"/>
     <rico:agentControlRelationHasSource rdf:resource="agent/005205"/>
       <rdfs:label xml:lang="fr">Relation de contrôle entre "The entity" et "The controlled entity"</rdfs:label>
       <rico:description rdf:parseType="Literal"><html:p xml:lang="fr">Cette entité a exercé un contrôle sur les activités de l'entité cible etc.</html:p></rico:description>

@@ -16,22 +16,21 @@
             <rdfs:label xml:lang="fr">The entity</rdfs:label>
             <rico:textualValue xml:lang="fr">The entity</rico:textualValue>
             <rico:isAgentNameOf rdf:resource="agent/050171"/>
-            <rico:isRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:isRegulatedBy rdf:resource="rule/rl002"/>
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasAgentName>
-      <rico:personIsSourceOfAgentMembershipRelation
-         rdf:resource="agentMembershipRelation/050171-050172"/>
-      <rico:personIsSourceOfAgentMembershipRelation rdf:resource="agentMembershipRelation/050171-456789-19460101-19500223"/>
+      <rico:personIsSourceOfAgentMembershipRelation rdf:resource="agentMembershipRelation/050171-111111"/>
+      <rico:personIsSourceOfAgentMembershipRelation rdf:resource="agentMembershipRelation/050171-999999-19460101-19500223"/>
    </rico:Agent>
-   <rico:AgentMembershipRelation rdf:about="agentMembershipRelation/050171-050172">
+   <rico:AgentMembershipRelation rdf:about="agentMembershipRelation/050171-111111">
       <rico:agentMembershipRelationHasSource rdf:resource="agent/050171"/>
-      <rico:agentMembershipRelationHasTarget rdf:resource="agent/050172"/>
-      <rdfs:label xml:lang="fr">Relation d'appartenance entre "The entity" et "Deschanel (Famille) (1700-1988)"</rdfs:label>
+      <rico:agentMembershipRelationHasTarget rdf:resource="agent/111111"/>
+      <rdfs:label xml:lang="fr">Relation familiale entre "The entity" et "Deschanel (Famille) (1700-1988)"</rdfs:label>
    </rico:AgentMembershipRelation>
-   <rico:AgentMembershipRelation rdf:about="agentMembershipRelation/050171-456789-19460101-19500223">
+   <rico:AgentMembershipRelation rdf:about="agentMembershipRelation/050171-999999-19460101-19500223">
       <rico:agentMembershipRelationHasSource rdf:resource="agent/050171"/>
-      <rico:agentMembershipRelationHasTarget rdf:resource="agent/456789"/>
+      <rico:agentMembershipRelationHasTarget rdf:resource="agent/999999"/>
       <rdfs:label xml:lang="fr">Relation d'appartenance entre "The entity" et "France. Ministère de l'Education nationale. Direction générale des services (1925-1956)", début : 1946, fin : 23 février 1950</rdfs:label>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
          >1946-01-01</rico:beginningDate>

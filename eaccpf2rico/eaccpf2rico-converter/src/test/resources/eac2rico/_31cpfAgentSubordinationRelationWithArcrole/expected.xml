@@ -20,33 +20,24 @@
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasAgentName>
-      <rico:personIsSourceOfAgentSubordinationRelation rdf:resource="agentHierarchicalRelation/050571-234567-19450101-19530521"/>
-      <rico:personIsTargetOfAgentSubordinationRelation rdf:resource="agentHierarchicalRelation/891234-050571-19451003-19481130"/>
+      <rico:personIsSourceOfAgentSubordinationRelation rdf:resource="agentHierarchicalRelation/050571-111111"/>
+      <rico:personIsTargetOfAgentSubordinationRelation rdf:resource="agentHierarchicalRelation/999999-050571"/>
    </rico:Agent>
    
-   <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/050571-234567-19450101-19530521">
+   <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/050571-111111">
       <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentSubordinationRelation"/>
       <rico:agentSubordinationRelationHasSource rdf:resource="agent/050571"/>
-      <rico:agentSubordinationRelationHasTarget rdf:resource="agent/234567"/>
+      <rico:agentSubordinationRelationHasTarget rdf:resource="agent/111111"/>
       <rdfs:label xml:lang="fr">Relation hiérarchique (de subordination) entre "The entity" et "The inferior person"</rdfs:label>
-      <rico:description  rdf:parseType="Literal"><html:p>Cette personne a encadré "the inferior person" pendant 8 ans.</html:p>
-      </rico:description>
-      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-         >1945-01-01</rico:beginningDate>
-      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-         >1953-05-21</rico:endDate>
+      <rico:description  rdf:parseType="Literal"><html:p xml:lang="fr">Cette personne a encadré "the inferior person" pendant 8 ans.</html:p></rico:description>
    </rico:AgentHierarchicalRelation>
    
-   <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/891234-050571-19451003-19481130">
+   <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/999999-050571">
       <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentSubordinationRelation"/>
+      <rico:agentSubordinationRelationHasSource rdf:resource="agent/999999"/>
       <rico:agentSubordinationRelationHasTarget rdf:resource="agent/050571"/>
-      <rico:agentSubordinationRelationHasSource rdf:resource="agent/891234"/>
       <rdfs:label xml:lang="fr">Relation hiérarchique (de subordination) entre "The superior person" et "The entity"</rdfs:label>
-      <rico:description  rdf:parseType="Literal"><html:p>Cette personne a été placée sous l'autorité hiérarchique de "the superior person" pendant trois ans.</html:p>
-      </rico:description>
-      <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-         >1945-10-03</rico:beginningDate>
-      <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-         >1948-11-30</rico:endDate>    
+      <rico:description  rdf:parseType="Literal"><html:p xml:lang="fr">Cette personne a été placée sous l'autorité hiérarchique de "the superior person" pendant trois ans.</html:p>
+      </rico:description>  
    </rico:AgentHierarchicalRelation>
 </rdf:RDF>

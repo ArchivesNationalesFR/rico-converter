@@ -3,11 +3,12 @@
          xml:base="http://data.archives-nationales.culture.gouv.fr/"
          xmlns:rico="http://www.ica.org/standards/RiC/ontology#">
    <rico:Description rdf:about="description/005205">
-      <rico:describes rdf:resource="corporateBody/005205"/>
+      <rico:describes rdf:resource="agent/005205"/>
       <rico:wasCreatedAtDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-04-23</rico:wasCreatedAtDate>
       <rico:lastUpdateDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-28</rico:lastUpdateDate>
    </rico:Description>
-   <rico:CorporateBody rdf:about="corporateBody/005205">
+   <rico:Agent rdf:about="agent/005205">
+   	  <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:describedBy rdf:resource="description/005205"/>
-   </rico:CorporateBody>
+   </rico:Agent>
 </rdf:RDF>

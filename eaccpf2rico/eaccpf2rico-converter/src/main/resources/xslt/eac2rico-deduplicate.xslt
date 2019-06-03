@@ -13,6 +13,10 @@
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
 	xmlns:html="http://www.w3.org/1999/xhtml"
 >
+
+	<!-- Import builtins stylesheet -->
+	<xsl:import href="eac2rico-builtins.xslt" />
+
 	<xsl:output indent="yes" method="xml" />
 
 	<xsl:template match="/">
@@ -25,11 +29,25 @@
 		</xsl:copy>
 	</xsl:template>
 	
-	<xsl:template match="rico:AgentHierarchicalRelation">
+	<xsl:template match="rdf:RDF/*">
 		<xsl:variable name="thisUri" select="@rdf:about" />
 		<xsl:choose>
-			<xsl:when test="count(preceding-sibling::rico:AgentHierarchicalRelation[@rdf:about = $thisUri]) = 0">
+			<!-- copy only if it is the first element in the file -->
+			<xsl:when test="count(preceding-sibling::*[@rdf:about = $thisUri]) = 0">
 				<xsl:copy-of select="." />
+				
+				<!-- if this is the only relation with an inverse missing, issue a warning -->
+				<xsl:choose>
+					<xsl:when test="count(following-sibling::*[@rdf:about = $thisUri]) = 0">
+						<xsl:value-of select="eac2rico:warning('', 'RELATION_IN_ONE_DIRECTION_ONLY', $thisUri)" />
+					</xsl:when>
+					<xsl:when test="count(following-sibling::*[@rdf:about = $thisUri]) > 1">
+						<xsl:value-of select="eac2rico:warning('', 'MORE_THAN_TWO_RELATIONS', $thisUri)" />
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:value-of select="eac2rico:warning('', 'RELATION_SUCCESSFULLY_DEDUPLICATED', $thisUri)" />
+					</xsl:otherwise>
+				</xsl:choose>				
 			</xsl:when>
 			<xsl:otherwise>
 			

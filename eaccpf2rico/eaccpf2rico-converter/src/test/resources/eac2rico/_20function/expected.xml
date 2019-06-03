@@ -4,13 +4,14 @@
          xmlns:html="http://www.w3.org/1999/xhtml"
          xmlns:rico="http://www.ica.org/standards/RiC/ontology#">
    <rico:Description rdf:about="description/005205">
-      <rico:describes rdf:resource="corporateBody/005205"/>
+      <rico:describes rdf:resource="agent/005205"/>
    </rico:Description>
-   <rico:CorporateBody rdf:about="corporateBody/005205">
+   <rico:Agent rdf:about="agent/005205">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:describedBy rdf:resource="description/005205"/>
       <rico:agentIsSourceOfActivityRealizationRelation>
          <rico:ActivityRealizationRelation rdf:about="activityRealizationRelation/005205-d3nyugtbte--13rem7tfg1o1y">
-            <rico:activityRealizationRelationHasSource rdf:resource="corporateBody/005205"/>
+            <rico:activityRealizationRelationHasSource rdf:resource="agent/005205"/>
             <rico:activityRealizationRelationHasTarget>
                <rico:Activity>
                   <rico:activityIsTargetOfActivityRealizationRelation rdf:resource="activityRealizationRelation/005205-d3nyugtbte--13rem7tfg1o1y"/>
@@ -21,7 +22,7 @@
       </rico:agentIsSourceOfActivityRealizationRelation>
       <rico:agentIsSourceOfActivityRealizationRelation>
          <rico:ActivityRealizationRelation rdf:about="activityRealizationRelation/005205-d5bhvikvro-1p99atu7o3qwy-19090520-*">
-            <rico:activityRealizationRelationHasSource rdf:resource="corporateBody/005205"/>
+            <rico:activityRealizationRelationHasSource rdf:resource="agent/005205"/>
             <rico:activityRealizationRelationHasTarget>
                <rico:Activity>
                   <rico:activityIsTargetOfActivityRealizationRelation rdf:resource="activityRealizationRelation/005205-d5bhvikvro-1p99atu7o3qwy-19090520-*"/>
@@ -33,7 +34,7 @@
       </rico:agentIsSourceOfActivityRealizationRelation>
       <rico:agentIsSourceOfActivityRealizationRelation>
          <rico:ActivityRealizationRelation rdf:about="activityRealizationRelation/005205-d5bhvikvro-1p99atu7o3qwy-19180523-19870523">
-            <rico:activityRealizationRelationHasSource rdf:resource="corporateBody/005205"/>
+            <rico:activityRealizationRelationHasSource rdf:resource="agent/005205"/>
             <rico:activityRealizationRelationHasTarget>
                <rico:Activity>
                   <rico:activityIsTargetOfActivityRealizationRelation rdf:resource="activityRealizationRelation/005205-d5bhvikvro-1p99atu7o3qwy-19180523-19870523"/>
@@ -43,9 +44,9 @@
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1918-05-23</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-05-23</rico:endDate>
             <rico:description rdf:parseType="Literal">
-               <html:p>Blah</html:p>
+ 	           <html:p xml:lang="fr">Blah</html:p>
             </rico:description>
          </rico:ActivityRealizationRelation>
       </rico:agentIsSourceOfActivityRealizationRelation>
-   </rico:CorporateBody>
+   </rico:Agent>
 </rdf:RDF>

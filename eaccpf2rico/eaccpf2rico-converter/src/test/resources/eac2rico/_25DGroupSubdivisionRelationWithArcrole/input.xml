@@ -18,22 +18,11 @@
 				cpfRelationType="hierarchical-parent" xlink:href="FRAN_NP_999999"
 				xlink:type="simple" xlink:arcrole="isSubdivisionOf">
 				<relationEntry>The parent of the entity</relationEntry>
-				<dateRange>
-					<fromDate standardDate="1947-01-01">1947</fromDate>
-					<toDate standardDate="1964-12-31">1964</toDate>
-				</dateRange>
 			</cpfRelation>
 			<cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
 				cpfRelationType="hierarchical-child" xlink:href="FRAN_NP_111111" xlink:type="simple"
 				xlink:arcrole="hasSubdivision">
 				<relationEntry>The child of the entity</relationEntry>
-				<dateRange>
-					<fromDate standardDate="1950-01-01">1950</fromDate>
-					<toDate standardDate="1966-12-31">1966</toDate>
-				</dateRange>
-				<descriptiveNote>
-					<p>This is a note on a relation</p>
-				</descriptiveNote>
 			</cpfRelation>
 		</relations>
 	</cpfDescription>

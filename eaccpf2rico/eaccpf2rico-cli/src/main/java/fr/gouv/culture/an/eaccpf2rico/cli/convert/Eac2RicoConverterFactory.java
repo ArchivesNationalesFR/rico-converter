@@ -128,11 +128,15 @@ public class Eac2RicoConverterFactory {
 		return c;
 	}
 	
-	public void adaptConverterForArrange(Eac2RicoConverter converter, File arrangeXslt, File outputDirectory, File errorDirectory) throws Eac2RicoConverterException {
+	public void adaptConverterForArrange(Eac2RicoConverter converter, File arrangeXslt, File deduplicateXslt, File outputAgentsDirectory, File outputRelationsDirectory, File errorDirectory) throws Eac2RicoConverterException {
 		// create output directory if it does not exists
-		if(!outputDirectory.exists()) {
-			log.info("Creating output directory {}", outputDirectory.getAbsolutePath());
-			outputDirectory.mkdirs();
+		if(!outputAgentsDirectory.exists()) {
+			log.info("Creating output agents directory {}", outputAgentsDirectory.getAbsolutePath());
+			outputAgentsDirectory.mkdirs();
+		}
+		if(!outputRelationsDirectory.exists()) {
+			log.info("Creating output relations directory {}", outputRelationsDirectory.getAbsolutePath());
+			outputRelationsDirectory.mkdirs();
 		}
 		
 		Transformer transformer;
@@ -148,7 +152,22 @@ public class Eac2RicoConverterFactory {
 		}
 		
 		converter.setArrangeTransformer(transformer);
-		converter.setArrangeOutputDirectory(outputDirectory);
+		converter.setArrangeOutputAgentsDirectory(outputAgentsDirectory);
+		converter.setArrangeOutputRelationsDirectory(outputRelationsDirectory);
+		
+		Transformer deduplicateTransformer;
+		try {
+			deduplicateTransformer = TransformerBuilder.createSaxonProcessor().createTransformer(new StreamSource(deduplicateXslt));
+			// disable error listener to prevent messing with the progress bar
+			deduplicateTransformer.setErrorListener(new SaxonErrorListener());
+			// direct Saxon message output to the JAXP ErrorListener as warnings
+			((net.sf.saxon.jaxp.TransformerImpl)deduplicateTransformer).getUnderlyingController().setMessageEmitter(new MessageWarner());			
+			
+		} catch (TransformerConfigurationException e) {
+			throw new Eac2RicoConverterException(ErrorCode.XSLT_PARSING_ERROR, e);
+		}
+		
+		converter.setDeduplicateTransformer(deduplicateTransformer);
 	}
 	
 }
