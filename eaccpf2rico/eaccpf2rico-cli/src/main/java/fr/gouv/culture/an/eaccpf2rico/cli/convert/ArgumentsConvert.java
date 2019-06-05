@@ -63,7 +63,7 @@ public class ArgumentsConvert {
 			description = "The AUTHOR_URI parameter for the XSLT conversion. Indicates the URI to be used as value for authors. If not set, defaults to 'http://data.archives-nationales.culture.gouv.fr/corporateBody/005061'.",
 			required = false
 	)
-	protected String xsltAuthorUri = "http://data.archives-nationales.culture.gouv.fr/corporateBody/005061";
+	protected String xsltAuthorUri = "http://data.archives-nationales.culture.gouv.fr/agent/005061";
 
 	@Parameter(
 			names = { "xslt.LITERAL_LANG" },
@@ -71,6 +71,20 @@ public class ArgumentsConvert {
 			required = false
 	)
 	protected String xsltLiteralLang = "fr";
+	
+	@Parameter(
+			names = { "xslt.VOCABULARY_LEGAL_STATUSES" },
+			description = "The VOCABULARY_LEGAL_STATUSES parameter for the XSLT conversion. Indicates the path to the vocabulary file of legal statuses, relative to the XSLT. If not set, defaults to '../vocabularies/FRAN_RI_104_Ginco_legalStatuses.rdf'.",
+			required = false
+	)
+	protected String xsltVocabularyLegalStatuses = null;
+
+	@Parameter(
+			names = { "xslt.VOCABULARY_RULES" },
+			description = "The VOCABULARY_RULES parameter for the XSLT conversion. Indicates the path to the vocabulary file of rules, relative to the XSLT. If not set, defaults to '../vocabularies/referentiel_rules.rdf'.",
+			required = false
+	)
+	protected String xsltVocabularyRules = null;
 	
 	public File getInput() {
 		return input;
@@ -118,6 +132,14 @@ public class ArgumentsConvert {
 
 	public String getXsltLiteralLang() {
 		return xsltLiteralLang;
+	}
+
+	public String getXsltVocabularyLegalStatuses() {
+		return xsltVocabularyLegalStatuses;
+	}
+
+	public String getXsltVocabularyRules() {
+		return xsltVocabularyRules;
 	}
 	
 }

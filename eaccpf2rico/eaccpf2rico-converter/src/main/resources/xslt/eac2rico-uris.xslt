@@ -16,12 +16,12 @@
 >
 			
 	<!-- Load LegalStatuses from companion file -->
-	<xsl:param name="LEGAL_STATUSES_FILE">FRAN_RI_104_Ginco_legalStatuses.rdf</xsl:param>
-	<xsl:variable name="LEGAL_STATUSES" select="document($LEGAL_STATUSES_FILE)" />
+	<xsl:param name="VOCABULARY_LEGAL_STATUSES">../vocabularies/FRAN_RI_104_Ginco_legalStatuses.rdf</xsl:param>
+	<xsl:variable name="LEGAL_STATUSES" select="document($VOCABULARY_LEGAL_STATUSES)" />
 	
 	<!-- Load Rules from companion file -->
-	<xsl:param name="RULES_FILE">referentiel_rules.rdf</xsl:param>
-	<xsl:variable name="RULES" select="document($RULES_FILE)" />
+	<xsl:param name="VOCABULARY_RULES">../vocabularies/referentiel_rules.rdf</xsl:param>
+	<xsl:variable name="RULES" select="document($VOCABULARY_RULES)" />
 	
 	<!-- We have both a template and a function 'URI-Agent'. The template works on the current notice, the function is used to compute the URI is relation values -->
 	<xsl:template name="URI-Agent">
@@ -390,7 +390,33 @@
 		<xsl:param name="recordResourceId" />		
 		<!-- Note how # is changed into '-' -->
 		<xsl:value-of select="concat('recordSet', '/', translate(substring-after($recordResourceId, 'FRAN_IR_'), '#', '-'))" />
-	</xsl:function>	
+	</xsl:function>
+	
+	<xsl:function name="eac2rico:URI-Place">
+		<xsl:param name="nomVoie" />		
+		<xsl:value-of select="concat('place', '/', encode-for-uri($nomVoie))" />
+	</xsl:function>
+	
+	<xsl:function name="eac2rico:URI-Place-hasLocation">
+		<xsl:param name="vocabularySource" />
+		<xsl:param name="localType" />
+		
+		<xsl:variable name="vocabulary">
+			<xsl:choose>
+				<xsl:when test="$localType = 'voie'">025</xsl:when>
+				<xsl:when test="$localType = 'commune_rattachee'">020</xsl:when>
+				<xsl:when test="$localType = 'paroisse'">024</xsl:when>
+				<xsl:when test="$localType = 'quartier'">023</xsl:when>
+				<xsl:when test="$localType = 'edifice'">026</xsl:when>
+				<xsl:when test="$localType = 'arrondissement_actuel'">022</xsl:when>
+				<xsl:when test="$localType = 'arrondissement_ancien'">021</xsl:when>
+				<xsl:otherwise>
+					<xsl:message>Unexpected @locaType on place : <xsl:value-of select="$localType" /></xsl:message>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>		
+		<xsl:value-of select="concat('place', '/', 'FRAN_RI_', $vocabulary, '-', $vocabularySource)" />
+	</xsl:function>
 	
 	<xsl:template name="rdf-about">
 		<xsl:param name="uri" />

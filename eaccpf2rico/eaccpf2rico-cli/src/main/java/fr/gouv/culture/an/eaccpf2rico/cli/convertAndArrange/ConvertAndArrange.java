@@ -47,6 +47,7 @@ public class ConvertAndArrange implements CommandIfc {
 					args.getXsltDeduplicate(),
 					new File(args.getOutput(), args.getAgentsSubfolder()),
 					new File(args.getOutput(), args.getRelationsSubfolder()),
+					new File(args.getOutput(), args.getPlacesSubfolder()),
 					args.getError()
 			);
 			converter.convertDirectoryAndArrange(args.getInput());

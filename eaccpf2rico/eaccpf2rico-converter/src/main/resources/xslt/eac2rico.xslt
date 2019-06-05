@@ -42,6 +42,7 @@
 			<xsl:apply-templates />
 			<xsl:apply-templates mode="relations" select="eac:eac-cpf/eac:cpfDescription/eac:relations/eac:cpfRelation" />
 			<xsl:apply-templates mode="relations" select="eac:eac-cpf/eac:cpfDescription/eac:relations/eac:resourceRelation" />
+			<xsl:apply-templates mode="relations" select="eac:eac-cpf/eac:cpfDescription/eac:description/eac:places/eac:place" />
 		</rdf:RDF>
 	</xsl:template>
 	
@@ -539,7 +540,7 @@
 
 	<!-- *** RELATIONS *** -->
 	
-		<xsl:template match="eac:relations">
+	<xsl:template match="eac:relations">
 		<xsl:apply-templates />
 	</xsl:template>
 	
@@ -955,6 +956,136 @@
 	<xsl:include href="eac2rico-relations.xslt" />
 
 
+	<!-- *** PLACES *** -->
+
+	<xsl:template match="eac:places">
+		<xsl:apply-templates />
+	</xsl:template>
+	
+	<!-- Place in Paris -->
+	
+	<!--  Case 1, 2, 3 and 4 in the unit tests -->
+	<xsl:template match="eac:place[
+		eac:placeRole = 'Lieu de Paris' and
+		eac:placeEntry/@localType='nomLieu' and
+		(
+			count(eac:placeEntry[exists(index-of(('voie', 'edifice', 'commune_rattachee', 'paroisse', 'quartier', 'arrondissement_actuel', 'arrondissement_ancien'), @localType)) and @vocabularySource]) = 1
+			or
+			(
+			count(eac:placeEntry[exists(index-of(('voie', 'edifice', 'commune_rattachee', 'paroisse', 'quartier', 'arrondissement_actuel', 'arrondissement_ancien'), @localType)) and @vocabularySource]) > 1
+			and
+			count(eac:placeEntry[@localType = 'voie' and @vocabularySource]) = 1
+			)
+		)
+	]">
+		<rico:thingIsSourceOfRelationToPlace>
+         <rico:RelationToPlace>
+            <rico:relationToPlaceHasSource>
+            	<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
+            </rico:relationToPlaceHasSource>
+            <rico:relationToPlaceHasTarget>
+            	<xsl:choose>
+            		<xsl:when test="not(contains(lower-case(eac:placeEntry[@localType='nomLieu']), 'indéterminé'))">
+            			<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-Place(eac:placeEntry[@localType='nomLieu']/text())" /></xsl:call-template>
+            		</xsl:when>
+            		<xsl:otherwise>
+            			<rico:Place>
+            				<rdfs:label xml:lang="{$LITERAL_LANG}">Lieu dont l'adresse précise est indéterminée</rdfs:label>
+            				<xsl:apply-templates select="eac:placeEntry" mode="hasLocation" />
+            			</rico:Place>
+            		</xsl:otherwise>
+            	</xsl:choose>            	
+            </rico:relationToPlaceHasTarget>
+            
+            <!--  dates + descriptiveNote -->
+      		<xsl:apply-templates />
+         </rico:RelationToPlace>
+      </rico:thingIsSourceOfRelationToPlace>
+	</xsl:template>
+	
+	<!--  Case 6 in the unit tests -->
+	<xsl:template match="eac:place[
+		eac:placeRole = 'Lieu de Paris' and
+		not(eac:placeEntry/@localType='nomLieu') and
+		count(eac:placeEntry[exists(index-of(('voie', 'edifice', 'commune_rattachee', 'paroisse', 'quartier', 'arrondissement_actuel', 'arrondissement_ancien'), @localType)) and @vocabularySource]) = 1
+	]">
+	
+		<xsl:variable name="placeEntry" select="eac:placeEntry[exists(index-of(('voie', 'edifice', 'commune_rattachee', 'paroisse', 'quartier', 'arrondissement_actuel', 'arrondissement_ancien'), @localType)) and @vocabularySource]" />
+	
+		<!-- Output a warning -->
+		<xsl:value-of select="eac2rico:warning($recordId, 'PLACE_WITHOUT_NOMLIEU_WITH_SINGLE_REFERENCE_TO_AUTHORITY_LIST', concat('''', $placeEntry/@localType, '''=', $placeEntry/@vocabularySource))" />
+	
+		<rico:thingIsSourceOfRelationToPlace>
+         <rico:RelationToPlace>
+            <rico:relationToPlaceHasSource>
+            	<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
+            </rico:relationToPlaceHasSource>
+            <rico:relationToPlaceHasTarget>
+            	<xsl:call-template name="rdf-resource">
+					<xsl:with-param name="uri" select="eac2rico:URI-Place-hasLocation($placeEntry/@vocabularySource, $placeEntry/@localType)" />
+				</xsl:call-template>            	
+            </rico:relationToPlaceHasTarget>
+            
+            <!--  dates + descriptiveNote -->
+      		<xsl:apply-templates />
+         </rico:RelationToPlace>
+      </rico:thingIsSourceOfRelationToPlace>
+	</xsl:template>
+
+
+	<!--  Case 7 and 8 in the unit tests -->
+	<xsl:template match="eac:place[
+		eac:placeRole = 'Lieu de Paris' and
+		eac:placeEntry/@localType='nomLieu' and
+		count(eac:placeEntry[exists(index-of(('voie', 'edifice', 'commune_rattachee', 'paroisse', 'quartier', 'arrondissement_actuel', 'arrondissement_ancien'), @localType)) and @vocabularySource]) = 0
+	]">
+		<!-- Output a warning -->
+		<xsl:value-of select="eac2rico:warning($recordId, 'PLACE_WITHOUT_REFERENCE_TO_AUTHORITY_LIST', concat('nomLieu=''', eac:placeEntry[@localType='nomLieu'] ,''''))" />
+	</xsl:template>
+	
+	<!--  Case 5 in the unit tests -->
+	<xsl:template match="eac:place[
+		eac:placeRole = 'Lieu de Paris' and
+		eac:placeEntry/@localType='nomLieu' and
+		count(eac:placeEntry[@localType = 'voie' and @vocabularySource]) > 1
+	]">
+		<!-- Output a warning -->
+		<xsl:variable name="voieLabels" select="string-join(eac:placeEntry[@localType = 'voie' and @vocabularySource]/text(), ', ')" />
+		<xsl:value-of select="eac2rico:warning($recordId, 'PLACE_WITH_MORE_THAN_ONE_VOIE', $voieLabels)" />
+	</xsl:template>
+	
+	<xsl:template match="eac:place[
+		eac:placeRole = 'Lieu de Paris' and
+		eac:placeEntry/@localType='nomLieu' and
+		not(contains(lower-case(eac:placeEntry[@localType='nomLieu']), 'indéterminé')) and
+		(
+			count(eac:placeEntry[exists(index-of(('voie', 'edifice', 'commune_rattachee', 'paroisse', 'quartier', 'arrondissement_actuel', 'arrondissement_ancien'), @localType)) and @vocabularySource]) = 1
+			or
+			(
+			count(eac:placeEntry[exists(index-of(('voie', 'edifice', 'commune_rattachee', 'paroisse', 'quartier', 'arrondissement_actuel', 'arrondissement_ancien'), @localType)) and @vocabularySource]) > 1
+			and
+			count(eac:placeEntry[exists(index-of(('voie'), @localType)) and @vocabularySource]) = 1
+			)
+		)
+	]"
+	mode="relations">
+	   <rico:Place>
+	   	  <xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-Place(eac:placeEntry[@localType='nomLieu']/text())" /></xsl:call-template>
+	      <rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="eac:placeEntry[@localType='nomLieu']/text()" /></rdfs:label>
+	      <xsl:apply-templates select="eac:placeEntry" mode="hasLocation" />
+	   </rico:Place>
+	</xsl:template>
+	
+	<xsl:template 
+		match="eac:placeEntry[exists(index-of(('voie', 'edifice', 'commune_rattachee', 'paroisse', 'quartier', 'arrondissement_actuel', 'arrondissement_ancien'), @localType)) and @vocabularySource]"
+		mode="hasLocation"	
+	>
+		<rico:hasLocation>
+			<xsl:call-template name="rdf-resource">
+				<xsl:with-param name="uri" select="eac2rico:URI-Place-hasLocation(@vocabularySource, @localType)" />
+			</xsl:call-template>
+		</rico:hasLocation>
+	</xsl:template>
 
 	<!-- Processing of formatting elements p, list, item, span -->
 	

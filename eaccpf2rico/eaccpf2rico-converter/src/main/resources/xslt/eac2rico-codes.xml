@@ -15,4 +15,13 @@
 	<Code code="RELATION_SUCCESSFULLY_DEDUPLICATED" level="warning">
 		<message xml:lang="en">Relation was sucessfully deduplicated</message>
 	</Code>
+	<Code code="PLACE_WITH_MORE_THAN_ONE_VOIE" level="warning">
+		<message xml:lang="en">Found place with more than one voie</message>
+	</Code>
+	<Code code="PLACE_WITHOUT_NOMLIEU_WITH_SINGLE_REFERENCE_TO_AUTHORITY_LIST" level="warning">
+		<message xml:lang="en">Found place without nomLieu but with reference to authority list (still processed)</message>
+	</Code>
+	<Code code="PLACE_WITHOUT_REFERENCE_TO_AUTHORITY_LIST" level="warning">
+		<message xml:lang="en">Found place without reference to authority list</message>
+	</Code>
 </Codes>

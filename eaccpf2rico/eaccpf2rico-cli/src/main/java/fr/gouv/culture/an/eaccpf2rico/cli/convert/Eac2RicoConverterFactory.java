@@ -33,24 +33,32 @@ public class Eac2RicoConverterFactory {
 	private static final String XSLT_PARAMETER_AUTHOR_URI = "AUTHOR_URI";
 	private static final String XSLT_PARAMETER_LITERAL_LANG = "LITERAL_LANG";
 	private static final String XSLT_PARAMETER_INPUT_FOLDER = "INPUT_FOLDER";
+	private static final String XSLT_PARAMETER_VOCABULARY_LEGAL_STATUSES = "VOCABULARY_LEGAL_STATUSES";
+	private static final String XSLT_PARAMETER_VOCABULARY_RULES = "VOCABULARY_RULES";
 	
 	private String baseRdfUri;
 	private String authorUri;
 	private String literalLang;
+	private String vocabularyLegalStatuses;
+	private String vocabularyRules;
 	
 	public Eac2RicoConverterFactory(ArgumentsConvert args) {
-		this(args.getXsltBaseUri(), args.getXsltAuthorUri(), args.getXsltLiteralLang());
+		this(args.getXsltBaseUri(), args.getXsltAuthorUri(), args.getXsltLiteralLang(), args.getXsltVocabularyLegalStatuses(), args.getXsltVocabularyRules());
 	}
 	
 	public Eac2RicoConverterFactory(
 			String baseRdfUri,
 			String authorUri,
-			String literalLang
+			String literalLang,
+			String vocabularyLegalStatuses,
+			String vocabularyRules
 	) {
 		super();
 		this.baseRdfUri = baseRdfUri;
 		this.authorUri = authorUri;
 		this.literalLang = literalLang;
+		this.vocabularyLegalStatuses = vocabularyLegalStatuses;
+		this.vocabularyRules = vocabularyRules;
 	}
 
 	public Eac2RicoConverter createConverter(File xslt, File outputDirectory, File errorDirectory, File inputDirectory) throws Eac2RicoConverterException {
@@ -96,6 +104,12 @@ public class Eac2RicoConverterFactory {
 		if(this.literalLang != null) {
 			transformer.setParameter(XSLT_PARAMETER_LITERAL_LANG, this.literalLang);
 		}
+		if(this.vocabularyLegalStatuses != null) {
+			transformer.setParameter(XSLT_PARAMETER_VOCABULARY_LEGAL_STATUSES, this.vocabularyLegalStatuses);
+		}
+		if(this.vocabularyRules != null) {
+			transformer.setParameter(XSLT_PARAMETER_VOCABULARY_RULES, this.vocabularyRules);
+		}
 		String relativeInputFolder = xslt.getParentFile().toPath().relativize(inputDirectory.toPath()).toString();
 		log.info("Found relative path of input folder from XSLT : {}", relativeInputFolder);
 		transformer.setParameter(XSLT_PARAMETER_INPUT_FOLDER, relativeInputFolder);
@@ -128,7 +142,15 @@ public class Eac2RicoConverterFactory {
 		return c;
 	}
 	
-	public void adaptConverterForArrange(Eac2RicoConverter converter, File arrangeXslt, File deduplicateXslt, File outputAgentsDirectory, File outputRelationsDirectory, File errorDirectory) throws Eac2RicoConverterException {
+	public void adaptConverterForArrange(
+			Eac2RicoConverter converter,
+			File arrangeXslt,
+			File deduplicateXslt,
+			File outputAgentsDirectory,
+			File outputRelationsDirectory,
+			File outputPlacesDirectory,
+			File errorDirectory
+	) throws Eac2RicoConverterException {
 		// create output directory if it does not exists
 		if(!outputAgentsDirectory.exists()) {
 			log.info("Creating output agents directory {}", outputAgentsDirectory.getAbsolutePath());
@@ -154,6 +176,7 @@ public class Eac2RicoConverterFactory {
 		converter.setArrangeTransformer(transformer);
 		converter.setArrangeOutputAgentsDirectory(outputAgentsDirectory);
 		converter.setArrangeOutputRelationsDirectory(outputRelationsDirectory);
+		converter.setArrangeOutputPlacesDirectory(outputPlacesDirectory);
 		
 		Transformer deduplicateTransformer;
 		try {

@@ -31,14 +31,17 @@
                 <include>${project.groupId}:eaccpf2rico-cli:jar:onejar:${project.version}</include>
             </includes>
         </dependencySet>
-        <!-- copy the 'xslt' directory in the zip -->
+        <!-- copy the 'xslt' and 'vocabularies' directory in the zip -->
         <dependencySet>
             <useProjectArtifact>true</useProjectArtifact>
             <useProjectAttachments>false</useProjectAttachments>
             <outputDirectory>/</outputDirectory>
             <unpack>true</unpack>
             <unpackOptions>
-                <includes><include>xslt/*</include></includes>
+                <includes>
+                	<include>xslt/*</include>
+                	<include>vocabularies/*</include>
+                </includes>
             </unpackOptions>
             <includes>
                 <include>${project.groupId}:eaccpf2rico-cli:jar:onejar:${project.version}</include>

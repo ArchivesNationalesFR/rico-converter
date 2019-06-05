@@ -30,7 +30,7 @@
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
                >1968-12-31</rico:endDate>
             <rico:description rdf:parseType="Literal">
-               <html:p>A note.</html:p>
+               <html:p xml:lang="fr">A note.</html:p>
             </rico:description>
          </rico:RelationToPlace>
       </rico:thingIsSourceOfRelationToPlace>
@@ -46,8 +46,7 @@
          <rico:RelationToPlace>
             <rico:relationToPlaceHasSource rdf:resource="agent/123456"/>
             <rico:relationToPlaceHasTarget> <rico:Place>
-                  <rdfs:label xml:lang="fr">lieu dont l'adresse précise est
-                     indéterminée</rdfs:label>
+                  <rdfs:label xml:lang="fr">Lieu dont l'adresse précise est indéterminée</rdfs:label>
                   <rico:hasLocation rdf:resource="place/FRAN_RI_020-d3nyv28v37--w6fed6mpjd5r"/>
                </rico:Place>
             </rico:relationToPlaceHasTarget> </rico:RelationToPlace>
@@ -80,8 +79,8 @@
    </rico:Place>
    <rico:Place rdf:about="place/au%20March%C3%A9-Neuf">
       <rdfs:label xml:lang="fr">au Marché-Neuf</rdfs:label>
-      <rico:hasLocation rdf:resource="place/FRAN_RI_025-d3nzbx7zqf-v2ieo26jmuhp"/>
-      <rico:hasLocation rdf:resource="place/FRAN_RI_024-d3nyvoxbpe-1o35tgfsdunvx"/>
       <rico:hasLocation rdf:resource="place/FRAN_RI_024-d3nyvost68-1tq3k980risj5"/>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_024-d3nyvoxbpe-1o35tgfsdunvx"/>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_025-d3nzbx7zqf-v2ieo26jmuhp"/>
    </rico:Place>
 </rdf:RDF>

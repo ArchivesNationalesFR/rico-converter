@@ -19,6 +19,7 @@
 	<xsl:param name="INPUT_FOLDER">/home/thomas/sparna/00-Clients/AN-FlorenceClavaud/02-ConversionNotices/20-Sources/input</xsl:param>
 	<xsl:param name="OUTPUT_AGENTS_FOLDER">agents</xsl:param>
 	<xsl:param name="OUTPUT_RELATIONS_FOLDER">relations</xsl:param>
+	<xsl:param name="OUTPUT_PLACES_FOLDER">places</xsl:param>
 
 
 	<!-- Match the root of dummy input file -->
@@ -55,19 +56,32 @@
 			</rdf:RDF>
 		</xsl:result-document>
 
-		<!-- Generate a single output document to gather rico:AgentRelation... -->
-		<xsl:message>Arranging rico:AgentRelation...</xsl:message>	
-		<xsl:result-document href="{concat($OUTPUT_RELATIONS_FOLDER, '/', 'FRAN_agentRelations.xml')}" method="xml" encoding="utf-8" indent="yes">
+		<!-- Generate a single output document to gather rico:AgentMembershipRelation... -->
+		<xsl:message>Arranging rico:AgentMembershipRelation...</xsl:message>
+		<xsl:result-document href="{concat($OUTPUT_RELATIONS_FOLDER, '/', 'FRAN_agentMembershipRelations.xml')}" method="xml" encoding="utf-8" indent="yes">
 			<rdf:RDF>
 				<xsl:attribute name="xml:base" select="$BASE_URI" />
 				<!-- Iterate again... -->
 				<xsl:for-each select="$inputCollection">		
-					<!-- Collect all nodes rico:AgentRelations -->
-					<xsl:apply-templates select="rdf:RDF/rico:AgentRelation" mode="copyMe"/>						
+					<!-- Collect all nodes rico:AgentTemporalRelation -->
+					<xsl:apply-templates select="rdf:RDF/rico:AgentMembershipRelation" mode="copyMe"/>						
 				</xsl:for-each>
 			</rdf:RDF>
 		</xsl:result-document>
 		
+		<!-- Generate a single output document to gather rico:ProfessionalRelation... -->
+		<xsl:message>Arranging rico:ProfessionalRelation...</xsl:message>
+		<xsl:result-document href="{concat($OUTPUT_RELATIONS_FOLDER, '/', 'FRAN_professionalRelations.xml')}" method="xml" encoding="utf-8" indent="yes">
+			<rdf:RDF>
+				<xsl:attribute name="xml:base" select="$BASE_URI" />
+				<!-- Iterate again... -->
+				<xsl:for-each select="$inputCollection">		
+					<!-- Collect all nodes rico:ProfessionalRelation -->
+					<xsl:apply-templates select="rdf:RDF/rico:ProfessionalRelation" mode="copyMe"/>						
+				</xsl:for-each>
+			</rdf:RDF>
+		</xsl:result-document>
+
 		<!-- Generate a single output document to gather rico:FamilyRelation... -->
 		<xsl:message>Arranging rico:FamilyRelation...</xsl:message>
 		<xsl:result-document href="{concat($OUTPUT_RELATIONS_FOLDER, '/', 'FRAN_familyRelations.xml')}" method="xml" encoding="utf-8" indent="yes">
@@ -81,22 +95,56 @@
 			</rdf:RDF>
 		</xsl:result-document>
 
+		<!-- Generate a single output document to gather rico:AgentRelation... -->
+		<xsl:message>Arranging rico:AgentRelation...</xsl:message>	
+		<xsl:result-document href="{concat($OUTPUT_RELATIONS_FOLDER, '/', 'FRAN_agentRelations.xml')}" method="xml" encoding="utf-8" indent="yes">
+			<rdf:RDF>
+				<xsl:attribute name="xml:base" select="$BASE_URI" />
+				<!-- Iterate again... -->
+				<xsl:for-each select="$inputCollection">		
+					<!-- Collect all nodes rico:AgentRelations -->
+					<xsl:apply-templates select="rdf:RDF/rico:AgentRelation" mode="copyMe"/>						
+				</xsl:for-each>
+			</rdf:RDF>
+		</xsl:result-document>
+
+		<!-- Generate a single output document to gather rico:Place... -->
+		<xsl:message>Arranging rico:Place...</xsl:message>	
+		<xsl:result-document href="{concat($OUTPUT_PLACES_FOLDER, '/', 'FRAN_places.xml')}" method="xml" encoding="utf-8" indent="yes">
+			<rdf:RDF>
+				<xsl:attribute name="xml:base" select="$BASE_URI" />
+				<!-- Iterate again... -->
+				<xsl:for-each select="$inputCollection">		
+					<!-- Collect all nodes rico:Place -->
+					<xsl:apply-templates select="rdf:RDF/rico:Place" mode="copyMe"/>						
+				</xsl:for-each>
+			</rdf:RDF>
+		</xsl:result-document>
+
 		<!-- Iterate on each file in the input folder... -->
-		<xsl:message>Copying files excluding relations...</xsl:message>
+		<xsl:message>Copying files excluding relations and places...</xsl:message>
 		<xsl:for-each select="$inputCollection">	
 			<!-- Generate a document with the same name in the output folder -->	
 			<xsl:result-document href="{concat($OUTPUT_AGENTS_FOLDER, '/', tokenize(document-uri(.),'/')[last()])}" method="xml" encoding="utf-8" indent="yes">
-				<!-- Copy everything except relations in that document -->
-				<xsl:apply-templates mode="copyAllExceptRelations"/>
+				<!-- Copy everything except relations in that document, and places -->
+				<xsl:apply-templates mode="copyAllExceptRelationsAndPlaces"/>
 			</xsl:result-document>
 		</xsl:for-each>
 		
 	</xsl:template>
 	
-	<xsl:template match="*" mode="copyAllExceptRelations">
+	<xsl:template match="*" mode="copyAllExceptRelationsAndPlaces">
 		<xsl:copy>
 			<xsl:copy-of select="attribute::*"/>
-			<xsl:copy-of select="node()[not(self::rico:AgentRelation) and not(self::rico:AgentHierarchicalRelation) and not(self::rico:AgentTemporalRelation) and not(self::rico:FamilyRelation)]"/>
+			<xsl:copy-of select="node()[
+				not(self::rico:AgentRelation) and
+				not(self::rico:AgentHierarchicalRelation) and
+			 	not(self::rico:AgentTemporalRelation) and
+			 	not(self::rico:FamilyRelation) and
+			 	not(self::rico:AgentMembershipRelation) and
+			 	not(self::rico:ProfessionalRelation) and
+			 	not(self::rico:Place)
+			]"/>
 		</xsl:copy>
 	</xsl:template>
 	

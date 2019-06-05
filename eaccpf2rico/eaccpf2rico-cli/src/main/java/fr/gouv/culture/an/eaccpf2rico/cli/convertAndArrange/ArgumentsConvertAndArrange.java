@@ -68,6 +68,14 @@ public class ArgumentsConvertAndArrange extends ArgumentsConvert {
 	)
 	protected String relationsSubfolder = "relations";
 	
+	@Parameter(
+			names = { "output_places" },
+			description = "The subfolder of the output directory where places output files will be written. "
+					+ "If not set, defaults to 'places'",
+			required = false
+	)
+	protected String placesSubfolder = "places";
+	
 	public File getXsltArrange() {
 		return xsltArrange;
 	}
@@ -94,6 +102,10 @@ public class ArgumentsConvertAndArrange extends ArgumentsConvert {
 
 	public String getRelationsSubfolder() {
 		return relationsSubfolder;
+	}
+	
+	public String getPlacesSubfolder() {
+		return placesSubfolder;
 	}
 
 	public void setRelationsSubfolder(String relationsSubfolder) {

@@ -59,6 +59,11 @@ public class Eac2RicoConverter {
 	protected File arrangeOutputRelationsDirectory;
 	
 	/**
+	 * Path to output directory for places files
+	 */
+	protected File arrangeOutputPlacesDirectory;
+	
+	/**
 	 * The XSLT transformer to group relations
 	 */
 	protected Transformer arrangeTransformer;
@@ -131,6 +136,7 @@ public class Eac2RicoConverter {
 		this.arrangeTransformer.setParameter("INPUT_FOLDER", this.convertOutputDirectory.toURI());
 		this.arrangeTransformer.setParameter("OUTPUT_AGENTS_FOLDER", this.arrangeOutputAgentsDirectory.toURI());
 		this.arrangeTransformer.setParameter("OUTPUT_RELATIONS_FOLDER", this.arrangeOutputRelationsDirectory.toURI());
+		this.arrangeTransformer.setParameter("OUTPUT_PLACES_FOLDER", this.arrangeOutputPlacesDirectory.toURI());
 
 		try {
 			this.notifyStartArrange();
@@ -373,6 +379,14 @@ public class Eac2RicoConverter {
 
 	public void setDeduplicateTransformer(Transformer deduplicateTransformer) {
 		this.deduplicateTransformer = deduplicateTransformer;
+	}
+
+	public File getArrangeOutputPlacesDirectory() {
+		return arrangeOutputPlacesDirectory;
+	}
+
+	public void setArrangeOutputPlacesDirectory(File arrangeOutputPlacesDirectory) {
+		this.arrangeOutputPlacesDirectory = arrangeOutputPlacesDirectory;
 	}
 	
 }

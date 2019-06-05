@@ -2,7 +2,9 @@
 <projectDescription>
   <name>eaccpf2rico-cli</name>
   <comment>Command-line Tool to convert EAC-CPF XML files to RiC-O RDF files (Records in Context). NO_M2ECLIPSE_SUPPORT: Project files created with the maven-eclipse-plugin are not supported in M2Eclipse.</comment>
-  <projects/>
+  <projects>
+    <project>eaccpf2rico-converter</project>
+  </projects>
   <buildSpec>
     <buildCommand>
       <name>org.eclipse.jdt.core.javabuilder</name>

@@ -26,7 +26,7 @@ set /p command=Enter command to execute (convert_arrange, convert, test, version
 SET parameterFile=parameters/%command%.properties
 set /p parameterFile=Enter parameter file location [press enter for "%parameterFile%"]:
 
-SET fullCommandLine=java -jar eaccpf2rico-cli-${project.version}-onejar.jar %command% @%parameterFile%
+SET fullCommandLine=java -Xmx2048M -Xms1024M -jar eaccpf2rico-cli-${project.version}-onejar.jar %command% @%parameterFile%
 ECHO %fullCommandLine%
 %fullCommandLine%
 pause
