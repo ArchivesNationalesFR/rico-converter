@@ -22,7 +22,10 @@ public class SaxonErrorListener implements ErrorListener {
 
 	@Override
 	public void warning(TransformerException exception) throws TransformerException {
-		log.warn(exception.getMessage(), exception.getException());
+		// these are reported separately in dedicated messages, easier to process than the stacktraces
+		if(!exception.getMessage().startsWith("I/O error reported by XML parser") && !exception.getMessage().startsWith("Document has been marked not available")) {
+			log.warn(exception.getMessage(), exception.getException());
+		}
 	}
 
 }

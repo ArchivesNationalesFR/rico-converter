@@ -390,8 +390,8 @@
 	<xsl:template match="eac:source[eac:sourceEntry]">			
 		<xsl:choose>
 			<!--  if sourceEntry is an http URI, generates a rico:hasSource -->
-			<xsl:when test="starts-with(eac:sourceEntry,'http')">
-				<rico:hasSource rdf:resource="{eac:sourceEntry}" />
+			<xsl:when test="starts-with(eac:sourceEntry,'http') and not(contains(eac:sourceEntry, ' '))">
+				<rico:hasSource rdf:resource="{normalize-space(eac:sourceEntry)}" />
 			</xsl:when>
 			<!-- Otherwise, generates a rico:source -->
 			<xsl:otherwise>
@@ -404,7 +404,7 @@
 						<xsl:otherwise>
 							<xsl:value-of select="normalize-space(eac:sourceEntry)" />
 						</xsl:otherwise>
-					</xsl:choose>					
+					</xsl:choose>
 					<xsl:if test="@xlink:href[normalize-space(.) != '']">
                         <xsl:value-of select="concat(' (', normalize-space(@xlink:href), ')')"/>
                     </xsl:if>
@@ -506,17 +506,17 @@
 	</xsl:template>
 	<xsl:template match="eac:legalStatus[not(eac:dateRange/eac:fromDate) and not(eac:dateRange/eac:toDate) and not(eac:descriptiveNote)]">
 		<xsl:if test="not(eac:term/@vocabularySource)">
-			<xsl:value-of select="eac2rico:warning($recordId, 'MISSING_VOCABULARYSOURCE_ON_LEGAL_STATUS', .)" />
+			<xsl:value-of select="eac2rico:warning($recordId, 'MISSING_VOCABULARYSOURCE_ON_LEGAL_STATUS', ./eac:term/text())" />
 		</xsl:if>
 		<rico:hasLegalStatus><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-LegalStatus(eac:term/@vocabularySource)" /></xsl:call-template></rico:hasLegalStatus>
 	</xsl:template>
 	<xsl:template match="eac:legalStatus[eac:dateRange/eac:fromDate or eac:dateRange/eac:toDate or eac:descriptiveNote]">
 		<xsl:if test="not(eac:term/@vocabularySource)">
-			<xsl:value-of select="eac2rico:warning($recordId, 'MISSING_VOCABULARYSOURCE_ON_LEGAL_STATUS', .)" />
+			<xsl:value-of select="eac2rico:warning($recordId, 'MISSING_VOCABULARYSOURCE_ON_LEGAL_STATUS', ./eac:term/text())" />
 		</xsl:if>
 		
 		<rico:thingIsSourceOfRelationToType>
-			<rico:RelationToType rdf:about="relationToType/005061-d5blonaxbw--1mt8t42bokzts-18500101-20061223">
+			<rico:RelationToType>
 				<xsl:call-template name="rdf-about">
 	        		<xsl:with-param name="uri" select="eac2rico:URI-RelationToType(
 	        			$recordId,
@@ -546,20 +546,38 @@
 	
 	<!-- cpfRelation cpfRelationType ='identity' -->
 	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'identity']">
-        <owl:sameAs>
-        	<xsl:call-template name="rdf-resource"><xsl:with-param name="uri">
-        		<xsl:call-template name="URI-cpfRelationIdentity">
-        			<xsl:with-param name="lnk" select="normalize-space(@xlink:href)" />
-        			<xsl:with-param name="entityType" select="/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType" />
-        		</xsl:call-template>
-        	</xsl:with-param></xsl:call-template>
-        </owl:sameAs>
+		<xsl:choose>
+			<xsl:when test="starts-with(normalize-space(@xlink:href), 'http') and not(contains(@xlink:href, ' '))">
+				<owl:sameAs>
+		        	<xsl:call-template name="rdf-resource"><xsl:with-param name="uri">
+		        		<xsl:call-template name="URI-cpfRelationIdentity">
+		        			<xsl:with-param name="lnk" select="normalize-space(@xlink:href)" />
+		        			<xsl:with-param name="entityType" select="/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType" />
+		        		</xsl:call-template>
+		        	</xsl:with-param></xsl:call-template>
+		        </owl:sameAs>
+			</xsl:when>
+			<xsl:otherwise>
+		        <xsl:value-of select="eac2rico:warning($recordId, 'INVALID_URL_IN_HREF', normalize-space(@xlink:href))" />		
+			</xsl:otherwise>
+		</xsl:choose>
+
 	</xsl:template>
 	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'identity']" mode="description">
         <xsl:if test="contains(@xlink:href, 'wikipedia.org')">
         	<rdfs:seeAlso rdf:resource="{@xlink:href}" />
         </xsl:if>
 	</xsl:template>	
+	
+	<!-- Output a warning for relations where href is not found -->
+	<xsl:template match="eac:cpfRelation[
+		exists(index-of(('hierarchical-child', 'hierarchical-parent', 'associative', 'family', 'temporal-later', 'temporal-earlier'), @cpfRelationType))
+		and
+		not(document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml')))
+	]">
+		<xsl:value-of select="eac2rico:warning($recordId, 'HREF_FILE_NOT_FOUND', concat($INPUT_FOLDER, '/', @xlink:href, '.xml'))" />
+	</xsl:template>			
+	
 	
 	<!-- cpfRelation cpfRelationType ='hierarchical-child' -->
 	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'hierarchical-child' and document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml'))]">
@@ -965,6 +983,7 @@
 	<!-- Place in Paris -->
 	
 	<!--  Case 1, 2, 3 and 4 in the unit tests -->
+	<!-- Either there is a single reference to an entry in the authority lists, or there are multiple ones, but only one of type 'voie' -->
 	<xsl:template match="eac:place[
 		eac:placeRole = 'Lieu de Paris' and
 		eac:placeEntry/@localType='nomLieu' and
@@ -985,7 +1004,8 @@
             </rico:relationToPlaceHasSource>
             <rico:relationToPlaceHasTarget>
             	<xsl:choose>
-            		<xsl:when test="not(contains(lower-case(eac:placeEntry[@localType='nomLieu']), 'indéterminé'))">
+            		<!-- Match on indéterminé without accents -->
+            		<xsl:when test="not(contains(replace(normalize-unicode(lower-case(eac:placeEntry[@localType='nomLieu']),'NFKD'),'\P{IsBasicLatin}',''), 'indetermine'))">
             			<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-Place(eac:placeEntry[@localType='nomLieu']/text())" /></xsl:call-template>
             		</xsl:when>
             		<xsl:otherwise>
@@ -1001,6 +1021,9 @@
       		<xsl:apply-templates />
          </rico:RelationToPlace>
       </rico:thingIsSourceOfRelationToPlace>
+      
+      <!-- Additionnally, generate the direct link hasLocation to the referential -->
+      <xsl:apply-templates select="eac:placeEntry" mode="hasLocation" />
 	</xsl:template>
 	
 	<!--  Case 6 in the unit tests -->
@@ -1030,6 +1053,9 @@
       		<xsl:apply-templates />
          </rico:RelationToPlace>
       </rico:thingIsSourceOfRelationToPlace>
+      
+      <!-- Additionnally, generate the direct link hasLocation to the referential -->
+      <xsl:apply-templates select="eac:placeEntry" mode="hasLocation" />
 	</xsl:template>
 
 
@@ -1054,10 +1080,12 @@
 		<xsl:value-of select="eac2rico:warning($recordId, 'PLACE_WITH_MORE_THAN_ONE_VOIE', $voieLabels)" />
 	</xsl:template>
 	
+	<!-- Generates the rico:Place instance -->
+	<!-- Note that the test on "indetermine" is the same as above. This should not be produced when the nomLieu contains "indéterminé" -->
 	<xsl:template match="eac:place[
 		eac:placeRole = 'Lieu de Paris' and
 		eac:placeEntry/@localType='nomLieu' and
-		not(contains(lower-case(eac:placeEntry[@localType='nomLieu']), 'indéterminé')) and
+		not(contains(replace(normalize-unicode(lower-case(eac:placeEntry[@localType='nomLieu']),'NFKD'),'\P{IsBasicLatin}',''), 'indetermine')) and
 		(
 			count(eac:placeEntry[exists(index-of(('voie', 'edifice', 'commune_rattachee', 'paroisse', 'quartier', 'arrondissement_actuel', 'arrondissement_ancien'), @localType)) and @vocabularySource]) = 1
 			or

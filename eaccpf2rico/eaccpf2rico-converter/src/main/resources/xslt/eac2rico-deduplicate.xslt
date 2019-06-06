@@ -28,6 +28,31 @@
 			<xsl:apply-templates />
 		</xsl:copy>
 	</xsl:template>
+
+	<xsl:template match="rdf:RDF/rico:Place" priority="2">
+		<xsl:variable name="thisUri" select="@rdf:about" />
+		<xsl:variable name="thePlace" select="." />
+		<xsl:choose>
+
+			<!-- copy only if it is the first element in the file -->
+			<xsl:when test="count(preceding-sibling::*[@rdf:about = $thisUri]) = 0">
+				<rico:Place rdf:about="{@rdf:about}">
+					<xsl:copy-of select="rdfs:label" />
+					<xsl:copy-of select="rico:hasLocation" />
+					<xsl:for-each select="/rdf:RDF/rico:Place[@rdf:about = $thisUri and count(preceding-sibling::rico:Place[@rdf:about = $thisUri]) > 0]/rico:hasLocation">
+						<xsl:variable name="theOtherLocation" select="." />
+						<xsl:if test="not($thePlace/rico:hasLocation[@rdf:resource = $theOtherLocation/@rdf:resource])">
+							<xsl:value-of select="eac2rico:warning('', 'MERGE_ADDITIONAL_LOCATION_ON_PLACE', concat($thisUri, ' : ', $theOtherLocation/@rdf:resource))" />
+							<xsl:copy-of select="." />
+						</xsl:if>
+					</xsl:for-each>	
+				</rico:Place>
+			</xsl:when>
+			<xsl:otherwise>
+			
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
 	
 	<xsl:template match="rdf:RDF/*">
 		<xsl:variable name="thisUri" select="@rdf:about" />
@@ -46,7 +71,7 @@
 						<xsl:value-of select="eac2rico:warning('', 'MORE_THAN_TWO_RELATIONS', $thisUri)" />
 					</xsl:when>
 					<xsl:otherwise>
-						<xsl:value-of select="eac2rico:warning('', 'RELATION_SUCCESSFULLY_DEDUPLICATED', $thisUri)" />
+<!-- 						<xsl:value-of select="eac2rico:warning('', 'RELATION_SUCCESSFULLY_DEDUPLICATED', $thisUri)" /> -->
 					</xsl:otherwise>
 				</xsl:choose>				
 			</xsl:when>

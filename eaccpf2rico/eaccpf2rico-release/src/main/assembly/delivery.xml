@@ -74,14 +74,20 @@
           <filtered>false</filtered>
           <outputDirectory>/</outputDirectory>
           <directory>src/main/resources/</directory>
-          <excludes><exclude>eaccpf2rico.bat</exclude></excludes>
+          <excludes>
+            <exclude>eaccpf2rico.bat</exclude>
+            <exclude>eaccpf2rico.sh</exclude>
+          </excludes>
         </fileSet>
         <fileSet>
           <!-- remplace les placeholders par les valeurs du build -->
           <filtered>true</filtered>
           <outputDirectory>/</outputDirectory>
           <directory>src/main/resources</directory>
-          <includes><include>eaccpf2rico.bat</include></includes>
+          <includes>
+            <include>eaccpf2rico.bat</include>
+            <include>eaccpf2rico.sh</include>
+          </includes>
         </fileSet>
         <!-- copy the input-50 into input -->
         <fileSet>

@@ -153,7 +153,6 @@
 		<xsl:choose>
 			<!-- If there is an @xlink:arcrole, it has priority to determine the orientation of the relation, if it is not unspecified -->
 			<xsl:when test="$relation/@xlink:arcrole and $KEYWORDS/AgentRelation/*[local-name() = $type]/Arcroles/Arcrole[@currentEntityRole != 'unspecified']">
-				<xsl:message>Relation has an arcrole with value <xsl:value-of select="$relation/@xlink:arcrole" /> and $type is <xsl:value-of select="$type" /></xsl:message>
 				<xsl:choose>
 					<xsl:when test="$relation/@xlink:arcrole = $KEYWORDS/AgentRelation/*[local-name() = $type]/Arcroles/Arcrole[@currentEntityRole = 'source']">
 			    		<xsl:value-of select="$agentUri" />
@@ -259,7 +258,7 @@
 			<sourceProperty>rico:agentMembershipRelationHasSource</sourceProperty>
 			<isTargetOfProperty>rico:groupIsTargetOfAgentMembershipRelation</isTargetOfProperty>
 			<isSourceOfProperty>rico:personIsSourceOfAgentMembershipRelation</isSourceOfProperty>
-			<label>Relation familiale</label>
+			<label>Relation d'appartenance</label>
 		</AgentMembershipRelation>
 		<AgentRelation>
 			<type>rico:AgentRelation</type>

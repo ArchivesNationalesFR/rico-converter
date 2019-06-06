@@ -3,6 +3,9 @@
 	<Code code="MISSING_RECORD_ID" level="error">
 		<message xml:lang="en">recordId not found</message>
 	</Code>
+	<Code code="HREF_FILE_NOT_FOUND" level="warning">
+		<message xml:lang="en">Cannot find file in input folder referenced by a @xlink:href</message>
+	</Code>
 	<Code code="MISSING_VOCABULARYSOURCE_ON_LEGAL_STATUS" level="warning">
 		<message xml:lang="en">Missing @vocabularySource on legalStatus</message>
 	</Code>
@@ -23,5 +26,8 @@
 	</Code>
 	<Code code="PLACE_WITHOUT_REFERENCE_TO_AUTHORITY_LIST" level="warning">
 		<message xml:lang="en">Found place without reference to authority list</message>
+	</Code>
+	<Code code="INVALID_URL_IN_HREF" level="warning">
+		<message xml:lang="en">Found an unexpected URL in an @xlink:href</message>
 	</Code>
 </Codes>

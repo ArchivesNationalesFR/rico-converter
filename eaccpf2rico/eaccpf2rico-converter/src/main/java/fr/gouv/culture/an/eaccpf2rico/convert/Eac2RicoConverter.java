@@ -149,10 +149,12 @@ public class Eac2RicoConverter {
 		
 		
 		File relationsBeforeDeduplicateFolder = new File(this.arrangeOutputRelationsDirectory.getParent(), this.arrangeOutputRelationsDirectory.getName()+"-before-deduplicate");
+		File placesBeforeDeduplicateFolder = new File(this.arrangeOutputPlacesDirectory.getParent(), this.arrangeOutputPlacesDirectory.getName()+"-before-deduplicate");
 		try {
-			log.info("Backing up relations folder...");
+			log.info("Backing up relations and places folder...");
 			// back up relations folder
 			FileUtils.copyDirectory(this.arrangeOutputRelationsDirectory, relationsBeforeDeduplicateFolder);
+			FileUtils.copyDirectory(this.arrangeOutputPlacesDirectory, placesBeforeDeduplicateFolder);
 		} catch (IOException e1) {
 			throw new Eac2RicoConverterException(ErrorCode.DIRECTORY_OR_FILE_HANDLING_EXCEPTION, e1);
 		}
@@ -165,6 +167,19 @@ public class Eac2RicoConverter {
 				File outputFile = new File(this.arrangeOutputRelationsDirectory, aRelationFile.getName());
 				try(FileOutputStream fos = new FileOutputStream(outputFile)) {
 					this.deduplicateTransformer.transform(new StreamSource(new FileInputStream(aRelationFile)), new StreamResult(fos));
+				} catch (TransformerException e) {
+					throw new Eac2RicoConverterException(ErrorCode.XSLT_TRANSFORM_ERROR, e);
+				} catch (FileNotFoundException e1) {
+					throw new Eac2RicoConverterException(ErrorCode.DIRECTORY_OR_FILE_HANDLING_EXCEPTION, e1);
+				} catch (IOException e1) {
+					throw new Eac2RicoConverterException(ErrorCode.DIRECTORY_OR_FILE_HANDLING_EXCEPTION, e1);
+				}
+			}
+			for (File aPlaceFile : placesBeforeDeduplicateFolder.listFiles()) {
+				log.info("Deduplicate "+aPlaceFile.getName()+"...");
+				File outputFile = new File(this.arrangeOutputPlacesDirectory, aPlaceFile.getName());
+				try(FileOutputStream fos = new FileOutputStream(outputFile)) {
+					this.deduplicateTransformer.transform(new StreamSource(new FileInputStream(aPlaceFile)), new StreamResult(fos));
 				} catch (TransformerException e) {
 					throw new Eac2RicoConverterException(ErrorCode.XSLT_TRANSFORM_ERROR, e);
 				} catch (FileNotFoundException e1) {

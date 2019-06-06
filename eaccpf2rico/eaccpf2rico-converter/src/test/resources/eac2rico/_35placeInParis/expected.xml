@@ -34,6 +34,7 @@
             </rico:description>
          </rico:RelationToPlace>
       </rico:thingIsSourceOfRelationToPlace>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_025-d3nzdlud4x--106llaae0lz0b"/>
       <!-- case 2 -->
       <rico:thingIsSourceOfRelationToPlace>
          <rico:RelationToPlace>
@@ -41,6 +42,7 @@
             <rico:relationToPlaceHasTarget rdf:resource="place/24%2C%20rue%20La%20Fayette"/>
          </rico:RelationToPlace>
       </rico:thingIsSourceOfRelationToPlace>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_025-d3nzbmscto--2k2q239mkocu"/>
       <!-- case 3 -->
       <rico:thingIsSourceOfRelationToPlace>
          <rico:RelationToPlace>
@@ -51,6 +53,7 @@
                </rico:Place>
             </rico:relationToPlaceHasTarget> </rico:RelationToPlace>
       </rico:thingIsSourceOfRelationToPlace>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_020-d3nyv28v37--w6fed6mpjd5r"/>
       <!-- case 4 -->
       <rico:thingIsSourceOfRelationToPlace>
          <rico:RelationToPlace>
@@ -58,6 +61,9 @@
             <rico:relationToPlaceHasTarget rdf:resource="place/au%20March%C3%A9-Neuf"/>
          </rico:RelationToPlace>
       </rico:thingIsSourceOfRelationToPlace>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_024-d3nyvost68-1tq3k980risj5"/>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_024-d3nyvoxbpe-1o35tgfsdunvx"/>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_025-d3nzbx7zqf-v2ieo26jmuhp"/>
       <!-- case 5 : not processed -->
       <!-- case 6 -->
       <rico:thingIsSourceOfRelationToPlace>
@@ -66,6 +72,7 @@
             <rico:relationToPlaceHasTarget rdf:resource="place/FRAN_RI_026-d5bknx4v7j-1wqddent61siy"
             /> </rico:RelationToPlace>
       </rico:thingIsSourceOfRelationToPlace>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_026-d5bknx4v7j-1wqddent61siy"/>
       <!-- cases 7 and 8: not processed -->
    </rico:Agent>
    <!-- the places below should be output in a separated file, like the relations, since they can be referenced to by many place relations -->
