@@ -32,7 +32,7 @@
 		
 		<!-- Generate a single output document to gather rico:AgentHierarchicalRelation... -->
 		<xsl:message>Arranging rico:AgentHierarchicalRelation...</xsl:message>
-		<xsl:result-document href="{concat($OUTPUT_RELATIONS_FOLDER, '/', 'FRAN_agentHierarchicalRelations.xml')}" method="xml" encoding="utf-8" indent="yes">
+		<xsl:result-document href="{concat($OUTPUT_RELATIONS_FOLDER, '/', 'FRAN_agentHierarchicalRelations.rdf')}" method="xml" encoding="utf-8" indent="yes">
 			<rdf:RDF>
 				<xsl:attribute name="xml:base" select="$BASE_URI" />
 				<!-- Iterate again... -->
@@ -45,7 +45,7 @@
 		
 		<!-- Generate a single output document to gather rico:AgentTemporalRelation... -->
 		<xsl:message>Arranging rico:AgentTemporalRelation...</xsl:message>
-		<xsl:result-document href="{concat($OUTPUT_RELATIONS_FOLDER, '/', 'FRAN_agentTemporalRelations.xml')}" method="xml" encoding="utf-8" indent="yes">
+		<xsl:result-document href="{concat($OUTPUT_RELATIONS_FOLDER, '/', 'FRAN_agentTemporalRelations.rdf')}" method="xml" encoding="utf-8" indent="yes">
 			<rdf:RDF>
 				<xsl:attribute name="xml:base" select="$BASE_URI" />
 				<!-- Iterate again... -->
@@ -58,7 +58,7 @@
 
 		<!-- Generate a single output document to gather rico:AgentMembershipRelation... -->
 		<xsl:message>Arranging rico:AgentMembershipRelation...</xsl:message>
-		<xsl:result-document href="{concat($OUTPUT_RELATIONS_FOLDER, '/', 'FRAN_agentMembershipRelations.xml')}" method="xml" encoding="utf-8" indent="yes">
+		<xsl:result-document href="{concat($OUTPUT_RELATIONS_FOLDER, '/', 'FRAN_agentMembershipRelations.rdf')}" method="xml" encoding="utf-8" indent="yes">
 			<rdf:RDF>
 				<xsl:attribute name="xml:base" select="$BASE_URI" />
 				<!-- Iterate again... -->
@@ -71,7 +71,7 @@
 		
 		<!-- Generate a single output document to gather rico:ProfessionalRelation... -->
 		<xsl:message>Arranging rico:ProfessionalRelation...</xsl:message>
-		<xsl:result-document href="{concat($OUTPUT_RELATIONS_FOLDER, '/', 'FRAN_professionalRelations.xml')}" method="xml" encoding="utf-8" indent="yes">
+		<xsl:result-document href="{concat($OUTPUT_RELATIONS_FOLDER, '/', 'FRAN_professionalRelations.rdf')}" method="xml" encoding="utf-8" indent="yes">
 			<rdf:RDF>
 				<xsl:attribute name="xml:base" select="$BASE_URI" />
 				<!-- Iterate again... -->
@@ -84,7 +84,7 @@
 
 		<!-- Generate a single output document to gather rico:FamilyRelation... -->
 		<xsl:message>Arranging rico:FamilyRelation...</xsl:message>
-		<xsl:result-document href="{concat($OUTPUT_RELATIONS_FOLDER, '/', 'FRAN_familyRelations.xml')}" method="xml" encoding="utf-8" indent="yes">
+		<xsl:result-document href="{concat($OUTPUT_RELATIONS_FOLDER, '/', 'FRAN_familyRelations.rdf')}" method="xml" encoding="utf-8" indent="yes">
 			<rdf:RDF>
 				<xsl:attribute name="xml:base" select="$BASE_URI" />
 				<!-- Iterate again... -->
@@ -97,7 +97,7 @@
 
 		<!-- Generate a single output document to gather rico:AgentRelation... -->
 		<xsl:message>Arranging rico:AgentRelation...</xsl:message>	
-		<xsl:result-document href="{concat($OUTPUT_RELATIONS_FOLDER, '/', 'FRAN_agentRelations.xml')}" method="xml" encoding="utf-8" indent="yes">
+		<xsl:result-document href="{concat($OUTPUT_RELATIONS_FOLDER, '/', 'FRAN_agentRelations.rdf')}" method="xml" encoding="utf-8" indent="yes">
 			<rdf:RDF>
 				<xsl:attribute name="xml:base" select="$BASE_URI" />
 				<!-- Iterate again... -->
@@ -110,7 +110,7 @@
 		
 		<!-- Generate a single output document to gather rico:AgentOriginationRelation... -->
 		<xsl:message>Arranging rico:AgentOriginationRelation...</xsl:message>	
-		<xsl:result-document href="{concat($OUTPUT_RELATIONS_FOLDER, '/', 'FRAN_agentOriginationRelations.xml')}" method="xml" encoding="utf-8" indent="yes">
+		<xsl:result-document href="{concat($OUTPUT_RELATIONS_FOLDER, '/', 'FRAN_agentOriginationRelations.rdf')}" method="xml" encoding="utf-8" indent="yes">
 			<rdf:RDF>
 				<xsl:attribute name="xml:base" select="$BASE_URI" />
 				<!-- Iterate again... -->
@@ -123,7 +123,7 @@
 
 		<!-- Generate a single output document to gather rico:Place... -->
 		<xsl:message>Arranging rico:Place...</xsl:message>	
-		<xsl:result-document href="{concat($OUTPUT_PLACES_FOLDER, '/', 'FRAN_places.xml')}" method="xml" encoding="utf-8" indent="yes">
+		<xsl:result-document href="{concat($OUTPUT_PLACES_FOLDER, '/', 'FRAN_places.rdf')}" method="xml" encoding="utf-8" indent="yes">
 			<rdf:RDF>
 				<xsl:attribute name="xml:base" select="$BASE_URI" />
 				<!-- Iterate again... -->

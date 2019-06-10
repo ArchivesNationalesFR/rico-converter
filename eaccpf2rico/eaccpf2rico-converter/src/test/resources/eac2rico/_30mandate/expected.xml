@@ -4,6 +4,7 @@
    xmlns:html="http://www.w3.org/1999/xhtml" xmlns:rico="http://www.ica.org/standards/RiC/ontology#">
    <rico:Description rdf:about="description/123456">
       <rico:describes rdf:resource="agent/123456"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_123456"/>
    </rico:Description>
    <rico:Agent rdf:about="agent/123456">
    	  <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>

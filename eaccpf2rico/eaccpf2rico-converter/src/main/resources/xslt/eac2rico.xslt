@@ -54,6 +54,7 @@
 		<rico:Description>
 			<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-Description(eac:recordId)" /></xsl:call-template>
 			<rico:describes><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template></rico:describes>
+			<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/{/eac:eac-cpf/eac:control/eac:recordId}" />
 			
 			<xsl:apply-templates />
 			<xsl:apply-templates select="../eac:cpfDescription/eac:identity/eac:entityId" mode="description" />

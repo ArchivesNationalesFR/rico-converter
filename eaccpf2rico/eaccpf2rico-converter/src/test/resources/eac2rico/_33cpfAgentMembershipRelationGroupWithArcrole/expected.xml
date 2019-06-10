@@ -5,6 +5,7 @@
    xmlns:owl="http://www.w3.org/2002/07/owl#">
    <rico:Description rdf:about="description/456789">
       <rico:describes rdf:resource="agent/456789"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_456789"/>
    </rico:Description>
    <rico:Agent rdf:about="agent/456789">
       <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>

@@ -25,6 +25,7 @@
 	
 	<xsl:template match="rdf:RDF">
 		<xsl:copy>
+			<xsl:copy select="@*" />
 			<xsl:apply-templates />
 		</xsl:copy>
 	</xsl:template>

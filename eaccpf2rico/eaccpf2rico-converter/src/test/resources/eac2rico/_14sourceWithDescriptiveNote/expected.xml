@@ -1,8 +1,10 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xml:base="http://data.archives-nationales.culture.gouv.fr/"
    xmlns:rico="http://www.ica.org/standards/RiC/ontology#" xmlns:html="http://www.w3.org/1999/xhtml">
    <rico:Description rdf:about="description/000051">
       <rico:describes rdf:resource="agent/000051"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_000051"/>
       <rico:source rdf:parseType="Literal"><html:p xml:lang="fr">Dardy-Cretin Michèle,
                <html:i>Histoire administrative du Ministère de la culture et de la communication, 1959-2012 : les services de l'administration centrale</html:i>, Paris, Comité d'histoire du Ministère de la Culture, 2012. </html:p></rico:source>
       <rico:source rdf:parseType="Literal"><html:p xml:lang="fr">Site Internet du ministère de la Culture et de la Communication. Disponible à l'adresse suivante : http://www.culturecommunication.gouv.fr/</html:p></rico:source>
