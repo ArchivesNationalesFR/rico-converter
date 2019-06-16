@@ -79,7 +79,7 @@
                     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
                     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
 
-                    <skos:conceptScheme>
+                    <skos:ConceptScheme>
                         <xsl:attribute name="rdf:about">
                             <xsl:value-of select="concat($baseURL, $path, 's')"/>
                         </xsl:attribute>
@@ -117,7 +117,7 @@
                                 </xsl:attribute>
                             </skos:hasTopConcept>
                         </xsl:for-each>
-                    </skos:conceptScheme>
+                    </skos:ConceptScheme>
 
 
 
