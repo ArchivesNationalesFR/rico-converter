@@ -8,7 +8,7 @@
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
          xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <skos:conceptScheme rdf:about="http://data.archives-nationales.culture.gouv.fr/activityTypes">
+   <skos:ConceptScheme rdf:about="http://data.archives-nationales.culture.gouv.fr/activityTypes">
       <dc:description>Thésaurus des domaines et actions des
                         collectivités des Archives nationales. Résulte de la simple conversion automatique en RDF, conforme à SKOS et RiC-O, du référentiel XML correspondant.
                             Il s'agit donc d'une VERSION RDF PROVISOIRE. Des enrichissements, modifications de structure et alignements sont prévus.
@@ -23,7 +23,7 @@
                                     référentiels</foaf:name>
          </foaf:Organization>
       </dc:creator>
-      <dct:created>2019-03-08T15:39:44.847+01:00</dct:created>
+      <dct:created>2019-06-16T12:02:53.197+02:00</dct:created>
       <dc:coverage>du Moyen Âge à nos jours</dc:coverage>
       <dc:language>fr-FR</dc:language>
       <dc:type>Thésaurus</dc:type>
@@ -173,7 +173,7 @@
       <skos:hasTopConcept rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d-bqes4jgk5--1ck70sjy5vvds"/>
       <skos:hasTopConcept rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d-auq4a30s0-r177rhc3y1tk"/>
       <skos:hasTopConcept rdf:resource="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d-awald6xki--1xbp9b7wb59wd"/>
-   </skos:conceptScheme>
+   </skos:ConceptScheme>
    <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/activityType/FRAN_RI_011-d3nyug261d--1cyxwnocz7hzo">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#ActivityType"/>

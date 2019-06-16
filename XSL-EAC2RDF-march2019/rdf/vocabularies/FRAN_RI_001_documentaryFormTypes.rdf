@@ -8,7 +8,7 @@
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
          xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <skos:conceptScheme rdf:about="http://data.archives-nationales.culture.gouv.fr/documentaryFormTypes">
+   <skos:ConceptScheme rdf:about="http://data.archives-nationales.culture.gouv.fr/documentaryFormTypes">
       <dc:description>Thésaurus des types de documents des Archives
                         nationales. Résulte de la simple conversion automatique en RDF, conforme à SKOS et RiC-O, du référentiel XML correspondant.
                             Il s'agit donc d'une VERSION RDF PROVISOIRE. Des enrichissements, modifications de structure et alignements sont prévus.
@@ -23,7 +23,7 @@
                                     référentiels</foaf:name>
          </foaf:Organization>
       </dc:creator>
-      <dct:created>2019-03-08T15:39:44.847+01:00</dct:created>
+      <dct:created>2019-06-16T12:02:53.197+02:00</dct:created>
       <dc:coverage>du Moyen Âge à nos jours</dc:coverage>
       <dc:language>fr-FR</dc:language>
       <dc:type>Thésaurus</dc:type>
@@ -195,7 +195,7 @@
       <skos:hasTopConcept rdf:resource="http://data.archives-nationales.culture.gouv.fr/documentaryFormType/FRAN_RI_001-d-8dcnnjg0m--1ia1b7rkkvxyy"/>
       <skos:hasTopConcept rdf:resource="http://data.archives-nationales.culture.gouv.fr/documentaryFormType/FRAN_RI_001-d-8ddxfu4j1--ls2rujag2j7a"/>
       <skos:hasTopConcept rdf:resource="http://data.archives-nationales.culture.gouv.fr/documentaryFormType/FRAN_RI_001-d3m00w8dl27--jxkj8k5bbsim"/>
-   </skos:conceptScheme>
+   </skos:ConceptScheme>
    <rdf:Description rdf:about="http://data.archives-nationales.culture.gouv.fr/documentaryFormType/FRAN_RI_001-d3nd89amxp--lr0xlor5wm53">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#DocumentaryFormType"/>
