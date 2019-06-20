@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:insee-geo="http://rdf.insee.fr/def/geo#"
+         xmlns:geofla="http://data.ign.fr/def/geofla#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:eac2rico="http://data.archives-nationales.culture.gouv.fr/eac2rico/"
+         xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Place rdf:about="place/FRAN_RI_005-d-6uvhs8zpi--1rm3ahgr7wbmw">
+      <rdfs:label xml:lang="fr">La Brague (Alpes-Maritimes ; lieu-dit)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">La Brague (Alpes-Maritimes ; lieu-dit)</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">La Brague</skos:altLabel>
+      <rico:hasPlaceType rdf:resource="placeType/lieu-dit"/>
+      <owl:sameAs rdf:resource="http://sws.geonames.org/2986957"/>
+      <rico:isWithin rdf:resource="place/FRAN_RI_005-d3ntb72c6w--1c18qe82chlnk"/>
+      <rico:identifier>Ancien identifiant SIA : FRAN_RI_005.xml#d-6uvhs8zpi--1rm3ahgr7wbmw</rico:identifier>
+   </rico:Place>
+   <rico:Place rdf:about="place/FRAN_RI_005-d-c5xrprvw-jycio72ulii8">
+      <rdfs:label xml:lang="fr">Fontafie (Charente ; lieu-dit)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Fontafie (Charente ; lieu-dit)</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">Fontafie</skos:altLabel>
+      <rico:hasPlaceType rdf:resource="placeType/lieu-dit"/>
+      <rico:description xml:lang="fr">Lieu-dit à cheval sur les communes de Genouillac et Nieuil (Source : https://fr.wikipedia.org/wiki/Fontafie)</rico:description>
+      <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Fontafie"/>
+      <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q15071890"/>
+      <rico:isWithin rdf:resource="place/FRAN_RI_005-d3ntb7ewfo--1d14rhava075d"/>
+      <rico:identifier>Ancien identifiant SIA : FRAN_RI_005.xml#d-c5xrprvw-jycio72ulii8</rico:identifier>
+   </rico:Place>
+   <rico:Place rdf:about="place/FRAN_RI_005-d-69qbu7p04-1hs4hw591zgch">
+      <rdfs:label xml:lang="fr">Grand-Vernoy (Allier ; lieu-dit)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Grand-Vernoy (Allier ; lieu-dit)</skos:prefLabel>
+      <rico:hasPlaceType rdf:resource="placeType/lieu-dit"/>
+      <rico:note xml:lang="fr">Non géolocalisé</rico:note>
+      <rico:isWithin rdf:resource="place/FRAN_RI_005-d3ntb713cs-uv28hws58a4c"/>
+      <rico:identifier>Ancien identifiant SIA : FRAN_RI_005.xml#d-69qbu7p04-1hs4hw591zgch</rico:identifier>
+   </rico:Place>
+</rdf:RDF>

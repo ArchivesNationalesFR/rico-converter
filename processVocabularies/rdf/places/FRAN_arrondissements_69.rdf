@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:insee-geo="http://rdf.insee.fr/def/geo#"
+         xmlns:geofla="http://data.ign.fr/def/geofla#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:eac2rico="http://data.archives-nationales.culture.gouv.fr/eac2rico/"
+         xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Place rdf:about="place/FRAN_RI_005-d3ntbbc9sm--ff6ey03m3bhb">
+      <rdfs:label xml:lang="fr">Lyon (Rhône, arrondissement)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Lyon (Rhône, arrondissement)</skos:prefLabel>
+      <rdf:type rdf:resource="http://data.ign.fr/def/geofla#Arrondissement"/>
+      <rico:hasPlaceType rdf:resource="placeType/arrondissement"/>
+      <rico:identifier xml:lang="fr">Ancien identifiant SIA : FRAN_RI_005.xml#d3ntbbc9sm--ff6ey03m3bhb</rico:identifier>
+      <owl:sameAs rdf:resource="http://id.insee.fr/geo/arrondissement/691"/>
+      <owl:sameAs rdf:resource="http://data.ign.fr/id/geofla/arrondissement/691"/>
+      <insee-geo:codeArrondissement>691</insee-geo:codeArrondissement>
+      <insee-geo:chefLieu rdf:resource="http://id.insee.fr/geo/commune/69123"/>
+      <rico:isPartOf rdf:resource="place/FRAN_RI_005-d3ntb8kmo4-14vv2fdq38hkk"/>
+      <geofla:dpt rdf:resource="place/FRAN_RI_005-d3ntb8kmo4-14vv2fdq38hkk"/>
+   </rico:Place>
+   <rico:Place rdf:about="place/FRAN_RI_005-d3ntbd5wz2-1xbq3gn57bycx">
+      <rdfs:label xml:lang="fr">Villefranche-sur-Saône (Rhône, arrondissement)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Villefranche-sur-Saône (Rhône, arrondissement)</skos:prefLabel>
+      <rdf:type rdf:resource="http://data.ign.fr/def/geofla#Arrondissement"/>
+      <rico:hasPlaceType rdf:resource="placeType/arrondissement"/>
+      <rico:identifier xml:lang="fr">Ancien identifiant SIA : FRAN_RI_005.xml#d3ntbd5wz2-1xbq3gn57bycx</rico:identifier>
+      <owl:sameAs rdf:resource="http://id.insee.fr/geo/arrondissement/692"/>
+      <owl:sameAs rdf:resource="http://data.ign.fr/id/geofla/arrondissement/692"/>
+      <insee-geo:codeArrondissement>692</insee-geo:codeArrondissement>
+      <insee-geo:chefLieu rdf:resource="http://id.insee.fr/geo/commune/69264"/>
+      <rico:isPartOf rdf:resource="place/FRAN_RI_005-d3ntb8kmo4-14vv2fdq38hkk"/>
+      <geofla:dpt rdf:resource="place/FRAN_RI_005-d3ntb8kmo4-14vv2fdq38hkk"/>
+   </rico:Place>
+</rdf:RDF>

@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:dct="http://purl.org/dc/terms/"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <skos:ConceptScheme rdf:about="carrierTypes">
+      <dc:description>Thésaurus des supports des documents. Résulte de la simple conversion automatique en RDF, conforme à SKOS et RiC-O, du référentiel XML correspondant.
+                            Il s'agit donc d'une VERSION RDF PROVISOIRE. Des enrichissements, modifications de structure et alignements sont prévus.
+                       </dc:description>
+      <dc:title>Thésaurus des supports des documents</dc:title>
+      <dc:creator>
+         <foaf:Organization>
+            <foaf:mbox>referentiels.archives-nationales@culture.gouv.fr</foaf:mbox>
+            <foaf:homepage>http://www.archives-nationales.culture.gouv.fr/</foaf:homepage>
+            <foaf:name>Archives nationales (France). Mission
+                                    référentiels</foaf:name>
+         </foaf:Organization>
+      </dc:creator>
+      <dct:created>2019-06-16T13:13:46.362+02:00</dct:created>
+      <dc:coverage>du Moyen Âge à nos jours</dc:coverage>
+      <dc:language>fr-FR</dc:language>
+      <dc:type>Thésaurus</dc:type>
+      <skos:hasTopConcept rdf:resource="carrierType/FRAN_RI_002-d3m00xz34p0-76i655v5zhlt"/>
+      <skos:hasTopConcept rdf:resource="carrierType/FRAN_RI_002-d3m00xz6ae1--efiqdua02j7t"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3m00xz34p0-76i655v5zhlt">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">supports</skos:prefLabel>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9xpopj-ckdrv6ljeqeg"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9y3c6o-iu0j3xsmoisx"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9ya7v2-1mbrwg1qcmax8"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9yb2os-13bce7gkn2yv1"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9ybwnf--jubck3g5wary"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9ycqec--roxx49bu81co"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9yh03b--1lx80czdt83ae"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9ymvrs--1j9b552uq3p83"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9ynpio-1os5cfwa3mwrz"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9yq469-11pb6p2b6nbmn"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d-a6whhopl4-vm3abmyfyreq"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9yqxx5-qvkdsy4y1kkr"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9yrrvt-fmgd6rjip7cm"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9yskro-1u09woxr0xd8n"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9xpopj-ckdrv6ljeqeg">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">archives audio-visuelles</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">document audiovisuel</skos:altLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3m00xz34p0-76i655v5zhlt"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9xqsl6--1i2m77rgllo7c"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9xrmc2--1la2ksxvxfm7u"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9xsgy0-1rufo8atcgi3c"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9xtawo-1cju6vmj9nwi"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9xwloi-1e8dcour7zw3a"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9xzzwi--1tei3696g4oji"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9y2ifs--9yvs0ds5wc0l"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9xqsl6--1i2m77rgllo7c">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">bande sonore</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9xpopj-ckdrv6ljeqeg"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9xrmc2--1la2ksxvxfm7u">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">cassette audio</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9xpopj-ckdrv6ljeqeg"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9xsgy0-1rufo8atcgi3c">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">diapositive</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9xpopj-ckdrv6ljeqeg"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9xtawo-1cju6vmj9nwi">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">disque vinyl</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9xpopj-ckdrv6ljeqeg"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9xu4nk--6jvte7hqi4co"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9xuyeh-ixoxypjcl6r7"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9xvrxm-83y52pb67jnj"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9xu4nk--6jvte7hqi4co">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">disque 33 tours</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9xtawo-1cju6vmj9nwi"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9xuyeh-ixoxypjcl6r7">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">disque 45 tours</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9xtawo-1cju6vmj9nwi"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9xvrxm-83y52pb67jnj">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">disque 78 tours</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9xtawo-1cju6vmj9nwi"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9xwloi-1e8dcour7zw3a">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">film</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9xpopj-ckdrv6ljeqeg"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9xz6sw--1p8r72p03p45d"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9xyawe-1w15jcvccsdbo"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9xz6sw--1p8r72p03p45d">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">film couleur</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9xwloi-1e8dcour7zw3a"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9xyawe-1w15jcvccsdbo">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">film noir et blanc</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9xwloi-1e8dcour7zw3a"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9xzzwi--1tei3696g4oji">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">pellicule photographique</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9xpopj-ckdrv6ljeqeg"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9y1oh4-akwtq4srdkk"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9y0uq7-87gu63j9087y"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9y1oh4-akwtq4srdkk">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">négatif couleur</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9xzzwi--1tei3696g4oji"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9y0uq7-87gu63j9087y">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">négatif noir et blanc</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9xzzwi--1tei3696g4oji"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9y2ifs--9yvs0ds5wc0l">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">vidéocassette</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">VHS</skos:altLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9xpopj-ckdrv6ljeqeg"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9y3c6o-iu0j3xsmoisx">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">archives électroniques</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">document numérique</skos:altLabel>
+      <skos:altLabel xml:lang="fr">archives informatiques</skos:altLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3m00xz34p0-76i655v5zhlt"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9y5u2n-1xzki8sl1gotg"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9y465c-1roarykontz6f"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9y4zw8--1cka6o7kme4au"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9y6ne1--1dp9ldvaf0ypx"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9y7gx6--v1k9nk96x1pc"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9y8g22-7n8e3bh6bkj4"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9y9ag9-1e6kjoezbpmo8"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9y5u2n-1xzki8sl1gotg">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">bande magnétique</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9y3c6o-iu0j3xsmoisx"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9y465c-1roarykontz6f">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">carte perforée</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9y3c6o-iu0j3xsmoisx"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9y4zw8--1cka6o7kme4au">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">cd-rom</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9y3c6o-iu0j3xsmoisx"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9y6ne1--1dp9ldvaf0ypx">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">clé usb</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9y3c6o-iu0j3xsmoisx"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9y7gx6--v1k9nk96x1pc">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">disque dur</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9y3c6o-iu0j3xsmoisx"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9y8g22-7n8e3bh6bkj4">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">disquette</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9y3c6o-iu0j3xsmoisx"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9y9ag9-1e6kjoezbpmo8">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">dvd</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9y3c6o-iu0j3xsmoisx"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9ya7v2-1mbrwg1qcmax8">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">bois</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3m00xz34p0-76i655v5zhlt"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yb2os-13bce7gkn2yv1">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">cire</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3m00xz34p0-76i655v5zhlt"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9ybwnf--jubck3g5wary">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">métal</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3m00xz34p0-76i655v5zhlt"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9ycqec--roxx49bu81co">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">microforme</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3m00xz34p0-76i655v5zhlt"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9ydnle-640nybt9jpv2"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9yg64n-o4lkrvohks94"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9ydnle-640nybt9jpv2">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">microfilm</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9ycqec--roxx49bu81co"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9yeif3-nnhvcbnswtv3"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9yfcdr-5rahg3nt8csk"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yeif3-nnhvcbnswtv3">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">microfilm 16 mm</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9ydnle-640nybt9jpv2"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yfcdr-5rahg3nt8csk">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">microfilm 35 mm</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9ydnle-640nybt9jpv2"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yg64n-o4lkrvohks94">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">microfiche</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9ycqec--roxx49bu81co"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yh03b--1lx80czdt83ae">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">papier</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3m00xz34p0-76i655v5zhlt"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9yhu9q--1xxwk4uknurum"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9yjlfg-j0aeuv1yo4o2"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9ykeyl-1hz3si2gg29jw"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yhu9q--1xxwk4uknurum">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">carton</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9yh03b--1lx80czdt83ae"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yjlfg-j0aeuv1yo4o2">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">papier-calque</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9yh03b--1lx80czdt83ae"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9ykeyl-1hz3si2gg29jw">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">papier photographique</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9yh03b--1lx80czdt83ae"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9ym28n--19infadmaqc3f"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9yl8x9-13t4wc729h1we"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9ym28n--19infadmaqc3f">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">tirage couleur</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9ykeyl-1hz3si2gg29jw"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yl8x9-13t4wc729h1we">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">tirage noir et blanc</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9ykeyl-1hz3si2gg29jw"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9ymvrs--1j9b552uq3p83">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">papyrus</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3m00xz34p0-76i655v5zhlt"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9ynpio-1os5cfwa3mwrz">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">peau d'animal</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3m00xz34p0-76i655v5zhlt"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9yoi6s--g4lm976pg0ie"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yoi6s--g4lm976pg0ie">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">parchemin</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9ynpio-1os5cfwa3mwrz"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9ypb2n--1qt8j6uavxhrp"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9ypb2n--1qt8j6uavxhrp">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">velin</skos:prefLabel>
+      <skos:definition xml:lang="fr">Peau de veau mort-né (ou d'un autre animal, comme l'agneau ou le chevreau), préparée pour l'écriture, l'illustration, l'imprimerie ou la reliure, plus lisse et plus fine que le parchemin ordinaire.</skos:definition>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9yoi6s--g4lm976pg0ie"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yq469-11pb6p2b6nbmn">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">pierre</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">marbre</skos:altLabel>
+      <skos:altLabel xml:lang="fr">calcaire</skos:altLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3m00xz34p0-76i655v5zhlt"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d-a6whhopl4-vm3abmyfyreq">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">plastique</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3m00xz34p0-76i655v5zhlt"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yqxx5-qvkdsy4y1kkr">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">plâtre</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3m00xz34p0-76i655v5zhlt"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yrrvt-fmgd6rjip7cm">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">tissu</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3m00xz34p0-76i655v5zhlt"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yskro-1u09woxr0xd8n">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">verre</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3m00xz34p0-76i655v5zhlt"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9ytdva-n9m6cluzchnx"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9ytdva-n9m6cluzchnx">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">plaque de verre</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9yskro-1u09woxr0xd8n"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9yv45z--1olpjujdxtwkd"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9yu6yw-1gylq6x4ots0l"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9ywsb2-is0ux4jbqyki"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3nd9yvyzo-1vw3scmftdhpp"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yv45z--1olpjujdxtwkd">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">négatif verre couleur</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9ytdva-n9m6cluzchnx"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yu6yw-1gylq6x4ots0l">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">négatif verre noir et blanc</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9ytdva-n9m6cluzchnx"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9ywsb2-is0ux4jbqyki">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">positif verre couleur</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9ytdva-n9m6cluzchnx"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3nd9yvyzo-1vw3scmftdhpp">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">positif verre noir et blanc</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3nd9ytdva-n9m6cluzchnx"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3m00xz6ae1--efiqdua02j7t">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">techniques et procédés</skos:prefLabel>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3m00xz7qaa-5jehhwes7ipw"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3m00xz5qkz-1oz7hgzdqe8hc"/>
+      <skos:narrower rdf:resource="carrierType/FRAN_RI_002-d3m00xz4rbp-r3p1bsmdp8e8"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3m00xz7qaa-5jehhwes7ipw">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">photographie argentique</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3m00xz6ae1--efiqdua02j7t"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3m00xz5qkz-1oz7hgzdqe8hc">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">photographie numérique</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3m00xz6ae1--efiqdua02j7t"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="carrierType/FRAN_RI_002-d3m00xz4rbp-r3p1bsmdp8e8">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CarrierType"/>
+      <skos:inScheme rdf:resource="carrierTypes"/>
+      <skos:prefLabel xml:lang="fr">photographie photomécanique</skos:prefLabel>
+      <skos:broader rdf:resource="carrierType/FRAN_RI_002-d3m00xz6ae1--efiqdua02j7t"/>
+   </skos:Concept>
+</rdf:RDF>

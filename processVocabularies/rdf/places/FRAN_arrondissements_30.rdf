@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:insee-geo="http://rdf.insee.fr/def/geo#"
+         xmlns:geofla="http://data.ign.fr/def/geofla#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:eac2rico="http://data.archives-nationales.culture.gouv.fr/eac2rico/"
+         xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Place rdf:about="place/FRAN_RI_005-d3ntb96nxf-gz4rxsch4ye7">
+      <rdfs:label xml:lang="fr">Alès (Gard, arrondissement)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Alès (Gard, arrondissement)</skos:prefLabel>
+      <rdf:type rdf:resource="http://data.ign.fr/def/geofla#Arrondissement"/>
+      <rico:hasPlaceType rdf:resource="placeType/arrondissement"/>
+      <rico:identifier xml:lang="fr">Ancien identifiant SIA : FRAN_RI_005.xml#d3ntb96nxf-gz4rxsch4ye7</rico:identifier>
+      <owl:sameAs rdf:resource="http://id.insee.fr/geo/arrondissement/301"/>
+      <owl:sameAs rdf:resource="http://data.ign.fr/id/geofla/arrondissement/301"/>
+      <insee-geo:codeArrondissement>301</insee-geo:codeArrondissement>
+      <insee-geo:chefLieu rdf:resource="http://id.insee.fr/geo/commune/30007"/>
+      <rico:isPartOf rdf:resource="place/FRAN_RI_005-d3ntb7qeqo--1c0rjakf6f1n8"/>
+      <geofla:dpt rdf:resource="place/FRAN_RI_005-d3ntb7qeqo--1c0rjakf6f1n8"/>
+   </rico:Place>
+   <rico:Place rdf:about="place/FRAN_RI_005-d3ntbb52h6-1q2al1hpv46yy">
+      <rdfs:label xml:lang="fr">Le Vigan (Gard, arrondissement)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Le Vigan (Gard, arrondissement)</skos:prefLabel>
+      <rdf:type rdf:resource="http://data.ign.fr/def/geofla#Arrondissement"/>
+      <rico:hasPlaceType rdf:resource="placeType/arrondissement"/>
+      <rico:identifier xml:lang="fr">Ancien identifiant SIA : FRAN_RI_005.xml#d3ntbb52h6-1q2al1hpv46yy</rico:identifier>
+      <owl:sameAs rdf:resource="http://id.insee.fr/geo/arrondissement/303"/>
+      <owl:sameAs rdf:resource="http://data.ign.fr/id/geofla/arrondissement/303"/>
+      <insee-geo:codeArrondissement>303</insee-geo:codeArrondissement>
+      <insee-geo:chefLieu rdf:resource="http://id.insee.fr/geo/commune/30350"/>
+      <rico:isPartOf rdf:resource="place/FRAN_RI_005-d3ntb7qeqo--1c0rjakf6f1n8"/>
+      <geofla:dpt rdf:resource="place/FRAN_RI_005-d3ntb7qeqo--1c0rjakf6f1n8"/>
+   </rico:Place>
+   <rico:Place rdf:about="place/FRAN_RI_005-d3ntbbvugj-33svvik17x3f">
+      <rdfs:label xml:lang="fr">Nîmes (Gard, arrondissement)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Nîmes (Gard, arrondissement)</skos:prefLabel>
+      <rdf:type rdf:resource="http://data.ign.fr/def/geofla#Arrondissement"/>
+      <rico:hasPlaceType rdf:resource="placeType/arrondissement"/>
+      <rico:identifier xml:lang="fr">Ancien identifiant SIA : FRAN_RI_005.xml#d3ntbbvugj-33svvik17x3f</rico:identifier>
+      <owl:sameAs rdf:resource="http://id.insee.fr/geo/arrondissement/302"/>
+      <owl:sameAs rdf:resource="http://data.ign.fr/id/geofla/arrondissement/302"/>
+      <insee-geo:codeArrondissement>302</insee-geo:codeArrondissement>
+      <insee-geo:chefLieu rdf:resource="http://id.insee.fr/geo/commune/30189"/>
+      <rico:isPartOf rdf:resource="place/FRAN_RI_005-d3ntb7qeqo--1c0rjakf6f1n8"/>
+      <geofla:dpt rdf:resource="place/FRAN_RI_005-d3ntb7qeqo--1c0rjakf6f1n8"/>
+   </rico:Place>
+</rdf:RDF>

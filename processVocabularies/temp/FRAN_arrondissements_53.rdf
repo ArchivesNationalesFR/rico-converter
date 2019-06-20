@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:insee-geo="http://rdf.insee.fr/def/geo#"
+         xmlns:geofla="http://data.ign.fr/def/geofla#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:eac2rico="http://data.archives-nationales.culture.gouv.fr/eac2rico/"
+         xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Place rdf:about="place/FRAN_RI_005-d3ntba38cu-1tasy037n42ke">
+      <rdfs:label xml:lang="fr">Château-Gontier (Mayenne, arrondissement)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Château-Gontier (Mayenne, arrondissement)</skos:prefLabel>
+      <rdf:type rdf:resource="http://data.ign.fr/def/geofla#Arrondissement"/>
+      <rico:hasPlaceType rdf:resource="placeType/arrondissement"/>
+      <rico:identifier xml:lang="fr">Ancien identifiant SIA : FRAN_RI_005.xml#d3ntba38cu-1tasy037n42ke</rico:identifier>
+      <owl:sameAs rdf:resource="http://id.insee.fr/geo/arrondissement/531"/>
+      <owl:sameAs rdf:resource="http://data.ign.fr/id/geofla/arrondissement/531"/>
+      <insee-geo:codeArrondissement>531</insee-geo:codeArrondissement>
+      <insee-geo:chefLieu rdf:resource="http://id.insee.fr/geo/commune/53062"/>
+      <rico:isPartOf rdf:resource="place/FRAN_RI_005-d3ntb88sib--n92aramgtvqs"/>
+      <geofla:dpt rdf:resource="place/FRAN_RI_005-d3ntb88sib--n92aramgtvqs"/>
+   </rico:Place>
+   <rico:Place rdf:about="place/FRAN_RI_005-d3ntbb2ne3--17mttp1hd7nco">
+      <rdfs:label xml:lang="fr">Laval (Mayenne, arrondissement)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Laval (Mayenne, arrondissement)</skos:prefLabel>
+      <rdf:type rdf:resource="http://data.ign.fr/def/geofla#Arrondissement"/>
+      <rico:hasPlaceType rdf:resource="placeType/arrondissement"/>
+      <rico:identifier xml:lang="fr">Ancien identifiant SIA : FRAN_RI_005.xml#d3ntbb2ne3--17mttp1hd7nco</rico:identifier>
+      <owl:sameAs rdf:resource="http://id.insee.fr/geo/arrondissement/532"/>
+      <owl:sameAs rdf:resource="http://data.ign.fr/id/geofla/arrondissement/532"/>
+      <insee-geo:codeArrondissement>532</insee-geo:codeArrondissement>
+      <insee-geo:chefLieu rdf:resource="http://id.insee.fr/geo/commune/53130"/>
+      <rico:isPartOf rdf:resource="place/FRAN_RI_005-d3ntb88sib--n92aramgtvqs"/>
+      <geofla:dpt rdf:resource="place/FRAN_RI_005-d3ntb88sib--n92aramgtvqs"/>
+   </rico:Place>
+   <rico:Place rdf:about="place/FRAN_RI_005-d3ntbbgz0c--6y6scghwx4ai">
+      <rdfs:label xml:lang="fr">Mayenne (Mayenne, arrondissement)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Mayenne (Mayenne, arrondissement)</skos:prefLabel>
+      <rdf:type rdf:resource="http://data.ign.fr/def/geofla#Arrondissement"/>
+      <rico:hasPlaceType rdf:resource="placeType/arrondissement"/>
+      <rico:identifier xml:lang="fr">Ancien identifiant SIA : FRAN_RI_005.xml#d3ntbbgz0c--6y6scghwx4ai</rico:identifier>
+      <owl:sameAs rdf:resource="http://id.insee.fr/geo/arrondissement/533"/>
+      <owl:sameAs rdf:resource="http://data.ign.fr/id/geofla/arrondissement/533"/>
+      <insee-geo:codeArrondissement>533</insee-geo:codeArrondissement>
+      <insee-geo:chefLieu rdf:resource="http://id.insee.fr/geo/commune/53147"/>
+      <rico:isPartOf rdf:resource="place/FRAN_RI_005-d3ntb88sib--n92aramgtvqs"/>
+      <geofla:dpt rdf:resource="place/FRAN_RI_005-d3ntb88sib--n92aramgtvqs"/>
+   </rico:Place>
+</rdf:RDF>

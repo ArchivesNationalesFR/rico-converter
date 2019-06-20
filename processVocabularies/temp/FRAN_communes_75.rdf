@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:insee-geo="http://rdf.insee.fr/def/geo#"
+         xmlns:geofla="http://data.ign.fr/def/geofla#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:eac2rico="http://data.archives-nationales.culture.gouv.fr/eac2rico/"
+         xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Place rdf:about="place/FRAN_RI_005-d5bdppt147--176wwvjcctrx0">
+      <rdfs:label xml:lang="fr">Paris (France)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Paris (France)</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">75</skos:altLabel>
+      <rdf:type rdf:resource="http://data.ign.fr/def/geofla#Commune"/>
+      <rico:hasPlaceType rdf:resource="placeType/commune"/>
+      <rico:identifier xml:lang="fr">Ancien identifiant SIA : FRAN_RI_005.xml#d5bdppt147--176wwvjcctrx0</rico:identifier>
+      <owl:sameAs rdf:resource="http://id.insee.fr/geo/commune/75056"/>
+      <owl:sameAs rdf:resource="http://data.ign.fr/id/geofla/commune/75056"/>
+      <insee-geo:codeCommune>75056</insee-geo:codeCommune>
+      <rico:isPartOf rdf:resource="place/FRAN_RI_005-FRAN_RI_005-d5bdp7f563-3i98jv8c3b0g-bis"/>
+      <geofla:dpt rdf:resource="place/FRAN_RI_005-FRAN_RI_005-d5bdp7f563-3i98jv8c3b0g-bis"/>
+      <rico:note xml:lang="fr">arrondissement : 751</rico:note>
+   </rico:Place>
+</rdf:RDF>

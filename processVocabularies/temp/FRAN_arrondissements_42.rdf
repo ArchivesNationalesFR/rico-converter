@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:insee-geo="http://rdf.insee.fr/def/geo#"
+         xmlns:geofla="http://data.ign.fr/def/geofla#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:eac2rico="http://data.archives-nationales.culture.gouv.fr/eac2rico/"
+         xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Place rdf:about="place/FRAN_RI_005-d3ntbbmj9i-xxv7aikybxfg">
+      <rdfs:label xml:lang="fr">Montbrison (Loire, arrondissement)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Montbrison (Loire, arrondissement)</skos:prefLabel>
+      <rdf:type rdf:resource="http://data.ign.fr/def/geofla#Arrondissement"/>
+      <rico:hasPlaceType rdf:resource="placeType/arrondissement"/>
+      <rico:identifier xml:lang="fr">Ancien identifiant SIA : FRAN_RI_005.xml#d3ntbbmj9i-xxv7aikybxfg</rico:identifier>
+      <owl:sameAs rdf:resource="http://id.insee.fr/geo/arrondissement/421"/>
+      <owl:sameAs rdf:resource="http://data.ign.fr/id/geofla/arrondissement/421"/>
+      <insee-geo:codeArrondissement>421</insee-geo:codeArrondissement>
+      <insee-geo:chefLieu rdf:resource="http://id.insee.fr/geo/commune/42147"/>
+      <rico:isPartOf rdf:resource="place/FRAN_RI_005-d3ntb84vj6-1xuqcjld3ig9m"/>
+      <geofla:dpt rdf:resource="place/FRAN_RI_005-d3ntb84vj6-1xuqcjld3ig9m"/>
+   </rico:Place>
+   <rico:Place rdf:about="place/FRAN_RI_005-d3ntbc90h3-1qx4hgenjd5ym">
+      <rdfs:label xml:lang="fr">Roanne (Loire, arrondissement)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Roanne (Loire, arrondissement)</skos:prefLabel>
+      <rdf:type rdf:resource="http://data.ign.fr/def/geofla#Arrondissement"/>
+      <rico:hasPlaceType rdf:resource="placeType/arrondissement"/>
+      <rico:identifier xml:lang="fr">Ancien identifiant SIA : FRAN_RI_005.xml#d3ntbc90h3-1qx4hgenjd5ym</rico:identifier>
+      <owl:sameAs rdf:resource="http://id.insee.fr/geo/arrondissement/422"/>
+      <owl:sameAs rdf:resource="http://data.ign.fr/id/geofla/arrondissement/422"/>
+      <insee-geo:codeArrondissement>422</insee-geo:codeArrondissement>
+      <insee-geo:chefLieu rdf:resource="http://id.insee.fr/geo/commune/42187"/>
+      <rico:isPartOf rdf:resource="place/FRAN_RI_005-d3ntb84vj6-1xuqcjld3ig9m"/>
+      <geofla:dpt rdf:resource="place/FRAN_RI_005-d3ntb84vj6-1xuqcjld3ig9m"/>
+   </rico:Place>
+   <rico:Place rdf:about="place/FRAN_RI_005-d5bdpmduet--6m3htjevd5xl">
+      <rdfs:label xml:lang="fr">Saint-Etienne (Loire, arrondissement)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Saint-Etienne (Loire, arrondissement)</skos:prefLabel>
+      <rdf:type rdf:resource="http://data.ign.fr/def/geofla#Arrondissement"/>
+      <rico:hasPlaceType rdf:resource="placeType/arrondissement"/>
+      <rico:identifier xml:lang="fr">Ancien identifiant SIA : FRAN_RI_005.xml#d5bdpmduet--6m3htjevd5xl</rico:identifier>
+      <rico:isPartOf rdf:resource="place/FRAN_RI_005-d3ntb84vj6-1xuqcjld3ig9m"/>
+      <geofla:dpt rdf:resource="place/FRAN_RI_005-d3ntb84vj6-1xuqcjld3ig9m"/>
+   </rico:Place>
+</rdf:RDF>

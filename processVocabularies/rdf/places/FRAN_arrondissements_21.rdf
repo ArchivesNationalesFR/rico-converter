@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:insee-geo="http://rdf.insee.fr/def/geo#"
+         xmlns:geofla="http://data.ign.fr/def/geofla#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:eac2rico="http://data.archives-nationales.culture.gouv.fr/eac2rico/"
+         xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Place rdf:about="place/FRAN_RI_005-d3ntb9kyon--i87san05tw0b">
+      <rdfs:label xml:lang="fr">Beaune (Côte-d'Or, arrondissement)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Beaune (Côte-d'Or, arrondissement)</skos:prefLabel>
+      <rdf:type rdf:resource="http://data.ign.fr/def/geofla#Arrondissement"/>
+      <rico:hasPlaceType rdf:resource="placeType/arrondissement"/>
+      <rico:identifier xml:lang="fr">Ancien identifiant SIA : FRAN_RI_005.xml#d3ntb9kyon--i87san05tw0b</rico:identifier>
+      <owl:sameAs rdf:resource="http://id.insee.fr/geo/arrondissement/211"/>
+      <owl:sameAs rdf:resource="http://data.ign.fr/id/geofla/arrondissement/211"/>
+      <insee-geo:codeArrondissement>211</insee-geo:codeArrondissement>
+      <insee-geo:chefLieu rdf:resource="http://id.insee.fr/geo/commune/21054"/>
+      <rico:isPartOf rdf:resource="place/FRAN_RI_005-d3ntb7heyx--g2riisb6ka8j"/>
+      <geofla:dpt rdf:resource="place/FRAN_RI_005-d3ntb7heyx--g2riisb6ka8j"/>
+   </rico:Place>
+   <rico:Place rdf:about="place/FRAN_RI_005-d3ntbafb51-1mq5umnl9whze">
+      <rdfs:label xml:lang="fr">Dijon (Côte-d'Or, arrondissement)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Dijon (Côte-d'Or, arrondissement)</skos:prefLabel>
+      <rdf:type rdf:resource="http://data.ign.fr/def/geofla#Arrondissement"/>
+      <rico:hasPlaceType rdf:resource="placeType/arrondissement"/>
+      <rico:identifier xml:lang="fr">Ancien identifiant SIA : FRAN_RI_005.xml#d3ntbafb51-1mq5umnl9whze</rico:identifier>
+      <owl:sameAs rdf:resource="http://id.insee.fr/geo/arrondissement/212"/>
+      <owl:sameAs rdf:resource="http://data.ign.fr/id/geofla/arrondissement/212"/>
+      <insee-geo:codeArrondissement>212</insee-geo:codeArrondissement>
+      <insee-geo:chefLieu rdf:resource="http://id.insee.fr/geo/commune/21231"/>
+      <rico:isPartOf rdf:resource="place/FRAN_RI_005-d3ntb7heyx--g2riisb6ka8j"/>
+      <geofla:dpt rdf:resource="place/FRAN_RI_005-d3ntb7heyx--g2riisb6ka8j"/>
+   </rico:Place>
+   <rico:Place rdf:about="place/FRAN_RI_005-d3ntbblr0x--1t6s823i8ziq7">
+      <rdfs:label xml:lang="fr">Montbard (Côte-d'Or, arrondissement)</rdfs:label>
+      <skos:prefLabel xml:lang="fr">Montbard (Côte-d'Or, arrondissement)</skos:prefLabel>
+      <rdf:type rdf:resource="http://data.ign.fr/def/geofla#Arrondissement"/>
+      <rico:hasPlaceType rdf:resource="placeType/arrondissement"/>
+      <rico:identifier xml:lang="fr">Ancien identifiant SIA : FRAN_RI_005.xml#d3ntbblr0x--1t6s823i8ziq7</rico:identifier>
+      <owl:sameAs rdf:resource="http://id.insee.fr/geo/arrondissement/213"/>
+      <owl:sameAs rdf:resource="http://data.ign.fr/id/geofla/arrondissement/213"/>
+      <insee-geo:codeArrondissement>213</insee-geo:codeArrondissement>
+      <insee-geo:chefLieu rdf:resource="http://id.insee.fr/geo/commune/21425"/>
+      <rico:isPartOf rdf:resource="place/FRAN_RI_005-d3ntb7heyx--g2riisb6ka8j"/>
+      <geofla:dpt rdf:resource="place/FRAN_RI_005-d3ntb7heyx--g2riisb6ka8j"/>
+   </rico:Place>
+</rdf:RDF>
