@@ -1,0 +1,186 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xml:base="http://data.archives-nationales.culture.gouv.fr/"
+   xmlns:html="http://www.w3.org/1999/xhtml" xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#">
+   <rico:Description rdf:about="description/123456">
+      <rico:describes rdf:resource="agent/123456"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_123456"/>
+   </rico:Description>
+   <rico:Agent rdf:about="agent/123456">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="description/123456"/>
+      <rdfs:label xml:lang="fr">The entity</rdfs:label>
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/123456-The%20entity">
+            <rdfs:label xml:lang="fr">The entity</rdfs:label>
+            <rico:textualValue xml:lang="fr">The entity</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/123456"/>
+            <rico:isRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <!-- case A/1 ; from FRAN_NP_050056 -->
+      <rico:thingIsSourceOfRelationToPlace>
+         <rico:RelationToPlace>
+            <rico:relationToPlaceHasSource rdf:resource="agent/123456"/>
+            <rico:relationToPlaceHasTarget
+               rdf:resource="place/FRAN_RI_005-d3ntxfqxqs-hiibmu39cc86"/>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+               >1800-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+               >1820-10-30</rico:endDate>
+            <rico:description rdf:parseType="Literal">
+               <html:p xml:lang="fr">A note.</html:p>
+            </rico:description>
+         </rico:RelationToPlace>
+      </rico:thingIsSourceOfRelationToPlace>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_005-d3ntxfqxqs-hiibmu39cc86"/>
+      <!-- case A/2 ; from  NP_050939-->
+      <rico:thingIsSourceOfRelationToPlace>
+         <rico:RelationToPlace>
+            <rico:relationToPlaceHasSource rdf:resource="agent/123456"/>
+            <rico:relationToPlaceHasTarget rdf:resource="place/FRAN_RI_005-d3ntb8jcjf--14j38x9l75uuq"/>
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+               >1992-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+               >1993-12-31</rico:endDate>
+            <rico:description rdf:parseType="Literal">
+               <html:p xml:lang="fr">Ph. Massoni, préfet du Puy-de-Dôme.</html:p></rico:description>
+         </rico:RelationToPlace>
+      </rico:thingIsSourceOfRelationToPlace>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_005-d3ntb8jcjf--14j38x9l75uuq"/>
+      <!-- from NP_050440 -->
+      <rico:thingIsSourceOfRelationToPlace>
+         <rico:RelationToPlace>
+            <rico:relationToPlaceHasSource rdf:resource="agent/123456"/>
+            <rico:relationToPlaceHasTarget rdf:resource="place/FRAN_RI_005-d3ntxjxn5s-6kuyi0i46073"/>
+           </rico:RelationToPlace>
+      </rico:thingIsSourceOfRelationToPlace>
+      <rico:thingIsSourceOfRelationToPlace>
+         <rico:RelationToPlace>
+            <rico:relationToPlaceHasSource rdf:resource="agent/123456"/>
+            <rico:relationToPlaceHasTarget rdf:resource="place/FRAN_RI_005-d3ntxkcyrz--1bv09gkx25n60"/>
+        
+           </rico:RelationToPlace>
+      </rico:thingIsSourceOfRelationToPlace>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_005-d3ntxjxn5s-6kuyi0i46073"/>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_005-d3ntxkcyrz--1bv09gkx25n60"/>
+      <!-- from NP_51338 -->
+      <rico:thingIsSourceOfRelationToPlace>
+         <rico:RelationToPlace>
+            <rico:relationToPlaceHasSource rdf:resource="agent/123456"/>
+            <rico:relationToPlaceHasTarget rdf:resource="place/FRAN_RI_005-d5bdpaticd--p8dvp93nimsg"/>
+            
+         </rico:RelationToPlace>
+      </rico:thingIsSourceOfRelationToPlace>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_005-d5bdpaticd--p8dvp93nimsg"/>
+      <rico:thingIsSourceOfRelationToPlace>
+         <rico:RelationToPlace>
+            <rico:relationToPlaceHasSource rdf:resource="agent/123456"/>
+            <rico:relationToPlaceHasTarget rdf:resource="place/FRAN_RI_005-d3ntxf6q0j-g0j2ysmlf0zv"/>
+            
+         </rico:RelationToPlace>
+      </rico:thingIsSourceOfRelationToPlace>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_005-d3ntxf6q0j-g0j2ysmlf0zv"/>
+      <rico:thingIsSourceOfRelationToPlace>
+         <rico:RelationToPlace>
+            <rico:relationToPlaceHasSource rdf:resource="agent/123456"/>
+            <rico:relationToPlaceHasTarget rdf:resource="place/FRAN_RI_005-d3ntb7grwl-94z667d9uttv"/>
+            
+         </rico:RelationToPlace>
+      </rico:thingIsSourceOfRelationToPlace>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_005-d3ntb7grwl-94z667d9uttv"/>
+      <rico:thingIsSourceOfRelationToPlace>
+         <rico:RelationToPlace>
+            <rico:relationToPlaceHasSource rdf:resource="agent/123456"/>
+            <rico:relationToPlaceHasTarget rdf:resource="place/FRAN_RI_005-d3ntxlhlzu--xk25nxgg86yz"/>
+            
+         </rico:RelationToPlace>
+      </rico:thingIsSourceOfRelationToPlace>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_005-d3ntxlhlzu--xk25nxgg86yz"/>
+      <rico:thingIsSourceOfRelationToPlace>
+         <rico:RelationToPlace>
+            <rico:relationToPlaceHasSource rdf:resource="agent/123456"/>
+            <rico:relationToPlaceHasTarget rdf:resource="place/FRAN_RI_005-d3ntxktw5x--84skvc22nt6e"/>
+            
+         </rico:RelationToPlace>
+      </rico:thingIsSourceOfRelationToPlace>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_005-d3ntxktw5x--84skvc22nt6e"/>
+      <rico:thingIsSourceOfRelationToPlace>
+         <rico:RelationToPlace>
+            <rico:relationToPlaceHasSource rdf:resource="agent/123456"/>
+            <rico:relationToPlaceHasTarget rdf:resource="place/FRAN_RI_005-d3ntxjxyl2-de3n2j7xfcc0"/>
+            
+         </rico:RelationToPlace>
+      </rico:thingIsSourceOfRelationToPlace>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_005-d3ntxjxyl2-de3n2j7xfcc0"/>
+      <rico:thingIsSourceOfRelationToPlace>
+         <rico:RelationToPlace>
+            <rico:relationToPlaceHasSource rdf:resource="agent/123456"/>
+            <rico:relationToPlaceHasTarget rdf:resource="place/FRAN_RI_005-d3m08zyukwj--12tvqias1nunm"/>
+            
+         </rico:RelationToPlace>
+      </rico:thingIsSourceOfRelationToPlace>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_005-d3m08zyukwj--12tvqias1nunm"/>
+      <rico:thingIsSourceOfRelationToPlace>
+         <rico:RelationToPlace>
+            <rico:relationToPlaceHasSource rdf:resource="agent/123456"/>
+            <rico:relationToPlaceHasTarget rdf:resource="place/FRAN_RI_005-d3ntxkj150-14qdrjsm01noe"/>
+            
+         </rico:RelationToPlace>
+      </rico:thingIsSourceOfRelationToPlace>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_005-d3ntxkj150-14qdrjsm01noe"/>
+      <rico:thingIsSourceOfRelationToPlace>
+         <rico:RelationToPlace>
+            <rico:relationToPlaceHasSource rdf:resource="agent/123456"/>
+            <rico:relationToPlaceHasTarget rdf:resource="place/FRAN_RI_005-d3ntxo21l5--1llwpj4s4ec1i"/>
+            
+         </rico:RelationToPlace>
+      </rico:thingIsSourceOfRelationToPlace>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_005-d3ntxo21l5--1llwpj4s4ec1i"/>
+     
+    
+      <!-- case B/1 ; from NP_050059 -->
+    
+      <rico:thingIsSourceOfRelationToPlace>
+         <rico:RelationToPlace>
+            <rico:relationToPlaceHasSource rdf:resource="agent/123456"/>
+            <rico:relationToPlaceHasTarget rdf:resource="place/Sens"
+            />
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+               >1788-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+               >1794-02-19</rico:endDate>
+            <rico:description rdf:parseType="Literal">
+               <html:p xml:lang="fr">A note.</html:p></rico:description></rico:RelationToPlace>
+      </rico:thingIsSourceOfRelationToPlace>
+      <rico:hasLocation rdf:resource="place/Sens"/>
+      <!-- case B/2, from NP_050578 -->
+      <rico:thingIsSourceOfRelationToPlace>
+         <rico:RelationToPlace>
+            <rico:relationToPlaceHasSource rdf:resource="agent/123456"/>
+            <rico:relationToPlaceHasTarget rdf:resource="place/Rh%C3%B4ne"
+            />
+            <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+               >1992-01-01</rico:beginningDate>
+            <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+               >1993-12-31</rico:endDate>
+            <rico:description rdf:parseType="Literal">
+               <html:p xml:lang="fr">A note.</html:p></rico:description></rico:RelationToPlace>
+      </rico:thingIsSourceOfRelationToPlace>
+      <rico:hasLocation rdf:resource="place/Rh%C3%B4ne"/>
+   </rico:Agent>
+   <!-- the places below should be output in a separated file, like the relations, since they can be referenced to by many place relations -->
+   
+   <rico:Place rdf:about="place/Sens">
+      <rdfs:label xml:lang="fr">Sens</rdfs:label>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_005-d3ntxa34ba-196cqozu31nvj"/>
+   </rico:Place>
+   <rico:Place rdf:about="place/Rh%C3%B4ne">
+      <!-- this is a bad....-->
+      <rdfs:label xml:lang="fr">Rhône</rdfs:label>
+      <rico:hasLocation rdf:resource="place/FRAN_RI_005-d3ntr30aef-iiuzlggrj026"/>
+    
+   </rico:Place>
+</rdf:RDF>
