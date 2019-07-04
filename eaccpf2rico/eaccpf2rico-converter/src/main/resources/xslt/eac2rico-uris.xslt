@@ -311,21 +311,23 @@
 		<xsl:value-of select="$LEGAL_STATUSES/rdf:RDF/skos:Concept[ginco:id = $gincoId]/@rdf:about" />
 	</xsl:function>
 	
-	<xsl:function name="eac2rico:URI-RuleFromEli">
+	<xsl:function name="eac2rico:URI-MandateFromEli">
 		<xsl:param name="eli" />
 		<xsl:value-of select="$RULES/rdf:RDF/*[owl:sameAs/@rdf:resource = $eli]/@rdf:about" />
 	</xsl:function>
 	
-	<xsl:function name="eac2rico:URI-RelationToRule">
+	<xsl:function name="eac2rico:URI-RelationToMandate">
 		<xsl:param name="recordId" />
 		<xsl:param name="eliOrVocabularyId" />
+		<xsl:param name="fromDate" />
+		<xsl:param name="toDate" />
 		
 		<xsl:value-of select="eac2rico:URI-Anything(
 			'relationToRule',
    			substring-after($recordId, 'FRAN_NP_'),
    			if(contains($eliOrVocabularyId, 'eli/')) then concat('eli-', translate(substring-after($eliOrVocabularyId, 'eli/'), '/', '-')) else substring-after($eliOrVocabularyId, 'rule/'),
-   			'',
-   			'')"
+   			$fromDate,
+   			$toDate)"
    		/>		
 	</xsl:function>
 	
@@ -410,6 +412,7 @@
 				<xsl:when test="$localType = 'edifice'">026</xsl:when>
 				<xsl:when test="$localType = 'arrondissement_actuel'">022</xsl:when>
 				<xsl:when test="$localType = 'arrondissement_ancien'">021</xsl:when>
+				<xsl:when test="$localType = 'lieu'">005</xsl:when>
 				<xsl:otherwise>
 					<xsl:message>Unexpected @locaType on place : <xsl:value-of select="$localType" /></xsl:message>
 				</xsl:otherwise>

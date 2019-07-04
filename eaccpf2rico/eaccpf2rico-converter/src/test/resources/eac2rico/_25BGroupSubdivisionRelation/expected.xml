@@ -24,6 +24,7 @@
       <rico:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
       <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/999999-005205-19470101-19641231"/>
       <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005205-111111-19470101-19641231"/>
+      <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/222222-005205"/>
    </rico:Agent>
    <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/999999-005205-19470101-19641231">
    	  <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>
@@ -41,5 +42,11 @@
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1947-01-01</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1964-12-31</rico:endDate>
       <rico:description rdf:parseType="Literal"><html:p xml:lang="fr">This is a note on a relation</html:p></rico:description>
+   </rico:AgentHierarchicalRelation>
+   <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/222222-005205">
+   	  <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>
+      <rico:groupSubdivisionRelationHasTarget rdf:resource="agent/005205"/>
+      <rico:groupSubdivisionRelationHasSource rdf:resource="agent/222222"/>
+      <rdfs:label xml:lang="fr">Relation de subdivision entre "The ministry of the entity" et "The entity"</rdfs:label>
    </rico:AgentHierarchicalRelation>
 </rdf:RDF>

@@ -1,0 +1,8 @@
+PREFIX shacl:   <http://www.w3.org/ns/shacl#>
+
+SELECT ?resultSeverity (COUNT(?s) AS ?count)
+WHERE {
+	?s a shacl:ValidationResult .
+	?s shacl:resultSeverity ?resultSeverity.
+}
+GROUP BY ?resultSeverity

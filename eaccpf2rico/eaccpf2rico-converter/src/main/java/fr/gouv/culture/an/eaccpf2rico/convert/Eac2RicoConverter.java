@@ -203,13 +203,9 @@ public class Eac2RicoConverter {
 	
 	private void processFileOrDirectory(File inputFile) throws Eac2RicoConverterException {
 		log.info("Processing "+inputFile.getName());
-		// recurse on subdirectories if necessary
-		if(inputFile.isDirectory()) {
-			for(File f : inputFile.listFiles()) {
-				processFileOrDirectory(f);
-			}
-		} else {
-			
+		// do NOT recurse on subdirectories
+		if(!inputFile.isDirectory()) {
+
 			try {
 				notifyBeginProcessing(inputFile);
 			} catch (Eac2RicoConverterListenerException e) {

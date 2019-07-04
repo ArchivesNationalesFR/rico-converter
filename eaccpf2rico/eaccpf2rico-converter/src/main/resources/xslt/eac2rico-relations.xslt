@@ -56,6 +56,17 @@
 	       		<!-- ...and if it is _also_ a "Service d'Administration Central", then add an extra type to the relation -->
 	       		<xsl:choose>
 	       			<xsl:when test="eac2rico:isServiceCentral($externalEntityDescription/eac:eac-cpf)">GroupSubdivisionRelation</xsl:when>
+	       			<xsl:when test="eac2rico:isMinistere($externalEntityDescription/eac:eac-cpf) and $relation/@cpfRelationType='hierarchical-parent'">GroupSubdivisionRelation</xsl:when>
+	       			<xsl:otherwise>AgentHierarchicalRelation</xsl:otherwise>
+	       		</xsl:choose>
+	       	</xsl:when>
+	       	
+	       	<!-- If we are processing a "Ministère"... -->
+	       	<xsl:when test="eac2rico:isMinistere(/eac:eac-cpf)">
+	       		<!-- ...read the description of the referenced entity... -->
+	       		<xsl:variable name="externalEntityDescription" select="document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml'))" />
+	       		<xsl:choose>
+	       			<xsl:when test="eac2rico:isServiceCentral($externalEntityDescription/eac:eac-cpf) and $relation/@cpfRelationType='hierarchical-child'">GroupSubdivisionRelation</xsl:when>
 	       			<xsl:otherwise>AgentHierarchicalRelation</xsl:otherwise>
 	       		</xsl:choose>
 	       	</xsl:when>
@@ -317,6 +328,11 @@
 	<xsl:function name="eac2rico:isServiceCentral" as="xs:boolean">
 		<xsl:param name="entityDescriptionRoot"  as="element()?"/>
 		<xsl:sequence select="$entityDescriptionRoot/eac:cpfDescription/eac:description/eac:legalStatuses/eac:legalStatus/eac:term/@vocabularySource='d5blonaxbw--1mt8t42bokzts'" />
+	</xsl:function>
+	<!-- Tests if a legalStatus on the entity has the value 'Ministère' -->
+	<xsl:function name="eac2rico:isMinistere" as="xs:boolean">
+		<xsl:param name="entityDescriptionRoot"  as="element()?"/>
+		<xsl:sequence select="$entityDescriptionRoot/eac:cpfDescription/eac:description/eac:legalStatuses/eac:legalStatus/eac:term/@vocabularySource='d5bloo2gwk-sgl3fc00gzgl'" />
 	</xsl:function>
 	
 	<!-- Tests if a relation descriptiveNote indicates an AgentControlRelation. We look if the descriptiveNote contains specific keywords -->

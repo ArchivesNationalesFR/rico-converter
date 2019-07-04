@@ -11,6 +11,8 @@ import fr.gouv.culture.an.eaccpf2rico.cli.convertAndArrange.ArgumentsConvertAndA
 import fr.gouv.culture.an.eaccpf2rico.cli.convertAndArrange.ConvertAndArrange;
 import fr.gouv.culture.an.eaccpf2rico.cli.test.ArgumentsTest;
 import fr.gouv.culture.an.eaccpf2rico.cli.test.Test;
+import fr.gouv.culture.an.eaccpf2rico.cli.validate.ArgumentsValidate;
+import fr.gouv.culture.an.eaccpf2rico.cli.validate.Validate;
 import fr.gouv.culture.an.eaccpf2rico.cli.version.ArgumentsVersion;
 import fr.gouv.culture.an.eaccpf2rico.cli.version.Version;
 
@@ -20,6 +22,7 @@ public class Main {
 		
 		CONVERT(new ArgumentsConvert(), new Convert()),
 		CONVERT_ARRANGE(new ArgumentsConvertAndArrange(), new ConvertAndArrange()),
+		VALIDATE(new ArgumentsValidate(), new Validate()),
 		TEST(new ArgumentsTest(), new Test()),
 		VERSION(new ArgumentsVersion(), new Version()),
 		;

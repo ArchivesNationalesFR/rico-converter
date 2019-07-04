@@ -11,6 +11,7 @@
     	<file>log/eaccpf2rico-all.log</file>
     	
 	    <encoder>
+	      <charset>UTF-8</charset>
 	      <pattern>%d{HH:mm:ss.SSS} %-5level %logger{10} - %msg%n</pattern>
 	    </encoder>
   	</appender>
@@ -22,6 +23,7 @@
 	    </filter>
 
 	    <encoder>
+	      <charset>UTF-8</charset>
 	      <pattern>%d{HH:mm:ss.SSS} %-5level %logger{10} - %msg%n</pattern>
 	    </encoder>
   	</appender>
@@ -30,6 +32,7 @@
     	<file>log/eaccpf2rico-xslt.log</file>
 
 	    <encoder>
+	      <charset>UTF-8</charset>
 	      <pattern>%d{HH:mm:ss.SSS} %-5level %logger{10} - %msg%n</pattern>
 	    </encoder>
   	</appender>
@@ -38,6 +41,7 @@
     	<file>log/eaccpf2rico-report.log</file>
 
 	    <encoder>
+	      <charset>UTF-8</charset>
 	      <pattern>%msg%n</pattern>
 	    </encoder>
   	</appender>

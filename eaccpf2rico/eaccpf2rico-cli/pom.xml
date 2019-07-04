@@ -156,6 +156,13 @@
 	    	<version>20190604</version>
 		</dependency>
 
+		<!-- validator -->
+		<dependency>
+			<groupId>fr.gouv.culture.archives-nationales</groupId>
+			<artifactId>eaccpf2rico-validator</artifactId>
+	    	<version>20190604</version>
+		</dependency>
+
 		<!-- for command-line parsing -->
 		<dependency>
 			<groupId>com.beust</groupId>
@@ -184,6 +191,14 @@
 		      <artifactId>progressbar</artifactId>
 		      <version>0.7.2</version>
 		  </dependency>
+
+		<!-- Jena -->
+		<dependency>
+		   <groupId>org.apache.jena</groupId>
+		   <artifactId>apache-jena-libs</artifactId>
+		   <type>pom</type>
+		   <version>3.12.0</version>
+		</dependency>
 
 	</dependencies>
 
