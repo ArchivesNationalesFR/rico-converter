@@ -1,116 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <eac-cpf xmlns="urn:isbn:1-931666-33-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
-	<control>
-		<recordId>FRAN_NP_123456</recordId>
-	</control>
-	<cpfDescription>
-		<identity>
-			<entityType>corporateBody</entityType>
-			<nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
-				<part>The entity</part>
-			</nameEntry>
-		</identity>
-		<description>
-			<!-- unit tests for processing places : places out of Paris - placeRole="Lieu général" -->
-			<!-- the authority list used in this case is FRAN_RI_005, which is hierarchical. It is provided :
+    xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+    <control>
+        <recordId>FRAN_NP_123456</recordId>
+    </control>
+    <cpfDescription>
+        <identity>
+            <entityType>corporateBody</entityType>
+            <nameEntry localType="autorisée" scriptCode="Latn" xml:lang="fre">
+                <part>The entity</part>
+            </nameEntry>
+        </identity>
+        <description>
+            <!-- unit tests for processing places : places out of Paris - placeRole="Lieu général" -->
+            <!-- the authority list used in this case is FRAN_RI_005, which is hierarchical. It is provided :
 				- in its XML source format, in the eac-cpf2ric-o\processVocabularies\src\places folder. 
 				- in its RDF format, in the
 				eac-cpf2ric-o\eac-cpf2ric-o\processVocabularies\rdf\places folder. These files are those whose name does not begin with 'FRAN_Paris'.
 			-->
-			<places>
-				<!-- CASE A : no placeEntry[@localType='nomLieu'] or it is empty. In this case there is always at least one placeEntry with a link to the authority list-->
-				<!-- CASE A, option 1 ('normal') : one placeEntry for a link to the authority list (example taken from FRAN_NP_050056 and adapted) -->
-				<place>
-					<!-- FRAN_NP_050056-->
-					<placeRole>Lieu général</placeRole>
-					<placeEntry localType="lieu" vocabularySource="d3ntxfqxqs-hiibmu39cc86">Vincennes (Val-de-Marne)</placeEntry>
-				
-					<dateRange>
-						<fromDate standardDate="1800-01-01">1800</fromDate>
-						<toDate standardDate="1810-10">octobre 1820</toDate>
-					</dateRange>
-					<descriptiveNote>
-						<p>A note.</p>
-					</descriptiveNote>
-				</place>
-				<!-- CASE A, option 2 (rare and odd) : several placeEntry with links to the authority list
-				Two possibilities :
-					- in the FRAN_RI_005 file, the entries are in France and in the RDF output, there are partitive/location relations (isPartOf or isWithin) between them (quartier ou lieu-dit ou construction ou zone géographique naturelle > commune > canton > arrondissement > département > région française
-					In this case, output only the smallest entry(entries) and a warning. Example taken from NP_050939
-					- there is no location/partitive relation between the placeEntries or it is not in France. In this case, as there is never a date nor descriptiveNote, output each entry as a distinct relation to Place, and a warning. Example from NP_050440. And a more complex example from NP_51338. If there would be a date or a descriptive note, do nothing, output an error -->
-				
-				<place>
-					<!-- NP_050939-->
-					<placeRole>Lieu général</placeRole>
-					<placeEntry localType="lieu" vocabularySource="d3ntb5nsnj--jrkyz6vwvi4f">Auvergne (France , région administrative)</placeEntry>
-					<placeEntry localType="lieu" vocabularySource="d3ntb8jcjf--14j38x9l75uuq">Puy-de-Dôme (Auvergne , département)</placeEntry>
-					<dateRange>
-						<fromDate standardDate="1992-01-01">1992</fromDate>
-						<toDate standardDate="1993-12-31">1993</toDate>
-					</dateRange>
-					<descriptiveNote>
-						<p>Ph. Massoni, préfet du Puy-de-Dôme</p>
-					</descriptiveNote>
-				</place>
-				<place>
-					<!-- NP_050440-->
-					<placeRole>Lieu général</placeRole>
-					<placeEntry localType="lieu" vocabularySource="d3ntxjxn5s-6kuyi0i46073">Algérie</placeEntry>
-					<placeEntry localType="lieu" vocabularySource="d3ntxkcyrz--1bv09gkx25n60">Congo (République démocratique du)</placeEntry>
-				</place>
-				<place>
-					<!-- from  NP_51338-->
-					<placeRole>Lieu général</placeRole>
-					<placeEntry localType="lieu" vocabularySource="d5bdpaticd--p8dvp93nimsg">Mauzac (Dordogne, camp)</placeEntry>
-					<placeEntry localType="lieu" vocabularySource="d3ntxf6q0j-g0j2ysmlf0zv">Saint-Denis (Seine-Saint-Denis)</placeEntry>
-					<placeEntry localType="lieu" vocabularySource="d3ntb7grwl-94z667d9uttv">Corrèze (Limousin , département)</placeEntry>
-					<placeEntry localType="lieu" vocabularySource="d3ntxlhlzu--xk25nxgg86yz">Russie</placeEntry>
-					<placeEntry localType="lieu" vocabularySource="d3ntxktw5x--84skvc22nt6e">Israël</placeEntry>
-					<placeEntry localType="lieu" vocabularySource="d3ntxjxyl2-de3n2j7xfcc0">Allemagne</placeEntry>
-					<placeEntry localType="lieu" vocabularySource="d3m08zyukwj--12tvqias1nunm">Angleterre (Royaume-Uni)</placeEntry>
-					<placeEntry localType="lieu" vocabularySource="d3ntxkj150-14qdrjsm01noe">Espagne</placeEntry>
-					<placeEntry localType="lieu" vocabularySource="d3ntxo21l5--1llwpj4s4ec1i">Londres (Royaume-Uni)</placeEntry>
-					
-				</place>
-				
-				<!-- CASE B : a placeEntry[@localType='nomLieu'] that is not empty. In this case there is always at least one placeEntry with a link to the authority list-->
-				<!-- CASE B, option 1 ('normal' even if there is often some redundancy between the first placeEntry and the following ones) : one placeEntry for a link to the authority list (example taken from FRAN_NP_050059 and adapted) -->
-				<place>
-					<!-- FRAN_NP_050059-->
-					<placeRole>Lieu général</placeRole>
-					<placeEntry localType="nomLieu">Sens</placeEntry>
-					<placeEntry localType="lieu" vocabularySource="d3ntxa34ba-196cqozu31nvj">Sens (Yonne)</placeEntry>
-					<dateRange>
-						<fromDate standardDate="1788-01-01">1788</fromDate>
-						<toDate standardDate="1794-02-19">19 février 1794</toDate>
-					</dateRange>
-					<descriptiveNote>
-						<p>A note.</p>
-					</descriptiveNote>
-				</place>
-				<!-- CASE B, option 2 (very rare and odd) : two  placeEntry with links to the authority list. There is never more than 2 entries
-				Two possibilities :
-					- in the FRAN_RI_005 file, the entries are in France and in the RDF output, there are partitive/location relations (isPartOf or isWithin) between them (quartier ou lieu-dit ou construction ou zone géographique naturelle > commune > canton > arrondissement > département > région française
-					In this case, output only the smallest entry and a warning. Example taken from NP_050578 and adapted
-					- there is no location/partitive relation between the placeEntries or it is not in France (the case does not exist in the EAC files). In this case, do nothing, output an error. -->
-				<place>
-					<!-- NP_050578. The example below is in fact a very wrong one, we should ahve 'Lyon' in the first placeEntry.... -->
-					<placeRole>Lieu général</placeRole>
-					<placeEntry localType="nomLieu">Rhône</placeEntry>
-					<placeEntry localType="lieu" vocabularySource="d3ntb8kmo4-14vv2fdq38hkk">Rhône (Rhône-Alpes , département)</placeEntry>
-					<placeEntry localType="lieu" vocabularySource="d3ntr30aef-iiuzlggrj026">Lyon (Rhône)</placeEntry>
-					<dateRange>
-						<fromDate standardDate="1992-01-01">1992</fromDate>
-						<toDate standardDate="1993-12-31">1993</toDate>
-					</dateRange>
-					<descriptiveNote>
-						<p>A note.</p>
-					</descriptiveNote>
-				</place>
-			</places>
-		
-		</description>
-
-	</cpfDescription>
+            <places>
+                <!-- CASE A : no placeEntry[@localType='nomLieu'] or it is empty. In this case there is always at least one placeEntry with a link to the authority list-->
+                <!-- CASE A, option 1 ('normal') : one placeEntry with a link to the authority list (example taken from FRAN_NP_050056 and adapted) -->
+                <place>
+                    <!-- FRAN_NP_050056-->
+                    <placeRole>Lieu général</placeRole>
+                    <placeEntry localType="lieu" vocabularySource="d3ntxfqxqs-hiibmu39cc86">Vincennes (Val-de-Marne)</placeEntry>
+                    
+                    <dateRange>
+                        <fromDate standardDate="1800-01-01">1800</fromDate>
+                        <toDate standardDate="1810-10">octobre 1820</toDate>
+                    </dateRange>
+                    <descriptiveNote>
+                        <p>A note.</p>
+                    </descriptiveNote>
+                </place>
+                <!-- CASE A, option 2 (rare and odd) : several placeEntry with links to the authority list : for each placeEntry, we output a relation to a place, and if there is a date and a note we copy them in every relation. And we output a warning (bad use of places) -->
+                
+                <place>
+                    <!-- NP_050939-->
+                    <placeRole>Lieu général</placeRole>
+                    <placeEntry localType="lieu" vocabularySource="d3ntb5nsnj--jrkyz6vwvi4f">Auvergne (France , région administrative)</placeEntry>
+                    <placeEntry localType="lieu" vocabularySource="d3ntb8jcjf--14j38x9l75uuq">Puy-de-Dôme (Auvergne , département)</placeEntry>
+                    <dateRange>
+                        <fromDate standardDate="1992-01-01">1992</fromDate>
+                        <toDate standardDate="1993-12-31">1993</toDate>
+                    </dateRange>
+                    <descriptiveNote>
+                        <p>Ph. Massoni, préfet du Puy-de-Dôme</p>
+                    </descriptiveNote>
+                </place>
+                <place>
+                    <!-- NP_050440-->
+                    <placeRole>Lieu général</placeRole>
+                    <placeEntry localType="lieu" vocabularySource="d3ntxjxn5s-6kuyi0i46073">Algérie</placeEntry>
+                    <placeEntry localType="lieu" vocabularySource="d3ntxkcyrz--1bv09gkx25n60">Congo (République démocratique du)</placeEntry>
+                </place>
+                <place>
+                    <!-- from  NP_51338-->
+                    <placeRole>Lieu général</placeRole>
+                    <placeEntry localType="lieu" vocabularySource="d5bdpaticd--p8dvp93nimsg">Mauzac (Dordogne, camp)</placeEntry>
+                    <placeEntry localType="lieu" vocabularySource="d3ntxf6q0j-g0j2ysmlf0zv">Saint-Denis (Seine-Saint-Denis)</placeEntry>
+                    <placeEntry localType="lieu" vocabularySource="d3ntb7grwl-94z667d9uttv">Corrèze (Limousin , département)</placeEntry>
+                    <placeEntry localType="lieu" vocabularySource="d3ntxlhlzu--xk25nxgg86yz">Russie</placeEntry>
+                    <placeEntry localType="lieu" vocabularySource="d3ntxktw5x--84skvc22nt6e">Israël</placeEntry>
+                    <placeEntry localType="lieu" vocabularySource="d3ntxjxyl2-de3n2j7xfcc0">Allemagne</placeEntry>
+                    <placeEntry localType="lieu" vocabularySource="d3m08zyukwj--12tvqias1nunm">Angleterre (Royaume-Uni)</placeEntry>
+                    <placeEntry localType="lieu" vocabularySource="d3ntxkj150-14qdrjsm01noe">Espagne</placeEntry>
+                    <placeEntry localType="lieu" vocabularySource="d3ntxo21l5--1llwpj4s4ec1i">Londres (Royaume-Uni)</placeEntry>
+                    
+                </place>
+                
+                <!-- CASE B : a placeEntry[@localType='nomLieu'] that is not empty. In this case there is always at least one placeEntry with a link to the authority list-->
+                <!-- CASE B, option 1 ('normal' even if there is often some redundancy between the first placeEntry and the following ones) : one placeEntry for a link to the authority list (example taken from FRAN_NP_050059 and adapted) -->
+                <place>
+                    <!-- FRAN_NP_050059-->
+                    <placeRole>Lieu général</placeRole>
+                    <placeEntry localType="nomLieu">Sens</placeEntry>
+                    <placeEntry localType="lieu" vocabularySource="d3ntxa34ba-196cqozu31nvj">Sens (Yonne)</placeEntry>
+                    <dateRange>
+                        <fromDate standardDate="1788-01-01">1788</fromDate>
+                        <toDate standardDate="1794-02-19">19 février 1794</toDate>
+                    </dateRange>
+                    <descriptiveNote>
+                        <p>A note.</p>
+                    </descriptiveNote>
+                </place>
+                <!-- CASE B, option 2 (very rare and odd) : two  placeEntry with links to the authority list. There is never more than 2 entries. We output a relation to the place, and the place is linked to the 2 places that exist in the authority list. -->
+                <place>
+                    <!-- NP_050578. The example below - the only I found - is in fact a wrong one, we should have 'Lyon' in the first placeEntry.... -->
+                    <placeRole>Lieu général</placeRole>
+                    <placeEntry localType="nomLieu">Rhône</placeEntry>
+                    <placeEntry localType="lieu" vocabularySource="d3ntb8kmo4-14vv2fdq38hkk">Rhône (Rhône-Alpes , département)</placeEntry>
+                    <placeEntry localType="lieu" vocabularySource="d3ntr30aef-iiuzlggrj026">Lyon (Rhône)</placeEntry>
+                    <dateRange>
+                        <fromDate standardDate="1992-01-01">1992</fromDate>
+                        <toDate standardDate="1993-12-31">1993</toDate>
+                    </dateRange>
+                    <descriptiveNote>
+                        <p>A note.</p>
+                    </descriptiveNote>
+                </place>
+            </places>
+            
+        </description>
+        
+    </cpfDescription>
 </eac-cpf>
+
