@@ -35,7 +35,5 @@ public class ValidationReportTsvWriter implements ValidationReportWriter {
 	public ValidationReportFormat getFormat() {
 		return ValidationReportFormat.TSV;
 	}
-
-	
 	
 }

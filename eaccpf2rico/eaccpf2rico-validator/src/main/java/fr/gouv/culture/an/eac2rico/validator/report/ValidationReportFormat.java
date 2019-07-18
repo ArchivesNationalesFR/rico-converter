@@ -6,7 +6,8 @@ import java.util.List;
 public enum ValidationReportFormat {
 
 	RDF(Arrays.asList(new String[] { "ttl", "rdf", "jsonld" })),
-	TSV(Arrays.asList(new String[] { "tsv" }));
+	TSV(Arrays.asList(new String[] { "tsv" })),
+	TXT(Arrays.asList(new String[] { "txt" }));
 	
 	protected List<String> fileExtensions;
 	

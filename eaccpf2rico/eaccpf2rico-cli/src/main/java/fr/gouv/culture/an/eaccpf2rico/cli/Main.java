@@ -51,6 +51,8 @@ public class Main {
 		for (COMMAND aCOMMAND : COMMAND.values()) {
 			jc.addCommand(aCOMMAND.name().toLowerCase(), aCOMMAND.getArguments());
 		}
+		// add a help command
+		jc.addCommand("help", new ArgumentsHelp());
 		
 		try {
 			jc.parse(args);
@@ -92,6 +94,11 @@ public class Main {
 			System.err.println("No command found.");
 			jc.usage();
 			System.exit(-1);
+		}
+		
+		if(jc.getParsedCommand().equals("help")) {
+			jc.usage();
+			System.exit(0);
 		}
 		
 		// executes the command with the associated arguments

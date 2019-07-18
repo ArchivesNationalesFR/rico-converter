@@ -1022,33 +1022,54 @@
 			)
 		)
 	]">
-		<rico:thingIsSourceOfRelationToPlace>
-         <rico:RelationToPlace>
-            <rico:relationToPlaceHasSource>
-            	<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
-            </rico:relationToPlaceHasSource>
-            <rico:relationToPlaceHasTarget>
-            	<xsl:choose>
-            		<!-- Match on indéterminé without accents -->
-            		<xsl:when test="not(contains(replace(normalize-unicode(lower-case(eac:placeEntry[@localType='nomLieu']),'NFKD'),'\P{IsBasicLatin}',''), 'indetermine'))">
-            			<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-Place(eac:placeEntry[@localType='nomLieu']/text())" /></xsl:call-template>
-            		</xsl:when>
-            		<xsl:otherwise>
-            			<rico:Place>
-            				<rdfs:label xml:lang="{$LITERAL_LANG}">Lieu dont l'adresse précise est indéterminée</rdfs:label>
-            				<xsl:apply-templates select="eac:placeEntry" mode="hasLocation" />
-            			</rico:Place>
-            		</xsl:otherwise>
-            	</xsl:choose>            	
-            </rico:relationToPlaceHasTarget>
-            
-            <!--  dates + descriptiveNote -->
-      		<xsl:apply-templates />
-         </rico:RelationToPlace>
-      </rico:thingIsSourceOfRelationToPlace>
-      
-      <!-- Additionnally, generate the direct link hasLocation to the referential -->
-      <xsl:apply-templates select="eac:placeEntry" mode="hasLocation" />
+
+       	<xsl:choose>
+       		<!-- Match on indéterminé without accents -->
+       		<xsl:when test="not(contains(replace(normalize-unicode(lower-case(eac:placeEntry[@localType='nomLieu']),'NFKD'),'\P{IsBasicLatin}',''), 'indetermine'))">
+
+       		  <rico:thingIsSourceOfRelationToPlace>
+		         <rico:RelationToPlace>
+		            <rico:relationToPlaceHasSource>
+		            	<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
+		            </rico:relationToPlaceHasSource>
+		            <rico:relationToPlaceHasTarget>
+		            	<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-Place(eac:placeEntry[@localType='nomLieu']/text())" /></xsl:call-template>           	
+		            </rico:relationToPlaceHasTarget>
+		            
+		            <!--  dates + descriptiveNote -->
+		      		<xsl:apply-templates />
+		         </rico:RelationToPlace>
+		      </rico:thingIsSourceOfRelationToPlace>
+		      
+		      <!-- Additionnally, generate the direct link hasLocation to the Place -->
+		      <rico:hasLocation>
+					<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-Place(eac:placeEntry[@localType='nomLieu']/text())" /></xsl:call-template>
+			  </rico:hasLocation>
+       			
+       		</xsl:when>
+       		<xsl:otherwise>
+       			<!--  Case 3 -->
+	       		  <rico:thingIsSourceOfRelationToPlace>
+			         <rico:RelationToPlace>
+			            <rico:relationToPlaceHasSource>
+			            	<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
+			            </rico:relationToPlaceHasSource>
+			            <rico:relationToPlaceHasTarget>
+			            	<rico:Place>
+			       				<rdfs:label xml:lang="{$LITERAL_LANG}">Lieu dont l'adresse précise est indéterminée</rdfs:label>
+			       				<xsl:apply-templates select="eac:placeEntry" mode="hasLocation" />
+			       			</rico:Place>
+			            </rico:relationToPlaceHasTarget>
+			            
+			            <!--  dates + descriptiveNote -->
+			      		<xsl:apply-templates />
+			         </rico:RelationToPlace>
+			      </rico:thingIsSourceOfRelationToPlace>
+			      
+			      <!-- Additionnally, generate the direct link hasLocation to the Place -->
+				  <xsl:apply-templates select="eac:placeEntry" mode="hasLocation" />
+       		</xsl:otherwise>
+       	</xsl:choose>  
 	</xsl:template>
 	
 	<!--  Case 6 in the unit tests -->
@@ -1079,7 +1100,7 @@
          </rico:RelationToPlace>
       </rico:thingIsSourceOfRelationToPlace>
       
-      <!-- Additionnally, generate the direct link hasLocation to the referential -->
+      <!-- Additionnally, generate the direct link hasLocation to the Place -->
       <xsl:apply-templates select="eac:placeEntry" mode="hasLocation" />
 	</xsl:template>
 
@@ -1199,11 +1220,12 @@
             <!--  dates + descriptiveNote -->
       		<xsl:apply-templates />
          </rico:RelationToPlace>
-      </rico:thingIsSourceOfRelationToPlace>
-	  
+      </rico:thingIsSourceOfRelationToPlace>	  
 	  
 	  <!-- Additionnally, generate the direct link hasLocation to the referential -->
-      <xsl:apply-templates select="eac:placeEntry[@localType != 'nomLieu']" mode="hasLocation" />
+      <rico:hasLocation>
+			<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-Place(eac:placeEntry[@localType='nomLieu']/text())" /></xsl:call-template>
+	  </rico:hasLocation>
       
 	</xsl:template>
 
@@ -1232,6 +1254,7 @@
 			</xsl:call-template>
 		</rico:hasLocation>
 	</xsl:template>
+	
 	<!-- This is for a Place outside Paris -->
 	<xsl:template 
 		match="eac:placeEntry[@localType = 'lieu' and @vocabularySource]"

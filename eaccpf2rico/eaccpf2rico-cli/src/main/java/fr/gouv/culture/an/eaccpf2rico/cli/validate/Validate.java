@@ -20,6 +20,7 @@ import fr.gouv.culture.an.eac2rico.validator.ShaclValidator;
 import fr.gouv.culture.an.eac2rico.validator.Slf4jProgressMonitor;
 import fr.gouv.culture.an.eac2rico.validator.report.ValidationReportFormat;
 import fr.gouv.culture.an.eac2rico.validator.report.ValidationReportRdfWriter;
+import fr.gouv.culture.an.eac2rico.validator.report.ValidationReportTextSummaryWriter;
 import fr.gouv.culture.an.eac2rico.validator.report.ValidationReportTsvWriter;
 import fr.gouv.culture.an.eac2rico.validator.report.ValidationReportWriterRegistry;
 import fr.gouv.culture.an.eaccpf2rico.cli.CommandIfc;
@@ -54,10 +55,12 @@ public class Validate implements CommandIfc {
 			Model validationResults = validator.validate(dataModel);
 			
 			ValidationReportWriterRegistry.getInstance().register(new ValidationReportTsvWriter());
+			ValidationReportWriterRegistry.getInstance().register(new ValidationReportTextSummaryWriter());
 			ValidationReportWriterRegistry.getInstance().register(new ValidationReportRdfWriter(Lang.TTL));
 			ValidationReportWriterRegistry.getInstance().register(new ValidationReportRdfWriter(Lang.RDFXML));
 			ValidationReportWriterRegistry.getInstance().register(new ValidationReportRdfWriter(Lang.JSONLD));
 			ValidationReportWriterRegistry.getInstance().register(new ValidationReportRdfWriter(Lang.NT));
+			
 		
 		
 			if(!a.getOutput().exists()) {
@@ -67,7 +70,8 @@ public class Validate implements CommandIfc {
 			ValidationReportWriterRegistry.getInstance().getWriter(ValidationReportFormat.forFileName(a.getOutput().getName()))
 			.orElse(new ValidationReportRdfWriter(Lang.TTL))
 			.write(validationResults, new FileOutputStream(a.getOutput()));
-			System.out.println("Validation report sucessfully written to "+a.getOutput().getName());
+			ValidationReportWriterRegistry.getInstance().getWriter(ValidationReportFormat.TXT).get().write(validationResults, System.out);
+			System.out.println("Report written to "+a.getOutput().getName());
 			
 		} catch (Exception e) {
 			throw new RuntimeException(e);

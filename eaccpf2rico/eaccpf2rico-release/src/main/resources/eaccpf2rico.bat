@@ -21,10 +21,12 @@ if %jver% LSS 180000 (
 )
 
 SET command=convert_arrange
-set /p command=Enter command to execute (convert_arrange, convert, test, version) [press enter for "%command%"]:
+set /p command=Enter command to execute (convert_arrange, convert, validate, test, version, help) [press Enter for "%command%"]:
 
 SET parameterFile=parameters/%command%.properties
-set /p parameterFile=Enter parameter file location [press enter for "%parameterFile%"]:
+if NOT %command% == "help" (
+	set /p parameterFile=Enter parameter file location [press Enter for "%parameterFile%"]:
+)
 
 SET fullCommandLine=java -Xmx1200M -Xms1200M -jar eaccpf2rico-cli-${project.version}-onejar.jar %command% @%parameterFile%
 ECHO %fullCommandLine%
