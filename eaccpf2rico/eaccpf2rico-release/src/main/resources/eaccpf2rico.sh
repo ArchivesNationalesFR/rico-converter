@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo ":: Welcome to EAC-CPF 2 Ric-O Converter 20190604 ::"
+echo ":: Welcome to EAC-CPF 2 Ric-O Converter ${project.version} ::"
 
 export command_default=convert_arrange
 read -p "Enter command to execute (convert_arrange, convert, validate, test, version, help) [press Enter for '$command_default'] :" command
@@ -14,7 +14,7 @@ then
 	parameterFile=${parameterFile:-$parameterFile_default}
 fi
 
-export fullCommandLine="java -Xmx1200M -Xms1200M -jar eaccpf2rico-cli-20190604-onejar.jar $command @$parameterFile"
+export fullCommandLine="java -Xmx1200M -Xms1200M -jar eaccpf2rico-cli-${project.version}-onejar.jar $command @$parameterFile"
 echo $fullCommandLine
 $fullCommandLine
 read -p "Appuyer sur Entrée pour continuer ..."

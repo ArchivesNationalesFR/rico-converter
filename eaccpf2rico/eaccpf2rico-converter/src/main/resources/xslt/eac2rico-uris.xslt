@@ -103,7 +103,7 @@
 	
 	<xsl:function name="eac2rico:URI-ActivityType">
 		<xsl:param name="vocabularySource" />
-		<xsl:value-of select="concat('http://data.archives-nationales.culture.gouv.fr', '/activityType/', 'FRAN_RI_011-', $vocabularySource)" />
+		<xsl:value-of select="concat('activityType/', 'FRAN_RI_011-', $vocabularySource)" />
 	</xsl:function>
 	
 	<xsl:function name="eac2rico:URI-OccupationRelation">
@@ -123,7 +123,7 @@
 	
 	<xsl:function name="eac2rico:URI-OccupationType">
 		<xsl:param name="vocabularySource" />
-		<xsl:value-of select="concat('http://data.archives-nationales.culture.gouv.fr', '/occupationType/', 'FRAN_RI_010-', $vocabularySource)" />
+		<xsl:value-of select="concat('occupationType/', 'FRAN_RI_010-', $vocabularySource)" />
 	</xsl:function>
 	
 	<xsl:function name="eac2rico:URI-AgentHierarchicalRelation">
@@ -343,19 +343,20 @@
 		<xsl:param name="lnk" />
 		<xsl:param name="entityType" />
 		<xsl:choose>
+		   <!-- links to BNF -->
            <xsl:when test="contains($lnk, 'bnf.fr')">
                <xsl:choose>
                    <xsl:when test="contains($lnk, 'catalogue.bnf.fr/ark:/12148/') and contains($lnk, '/PUBLIC')">
                      <xsl:text>http://data.bnf.fr/ark:/12148/</xsl:text>
-                     <xsl:value-of select="substring-before(substring-after($lnk, 'http://catalogue.bnf.fr/ark:/12148/'), '/PUBLIC')"/>
+                     <xsl:value-of select="substring-before(substring-after($lnk, 'catalogue.bnf.fr/ark:/12148/'), '/PUBLIC')"/>
                      <xsl:text>#about</xsl:text>
                    </xsl:when>
                    <xsl:when test="contains($lnk, 'catalogue.bnf.fr/ark:/12148/') and not(contains($lnk, '/PUBLIC'))">
                      <xsl:text>http://data.bnf.fr/ark:/12148/</xsl:text>
-                     <xsl:value-of select="substring-after($lnk, 'http://catalogue.bnf.fr/ark:/12148/')"/>
+                     <xsl:value-of select="substring-after($lnk, 'catalogue.bnf.fr/ark:/12148/')"/>
                      <xsl:text>#about</xsl:text>
                    </xsl:when>
-                   <xsl:when test="contains($lnk, 'http://data.bnf.fr/ark:/12148/')">
+                   <xsl:when test="contains($lnk, 'data.bnf.fr/ark:/12148/')">
                    	 <xsl:choose>
                    	 	<xsl:when test="contains($lnk, '#about')">
                    	 		<xsl:value-of select="$lnk"/>

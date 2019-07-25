@@ -12,6 +12,7 @@
 	xmlns:eac="urn:isbn:1-931666-33-4"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
 	xmlns:html="http://www.w3.org/1999/xhtml"
+	exclude-result-prefixes="eac eac2rico xlink xs xsi xsl"
 >
 	<!-- Import URI stylesheet -->
 	<xsl:import href="eac2rico-uris.xslt" />
@@ -243,22 +244,22 @@
             </xsl:call-template>
 		</rico:deathDate>
 	</xsl:template>
-	<!--  Processing the fromDate / toDate of nameEntry ; note agin the higher priority so that this template is picked up before the other one -->
+	<!--  Processing the fromDate / toDate of nameEntry ; note again the higher priority so that this template is picked up before the other one -->
 	<xsl:template match="eac:nameEntry/eac:useDates/eac:dateRange/eac:fromDate[@standardDate]" priority="2">
-		<rico:usedFromDate>
+		<rico:wasUsedFromDate>
 			<xsl:call-template name="outputDate">
                <xsl:with-param name="stdDate" select="@standardDate"/>
                <xsl:with-param name="date" select="text()"/>
             </xsl:call-template>
-		</rico:usedFromDate>
+		</rico:wasUsedFromDate>
 	</xsl:template>
 	<xsl:template match="eac:nameEntry/eac:useDates/eac:dateRange/eac:toDate[@standardDate]" priority="2">
-		<rico:usedToDate>
+		<rico:wasUsedToDate>
 			<xsl:call-template name="outputDate">
                <xsl:with-param name="stdDate" select="@standardDate"/>
                <xsl:with-param name="date" select="text()"/>
             </xsl:call-template>
-		</rico:usedToDate>
+		</rico:wasUsedToDate>
 	</xsl:template>
 	
 	<xsl:template match="eac:fromDate[@standardDate]">
@@ -277,7 +278,8 @@
             </xsl:call-template>
 		</rico:endDate>
 	</xsl:template>
-	<xsl:template match="eac:fromDate[not(@standardDate)]">
+	<!-- Ensure the element is not totally empty -->
+	<xsl:template match="eac:fromDate[not(@standardDate) and text()]">
 		<rico:beginningDate>
 			<xsl:call-template name="outputDate">
                <xsl:with-param name="stdDate" select="text()"/>
@@ -285,7 +287,8 @@
             </xsl:call-template>
 		</rico:beginningDate>
 	</xsl:template>
-	<xsl:template match="eac:toDate[not(@standardDate)]">
+	<!-- Ensure the element is not totally empty -->
+	<xsl:template match="eac:toDate[not(@standardDate) and text()]">
 		<rico:endDate>
 			<xsl:call-template name="outputDate">
                <xsl:with-param name="stdDate" select="text()"/>
@@ -444,13 +447,13 @@
 			</html:p></rico:source>
 
 			<!--  In addition to the generation of the literal value, we extract certain URI and generate rico:hasSource to these URIs -->
-			  <xsl:analyze-string select="." regex="http://catalogue.bnf.fr/[^\s)\]\.;,]*">		
+			  <xsl:analyze-string select="." regex="(http|https)://catalogue.bnf.fr/[^\s)\]\.;,]*">		
 			    <xsl:matching-substring>
 			      <rico:hasSource rdf:resource="{regex-group(0)}" />
 			    </xsl:matching-substring>		
 			  </xsl:analyze-string>
 	
-			  <xsl:analyze-string select="." regex="http://fr.wikipedia.org/wiki/[^\s)\]\.;,]*">		
+			  <xsl:analyze-string select="." regex="(http|https)://fr.wikipedia.org/wiki/[^\s)\]\.;,]*">		
 			    <xsl:matching-substring>
 			      <rico:hasSource rdf:resource="{regex-group(0)}" />
 			    </xsl:matching-substring>		
@@ -530,10 +533,15 @@
 		<xsl:apply-templates />
 	</xsl:template>
 	<xsl:template match="eac:legalStatus[not(eac:dateRange/eac:fromDate) and not(eac:dateRange/eac:toDate) and not(eac:descriptiveNote)]">
-		<xsl:if test="not(eac:term/@vocabularySource)">
-			<xsl:value-of select="eac2rico:warning($recordId, 'MISSING_VOCABULARYSOURCE_ON_LEGAL_STATUS', ./eac:term/text())" />
-		</xsl:if>
-		<rico:hasLegalStatus><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-LegalStatus(eac:term/@vocabularySource)" /></xsl:call-template></rico:hasLegalStatus>
+		<xsl:choose>
+			<xsl:when test="not(eac:term/@vocabularySource)">
+				<xsl:value-of select="eac2rico:warning($recordId, 'MISSING_VOCABULARYSOURCE_ON_LEGAL_STATUS', ./eac:term/text())" />
+			</xsl:when>
+			<xsl:otherwise>
+				<rico:hasLegalStatus><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-LegalStatus(eac:term/@vocabularySource)" /></xsl:call-template></rico:hasLegalStatus>		
+			</xsl:otherwise>
+		</xsl:choose>
+		
 	</xsl:template>
 	<xsl:template match="eac:legalStatus[eac:dateRange/eac:fromDate or eac:dateRange/eac:toDate or eac:descriptiveNote]">
 		<xsl:if test="not(eac:term/@vocabularySource)">

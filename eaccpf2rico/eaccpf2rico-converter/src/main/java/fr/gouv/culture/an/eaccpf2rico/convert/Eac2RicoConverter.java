@@ -206,6 +206,11 @@ public class Eac2RicoConverter {
 		// do NOT recurse on subdirectories
 		if(!inputFile.isDirectory()) {
 
+			if(!inputFile.getName().endsWith(".xml")) {
+				log.info("File " + inputFile.getName() + " does not have 'xml' extension, skipping it.");
+				return;
+			}
+			
 			try {
 				notifyBeginProcessing(inputFile);
 			} catch (Eac2RicoConverterListenerException e) {
