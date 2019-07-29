@@ -1,0 +1,44 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:rico="http://www.ica.org/standards/RiC/ontology#">
+   <rico:Description rdf:about="description/005205">
+   	  <rico:describes rdf:resource="agent/005205"/>
+   	  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005205"/>
+   </rico:Description>
+   <rico:Agent rdf:about="agent/005205">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="description/005205"/>
+	  <rico:noteOnStructureOrGenealogy rdf:parseType="Literal">
+	  	 <html:div xml:lang="fr">
+	         <html:p>1</html:p>
+	         <html:p>2</html:p>
+	         <html:h2>This is a header</html:h2>
+	         <html:ul>
+	            <html:li>item1</html:li>
+	            <html:li>item2</html:li>
+	            <html:li>item3</html:li>
+	         </html:ul>
+	         <html:p>
+	            <html:u>underline</html:u> et <html:b>bold</html:b> et <html:i>italic</html:i>
+	         </html:p> 
+         </html:div>
+	  </rico:noteOnStructureOrGenealogy>
+      <rico:generalContext rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:p>1</html:p>
+            <html:p>2</html:p>
+            <html:h2>This is a header</html:h2>
+            <html:ul>
+               <html:li>item1</html:li>
+               <html:li>item2</html:li>
+               <html:li>item3</html:li>
+            </html:ul>
+            <html:p>
+               <html:u>underline</html:u> et <html:b>bold</html:b> et <html:i>italic</html:i>
+            </html:p> 
+         </html:div>
+      </rico:generalContext>
+   </rico:Agent>
+</rdf:RDF>
