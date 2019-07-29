@@ -33,6 +33,15 @@
 				<p>Archives de l'UNVDC</p>
 			</descriptiveNote>
 		</resourceRelation>
+		<!-- a resourceRelation whose target has no identifier (xlink:href attribut does not exist or is empty)-->
+		<!-- in this case do nothing but output a warning -->
+		<resourceRelation resourceRelationType="creatorOf">
+			<relationEntry localType="archival">minutes</relationEntry>
+			<descriptiveNote>
+				<p>les minutes de l'étude ont été versées à la chambre des notaires de janvier 1896 à
+					décembre 1940</p>
+			</descriptiveNote>
+		</resourceRelation>
 	</relations>
  </cpfDescription>
 </eac-cpf>
