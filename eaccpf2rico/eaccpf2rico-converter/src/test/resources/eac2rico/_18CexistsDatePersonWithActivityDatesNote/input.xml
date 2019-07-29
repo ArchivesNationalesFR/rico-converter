@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eac-cpf 
+	xmlns="urn:isbn:1-931666-33-4"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd"
+>
+ <control>
+  <recordId>FRAN_NP_005205</recordId>
+
+ </control>
+ <cpfDescription>
+      <identity>
+         <entityType>person</entityType>
+      </identity>
+      <description>
+         <!-- a quite frequent case in the ANF EAC-CPF files : persons (notaries) whose existence dates are unknown, so that we provide their activity dates instead-->
+         <!-- in this case, do nothing (the activity dates ARE NOT existence dates ; besides they are provided again further, with the activity statement, and thus will be processed through an ActivityRealizationRelation)-->
+         <!-- So : if the entity is a person, and has existDates, test if there is a descriptiveNote whose text (in p) contains "dates d'exercice" or "dates d'activité", and if so, do nothing. If not, do as specified in unit test _18A -->
+         <existDates>
+            <dateRange>
+               <fromDate standardDate="1603-05-24">24 mai 1603</fromDate>
+               <toDate standardDate="1640-01-17">17 janvier 1640</toDate>
+            </dateRange>
+            <descriptiveNote>
+               <p>Les dates d'existence de la personne ne sont pas connues et sont évaluées d'après les dates d'exercice en tant que notaire</p>
+            </descriptiveNote>
+         </existDates>
+      </description>
+ </cpfDescription>
+</eac-cpf>
