@@ -4,23 +4,25 @@
    xmlns:html="http://www.w3.org/1999/xhtml" xmlns:rico="http://www.ica.org/standards/RiC/ontology#">
    <rico:Description rdf:about="description/123456">
       <rico:describes rdf:resource="agent/123456"/>
-      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_123456"/>
+      <rdfs:seeAlso
+         rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_123456"/>
    </rico:Description>
    <rico:Agent rdf:about="agent/123456">
       <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:describedBy rdf:resource="description/123456"/>
-      <rico:authorizingMandate rdf:parseType="Literal"><html:p xml:lang="fr">Arrêté du 6 juillet 1970 portant nomination d'un haut fonctionnaire chargé de l'histoire de l'éducation.</html:p></rico:authorizingMandate>
+      <!-- <rico:authorizingMandate rdf:parseType="Literal"><html:p xml:lang="fr">Arrêté du 6 juillet 1970 portant nomination d'un haut fonctionnaire chargé de l'histoire de l'éducation.</html:p></rico:authorizingMandate>
       <rico:authorizingMandate rdf:parseType="Literal"><html:p xml:lang="fr">Arrêté du 3 mars 1977 - Moyens et services de l'Institut national de recherche pédagogique (INRP) et du Centre national de documentation pédagogique (https://www.legifrance.gouv.fr/jo_pdf.do?id=JORFTEXT000000325912).</html:p></rico:authorizingMandate>
       <rico:agentIsSourceOfRelationToMandate>
          <rico:RelationToMandate rdf:about="relationToRule/123456-34def-dklmno">
             <rico:relationToMandateHasSource rdf:resource="agent/123456"/>
             <rico:relationToMandateHasTarget rdf:resource="rule/34def-dklmno"/>
          </rico:RelationToMandate>
-      </rico:agentIsSourceOfRelationToMandate>
-      <!-- ou bien,  ou en plus,  à discuter :
-         <rico:isAuthorizedBy rdf:resource="rule/34def-dklmno"/>
-         -->
-      <rico:authorizingMandate rdf:parseType="Literal"><html:p xml:lang="fr">Décret n°2013-728 du 12 août 2013 modifiant l'organisation de l'administration du ministère de l'Intérieur et du ministère des Outre-mer, <html:i> Journal officiel</html:i> du 14 août 2013, (https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000027838041)
+      </rico:agentIsSourceOfRelationToMandate>-->
+     
+      <rico:authorizingMandate rdf:parseType="Literal"><html:p xml:lang="fr">Décret n°2013-728 du 12
+            août 2013 modifiant l'organisation de l'administration du ministère de l'Intérieur et du
+            ministère des Outre-mer, <html:i> Journal officiel</html:i> du 14 août 2013,
+            (https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000027838041)
          </html:p></rico:authorizingMandate>
       <rico:agentIsSourceOfRelationToMandate>
          <rico:RelationToMandate rdf:about="relationToRule/123456-12abc-defghij">
@@ -39,10 +41,9 @@
                >2009</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
                >2012-06-14</rico:endDate>
-            <rico:description rdf:parseType="Literal"><html:p xml:lang="fr">une note</html:p></rico:description>
-         </rico:RelationToMandate>
-         
-      </rico:agentIsSourceOfRelationToMandate>
+            <rico:description rdf:parseType="Literal"><html:p xml:lang="fr">une
+               note</html:p></rico:description>
+         </rico:RelationToMandate> </rico:agentIsSourceOfRelationToMandate>
       <!-- ou bien, ou en plus, à discuter :
          <rico:isAuthorizedBy rdf:resource="rule/56ghi-pqrstuv"/>
          -->
@@ -64,7 +65,8 @@
                >2012</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
                >2016-11-07</rico:endDate>
-            <rico:description rdf:parseType="Literal"><html:p xml:lang="fr">une note</html:p></rico:description>
+            <rico:description rdf:parseType="Literal"><html:p xml:lang="fr">une
+               note</html:p></rico:description>
          </rico:RelationToMandate>
       </rico:agentIsSourceOfRelationToMandate>
       <rico:agentIsSourceOfRelationToMandate>
@@ -78,7 +80,8 @@
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear"
                >1950</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1967</rico:endDate>
-            <rico:description rdf:parseType="Literal"><html:p xml:lang="fr">article 5</html:p></rico:description>
+            <rico:description rdf:parseType="Literal"><html:p xml:lang="fr">article
+               5</html:p></rico:description>
          </rico:RelationToMandate>
       </rico:agentIsSourceOfRelationToMandate>
    </rico:Agent>

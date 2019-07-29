@@ -10,7 +10,48 @@
             </identity>
             <description>
                   <mandates>
+                        
+                        </mandate>
                         <mandate>
+                              <!-- one mandate, one descriptiveNote, may subelements p, containing in fact a long prose text, subdivided into sections by pseudo-titles, about one or two mandates. Bad use of mandate, bad encoding (ex. from NP_002152.xml)-->
+                              <!-- do nothing here except outputing a warning -->
+                              <descriptiveNote>
+                                    <p>Loi n°89-486 du 10 juillet 1989 d'orientation sur l'éducation (cf article 22). </p>
+                                    <p>Extrait de cette loi :</p>
+                                    <p/>
+                                    <p>
+                                          <span style="bold">Titre IV, Les organismes consultatifs</span>
+                                    </p>
+                                    <p>
+                                          <span style="underline">Article 22</span>
+                                    </p>
+                                    <p>Il est créé un Conseil supérieur de l’éducation.</p>
+                                    <p>Ce conseil exerce les attributions dévolues antérieurement au Conseil supérieur de l’éducation nationale et au conseil de l’enseignement général et technique, à l’exclusion des attributions transférées au Conseil national de l’enseignement supérieur et de la recherche par l’article 23 de la présente loi. Il donne des avis sur les objectifs et le fonctionnement du service public de l’éducation.</p>
+                                    <p>Il est présidé par le ministre de l’éducation nationale ou son représentant et composé de représentants des enseignants, des enseignants-chercheurs, des autres personnels, des parents d’élèves, des étudiants, des collectivités territoriales, des associations périscolaires et familiales, des grands intérêts éducatifs, économiques, sociaux et culturels.</p>
+                                    <p>Les représentants des enseignants-chercheurs sont élus par les représentants des mêmes catégories élus au Conseil national de l’enseignement supérieur et de la recherche.</p>
+                                    <p>Les représentants des enseignants et des autres personnels sont désignés par le ministre de l’éducation nationale, proportionnellement aux résultats des élections professionnelles, sur proposition des organisations syndicales les plus représentatives du personnel ayant présenté des candidats à ces élections.</p>
+                                    <p>Les représentants des parents d’élèves sont désignés par le ministre de l’éducation nationale, sur proposition des associations de parents d’élèves proportionnellement aux résultats des élections aux conseils d’administration et aux conseils d’école.</p>
+                                    <p>Les représentants des étudiants sont désignés par le ministre de l’éducation nationale, sur proposition des associations d’étudiants proportionnellement aux résultats des élections au Conseil national de l’enseignement supérieur et de la recherche.</p>
+                                    <p>Le conseil comprend une section permanente et des formations spécialisées.</p>
+                                    <p>Le Conseil supérieur de l’éducation statuant en matière contentieuse et disciplinaire se compose de douze conseillers appartenant aux corps des enseignants, élus par leurs représentants à ce conseil.</p>
+                                    <p>Les membres représentant les établissements d’enseignement privés siégeant au Conseil supérieur de l’éducation élisent, pour la durée de leur mandat, six représentants qui siègent, avec voix délibérative, au conseil visé au précédent alinéa lorsque celui-ci est saisi d’affaires contentieuses et disciplinaires concernant ces établissements.</p>
+                                    <p>Le Conseil supérieur de l’éducation nationale et le conseil de l’enseignement général et technique sont maintenus en fonction jusqu’à la date d’installation du Conseil supérieur de l’éducation.</p>
+                                    <p>
+                                          <span style="underline">Article 23</span>
+                                    </p>
+                                    <p>Le Conseil national de l’enseignement supérieur et de la recherche statue en appel et en premier ressort sur les décisions disciplinaires prises par les instances universitaires compétentes à l’égard des enseignants-chercheurs, enseignants et usagers. Il exerce, à leur égard, les compétences définies par la loi du 17 juillet 1908 sur le relèvement des interdictions, exclusions ou suspensions prononcées par les juridictions disciplinaires de l’éducation nationale.</p>
+                                    <p>Le Conseil national de l’enseignement supérieur et de la recherche statuant en matière disciplinaire comprend des représentants des enseignants-chercheurs et des représentants des usagers. Lorsqu’il statue à l’égard d’enseignants, la formation compétente ne comprend que des enseignants-chercheurs d’un rang égal ou supérieur à celui de la personne déférée devant elle. La composition, les modalités de désignation des membres des formations compétentes à l’égard des enseignants et des usagers et leur fonctionnement sont fixés par décret en Conseil d’État.</p>
+                                    <p>
+                                          <span style="underline">Article 24</span>
+                                    </p>
+                                    <p>La composition et les attributions du conseil de l’éducation nationale institué dans chaque académie par l’article 12 de la loi n° 83-663 du 22 juillet 1983 complétant la loi n° 83-8 du 7 janvier 1983 relative à la répartition des compétences entre les communes, les départements, les régions et l’État, sont étendues à l’enseignement supérieur, sous réserve des dispositions du titre premier de la loi n° 85-2569 du 31 décembre 1985, relative à la composition et aux attributions des conseils de l’éducation nationale siégeant en formation contentieuse et disciplinaire et modifiant les lois n° 46-1084 du 18 mai 1946 et n° 64-1325 du 26 décembre 1964 relatives au Conseil supérieur de l’éducation nationale.</p>
+                                    <p>Lorsque les questions soumises aux délibérations des conseils relèvent de l’enseignement supérieur, le recteur, chancelier des universités, est rapporteur.</p>
+                                    <p>En ce qui concerne l’Île-de-France, il est institué un seul conseil académique pour les trois académies concernées.</p>
+                                    <p>Un décret en Conseil d’État fixe les modalités d’application du présent article.</p>
+                              </descriptiveNote>
+                        </mandate>
+                        <mandate>
+                              <!-- this is also a bad encoding, there should be one mandate per element <p>. Do nothing but output a warning--></mandate>
                               <descriptiveNote>
                                     <p>Arrêté du 6 juillet 1970 portant nomination d'un haut
                                           fonctionnaire chargé de l'histoire de l'éducation.</p>
@@ -24,7 +65,6 @@
                                           MENF1029733D ; ELI:
                                           https://www.legifrance.gouv.fr/eli/decret/2010/12/28/MENF1029733D/jo/texte).</p>
                               </descriptiveNote>
-                        </mandate>
                         <mandate>
                               <descriptiveNote>
                                     <p>Décret n°2013-728 du 12 août 2013 modifiant l'organisation de
