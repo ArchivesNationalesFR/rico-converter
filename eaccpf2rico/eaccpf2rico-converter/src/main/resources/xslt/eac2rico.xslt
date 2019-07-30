@@ -220,8 +220,7 @@
 	<xsl:template match="eac:existDates">
 		<xsl:if test="not(contains(string-join(eac:descriptiveNote/eac:p), 'dates d''exercice') or contains(string-join(eac:descriptiveNote/eac:p), 'dates d''activité'))">
 			<xsl:apply-templates />
-		</xsl:if>
-		
+		</xsl:if>		
 	</xsl:template>
 	<xsl:template match="eac:useDates">
 		<xsl:apply-templates />
@@ -997,7 +996,7 @@
 	</xsl:template>
 
 	<!-- resourceRelation -->
-	<xsl:template match="eac:resourceRelation[@resourceRelationType = 'creatorOf']">
+	<xsl:template match="eac:resourceRelation[@resourceRelationType = 'creatorOf' and @xlink:href != '']">
         <rico:agentIsTargetOfAgentOriginationRelation>
         	<xsl:call-template name="rdf-resource">
         		<xsl:with-param name="uri" select="eac2rico:URI-OriginationRelation(
@@ -1009,7 +1008,7 @@
         	</xsl:call-template>
         </rico:agentIsTargetOfAgentOriginationRelation>
 	</xsl:template>
-	<xsl:template match="eac:resourceRelation[@resourceRelationType = 'creatorOf']" mode="relations">
+	<xsl:template match="eac:resourceRelation[@resourceRelationType = 'creatorOf' and @xlink:href != '']" mode="relations">
         <rico:AgentOriginationRelation>
         	<xsl:call-template name="rdf-about">
         		<xsl:with-param name="uri" select="eac2rico:URI-OriginationRelation(
