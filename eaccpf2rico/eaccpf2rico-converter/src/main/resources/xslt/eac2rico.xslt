@@ -372,59 +372,65 @@
 			</rico:RelationToMandate>
 		</rico:agentIsSourceOfRelationToMandate>
 	</xsl:template>
-	<!-- Case where there is no citation, but a descriptiveNote with inner p's -->
-	<xsl:template match="eac:mandate[not(eac:citation) and eac:descriptiveNote]">			
+	<xsl:template match="eac:mandate[not(eac:citation) and eac:descriptiveNote[count(eac:p) = 1]]">
+		
 		<xsl:variable name="theMandate" select="." />
-		<xsl:for-each select="eac:descriptiveNote/eac:p">
-			<xsl:variable name="theDescriptiveNote" select="." />
-			<xsl:choose>
-				<!-- if the <p> contains an ELI (based on a regex match)... -->
-				<xsl:when test="matches(., 'https?://www.legifrance\.gouv\.fr/eli/[^.)\] ]*')">
-					<!-- Then find all occurrence of the ELI... -->
-					<xsl:analyze-string select="." regex="https?://www.legifrance\.gouv\.fr/eli/[^.)\] ]*">
-					  <xsl:matching-substring>
-					  		<!-- For each ELI value in the text apply the same process as above -->
-					  		<xsl:variable name="ruleId" select="eac2rico:URI-MandateFromEli(.)" />
-					  		
-					  		<xsl:choose>
-								<!-- Known reference in the referential -->
-								<xsl:when test="$ruleId != ''">
-									<rico:agentIsSourceOfRelationToMandate>
-										<rico:RelationToMandate>
-											<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-RelationToMandate($recordId, $ruleId, $theMandate/eac:dateRange/eac:fromDate, $theMandate/eac:dateRange/eac:toDate)" /></xsl:call-template>
-											<rico:relationToMandateHasSource rdf:resource="{$agentUri}"/>									
-							            	<rico:relationToMandateHasTarget rdf:resource="{$ruleId}"/>
-							            	<!-- Don't process the descriptiveNote as normal -->
-							            	<xsl:apply-templates select="$theMandate/*[local-name() != descriptiveNote]" />
-										</rico:RelationToMandate>
-									</rico:agentIsSourceOfRelationToMandate>			
-								</xsl:when>
-								<!-- Unknown reference in the referential -->
-								<xsl:otherwise>			
-									<rico:agentIsSourceOfRelationToMandate>
-										<rico:RelationToMandate>
-											<rico:relationToMandateHasSource rdf:resource="{$agentUri}"/>
-											<rico:relationToMandateHasTarget> 
-												<rico:Mandate>
-													<rico:title><xsl:value-of select="$theDescriptiveNote" /></rico:title>
-													<rdfs:seeAlso rdf:resource="{.}" />
-												</rico:Mandate>
-											</rico:relationToMandateHasTarget>
-							            	<!-- Don't process the descriptiveNote as normal -->
-							            	<xsl:apply-templates select="$theMandate/*[local-name() != descriptiveNote]" />
-										</rico:RelationToMandate>
-									</rico:agentIsSourceOfRelationToMandate>			
-								</xsl:otherwise>
-							</xsl:choose>
-					  </xsl:matching-substring>
-					</xsl:analyze-string>
-				</xsl:when>
-				<xsl:otherwise>
-					<rico:authorizingMandate rdf:parseType="Literal"><html:p xml:lang="{$LITERAL_LANG}"><xsl:apply-templates select="node()" /></html:p></rico:authorizingMandate>
-				</xsl:otherwise>
-			</xsl:choose>
-			
-		</xsl:for-each>
+		<xsl:variable name="theDescriptiveNote" select="eac:descriptiveNote" />
+		
+		<xsl:choose>
+			<!-- if the <p> contains an ELI (based on a regex match)... -->
+			<xsl:when test="matches(eac:descriptiveNote/eac:p[last()], 'https?://www.legifrance\.gouv\.fr/eli/[^.)\] ]*')">
+				<!-- Then find all occurrence of the ELI... -->
+				<xsl:analyze-string select="eac:descriptiveNote/eac:p[last()]" regex="https?://www.legifrance\.gouv\.fr/eli/[^.)\] ]*">
+				  <xsl:matching-substring>
+				  		<!-- For each ELI value in the text apply the same process as above -->
+				  		<xsl:variable name="ruleId" select="eac2rico:URI-MandateFromEli(.)" />
+				  		
+				  		<xsl:choose>
+							<!-- Known reference in the referential -->
+							<xsl:when test="$ruleId != ''">
+								<rico:agentIsSourceOfRelationToMandate>
+									<rico:RelationToMandate>
+										<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-RelationToMandate($recordId, $ruleId, $theMandate/eac:dateRange/eac:fromDate, $theMandate/eac:dateRange/eac:toDate)" /></xsl:call-template>
+										<rico:relationToMandateHasSource rdf:resource="{$agentUri}"/>									
+						            	<rico:relationToMandateHasTarget rdf:resource="{$ruleId}"/>
+						            	<!-- Don't process the descriptiveNote as normal -->
+						            	<xsl:apply-templates select="$theMandate/*[local-name() != descriptiveNote]" />
+									</rico:RelationToMandate>
+								</rico:agentIsSourceOfRelationToMandate>			
+							</xsl:when>
+							<!-- Unknown reference in the referential -->
+							<xsl:otherwise>			
+								<rico:agentIsSourceOfRelationToMandate>
+									<rico:RelationToMandate>
+										<rico:relationToMandateHasSource rdf:resource="{$agentUri}"/>
+										<rico:relationToMandateHasTarget> 
+											<rico:Mandate>
+												<rico:title><xsl:value-of select="$theDescriptiveNote" /></rico:title>
+												<rdfs:seeAlso rdf:resource="{.}" />
+											</rico:Mandate>
+										</rico:relationToMandateHasTarget>
+						            	<!-- Don't process the descriptiveNote as normal -->
+						            	<xsl:apply-templates select="$theMandate/*[local-name() != descriptiveNote]" />
+									</rico:RelationToMandate>
+								</rico:agentIsSourceOfRelationToMandate>			
+							</xsl:otherwise>
+						</xsl:choose>
+				  </xsl:matching-substring>
+				</xsl:analyze-string>
+			</xsl:when>
+			<xsl:otherwise>
+				<rico:authorizingMandate rdf:parseType="Literal"><html:p xml:lang="{$LITERAL_LANG}"><xsl:apply-templates select="eac:descriptiveNote/eac:p[last()]/node()" /></html:p></rico:authorizingMandate>
+			</xsl:otherwise>
+		</xsl:choose>		
+	</xsl:template>
+	
+	<!-- Case where there is no citation, but a descriptiveNote with inner p's -->
+	<xsl:template match="eac:mandate[not(eac:citation) and eac:descriptiveNote[count(eac:p) > 1]]">
+		<xsl:variable name="fullString" select="normalize-space(string-join(./eac:descriptiveNote/eac:p/text(), ' '))" />
+		<xsl:variable name="warningString" select="concat(substring($fullString, 1, 15), '...')" />
+		<!-- Output a warning -->
+		<xsl:value-of select="eac2rico:warning($recordId, 'MULTIPLE_P_IN_MANDATE', $warningString)" />
 	</xsl:template>
 	
 	<!-- *** sources/source/sourceEntry *** -->

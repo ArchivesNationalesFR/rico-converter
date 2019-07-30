@@ -11,7 +11,7 @@
             <description>
                   <mandates>
                         <mandate>
-                              <!-- one mandate, one descriptiveNote, may subelements p, containing in fact a long prose text, subdivided into sections by pseudo-titles, about one or two mandates. Bad use of mandate, bad encoding (ex. from NP_002152.xml)-->
+                              <!-- one mandate, one descriptiveNote, many subelements p, containing in fact a long prose text, subdivided into sections by pseudo-titles, about one or two mandates. Bad use of mandate, bad encoding (ex. from NP_002152.xml)-->
                               <!-- do nothing here except outputing a warning -->
                               <descriptiveNote>
                                     <p>Loi n°89-486 du 10 juillet 1989 d'orientation sur l'éducation (cf article 22). </p>
@@ -49,7 +49,7 @@
                               </descriptiveNote>
                         </mandate>
                         <mandate>
-                              <!-- this is also a bad encoding, there should be one mandate per element <p>. Do nothing but output a warning--></mandate>
+                              <!-- this is also a bad encoding, there should be one mandate per element <p>. Do nothing but output a warning-->
                               <descriptiveNote>
                                     <p>Arrêté du 6 juillet 1970 portant nomination d'un haut
                                           fonctionnaire chargé de l'histoire de l'éducation.</p>
@@ -63,6 +63,7 @@
                                           MENF1029733D ; ELI:
                                           https://www.legifrance.gouv.fr/eli/decret/2010/12/28/MENF1029733D/jo/texte).</p>
                               </descriptiveNote>
+                        </mandate>
                         <mandate>
                               <descriptiveNote>
                                     <p>Décret n°2013-728 du 12 août 2013 modifiant l'organisation de
