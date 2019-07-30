@@ -218,7 +218,10 @@
 		<xsl:apply-templates />
 	</xsl:template>
 	<xsl:template match="eac:existDates">
-		<xsl:apply-templates />
+		<xsl:if test="not(contains(string-join(eac:descriptiveNote/eac:p), 'dates d''exercice') or contains(string-join(eac:descriptiveNote/eac:p), 'dates d''activité'))">
+			<xsl:apply-templates />
+		</xsl:if>
+		
 	</xsl:template>
 	<xsl:template match="eac:useDates">
 		<xsl:apply-templates />
