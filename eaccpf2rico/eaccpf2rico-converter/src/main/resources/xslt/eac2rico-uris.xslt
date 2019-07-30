@@ -347,12 +347,12 @@
            <xsl:when test="contains($lnk, 'bnf.fr')">
                <xsl:choose>
                    <xsl:when test="contains($lnk, 'catalogue.bnf.fr/ark:/12148/') and contains($lnk, '/PUBLIC')">
-                     <xsl:text>http://data.bnf.fr/ark:/12148/</xsl:text>
+                     <xsl:text>https://data.bnf.fr/ark:/12148/</xsl:text>
                      <xsl:value-of select="substring-before(substring-after($lnk, 'catalogue.bnf.fr/ark:/12148/'), '/PUBLIC')"/>
                      <xsl:text>#about</xsl:text>
                    </xsl:when>
                    <xsl:when test="contains($lnk, 'catalogue.bnf.fr/ark:/12148/') and not(contains($lnk, '/PUBLIC'))">
-                     <xsl:text>http://data.bnf.fr/ark:/12148/</xsl:text>
+                     <xsl:text>https://data.bnf.fr/ark:/12148/</xsl:text>
                      <xsl:value-of select="substring-after($lnk, 'catalogue.bnf.fr/ark:/12148/')"/>
                      <xsl:text>#about</xsl:text>
                    </xsl:when>

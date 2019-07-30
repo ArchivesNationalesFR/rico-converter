@@ -6,4 +6,5 @@ WHERE {
 	?s shacl:resultSeverity ?resultSeverity.
 	BIND(STRAFTER(STR(?resultSeverity), "#") AS ?severity)
 }
+VALUES
 GROUP BY ?severity
