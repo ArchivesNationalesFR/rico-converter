@@ -305,6 +305,23 @@
 		</rico:history>
 	</xsl:template>
 	
+	<xsl:template match="eac:structureOrGenealogy[normalize-space(.) != '']">
+		<rico:noteOnStructureOrGenealogy rdf:parseType="Literal">
+			<html:div xml:lang="{$LITERAL_LANG}">
+				<xsl:apply-templates />
+			</html:div>
+		</rico:noteOnStructureOrGenealogy>
+	</xsl:template>
+	
+	<xsl:template match="eac:generalContext[normalize-space(.) != '']">
+		<rico:generalContext rdf:parseType="Literal">
+			<html:div xml:lang="{$LITERAL_LANG}">
+				<xsl:apply-templates />
+			</html:div>
+		</rico:generalContext>
+	</xsl:template>
+	
+	
 	
 	<xsl:template match="eac:mandates">
 		<xsl:apply-templates />
@@ -1314,7 +1331,8 @@
 	<!-- Matching of text that is directly inserted under a tag that can contain mixed content -->
 	<xsl:template match="eac:descriptiveNote/text()"><xsl:value-of select="normalize-space(.)" /></xsl:template>
 	<xsl:template match="eac:biogHist/text()"><xsl:value-of select="normalize-space(.)" /></xsl:template>
-
+	<xsl:template match="eac:structureOrGenealogy/text()"><xsl:value-of select="normalize-space(.)" /></xsl:template>
+	<xsl:template match="eac:generalContext/text()"><xsl:value-of select="normalize-space(.)" /></xsl:template>
 
 	
 
