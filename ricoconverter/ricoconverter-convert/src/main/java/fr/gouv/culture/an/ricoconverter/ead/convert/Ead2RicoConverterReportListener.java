@@ -1,4 +1,4 @@
-package fr.gouv.culture.an.ricoconverter.eac.convert;
+package fr.gouv.culture.an.ricoconverter.ead.convert;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 
 import fr.gouv.culture.an.ricoconverter.RicoConverterListenerException;
 
-public class Eac2RicoConverterReportListener extends Eac2RicoConverterListenerBase implements Eac2RicoConverterListener {
+public class Ead2RicoConverterReportListener extends Ead2RicoConverterListenerBase implements Ead2RicoConverterListener {
 
 	private Logger log = LoggerFactory.getLogger(this.getClass().getName());
 	
@@ -28,7 +28,7 @@ public class Eac2RicoConverterReportListener extends Eac2RicoConverterListenerBa
 	private List<String> errorFileNames = new ArrayList<String>();
 	
 	
-	public Eac2RicoConverterReportListener() {
+	public Ead2RicoConverterReportListener() {
 
 	}
 	
@@ -93,7 +93,7 @@ public class Eac2RicoConverterReportListener extends Eac2RicoConverterListenerBa
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 		long duration = this.endTime.getTime() - this.startTime.getTime();
 		long durationInSeconds = duration / 1000;
-		sb.append("--- EAC Conversion Report ---"+"\n");
+		sb.append("--- EAD Conversion Report ---"+"\n");
 		sb.append("- Number of files to process: "+this.nbFilesInput+"\n");
 		sb.append("- Number of files in ERROR  : "+this.nbFilesErrors+"\n");
 		sb.append("- Number of files in success: "+this.nbFilesSuccessfull+"\n");

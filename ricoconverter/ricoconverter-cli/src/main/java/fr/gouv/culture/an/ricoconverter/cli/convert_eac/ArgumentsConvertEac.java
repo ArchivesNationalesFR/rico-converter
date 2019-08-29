@@ -32,7 +32,7 @@ public class ArgumentsConvertEac extends ArgumentsConvertEacRaw {
 			required = false,
 			validateWith = ExistingFileValidator.class
 	)
-	private File xsltArrange = new File("xslt/eac2rico-arrange.xslt");
+	private File xsltArrange = new File("xslt_eac/eac2rico-arrange.xslt");
 	
 	@Parameter(
 			names = { "xsltDeduplicate" },
@@ -41,7 +41,7 @@ public class ArgumentsConvertEac extends ArgumentsConvertEacRaw {
 			required = false,
 			validateWith = ExistingFileValidator.class
 	)
-	private File xsltDeduplicate = new File("xslt/eac2rico-deduplicate.xslt");
+	private File xsltDeduplicate = new File("xslt_eac/eac2rico-deduplicate.xslt");
 	
 	@Parameter(
 			names = { "work" },

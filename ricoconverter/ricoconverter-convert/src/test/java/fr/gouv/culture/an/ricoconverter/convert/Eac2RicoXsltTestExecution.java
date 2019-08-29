@@ -50,7 +50,7 @@ public class Eac2RicoXsltTestExecution implements Test {
 		this.testFolder = testFolder;
 		
 		// read the XSLT
-		InputStream xsltSource = this.getClass().getResourceAsStream("/xslt/eac2rico.xslt");
+		InputStream xsltSource = this.getClass().getResourceAsStream("/xslt_eac/eac2rico.xslt");
 		
 		try {
 			Transformer t = TransformerBuilder.createSaxonProcessor().setUriResolver(new URIResolver() {
@@ -66,14 +66,14 @@ public class Eac2RicoXsltTestExecution implements Test {
 							throw new TransformerException(e);
 						}
 					} else {
-						return new StreamSource(Eac2RicoXsltTestExecution.class.getResourceAsStream("/xslt/"+href));
+						return new StreamSource(Eac2RicoXsltTestExecution.class.getResourceAsStream("/xslt_eac/"+href));
 					}
 					
 				}
 				
 			}).createTransformer(new StreamSource(xsltSource));
 
-			URI relative = this.getClass().getResource("/xslt/eac2rico.xslt").toURI().relativize(this.testFolder.toURI());
+			URI relative = this.getClass().getResource("/xslt_eac/eac2rico.xslt").toURI().relativize(this.testFolder.toURI());
 			System.out.println(new File(relative).getAbsolutePath());
 			t.setParameter("INPUT_FOLDER", "file://"+new File(relative).getAbsolutePath());
 			

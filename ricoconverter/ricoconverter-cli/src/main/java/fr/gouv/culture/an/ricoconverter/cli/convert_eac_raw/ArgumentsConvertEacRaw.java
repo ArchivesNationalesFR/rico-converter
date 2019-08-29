@@ -44,12 +44,12 @@ public class ArgumentsConvertEacRaw {
 	
 	@Parameter(
 			names = { "xslt" },
-			description = "Relative path to the XSLT file to be used to convert EAC to RiC-O. If not set, defaults to 'xslt/eac2rico.xslt'.",
+			description = "Relative path to the XSLT file to be used to convert EAC to RiC-O. If not set, defaults to 'xslt_eac/eac2rico.xslt'.",
 			converter = FileConverter.class,
 			required = false,
 			validateWith = ExistingFileValidator.class
 	)
-	protected File xslt = new File("xslt/eac2rico.xslt");
+	protected File xslt = new File("xslt_eac/eac2rico.xslt");
 	
 	@Parameter(
 			names = { "xslt.BASE_URI" },

@@ -31,7 +31,7 @@
                 <include>${project.groupId}:ricoconverter-cli:jar:onejar:${project.version}</include>
             </includes>
         </dependencySet>
-        <!-- copy the 'xslt' and 'vocabularies' directory in the zip -->
+        <!-- copy the 'xslt_eac' and 'vocabularies' directory in the zip -->
         <dependencySet>
             <useProjectArtifact>true</useProjectArtifact>
             <useProjectAttachments>false</useProjectAttachments>
@@ -39,7 +39,7 @@
             <unpack>true</unpack>
             <unpackOptions>
                 <includes>
-                	<include>xslt/*</include>
+                	<include>xslt_eac/*</include>
                 	<include>vocabularies/*</include>
                     <include>shapes/*</include>
                 </includes>

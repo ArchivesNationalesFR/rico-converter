@@ -25,7 +25,7 @@ public class ErrorCodeXsltDocumentationGenerator {
 		ByteArrayOutputStream resultBa = new ByteArrayOutputStream();
 		
 		transformer.transform(
-				new StreamSource(ErrorCodeXsltDocumentationGenerator.class.getResourceAsStream("/xslt/eac2rico-codes.xml")),
+				new StreamSource(ErrorCodeXsltDocumentationGenerator.class.getResourceAsStream("/xslt_eac/eac2rico-codes.xml")),
 				new StreamResult(resultBa)
 		);
 		sb.append(resultBa.toString());

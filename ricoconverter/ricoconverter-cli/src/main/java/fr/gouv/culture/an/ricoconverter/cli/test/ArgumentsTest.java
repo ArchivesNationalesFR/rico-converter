@@ -30,7 +30,7 @@ public class ArgumentsTest {
 			required = false,
 			validateWith = ExistingFileValidator.class
 	)
-	private File xslt = new File("xslt/eac2rico.xslt");
+	private File xslt = new File("xslt_eac/eac2rico.xslt");
 
 	public File getUnitTests() {
 		return unitTests;
