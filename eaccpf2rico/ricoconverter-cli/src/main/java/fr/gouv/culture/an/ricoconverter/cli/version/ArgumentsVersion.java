@@ -1,4 +1,4 @@
-package fr.gouv.culture.an.eaccpf2rico.cli.version;
+package fr.gouv.culture.an.ricoconverter.cli.version;
 
 import com.beust.jcommander.Parameters;
 

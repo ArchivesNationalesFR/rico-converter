@@ -1,4 +1,4 @@
-package fr.gouv.culture.an.eaccpf2rico.cli;
+package fr.gouv.culture.an.ricoconverter.cli;
 
 
 public interface CommandIfc {

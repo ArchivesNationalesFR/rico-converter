@@ -1,20 +1,20 @@
-package fr.gouv.culture.an.eaccpf2rico.cli;
+package fr.gouv.culture.an.ricoconverter.cli;
 
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.MissingCommandException;
 import com.beust.jcommander.ParameterException;
 
 import ch.qos.logback.classic.util.ContextInitializer;
-import fr.gouv.culture.an.eaccpf2rico.cli.convert.ArgumentsConvert;
-import fr.gouv.culture.an.eaccpf2rico.cli.convert.Convert;
-import fr.gouv.culture.an.eaccpf2rico.cli.convertAndArrange.ArgumentsConvertAndArrange;
-import fr.gouv.culture.an.eaccpf2rico.cli.convertAndArrange.ConvertAndArrange;
-import fr.gouv.culture.an.eaccpf2rico.cli.test.ArgumentsTest;
-import fr.gouv.culture.an.eaccpf2rico.cli.test.Test;
-import fr.gouv.culture.an.eaccpf2rico.cli.validate.ArgumentsValidate;
-import fr.gouv.culture.an.eaccpf2rico.cli.validate.Validate;
-import fr.gouv.culture.an.eaccpf2rico.cli.version.ArgumentsVersion;
-import fr.gouv.culture.an.eaccpf2rico.cli.version.Version;
+import fr.gouv.culture.an.ricoconverter.cli.convert.ArgumentsConvert;
+import fr.gouv.culture.an.ricoconverter.cli.convert.Convert;
+import fr.gouv.culture.an.ricoconverter.cli.convertAndArrange.ArgumentsConvertAndArrange;
+import fr.gouv.culture.an.ricoconverter.cli.convertAndArrange.ConvertAndArrange;
+import fr.gouv.culture.an.ricoconverter.cli.test.ArgumentsTest;
+import fr.gouv.culture.an.ricoconverter.cli.test.Test;
+import fr.gouv.culture.an.ricoconverter.cli.validate.ArgumentsValidate;
+import fr.gouv.culture.an.ricoconverter.cli.validate.Validate;
+import fr.gouv.culture.an.ricoconverter.cli.version.ArgumentsVersion;
+import fr.gouv.culture.an.ricoconverter.cli.version.Version;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package fr.gouv.culture.an.eaccpf2rico.cli.convertAndArrange;
+package fr.gouv.culture.an.ricoconverter.cli.convertAndArrange;
 
 import java.io.File;
 import java.io.IOException;
@@ -7,9 +7,9 @@ import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import fr.gouv.culture.an.eaccpf2rico.cli.CommandIfc;
-import fr.gouv.culture.an.eaccpf2rico.cli.convert.Eac2RicoConverterFactory;
 import fr.gouv.culture.an.ricoconverter.RicoConverterException;
+import fr.gouv.culture.an.ricoconverter.cli.CommandIfc;
+import fr.gouv.culture.an.ricoconverter.cli.convert.Eac2RicoConverterFactory;
 import fr.gouv.culture.an.ricoconverter.ErrorCode;
 import fr.gouv.culture.an.ricoconverter.eac.convert.Eac2RicoConverter;
 

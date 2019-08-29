@@ -1,4 +1,4 @@
-package fr.gouv.culture.an.eaccpf2rico.cli.validate;
+package fr.gouv.culture.an.ricoconverter.cli.validate;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -23,7 +23,7 @@ import fr.gouv.culture.an.eac2rico.validator.report.ValidationReportRdfWriter;
 import fr.gouv.culture.an.eac2rico.validator.report.ValidationReportTextSummaryWriter;
 import fr.gouv.culture.an.eac2rico.validator.report.ValidationReportTsvWriter;
 import fr.gouv.culture.an.eac2rico.validator.report.ValidationReportWriterRegistry;
-import fr.gouv.culture.an.eaccpf2rico.cli.CommandIfc;
+import fr.gouv.culture.an.ricoconverter.cli.CommandIfc;
 
 public class Validate implements CommandIfc {
 

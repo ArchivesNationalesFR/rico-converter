@@ -1,4 +1,4 @@
-package fr.gouv.culture.an.eaccpf2rico.cli.convert;
+package fr.gouv.culture.an.ricoconverter.cli.convert;
 
 import java.io.File;
 

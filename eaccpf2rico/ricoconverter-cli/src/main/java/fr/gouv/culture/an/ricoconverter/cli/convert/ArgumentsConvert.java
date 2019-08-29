@@ -1,4 +1,4 @@
-package fr.gouv.culture.an.eaccpf2rico.cli.convert;
+package fr.gouv.culture.an.ricoconverter.cli.convert;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -8,7 +8,7 @@ import com.beust.jcommander.Parameter;
 import com.beust.jcommander.Parameters;
 import com.beust.jcommander.converters.FileConverter;
 
-import fr.gouv.culture.an.eaccpf2rico.cli.ExistingFileValidator;
+import fr.gouv.culture.an.ricoconverter.cli.ExistingFileValidator;
 
 @Parameters(
 		commandDescription = "Converts EAC-CPF to RiC-O RDF",

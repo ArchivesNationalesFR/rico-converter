@@ -1,9 +1,9 @@
-package fr.gouv.culture.an.eaccpf2rico.cli.version;
+package fr.gouv.culture.an.ricoconverter.cli.version;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import fr.gouv.culture.an.eaccpf2rico.cli.CommandIfc;
+import fr.gouv.culture.an.ricoconverter.cli.CommandIfc;
 
 public class Version implements CommandIfc {
 

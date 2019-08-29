@@ -1,4 +1,4 @@
-package fr.gouv.culture.an.eaccpf2rico.cli;
+package fr.gouv.culture.an.ricoconverter.cli;
 
 import java.io.File;
 import java.io.IOException;
@@ -8,7 +8,7 @@ import org.apache.commons.io.FileUtils;
 
 import com.beust.jcommander.Parameter;
 
-import fr.gouv.culture.an.eaccpf2rico.cli.Main.COMMAND;
+import fr.gouv.culture.an.ricoconverter.cli.Main.COMMAND;
 
 public class ParameterFilesGenerator {
 
