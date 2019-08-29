@@ -3,18 +3,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>fr.gouv.culture.archives-nationales</groupId>
-    <artifactId>eaccpf2rico-root-pom</artifactId>
+    <artifactId>ricoconverter-root-pom</artifactId>
     <version>20190730</version>
     <packaging>pom</packaging>
 
-    <name>EAC-CPF 2 RiC-O Root POM</name>
+    <name>EAC and EAC RiC-O Root POM</name>
 
     <modules>
-        <module>eaccpf2rico-converter</module>
-        <module>eaccpf2rico-validator</module>
-        <module>eaccpf2rico-cli</module>
-        <module>eaccpf2rico-doc</module>
-        <module>eaccpf2rico-release</module>
+        <module>ricoconverter-convert</module>
+        <module>ricoconverter-validator</module>
+        <module>ricoconverter-cli</module>
+        <module>ricoconverter-doc</module>
+        <module>ricoconverter-release</module>
     </modules>
 
     <properties>
