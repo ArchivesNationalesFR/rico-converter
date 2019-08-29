@@ -1,4 +1,4 @@
-package fr.gouv.culture.an.ricoconverter.cli.convert_eac_raw;
+package fr.gouv.culture.an.ricoconverter.cli.commons;
 
 import java.io.File;
 
@@ -8,15 +8,16 @@ import org.apache.commons.io.filefilter.TrueFileFilter;
 import fr.gouv.culture.an.ricoconverter.RicoConverterListenerException;
 import fr.gouv.culture.an.ricoconverter.eac.convert.Eac2RicoConverterListener;
 import fr.gouv.culture.an.ricoconverter.eac.convert.Eac2RicoConverterListenerBase;
+import fr.gouv.culture.an.ricoconverter.ead.convert.Ead2RicoConverterListener;
 import me.tongfei.progressbar.ProgressBar;
 import me.tongfei.progressbar.ProgressBarStyle;
 
-public class Eac2RicoConverterProgressListener extends Eac2RicoConverterListenerBase implements Eac2RicoConverterListener {
+public class RicoConverterProgressListener extends Eac2RicoConverterListenerBase implements Eac2RicoConverterListener, Ead2RicoConverterListener {
 
 	public long totalInputFiles;
 	private ProgressBar progress;
 	
-	public Eac2RicoConverterProgressListener() {
+	public RicoConverterProgressListener() {
 
 	}
 	

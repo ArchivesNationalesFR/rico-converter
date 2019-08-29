@@ -17,6 +17,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import fr.gouv.culture.an.ricoconverter.RicoConverterException;
+import fr.gouv.culture.an.ricoconverter.cli.commons.RicoConverterProgressListener;
+import fr.gouv.culture.an.ricoconverter.cli.commons.SaxonErrorListener;
 import fr.gouv.culture.an.ricoconverter.ErrorCode;
 import fr.gouv.culture.an.ricoconverter.eac.convert.Eac2RicoConverter;
 import fr.gouv.culture.an.ricoconverter.eac.convert.Eac2RicoConverterErrorListener;
@@ -131,7 +133,7 @@ public class Eac2RicoConverterFactory {
 		listeners.add(errorListener);
 		
 		// progress bar listener		
-		Eac2RicoConverterProgressListener pbListener = new Eac2RicoConverterProgressListener();
+		RicoConverterProgressListener pbListener = new RicoConverterProgressListener();
 		listeners.add(pbListener);
 		
 		// report listener
