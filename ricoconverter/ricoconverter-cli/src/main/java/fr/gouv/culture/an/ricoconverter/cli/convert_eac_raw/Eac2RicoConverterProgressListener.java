@@ -24,7 +24,7 @@ public class Eac2RicoConverterProgressListener extends Eac2RicoConverterListener
 	public void handleStart(File inputFile) throws RicoConverterListenerException {
 		// Count recursively
 		this.totalInputFiles = FileUtils.listFiles(inputFile, TrueFileFilter.INSTANCE, TrueFileFilter.INSTANCE).size();
-		this.progress = new ProgressBar("EAC2RiC-O", totalInputFiles, ProgressBarStyle.ASCII);
+		this.progress = new ProgressBar("RiC-O Converter", totalInputFiles, ProgressBarStyle.ASCII);
 	}
 
 	@Override

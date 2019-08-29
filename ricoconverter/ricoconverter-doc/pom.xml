@@ -32,7 +32,7 @@
 		            <goal>java</goal>
 		          </goals>
 		          <configuration>
-			        <mainClass>fr.gouv.culture.an.eaccpf2rico.cli.ErrorCodeDocumentationGenerator</mainClass>
+			        <mainClass>fr.gouv.culture.an.ricoconverter.cli.ErrorCodeDocumentationGenerator</mainClass>
 			        <arguments>${project.basedir}/src/main/resources/markdown/ErrorCodes.md</arguments>
 			      </configuration>
 		        </execution>
@@ -43,7 +43,7 @@
 		            <goal>java</goal>
 		          </goals>
 		          <configuration>
-			        <mainClass>fr.gouv.culture.an.eaccpf2rico.cli.ErrorCodeXsltDocumentationGenerator</mainClass>
+			        <mainClass>fr.gouv.culture.an.ricoconverter.cli.ErrorCodeXsltDocumentationGenerator</mainClass>
 		        	<arguments>${project.basedir}/src/main/resources/markdown/ErrorCodesXslt.md</arguments>
 			      </configuration>
 		        </execution>
