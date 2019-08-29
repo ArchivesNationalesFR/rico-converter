@@ -11,8 +11,10 @@ import fr.gouv.culture.an.ricoconverter.cli.convert_eac_raw.ArgumentsConvertEacR
 import fr.gouv.culture.an.ricoconverter.cli.convert_eac_raw.ConvertEacRaw;
 import fr.gouv.culture.an.ricoconverter.cli.convert_ead.ArgumentsConvertEad;
 import fr.gouv.culture.an.ricoconverter.cli.convert_ead.ConvertEad;
-import fr.gouv.culture.an.ricoconverter.cli.test.ArgumentsTest;
-import fr.gouv.culture.an.ricoconverter.cli.test.Test;
+import fr.gouv.culture.an.ricoconverter.cli.test_eac.ArgumentsTestEac;
+import fr.gouv.culture.an.ricoconverter.cli.test_eac.TestEac;
+import fr.gouv.culture.an.ricoconverter.cli.test_ead.ArgumentsTestEad;
+import fr.gouv.culture.an.ricoconverter.cli.test_ead.TestEad;
 import fr.gouv.culture.an.ricoconverter.cli.validate.ArgumentsValidate;
 import fr.gouv.culture.an.ricoconverter.cli.validate.Validate;
 import fr.gouv.culture.an.ricoconverter.cli.version.ArgumentsVersion;
@@ -26,7 +28,8 @@ public class Main {
 		CONVERT_EAC(new ArgumentsConvertEac(), new ConvertEac()),
 		CONVERT_EAD(new ArgumentsConvertEad(), new ConvertEad()),
 		VALIDATE(new ArgumentsValidate(), new Validate()),
-		TEST(new ArgumentsTest(), new Test()),
+		TEST_EAC(new ArgumentsTestEac(), new TestEac()),
+		TEST_EAD(new ArgumentsTestEad(), new TestEad()),
 		VERSION(new ArgumentsVersion(), new Version()),
 		;
 		

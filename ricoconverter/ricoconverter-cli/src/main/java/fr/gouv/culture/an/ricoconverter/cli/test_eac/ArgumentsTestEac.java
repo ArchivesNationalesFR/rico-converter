@@ -1,4 +1,4 @@
-package fr.gouv.culture.an.ricoconverter.cli.test;
+package fr.gouv.culture.an.ricoconverter.cli.test_eac;
 
 import java.io.File;
 
@@ -9,10 +9,10 @@ import com.beust.jcommander.converters.FileConverter;
 import fr.gouv.culture.an.ricoconverter.cli.ExistingFileValidator;
 
 @Parameters(
-		commandDescription = "Runs the unit tests of conversion",
+		commandDescription = "Runs the unit tests of EAC conversion",
 		separators = "="
 )
-public class ArgumentsTest {
+public class ArgumentsTestEac {
 	
 	@Parameter(
 			names = { "unit-tests" },
@@ -25,7 +25,7 @@ public class ArgumentsTest {
 	
 	@Parameter(
 			names = { "xslt" },
-			description = "Relative path to the XSLT file to be used to convert EAC to RiC-O. If not set, defaults to 'xslt/eac2rico.xslt'.",
+			description = "Relative path to the XSLT file to be used to convert EAC to RiC-O. If not set, defaults to 'xslt_eac/eac2rico.xslt'.",
 			converter = FileConverter.class,
 			required = false,
 			validateWith = ExistingFileValidator.class

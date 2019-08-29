@@ -1,4 +1,4 @@
-package fr.gouv.culture.an.ricoconverter.cli.test;
+package fr.gouv.culture.an.ricoconverter.cli.test_eac;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,7 +10,7 @@ import fr.gouv.culture.an.ricoconverter.cli.convert_eac_raw.Eac2RicoConverterFac
 import fr.gouv.culture.an.ricoconverter.ErrorCode;
 import fr.gouv.culture.an.ricoconverter.eac.convert.Eac2RicoConverter;
 
-public class Test implements CommandIfc {
+public class TestEac implements CommandIfc {
 
 	private Logger log = LoggerFactory.getLogger(this.getClass().getName());
 
@@ -18,7 +18,7 @@ public class Test implements CommandIfc {
 	public void execute(Object o) {
 		log.info("Running command : "+this.getClass().getSimpleName());
 		long start = System.currentTimeMillis();
-		ArgumentsTest args = (ArgumentsTest)o;
+		ArgumentsTestEac args = (ArgumentsTestEac)o;
 		log.info("  Unit tests folder : {}", args.getUnitTests().getAbsolutePath());
 		
 		try {
