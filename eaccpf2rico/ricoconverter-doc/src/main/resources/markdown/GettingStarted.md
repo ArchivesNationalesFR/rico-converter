@@ -6,7 +6,7 @@
 
 To run your first conversion :
 
-1. double-click on `eaccpf2rico.bat` (or `eaccpf2rico.sh` on Linux or Mac - make sure it is executable),
+1. double-click on `ricoconverter.bat` (or `ricoconverter.sh` on Linux or Mac - make sure it is executable),
 2. hit `Enter` to leave the default values for the input parameters of the script;
 3. wait a couple of seconds for the conversion to finish, and look in the generated output folder `output-<date_of_day>` for the result of the conversion;
 
@@ -15,10 +15,10 @@ The few sample files provided by default in the `input` folder have been convert
 
 ## Display the Help message
 
-To print the help message and get the details of all the possible commands and options, run  `eaccpf2rico.bat` and type "help" at the prompt for the command :
+To print the help message and get the details of all the possible commands and options, run  `ricoconverter.bat` and type "help" at the prompt for the command :
 
 ```
-:: Welcome to EAC-CPF 2 Ric-O Converter 20190604 ::
+:: Welcome to Ric-O Converter 20190604 ::
 
 Enter command to execute (convert_arrange, convert, validate, test, version, help) [press enter for 'convert_arrange'] :help
 ```

@@ -1,8 +1,8 @@
 _Home_
 
-# EAC-CPF 2 RiC-O Converter
+# RiC-O Converter
 
-Welcome to the EAC-CPF 2 RiC-O converter documentation !
+Welcome to the RiC-O converter documentation !
 
 The documentation is divided in these sections :
 

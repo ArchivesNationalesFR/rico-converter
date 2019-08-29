@@ -14,5 +14,5 @@
 
 ### Creating new unit tests
 
-- To write new unit tests, add a subfolder under `eaccpf2rico/eaccpf2rico-converter/src/test/resources/eac2rico`, with an `input.xml` and an `expected.xml` file.
+- To write new unit tests, add a subfolder under `ricoconverter/ricoconverter-convert/src/test/resources/eac2rico`, with an `input.xml` and an `expected.xml` file.
 
