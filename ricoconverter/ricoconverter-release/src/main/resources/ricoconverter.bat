@@ -20,8 +20,8 @@ if %jver% LSS 180000 (
 	exit
 )
 
-SET command=convert_arrange
-set /p command=Enter command to execute (convert_arrange, convert, validate, test, version, help) [press Enter for "%command%"]:
+SET command=convert_eac
+set /p command=Enter command to execute (convert_eac, convert_eac_raw, validate, test, version, help) [press Enter for "%command%"]:
 
 SET parameterFile=parameters/%command%.properties
 if NOT %command% == "help" (

@@ -1,4 +1,4 @@
-package fr.gouv.culture.an.eaccpf2rico.convert;
+package fr.gouv.culture.an.ricoconverter.convert;
 
 import java.io.File;
 import java.util.Arrays;

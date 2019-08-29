@@ -1,4 +1,4 @@
-package fr.gouv.culture.an.ricoconverter.cli.convert;
+package fr.gouv.culture.an.ricoconverter.cli.convert_eac_raw;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -14,7 +14,7 @@ import fr.gouv.culture.an.ricoconverter.cli.ExistingFileValidator;
 		commandDescription = "Converts EAC-CPF to RiC-O RDF",
 		separators = "="
 )
-public class ArgumentsConvert {
+public class ArgumentsConvertEacRaw {
 	
 	@Parameter(
 			names = { "input" },

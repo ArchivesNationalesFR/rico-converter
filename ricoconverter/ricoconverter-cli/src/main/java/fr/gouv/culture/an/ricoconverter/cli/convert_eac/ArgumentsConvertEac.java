@@ -1,4 +1,4 @@
-package fr.gouv.culture.an.ricoconverter.cli.convertAndArrange;
+package fr.gouv.culture.an.ricoconverter.cli.convert_eac;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -9,19 +9,19 @@ import com.beust.jcommander.Parameters;
 import com.beust.jcommander.converters.FileConverter;
 
 import fr.gouv.culture.an.ricoconverter.cli.ExistingFileValidator;
-import fr.gouv.culture.an.ricoconverter.cli.convert.ArgumentsConvert;
+import fr.gouv.culture.an.ricoconverter.cli.convert_eac_raw.ArgumentsConvertEacRaw;
 
 @Parameters(
 		commandDescription = "Converts EAC-CPF to RiC-O RDF, and arrange RiC-O relations in separate files",
 		separators = "="
 )
-public class ArgumentsConvertAndArrange extends ArgumentsConvert {
+public class ArgumentsConvertEac extends ArgumentsConvertEacRaw {
 	
 	
 	/***
 	 * Default constructor required
 	 */
-	public ArgumentsConvertAndArrange() {
+	public ArgumentsConvertEac() {
 		super();
 	}
 	

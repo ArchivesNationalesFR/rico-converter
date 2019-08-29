@@ -1,4 +1,4 @@
-package fr.gouv.culture.an.ricoconverter.cli.convert;
+package fr.gouv.culture.an.ricoconverter.cli.convert_eac_raw;
 
 import javax.xml.transform.ErrorListener;
 import javax.xml.transform.TransformerException;

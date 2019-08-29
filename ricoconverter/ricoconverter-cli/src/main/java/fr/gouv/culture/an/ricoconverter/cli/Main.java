@@ -5,10 +5,10 @@ import com.beust.jcommander.MissingCommandException;
 import com.beust.jcommander.ParameterException;
 
 import ch.qos.logback.classic.util.ContextInitializer;
-import fr.gouv.culture.an.ricoconverter.cli.convert.ArgumentsConvert;
-import fr.gouv.culture.an.ricoconverter.cli.convert.Convert;
-import fr.gouv.culture.an.ricoconverter.cli.convertAndArrange.ArgumentsConvertAndArrange;
-import fr.gouv.culture.an.ricoconverter.cli.convertAndArrange.ConvertAndArrange;
+import fr.gouv.culture.an.ricoconverter.cli.convert_eac.ArgumentsConvertEac;
+import fr.gouv.culture.an.ricoconverter.cli.convert_eac.ConvertEac;
+import fr.gouv.culture.an.ricoconverter.cli.convert_eac_raw.ArgumentsConvertEacRaw;
+import fr.gouv.culture.an.ricoconverter.cli.convert_eac_raw.ConvertEacRaw;
 import fr.gouv.culture.an.ricoconverter.cli.test.ArgumentsTest;
 import fr.gouv.culture.an.ricoconverter.cli.test.Test;
 import fr.gouv.culture.an.ricoconverter.cli.validate.ArgumentsValidate;
@@ -20,8 +20,8 @@ public class Main {
 
 	enum COMMAND {		
 		
-		CONVERT(new ArgumentsConvert(), new Convert()),
-		CONVERT_ARRANGE(new ArgumentsConvertAndArrange(), new ConvertAndArrange()),
+		CONVERT_EAC_RAW(new ArgumentsConvertEacRaw(), new ConvertEacRaw()),
+		CONVERT_EAC(new ArgumentsConvertEac(), new ConvertEac()),
 		VALIDATE(new ArgumentsValidate(), new Validate()),
 		TEST(new ArgumentsTest(), new Test()),
 		VERSION(new ArgumentsVersion(), new Version()),

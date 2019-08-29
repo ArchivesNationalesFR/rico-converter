@@ -1,4 +1,4 @@
-package fr.gouv.culture.an.ricoconverter.cli.convert;
+package fr.gouv.culture.an.ricoconverter.cli.convert_eac_raw;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,7 +8,7 @@ import fr.gouv.culture.an.ricoconverter.cli.CommandIfc;
 import fr.gouv.culture.an.ricoconverter.ErrorCode;
 import fr.gouv.culture.an.ricoconverter.eac.convert.Eac2RicoConverter;
 
-public class Convert implements CommandIfc {
+public class ConvertEacRaw implements CommandIfc {
 
 	private Logger log = LoggerFactory.getLogger(this.getClass().getName());
 
@@ -16,7 +16,7 @@ public class Convert implements CommandIfc {
 	public void execute(Object o) {
 		log.info("Running command : "+this.getClass().getSimpleName());
 		long start = System.currentTimeMillis();
-		ArgumentsConvert args = (ArgumentsConvert)o;
+		ArgumentsConvertEacRaw args = (ArgumentsConvertEacRaw)o;
 		log.info("  Input folder : {}", args.getInput().getAbsolutePath());
 		log.info("  Output folder : {}", args.getOutput().getAbsolutePath());
 		
@@ -25,7 +25,7 @@ public class Convert implements CommandIfc {
 		log.info("Command : "+this.getClass().getSimpleName()+" finished successfully in {} ms", (System.currentTimeMillis() - start));			
 	}
 	
-	public void doConvert(ArgumentsConvert args) {
+	public void doConvert(ArgumentsConvertEacRaw args) {
 		try {
 			// check that input is a directory
 			if(!args.getInput().isDirectory()) {

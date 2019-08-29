@@ -1,4 +1,4 @@
-package fr.gouv.culture.an.ricoconverter.cli.convertAndArrange;
+package fr.gouv.culture.an.ricoconverter.cli.convert_eac;
 
 import java.io.File;
 import java.io.IOException;
@@ -9,11 +9,11 @@ import org.slf4j.LoggerFactory;
 
 import fr.gouv.culture.an.ricoconverter.RicoConverterException;
 import fr.gouv.culture.an.ricoconverter.cli.CommandIfc;
-import fr.gouv.culture.an.ricoconverter.cli.convert.Eac2RicoConverterFactory;
+import fr.gouv.culture.an.ricoconverter.cli.convert_eac_raw.Eac2RicoConverterFactory;
 import fr.gouv.culture.an.ricoconverter.ErrorCode;
 import fr.gouv.culture.an.ricoconverter.eac.convert.Eac2RicoConverter;
 
-public class ConvertAndArrange implements CommandIfc {
+public class ConvertEac implements CommandIfc {
 
 	private Logger log = LoggerFactory.getLogger(this.getClass().getName());
 
@@ -21,7 +21,7 @@ public class ConvertAndArrange implements CommandIfc {
 	public void execute(Object o) {
 		log.info("Running command : "+this.getClass().getSimpleName());
 		long start = System.currentTimeMillis();
-		ArgumentsConvertAndArrange args = (ArgumentsConvertAndArrange)o;
+		ArgumentsConvertEac args = (ArgumentsConvertEac)o;
 		log.info("  Input folder : {}", args.getInput().getAbsolutePath());
 		log.info("  Output folder : {}", args.getOutput().getAbsolutePath());
 		log.info("  Error folder : {}", args.getError().getAbsolutePath());

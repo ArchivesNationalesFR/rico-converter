@@ -5,8 +5,8 @@ import org.slf4j.LoggerFactory;
 
 import fr.gouv.culture.an.ricoconverter.RicoConverterException;
 import fr.gouv.culture.an.ricoconverter.cli.CommandIfc;
-import fr.gouv.culture.an.ricoconverter.cli.convert.ArgumentsConvert;
-import fr.gouv.culture.an.ricoconverter.cli.convert.Eac2RicoConverterFactory;
+import fr.gouv.culture.an.ricoconverter.cli.convert_eac_raw.ArgumentsConvertEacRaw;
+import fr.gouv.culture.an.ricoconverter.cli.convert_eac_raw.Eac2RicoConverterFactory;
 import fr.gouv.culture.an.ricoconverter.ErrorCode;
 import fr.gouv.culture.an.ricoconverter.eac.convert.Eac2RicoConverter;
 
@@ -27,7 +27,7 @@ public class Test implements CommandIfc {
 				throw new RicoConverterException(ErrorCode.INPUT_IS_NOT_A_DIRECTORY, "Unit tests parameter "+args.getUnitTests()+" is not a directory.");
 			}
 			
-			ArgumentsConvert defaultArgs = new ArgumentsConvert();
+			ArgumentsConvertEacRaw defaultArgs = new ArgumentsConvertEacRaw();
 			Eac2RicoConverterFactory factory = new Eac2RicoConverterFactory(defaultArgs);			
 			Eac2RicoConverter converter = factory.createConverter(args.getXslt(), defaultArgs.getOutput(), defaultArgs.getError(), defaultArgs.getInput());
 			converter.unitTests(args.getUnitTests());			

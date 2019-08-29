@@ -2,8 +2,8 @@
 
 echo ":: Welcome to Ric-O Converter ${project.version} ::"
 
-export command_default=convert_arrange
-read -p "Enter command to execute (convert_arrange, convert, validate, test, version, help) [press Enter for '$command_default'] :" command
+export command_default=convert_eac
+read -p "Enter command to execute (convert_eac, convert_eac_raw, validate, test, version, help) [press Enter for '$command_default'] :" command
 command=${command:-$command_default}
 
 export parameterFile_default=parameters/$command.properties

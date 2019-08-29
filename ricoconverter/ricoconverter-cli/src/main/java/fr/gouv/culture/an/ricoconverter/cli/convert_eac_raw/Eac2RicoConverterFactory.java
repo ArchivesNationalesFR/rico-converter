@@ -1,4 +1,4 @@
-package fr.gouv.culture.an.ricoconverter.cli.convert;
+package fr.gouv.culture.an.ricoconverter.cli.convert_eac_raw;
 
 import java.io.File;
 import java.io.IOException;
@@ -42,7 +42,7 @@ public class Eac2RicoConverterFactory {
 	private String vocabularyLegalStatuses;
 	private String vocabularyRules;
 	
-	public Eac2RicoConverterFactory(ArgumentsConvert args) {
+	public Eac2RicoConverterFactory(ArgumentsConvertEacRaw args) {
 		this(args.getXsltBaseUri(), args.getXsltAuthorUri(), args.getXsltLiteralLang(), args.getXsltVocabularyLegalStatuses(), args.getXsltVocabularyRules());
 	}
 	

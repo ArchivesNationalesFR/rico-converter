@@ -1,4 +1,4 @@
-package fr.gouv.culture.an.ricoconverter.cli.convert;
+package fr.gouv.culture.an.ricoconverter.cli.convert_eac_raw;
 
 import java.io.File;
 
