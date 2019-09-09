@@ -25,6 +25,9 @@
 	<xsl:param name="AUTHOR_URI">http://data.archives-nationales.culture.gouv.fr/agent/005061</xsl:param>
 	<xsl:param name="LITERAL_LANG">fr</xsl:param>
 	<xsl:param name="INPUT_FOLDER">.</xsl:param>
+
+	<!--  Global variable for faId to reference it in functions -->
+	<xsl:variable name="faId" select="substring-after(/ead/eadheader/eadid, 'FRAN_IR_')" />
 	
 	<xsl:template match="/">
 		<rdf:RDF>
@@ -32,6 +35,69 @@
 			<xsl:attribute name="xml:base" select="$BASE_URI" />
 			<xsl:apply-templates />
 		</rdf:RDF>
+	</xsl:template>
+	
+	<xsl:template match="ead">
+		<rico:FindingAid rdf:about="{ead2rico:URI-FindingAid($faId)}">			
+			<xsl:apply-templates select="archdesc" />
+		</rico:FindingAid>
+	</xsl:template>
+	
+	<xsl:template match="archdesc">
+		<xsl:variable name="recordResourceId">
+			<xsl:call-template name="recordResourceId">
+				<xsl:with-param name="faId" select="$faId" />
+				<xsl:with-param name="recordResourceId" select="@id" />
+			</xsl:call-template>
+		</xsl:variable>	
+	
+		<rico:hasMainSubject>
+			<rico:RecordResource rdf:about="{ead2rico:URI-RecordResource($recordResourceId)}">
+				<rico:isMainSubjectOf rdf:resource="{ead2rico:URI-FindingAid($faId)}" />
+				
+				<rico:hasInstantiation>
+					<rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($recordResourceId)}">
+						<rico:instantiates rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+					</rico:Instantiation>
+				</rico:hasInstantiation>
+				
+				<xsl:apply-templates select="dsc" />
+			</rico:RecordResource>
+		</rico:hasMainSubject>
+	</xsl:template>
+	
+	<xsl:template match="dsc">
+		<xsl:apply-templates />
+	</xsl:template>
+	
+	<xsl:template match="c">
+		<xsl:variable name="recordResourceId">
+			<xsl:call-template name="recordResourceId">
+				<xsl:with-param name="faId" select="$faId" />
+				<xsl:with-param name="recordResourceId" select="@id" />
+			</xsl:call-template>
+		</xsl:variable>
+		
+		<xsl:variable name="parentRecordResourceId">
+			<xsl:call-template name="recordResourceId">
+				<xsl:with-param name="faId" select="$faId" />
+				<xsl:with-param name="recordResourceId" select="parent::*/@id" />
+			</xsl:call-template>
+		</xsl:variable>
+	
+		<rico:hasMember>
+			<rico:RecordResource rdf:about="{ead2rico:URI-RecordResource($recordResourceId)}">
+				<rico:isMemberOf rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />
+				
+				<rico:hasInstantiation>
+					<rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($recordResourceId)}">
+						<rico:instantiates rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+					</rico:Instantiation>
+				</rico:hasInstantiation>
+				
+				<xsl:apply-templates />
+			</rico:RecordResource>
+		</rico:hasMember>
 	</xsl:template>
 		
 </xsl:stylesheet>

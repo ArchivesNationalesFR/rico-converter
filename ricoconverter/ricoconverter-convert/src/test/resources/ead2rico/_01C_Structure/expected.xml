@@ -1,0 +1,30 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:FindingAid rdf:about="findingAid/11222">
+      <rico:hasMainSubject>
+         <rico:RecordResource rdf:about="recordResource/11222-top">
+            <rico:isMainSubjectOf rdf:resource="findingAid/11222"/>
+            <rico:hasInstantiation>
+               <rico:Instantiation rdf:about="instantiation/11222-top">
+                  <rico:instantiates rdf:resource="recordResource/11222-top"/>
+               </rico:Instantiation>
+            </rico:hasInstantiation>
+            <rico:hasMember>
+               <rico:RecordResource rdf:about="recordResource/11222-foo">
+                  <rico:isMemberOf rdf:resource="recordResource/11222-top"/>
+                  <rico:hasInstantiation>
+                     <rico:Instantiation rdf:about="instantiation/11222-foo">
+                        <rico:instantiates rdf:resource="recordResource/11222-foo"/>
+                     </rico:Instantiation>
+                  </rico:hasInstantiation>
+               </rico:RecordResource>
+            </rico:hasMember>
+         </rico:RecordResource>
+      </rico:hasMainSubject>
+   </rico:FindingAid>
+</rdf:RDF>

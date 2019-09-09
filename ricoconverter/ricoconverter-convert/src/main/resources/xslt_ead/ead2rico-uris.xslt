@@ -15,6 +15,30 @@
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
 >
 	
+	<xsl:function name="ead2rico:URI-FindingAid">
+		<xsl:param name="faId" />
+		<xsl:value-of select="concat('findingAid/', $faId)" />
+	</xsl:function>
+	
+	<xsl:function name="ead2rico:URI-RecordResource">
+		<xsl:param name="recordResourceId" />
+		<xsl:value-of select="concat('recordResource/', $recordResourceId)" />
+	</xsl:function>	
+
+	<xsl:function name="ead2rico:URI-Instantiation">
+		<xsl:param name="instantiationId" />
+		<xsl:value-of select="concat('instantiation/', $instantiationId)" />
+	</xsl:function>	
+	
+	<xsl:template name="recordResourceId">
+		<xsl:param name="faId" />
+		<xsl:param name="recordResourceId" />
+		
+        <xsl:value-of
+            select="concat($faId, '-', (if ($recordResourceId) then $recordResourceId else 'top') )"
+        />		
+	</xsl:template>
+	
 	<xsl:template name="rdf-about">
 		<xsl:param name="uri" />
 		<xsl:attribute name="about" namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
