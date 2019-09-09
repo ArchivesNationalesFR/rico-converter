@@ -11,4 +11,4 @@ pipelines:
         caches:
           - maven
         script: # Modify the commands below to build your repository.
-          - mvn clean install
+          - cd ricoconverter && mvn clean install
