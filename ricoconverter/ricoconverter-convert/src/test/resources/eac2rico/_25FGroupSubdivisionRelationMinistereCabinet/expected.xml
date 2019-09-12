@@ -1,0 +1,33 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#">
+   <rico:Description rdf:about="description/005205">
+      <rico:describes rdf:resource="agent/005205"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005205"/>
+   </rico:Description>
+   <rico:Agent rdf:about="agent/005205">
+      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rico:describedBy rdf:resource="description/005205"/>
+      <rdfs:label xml:lang="fr">Ministère X</rdfs:label>      
+      <rico:hasAgentName>
+         <rico:AgentName rdf:about="agentName/005205-Minist%C3%A8re%20X">
+            <rdfs:label xml:lang="fr">Ministère X</rdfs:label>
+            <rico:textualValue xml:lang="fr">Ministère X</rico:textualValue>
+            <rico:isAgentNameOf rdf:resource="agent/005205"/>
+            <rico:isRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
+         </rico:AgentName>
+      </rico:hasAgentName>
+      <rico:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/52976160-9459-49db-94cb-245844db9dff"/>
+      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005205-111111"/>
+   </rico:Agent>
+   <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/005205-111111">
+     <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>
+      <rico:groupSubdivisionRelationHasTarget rdf:resource="agent/111111"/>
+      <rico:groupSubdivisionRelationHasSource rdf:resource="agent/005205"/>
+      <rdfs:label xml:lang="fr">Relation de subdivision entre "Ministère X" et "Cabinet du ministère X"</rdfs:label>
+   </rico:AgentHierarchicalRelation>
+</rdf:RDF>

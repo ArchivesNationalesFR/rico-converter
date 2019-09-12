@@ -67,6 +67,7 @@
 	       		<xsl:variable name="externalEntityDescription" select="document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml'))" />
 	       		<xsl:choose>
 	       			<xsl:when test="eac2rico:isServiceCentral($externalEntityDescription/eac:eac-cpf) and $relation/@cpfRelationType='hierarchical-child'">GroupSubdivisionRelation</xsl:when>
+	       			<xsl:when test="eac2rico:isCabinetMinisteriel($externalEntityDescription/eac:eac-cpf) and $relation/@cpfRelationType='hierarchical-child'">GroupSubdivisionRelation</xsl:when>
 	       			<xsl:otherwise>AgentHierarchicalRelation</xsl:otherwise>
 	       		</xsl:choose>
 	       	</xsl:when>
@@ -333,6 +334,11 @@
 	<xsl:function name="eac2rico:isMinistere" as="xs:boolean">
 		<xsl:param name="entityDescriptionRoot"  as="element()?"/>
 		<xsl:sequence select="$entityDescriptionRoot/eac:cpfDescription/eac:description/eac:legalStatuses/eac:legalStatus/eac:term/@vocabularySource='d5bloo2gwk-sgl3fc00gzgl'" />
+	</xsl:function>
+	<!-- Tests if a legalStatus on the entity has the value 'Cabinet ministériel' -->
+	<xsl:function name="eac2rico:isCabinetMinisteriel" as="xs:boolean">
+		<xsl:param name="entityDescriptionRoot"  as="element()?"/>
+		<xsl:sequence select="$entityDescriptionRoot/eac:cpfDescription/eac:description/eac:legalStatuses/eac:legalStatus/eac:term/@vocabularySource='d5blonb04s-1nqrprwwl75h0'" />
 	</xsl:function>
 	
 	<!-- Tests if a relation descriptiveNote indicates an AgentControlRelation. We look if the descriptiveNote contains specific keywords -->
