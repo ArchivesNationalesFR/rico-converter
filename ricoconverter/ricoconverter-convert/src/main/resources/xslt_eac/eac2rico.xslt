@@ -248,20 +248,20 @@
 	</xsl:template>
 	<!--  Processing the fromDate / toDate of nameEntry ; note again the higher priority so that this template is picked up before the other one -->
 	<xsl:template match="eac:nameEntry/eac:useDates/eac:dateRange/eac:fromDate[@standardDate]" priority="2">
-		<rico:wasUsedFromDate>
+		<rico:usedFromDate>
 			<xsl:call-template name="outputDate">
                <xsl:with-param name="stdDate" select="@standardDate"/>
                <xsl:with-param name="date" select="text()"/>
             </xsl:call-template>
-		</rico:wasUsedFromDate>
+		</rico:usedFromDate>
 	</xsl:template>
 	<xsl:template match="eac:nameEntry/eac:useDates/eac:dateRange/eac:toDate[@standardDate]" priority="2">
-		<rico:wasUsedToDate>
+		<rico:usedToDate>
 			<xsl:call-template name="outputDate">
                <xsl:with-param name="stdDate" select="@standardDate"/>
                <xsl:with-param name="date" select="text()"/>
             </xsl:call-template>
-		</rico:wasUsedToDate>
+		</rico:usedToDate>
 	</xsl:template>
 	
 	<xsl:template match="eac:fromDate[@standardDate]">
