@@ -18,12 +18,12 @@ public class ArgumentsConvertEad {
 	
 	@Parameter(
 			names = { "input" },
-			description = "Input folder containg the EAD files. If not set, defaults to 'input'",			
+			description = "Input folder containg the EAD files. If not set, defaults to 'input-ead'",			
 			converter = FileConverter.class,
 			required = false,
 			validateWith = ExistingFileValidator.class
 	)
-	protected File input = new File("input");
+	protected File input = new File("input-ead");
 	
 	@Parameter(
 			names = { "output" },

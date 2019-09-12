@@ -8,7 +8,7 @@
     </appender>
      
     <appender name="ALL_FILE" class="ch.qos.logback.core.FileAppender">
-    	<file>log/eaccpf2rico-all.log</file>
+    	<file>log/ricoconverter-all.log</file>
     	
 	    <encoder>
 	      <charset>UTF-8</charset>
@@ -17,7 +17,7 @@
   	</appender>
   	
   	<appender name="ERROR_FILE" class="ch.qos.logback.core.FileAppender">
-    	<file>log/eaccpf2rico-errors.log</file>
+    	<file>log/ricoconverter-errors.log</file>
     	<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
 	      <level>ERROR</level>
 	    </filter>
@@ -29,7 +29,7 @@
   	</appender>
   	
   	<appender name="XSLT_FILE" class="ch.qos.logback.core.FileAppender">
-    	<file>log/eaccpf2rico-xslt.log</file>
+    	<file>log/ricoconverter-xslt.log</file>
 
 	    <encoder>
 	      <charset>UTF-8</charset>
@@ -38,7 +38,7 @@
   	</appender>
   	
   	<appender name="REPORT_FILE" class="ch.qos.logback.core.FileAppender">
-    	<file>log/eaccpf2rico-report.log</file>
+    	<file>log/ricoconverter-report.log</file>
 
 	    <encoder>
 	      <charset>UTF-8</charset>
@@ -51,16 +51,16 @@
         <appender-ref ref="ERROR_FILE" />
     </logger>
     
-   <logger name="fr.gouv.culture.an.eaccpf2rico.cli.report">
+   <logger name="fr.gouv.culture.an.ricoconverter.cli.report">
         <appender-ref ref="REPORT_FILE" />
     </logger>
     
-    <logger name="fr.gouv.culture.an.eaccpf2rico.cli.convert.SaxonErrorListener" additivity="false">
+    <logger name="fr.gouv.culture.an.ricoconverter.cli.convert.SaxonErrorListener" additivity="false">
     	<level>DEBUG</level>
         <appender-ref ref="XSLT_FILE" />
     </logger>
     
-    <logger name="fr.gouv.culture.an.eaccpf2rico.convert.Eac2RicoConverterReportListener" additivity="false">
+    <logger name="fr.gouv.culture.an.ricoconverter.eac.convert.Eac2RicoConverterReportListener" additivity="false">
         <appender-ref ref="REPORT_FILE" />
         <appender-ref ref="STDOUT" />
     </logger>
