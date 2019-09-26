@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xml:base="http://data.archives-nationales.culture.gouv.fr/">
+    
+    <!-- Référentiel langues -->
+    
+    <rico:Language rdf:about="language/FRAN_RI_100-name4">
+       
+        <owl:sameAs rdf:resource="http://id.loc.gov/vocabulary/iso639-2/fra"/>
+        <rico:identifier>Ancien identifiant SIA : FRAN_RI_100.xml#name4</rico:identifier>
+        <rdfs:label xml:lang="fr">Français/fre</rdfs:label>
+        <skos:prefLabel xml:lang="fr">français</skos:prefLabel>
+        <skos:prefLabel xml:lang="rn">French</skos:prefLabel>
+    </rico:Language>
+    
+    <rico:Language rdf:about="language/FRAN_RI_100-d-6g899b3ht-jm6991yabdi">
+        
+        <owl:sameAs rdf:resource="http://id.loc.gov/vocabulary/iso639-2/cat"/>
+        <rico:identifier>Ancien identifiant SIA : FRAN_RI_100.xml#d-6g899b3ht-jm6991yabdi</rico:identifier>
+        <rdfs:label xml:lang="fr">Catalan/cat</rdfs:label>
+        <skos:prefLabel xml:lang="fr">catalan | valencien</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Catalan | Valencian</skos:prefLabel>
+    </rico:Language>
+    <rico:Language rdf:about="language/FRAN_RI_100-name5">
+       
+        <owl:sameAs rdf:resource="http://id.loc.gov/vocabulary/iso639-2/ger"/>
+        <rico:identifier>Ancien identifiant SIA : FRAN_RI_100.xml#name5</rico:identifier>
+        <rdfs:label xml:lang="fr">Allemand/ger</rdfs:label>
+        <skos:prefLabel xml:lang="fr">allemand</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">German</skos:prefLabel>
+    </rico:Language>
+    <rico:Language rdf:about="language/FRAN_RI_100-name6">
+        
+        <owl:sameAs rdf:resource="http://id.loc.gov/vocabulary/iso639-2/eng"/>
+        <rico:identifier>Ancien identifiant SIA : FRAN_RI_100.xml#name6</rico:identifier>
+        <rdfs:label xml:lang="fr">Anglais/eng</rdfs:label>
+        <skos:prefLabel xml:lang="fr">anglais</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">English</skos:prefLabel>
+    </rico:Language>
+    <rico:Language rdf:about="language/FRAN_RI_100-name7">
+      
+        <owl:sameAs rdf:resource="http://id.loc.gov/vocabulary/iso639-2/spa"/>
+        <rico:identifier>Ancien identifiant SIA : FRAN_RI_100.xml#name7</rico:identifier>
+        <rdfs:label xml:lang="fr">Espagnol/spa</rdfs:label>
+        <skos:prefLabel xml:lang="fr">espagnol | castillan</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Spanish | Castilian</skos:prefLabel>
+    </rico:Language>
+    <rico:Language rdf:about="language/FRAN_RI_100-name9">
+      
+        <owl:sameAs rdf:resource="http://id.loc.gov/vocabulary/iso639-2/lat"/>
+        <rico:identifier>Ancien identifiant SIA : FRAN_RI_100.xml#name9</rico:identifier>
+        <rdfs:label xml:lang="fr">Latin/lat</rdfs:label>
+        <skos:prefLabel xml:lang="fr">latin</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Latin</skos:prefLabel>
+    </rico:Language>
+    
+</rdf:RDF>
