@@ -1,0 +1,24 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:isni="http://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:FindingAid rdf:about="findingAid/058220">
+      <rico:isRegulatedBy rdf:resource="rule/rl005"/>
+      <rico:isRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:isRegulatedBy rdf:resource="rule/rl006"/>
+      <rico:isRegulatedBy rdf:resource="rule/rl007"/>
+      <rico:isRegulatedBy rdf:resource="rule/rl008"/>
+      <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
+      <rico:hasInstantiation rdf:resource="instantiation/058220-i1"/>
+   </rico:FindingAid>
+   <rico:instantiation rdf:about="instantiation/058220-i1">
+      <rico:encodingFormat xml:lang="en">text/xml</rico:encodingFormat>
+      <dc:format xml:lang="en">text/xml</dc:format>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>  
+      <!--?? <owl:sameAs rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/exportXML.action?irId=FRAN_IR_058220"/>-->
+   </rico:instantiation>
+</rdf:RDF>

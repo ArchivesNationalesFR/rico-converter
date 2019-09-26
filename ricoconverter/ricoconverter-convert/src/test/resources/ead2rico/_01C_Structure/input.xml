@@ -1,11 +1,41 @@
 <?xml version="1.0"?>
 <ead>
    <eadheader>
-      <eadid>FRAN_IR_11222</eadid>
+      <eadid>FRAN_IR_011222</eadid>
+      <!-- the metadata of the finding aid -->
    </eadheader>
-   <archdesc>
-   	  <dsc>
-   	  	<c id="foo"></c>
-   	  </dsc>
+   <archdesc id="011222-top">
+      <!-- global description of the whole record set -->
+     <!-- <did>
+         <unitid/>
+         <unittitle/>
+         <unitdate/>
+      </did>-->
+      <!-- + other EAD subelements that describe the whole record set-->
+      <dsc>
+         <!-- description of the documentary units that are members of this '11222-top' highest level record set -->
+         <c id="foo">
+           <!-- <did>
+               <unitid/>
+               <unittitle/>
+               <unitdate/>
+            </did>-->
+            <!-- + other subelements that describe  this 'foo' record resource-->
+            <!-- then, other embedded c elements that describe the units taht are members of the 'foo' record resource'-->
+            <c id="abcdefg">
+              <!-- <did>
+                  <unitid/>
+                  <unittitle/>
+                  <unitdate/>
+               </did>-->
+               <!-- + other subelements that describe this 'abcdefg' record resource-->
+            </c>
+         </c>
+         <c id="klmn">
+           <!-- <did/>-->
+            <!-- etc... -->
+         </c>
+         <!-- and etc. - as many c components here as necessary for describing the direct documentary subunits of the whole aggregation -->
+      </dsc>
    </archdesc>
 </ead>

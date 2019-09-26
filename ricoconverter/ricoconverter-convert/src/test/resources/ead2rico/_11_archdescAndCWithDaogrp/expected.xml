@@ -1,0 +1,77 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:html="http://www.w3.org/1999/xhtml" xmlns:isni="http://isni.org/ontology#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:FindingAid rdf:about="findingAid/003666">
+      <rico:hasMainSubject rdf:resource="recordResource/003666-top"/>
+      <rico:hasInstantiation rdf:resource="instantiation/003666-i1"/>
+     
+   </rico:FindingAid>
+   <rico:Instantiation rdf:about="instantiation/003666-i1">
+      <rico:instantiates rdf:resource="findingAid/003666"/>
+      <rico:encodingFormat xml:lang="en">text/xml</rico:encodingFormat>
+      <dc:format xml:lang="en">text/xml</dc:format>
+      <rico:identifier>FRAN_IR_003666</rico:identifier>
+      <rico:heldBy rdf:resource="agent/005061"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_003666"/>     
+      <!--?? <owl:sameAs rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/exportXML.action?irId=FRAN_IR_003666"/>-->
+   </rico:Instantiation>
+  
+   <!-- The highest level Record resource, corresponding to archdesc, and its physical or digital primary instantiation
+            If there is an @id, use {findingAidId}{@id}; if no @id for archdesc, use {findingAidId}-top -->
+   <rico:RecordResource rdf:about="recordResource/003666-top">
+      <rico:isMainSubjectOf rdf:resource="findingAid/003666"/>
+      <rico:hasInstantiation rdf:resource="instantiation/003666-top-i1"/>
+      <!-- if there is a daogrp, we consider the digital archival object as a distinct instantiation (digital surrogate) of the record resource; this second instantiation is derived from the first one-->
+      <rico:hasInstantiation rdf:resource="instantiation/003666-top-i2"/>
+         
+      <rico:hasMember
+         rdf:resource="recordResource/003666-c-835pw5mwg-otyywby3qzqb"/>
+      
+   </rico:RecordResource>
+   <rico:Instantiation rdf:about="instantiation/003666-top-i1">
+      <rico:instantiates rdf:resource="recordResource/003666-top"/>
+      <rico:hasDigitalCopy rdf:resource="instantiation/003666-top-i2"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_003666/top"/>
+   </rico:Instantiation>
+   <rico:Instantiation rdf:about="instantiation/003666-top-i2">
+      <rico:instantiates rdf:resource="recordResource/003666-top"/>
+      <rico:isDigitalCopyOf rdf:resource="instantiation-003666-top-i1"/>
+      <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+      <!-- here we can only specify the first and last image of the series of images that are integrated into the instantiation-->
+    
+      <rico:identifier>FRAN_0118_274_L#FRAN_0118_350_L</rico:identifier>
+      <rico:encodingFormat xml:lang="en">image/jpeg</rico:encodingFormat>
+      <!-- later on we should be able to refer to a IIIF sequence, using at least rdfs:seeAlso, or owl:sameAs -->
+    <!-- something like: <rdfs:seeAlso rdf:resource="http://archivesnationales.culture.gouv.fr/iiif/003666-top/sequence/normal"/>-->
+   </rico:Instantiation>
+   <!-- then there should be another RDF file for outputting the RDF data about the c elements (one file per c, child of archdesc)-->
+   <!-- so from the input.xml file, we should get 1 more file
+      In this file we should find the following, which corresponds to the 'foo' c element and its instantiations -->
+   
+   <rico:RecordResource rdf:about="recordResource/003666-c-835pw5mwg-otyywby3qzqb">
+      <rico:isMemberOf rdf:resource="recordResource/003666-top"/>
+      <rico:hasInstantiation rdf:resource="instantiation/003666-c-835pw5mwg-otyywby3qzqb-i1"/>
+      <rico:hasInstantiation rdf:resource="instantiation/003666-c-835pw5mwg-otyywby3qzqb-i2"/>
+   </rico:RecordResource>
+   <rico:Instantiation rdf:about="instantiation/003666-c-835pw5mwg-otyywby3qzqb-i1">
+      <rico:instantiates rdf:resource="recordResource/003666-c-835pw5mwg-otyywby3qzqb"/>
+      <rico:hasDigitalCopy rdf:resource="instantiation/003666-c-835pw5mwg-otyywby3qzqb-i2"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_003666/c-835pw5mwg-otyywby3qzqb"/>
+   </rico:Instantiation>
+   <rico:Instantiation rdf:about="instantiation/003666-c-835pw5mwg-otyywby3qzqb-i2">
+      <rico:instantiates rdf:resource="recordResource/003666-c-835pw5mwg-otyywby3qzqb"/>
+      <rico:isDigitalCopyOf rdf:resource="instantiation-003666-c-835pw5mwg-otyywby3qzqb-i1"/>
+        <rico:identifier>FRAN_0118_274_L</rico:identifier>
+        <rico:encodingFormat xml:lang="en">image/jpeg</rico:encodingFormat>
+          <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+        <!-- later on we should be able to link to an image online through the IIIF Image API-->
+        <!-- for now we can use, for this unique image, the current permalink, with rdfs:seeAlso or owl:sameAs-->
+        <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_003666/c-835pw5mwg-otyywby3qzqb/FRAN_0118_274_L"/>
+   </rico:Instantiation>
+   
+   
+  
+</rdf:RDF>

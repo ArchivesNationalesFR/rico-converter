@@ -4,17 +4,21 @@
          xmlns:owl="http://www.w3.org/2002/07/owl#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xml:base="http://data.archives-nationales.culture.gouv.fr/">
-   <rico:FindingAid rdf:about="findingAid/11222">
-      <rico:hasMainSubject>
-         <rico:RecordResource rdf:about="recordResource/11222-top">
-            <rico:isMainSubjectOf rdf:resource="findingAid/11222"/>
-            <rico:hasInstantiation>
-               <rico:Instantiation rdf:about="instantiation/11222-top">
-                  <rico:instantiates rdf:resource="recordResource/11222-top"/>
-               </rico:Instantiation>
-            </rico:hasInstantiation>
-         </rico:RecordResource>
-      </rico:hasMainSubject>
+   <rico:FindingAid rdf:about="findingAid/011222">
+      <rico:hasMainSubject rdf:resource="recordResource/011222-top"/>
+      <rico:hasInstantiation rdf:resource="instantiation/011222-i1"/>
+    
+      
    </rico:FindingAid>
+   <rico:Instantiation rdf:about="instantiation/011222-i1">
+      <rico:instantiates rdf:resource="findingAid/011222"/>
+      <rico:encodingFormat xml:lang="en">text/xml</rico:encodingFormat>
+      <dc:format xml:lang="en">text/xml</dc:format>
+      <rico:identifier>FRAN_IR_011222</rico:identifier>
+      <rico:heldBy rdf:resource="agent/005061"/>
+      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_011222"/> 
+      <!--?? <owl:sameAs rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/exportXML.action?irId=FRAN_IR_011222"/>-->
+   </rico:Instantiation>
 </rdf:RDF>
