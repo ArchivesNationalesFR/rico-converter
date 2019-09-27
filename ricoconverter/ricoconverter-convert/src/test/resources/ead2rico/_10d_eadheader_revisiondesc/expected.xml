@@ -4,57 +4,36 @@
    xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xml:base="http://data.archives-nationales.culture.gouv.fr/">
-   <rico:FindingAid rdf:about="findingAid/004852"> <rico:title xml:lang="fr">Dossiers de carrière
-         des magistrats (1848-1883) : Inventaire sommaire (BB/6(II)/1-BB/6(II)/434)</rico:title>
-      <rdfs:label xml:lang="fr">Dossiers de carrière des magistrats (1848-1883) : Inventaire
-         sommaire (BB/6(II)/1-BB/6(II)/434)</rdfs:label>
-      <!-- rico:authoredBy has range Agent for now, but should be changed, so we use authoredBy. QUESTION: can we do better and split the string ?-->
-      <rico:authoredBy xml:lang="fr">S. de Dainville-Barbiche, M. Deshayes et M.
-         Mayeur</rico:authoredBy> <rico:hasInstantiation rdf:resource="instantiation/004852-i1"/>
-         <rico:hasMainSubject rdf:resource="recordResource/004852-top"/>
+   <rico:FindingAid rdf:about="findingAid/004852"> 
       <!-- for processing revisiondesc/change, we use event -->
       <rico:affectedBy>
          <rico:Activity>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth"
                >2015-03</rico:date>
-            <rico:description xml:lang="fr">Révision de la description générale du fonds ;
-               restructuration et corrections des unités de description relatives aux documents
-               numérisés</rico:description>
+            <rico:description xml:lang="fr">Révision de la description générale du fonds ; restructuration et corrections des unités de description relatives aux documents numérisés</rico:description>
          </rico:Activity>
       </rico:affectedBy>
       <rico:affectedBy>
          <rico:Activity>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-04-17</rico:date>
-            <rico:description xml:lang="en">DAFANCH00AP_0000400AP converted from EAD 1.0 to 2002 by
-               v1to02.xsl (20030408).</rico:description>
+            <rico:description xml:lang="fr">DAFANCH00AP_0000400AP converted from EAD 1.0 to 2002 by v1to02.xsl (20030408).</rico:description>
          </rico:Activity>
       </rico:affectedBy>
       <rico:affectedBy>
          <rico:Activity>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-12-19</rico:date>
-            <rico:description xml:lang="en">La première version a été livrée au CHAN ainsi qu'au
-               groupe RLG par la société AJLSM (info@ajlsm.com).</rico:description>
+            <rico:description xml:lang="fr">La première version a été livrée au CHAN ainsi qu'au groupe RLG par la société AJLSM (info@ajlsm.com).</rico:description>
          </rico:Activity>
       </rico:affectedBy>
+      <rico:hasInstantiation rdf:resource="instantiation/004852-i1"/>
    </rico:FindingAid>
    <rico:Instantiation rdf:about="instantiation/004852-i1">
-      <!-- the title is duplicated here -->
-      <rico:title xml:lang="fr">Dossiers de carrière des magistrats (1848-1883) : Inventaire
-         sommaire (BB/6(II)/1-BB/6(II)/434)</rico:title>
-      <rdfs:label xml:lang="fr">Dossiers de carrière des magistrats (1848-1883) : Inventaire
-         sommaire (BB/6(II)/1-BB/6(II)/434)</rdfs:label>
+   	  <rico:instantiates rdf:resource="findingAid/004852"/>
       <rico:encodingFormat xml:lang="en">text/xml</rico:encodingFormat>
       <dc:format xml:lang="en">text/xml</dc:format>
       <rico:identifier>FRAN_IR_004852</rico:identifier>
       <rico:heldBy rdf:resource="agent/005061"/> <rdfs:seeAlso
          rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_004852"/>
       <!--?? <owl:sameAs rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/exportXML.action?irId=FRAN_IR_004852"/>-->
-   </rico:Instantiation>
-   <rico:RecordResource rdf:about="recordResource/004852-top">
-      <rico:isMainSubjectOf rdf:resource="findingAid/004852"/>
-      <rico:hasInstantiation rdf:resource="instantiation/004852-top-i1"/>
-   </rico:RecordResource>
-   <rico:Instantiation rdf:about="instantiation/004852-top-i1">
-      <rico:instantiates rdf:resource="recordResource/004852-top"/>
    </rico:Instantiation>
 </rdf:RDF>

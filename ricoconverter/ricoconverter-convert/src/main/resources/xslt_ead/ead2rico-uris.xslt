@@ -15,6 +15,10 @@
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
 >
 	
+	<!-- Load Languages from companion file -->
+	<xsl:param name="VOCABULARY_LANGUAGES">../vocabularies/referentiel_languages.rdf</xsl:param>
+	<xsl:variable name="LANGUAGES" select="document($VOCABULARY_LANGUAGES)" />
+	
 	<xsl:function name="ead2rico:URI-FindingAid">
 		<xsl:param name="faId" />
 		<xsl:value-of select="concat('findingAid/', $faId)" />
@@ -29,6 +33,14 @@
 		<xsl:param name="instantiationId" />
 		<xsl:value-of select="concat('instantiation/', $instantiationId)" />
 	</xsl:function>	
+
+	<xsl:function name="ead2rico:URI-Language">
+		<xsl:param name="langcode" />
+		<xsl:variable name="idlocgov" select="concat('http://id.loc.gov/vocabulary/iso639-2/', $langcode)" />
+<!-- 		<xsl:value-of select="$LANGUAGES/rdf:RDF/rico:Language[owl:sameAs/@rdf:resource = $idlocgov]/@rdf:about" /> -->
+		<xsl:value-of select="$LANGUAGES/rdf:RDF/rico:Language[ends-with(rdfs:label, concat('/',$langcode))]/@rdf:about" />
+	</xsl:function>
+
 	
 	<xsl:template name="recordResourceId">
 		<xsl:param name="faId" />
