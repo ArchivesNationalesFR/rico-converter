@@ -191,23 +191,45 @@
 				<xsl:with-param name="faId" select="$faId" />
 				<xsl:with-param name="recordResourceId" select="top" />
 			</xsl:call-template>
-		</xsl:variable>	
+		</xsl:variable>
+		<xsl:variable name="instantiationId" select="concat($recordResourceId, '-i1')" />
 	
 		<rico:RecordResource rdf:about="{ead2rico:URI-RecordResource($recordResourceId)}">
 			<rico:isMainSubjectOf rdf:resource="{ead2rico:URI-FindingAid($faId)}" />
 			
 			<rico:hasInstantiation>
-				<rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($recordResourceId)}">
+				<rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($instantiationId)}">
 					<rico:instantiates rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+					<!-- references to other digital copies -->
+					<xsl:apply-templates select="daogrp" mode="reference" />
+					<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/{/ead/eadheader/eadid}/top" />
 				</rico:Instantiation>
 			</rico:hasInstantiation>
 			
-			<xsl:apply-templates select="dsc" />
+			<!--  dsc is processed later, outside of RecordResource -->
+			<xsl:apply-templates select="node() except dsc" />
+			
+			<!--  references to RecordResources -->
+			<xsl:apply-templates select="dsc" mode="reference" />
 		</rico:RecordResource>
+		
+		<!-- All RecordResources -->
+		<xsl:apply-templates select="dsc" />
 	</xsl:template>
 	
-	<xsl:template match="dsc">
-		<xsl:apply-templates />
+	<xsl:template match="dsc" mode="#all">
+		<xsl:apply-templates mode="#current" />
+	</xsl:template>
+	
+	<xsl:template match="c" mode="reference">
+		<xsl:variable name="recordResourceId">
+			<xsl:call-template name="recordResourceId">
+				<xsl:with-param name="faId" select="$faId" />
+				<xsl:with-param name="recordResourceId" select="@id" />
+			</xsl:call-template>
+		</xsl:variable>
+	
+		<rico:hasMember rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
 	</xsl:template>
 	
 	<xsl:template match="c">
@@ -217,6 +239,7 @@
 				<xsl:with-param name="recordResourceId" select="@id" />
 			</xsl:call-template>
 		</xsl:variable>
+		<xsl:variable name="instantiationId" select="concat($recordResourceId, '-i1')" />
 		
 		<xsl:variable name="parentRecordResourceId">
 			<xsl:call-template name="recordResourceId">
@@ -224,22 +247,68 @@
 				<xsl:with-param name="recordResourceId" select="parent::*/@id" />
 			</xsl:call-template>
 		</xsl:variable>
-	
-		<rico:hasMember>
-			<rico:RecordResource rdf:about="{ead2rico:URI-RecordResource($recordResourceId)}">
-				<rico:isMemberOf rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />
-				
-				<rico:hasInstantiation>
-					<rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($recordResourceId)}">
-						<rico:instantiates rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
-					</rico:Instantiation>
-				</rico:hasInstantiation>
-				
-				<xsl:apply-templates />
-			</rico:RecordResource>
-		</rico:hasMember>
+
+		<rico:RecordResource rdf:about="{ead2rico:URI-RecordResource($recordResourceId)}">
+			<rico:isMemberOf rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />
+			
+			<rico:hasInstantiation>
+				<rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($instantiationId)}">
+					<rico:instantiates rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+					<!-- references to other digital copies -->
+					<xsl:apply-templates select="daogrp" mode="reference" />
+					<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/{/ead/eadheader/eadid}/{@id}" />
+				</rico:Instantiation>
+			</rico:hasInstantiation>
+			
+			<xsl:apply-templates select="node() except c" />
+			<xsl:for-each select="c">
+				<rico:hasMember>
+					<xsl:apply-templates select="." />
+				</rico:hasMember>
+			</xsl:for-each>
+		</rico:RecordResource>
 	</xsl:template>
 
+	<xsl:template match="daogrp" mode="#all">
+		<xsl:apply-templates mode="#current" />
+	</xsl:template>
+	<xsl:template match="daoloc" mode="reference">
+		<xsl:variable name="recordResourceId">
+			<xsl:call-template name="recordResourceId">
+				<xsl:with-param name="faId" select="$faId" />
+				<!-- Note how [last()] selects the nearest ancestor -->
+				<xsl:with-param name="recordResourceId" select="(ancestor::*[self::c or self::archdesc])[last()]/@id" />
+			</xsl:call-template>
+		</xsl:variable>
+		<!-- Add +2 to the offset of this daoloc element to build instantiation ID -->
+		<xsl:variable name="instantiationId" select="concat($recordResourceId, '-i', count(preceding-sibling::daoloc)+2)" />
+		<rico:hasDigitalCopy rdf:resource="{ead2rico:URI-Instantiation($instantiationId)}"/>		
+	</xsl:template>
+	<xsl:template match="daoloc">
+		<xsl:variable name="recordResourceId">
+			<xsl:call-template name="recordResourceId">
+				<xsl:with-param name="faId" select="$faId" />
+				<!-- Note how [last()] selects the nearest ancestor -->
+				<xsl:with-param name="recordResourceId" select="(ancestor::*[self::c or self::archdesc])[last()]/@id" />
+			</xsl:call-template>
+		</xsl:variable>
+		<!-- Add +2 to the offset of this daoloc element to build instantiation ID -->
+		<xsl:variable name="instantiationId" select="concat($recordResourceId, '-i', count(preceding-sibling::daoloc)+2)" />
+		
+		<rico:hasInstantiation>
+			<rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($instantiationId)}">
+				<rico:instantiates rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+				<!-- We know it is a digital copy of the first instantiation -->
+				<rico:isDigitalCopyOf rdf:resource="{ead2rico:URI-Instantiation(concat($recordResourceId, '-i1'))}"/>
+				<rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>	
+				<rico:identifier><xsl:value-of select="replace(@href, '.msp', '')" /></rico:identifier>			
+				<rico:encodingFormat xml:lang="en">image/jpeg</rico:encodingFormat>
+				<xsl:if test="not(contains(@href, '#'))">
+					<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_003666/{(ancestor::*[self::c or self::archdesc])[last()]/@id}/{replace(@href, '.msp', '')}"/>
+				</xsl:if>
+			</rico:Instantiation>
+		</rico:hasInstantiation>
+	</xsl:template>
 
 	<!-- ***** Processing of formatting elements p, list, item, span ***** -->
 	
