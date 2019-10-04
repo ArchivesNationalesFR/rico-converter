@@ -105,7 +105,9 @@ public class Ead2RicoConverter {
 			
 			boolean success = false;
 			try(FileOutputStream out = new FileOutputStream(outputFile)) {
-				this.convert(new StreamSource(new FileInputStream(inputFile)), new StreamResult(out));
+				StreamSource source = new StreamSource(new FileInputStream(inputFile));
+				source.setSystemId(inputFile);
+				this.convert(source, new StreamResult(out));
 				
 				try {
 					notifyEndProcessing(inputFile);

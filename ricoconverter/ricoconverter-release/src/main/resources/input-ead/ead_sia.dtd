@@ -1,0 +1,531 @@
+<!--:::::::::::::::::::::::::::::::::::Lien vers :::::::::::::::::::::::::::::::::::::::::::::-->
+<!--DTD EAD SIA-->
+<!--Archives nationales - Mission Projet Pierrefites - Système d'Information Archivistique -->
+
+<!--DTD utilisee par le SIA pour la production des instruments de recherche des archives nationales.-->
+<!--Basee sur la DTD EAD 2002 : +//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN -->
+<!--Version beta du 20-09-2010 : Initialisation --> 
+<!--Version ceta du 28-09-2010 : Corrections suites aux remarques du chantier de dématérialisation --> 
+<!--Version 1.0 du 06-10-2010: Corrections suite aux remarques du chantier de dématérialisation ainsi que celles de la SIAF--> 
+<!--Version 1.1 du 14-12-2010: Modifications suite à des problématiques techniques remontées en pahse de développements
+        - Suppression de l'élément <ref> dans <bibref> (coquille)
+        - imbrication de la balise emph
+        - ajout de l'attribut altrender dans <p> 
+        - ajout de l'attribut xpointer dans <extref>
+        - ajout des éléments <extref>, <bibref> et <archref> dans l'élément englobant <ref>  
+        - attribut role de <extref>: limitation à la liste MMD, ANX, URL
+        - ajout de l'attribut role dans <ref>: limitation à la liste IR, ANX 
+        - abandon de l'élément <daodesc>
+        - abandon de <defitem> et <label>
+        Modification du 01/02/2012
+        - abandon du caractère obligatoire de <unitid>. 
+        - plusieurs unitid autorisés dans un <did>
+        - passage de l'attribut id de "obligatoire" à "facultatif"-->
+<!-- L'utilisation des éléments de mise en forme a été  limitée aux éléments <p> et <item>
+Les éléments de mise en forme appliqués aux tableaux ont été systématiquement supprimés.-->
+<!-- Mise à jour du 7 novembre 2012 suppression de PCDATA dans <physdesc> -->
+<!-- Mise à jour du 6 mars 2013 suppression de l'élément <date> dans <creation> et de l'attribut "unit" dans <extent et dans <dimensions>-->
+<!-- Mise à jour du 2 juillet 2013 suppression de l'élément <list> dans <item> et dans <p>-->
+<!--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->
+
+<!--STRUCTURE GENERALE DE l'IR -->
+<!ELEMENT ead (eadheader, frontmatter?, archdesc) >
+
+<!-- En-tete EAD -->
+<!ELEMENT eadheader (eadid, filedesc,  profiledesc, revisiondesc?)>
+<!ATTLIST eadheader dateencoding NMTOKEN "iso8601">
+<!ATTLIST eadheader langencoding NMTOKEN "iso639-2b">
+<!ATTLIST eadheader countryencoding NMTOKEN "iso3166-1">
+<!ATTLIST eadheader encodinganalog CDATA #IMPLIED>
+<!ATTLIST eadheader findaidstatus NMTOKEN #IMPLIED>
+<!ATTLIST eadheader relatedencoding CDATA #IMPLIED>
+<!ATTLIST eadheader repositoryencoding NMTOKEN "iso15511">
+<!ATTLIST eadheader scriptencoding NMTOKEN "iso15924">
+
+<!-- Preliminaires -->
+<!ELEMENT frontmatter (div+)>
+
+<!-- Description archivistique -->
+<!-- Contrairement à l'EAD originale, les éléments ci-dessous ne sont pas répétables. Pour appliquer une telle règle dans une DTD, il est nécessaire d'imposer l'orde des éléments. 
+Si cet ordre pose des problèmes merci de nous contacter. -->
+<!ELEMENT archdesc (did,  accessrestrict, userestrict, altformavail?, originalsloc?, phystech?, acqinfo, bioghist?, custodhist?, appraisal?, arrangement?, fileplan?, accruals?, scopecontent?, separatedmaterial?, relatedmaterial?, otherfindaid?,  bibliography?, processinfo?, controlaccess?, dsc?)>
+<!ATTLIST archdesc level (class | collection | file | fonds | item | otherlevel | recordgrp | series | subfonds | subgrp | subseries) #REQUIRED>
+<!ATTLIST archdesc otherlevel NMTOKEN #IMPLIED>
+<!ATTLIST archdesc encodinganalog CDATA #IMPLIED>
+<!ATTLIST archdesc relatedencoding CDATA #IMPLIED>
+
+<!-- Conditions d'acces -->
+<!-- un seul élément dans <archdesc> ou par <c> -->
+<!ELEMENT accessrestrict (p | list)+>
+<!ATTLIST accessrestrict encodinganalog CDATA #IMPLIED>
+
+<!-- Accroissement  -->
+<!-- un seul élément dans <archdesc> ou par <c> -->
+<!ELEMENT accruals (p | list)+ >
+<!ATTLIST accruals encodinganalog CDATA #IMPLIED>
+
+<!-- Modalites d'entree -->
+<!-- un seul élément dans <archdesc> ou par <c> -->
+<!ELEMENT acqinfo (p | list)+>
+<!ATTLIST acqinfo encodinganalog CDATA #IMPLIED>
+
+<!-- Adresse -->
+<!ELEMENT address (addressline+)>
+
+<!--Ligne d'adresse -->
+<!ELEMENT addressline (#PCDATA)*>
+
+<!-- Documents de substitution -->
+<!-- un seul élément dans <archdesc> ou par <c> -->
+<!ELEMENT altformavail (p | list)+>
+<!ATTLIST altformavail encodinganalog CDATA #IMPLIED>
+
+<!-- Information sur l'evaluation -->
+<!-- un seul élément dans <archdesc> ou par <c> -->
+<!ELEMENT appraisal (p | list)+ >
+<!ATTLIST appraisal encodinganalog CDATA #IMPLIED>
+
+<!-- Reference a d'autres documents d'archives -->
+
+<!ELEMENT archref (#PCDATA)*>
+<!-- l'élément <archef> ne doit être utilisé que dans la mesure où il a pour cible un document électronique. Dans les autres cas, il faut utilser l'élément <p> -->
+<!ATTLIST archref href CDATA #IMPLIED>
+
+<!-- Classement -->
+<!-- un seul élément dans <archdesc> ou par <c> -->
+<!ELEMENT arrangement (p | list)+>
+<!ATTLIST arrangement encodinganalog CDATA #IMPLIED>
+
+<!-- Auteur de l'instrument de recherche -->
+<!ELEMENT author (#PCDATA)*>
+<!ATTLIST author encodinganalog CDATA #IMPLIED>
+
+<!-- Bibliographie -->
+<!-- un seul élément dans <archdesc> ou par <c> -->
+<!ELEMENT bibliography (p | list | bibref)+>
+<!ATTLIST bibliography encodinganalog CDATA #IMPLIED>
+
+<!-- Reference bibliographique -->
+<!-- l'élément <bibref> ne doit être utilisé que dans la mesure où il a pour cible un document électronique. Dans les autres cas, il faut utilser l'élément <p> -->
+<!ELEMENT bibref (#PCDATA)*>
+<!ATTLIST bibref encodinganalog CDATA #IMPLIED>
+<!ATTLIST bibref href CDATA #IMPLIED>
+<!ATTLIST bibref role CDATA #IMPLIED>
+
+<!-- Biographie ou histoire -->
+<!-- un seul élément dans <archdesc> ou par <c> -->
+<!ELEMENT bioghist (p | list)+>
+<!ATTLIST bioghist encodinganalog CDATA #IMPLIED>
+
+<!-- Composant -->
+<!-- Contrairement à l'EAD originale, les éléments ci-dessous ne sont pas répétables. Pour appliquer une telle règle dans une DTD, il est nécessaire d'imposer l'orde des éléments
+Si cet ordre pose des problèmes merci de nous contacter. Les élements suivants sont répétables: <daogrp>, <c>-->
+<!ELEMENT c (did,  accessrestrict?, userestrict?, altformavail?, originalsloc?, phystech?, acqinfo?, bioghist?, custodhist?, appraisal?, arrangement?, fileplan?, accruals?, scopecontent?, separatedmaterial?, relatedmaterial?, otherfindaid?,  bibliography?, processinfo?, daogrp*, controlaccess?, c*)>
+<!ATTLIST c audience (external | internal) #IMPLIED>
+<!ATTLIST c id ID #IMPLIED>
+<!ATTLIST c level (class | collection | file | fonds | item | otherlevel | recordgrp | series | subfonds | subgrp | subseries) #IMPLIED>
+<!ATTLIST c otherlevel NMTOKEN #IMPLIED>
+<!ATTLIST c encodinganalog CDATA #IMPLIED>
+
+<!-- Modification -->
+<!ELEMENT change (date, item)>
+<!ATTLIST change encodinganalog CDATA #IMPLIED>
+
+<!-- Vedettes et acces controles -->
+<!-- <controlaccess> est l'élément privilégié pour l'indexation. Les exceptions sont les éléments <geogname> et <persname> qui peuvent être aussi contenus 
+dans <unittitle> ainsi que <physfacet> qui ne peut être contenu que dans <physdesc>-->
+<!-- un seul élément dans <archdesc> ou par <c> -->
+<!ELEMENT controlaccess (corpname | function | genreform | geogname | occupation | persname | subject | title)+>
+<!ATTLIST controlaccess encodinganalog CDATA #IMPLIED>
+
+<!-- Collectivites -->
+<!-- Le contenu de cet élément sera obligatoirement associé à un référentiel. Tout descripteur qui n'existera pas dans le référentiel sera rejété au moment de
+l'import de l'IR-->
+<!-- cet élément ne peut être contenu que dans <controlaccess> -->
+<!-- Cet élément peut aussi être contenu dans <origination>. Il est alors associé au référentiel producteur. Il doit alors contenir dans l'attribut authfilenumber 
+soit l'identifiant N1, soit l'identifiant ETANOT, soit l'identifiant SIA. Dans le cas où l'identifiant est celui du N1 ou de ETANOT, 
+l'atribut source doit être renseigné avec les valeurs "N1" ou "ETANOT"-->
+<!ELEMENT corpname (#PCDATA)>
+<!ATTLIST corpname authfilenumber CDATA #IMPLIED>
+<!ATTLIST corpname normal CDATA #IMPLIED>
+<!ATTLIST corpname role CDATA #IMPLIED>
+<!ATTLIST corpname source NMTOKEN #IMPLIED>
+<!ATTLIST corpname encodinganalog CDATA #IMPLIED>
+<!ATTLIST corpname rules NMTOKEN #IMPLIED>
+
+<!-- Creation -->
+<!ELEMENT creation (#PCDATA)*>
+<!ATTLIST creation encodinganalog CDATA #IMPLIED>
+
+<!-- Historique de la conservation -->
+<!-- un seul élément dans <archdesc> ou par <c> -->
+<!ELEMENT custodhist (p | list)+>
+<!ATTLIST custodhist encodinganalog CDATA #IMPLIED>
+
+<!-- Groupe d'objets archivistiques numeriques -->
+<!ELEMENT daogrp (daoloc+)>
+<!ATTLIST daogrp role CDATA #IMPLIED>
+
+<!-- Emplacement d'objet archivistique numerique -->
+<!ELEMENT daoloc EMPTY>
+<!ATTLIST daoloc href CDATA #IMPLIED>
+<!ATTLIST daoloc role CDATA #IMPLIED>
+<!ATTLIST daoloc xpointer CDATA #IMPLIED>
+
+<!-- Date -->
+<!ELEMENT date (#PCDATA)>
+<!ATTLIST date calendar NMTOKEN "gregorian">
+<!ATTLIST date certainty CDATA #IMPLIED>
+<!ATTLIST date era NMTOKEN "ce">
+<!ATTLIST date normal CDATA #IMPLIED>
+<!ATTLIST date encodinganalog CDATA #IMPLIED>
+
+<!-- Regles de description-->
+<!ELEMENT descrules (#PCDATA)>
+<!ATTLIST descrules encodinganalog CDATA #IMPLIED>
+
+<!-- Identification et description-->
+<!ELEMENT did (unitid*, unittitle, unitdate*, ( origination? , physdesc? , langmaterial? , repository? , physloc?, materialspec?))>
+<!ATTLIST did encodinganalog CDATA #IMPLIED>
+
+<!-- Dimensions -->
+<!-- un seul élément dans <physdesc> -->
+<!ELEMENT dimensions (#PCDATA)>
+<!--<!ATTLIST dimensions unit CDATA #IMPLIED>-->
+<!ATTLIST dimensions encodinganalog CDATA #IMPLIED>
+
+<!-- Subdivision du texte-->
+<!ELEMENT div (div | list | p)+>
+
+<!-- Description des sous-composants -->
+<!-- un seul <dsc> fils de <archdesc> autorisé. <dsc> ne peut pas être le fils d'un élément <c> -->
+<!ELEMENT dsc (c+)>
+<!ATTLIST dsc audience (internal | external) #IMPLIED>
+<!ATTLIST dsc encodinganalog CDATA #IMPLIED>
+
+<!-- Identifiant EAD -->
+<!-- A l'import l'identifiant est recalculé par le système sauf si il est inférieur FRAN_IR_50000 -->
+<!ELEMENT eadid (#PCDATA)>
+<!ATTLIST eadid countrycode NMTOKEN #IMPLIED>
+<!ATTLIST eadid mainagencycode NMTOKEN #IMPLIED>
+<!ATTLIST eadid encodinganalog CDATA #IMPLIED>
+
+<!-- Edition-->
+<!ELEMENT edition (#PCDATA | emph)*>
+<!ATTLIST edition encodinganalog CDATA #IMPLIED>
+
+<!-- Mention d'edition-->
+<!ELEMENT editionstmt (edition)>
+<!ATTLIST editionstmt encodinganalog CDATA #IMPLIED>
+
+<!-- Mise en valeur-->
+<!-- Ne peut être contenu que par <p> ou par <item> -->
+<!ELEMENT emph (#PCDATA | emph)*>
+<!ATTLIST emph render (bold | italic | underline) #IMPLIED>
+
+<!-- Importance materielle-->
+<!-- un seul élément dans <physdesc> -->
+<!ELEMENT extent (#PCDATA)>
+<!--<!ATTLIST extent unit CDATA #IMPLIED>-->
+<!ATTLIST extent encodinganalog CDATA #IMPLIED>
+
+<!-- Reférence externe: element de lien -->
+<!ELEMENT extref (#PCDATA)>
+<!ATTLIST extref href CDATA #REQUIRED>
+<!ATTLIST extref role (MMD | ANX | URL) #IMPLIED>
+<!ATTLIST extref xpointer CDATA #IMPLIED>
+
+<!-- Nom de famille-->
+<!-- En raison de l'absence de référentiel d'indexation pour cet élément, il ne peut être contenu que par l'élémént <origination>. Cet élément est associé au référentiel
+producteur. Il doit donc contenir dans l'attribut authfilenumber soit l'identifiant N1, soit l'identifiant ETANOT, soit l'identifiant SIA. Dans le cas où l'identifiant
+est celui du N1 ou de ETANOT, l'atribut source doit être renseigné avec les valeurs "N1" ou "ETANOT"-->
+<!ELEMENT famname (#PCDATA)>
+<!ATTLIST famname authfilenumber CDATA #IMPLIED>
+<!ATTLIST famname normal CDATA #IMPLIED>
+<!ATTLIST famname role CDATA #IMPLIED>
+<!ATTLIST famname source  NMTOKEN #IMPLIED>
+<!ATTLIST famname encodinganalog CDATA #IMPLIED>
+<!ATTLIST famname rules CDATA #IMPLIED>
+
+<!-- Description du fichier-->
+<!ELEMENT filedesc (titlestmt, editionstmt, publicationstmt, notestmt?)>
+<!ATTLIST filedesc encodinganalog CDATA #IMPLIED>
+
+<!-- Plan de classement -->
+<!-- cet élément a été conservé en raison de son utlisation par le standard d'échange des archives électroniques -->
+<!-- un seul élément dans <archdesc> ou par <c> -->
+<!ELEMENT fileplan (p | list)+>
+<!ATTLIST fileplan encodinganalog CDATA #IMPLIED>
+
+<!-- Fonctions administratives  -->
+<!-- Le contenu de cet élément sera obligatoirement associé à un référentiel. Tout descripteur qui n'existera pas dans le référentiel sera rejété au moment de
+l'import de l'IR-->
+<!-- cet élément ne peut être contenu que dans <controlaccess> -->
+<!ELEMENT function (#PCDATA)>
+<!ATTLIST function authfilenumber CDATA #IMPLIED>
+<!ATTLIST function normal CDATA #IMPLIED>
+<!ATTLIST function source NMTOKEN #IMPLIED>
+<!ATTLIST function encodinganalog CDATA #IMPLIED>
+<!ATTLIST function rules NMTOKEN #IMPLIED>
+
+<!-- Genre et caracteristiques physiques  -->
+<!-- Le contenu de cet élément sera obligatoirement associé à un référentiel. Tout descripteur qui n'existera pas dans le référentiel sera rejété au moment de
+l'import de l'IR-->
+<!-- cet élément ne peut être contenu que dans <controlaccess> -->
+<!ELEMENT genreform (#PCDATA)>
+<!ATTLIST genreform authfilenumber CDATA #IMPLIED>
+<!ATTLIST genreform normal CDATA #IMPLIED>
+<!ATTLIST genreform source NMTOKEN #IMPLIED>
+<!ATTLIST genreform type CDATA #IMPLIED>
+<!ATTLIST genreform encodinganalog CDATA #IMPLIED>
+<!ATTLIST genreform rules NMTOKEN #IMPLIED>
+
+<!-- Nom geographique -->
+<!-- Le contenu de cet élément sera obligatoirement associé au référentiel lieux ou au référentiel lieux paris. Tout descripteur qui n'existera pas dans le référentiel 
+sera rejété au moment de l'import de l'IR. -->
+<!-- cet élément peut être contenu dans <controlaccess> ou dans <unittitle>. Il ne pourra y avoir qu'un seul <geogname> par <unittitle>-->
+<!ELEMENT geogname (#PCDATA)>
+<!ATTLIST geogname authfilenumber CDATA #IMPLIED>
+<!ATTLIST geogname normal CDATA #IMPLIED>
+<!ATTLIST geogname role CDATA #IMPLIED>
+<!ATTLIST geogname source NMTOKEN #IMPLIED>
+<!ATTLIST geogname encodinganalog CDATA #IMPLIED>
+<!ATTLIST geogname rules NMTOKEN #IMPLIED>
+
+<!-- Item -->
+<!ELEMENT item (#PCDATA | emph)*>
+
+<!-- Langue des unites documentaires -->
+<!-- Cet élément ne doit pes contenir de texte. Il ne peut contenir que l'élément <language> -->
+<!-- un seul élément par <did> -->
+<!ELEMENT langmaterial (language+)>
+<!ATTLIST langmaterial encodinganalog CDATA #IMPLIED>
+
+<!-- Langue -->
+<!ELEMENT language (#PCDATA)>
+<!ATTLIST language langcode NMTOKEN #IMPLIED>
+<!ATTLIST language encodinganalog CDATA #IMPLIED>
+
+<!-- Langue utilisee -->
+<!-- Cet élément ne doit pes contenir de texte. Il ne peut contenir que l'élément <language> -->
+<!ELEMENT langusage (language+)>
+<!ATTLIST langusage encodinganalog CDATA #IMPLIED>
+
+<!-- Liste -->
+<!ELEMENT list (item)+>
+<!ATTLIST list type (simple | deflist | marked | ordered) #IMPLIED>
+
+<!-- Particularites de certains types de documents  -->
+<!-- un seul élément par <did> -->
+<!ELEMENT materialspec (#PCDATA)>
+<!ATTLIST materialspec encodinganalog CDATA #IMPLIED>
+
+<!-- Note -->
+<!-- l'utilisation de l'élément <note> est restreinte à l'élément <processinfo> et à l'élément <notestmt> -->
+<!ELEMENT note (p+)>
+<!ATTLIST note type CDATA #IMPLIED>
+<!ATTLIST note encodinganalog CDATA #IMPLIED>
+
+<!-- Mention de note -->
+<!ELEMENT notestmt (note+)>
+<!ATTLIST notestmt encodinganalog CDATA #IMPLIED>
+
+<!-- Fonction -->
+<!-- Le contenu de cet élément sera obligatoirement associé à un référentiel. Tout descripteur qui n'existera pas dans le référentiel sera rejété au moment de
+l'import de l'IR-->
+<!-- cet élément ne peut être contenu que dans <controlaccess> -->
+<!ELEMENT occupation (#PCDATA)>
+<!ATTLIST occupation authfilenumber CDATA #IMPLIED>
+<!ATTLIST occupation normal CDATA #IMPLIED>
+<!ATTLIST occupation source NMTOKEN #IMPLIED>
+<!ATTLIST occupation encodinganalog CDATA #IMPLIED>
+<!ATTLIST occupation rules NMTOKEN #IMPLIED>
+
+<!-- Existence et lieu de conservation des documents originaux -->
+<!ELEMENT originalsloc (p | list)+>
+<!ATTLIST originalsloc encodinganalog CDATA #IMPLIED>
+
+<!-- Origine-->
+<!-- un seul élément par <did> -->
+<!ELEMENT origination (corpname | famname | persname)+>
+<!ATTLIST origination encodinganalog CDATA #IMPLIED>
+
+<!-- Autre instrument de recherche -->
+<!-- un seul élément dans <archdesc> ou par <c> -->
+<!ELEMENT otherfindaid (archref | p | list)+>
+<!ATTLIST otherfindaid encodinganalog CDATA #IMPLIED>
+
+<!-- Paragraphe -->
+<!ELEMENT p (#PCDATA | date | emph | extref | ref | archref)*>
+<!ATTLIST p altrender CDATA #IMPLIED >
+
+<!-- Nom de personne -->
+<!-- Le contenu de cet élément sera associé à un référentiel ou en indexation libre. Tout descripteur qui n'existera pas dans le référentiel alimentera l'indexation 
+libre au moment de l'import de l'IR-->
+<!-- cet élément ne peut être contenu que dans <controlaccess> et dans <unittitle>. Il ne peut y avoir qu'un <persname> par <unittitle>. Si persname est dans <unittitle>
+il alimente exclusivement l'indexation libre-->
+<!-- Cet élément peut aussi être contenu dans <origination>. Il est alors associé au référentiel producteur. Il doit alors contenir dans l'attribut authfilenumber 
+soit l'identifiant N1, soit l'identifiant ETANOT, soit l'identifiant SIA. Dans le cas où l'identifiant est celui du N1 ou de ETANOT, 
+l'atribut source doit être renseigné avec les valeurs "N1" ou "ETANOT"-->
+<!ELEMENT persname (#PCDATA)>
+<!ATTLIST persname audience (external | internal) #IMPLIED>
+<!ATTLIST persname authfilenumber CDATA #IMPLIED>
+<!ATTLIST persname normal CDATA #IMPLIED>
+<!ATTLIST persname role CDATA #IMPLIED>
+<!ATTLIST persname source NMTOKEN #IMPLIED>
+<!ATTLIST persname encodinganalog CDATA #IMPLIED>
+<!ATTLIST persname rules NMTOKEN #IMPLIED>
+
+<!-- Description physique -->
+<!-- Un seul élément <physdesc> par <did>. Cet élément peut contenir :
+- exclusivement du texte sans mise en forme
+- un, deux ou les trois éléments <dimensions>, <extent>, <physfacet> mais dans ce cas, il ne contient aucun texte (ce qui exclut les virgules, points, etc.)-->
+<!ELEMENT physdesc (dimensions | extent | physfacet)*>
+<!ATTLIST physdesc source NMTOKEN #IMPLIED>
+<!ATTLIST physdesc encodinganalog CDATA #IMPLIED>
+
+<!-- Particularite physique -->
+<!-- Le contenu de cet élément sera obligatoirement associé à un référentiel. Tout descripteur qui n'existera pas dans le référentiel sera rejété au moment de
+l'import de l'IR-->
+<!-- cet élément ne peut être contenu que dans <physdesc> -->
+<!-- Il peut y avoir plusieurs <physfacet> dans <physdesc> -->
+<!ELEMENT physfacet (#PCDATA)>
+<!ATTLIST physfacet source NMTOKEN #IMPLIED>
+<!ATTLIST physfacet type CDATA #IMPLIED>
+<!ATTLIST physfacet encodinganalog CDATA #IMPLIED>
+
+<!-- Localisation physique-->
+<!-- un seul élément par <did> -->
+<!ELEMENT physloc (#PCDATA)>
+<!ATTLIST physloc encodinganalog CDATA #IMPLIED>
+
+<!-- Caracteristiques materielles et contraintes techniques -->
+<!-- un seul élément dans <archdesc> ou par <c> -->
+<!ELEMENT phystech (p | list)+>
+<!ATTLIST phystech encodinganalog CDATA #IMPLIED>
+
+<!-- Informations sur le traitement -->
+<!-- un seul élément dans <archdesc> ou par <c> -->
+<!ELEMENT processinfo (p | list | note)+>
+<!ATTLIST processinfo encodinganalog CDATA #IMPLIED>
+
+<!-- Description du profil -->
+<!ELEMENT profiledesc (creation, langusage, descrules?)>
+<!ATTLIST profiledesc encodinganalog CDATA #IMPLIED>
+
+<!-- Mention de publication -->
+<!ELEMENT publicationstmt (publisher, address, date)>
+<!ATTLIST publicationstmt encodinganalog CDATA #IMPLIED>
+
+<!-- Editeur -->
+<!ELEMENT publisher (#PCDATA)>
+<!ATTLIST publisher encodinganalog CDATA #IMPLIED>
+
+<!-- Reference: lien interne -->
+<!ELEMENT ref (#PCDATA | archref | extref | bibref)*>
+<!ATTLIST ref href CDATA #IMPLIED>
+<!ATTLIST ref role (IR | ANX) #IMPLIED>
+<!ATTLIST ref target IDREF #IMPLIED>
+
+<!-- Documents en relation -->
+<!-- un seul élément dans <archdesc> ou par <c> -->
+<!ELEMENT relatedmaterial (p | list)+>
+<!ATTLIST relatedmaterial encodinganalog CDATA #IMPLIED>
+
+<!-- Organisme responsable de l'acces intellectuel -->
+<!-- un seul élément par <did> -->
+<!ELEMENT repository (#PCDATA | address | corpname)*>
+<!ATTLIST repository encodinganalog CDATA #IMPLIED>
+
+<!-- Description des revisions -->
+<!-- un seul élément dans <archdesc> ou par <c> -->
+<!ELEMENT revisiondesc (change+)>
+<!ATTLIST revisiondesc encodinganalog CDATA #IMPLIED>
+
+<!-- Presentation du contenu -->
+<!-- un seul élément dans <archdesc> ou par <c> -->
+<!ELEMENT scopecontent ( p | list)+>
+<!ATTLIST scopecontent encodinganalog CDATA #IMPLIED>
+
+<!-- Documents separes -->
+<!-- un seul élément dans <archdesc> ou par <c> -->
+<!ELEMENT separatedmaterial ( p | list)+>
+<!ATTLIST separatedmaterial encodinganalog CDATA #IMPLIED>
+
+<!-- Mot-matiere -->
+<!-- Le contenu de cet élément sera obligatoirement associé à un référentiel Mots matières avant 1789 ou mots matières après 1789. 
+Tout descripteur qui n'existera pas dans un des référentiels sera rejété au moment de l'import de l'IR-->
+<!-- cet élément ne peut être contenu que dans <controlaccess> -->
+<!ELEMENT subject (#PCDATA)>
+<!ATTLIST subject authfilenumber CDATA #IMPLIED>
+<!ATTLIST subject normal CDATA #IMPLIED>
+<!ATTLIST subject source NMTOKEN #IMPLIED>
+<!ATTLIST subject encodinganalog CDATA #IMPLIED>
+<!ATTLIST subject rules NMTOKEN #IMPLIED>
+
+<!-- Sous-titre de l'instrument de recherche -->
+<!ELEMENT subtitle (#PCDATA)>
+<!ATTLIST subtitle encodinganalog CDATA #IMPLIED>
+
+<!-- Titre -->
+<!-- Cet élément est le seul élémet d'indexation à ne jamais être associé à un référentiel -->
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title authfilenumber CDATA #IMPLIED>
+<!ATTLIST title encodinganalog CDATA #IMPLIED>
+<!ATTLIST title rules NMTOKEN #IMPLIED>
+
+<!-- Titre propre de l'instrument de recherche -->
+<!ELEMENT titleproper (#PCDATA)>
+<!ATTLIST titleproper type CDATA #IMPLIED>
+<!ATTLIST titleproper encodinganalog CDATA #IMPLIED>
+
+<!-- Mention de titre -->
+<!ELEMENT titlestmt (titleproper, subtitle, author)>
+<!ATTLIST titlestmt encodinganalog CDATA #IMPLIED>
+
+<!-- Date de l'unite documentaire -->
+<!-- Plusieurs éléments <unitdate> sont autorisés dans un même <did>; afin de générer une forme normalisée, la forme rédigée doit impérativment respecter la syntaxe SOSIE.
+Il est possible de ne pas respecter la syntaxe de SOSIE si la forme normalisée a été renseignée. Toutefois, ce non respect peut poser des problèmesà l'occasion de la 
+révision d'un IR-->
+<!ELEMENT unitdate (#PCDATA)>
+<!ATTLIST unitdate calendar NMTOKEN "gregorian">
+<!ATTLIST unitdate certainty CDATA #IMPLIED>
+<!ATTLIST unitdate datechar CDATA #IMPLIED>
+<!ATTLIST unitdate era NMTOKEN "ce">
+<!ATTLIST unitdate normal CDATA #IMPLIED>
+<!ATTLIST unitdate encodinganalog CDATA #IMPLIED>
+
+<!-- Identifiant de l'unite documentaire -->
+<!-- l'attribut type de cet élément doit impérativement être renseigné 
+"cote-de-consultation dans le cas de la cote de l'article (cote cliquable), cette cote doit exister en gestion au moment de l'import de l'IR
+"identifiant" dans le cas d'un intervalle de cotes. Les bornes de l'intervalle doivent être séparées par un trait d'union. L'existence des cotes de l'intervalle en 
+gestion est vérifiée au moment de l'import
+"pieces" pour identifier tout dossier, planche ou feuille, etc. qui est contenu dans un article. Aucun contrôle n'est exercé sur ce type de <unitid>
+Il ne peut pas y avoir dans un <did> deux <unitid> de même type.
+Il ne peut pas y avoir dans un même <did> un <unitid> de type "identifiant" et un <unitid> de type "pieces"
+Il ne peut pas y avoir dans un même <did> un <unitid> de type "identifiant" et un <unitid> de type "cote-de-consultation"
+Il peut y avoir dans un même <did> un <unitid> de type "cote-de-consultation" et un <unitid> de type "pieces" mais ce n'est pas obligatoire.
+Il est possible de saisir plusieurs cotes de consultation dans un même <unitid> en les séparant par des virgules dans ce cas l'atttribut type est renseigné avec 
+la valeur "cote-de-consultation"
+Il est possible de saisir plusieurs intervalles de cotes en les séparant par des virgules, dans ce cas l'attribut type est renseigné avec la valeur "identifiant".
+Il est possibl de saisir dans un même <unitid> des intervalles de cotes et des cotes d'articles; toutefois dans ce dernier cas le tyepe de <unitid> ne peut 
+être que "identifiant" et la cote de l'article ne sera pas comprise par le système comme une cote cliquable.-->
+<!ELEMENT unitid (#PCDATA)>
+<!ATTLIST unitid countrycode NMTOKEN #IMPLIED>
+<!ATTLIST unitid type (cote-de-consultation | identifiant | pieces) #REQUIRED>
+<!ATTLIST unitid repositorycode NMTOKEN #IMPLIED>
+<!ATTLIST unitid encodinganalog CDATA #IMPLIED>
+
+<!-- Intitule de l'unite documentaire -->
+<!-- un seul <unittitle est autorisé par <did>. Cet élément peut contenir :
+- soit du texte sans mise en forme et aucun autre élément
+- soit un seul élément <persname> et rien d'autre
+- soit un seul élément <geogname> et rien d'autre
+- soit un seul élément <unitdate> et rien d'autre.-->
+<!ELEMENT unittitle (#PCDATA | geogname | persname | unitdate)*>
+<!ATTLIST unittitle encodinganalog CDATA #IMPLIED>
+
+<!-- Conditions d'utilisation -->
+<!-- un seul élément dans <archdesc> ou par <c> -->
+<!ELEMENT userestrict ( p | list)+>
+<!ATTLIST userestrict encodinganalog CDATA #IMPLIED>
