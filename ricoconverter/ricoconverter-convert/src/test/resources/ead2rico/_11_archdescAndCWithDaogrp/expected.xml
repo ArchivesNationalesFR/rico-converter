@@ -6,18 +6,18 @@
    xml:base="http://data.archives-nationales.culture.gouv.fr/">
    <rico:FindingAid rdf:about="findingAid/003666">
       <rico:hasMainSubject rdf:resource="recordResource/003666-top"/>
-      <rico:hasInstantiation rdf:resource="instantiation/003666-i1"/>
-     
+      <rico:hasInstantiation>
+		   <rico:Instantiation rdf:about="instantiation/003666-i1">
+		      <rico:instantiates rdf:resource="findingAid/003666"/>
+		      <rico:encodingFormat xml:lang="en">text/xml</rico:encodingFormat>
+		      <dc:format xml:lang="en">text/xml</dc:format>
+		      <rico:identifier>FRAN_IR_003666</rico:identifier>
+		      <rico:heldBy rdf:resource="agent/005061"/>
+		      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_003666"/>     
+		      <!--?? <owl:sameAs rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/exportXML.action?irId=FRAN_IR_003666"/>-->
+		   </rico:Instantiation>
+      </rico:hasInstantiation>
    </rico:FindingAid>
-   <rico:Instantiation rdf:about="instantiation/003666-i1">
-      <rico:instantiates rdf:resource="findingAid/003666"/>
-      <rico:encodingFormat xml:lang="en">text/xml</rico:encodingFormat>
-      <dc:format xml:lang="en">text/xml</dc:format>
-      <rico:identifier>FRAN_IR_003666</rico:identifier>
-      <rico:heldBy rdf:resource="agent/005061"/>
-      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_003666"/>     
-      <!--?? <owl:sameAs rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/exportXML.action?irId=FRAN_IR_003666"/>-->
-   </rico:Instantiation>
   
    <!-- The highest level Record resource, corresponding to archdesc, and its physical or digital primary instantiation
             If there is an @id, use {findingAidId}{@id}; if no @id for archdesc, use {findingAidId}-top -->

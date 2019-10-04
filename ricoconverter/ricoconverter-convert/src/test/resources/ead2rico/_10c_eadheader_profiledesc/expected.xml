@@ -15,21 +15,23 @@
       <rico:hasLanguage rdf:resource="language/FRAN_RI_100-name6"/>
       <!-- ISAD(G) rule applies to the message, while EAD applies to the instantiation -->
       <rico:isRegulatedBy rdf:resource="rule/rl009"/>
-      <rico:hasInstantiation rdf:resource="instantiation/004852-i1"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/004852-i1">
+	   	  <rico:instantiates rdf:resource="findingAid/004852"/>
+	      <!-- the title is duplicated here -->
+	      <rico:title xml:lang="fr">Dossiers de carrière des magistrats (1848-1883) : Inventaire sommaire (BB/6(II)/1-BB/6(II)/434)</rico:title>
+	      <rdfs:label xml:lang="fr">Dossiers de carrière des magistrats (1848-1883) : Inventaire sommaire (BB/6(II)/1-BB/6(II)/434)</rdfs:label>
+	      <rico:history xml:lang="fr">Cet instrument de recherche a été encodé par l'entreprise diadeis dans le cadre du chantier de dématérialisation des instruments de recherche des Archives Nationales sur la base d'une DTD conforme à la DTD EAD (encoded archival description) et créée par le service de dématérialisation des instruments de recherche des Archives Nationales</rico:history>
+	      <!--  EAD applies to the instantiation -->
+	      <rico:isRegulatedBy rdf:resource="rule/rl010"/>
+	      <rico:encodingFormat xml:lang="en">text/xml</rico:encodingFormat>
+	      <dc:format xml:lang="en">text/xml</dc:format>
+	      <rico:identifier>FRAN_IR_004852</rico:identifier>
+	      <rico:heldBy rdf:resource="agent/005061"/>  
+	      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_004852"/>
+	      <!--?? <owl:sameAs rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/exportXML.action?irId=FRAN_IR_004852"/>-->
+	   </rico:Instantiation>
+      </rico:hasInstantiation>
    </rico:FindingAid>
-   <rico:Instantiation rdf:about="instantiation/004852-i1">
-   	  <rico:instantiates rdf:resource="findingAid/004852"/>
-      <!-- the title is duplicated here -->
-      <rico:title xml:lang="fr">Dossiers de carrière des magistrats (1848-1883) : Inventaire sommaire (BB/6(II)/1-BB/6(II)/434)</rico:title>
-      <rdfs:label xml:lang="fr">Dossiers de carrière des magistrats (1848-1883) : Inventaire sommaire (BB/6(II)/1-BB/6(II)/434)</rdfs:label>
-      <rico:history xml:lang="fr">Cet instrument de recherche a été encodé par l'entreprise diadeis dans le cadre du chantier de dématérialisation des instruments de recherche des Archives Nationales sur la base d'une DTD conforme à la DTD EAD (encoded archival description) et créée par le service de dématérialisation des instruments de recherche des Archives Nationales</rico:history>
-      <!--  EAD applies to the instantiation -->
-      <rico:isRegulatedBy rdf:resource="rule/rl010"/>
-      <rico:encodingFormat xml:lang="en">text/xml</rico:encodingFormat>
-      <dc:format xml:lang="en">text/xml</dc:format>
-      <rico:identifier>FRAN_IR_004852</rico:identifier>
-      <rico:heldBy rdf:resource="agent/005061"/>  
-      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_004852"/>
-      <!--?? <owl:sameAs rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/exportXML.action?irId=FRAN_IR_004852"/>-->
-   </rico:Instantiation>
+
 </rdf:RDF>

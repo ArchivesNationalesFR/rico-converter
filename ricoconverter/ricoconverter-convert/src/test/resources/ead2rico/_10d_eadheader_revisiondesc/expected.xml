@@ -25,15 +25,16 @@
             <rico:description xml:lang="fr">La première version a été livrée au CHAN ainsi qu'au groupe RLG par la société AJLSM (info@ajlsm.com).</rico:description>
          </rico:Activity>
       </rico:affectedBy>
-      <rico:hasInstantiation rdf:resource="instantiation/004852-i1"/>
+      <rico:hasInstantiation>
+	    <rico:Instantiation rdf:about="instantiation/004852-i1">
+	   	  <rico:instantiates rdf:resource="findingAid/004852"/>
+	      <rico:encodingFormat xml:lang="en">text/xml</rico:encodingFormat>
+	      <dc:format xml:lang="en">text/xml</dc:format>
+	      <rico:identifier>FRAN_IR_004852</rico:identifier>
+	      <rico:heldBy rdf:resource="agent/005061"/> <rdfs:seeAlso
+	         rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_004852"/>
+	      <!--?? <owl:sameAs rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/exportXML.action?irId=FRAN_IR_004852"/>-->
+	   </rico:Instantiation>
+      </rico:hasInstantiation>
    </rico:FindingAid>
-   <rico:Instantiation rdf:about="instantiation/004852-i1">
-   	  <rico:instantiates rdf:resource="findingAid/004852"/>
-      <rico:encodingFormat xml:lang="en">text/xml</rico:encodingFormat>
-      <dc:format xml:lang="en">text/xml</dc:format>
-      <rico:identifier>FRAN_IR_004852</rico:identifier>
-      <rico:heldBy rdf:resource="agent/005061"/> <rdfs:seeAlso
-         rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_004852"/>
-      <!--?? <owl:sameAs rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/exportXML.action?irId=FRAN_IR_004852"/>-->
-   </rico:Instantiation>
 </rdf:RDF>

@@ -74,26 +74,28 @@
 			<xsl:apply-templates mode="findingaid" />
 	
 			<xsl:apply-templates select="../archdesc" mode="reference" />
-			<rico:hasInstantiation rdf:resource="{ead2rico:URI-Instantiation($fiInstantiationId)}"/>
+			<rico:hasInstantiation>
+				<!--  FindingAid Instantiation -->
+			    <rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($fiInstantiationId)}">
+			      <rico:instantiates rdf:resource="{ead2rico:URI-FindingAid($faId)}"/>
+			      <xsl:apply-templates mode="instantiation" />
+			      <rico:encodingFormat xml:lang="en">text/xml</rico:encodingFormat>
+			      <dc:format xml:lang="en">text/xml</dc:format>
+			      <rico:identifier><xsl:value-of select="eadid" /></rico:identifier>	      
+			      <xsl:choose>
+					<xsl:when test="starts-with($AUTHOR_URI, $BASE_URI)">
+						<rico:heldBy rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}" />
+					</xsl:when>
+					<xsl:otherwise>
+						<rico:heldBy rdf:resource="{$AUTHOR_URI}" />
+					</xsl:otherwise>
+				  </xsl:choose>
+			      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/{eadid}"/> 
+			    </rico:Instantiation>
+			</rico:hasInstantiation>
 		</rico:FindingAid>
 
-		<!--  FindingAid Instantiation -->
-	    <rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($fiInstantiationId)}">
-	      <rico:instantiates rdf:resource="{ead2rico:URI-FindingAid($faId)}"/>
-	      <xsl:apply-templates mode="instantiation" />
-	      <rico:encodingFormat xml:lang="en">text/xml</rico:encodingFormat>
-	      <dc:format xml:lang="en">text/xml</dc:format>
-	      <rico:identifier><xsl:value-of select="eadid" /></rico:identifier>	      
-	      <xsl:choose>
-			<xsl:when test="starts-with($AUTHOR_URI, $BASE_URI)">
-				<rico:heldBy rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}" />
-			</xsl:when>
-			<xsl:otherwise>
-				<rico:heldBy rdf:resource="{$AUTHOR_URI}" />
-			</xsl:otherwise>
-		  </xsl:choose>
-	      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/{eadid}"/> 
-	    </rico:Instantiation>
+
 		
 	</xsl:template>
 	
@@ -155,6 +157,7 @@
 		<rico:isRegulatedBy rdf:resource="rule/rl010"/>
 	</xsl:template>
 	<xsl:template match="descrules" mode="findingaid">
+		<!-- Reference to ISAD(G), to be changed if you don't follow the ISAD(G) model -->
 		<rico:isRegulatedBy rdf:resource="rule/rl009"/>
 	</xsl:template>
 	
