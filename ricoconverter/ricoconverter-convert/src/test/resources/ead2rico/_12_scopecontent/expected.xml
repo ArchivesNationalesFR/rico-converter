@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xml:base="http://data.archives-nationales.culture.gouv.fr/">
+    <rico:FindingAid rdf:about="findingAid/058220">
+        <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
+    </rico:FindingAid>
+    <!-- archdesc level -->
+    <rico:RecordResource rdf:about="recordResource/058220-top">    
+        <rico:isMainSubjectOf rdf:resource="findingAid/011222"/>
+        <rico:scopeAndContent rdf:parseType="Literal">
+            <html:div xml:lang="fr">
+                <html:p xml:lang="fr">Les vues aériennes de l’entreprise LAPIE, obliques et
+                    réalisées à moyenne et basse altitude, sont produites dans un contexte
+                    commercial.</html:p>
+                <html:p xml:lang="fr">Depuis les années 50 jusqu’au début de la décennie suivante,
+                    les avions de l’entreprise LAPIE sillonnent le territoire français, engrangeant
+                    des milliers de clichés destinés à la production de documentation pédagogique et
+                    surtout de cartes postales, accompagnant ainsi l’essor du tourisme de masse. Ce
+                    fonds important donne donc à voir une France en mutation, juxtaposant
+                    exploitations agricoles traditionnelles, industries anciennes et infrastructures
+                    innovantes, sur fond d’urbanisation accélérée.</html:p>
+                <html:p xml:lang="fr">Les « albums couleur » ont été utilisés par l’entreprise pour
+                    avoir une trace des références qu’elle proposait à la vente. Ils concernent tous
+                    les départements français, excepté la Corse, le Puy-de-Dôme et Paris. Il ne
+                    s’agit donc pas des cartes postales elles-mêmes, mais de tirages argentiques qui
+                    forment un outil professionnel de vente.</html:p>
+            </html:div>
+        </rico:scopeAndContent>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-top-i1">
+                <rico:instantiates rdf:resource="recordResource/058220-top"/>                
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+        <rico:hasMember rdf:resource="recordResource/058220-c-835pw5mwg-otyywby3qzqb" />
+    </rico:RecordResource>
+    <!-- c level -->
+    <rico:RecordResource rdf:about="recordResource/058220-c-835pw5mwg-otyywby3qzqb">   
+        <rico:scopeAndContent rdf:parseType="Literal">
+            <html:div xml:lang="fr">
+                <html:p xml:lang="fr">Les vues aériennes de l’entreprise LAPIE, obliques et
+                    réalisées à moyenne et basse altitude, sont produites dans un contexte
+                    commercial.</html:p>
+                <html:p xml:lang="fr">Depuis les années 50 jusqu’au début de la décennie suivante,
+                    les avions de l’entreprise LAPIE sillonnent le territoire français, engrangeant
+                    des milliers de clichés destinés à la production de documentation pédagogique et
+                    surtout de cartes postales, accompagnant ainsi l’essor du tourisme de masse. Ce
+                    fonds important donne donc à voir une France en mutation, juxtaposant
+                    exploitations agricoles traditionnelles, industries anciennes et infrastructures
+                    innovantes, sur fond d’urbanisation accélérée.</html:p>
+                <html:p xml:lang="fr">Les « albums couleur » ont été utilisés par l’entreprise pour
+                    avoir une trace des références qu’elle proposait à la vente. Ils concernent tous
+                    les départements français, excepté la Corse, le Puy-de-Dôme et Paris. Il ne
+                    s’agit donc pas des cartes postales elles-mêmes, mais de tirages argentiques qui
+                    forment un outil professionnel de vente.</html:p>
+            </html:div>
+        </rico:scopeAndContent>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-c-835pw5mwg-otyywby3qzqb-i1">
+                <rico:instantiates rdf:resource="recordResource/058220-c-835pw5mwg-otyywby3qzqb"/>                
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+    </rico:RecordResource>
+</rdf:RDF>

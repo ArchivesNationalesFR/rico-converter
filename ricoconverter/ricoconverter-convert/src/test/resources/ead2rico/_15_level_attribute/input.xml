@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<ead>
+    <eadheader>
+        <!-- the metadata of the finding aid -->
+        <eadid>FRAN_IR_058220</eadid>
+        
+    </eadheader>
+    <!-- @level obligatoire sur archdesc : sortir un warning si pas de @level (ou si un c sans @level?) => recordResource -->
+    <!-- pas de test effectué sur la hiérarchie -->
+    <!--archdesc level dtd SIA : class | collection | file | fonds | item | otherlevel | recordgrp | series | subfonds | subgrp | subseries-->   
+    <!-- cas 1 -->
+    <archdesc level="fonds">
+       
+    </archdesc>
+    <!-- cas 2 -->
+    <archdesc level="subfonds">
+        
+    </archdesc>
+    <!-- cas 3 -->
+    <archdesc level="series">            
+        <dsc>
+            <!--c level dtd SIA class | collection | file | fonds | item | otherlevel | recordgrp | series | subfonds | subgrp | subseries-->
+           <!-- description of the documentary units that are members of this '058220-top' highest level record set -->
+            <c id="a" level="fonds"/>
+            <c id="b" level="subfonds"/>
+            <c id="c" level="series"/> 
+            <c id="d"  level="subseries"/>
+            <c id="e" level="recordgrp"/>
+            <c id="f" level="subgrp"/>
+            <c id="g"  level="file" />
+            <c id="c-835pw5mwg-otyywby3qzqb" level="item"/>    
+            <c id="y" level="collection"/>
+            <c id="z" level="otherlevel"/>
+            <c id="abc"/>
+        </dsc>
+    </archdesc>
+    <!-- cas 4 -->
+    <archdesc level="subseries">
+      
+    </archdesc>
+    <!-- cas 5 -->
+    <archdesc level="recordgrp">
+       
+    </archdesc>
+    <!-- cas 6 -->
+    <archdesc level="subgrp">
+       
+    </archdesc>
+    <!-- cas 7 -->
+    <archdesc level="file">
+     
+    </archdesc>
+    <!-- cas 8 -->
+    <archdesc level="item">
+       
+    </archdesc>
+    <!-- cas 9 -->
+    <archdesc level="collection">
+        
+    </archdesc>
+    <!-- cas 10 -->
+    <archdesc level="otherlevel">
+        
+    </archdesc>
+</ead>
+

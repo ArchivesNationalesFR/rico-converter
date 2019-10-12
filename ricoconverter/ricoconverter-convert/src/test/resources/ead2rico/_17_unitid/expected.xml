@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xml:base="http://data.archives-nationales.culture.gouv.fr/">
+    <rico:FindingAid rdf:about="findingAid/058220">
+        <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
+    </rico:FindingAid>
+    <!-- archdesc level -->
+    <rico:RecordResource rdf:about="recordResource/058220-top">    
+        <rico:isMainSubjectOf rdf:resource="findingAid/058220"/>       
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-top-i1">
+                <rico:instantiates rdf:resource="recordResource/058220-top"/>
+                <rico:identifier>20144792/1-20144792/363</rico:identifier>                
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+        <rico:hasMember rdf:resource="recordResource/058220-c-25s2lche6kz-qfignk48spf8"/>
+        <rico:hasMember rdf:resource="recordResource/058220-c-2gvrjvsm9--13pxk5ufbbf3v"/>
+        <rico:hasMember rdf:resource="recordResource/058220-d_4_2"/>
+        <rico:hasMember rdf:resource="recordResource/058220-d_4"/>
+        <rico:hasMember rdf:resource="recordResource/058220-d_48"/>
+      
+    </rico:RecordResource>
+    <!-- c level -->
+    <rico:RecordResource rdf:about="recordResource/058220-c-25s2lche6kz-qfignk48spf8">       
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-c-25s2lche6kz-qfignk48spf8-i1">               
+                <rico:instantiates rdf:resource="recordResource/058220-c-25s2lche6kz-qfignk48spf8"/>
+                <rico:identifier>20144792/1-20144792/20</rico:identifier>                
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+    </rico:RecordResource>
+    
+    <rico:RecordResource rdf:about="recordResource/058220-c-2gvrjvsm9--13pxk5ufbbf3v">       
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-c-2gvrjvsm9--13pxk5ufbbf3v-i1">               
+                <rico:instantiates rdf:resource="recordResource/058220-c-2gvrjvsm9--13pxk5ufbbf3v"/>
+                <!-- concat the two cote-de-consultation and pieces unitid values -->
+                <rico:identifier>400AP/20 Dossier 3</rico:identifier>                
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+    </rico:RecordResource>
+   
+    <rico:RecordResource rdf:about="recordResource/058220-d_4_2">       
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-d_4_2-i1">               
+                <rico:instantiates rdf:resource="recordResource/058220-d_4_2"/>
+                <rico:identifier>AB/XIX/3467</rico:identifier>                
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+    </rico:RecordResource>
+    
+    <rico:RecordResource rdf:about="recordResource/058220-d_4">       
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-d_4-i1">               
+                <rico:instantiates rdf:resource="recordResource/058220-d_4"/>
+                <rico:identifier>AB/XIX/3466-AB/XIX/3947</rico:identifier>                
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+    </rico:RecordResource>
+    
+    <rico:RecordResource rdf:about="recordResource/058220-d_48">       
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-d_48-i1">               
+                <rico:instantiates rdf:resource="recordResource/058220-d_48"/>
+                <rico:identifier>xxxxx</rico:identifier>                
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+    </rico:RecordResource>
+</rdf:RDF>

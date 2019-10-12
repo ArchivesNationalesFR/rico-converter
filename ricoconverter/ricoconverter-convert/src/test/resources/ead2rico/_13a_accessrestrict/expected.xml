@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xml:base="http://data.archives-nationales.culture.gouv.fr/">
+    <rico:FindingAid rdf:about="findingAid/055691">
+        <rico:hasMainSubject rdf:resource="recordResource/055691-top"/>
+    </rico:FindingAid>
+    <!-- archdesc level-->
+    <rico:RecordResource rdf:about="recordResource/055691-top">
+        <rico:isMainSubjectOf rdf:resource="recordResource/055691-top"/>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/055691-top-i1">
+                <rico:instantiates rdf:resource="recordResource/055691-top"/>
+                <rico:conditionsOfAccess rdf:parseType="Literal">
+                    <html:p xml:lang="fr">Librement communicable sous réserve de l'état matériel des
+                        documents.</html:p>
+                </rico:conditionsOfAccess>
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+        <rico:conditionsOfAccess rdf:parseType="Literal">
+            <html:p xml:lang="fr">Librement communicable sous réserve de l'état matériel des
+                documents.</html:p>
+        </rico:conditionsOfAccess>
+        <rico:hasMember rdf:resource="recordResource/055691-c-2vzyex8hc18--1o5wpcllauj9q"/>
+    </rico:RecordResource>
+    <!-- c level -->
+    <rico:RecordResource rdf:about="recordResource/055691-c-2vzyex8hc18--1o5wpcllauj9q">
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/055691-c-2vzyex8hc18--1o5wpcllauj9q-i1">
+                <rico:instantiates rdf:resource="recordResource/055691-c-2vzyex8hc18--1o5wpcllauj9q"/>
+                <rico:conditionsOfAccess rdf:parseType="Literal">
+                    <html:p xml:lang="fr">Communication libre</html:p>
+                </rico:conditionsOfAccess>
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+        <rico:conditionsOfAccess rdf:parseType="Literal">
+            <html:p xml:lang="fr">Communication libre</html:p>
+        </rico:conditionsOfAccess>
+    </rico:RecordResource>
+</rdf:RDF>

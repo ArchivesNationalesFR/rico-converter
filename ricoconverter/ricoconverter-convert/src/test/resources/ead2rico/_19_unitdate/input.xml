@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ead>
+    <eadheader>
+        <eadid>FRAN_IR_058220</eadid>
+        <!-- the metadata of the finding aid -->
+    </eadheader>
+    <archdesc>
+        <did>
+            <!--case 1 : a date interval in @normal, and a different string in unitdate-->
+            <unitdate calendar="gregorian" era="ce" normal="1926-01-01 / 1986-12-31">entre 1926 et 1986</unitdate>
+            <!--case 2 : no @normal and a ISO 8601 date interval in unitdate-->
+            <unitdate calendar="gregorian" era="ce">1926-1986</unitdate>
+           
+            <!--case 3 :a single date in @normal and a string in unitdate-->
+            <unitdate calendar="gregorian" era="ce" normal="1928-10-11">11 octobre 1928</unitdate>
+            <!--case 4 : no @normal, a ISO 8601 date in unitdate-->
+            <unitdate calendar="gregorian" era="ce">1888</unitdate>
+            <!--case 5 : no @normal, a string in unitdate-->
+            <unitdate calendar="gregorian" era="ce">années 20</unitdate>
+            <!-- case 6: unitdate is empty-->
+            <unitdate/>
+        </did>
+        <dsc>
+            <c id="c-25s2lche6kz-qfignk48spf8" level="otherlevel">
+                <did>
+                    <unitdate calendar="gregorian" era="ce" normal="1930-01-01/1945-12-31">1930-1945</unitdate>                   
+                </did>
+            </c>
+            <!-- unittle/unitdate-->
+            <c id="c-7801hhtrn-g19n27mkod23">
+                <did>
+                    <unittitle>Année <unitdate calendar="gregorian" era="ce"
+                        normal="1842-01-01/1842-12-31">1842</unitdate> : 9 l.a.s. à son frère
+                        Charles.</unittitle>
+                </did>
+            </c>
+        </dsc>
+    </archdesc>
+</ead>
+

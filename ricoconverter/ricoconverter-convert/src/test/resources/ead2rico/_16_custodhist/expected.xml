@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xml:base="http://data.archives-nationales.culture.gouv.fr/">
+    <rico:FindingAid rdf:about="findingAid/058220">
+        <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
+    </rico:FindingAid>
+    <!-- archdesc level -->
+    <rico:RecordResource rdf:about="recordResource/058220-top">
+        <rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-top-i1">
+                <rico:instantiates rdf:resource="recordResource/058220-top"/>
+                <rico:history rdf:parseType="Literal">
+                    <html:div xml:lang="fr">
+                        <html:p xml:lang="fr">Les documents étaient initialement conservés aux
+                            Archives des musées nationaux (AMN) au sein du musée du Louvre depuis
+                            1858. Ce pôle appartient au Service des bibliothèques et de la
+                            documentation générale créée en 1999. Il rassemble le témoignage écrit
+                            de plus de deux siècles de gestion des musées de l'État. La constitution
+                            des fonds est donc étroitement liée à l'histoire de cette
+                            administration</html:p>
+                    </html:div>
+                </rico:history>
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+        <rico:hasMember rdf:resource="recordResource/058220-c-25s2lche6kz-qfignk48spf8"/>
+    </rico:RecordResource>
+    <!-- c level -->
+    <rico:RecordResource rdf:about="recordResource/058220-c-25s2lche6kz-qfignk48spf8">
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-c-25s2lche6kz-qfignk48spf8-i1">
+                <rico:instantiates rdf:resource="recordResource/058220-c-25s2lche6kz-qfignk48spf8"/>
+                <rico:history rdf:parseType="Literal">
+                    <html:div xml:lang="fr">
+                        <html:p xml:lang="fr">Cotation des Archives des musées nationaux : R1 (1) à
+                            R1 (20)</html:p>
+                    </html:div>
+                </rico:history>
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-c-25s2lche6kz-qfignk48spf8-i2">
+                <rico:instantiates rdf:resource="recordResource/058220-c-25s2lche6kz-qfignk48spf8"/>
+                <!-- do not process custodhist here; process only for the first, primary instantiation -->
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+    </rico:RecordResource>
+</rdf:RDF>
