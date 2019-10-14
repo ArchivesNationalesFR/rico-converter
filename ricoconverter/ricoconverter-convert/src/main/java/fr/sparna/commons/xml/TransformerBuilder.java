@@ -44,7 +44,7 @@ public class TransformerBuilder {
 		
 		if(this.uriResolver != null) {
 			factory.setURIResolver(this.uriResolver);
-		}		
+		}	
 		
 		Transformer t = factory.newTransformer(xsltSource);
 		// set indent to true

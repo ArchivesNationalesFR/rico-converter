@@ -4,6 +4,7 @@
     xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:html="http://www.w3.org/1999/xhtml"
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xml:base="http://data.archives-nationales.culture.gouv.fr/">
     <!-- rico recordSetTypes :
@@ -13,26 +14,66 @@
         http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series
         http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Sub-fonds-->
     <rico:FindingAid rdf:about="findingAid/058220">
-        <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
+      <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
+      <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
+      <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
+      <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
+      <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
+      <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
+      <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
+      <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
+      <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
+      <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/058220-i1">
+            <rico:instantiates rdf:resource="findingAid/058220"/>
+            <rico:encodingFormat xml:lang="en">text/xml</rico:encodingFormat>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_IR_058220</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
     </rico:FindingAid>
     
     <!-- cas 1 :  //archdesc[@level="fonds"]-->
     <rico:RecordResource rdf:about="recordResource/058220-top">
+    	<rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
         <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds"/>
+        <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/058220-top-i1">
+            <rico:instantiates rdf:resource="recordResource/058220-top"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+         </rico:Instantiation>
+        </rico:hasInstantiation>
     </rico:RecordResource>
     <!-- cas 2 : //archdesc[@level="subfonds"]-->
     <rico:RecordResource rdf:about="recordResource/058220-top">
+    	<rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
         <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Sub-fonds"/>
+        <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/058220-top-i1">
+            <rico:instantiates rdf:resource="recordResource/058220-top"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+         </rico:Instantiation>
+        </rico:hasInstantiation>
     </rico:RecordResource>
     <!-- cas 3 : //archdesc[@level="series"] and dsc/c with @level or no @level -->
     <rico:RecordResource rdf:about="recordResource/058220-top">
+    	<rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
         <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
+        <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/058220-top-i1">
+            <rico:instantiates rdf:resource="recordResource/058220-top"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+         </rico:Instantiation>
+        </rico:hasInstantiation>
         <rico:hasMember rdf:resource="recordResource/058220-a" />
         <rico:hasMember rdf:resource="recordResource/058220-b" />
         <rico:hasMember rdf:resource="recordResource/058220-c" />
@@ -45,105 +86,222 @@
         <rico:hasMember rdf:resource="recordResource/058220-z" />
         <rico:hasMember rdf:resource="recordResource/058220-abc" />
     </rico:RecordResource>
-    <!-- cas 4: //archdesc[@level="subseries"]-->
-    <rico:RecordResource rdf:about="recordResource/058220-top">
-        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
-        <rico:hasRecordSetType
-            rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
-    </rico:RecordResource>
-    <!-- cas 5: //archdesc[@level="recordgrp"]-->
-    <rico:RecordResource rdf:about="recordResource/058220-top">
-        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>       
-    </rico:RecordResource>
-    <!-- cas 6 : //archdesc[@level="subgrp"]-->
-    <rico:RecordResource rdf:about="recordResource/058220-top">
-        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>       
-    </rico:RecordResource>
-    <!-- cas 7 : //archdesc[@level="file] -->
-    <rico:RecordResource rdf:about="recordResource/058220-top">
-        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
-        <rico:hasRecordSetType
-            rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File"/>
-    </rico:RecordResource>
-    <!-- cas 8 : //archdesc[@level="item"]-->
-    <rico:RecordResource rdf:about="recordResource/058220-top">
-        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Record"/>
-    </rico:RecordResource>
-    <!-- cas 9 : //archdesc[@level="collection"] -->
-    <rico:RecordResource rdf:about="recordResource/058220-top">
-        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
-        <rico:hasRecordSetType
-            rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection"/>
-    </rico:RecordResource>
-    <!-- cas 10 : //archdesc[@level="otherlevel"]-->
-    <rico:RecordResource rdf:about="recordResource/058220-top">
-           </rico:RecordResource>
     
     <!-- cas des //archdesc[@level="series"]/dsc//c-->
     <!-- //archdesc/dsc//c[@level="fonds"] -->
     <rico:RecordResource rdf:about="recordResource/058220-a">
-        <rico:isMemberOf rdf:resource="recordResource/recordResource/058220-top"/>
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
         <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
-            rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds"/>     
+            rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds"/>   
+        <rico:hasInstantiation>
+          <rico:Instantiation rdf:about="instantiation/058220-a-i1">
+            <rico:instantiates rdf:resource="recordResource/058220-a"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/a"/>
+          </rico:Instantiation>
+        </rico:hasInstantiation>  
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="subfonds"] -->
     <rico:RecordResource rdf:about="recordResource/058220-b">
-        <rico:isMemberOf rdf:resource="recordResource/recordResource/058220-top"/>
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
         <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
-            rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Sub-fonds"/>            
+            rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Sub-fonds"/> 
+        <rico:hasInstantiation>
+          <rico:Instantiation rdf:about="instantiation/058220-b-i1">
+            <rico:instantiates rdf:resource="recordResource/058220-b"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/b"/>
+          </rico:Instantiation>
+        </rico:hasInstantiation>           
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="series"] -->
     <rico:RecordResource rdf:about="recordResource/058220-c">
-        <rico:isMemberOf rdf:resource="recordResource/recordResource/058220-top"/>
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
         <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
-            rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>        
+            rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>  
+        <rico:hasInstantiation>
+          <rico:Instantiation rdf:about="instantiation/058220-c-i1">
+            <rico:instantiates rdf:resource="recordResource/058220-c"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c"/>
+          </rico:Instantiation>
+        </rico:hasInstantiation>       
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="subseries"] -->
     <rico:RecordResource rdf:about="recordResource/058220-d">
-        <rico:isMemberOf rdf:resource="recordResource/recordResource/058220-top"/>
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
         <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
+        <rico:hasInstantiation>
+          <rico:Instantiation rdf:about="instantiation/058220-d-i1">
+            <rico:instantiates rdf:resource="recordResource/058220-d"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/d"/>
+          </rico:Instantiation>
+        </rico:hasInstantiation> 
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="recordgrp"] -->
     <rico:RecordResource rdf:about="recordResource/058220-e">
-        <rico:isMemberOf rdf:resource="recordResource/recordResource/058220-top"/>
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
         <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rico:hasInstantiation>
+          <rico:Instantiation rdf:about="instantiation/058220-e-i1">
+            <rico:instantiates rdf:resource="recordResource/058220-e"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/e"/>
+          </rico:Instantiation>
+        </rico:hasInstantiation> 
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="subgrp"] -->
     <rico:RecordResource rdf:about="recordResource/058220-f">
-        <rico:isMemberOf rdf:resource="recordResource/recordResource/058220-top"/>
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
         <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rico:hasInstantiation>
+          <rico:Instantiation rdf:about="instantiation/058220-f-i1">
+            <rico:instantiates rdf:resource="recordResource/058220-f"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/f"/>
+          </rico:Instantiation>
+        </rico:hasInstantiation> 
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="file"] -->
     <rico:RecordResource rdf:about="recordResource/058220-g">
-        <rico:isMemberOf rdf:resource="recordResource/recordResource/058220-top"/>
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
         <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File"/>
+        <rico:hasInstantiation>
+          <rico:Instantiation rdf:about="instantiation/058220-g-i1">
+            <rico:instantiates rdf:resource="recordResource/058220-g"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/g"/>
+          </rico:Instantiation>
+        </rico:hasInstantiation> 
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="item"] -->
     <rico:RecordResource rdf:about="recordResource/058220-c-835pw5mwg-otyywby3qzqb">
-        <rico:isMemberOf rdf:resource="recordResource/recordResource/058220-top"/>
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
         <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Record"/>
+        <rico:hasInstantiation>
+          <rico:Instantiation rdf:about="instantiation/058220-c-835pw5mwg-otyywby3qzqb-i1">
+            <rico:instantiates rdf:resource="recordResource/058220-c-835pw5mwg-otyywby3qzqb"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c-835pw5mwg-otyywby3qzqb"/>
+          </rico:Instantiation>
+        </rico:hasInstantiation> 
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="collection"] -->
     <rico:RecordResource rdf:about="recordResource/058220-y">
-        <rico:isMemberOf rdf:resource="recordResource/recordResource/058220-top"/>
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
         <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection"/>
+        <rico:hasInstantiation>
+          <rico:Instantiation rdf:about="instantiation/058220-y-i1">
+            <rico:instantiates rdf:resource="recordResource/058220-y"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/y"/>
+          </rico:Instantiation>
+        </rico:hasInstantiation> 
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="otherlevel"] -->
     <rico:RecordResource rdf:about="recordResource/058220-z">
-        <rico:isMemberOf rdf:resource="recordResource/recordResource/058220-top"/>        
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>  
+        <rico:hasInstantiation>
+          <rico:Instantiation rdf:about="instantiation/058220-z-i1">
+            <rico:instantiates rdf:resource="recordResource/058220-z"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/z"/>
+          </rico:Instantiation>
+        </rico:hasInstantiation>       
     </rico:RecordResource>
     <!--   //archdesc/dsc//c[not(@level)]-->
     <rico:RecordResource rdf:about="recordResource/058220-abc">
-        <rico:isMemberOf rdf:resource="recordResource/recordResource/058220-top"/>        
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/> 
+        <rico:hasInstantiation>
+          <rico:Instantiation rdf:about="instantiation/058220-abc-i1">
+            <rico:instantiates rdf:resource="recordResource/058220-abc"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/abc"/>
+          </rico:Instantiation>
+        </rico:hasInstantiation>        
+    </rico:RecordResource>
+    
+    
+    <!-- cas 4: //archdesc[@level="subseries"]-->
+    <rico:RecordResource rdf:about="recordResource/058220-top">
+    	<rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rico:hasRecordSetType
+            rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
+        <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/058220-top-i1">
+            <rico:instantiates rdf:resource="recordResource/058220-top"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+         </rico:Instantiation>
+        </rico:hasInstantiation>
+    </rico:RecordResource>
+    <!-- cas 5: //archdesc[@level="recordgrp"]-->
+    <rico:RecordResource rdf:about="recordResource/058220-top">
+    	<rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>    
+        <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/058220-top-i1">
+            <rico:instantiates rdf:resource="recordResource/058220-top"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+         </rico:Instantiation>
+        </rico:hasInstantiation>   
+    </rico:RecordResource>
+    <!-- cas 6 : //archdesc[@level="subgrp"]-->
+    <rico:RecordResource rdf:about="recordResource/058220-top">
+    	<rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>  
+        <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/058220-top-i1">
+            <rico:instantiates rdf:resource="recordResource/058220-top"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+         </rico:Instantiation>
+        </rico:hasInstantiation>     
+    </rico:RecordResource>
+    <!-- cas 7 : //archdesc[@level="file"] -->
+    <rico:RecordResource rdf:about="recordResource/058220-top">
+    	<rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rico:hasRecordSetType
+            rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File"/>
+        <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/058220-top-i1">
+            <rico:instantiates rdf:resource="recordResource/058220-top"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+         </rico:Instantiation>
+        </rico:hasInstantiation>
+    </rico:RecordResource>
+    <!-- cas 8 : //archdesc[@level="item"]-->
+    <rico:RecordResource rdf:about="recordResource/058220-top">
+    	<rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Record"/>
+        <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/058220-top-i1">
+            <rico:instantiates rdf:resource="recordResource/058220-top"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+         </rico:Instantiation>
+        </rico:hasInstantiation>
+    </rico:RecordResource>
+    <!-- cas 9 : //archdesc[@level="collection"] -->
+    <rico:RecordResource rdf:about="recordResource/058220-top">
+    	<rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
+        <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rico:hasRecordSetType
+            rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection"/>
+        <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/058220-top-i1">
+            <rico:instantiates rdf:resource="recordResource/058220-top"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+         </rico:Instantiation>
+        </rico:hasInstantiation>
+    </rico:RecordResource>
+    <!-- cas 10 : //archdesc[@level="otherlevel"]-->
+    <rico:RecordResource rdf:about="recordResource/058220-top">
+    	<rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
+        <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/058220-top-i1">
+            <rico:instantiates rdf:resource="recordResource/058220-top"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+         </rico:Instantiation>
+        </rico:hasInstantiation>
     </rico:RecordResource>
     
 </rdf:RDF>

@@ -9,7 +9,7 @@
             <!--case 1 : a date interval in @normal, and a different string in unitdate-->
             <unitdate calendar="gregorian" era="ce" normal="1926-01-01 / 1986-12-31">entre 1926 et 1986</unitdate>
             <!--case 2 : no @normal and a ISO 8601 date interval in unitdate-->
-            <unitdate calendar="gregorian" era="ce">1926-1986</unitdate>
+            <unitdate calendar="gregorian" era="ce">1926/1986</unitdate>
            
             <!--case 3 :a single date in @normal and a string in unitdate-->
             <unitdate calendar="gregorian" era="ce" normal="1928-10-11">11 octobre 1928</unitdate>
@@ -26,7 +26,7 @@
                     <unitdate calendar="gregorian" era="ce" normal="1930-01-01/1945-12-31">1930-1945</unitdate>                   
                 </did>
             </c>
-            <!-- unittle/unitdate-->
+            <!-- unittile/unitdate-->
             <c id="c-7801hhtrn-g19n27mkod23">
                 <did>
                     <unittitle>Année <unitdate calendar="gregorian" era="ce"
