@@ -25,8 +25,7 @@
         <rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
         <rico:scopeAndContent rdf:parseType="Literal">
             <html:div xml:lang="fr">
-                <html:p>Les vues aériennes de l’entreprise LAPIE, obliques et réalisées à moyenne et basse
-                altitude, sont produites dans un contexte commercial.</html:p>
+                <html:p>Les vues aériennes de l’entreprise LAPIE, obliques et réalisées à moyenne et basse altitude, sont produites dans un contexte commercial. <html:b>bold</html:b>, <html:i>italic</html:i>, <html:u>underline</html:u></html:p>
                 <html:p>Les « albums couleur » ont été utilisés...</html:p>
             </html:div>
         </rico:scopeAndContent>
@@ -45,9 +44,11 @@
             <html:div xml:lang="fr">
                 <html:p>1</html:p>
                 <!--  note number of spaces after line break to match output of unit test -->
-                <html:p>2 with
-                    line break</html:p>
-                <html:p>3</html:p>
+                <html:p>2 with line break</html:p>
+                <html:ul>
+                	<html:li>item 1</html:li>
+                	<html:li>item 2</html:li>
+                </html:ul>
             </html:div>
         </rico:scopeAndContent>
         <rico:hasInstantiation>

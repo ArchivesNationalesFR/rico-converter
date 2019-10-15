@@ -8,7 +8,7 @@
         <!-- global description of the whole record set -->
         <scopecontent>
             <p>Les vues aériennes de l’entreprise LAPIE, obliques et réalisées à moyenne et basse
-                altitude, sont produites dans un contexte commercial.</p>
+                altitude, sont produites dans un contexte commercial. <emph render="bold">bold</emph>, <emph render="italic">italic</emph>, <emph render="underline">underline</emph></p>
             <p>Les « albums couleur » ont été utilisés...</p>
         </scopecontent>
         <dsc>
@@ -23,7 +23,10 @@
                     <p>1</p>
                     <p>2 with
                     line break</p>
-                    <p>3</p>
+                    <list>
+                   		<item>item 1</item>
+                   		<item>item 2</item>
+                   	</list>
                 </scopecontent>
                 <!--TODO : ajouter ici le traitement des audience type= internal ? ou en paramètres lors du lancement du convertisseur ?
                 @ audience sur scopecontent, custodhist, dsc, c, archdesc, acqinfo, bioghist, archref, dao, daogroup, daoloc, edition, physloc, unittitle-->

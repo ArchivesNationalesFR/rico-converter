@@ -30,8 +30,9 @@
         <rico:date xml:lang="fr">entre 1926 et 1986</rico:date>
         
         <!--case 2-->
-        <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1926-01-01</rico:beginningDate>
-        <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-12-31</rico:endDate>
+        <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1926</rico:beginningDate>
+      	<rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1986</rico:endDate>
+      	<rico:date xml:lang="fr">1926-1986</rico:date>
         
         <!--case 3-->
         <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1928-10-11</rico:date>
@@ -40,6 +41,7 @@
         
         <!--case 4-->
         <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1888</rico:date>
+        <rico:date xml:lang="fr">1888</rico:date>
         
         <!-- case 5 -->
         <rico:date xml:lang="fr">années 20</rico:date>
@@ -49,33 +51,28 @@
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-top-i1">
                 <rico:instantiates rdf:resource="recordResource/058220-top"/>
-                <!--case 1-->
-                <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-                    >1926-01-01</rico:beginningDate>
-                <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-                    >1986-12-31</rico:endDate>
-                <rico:date xml:lang="fr">entre 1926 et 1986</rico:date>
-                <!--case 2-->
-                <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-                    >1926-01-01</rico:beginningDate>
-                <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-                    >1986-12-31</rico:endDate>
-                <!--case 3-->
-                <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-                    >1928-10-11</rico:date>
-                <rico:date xml:lang="fr">11 octobre 1928</rico:date>
-                <!-- or is it possible to compare the 2 dates and output only the first rico:date if the second date is equivalent to the first ISO 8601 one?-->
-                <!--case 4-->
-                <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1888</rico:date>
-                <!-- case 5 -->
-                <rico:date xml:lang="fr">années 20</rico:date>
-                <!-- case 6: do nothing-->
+		        <!--case 1-->
+		        <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1926-01-01</rico:beginningDate>
+		        <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-12-31</rico:endDate>
+		        <rico:date xml:lang="fr">entre 1926 et 1986</rico:date>		        
+		        <!--case 2-->
+		        <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1926</rico:beginningDate>
+		      	<rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1986</rico:endDate>
+		      	<rico:date xml:lang="fr">1926-1986</rico:date>		        
+		        <!--case 3-->
+		        <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1928-10-11</rico:date>
+		        <rico:date xml:lang="fr">11 octobre 1928</rico:date>
+		        <!-- or is it possible to compare the 2 dates and output only the first rico:date if the second date equals the first ISO 8601 one?-->		        
+		        <!--case 4-->
+		        <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1888</rico:date>
+		        <rico:date xml:lang="fr">1888</rico:date>		        
+		        <!-- case 5 -->
+		        <rico:date xml:lang="fr">années 20</rico:date>		        
+		        <!-- case 6: do nothing-->
+		        <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
             </rico:Instantiation>
         </rico:hasInstantiation>
-        <rico:hasInstantiation>
-            <!-- if there is more than the primary instantiation, do not propagate the RecordResource dates to these instantiations -->
-            <rico:Instantiation rdf:about="instantiation/058220-top-i2">
-                <rico:instantiates rdf:resource="recordResource/058220-top"/> </rico:Instantiation> </rico:hasInstantiation>
+        <!-- Note : if there is more than the primary instantiation, do not propagate the RecordResource dates to these instantiations -->
         <rico:hasMember rdf:resource="recordResource/058220-c-25s2lche6kz-qfignk48spf8"/>
         <rico:hasMember rdf:resource="recordResource/058220-c-7801hhtrn-g19n27mkod23"/>
     </rico:RecordResource>
@@ -84,39 +81,34 @@
     	<rico:isMemberOf rdf:resource="recordResource/058220-top"/>
         <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1930-01-01</rico:beginningDate>
         <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1945-12-31</rico:endDate>
-        <!-- <rico:date xml:lang="fr">1930-1945</rico:date>-->
+        <rico:date xml:lang="fr">1930-1945</rico:date>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c-25s2lche6kz-qfignk48spf8-i1">
                 <rico:instantiates rdf:resource="recordResource/058220-c-25s2lche6kz-qfignk48spf8"/>
-                <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-                    >1930-01-01</rico:beginningDate>
-                <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
-                    >1945-12-31</rico:endDate>
-                <!--<rico:date xml:lang="fr">1930-1945</rico:date>-->
+                <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1930-01-01</rico:beginningDate>
+                <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1945-12-31</rico:endDate>
+                <rico:date xml:lang="fr">1930-1945</rico:date>
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c-25s2lche6kz-qfignk48spf8"/>
             </rico:Instantiation>
         </rico:hasInstantiation>
-        <!-- if there is more than the primary instantiation, do not propagate the RecordResource dates to theses instantiations -->
-        <rico:hasInstantiation>
-            <rico:Instantiation rdf:about="instantiation/058220-c-25s2lche6kz-qfignk48spf8-i2">
-                <rico:instantiates rdf:resource="recordResource/058220-c-25s2lche6kz-qfignk48spf8"/>
-            </rico:Instantiation>
-        </rico:hasInstantiation>
+        <!-- Note : if there is more than the primary instantiation, do not propagate the RecordResource dates to theses instantiations -->
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-c-7801hhtrn-g19n27mkod23">
         <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
-        <rico:title>Année 1842 : 9 l.a.s. à son frère Charles.</rico:title>
-        <rdfs:label>Année 1842 : 9 l.a.s. à son frère Charles.</rdfs:label>
+        <rico:title xml:lang="fr">Année 1842 : 9 l.a.s. à son frère Charles.</rico:title>
+        <rdfs:label xml:lang="fr">Année 1842 : 9 l.a.s. à son frère Charles.</rdfs:label>
         <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1842-01-01</rico:beginningDate>
-        <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1942-12-31</rico:endDate>
-        <!--<rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1942</rico:date>-->
+        <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1842-12-31</rico:endDate>
+        <rico:date xml:lang="fr">1842</rico:date>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c-7801hhtrn-g19n27mkod23-i1">
                 <rico:instantiates rdf:resource="recordResource/058220-c-7801hhtrn-g19n27mkod23"/>
-                <rico:title>Année 1842 : 9 l.a.s. à son frère Charles.</rico:title>
-                <rdfs:label>Année 1842 : 9 l.a.s. à son frère Charles.</rdfs:label>
+                <rico:title xml:lang="fr">Année 1842 : 9 l.a.s. à son frère Charles.</rico:title>
+                <rdfs:label xml:lang="fr">Année 1842 : 9 l.a.s. à son frère Charles.</rdfs:label>
                 <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1842-01-01</rico:beginningDate>
                 <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1842-12-31</rico:endDate>
-                <!--  <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1942</rico:date>-->
+                <rico:date xml:lang="fr">1842</rico:date>
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c-7801hhtrn-g19n27mkod23"/>
             </rico:Instantiation>
         </rico:hasInstantiation>
     </rico:RecordResource>

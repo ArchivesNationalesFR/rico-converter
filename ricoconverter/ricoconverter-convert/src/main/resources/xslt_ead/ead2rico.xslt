@@ -104,24 +104,24 @@
 		<xsl:apply-templates mode="#current" />
 	</xsl:template>
 	<xsl:template match="titleproper" mode="findingaid instantiation">
-		<rico:title xml:lang="{$LITERAL_LANG}"><xsl:value-of select="if(../subtitle) then concat(., ' : ', ../subtitle) else ." /></rico:title>
-		<rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="if(../subtitle) then concat(., ' : ', ../subtitle) else ." /></rdfs:label>
+		<rico:title xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(if(../subtitle) then concat(., ' : ', ../subtitle) else .)" /></rico:title>
+		<rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(if(../subtitle) then concat(., ' : ', ../subtitle) else .)" /></rdfs:label>
 	</xsl:template>
 	<xsl:template match="author" mode="findingaid">
-		<rico:authoredBy xml:lang="{$LITERAL_LANG}"><xsl:value-of select="." /></rico:authoredBy>
+		<rico:authoredBy xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rico:authoredBy>
 	</xsl:template>
 	
 	<xsl:template match="editionstmt" mode="#all">
 		<xsl:apply-templates  mode="#current" />
 	</xsl:template>
-	<xsl:template match="edition" mode="findingaid">
+	<xsl:template match="edition[text()]" mode="findingaid">
 		<rico:editionstmt rdf:parseType="Literal"><html:p xml:lang="{$LITERAL_LANG}"><xsl:apply-templates mode="html" /></html:p></rico:editionstmt>
 	</xsl:template>	
 	
 	<xsl:template match="publicationstmt" mode="#all">
 		<xsl:apply-templates  mode="#current" />
 	</xsl:template>
-	<xsl:template match="publisher" mode="findingaid">
+	<xsl:template match="publisher[text()]" mode="findingaid">
 		<rico:publishedBy rdf:resource="agent/005061" />
 	</xsl:template>
 	<xsl:template match="date" mode="findingaid">
@@ -133,7 +133,7 @@
 	<xsl:template match="notestmt" mode="#all">
 		<xsl:apply-templates mode="#current" />
 	</xsl:template>
-	<xsl:template match="note" mode="findingaid">
+	<xsl:template match="note[text()]" mode="findingaid">
 		<rico:note rdf:parseType="Literal"><html:p xml:lang="{$LITERAL_LANG}"><xsl:apply-templates select="p/node()" mode="html" /></html:p></rico:note>
 	</xsl:template>
 	
@@ -142,19 +142,19 @@
 	<xsl:template match="profiledesc" mode="#all">
 		<xsl:apply-templates mode="#current" />
 	</xsl:template>
-	<xsl:template match="creation" mode="instantiation">
-		<rico:history xml:lang="{$LITERAL_LANG}"><xsl:value-of select="." /></rico:history>
+	<xsl:template match="creation[text()]" mode="instantiation">
+		<rico:history xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rico:history>
 	</xsl:template>
 	<xsl:template match="langusage" mode="findingaid">
 		<xsl:apply-templates mode="#current" />
 	</xsl:template>
-	<xsl:template match="language" mode="findingaid">
+	<xsl:template match="language[text()]" mode="findingaid">
 		<rico:hasLanguage rdf:resource="{ead2rico:URI-Language(@langcode)}"/>
 	</xsl:template>
-	<xsl:template match="descrules" mode="instantiation">
+	<xsl:template match="descrules[text()]" mode="instantiation">
 		<rico:isRegulatedBy rdf:resource="rule/rl010"/>
 	</xsl:template>
-	<xsl:template match="descrules" mode="findingaid">
+	<xsl:template match="descrules[text()]" mode="findingaid">
 		<!-- Reference to ISAD(G), to be changed if you don't follow the ISAD(G) model -->
 		<rico:isRegulatedBy rdf:resource="rule/rl009"/>
 	</xsl:template>
@@ -169,7 +169,7 @@
 	  <rico:affectedBy>
          <rico:Activity>
             <rico:date><xsl:call-template name="outputDateFromDateRange"><xsl:with-param name="normal" select="date/@normal"/></xsl:call-template></rico:date>
-            <rico:description xml:lang="{$LITERAL_LANG}"><xsl:value-of select="item" /></rico:description>
+            <rico:description xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(item)" /></rico:description>
          </rico:Activity>
       </rico:affectedBy>
 	</xsl:template>
@@ -316,8 +316,8 @@
 			<rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($instantiationId)}">
 				<rico:instantiates rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
 				
-				<!-- custodhist is explicitely excluded from subsequent instantiations -->
-				<xsl:apply-templates select="(ancestor::*[self::c or self::archdesc])[last()]/*[not(self::daogrp) and not(self::custodhist)]" mode="instantiation" />
+				<!-- pick only the unittitle in the other Instantiations -->
+				<xsl:apply-templates select="(ancestor::*[self::c or self::archdesc])[last()]/did/unittitle" mode="instantiation" />
 				
 				<!-- We know it is a digital copy of the first instantiation -->
 				<rico:isDigitalCopyOf rdf:resource="{ead2rico:URI-Instantiation(concat($recordResourceId, '-i1'))}"/>
@@ -334,39 +334,52 @@
 
 	<!-- ***** scopecontent processing ***** -->
 	
-	<xsl:template match="scopecontent">
+	<xsl:template match="scopecontent[child::node()]">
 		<rico:scopeAndContent rdf:parseType="Literal">
-			<html:div xml:lang="{$LITERAL_LANG}">
-				<xsl:for-each select="p">
-					<html:p><xsl:value-of select="." /></html:p>
-				</xsl:for-each>
-			</html:div>
+			<xsl:choose>
+				<xsl:when test="count(p) = 1">
+					<html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(p)" /></html:p>
+				</xsl:when>
+				<xsl:otherwise>
+					<html:div xml:lang="{$LITERAL_LANG}">
+						<xsl:apply-templates mode="html" />
+					</html:div>
+				</xsl:otherwise>
+			</xsl:choose>
 		</rico:scopeAndContent>
 	</xsl:template>
 
-	<!-- ***** accessrestrict for archdesc/c and instantiation (2 templates) ***** -->
+	<!-- ***** accessrestrict for archdesc/c and instantiation ***** -->
 	
-	<xsl:template match="accessrestrict">
+	<xsl:template match="accessrestrict[child::node()]" mode="#all">
 		<rico:conditionsOfAccess rdf:parseType="Literal">
-			<html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="p" /></html:p>
-        </rico:conditionsOfAccess>
-	</xsl:template>
-	<xsl:template match="accessrestrict" mode="instantiation">
-		<rico:conditionsOfAccess rdf:parseType="Literal">
-			<html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="p" /></html:p>
+			<xsl:choose>
+				<xsl:when test="count(p) = 1">
+					<html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(p)" /></html:p>
+				</xsl:when>
+				<xsl:otherwise>
+					<html:div xml:lang="{$LITERAL_LANG}">
+						<xsl:apply-templates mode="html" />
+					</html:div>
+				</xsl:otherwise>
+			</xsl:choose>
         </rico:conditionsOfAccess>
 	</xsl:template>
 
-	<!-- ***** userestrict for archdesc/c and instantiation (2 templates) ***** -->
+	<!-- ***** userestrict for archdesc/c and instantiation ***** -->
 	
-	<xsl:template match="userestrict">
+	<xsl:template match="userestrict[child::node()]" mode="#all">
 		<rico:conditionsOfUse rdf:parseType="Literal">
-			<html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="p" /></html:p>
-        </rico:conditionsOfUse>
-	</xsl:template>
-	<xsl:template match="userestrict" mode="instantiation">
-		<rico:conditionsOfUse rdf:parseType="Literal">
-			<html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="p" /></html:p>
+			<xsl:choose>
+				<xsl:when test="count(p) = 1">
+					<html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(p)" /></html:p>
+				</xsl:when>
+				<xsl:otherwise>
+					<html:div xml:lang="{$LITERAL_LANG}">
+						<xsl:apply-templates mode="html" />
+					</html:div>
+				</xsl:otherwise>
+			</xsl:choose>
         </rico:conditionsOfUse>
 	</xsl:template>
 
@@ -383,12 +396,15 @@
 			</xsl:when>
 			<xsl:otherwise>
 				<rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
-			    <!-- rico recordSetTypes :
-		        http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection
-		        http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File
-		        http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds
-		        http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series
-		        http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Sub-fonds-->
+			    <!-- 
+				    RiC-O recordSetTypes :
+				    
+			        http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection
+			        http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File
+			        http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds
+			        http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series
+			        http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Sub-fonds
+		        -->
 		        <xsl:choose>
 		        	<xsl:when test=". = 'fonds'">
 		        		<rico:hasRecordSetType rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds"/>
@@ -424,13 +440,18 @@
 
 	<!-- ***** custodhist processing for instantiation only ***** -->
 	
-	<xsl:template match="custodhist" mode="instantiation">
+	<xsl:template match="custodhist[child::node()]" mode="instantiation">
 		<rico:history rdf:parseType="Literal">
-			<html:div xml:lang="{$LITERAL_LANG}">
-				<xsl:for-each select="p">
-					<html:p><xsl:value-of select="." /></html:p>
-				</xsl:for-each>
-			</html:div>
+			<xsl:choose>
+				<xsl:when test="count(p) = 1">
+					<html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(p)" /></html:p>
+				</xsl:when>
+				<xsl:otherwise>
+					<html:div xml:lang="{$LITERAL_LANG}">
+						<xsl:apply-templates mode="html" />
+					</html:div>
+				</xsl:otherwise>
+			</xsl:choose>
         </rico:history>
 	</xsl:template>
 	
@@ -457,7 +478,7 @@
 	
 	<!-- ***** did/unittitle for RecordResource and Instantiations ***** -->
 	
-	<xsl:template match="unittitle" mode="#all">
+	<xsl:template match="unittitle[text()]" mode="#all">
 		<rico:title xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rico:title>
 		<rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rdfs:label>
 		<!--  Also searches for potential embedded unitdate -->
@@ -475,12 +496,12 @@
 						<!-- Date range in @normal and a text() -->
 						<rico:beginningDate><xsl:call-template name="outputDate"><xsl:with-param name="text" select="normalize-space(substring-before(@normal, '/'))" /></xsl:call-template></rico:beginningDate>
         				<rico:endDate><xsl:call-template name="outputDate"><xsl:with-param name="text" select="normalize-space(substring-after(@normal, '/'))" /></xsl:call-template></rico:endDate>
-				        <rico:date xml:lang="{$LITERAL_LANG}"><xsl:value-of select="text()" /></rico:date>
+				        <rico:date xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(text())" /></rico:date>
 					</xsl:when>
 					<xsl:when test="ead2rico:isDate(@normal)">
 						<!-- Single date in @normal and a text -->
 						<rico:date><xsl:call-template name="outputDate"><xsl:with-param name="text" select="@normal" /></xsl:call-template></rico:date>
-						<rico:date xml:lang="{$LITERAL_LANG}"><xsl:value-of select="text()" /></rico:date>
+						<rico:date xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(text())" /></rico:date>
 					</xsl:when>
 				</xsl:choose>
 			</xsl:when>
@@ -488,19 +509,19 @@
 			<xsl:when test="not(@normal) and text()">
 				<!-- no @normal, but some text() -->
 				<xsl:choose>
-					<xsl:when test="ead2rico:isDateRange(text())">
+					<xsl:when test="ead2rico:isTextDateRange(text())">
 						<!-- Date range in text() -->
-						<rico:beginningDate><xsl:call-template name="outputDate"><xsl:with-param name="text" select="normalize-space(substring-before(text(), '/'))" /></xsl:call-template></rico:beginningDate>
-        				<rico:endDate><xsl:call-template name="outputDate"><xsl:with-param name="text" select="normalize-space(substring-after(text(), '/'))" /></xsl:call-template></rico:endDate>
-        				<rico:date xml:lang="{$LITERAL_LANG}"><xsl:value-of select="text()" /></rico:date>
+						<rico:beginningDate><xsl:call-template name="outputDate"><xsl:with-param name="text" select="normalize-space(substring-before(text(), '-'))" /></xsl:call-template></rico:beginningDate>
+        				<rico:endDate><xsl:call-template name="outputDate"><xsl:with-param name="text" select="normalize-space(substring-after(text(), '-'))" /></xsl:call-template></rico:endDate>
+        				<rico:date xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(text())" /></rico:date>
 					</xsl:when>
 					<xsl:when test="ead2rico:isDate(text())">
-						<!-- Single date in text() and a text -->
+						<!-- Single date in text() -->
 						<rico:date><xsl:call-template name="outputDate"><xsl:with-param name="text" select="text()" /></xsl:call-template></rico:date>
-						<rico:date xml:lang="{$LITERAL_LANG}"><xsl:value-of select="text()" /></rico:date>
+						<rico:date xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(text())" /></rico:date>
 					</xsl:when>
 					<xsl:otherwise>
-						<rico:date xml:lang="{$LITERAL_LANG}"><xsl:value-of select="text()" /></rico:date>
+						<rico:date xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(text())" /></rico:date>
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:when>
@@ -519,7 +540,29 @@
 	<xsl:template match="emph[@render = 'super']" mode="html">
 		<html:sup><xsl:apply-templates mode="html" /></html:sup>
 	</xsl:template>
-	<xsl:template match="text()" mode="html"><xsl:value-of select="." /></xsl:template>
+	<xsl:template match="emph[@render = 'sub']" mode="html">
+		<html:sub><xsl:apply-templates mode="html" /></html:sub>
+	</xsl:template>
+	<xsl:template match="emph[@render = 'italic']" mode="html">
+		<html:i><xsl:apply-templates mode="html" /></html:i>
+	</xsl:template>
+	<xsl:template match="emph[@render = 'bold']" mode="html">
+		<html:b><xsl:apply-templates mode="html" /></html:b>
+	</xsl:template>
+	<xsl:template match="emph[@render = 'underline']" mode="html">
+		<html:u><xsl:apply-templates mode="html" /></html:u>
+	</xsl:template>
+	<xsl:template match="list" mode="html">
+		<html:ul><xsl:apply-templates mode="html" /></html:ul>
+	</xsl:template>
+	<xsl:template match="list/text()" mode="html"><xsl:value-of select="normalize-space(.)" /></xsl:template>
+	<xsl:template match="item" mode="html">
+		<html:li><xsl:apply-templates mode="html" /></html:li>
+	</xsl:template>
+	<xsl:template match="lb" mode="html">
+		<html:br />
+	</xsl:template>
+	<xsl:template match="text()" mode="html"><xsl:value-of select="normalize-space(.)" /></xsl:template>
 
 	<!-- ***** Date ***** -->
 		
@@ -563,6 +606,17 @@
 			ead2rico:isDate(normalize-space(substring-before($text, '/')))
 			and
 			ead2rico:isDate(normalize-space(substring-after($text, '/')))
+		"/>  
+	</xsl:function>
+	
+	<xsl:function name="ead2rico:isTextDateRange" as="xs:boolean">
+		<xsl:param name="text"/>
+		<xsl:sequence select="
+			contains($text, '-')
+			and
+			ead2rico:isDate(normalize-space(substring-before($text, '-')))
+			and
+			ead2rico:isDate(normalize-space(substring-after($text, '-')))
 		"/>  
 	</xsl:function>
 	
