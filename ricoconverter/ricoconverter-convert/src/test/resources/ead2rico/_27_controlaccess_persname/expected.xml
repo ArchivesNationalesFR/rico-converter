@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xml:base="http://data.archives-nationales.culture.gouv.fr/">
+    <rico:FindingAid rdf:about="findingAid/058220">
+        <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-i1">
+                <rico:instantiates rdf:resource="findingAid/058220"/>
+                <rico:encodingFormat xml:lang="en">text/xml</rico:encodingFormat>
+                <dc:format xml:lang="en">text/xml</dc:format>
+                <rico:identifier>FRAN_IR_058220</rico:identifier>
+                <rico:heldBy rdf:resource="agent/005061"/>
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+    </rico:FindingAid>
+    <rico:RecordResource rdf:about="recordResource/058220-top">
+        <rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
+        <rico:title xml:lang="fr">Titre comprend un persname : Cardenti, Jean Jean Baptiste</rico:title>   
+        <rdfs:label xml:lang="fr">Titre comprend un persname : Cardenti, Jean Jean Baptiste</rdfs:label>
+        <!-- TODO : archdesc/unittitle/persname (indexation libre):  hasSubject agent cf. test occupation ? -->
+        <!-- archdesc/controlaccess/persname +@authfilenumber-->
+        <rico:hasSubject rdf:resource="agent/FRAN_RI_012-d699mu3pkd2--ojwlhnvipuam"/>
+        <rico:hasSubject>
+            <rico:Agent>
+                <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+                <rdfs:label xml:lang="fr">Cardenti, Jean Jean Baptiste</rdfs:label>
+            </rico:Agent>
+            
+            
+        </rico:hasSubject>
+        <rico:hasMember rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+        <rico:hasMember rdf:resource="recordResource/058220-N0003"/>
+      
+        <rico:hasMember rdf:resource="recordResource/058220-N0004"/>
+        <rico:hasInstantiation>
+             <rico:Instantiation rdf:about="instantiation/058220-top-i1">
+                 <rico:instantiates rdf:resource="recordResource/058220-top"/>
+                 <rico:title xml:lang="fr">Titre comprend un persname : Cardenti, Jean Jean Baptiste</rico:title>   
+                 <rdfs:label xml:lang="fr">Titre comprend un persname : Cardenti, Jean Jean Baptiste</rdfs:label>                 
+                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+             </rico:Instantiation>
+         </rico:hasInstantiation>
+    </rico:RecordResource>
+    
+    <!-- c/controlaccess/persname indexation libre -->
+    <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:hasSubject>
+            <rico:Agent>
+                <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+                <rdfs:label xml:lang="fr">Pichard, Victorine Louise Pauline</rdfs:label>
+            </rico:Agent>
+            
+            
+        </rico:hasSubject>
+        <rico:hasSubject>
+            <rico:Agent>
+                <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+                <rdfs:label xml:lang="fr">Ladan-Bockairy, Jules Alphonse Georges</rdfs:label>
+            </rico:Agent>
+            
+            
+        </rico:hasSubject>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">                
+                <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+                <!--do not process controlaccess/persname here-->   
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2">                
+                <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+                <rico:isDigitalCopyOf rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1"/>
+                <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                <rico:identifier>FRAN_0118_274_L</rico:identifier>
+                <rico:encodingFormat xml:lang="en">image/jpeg</rico:encodingFormat>
+                <!--do not process controlaccess/persname here-->
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>        
+    </rico:RecordResource>
+    
+    <!-- c/controlaccess/persname + @authfilenumber -->
+    <rico:RecordResource rdf:about="recordResource/058220-N0003">
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:hasSubject rdf:resource="agent/FRAN_RI_012-d699mu3pkd2--ojwlhnvipuam"/>
+        <rico:hasSubject rdf:resource="agent/FRAN_RI_012-d699mu4ru7l-gmy6mhkvdjc9"/>           
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-N0003-i1">                
+                <rico:instantiates rdf:resource="recordResource/058220-N0003"/>
+                <!--do not process controlaccess/persname here-->                
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0003"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>       
+    </rico:RecordResource>    
+    
+  
+    
+    <!-- c/did/unittitle/persname + @authfilenumber-->
+    <rico:RecordResource rdf:about="recordResource/058220-N004">
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:title xml:lang="fr">Titre comprend deux persname : Bullet, Pierre (1639-1716) et Dupont, Louis</rico:title>   
+        <rdfs:label xml:lang="fr">Titre comprend deux persname : Bullet, Pierre (1639-1716) et Dupont, Louis</rdfs:label>
+        <rico:hasSubject rdf:resource="agent/FRAN_RI_012-d699mu4ru7l-gmy6mhkvdjc9"/>
+        <rico:hasSubject>
+            <rico:Agent>
+                <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+                <rdfs:label xml:lang="fr">Dupont, Louis</rdfs:label>
+            </rico:Agent>
+            
+            
+        </rico:hasSubject>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-N004-i1">                
+                <rico:instantiates rdf:resource="recordResource/058220-N004"/>
+                <rico:title xml:lang="fr">Titre comprend deux persname : Bullet, Pierre (1639-1716) et Dupont, Louis</rico:title>   
+                <rdfs:label xml:lang="fr">Titre comprend deux persname : Bullet, Pierre (1639-1716) et Dupont, Louis</rdfs:label>
+                <!--do not process unittitle/persname here-->
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N004"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>       
+    </rico:RecordResource>
+</rdf:RDF>
