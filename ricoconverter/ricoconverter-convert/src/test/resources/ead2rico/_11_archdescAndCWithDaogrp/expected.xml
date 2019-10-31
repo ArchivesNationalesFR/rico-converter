@@ -25,6 +25,7 @@
       <rico:isMainSubjectOf rdf:resource="findingAid/003666"/>
       <rico:hasInstantiation>
       	   <rico:Instantiation rdf:about="instantiation/003666-top-i1">
+      	 
 		      <rico:instantiates rdf:resource="recordResource/003666-top"/>
 		      <rico:hasDigitalCopy rdf:resource="instantiation/003666-top-i2"/>
 		      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_003666/top"/>
@@ -33,6 +34,7 @@
       <!-- if there is a daogrp, we consider the digital archival object as a distinct instantiation (digital surrogate) of the record resource; this second instantiation is derived from the first one-->
       <rico:hasInstantiation>
       	   <rico:Instantiation rdf:about="instantiation/003666-top-i2">
+      	     
 		      <rico:instantiates rdf:resource="recordResource/003666-top"/>
 		      <rico:isDigitalCopyOf rdf:resource="instantiation/003666-top-i1"/>
 		      <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
@@ -67,6 +69,11 @@
       <rico:hasInstantiation>
            <rico:Instantiation rdf:about="instantiation/003666-c-835pw5mwg-otyywby3qzqb-i2">
 		      <rico:instantiates rdf:resource="recordResource/003666-c-835pw5mwg-otyywby3qzqb"/>
+              <rico:descriptiveNote>
+                 <html:div  xml:lang="fr">
+                    <html:p>une légende</html:p>
+                 </html:div>
+              </rico:descriptiveNote>
 		      <rico:isDigitalCopyOf rdf:resource="instantiation/003666-c-835pw5mwg-otyywby3qzqb-i1"/>
 		      <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
 		      <rico:identifier>FRAN_0118_274_L</rico:identifier>
