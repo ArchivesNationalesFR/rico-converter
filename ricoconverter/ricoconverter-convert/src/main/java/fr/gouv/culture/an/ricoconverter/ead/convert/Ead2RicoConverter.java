@@ -13,11 +13,18 @@ import javax.xml.transform.Result;
 import javax.xml.transform.Source;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
+import javax.xml.transform.sax.SAXSource;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.xml.sax.DTDHandler;
+import org.xml.sax.EntityResolver;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
+import org.xml.sax.XMLReader;
+import org.xml.sax.helpers.XMLReaderFactory;
 import org.xmlunit.builder.DiffBuilder;
 import org.xmlunit.builder.Input;
 import org.xmlunit.diff.Diff;
@@ -44,6 +51,11 @@ public class Ead2RicoConverter {
 	 * The listeners that listen to the process
 	 */
 	protected List<Ead2RicoConverterListener> listeners;
+	
+	/**
+	 * The entity resolver to use when parsing input XML files
+	 */
+	protected EntityResolver entityResolver;
 
 	public Ead2RicoConverter(
 			Transformer eac2ricoTransformer,
@@ -73,7 +85,7 @@ public class Ead2RicoConverter {
 		
 		// for each file in the input directory...
 		for(File f : inputDirectory.listFiles()) {
-			processFileOrDirectory(f);
+			processFileOrDirectory(f, this.convertOutputDirectory);
 		}
 		
 		try {
@@ -85,9 +97,10 @@ public class Ead2RicoConverter {
 		log.info("Done converting.");
 	}
 	
-	private void processFileOrDirectory(File inputFile) throws RicoConverterException {
+	private void processFileOrDirectory(File inputFile, File currentOutputDir) throws RicoConverterException {
 		log.info("Processing "+inputFile.getName());
-		// do NOT recurse on subdirectories
+		
+		// DO recurse on subdirectories
 		if(!inputFile.isDirectory()) {
 
 			if(!inputFile.getName().endsWith(".xml")) {
@@ -101,13 +114,27 @@ public class Ead2RicoConverter {
 				log.error("Error in listener notifyBeginProcessing for "+inputFile.getName(), e);
 			}
 			
-			File outputFile = createOutputFile(inputFile);
+			File outputFile = createOutputFile(inputFile, currentOutputDir);
 			
 			boolean success = false;
 			try(FileOutputStream out = new FileOutputStream(outputFile)) {
-				StreamSource source = new StreamSource(new FileInputStream(inputFile));
-				source.setSystemId(inputFile);
-				this.convert(source, new StreamResult(out));
+				// StreamSource source = new StreamSource(new FileInputStream(inputFile));
+				
+				try {
+					XMLReader reader = XMLReaderFactory.createXMLReader();
+					reader.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);					
+					if(this.entityResolver != null) {
+						reader.setEntityResolver(this.entityResolver);
+					}
+					SAXSource source = new SAXSource(reader, new InputSource(new FileInputStream(inputFile)));
+					
+					// set a SystemId to resolve references to DTD
+					// source.setSystemId(inputFile);
+					
+					this.convert(source, new StreamResult(out));
+				} catch (SAXException e1) {
+					log.error("Error when creating XMLReader for "+inputFile.getName(), e1);
+				}
 				
 				try {
 					notifyEndProcessing(inputFile);
@@ -133,6 +160,15 @@ public class Ead2RicoConverter {
 				// if an error happens, delete output file
 				log.info("Deleting outputFile "+outputFile.getAbsolutePath());
 				outputFile.delete();
+			}
+		} else {
+			// create subdirectory in output dir
+			File outputSubdir = new File(currentOutputDir, inputFile.getName());
+			outputSubdir.mkdir();
+			
+			// recurse
+			for(File f : inputFile.listFiles()) {
+				processFileOrDirectory(f, outputSubdir);
 			}
 		}
 	}
@@ -205,8 +241,16 @@ public class Ead2RicoConverter {
 		this.listeners = listeners;
 	}
 
-	private File createOutputFile(File inputFile) {
-		return new File(convertOutputDirectory, inputFile.getName().substring(0, inputFile.getName().lastIndexOf('.'))+".rdf");
+	public EntityResolver getEntityResolver() {
+		return entityResolver;
+	}
+
+	public void setEntityResolver(EntityResolver entityResolver) {
+		this.entityResolver = entityResolver;
+	}
+
+	private File createOutputFile(File inputFile, File outputDir) {
+		return new File(outputDir, inputFile.getName().substring(0, inputFile.getName().lastIndexOf('.'))+".rdf");
 	}
 	
 	private void notifyStart(File inputFile) throws RicoConverterListenerException {

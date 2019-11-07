@@ -7,34 +7,38 @@
     <archdesc>    
         <arrangement>
             <p>Le plan de classement des archives est construit par les producteurs des archives et les archivistes. Afin de rendre compte des actions réalisées dans le cadre des politiques publiques portées par l'administration, il est organisé par fonction et activité. Aussi, le classement actuel respecte le(s) plan(s) de classement adopté(s) lors du versement aux archives du ministère de l'Écologie.</p>
-        </arrangement>        
+        </arrangement>   
+        
+        <dsc>
+		    <c id="c34fnm316ofc-27kf8gfnest" level="otherlevel">
+		    <!--<did>
+		        <unitid type="identifiant">20160668/2-20160668/6</unitid>
+		        <unittitle>Agendas de Claude Jolly, directeur.</unittitle>
+		        <unitdate calendar="gregorian" era="ce" normal="2002-01-01/2006-12-31">2002-2006</unitdate>
+		    </did>-->
+		        <arrangement>
+		            <p>Classement par ordre chronologique.</p>
+		        </arrangement>
+		        <daogrp>
+		            <daoloc href="FRAN_0118_274_L.msp"/>
+		        </daogrp>
+		    </c>
+		    <c id="c2" level="otherlevel">    
+		        <arrangement>
+		            <p>Voici une liste :<list>
+		                <item>Classement par ordre chronologique.</item>
+		                <item>Classement par ordre alphabétique.</item>
+		            </list></p>
+		           
+		        </arrangement>
+		    </c>
+		    <!-- ajouter exemple avec un @id (voir ead_demat.dtd?
+		    <c id="c2" level="otherlevel">    
+		        <arrangement id="">
+		            <p>Classement géographique</p>
+		        </arrangement>
+		    </c>-->
+    	</dsc>     
     </archdesc>
-    <c id="c34fnm316ofc-27kf8gfnest" level="otherlevel">
-    <!--<did>
-        <unitid type="identifiant">20160668/2-20160668/6</unitid>
-        <unittitle>Agendas de Claude Jolly, directeur.</unittitle>
-        <unitdate calendar="gregorian" era="ce" normal="2002-01-01/2006-12-31">2002-2006</unitdate>
-    </did>-->
-        <arrangement>
-            <p>Classement par ordre chronologique.</p>
-        </arrangement>
-        <daogrp>
-            <daoloc href="FRAN_0118_274_L.msp"/>
-        </daogrp>
-    </c>
-    <c id="c2" level="otherlevel">    
-        <arrangement>
-            <p>Voici une liste :<list>
-                <item>Classement par ordre chronologique.</item>
-                <item>Classement par ordre alphabétique.</item>
-            </list></p>
-           
-        </arrangement>
-    </c>
-    <!-- ajouter exemple avec un @id (voir ead_demat.dtd?
-    <c id="c2" level="otherlevel">    
-        <arrangement id="">
-            <p>Classement géographique</p>
-        </arrangement>
-    </c>-->
+
 </ead>

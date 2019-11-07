@@ -5,25 +5,37 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:html="http://www.w3.org/1999/xhtml"
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
     xml:base="http://data.archives-nationales.culture.gouv.fr/">
     <rico:FindingAid rdf:about="findingAid/058220">
-        <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
+      <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/058220-i1">
+            <rico:instantiates rdf:resource="findingAid/058220"/>
+            <rico:encodingFormat xml:lang="en">text/xml</rico:encodingFormat>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_IR_058220</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
     </rico:FindingAid>
     <!-- archdesc level -->
     <rico:RecordResource rdf:about="recordResource/058220-top">
-        <rico:isMainSubjectOf rdf:resource="findingAid/011222"/>
+        <rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
         <rico:accrual rdf:parseType="Literal">
             <html:div xml:lang="fr">
                 <html:p>Fonds clos.</html:p>
             </html:div>
         </rico:accrual>
-        <rico:hasMember rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-top-i1">
                 <rico:instantiates rdf:resource="recordResource/058220-top"/>
-                <!--do not process accruals here-->           
+                <!--do not process accruals here-->
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>        
             </rico:Instantiation>
         </rico:hasInstantiation>
+        <rico:hasMember rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
     </rico:RecordResource>
     <!-- c level -->
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
@@ -36,23 +48,7 @@
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">
                 <!--do not process accruals here-->         
-                <rico:hasDigitalCopy rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
                 <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
-                <rdfs:seeAlso
-                    rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"
-                />
-            </rico:Instantiation>
-        </rico:hasInstantiation>
-        <rico:hasInstantiation>
-            <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2">
-                <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
-                <rico:isDigitalCopyOf
-                    rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1"/>
-                <rico:hasProductionTechniqueType
-                    rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
-                <rico:identifier>FRAN_0118_274_L</rico:identifier>
-                <rico:encodingFormat xml:lang="en">image/jpeg</rico:encodingFormat>
-                <!--do not process accruals here-->
                 <rdfs:seeAlso
                     rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"
                 />

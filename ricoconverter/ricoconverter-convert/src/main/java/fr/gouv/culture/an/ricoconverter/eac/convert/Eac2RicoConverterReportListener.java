@@ -4,11 +4,9 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.Iterator;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.filefilter.TrueFileFilter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -34,7 +32,7 @@ public class Eac2RicoConverterReportListener extends Eac2RicoConverterListenerBa
 	
 	@Override
 	public void handleStart(File inputFile) throws RicoConverterListenerException {
-		this.nbFilesInput = FileUtils.listFiles(inputFile, TrueFileFilter.INSTANCE, TrueFileFilter.INSTANCE).size();
+		this.nbFilesInput = FileUtils.listFiles(inputFile, new String[] {"xml"}, true).size();
 		this.startTime = new Date();
 	}
 
@@ -93,6 +91,8 @@ public class Eac2RicoConverterReportListener extends Eac2RicoConverterListenerBa
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 		long duration = this.endTime.getTime() - this.startTime.getTime();
 		long durationInSeconds = duration / 1000;
+		sb.append("\n");
+		sb.append("\n");
 		sb.append("--- EAC Conversion Report ---"+"\n");
 		sb.append("- Number of files to process: "+this.nbFilesInput+"\n");
 		sb.append("- Number of files in ERROR  : "+this.nbFilesErrors+"\n");

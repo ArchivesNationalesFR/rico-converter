@@ -1,6 +1,7 @@
 package fr.gouv.culture.an.ricoconverter.cli.convert_ead;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +16,9 @@ import javax.xml.transform.stream.StreamSource;
 import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.xml.sax.EntityResolver;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
 
 import fr.gouv.culture.an.ricoconverter.ErrorCode;
 import fr.gouv.culture.an.ricoconverter.RicoConverterException;
@@ -75,8 +79,7 @@ public class Ead2RicoConverterFactory {
 						return new StreamSource(test);
 					} else {
 						return new StreamSource(new File(xslt.getParentFile(), href));
-					}
-					
+					}					
 				}
 				
 			}).createTransformer(new StreamSource(xslt));
@@ -111,6 +114,25 @@ public class Ead2RicoConverterFactory {
 				throw new RicoConverterException(ErrorCode.DIRECTORY_OR_FILE_HANDLING_EXCEPTION, e);
 			}
 		}
+		
+		// set entity resolver to resolve DTDs
+		c.setEntityResolver(new EntityResolver() {
+			@Override
+			public InputSource resolveEntity(String publicId, String systemId) throws SAXException, IOException {
+				File test = new File(xslt.getParentFile(), systemId);
+				if(test.exists()) {
+					// this is the case when running unit tests command
+					return new InputSource(new FileInputStream(test));
+				} else {
+					test = new File(inputDirectory, systemId);
+					if(test.exists()) {
+						return new InputSource(new FileInputStream(test));
+					}
+				}
+				
+				return null;
+			}
+		});
 		
 		List<Ead2RicoConverterListener> listeners = new ArrayList<>();
 		

@@ -65,6 +65,11 @@
         <appender-ref ref="STDOUT" />
     </logger>
     
+    <logger name="fr.gouv.culture.an.ricoconverter.ead.convert.Ead2RicoConverterReportListener" additivity="false">
+        <appender-ref ref="REPORT_FILE" />
+        <appender-ref ref="STDOUT" />
+    </logger>
+    
     
          
     <!-- ** -->

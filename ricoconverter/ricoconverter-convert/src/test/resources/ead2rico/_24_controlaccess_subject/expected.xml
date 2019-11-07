@@ -22,8 +22,7 @@
     </rico:FindingAid>
     <rico:RecordResource rdf:about="recordResource/058220-top">
         <rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
-        <rico:hasSubject rdf:resource="thing/FRAN_RI_004-d3ndfb3mvp-8bkmn9a3o1hq"/>     
-        <rico:hasMember rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+        <rico:hasSubject rdf:resource="thing/FRAN_RI_004-d3ndfb3mvp-8bkmn9a3o1hq"/>  
         <rico:hasInstantiation>
              <rico:Instantiation rdf:about="instantiation/058220-top-i1">
                  <rico:instantiates rdf:resource="recordResource/058220-top"/>   
@@ -31,6 +30,7 @@
                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
              </rico:Instantiation>
          </rico:hasInstantiation>
+         <rico:hasMember rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
     </rico:RecordResource>
     <!-- c level -->
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
@@ -40,6 +40,7 @@
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">                
                 <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+                <rico:hasDigitalCopy rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
                 <!--do not process controlaccess/subject here-->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"/>
             </rico:Instantiation>
@@ -52,7 +53,7 @@
                 <rico:identifier>FRAN_0118_274_L</rico:identifier>
                 <rico:encodingFormat xml:lang="en">image/jpeg</rico:encodingFormat>
                 <!--do not process controlaccess/subject here-->
-                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"/>
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest/FRAN_0118_274_L"/>
             </rico:Instantiation>
         </rico:hasInstantiation>
     </rico:RecordResource>   

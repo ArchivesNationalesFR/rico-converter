@@ -3,7 +3,6 @@ package fr.gouv.culture.an.ricoconverter.cli.commons;
 import java.io.File;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.filefilter.TrueFileFilter;
 
 import fr.gouv.culture.an.ricoconverter.RicoConverterListenerException;
 import fr.gouv.culture.an.ricoconverter.eac.convert.Eac2RicoConverterListener;
@@ -24,7 +23,7 @@ public class RicoConverterProgressListener extends Eac2RicoConverterListenerBase
 	@Override
 	public void handleStart(File inputFile) throws RicoConverterListenerException {
 		// Count recursively
-		this.totalInputFiles = FileUtils.listFiles(inputFile, TrueFileFilter.INSTANCE, TrueFileFilter.INSTANCE).size();
+		this.totalInputFiles = FileUtils.listFiles(inputFile, new String[] {"xml"}, true).size();
 		this.progress = new ProgressBar("RiC-O Converter", totalInputFiles, ProgressBarStyle.ASCII);
 	}
 

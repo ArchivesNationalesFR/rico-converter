@@ -34,7 +34,7 @@ public class Ead2RicoConverterReportListener extends Ead2RicoConverterListenerBa
 	
 	@Override
 	public void handleStart(File inputFile) throws RicoConverterListenerException {
-		this.nbFilesInput = FileUtils.listFiles(inputFile, TrueFileFilter.INSTANCE, TrueFileFilter.INSTANCE).size();
+		this.nbFilesInput = FileUtils.listFiles(inputFile, new String[] {"xml"}, true).size();
 		this.startTime = new Date();
 	}
 
@@ -93,6 +93,8 @@ public class Ead2RicoConverterReportListener extends Ead2RicoConverterListenerBa
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 		long duration = this.endTime.getTime() - this.startTime.getTime();
 		long durationInSeconds = duration / 1000;
+		sb.append("\n");
+		sb.append("\n");
 		sb.append("--- EAD Conversion Report ---"+"\n");
 		sb.append("- Number of files to process: "+this.nbFilesInput+"\n");
 		sb.append("- Number of files in ERROR  : "+this.nbFilesErrors+"\n");

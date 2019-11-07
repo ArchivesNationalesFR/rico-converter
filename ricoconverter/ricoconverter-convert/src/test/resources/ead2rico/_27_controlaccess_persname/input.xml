@@ -11,29 +11,31 @@
         <controlaccess>
             <persname authfilenumber="d699mu3pkd2--ojwlhnvipuam" source="FRAN_RI_012">Blondel, François (1617-1686)</persname>
         </controlaccess>
+    
+	    <dsc>
+		    <!-- c/controlaccess/persname indexation libre -->
+		    <c id="c34fnm316ofc-27kf8gfnest" level="otherlevel">
+		        <controlaccess>
+		            <persname source="indexation_libre">Pichard, Victorine Louise Pauline</persname>
+		            <persname source="indexation_libre">Ladan-Bockairy, Jules Alphonse Georges</persname>
+		        </controlaccess>
+		        <daogrp>
+		            <daoloc href="FRAN_0118_274_L.msp"/>
+		        </daogrp>
+		    </c>
+		    <!-- c/controlaccess/persname + @authfilenumber -->
+		    <c id="N0003" level="otherlevel">
+		        <controlaccess>
+		            <persname authfilenumber="d699mu3pkd2--ojwlhnvipuam" source="FRAN_RI_012">Blondel, François (1617-1686)</persname>
+		            <persname authfilenumber="d699mu4ru7l-gmy6mhkvdjc9" source="FRAN_RI_012">Bullet, Pierre (1639-1716)</persname>
+		        </controlaccess>
+		    </c>	   
+		    <!-- c/did/unittitle/persname + @authfilenumber-->
+		    <c id="N0004">
+		        <did>
+		            <unittitle>Titre comprend deux persname : <persname authfilenumber="d699mu4ru7l-gmy6mhkvdjc9" source="FRAN_RI_012">Bullet, Pierre (1639-1716)</persname> et <persname>Dupont, Louis</persname></unittitle>
+		        </did>
+		    </c>
+	    </dsc>
     </archdesc>
-    <!-- c/controlaccess/persname indexation libre -->
-    <c id="c34fnm316ofc-27kf8gfnest" level="otherlevel">
-        <controlaccess>
-            <persname source="indexation_libre">Pichard, Victorine Louise Pauline</persname>
-            <persname source="indexation_libre">Ladan-Bockairy, Jules Alphonse Georges</persname>
-        </controlaccess>
-        <daogrp>
-            <daoloc href="FRAN_0118_274_L.msp"/>
-        </daogrp>
-    </c>
-    <!-- c/controlaccess/persname + @authfilenumber -->
-    <c id="N0003" level="otherlevel">
-        <controlaccess>
-            <persname authfilenumber="d699mu3pkd2--ojwlhnvipuam" source="FRAN_RI_012">Blondel, François (1617-1686)</persname>
-            <persname authfilenumber="d699mu4ru7l-gmy6mhkvdjc9" source="FRAN_RI_012">Bullet, Pierre (1639-1716)</persname>
-        </controlaccess>
-    </c>
-   
-    <!-- c/did/unittitle/persname + @authfilenumber-->
-    <c id="N0004">
-        <did>
-            <unittitle>Titre comprend deux persname : <persname authfilenumber="d699mu4ru7l-gmy6mhkvdjc9" source="FRAN_RI_012">Bullet, Pierre (1639-1716)</persname> et <persname>Dupont, Louis</persname></unittitle>
-        </did>
-    </c>
 </ead>

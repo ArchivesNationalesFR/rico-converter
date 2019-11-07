@@ -41,6 +41,41 @@
 		<xsl:value-of select="$LANGUAGES/rdf:RDF/rico:Language[ends-with(rdfs:label, concat('/',$langcode))]/@rdf:about" />
 	</xsl:function>
 
+	<xsl:function name="ead2rico:URI-DocumentaryForm">
+		<xsl:param name="authfilenumber" />
+		<xsl:param name="source" />
+		<xsl:value-of select="concat('documentaryFormType/', $source, '-', $authfilenumber)" />
+	</xsl:function>
+
+	<xsl:function name="ead2rico:URI-Place">
+		<xsl:param name="authfilenumber" />
+		<xsl:param name="source" />
+		<xsl:value-of select="concat('place/', $source, '-', $authfilenumber)" />
+	</xsl:function>
+	
+	<xsl:function name="ead2rico:URI-Thing">
+		<xsl:param name="authfilenumber" />
+		<xsl:param name="source" />
+		<xsl:value-of select="concat('thing/', $source, '-', $authfilenumber)" />
+	</xsl:function>
+	
+	<xsl:function name="ead2rico:URI-Agent">
+		<xsl:param name="authfilenumber" />
+		<xsl:param name="source" />
+		<xsl:value-of select="concat('agent/', $source, '-', $authfilenumber)" />
+	</xsl:function>
+	
+	<xsl:function name="ead2rico:URI-OccupationType">
+		<xsl:param name="authfilenumber" />
+		<xsl:param name="source" />
+		<xsl:value-of select="concat('occupationType/', $source, '-', $authfilenumber)" />
+	</xsl:function>
+	
+	<xsl:function name="ead2rico:URI-ActivityType">
+		<xsl:param name="authfilenumber" />
+		<xsl:param name="source" />
+		<xsl:value-of select="concat('activityType/', $source, '-', $authfilenumber)" />
+	</xsl:function>
 	
 	<xsl:template name="recordResourceId">
 		<xsl:param name="faId" />

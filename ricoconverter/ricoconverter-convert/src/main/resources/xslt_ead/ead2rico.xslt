@@ -199,7 +199,15 @@
 			<rico:isMainSubjectOf rdf:resource="{ead2rico:URI-FindingAid($faId)}" />
 			
 			<!--  dsc is processed later, outside of RecordResource. Note we process also attributes to match @level -->
-			<xsl:apply-templates select="@* | (node() except (dsc | daogrp))" />
+			<xsl:apply-templates select="@* | (node() except (dsc | daogrp | processinfo | appraisal))" />
+
+			<!-- everything that needs to go inside rico:history -->
+			<xsl:if test="processinfo or appraisal">
+				<rico:history rdf:parseType="Literal">
+					<xsl:apply-templates select="processinfo" />
+					<xsl:apply-templates select="appraisal" />
+				</rico:history>
+			</xsl:if>
 
 			<!-- The instantiation of the RecordResource -->
 			<rico:hasInstantiation>
@@ -207,7 +215,17 @@
 					<rico:instantiates rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
 					<!-- references to other digital copies -->
 					<xsl:apply-templates select="daogrp" mode="reference" />
-					<xsl:apply-templates select="node() except (daogrp)" mode="instantiation" />
+					<xsl:apply-templates select="node() except (daogrp | custodhist | acqinfo | processinfo | appraisal)" mode="instantiation" />
+					<!-- all the 'history' section -->
+					<xsl:if test="custodhist or acqinfo or processinfo or appraisal">
+						<rico:history rdf:parseType="Literal">
+							<!-- We want them in this order -->
+							<xsl:apply-templates select="custodhist"  mode="instantiation" />
+							<xsl:apply-templates select="acqinfo" mode="instantiation" />
+							<xsl:apply-templates select="processinfo" mode="instantiation" />
+							<xsl:apply-templates select="appraisal" mode="instantiation" />
+						</rico:history>
+					</xsl:if>
 					<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/{/ead/eadheader/eadid}/top" />
 				</rico:Instantiation>
 			</rico:hasInstantiation>			
@@ -258,7 +276,15 @@
 			<rico:isMemberOf rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />			
 						
 			<!-- child c's and daogrp are processed after. Note we process also attributes to match @level -->
-			<xsl:apply-templates select="@* | (node() except (c | daogrp))" />
+			<xsl:apply-templates select="@* | (node() except (c | daogrp | processinfo | appraisal))" />
+			
+			<!-- everything that needs to go inside rico:history -->
+			<xsl:if test="processinfo or appraisal">
+				<rico:history rdf:parseType="Literal">
+					<xsl:apply-templates select="processinfo" />
+					<xsl:apply-templates select="appraisal" />
+				</rico:history>
+			</xsl:if>
 			
 			<!--  The instantiation of this RecordResource -->
 			<rico:hasInstantiation>
@@ -266,7 +292,17 @@
 					<rico:instantiates rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
 					<!-- references to other digital copies -->
 					<xsl:apply-templates select="daogrp" mode="reference" />
-					<xsl:apply-templates select="node() except (daogrp)" mode="instantiation" />
+					<xsl:apply-templates select="node() except (daogrp | custodhist | acqinfo | processinfo | appraisal)" mode="instantiation" />
+					<!-- all the 'history' section -->
+					<xsl:if test="custodhist or acqinfo or processinfo or appraisal">
+						<rico:history rdf:parseType="Literal">
+							<!-- We want them in this order -->
+							<xsl:apply-templates select="custodhist"  mode="instantiation" />
+							<xsl:apply-templates select="acqinfo" mode="instantiation" />
+							<xsl:apply-templates select="processinfo" mode="instantiation" />
+							<xsl:apply-templates select="appraisal" mode="instantiation" />
+						</rico:history>
+					</xsl:if>
 					<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/{/ead/eadheader/eadid}/{@id}" />
 				</rico:Instantiation>
 			</rico:hasInstantiation>
@@ -287,7 +323,8 @@
 	<!-- ***** daogrp and daoloc processing ***** -->
 
 	<xsl:template match="daogrp" mode="#all">
-		<xsl:apply-templates mode="#current" />
+		<!-- Don't process daodesc here -->
+		<xsl:apply-templates mode="#current" select="daoloc" />
 	</xsl:template>
 	<xsl:template match="daoloc" mode="reference">
 		<xsl:variable name="recordResourceId">
@@ -316,8 +353,18 @@
 			<rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($instantiationId)}">
 				<rico:instantiates rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
 				
+				<!-- the image legend -->
+				<xsl:apply-templates select="../daodesc" />
+				
 				<!-- pick only the unittitle in the other Instantiations -->
+				
 				<xsl:apply-templates select="(ancestor::*[self::c or self::archdesc])[last()]/did/unittitle" mode="instantiation" />
+				
+				<!-- pick also accessrestrict -->
+				<xsl:apply-templates select="(ancestor::*[self::c or self::archdesc])[last()]/accessrestrict" mode="instantiation" />
+				
+				<!-- pick also userestrict -->
+				<xsl:apply-templates select="(ancestor::*[self::c or self::archdesc])[last()]/userestrict" mode="instantiation" />
 				
 				<!-- We know it is a digital copy of the first instantiation -->
 				<rico:isDigitalCopyOf rdf:resource="{ead2rico:URI-Instantiation(concat($recordResourceId, '-i1'))}"/>
@@ -325,10 +372,25 @@
 				<rico:identifier><xsl:value-of select="replace(@href, '.msp', '')" /></rico:identifier>			
 				<rico:encodingFormat xml:lang="en">image/jpeg</rico:encodingFormat>
 				<xsl:if test="not(contains(@href, '#'))">
-					<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_003666/{(ancestor::*[self::c or self::archdesc])[last()]/@id}/{replace(@href, '.msp', '')}"/>
+					<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/{/ead/eadheader/eadid}/{(ancestor::*[self::c or self::archdesc])[last()]/@id}/{replace(@href, '.msp', '')}"/>
 				</xsl:if>
 			</rico:Instantiation>
 		</rico:hasInstantiation>
+	</xsl:template>
+
+	<xsl:template match="daodesc">
+		<rico:descriptiveNote rdf:parseType="Literal">
+			<xsl:choose>
+				<xsl:when test="count(p) = 1">
+					<html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(p)" /></html:p>
+				</xsl:when>
+				<xsl:otherwise>
+					<html:div xml:lang="{$LITERAL_LANG}">
+						<xsl:apply-templates mode="html" />
+					</html:div>
+				</xsl:otherwise>
+			</xsl:choose>
+		</rico:descriptiveNote>
 	</xsl:template>
 
 
@@ -382,7 +444,16 @@
 			</xsl:choose>
         </rico:conditionsOfUse>
 	</xsl:template>
+	
+	<!-- arrangement for archdesc/c -->
 
+	<xsl:template match="arrangement[child::node()]" mode="#all">
+		<rico:structure rdf:parseType="Literal">
+			<html:div xml:lang="{$LITERAL_LANG}">
+				<xsl:apply-templates mode="html" />
+			</html:div>
+        </rico:structure>
+	</xsl:template>
 
 	<!-- ***** @level processing ***** -->
 	
@@ -438,22 +509,48 @@
 		</xsl:choose>
 	</xsl:template>
 
-	<!-- ***** custodhist processing for instantiation only ***** -->
+	<!-- ***** custodhist / acqinfo processing for instantiation only ***** -->
 	
-	<xsl:template match="custodhist[child::node()]" mode="instantiation">
-		<rico:history rdf:parseType="Literal">
-			<xsl:choose>
-				<xsl:when test="count(p) = 1">
-					<html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(p)" /></html:p>
-				</xsl:when>
-				<xsl:otherwise>
-					<html:div xml:lang="{$LITERAL_LANG}">
-						<xsl:apply-templates mode="html" />
-					</html:div>
-				</xsl:otherwise>
-			</xsl:choose>
-        </rico:history>
+	<xsl:template match="custodhist[child::node()]" mode="instantiation">	
+		<html:div  xml:lang="{$LITERAL_LANG}">
+            <html:h4>Historique de la conservation</html:h4>
+            <xsl:apply-templates mode="html" />
+        </html:div>
 	</xsl:template>
+
+	<xsl:template match="acqinfo[child::node()]" mode="instantiation">
+		<html:div  xml:lang="{$LITERAL_LANG}">
+            <html:h4>Informations sur les modalités d’entrée</html:h4>
+            <xsl:apply-templates mode="html" />
+        </html:div>
+	</xsl:template>
+
+	<!-- processinfo is for RecordResource also -->
+	<xsl:template match="processinfo[child::node()]" mode="#all">
+		<html:div  xml:lang="{$LITERAL_LANG}">
+            <html:h4>Informations sur le traitement</html:h4>
+            <xsl:apply-templates mode="html" />
+        </html:div>
+	</xsl:template>
+
+	<!-- appraisal is for RecordResource also -->
+	<xsl:template match="appraisal[child::node()]" mode="#all">
+		<html:div  xml:lang="{$LITERAL_LANG}">
+            <html:h4>Informations sur l'évaluation</html:h4>
+            <xsl:apply-templates mode="html" />
+        </html:div>
+	</xsl:template>
+	
+	<!-- ***** accruals ***** -->
+	
+	<xsl:template match="accruals[child::node()]">
+		<rico:accrual rdf:parseType="Literal">
+			<html:div  xml:lang="{$LITERAL_LANG}">
+	            <xsl:apply-templates mode="html" />
+	        </html:div>
+        </rico:accrual>
+	</xsl:template>
+	
 	
 	<!-- ***** did section ***** -->
 	<xsl:template match="did" mode="#all">
@@ -465,7 +562,8 @@
 	<xsl:template match="unitid" mode="instantiation">
 		<xsl:choose>
 			<xsl:when test="@type ='cote-de-consultation' and ((following-sibling::unitid | preceding-sibling::unitid)[@type = 'pieces'])">
-				<rico:identifier><xsl:value-of select="concat(text(), ' ', ((following-sibling::unitid | preceding-sibling::unitid)[@type = 'pieces'])/text())" /></rico:identifier>
+			<!-- join before normalize, in odd case where there are multiple unitid type="pieces" -->
+				<rico:identifier><xsl:value-of select="concat(text(), ' ', string-join( ((following-sibling::unitid | preceding-sibling::unitid)[@type = 'pieces'])/text(), ' ' ))" /></rico:identifier>
 			</xsl:when>
 			<xsl:when test="@type ='pieces' and ((following-sibling::unitid | preceding-sibling::unitid)[@type = 'cote-de-consultation'])">
 				<!-- don't output anything -->
@@ -478,11 +576,21 @@
 	
 	<!-- ***** did/unittitle for RecordResource and Instantiations ***** -->
 	
-	<xsl:template match="unittitle[text()]" mode="#all">
+	<xsl:template match="unittitle[text()]">
 		<rico:title xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rico:title>
 		<rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rdfs:label>
 		<!--  Also searches for potential embedded unitdate -->
 		<xsl:apply-templates select="unitdate" />
+		<!-- Search for embedded geogname only in the case we are procesing unittitle for a RecordResource, not an instantiation -->
+		<xsl:apply-templates select="geogname | persname" />
+	</xsl:template>
+	
+	<xsl:template match="unittitle[text()]" mode="instantiation">
+		<rico:title xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rico:title>
+		<rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rdfs:label>
+		<!--  Also searches for potential embedded unitdate -->
+		<xsl:apply-templates select="unitdate" />
+		<!-- Don't process embedded controlaccess tags -->
 	</xsl:template>
 	
 	<!-- ***** did/unitdate for RecordResource and Instantiations ***** -->
@@ -496,12 +604,14 @@
 						<!-- Date range in @normal and a text() -->
 						<rico:beginningDate><xsl:call-template name="outputDate"><xsl:with-param name="text" select="normalize-space(substring-before(@normal, '/'))" /></xsl:call-template></rico:beginningDate>
         				<rico:endDate><xsl:call-template name="outputDate"><xsl:with-param name="text" select="normalize-space(substring-after(@normal, '/'))" /></xsl:call-template></rico:endDate>
-				        <rico:date xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(text())" /></rico:date>
+				        <!-- we may find emph inside the text(), so we join before normalize -->
+				        <rico:date xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(string-join(text(), ' '))" /></rico:date>
 					</xsl:when>
 					<xsl:when test="ead2rico:isDate(@normal)">
 						<!-- Single date in @normal and a text -->
 						<rico:date><xsl:call-template name="outputDate"><xsl:with-param name="text" select="@normal" /></xsl:call-template></rico:date>
-						<rico:date xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(text())" /></rico:date>
+						<!-- we may find emph inside the text(), so we join before normalize -->
+						<rico:date xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(string-join(text(), ' '))" /></rico:date>
 					</xsl:when>
 				</xsl:choose>
 			</xsl:when>
@@ -531,6 +641,87 @@
 			</xsl:when>		
 		</xsl:choose>
 	</xsl:template>
+
+
+	<!-- ***** controlaccess ***** -->
+
+	<xsl:template match="controlaccess">
+		<xsl:apply-templates mode="#current" />
+	</xsl:template>
+	
+	<xsl:template match="genreform">
+		<rico:hasDocumentaryForm rdf:resource="{ead2rico:URI-DocumentaryForm(@authfilenumber, @source)}"/>
+	</xsl:template>
+	
+	<xsl:template match="geogname">
+		<rico:hasSubject rdf:resource="{ead2rico:URI-Place(@authfilenumber, @source)}"/>
+	</xsl:template>
+	
+	<xsl:template match="subject">
+		<rico:hasSubject rdf:resource="{ead2rico:URI-Thing(@authfilenumber, @source)}"/>
+	</xsl:template>
+	
+	<xsl:template match="persname">
+		<xsl:choose>
+			<!-- persname with a known identifier -->
+			<xsl:when test="@authfilenumber and @source">
+				<!--  When there is also an occupation, declare it on the Agent.  -->
+				<xsl:choose>
+					<xsl:when test="../occupation[@authfilenumber and @source] and (count(../persname) = 1)">
+						<!-- Assign occupations to persons only if there was a single person declared -->
+						<rico:hasSubject>
+							<rico:Agent rdf:about="{ead2rico:URI-Agent(@authfilenumber, @source)}">
+								<xsl:apply-templates select="../occupation[@authfilenumber and @source]" mode="persname" />
+				            </rico:Agent>
+			            </rico:hasSubject>
+					</xsl:when>
+					<xsl:otherwise>
+						<!--  no occupation, plain reference to the Agent -->
+						<rico:hasSubject rdf:resource="{ead2rico:URI-Agent(@authfilenumber, @source)}"/>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:when>
+			<!-- persname without a known identifier -->
+			<xsl:otherwise>
+				<rico:hasSubject>
+		            <rico:Agent>
+		                <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+		                <rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rdfs:label>
+		                <!-- Assign occupations to persons only if there was a single person declared -->
+						<xsl:if test="../occupation[@authfilenumber and @source] and (count(../persname) = 1)">
+							<xsl:apply-templates select="../occupation[@authfilenumber and @source]" mode="persname" />
+						</xsl:if>
+		            </rico:Agent>
+		        </rico:hasSubject>	
+			</xsl:otherwise>
+		</xsl:choose>		
+	</xsl:template>
+	
+	<!-- occupation that we can linked to a persname. The template is called from within the persname template -->
+	<xsl:template match="occupation[@authfilenumber and @source]" mode="persname">
+		<rico:performs>
+            <rico:Activity>
+                <rico:hasOccupationType rdf:resource="{ead2rico:URI-OccupationType(@authfilenumber, @source)}"/>
+            </rico:Activity>
+        </rico:performs> 
+	</xsl:template>
+
+	<!-- occupation that we cannot link to a person. The template is called directly from controlaccess -->
+	<xsl:template match="occupation[@authfilenumber and @source and (count(../persname) != 1)]">
+		<rico:isRelatedTo>
+            <rico:Activity>
+                <rico:hasOccupationType rdf:resource="{ead2rico:URI-OccupationType(@authfilenumber, @source)}" />
+            </rico:Activity>
+        </rico:isRelatedTo> 
+	</xsl:template>
+
+	<xsl:template match="function">
+        <rico:isDocumentationOf>
+            <rico:Activity>
+                <rico:hasActivityType rdf:resource="{ead2rico:URI-ActivityType(@authfilenumber, @source)}"/>
+            </rico:Activity>
+        </rico:isDocumentationOf>
+	</xsl:template>	
 
 	<!-- ***** Processing of formatting elements p, list, item, span ***** -->
 	
