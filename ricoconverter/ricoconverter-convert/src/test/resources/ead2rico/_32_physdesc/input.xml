@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ead>
+    <eadheader>
+        <eadid>FRAN_IR_058220</eadid>
+        <!-- the metadata of the finding aid -->
+    </eadheader>
+    <archdesc>
+        <did>
+            <physdesc> (1 carton (494AP/1)) <extent>0,1 m.l.</extent>
+            </physdesc>
+        </did>
+   
+    <!--  dimensions | emph | extent | physfacet-->
+        <!-- and also genreform when you use EAD 2002 directly (TODO) -->
+    <dsc>
+        <c id="c34fnm316ofc-27kf8gfnest">
+         <!-- exemple : FRAN_IR_003579.xml -->
+         <did>
+             <physdesc>2 registr. in 4°, rel. basane vert.</physdesc>
+         </did>
+         <daogrp>
+             <daoloc href="FRAN_0118_274_L.msp"/>
+         </daogrp>
+     </c>
+     <c id="c34fnm316ofc-27kf8gfnast">
+         <did>
+             <physdesc>
+                 <dimensions>18 x 11 cm</dimensions> ; <extent>24 feuilles</extent>
+             </physdesc>
+         </did>
+     </c>
+        <c id="c34fnm316ofc-27kf8gfnust">
+         <did>
+             <physdesc>
+                 <extent>102 fichiers au format .jpg, pour une volumétrie d'environ 51,9 Mo</extent>
+                 <physfacet source="FRAN_RI_002" type="d3nd9y3c6o-iu0j3xsmoisx">archives électroniques</physfacet>
+             </physdesc>
+         </did>
+     </c>
+        <c id="c34fnm316ofc-27kf8gfnost">
+            <did>
+                <physdesc>
+                    <extent>6 cassettes audio de 90 minutes</extent>
+                    <physfacet source="FRAN_RI_002" type="d3nd9xpopj-ckdrv6ljeqeg">archives audio-visuelles</physfacet>
+                </physdesc>
+            </did>
+        </c>
+        <c id="c34fnm316ofc-27kf8gfnyst">
+            <did>
+                <physdesc>
+                    <extent>60 à 70 unités matérielles : 3 orthophotoplans hypsométriques, 173 plans topographiques (réguliers ou expédiés), 6 photogrammétries, 2 plans dressés au stéréotopographe Poivilliers, 4 fonds de plans topographiques, 13 schéma et croquis (canevas de nivellement, de triangulation, de polygonation, etc.)</extent>
+                    <physfacet source="FRAN_RI_002" type="d3nd9yjlfg-j0aeuv1yo4o2">papier-calque</physfacet>
+                </physdesc>
+            </did>
+        </c>
+    </dsc>
+
+    </archdesc>
+</ead>

@@ -21,7 +21,6 @@
     </rico:FindingAid>
     <rico:RecordResource rdf:about="recordResource/058220-top">
         <rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
-        <!-- PC à vérifier -->
         <rico:hasSubject>
             <rico:Agent rdf:about="agent/FRAN_RI_012-d699mu3572h-19e2la2kuy218">
                 <rico:performs>
@@ -46,8 +45,14 @@
         <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
         <rico:hasSubject>
             <rico:Agent>
-                <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
                 <rdfs:label xml:lang="fr">Sarrut, Jeanne Rosine, dite Jeanne Sorval</rdfs:label>
+                <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+                <rico:hasAgentName>
+                    <rico:AgentName>
+                        <rdfs:label xml:lang="fr">Sarrut, Jeanne Rosine, dite Jeanne Sorval</rdfs:label>
+                        <rico:textualValue xml:lang="fr">Sarrut, Jeanne Rosine, dite Jeanne Sorval</rico:textualValue>
+                    </rico:AgentName>
+                </rico:hasAgentName>
                 <rico:performs>
                     <rico:Activity>
                         <rico:hasOccupationType
@@ -99,12 +104,24 @@
          <rico:Agent>
             <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
             <rdfs:label xml:lang="fr">Poulitoff, Alexis</rdfs:label>
+             <rico:hasAgentName>
+                 <rico:AgentName>
+                     <rdfs:label xml:lang="fr">Poulitoff, Alexis</rdfs:label>
+                     <rico:textualValue xml:lang="fr">Poulitoff, Alexis</rico:textualValue>
+                 </rico:AgentName>
+             </rico:hasAgentName>
          </rico:Agent>
       </rico:hasSubject>
       <rico:hasSubject>
          <rico:Agent>
             <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
             <rdfs:label xml:lang="fr">Rafelis Saint-Sauveur, Armand Eugène Guillaume Etienne Marie de</rdfs:label>
+             <rico:hasAgentName>
+                 <rico:AgentName>
+                     <rdfs:label xml:lang="fr">Rafelis Saint-Sauveur, Armand Eugène Guillaume Etienne Marie de</rdfs:label>
+                     <rico:textualValue xml:lang="fr">Rafelis Saint-Sauveur, Armand Eugène Guillaume Etienne Marie de</rico:textualValue>
+                 </rico:AgentName>
+             </rico:hasAgentName>
          </rico:Agent>
       </rico:hasSubject>
       <rico:isRelatedTo>
