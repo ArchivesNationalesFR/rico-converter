@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xml:base="http://data.archives-nationales.culture.gouv.fr/">
+    <rico:FindingAid rdf:about="findingAid/058220">
+        <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-i1">
+                <rico:instantiates rdf:resource="findingAid/058220"/>
+                <rico:encodingFormat xml:lang="en">text/xml</rico:encodingFormat>
+                <dc:format xml:lang="en">text/xml</dc:format>
+                <rico:identifier>FRAN_IR_058220</rico:identifier>
+                <rico:heldBy rdf:resource="agent/005061"/>
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+    </rico:FindingAid>
+    <rico:RecordResource rdf:about="recordResource/058220-top">
+        <rico:isMainSubjectOf rdf:resource="findingAid/058220"/> 
+        <rico:heldBy rdf:resource="agent/005061"/>
+        <rico:hasInstantiation>
+             <rico:Instantiation rdf:about="instantiation/058220-top-i1">
+                 <rico:instantiates rdf:resource="recordResource/058220-top"/>
+                 <rico:heldBy rdf:resource="agent/005061"/>
+                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+             </rico:Instantiation>
+         </rico:hasInstantiation>
+        <rico:hasMember rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+        <rico:hasMember rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnast"/>
+        <rico:hasMember rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnost"/>        
+    </rico:RecordResource>
+    <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:heldBy rdf:resource="agent/005061"/>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">                
+                <rico:heldBy rdf:resource="agent/005061"/>
+                <rico:hasDigitalCopy rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2">                
+                <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+                <rico:isDigitalCopyOf rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1"/>
+                <rico:heldBy rdf:resource="agent/005061"/>
+                <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                <rico:identifier>FRAN_0118_274_L</rico:identifier>
+                <rico:encodingFormat xml:lang="en">image/jpeg</rico:encodingFormat>                
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest/FRAN_0118_274_L"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>        
+    </rico:RecordResource>
+    
+    <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnast">
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:heldBy rdf:resource="agent/005061"/>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnast-i1">                
+                <rico:heldBy rdf:resource="agent/005061"/>       
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnast"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+    </rico:RecordResource>
+    <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnost">
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:heldBy>
+            <rico:Agent>
+                <rdfs:label xml:lang="fr">Ecole pratique des hautes études</rdfs:label>
+                <rico:hasAgentName>
+                    <rico:AgentName>
+                        <rdfs:label xml:lang="fr">Ecole pratique des hautes études</rdfs:label>
+                        <rico:textualValue xml:lang="fr">Ecole pratique des hautes études</rico:textualValue>
+                    </rico:AgentName>
+                </rico:hasAgentName>
+            </rico:Agent>
+        </rico:heldBy>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnost-i1">                
+                <rico:heldBy>
+                    <rico:Agent>
+                        <rdfs:label xml:lang="fr">Ecole pratique des hautes études</rdfs:label>
+                        <rico:hasAgentName>
+                            <rico:AgentName>
+                                <rdfs:label xml:lang="fr">Ecole pratique des hautes études</rdfs:label>
+                                <rico:textualValue xml:lang="fr">Ecole pratique des hautes études</rico:textualValue>
+                            </rico:AgentName>
+                        </rico:hasAgentName>
+                    </rico:Agent>
+                </rico:heldBy>     
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnost"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+    </rico:RecordResource>
+</rdf:RDF>
