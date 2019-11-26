@@ -65,6 +65,11 @@
 		<xsl:value-of select="concat('agent/', $source, '-', $authfilenumber)" />
 	</xsl:function>
 	
+	<xsl:function name="ead2rico:URI-AgentFromFRAN_NP">
+		<xsl:param name="FRAN_NP" />
+		<xsl:value-of select="concat('agent/', substring-after($FRAN_NP, 'FRAN_NP_'))" />
+	</xsl:function>
+	
 	<xsl:function name="ead2rico:URI-OccupationType">
 		<xsl:param name="authfilenumber" />
 		<xsl:param name="source" />
@@ -75,6 +80,12 @@
 		<xsl:param name="authfilenumber" />
 		<xsl:param name="source" />
 		<xsl:value-of select="concat('activityType/', $source, '-', $authfilenumber)" />
+	</xsl:function>
+	
+	<xsl:function name="ead2rico:URI-RepresentationType">
+		<xsl:param name="authfilenumber" />
+		<xsl:param name="source" />
+		<xsl:value-of select="concat('representationType/', $source, '-', $authfilenumber)" />
 	</xsl:function>
 	
 	<xsl:template name="recordResourceId">

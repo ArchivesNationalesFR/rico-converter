@@ -23,6 +23,7 @@
         <rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
         <rico:hasSubject>
             <rico:Agent rdf:about="agent/FRAN_RI_012-d699mu3572h-19e2la2kuy218">
+            	<rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
                 <rico:performs>
                     <rico:Activity>
                         <rico:hasOccupationType rdf:resource="occupationType/FRAN_RI_010-d699msjgtw3-1ton3i1q2op31"/>
@@ -45,8 +46,8 @@
         <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
         <rico:hasSubject>
             <rico:Agent>
-                <rdfs:label xml:lang="fr">Sarrut, Jeanne Rosine, dite Jeanne Sorval</rdfs:label>
-                <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+            	<rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+                <rdfs:label xml:lang="fr">Sarrut, Jeanne Rosine, dite Jeanne Sorval</rdfs:label>                
                 <rico:hasAgentName>
                     <rico:AgentName>
                         <rdfs:label xml:lang="fr">Sarrut, Jeanne Rosine, dite Jeanne Sorval</rdfs:label>

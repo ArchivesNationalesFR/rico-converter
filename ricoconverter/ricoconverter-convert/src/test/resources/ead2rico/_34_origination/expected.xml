@@ -48,16 +48,16 @@
         <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
         <rico:hasProvenance rdf:resource="agent/051804"/>
         <rico:hasProvenance rdf:resource="agent/051182"/>
-        <rico:hasProvenance rdf:resource="agent/051170"/>
+        <rico:hasProvenance rdf:resource="agent/051570"/>
         <rico:hasProvenance rdf:resource="agent/050039"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">                
                 <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+                <rico:hasDigitalCopy rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
                 <rico:hasProvenance rdf:resource="agent/051804"/>
                 <rico:hasProvenance rdf:resource="agent/051182"/>
-                <rico:hasProvenance rdf:resource="agent/051170"/>
+                <rico:hasProvenance rdf:resource="agent/051570"/>
                 <rico:hasProvenance rdf:resource="agent/050039"/>
-                <rico:hasDigitalCopy rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"/>
             </rico:Instantiation>
         </rico:hasInstantiation>
@@ -76,35 +76,29 @@
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-N0003">
         <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:hasProvenance rdf:resource="agent/050039"/>
         <rico:history rdf:parseType="Literal">
             <html:div xml:lang="fr">
                 <html:h4>Origine</html:h4>
                 <html:p>Ce fonds a probablement pour provenance la famille Berg de Bréda.</html:p>
             </html:div>
-        </rico:history>
-        <rico:hasProvenance rdf:resource="agent/050039"/>
+        </rico:history>        
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-N0003-i1">                
                 <rico:instantiates rdf:resource="recordResource/058220-N0003"/>
+                <rico:hasProvenance rdf:resource="agent/050039"/>
                 <rico:history rdf:parseType="Literal">
                     <html:div xml:lang="fr">
                         <html:h4>Origine</html:h4>
                         <html:p>Ce fonds a probablement pour provenance la famille Berg de Bréda.</html:p>
                     </html:div>
                 </rico:history>
-                <rico:hasProvenance rdf:resource="agent/050039"/>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0003"/>
             </rico:Instantiation>
         </rico:hasInstantiation>       
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-N0004">
         <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
-        <rico:history rdf:parseType="Literal">
-            <html:div xml:lang="fr">
-                <html:h4>Origine</html:h4>
-                <html:p>Ce fonds a probablement pour provenance la famille Berg de Bréda.</html:p>
-            </html:div>
-        </rico:history>
         <rico:hasProvenance>
             <rico:Agent>
                 <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Family"/>
@@ -117,15 +111,15 @@
                 </rico:hasAgentName>
             </rico:Agent>
         </rico:hasProvenance>
+        <rico:history rdf:parseType="Literal">
+            <html:div xml:lang="fr">
+                <html:h4>Origine</html:h4>
+                <html:p>Ce fonds a probablement pour provenance la famille Berg de Bréda.</html:p>
+            </html:div>
+        </rico:history>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-N0004-i1">                
                 <rico:instantiates rdf:resource="recordResource/058220-N0004"/>
-                <rico:history rdf:parseType="Literal">
-                    <html:div xml:lang="fr">
-                        <html:h4>Origine</html:h4>
-                        <html:p>Ce fonds a probablement pour provenance la famille Berg de Bréda.</html:p>
-                    </html:div>
-                </rico:history>
                 <rico:hasProvenance>
                     <rico:Agent>
                         <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Family"/>
@@ -138,6 +132,12 @@
                         </rico:hasAgentName>
                     </rico:Agent>
                 </rico:hasProvenance>
+                <rico:history rdf:parseType="Literal">
+                    <html:div xml:lang="fr">
+                        <html:h4>Origine</html:h4>
+                        <html:p>Ce fonds a probablement pour provenance la famille Berg de Bréda.</html:p>
+                    </html:div>
+                </rico:history>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0004"/>
             </rico:Instantiation>
         </rico:hasInstantiation>       

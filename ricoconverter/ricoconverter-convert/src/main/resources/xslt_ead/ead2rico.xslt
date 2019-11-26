@@ -202,10 +202,11 @@
 			<xsl:apply-templates select="@* | (node() except (dsc | daogrp | processinfo | appraisal))" />
 
 			<!-- everything that needs to go inside rico:history -->
-			<xsl:if test="processinfo or appraisal">
+			<xsl:if test="processinfo or appraisal or did/origination[normalize-space(string-join(text()))]">
 				<rico:history rdf:parseType="Literal">
 					<xsl:apply-templates select="processinfo" />
 					<xsl:apply-templates select="appraisal" />
+					<xsl:apply-templates select="did/origination" />
 				</rico:history>
 			</xsl:if>
 
@@ -217,13 +218,14 @@
 					<xsl:apply-templates select="daogrp" mode="reference" />
 					<xsl:apply-templates select="node() except (daogrp | custodhist | acqinfo | processinfo | appraisal)" mode="instantiation" />
 					<!-- all the 'history' section -->
-					<xsl:if test="custodhist or acqinfo or processinfo or appraisal">
+					<xsl:if test="custodhist or acqinfo or processinfo or appraisal or did/origination[normalize-space(string-join(text()))]">
 						<rico:history rdf:parseType="Literal">
 							<!-- We want them in this order -->
 							<xsl:apply-templates select="custodhist"  mode="instantiation" />
 							<xsl:apply-templates select="acqinfo" mode="instantiation" />
 							<xsl:apply-templates select="processinfo" mode="instantiation" />
 							<xsl:apply-templates select="appraisal" mode="instantiation" />
+							<xsl:apply-templates select="did/origination" mode="instantiation" />
 						</rico:history>
 					</xsl:if>
 					<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/{/ead/eadheader/eadid}/top" />
@@ -279,10 +281,11 @@
 			<xsl:apply-templates select="@* | (node() except (c | daogrp | processinfo | appraisal))" />
 			
 			<!-- everything that needs to go inside rico:history -->
-			<xsl:if test="processinfo or appraisal">
+			<xsl:if test="processinfo or appraisal or did/origination[normalize-space(string-join(text()))]">
 				<rico:history rdf:parseType="Literal">
 					<xsl:apply-templates select="processinfo" />
 					<xsl:apply-templates select="appraisal" />
+					<xsl:apply-templates select="did/origination" />
 				</rico:history>
 			</xsl:if>
 			
@@ -294,13 +297,14 @@
 					<xsl:apply-templates select="daogrp" mode="reference" />
 					<xsl:apply-templates select="node() except (daogrp | custodhist | acqinfo | processinfo | appraisal)" mode="instantiation" />
 					<!-- all the 'history' section -->
-					<xsl:if test="custodhist or acqinfo or processinfo or appraisal">
+					<xsl:if test="custodhist or acqinfo or processinfo or appraisal or did/origination[normalize-space(string-join(text()))]">
 						<rico:history rdf:parseType="Literal">
 							<!-- We want them in this order -->
 							<xsl:apply-templates select="custodhist"  mode="instantiation" />
 							<xsl:apply-templates select="acqinfo" mode="instantiation" />
 							<xsl:apply-templates select="processinfo" mode="instantiation" />
 							<xsl:apply-templates select="appraisal" mode="instantiation" />
+							<xsl:apply-templates select="did/origination" mode="instantiation" />
 						</rico:history>
 					</xsl:if>
 					<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/{/ead/eadheader/eadid}/{@id}" />
@@ -371,6 +375,10 @@
 				<rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>	
 				<rico:identifier><xsl:value-of select="replace(@href, '.msp', '')" /></rico:identifier>			
 				<rico:encodingFormat xml:lang="en">image/jpeg</rico:encodingFormat>
+				<!-- here the creator is by default the archival institution -->
+				<!-- 
+                <rico:createdBy rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}"/>
+                -->
 				<xsl:if test="not(contains(@href, '#'))">
 					<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/{/ead/eadheader/eadid}/{(ancestor::*[self::c or self::archdesc])[last()]/@id}/{replace(@href, '.msp', '')}"/>
 				</xsl:if>
@@ -545,7 +553,7 @@
 	
 	<xsl:template match="accruals[child::node()]">
 		<rico:accrual rdf:parseType="Literal">
-			<html:div  xml:lang="{$LITERAL_LANG}">
+			<html:div xml:lang="{$LITERAL_LANG}">
 	            <xsl:apply-templates mode="html" />
 	        </html:div>
         </rico:accrual>
@@ -553,8 +561,12 @@
 	
 	
 	<!-- ***** did section ***** -->
+	
+	
 	<xsl:template match="did" mode="#all">
-		<xsl:apply-templates mode="#current" />
+		<!-- origination with text only is processed separately in archdesc or c templates -->
+		<xsl:apply-templates select="* except origination" mode="#current" />
+		<xsl:apply-templates select="origination/persname | origination/corpname | origination/famname" />
 	</xsl:template>
 	
 	<!-- ***** did/unitid processing for instantiation only ***** -->
@@ -582,7 +594,7 @@
 		<!--  Also searches for potential embedded unitdate -->
 		<xsl:apply-templates select="unitdate" />
 		<!-- Search for embedded geogname only in the case we are procesing unittitle for a RecordResource, not an instantiation -->
-		<xsl:apply-templates select="geogname | persname" />
+		<xsl:apply-templates select="geogname | persname | corpname" />
 	</xsl:template>
 	
 	<xsl:template match="unittitle[text()]" mode="instantiation">
@@ -642,6 +654,44 @@
 		</xsl:choose>
 	</xsl:template>
 
+	<!-- ***** did/origination ***** -->
+	
+	<xsl:template match="origination[normalize-space(string-join(text()))]" mode="#all">
+		<html:div xml:lang="{$LITERAL_LANG}">
+            <html:h4>Origine</html:h4>
+            <html:p><xsl:value-of select="normalize-space(.)" /></html:p>
+        </html:div>
+	</xsl:template>
+	
+	<!-- origination reference with an @authfilenumber -->
+	<xsl:template match="(origination/corpname | origination/persname | origination/famname)[@authfilenumber]">
+		<rico:hasProvenance rdf:resource="{ead2rico:URI-AgentFromFRAN_NP(@authfilenumber)}"/>
+	</xsl:template>
+
+	<!-- origination reference without an @authfilenumber -->
+	<xsl:template match="(origination/corpname | origination/persname | origination/famname)[not(@authfilenumber)]">
+		<xsl:variable name="type">
+			<xsl:choose>
+				<xsl:when test="self::corpname">http://www.ica.org/standards/RiC/ontology#CorporateBody</xsl:when>
+				<xsl:when test="self::persname">http://www.ica.org/standards/RiC/ontology#Person</xsl:when>
+				<xsl:when test="self::famname">http://www.ica.org/standards/RiC/ontology#Family</xsl:when>
+				<xsl:otherwise>http://www.ica.org/standards/RiC/ontology#Agent</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		
+		<rico:hasProvenance>
+            <rico:Agent>
+                <rdf:type rdf:resource="{$type}"/>
+                <rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rdfs:label>
+                <rico:hasAgentName>
+                    <rico:AgentName>
+                        <rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rdfs:label>
+                        <rico:textualValue xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rico:textualValue>
+                    </rico:AgentName>
+                </rico:hasAgentName>
+            </rico:Agent>
+        </rico:hasProvenance>
+	</xsl:template>
 
 	<!-- ***** controlaccess ***** -->
 
@@ -671,6 +721,7 @@
 						<!-- Assign occupations to persons only if there was a single person declared -->
 						<rico:hasSubject>
 							<rico:Agent rdf:about="{ead2rico:URI-Agent(@authfilenumber, @source)}">
+								<rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
 								<xsl:apply-templates select="../occupation[@authfilenumber and @source]" mode="persname" />
 				            </rico:Agent>
 			            </rico:hasSubject>
@@ -687,6 +738,12 @@
 		            <rico:Agent>
 		                <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
 		                <rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rdfs:label>
+						<rico:hasAgentName>
+		                    <rico:AgentName>
+		                        <rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rdfs:label>
+		                        <rico:textualValue xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rico:textualValue>
+		                    </rico:AgentName>
+		                </rico:hasAgentName>
 		                <!-- Assign occupations to persons only if there was a single person declared -->
 						<xsl:if test="../occupation[@authfilenumber and @source] and (count(../persname) = 1)">
 							<xsl:apply-templates select="../occupation[@authfilenumber and @source]" mode="persname" />
@@ -723,10 +780,78 @@
         </rico:isDocumentationOf>
 	</xsl:template>	
 
+
+	<!-- ***** physdesc ***** -->
+
+	<xsl:template match="physdesc" mode="instantiation">
+		<!-- Output only if we have some text inside -->
+		<xsl:if test="normalize-space(string-join(text())) != ''">
+	        <rico:noteOnPhysicalCharacteristics rdf:parseType="Literal">
+	        	<html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></html:p>
+	        </rico:noteOnPhysicalCharacteristics>
+        </xsl:if>
+        <xsl:apply-templates mode="#current" />
+	</xsl:template>	
+	
+	<xsl:template match="extent" mode="instantiation">
+		<rico:instantiationExtent  rdf:parseType="Literal">
+            <html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></html:p>
+        </rico:instantiationExtent>
+	</xsl:template>
+
+	<xsl:template match="dimensions" mode="instantiation">
+		<rico:carrierExtent rdf:parseType="Literal">
+            <html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></html:p>
+        </rico:carrierExtent>
+	</xsl:template>
+	
+	<xsl:template match="physfacet[@type = 'd3nd9y3c6o-iu0j3xsmoisx' or @type = 'd3nd9xpopj-ckdrv6ljeqeg']" mode="instantiation">
+		<rico:hasRepresentationType rdf:resource="{ead2rico:URI-RepresentationType(@type, @source)}"/>   
+	</xsl:template>
+	<xsl:template match="physfacet[not(@type = 'd3nd9y3c6o-iu0j3xsmoisx' or @type = 'd3nd9xpopj-ckdrv6ljeqeg')]" mode="instantiation">
+		<rico:hasCarrierType rdf:resource="{ead2rico:URI-RepresentationType(@type, @source)}"/>   
+	</xsl:template>
+
+	<!--  ***** altformavail ***** -->
+	
+	<xsl:template match="altformavail" >
+		<rico:noteOnAlternativeFormAvailable rdf:parseType="Literal">
+			<xsl:choose>
+				<xsl:when test="count(p) = 1">
+					<html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(p)" /></html:p>
+				</xsl:when>
+				<xsl:otherwise>
+					<html:div xml:lang="{$LITERAL_LANG}">
+						<xsl:apply-templates mode="html" />
+					</html:div>
+				</xsl:otherwise>
+			</xsl:choose>
+       </rico:noteOnAlternativeFormAvailable>
+	</xsl:template>
+	
+
+
 	<!-- ***** Processing of formatting elements p, list, item, span ***** -->
 	
 	<xsl:template match="p" mode="html">
-		<html:p><xsl:apply-templates mode="html" /></html:p>
+		<xsl:choose>
+			<xsl:when test="list">
+				<xsl:for-each select="*|text()">
+					<xsl:choose>
+						<xsl:when test=". instance of text()">
+							<html:p><xsl:apply-templates mode="html" select="." /></html:p>
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:apply-templates mode="html" select="." />
+						</xsl:otherwise>
+					</xsl:choose>					
+				</xsl:for-each>
+			</xsl:when>
+			<xsl:otherwise>
+				<html:p><xsl:apply-templates mode="html" /></html:p>
+			</xsl:otherwise>
+		</xsl:choose>
+		
 	</xsl:template>
 	<xsl:template match="emph[@render = 'super']" mode="html">
 		<html:sup><xsl:apply-templates mode="html" /></html:sup>

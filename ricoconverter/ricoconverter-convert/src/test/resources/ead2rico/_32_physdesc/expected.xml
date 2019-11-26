@@ -11,39 +11,37 @@
     </rico:FindingAid>
     <!-- archdesc level -->
     <rico:RecordResource rdf:about="recordResource/058220-top">
-        <rico:isMainSubjectOf rdf:resource="findingAid/011222"/>
-        <rico:hasMember rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
-        <rico:hasMember rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnast"/>
-        <rico:hasMember rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnust"/>
-        <rico:hasMember rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnost"/>
-        <rico:hasMember rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnyst"/>
+        <rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
+
         <!-- do not process physdesc here-->
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-top-i1">
                 <rico:instantiates rdf:resource="recordResource/058220-top"/>
                 <rico:noteOnPhysicalCharacteristics rdf:parseType="Literal">
-                                     
                     <html:p xml:lang="fr">(1 carton (494AP/1)) 0,1 m.l.</html:p>
-                    
                 </rico:noteOnPhysicalCharacteristics>
                 <rico:instantiationExtent  rdf:parseType="Literal">
                     <html:p xml:lang="fr">0,1 m.l.</html:p>
                 </rico:instantiationExtent>
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
             </rico:Instantiation>
         </rico:hasInstantiation>
+        <rico:hasMember rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+        <rico:hasMember rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnast"/>
+        <rico:hasMember rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnust"/>
+        <rico:hasMember rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnost"/>
+        <rico:hasMember rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnyst"/>
     </rico:RecordResource>
     <!-- c level -->
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
         <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">
-                <rico:noteOnPhysicalCharacteristics rdf:parseType="Literal">
-                                           
-                        <html:p xml:lang="fr">2 registr. in 4°, rel. basane vert.</html:p>
-                    
-                </rico:noteOnPhysicalCharacteristics>           
-                <rico:hasDigitalCopy rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
                 <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+                <rico:hasDigitalCopy rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
+                <rico:noteOnPhysicalCharacteristics rdf:parseType="Literal">
+                        <html:p xml:lang="fr">2 registr. in 4°, rel. basane vert.</html:p>
+                </rico:noteOnPhysicalCharacteristics> 
                 <rdfs:seeAlso
                     rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"
                 />
@@ -67,25 +65,17 @@
         <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnast-i1">
-                <rico:noteOnPhysicalCharacteristics rdf:parseType="Literal">
-                    
+                <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnast"/>
+                <rico:noteOnPhysicalCharacteristics rdf:parseType="Literal">                    
                     <html:p xml:lang="fr">18 x 11 cm ; 24 feuilles</html:p>
-                    
                 </rico:noteOnPhysicalCharacteristics>  
                 <rico:carrierExtent rdf:parseType="Literal">
-                    
                     <html:p xml:lang="fr">18 x 11 cm</html:p>
-                    
                 </rico:carrierExtent>
                 <rico:instantiationExtent rdf:parseType="Literal">
-                    
                     <html:p xml:lang="fr">24 feuilles</html:p>
-                    
                 </rico:instantiationExtent> 
-              
-                <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnast"/>
-                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnast"
-                />
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnast" />
             </rico:Instantiation>
         </rico:hasInstantiation>
        
@@ -94,18 +84,14 @@
         <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnust-i1">
-                
+                <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnust"/>
                
-                <rico:instantiationExtent rdf:parseType="Literal">
-                    
+                <rico:instantiationExtent rdf:parseType="Literal">                    
                     <html:p xml:lang="fr">102 fichiers au format .jpg, pour une volumétrie d'environ 51,9 Mo</html:p>
-                    
                 </rico:instantiationExtent> 
                 <!-- physfacet: if the @type has value 'd3nd9y3c6o-iu0j3xsmoisx' or 'd3nd9xpopj-ckdrv6ljeqeg' use hasRepresentationType; else, 
                     use hasCarrierType -->
-                <rico:hasRepresentationType rdf:resource="representationType/FRAN_RI_002-d3nd9y3c6o-iu0j3xsmoisx"/>
-              
-                <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnust"/>
+                <rico:hasRepresentationType rdf:resource="representationType/FRAN_RI_002-d3nd9y3c6o-iu0j3xsmoisx"/>                
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnust"
                 />
             </rico:Instantiation>
@@ -116,7 +102,7 @@
         <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnost-i1">
-                
+                <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnost"/>
                 
                 <rico:instantiationExtent rdf:parseType="Literal">
                     
@@ -127,7 +113,7 @@
                     use hasCarrierType -->
                 <rico:hasRepresentationType rdf:resource="representationType/FRAN_RI_002-d3nd9xpopj-ckdrv6ljeqeg"/>
                 
-                <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnost"/>
+                
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnost"
                 />
             </rico:Instantiation>
@@ -138,7 +124,7 @@
         <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnyst-i1">
-                
+                <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnyst"/>
                 
                 <rico:instantiationExtent rdf:parseType="Literal">
                     
@@ -149,7 +135,7 @@
                     use hasCarrierType -->
                 <rico:hasCarrierType rdf:resource="representationType/FRAN_RI_002-d3nd9yjlfg-j0aeuv1yo4o2"/>
                 
-                <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnyst"/>
+                
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnyst"/>
             </rico:Instantiation>
         </rico:hasInstantiation>

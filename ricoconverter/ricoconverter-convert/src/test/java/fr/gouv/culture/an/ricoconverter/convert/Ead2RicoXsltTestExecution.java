@@ -8,6 +8,8 @@ import java.io.StringWriter;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Source;
@@ -24,7 +26,9 @@ import javax.xml.transform.stream.StreamSource;
 import org.w3c.dom.Node;
 import org.xmlunit.builder.DiffBuilder;
 import org.xmlunit.builder.Input;
+import org.xmlunit.diff.ComparisonResult;
 import org.xmlunit.diff.Diff;
+import org.xmlunit.diff.Difference;
 
 import fr.gouv.culture.an.ricoconverter.RicoConverterException;
 import fr.gouv.culture.an.ricoconverter.ead.convert.Ead2RicoConverter;
@@ -107,14 +111,40 @@ public class Ead2RicoXsltTestExecution implements Test {
 				}
 			
 				System.out.println(nodeToString(domResult.getNode()));
-				Diff diff = DiffBuilder
+				DiffBuilder builder = 
+				DiffBuilder
 						.compare(Input.fromFile(expected).build())
 						.ignoreWhitespace()
 						.ignoreComments()
 						.checkForSimilar()
-						.withTest(Input.fromNode(domResult.getNode()).build())
-						.build();
-				if(diff.hasDifferences()) {
+						.withTest(Input.fromNode(domResult.getNode()).build());
+				
+				// ignore rdfs:seeAlso always
+				builder.withNodeFilter(node -> {
+					return (
+							node.getNodeType() != Node.ELEMENT_NODE
+							||
+							!node.getLocalName().equals("seeAlso")
+					);
+				});
+				
+				// ignore FindingAid if not on first unit test
+				if(!this.testFolder.getName().contains("FindingAid")) {
+					builder.withNodeFilter(node -> {
+						return (
+								node.getNodeType() != Node.ELEMENT_NODE
+								||
+								!node.getLocalName().equals("FindingAid")
+						);
+					});
+				}
+				Diff diff = builder.build();
+				
+				List<Difference> differences = new ArrayList<>();
+				diff.getDifferences().forEach(differences::add);
+				
+				// ignore differences in tags ordering
+				if(differences.stream().anyMatch(d -> d.getResult() == ComparisonResult.DIFFERENT)) {
 					result.addFailure(this, new AssertionFailedError("Test failed on "+this.testFolder+":\n"+diff.toString()));
 				}
 			} else {
