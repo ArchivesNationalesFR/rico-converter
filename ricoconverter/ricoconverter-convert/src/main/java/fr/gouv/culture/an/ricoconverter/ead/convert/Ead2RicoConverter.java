@@ -19,7 +19,7 @@ import javax.xml.transform.stream.StreamSource;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.xml.sax.DTDHandler;
+import org.w3c.dom.Node;
 import org.xml.sax.EntityResolver;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
@@ -202,13 +202,44 @@ public class Ead2RicoConverter {
 							
 							this.convert(new StreamSource(new FileInputStream(inputFile)), new StreamResult(out));
 
-							Diff diff = DiffBuilder
-									.compare(Input.fromFile(expectedFile).build())
-									.ignoreWhitespace()
-									.ignoreComments()
-									.checkForSimilar()
-									.withTest(Input.fromFile(outputFile).build())
-									.build();
+							DiffBuilder builder = 
+									DiffBuilder
+											.compare(Input.fromFile(expectedFile).build())
+											.ignoreWhitespace()
+											.ignoreComments()
+											.checkForSimilar()
+											.withTest(Input.fromFile(outputFile).build());
+							
+							// ignore some elements in general cases
+							if(!f.getName().contains("origination") && !f.getName().contains("repository") && !f.getName().contains("FindingAid")) {
+								builder.withNodeFilter(node -> {						
+									boolean comparison = (
+											node.getNodeType() != Node.ELEMENT_NODE
+											||
+											!(
+													node.getLocalName().equals("hasProvenance")
+													||
+													node.getLocalName().equals("heldBy")
+													||
+													node.getLocalName().equals("FindingAid")
+													||
+													node.getLocalName().equals("seeAlso")
+											)
+									);
+									return comparison;
+								});
+							}
+							
+							Diff diff = builder.build();
+							
+//							Diff diff = DiffBuilder
+//									.compare(Input.fromFile(expectedFile).build())
+//									.ignoreWhitespace()
+//									.ignoreComments()
+//									.checkForSimilar()
+//									.withTest(Input.fromFile(outputFile).build())
+//									.build();
+							
 							if(diff.hasDifferences()) {
 								System.out.println(f.getName()+" : "+"FAILURE");
 								System.out.println(diff.toString());
