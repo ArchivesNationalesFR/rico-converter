@@ -27,6 +27,7 @@ import org.w3c.dom.Node;
 import org.xmlunit.builder.DiffBuilder;
 import org.xmlunit.builder.Input;
 import org.xmlunit.diff.ComparisonResult;
+import org.xmlunit.diff.DefaultNodeMatcher;
 import org.xmlunit.diff.Diff;
 import org.xmlunit.diff.Difference;
 
@@ -119,34 +120,23 @@ public class Ead2RicoXsltTestExecution implements Test {
 						.checkForSimilar()
 						.withTest(Input.fromNode(domResult.getNode()).build());
 				
-				// ignore rdfs:seeAlso always
-				builder.withNodeFilter(node -> {
-					return (
-							node.getNodeType() != Node.ELEMENT_NODE
-							||
-							!node.getLocalName().equals("seeAlso")
-					);
-				});
-				
-				// ignore FindingAid if not on first unit test
-				if(!this.testFolder.getName().contains("FindingAid")) {
-					builder.withNodeFilter(node -> {
-						return (
+				// ignore some elements in general cases
+				if(!this.testFolder.getName().contains("origination") && !this.testFolder.getName().contains("repository") && !this.testFolder.getName().contains("FindingAid")) {
+					builder.withNodeFilter(node -> {						
+						boolean comparison = (
 								node.getNodeType() != Node.ELEMENT_NODE
 								||
-								!node.getLocalName().equals("FindingAid")
+								!(
+										node.getLocalName().equals("hasProvenance")
+										||
+										node.getLocalName().equals("heldBy")
+										||
+										node.getLocalName().equals("FindingAid")
+										||
+										node.getLocalName().equals("seeAlso")
+								)
 						);
-					});
-				}
-				
-				// ignore heldBy except on repository tests
-				if(!this.testFolder.getName().contains("repository")) {
-					builder.withNodeFilter(node -> {
-						return (
-								node.getNodeType() != Node.ELEMENT_NODE
-								||
-								!node.getLocalName().equals("heldBy")
-						);
+						return comparison;
 					});
 				}
 				
