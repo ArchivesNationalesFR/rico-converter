@@ -212,6 +212,11 @@
 					<xsl:apply-templates select="originalsloc" />
 				</rico:history>
 			</xsl:if>
+			
+			<!-- if archdesc has no repository, output the default one -->
+			<xsl:if test="not(did/repository)">
+				<rico:heldBy rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}" />
+			</xsl:if>
 
 			<!-- The instantiation of the RecordResource -->
 			<rico:hasInstantiation>
@@ -231,6 +236,10 @@
 							<xsl:apply-templates select="appraisal" mode="instantiation" />
 							<xsl:apply-templates select="did/origination" mode="instantiation" />
 						</rico:history>
+					</xsl:if>
+					<!-- if archdesc has no repository, output the default one -->
+					<xsl:if test="not(did/repository)">
+						<rico:heldBy rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}" />
 					</xsl:if>
 					<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/{/ead/eadheader/eadid}/top" />
 				</rico:Instantiation>
@@ -377,6 +386,10 @@
 				
 				<!-- pick also userestrict -->
 				<xsl:apply-templates select="(ancestor::*[self::c or self::archdesc])[last()]/userestrict" mode="instantiation" />
+				
+				<!-- pick also did/repository or did/unitid[@repositorycode = 'FRDAFAN'] -->
+				<xsl:apply-templates select="(ancestor::*[self::c or self::archdesc])[last()]/did/repository" mode="instantiation" />
+				<xsl:apply-templates select="(ancestor::*[self::c or self::archdesc])[last()]/did/unitid[@repositorycode = 'FRDAFAN']" mode="instantiation" />
 				
 				<!-- We know it is a digital copy of the first instantiation -->
 				<rico:isDigitalCopyOf rdf:resource="{ead2rico:URI-Instantiation(concat($recordResourceId, '-i1'))}"/>
@@ -701,6 +714,32 @@
                 </rico:hasAgentName>
             </rico:Agent>
         </rico:hasProvenance>
+	</xsl:template>
+
+	<!-- ***** did/repository or unitid[@repositorycode = 'FRDAFAN'] ***** -->
+	
+	<xsl:template match="repository" mode="#all">
+		<xsl:choose>
+			<xsl:when test="matches(text(), 'Archives nationales de France', 'i') or matches(text(), 'Archives nationales', 'i')">
+				<rico:heldBy rdf:resource="agent/005061"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<rico:heldBy>
+                    <rico:Agent>
+                        <rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rdfs:label>
+                        <rico:hasAgentName>
+                            <rico:AgentName>
+                                <rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rdfs:label>
+                                <rico:textualValue xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rico:textualValue>
+                            </rico:AgentName>
+                        </rico:hasAgentName>
+                    </rico:Agent>
+                </rico:heldBy> 
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	<xsl:template match="unitid[@repositorycode = 'FRDAFAN']" mode="#all">
+		<rico:heldBy rdf:resource="agent/005061"/>
 	</xsl:template>
 
 	<!--  ***** originalsloc (only for RecordResource) ***** -->
