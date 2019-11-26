@@ -742,6 +742,16 @@
 		<rico:heldBy rdf:resource="agent/005061"/>
 	</xsl:template>
 
+
+	<!-- ***** did/langmaterial (only on RecordResource) ***** -->
+	
+	<xsl:template match="langmaterial">
+		<xsl:apply-templates />
+	</xsl:template>
+	<xsl:template match="language">
+		<rico:hasLanguage rdf:resource="{ead2rico:URI-Language(@langcode)}"/>
+	</xsl:template>
+
 	<!--  ***** originalsloc (only for RecordResource) ***** -->
 
 	<xsl:template match="originalsloc[not(descendant::ref)]">

@@ -138,6 +138,18 @@ public class Ead2RicoXsltTestExecution implements Test {
 						);
 					});
 				}
+				
+				// ignore heldBy except on repository tests
+				if(!this.testFolder.getName().contains("repository")) {
+					builder.withNodeFilter(node -> {
+						return (
+								node.getNodeType() != Node.ELEMENT_NODE
+								||
+								!node.getLocalName().equals("heldBy")
+						);
+					});
+				}
+				
 				Diff diff = builder.build();
 				
 				List<Difference> differences = new ArrayList<>();
