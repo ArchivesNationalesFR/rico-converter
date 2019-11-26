@@ -199,14 +199,17 @@
 			<rico:isMainSubjectOf rdf:resource="{ead2rico:URI-FindingAid($faId)}" />
 			
 			<!--  dsc is processed later, outside of RecordResource. Note we process also attributes to match @level -->
-			<xsl:apply-templates select="@* | (node() except (dsc | daogrp | processinfo | appraisal))" />
+			<!--  Note that origination is still processed here to match inner persname/corpname/famname -->
+			<!--  Note that originalsloc is still processed here to match inner ref -->
+			<xsl:apply-templates select="@* | (node() except (dsc | daogrp | processinfo | appraisal | originalsloc[not(descendant::ref)]))" />
 
 			<!-- everything that needs to go inside rico:history -->
-			<xsl:if test="processinfo or appraisal or did/origination[normalize-space(string-join(text()))]">
+			<xsl:if test="processinfo or appraisal or did/origination[normalize-space(string-join(text()))] or originalsloc[not(descendant::ref)]">
 				<rico:history rdf:parseType="Literal">
 					<xsl:apply-templates select="processinfo" />
 					<xsl:apply-templates select="appraisal" />
 					<xsl:apply-templates select="did/origination" />
+					<xsl:apply-templates select="originalsloc" />
 				</rico:history>
 			</xsl:if>
 
@@ -216,6 +219,7 @@
 					<rico:instantiates rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
 					<!-- references to other digital copies -->
 					<xsl:apply-templates select="daogrp" mode="reference" />
+					<!--  Note that origination is still processed here to match inner persname/corpname/famname -->
 					<xsl:apply-templates select="node() except (daogrp | custodhist | acqinfo | processinfo | appraisal)" mode="instantiation" />
 					<!-- all the 'history' section -->
 					<xsl:if test="custodhist or acqinfo or processinfo or appraisal or did/origination[normalize-space(string-join(text()))]">
@@ -278,14 +282,17 @@
 			<rico:isMemberOf rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />			
 						
 			<!-- child c's and daogrp are processed after. Note we process also attributes to match @level -->
-			<xsl:apply-templates select="@* | (node() except (c | daogrp | processinfo | appraisal))" />
+			<!--  Note that origination is still processed here to match inner persname/corpname/famname -->
+			<!--  Note that originalsloc is still processed here to match inner ref -->
+			<xsl:apply-templates select="@* | (node() except (c | daogrp | processinfo | appraisal | originalsloc[not(descendant::ref)]))" />
 			
 			<!-- everything that needs to go inside rico:history -->
-			<xsl:if test="processinfo or appraisal or did/origination[normalize-space(string-join(text()))]">
+			<xsl:if test="processinfo or appraisal or did/origination[normalize-space(string-join(text()))] or originalsloc[not(descendant::ref)]">
 				<rico:history rdf:parseType="Literal">
 					<xsl:apply-templates select="processinfo" />
 					<xsl:apply-templates select="appraisal" />
 					<xsl:apply-templates select="did/origination" />
+					<xsl:apply-templates select="originalsloc" />
 				</rico:history>
 			</xsl:if>
 			
@@ -295,6 +302,7 @@
 					<rico:instantiates rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
 					<!-- references to other digital copies -->
 					<xsl:apply-templates select="daogrp" mode="reference" />
+					<!--  Note that origination is still processed here to match inner persname/corpname/famname -->
 					<xsl:apply-templates select="node() except (daogrp | custodhist | acqinfo | processinfo | appraisal)" mode="instantiation" />
 					<!-- all the 'history' section -->
 					<xsl:if test="custodhist or acqinfo or processinfo or appraisal or did/origination[normalize-space(string-join(text()))]">
@@ -375,9 +383,9 @@
 				<rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>	
 				<rico:identifier><xsl:value-of select="replace(@href, '.msp', '')" /></rico:identifier>			
 				<rico:encodingFormat xml:lang="en">image/jpeg</rico:encodingFormat>
-				<!-- here the creator is by default the archival institution -->
+				<!-- here the creator is by default the archival institution: it either produced the digital instantiation image by its own, or asked a private company to produce it and then got it and aggregated it into its own archives -->
 				<!-- 
-                <rico:createdBy rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}"/>
+                <rico:hasProvenance rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}"/>
                 -->
 				<xsl:if test="not(contains(@href, '#'))">
 					<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/{/ead/eadheader/eadid}/{(ancestor::*[self::c or self::archdesc])[last()]/@id}/{replace(@href, '.msp', '')}"/>
@@ -691,6 +699,33 @@
                 </rico:hasAgentName>
             </rico:Agent>
         </rico:hasProvenance>
+	</xsl:template>
+
+	<!--  ***** originalsloc (only for RecordResource) ***** -->
+
+	<xsl:template match="originalsloc[not(descendant::ref)]">
+		<xsl:if test="matches(normalize-space(.), '[A-Z]:\\.*')">
+			<xsl:value-of select="ead2rico:warning($faId, 'ORIGINALSLOC_LOOKS_LIKE_A_FILE_PATH', normalize-space(.))" />
+		</xsl:if>
+		<html:div xml:lang="{$LITERAL_LANG}">
+            <html:h4>Existence et lieu de conservation des documents originaux</html:h4>
+            <xsl:apply-templates mode="html" />
+        </html:div>
+	</xsl:template>
+
+	<xsl:template match="originalsloc[descendant::ref]">
+		<xsl:apply-templates select="descendant::ref" />
+	</xsl:template>
+	<xsl:template match="ref[ancestor::originalsloc]">
+		<rico:hasGeneticLinkToRecordResource>
+            <rico:RecordResource>
+                <rico:title xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rico:title>
+                <xsl:if test="extref/@href">
+                	<rico:descriptiveNote xml:lang="{$LITERAL_LANG}">Lien : <xsl:value-of select="extref/@href" /></rico:descriptiveNote>
+                </xsl:if>
+                
+            </rico:RecordResource>
+        </rico:hasGeneticLinkToRecordResource>	
 	</xsl:template>
 
 	<!-- ***** controlaccess ***** -->
