@@ -615,7 +615,7 @@
 		<!--  Also searches for potential embedded unitdate -->
 		<xsl:apply-templates select="unitdate" />
 		<!-- Search for embedded geogname only in the case we are procesing unittitle for a RecordResource, not an instantiation -->
-		<xsl:apply-templates select="geogname | persname | corpname" />
+		<xsl:apply-templates select="geogname | persname | corpname | famname | genreform | subject" />
 	</xsl:template>
 	
 	<xsl:template match="unittitle[text()]" mode="instantiation">
