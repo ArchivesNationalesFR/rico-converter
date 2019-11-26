@@ -38,7 +38,12 @@
 		<xsl:param name="langcode" />
 		<xsl:variable name="idlocgov" select="concat('http://id.loc.gov/vocabulary/iso639-2/', $langcode)" />
 <!-- 		<xsl:value-of select="$LANGUAGES/rdf:RDF/rico:Language[owl:sameAs/@rdf:resource = $idlocgov]/@rdf:about" /> -->
-		<xsl:value-of select="$LANGUAGES/rdf:RDF/rico:Language[ends-with(rdfs:label, concat('/',$langcode))]/@rdf:about" />
+
+		<xsl:if test="not( $LANGUAGES/rdf:RDF/rico:Language[owl:sameAs/@rdf:resource = $idlocgov] )">
+			<xsl:value-of select="ead2rico:warning($faId, 'UNKNOWN_LANGUAGE', $langcode)" />
+		</xsl:if>
+
+		<xsl:value-of select="$LANGUAGES/rdf:RDF/rico:Language[owl:sameAs/@rdf:resource = $idlocgov]/@rdf:about" />
 	</xsl:function>
 
 	<xsl:function name="ead2rico:URI-DocumentaryForm">
