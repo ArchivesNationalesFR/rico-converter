@@ -541,7 +541,8 @@
         </html:div>
 	</xsl:template>
 
-	<!-- processinfo is for RecordResource also -->
+	<!-- ***** processinfo is for RecordResource also ***** -->
+	
 	<xsl:template match="processinfo[child::node()]" mode="#all">
 		<html:div  xml:lang="{$LITERAL_LANG}">
             <html:h4>Informations sur le traitement</html:h4>
@@ -549,7 +550,8 @@
         </html:div>
 	</xsl:template>
 
-	<!-- appraisal is for RecordResource also -->
+	<!-- ***** appraisal is for RecordResource also ***** -->
+	
 	<xsl:template match="appraisal[child::node()]" mode="#all">
 		<html:div  xml:lang="{$LITERAL_LANG}">
             <html:h4>Informations sur l'évaluation</html:h4>
@@ -864,7 +866,20 @@
        </rico:noteOnAlternativeFormAvailable>
 	</xsl:template>
 	
-
+	<!--  ***** physloc : only for Instantiation ***** -->
+	
+	<xsl:template match="physloc" mode="instantiation">
+		<xsl:variable name="value">
+			<xsl:choose>
+				<xsl:when test="matches(text(), 'Pierrefitte', 'i')">place/FRAN_RI_005-d3ntxf5186--sga9u2l9iboc</xsl:when>
+				<xsl:when test="matches(text(), 'Pierrefitte-sur-Seine', 'i')">place/FRAN_RI_005-d3ntxf5186--sga9u2l9iboc</xsl:when>
+				<xsl:when test="matches(text(), 'Fontainebleau', 'i')">place/FRAN_RI_005-d3nttf3j17--1blvnjnk2kli0</xsl:when>
+				<xsl:when test="matches(text(), 'Paris', 'i')">place/FRAN_RI_005-d5bdppt147--176wwvjcctrx0</xsl:when>
+				<xsl:otherwise><xsl:value-of select="ead2rico:warning($faId, 'UNEXPECTED_PHYSLOC', text())" /></xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<rico:hasLocation rdf:resource="{$value}"/>
+	</xsl:template>
 
 	<!-- ***** Processing of formatting elements p, list, item, span ***** -->
 	
