@@ -93,6 +93,18 @@
 		<xsl:value-of select="concat('representationType/', $source, '-', $authfilenumber)" />
 	</xsl:function>
 	
+	<xsl:function name="ead2rico:URL-IRorUD">
+		<xsl:param name="href" />
+		<xsl:choose>
+			<xsl:when test="contains($href, '#')">
+				<xsl:value-of select="concat('https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/', $href)" />
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="concat('https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/', $href)" />
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:function>
+	
 	<xsl:template name="recordResourceId">
 		<xsl:param name="faId" />
 		<xsl:param name="recordResourceId" />

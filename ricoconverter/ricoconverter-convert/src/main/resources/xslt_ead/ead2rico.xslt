@@ -26,6 +26,7 @@
 	<xsl:param name="AUTHOR_URI">http://data.archives-nationales.culture.gouv.fr/agent/005061</xsl:param>
 	<xsl:param name="LITERAL_LANG">fr</xsl:param>
 	<xsl:param name="INPUT_FOLDER">.</xsl:param>
+	<xsl:param name="BASE_URL_FOR_RELATIVE_LINKS">https://www.siv.archives-nationales.culture.gouv.fr/mm/media/download/</xsl:param>
 
 	<!--  Global variable for faId to reference it in functions -->
 	<xsl:variable name="faId" select="substring-after(/ead/eadheader/eadid, 'FRAN_IR_')" />
@@ -596,7 +597,7 @@
 		<!-- look for archref -->
 		<xsl:apply-templates select="descendant::archref" />
 	</xsl:template>
-	<xsl:template match="archref">
+	<xsl:template match="archref[ancestor::otherfindaid]">
 		<xsl:variable name="otherFaId">
 			<!--  Extract everything before # if needed -->
 			<xsl:value-of select="if(contains(@href, '#')) then substring-before(substring-after(@href, 'FRAN_IR_'), '#') else substring-after(@href, 'FRAN_IR_')" />
@@ -626,8 +627,42 @@
         <rdfs:seeAlso rdf:resource="{$seeAlsoUrl}"/>
 	</xsl:template>
 	
-	<!-- ***** did section ***** -->
+	<!-- ***** relatedmaterial ***** -->
 	
+	<xsl:template match="relatedmaterial[list/item or p]">
+		<rico:descriptiveNote rdf:parseType="Literal">
+            <html:div xml:lang="{$LITERAL_LANG}">
+            	<html:h4>Document(s) en relation</html:h4>
+				<xsl:apply-templates mode="html" />
+			</html:div>
+		</rico:descriptiveNote>
+		<!-- look for archref -->
+		<xsl:apply-templates select="descendant::archref" />
+		<xsl:apply-templates select="descendant::extref" />
+	</xsl:template>
+	<!--  -->
+	<xsl:template match="archref[ancestor::relatedmaterial] | extref[ancestor::relatedmaterial and starts-with(@href, 'https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/')]">
+		<xsl:variable name="otherFaId">
+			<!--  Extract everything before # if needed -->
+			<xsl:value-of select="if(contains(@href, '#')) then substring-before(substring-after(@href, 'FRAN_IR_'), '#') else substring-after(@href, 'FRAN_IR_')" />
+		</xsl:variable> 
+		
+		<xsl:variable name="recordResourceId">
+			<xsl:call-template name="recordResourceId">
+				<xsl:with-param name="faId" select="$otherFaId" />
+				<!-- This will insert '-top' if recordResourceId is empty -->
+				<xsl:with-param name="recordResourceId" select="if(contains(@href, '#')) then substring-after(@href, '#') else ''" />
+			</xsl:call-template>
+		</xsl:variable>
+		
+		<xsl:variable name="recordResourceUri">
+			<xsl:value-of select="ead2rico:URI-RecordResource($recordResourceId)" />
+		</xsl:variable>
+		
+		<rico:isRecordResourceAssociatedWithRecordResource rdf:resource="{$recordResourceUri}"/>
+	</xsl:template>
+	
+	<!-- ***** did section ***** -->
 	
 	<xsl:template match="did" mode="#all">
 		<!-- origination with text only is processed separately in archdesc or c templates -->
@@ -1118,9 +1153,17 @@
 		<html:br />
 	</xsl:template>
 	<xsl:template match="ref" mode="html">
-		<xsl:value-of select="normalize-space(.)" />
+		<xsl:apply-templates mode="html" />
 	</xsl:template>
-	<xsl:template match="text()" mode="html"><xsl:value-of select="normalize-space(.)" /></xsl:template>
+	<xsl:template match="archref" mode="html">
+		<html:a href="{ead2rico:URL-IRorUD(@href)}"><xsl:apply-templates mode="html" /></html:a>
+	</xsl:template>
+	<xsl:template match="extref" mode="html">
+		<!--  we resolve relative links to a base URL -->
+		<html:a href="{if(not(starts-with(@href, 'http'))) then concat($BASE_URL_FOR_RELATIVE_LINKS, @href) else @href}"><xsl:apply-templates mode="html" /></html:a>
+	</xsl:template>
+	<!-- Note how the extra space is preserved within mixed-content -->
+	<xsl:template match="text()" mode="html"><xsl:value-of select="normalize-space(.)" /><xsl:if test="ends-with(., ' ') and not(position() = last())"><xsl:value-of select="' '" /></xsl:if></xsl:template>
 
 	<!-- ***** Date ***** -->
 		
