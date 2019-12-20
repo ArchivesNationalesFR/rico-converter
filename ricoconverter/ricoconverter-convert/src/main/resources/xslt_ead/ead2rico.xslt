@@ -801,7 +801,7 @@
 	
 	<xsl:template match="persname">
 		<xsl:choose>
-			<!-- persname with a known identifier -->
+			<!-- agent with a known identifier -->
 			<xsl:when test="(@authfilenumber and @source) or (starts-with(@authfilenumber, 'FRAN_'))">
 			
 				<!-- if @authfilenumber starts with FRAN_, generate a reference to authority URI -->
@@ -833,7 +833,8 @@
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:when>
-			<!-- persname without a known identifier -->
+			
+			<!-- agent without a known identifier -->
 			<xsl:otherwise>
 				<rico:hasSubject>
 		            <rico:Agent>
@@ -858,7 +859,7 @@
 
 	<xsl:template match="corpname">
 		<xsl:choose>
-			<!-- corpname with a known identifier -->
+			<!-- agent with a known identifier -->
 			<xsl:when test="(@authfilenumber and @source) or (starts-with(@authfilenumber, 'FRAN_'))">
 			
 				<!-- if @authfilenumber starts with FRAN_, generate a reference to authority URI -->
@@ -877,7 +878,7 @@
 				<rico:hasSubject rdf:resource="{$agentUri}"/>
 			</xsl:when>
 			
-			<!-- corpname without a known identifier -->
+			<!-- agent without a known identifier -->
 			<xsl:otherwise>
 				<rico:hasSubject>
 		            <rico:Agent>
@@ -890,6 +891,44 @@
 		                    </rico:AgentName>
 		                </rico:hasAgentName>
 		                <!-- TODO : handle functions similar to occupations ? -->
+		            </rico:Agent>
+		        </rico:hasSubject>	
+			</xsl:otherwise>
+		</xsl:choose>		
+	</xsl:template>
+
+	<xsl:template match="famname">
+		<xsl:choose>
+			<!-- agent with a known identifier -->
+			<xsl:when test="(@authfilenumber and @source) or (starts-with(@authfilenumber, 'FRAN_'))">
+			
+				<!-- if @authfilenumber starts with FRAN_, generate a reference to authority URI -->
+				<xsl:variable name="agentUri">
+					<xsl:choose>
+						<xsl:when test="starts-with(@authfilenumber, 'FRAN_')">
+							<xsl:value-of select="ead2rico:URI-AgentFromFRAN_NP(@authfilenumber)" />							
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:value-of select="ead2rico:URI-Agent(@authfilenumber, @source)" />							
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:variable>
+			
+				<rico:hasSubject rdf:resource="{$agentUri}"/>
+			</xsl:when>
+			
+			<!-- agent without a known identifier -->
+			<xsl:otherwise>
+				<rico:hasSubject>
+		            <rico:Agent>
+		                <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Family"/>
+		                <rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rdfs:label>
+						<rico:hasAgentName>
+		                    <rico:AgentName>
+		                        <rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rdfs:label>
+		                        <rico:textualValue xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rico:textualValue>
+		                    </rico:AgentName>
+		                </rico:hasAgentName>
 		            </rico:Agent>
 		        </rico:hasSubject>	
 			</xsl:otherwise>
