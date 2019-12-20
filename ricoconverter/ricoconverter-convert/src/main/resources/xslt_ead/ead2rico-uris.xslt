@@ -97,7 +97,7 @@
 		<xsl:param name="href" />
 		<xsl:choose>
 			<xsl:when test="contains($href, '#')">
-				<xsl:value-of select="concat('https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/', $href)" />
+				<xsl:value-of select="concat('https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/', substring-before($href, '#'), '/', substring-after($href, '#'))" />
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:value-of select="concat('https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/', $href)" />

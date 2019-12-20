@@ -640,8 +640,8 @@
 		<xsl:apply-templates select="descendant::archref" />
 		<xsl:apply-templates select="descendant::extref" />
 	</xsl:template>
-	<!--  -->
-	<xsl:template match="archref[ancestor::relatedmaterial] | extref[ancestor::relatedmaterial and starts-with(@href, 'https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/')]">
+	<!-- Surprinsingly the same template works for archref or extref -->
+	<xsl:template match="archref | extref[starts-with(@href, 'https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/')]">
 		<xsl:variable name="otherFaId">
 			<!--  Extract everything before # if needed -->
 			<xsl:value-of select="if(contains(@href, '#')) then substring-before(substring-after(@href, 'FRAN_IR_'), '#') else substring-after(@href, 'FRAN_IR_')" />
@@ -660,6 +660,21 @@
 		</xsl:variable>
 		
 		<rico:isRecordResourceAssociatedWithRecordResource rdf:resource="{$recordResourceUri}"/>
+	</xsl:template>
+	
+	
+	<!-- ***** separatedmaterial ***** -->
+	
+	<xsl:template match="separatedmaterial[list/item or p]">
+		<rico:descriptiveNote rdf:parseType="Literal">
+            <html:div xml:lang="{$LITERAL_LANG}">
+            	<html:h4>Document(s) séparé(s)</html:h4>
+				<xsl:apply-templates mode="html" />
+			</html:div>
+		</rico:descriptiveNote>
+		<!-- look for archref -->
+		<xsl:apply-templates select="descendant::archref" />
+		<xsl:apply-templates select="descendant::extref" />
 	</xsl:template>
 	
 	<!-- ***** did section ***** -->
