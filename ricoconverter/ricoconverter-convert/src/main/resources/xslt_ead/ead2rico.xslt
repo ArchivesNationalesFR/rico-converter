@@ -584,6 +584,47 @@
         </rico:accrual>
 	</xsl:template>
 	
+	<!-- ***** otherfindaid ***** -->
+	
+	<xsl:template match="otherfindaid[list/item or p]">
+		<rico:descriptiveNote rdf:parseType="Literal">
+            <html:div xml:lang="{$LITERAL_LANG}">
+            	<html:h4>Autre(s) instrument(s) de recherche</html:h4>
+				<xsl:apply-templates mode="html" />
+			</html:div>
+		</rico:descriptiveNote>
+		<!-- look for archref -->
+		<xsl:apply-templates select="descendant::archref" />
+	</xsl:template>
+	<xsl:template match="archref">
+		<xsl:variable name="otherFaId">
+			<!--  Extract everything before # if needed -->
+			<xsl:value-of select="if(contains(@href, '#')) then substring-before(substring-after(@href, 'FRAN_IR_'), '#') else substring-after(@href, 'FRAN_IR_')" />
+		</xsl:variable> 
+		
+		<xsl:variable name="recordResourceId">
+			<xsl:call-template name="recordResourceId">
+				<xsl:with-param name="faId" select="$otherFaId" />
+				<!-- This will insert '-top' if recordResourceId is empty -->
+				<xsl:with-param name="recordResourceId" select="if(contains(@href, '#')) then substring-after(@href, '#') else ''" />
+			</xsl:call-template>
+		</xsl:variable>
+		
+		<xsl:variable name="recordResourceUri">
+			<xsl:value-of select="ead2rico:URI-RecordResource($recordResourceId)" />
+		</xsl:variable>
+		<xsl:variable name="findingAidUri">
+			<xsl:value-of select="ead2rico:URI-FindingAid($otherFaId)" />
+		</xsl:variable>
+		<xsl:variable name="seeAlsoUrl">
+			<!-- Add extra path to URL if the recordResourceId is known -->
+			<xsl:value-of select="concat('https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_', $otherFaId, (if(contains(@href, '#')) then concat('/', substring-after(@href, '#')) else ''))" />
+		</xsl:variable>
+		
+		<rico:isRecordResourceAssociatedWithRecordResource rdf:resource="{$recordResourceUri}"/>
+        <rico:isSubjectOf rdf:resource="{$findingAidUri}"/>
+        <rdfs:seeAlso rdf:resource="{$seeAlsoUrl}"/>
+	</xsl:template>
 	
 	<!-- ***** did section ***** -->
 	
@@ -1030,12 +1071,15 @@
 	
 	<xsl:template match="p" mode="html">
 		<xsl:choose>
+			<!-- if we have a list inside a p -->
 			<xsl:when test="list">
 				<xsl:for-each select="*|text()">
 					<xsl:choose>
+						<!-- Then put all text of that list in a paragraph before the list -->
 						<xsl:when test=". instance of text()">
 							<html:p><xsl:apply-templates mode="html" select="." /></html:p>
 						</xsl:when>
+						<!-- Then output the list -->
 						<xsl:otherwise>
 							<xsl:apply-templates mode="html" select="." />
 						</xsl:otherwise>
@@ -1072,6 +1116,9 @@
 	</xsl:template>
 	<xsl:template match="lb" mode="html">
 		<html:br />
+	</xsl:template>
+	<xsl:template match="ref" mode="html">
+		<xsl:value-of select="normalize-space(.)" />
 	</xsl:template>
 	<xsl:template match="text()" mode="html"><xsl:value-of select="normalize-space(.)" /></xsl:template>
 

@@ -105,10 +105,10 @@
             <html:p>FRAN_IR_002433 Archives du Conseil général des Ponts-et-Chaussées et du Conseil des Travaux publics (1750-2013)#5e section : Affaires d'aménagement et d'environnement.#20160476/141-20160476/150</html:p>
             </html:div>
         </rico:descriptiveNote>
-        <!-- refer to the whole finding aid-->
-        <rico:isSubjectOf rdf:resource="findingAid/002433"/>
         <!-- refer to the Record Resource described within the other finding aid. Such a case would theoretically imply that the 2 record resources are the same-->
         <rico:isRecordResourceAssociatedWithRecordResource rdf:resource="recordResource/002433-c-22jejddiz--1qegiixo0y7s9"/>
+        <!-- refer to the whole finding aid-->
+        <rico:isSubjectOf rdf:resource="findingAid/002433"/>
         <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_002433/c-22jejddiz--1qegiixo0y7s9"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-N0005-i1">                
