@@ -26,7 +26,7 @@
         <rdfs:label xml:lang="fr">Titre comprend un corpname : Air France</rdfs:label>
         <rico:hasSubject>
             <rico:Agent>
-                <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+                <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
                 <rdfs:label xml:lang="fr">Air France</rdfs:label>
                 <rico:hasAgentName>
                     <rico:AgentName>
@@ -60,7 +60,7 @@
         <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
         <rico:hasSubject>
             <rico:Agent>
-                <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+                <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
                 <rdfs:label xml:lang="fr">Organisation de l'aviation civile internationale</rdfs:label>
                 <rico:hasAgentName>
                     <rico:AgentName>
@@ -107,12 +107,12 @@
     <!-- c/did/unittitle/corpname + @authfilenumber-->
     <rico:RecordResource rdf:about="recordResource/058220-N0004">
         <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
-        <rico:title xml:lang="fr">Titre comprend trois corpname : Conseil de l'Europe et Air France ;  Les applications photographiques d'industrie et d'édition (France ; 1948-1970)</rico:title>   
-        <rdfs:label xml:lang="fr">Titre comprend trois corpname : Conseil de l'Europe et Air France ;  Les applications photographiques d'industrie et d'édition (France ; 1948-1970)</rdfs:label>
+        <rico:title xml:lang="fr">Titre comprend trois corpname : Conseil de l'Europe et Air France ; Les applications photographiques d'industrie et d'édition (France ; 1948-1970)</rico:title>   
+        <rdfs:label xml:lang="fr">Titre comprend trois corpname : Conseil de l'Europe et Air France ; Les applications photographiques d'industrie et d'édition (France ; 1948-1970)</rdfs:label>
         <rico:hasSubject rdf:resource="agent/FRAN_RI_013-d3m0bo5kicc-vm6zif2nnb9"/>        
         <rico:hasSubject>
             <rico:Agent>
-                <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+                <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
                 <rdfs:label xml:lang="fr">Air France</rdfs:label>
                 <rico:hasAgentName>
                     <rico:AgentName>
@@ -127,8 +127,8 @@
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-N0004-i1">                
                 <rico:instantiates rdf:resource="recordResource/058220-N0004"/>
-                <rico:title xml:lang="fr">Titre comprend trois corpname : Conseil de l'Europe et Air France ;  Les applications photographiques d'industrie et d'édition (France ; 1948-1970)</rico:title>   
-                <rdfs:label xml:lang="fr">Titre comprend trois corpname : Conseil de l'Europe et Air France ;  Les applications photographiques d'industrie et d'édition (France ; 1948-1970)</rdfs:label>
+                <rico:title xml:lang="fr">Titre comprend trois corpname : Conseil de l'Europe et Air France ; Les applications photographiques d'industrie et d'édition (France ; 1948-1970)</rico:title>   
+                <rdfs:label xml:lang="fr">Titre comprend trois corpname : Conseil de l'Europe et Air France ; Les applications photographiques d'industrie et d'édition (France ; 1948-1970)</rdfs:label>
                 <!--do not process unittitle/corpname here-->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0004"/>
             </rico:Instantiation>

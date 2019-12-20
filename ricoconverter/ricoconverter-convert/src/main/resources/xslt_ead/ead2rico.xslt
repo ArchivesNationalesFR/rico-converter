@@ -805,7 +805,7 @@
 			<xsl:when test="(@authfilenumber and @source) or (starts-with(@authfilenumber, 'FRAN_'))">
 			
 				<!-- if @authfilenumber starts with FRAN_, generate a reference to authority URI -->
-				<xsl:variable name="persUri">
+				<xsl:variable name="agentUri">
 					<xsl:choose>
 						<xsl:when test="starts-with(@authfilenumber, 'FRAN_')">
 							<xsl:value-of select="ead2rico:URI-AgentFromFRAN_NP(@authfilenumber)" />							
@@ -821,7 +821,7 @@
 					<xsl:when test="../occupation[@authfilenumber and @source] and (count(../persname) = 1)">
 						<!-- Assign occupations to persons only if there was a single person declared -->
 						<rico:hasSubject>
-							<rico:Agent rdf:about="{$persUri}">
+							<rico:Agent rdf:about="{$agentUri}">
 								<rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
 								<xsl:apply-templates select="../occupation[@authfilenumber and @source]" mode="persname" />
 				            </rico:Agent>
@@ -829,7 +829,7 @@
 					</xsl:when>
 					<xsl:otherwise>
 						<!--  no occupation, plain reference to the Agent -->
-						<rico:hasSubject rdf:resource="{$persUri}"/>
+						<rico:hasSubject rdf:resource="{$agentUri}"/>
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:when>
@@ -854,6 +854,48 @@
 			</xsl:otherwise>
 		</xsl:choose>		
 	</xsl:template>
+
+
+	<xsl:template match="corpname">
+		<xsl:choose>
+			<!-- corpname with a known identifier -->
+			<xsl:when test="(@authfilenumber and @source) or (starts-with(@authfilenumber, 'FRAN_'))">
+			
+				<!-- if @authfilenumber starts with FRAN_, generate a reference to authority URI -->
+				<xsl:variable name="agentUri">
+					<xsl:choose>
+						<xsl:when test="starts-with(@authfilenumber, 'FRAN_')">
+							<xsl:value-of select="ead2rico:URI-AgentFromFRAN_NP(@authfilenumber)" />							
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:value-of select="ead2rico:URI-Agent(@authfilenumber, @source)" />							
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:variable>
+			
+				<!-- TODO : handle function similar to occupations ? -->
+				<rico:hasSubject rdf:resource="{$agentUri}"/>
+			</xsl:when>
+			
+			<!-- corpname without a known identifier -->
+			<xsl:otherwise>
+				<rico:hasSubject>
+		            <rico:Agent>
+		                <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+		                <rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rdfs:label>
+						<rico:hasAgentName>
+		                    <rico:AgentName>
+		                        <rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rdfs:label>
+		                        <rico:textualValue xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rico:textualValue>
+		                    </rico:AgentName>
+		                </rico:hasAgentName>
+		                <!-- TODO : handle functions similar to occupations ? -->
+		            </rico:Agent>
+		        </rico:hasSubject>	
+			</xsl:otherwise>
+		</xsl:choose>		
+	</xsl:template>
+
 	
 	<!-- occupation that we can linked to a persname. The template is called from within the persname template -->
 	<xsl:template match="occupation[@authfilenumber and @source]" mode="persname">
