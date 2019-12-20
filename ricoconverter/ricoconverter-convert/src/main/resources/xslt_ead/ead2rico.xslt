@@ -148,7 +148,7 @@
 	<xsl:template match="langusage" mode="findingaid">
 		<xsl:apply-templates mode="#current" />
 	</xsl:template>
-	<xsl:template match="language[text()]" mode="findingaid">
+	<xsl:template match="language[@langcode]" mode="findingaid">
 		<rico:hasLanguage rdf:resource="{ead2rico:URI-Language(@langcode)}"/>
 	</xsl:template>
 	<xsl:template match="descrules[text()]" mode="instantiation">
@@ -370,6 +370,10 @@
 		<!-- Add +2 to the offset of this daoloc element to build instantiation ID -->
 		<xsl:variable name="instantiationId" select="concat($recordResourceId, '-i', count(preceding-sibling::daoloc)+2)" />
 		
+		<xsl:if test="contains(@href, ' ')">
+			<xsl:value-of select="ead2rico:warning($faId, 'DAOLOC_CONTAINS_SPACE', @href)" />
+		</xsl:if>
+		
 		<rico:hasInstantiation>
 			<rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($instantiationId)}">
 				<rico:instantiates rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
@@ -399,7 +403,7 @@
 				<!-- here the creator is by default the archival institution: it either produced the digital instantiation image by its own, or asked a private company to produce it and then got it and aggregated it into its own archives -->
                 <rico:hasProvenance rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}"/>
 				<xsl:if test="not(contains(@href, '#'))">
-					<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/{/ead/eadheader/eadid}/{(ancestor::*[self::c or self::archdesc])[last()]/@id}/{replace(@href, '.msp', '')}"/>
+					<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/{/ead/eadheader/eadid}/{(ancestor::*[self::c or self::archdesc])[last()]/@id}/{replace(replace(@href, '.msp', ''), ' ', '%20')}"/>
 				</xsl:if>
 			</rico:Instantiation>
 		</rico:hasInstantiation>
@@ -798,13 +802,26 @@
 	<xsl:template match="persname">
 		<xsl:choose>
 			<!-- persname with a known identifier -->
-			<xsl:when test="@authfilenumber and @source">
+			<xsl:when test="(@authfilenumber and @source) or (starts-with(@authfilenumber, 'FRAN_'))">
+			
+				<!-- if @authfilenumber starts with FRAN_, generate a reference to authority URI -->
+				<xsl:variable name="persUri">
+					<xsl:choose>
+						<xsl:when test="starts-with(@authfilenumber, 'FRAN_')">
+							<xsl:value-of select="ead2rico:URI-AgentFromFRAN_NP(@authfilenumber)" />							
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:value-of select="ead2rico:URI-Agent(@authfilenumber, @source)" />							
+						</xsl:otherwise>
+					</xsl:choose>
+				</xsl:variable>
+			
 				<!--  When there is also an occupation, declare it on the Agent.  -->
 				<xsl:choose>
 					<xsl:when test="../occupation[@authfilenumber and @source] and (count(../persname) = 1)">
 						<!-- Assign occupations to persons only if there was a single person declared -->
 						<rico:hasSubject>
-							<rico:Agent rdf:about="{ead2rico:URI-Agent(@authfilenumber, @source)}">
+							<rico:Agent rdf:about="{$persUri}">
 								<rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
 								<xsl:apply-templates select="../occupation[@authfilenumber and @source]" mode="persname" />
 				            </rico:Agent>
@@ -812,7 +829,7 @@
 					</xsl:when>
 					<xsl:otherwise>
 						<!--  no occupation, plain reference to the Agent -->
-						<rico:hasSubject rdf:resource="{ead2rico:URI-Agent(@authfilenumber, @source)}"/>
+						<rico:hasSubject rdf:resource="{$persUri}"/>
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:when>
@@ -915,7 +932,7 @@
 	
 	<!--  ***** physloc : only for Instantiation ***** -->
 	
-	<xsl:template match="physloc" mode="instantiation">
+	<xsl:template match="physloc[text()]" mode="instantiation">
 		<xsl:variable name="value">
 			<xsl:choose>
 				<xsl:when test="matches(text(), 'Pierrefitte', 'i')">place/FRAN_RI_005-d3ntxf5186--sga9u2l9iboc</xsl:when>

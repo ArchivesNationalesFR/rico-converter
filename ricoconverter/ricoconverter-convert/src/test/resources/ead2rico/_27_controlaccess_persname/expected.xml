@@ -121,8 +121,7 @@
     <rico:RecordResource rdf:about="recordResource/058220-N0004">
         <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
         <rico:title xml:lang="fr">Titre comprend trois persname : Bullet, Pierre (1639-1716) et Dupont, Louis ; Murat, Joachim (1767-1815)</rico:title>   
-        <rdfs:label xml:lang="fr">Titre comprend trois persname : Bullet, Pierre (1639-1716) et Dupont, Louis ; Murat, Joachim (1767-1815)</rdfs:label>
-        <rico:hasSubject rdf:resource="agent/050551"/>
+        <rdfs:label xml:lang="fr">Titre comprend trois persname : Bullet, Pierre (1639-1716) et Dupont, Louis ; Murat, Joachim (1767-1815)</rdfs:label>        
         <rico:hasSubject rdf:resource="agent/FRAN_RI_012-d699mu4ru7l-gmy6mhkvdjc9"/>
         <rico:hasSubject>
             <rico:Agent>
@@ -136,6 +135,7 @@
                 </rico:hasAgentName>
             </rico:Agent>
         </rico:hasSubject>
+        <rico:hasSubject rdf:resource="agent/050551"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-N0004-i1">                
                 <rico:instantiates rdf:resource="recordResource/058220-N0004"/>
