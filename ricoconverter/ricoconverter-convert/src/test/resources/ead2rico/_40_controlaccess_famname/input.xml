@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ead>
+    <eadheader>
+        <eadid>FRAN_IR_058220</eadid>
+        <!-- the metadata of the finding aid -->
+    </eadheader>
+    <archdesc>
+        <did>
+        	<unittitle>Titre comprend un famname : <famname>Deschanel (famille)</famname></unittitle>
+        </did>
+        <controlaccess>
+            <famname authfilenumber="FRAN_NP_050272">Aurillac (famille ; 1901-....)</famname>
+        	<famname>Potet (famille)</famname>
+        	<famname>Famille Murat</famname>
+        </controlaccess>
+    
+	    <dsc>
+		    <!-- c/controlaccess/famname indexation libre -->
+		    <c id="c34fnm316ofc-27kf8gfnest" level="otherlevel">
+		        <controlaccess>
+		        	<famname>Aurillac (famille)</famname>
+		        </controlaccess>
+		        <daogrp>
+		            <daoloc href="FRAN_0118_274_L.msp"/>
+		        </daogrp>
+		    </c>
+		    
+		    <!-- c/did/unittitle/famname -->
+	    	<c id="N0004">
+	    		<did>
+	    		    <unittitle>Titre comprend trois famname : <famname>Famille Napoléon</famname> et <famname>Famille Murat</famname> ;  <famname authfilenumber="FRAN_NP_050272">Aurillac (famille ; 1901-....)</famname></unittitle>
+	    		</did>
+	    	</c>
+	    	
+	    </dsc>
+    </archdesc>
+</ead>

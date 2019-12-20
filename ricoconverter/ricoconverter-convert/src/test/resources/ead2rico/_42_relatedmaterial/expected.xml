@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xml:base="http://data.archives-nationales.culture.gouv.fr/">
+    <rico:FindingAid rdf:about="findingAid/058220">
+        <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-i1">
+                <rico:instantiates rdf:resource="findingAid/058220"/>
+                <rico:encodingFormat xml:lang="en">text/xml</rico:encodingFormat>
+                <dc:format xml:lang="en">text/xml</dc:format>
+                <rico:identifier>FRAN_IR_058220</rico:identifier>
+                <rico:heldBy rdf:resource="agent/005061"/>
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+    </rico:FindingAid>
+    <rico:RecordResource rdf:about="recordResource/058220-top">
+        <rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
+        <rico:descriptiveNote rdf:parseType="Literal">
+            <html:div xml:lang="fr">
+            <html:h4>Document(s) en relation</html:h4>
+            <html:p>Versements conservés aux Archives nationales, site de Pierrefitte-sur-Seine : </html:p>
+            <html:p>20170015 : Institut national d'études démographiques, projets de recherche (1993-1999).</html:p>
+            </html:div>
+        </rico:descriptiveNote>
+        <rico:hasInstantiation>
+             <rico:Instantiation rdf:about="instantiation/058220-top-i1">
+                 <rico:instantiates rdf:resource="recordResource/058220-top"/>    
+                 <!-- do not process relatedmaterial here -->
+                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+             </rico:Instantiation>
+         </rico:hasInstantiation>
+        <rico:hasMember rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>     
+        <rico:hasMember rdf:resource="recordResource/058220-N0004"/>
+        <rico:hasMember rdf:resource="recordResource/058220-N0005"/>
+        <rico:hasMember rdf:resource="recordResource/058220-N00052"/>
+        <rico:hasMember rdf:resource="recordResource/058220-N0006"/>
+        <rico:hasMember rdf:resource="recordResource/058220-N0007"/>
+    </rico:RecordResource>
+ 
+    <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:descriptiveNote rdf:parseType="Literal">
+            <html:div xml:lang="fr">
+                <html:h4>Document(s) en relation</html:h4>
+                <html:p>Archives nationales</html:p>
+                <html:p>Sur les bâtiments civils et palais nationaux :</html:p>
+                <html:ul>
+                    <html:li>Série O/1 : Maison du Roi sous l’ancien régime</html:li>
+                    <html:li>Série O/2 Maison de l’empereur (Premier Empire), domaines et forêts de la Couronne (An X-1815) : O/2/784-814</html:li>
+                    <html:li>Série O/3 Maison du roi (Restauration), domaines et forêts de la Couronne (1814-1830) : O/3/901-1053. Intendance des bâtiments, parcs et jardins (1814-1830) : O/3/1054-1274.</html:li>
+                    <html:li>Série O/4 Maison du Roi et intendance de la liste civile (monarchie de Juillet), travaux exécutés dans les bâtiments de la Couronne (1792-1847) : O/4/2781 à 2820.</html:li>
+                    <html:li>Série O/5 Maison de l’Empereur (Second Empire), domaines et forêts de la couronne (1853-1870) : O/5/1002-1433</html:li>
+                    <html:li>Série F/13 Bâtiments civils</html:li>
+                    <html:li>Série F/21 Beaux-Arts</html:li>
+                    <html:li>Série F/70 Ministère d'Etat</html:li>
+                </html:ul>
+                <html:p>Sur Alexis Paccard, architecte :</html:p>
+                <html:li>
+                    <html:ul>Grande chancellerie de la légion d’honneur, dossier de légion d’honneur d’Alexis PACCARD : LH//2031/20</html:ul>
+                </html:li>
+            </html:div>
+        </rico:descriptiveNote>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">                
+                <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+                <rico:hasDigitalCopy rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
+                <!-- do not process relatedmaterial here -->
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2">                
+                <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+                <rico:isDigitalCopyOf rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1"/>
+                <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                <rico:identifier>FRAN_0118_274_L</rico:identifier>
+                <rico:encodingFormat xml:lang="en">image/jpeg</rico:encodingFormat>
+                <!-- do not process relatedmaterial here -->
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest/FRAN_0118_274_L"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>        
+    </rico:RecordResource>
+
+    <rico:RecordResource rdf:about="recordResource/058220-N0004">
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:descriptiveNote rdf:parseType="Literal">
+            <html:div xml:lang="fr">
+            <html:h4>Document(s) en relation</html:h4>
+            <html:p xml:lang="fr">Sur ce thème, voir aussi le versement 20160466.</html:p>
+            </html:div>
+         </rico:descriptiveNote>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-N0004-i1">                
+                <rico:instantiates rdf:resource="recordResource/058220-N0004"/>
+                <!-- do not process relatedmaterial here -->
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0004"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>       
+    </rico:RecordResource>
+    
+    <!--ref role="IR"-->
+    <rico:RecordResource rdf:about="recordResource/058220-N0005">
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:descriptiveNote rdf:parseType="Literal">
+            <html:div xml:lang="fr">
+                <html:h4>Document(s) en relation</html:h4>
+                <html:p>Liens vers les instruments de recherche complémentaires<html:a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_054690">Ministère de la Culture, productions audiovisuelles du Centre national de la photographie</html:a><html:a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_050904">Centre national de la photographie</html:a></html:p></html:div>
+        </rico:descriptiveNote>       
+        <rico:isRecordResourceAssociatedWithRecordResource rdf:resource="recordResource/054690-top"/>
+        <rico:isRecordResourceAssociatedWithRecordResource rdf:resource="recordResource/050904-top"/>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-N0005-i1">                
+                <rico:instantiates rdf:resource="recordResource/058220-N0005"/>
+                <!-- do not process relatedmaterial here -->
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0005"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>       
+    </rico:RecordResource>
+
+
+    <rico:RecordResource rdf:about="recordResource/058220-N00052">
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:descriptiveNote rdf:parseType="Literal">
+            <html:div xml:lang="fr">
+             <html:h4>Document(s) en relation</html:h4>               
+             <html:p>Voir aussi : <html:a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_017020#d_4_1">Transports ; Direction des ports maritimes et des voies navigables ; Service des voies navigables et du domaine public fluvial ; 2e bureau des voies navigables (1849-1975)# Réglementation - Correspondance - Rapports 1894 à 1946 #19770765/4</html:a></html:p>
+        </html:div>
+        </rico:descriptiveNote>       
+        <rico:isRecordResourceAssociatedWithRecordResource rdf:resource="recordResource/017020-d_4_1"/>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-N00052-i1">                
+                <rico:instantiates rdf:resource="recordResource/058220-N00052"/>
+                <!-- do not process relatedmaterial here -->
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N00052"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>       
+    </rico:RecordResource>
+    
+    <!--ref role="WEB"-->
+    <rico:RecordResource rdf:about="recordResource/058220-N0006">
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:descriptiveNote rdf:parseType="Literal">
+            <html:div xml:lang="fr">
+                <html:h4>Document(s) en relation</html:h4>
+                <html:p>
+                    <html:a href="http://www.developpement-durable.gouv.fr/Repertoire-d-archives-detaille,14860.html">Archives du service de la recherche</html:a>
+                    <html:a href="http://www.developpement-durable.gouv.fr/Repertoire-d-archives-detaille,14699.html">Fonds Serge Antoine</html:a>
+                </html:p>
+                <html:p><html:a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_022636">19930447/1-2</html:a> : procès-verbaux et rapports des commissions spécialisées du conseil supérieur du tourisme (sessions 1978-1979, 1979-1980) ; assemblées plénières du CST (1978-1980), compte-rendu des réunions du comité permanent (1973-1980). 1973-1980.</html:p>
+            </html:div>
+        </rico:descriptiveNote>
+        <rico:isRecordResourceAssociatedWithRecordResource rdf:resource="recordResource/022636-top"/>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-N0006-i1">                
+                <rico:instantiates rdf:resource="recordResource/058220-N0006"/>
+                <!-- do not process relatedmaterial here -->
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0006"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>       
+    </rico:RecordResource>
+    
+    <!--ref role="ANX"-->
+    <rico:RecordResource rdf:about="recordResource/058220-N0007">
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:descriptiveNote rdf:parseType="Literal">
+            <html:div xml:lang="fr">
+                <html:h4>Document(s) en relation</html:h4>
+                <html:p>Consulter les documents annexes ci-joint<html:a href="https://www.siv.archives-nationales.culture.gouv.fr/mm/media/download/FRAN_ANX_011469.pdf">FRAN_ANX_011469.pdf</html:a></html:p>
+            </html:div>
+        </rico:descriptiveNote>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-N0007-i1">                
+                <rico:instantiates rdf:resource="recordResource/058220-N0007"/>
+                <!-- do not process relatedmaterial here -->
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0007"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>       
+    </rico:RecordResource>
+</rdf:RDF>

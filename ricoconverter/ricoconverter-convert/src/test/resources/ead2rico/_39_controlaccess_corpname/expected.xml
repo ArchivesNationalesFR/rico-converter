@@ -22,29 +22,31 @@
     </rico:FindingAid>
     <rico:RecordResource rdf:about="recordResource/058220-top">
         <rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
-        <rico:title xml:lang="fr">Titre comprend un persname : Cardenti, Jean Jean Baptiste</rico:title>   
-        <rdfs:label xml:lang="fr">Titre comprend un persname : Cardenti, Jean Jean Baptiste</rdfs:label>
-        <!-- TODO : archdesc/unittitle/persname (indexation libre):  hasSubject agent cf. test occupation ? -->
+        <rico:title xml:lang="fr">Titre comprend un corpname : Air France</rico:title>   
+        <rdfs:label xml:lang="fr">Titre comprend un corpname : Air France</rdfs:label>
         <rico:hasSubject>
             <rico:Agent>
-                <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-                <rdfs:label xml:lang="fr">Cardenti, Jean Jean Baptiste</rdfs:label>
+                <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+                <rdfs:label xml:lang="fr">Air France</rdfs:label>
                 <rico:hasAgentName>
                     <rico:AgentName>
-                        <rdfs:label xml:lang="fr">Cardenti, Jean Jean Baptiste</rdfs:label>
-                        <rico:textualValue xml:lang="fr">Cardenti, Jean Jean Baptiste</rico:textualValue>
+                        <rdfs:label xml:lang="fr">Air France</rdfs:label>
+                        <rico:textualValue xml:lang="fr">Air France</rico:textualValue>
                     </rico:AgentName>
                 </rico:hasAgentName>
             </rico:Agent>
         </rico:hasSubject>
-        <!-- archdesc/controlaccess/persname +@authfilenumber-->
-        <rico:hasSubject rdf:resource="agent/050551"/>
-        <rico:hasSubject rdf:resource="agent/FRAN_RI_012-d699mu3pkd2--ojwlhnvipuam"/>
+        <!-- archdesc/controlaccess/corpname +@authfilenumber-->
+        <!-- if starts-with(@authfilenumber, 'FRAN_NP_') the agent is the one described in EAC-CPF -->
+        <rico:hasSubject rdf:resource="agent/052067"/>
+        <rico:hasSubject rdf:resource="agent/FRAN_RI_013-d3m0bo67ng6--fduvfpn3eutl"/>
+        <rico:hasSubject rdf:resource="agent/FRAN_RI_013-d3m0bo5kicc-vm6zif2nnb9"/>
+        <rico:hasSubject rdf:resource="agent/FRAN_RI_013-d3m0bo5m7cm--9pgv7ef0rsh1"/>
         <rico:hasInstantiation>
              <rico:Instantiation rdf:about="instantiation/058220-top-i1">
                  <rico:instantiates rdf:resource="recordResource/058220-top"/>
-                 <rico:title xml:lang="fr">Titre comprend un persname : Cardenti, Jean Jean Baptiste</rico:title>   
-                 <rdfs:label xml:lang="fr">Titre comprend un persname : Cardenti, Jean Jean Baptiste</rdfs:label>                 
+                 <rico:title xml:lang="fr">Titre comprend un corpname : Air France</rico:title>   
+                 <rdfs:label xml:lang="fr">Titre comprend un corpname : Air France</rdfs:label>                 
                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
              </rico:Instantiation>
          </rico:hasInstantiation>
@@ -53,29 +55,17 @@
         <rico:hasMember rdf:resource="recordResource/058220-N0004"/>
     </rico:RecordResource>
     
-    <!-- c/controlaccess/persname indexation libre -->
+    <!-- c/controlaccess/corpname indexation libre -->
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
         <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
         <rico:hasSubject>
             <rico:Agent>
-                <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-                <rdfs:label xml:lang="fr">Pichard, Victorine Louise Pauline</rdfs:label>
+                <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+                <rdfs:label xml:lang="fr">Organisation de l'aviation civile internationale</rdfs:label>
                 <rico:hasAgentName>
                     <rico:AgentName>
-                        <rdfs:label xml:lang="fr">Pichard, Victorine Louise Pauline</rdfs:label>
-                        <rico:textualValue xml:lang="fr">Pichard, Victorine Louise Pauline</rico:textualValue>
-                    </rico:AgentName>
-                </rico:hasAgentName>
-            </rico:Agent>
-        </rico:hasSubject>
-        <rico:hasSubject>
-            <rico:Agent>
-                <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-                <rdfs:label xml:lang="fr">Ladan-Bockairy, Jules Alphonse Georges</rdfs:label>
-                <rico:hasAgentName>
-                    <rico:AgentName>
-                        <rdfs:label xml:lang="fr">Ladan-Bockairy, Jules Alphonse Georges</rdfs:label>
-                        <rico:textualValue xml:lang="fr">Ladan-Bockairy, Jules Alphonse Georges</rico:textualValue>
+                        <rdfs:label xml:lang="fr">Organisation de l'aviation civile internationale</rdfs:label>
+                        <rico:textualValue xml:lang="fr">Organisation de l'aviation civile internationale</rico:textualValue>
                     </rico:AgentName>
                 </rico:hasAgentName>
             </rico:Agent>
@@ -84,7 +74,7 @@
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">                
                 <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
                 <rico:hasDigitalCopy rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
-                <!--do not process controlaccess/persname here-->   
+                <!--do not process controlaccess/corpname here-->   
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"/>
             </rico:Instantiation>
         </rico:hasInstantiation>
@@ -95,53 +85,51 @@
                 <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
                 <rico:identifier>FRAN_0118_274_L</rico:identifier>
                 <rico:encodingFormat xml:lang="en">image/jpeg</rico:encodingFormat>
-                <!--do not process controlaccess/persname here-->
+                <!--do not process controlaccess/corpname here-->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest/FRAN_0118_274_L"/>
             </rico:Instantiation>
         </rico:hasInstantiation>        
     </rico:RecordResource>
     
-    <!-- c/controlaccess/persname + @authfilenumber -->
+    <!-- c/controlaccess/corpname + @authfilenumber -->
     <rico:RecordResource rdf:about="recordResource/058220-N0003">
         <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
-        <rico:hasSubject rdf:resource="agent/FRAN_RI_012-d699mu3pkd2--ojwlhnvipuam"/>
-        <rico:hasSubject rdf:resource="agent/FRAN_RI_012-d699mu4ru7l-gmy6mhkvdjc9"/>           
+        <rico:hasSubject rdf:resource="agent/FRAN_RI_013-d3m0bo6ghk4-1o57foedfe6df"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-N0003-i1">                
                 <rico:instantiates rdf:resource="recordResource/058220-N0003"/>
-                <!--do not process controlaccess/persname here-->                
+                <!--do not process controlaccess/corpname here-->                
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0003"/>
             </rico:Instantiation>
         </rico:hasInstantiation>       
     </rico:RecordResource>    
     
-  
-    
-    <!-- c/did/unittitle/persname + @authfilenumber-->
+    <!-- c/did/unittitle/corpname + @authfilenumber-->
     <rico:RecordResource rdf:about="recordResource/058220-N0004">
         <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
-        <rico:title xml:lang="fr">Titre comprend trois persname : Bullet, Pierre (1639-1716) et Dupont, Louis ; Murat, Joachim (1767-1815)</rico:title>   
-        <rdfs:label xml:lang="fr">Titre comprend trois persname : Bullet, Pierre (1639-1716) et Dupont, Louis ; Murat, Joachim (1767-1815)</rdfs:label>
-        <rico:hasSubject rdf:resource="agent/050551"/>
-        <rico:hasSubject rdf:resource="agent/FRAN_RI_012-d699mu4ru7l-gmy6mhkvdjc9"/>
+        <rico:title xml:lang="fr">Titre comprend trois corpname : Conseil de l'Europe et Air France ;  Les applications photographiques d'industrie et d'édition (France ; 1948-1970)</rico:title>   
+        <rdfs:label xml:lang="fr">Titre comprend trois corpname : Conseil de l'Europe et Air France ;  Les applications photographiques d'industrie et d'édition (France ; 1948-1970)</rdfs:label>
+        <rico:hasSubject rdf:resource="agent/FRAN_RI_013-d3m0bo5kicc-vm6zif2nnb9"/>        
         <rico:hasSubject>
             <rico:Agent>
-                <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
-                <rdfs:label xml:lang="fr">Dupont, Louis</rdfs:label>
+                <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+                <rdfs:label xml:lang="fr">Air France</rdfs:label>
                 <rico:hasAgentName>
                     <rico:AgentName>
-                        <rdfs:label xml:lang="fr">Dupont, Louis</rdfs:label>
-                        <rico:textualValue xml:lang="fr">Dupont, Louis</rico:textualValue>
+                        <rdfs:label xml:lang="fr">Air France</rdfs:label>
+                        <rico:textualValue xml:lang="fr">Air France</rico:textualValue>
                     </rico:AgentName>
                 </rico:hasAgentName>
             </rico:Agent>
         </rico:hasSubject>
+        <!-- if starts-with(@authfilenumber, 'FRAN_NP_') the agent is the one described in EAC-CPF -->
+        <rico:hasSubject rdf:resource="agent/052067"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-N0004-i1">                
                 <rico:instantiates rdf:resource="recordResource/058220-N0004"/>
-                <rico:title xml:lang="fr">Titre comprend trois persname : Bullet, Pierre (1639-1716) et Dupont, Louis ; Murat, Joachim (1767-1815)</rico:title>   
-                <rdfs:label xml:lang="fr">Titre comprend trois persname : Bullet, Pierre (1639-1716) et Dupont, Louis ; Murat, Joachim (1767-1815)</rdfs:label>
-                <!--do not process unittitle/persname here-->
+                <rico:title xml:lang="fr">Titre comprend trois corpname : Conseil de l'Europe et Air France ;  Les applications photographiques d'industrie et d'édition (France ; 1948-1970)</rico:title>   
+                <rdfs:label xml:lang="fr">Titre comprend trois corpname : Conseil de l'Europe et Air France ;  Les applications photographiques d'industrie et d'édition (France ; 1948-1970)</rdfs:label>
+                <!--do not process unittitle/corpname here-->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0004"/>
             </rico:Instantiation>
         </rico:hasInstantiation>       

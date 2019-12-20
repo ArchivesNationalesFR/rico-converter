@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xml:base="http://data.archives-nationales.culture.gouv.fr/">
+    <rico:FindingAid rdf:about="findingAid/058220">
+        <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-i1">
+                <rico:instantiates rdf:resource="findingAid/058220"/>
+                <rico:encodingFormat xml:lang="en">text/xml</rico:encodingFormat>
+                <dc:format xml:lang="en">text/xml</dc:format>
+                <rico:identifier>FRAN_IR_058220</rico:identifier>
+                <rico:heldBy rdf:resource="agent/005061"/>
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+    </rico:FindingAid>
+    <rico:RecordResource rdf:about="recordResource/058220-top">
+        <rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
+        <rico:descriptiveNote rdf:parseType="Literal">
+            <html:div xml:lang="fr">
+                <html:h4>Autre(s) instrument(s) de recherche</html:h4>
+                <html:ul>
+                    <html:li>20170046 Fonds papier et photographique de l'association régionale d'information et d'actions musicales en Île-de-France (1975-2017).</html:li>
+                </html:ul>
+            </html:div>
+        </rico:descriptiveNote>
+        <rico:hasInstantiation>
+             <rico:Instantiation rdf:about="instantiation/058220-top-i1">
+                 <rico:instantiates rdf:resource="recordResource/058220-top"/>
+                 <!-- do not process otherfindaid here -->
+                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+             </rico:Instantiation>
+         </rico:hasInstantiation>
+        <rico:hasMember rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>     
+        <rico:hasMember rdf:resource="recordResource/058220-N0004"/>
+        <rico:hasMember rdf:resource="recordResource/058220-N0005"/>
+    </rico:RecordResource>
+    
+    <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:descriptiveNote rdf:parseType="Literal">
+            <html:div xml:lang="fr">
+                <html:h4>Autre(s) instrument(s) de recherche</html:h4>
+                <html:p>20090424/1-220, École nationale supérieure d'architecture de Paris La Villette, 1974-1988</html:p>
+                <html:p>20100558/1-11, École nationale supérieure d'architecture de Paris La Villette, 1990</html:p>
+                <html:p>20110268/1-16, École nationale supérieure d'architecture de Paris La Villette, 1969-1985</html:p>
+            </html:div>
+        </rico:descriptiveNote>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">                
+                <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+                <rico:hasDigitalCopy rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
+                <!-- do not process otherfindaid here -->
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2">                
+                <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+                <rico:isDigitalCopyOf rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1"/>
+                <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                <rico:identifier>FRAN_0118_274_L</rico:identifier>
+                <rico:encodingFormat xml:lang="en">image/jpeg</rico:encodingFormat>
+                <!-- do not process otherfindaid here -->
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest/FRAN_0118_274_L"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>        
+    </rico:RecordResource>
+    
+    <rico:RecordResource rdf:about="recordResource/058220-N0004">
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:descriptiveNote rdf:parseType="Literal">
+            <html:div xml:lang="fr">
+                <html:h4>Autre(s) instrument(s) de recherche</html:h4>
+                <html:p>19840277/1 Premier ministre ; Secrétariat général du gouvernement, Par l'intermédiaire du premier ministre ; secrétaire général du gouvernement (Monsieur Marceau Long) 1973-1975</html:p>
+            </html:div>
+        </rico:descriptiveNote>
+        
+        <!-- TODO replace the instances of FindingAid by instances of Record having FindingAid as DocumentaryFormType -->
+        <!-- refer to the Record Resource described within the other finding aid. Such a case would theoretically imply that the 2 record resources are the same-->
+        <rico:isRecordResourceAssociatedWithRecordResource rdf:resource="recordResource/021298-top"/>
+        <rico:isSubjectOf rdf:resource="findingAid/021298"/>
+        <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_021298"/>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-N0004-i1">                
+                <rico:instantiates rdf:resource="recordResource/058220-N0004"/>
+                <!-- do not process otherfindaid here -->
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0004"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>       
+    </rico:RecordResource>
+    
+    <rico:RecordResource rdf:about="recordResource/058220-N0005">
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+      
+        <rico:descriptiveNote rdf:parseType="Literal">
+            <html:div xml:lang="fr">
+                <html:h4>Autre(s) instrument(s) de recherche</html:h4>
+            <html:p>FRAN_IR_002433 Archives du Conseil général des Ponts-et-Chaussées et du Conseil des Travaux publics (1750-2013)#5e section : Affaires d'aménagement et d'environnement.#20160476/141-20160476/150</html:p>
+            </html:div>
+        </rico:descriptiveNote>
+        <!-- refer to the whole finding aid-->
+        <rico:isSubjectOf rdf:resource="findingAid/002433"/>
+        <!-- refer to the Record Resource described within the other finding aid. Such a case would theoretically imply that the 2 record resources are the same-->
+        <rico:isRecordResourceAssociatedWithRecordResource rdf:resource="recordResource/002433-c-22jejddiz--1qegiixo0y7s9"/>
+        <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_002433/c-22jejddiz--1qegiixo0y7s9"/>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-N0005-i1">                
+                <rico:instantiates rdf:resource="recordResource/058220-N0005"/>
+                <!-- do not process otherfindaid here -->
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0005"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>       
+    </rico:RecordResource>
+</rdf:RDF>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ead>
+    <eadheader>
+        <eadid>FRAN_IR_058220</eadid>
+        <!-- the metadata of the finding aid -->
+    </eadheader>
+    <archdesc>
+        <did>
+            <unittitle>Titre comprend un corpname : <corpname>Air France</corpname></unittitle>
+        </did>
+        <controlaccess>
+            <corpname authfilenumber="FRAN_NP_052067">Les applications photographiques d'industrie et d'édition (France ; 1948-1970)</corpname>
+        	<corpname authfilenumber="d3m0bo67ng6--fduvfpn3eutl" source="FRAN_RI_013">Nations Unies</corpname>
+        	<corpname authfilenumber="d3m0bo5kicc-vm6zif2nnb9" source="FRAN_RI_013">Conseil de l'Europe</corpname>
+        	<corpname authfilenumber="d3m0bo5m7cm--9pgv7ef0rsh1" source="FRAN_RI_013">Communauté européenne</corpname>
+        </controlaccess>
+    
+	    <dsc>
+		    <!-- c/controlaccess/corpname indexation libre -->
+		    <c id="c34fnm316ofc-27kf8gfnest" level="otherlevel">
+		        <controlaccess>
+		        	<corpname>Organisation de l'aviation civile internationale</corpname>
+		        </controlaccess>
+		        <daogrp>
+		            <daoloc href="FRAN_0118_274_L.msp"/>
+		        </daogrp>
+		    </c>
+		    <!-- c/controlaccess/corpname + @authfilenumber -->
+		    <c id="N0003" level="otherlevel">
+		        <controlaccess>
+		        	<corpname authfilenumber="d3m0bo6ghk4-1o57foedfe6df" source="FRAN_RI_013">Radio France internationale</corpname>
+		        </controlaccess>
+		    </c>	   
+		    <!-- c/did/unittitle/corpname + @authfilenumber-->
+	    	<c id="N0004">
+	    		<did>
+	    		    <unittitle>Titre comprend trois corpname :<corpname authfilenumber="d3m0bo5kicc-vm6zif2nnb9" source="FRAN_RI_013">Conseil de l'Europe</corpname> et <corpname>Air France</corpname> ;   <corpname authfilenumber="FRAN_NP_052067">Les applications photographiques d'industrie et d'édition (France ; 1948-1970)</corpname></unittitle>
+	    		</did>
+	    	</c>
+	    	
+	    </dsc>
+    </archdesc>
+</ead>

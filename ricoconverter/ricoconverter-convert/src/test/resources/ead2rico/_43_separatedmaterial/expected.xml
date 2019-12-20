@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xml:base="http://data.archives-nationales.culture.gouv.fr/">
+    <rico:FindingAid rdf:about="findingAid/058220">
+        <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-i1">
+                <rico:instantiates rdf:resource="findingAid/058220"/>
+                <rico:encodingFormat xml:lang="en">text/xml</rico:encodingFormat>
+                <dc:format xml:lang="en">text/xml</dc:format>
+                <rico:identifier>FRAN_IR_058220</rico:identifier>
+                <rico:heldBy rdf:resource="agent/005061"/>
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+    </rico:FindingAid>
+    <rico:RecordResource rdf:about="recordResource/058220-top">
+        <rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
+        <rico:descriptiveNote rdf:parseType="Literal">
+            <html:div xml:lang="fr">
+            <html:h4>Document(s) séparé(s)</html:h4>
+                <html:p>Versements conservés aux Archives nationales :</html:p>
+                
+                    <html:p>20050484/1-39 : Institut national d'études démographiques:enquête auprès des jeunes sans domicile, dite numéro 147, 1998</html:p>
+                    <html:p>Archives de Maryse Marpsat, chercheuse à l'Insee et à l'Ined</html:p>
+            </html:div>
+        </rico:descriptiveNote>
+        <rico:hasInstantiation>
+             <rico:Instantiation rdf:about="instantiation/058220-top-i1">
+                 <rico:instantiates rdf:resource="recordResource/058220-top"/>    
+                 <!-- do not process separatedmaterial here -->
+                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+             </rico:Instantiation>
+         </rico:hasInstantiation>
+        <rico:hasMember rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>     
+        <rico:hasMember rdf:resource="recordResource/058220-N0004"/>
+        <rico:hasMember rdf:resource="recordResource/058220-N0005"/>
+        <rico:hasMember rdf:resource="recordResource/058220-N0006"/>
+        <rico:hasMember rdf:resource="recordResource/058220-N0007"/>
+        <rico:hasMember rdf:resource="recordResource/058220-N0008"/>
+    </rico:RecordResource>
+ 
+    <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:descriptiveNote rdf:parseType="Literal">
+            <html:div xml:lang="fr">
+                <html:h4>Document(s) séparé(s)</html:h4>
+                <html:p>Voir aussi le versement conservé par la mission sous la cote interne DGS/2003/002 boite 2 sur le retrait possible de lots de médicaments dérivés du sang par la firme Baxter.</html:p>
+            </html:div>
+        </rico:descriptiveNote>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">                
+                <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+                <rico:hasDigitalCopy rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
+                <!-- do not process separatedmaterial here -->
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2">                
+                <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+                <rico:isDigitalCopyOf rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1"/>
+                <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+                <rico:identifier>FRAN_0118_274_L</rico:identifier>
+                <rico:encodingFormat xml:lang="en">image/jpeg</rico:encodingFormat>
+                <!-- do not process separatedmaterial here -->
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest/FRAN_0118_274_L"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>        
+    </rico:RecordResource>
+
+    <rico:RecordResource rdf:about="recordResource/058220-N0004">
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:descriptiveNote rdf:parseType="Literal">
+            <html:div xml:lang="fr">
+             <html:h4>Document(s) séparé(s)</html:h4>
+                <html:p>Versements conservés aux Archives nationales, site de Pierrefitte-sur-Seine
+                </html:p>
+                <html:ul>
+                    <html:li>19930532 articles 1 à 4, Conseil supérieur des hôpitaux (1949-1986).
+                    </html:li>
+                    <html:li>20030245 articles 1 à 2, Conseil supérieur des hôpitaux (1987-1999).
+                        </html:li>
+                            <html:li>19940678 articles 1 à 9, Politique générale en matière d'hôpitaux publics et privés, création suppression ou transformation d'établissements (1931-1993).
+                                </html:li>
+                </html:ul>
+            </html:div>
+         </rico:descriptiveNote>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-N0004-i1">                
+                <rico:instantiates rdf:resource="recordResource/058220-N0004"/>
+                <!-- do not process separatedmaterial here -->
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0004"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>       
+    </rico:RecordResource>
+    
+    <!--ref role="IR"-->
+    <rico:RecordResource rdf:about="recordResource/058220-N0005">
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:descriptiveNote rdf:parseType="Literal">
+            <html:div xml:lang="fr">
+                <html:h4>Document(s) séparé(s)</html:h4>
+                <html:p>Versement n°20160330 : Radio France, France Inter, émission de Daniel Mermet « Là-bas si j'y suis » : archives papier</html:p>
+                <html:p>Archives papier de l'émission "Là-bas si j'y suis"<html:a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_055665">Radio France France Inter Archives papier Émission de Daniel Mermet « Là-bas si j'y suis » 1977-2001</html:a>
+                </html:p>
+            </html:div>
+        </rico:descriptiveNote>       
+        <rico:isRecordResourceAssociatedWithRecordResource rdf:resource="recordResource/055665"/>
+        
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-N0005-i1">                
+                <rico:instantiates rdf:resource="recordResource/058220-N0005"/>
+                <!-- do not process separatedmaterial here -->
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0005"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>       
+    </rico:RecordResource>
+    
+    <rico:RecordResource rdf:about="recordResource/058220-N0006">
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:descriptiveNote rdf:parseType="Literal">
+            <html:div xml:lang="fr">
+                <html:h4>Document(s) séparé(s)</html:h4>
+                <html:p>Sources complémentaires : <html:a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_017020/d_4_1">Transports ; Direction des ports maritimes et des voies navigables ; Service des voies navigables et du domaine public fluvial ; 2e bureau des voies navigables (1849-1975)# Réglementation - Correspondance - Rapports 1894 à 1946 #19770765/4</html:a></html:p>
+            </html:div>
+        </rico:descriptiveNote>       
+        <rico:isRecordResourceAssociatedWithRecordResource rdf:resource="recordResource/017020-d_4_1"/>
+       
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-N0006-i1">                
+                <rico:instantiates rdf:resource="recordResource/058220-N0006"/>
+                <!-- do not process separatedmaterial here -->
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0006"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>       
+    </rico:RecordResource>
+    
+    <!--ref role="WEB"-->
+    <rico:RecordResource rdf:about="recordResource/058220-N0007">
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:descriptiveNote rdf:parseType="Literal">
+            <html:div xml:lang="fr">
+                <html:h4>Document(s) séparé(s)</html:h4>
+                <html:p>Biliothèque nationale de France</html:p>
+                <html:p>
+                    <html:i>gallica.bnf.fr</html:i> (
+                        <html:a href="https://gallica.bnf.fr/ark:/12148/cb344422861/date&amp;rk=21459;2">Bulletins de la SPPF</html:a>
+                     [1902-1939], <html:a href="https://gallica.bnf.fr/ark:/12148/cb34382796c/date&amp;rk=42918;4">Sites et Monuments</html:a>
+                     [1958-2016])</html:p>
+            </html:div>
+        </rico:descriptiveNote>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-N0007-i1">                
+                <rico:instantiates rdf:resource="recordResource/058220-N0007"/>
+                <!-- do not process separatedmaterial here -->
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0007"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>       
+    </rico:RecordResource>
+    
+    <!--ref role="ANX"-->
+    <rico:RecordResource rdf:about="recordResource/058220-N0008">
+        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:descriptiveNote rdf:parseType="Literal">
+            <html:div xml:lang="fr">
+                <html:h4>Document(s) séparé(s)</html:h4>
+                <html:p>Consulter l'annexe ci-joint<html:a href="https://www.siv.archives-nationales.culture.gouv.fr/mm/media/download/FRAN_ANX_012194.pdf">Table des sigles</html:a></html:p>
+            </html:div>
+        </rico:descriptiveNote>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-N0008-i1">                
+                <rico:instantiates rdf:resource="recordResource/058220-N0008"/>
+                <!-- do not process separatedmaterial here -->
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0008"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>       
+    </rico:RecordResource>
+</rdf:RDF>
