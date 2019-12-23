@@ -813,7 +813,7 @@
 	
 	<xsl:template match="repository" mode="#all">
 		<xsl:choose>
-			<xsl:when test="matches(text(), 'Archives nationales de France', 'i') or matches(text(), 'Archives nationales', 'i')">
+			<xsl:when test="matches(normalize-space(.), 'Archives nationales de France', 'i') or matches(normalize-space(.), 'Archives nationales', 'i')">
 				<rico:heldBy rdf:resource="agent/005061"/>
 			</xsl:when>
 			<xsl:otherwise>
@@ -841,7 +841,7 @@
 	<xsl:template match="langmaterial">
 		<xsl:apply-templates />
 	</xsl:template>
-	<xsl:template match="language">
+	<xsl:template match="language[@langcode]">
 		<rico:hasLanguage rdf:resource="{ead2rico:URI-Language(@langcode)}"/>
 	</xsl:template>
 

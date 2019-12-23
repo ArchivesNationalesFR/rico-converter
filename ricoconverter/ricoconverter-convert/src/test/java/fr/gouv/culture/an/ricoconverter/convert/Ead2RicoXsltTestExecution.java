@@ -102,16 +102,19 @@ public class Ead2RicoXsltTestExecution implements Test {
 		final File expected = new File(this.testFolder, "expected.xml");
 		System.out.println("Testing "+input.getAbsolutePath());
 		try {
-			if(expected.exists()) {
-				InputStream inputTest = new FileInputStream(input);
-				DOMResult domResult = new DOMResult();
-				try {
-					converter.convert(new StreamSource(inputTest), domResult);
-				} catch (RicoConverterException e) {
-					result.addError(this, e);
-				}
 			
-				System.out.println(nodeToString(domResult.getNode()));
+			InputStream inputTest = new FileInputStream(input);
+			DOMResult domResult = new DOMResult();
+			try {
+				converter.convert(new StreamSource(inputTest), domResult);
+			} catch (RicoConverterException e) {
+				result.addError(this, e);
+			}
+		
+			System.out.println(nodeToString(domResult.getNode()));
+			
+			if(expected.exists()) {
+
 				DiffBuilder builder = 
 				DiffBuilder
 						.compare(Input.fromFile(expected).build())
@@ -149,7 +152,7 @@ public class Ead2RicoXsltTestExecution implements Test {
 				if(differences.stream().anyMatch(d -> d.getResult() == ComparisonResult.DIFFERENT)) {
 					result.addFailure(this, new AssertionFailedError("Test failed on "+this.testFolder+":\n"+diff.toString()));
 				}
-			} else {
+			} else {				
 				result.endTest(this);
 			}
 		} catch (FileNotFoundException e1) {
