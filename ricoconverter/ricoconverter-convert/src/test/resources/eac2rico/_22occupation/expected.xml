@@ -3,39 +3,40 @@
          xml:base="http://data.archives-nationales.culture.gouv.fr/"
          xmlns:html="http://www.w3.org/1999/xhtml"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#">
-   <rico:Description rdf:about="description/005205">
+   <rico:Record rdf:about="description/005205">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
       <rico:describes rdf:resource="agent/005205"/>
       <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005205"/>
-   </rico:Description>
+   </rico:Record>
    <rico:Agent rdf:about="agent/005205">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:describedBy rdf:resource="description/005205"/>
-      <rico:personIsSourceOfOccupationRelation>
-         <rico:OccupationRelation rdf:about="occupationRelation/005205-d699msj02xm-19qbb7wdtto3j">
-            <rico:relationToOccupationHasSource rdf:resource="agent/005205"/>
-            <rico:relationToOccupationHasTarget>
-               <rico:Occupation>
-                  <rico:occupationIsTargetOfOccupationRelation rdf:resource="occupationRelation/005205-d699msj02xm-19qbb7wdtto3j"/>
-                  <rico:hasOccupationType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
-               </rico:Occupation>
-            </rico:relationToOccupationHasTarget>
-         </rico:OccupationRelation>
-      </rico:personIsSourceOfOccupationRelation>
-      <rico:personIsSourceOfOccupationRelation>
-         <rico:OccupationRelation rdf:about="occupationRelation/005205-d3nyub73ic-1g5es55lb2lpf-19880101-20031231">
-            <rico:relationToOccupationHasSource rdf:resource="agent/005205"/>
-            <rico:relationToOccupationHasTarget>
-               <rico:Occupation>
-                  <rico:occupationIsTargetOfOccupationRelation rdf:resource="occupationRelation/005205-d3nyub73ic-1g5es55lb2lpf-19880101-20031231"/>
-                  <rico:hasOccupationType rdf:resource="occupationType/FRAN_RI_010-d3nyub73ic-1g5es55lb2lpf"/>
-               </rico:Occupation>
-            </rico:relationToOccupationHasTarget>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="occupationRelation/005205-d699msj02xm-19qbb7wdtto3j">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005205"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="occupationRelation/005205-d699msj02xm-19qbb7wdtto3j"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="occupationRelation/005205-d3nyub73ic-1g5es55lb2lpf-19880101-20031231">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005205"/>
+            <rico:performanceRelationHasSource>
+               <rico:Activity>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="occupationRelation/005205-d3nyub73ic-1g5es55lb2lpf-19880101-20031231"/>
+                  <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3nyub73ic-1g5es55lb2lpf"/>
+               </rico:Activity>
+            </rico:performanceRelationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-12-31</rico:endDate>
-            <rico:description rdf:parseType="Literal">
+            <rico:descriptiveNote rdf:parseType="Literal">
                <html:p xml:lang="fr">Recteur de l'académie d'Orléans (1988-1991), de Nantes (1997-1998), de Montpellier (1998-2000), de Reims (2000-2003).</html:p>
-            </rico:description>
-         </rico:OccupationRelation>
-      </rico:personIsSourceOfOccupationRelation>
+            </rico:descriptiveNote>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
    </rico:Agent>
 </rdf:RDF>

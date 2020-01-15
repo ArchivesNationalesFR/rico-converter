@@ -4,10 +4,11 @@
          xmlns:html="http://www.w3.org/1999/xhtml"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
          xmlns:owl="http://www.w3.org/2002/07/owl#">
-   <rico:Description rdf:about="description/005205">
+   <rico:Record rdf:about="description/005205">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
       <rico:describes rdf:resource="agent/005205"/>
       <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005205"/>
-   </rico:Description>
+   </rico:Record>
    <rico:Agent rdf:about="agent/005205">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:describedBy rdf:resource="description/005205"/>
@@ -17,23 +18,23 @@
             <rdfs:label xml:lang="fr">The entity</rdfs:label>
             <rico:textualValue xml:lang="fr">The entity</rico:textualValue>
             <rico:isAgentNameOf rdf:resource="agent/005205"/>
-            <rico:isRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasAgentName>
       <rico:agentIsConnectedToAgentRelation rdf:resource="agentRelation/005205-111111-20101114-20111231"/>
       <rico:agentIsConnectedToAgentRelation rdf:resource="agentRelation/000000-005205"/>
    </rico:Agent>
-   <rico:AgentRelation rdf:about="agentRelation/005205-111111-20101114-20111231">
+   <rico:AgentToAgentRelation rdf:about="agentRelation/005205-111111-20101114-20111231">
       <rico:agentRelationConnects rdf:resource="agent/005205"/>
       <rico:agentRelationConnects rdf:resource="agent/111111"/>
       <rdfs:label xml:lang="fr">Relation associative entre "The entity" et "The associated entity with higher ID", début : 14 novembre 2010, fin : 2011</rdfs:label>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-11-14</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-12-31</rico:endDate>
-   </rico:AgentRelation>
-   <rico:AgentRelation rdf:about="agentRelation/000000-005205">
+   </rico:AgentToAgentRelation>
+   <rico:AgentToAgentRelation rdf:about="agentRelation/000000-005205">
       <rico:agentRelationConnects rdf:resource="agent/000000"/>
       <rico:agentRelationConnects rdf:resource="agent/005205"/>
       <rdfs:label xml:lang="fr">Relation associative entre "The associated entity with lower ID" et "The entity"</rdfs:label>
-   </rico:AgentRelation>
+   </rico:AgentToAgentRelation>
 </rdf:RDF>

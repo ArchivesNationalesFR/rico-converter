@@ -3,15 +3,17 @@
          xml:base="http://data.archives-nationales.culture.gouv.fr/"
          xmlns:html="http://www.w3.org/1999/xhtml"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#">
-   <rico:Description rdf:about="description/005205">
+   <rico:Record rdf:about="description/005205">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
    	  <rico:describes rdf:resource="agent/005205"/>
    	  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005205"/>
-   </rico:Description>
+   </rico:Record>
    <rico:Agent rdf:about="agent/005205">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:describedBy rdf:resource="description/005205"/>
-	  <rico:noteOnStructureOrGenealogy rdf:parseType="Literal">
+	  <rico:descriptiveNote rdf:parseType="Literal">
 	  	 <html:div xml:lang="fr">
+	  	 	 <h4>Organisation interne ou généalogie</h4>
 	         <html:p>1</html:p>
 	         <html:p>2</html:p>
 	         <html:h2>This is a header</html:h2>
@@ -24,9 +26,10 @@
 	            <html:u>underline</html:u> et <html:b>bold</html:b> et <html:i>italic</html:i>
 	         </html:p> 
          </html:div>
-	  </rico:noteOnStructureOrGenealogy>
-      <rico:generalContext rdf:parseType="Literal">
+	  </rico:descriptiveNote>
+      <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
+         	<h4>Contexte général</h4>
             <html:p>1</html:p>
             <html:p>2</html:p>
             <html:h2>This is a header</html:h2>
@@ -39,6 +42,6 @@
                <html:u>underline</html:u> et <html:b>bold</html:b> et <html:i>italic</html:i>
             </html:p> 
          </html:div>
-      </rico:generalContext>
+      </rico:history>
    </rico:Agent>
 </rdf:RDF>

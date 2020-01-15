@@ -3,14 +3,15 @@
    xml:base="http://data.archives-nationales.culture.gouv.fr/"
    xmlns:rico="https://www.ica.org/standards/RiC/ontology#">
    <!-- FC a discuter : on pourrait aussi utiliser html:p systématiquement ici, comme dans le cas où on a sourceEntry contenant descriptiveNote contenant p, uniquement dans le but d'homégénéiser la sortie rico:source-->
-   <rico:Description rdf:about="description/005205">
+   <rico:Record rdf:about="description/005205">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
       <rico:describes rdf:resource="agent/005205"/>
       <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005205"/>
       <rico:source xml:lang="fr">Journal officiel de la République française</rico:source>
       <rico:hasSource rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb135724950"/>
       <rico:source xml:lang="fr">Exemple (http://exemple.fr)</rico:source>
       <rico:source xml:lang="fr">Archives nationales : fonds Largeau (302AP)</rico:source>
-   </rico:Description>
+   </rico:Record>
    <rico:Agent rdf:about="agent/005205">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:describedBy rdf:resource="description/005205"/>

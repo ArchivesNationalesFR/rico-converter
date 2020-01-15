@@ -57,28 +57,28 @@
 			</rdf:RDF>
 		</xsl:result-document>
 
-		<!-- Generate a single output document to gather rico:AgentMembershipRelation... -->
-		<xsl:message>Arranging rico:AgentMembershipRelation...</xsl:message>
+		<!-- Generate a single output document to gather rico:MembershipRelation... -->
+		<xsl:message>Arranging rico:MembershipRelation...</xsl:message>
 		<xsl:result-document href="{concat($OUTPUT_RELATIONS_FOLDER, '/', 'FRAN_agentMembershipRelations.rdf')}" method="xml" encoding="utf-8" indent="yes">
 			<rdf:RDF>
 				<xsl:attribute name="xml:base" select="$BASE_URI" />
 				<!-- Iterate again... -->
 				<xsl:for-each select="$inputCollection">		
 					<!-- Collect all nodes rico:AgentTemporalRelation -->
-					<xsl:apply-templates select="rdf:RDF/rico:AgentMembershipRelation" mode="copyMe"/>						
+					<xsl:apply-templates select="rdf:RDF/rico:MembershipRelation" mode="copyMe"/>						
 				</xsl:for-each>
 			</rdf:RDF>
 		</xsl:result-document>
 		
-		<!-- Generate a single output document to gather rico:ProfessionalRelation... -->
-		<xsl:message>Arranging rico:ProfessionalRelation...</xsl:message>
+		<!-- Generate a single output document to gather rico:WorkRelation... -->
+		<xsl:message>Arranging rico:WorkRelation...</xsl:message>
 		<xsl:result-document href="{concat($OUTPUT_RELATIONS_FOLDER, '/', 'FRAN_professionalRelations.rdf')}" method="xml" encoding="utf-8" indent="yes">
 			<rdf:RDF>
 				<xsl:attribute name="xml:base" select="$BASE_URI" />
 				<!-- Iterate again... -->
 				<xsl:for-each select="$inputCollection">		
-					<!-- Collect all nodes rico:ProfessionalRelation -->
-					<xsl:apply-templates select="rdf:RDF/rico:ProfessionalRelation" mode="copyMe"/>						
+					<!-- Collect all nodes rico:WorkRelation -->
+					<xsl:apply-templates select="rdf:RDF/rico:WorkRelation" mode="copyMe"/>						
 				</xsl:for-each>
 			</rdf:RDF>
 		</xsl:result-document>
@@ -90,21 +90,21 @@
 				<xsl:attribute name="xml:base" select="$BASE_URI" />
 				<!-- Iterate again... -->
 				<xsl:for-each select="$inputCollection">		
-					<!-- Collect all nodes rico:AgentRelations -->
+					<!-- Collect all nodes rico:AgentToAgentRelations -->
 					<xsl:apply-templates select="rdf:RDF/rico:FamilyRelation" mode="copyMe"/>						
 				</xsl:for-each>
 			</rdf:RDF>
 		</xsl:result-document>
 
-		<!-- Generate a single output document to gather rico:AgentRelation... -->
-		<xsl:message>Arranging rico:AgentRelation...</xsl:message>	
+		<!-- Generate a single output document to gather rico:AgentToAgentRelation... -->
+		<xsl:message>Arranging rico:AgentToAgentRelation...</xsl:message>	
 		<xsl:result-document href="{concat($OUTPUT_RELATIONS_FOLDER, '/', 'FRAN_agentRelations.rdf')}" method="xml" encoding="utf-8" indent="yes">
 			<rdf:RDF>
 				<xsl:attribute name="xml:base" select="$BASE_URI" />
 				<!-- Iterate again... -->
 				<xsl:for-each select="$inputCollection">		
-					<!-- Collect all nodes rico:AgentRelations -->
-					<xsl:apply-templates select="rdf:RDF/rico:AgentRelation" mode="copyMe"/>						
+					<!-- Collect all nodes rico:AgentToAgentRelations -->
+					<xsl:apply-templates select="rdf:RDF/rico:AgentToAgentRelation" mode="copyMe"/>						
 				</xsl:for-each>
 			</rdf:RDF>
 		</xsl:result-document>
@@ -151,12 +151,12 @@
 		<xsl:copy>
 			<xsl:copy-of select="attribute::*"/>
 			<xsl:copy-of select="node()[
-				not(self::rico:AgentRelation) and
+				not(self::rico:AgentToAgentRelation) and
 				not(self::rico:AgentHierarchicalRelation) and
 			 	not(self::rico:AgentTemporalRelation) and
 			 	not(self::rico:FamilyRelation) and
-			 	not(self::rico:AgentMembershipRelation) and
-			 	not(self::rico:ProfessionalRelation) and
+			 	not(self::rico:MembershipRelation) and
+			 	not(self::rico:WorkRelation) and
 			 	not(self::rico:AgentOriginationRelation) and
 			 	not(self::rico:Place)
 			]"/>

@@ -4,10 +4,11 @@
          xmlns:html="http://www.w3.org/1999/xhtml"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
          xmlns:owl="http://www.w3.org/2002/07/owl#">
-   <rico:Description rdf:about="description/005205">
+   <rico:Record rdf:about="description/005205">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
       <rico:describes rdf:resource="agent/005205"/>
       <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005205"/>
-   </rico:Description>
+   </rico:Record>
    <rico:Agent rdf:about="agent/005205">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:describedBy rdf:resource="description/005205"/>
@@ -17,18 +18,18 @@
             <rdfs:label xml:lang="fr">The entity</rdfs:label>
             <rico:textualValue xml:lang="fr">The entity</rico:textualValue>
             <rico:isAgentNameOf rdf:resource="agent/005205"/>
-            <rico:isRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasAgentName>
-      <rico:agentHasProfessionalRelation rdf:resource="professionalRelation/005205-999999"/>
+      <rico:agentHasWorkRelation rdf:resource="workRelation/005205-999999"/>
    
    </rico:Agent>
-   <rico:ProfessionalRelation rdf:about="professionalRelation/005205-999999">	
-      <rico:professionalRelationConnects rdf:resource="agent/005205"/>
-      <rico:professionalRelationConnects rdf:resource="agent/999999"/>
+   <rico:WorkRelation rdf:about="workRelation/005205-999999">	
+      <rico:workRelationConnects rdf:resource="agent/005205"/>
+      <rico:workRelationConnects rdf:resource="agent/999999"/>
       <rdfs:label xml:lang="fr">Relation professionnelle (de travail) entre "The entity" et "Bibliothèque nationale de France"</rdfs:label>
-      <rico:description rdf:parseType="Literal"><html:p xml:lang="fr">Ces deux entités travaillent ensemble pour gérer le dépôt légal du web.</html:p></rico:description>
-   </rico:ProfessionalRelation>
+      <rico:descriptiveNote rdf:parseType="Literal"><html:p xml:lang="fr">Ces deux entités travaillent ensemble pour gérer le dépôt légal du web.</html:p></rico:descriptiveNote>
+   </rico:WorkRelation>
   
 </rdf:RDF>

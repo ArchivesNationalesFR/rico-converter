@@ -3,10 +3,11 @@
    xml:base="http://data.archives-nationales.culture.gouv.fr/"
    xmlns:html="http://www.w3.org/1999/xhtml" xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
    xmlns:owl="http://www.w3.org/2002/07/owl#">
-   <rico:Description rdf:about="description/050172">
+   <rico:Record rdf:about="description/050172">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
       <rico:describes rdf:resource="agent/050172"/>
       <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050172"/>
-   </rico:Description>
+   </rico:Record>
    <rico:Agent rdf:about="agent/050172">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Family"/>
       <rico:describedBy rdf:resource="description/050172"/>
@@ -16,22 +17,22 @@
             <rdfs:label xml:lang="fr">The entity</rdfs:label>
             <rico:textualValue xml:lang="fr">The entity</rico:textualValue>
             <rico:isAgentNameOf rdf:resource="agent/050172"/>
-            <rico:isRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasAgentName>
-      <rico:groupIsTargetOfAgentMembershipRelation
-         rdf:resource="agentMembershipRelation/051622-050172"/>
+      <rico:groupIsSourceOfMembershipRelation
+         rdf:resource="membershipRelation/050172-051622"/>
       <rico:agentIsConnectedToAgentRelation rdf:resource="agentRelation/010112-050172"/>
    </rico:Agent>
-   <rico:AgentMembershipRelation rdf:about="agentMembershipRelation/051622-050172">
-      <rico:agentMembershipRelationHasSource rdf:resource="agent/051622"/>
-      <rico:agentMembershipRelationHasTarget rdf:resource="agent/050172"/>
-      <rdfs:label xml:lang="fr">Relation d'appartenance entre "Deschanel, Paul (1855-1922)" et "The entity"</rdfs:label>
-   </rico:AgentMembershipRelation>
-   <rico:AgentRelation rdf:about="agentRelation/010112-050172">
+   <rico:MembershipRelation rdf:about="membershipRelation/050172-051622">
+      <rico:membershipRelationHasSource rdf:resource="agent/050172"/>
+      <rico:membershipRelationHasTarget rdf:resource="agent/051622"/>
+      <rdfs:label xml:lang="fr">Relation d'appartenance entre "The entity" et "Deschanel, Paul (1855-1922)"</rdfs:label>
+   </rico:MembershipRelation>
+   <rico:AgentToAgentRelation rdf:about="agentRelation/010112-050172">
       <rico:agentRelationConnects rdf:resource="agent/010112"/>
       <rico:agentRelationConnects rdf:resource="agent/050172"/>
       <rdfs:label xml:lang="fr">Relation entre "Panon-Desbassayns (famille)" et "The entity"</rdfs:label>
-   </rico:AgentRelation>
+   </rico:AgentToAgentRelation>
 </rdf:RDF>

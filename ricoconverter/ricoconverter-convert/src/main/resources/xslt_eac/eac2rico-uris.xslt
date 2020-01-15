@@ -173,18 +173,18 @@
 		   			$toDate)"
 		   		/>
 			</xsl:when>
-			<xsl:when test="$baseType = 'rico:AgentMembershipRelation'">
+			<xsl:when test="$baseType = 'rico:MembershipRelation'">
 				<xsl:value-of select="eac2rico:URI-Anything(
-					'agentMembershipRelation',
+					'membershipRelation',
 		   			$first,
 		   			$second,
 		   			$fromDate,
 		   			$toDate)"
 		   		/>
 			</xsl:when>
-			<xsl:when test="$baseType = 'rico:ProfessionalRelation'">
+			<xsl:when test="$baseType = 'rico:WorkRelation'">
 				<xsl:value-of select="eac2rico:URI-Anything(
-					'professionalRelation',
+					'workRelation',
 		   			$first,
 		   			$second,
 		   			$fromDate,
@@ -223,9 +223,9 @@
 		   			$toDate)"
 		   		/>
 			</xsl:when>
-			<xsl:when test="$baseType = 'rico:AgentMembershipRelation'">
+			<xsl:when test="$baseType = 'rico:MembershipRelation'">
 				<xsl:value-of select="eac2rico:URI-Anything(
-					'agentMembershipRelation',
+					'membershipRelation',
 		   			$first,
 		   			$second,
 		   			$fromDate,

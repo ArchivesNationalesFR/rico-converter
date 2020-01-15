@@ -4,10 +4,11 @@
          xmlns:html="http://www.w3.org/1999/xhtml"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
          xmlns:owl="http://www.w3.org/2002/07/owl#">
-   <rico:Description rdf:about="description/005205">
+   <rico:Record rdf:about="description/005205">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
       <rico:describes rdf:resource="agent/005205"/>
       <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005205"/>
-   </rico:Description>
+   </rico:Record>
    <rico:Agent rdf:about="agent/005205">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:describedBy rdf:resource="description/005205"/>
@@ -17,7 +18,7 @@
             <rdfs:label xml:lang="fr">The entity</rdfs:label>
             <rico:textualValue xml:lang="fr">The entity</rico:textualValue>
             <rico:isAgentNameOf rdf:resource="agent/005205"/>
-            <rico:isRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasAgentName>
@@ -32,8 +33,8 @@
          >1945-01-01</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
          >1950-11-30</rico:endDate>
-      <rico:description rdf:parseType="Literal">
+      <rico:descriptiveNote rdf:parseType="Literal">
          <html:p xml:lang="fr">Cette entité a été dirigée par la personne etc.</html:p>
-      </rico:description>
+      </rico:descriptiveNote>
    </rico:AgentHierarchicalRelation>
 </rdf:RDF>

@@ -57,19 +57,19 @@
 	
 			<!--  Turn the attributes into isRegulatedBy pointing to Rules -->
 			<xsl:if test="@countryencoding = 'iso3166-1'">
-				<rico:isRegulatedBy rdf:resource="rule/rl005"/>
+				<rico:regulatedBy rdf:resource="rule/rl005"/>
 			</xsl:if>
 			<xsl:if test="@dateencoding = 'iso8601'">
-				<rico:isRegulatedBy rdf:resource="rule/rl004"/>
+				<rico:regulatedBy rdf:resource="rule/rl004"/>
 			</xsl:if>
 			<xsl:if test="@langencoding = 'iso639-2b'">
-				<rico:isRegulatedBy rdf:resource="rule/rl006"/>
+				<rico:regulatedBy rdf:resource="rule/rl006"/>
 			</xsl:if>
 			<xsl:if test="@repositoryencoding = 'iso15511'">
-				<rico:isRegulatedBy rdf:resource="rule/rl007"/>
+				<rico:regulatedBy rdf:resource="rule/rl007"/>
 			</xsl:if>
 			<xsl:if test="@scriptencoding = 'iso15924'">
-				<rico:isRegulatedBy rdf:resource="rule/rl008"/>
+				<rico:regulatedBy rdf:resource="rule/rl008"/>
 			</xsl:if>
 	
 			<xsl:apply-templates mode="findingaid" />
@@ -109,7 +109,7 @@
 		<rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(if(../subtitle) then concat(., ' : ', ../subtitle) else .)" /></rdfs:label>
 	</xsl:template>
 	<xsl:template match="author" mode="findingaid">
-		<rico:authoredBy xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rico:authoredBy>
+		<rico:createdBy xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rico:createdBy>
 	</xsl:template>
 	
 	<xsl:template match="editionstmt" mode="#all">
@@ -153,11 +153,11 @@
 		<rico:hasLanguage rdf:resource="{ead2rico:URI-Language(@langcode)}"/>
 	</xsl:template>
 	<xsl:template match="descrules[text()]" mode="instantiation">
-		<rico:isRegulatedBy rdf:resource="rule/rl010"/>
+		<rico:regulatedBy rdf:resource="rule/rl010"/>
 	</xsl:template>
 	<xsl:template match="descrules[text()]" mode="findingaid">
 		<!-- Reference to ISAD(G), to be changed if you don't follow the ISAD(G) model -->
-		<rico:isRegulatedBy rdf:resource="rule/rl009"/>
+		<rico:regulatedBy rdf:resource="rule/rl009"/>
 	</xsl:template>
 	
 	<!-- ***** revisiondesc processing ***** -->
@@ -170,7 +170,7 @@
 	  <rico:affectedBy>
          <rico:Activity>
             <rico:date><xsl:call-template name="outputDateFromDateRange"><xsl:with-param name="normal" select="date/@normal"/></xsl:call-template></rico:date>
-            <rico:description xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(item)" /></rico:description>
+            <rico:descriptiveNote xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(item)" /></rico:descriptiveNote>
          </rico:Activity>
       </rico:affectedBy>
 	</xsl:template>
@@ -1031,7 +1031,7 @@
 	<xsl:template match="occupation[@authfilenumber and @source]" mode="persname">
 		<rico:performs>
             <rico:Activity>
-                <rico:hasOccupationType rdf:resource="{ead2rico:URI-OccupationType(@authfilenumber, @source)}"/>
+                <rico:hasActivityType rdf:resource="{ead2rico:URI-OccupationType(@authfilenumber, @source)}"/>
             </rico:Activity>
         </rico:performs> 
 	</xsl:template>
@@ -1040,7 +1040,7 @@
 	<xsl:template match="occupation[@authfilenumber and @source and (count(../persname) != 1)]">
 		<rico:isRelatedTo>
             <rico:Activity>
-                <rico:hasOccupationType rdf:resource="{ead2rico:URI-OccupationType(@authfilenumber, @source)}" />
+                <rico:hasActivityType rdf:resource="{ead2rico:URI-OccupationType(@authfilenumber, @source)}" />
             </rico:Activity>
         </rico:isRelatedTo> 
 	</xsl:template>

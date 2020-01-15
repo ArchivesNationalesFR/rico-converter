@@ -3,51 +3,52 @@
          xml:base="http://data.archives-nationales.culture.gouv.fr/"
          xmlns:html="http://www.w3.org/1999/xhtml"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#">
-   <rico:Description rdf:about="description/005205">
+   <rico:Record rdf:about="description/005205">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
       <rico:describes rdf:resource="agent/005205"/>
       <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005205"/>
-   </rico:Description>
+   </rico:Record>
    <rico:Agent rdf:about="agent/005205">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:describedBy rdf:resource="description/005205"/>
-      <rico:agentIsSourceOfActivityRealizationRelation>
-         <rico:ActivityRealizationRelation rdf:about="activityRealizationRelation/005205-d3nyugtbte--13rem7tfg1o1y">
-            <rico:activityRealizationRelationHasSource rdf:resource="agent/005205"/>
-            <rico:activityRealizationRelationHasTarget>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="activityRealizationRelation/005205-d3nyugtbte--13rem7tfg1o1y">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005205"/>
+            <rico:performanceRelationHasSource>
                <rico:Activity>
-                  <rico:activityIsTargetOfActivityRealizationRelation rdf:resource="activityRealizationRelation/005205-d3nyugtbte--13rem7tfg1o1y"/>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="activityRealizationRelation/005205-d3nyugtbte--13rem7tfg1o1y"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugtbte--13rem7tfg1o1y"/>
                </rico:Activity>
-            </rico:activityRealizationRelationHasTarget>
-         </rico:ActivityRealizationRelation>
-      </rico:agentIsSourceOfActivityRealizationRelation>
-      <rico:agentIsSourceOfActivityRealizationRelation>
-         <rico:ActivityRealizationRelation rdf:about="activityRealizationRelation/005205-d5bhvikvro-1p99atu7o3qwy-19090520-*">
-            <rico:activityRealizationRelationHasSource rdf:resource="agent/005205"/>
-            <rico:activityRealizationRelationHasTarget>
+            </rico:performanceRelationHasSource>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="activityRealizationRelation/005205-d5bhvikvro-1p99atu7o3qwy-19090520-*">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005205"/>
+            <rico:performanceRelationHasSource>
                <rico:Activity>
-                  <rico:activityIsTargetOfActivityRealizationRelation rdf:resource="activityRealizationRelation/005205-d5bhvikvro-1p99atu7o3qwy-19090520-*"/>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="activityRealizationRelation/005205-d5bhvikvro-1p99atu7o3qwy-19090520-*"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvikvro-1p99atu7o3qwy"/>
                </rico:Activity>
-            </rico:activityRealizationRelationHasTarget>
+            </rico:performanceRelationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1909-05-20</rico:beginningDate>
-         </rico:ActivityRealizationRelation>
-      </rico:agentIsSourceOfActivityRealizationRelation>
-      <rico:agentIsSourceOfActivityRealizationRelation>
-         <rico:ActivityRealizationRelation rdf:about="activityRealizationRelation/005205-d5bhvikvro-1p99atu7o3qwy-19180523-19870523">
-            <rico:activityRealizationRelationHasSource rdf:resource="agent/005205"/>
-            <rico:activityRealizationRelationHasTarget>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
+      <rico:agentIsTargetOfPerformanceRelation>
+         <rico:PerformanceRelation rdf:about="activityRealizationRelation/005205-d5bhvikvro-1p99atu7o3qwy-19180523-19870523">
+            <rico:performanceRelationHasTarget rdf:resource="agent/005205"/>
+            <rico:performanceRelationHasSource>
                <rico:Activity>
-                  <rico:activityIsTargetOfActivityRealizationRelation rdf:resource="activityRealizationRelation/005205-d5bhvikvro-1p99atu7o3qwy-19180523-19870523"/>
+                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="activityRealizationRelation/005205-d5bhvikvro-1p99atu7o3qwy-19180523-19870523"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvikvro-1p99atu7o3qwy"/>
                </rico:Activity>
-            </rico:activityRealizationRelationHasTarget>
+            </rico:performanceRelationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1918-05-23</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-05-23</rico:endDate>
-            <rico:description rdf:parseType="Literal">
+            <rico:descriptiveNote rdf:parseType="Literal">
  	           <html:p xml:lang="fr">Blah</html:p>
-            </rico:description>
-         </rico:ActivityRealizationRelation>
-      </rico:agentIsSourceOfActivityRealizationRelation>
+            </rico:descriptiveNote>
+         </rico:PerformanceRelation>
+      </rico:agentIsTargetOfPerformanceRelation>
    </rico:Agent>
 </rdf:RDF>

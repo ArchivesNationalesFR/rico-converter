@@ -80,7 +80,7 @@
 	
 	<xsl:variable name="ASSOCIATIVE_RELATION_CONFIG">
 		<AgentRelation>
-			<baseType>rico:AgentRelation</baseType>
+			<baseType>rico:AgentToAgentRelation</baseType>
 			<!-- no extra type here -->
 			<extraType></extraType>
 			<targetProperty>rico:agentRelationConnects</targetProperty>
@@ -107,26 +107,26 @@
 			<isSourceOfProperty>rico:personIsSourceOfAgentSubordinationRelation</isSourceOfProperty>
 			<label>Relation hiérarchique (de subordination)</label>
 		</AgentSubordinationRelation>
-		<AgentMembershipRelation>
-			<baseType>rico:AgentMembershipRelation</baseType>
+		<MembershipRelation>
+			<baseType>rico:MembershipRelation</baseType>
 			<!-- no extra type here -->
 			<extraType></extraType>
-			<targetProperty>rico:agentMembershipRelationHasTarget</targetProperty>
-			<sourceProperty>rico:agentMembershipRelationHasSource</sourceProperty>
-			<isTargetOfProperty>rico:groupIsTargetOfAgentMembershipRelation</isTargetOfProperty>
-			<isSourceOfProperty>rico:personIsSourceOfAgentMembershipRelation</isSourceOfProperty>
+			<targetProperty>rico:membershipRelationHasTarget</targetProperty>
+			<sourceProperty>rico:membershipRelationHasSource</sourceProperty>
+			<isTargetOfProperty>rico:personIsTargetOfMembershipRelation</isTargetOfProperty>
+			<isSourceOfProperty>rico:groupIsSourceOfMembershipRelation</isSourceOfProperty>
 			<label>Relation d'appartenance</label>
-		</AgentMembershipRelation>
-		<ProfessionalRelation>
-			<baseType>rico:ProfessionalRelation</baseType>
+		</MembershipRelation>
+		<WorkRelation>
+			<baseType>rico:WorkRelation</baseType>
 			<!-- no extra type here -->
 			<extraType></extraType>
-			<targetProperty>rico:professionalRelationConnects</targetProperty>
-			<sourceProperty>rico:professionalRelationConnects</sourceProperty>
-			<isTargetOfProperty>rico:agentHasProfessionalRelation</isTargetOfProperty>
-			<isSourceOfProperty>rico:agentHasProfessionalRelation</isSourceOfProperty>
+			<targetProperty>rico:workRelationConnects</targetProperty>
+			<sourceProperty>rico:workRelationConnects</sourceProperty>
+			<isTargetOfProperty>rico:agentHasWorkRelation</isTargetOfProperty>
+			<isSourceOfProperty>rico:agentHasWorkRelation</isSourceOfProperty>
 			<label>Relation professionnelle (de travail)</label>
-		</ProfessionalRelation>
+		</WorkRelation>
 	</xsl:variable>
 	
 	<!-- Determine the type of an associativeRelation; the type corresponds to the possible types in $ASSOCIATIVE_RELATION_CONFIG -->
@@ -135,8 +135,8 @@
 		<xsl:choose>
 			<xsl:when test="eac2rico:specifiesLeadershipRelation(@xlink:arcrole)">LeadershipRelation</xsl:when>
 			<xsl:when test="eac2rico:specifiesAgentSubordinationRelation(@xlink:arcrole)">AgentSubordinationRelation</xsl:when>
-			<xsl:when test="eac2rico:specifiesProfessionalRelation(@xlink:arcrole)">ProfessionalRelation</xsl:when>
-			<xsl:when test="eac2rico:specifiesAgentMembershipRelation(@xlink:arcrole)">AgentMembershipRelation</xsl:when>
+			<xsl:when test="eac2rico:specifiesWorkRelation(@xlink:arcrole)">WorkRelation</xsl:when>
+			<xsl:when test="eac2rico:specifiesMembershipRelation(@xlink:arcrole)">MembershipRelation</xsl:when>
 	       	<!-- If we detect a specific keyword in the description... -->
 	       	<xsl:when test="eac2rico:denotesLeadershipRelation(eac:descriptiveNote)">
 	       		<!-- ...read the description of the referenced entity... -->
@@ -157,7 +157,10 @@
 	</xsl:template>
 	
 	<!-- Determine source entity of an associative or family relation : 
-		if this is a LeadershipRelation/AgentMembershipRelation, this is necessarily the person, otherwise this is the entity with the lowest ID -->
+		if this is a MembershipRelation, this is necessarily the corporateBody/family.
+		if this is a LeadershipRelation, this is necessarily the person.
+		otherwise this is the entity with the lowest ID
+    -->
 	<xsl:template name="associativeOrFamilyRelationSourceEntity">
 		<xsl:param name="relation"  as="element()"/>
 		<xsl:param name="type"  as="xs:string"/>
@@ -176,7 +179,17 @@
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:choose>
-		   			<xsl:when test="(normalize-space($type) = 'LeadershipRelation' or normalize-space($type) = 'AgentMembershipRelation')">
+		   			<xsl:when test="(normalize-space($type) = 'MembershipRelation')">
+		   				<xsl:choose>
+		   					<xsl:when test="/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType != 'person'">
+		   						<xsl:value-of select="$agentUri" />
+		   					</xsl:when>
+		   					<xsl:otherwise>
+		   						<xsl:value-of select="eac2rico:URI-AgentExternal(@xlink:href, document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml')))" />
+		   					</xsl:otherwise>
+		   				</xsl:choose>
+		   			</xsl:when>
+		   			<xsl:when test="(normalize-space($type) = 'LeadershipRelation')">
 		   				<xsl:choose>
 		   					<xsl:when test="/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType = 'person'">
 		   						<xsl:value-of select="$agentUri" />
@@ -203,8 +216,14 @@
 
 	</xsl:template>
 	
-	<!-- Determine target entity of an associative or family relation : 
-		if this is a LeadershipRelation/AgentMembershipRelation, this is necessarily the corporateBody/family, otherwise this is the entity with the highest ID -->
+	
+	
+	<!-- 
+	    Determine target entity of an associative or family relation : 
+		if this is a MembershipRelation, this is necessarily the person.
+		if this is a LeadershipRelation, this is necessarily the corporateBody/family.
+		otherwise this is the entity with the highest ID
+	-->
 	<xsl:template name="associativeOrFamilyRelationTargetEntity">
 		<xsl:param name="relation"  as="element()"/>
 		<xsl:param name="type"  as="xs:string"/>
@@ -224,7 +243,20 @@
 			<xsl:otherwise>
 				<xsl:choose>
 					<xsl:when
-						test="(normalize-space($type) = 'LeadershipRelation' or normalize-space($type) = 'AgentMembershipRelation')">
+						test="(normalize-space($type) = 'MembershipRelation')">
+						<xsl:choose>
+							<xsl:when
+								test="/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType = 'person'">
+								<xsl:value-of select="$agentUri" />
+							</xsl:when>
+							<xsl:otherwise>
+								<xsl:value-of
+									select="eac2rico:URI-AgentExternal(@xlink:href, document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml')))" />
+							</xsl:otherwise>
+						</xsl:choose>
+					</xsl:when>
+					<xsl:when
+						test="(normalize-space($type) = 'LeadershipRelation')">
 						<xsl:choose>
 							<xsl:when
 								test="/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType != 'person'">
@@ -264,16 +296,16 @@
 			<isSourceOfProperty>rico:personHasFamilyRelation</isSourceOfProperty>
 			<label>Relation familiale</label>
 		</FamilyRelation>
-		<AgentMembershipRelation>
-			<type>rico:AgentMembershipRelation</type>
-			<targetProperty>rico:agentMembershipRelationHasTarget</targetProperty>
-			<sourceProperty>rico:agentMembershipRelationHasSource</sourceProperty>
-			<isTargetOfProperty>rico:groupIsTargetOfAgentMembershipRelation</isTargetOfProperty>
-			<isSourceOfProperty>rico:personIsSourceOfAgentMembershipRelation</isSourceOfProperty>
+		<MembershipRelation>
+			<type>rico:MembershipRelation</type>
+			<targetProperty>rico:membershipRelationHasTarget</targetProperty>
+			<sourceProperty>rico:membershipRelationHasSource</sourceProperty>
+			<isTargetOfProperty>rico:personIsTargetOfMembershipRelation</isTargetOfProperty>
+			<isSourceOfProperty>rico:groupIsSourceOfMembershipRelation</isSourceOfProperty>
 			<label>Relation d'appartenance</label>
-		</AgentMembershipRelation>
+		</MembershipRelation>
 		<AgentRelation>
-			<type>rico:AgentRelation</type>
+			<type>rico:AgentToAgentRelation</type>
 			<targetProperty>rico:agentRelationConnects</targetProperty>
 			<sourceProperty>rico:agentRelationConnects</sourceProperty>
 			<isTargetOfProperty>rico:agentIsConnectedToAgentRelation</isTargetOfProperty>
@@ -291,11 +323,11 @@
 		<xsl:variable name="externalEntityType" select="document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml'))/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType" />
 
 		<xsl:choose>
-			<xsl:when test="eac2rico:specifiesAgentMembershipRelation(@xlink:arcrole)">AgentMembershipRelation</xsl:when>
+			<xsl:when test="eac2rico:specifiesMembershipRelation(@xlink:arcrole)">MembershipRelation</xsl:when>
 	       	<xsl:when test="$entityType = 'person'">
 	       		<xsl:choose>
 	       			<xsl:when test="$externalEntityType = 'person'">FamilyRelation</xsl:when>
-					<xsl:when test="$externalEntityType = 'family'">AgentMembershipRelation</xsl:when>
+					<xsl:when test="$externalEntityType = 'family'">MembershipRelation</xsl:when>
 					<xsl:otherwise>
 						<xsl:value-of select="eac2rico:warning($recordId, 'UNEXPECTED_RELATED_ENTITY_TYPE', $externalEntityType)" />
 						AgentRelation
@@ -305,7 +337,7 @@
 	       	
 	       	<xsl:when test="$entityType = 'family'">
 	       		<xsl:choose>
-	       			<xsl:when test="$externalEntityType = 'person'">AgentMembershipRelation</xsl:when>
+	       			<xsl:when test="$externalEntityType = 'person'">MembershipRelation</xsl:when>
 					<xsl:when test="$externalEntityType = 'family'">AgentRelation</xsl:when>
 					<xsl:otherwise>
 						<xsl:value-of select="eac2rico:warning($recordId, 'UNEXPECTED_RELATED_ENTITY_TYPE', $externalEntityType)" />
@@ -318,10 +350,7 @@
 	       		<xsl:value-of select="eac2rico:warning($recordId, 'UNEXPECTED_RELATED_ENTITY_TYPE', $externalEntityType)" />
 				AgentRelation
 	       	</xsl:otherwise>
-      	</xsl:choose>			
-
-
-		
+      	</xsl:choose>					
 	</xsl:template>	
 	
 
@@ -379,15 +408,15 @@
 		<xsl:param name="arcrole"  as="xs:string?" />
 		<xsl:sequence select="$KEYWORDS/AgentRelation/AgentSubordinationRelation/Arcroles/Arcrole[text() = $arcrole] != ''" />
 	</xsl:function>
-	<!-- Tests if an xlink:arcrole attribute value indicates a ProfessionalRelation -->
-	<xsl:function name="eac2rico:specifiesProfessionalRelation" as="xs:boolean">
+	<!-- Tests if an xlink:arcrole attribute value indicates a WorkRelation -->
+	<xsl:function name="eac2rico:specifiesWorkRelation" as="xs:boolean">
 		<xsl:param name="arcrole"  as="xs:string?" />
-		<xsl:sequence select="$KEYWORDS/AgentRelation/ProfessionalRelation/Arcroles/Arcrole[text() = $arcrole] != ''" />
+		<xsl:sequence select="$KEYWORDS/AgentRelation/WorkRelation/Arcroles/Arcrole[text() = $arcrole] != ''" />
 	</xsl:function>
 	<!-- Tests if an xlink:arcrole attribute value indicates an AgentMembershopRelation -->
-	<xsl:function name="eac2rico:specifiesAgentMembershipRelation" as="xs:boolean">
+	<xsl:function name="eac2rico:specifiesMembershipRelation" as="xs:boolean">
 		<xsl:param name="arcrole"  as="xs:string?" />
-		<xsl:sequence select="$KEYWORDS/AgentRelation/AgentMembershipRelation/Arcroles/Arcrole[text() = $arcrole] != ''" />
+		<xsl:sequence select="$KEYWORDS/AgentRelation/MembershipRelation/Arcroles/Arcrole[text() = $arcrole] != ''" />
 	</xsl:function>
 		
 </xsl:stylesheet>

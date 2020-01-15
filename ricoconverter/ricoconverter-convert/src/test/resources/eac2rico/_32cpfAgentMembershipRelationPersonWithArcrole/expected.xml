@@ -3,10 +3,11 @@
    xml:base="http://data.archives-nationales.culture.gouv.fr/"
    xmlns:html="http://www.w3.org/1999/xhtml" xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
    xmlns:owl="http://www.w3.org/2002/07/owl#">
-   <rico:Description rdf:about="description/050171">
+   <rico:Record rdf:about="description/050171">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
       <rico:describes rdf:resource="agent/050171"/>
       <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050171"/>
-   </rico:Description>
+   </rico:Record>
    <rico:Agent rdf:about="agent/050171">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:describedBy rdf:resource="description/050171"/>
@@ -17,28 +18,28 @@
             <rdfs:label xml:lang="fr">The entity</rdfs:label>
             <rico:textualValue xml:lang="fr">The entity</rico:textualValue>
             <rico:isAgentNameOf rdf:resource="agent/050171"/>
-            <rico:isRegulatedBy rdf:resource="rule/rl002"/>
+            <rico:regulatedBy rdf:resource="rule/rl002"/>
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasAgentName>
-      <rico:personIsSourceOfAgentMembershipRelation rdf:resource="agentMembershipRelation/050171-111111"/>
-      <rico:personIsSourceOfAgentMembershipRelation rdf:resource="agentMembershipRelation/050171-999999-19460101-19500223"/>
+      <rico:personIsTargetOfMembershipRelation rdf:resource="membershipRelation/111111-050171"/>
+      <rico:personIsTargetOfMembershipRelation rdf:resource="membershipRelation/999999-050171-19460101-19500223"/>
    </rico:Agent>
-   <rico:AgentMembershipRelation rdf:about="agentMembershipRelation/050171-111111">
-      <rico:agentMembershipRelationHasSource rdf:resource="agent/050171"/>
-      <rico:agentMembershipRelationHasTarget rdf:resource="agent/111111"/>
-      <rdfs:label xml:lang="fr">Relation d'appartenance entre "The entity" et "Deschanel (Famille) (1700-1988)"</rdfs:label>
-   </rico:AgentMembershipRelation>
-   <rico:AgentMembershipRelation rdf:about="agentMembershipRelation/050171-999999-19460101-19500223">
-      <rico:agentMembershipRelationHasSource rdf:resource="agent/050171"/>
-      <rico:agentMembershipRelationHasTarget rdf:resource="agent/999999"/>
-      <rdfs:label xml:lang="fr">Relation d'appartenance entre "The entity" et "France. Ministère de l'Education nationale. Direction générale des services (1925-1956)", début : 1946, fin : 23 février 1950</rdfs:label>
+   <rico:MembershipRelation rdf:about="membershipRelation/111111-050171">
+      <rico:membershipRelationHasSource rdf:resource="agent/111111"/>
+      <rico:membershipRelationHasTarget rdf:resource="agent/050171"/>
+      <rdfs:label xml:lang="fr">Relation d'appartenance entre "Deschanel (Famille) (1700-1988)" et "The entity"</rdfs:label>
+   </rico:MembershipRelation>
+   <rico:MembershipRelation rdf:about="membershipRelation/999999-050171-19460101-19500223">
+      <rico:membershipRelationHasSource rdf:resource="agent/999999"/>
+      <rico:membershipRelationHasTarget rdf:resource="agent/050171"/>
+      <rdfs:label xml:lang="fr">Relation d'appartenance entre "France. Ministère de l'Education nationale. Direction générale des services (1925-1956)" et "The entity", début : 1946, fin : 23 février 1950</rdfs:label>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
          >1946-01-01</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
          >1950-02-23</rico:endDate>
-      <rico:description rdf:parseType="Literal">
+      <rico:descriptiveNote rdf:parseType="Literal">
          <html:p xml:lang="fr">"The entity" a été affecté à la DGS lors de la création de cette direction.</html:p>
-      </rico:description>
-   </rico:AgentMembershipRelation>
+      </rico:descriptiveNote>
+   </rico:MembershipRelation>
 </rdf:RDF>

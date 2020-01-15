@@ -52,18 +52,19 @@
 	</xsl:template>
 
 	<xsl:template match="eac:control">			
-		<rico:Description>
+		<rico:Record>
 			<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-Description(eac:recordId)" /></xsl:call-template>
+			<rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
 			<rico:describes><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template></rico:describes>
 			<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/{/eac:eac-cpf/eac:control/eac:recordId}" />
 			
 			<xsl:apply-templates />
 			<xsl:apply-templates select="../eac:cpfDescription/eac:identity/eac:entityId" mode="description" />
 			<xsl:apply-templates select="../eac:cpfDescription/eac:relations/eac:cpfRelation[@cpfRelationType = 'identity']" mode="description" />
-		</rico:Description>
+		</rico:Record>
 	</xsl:template>
 
-	<!-- Generates rico:isRegulatedBy with hardcoded values depending on the entity type -->
+	<!-- Generates rico:regulatedBy with hardcoded values depending on the entity type -->
 	<xsl:template match="eac:control/eac:conventionDeclaration">
 		<xsl:apply-templates />
 	</xsl:template>
@@ -71,14 +72,14 @@
 		<xsl:variable name="entType" select="/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType" />
 		<xsl:choose>
 			<xsl:when test="$entType = 'corporateBody' or $entType = 'family'">
-				<rico:isRegulatedBy rdf:resource="rule/rl001" />
+				<rico:regulatedBy rdf:resource="rule/rl001" />
 			</xsl:when>
 			<xsl:when test="$entType = 'person'">
-				<rico:isRegulatedBy rdf:resource="rule/rl002" />
+				<rico:regulatedBy rdf:resource="rule/rl002" />
 			</xsl:when>
 		</xsl:choose>
-		<rico:isRegulatedBy rdf:resource="rule/rl003" />
-		<rico:isRegulatedBy rdf:resource="rule/rl004" />
+		<rico:regulatedBy rdf:resource="rule/rl003" />
+		<rico:regulatedBy rdf:resource="rule/rl004" />
 	</xsl:template>
 	
 	<xsl:template match="eac:maintenanceHistory">
@@ -190,10 +191,10 @@
 				<!-- Authorized name are linked to the regulation depending on entityType -->
 				<xsl:choose>
 					<xsl:when test="/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType = 'corporateBody' or /eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType = 'family'">
-						<rico:isRegulatedBy rdf:resource="rule/rl001" />
+						<rico:regulatedBy rdf:resource="rule/rl001" />
 					</xsl:when>
 					<xsl:when test="/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType = 'person'">
-						<rico:isRegulatedBy rdf:resource="rule/rl002" />
+						<rico:regulatedBy rdf:resource="rule/rl002" />
 					</xsl:when>
 				</xsl:choose>
 				<rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
@@ -308,19 +309,21 @@
 	</xsl:template>
 	
 	<xsl:template match="eac:structureOrGenealogy[normalize-space(.) != '']">
-		<rico:noteOnStructureOrGenealogy rdf:parseType="Literal">
+		<rico:descriptiveNote rdf:parseType="Literal">
 			<html:div xml:lang="{$LITERAL_LANG}">
+				<h4>Organisation interne ou généalogie</h4>
 				<xsl:apply-templates />
 			</html:div>
-		</rico:noteOnStructureOrGenealogy>
+		</rico:descriptiveNote>
 	</xsl:template>
 	
 	<xsl:template match="eac:generalContext[normalize-space(.) != '']">
-		<rico:generalContext rdf:parseType="Literal">
+		<rico:history rdf:parseType="Literal">
 			<html:div xml:lang="{$LITERAL_LANG}">
+				<h4>Contexte général</h4>
 				<xsl:apply-templates />
 			</html:div>
-		</rico:generalContext>
+		</rico:history>
 	</xsl:template>
 	
 	
@@ -334,45 +337,45 @@
 		<xsl:choose>
 			<!-- Known reference in the referential -->
 			<xsl:when test="$ruleId != ''">
-				<rico:agentIsSourceOfRelationToMandate>
-					<rico:RelationToMandate>
+				<rico:agentIsTargetOfMandateRelation>
+					<rico:MandateRelation>
 						<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-RelationToMandate($recordId, $ruleId, eac:dateRange/eac:fromDate, eac:dateRange/eac:toDate)" /></xsl:call-template>
-						<rico:relationToMandateHasSource rdf:resource="{$agentUri}"/>
-						<rico:relationToMandateHasTarget rdf:resource="{$ruleId}"/>           	
+						<rico:mandateRelationHasTarget rdf:resource="{$agentUri}"/>
+						<rico:mandateRelationHasSource rdf:resource="{$ruleId}"/>           	
 		            	<xsl:apply-templates />
-					</rico:RelationToMandate>
-				</rico:agentIsSourceOfRelationToMandate>			
+					</rico:MandateRelation>
+				</rico:agentIsTargetOfMandateRelation>			
 			</xsl:when>
 			<!-- Unknown reference in the referential -->
 			<xsl:otherwise>			
-				<rico:agentIsSourceOfRelationToMandate>
-					<rico:RelationToMandate>
-						<rico:relationToMandateHasSource rdf:resource="{$agentUri}"/>
-						<rico:relationToMandateHasTarget> 
+				<rico:agentIsTargetOfMandateRelation>
+					<rico:MandateRelation>
+						<rico:mandateRelationHasTarget rdf:resource="{$agentUri}"/>
+						<rico:mandateRelationHasSource> 
 							<rico:Mandate>
 								<rico:title><xsl:value-of select="eac:citation/text()" /></rico:title>
 								<rdfs:seeAlso rdf:resource="{eac:citation/@xlink:href}" />
 							</rico:Mandate>
-						</rico:relationToMandateHasTarget>
+						</rico:mandateRelationHasSource>
 		            	<xsl:apply-templates />
-					</rico:RelationToMandate>
-				</rico:agentIsSourceOfRelationToMandate>			
+					</rico:MandateRelation>
+				</rico:agentIsTargetOfMandateRelation>			
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
 	<!-- Case where there is a citation, but no @xlink:href -->
 	<xsl:template match="eac:mandate[eac:citation[not(@xlink:href)]]">				
-		<rico:agentIsSourceOfRelationToMandate>
-			<rico:RelationToMandate>
-				<rico:relationToMandateHasSource rdf:resource="{$agentUri}"/>
-            	<rico:relationToMandateHasTarget>
+		<rico:agentIsTargetOfMandateRelation>
+			<rico:MandateRelation>
+				<rico:mandateRelationHasTarget rdf:resource="{$agentUri}"/>
+            	<rico:mandateRelationHasSource>
             		<rico:Mandate>
             			<rico:title><xsl:value-of select="eac:citation/text()" /></rico:title>
             		</rico:Mandate>
-            	</rico:relationToMandateHasTarget>
+            	</rico:mandateRelationHasSource>
             	<xsl:apply-templates />
-			</rico:RelationToMandate>
-		</rico:agentIsSourceOfRelationToMandate>
+			</rico:MandateRelation>
+		</rico:agentIsTargetOfMandateRelation>
 	</xsl:template>
 	<xsl:template match="eac:mandate[not(eac:citation) and eac:descriptiveNote[count(eac:p) = 1]]">
 		
@@ -391,31 +394,31 @@
 				  		<xsl:choose>
 							<!-- Known reference in the referential -->
 							<xsl:when test="$ruleId != ''">
-								<rico:agentIsSourceOfRelationToMandate>
-									<rico:RelationToMandate>
+								<rico:agentIsTargetOfMandateRelation>
+									<rico:MandateRelation>
 										<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-RelationToMandate($recordId, $ruleId, $theMandate/eac:dateRange/eac:fromDate, $theMandate/eac:dateRange/eac:toDate)" /></xsl:call-template>
-										<rico:relationToMandateHasSource rdf:resource="{$agentUri}"/>									
-						            	<rico:relationToMandateHasTarget rdf:resource="{$ruleId}"/>
+										<rico:mandateRelationHasTarget rdf:resource="{$agentUri}"/>									
+						            	<rico:mandateRelationHasSource rdf:resource="{$ruleId}"/>
 						            	<!-- Don't process the descriptiveNote as normal -->
 						            	<xsl:apply-templates select="$theMandate/*[local-name() != descriptiveNote]" />
-									</rico:RelationToMandate>
-								</rico:agentIsSourceOfRelationToMandate>			
+									</rico:MandateRelation>
+								</rico:agentIsTargetOfMandateRelation>			
 							</xsl:when>
 							<!-- Unknown reference in the referential -->
 							<xsl:otherwise>			
-								<rico:agentIsSourceOfRelationToMandate>
-									<rico:RelationToMandate>
-										<rico:relationToMandateHasSource rdf:resource="{$agentUri}"/>
-										<rico:relationToMandateHasTarget> 
+								<rico:agentIsTargetOfMandateRelation>
+									<rico:MandateRelation>
+										<rico:mandateRelationHasTarget rdf:resource="{$agentUri}"/>
+										<rico:mandateRelationHasSource> 
 											<rico:Mandate>
 												<rico:title><xsl:value-of select="$theDescriptiveNote" /></rico:title>
 												<rdfs:seeAlso rdf:resource="{.}" />
 											</rico:Mandate>
-										</rico:relationToMandateHasTarget>
+										</rico:mandateRelationHasSource>
 						            	<!-- Don't process the descriptiveNote as normal -->
 						            	<xsl:apply-templates select="$theMandate/*[local-name() != descriptiveNote]" />
-									</rico:RelationToMandate>
-								</rico:agentIsSourceOfRelationToMandate>			
+									</rico:MandateRelation>
+								</rico:agentIsTargetOfMandateRelation>			
 							</xsl:otherwise>
 						</xsl:choose>
 				  </xsl:matching-substring>
@@ -490,10 +493,10 @@
 	<xsl:template match="eac:maintenanceAgency">
 		<xsl:choose>
 			<xsl:when test="starts-with($AUTHOR_URI, $BASE_URI)">
-				<rico:authoredBy rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}" />
+				<rico:createdBy rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}" />
 			</xsl:when>
 			<xsl:otherwise>
-				<rico:authoredBy rdf:resource="{$AUTHOR_URI}" />
+				<rico:createdBy rdf:resource="{$AUTHOR_URI}" />
 			</xsl:otherwise>
 		</xsl:choose>
 		
@@ -506,51 +509,51 @@
 	</xsl:template>
 	<xsl:template match="eac:function">
 		
-		<rico:agentIsSourceOfActivityRealizationRelation>
-			<rico:ActivityRealizationRelation>
+		<rico:agentIsTargetOfPerformanceRelation>
+			<rico:PerformanceRelation>
 				<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-ActivityRealizationRelation($recordId, eac:term/@vocabularySource, eac:dateRange/eac:fromDate/@standardDate, eac:dateRange/eac:toDate/@standardDate )" /></xsl:call-template>
-				<rico:activityRealizationRelationHasSource>
+				<rico:performanceRelationHasTarget>
 					<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
-				</rico:activityRealizationRelationHasSource>
-				<rico:activityRealizationRelationHasTarget>
+				</rico:performanceRelationHasTarget>
+				<rico:performanceRelationHasSource>
 					<rico:Activity>
-						<rico:activityIsTargetOfActivityRealizationRelation>
+						<rico:activityIsSourceOfPerformanceRelation>
 							<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-ActivityRealizationRelation($recordId, eac:term/@vocabularySource, eac:dateRange/eac:fromDate/@standardDate, eac:dateRange/eac:toDate/@standardDate )" /></xsl:call-template>
-						</rico:activityIsTargetOfActivityRealizationRelation>
+						</rico:activityIsSourceOfPerformanceRelation>
 						<rico:hasActivityType>
 							<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-ActivityType(eac:term/@vocabularySource)" /></xsl:call-template>
 						</rico:hasActivityType>
 					</rico:Activity>					
-				</rico:activityRealizationRelationHasTarget>
+				</rico:performanceRelationHasSource>
 				<xsl:apply-templates />
-			</rico:ActivityRealizationRelation>
-		</rico:agentIsSourceOfActivityRealizationRelation>
+			</rico:PerformanceRelation>
+		</rico:agentIsTargetOfPerformanceRelation>
 	</xsl:template>
 	
-	<!-- *** Occupations *** -->
+	<!-- *** Occupations / Activities *** -->
 	<xsl:template match="eac:occupations">
 		<xsl:apply-templates />
 	</xsl:template>
 	<xsl:template match="eac:occupation">
-		<rico:personIsSourceOfOccupationRelation>
-			<rico:OccupationRelation>
+		<rico:agentIsTargetOfPerformanceRelation>
+			<rico:PerformanceRelation>
 				<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-OccupationRelation($recordId, eac:term/@vocabularySource, eac:dateRange/eac:fromDate/@standardDate, eac:dateRange/eac:toDate/@standardDate )" /></xsl:call-template>
-				<rico:relationToOccupationHasSource>
+				<rico:performanceRelationHasTarget>
 					<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
-				</rico:relationToOccupationHasSource>
-				<rico:relationToOccupationHasTarget>
-					<rico:Occupation>
-						<rico:occupationIsTargetOfOccupationRelation>
+				</rico:performanceRelationHasTarget>
+				<rico:performanceRelationHasSource>
+					<rico:Activity>
+						<rico:activityIsSourceOfPerformanceRelation>
 							<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-OccupationRelation($recordId, eac:term/@vocabularySource, eac:dateRange/eac:fromDate/@standardDate, eac:dateRange/eac:toDate/@standardDate )" /></xsl:call-template>
-						</rico:occupationIsTargetOfOccupationRelation>
-						<rico:hasOccupationType>
+						</rico:activityIsSourceOfPerformanceRelation>
+						<rico:hasActivityType>
 							<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-OccupationType(eac:term/@vocabularySource)" /></xsl:call-template>
-						</rico:hasOccupationType>
-					</rico:Occupation>					
-				</rico:relationToOccupationHasTarget>
+						</rico:hasActivityType>
+					</rico:Activity>					
+				</rico:performanceRelationHasSource>
 				<xsl:apply-templates />
-			</rico:OccupationRelation>
-		</rico:personIsSourceOfOccupationRelation>
+			</rico:PerformanceRelation>
+		</rico:agentIsTargetOfPerformanceRelation>
 	</xsl:template>
 	
 	<!-- *** LegalStatuses *** -->
@@ -573,8 +576,8 @@
 			<xsl:value-of select="eac2rico:warning($recordId, 'MISSING_VOCABULARYSOURCE_ON_LEGAL_STATUS', ./eac:term/text())" />
 		</xsl:if>
 		
-		<rico:thingIsSourceOfRelationToType>
-			<rico:RelationToType>
+		<rico:thingIsTargetOfTypeRelation>
+			<rico:TypeRelation>
 				<xsl:call-template name="rdf-about">
 	        		<xsl:with-param name="uri" select="eac2rico:URI-RelationToType(
 	        			$recordId,
@@ -583,16 +586,16 @@
 	        			eac:dateRange/eac:toDate/@standardDate )"
 	        		/>	
 	        	</xsl:call-template>
-	            <rico:relationToTypeHasSource>
+	            <rico:typeRelationHasTarget>
 	            	<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
-	            </rico:relationToTypeHasSource>
-	            <rico:relationToTypeHasTarget>
+	            </rico:typeRelationHasTarget>
+	            <rico:typeRelationHasSource>
 	            	<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-LegalStatus(eac:term/@vocabularySource)" /></xsl:call-template>
-	            </rico:relationToTypeHasTarget>
+	            </rico:typeRelationHasSource>
             
             <xsl:apply-templates />
-         	</rico:RelationToType>
-      </rico:thingIsSourceOfRelationToType>
+         	</rico:TypeRelation>
+      </rico:thingIsTargetOfTypeRelation>
 		
 	</xsl:template>
 
@@ -1007,6 +1010,9 @@
         		/>	
         	</xsl:call-template>
         </rico:agentIsTargetOfAgentOriginationRelation>
+        <rico:isProvenanceOf>
+        	<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-RecordResource(@xlink:href)" /></xsl:call-template>
+        </rico:isProvenanceOf>
 	</xsl:template>
 	<xsl:template match="eac:resourceRelation[@resourceRelationType = 'creatorOf' and @xlink:href != '']" mode="relations">
         <rico:AgentOriginationRelation>
@@ -1060,19 +1066,19 @@
        		<!-- Match on indéterminé without accents -->
        		<xsl:when test="not(contains(replace(normalize-unicode(lower-case(eac:placeEntry[@localType='nomLieu']),'NFKD'),'\P{IsBasicLatin}',''), 'indetermine'))">
 
-       		  <rico:thingIsSourceOfRelationToPlace>
-		         <rico:RelationToPlace>
-		            <rico:relationToPlaceHasSource>
+       		  <rico:thingIsTargetOfPlaceRelation>
+		         <rico:PlaceRelation>
+		            <rico:placeRelationHasTarget>
 		            	<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
-		            </rico:relationToPlaceHasSource>
-		            <rico:relationToPlaceHasTarget>
+		            </rico:placeRelationHasTarget>
+		            <rico:placeRelationHasSource>
 		            	<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-Place(eac:placeEntry[@localType='nomLieu']/text())" /></xsl:call-template>           	
-		            </rico:relationToPlaceHasTarget>
+		            </rico:placeRelationHasSource>
 		            
 		            <!--  dates + descriptiveNote -->
 		      		<xsl:apply-templates />
-		         </rico:RelationToPlace>
-		      </rico:thingIsSourceOfRelationToPlace>
+		         </rico:PlaceRelation>
+		      </rico:thingIsTargetOfPlaceRelation>
 		      
 		      <!-- Additionnally, generate the direct link hasLocation to the Place -->
 		      <rico:hasLocation>
@@ -1082,22 +1088,22 @@
        		</xsl:when>
        		<xsl:otherwise>
        			<!--  Case 3 -->
-	       		  <rico:thingIsSourceOfRelationToPlace>
-			         <rico:RelationToPlace>
-			            <rico:relationToPlaceHasSource>
+	       		  <rico:thingIsTargetOfPlaceRelation>
+			         <rico:PlaceRelation>
+			            <rico:placeRelationHasTarget>
 			            	<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
-			            </rico:relationToPlaceHasSource>
-			            <rico:relationToPlaceHasTarget>
+			            </rico:placeRelationHasTarget>
+			            <rico:placeRelationHasSource>
 			            	<rico:Place>
 			       				<rdfs:label xml:lang="{$LITERAL_LANG}">Lieu dont l'adresse précise est indéterminée</rdfs:label>
 			       				<xsl:apply-templates select="eac:placeEntry" mode="hasLocation" />
 			       			</rico:Place>
-			            </rico:relationToPlaceHasTarget>
+			            </rico:placeRelationHasSource>
 			            
 			            <!--  dates + descriptiveNote -->
 			      		<xsl:apply-templates />
-			         </rico:RelationToPlace>
-			      </rico:thingIsSourceOfRelationToPlace>
+			         </rico:PlaceRelation>
+			      </rico:thingIsTargetOfPlaceRelation>
 			      
 			      <!-- Additionnally, generate the direct link hasLocation to the Place -->
 				  <xsl:apply-templates select="eac:placeEntry" mode="hasLocation" />
@@ -1117,21 +1123,21 @@
 		<!-- Output a warning -->
 		<xsl:value-of select="eac2rico:warning($recordId, 'PLACE_WITHOUT_NOMLIEU_WITH_SINGLE_REFERENCE_TO_AUTHORITY_LIST', concat('''', $placeEntry/@localType, '''=', $placeEntry/@vocabularySource))" />
 	
-		<rico:thingIsSourceOfRelationToPlace>
-         <rico:RelationToPlace>
-            <rico:relationToPlaceHasSource>
+		<rico:thingIsTargetOfPlaceRelation>
+         <rico:PlaceRelation>
+            <rico:placeRelationHasTarget>
             	<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
-            </rico:relationToPlaceHasSource>
-            <rico:relationToPlaceHasTarget>
+            </rico:placeRelationHasTarget>
+            <rico:placeRelationHasSource>
             	<xsl:call-template name="rdf-resource">
 					<xsl:with-param name="uri" select="eac2rico:URI-Place-hasLocation($placeEntry/@vocabularySource, $placeEntry/@localType)" />
 				</xsl:call-template>            	
-            </rico:relationToPlaceHasTarget>
+            </rico:placeRelationHasSource>
             
             <!--  dates + descriptiveNote -->
       		<xsl:apply-templates />
-         </rico:RelationToPlace>
-      </rico:thingIsSourceOfRelationToPlace>
+         </rico:PlaceRelation>
+      </rico:thingIsTargetOfPlaceRelation>
       
       <!-- Additionnally, generate the direct link hasLocation to the Place -->
       <xsl:apply-templates select="eac:placeEntry" mode="hasLocation" />
@@ -1208,21 +1214,21 @@
 		match="eac:placeEntry[@localType = 'lieu' and @vocabularySource]"
 		mode="noNomLieu"
 	>
-		<rico:thingIsSourceOfRelationToPlace>
-         <rico:RelationToPlace>
-            <rico:relationToPlaceHasSource>
+		<rico:thingIsTargetOfPlaceRelation>
+         <rico:PlaceRelation>
+            <rico:placeRelationHasTarget>
             	<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
-            </rico:relationToPlaceHasSource>
-            <rico:relationToPlaceHasTarget>
+            </rico:placeRelationHasTarget>
+            <rico:placeRelationHasSource>
             	<xsl:call-template name="rdf-resource">
 					<xsl:with-param name="uri" select="eac2rico:URI-Place-hasLocation(@vocabularySource, @localType)" />
 				</xsl:call-template>         	
-            </rico:relationToPlaceHasTarget>
+            </rico:placeRelationHasSource>
             
             <!--  dates + descriptiveNote -->
       		<xsl:apply-templates select="../*[local-name() != 'placeEntry']" />
-         </rico:RelationToPlace>
-      </rico:thingIsSourceOfRelationToPlace>
+         </rico:PlaceRelation>
+      </rico:thingIsTargetOfPlaceRelation>
 	</xsl:template>
 	
 	<!-- CASE B : with 'nomLieu' -->
@@ -1239,21 +1245,21 @@
 	  
 	  <!-- generates the RelationToPlace -->
 	  
-	  <rico:thingIsSourceOfRelationToPlace>
-         <rico:RelationToPlace>
-            <rico:relationToPlaceHasSource>
+	  <rico:thingIsTargetOfPlaceRelation>
+         <rico:PlaceRelation>
+            <rico:placeRelationHasTarget>
             	<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
-            </rico:relationToPlaceHasSource>
-            <rico:relationToPlaceHasTarget>
+            </rico:placeRelationHasTarget>
+            <rico:placeRelationHasSource>
             	<xsl:call-template name="rdf-resource">
 					<xsl:with-param name="uri" select="eac2rico:URI-Place(eac:placeEntry[@localType='nomLieu']/text())" />
 				</xsl:call-template>         	
-            </rico:relationToPlaceHasTarget>
+            </rico:placeRelationHasSource>
             
             <!--  dates + descriptiveNote -->
       		<xsl:apply-templates />
-         </rico:RelationToPlace>
-      </rico:thingIsSourceOfRelationToPlace>	  
+         </rico:PlaceRelation>
+      </rico:thingIsTargetOfPlaceRelation>	  
 	  
 	  <!-- Additionnally, generate the direct link hasLocation to the referential -->
       <rico:hasLocation>
@@ -1303,10 +1309,10 @@
 	
 	<!-- If we have a single 'p', don't wrap with a div -->
 	<xsl:template match="eac:descriptiveNote[count(eac:p) = 1]">
-		<rico:description rdf:parseType="Literal"><html:p xml:lang="{$LITERAL_LANG}"><xsl:apply-templates select="eac:p/node()" /></html:p></rico:description>
+		<rico:descriptiveNote rdf:parseType="Literal"><html:p xml:lang="{$LITERAL_LANG}"><xsl:apply-templates select="eac:p/node()" /></html:p></rico:descriptiveNote>
 	</xsl:template>
 	<xsl:template match="eac:descriptiveNote[count(eac:p) > 1]">
-		<rico:description rdf:parseType="Literal"><html:div xml:lang="{$LITERAL_LANG}"><xsl:apply-templates /></html:div></rico:description>
+		<rico:descriptiveNote rdf:parseType="Literal"><html:div xml:lang="{$LITERAL_LANG}"><xsl:apply-templates /></html:div></rico:descriptiveNote>
 	</xsl:template>
 	
 	<!-- This one detects all 'p' that have only one child element and that child is a span -->

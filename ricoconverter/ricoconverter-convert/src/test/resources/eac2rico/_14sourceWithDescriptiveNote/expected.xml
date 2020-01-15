@@ -2,7 +2,8 @@
 		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xml:base="http://data.archives-nationales.culture.gouv.fr/"
    xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:html="http://www.w3.org/1999/xhtml">
-   <rico:Description rdf:about="description/000051">
+   <rico:Record rdf:about="description/000051">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
       <rico:describes rdf:resource="agent/000051"/>
       <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_000051"/>
       <rico:source rdf:parseType="Literal"><html:p xml:lang="fr">Dardy-Cretin Michèle,
@@ -20,7 +21,7 @@
       <rico:hasSource rdf:resource="http://fr.wikipedia.org/wiki/Thomas_Arthur_de_Lally-Tollendal"/>
       <rico:source rdf:parseType="Literal"><html:p xml:lang="fr">Notice Wikipedia en https : https://fr.wikipedia.org/wiki/Victor_de_Persigny</html:p></rico:source>
       <rico:hasSource rdf:resource="https://fr.wikipedia.org/wiki/Victor_de_Persigny" />
-   </rico:Description>
+   </rico:Record>
    <rico:Agent rdf:about="agent/000051">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:describedBy rdf:resource="description/000051"/>

@@ -34,16 +34,16 @@
 			<Arcrole currentEntityRole="target">isInferiorOf</Arcrole>
 		</Arcroles>
 	</AgentSubordinationRelation>
-	<AgentMembershipRelation>
+	<MembershipRelation>
 		<Arcroles>
-			<Arcrole currentEntityRole="source">personIsMemberOf</Arcrole>
-			<Arcrole currentEntityRole="target">hasAsPersonMember</Arcrole>
+			<Arcrole currentEntityRole="target">personIsMemberOf</Arcrole>
+			<Arcrole currentEntityRole="source">hasAsPersonMember</Arcrole>
 		</Arcroles>
-	</AgentMembershipRelation>
-	<ProfessionalRelation>
+	</MembershipRelation>
+	<WorkRelation>
 		<Arcroles>
 			<Arcrole currentEntityRole="unspecified">hasProfessionalRelationWith</Arcrole>
 		</Arcroles>
-	</ProfessionalRelation>
+	</WorkRelation>
 	
 </AgentRelation>

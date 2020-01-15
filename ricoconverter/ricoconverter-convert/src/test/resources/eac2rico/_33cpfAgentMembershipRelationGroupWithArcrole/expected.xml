@@ -3,10 +3,11 @@
    xml:base="http://data.archives-nationales.culture.gouv.fr/"
    xmlns:html="http://www.w3.org/1999/xhtml" xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
    xmlns:owl="http://www.w3.org/2002/07/owl#">
-   <rico:Description rdf:about="description/456789">
+   <rico:Record rdf:about="description/456789">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
       <rico:describes rdf:resource="agent/456789"/>
       <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_456789"/>
-   </rico:Description>
+   </rico:Record>
    <rico:Agent rdf:about="agent/456789">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:describedBy rdf:resource="description/456789"/>
@@ -17,20 +18,20 @@
             <rdfs:label xml:lang="fr">The entity</rdfs:label>
             <rico:textualValue xml:lang="fr">The entity</rico:textualValue>
             <rico:isAgentNameOf rdf:resource="agent/456789"/>
-            <rico:isRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasAgentName>
-      <rico:groupIsTargetOfAgentMembershipRelation
-        rdf:resource="agentMembershipRelation/111111-456789"/>
+      <rico:groupIsSourceOfMembershipRelation
+        rdf:resource="membershipRelation/456789-111111"/>
    </rico:Agent>
   
-   <rico:AgentMembershipRelation rdf:about="agentMembershipRelation/111111-456789">
-      <rico:agentMembershipRelationHasSource rdf:resource="agent/111111"/>
-      <rico:agentMembershipRelationHasTarget rdf:resource="agent/456789"/>
-      <rdfs:label xml:lang="fr">Relation d'appartenance entre "The person member" et "The entity"</rdfs:label>
-      <rico:description rdf:parseType="Literal">
-         <html:p xml:lang="fr">"The entity" a compté parmi ses membres "The entity" dès sa création.</html:p>
-      </rico:description>
-   </rico:AgentMembershipRelation>
+   <rico:MembershipRelation rdf:about="membershipRelation/456789-111111">
+      <rico:membershipRelationHasSource rdf:resource="agent/456789"/>
+      <rico:membershipRelationHasTarget rdf:resource="agent/111111"/>
+      <rdfs:label xml:lang="fr">Relation d'appartenance entre "The entity" et "The person member"</rdfs:label>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:p xml:lang="fr">"The entity" a compté parmi ses membres "The person member" dès sa création.</html:p>
+      </rico:descriptiveNote>
+   </rico:MembershipRelation>
 </rdf:RDF>

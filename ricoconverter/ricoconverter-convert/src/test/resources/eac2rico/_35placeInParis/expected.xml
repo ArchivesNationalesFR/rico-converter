@@ -3,10 +3,11 @@
    xml:base="http://data.archives-nationales.culture.gouv.fr/"
    xmlns:html="http://www.w3.org/1999/xhtml" xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
    xmlns:owl="http://www.w3.org/2002/07/owl#">
-   <rico:Description rdf:about="description/123456">
+   <rico:Record rdf:about="description/123456">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
       <rico:describes rdf:resource="agent/123456"/>
       <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_123456"/>
-   </rico:Description>
+   </rico:Record>
    <rico:Agent rdf:about="agent/123456">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:describedBy rdf:resource="description/123456"/>
@@ -16,61 +17,61 @@
             <rdfs:label xml:lang="fr">The entity</rdfs:label>
             <rico:textualValue xml:lang="fr">The entity</rico:textualValue>
             <rico:isAgentNameOf rdf:resource="agent/123456"/>
-            <rico:isRegulatedBy rdf:resource="rule/rl001"/>
+            <rico:regulatedBy rdf:resource="rule/rl001"/>
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasAgentName>
       <!-- case 1 -->
-      <rico:thingIsSourceOfRelationToPlace>
-         <rico:RelationToPlace>
-            <rico:relationToPlaceHasSource rdf:resource="agent/123456"/>
-            <rico:relationToPlaceHasTarget
+      <rico:thingIsTargetOfPlaceRelation>
+         <rico:PlaceRelation>
+            <rico:placeRelationHasTarget rdf:resource="agent/123456"/>
+            <rico:placeRelationHasSource
                rdf:resource="place/29%20rue%20d%27Ulm%2C%2075230%20Paris%2005"/>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
                >1963-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
                >1968-12-31</rico:endDate>
-            <rico:description rdf:parseType="Literal">
+            <rico:descriptiveNote rdf:parseType="Literal">
                <html:p xml:lang="fr">A note.</html:p>
-            </rico:description>
-         </rico:RelationToPlace>
-      </rico:thingIsSourceOfRelationToPlace>
+            </rico:descriptiveNote>
+         </rico:PlaceRelation>
+      </rico:thingIsTargetOfPlaceRelation>
       <rico:hasLocation rdf:resource="place/29%20rue%20d%27Ulm%2C%2075230%20Paris%2005"/>
       <!-- case 2 -->
-      <rico:thingIsSourceOfRelationToPlace>
-         <rico:RelationToPlace>
-            <rico:relationToPlaceHasSource rdf:resource="agent/123456"/>
-            <rico:relationToPlaceHasTarget rdf:resource="place/24%2C%20rue%20La%20Fayette"/>
-         </rico:RelationToPlace>
-      </rico:thingIsSourceOfRelationToPlace>
+      <rico:thingIsTargetOfPlaceRelation>
+         <rico:PlaceRelation>
+            <rico:placeRelationHasTarget rdf:resource="agent/123456"/>
+            <rico:placeRelationHasSource rdf:resource="place/24%2C%20rue%20La%20Fayette"/>
+         </rico:PlaceRelation>
+      </rico:thingIsTargetOfPlaceRelation>
       <rico:hasLocation rdf:resource="place/24%2C%20rue%20La%20Fayette"/>
       <!-- case 3 -->
-      <rico:thingIsSourceOfRelationToPlace>
-         <rico:RelationToPlace>
-            <rico:relationToPlaceHasSource rdf:resource="agent/123456"/>
-            <rico:relationToPlaceHasTarget> <rico:Place>
+      <rico:thingIsTargetOfPlaceRelation>
+         <rico:PlaceRelation>
+            <rico:placeRelationHasTarget rdf:resource="agent/123456"/>
+            <rico:placeRelationHasSource> <rico:Place>
                   <rdfs:label xml:lang="fr">Lieu dont l'adresse précise est indéterminée</rdfs:label>
                   <rico:hasLocation rdf:resource="place/FRAN_RI_020-d3nyv28v37--w6fed6mpjd5r"/>
                </rico:Place>
-            </rico:relationToPlaceHasTarget> </rico:RelationToPlace>
-      </rico:thingIsSourceOfRelationToPlace>
+            </rico:placeRelationHasSource> </rico:PlaceRelation>
+      </rico:thingIsTargetOfPlaceRelation>
       <rico:hasLocation rdf:resource="place/FRAN_RI_020-d3nyv28v37--w6fed6mpjd5r"/>
       <!-- case 4 -->
-      <rico:thingIsSourceOfRelationToPlace>
-         <rico:RelationToPlace>
-            <rico:relationToPlaceHasSource rdf:resource="agent/123456"/>
-            <rico:relationToPlaceHasTarget rdf:resource="place/au%20March%C3%A9-Neuf"/>
-         </rico:RelationToPlace>
-      </rico:thingIsSourceOfRelationToPlace>
+      <rico:thingIsTargetOfPlaceRelation>
+         <rico:PlaceRelation>
+            <rico:placeRelationHasTarget rdf:resource="agent/123456"/>
+            <rico:placeRelationHasSource rdf:resource="place/au%20March%C3%A9-Neuf"/>
+         </rico:PlaceRelation>
+      </rico:thingIsTargetOfPlaceRelation>
       <rico:hasLocation rdf:resource="place/au%20March%C3%A9-Neuf"/>
       <!-- case 5 : not processed -->
       <!-- case 6 -->
-      <rico:thingIsSourceOfRelationToPlace>
-         <rico:RelationToPlace>
-            <rico:relationToPlaceHasSource rdf:resource="agent/123456"/>
-            <rico:relationToPlaceHasTarget rdf:resource="place/FRAN_RI_026-d5bknx4v7j-1wqddent61siy"
-            /> </rico:RelationToPlace>
-      </rico:thingIsSourceOfRelationToPlace>
+      <rico:thingIsTargetOfPlaceRelation>
+         <rico:PlaceRelation>
+            <rico:placeRelationHasTarget rdf:resource="agent/123456"/>
+            <rico:placeRelationHasSource rdf:resource="place/FRAN_RI_026-d5bknx4v7j-1wqddent61siy"
+            /> </rico:PlaceRelation>
+      </rico:thingIsTargetOfPlaceRelation>
       <rico:hasLocation rdf:resource="place/FRAN_RI_026-d5bknx4v7j-1wqddent61siy"/>
       <!-- cases 7 and 8: not processed -->
    </rico:Agent>
