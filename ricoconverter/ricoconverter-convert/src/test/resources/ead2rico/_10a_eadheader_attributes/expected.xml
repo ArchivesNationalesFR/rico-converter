@@ -6,7 +6,8 @@
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
          xmlns:dc="http://purl.org/dc/elements/1.1/"
          xml:base="http://data.archives-nationales.culture.gouv.fr/">
-   <rico:FindingAid rdf:about="findingAid/058220">
+   <rico:Record rdf:about="findingAid/058220">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
       <rico:regulatedBy rdf:resource="rule/rl005"/>
       <rico:regulatedBy rdf:resource="rule/rl004"/>
       <rico:regulatedBy rdf:resource="rule/rl006"/>
@@ -15,7 +16,6 @@
       <rico:hasInstantiation>      
          <rico:Instantiation rdf:about="instantiation/058220-i1">
 	   	  <rico:instantiates rdf:resource="findingAid/058220"/>
-	      <rico:encodingFormat xml:lang="en">text/xml</rico:encodingFormat>
 	      <dc:format xml:lang="en">text/xml</dc:format>
 	      <rico:identifier>FRAN_IR_058220</rico:identifier>
 	      <rico:heldBy rdf:resource="agent/005061"/>
@@ -23,5 +23,5 @@
 	      <!--?? <owl:sameAs rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/exportXML.action?irId=FRAN_IR_058220"/>-->
 	    </rico:Instantiation>
    </rico:hasInstantiation>
-   </rico:FindingAid>
+   </rico:Record>
 </rdf:RDF>

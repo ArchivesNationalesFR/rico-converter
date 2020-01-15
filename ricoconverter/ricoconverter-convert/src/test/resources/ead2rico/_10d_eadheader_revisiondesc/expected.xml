@@ -4,31 +4,31 @@
    xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xml:base="http://data.archives-nationales.culture.gouv.fr/">
-   <rico:FindingAid rdf:about="findingAid/004852"> 
+   <rico:Record rdf:about="findingAid/004852">
+   	  <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" /> 
       <!-- for processing revisiondesc/change, we use event -->
       <rico:affectedBy>
          <rico:Activity>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth"
                >2015-03</rico:date>
-            <rico:description xml:lang="fr">Révision de la description générale du fonds ; restructuration et corrections des unités de description relatives aux documents numérisés</rico:description>
+            <rico:descriptiveNote xml:lang="fr">Révision de la description générale du fonds ; restructuration et corrections des unités de description relatives aux documents numérisés</rico:descriptiveNote>
          </rico:Activity>
       </rico:affectedBy>
       <rico:affectedBy>
          <rico:Activity>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-04-17</rico:date>
-            <rico:description xml:lang="fr">DAFANCH00AP_0000400AP converted from EAD 1.0 to 2002 by v1to02.xsl (20030408).</rico:description>
+            <rico:descriptiveNote xml:lang="fr">DAFANCH00AP_0000400AP converted from EAD 1.0 to 2002 by v1to02.xsl (20030408).</rico:descriptiveNote>
          </rico:Activity>
       </rico:affectedBy>
       <rico:affectedBy>
          <rico:Activity>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-12-19</rico:date>
-            <rico:description xml:lang="fr">La première version a été livrée au CHAN ainsi qu'au groupe RLG par la société AJLSM (info@ajlsm.com).</rico:description>
+            <rico:descriptiveNote xml:lang="fr">La première version a été livrée au CHAN ainsi qu'au groupe RLG par la société AJLSM (info@ajlsm.com).</rico:descriptiveNote>
          </rico:Activity>
       </rico:affectedBy>
       <rico:hasInstantiation>
 	    <rico:Instantiation rdf:about="instantiation/004852-i1">
 	   	  <rico:instantiates rdf:resource="findingAid/004852"/>
-	      <rico:encodingFormat xml:lang="en">text/xml</rico:encodingFormat>
 	      <dc:format xml:lang="en">text/xml</dc:format>
 	      <rico:identifier>FRAN_IR_004852</rico:identifier>
 	      <rico:heldBy rdf:resource="agent/005061"/> <rdfs:seeAlso
@@ -36,5 +36,5 @@
 	      <!--?? <owl:sameAs rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/exportXML.action?irId=FRAN_IR_004852"/>-->
 	   </rico:Instantiation>
       </rico:hasInstantiation>
-   </rico:FindingAid>
+   </rico:Record>
 </rdf:RDF>

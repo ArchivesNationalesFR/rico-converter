@@ -53,7 +53,8 @@
 		<xsl:variable name="fiInstantiationId" select="concat($faId, '-i1')" />
 		
 		<!--  FindingAid object -->
-		<rico:FindingAid rdf:about="{ead2rico:URI-FindingAid($faId)}">	
+		<rico:Record rdf:about="{ead2rico:URI-FindingAid($faId)}">	
+			<rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
 	
 			<!--  Turn the attributes into isRegulatedBy pointing to Rules -->
 			<xsl:if test="@countryencoding = 'iso3166-1'">
@@ -80,7 +81,6 @@
 			    <rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($fiInstantiationId)}">
 			      <rico:instantiates rdf:resource="{ead2rico:URI-FindingAid($faId)}"/>
 			      <xsl:apply-templates mode="instantiation" />
-			      <rico:encodingFormat xml:lang="en">text/xml</rico:encodingFormat>
 			      <dc:format xml:lang="en">text/xml</dc:format>
 			      <rico:identifier><xsl:value-of select="eadid" /></rico:identifier>	      
 			      <xsl:choose>
@@ -94,7 +94,7 @@
 			      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/{eadid}"/> 
 			    </rico:Instantiation>
 			</rico:hasInstantiation>
-		</rico:FindingAid>
+		</rico:Record>
 		
 	</xsl:template>
 	
@@ -116,7 +116,12 @@
 		<xsl:apply-templates  mode="#current" />
 	</xsl:template>
 	<xsl:template match="edition[text()]" mode="findingaid">
-		<rico:editionstmt rdf:parseType="Literal"><html:p xml:lang="{$LITERAL_LANG}"><xsl:apply-templates mode="html" /></html:p></rico:editionstmt>
+		<rico:history rdf:parseType="Literal">
+			<html:div>
+				<html:h4>mention d’édition</html:h4>
+				<html:p xml:lang="{$LITERAL_LANG}"><xsl:apply-templates mode="html" /></html:p>
+			</html:div>
+		</rico:history>
 	</xsl:template>	
 	
 	<xsl:template match="publicationstmt" mode="#all">
@@ -135,7 +140,7 @@
 		<xsl:apply-templates mode="#current" />
 	</xsl:template>
 	<xsl:template match="note[text()]" mode="findingaid">
-		<rico:note rdf:parseType="Literal"><html:p xml:lang="{$LITERAL_LANG}"><xsl:apply-templates select="p/node()" mode="html" /></html:p></rico:note>
+		<rico:descriptiveNote rdf:parseType="Literal"><html:p xml:lang="{$LITERAL_LANG}"><xsl:apply-templates select="p/node()" mode="html" /></html:p></rico:descriptiveNote>
 	</xsl:template>
 	
 	<!-- ***** profiledesc processing ***** -->
@@ -185,7 +190,7 @@
 			</xsl:call-template>
 		</xsl:variable>	
 	
-		<rico:hasMainSubject rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+		<rico:describes rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
 	</xsl:template>
 	<xsl:template match="archdesc">
 		<xsl:variable name="recordResourceId">
@@ -197,7 +202,7 @@
 		<xsl:variable name="instantiationId" select="concat($recordResourceId, '-i1')" />
 	
 		<rico:RecordResource rdf:about="{ead2rico:URI-RecordResource($recordResourceId)}">
-			<rico:isMainSubjectOf rdf:resource="{ead2rico:URI-FindingAid($faId)}" />
+			<rico:describedBy rdf:resource="{ead2rico:URI-FindingAid($faId)}" />
 			
 			<!--  dsc is processed later, outside of RecordResource. Note we process also attributes to match @level -->
 			<!--  Note that origination is still processed here to match inner persname/corpname/famname -->
@@ -249,7 +254,7 @@
 			<!-- generates other Instantiations -->
 			<xsl:apply-templates select="daogrp" />
 			
-			<!--  references to RecordResources, generates rico:hasMember -->
+			<!--  references to RecordResources, generates rico:includes -->
 			<xsl:apply-templates select="dsc" mode="reference" />
 		</rico:RecordResource>
 		
@@ -269,7 +274,7 @@
 			</xsl:call-template>
 		</xsl:variable>
 	
-		<rico:hasMember rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+		<rico:includes rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
 	</xsl:template>
 	
 	<xsl:template match="c">
@@ -289,7 +294,7 @@
 		</xsl:variable>
 
 		<rico:RecordResource rdf:about="{ead2rico:URI-RecordResource($recordResourceId)}">
-			<rico:isMemberOf rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />			
+			<rico:includedIn rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />			
 						
 			<!-- child c's and daogrp are processed after. Note we process also attributes to match @level -->
 			<!--  Note that origination is still processed here to match inner persname/corpname/famname -->
@@ -334,9 +339,9 @@
 			
 			<!-- children c's : generate hasMember recursively (contrary to first level archdesc) -->
 			<xsl:for-each select="c">
-				<rico:hasMember>
+				<rico:includes>
 					<xsl:apply-templates select="." />
-				</rico:hasMember>
+				</rico:includes>
 			</xsl:for-each>
 		</rico:RecordResource>
 	</xsl:template>
@@ -358,7 +363,7 @@
 		</xsl:variable>
 		<!-- Add +2 to the offset of this daoloc element to build instantiation ID -->
 		<xsl:variable name="instantiationId" select="concat($recordResourceId, '-i', count(preceding-sibling::daoloc)+2)" />
-		<rico:hasDigitalCopy rdf:resource="{ead2rico:URI-Instantiation($instantiationId)}"/>		
+		<rico:hasDerivedInstantiation rdf:resource="{ead2rico:URI-Instantiation($instantiationId)}"/>		
 	</xsl:template>
 	<xsl:template match="daoloc">
 		<xsl:variable name="recordResourceId">
@@ -397,7 +402,7 @@
 				<xsl:apply-templates select="(ancestor::*[self::c or self::archdesc])[last()]/did/unitid[@repositorycode = 'FRDAFAN']" mode="instantiation" />
 				
 				<!-- We know it is a digital copy of the first instantiation -->
-				<rico:isDigitalCopyOf rdf:resource="{ead2rico:URI-Instantiation(concat($recordResourceId, '-i1'))}"/>
+				<rico:isDerivedFromInstantiation rdf:resource="{ead2rico:URI-Instantiation(concat($recordResourceId, '-i1'))}"/>
 				<rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>	
 				<rico:identifier><xsl:value-of select="replace(@href, '.msp', '')" /></rico:identifier>			
 				<rico:encodingFormat xml:lang="en">image/jpeg</rico:encodingFormat>
@@ -879,7 +884,7 @@
 	</xsl:template>
 	
 	<xsl:template match="genreform">
-		<rico:hasDocumentaryForm rdf:resource="{ead2rico:URI-DocumentaryForm(@authfilenumber, @source)}"/>
+		<rico:hasDocumentaryFormType rdf:resource="{ead2rico:URI-DocumentaryForm(@authfilenumber, @source)}"/>
 	</xsl:template>
 	
 	<xsl:template match="geogname">
@@ -1059,9 +1064,9 @@
 	<xsl:template match="physdesc" mode="instantiation">
 		<!-- Output only if we have some text inside -->
 		<xsl:if test="normalize-space(string-join(text())) != ''">
-	        <rico:noteOnPhysicalCharacteristics rdf:parseType="Literal">
+	        <rico:physicalCharacteristics rdf:parseType="Literal">
 	        	<html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></html:p>
-	        </rico:noteOnPhysicalCharacteristics>
+	        </rico:physicalCharacteristics>
         </xsl:if>
         <xsl:apply-templates mode="#current" />
 	</xsl:template>	
@@ -1088,18 +1093,12 @@
 	<!--  ***** altformavail ***** -->
 	
 	<xsl:template match="altformavail" >
-		<rico:noteOnAlternativeFormAvailable rdf:parseType="Literal">
-			<xsl:choose>
-				<xsl:when test="count(p) = 1">
-					<html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(p)" /></html:p>
-				</xsl:when>
-				<xsl:otherwise>
-					<html:div xml:lang="{$LITERAL_LANG}">
-						<xsl:apply-templates mode="html" />
-					</html:div>
-				</xsl:otherwise>
-			</xsl:choose>
-       </rico:noteOnAlternativeFormAvailable>
+		<rico:descriptiveNote rdf:parseType="Literal">
+			<html:div xml:lang="{$LITERAL_LANG}">
+				<html:h4>Documents de substitution</html:h4>
+				<xsl:apply-templates mode="html" />
+			</html:div>
+       </rico:descriptiveNote>
 	</xsl:template>
 	
 	<!--  ***** physloc : only for Instantiation ***** -->

@@ -13,32 +13,32 @@
         https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds
         https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series
         https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Sub-fonds-->
-    <rico:FindingAid rdf:about="findingAid/058220">
-      <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
-      <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
-      <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
-      <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
-      <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
-      <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
-      <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
-      <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
-      <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
-      <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
+    <rico:Record rdf:about="findingAid/058220">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
+      <rico:describes rdf:resource="recordResource/058220-top"/>
+      <rico:describes rdf:resource="recordResource/058220-top"/>
+      <rico:describes rdf:resource="recordResource/058220-top"/>
+      <rico:describes rdf:resource="recordResource/058220-top"/>
+      <rico:describes rdf:resource="recordResource/058220-top"/>
+      <rico:describes rdf:resource="recordResource/058220-top"/>
+      <rico:describes rdf:resource="recordResource/058220-top"/>
+      <rico:describes rdf:resource="recordResource/058220-top"/>
+      <rico:describes rdf:resource="recordResource/058220-top"/>
+      <rico:describes rdf:resource="recordResource/058220-top"/>
       <rico:hasInstantiation>
          <rico:Instantiation rdf:about="instantiation/058220-i1">
             <rico:instantiates rdf:resource="findingAid/058220"/>
-            <rico:encodingFormat xml:lang="en">text/xml</rico:encodingFormat>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_IR_058220</rico:identifier>
             <rico:heldBy rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>
          </rico:Instantiation>
       </rico:hasInstantiation>
-    </rico:FindingAid>
+    </rico:Record>
     
     <!-- cas 1 :  //archdesc[@level="fonds"]-->
     <rico:RecordResource rdf:about="recordResource/058220-top">
-    	<rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
+    	<rico:describedBy rdf:resource="findingAid/058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds"/>
@@ -51,7 +51,7 @@
     </rico:RecordResource>
     <!-- cas 2 : //archdesc[@level="subfonds"]-->
     <rico:RecordResource rdf:about="recordResource/058220-top">
-    	<rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
+    	<rico:describedBy rdf:resource="findingAid/058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Sub-fonds"/>
@@ -64,7 +64,7 @@
     </rico:RecordResource>
     <!-- cas 3 : //archdesc[@level="series"] and dsc/c with @level or no @level -->
     <rico:RecordResource rdf:about="recordResource/058220-top">
-    	<rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
+    	<rico:describedBy rdf:resource="findingAid/058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
@@ -74,23 +74,23 @@
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
          </rico:Instantiation>
         </rico:hasInstantiation>
-        <rico:hasMember rdf:resource="recordResource/058220-a" />
-        <rico:hasMember rdf:resource="recordResource/058220-b" />
-        <rico:hasMember rdf:resource="recordResource/058220-c" />
-        <rico:hasMember rdf:resource="recordResource/058220-d" />
-        <rico:hasMember rdf:resource="recordResource/058220-e" />
-        <rico:hasMember rdf:resource="recordResource/058220-f" />
-        <rico:hasMember rdf:resource="recordResource/058220-g" />
-        <rico:hasMember rdf:resource="recordResource/058220-c-835pw5mwg-otyywby3qzqb" />
-        <rico:hasMember rdf:resource="recordResource/058220-y" />
-        <rico:hasMember rdf:resource="recordResource/058220-z" />
-        <rico:hasMember rdf:resource="recordResource/058220-abc" />
+        <rico:includes rdf:resource="recordResource/058220-a" />
+        <rico:includes rdf:resource="recordResource/058220-b" />
+        <rico:includes rdf:resource="recordResource/058220-c" />
+        <rico:includes rdf:resource="recordResource/058220-d" />
+        <rico:includes rdf:resource="recordResource/058220-e" />
+        <rico:includes rdf:resource="recordResource/058220-f" />
+        <rico:includes rdf:resource="recordResource/058220-g" />
+        <rico:includes rdf:resource="recordResource/058220-c-835pw5mwg-otyywby3qzqb" />
+        <rico:includes rdf:resource="recordResource/058220-y" />
+        <rico:includes rdf:resource="recordResource/058220-z" />
+        <rico:includes rdf:resource="recordResource/058220-abc" />
     </rico:RecordResource>
     
     <!-- cas des //archdesc[@level="series"]/dsc//c-->
     <!-- //archdesc/dsc//c[@level="fonds"] -->
     <rico:RecordResource rdf:about="recordResource/058220-a">
-        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:includedIn rdf:resource="recordResource/058220-top"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds"/>   
@@ -103,7 +103,7 @@
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="subfonds"] -->
     <rico:RecordResource rdf:about="recordResource/058220-b">
-        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:includedIn rdf:resource="recordResource/058220-top"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Sub-fonds"/> 
@@ -116,7 +116,7 @@
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="series"] -->
     <rico:RecordResource rdf:about="recordResource/058220-c">
-        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:includedIn rdf:resource="recordResource/058220-top"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>  
@@ -129,7 +129,7 @@
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="subseries"] -->
     <rico:RecordResource rdf:about="recordResource/058220-d">
-        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:includedIn rdf:resource="recordResource/058220-top"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
@@ -142,7 +142,7 @@
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="recordgrp"] -->
     <rico:RecordResource rdf:about="recordResource/058220-e">
-        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:includedIn rdf:resource="recordResource/058220-top"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasInstantiation>
           <rico:Instantiation rdf:about="instantiation/058220-e-i1">
@@ -153,7 +153,7 @@
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="subgrp"] -->
     <rico:RecordResource rdf:about="recordResource/058220-f">
-        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:includedIn rdf:resource="recordResource/058220-top"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasInstantiation>
           <rico:Instantiation rdf:about="instantiation/058220-f-i1">
@@ -164,7 +164,7 @@
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="file"] -->
     <rico:RecordResource rdf:about="recordResource/058220-g">
-        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:includedIn rdf:resource="recordResource/058220-top"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File"/>
@@ -177,7 +177,7 @@
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="item"] -->
     <rico:RecordResource rdf:about="recordResource/058220-c-835pw5mwg-otyywby3qzqb">
-        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:includedIn rdf:resource="recordResource/058220-top"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
         <rico:hasInstantiation>
           <rico:Instantiation rdf:about="instantiation/058220-c-835pw5mwg-otyywby3qzqb-i1">
@@ -188,7 +188,7 @@
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="collection"] -->
     <rico:RecordResource rdf:about="recordResource/058220-y">
-        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:includedIn rdf:resource="recordResource/058220-top"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection"/>
@@ -201,7 +201,7 @@
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="otherlevel"] -->
     <rico:RecordResource rdf:about="recordResource/058220-z">
-        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>  
+        <rico:includedIn rdf:resource="recordResource/058220-top"/>  
         <rico:hasInstantiation>
           <rico:Instantiation rdf:about="instantiation/058220-z-i1">
             <rico:instantiates rdf:resource="recordResource/058220-z"/>
@@ -211,7 +211,7 @@
     </rico:RecordResource>
     <!--   //archdesc/dsc//c[not(@level)]-->
     <rico:RecordResource rdf:about="recordResource/058220-abc">
-        <rico:isMemberOf rdf:resource="recordResource/058220-top"/> 
+        <rico:includedIn rdf:resource="recordResource/058220-top"/> 
         <rico:hasInstantiation>
           <rico:Instantiation rdf:about="instantiation/058220-abc-i1">
             <rico:instantiates rdf:resource="recordResource/058220-abc"/>
@@ -223,7 +223,7 @@
     
     <!-- cas 4: //archdesc[@level="subseries"]-->
     <rico:RecordResource rdf:about="recordResource/058220-top">
-    	<rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
+    	<rico:describedBy rdf:resource="findingAid/058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
@@ -236,7 +236,7 @@
     </rico:RecordResource>
     <!-- cas 5: //archdesc[@level="recordgrp"]-->
     <rico:RecordResource rdf:about="recordResource/058220-top">
-    	<rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
+    	<rico:describedBy rdf:resource="findingAid/058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>    
         <rico:hasInstantiation>
          <rico:Instantiation rdf:about="instantiation/058220-top-i1">
@@ -247,7 +247,7 @@
     </rico:RecordResource>
     <!-- cas 6 : //archdesc[@level="subgrp"]-->
     <rico:RecordResource rdf:about="recordResource/058220-top">
-    	<rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
+    	<rico:describedBy rdf:resource="findingAid/058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>  
         <rico:hasInstantiation>
          <rico:Instantiation rdf:about="instantiation/058220-top-i1">
@@ -258,7 +258,7 @@
     </rico:RecordResource>
     <!-- cas 7 : //archdesc[@level="file"] -->
     <rico:RecordResource rdf:about="recordResource/058220-top">
-    	<rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
+    	<rico:describedBy rdf:resource="findingAid/058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File"/>
@@ -271,7 +271,7 @@
     </rico:RecordResource>
     <!-- cas 8 : //archdesc[@level="item"]-->
     <rico:RecordResource rdf:about="recordResource/058220-top">
-    	<rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
+    	<rico:describedBy rdf:resource="findingAid/058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
         <rico:hasInstantiation>
          <rico:Instantiation rdf:about="instantiation/058220-top-i1">
@@ -282,7 +282,7 @@
     </rico:RecordResource>
     <!-- cas 9 : //archdesc[@level="collection"] -->
     <rico:RecordResource rdf:about="recordResource/058220-top">
-    	<rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
+    	<rico:describedBy rdf:resource="findingAid/058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection"/>
@@ -295,7 +295,7 @@
     </rico:RecordResource>
     <!-- cas 10 : //archdesc[@level="otherlevel"]-->
     <rico:RecordResource rdf:about="recordResource/058220-top">
-    	<rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
+    	<rico:describedBy rdf:resource="findingAid/058220"/>
         <rico:hasInstantiation>
          <rico:Instantiation rdf:about="instantiation/058220-top-i1">
             <rico:instantiates rdf:resource="recordResource/058220-top"/>

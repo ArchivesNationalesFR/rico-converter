@@ -7,31 +7,35 @@
     xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xml:base="http://data.archives-nationales.culture.gouv.fr/">
-    <rico:FindingAid rdf:about="findingAid/058220">
-      <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
+    <rico:Record rdf:about="findingAid/058220">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
+      <rico:describes rdf:resource="recordResource/058220-top"/>
       <rico:hasInstantiation>
          <rico:Instantiation rdf:about="instantiation/058220-i1">
             <rico:instantiates rdf:resource="findingAid/058220"/>
-            <rico:encodingFormat xml:lang="en">text/xml</rico:encodingFormat>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_IR_058220</rico:identifier>
             <rico:heldBy rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>
          </rico:Instantiation>
       </rico:hasInstantiation>
-    </rico:FindingAid>
+    </rico:Record>
     <!-- archdesc level -->
     <rico:RecordResource rdf:about="recordResource/058220-top">
-        <rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
-        <rico:noteOnAlternativeFormAvailable rdf:parseType="Literal">
+        <rico:describedBy rdf:resource="findingAid/058220"/>
+        <rico:descriptiveNote rdf:parseType="Literal">
            <html:div xml:lang="fr">
+           	   <html:h4>Documents de substitution</html:h4>
                <html:p>Ces entretiens sont consultables à Génériques (sur rendez-vous), aux Archives nationales et à la Bibliothèque de documentation internationale contemporiane.</html:p>
                <html:p>Un extrait de chaque témoignage est consultable dans Odysséo.</html:p>
            </html:div>
-       </rico:noteOnAlternativeFormAvailable>
-        <rico:noteOnAlternativeFormAvailable rdf:parseType="Literal">
-            <html:p xml:lang="fr">Un extrait de chaque témoignage est consultable dans Odysséo.</html:p>
-        </rico:noteOnAlternativeFormAvailable>
+       </rico:descriptiveNote>
+        <rico:descriptiveNote rdf:parseType="Literal">
+        	<html:div xml:lang="fr">
+        		<html:h4>Documents de substitution</html:h4>
+            	<html:p>Un extrait de chaque témoignage est consultable dans Odysséo.</html:p>
+            </html:div>
+        </rico:descriptiveNote>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-top-i1">
                 <rico:instantiates rdf:resource="recordResource/058220-top"/>
@@ -39,17 +43,18 @@
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>        
             </rico:Instantiation>
         </rico:hasInstantiation>
-        <rico:hasMember rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+        <rico:includes rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
     </rico:RecordResource>
     <!-- c level -->
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
-        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
-        <rico:noteOnAlternativeFormAvailable rdf:parseType="Literal">
+        <rico:includedIn rdf:resource="recordResource/058220-top"/>
+        <rico:descriptiveNote rdf:parseType="Literal">
             <html:div xml:lang="fr">
+            	<html:h4>Documents de substitution</html:h4>
                 <html:p>Microfilm : 2 MI 190</html:p>
                 <html:p>Ces registres ont été numérisés ; les images sont librement accessibles sur les postes informatiques de la Salle des inventaires du site de Pierrefitte-sur-Seine (se renseigner auprès de la présidence de salle).</html:p>
             </html:div>
-        </rico:noteOnAlternativeFormAvailable>
+        </rico:descriptiveNote>
       
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">

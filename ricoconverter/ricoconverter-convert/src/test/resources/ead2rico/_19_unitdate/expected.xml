@@ -7,22 +7,22 @@
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xml:base="http://data.archives-nationales.culture.gouv.fr/">
-    <rico:FindingAid rdf:about="findingAid/058220">
-        <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
+    <rico:Record rdf:about="findingAid/058220">
+    	<rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
+        <rico:describes rdf:resource="recordResource/058220-top"/>
 	      <rico:hasInstantiation>
 	         <rico:Instantiation rdf:about="instantiation/058220-i1">
 	            <rico:instantiates rdf:resource="findingAid/058220"/>
-	            <rico:encodingFormat xml:lang="en">text/xml</rico:encodingFormat>
 	            <dc:format xml:lang="en">text/xml</dc:format>
 	            <rico:identifier>FRAN_IR_058220</rico:identifier>
 	            <rico:heldBy rdf:resource="agent/005061"/>
 	            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>
 	         </rico:Instantiation>
 	      </rico:hasInstantiation>
-    </rico:FindingAid>
+    </rico:Record>
     <!-- archdesc level -->
     <rico:RecordResource rdf:about="recordResource/058220-top">
-        <rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
+        <rico:describedBy rdf:resource="findingAid/058220"/>
         
         <!--case 1-->
         <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1926-01-01</rico:beginningDate>
@@ -73,12 +73,12 @@
             </rico:Instantiation>
         </rico:hasInstantiation>
         <!-- Note : if there is more than the primary instantiation, do not propagate the RecordResource dates to these instantiations -->
-        <rico:hasMember rdf:resource="recordResource/058220-c-25s2lche6kz-qfignk48spf8"/>
-        <rico:hasMember rdf:resource="recordResource/058220-c-7801hhtrn-g19n27mkod23"/>
+        <rico:includes rdf:resource="recordResource/058220-c-25s2lche6kz-qfignk48spf8"/>
+        <rico:includes rdf:resource="recordResource/058220-c-7801hhtrn-g19n27mkod23"/>
     </rico:RecordResource>
     <!-- c level -->
     <rico:RecordResource rdf:about="recordResource/058220-c-25s2lche6kz-qfignk48spf8">
-    	<rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+    	<rico:includedIn rdf:resource="recordResource/058220-top"/>
         <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1930-01-01</rico:beginningDate>
         <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1945-12-31</rico:endDate>
         <rico:date xml:lang="fr">1930-1945</rico:date>
@@ -94,7 +94,7 @@
         <!-- Note : if there is more than the primary instantiation, do not propagate the RecordResource dates to theses instantiations -->
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-c-7801hhtrn-g19n27mkod23">
-        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:includedIn rdf:resource="recordResource/058220-top"/>
         <rico:title xml:lang="fr">Année 1842 : 9 l.a.s. à son frère Charles.</rico:title>
         <rdfs:label xml:lang="fr">Année 1842 : 9 l.a.s. à son frère Charles.</rdfs:label>
         <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1842-01-01</rico:beginningDate>

@@ -7,21 +7,21 @@
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xml:base="http://data.archives-nationales.culture.gouv.fr/">
-    <rico:FindingAid rdf:about="findingAid/058220">
-        <rico:hasMainSubject rdf:resource="recordResource/058220-top"/>
+    <rico:Record rdf:about="findingAid/058220">
+        <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
+        <rico:describes rdf:resource="recordResource/058220-top"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-i1">
                 <rico:instantiates rdf:resource="findingAid/058220"/>
-                <rico:encodingFormat xml:lang="en">text/xml</rico:encodingFormat>
                 <dc:format xml:lang="en">text/xml</dc:format>
                 <rico:identifier>FRAN_IR_058220</rico:identifier>
                 <rico:heldBy rdf:resource="agent/005061"/>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>
             </rico:Instantiation>
         </rico:hasInstantiation>
-    </rico:FindingAid>
+    </rico:Record>
     <rico:RecordResource rdf:about="recordResource/058220-top">
-        <rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
+        <rico:describedBy rdf:resource="findingAid/058220"/>
         <rico:history rdf:parseType="Literal">
             <html:div xml:lang="fr">
                 <html:h4>Origine</html:h4>
@@ -42,12 +42,12 @@
                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
              </rico:Instantiation>
          </rico:hasInstantiation>
-        <rico:hasMember rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
-        <rico:hasMember rdf:resource="recordResource/058220-N0003"/>      
-        <rico:hasMember rdf:resource="recordResource/058220-N0004"/>
+        <rico:includes rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+        <rico:includes rdf:resource="recordResource/058220-N0003"/>      
+        <rico:includes rdf:resource="recordResource/058220-N0004"/>
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
-        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:includedIn rdf:resource="recordResource/058220-top"/>
         <rico:hasProvenance rdf:resource="agent/051804"/>
         <rico:hasProvenance rdf:resource="agent/051182"/>
         <rico:hasProvenance rdf:resource="agent/051570"/>
@@ -55,7 +55,7 @@
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">                
                 <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
-                <rico:hasDigitalCopy rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
+                <rico:hasDerivedInstantiation rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
                 <rico:hasProvenance rdf:resource="agent/051804"/>
                 <rico:hasProvenance rdf:resource="agent/051182"/>
                 <rico:hasProvenance rdf:resource="agent/051570"/>
@@ -66,7 +66,7 @@
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2">                
                 <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
-                <rico:isDigitalCopyOf rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1"/>
+                <rico:isDerivedFromInstantiation rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1"/>
                 <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
                 <rico:identifier>FRAN_0118_274_L</rico:identifier>
                 <rico:encodingFormat xml:lang="en">image/jpeg</rico:encodingFormat>
@@ -77,7 +77,7 @@
         </rico:hasInstantiation>        
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-N0003">
-        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:includedIn rdf:resource="recordResource/058220-top"/>
         <rico:hasProvenance rdf:resource="agent/050039"/>
         <rico:history rdf:parseType="Literal">
             <html:div xml:lang="fr">
@@ -100,7 +100,7 @@
         </rico:hasInstantiation>       
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-N0004">
-        <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
+        <rico:includedIn rdf:resource="recordResource/058220-top"/>
         <rico:hasProvenance>
             <rico:Agent>
                 <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Family"/>
