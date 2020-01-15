@@ -27,7 +27,9 @@ import org.xmlunit.diff.Diff;
 
 import fr.gouv.culture.an.ricoconverter.RicoConverterException;
 import fr.gouv.culture.an.ricoconverter.RicoConverterListenerException;
+import fr.gouv.culture.an.ricoconverter.DefaultOutputFileBuilder;
 import fr.gouv.culture.an.ricoconverter.ErrorCode;
+import fr.gouv.culture.an.ricoconverter.OutputFileBuilder;
 
 public class Eac2RicoConverter {
 	
@@ -72,6 +74,8 @@ public class Eac2RicoConverter {
 	 * The XSLT transformer to deduplicate relations
 	 */
 	protected Transformer deduplicateTransformer;
+	
+	protected OutputFileBuilder outputFileBuilder;
 
 	public Eac2RicoConverter(
 			Transformer eac2ricoTransformer,
@@ -80,6 +84,8 @@ public class Eac2RicoConverter {
 		super();
 		this.eac2ricoTransformer = eac2ricoTransformer;
 		this.convertOutputDirectory = convertOutputDirectory;
+		// default outputFileBuilder
+		this.outputFileBuilder = new DefaultOutputFileBuilder();
 	}
 	
 	public Eac2RicoConverter(Transformer eac2ricoTransformer) {
@@ -217,7 +223,7 @@ public class Eac2RicoConverter {
 				log.error("Error in listener notifyBeginProcessing for "+inputFile.getName(), e);
 			}
 			
-			File outputFile = createOutputFile(inputFile);
+			File outputFile = this.outputFileBuilder.apply(convertOutputDirectory, inputFile);
 			
 			boolean success = false;
 			try(FileOutputStream out = new FileOutputStream(outputFile)) {
@@ -317,10 +323,6 @@ public class Eac2RicoConverter {
 
 	public void setListeners(List<Eac2RicoConverterListener> listeners) {
 		this.listeners = listeners;
-	}
-
-	private File createOutputFile(File inputFile) {
-		return new File(convertOutputDirectory, inputFile.getName().substring(0, inputFile.getName().lastIndexOf('.'))+".rdf");
 	}
 	
 	private void notifyStart(File inputFile) throws RicoConverterListenerException {

@@ -27,11 +27,11 @@ public class ArgumentsConvertEad {
 	
 	@Parameter(
 			names = { "output" },
-			description = "Output folder where the RiC-O files will be generated. If not set, defaults to 'output-YYYYMMDD'",
+			description = "Output folder where the RiC-O files will be generated. If not set, defaults to 'output-ead-YYYYMMDD'",
 			converter = FileConverter.class,
 			required = false
 	)
-	protected File output = new File("output"+"-"+new SimpleDateFormat("yyyyMMdd").format(new Date()));
+	protected File output = new File("output-ead"+"-"+new SimpleDateFormat("yyyyMMdd").format(new Date()));
 
 	@Parameter(
 			names = { "error" },

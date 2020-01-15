@@ -29,7 +29,9 @@ import org.xmlunit.builder.DiffBuilder;
 import org.xmlunit.builder.Input;
 import org.xmlunit.diff.Diff;
 
+import fr.gouv.culture.an.ricoconverter.DefaultOutputFileBuilder;
 import fr.gouv.culture.an.ricoconverter.ErrorCode;
+import fr.gouv.culture.an.ricoconverter.OutputFileBuilder;
 import fr.gouv.culture.an.ricoconverter.RicoConverterException;
 import fr.gouv.culture.an.ricoconverter.RicoConverterListenerException;
 
@@ -56,6 +58,8 @@ public class Ead2RicoConverter {
 	 * The entity resolver to use when parsing input XML files
 	 */
 	protected EntityResolver entityResolver;
+	
+	protected OutputFileBuilder outputFileBuilder;
 
 	public Ead2RicoConverter(
 			Transformer eac2ricoTransformer,
@@ -64,6 +68,8 @@ public class Ead2RicoConverter {
 		super();
 		this.ead2ricoTransformer = eac2ricoTransformer;
 		this.convertOutputDirectory = convertOutputDirectory;
+		// sets a default output file builder
+		this.outputFileBuilder = new DefaultOutputFileBuilder();
 	}
 	
 	public Ead2RicoConverter(Transformer eac2ricoTransformer) {
@@ -114,7 +120,7 @@ public class Ead2RicoConverter {
 				log.error("Error in listener notifyBeginProcessing for "+inputFile.getName(), e);
 			}
 			
-			File outputFile = createOutputFile(inputFile, currentOutputDir);
+			File outputFile = this.outputFileBuilder.apply(currentOutputDir, inputFile);
 			
 			boolean success = false;
 			try(FileOutputStream out = new FileOutputStream(outputFile)) {
@@ -279,11 +285,15 @@ public class Ead2RicoConverter {
 	public void setEntityResolver(EntityResolver entityResolver) {
 		this.entityResolver = entityResolver;
 	}
-
-	private File createOutputFile(File inputFile, File outputDir) {
-		return new File(outputDir, inputFile.getName().substring(0, inputFile.getName().lastIndexOf('.'))+".rdf");
-	}
 	
+	public OutputFileBuilder getOutputFileBuilder() {
+		return outputFileBuilder;
+	}
+
+	public void setOutputFileBuilder(OutputFileBuilder outputFileBuilder) {
+		this.outputFileBuilder = outputFileBuilder;
+	}
+
 	private void notifyStart(File inputFile) throws RicoConverterListenerException {
 		for (Ead2RicoConverterListener aListener : listeners) {
 			aListener.handleStart(inputFile);
