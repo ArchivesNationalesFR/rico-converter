@@ -6,7 +6,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
-	xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+	xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
 	xmlns:eac2rico="http://data.archives-nationales.culture.gouv.fr/eac2rico/"
 	xmlns:isni="http://isni.org/ontology#"
 	xmlns:eac="urn:isbn:1-931666-33-4"
@@ -117,9 +117,9 @@
 		<rico:Agent>
 			<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
 			<xsl:choose>
-				<xsl:when test="eac:identity/eac:entityType = 'person'"><rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person" /></xsl:when>
-				<xsl:when test="eac:identity/eac:entityType = 'corporateBody'"><rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody" /></xsl:when>
-				<xsl:when test="eac:identity/eac:entityType = 'family'"><rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Family" /></xsl:when>
+				<xsl:when test="eac:identity/eac:entityType = 'person'"><rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person" /></xsl:when>
+				<xsl:when test="eac:identity/eac:entityType = 'corporateBody'"><rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody" /></xsl:when>
+				<xsl:when test="eac:identity/eac:entityType = 'family'"><rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Family" /></xsl:when>
 				<!-- TODO : error message -->
 				<xsl:otherwise></xsl:otherwise>
 			</xsl:choose>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="2.0" 
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-	xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+	xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
 	xmlns:eac2rico="http://data.archives-nationales.culture.gouv.fr/eac2rico/"
 >
 	<xsl:output indent="yes" method="text" />

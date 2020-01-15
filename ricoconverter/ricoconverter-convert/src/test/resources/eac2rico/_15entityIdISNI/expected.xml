@@ -2,7 +2,7 @@
 		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xml:base="http://data.archives-nationales.culture.gouv.fr/"
          xmlns:isni="http://isni.org/ontology#"
-         xmlns:rico="http://www.ica.org/standards/RiC/ontology#">
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#">
    <rico:Description rdf:about="description/005205">
    	  <rico:describes rdf:resource="agent/005205"/>
    	  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005205"/>
@@ -11,7 +11,7 @@
    	  <rdfs:seeAlso rdf:resource="http://isni.org/isni/0001000200039999" />
    </rico:Description>
    <rico:Agent rdf:about="agent/005205">
-      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:describedBy rdf:resource="description/005205"/>
       <isni:ISNIAssigned>0001000200031111</isni:ISNIAssigned>
       <isni:ISNIAssigned>0001000200032222</isni:ISNIAssigned>

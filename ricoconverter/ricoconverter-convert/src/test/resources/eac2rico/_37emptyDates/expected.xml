@@ -3,14 +3,14 @@
          xmlns:isni="http://isni.org/ontology#"
          xmlns:owl="http://www.w3.org/2002/07/owl#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-         xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
          xml:base="http://data.archives-nationales.culture.gouv.fr/">
    <rico:Description rdf:about="description/005205">
       <rico:describes rdf:resource="agent/005205"/>
       <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005205"/>
    </rico:Description>
    <rico:Agent rdf:about="agent/005205">
-      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:describedBy rdf:resource="description/005205"/>
       <rdfs:label xml:lang="fr">The entity</rdfs:label>
       <rico:hasAgentName>

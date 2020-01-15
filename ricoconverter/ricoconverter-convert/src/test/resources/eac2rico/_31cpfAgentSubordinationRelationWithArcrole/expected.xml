@@ -2,14 +2,14 @@
 		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xml:base="http://data.archives-nationales.culture.gouv.fr/"
          xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
          xmlns:owl="http://www.w3.org/2002/07/owl#">
    <rico:Description rdf:about="description/050571">
       <rico:describes rdf:resource="agent/050571"/>
       <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050571"/>
    </rico:Description>
    <rico:Agent rdf:about="agent/050571">
-      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:describedBy rdf:resource="description/050571"/>
       <rdfs:label xml:lang="fr">The entity</rdfs:label>
       <rico:hasAgentName>
@@ -26,7 +26,7 @@
    </rico:Agent>
    
    <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/050571-111111">
-      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentSubordinationRelation"/>
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentSubordinationRelation"/>
       <rico:agentSubordinationRelationHasSource rdf:resource="agent/050571"/>
       <rico:agentSubordinationRelationHasTarget rdf:resource="agent/111111"/>
       <rdfs:label xml:lang="fr">Relation hiérarchique (de subordination) entre "The entity" et "The inferior person"</rdfs:label>
@@ -34,7 +34,7 @@
    </rico:AgentHierarchicalRelation>
    
    <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/999999-050571">
-      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#AgentSubordinationRelation"/>
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentSubordinationRelation"/>
       <rico:agentSubordinationRelationHasSource rdf:resource="agent/999999"/>
       <rico:agentSubordinationRelationHasTarget rdf:resource="agent/050571"/>
       <rdfs:label xml:lang="fr">Relation hiérarchique (de subordination) entre "The superior person" et "The entity"</rdfs:label>

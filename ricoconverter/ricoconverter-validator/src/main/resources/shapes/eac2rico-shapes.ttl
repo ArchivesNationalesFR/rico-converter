@@ -9,7 +9,7 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
-@prefix rico: <http://www.ica.org/standards/RiC/ontology#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
 @prefix ans: <http://data.archives-nationales.culture.gouv.fr/eac2rico/shapes/> .
 
 rico:Thing a sh:NodeShape, rdfs:Class ;
@@ -34,7 +34,7 @@ rico:Place a sh:NodeShape, rdfs:Class ;
 		sh:message "a rico:Place have 2 values for rico:hasLocation, one of which is more specific than the other." ;
 		sh:prefixes rico: ;
 		sh:select """
-			PREFIX rico: <http://www.ica.org/standards/RiC/ontology#>
+			PREFIX rico: <https://www.ica.org/standards/RiC/ontology#>
 			SELECT $this (rico:hasLocation AS ?path) ?value
 			WHERE {
 				$this rico:hasLocation ?value .

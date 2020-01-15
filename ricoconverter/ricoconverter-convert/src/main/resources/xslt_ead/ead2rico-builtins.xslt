@@ -6,7 +6,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
-	xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+	xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
 	xmlns:ead2rico="http://data.archives-nationales.culture.gouv.fr/ead2rico/"
 	xmlns:isni="http://isni.org/ontology#"
 	xmlns:eac="urn:isbn:1-931666-33-4"

@@ -2,7 +2,7 @@
 		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xml:base="http://data.archives-nationales.culture.gouv.fr/"
          xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
          xmlns:owl="http://www.w3.org/2002/07/owl#">
    <rico:Description rdf:about="description/005205">
       <rico:describes rdf:resource="agent/005205"/>
@@ -10,7 +10,7 @@
       <rdfs:seeAlso rdf:resource="https://fr.wikipedia.org/wiki/Minist%C3%A8re_de_la_Culture_%28France%29" />
    </rico:Description>
    <rico:Agent rdf:about="agent/005205">
-      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:describedBy rdf:resource="description/005205"/>
      <!-- sameAs to BnF data describing agents : switch to URIS using https protocol -->
       <owl:sameAs rdf:resource="https://data.bnf.fr/ark:/12148/cb11868511w#about"/>

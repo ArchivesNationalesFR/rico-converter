@@ -6,7 +6,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
-	xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+	xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
 	xmlns:eac2rico="http://data.archives-nationales.culture.gouv.fr/eac2rico/"
 	xmlns:isni="http://isni.org/ontology#"
 	xmlns:eac="urn:isbn:1-931666-33-4"
@@ -26,7 +26,7 @@
 			<label>Relation hiérarchique</label>
 		</AgentHierarchicalRelation>
 		<GroupSubdivisionRelation>
-			<extraType>http://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation</extraType>
+			<extraType>https://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation</extraType>
 			<targetProperty>rico:groupSubdivisionRelationHasTarget</targetProperty>
 			<sourceProperty>rico:groupSubdivisionRelationHasSource</sourceProperty>
 			<isTargetOfProperty>rico:groupIsTargetOfGroupSubdivisionRelation</isTargetOfProperty>
@@ -34,7 +34,7 @@
 			<label>Relation de subdivision</label>
 		</GroupSubdivisionRelation>
 		<AgentControlRelation>
-			<extraType>http://www.ica.org/standards/RiC/ontology#AgentControlRelation</extraType>
+			<extraType>https://www.ica.org/standards/RiC/ontology#AgentControlRelation</extraType>
 			<targetProperty>rico:agentControlRelationHasTarget</targetProperty>
 			<sourceProperty>rico:agentControlRelationHasSource</sourceProperty>
 			<isTargetOfProperty>rico:agentIsTargetOfAgentControlRelation</isTargetOfProperty>
@@ -91,7 +91,7 @@
 		</AgentRelation>
 		<LeadershipRelation>
 			<baseType>rico:AgentHierarchicalRelation</baseType>
-			<extraType>http://www.ica.org/standards/RiC/ontology#LeadershipRelation</extraType>
+			<extraType>https://www.ica.org/standards/RiC/ontology#LeadershipRelation</extraType>
 			<targetProperty>rico:leadershipRelationHasTarget</targetProperty>
 			<sourceProperty>rico:leadershipRelationHasSource</sourceProperty>
 			<isTargetOfProperty>rico:groupIsTargetOfLeadershipRelation</isTargetOfProperty>
@@ -100,7 +100,7 @@
 		</LeadershipRelation>
 		<AgentSubordinationRelation>
 			<baseType>rico:AgentHierarchicalRelation</baseType>
-			<extraType>http://www.ica.org/standards/RiC/ontology#AgentSubordinationRelation</extraType>
+			<extraType>https://www.ica.org/standards/RiC/ontology#AgentSubordinationRelation</extraType>
 			<targetProperty>rico:agentSubordinationRelationHasTarget</targetProperty>
 			<sourceProperty>rico:agentSubordinationRelationHasSource</sourceProperty>
 			<isTargetOfProperty>rico:personIsTargetOfAgentSubordinationRelation</isTargetOfProperty>

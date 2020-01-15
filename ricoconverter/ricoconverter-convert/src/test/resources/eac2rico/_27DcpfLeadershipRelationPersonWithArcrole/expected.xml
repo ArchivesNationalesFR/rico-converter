@@ -2,14 +2,14 @@
 		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xml:base="http://data.archives-nationales.culture.gouv.fr/"
          xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
          xmlns:owl="http://www.w3.org/2002/07/owl#">
    <rico:Description rdf:about="description/005205">
       <rico:describes rdf:resource="agent/005205"/>
       <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005205"/>
    </rico:Description>
    <rico:Agent rdf:about="agent/005205">
-      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:describedBy rdf:resource="description/005205"/>
       <rdfs:label xml:lang="fr">The entity</rdfs:label>
       <rico:hasAgentName>
@@ -25,7 +25,7 @@
       <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/005205-111111-19450101-19501130"/>
    </rico:Agent>
    <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/005205-111111-19450101-19501130">
-      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#LeadershipRelation"/>
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LeadershipRelation"/>
       <rico:leadershipRelationHasSource rdf:resource="agent/005205"/>
       <rico:leadershipRelationHasTarget rdf:resource="agent/111111"/>
       <rdfs:label xml:lang="fr">Relation de direction (leadership) entre "The entity" et "The associated corporate body", début : 1945, fin : novembre 1950</rdfs:label>

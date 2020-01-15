@@ -1,7 +1,7 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xml:base="http://data.archives-nationales.culture.gouv.fr/"
-   xmlns:rico="http://www.ica.org/standards/RiC/ontology#" xmlns:html="http://www.w3.org/1999/xhtml">
+   xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:html="http://www.w3.org/1999/xhtml">
    <rico:Description rdf:about="description/000051">
       <rico:describes rdf:resource="agent/000051"/>
       <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_000051"/>
@@ -22,7 +22,7 @@
       <rico:hasSource rdf:resource="https://fr.wikipedia.org/wiki/Victor_de_Persigny" />
    </rico:Description>
    <rico:Agent rdf:about="agent/000051">
-      <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:describedBy rdf:resource="description/000051"/>
    </rico:Agent>
 </rdf:RDF>

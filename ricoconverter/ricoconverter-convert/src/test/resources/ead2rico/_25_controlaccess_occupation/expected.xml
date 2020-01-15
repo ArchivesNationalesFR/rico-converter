@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+    xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:html="http://www.w3.org/1999/xhtml"
     xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -23,7 +23,7 @@
         <rico:isMainSubjectOf rdf:resource="findingAid/058220"/>
         <rico:hasSubject>
             <rico:Agent rdf:about="agent/FRAN_RI_012-d699mu3572h-19e2la2kuy218">
-            	<rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+            	<rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
                 <rico:performs>
                     <rico:Activity>
                         <rico:hasOccupationType rdf:resource="occupationType/FRAN_RI_010-d699msjgtw3-1ton3i1q2op31"/>
@@ -46,7 +46,7 @@
         <rico:isMemberOf rdf:resource="recordResource/058220-top"/>
         <rico:hasSubject>
             <rico:Agent>
-            	<rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+            	<rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
                 <rdfs:label xml:lang="fr">Sarrut, Jeanne Rosine, dite Jeanne Sorval</rdfs:label>                
                 <rico:hasAgentName>
                     <rico:AgentName>
@@ -103,7 +103,7 @@
       </rico:isRelatedTo>
       <rico:hasSubject>
          <rico:Agent>
-            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+            <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
             <rdfs:label xml:lang="fr">Poulitoff, Alexis</rdfs:label>
              <rico:hasAgentName>
                  <rico:AgentName>
@@ -115,7 +115,7 @@
       </rico:hasSubject>
       <rico:hasSubject>
          <rico:Agent>
-            <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+            <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
             <rdfs:label xml:lang="fr">Rafelis Saint-Sauveur, Armand Eugène Guillaume Etienne Marie de</rdfs:label>
              <rico:hasAgentName>
                  <rico:AgentName>

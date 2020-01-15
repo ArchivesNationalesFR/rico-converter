@@ -6,7 +6,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
-	xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
+	xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
 	xmlns:ead2rico="http://data.archives-nationales.culture.gouv.fr/ead2rico/"
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns:isni="http://isni.org/ontology#"
@@ -492,34 +492,34 @@
 	<xsl:template match="@level">
 		<xsl:choose>
 			<xsl:when test=". = 'item'">
-				<rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Record"/>
+				<rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
 			</xsl:when>
 			<xsl:when test=". = 'otherlevel'">
 				<!-- nothing -->
 			</xsl:when>
 			<xsl:otherwise>
-				<rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#RecordSet"/>
+				<rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
 			    <!-- 
 				    RiC-O recordSetTypes :
 				    
-			        http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection
-			        http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File
-			        http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds
-			        http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series
-			        http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Sub-fonds
+			        https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection
+			        https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File
+			        https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds
+			        https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series
+			        https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Sub-fonds
 		        -->
 		        <xsl:choose>
 		        	<xsl:when test=". = 'fonds'">
-		        		<rico:hasRecordSetType rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds"/>
+		        		<rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds"/>
 		        	</xsl:when>
 		        	<xsl:when test=". = 'subfonds'">
-		        		<rico:hasRecordSetType rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Sub-fonds"/>
+		        		<rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Sub-fonds"/>
 		        	</xsl:when>
 		        	<xsl:when test=". = 'series'">
-		        		<rico:hasRecordSetType rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
+		        		<rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
 		        	</xsl:when>
 		        	<xsl:when test=". = 'subseries'">
-		        		<rico:hasRecordSetType rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
+		        		<rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
 		        	</xsl:when>
 		        	<xsl:when test=". = 'recordgrp'">
 		        		<!--  nothing -->
@@ -528,10 +528,10 @@
 		        		<!--  nothing -->
 		        	</xsl:when>
 		        	<xsl:when test=". = 'file'">
-		        		<rico:hasRecordSetType rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File"/>
+		        		<rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File"/>
 		        	</xsl:when>
 		        	<xsl:when test=". = 'collection'">
-		        		<rico:hasRecordSetType rdf:resource="http://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection"/>
+		        		<rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection"/>
 		        	</xsl:when>
 		        	<xsl:when test=". = 'otherlevel'">
 		        		<!--  nothing (already matched above anyway) -->
@@ -788,10 +788,10 @@
 	<xsl:template match="(origination/corpname | origination/persname | origination/famname)[not(@authfilenumber)]">
 		<xsl:variable name="type">
 			<xsl:choose>
-				<xsl:when test="self::corpname">http://www.ica.org/standards/RiC/ontology#CorporateBody</xsl:when>
-				<xsl:when test="self::persname">http://www.ica.org/standards/RiC/ontology#Person</xsl:when>
-				<xsl:when test="self::famname">http://www.ica.org/standards/RiC/ontology#Family</xsl:when>
-				<xsl:otherwise>http://www.ica.org/standards/RiC/ontology#Agent</xsl:otherwise>
+				<xsl:when test="self::corpname">https://www.ica.org/standards/RiC/ontology#CorporateBody</xsl:when>
+				<xsl:when test="self::persname">https://www.ica.org/standards/RiC/ontology#Person</xsl:when>
+				<xsl:when test="self::famname">https://www.ica.org/standards/RiC/ontology#Family</xsl:when>
+				<xsl:otherwise>https://www.ica.org/standards/RiC/ontology#Agent</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
 		
@@ -913,7 +913,7 @@
 						<!-- Assign occupations to persons only if there was a single person declared -->
 						<rico:hasSubject>
 							<rico:Agent rdf:about="{$agentUri}">
-								<rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+								<rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
 								<xsl:apply-templates select="../occupation[@authfilenumber and @source]" mode="persname" />
 				            </rico:Agent>
 			            </rico:hasSubject>
@@ -929,7 +929,7 @@
 			<xsl:otherwise>
 				<rico:hasSubject>
 		            <rico:Agent>
-		                <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Person"/>
+		                <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
 		                <rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rdfs:label>
 						<rico:hasAgentName>
 		                    <rico:AgentName>
@@ -973,7 +973,7 @@
 			<xsl:otherwise>
 				<rico:hasSubject>
 		            <rico:Agent>
-		                <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#CorporateBody"/>
+		                <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
 		                <rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rdfs:label>
 						<rico:hasAgentName>
 		                    <rico:AgentName>
@@ -1012,7 +1012,7 @@
 			<xsl:otherwise>
 				<rico:hasSubject>
 		            <rico:Agent>
-		                <rdf:type rdf:resource="http://www.ica.org/standards/RiC/ontology#Family"/>
+		                <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Family"/>
 		                <rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rdfs:label>
 						<rico:hasAgentName>
 		                    <rico:AgentName>
