@@ -1115,6 +1115,17 @@
 		</xsl:variable>
 		<rico:hasLocation rdf:resource="{$value}"/>
 	</xsl:template>
+	
+	<!--  ***** bibliography ***** -->
+	
+	<xsl:template match="bibliography[text()]">
+		<rico:descriptiveNote rdf:parseType="Literal">
+			<html:div xml:lang="{$LITERAL_LANG}">
+				<html:h4>Bibliographie</html:h4>
+				<xsl:apply-templates mode="html" />
+			</html:div>
+       </rico:descriptiveNote>
+	</xsl:template>
 
 	<!-- ***** Processing of formatting elements p, list, item, span ***** -->
 	
@@ -1178,7 +1189,29 @@
 	</xsl:template>
 	<!-- Note how the extra space is preserved within mixed-content -->
 	<xsl:template match="text()" mode="html"><xsl:value-of select="normalize-space(.)" /><xsl:if test="ends-with(., ' ') and not(position() = last())"><xsl:value-of select="' '" /></xsl:if></xsl:template>
-
+	<!-- These are only for the bibliography (?) -->
+	<xsl:template match="head" mode="html">
+		<html:h5><xsl:value-of select="normalize-space(.)" /></html:h5>
+	</xsl:template>
+	<xsl:template match="bibref" mode="html">
+		<html:p><xsl:apply-templates mode="html" /></html:p>
+	</xsl:template>
+	<xsl:template match="persname" mode="html">
+		<html:span class="persname_auteur"><xsl:apply-templates mode="html" /></html:span>
+	</xsl:template>
+	<xsl:template match="title" mode="html">
+		<html:cite><xsl:apply-templates mode="html" /></html:cite>
+	</xsl:template>
+	<xsl:template match="bibseries" mode="html">
+		<html:cite><xsl:apply-templates mode="html" /></html:cite>
+	</xsl:template>
+	<xsl:template match="imprint" mode="html">
+		<html:span class="imprint"><xsl:apply-templates mode="html" /></html:span>
+	</xsl:template>
+	<xsl:template match="date" mode="html">
+		<html:time><xsl:apply-templates mode="html" /></html:time>
+	</xsl:template>
+	
 	<!-- ***** Date ***** -->
 		
 	<!-- Output a date value with the proper datatype based on the date format -->
