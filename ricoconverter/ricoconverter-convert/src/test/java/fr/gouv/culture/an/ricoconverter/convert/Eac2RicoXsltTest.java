@@ -24,7 +24,15 @@ public class Eac2RicoXsltTest {
         List<File> sortedList = Arrays.asList(testDir.listFiles());
         Collections.sort(sortedList);
         for (File aDir : sortedList) {
-        	if(aDir.isDirectory()) {
+        	if(
+        			aDir.isDirectory()
+        			&&
+        			(
+        					System.getProperty("test") == null
+        					||
+        					System.getProperty("test").equals(aDir.getName())
+        			)
+        	) {
         		ts.addTest(new Eac2RicoXsltTestExecution(aDir));
         	}
 		}
