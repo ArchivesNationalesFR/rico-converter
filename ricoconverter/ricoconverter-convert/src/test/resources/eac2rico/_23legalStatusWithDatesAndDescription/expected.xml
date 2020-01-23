@@ -1,15 +1,24 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xml:base="http://data.archives-nationales.culture.gouv.fr/"
-   xmlns:html="http://www.w3.org/1999/xhtml" xmlns:rico="https://www.ica.org/standards/RiC/ontology#">
-   <rico:Record rdf:about="description/005061">
+   xmlns:html="http://www.w3.org/1999/xhtml" 
+   xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <rico:Record rdf:about="record/005061">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
-      <rico:describes rdf:resource="agent/005061"/>
-      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005061"/>
+      <rico:describes rdf:resource="agent/005061"/><rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/005205">
+            <rico:instantiates rdf:resource="record/005205"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_NP_005205</rico:identifier>
+            <rico:heldBy rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005205"/> 
+         </rico:Instantiation>
+      </rico:hasInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/005061">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
-      <rico:describedBy rdf:resource="description/005061"/>
+      <rico:describedBy rdf:resource="record/005061"/>
       <rico:thingIsTargetOfTypeRelation>
          <rico:TypeRelation
             rdf:about="relationToType/005061-d5blonaxbw--1mt8t42bokzts-18500101-20061223">

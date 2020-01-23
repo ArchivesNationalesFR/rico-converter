@@ -11,7 +11,7 @@
 				<part>The entity</part>
 			</nameEntry>
 		</identity>
-
+		<!-- ANF use case: when the arcrole attribute has value hasAsPersonMember, consider it is a membership relation -->
 		<relations>
 			<!-- has member a person -->
 			<cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink" cpfRelationType="associative"

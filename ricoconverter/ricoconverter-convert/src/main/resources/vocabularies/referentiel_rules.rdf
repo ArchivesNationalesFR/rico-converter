@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+    xmlns:rico="http://www.ica.org/standards/RiC/ontology#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xml:base="http://data.archives-nationales.culture.gouv.fr/"
@@ -111,6 +111,14 @@
         <rico:title xml:lang="en">Encoded Archival Description Document Type Definition Version 2002</rico:title>
         <rdfs:seeAlso rdf:resource="https://www.loc.gov/ead/ead2002a.html"/>
         <rico:identifier xml:lang="en">+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN</rico:identifier>
+    </rico:Rule>
+    <rico:Rule rdf:about="rule/rl011">
+        
+        <rdfs:label xml:lang="en">EAC-CPF</rdfs:label>
+        <rico:identifier xml:lang="en">EAC-CPF</rico:identifier>
+        <rico:title xml:lang="en">Encoded Archival Context for Corporate Bodies, Persons, Families, 2nd Edition, 2003</rico:title>
+        <rdfs:seeAlso rdf:resource="https://eac.staatsbibliothek-berlin.de"/>
+        <rico:identifier xml:lang="en">urn:isbn:1-931666-33-4</rico:identifier>
     </rico:Rule>
    <!-- NP_051395.xml -->
     <!--<rdf:Description rdf:about="https://www.legifrance.gouv.fr/eli/decret/2005/9/29/PRMX0508756D/jo/texte">
