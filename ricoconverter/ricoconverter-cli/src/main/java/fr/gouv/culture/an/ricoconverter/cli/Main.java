@@ -27,7 +27,6 @@ public class Main {
 		CONVERT_EAC_RAW(new ArgumentsConvertEacRaw(), new ConvertEacRaw()),
 		CONVERT_EAC(new ArgumentsConvertEac(), new ConvertEac()),
 		CONVERT_EAD(new ArgumentsConvertEad(), new ConvertEad()),
-		VALIDATE(new ArgumentsValidate(), new Validate()),
 		TEST_EAC(new ArgumentsTestEac(), new TestEac()),
 		TEST_EAD(new ArgumentsTestEad(), new TestEad()),
 		VERSION(new ArgumentsVersion(), new Version()),
