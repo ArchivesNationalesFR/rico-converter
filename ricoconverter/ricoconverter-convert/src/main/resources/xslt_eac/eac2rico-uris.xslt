@@ -23,6 +23,10 @@
 	<xsl:param name="VOCABULARY_RULES">../vocabularies/referentiel_rules.rdf</xsl:param>
 	<xsl:variable name="RULES" select="document($VOCABULARY_RULES)" />
 	
+	<!-- Load Languages from companion file -->
+	<xsl:param name="VOCABULARY_LANGUAGES">../vocabularies/referentiel_languages.rdf</xsl:param>
+	<xsl:variable name="LANGUAGES" select="document($VOCABULARY_LANGUAGES)" />
+	
 	<!-- We have both a template and a function 'URI-Agent'. The template works on the current notice, the function is used to compute the URI is relation values -->
 	<xsl:template name="URI-Agent">
 <!-- 		<xsl:value-of select="eac2rico:URI-Agent(/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType, /eac:eac-cpf/eac:control/eac:recordId)" /> -->
@@ -66,9 +70,25 @@
 		<xsl:value-of select="substring-after($AgentURI, '/')" />
 	</xsl:function>
 		
-	<xsl:function name="eac2rico:URI-Description">
+	<xsl:function name="eac2rico:URI-Record">
 		<xsl:param name="recordId" />
-		<xsl:value-of select="concat('description/',substring-after($recordId, 'FRAN_NP_'))" />
+		<xsl:value-of select="concat('record/',substring-after($recordId, 'FRAN_NP_'))" />
+	</xsl:function>
+	
+	<xsl:function name="eac2rico:URI-Instantiation">
+		<xsl:param name="recordId" />
+		<xsl:value-of select="concat('instantiation/',substring-after($recordId, 'FRAN_NP_'))" />
+	</xsl:function>
+
+	<xsl:function name="eac2rico:URI-Language">
+		<xsl:param name="langcode" />
+		<xsl:variable name="idlocgov" select="concat('http://id.loc.gov/vocabulary/iso639-2/', $langcode)" />
+
+		<xsl:if test="not( $LANGUAGES/rdf:RDF/rico:Language[owl:sameAs/@rdf:resource = $idlocgov] )">
+			<xsl:value-of select="eac2rico:warning($recordId, 'UNKNOWN_LANGUAGE', $langcode)" />
+		</xsl:if>
+
+		<xsl:value-of select="$LANGUAGES/rdf:RDF/rico:Language[owl:sameAs/@rdf:resource = $idlocgov]/@rdf:about" />
 	</xsl:function>
 	
 	<xsl:function name="eac2rico:URI-AgentName">
@@ -86,14 +106,14 @@
    		/>
 	</xsl:function>
 	
-	<xsl:function name="eac2rico:URI-ActivityRealizationRelation">
+	<xsl:function name="eac2rico:URI-PerformanceRelation">
 		<xsl:param name="recordId" />
 		<xsl:param name="functionId" />
 		<xsl:param name="fromDate" />
 		<xsl:param name="toDate" />
 		
 		<xsl:value-of select="eac2rico:URI-Anything(
-			'activityRealizationRelation',
+			'performanceRelation',
    			substring-after($recordId, 'FRAN_NP_'),
    			$functionId,
    			$fromDate,
@@ -104,21 +124,6 @@
 	<xsl:function name="eac2rico:URI-ActivityType">
 		<xsl:param name="vocabularySource" />
 		<xsl:value-of select="concat('activityType/', 'FRAN_RI_011-', $vocabularySource)" />
-	</xsl:function>
-	
-	<xsl:function name="eac2rico:URI-OccupationRelation">
-		<xsl:param name="recordId" />
-		<xsl:param name="occupationId" />
-		<xsl:param name="fromDate" />
-		<xsl:param name="toDate" />
-		
-		<xsl:value-of select="eac2rico:URI-Anything(
-			'occupationRelation',
-   			substring-after($recordId, 'FRAN_NP_'),
-   			$occupationId,
-   			$fromDate,
-   			$toDate)"
-   		/>
 	</xsl:function>
 	
 	<xsl:function name="eac2rico:URI-OccupationType">

@@ -12,6 +12,7 @@
 	xmlns:eac="urn:isbn:1-931666-33-4"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
 	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
 	exclude-result-prefixes="eac eac2rico xlink xs xsi xsl"
 >
 	<!-- Import URI stylesheet -->
@@ -53,16 +54,36 @@
 
 	<xsl:template match="eac:control">			
 		<rico:Record>
-			<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-Description(eac:recordId)" /></xsl:call-template>
+			<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-Record(eac:recordId)" /></xsl:call-template>
 			<rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
 			<rico:describes><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template></rico:describes>
-			<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/{/eac:eac-cpf/eac:control/eac:recordId}" />
 			
 			<xsl:apply-templates />
 			<xsl:apply-templates select="../eac:cpfDescription/eac:identity/eac:entityId" mode="description" />
 			<xsl:apply-templates select="../eac:cpfDescription/eac:relations/eac:cpfRelation[@cpfRelationType = 'identity']" mode="description" />
+			
+			<rico:hasInstantiation>
+	         <rico:Instantiation>
+	         	<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-Instantiation(eac:recordId)" /></xsl:call-template>
+	            <rico:instantiates rdf:resource="{eac2rico:URI-Record(eac:recordId)}"/>
+	            <dc:format xml:lang="en">text/xml</dc:format>
+	            <rico:identifier><xsl:value-of select="eac:recordId" /></rico:identifier>
+	            <xsl:choose>
+					<xsl:when test="starts-with($AUTHOR_URI, $BASE_URI)">
+						<rico:heldBy rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}" />
+					</xsl:when>
+					<xsl:otherwise>
+						<rico:heldBy rdf:resource="{$AUTHOR_URI}" />
+					</xsl:otherwise>
+				</xsl:choose>
+				<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/{/eac:eac-cpf/eac:control/eac:recordId}" />
+				<xsl:apply-templates mode="instantiation" />
+	         </rico:Instantiation>
+	      </rico:hasInstantiation>
 		</rico:Record>
 	</xsl:template>
+
+	<!-- ***** conventionDeclaration on both the Record and the Instantiation -->
 
 	<!-- Generates rico:regulatedBy with hardcoded values depending on the entity type -->
 	<xsl:template match="eac:control/eac:conventionDeclaration">
@@ -82,37 +103,161 @@
 		<rico:regulatedBy rdf:resource="rule/rl004" />
 	</xsl:template>
 	
+	<!-- hardcoded value on the Instantiation that states this is encoded in EAC/CPF -->
+	<xsl:template match="eac:control/eac:conventionDeclaration" mode="instantiation">
+		<rico:regulatedBy rdf:resource="rule/rl011" />
+	</xsl:template>
+	
+	<xsl:template match="eac:control/eac:otherRecordId[text()]" mode="instantiation">
+		<rico:identifier><xsl:value-of select="." /></rico:identifier>
+	</xsl:template>
+	
+	<!-- ***** languageDeclaration ***** -->
+	
+	<xsl:template match="eac:control/eac:languageDeclaration">
+		<rico:hasLanguage rdf:resource="{eac2rico:URI-Language(eac:language/@languageCode)}"/>
+	</xsl:template>
+	
+	<!-- ***** maintenanceHistory and maintenanceEvent -->
+	
 	<xsl:template match="eac:maintenanceHistory">
 		<!-- If an event is 'created', use it for creation date, otherwise use a 'derived' event if exists -->
 		<xsl:choose>
 			<xsl:when test="eac:maintenanceEvent[eac:eventType = 'created']">
-	             <rico:wasCreatedAtDate>
+	             <rico:creationDate>
 		             <xsl:call-template name="outputDate">
 		               <xsl:with-param name="stdDate" select="eac:maintenanceEvent[eac:eventType = 'created']/eac:eventDateTime/@standardDateTime"/>
 		               <xsl:with-param name="date" select="eac:maintenanceEvent[eac:eventType = 'created']/eac:eventDateTime"/>
 		            </xsl:call-template>
-	             </rico:wasCreatedAtDate>
+	             </rico:creationDate>
 	         </xsl:when>
 	         <xsl:when test="eac:maintenanceEvent[eac:eventType = 'derived']">
-	             <rico:wasCreatedAtDate>
+	             <rico:creationDate>
 	             	<xsl:call-template name="outputDate">
 		               <xsl:with-param name="stdDate" select="eac:maintenanceEvent[eac:eventType = 'derived'][1]/eac:eventDateTime/@standardDateTime"/>
 		               <xsl:with-param name="date" select="eac:maintenanceEvent[eac:eventType = 'derived'][1]/eac:eventDateTime"/>
 		            </xsl:call-template>
-	             </rico:wasCreatedAtDate>
+	             </rico:creationDate>
 	         </xsl:when>
          </xsl:choose>
-         <!-- If an event is 'updated', use the last one for the lastUpdateDate -->
-         <!-- TODO : we could sort on the eventDateTime to make sure we pick up the last one ? -->
-         <xsl:if test="eac:maintenanceEvent[eac:eventType = 'updated']">
-              <rico:lastUpdateDate>
+         <!-- sort on the eventDateTime to make sure we pick up the last one to generated lastModificationDate -->
+         <xsl:for-each select="eac:maintenanceEvent[eac:eventType = 'updated' or eac:eventType = 'revised' or eac:eventType = 'derived']">
+            <xsl:sort select="eac:eventDateTime" data-type="text" order="descending"/>
+            <!-- process only the first one, most recent date -->
+            <xsl:if test="position()=1">
+                <rico:lastModificationDate>
               	  	<xsl:call-template name="outputDate">
-		               <xsl:with-param name="stdDate" select="eac:maintenanceEvent[eac:eventType = 'updated'][last()]/eac:eventDateTime/@standardDateTime"/>
-		               <xsl:with-param name="date" select="eac:maintenanceEvent[eac:eventType = 'updated'][last()]/eac:eventDateTime"/>
+		               <xsl:with-param name="stdDate" select="./eac:eventDateTime/@standardDateTime"/>
+		               <xsl:with-param name="date" select="./eac:eventDateTime"/>
 		            </xsl:call-template>
-              </rico:lastUpdateDate>
-          </xsl:if>
+              </rico:lastModificationDate>
+            </xsl:if>
+        </xsl:for-each>
+          
+          <xsl:apply-templates />
 	</xsl:template>
+	
+	<xsl:template match="eac:maintenanceEvent">	
+	   <rico:affectedBy>
+	      <rico:Activity>
+	      	 <xsl:apply-templates />
+	      </rico:Activity>
+	   </rico:affectedBy>
+	</xsl:template>
+	
+	<xsl:template match="eac:eventDateTime">
+		<rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date"><xsl:value-of select="." /></rico:date>
+	</xsl:template>
+	<xsl:template match="eac:eventType">
+	  <xsl:variable name="eventTypeLabel">
+	   	<xsl:choose>
+	   		<xsl:when test="text() = 'created'">Création</xsl:when>
+	   		<xsl:when test="text() = 'updated'">Modification</xsl:when>
+	   		<xsl:when test="text() = 'revised'">Révision</xsl:when>
+	   		<xsl:when test="text() = 'derived'">Dérivation</xsl:when>
+	   		<xsl:otherwise>Autre</xsl:otherwise>
+	   	</xsl:choose>
+	   </xsl:variable>
+	   
+	   <xsl:variable name="agentLabel">
+	   	<xsl:choose>
+	   		<xsl:when test="../eac:agentType = 'machine'"><xsl:value-of select="../eac:agent" /></xsl:when>
+	   		<xsl:otherwise>par <xsl:value-of select="../eac:agent" /></xsl:otherwise>
+	   	</xsl:choose>
+	   </xsl:variable>
+	   
+	   <rico:name xml:lang="{$LITERAL_LANG}"><xsl:value-of select="$eventTypeLabel" /> (<xsl:value-of select="$agentLabel" />)</rico:name>
+	</xsl:template>
+	<xsl:template match="eac:eventDescription">
+		<rico:descriptiveNote xml:lang="{$LITERAL_LANG}"><xsl:value-of select="." /></rico:descriptiveNote> 
+	</xsl:template>
+	
+	<!-- *** sources/source/sourceEntry *** -->
+	
+	<xsl:template match="eac:sources">			
+		<xsl:apply-templates />
+	</xsl:template>
+	<xsl:template match="eac:source[eac:sourceEntry]">			
+		<xsl:choose>
+			<!--  if sourceEntry is an http URI, generates a rico:hasSource -->
+			<xsl:when test="starts-with(eac:sourceEntry,'http') and not(contains(eac:sourceEntry, ' '))">
+				<rico:hasSource rdf:resource="{normalize-space(eac:sourceEntry)}" />
+			</xsl:when>
+			<!-- Otherwise, generates a rico:source -->
+			<xsl:otherwise>
+				<rico:source xml:lang="{$LITERAL_LANG}">
+					<!-- If the value starts with an hyphen, remove it -->
+					<xsl:choose>
+						<xsl:when test="starts-with(normalize-space(eac:sourceEntry), '-')">
+							<xsl:value-of select="normalize-space(substring-after(eac:sourceEntry, '-'))" />
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:value-of select="normalize-space(eac:sourceEntry)" />
+						</xsl:otherwise>
+					</xsl:choose>
+					<xsl:if test="@xlink:href[normalize-space(.) != '']">
+                        <xsl:value-of select="concat(' (', normalize-space(@xlink:href), ')')"/>
+                    </xsl:if>
+				</rico:source>
+			</xsl:otherwise>
+		</xsl:choose>		
+	</xsl:template>
+	<xsl:template match="eac:source[eac:descriptiveNote and not(eac:sourceEntry)]">			
+		<xsl:for-each select="eac:descriptiveNote/eac:p">
+			<rico:source  rdf:parseType="Literal"><html:p xml:lang="{$LITERAL_LANG}">
+				<xsl:apply-templates select="node()"></xsl:apply-templates>
+			</html:p></rico:source>
+
+			<!--  In addition to the generation of the literal value, we extract certain URI and generate rico:hasSource to these URIs -->
+			  <xsl:analyze-string select="." regex="(http|https)://catalogue.bnf.fr/[^\s)\]\.;,]*">		
+			    <xsl:matching-substring>
+			      <rico:hasSource rdf:resource="{regex-group(0)}" />
+			    </xsl:matching-substring>		
+			  </xsl:analyze-string>
+	
+			  <xsl:analyze-string select="." regex="(http|https)://fr.wikipedia.org/wiki/[^\s)\]\.;,]*">		
+			    <xsl:matching-substring>
+			      <rico:hasSource rdf:resource="{regex-group(0)}" />
+			    </xsl:matching-substring>		
+			  </xsl:analyze-string>
+
+		</xsl:for-each>
+	</xsl:template>
+	
+	<xsl:template match="eac:maintenanceAgency">
+		<xsl:choose>
+			<xsl:when test="starts-with($AUTHOR_URI, $BASE_URI)">
+				<rico:createdBy rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}" />
+			</xsl:when>
+			<xsl:otherwise>
+				<rico:createdBy rdf:resource="{$AUTHOR_URI}" />
+			</xsl:otherwise>
+		</xsl:choose>
+		
+	</xsl:template>
+	
+	
+	<!-- ***** cpfDescription -> rico:Agent ***** -->
 	
 	<xsl:template match="eac:cpfDescription">
 		<rico:Agent>
@@ -124,7 +269,7 @@
 				<!-- TODO : error message -->
 				<xsl:otherwise></xsl:otherwise>
 			</xsl:choose>
-			<rico:describedBy><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-Description(../eac:control/eac:recordId)" /></xsl:call-template></rico:describedBy>
+			<rico:describedBy><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-Record(../eac:control/eac:recordId)" /></xsl:call-template></rico:describedBy>
 			<xsl:apply-templates />	
 		</rico:Agent>	
 	</xsl:template>
@@ -138,10 +283,10 @@
 		<xsl:choose>
 			<xsl:when test="starts-with(text(), 'ISNI')">
 				<!-- Removes whitespace and potential column after "ISNI :" -->
-				<isni:ISNIAssigned><xsl:value-of select="translate(substring-after(text(), 'ISNI'), ' :', '')" /></isni:ISNIAssigned>
+				<isni:identifierValid><xsl:value-of select="translate(substring-after(text(), 'ISNI'), ' :', '')" /></isni:identifierValid>
 			</xsl:when>
 			<xsl:when test="@localType = 'ISNI'">
-				<isni:ISNIAssigned><xsl:value-of select="translate(text(), ' ', '')" /></isni:ISNIAssigned>
+				<isni:identifierValid><xsl:value-of select="translate(text(), ' ', '')" /></isni:identifierValid>
 			</xsl:when>
 			<xsl:when test="starts-with(text(), 'SIRET')">
 				<!-- Removes whitespace and potential column after "SIRET :" -->
@@ -436,72 +581,7 @@
 		<xsl:variable name="warningString" select="concat(substring($fullString, 1, 15), '...')" />
 		<!-- Output a warning -->
 		<xsl:value-of select="eac2rico:warning($recordId, 'MULTIPLE_P_IN_MANDATE', $warningString)" />
-	</xsl:template>
-	
-	<!-- *** sources/source/sourceEntry *** -->
-	
-	<xsl:template match="eac:sources">			
-		<xsl:apply-templates />
-	</xsl:template>
-	<xsl:template match="eac:source[eac:sourceEntry]">			
-		<xsl:choose>
-			<!--  if sourceEntry is an http URI, generates a rico:hasSource -->
-			<xsl:when test="starts-with(eac:sourceEntry,'http') and not(contains(eac:sourceEntry, ' '))">
-				<rico:hasSource rdf:resource="{normalize-space(eac:sourceEntry)}" />
-			</xsl:when>
-			<!-- Otherwise, generates a rico:source -->
-			<xsl:otherwise>
-				<rico:source xml:lang="{$LITERAL_LANG}">
-					<!-- If the value starts with an hyphen, remove it -->
-					<xsl:choose>
-						<xsl:when test="starts-with(normalize-space(eac:sourceEntry), '-')">
-							<xsl:value-of select="normalize-space(substring-after(eac:sourceEntry, '-'))" />
-						</xsl:when>
-						<xsl:otherwise>
-							<xsl:value-of select="normalize-space(eac:sourceEntry)" />
-						</xsl:otherwise>
-					</xsl:choose>
-					<xsl:if test="@xlink:href[normalize-space(.) != '']">
-                        <xsl:value-of select="concat(' (', normalize-space(@xlink:href), ')')"/>
-                    </xsl:if>
-				</rico:source>
-			</xsl:otherwise>
-		</xsl:choose>		
-	</xsl:template>
-	<xsl:template match="eac:source[eac:descriptiveNote and not(eac:sourceEntry)]">			
-		<xsl:for-each select="eac:descriptiveNote/eac:p">
-			<rico:source  rdf:parseType="Literal"><html:p xml:lang="{$LITERAL_LANG}">
-				<xsl:apply-templates select="node()"></xsl:apply-templates>
-			</html:p></rico:source>
-
-			<!--  In addition to the generation of the literal value, we extract certain URI and generate rico:hasSource to these URIs -->
-			  <xsl:analyze-string select="." regex="(http|https)://catalogue.bnf.fr/[^\s)\]\.;,]*">		
-			    <xsl:matching-substring>
-			      <rico:hasSource rdf:resource="{regex-group(0)}" />
-			    </xsl:matching-substring>		
-			  </xsl:analyze-string>
-	
-			  <xsl:analyze-string select="." regex="(http|https)://fr.wikipedia.org/wiki/[^\s)\]\.;,]*">		
-			    <xsl:matching-substring>
-			      <rico:hasSource rdf:resource="{regex-group(0)}" />
-			    </xsl:matching-substring>		
-			  </xsl:analyze-string>
-
-		</xsl:for-each>
-	</xsl:template>
-	
-	<xsl:template match="eac:maintenanceAgency">
-		<xsl:choose>
-			<xsl:when test="starts-with($AUTHOR_URI, $BASE_URI)">
-				<rico:createdBy rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}" />
-			</xsl:when>
-			<xsl:otherwise>
-				<rico:createdBy rdf:resource="{$AUTHOR_URI}" />
-			</xsl:otherwise>
-		</xsl:choose>
-		
-	</xsl:template>
-	
+	</xsl:template>	
 	
 	<!-- *** Functions *** -->
 	<xsl:template match="eac:functions">
@@ -511,14 +591,14 @@
 		
 		<rico:agentIsTargetOfPerformanceRelation>
 			<rico:PerformanceRelation>
-				<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-ActivityRealizationRelation($recordId, eac:term/@vocabularySource, eac:dateRange/eac:fromDate/@standardDate, eac:dateRange/eac:toDate/@standardDate )" /></xsl:call-template>
+				<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-PerformanceRelation($recordId, eac:term/@vocabularySource, eac:dateRange/eac:fromDate/@standardDate, eac:dateRange/eac:toDate/@standardDate )" /></xsl:call-template>
 				<rico:performanceRelationHasTarget>
 					<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
 				</rico:performanceRelationHasTarget>
 				<rico:performanceRelationHasSource>
 					<rico:Activity>
 						<rico:activityIsSourceOfPerformanceRelation>
-							<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-ActivityRealizationRelation($recordId, eac:term/@vocabularySource, eac:dateRange/eac:fromDate/@standardDate, eac:dateRange/eac:toDate/@standardDate )" /></xsl:call-template>
+							<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-PerformanceRelation($recordId, eac:term/@vocabularySource, eac:dateRange/eac:fromDate/@standardDate, eac:dateRange/eac:toDate/@standardDate )" /></xsl:call-template>
 						</rico:activityIsSourceOfPerformanceRelation>
 						<rico:hasActivityType>
 							<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-ActivityType(eac:term/@vocabularySource)" /></xsl:call-template>
@@ -537,14 +617,14 @@
 	<xsl:template match="eac:occupation">
 		<rico:agentIsTargetOfPerformanceRelation>
 			<rico:PerformanceRelation>
-				<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-OccupationRelation($recordId, eac:term/@vocabularySource, eac:dateRange/eac:fromDate/@standardDate, eac:dateRange/eac:toDate/@standardDate )" /></xsl:call-template>
+				<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-PerformanceRelation($recordId, eac:term/@vocabularySource, eac:dateRange/eac:fromDate/@standardDate, eac:dateRange/eac:toDate/@standardDate )" /></xsl:call-template>
 				<rico:performanceRelationHasTarget>
 					<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
 				</rico:performanceRelationHasTarget>
 				<rico:performanceRelationHasSource>
 					<rico:Activity>
 						<rico:activityIsSourceOfPerformanceRelation>
-							<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-OccupationRelation($recordId, eac:term/@vocabularySource, eac:dateRange/eac:fromDate/@standardDate, eac:dateRange/eac:toDate/@standardDate )" /></xsl:call-template>
+							<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-PerformanceRelation($recordId, eac:term/@vocabularySource, eac:dateRange/eac:fromDate/@standardDate, eac:dateRange/eac:toDate/@standardDate )" /></xsl:call-template>
 						</rico:activityIsSourceOfPerformanceRelation>
 						<rico:hasActivityType>
 							<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-OccupationType(eac:term/@vocabularySource)" /></xsl:call-template>

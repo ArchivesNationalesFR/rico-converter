@@ -6,6 +6,7 @@
    <rico:Record rdf:about="record/005205">
    		<rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
    		<rico:describes rdf:resource="agent/005205"/>
+   		<rico:createdBy rdf:resource="agent/005061" />
       <rico:hasInstantiation>
          <rico:Instantiation rdf:about="instantiation/005205">
             <rico:instantiates rdf:resource="record/005205"/>
@@ -15,7 +16,7 @@
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005205"/> 
          </rico:Instantiation>
       </rico:hasInstantiation>
-   		<rico:createdBy rdf:resource="agent/005061" />
+   		
    </rico:Record>
    <rico:Agent rdf:about="agent/005205">
    	  <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
