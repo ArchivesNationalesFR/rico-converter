@@ -29,7 +29,18 @@ public class TestEad implements CommandIfc {
 			
 			ArgumentsConvertEad defaultArgs = new ArgumentsConvertEad();
 			Ead2RicoConverterFactory factory = new Ead2RicoConverterFactory(defaultArgs);			
-			Ead2RicoConverter converter = factory.createConverter(args.getXslt(), defaultArgs.getOutput(), defaultArgs.getError(), defaultArgs.getInput());
+			Ead2RicoConverter converter = factory.createConverter(
+					args.getXslt(),
+					defaultArgs.getOutput(),
+					defaultArgs.getError(),
+					defaultArgs.getInput(),
+					// no splitting
+					false,
+					// filter @audience=internal
+					true,
+					// no filter @audience=external
+					false
+			);
 			converter.unitTests(args.getUnitTests());			
 			
 			log.info("Command : "+this.getClass().getSimpleName()+" finished successfully in {} ms", (System.currentTimeMillis() - start));

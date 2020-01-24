@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	The main stylesheet to convert Archives Nationales EAD files to RiC-O.
+	This relies on other stylesheets for URI generation, error codes and built-ins.
+	It makes an extensive use of XSLT template "modes" to select appropriate template for the same input
+	elements based on whether the element needs to be output in the RecordResource or the Instantiation.
+	By definition the mode "#all" for a template means this template is applicable in all modes.
+ -->
 <xsl:stylesheet version="2.0" 
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -73,16 +80,21 @@
 				<rico:regulatedBy rdf:resource="rule/rl008"/>
 			</xsl:if>
 	
+			<!-- process child elements in mode 'findingaid' -->
 			<xsl:apply-templates mode="findingaid" />
 	
+			<!-- Generates an Instantiation of the FindingAid in a child element -->
 			<xsl:apply-templates select="../archdesc" mode="reference" />
 			<rico:hasInstantiation>
 				<!--  FindingAid Instantiation -->
 			    <rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($fiInstantiationId)}">
+			      <!-- link back to parent URI -->
 			      <rico:instantiates rdf:resource="{ead2rico:URI-FindingAid($faId)}"/>
+			      <!-- process child elements again but this time in mode 'instantiation' -->
 			      <xsl:apply-templates mode="instantiation" />
 			      <dc:format xml:lang="en">text/xml</dc:format>
 			      <rico:identifier><xsl:value-of select="eadid" /></rico:identifier>	      
+			      <!-- Turn author URI into relative URI -->
 			      <xsl:choose>
 					<xsl:when test="starts-with($AUTHOR_URI, $BASE_URI)">
 						<rico:heldBy rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}" />
@@ -201,6 +213,7 @@
 		</xsl:variable>
 		<xsl:variable name="instantiationId" select="concat($recordResourceId, '-i1')" />
 	
+		<!-- Generates the top RecordResource corresponding to the archdesc -->
 		<rico:RecordResource rdf:about="{ead2rico:URI-RecordResource($recordResourceId)}">
 			<rico:describedBy rdf:resource="{ead2rico:URI-FindingAid($faId)}" />
 			
@@ -209,7 +222,7 @@
 			<!--  Note that originalsloc is still processed here to match inner ref -->
 			<xsl:apply-templates select="@* | (node() except (dsc | daogrp | processinfo | appraisal | originalsloc[not(descendant::ref)]))" />
 
-			<!-- everything that needs to go inside rico:history -->
+			<!-- process everything that needs to go inside a rico:history -->
 			<xsl:if test="processinfo or appraisal or did/origination[normalize-space(string-join(text()))] or originalsloc[not(descendant::ref)]">
 				<rico:history rdf:parseType="Literal">
 					<xsl:apply-templates select="processinfo" />
@@ -230,9 +243,9 @@
 					<rico:instantiates rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
 					<!-- references to other digital copies -->
 					<xsl:apply-templates select="daogrp" mode="reference" />
-					<!--  Note that origination is still processed here to match inner persname/corpname/famname -->
+					<!--  Recurse down. Note that origination is still processed here to match inner persname/corpname/famname -->
 					<xsl:apply-templates select="node() except (daogrp | custodhist | acqinfo | processinfo | appraisal)" mode="instantiation" />
-					<!-- all the 'history' section -->
+					<!-- everything that goes in the 'rico:history' section -->
 					<xsl:if test="custodhist or acqinfo or processinfo or appraisal or did/origination[normalize-space(string-join(text()))]">
 						<rico:history rdf:parseType="Literal">
 							<!-- We want them in this order -->
@@ -251,14 +264,14 @@
 				</rico:Instantiation>
 			</rico:hasInstantiation>			
 						
-			<!-- generates other Instantiations -->
+			<!-- generates other Instantiations if any -->
 			<xsl:apply-templates select="daogrp" />
 			
 			<!--  references to RecordResources, generates rico:includes -->
 			<xsl:apply-templates select="dsc" mode="reference" />
 		</rico:RecordResource>
 		
-		<!-- All RecordResources -->
+		<!-- Recurse down in all RecordResources -->
 		<xsl:apply-templates select="dsc" />
 	</xsl:template>
 	
@@ -277,6 +290,8 @@
 		<rico:includes rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
 	</xsl:template>
 	
+	<!-- ***** c processing : generates corresponding RecordResource and Instantiation ***** -->
+	
 	<xsl:template match="c">
 		<xsl:variable name="recordResourceId">
 			<xsl:call-template name="recordResourceId">
@@ -293,6 +308,7 @@
 			</xsl:call-template>
 		</xsl:variable>
 
+		<!-- RecordResource -->
 		<rico:RecordResource rdf:about="{ead2rico:URI-RecordResource($recordResourceId)}">
 			<rico:includedIn rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />			
 						
@@ -317,7 +333,7 @@
 					<rico:instantiates rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
 					<!-- references to other digital copies -->
 					<xsl:apply-templates select="daogrp" mode="reference" />
-					<!--  Note that origination is still processed here to match inner persname/corpname/famname -->
+					<!--  recurse down. Note that origination is still processed here to match inner persname/corpname/famname -->
 					<xsl:apply-templates select="node() except (daogrp | custodhist | acqinfo | processinfo | appraisal)" mode="instantiation" />
 					<!-- all the 'history' section -->
 					<xsl:if test="custodhist or acqinfo or processinfo or appraisal or did/origination[normalize-space(string-join(text()))]">
@@ -347,7 +363,7 @@
 	</xsl:template>
 
 
-	<!-- ***** daogrp and daoloc processing ***** -->
+	<!-- ***** daogrp and daoloc processing : generates other Instantiations ***** -->
 
 	<xsl:template match="daogrp" mode="#all">
 		<!-- Don't process daodesc here -->
@@ -380,6 +396,7 @@
 			<xsl:value-of select="ead2rico:warning($faId, 'DAOLOC_CONTAINS_SPACE', @href)" />
 		</xsl:if>
 		
+		<!-- Inside this other Instantiation we only pick selected EAD elements, we don't reprocess all elements -->
 		<rico:hasInstantiation>
 			<rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($instantiationId)}">
 				<rico:instantiates rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />

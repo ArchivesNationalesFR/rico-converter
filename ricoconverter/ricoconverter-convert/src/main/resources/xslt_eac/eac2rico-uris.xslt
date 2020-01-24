@@ -198,7 +198,7 @@
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:value-of select="eac2rico:URI-Anything(
-					'agentRelation',
+					'agentToAgentRelation',
 		   			$first,
 		   			$second,
 		   			$fromDate,
@@ -239,7 +239,7 @@
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:value-of select="eac2rico:URI-Anything(
-					'agentRelation',
+					'agentToAgentRelation',
 		   			$first,
 		   			$second,
 		   			$fromDate,
@@ -328,7 +328,7 @@
 		<xsl:param name="toDate" />
 		
 		<xsl:value-of select="eac2rico:URI-Anything(
-			'relationToRule',
+			'ruleRelation',
    			substring-after($recordId, 'FRAN_NP_'),
    			if(contains($eliOrVocabularyId, 'eli/')) then concat('eli-', translate(substring-after($eliOrVocabularyId, 'eli/'), '/', '-')) else substring-after($eliOrVocabularyId, 'rule/'),
    			$fromDate,

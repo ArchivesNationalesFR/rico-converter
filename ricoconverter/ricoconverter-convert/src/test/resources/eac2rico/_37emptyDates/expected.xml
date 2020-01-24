@@ -34,18 +34,18 @@
          </rico:AgentName>
       </rico:hasAgentName>
       <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/005205-111111-19470101-*"/>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentRelation/005205-111111-*-19470101"/>
+      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005205-111111-*-19470101"/>
    </rico:Agent>
    <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/005205-111111-19470101-*">
       <rico:agentHierarchicalRelationHasTarget rdf:resource="agent/111111"/>
       <rico:agentHierarchicalRelationHasSource rdf:resource="agent/005205"/>
-      <rdfs:label xml:lang="fr">Relation hiérarchique entre "The entity" et "The child of the entity", début : 1947</rdfs:label>
+      <rdfs:label xml:lang="fr">Relation hiérarchique entre "The entity" et "Other entity", début : 1947</rdfs:label>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1947-01-01</rico:beginningDate>
    </rico:AgentHierarchicalRelation>
-   <rico:AgentToAgentRelation rdf:about="agentRelation/005205-111111-*-19470101">
+   <rico:AgentToAgentRelation rdf:about="agentToAgentRelation/005205-111111-*-19470101">
       <rico:agentRelationConnects rdf:resource="agent/005205"/>
       <rico:agentRelationConnects rdf:resource="agent/111111"/>
-      <rdfs:label xml:lang="fr">Relation associative entre "The entity" et "The associated entity", fin : 1947</rdfs:label>
+      <rdfs:label xml:lang="fr">Relation associative entre "The entity" et "Other entity", fin : 1947</rdfs:label>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1947-01-01</rico:endDate>
    </rico:AgentToAgentRelation>
 </rdf:RDF>

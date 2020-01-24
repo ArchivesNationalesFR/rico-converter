@@ -13,6 +13,8 @@ import javax.xml.transform.Result;
 import javax.xml.transform.Source;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
+import javax.xml.transform.dom.DOMResult;
+import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.sax.SAXSource;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
@@ -59,7 +61,20 @@ public class Ead2RicoConverter {
 	 */
 	protected EntityResolver entityResolver;
 	
+	/**
+	 * Output file builder that generates output file names from input file names
+	 */
 	protected OutputFileBuilder outputFileBuilder;
+	
+	/**
+	 * Splitting transformer to split output if needed.
+	 */
+	protected Transformer splittingTransformer;
+	
+	/**
+	 * Pre-processor (@audience filtering) transformer
+	 */
+	protected Transformer preProcessorTransformer;
 
 	public Ead2RicoConverter(
 			Transformer eac2ricoTransformer,
@@ -122,22 +137,54 @@ public class Ead2RicoConverter {
 			
 			File outputFile = this.outputFileBuilder.apply(currentOutputDir, inputFile);
 			
+			if(this.splittingTransformer != null) {
+				// splitting activated
+				// output file name is considered a directory name
+				outputFile.mkdir();
+				outputFile = new File(outputFile, "dummy.rdf");
+			}
+			
 			boolean success = false;
+			
 			try(FileOutputStream out = new FileOutputStream(outputFile)) {
-				// StreamSource source = new StreamSource(new FileInputStream(inputFile));
-				
 				try {
 					XMLReader reader = XMLReaderFactory.createXMLReader();
 					reader.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);					
 					if(this.entityResolver != null) {
 						reader.setEntityResolver(this.entityResolver);
 					}
-					SAXSource source = new SAXSource(reader, new InputSource(new FileInputStream(inputFile)));
+					
+					Source source = new SAXSource(reader, new InputSource(new FileInputStream(inputFile)));
+					if(this.preProcessorTransformer != null) {
+						// pre-process the source and create a new Source from result
+						DOMResult preprocessingResult = new DOMResult();
+						this.preprocess(source, preprocessingResult);
+						// get the preprocessing result and recreate the source from it
+						source = new DOMSource(preprocessingResult.getNode());
+					}
+					
 					
 					// set a SystemId to resolve references to DTD
 					// source.setSystemId(inputFile);
 					
-					this.convert(source, new StreamResult(out));
+					if(this.splittingTransformer != null) {
+						// post-process result of conversion
+						
+						// retrieve result of initial transformation in a DOM result
+						DOMResult conversionResult = new DOMResult();
+						this.convert(source, conversionResult);
+						Node outputNode = conversionResult.getNode();
+						// prepare the split result and sets it a SystemId so relative URI references to output files are known
+						Result splitResult = new StreamResult(out);
+						splitResult.setSystemId(outputFile.toURI().toString());
+						// appky splitting transformation to the output of conversion
+						this.split(new DOMSource(outputNode), splitResult);
+						// delete the dummy output file
+						outputFile.delete();
+					} else {
+						this.convert(source, new StreamResult(out));
+					}
+					
 				} catch (SAXException e1) {
 					log.error("Error when creating XMLReader for "+inputFile.getName(), e1);
 				}
@@ -148,6 +195,7 @@ public class Ead2RicoConverter {
 					log.error("Error in listener notifyEndProcessing for "+inputFile.getName(), e);
 				}
 				success = true;
+				
 			} catch (FileNotFoundException e) {
 				throw new RicoConverterException(ErrorCode.SHOULD_NEVER_HAPPEN_EXCEPTION, e);
 			} catch (RicoConverterException e2) {
@@ -179,12 +227,30 @@ public class Ead2RicoConverter {
 		}
 	}
 	
+	public void preprocess(Source source, Result result) throws RicoConverterException {
+		try {
+			log.debug("Preprocessing...");
+			this.preProcessorTransformer.transform(source, result);
+		} catch (TransformerException e) {
+			throw new RicoConverterException(ErrorCode.PREPROCESSING_XSLT_ERROR, e);
+		}
+	}
+	
 	public void convert(Source source, Result result) throws RicoConverterException {
 		try {
 			log.debug("Running XSLT engine...");
 			this.ead2ricoTransformer.transform(source, result);
 		} catch (TransformerException e) {
-			throw new RicoConverterException(ErrorCode.XSLT_TRANSFORM_ERROR, e);
+			throw new RicoConverterException(ErrorCode.CONVERSION_XSLT_ERROR, e);
+		}
+	}
+	
+	public void split(Source source, Result result) throws RicoConverterException {
+		try {
+			log.debug("Splitting...");
+			this.splittingTransformer.transform(source, result);
+		} catch (TransformerException e) {
+			throw new RicoConverterException(ErrorCode.SPLITTING_XSLT_ERROR, e);
 		}
 	}
 	
@@ -258,7 +324,7 @@ public class Ead2RicoConverter {
 						} catch (IOException e1) {
 							throw new RicoConverterException(ErrorCode.DIRECTORY_OR_FILE_HANDLING_EXCEPTION, e1);
 						} catch (RicoConverterException e) {
-							throw new RicoConverterException(ErrorCode.XSLT_TRANSFORM_ERROR, e);
+							throw new RicoConverterException(ErrorCode.CONVERSION_XSLT_ERROR, e);
 						}
 					} catch (RicoConverterException e) {
 						System.out.println(f.getName()+" : "+"FAILURE");
@@ -292,6 +358,22 @@ public class Ead2RicoConverter {
 
 	public void setOutputFileBuilder(OutputFileBuilder outputFileBuilder) {
 		this.outputFileBuilder = outputFileBuilder;
+	}
+
+	public Transformer getSplittingTransformer() {
+		return splittingTransformer;
+	}
+
+	public void setSplittingTransformer(Transformer splittingTransformer) {
+		this.splittingTransformer = splittingTransformer;
+	}	
+
+	public Transformer getPreProcessorTransformer() {
+		return preProcessorTransformer;
+	}
+
+	public void setPreProcessorTransformer(Transformer preProcessorTransformer) {
+		this.preProcessorTransformer = preProcessorTransformer;
 	}
 
 	private void notifyStart(File inputFile) throws RicoConverterListenerException {

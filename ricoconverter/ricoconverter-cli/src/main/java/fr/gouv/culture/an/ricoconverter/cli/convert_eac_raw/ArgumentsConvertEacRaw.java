@@ -18,20 +18,20 @@ public class ArgumentsConvertEacRaw {
 	
 	@Parameter(
 			names = { "input" },
-			description = "Input folder containg the EAC-CPF files. If not set, defaults to 'input'",			
+			description = "Input folder containg the EAC-CPF files. If not set, defaults to 'input-eac'",			
 			converter = FileConverter.class,
 			required = false,
 			validateWith = ExistingFileValidator.class
 	)
-	protected File input = new File("input");
+	protected File input = new File("input-eac");
 	
 	@Parameter(
 			names = { "output" },
-			description = "Output folder where the RiC-O files will be generated. If not set, defaults to 'output-YYYYMMDD'",
+			description = "Output folder where the RiC-O files will be generated. If not set, defaults to 'output-eac-YYYYMMDD'",
 			converter = FileConverter.class,
 			required = false
 	)
-	protected File output = new File("output"+"-"+new SimpleDateFormat("yyyyMMdd").format(new Date()));
+	protected File output = new File("output-eac"+"-"+new SimpleDateFormat("yyyyMMdd").format(new Date()));
 
 	@Parameter(
 			names = { "error" },

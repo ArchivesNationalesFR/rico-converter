@@ -50,6 +50,36 @@ public class ArgumentsConvertEad {
 			validateWith = ExistingFileValidator.class
 	)
 	protected File xslt = new File("xslt_ead/ead2rico.xslt");
+
+	@Parameter(
+			names = { "split" },
+			description = "Boolean (true/false) indicating whether the output RDF/XML files should be split. Defaults to 'false'.\n"
+					+ "If this option is activated, each input file will generate an output directory instead of a single output file.\n"
+					+ "Each output directory will contain the result of the split. The Finding Aid and the top Record Resource are output in a file, \n"
+					+ "and each top-level Record Resource, as well as the whole 'branch' below it are output in separate files.\n"
+					+ "The splitting is done using the XSLT file in 'xslt_ead/ead2rico-split.xslt', so you can adjust the XSLT to match your splitting need.\n"
+					+ "Note that this parameters affects performance significantly (~ +30% of processing time, and more disk space)",
+			required = false
+	)
+	protected String split = "false";
+	
+	@Parameter(
+			names = { "filterAudienceInternal" },
+			description = "Boolean (true/false) indicating whether to filter out the EAD elements that have an @audience=\"internal\".\n"
+					+ "Defaults to 'true'. This means that such elements will be filtered prior to conversion, and will not be converted in output RDF/XML files.\n",
+			required = false
+	)
+	protected String filterAudienceInternal = "true";
+
+	@Parameter(
+			names = { "filterAudienceExternal" },
+			description = "Boolean (true/false) indicating whether to filter out the EAD elements that have an @audience=\"external\".\n"
+					+ "Defaults to 'false'. This means that such elements will be filtered prior to conversion, and will not be converted in output RDF/XML files.\n"
+					+ "This is specific to France Archives Nationales where the 'external' value is used to indicate information that is displayed in 'salle de lecture' only,\n"
+					+ "but not disseminated. In all other contexts this should be left to value 'false'.",
+			required = false
+	)
+	protected String filterAudienceExternal = "false";
 	
 	@Parameter(
 			names = { "xslt.BASE_URI" },
@@ -119,5 +149,30 @@ public class ArgumentsConvertEad {
 	public String getXsltLiteralLang() {
 		return xsltLiteralLang;
 	}
+
+	public String getSplit() {
+		return split;
+	}
+
+	public void setSplit(String split) {
+		this.split = split;
+	}
+
+	public String getFilterAudienceInternal() {
+		return filterAudienceInternal;
+	}
+
+	public void setFilterAudienceInternal(String filterAudienceInternal) {
+		this.filterAudienceInternal = filterAudienceInternal;
+	}
+
+	public String getFilterAudienceExternal() {
+		return filterAudienceExternal;
+	}
+
+	public void setFilterAudienceExternal(String filterAudienceExternal) {
+		this.filterAudienceExternal = filterAudienceExternal;
+	}
+
 	
 }

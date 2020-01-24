@@ -43,6 +43,8 @@ public class Ead2RicoConverterFactory {
 	private String baseRdfUri;
 	private String authorUri;
 	private String literalLang;
+	private File splitXslt = new File("xslt_ead/ead2rico-split.xslt");
+	private File preprocessingXslt = new File("xslt_ead/ead2rico-preprocessing.xslt");
 	
 	public Ead2RicoConverterFactory(ArgumentsConvertEad args) {
 		this(args.getXsltBaseUri(), args.getXsltAuthorUri(), args.getXsltLiteralLang());
@@ -59,7 +61,7 @@ public class Ead2RicoConverterFactory {
 		this.literalLang = literalLang;
 	}
 
-	public Ead2RicoConverter createConverter(File xslt, File outputDirectory, File errorDirectory, File inputDirectory) throws RicoConverterException {
+	public Ead2RicoConverter createConverter(File xslt, File outputDirectory, File errorDirectory, File inputDirectory, boolean split, boolean filterAudienceInternal, boolean filterAudienceExternal) throws RicoConverterException {
 		// create output directory if it does not exists
 		if(!outputDirectory.exists()) {
 			log.info("Creating output directory {}", outputDirectory.getAbsolutePath());
@@ -134,6 +136,40 @@ public class Ead2RicoConverterFactory {
 			}
 		});
 		
+		// set splitting transformer
+		if(split) {
+			try {
+				Transformer splitTransformer = TransformerBuilder.createSaxonProcessor().createTransformer(new StreamSource(this.splitXslt));
+				// disable error listener to prevent messing with the progress bar
+				splitTransformer.setErrorListener(new SaxonErrorListener());
+				// direct Saxon message output to the JAXP ErrorListener as warnings
+				((net.sf.saxon.jaxp.TransformerImpl)splitTransformer).getUnderlyingController().setMessageEmitter(new MessageWarner());
+				
+				c.setSplittingTransformer(splitTransformer);
+			} catch (TransformerConfigurationException e) {
+				throw new RicoConverterException(ErrorCode.XSLT_PARSING_ERROR, e);
+			}
+		}
+		
+		// set preprocessing transformers
+		if(filterAudienceInternal || filterAudienceExternal) {
+			try {
+				Transformer preprocessingTransformer = TransformerBuilder.createSaxonProcessor().createTransformer(new StreamSource(this.preprocessingXslt));
+				// disable error listener to prevent messing with the progress bar
+				preprocessingTransformer.setErrorListener(new SaxonErrorListener());
+				// direct Saxon message output to the JAXP ErrorListener as warnings
+				((net.sf.saxon.jaxp.TransformerImpl)preprocessingTransformer).getUnderlyingController().setMessageEmitter(new MessageWarner());
+				
+				// sets adequate options based on parameters
+				preprocessingTransformer.setParameter("FILTER_INTERNAL", filterAudienceInternal);
+				preprocessingTransformer.setParameter("FILTER_EXTERNAL", filterAudienceExternal);
+				
+				c.setPreProcessorTransformer(preprocessingTransformer);
+			} catch (TransformerConfigurationException e) {
+				throw new RicoConverterException(ErrorCode.XSLT_PARSING_ERROR, e);
+			}
+		}
+		
 		List<Ead2RicoConverterListener> listeners = new ArrayList<>();
 		
 		// error listener
@@ -151,5 +187,15 @@ public class Ead2RicoConverterFactory {
 		c.setListeners(listeners);
 		return c;
 	}
+
+	public File getSplitXslt() {
+		return splitXslt;
+	}
+
+	public void setSplitXslt(File splitXslt) {
+		this.splitXslt = splitXslt;
+	}
+	
+	
 	
 }

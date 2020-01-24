@@ -77,6 +77,8 @@ public class Eac2RicoConverter {
 	
 	protected OutputFileBuilder outputFileBuilder;
 
+	protected boolean backupBeforeDeduplication = false;
+	
 	public Eac2RicoConverter(
 			Transformer eac2ricoTransformer,
 			File convertOutputDirectory
@@ -148,10 +150,11 @@ public class Eac2RicoConverter {
 			this.notifyStartArrange();
 			this.arrangeTransformer.transform(new StreamSource(new ByteArrayInputStream("<dummy />".getBytes())), new StreamResult(new ByteArrayOutputStream()));
 		} catch (TransformerException e) {
-			throw new RicoConverterException(ErrorCode.XSLT_TRANSFORM_ERROR, e);
+			throw new RicoConverterException(ErrorCode.CONVERSION_XSLT_ERROR, e);
 		} catch (RicoConverterListenerException e) {
 			log.error("Error in listener notifyStartArrange", e);
 		}
+		
 		
 		
 		File relationsBeforeDeduplicateFolder = new File(this.arrangeOutputRelationsDirectory.getParent(), this.arrangeOutputRelationsDirectory.getName()+"-before-deduplicate");
@@ -174,7 +177,7 @@ public class Eac2RicoConverter {
 				try(FileOutputStream fos = new FileOutputStream(outputFile)) {
 					this.deduplicateTransformer.transform(new StreamSource(new FileInputStream(aRelationFile)), new StreamResult(fos));
 				} catch (TransformerException e) {
-					throw new RicoConverterException(ErrorCode.XSLT_TRANSFORM_ERROR, e);
+					throw new RicoConverterException(ErrorCode.CONVERSION_XSLT_ERROR, e);
 				} catch (FileNotFoundException e1) {
 					throw new RicoConverterException(ErrorCode.DIRECTORY_OR_FILE_HANDLING_EXCEPTION, e1);
 				} catch (IOException e1) {
@@ -187,13 +190,24 @@ public class Eac2RicoConverter {
 				try(FileOutputStream fos = new FileOutputStream(outputFile)) {
 					this.deduplicateTransformer.transform(new StreamSource(new FileInputStream(aPlaceFile)), new StreamResult(fos));
 				} catch (TransformerException e) {
-					throw new RicoConverterException(ErrorCode.XSLT_TRANSFORM_ERROR, e);
+					throw new RicoConverterException(ErrorCode.CONVERSION_XSLT_ERROR, e);
 				} catch (FileNotFoundException e1) {
 					throw new RicoConverterException(ErrorCode.DIRECTORY_OR_FILE_HANDLING_EXCEPTION, e1);
 				} catch (IOException e1) {
 					throw new RicoConverterException(ErrorCode.DIRECTORY_OR_FILE_HANDLING_EXCEPTION, e1);
 				}
 			}
+			if(!backupBeforeDeduplication) {
+				try {
+					log.debug("Deleting folder "+relationsBeforeDeduplicateFolder.getName()+"...");
+					FileUtils.deleteDirectory(relationsBeforeDeduplicateFolder);
+					log.debug("Deleting folder "+placesBeforeDeduplicateFolder.getName()+"...");
+					FileUtils.deleteDirectory(placesBeforeDeduplicateFolder);
+				} catch (IOException e) {
+					throw new RicoConverterException(ErrorCode.DIRECTORY_OR_FILE_HANDLING_EXCEPTION, e);
+				}
+			}
+			
 		} catch (RicoConverterListenerException e) {
 			log.error("Error in listener notifyStartDeduplicate", e);
 		}
@@ -262,7 +276,7 @@ public class Eac2RicoConverter {
 			log.debug("Running XSLT engine...");
 			this.eac2ricoTransformer.transform(source, result);
 		} catch (TransformerException e) {
-			throw new RicoConverterException(ErrorCode.XSLT_TRANSFORM_ERROR, e);
+			throw new RicoConverterException(ErrorCode.CONVERSION_XSLT_ERROR, e);
 		}
 	}
 	
@@ -305,7 +319,7 @@ public class Eac2RicoConverter {
 						} catch (IOException e1) {
 							throw new RicoConverterException(ErrorCode.DIRECTORY_OR_FILE_HANDLING_EXCEPTION, e1);
 						} catch (RicoConverterException e) {
-							throw new RicoConverterException(ErrorCode.XSLT_TRANSFORM_ERROR, e);
+							throw new RicoConverterException(ErrorCode.CONVERSION_XSLT_ERROR, e);
 						}
 					} catch (RicoConverterException e) {
 						System.out.println(f.getName()+" : "+"FAILURE");

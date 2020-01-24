@@ -26,7 +26,7 @@ public class ParameterFilesGenerator {
 				Parameter parameters = aField.getAnnotation(Parameter.class);
 				if(parameters != null) {
 					sb.append("#"+"\n");
-					sb.append("# "+parameters.description()+"\n");
+					sb.append("# "+parameters.description().replaceAll("\n", "\n# ")+"\n");
 					sb.append(parameters.required()?"# Required"+"\n":"# Optional"+"\n");
 					sb.append("#"+"\n");
 					sb.append((!parameters.required()?"#":"")+parameters.names()[0]+"="+"\n");
@@ -39,7 +39,7 @@ public class ParameterFilesGenerator {
 					Parameter parameters = aField.getAnnotation(Parameter.class);
 					if(parameters != null) {
 						sb.append("#"+"\n");
-						sb.append("# "+parameters.description()+"\n");
+						sb.append("# "+parameters.description().replaceAll("\n", "\n# ")+"\n");
 						sb.append(parameters.required()?"# Required"+"\n":"# Optional"+"\n");
 						sb.append("#"+"\n");
 						sb.append((!parameters.required()?"#":"")+parameters.names()[0]+"="+"\n");

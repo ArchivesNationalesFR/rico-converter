@@ -16,9 +16,9 @@ public enum ErrorCode {
 	
 	@Description(
 			notation = 3,
-			definition = "Indicates an error happened during an XSLT transformation; the error will usually contain an XSLT error code documented in the [XSLT Error Codes page](ErrorCodesXslt.html)."
+			definition = "Indicates an error happened during the XSLT conversion; the error will usually contain an XSLT error code documented in the [XSLT Error Codes page](ErrorCodesXslt.html)."
 	)
-	XSLT_TRANSFORM_ERROR(3),
+	CONVERSION_XSLT_ERROR(3),
 	
 	@Description(
 			notation = 4,
@@ -31,6 +31,18 @@ public enum ErrorCode {
 			definition = "Indicates a problem when creating, deleting or moving directories or files during the process."
 	)
 	DIRECTORY_OR_FILE_HANDLING_EXCEPTION(5),
+	
+	@Description(
+			notation = 6,
+			definition = "Indicates an error happened during the XSLT transformation used for splitting."
+	)
+	SPLITTING_XSLT_ERROR(3),
+	
+	@Description(
+			notation = 6,
+			definition = "Indicates an error happened during the XSLT transformation used for preprocessing EAD files."
+	)
+	PREPROCESSING_XSLT_ERROR(3),
 	
 	@Description(
 			notation = -1,

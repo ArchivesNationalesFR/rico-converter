@@ -12,7 +12,7 @@ import fr.gouv.culture.an.ricoconverter.cli.ExistingFileValidator;
 import fr.gouv.culture.an.ricoconverter.cli.convert_eac_raw.ArgumentsConvertEacRaw;
 
 @Parameters(
-		commandDescription = "Converts EAC-CPF to RiC-O RDF, and arrange RiC-O relations in separate files",
+		commandDescription = "Converts EAC-CPF to RiC-O RDF, groups RiC-O relations in separate files, and deduplicate relations",
 		separators = "="
 )
 public class ArgumentsConvertEac extends ArgumentsConvertEacRaw {
