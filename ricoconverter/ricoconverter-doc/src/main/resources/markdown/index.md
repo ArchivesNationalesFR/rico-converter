@@ -11,6 +11,7 @@ The documentation is divided in these sections :
 - [Running unit tests](UnitTests.html) : explains how to run the unit tests of the converter;
 - [Customize the conversion](Customize.html) : explains how to customize the conversion for your own files
 - [Common Problems](CommonProblems.html) : give answers to common problems;
+- [Compile ricoconverter](Compile.html) : if you need to adjust something in the Java code and recompile, read this;
 
 Additionnaly, the documentation includes the following references :
 

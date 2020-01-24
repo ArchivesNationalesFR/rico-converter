@@ -18,11 +18,12 @@ The few EAC sample files provided by default in the `input-eac` folder have been
 
 To print the help message and get the details of all the possible commands and options, run  `ricoconverter.bat` and type "help" at the prompt for the command :
 
-```
-:: Welcome to Ric-O Converter ::
 
-Enter command to execute (convert_eac, convert_eac_raw, convert_ead, validate, test_eac, test_ead, version, help) [press Enter for 'convert_eac'] :help
-```
+	> :: Welcome to Ric-O Converter ::
+	>
+	> Enter command to execute (convert_eac, convert_eac_raw, convert_ead, test_eac, test_ead, version, help)
+	> [press Enter for 'convert_eac'] :help
+
 
 ## Converter release folder content
 
@@ -31,9 +32,7 @@ In the converter release folder you will find the following directories :
   - `documentation` : contains this documentation :-)
   - `input-eac` : the default folder that contains the EAC files to be converted with the `convert_eac` (or `convert_eac_raw`) command;
   - `input_ead` : the default folder that contains the EAD files to be converted with the `convert_ead` command;
-  - `input-validation` : the default input folder for validating data using the `validate` command;
   - `parameters` : contains the parameter files for each command; you need to modify these files if you want to adjust the options of a command;
-  - `shapes` : contains the shapes definition file used by the `validate` command;
   - `unit-tests` : contains the unit test files used by the `test_eac` and `test_ead` commands;
   - `vocabularies`
   - `xslt_eac` : contains the XSLT files used by the `convert_eac` and `convert_eac_raw` commands to convert EAC to RiC-O; the main one is `eac2rico.xslt`;
