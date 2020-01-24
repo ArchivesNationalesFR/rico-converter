@@ -15,8 +15,6 @@ import fr.gouv.culture.an.ricoconverter.cli.test_eac.ArgumentsTestEac;
 import fr.gouv.culture.an.ricoconverter.cli.test_eac.TestEac;
 import fr.gouv.culture.an.ricoconverter.cli.test_ead.ArgumentsTestEad;
 import fr.gouv.culture.an.ricoconverter.cli.test_ead.TestEad;
-import fr.gouv.culture.an.ricoconverter.cli.validate.ArgumentsValidate;
-import fr.gouv.culture.an.ricoconverter.cli.validate.Validate;
 import fr.gouv.culture.an.ricoconverter.cli.version.ArgumentsVersion;
 import fr.gouv.culture.an.ricoconverter.cli.version.Version;
 
