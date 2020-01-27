@@ -12,5 +12,12 @@
           <outputDirectory>/</outputDirectory>
           <directory>target/html</directory>
         </fileSet>
+        <fileSet>
+          <outputDirectory>/</outputDirectory>
+          <directory>src/main/resources</directory>
+          <includes>
+            <include>*.xlsx</include>
+          </includes>
+        </fileSet>
     </fileSets>
 </assembly>
