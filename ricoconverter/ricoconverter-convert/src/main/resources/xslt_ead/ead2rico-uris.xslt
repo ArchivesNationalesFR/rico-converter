@@ -21,7 +21,7 @@
 	
 	<xsl:function name="ead2rico:URI-FindingAid">
 		<xsl:param name="faId" />
-		<xsl:value-of select="concat('findingAid/', $faId)" />
+		<xsl:value-of select="concat('record/', $faId)" />
 	</xsl:function>
 	
 	<xsl:function name="ead2rico:URI-RecordResource">

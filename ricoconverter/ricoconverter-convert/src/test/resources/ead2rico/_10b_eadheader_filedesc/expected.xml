@@ -14,7 +14,11 @@
       <rdfs:label xml:lang="fr">Dossiers de carrière des magistrats (1848-1883) : Inventaire sommaire (BB/6(II)/1-BB/6(II)/434)</rdfs:label>
      
       <rico:createdBy rdf:resource="agent/005061"/>
-      
+      <rico:publishedBy rdf:resource="agent/005061"/>
+      <rico:publicationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1979</rico:publicationDate>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:p xml:lang="fr">Mention de note éventuelle</html:p></rico:descriptiveNote>
+               
       <rico:history rdf:parseType="Literal">
          <html:div>
             <html:h4>auteur(s)</html:h4>
@@ -25,10 +29,7 @@
          	<html:p xml:lang="fr">2<html:sup>e</html:sup> édition électronique</html:p>
          </html:div>
       </rico:history>
-      <rico:publishedBy rdf:resource="agent/005061"/>
-      <rico:publicationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1979</rico:publicationDate>
-      <rico:descriptiveNote rdf:parseType="Literal">
-         <html:p xml:lang="fr">Mention de note éventuelle</html:p></rico:descriptiveNote>
+
       <rico:hasInstantiation>      
          <rico:Instantiation rdf:about="instantiation/004852-i1">
 	   	  <rico:instantiates rdf:resource="record/004852"/>

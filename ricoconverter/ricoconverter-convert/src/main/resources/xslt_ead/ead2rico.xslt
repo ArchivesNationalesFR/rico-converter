@@ -110,9 +110,34 @@
 		
 	</xsl:template>
 	
-	<xsl:template match="filedesc" mode="#all">
-		<xsl:apply-templates mode="#current" />
+	<xsl:template match="filedesc" mode="findingaid">
+		<!-- Don't process editionstmt since it is processed in rico:history below -->
+		<!-- titlestmt/author is still processed since it generates a createdBy with the AUTOR_URI -->
+		<xsl:apply-templates select="* except editionstmt" mode="#current" />
+		
+		<!-- rico:history if necessary -->
+		<xsl:if test="editionstmt/edition[text()] or titlestmt/author">
+			<rico:history rdf:parseType="Literal">
+				<xsl:if test="titlestmt/author">
+					<html:div>
+			            <html:h4>auteur(s)</html:h4>
+			            <html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(titlestmt/author)" /></html:p>
+			         </html:div>
+				</xsl:if>
+				<xsl:if test="editionstmt/edition[text()]">
+					<html:div>
+						<html:h4>mention d’édition</html:h4>
+						<html:p xml:lang="{$LITERAL_LANG}"><xsl:apply-templates select="editionstmt/edition[text()]/node()" mode="html" /></html:p>
+					</html:div>
+				</xsl:if>
+			</rico:history>
+		</xsl:if>
 	</xsl:template>	
+	<!-- For Instantiation just navigate down, don't generate rico:history -->
+	<xsl:template match="filedesc" mode="instantiation">
+		<xsl:apply-templates mode="#current" />
+	</xsl:template>
+	
 	<xsl:template match="titlestmt" mode="#all">
 		<xsl:apply-templates mode="#current" />
 	</xsl:template>
@@ -120,8 +145,11 @@
 		<rico:title xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(if(../subtitle) then concat(., ' : ', ../subtitle) else .)" /></rico:title>
 		<rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(if(../subtitle) then concat(., ' : ', ../subtitle) else .)" /></rdfs:label>
 	</xsl:template>
+	
 	<xsl:template match="author" mode="findingaid">
-		<rico:createdBy xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rico:createdBy>
+		<!-- rico:createdBy is an object property -->
+		<!-- <rico:createdBy xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rico:createdBy>  -->
+		<rico:createdBy rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}" />
 	</xsl:template>
 	
 	<xsl:template match="editionstmt" mode="#all">
@@ -140,7 +168,7 @@
 		<xsl:apply-templates  mode="#current" />
 	</xsl:template>
 	<xsl:template match="publisher[text()]" mode="findingaid">
-		<rico:publishedBy rdf:resource="agent/005061" />
+		<rico:publishedBy rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}" />
 	</xsl:template>
 	<xsl:template match="date" mode="findingaid">
 		<rico:publicationDate>
@@ -405,8 +433,10 @@
 				<xsl:apply-templates select="../daodesc" />
 				
 				<!-- pick only the unittitle in the other Instantiations -->
-				
+				<!-- Finally, don't pick it :-) -->
+				<!-- 
 				<xsl:apply-templates select="(ancestor::*[self::c or self::archdesc])[last()]/did/unittitle" mode="instantiation" />
+				-->
 				
 				<!-- pick also accessrestrict -->
 				<xsl:apply-templates select="(ancestor::*[self::c or self::archdesc])[last()]/accessrestrict" mode="instantiation" />
@@ -422,7 +452,7 @@
 				<rico:isDerivedFromInstantiation rdf:resource="{ead2rico:URI-Instantiation(concat($recordResourceId, '-i1'))}"/>
 				<rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>	
 				<rico:identifier><xsl:value-of select="replace(@href, '.msp', '')" /></rico:identifier>			
-				<rico:encodingFormat xml:lang="en">image/jpeg</rico:encodingFormat>
+				<dc:format xml:lang="en">image/jpeg</dc:format>
 				<!-- here the creator is by default the archival institution: it either produced the digital instantiation image by its own, or asked a private company to produce it and then got it and aggregated it into its own archives -->
                 <rico:hasProvenance rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}"/>
 				<xsl:if test="not(contains(@href, '#'))">
@@ -528,14 +558,13 @@
 			        https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File
 			        https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds
 			        https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series
-			        https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Sub-fonds
 		        -->
 		        <xsl:choose>
 		        	<xsl:when test=". = 'fonds'">
 		        		<rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds"/>
 		        	</xsl:when>
 		        	<xsl:when test=". = 'subfonds'">
-		        		<rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Sub-fonds"/>
+		        		<!--  nothing -->
 		        	</xsl:when>
 		        	<xsl:when test=". = 'series'">
 		        		<rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
@@ -900,15 +929,15 @@
 		<xsl:apply-templates mode="#current" />
 	</xsl:template>
 	
-	<xsl:template match="genreform">
+	<xsl:template match="genreform[@authfilenumber]">
 		<rico:hasDocumentaryFormType rdf:resource="{ead2rico:URI-DocumentaryForm(@authfilenumber, @source)}"/>
 	</xsl:template>
 	
-	<xsl:template match="geogname">
+	<xsl:template match="geogname[@authfilenumber]">
 		<rico:hasSubject rdf:resource="{ead2rico:URI-Place(@authfilenumber, @source)}"/>
 	</xsl:template>
 	
-	<xsl:template match="subject">
+	<xsl:template match="subject[@authfilenumber]">
 		<rico:hasSubject rdf:resource="{ead2rico:URI-Thing(@authfilenumber, @source)}"/>
 	</xsl:template>
 	
