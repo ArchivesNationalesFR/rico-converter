@@ -7,12 +7,12 @@
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xml:base="http://data.archives-nationales.culture.gouv.fr/">
-    <rico:Record rdf:about="findingAid/058220">
+    <rico:Record rdf:about="record/058220">
         <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
         <rico:describes rdf:resource="recordResource/058220-top"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-i1">
-                <rico:instantiates rdf:resource="findingAid/058220"/>
+                <rico:instantiates rdf:resource="record/058220"/>
                 <dc:format xml:lang="en">text/xml</dc:format>
                 <rico:identifier>FRAN_IR_058220</rico:identifier>
                 <rico:heldBy rdf:resource="agent/005061"/>
@@ -21,7 +21,7 @@
         </rico:hasInstantiation>
     </rico:Record>
     <rico:RecordResource rdf:about="recordResource/058220-top">
-        <rico:describedBy rdf:resource="findingAid/058220"/> 
+        <rico:describedBy rdf:resource="record/058220"/> 
         <rico:heldBy rdf:resource="agent/005061"/>
         <rico:hasInstantiation>
              <rico:Instantiation rdf:about="instantiation/058220-top-i1">

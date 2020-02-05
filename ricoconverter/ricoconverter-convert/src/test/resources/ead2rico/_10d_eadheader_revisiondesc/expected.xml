@@ -4,9 +4,9 @@
    xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xml:base="http://data.archives-nationales.culture.gouv.fr/">
-   <rico:Record rdf:about="findingAid/004852">
+   <rico:Record rdf:about="record/004852">
    	  <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" /> 
-      <!-- for processing revisiondesc/change, we use event -->
+      <!-- for processing revisiondesc/change, we use Activity -->
       <rico:affectedBy>
          <rico:Activity>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth"
@@ -28,12 +28,13 @@
       </rico:affectedBy>
       <rico:hasInstantiation>
 	    <rico:Instantiation rdf:about="instantiation/004852-i1">
-	   	  <rico:instantiates rdf:resource="findingAid/004852"/>
+	   	  <rico:instantiates rdf:resource="record/004852"/>
 	      <dc:format xml:lang="en">text/xml</dc:format>
 	      <rico:identifier>FRAN_IR_004852</rico:identifier>
-	      <rico:heldBy rdf:resource="agent/005061"/> <rdfs:seeAlso
+	      <rico:heldBy rdf:resource="agent/005061"/>
+	       <rdfs:seeAlso
 	         rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_004852"/>
-	      <!--?? <owl:sameAs rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/exportXML.action?irId=FRAN_IR_004852"/>-->
+	      
 	   </rico:Instantiation>
       </rico:hasInstantiation>
    </rico:Record>

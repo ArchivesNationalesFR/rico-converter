@@ -7,12 +7,12 @@
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xml:base="http://data.archives-nationales.culture.gouv.fr/">
-    <rico:Record rdf:about="findingAid/055691">
+    <rico:Record rdf:about="record/055691">
     	  <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
         <rico:describes rdf:resource="recordResource/055691-top"/>
 	      <rico:hasInstantiation>
 	         <rico:Instantiation rdf:about="instantiation/055691-i1">
-	            <rico:instantiates rdf:resource="findingAid/055691"/>
+	            <rico:instantiates rdf:resource="record/055691"/>
 	            <dc:format xml:lang="en">text/xml</dc:format>
 	            <rico:identifier>FRAN_IR_055691</rico:identifier>
 	            <rico:heldBy rdf:resource="agent/005061"/>
@@ -22,7 +22,7 @@
     </rico:Record>
     <!-- archdesc level-->
     <rico:RecordResource rdf:about="recordResource/055691-top">
-        <rico:describedBy rdf:resource="findingAid/055691"/>        
+        <rico:describedBy rdf:resource="record/055691"/>        
         <rico:conditionsOfAccess rdf:parseType="Literal">
             <html:p xml:lang="fr">Librement communicable sous réserve de l'état matériel des documents.</html:p>
         </rico:conditionsOfAccess>        
@@ -62,7 +62,7 @@
                 <rico:isDerivedFromInstantiation rdf:resource="instantiation/055691-c-2vzyex8hc18--1o5wpcllauj9q-i1"/>
                  <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
                  <rico:identifier>FRAN_0118_274_L</rico:identifier>
-                 <rico:encodingFormat xml:lang="en">image/jpeg</rico:encodingFormat>
+                 <dc:format xml:lang="en">image/jpeg</dc:format>
                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_055691/c-2vzyex8hc18--1o5wpcllauj9q/FRAN_0118_274_L"/>                
             </rico:Instantiation>
         </rico:hasInstantiation>

@@ -6,15 +6,20 @@
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
          xmlns:dc="http://purl.org/dc/elements/1.1/"
          xml:base="http://data.archives-nationales.culture.gouv.fr/">
-   <rico:Record rdf:about="findingAid/004852">
+   <rico:Record rdf:about="record/004852">
    	  <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
       
      
       <rico:title xml:lang="fr">Dossiers de carrière des magistrats (1848-1883) : Inventaire sommaire (BB/6(II)/1-BB/6(II)/434)</rico:title>
       <rdfs:label xml:lang="fr">Dossiers de carrière des magistrats (1848-1883) : Inventaire sommaire (BB/6(II)/1-BB/6(II)/434)</rdfs:label>
-     <!-- rico:createdBy has range Agent for now, but should be changed, so we use authoredBy. QUESTION: can we do better and split the string ?-->
-      <rico:createdBy xml:lang="fr">Par S. de Dainville-Barbiche, M. Deshayes et M. Mayeur</rico:createdBy>
+     
+      <rico:createdBy rdf:resource="agent/005061"/>
+      
       <rico:history rdf:parseType="Literal">
+         <html:div>
+            <html:h4>auteur(s)</html:h4>
+            <html:p xml:lang="fr">Par S. de Dainville-Barbiche, M. Deshayes et M. Mayeur</html:p>
+         </html:div>
          <html:div>
          	<html:h4>mention d’édition</html:h4>
          	<html:p xml:lang="fr">2<html:sup>e</html:sup> édition électronique</html:p>
@@ -26,7 +31,7 @@
          <html:p xml:lang="fr">Mention de note éventuelle</html:p></rico:descriptiveNote>
       <rico:hasInstantiation>      
          <rico:Instantiation rdf:about="instantiation/004852-i1">
-	   	  <rico:instantiates rdf:resource="findingAid/004852"/>
+	   	  <rico:instantiates rdf:resource="record/004852"/>
 	      <!-- the title is duplicated here -->
 	      <rico:title xml:lang="fr">Dossiers de carrière des magistrats (1848-1883) : Inventaire sommaire (BB/6(II)/1-BB/6(II)/434)</rico:title>
 	      <rdfs:label xml:lang="fr">Dossiers de carrière des magistrats (1848-1883) : Inventaire sommaire (BB/6(II)/1-BB/6(II)/434)</rdfs:label>
@@ -34,7 +39,7 @@
 	      <rico:identifier>FRAN_IR_004852</rico:identifier>
 	      <rico:heldBy rdf:resource="agent/005061"/>
 	      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_004852"/>
-	      <!--?? <owl:sameAs rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/exportXML.action?irId=FRAN_IR_004852"/>-->
+	      
 	    </rico:Instantiation>
    </rico:hasInstantiation>
    </rico:Record>
