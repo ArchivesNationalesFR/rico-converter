@@ -10,7 +10,7 @@
 	<parent>
 		<groupId>fr.gouv.culture.archives-nationales</groupId>
 		<artifactId>ricoconverter-root-pom</artifactId>
-	    <version>WinterEdition</version>
+	    <version>0.9</version>
         <relativePath>../pom.xml</relativePath>
 	</parent>
 
@@ -44,7 +44,10 @@
 		          </goals>
 		          <configuration>
 			        <mainClass>fr.gouv.culture.an.ricoconverter.cli.ErrorCodeXsltDocumentationGenerator</mainClass>
-		        	<arguments>${project.basedir}/src/main/resources/markdown/ErrorCodesXslt.md</arguments>
+		        	<arguments>
+		        		<argument>${project.basedir}/src/main/resources/markdown/ErrorCodesXsltEac.md</argument>
+		        		<argument>${project.basedir}/src/main/resources/markdown/ErrorCodesXsltEad.md</argument>
+		        	</arguments>
 			      </configuration>
 		        </execution>
 		      </executions>		      
@@ -98,7 +101,7 @@
 		<dependency>
 			<groupId>fr.gouv.culture.archives-nationales</groupId>
 			<artifactId>ricoconverter-cli</artifactId>
-	    	<version>WinterEdition</version>
+	    	<version>0.9</version>
 		</dependency>
 
 	</dependencies>
