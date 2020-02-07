@@ -34,7 +34,7 @@ In the converter release folder you will find the following directories :
   - `input_ead` : the default folder that contains the EAD files to be converted with the `convert_ead` command;
   - `parameters` : contains the parameter files for each command; you need to modify these files if you want to adjust the options of a command;
   - `unit-tests` : contains the unit test files used by the `test_eac` and `test_ead` commands;
-  - `vocabularies`
+  - `vocabularies` : contains a few controlled vocabularies needed by the conversion process : languages, rules and legal statuses;
   - `xslt_eac` : contains the XSLT files used by the `convert_eac` and `convert_eac_raw` commands to convert EAC to RiC-O; the main one is `eac2rico.xslt`;
   - `xslt_ead` : contains the XSLT files used by the `convert_ead` command to convert EAC to RiC-O; the main one is `ead2rico.xslt`;
 

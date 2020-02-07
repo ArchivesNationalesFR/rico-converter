@@ -17,4 +17,5 @@ The documentation is divided in these sections :
 Additionnaly, the documentation includes the following references :
 
 - [Error Codes](ErrorCodes.html) : reference list of the error codes of the application
-- [XSLT Error Codes](ErrorCodesXslt.html) : reference list of the XSLT error codes of the converter
+- [EAC XSLT Error Codes](ErrorCodesXsltEac.html) : reference list of the possible error codes during EAC conversion
+- [EAD XSLT Error Codes](ErrorCodesXsltEad.html) : reference list of the possible error codes during EAD conversion

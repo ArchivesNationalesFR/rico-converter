@@ -90,11 +90,5 @@
             <include>ricoconverter.sh</include>
           </includes>
         </fileSet>
-        <!-- copy the input-50 into input -->
-        <fileSet>
-          <filtered>false</filtered>
-          <outputDirectory>/input</outputDirectory>
-          <directory>src/main/resources/input-50</directory>
-        </fileSet>
     </fileSets>
 </assembly>
