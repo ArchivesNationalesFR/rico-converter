@@ -12,6 +12,7 @@
 	xmlns:eac="urn:isbn:1-931666-33-4"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
 	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
 	exclude-result-prefixes="eac eac2rico xlink xs xsi xsl"
 >
 	<xsl:output indent="yes" method="xml" />
