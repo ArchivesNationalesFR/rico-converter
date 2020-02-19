@@ -60,7 +60,7 @@ public class ArgumentsConvertEacRaw {
 
 	@Parameter(
 			names = { "xslt.AUTHOR_URI" },
-			description = "The AUTHOR_URI parameter for the XSLT conversion. Indicates the URI to be used as value for authors. If not set, defaults to 'http://data.archives-nationales.culture.gouv.fr/corporateBody/005061'.",
+			description = "The AUTHOR_URI parameter for the XSLT conversion. Indicates the URI to be used as value for authors. If not set, defaults to 'http://data.archives-nationales.culture.gouv.fr/agent/005061'.",
 			required = false
 	)
 	protected String xsltAuthorUri = "http://data.archives-nationales.culture.gouv.fr/agent/005061";
