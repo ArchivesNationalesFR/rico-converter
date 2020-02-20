@@ -116,15 +116,15 @@
 		<xsl:apply-templates select="* except editionstmt" mode="#current" />
 		
 		<!-- rico:history if necessary -->
-		<xsl:if test="editionstmt/edition[text()] or titlestmt/author">
+		<xsl:if test="editionstmt/edition[normalize-space(.)] or titlestmt/author[normalize-space(.)]">
 			<rico:history rdf:parseType="Literal">
-				<xsl:if test="titlestmt/author">
+				<xsl:if test="titlestmt/author[normalize-space(.)]">
 					<html:div>
 			            <html:h4>auteur(s)</html:h4>
 			            <html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(titlestmt/author)" /></html:p>
 			         </html:div>
 				</xsl:if>
-				<xsl:if test="editionstmt/edition[text()]">
+				<xsl:if test="editionstmt/edition[normalize-space(.)]">
 					<html:div>
 						<html:h4>mention d’édition</html:h4>
 						<html:p xml:lang="{$LITERAL_LANG}"><xsl:apply-templates select="editionstmt/edition[text()]/node()" mode="html" /></html:p>
@@ -141,7 +141,7 @@
 	<xsl:template match="titlestmt" mode="#all">
 		<xsl:apply-templates mode="#current" />
 	</xsl:template>
-	<xsl:template match="titleproper" mode="findingaid instantiation">
+	<xsl:template match="titleproper[normalize-space(.)]" mode="findingaid instantiation">
 		<rico:title xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(if(../subtitle) then concat(., ' : ', ../subtitle) else .)" /></rico:title>
 		<rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(if(../subtitle) then concat(., ' : ', ../subtitle) else .)" /></rdfs:label>
 	</xsl:template>
@@ -155,7 +155,7 @@
 	<xsl:template match="editionstmt" mode="#all">
 		<xsl:apply-templates  mode="#current" />
 	</xsl:template>
-	<xsl:template match="edition[text()]" mode="findingaid">
+	<xsl:template match="edition[normalize-space(.)]" mode="findingaid">
 		<rico:history rdf:parseType="Literal">
 			<html:div>
 				<html:h4>mention d’édition</html:h4>
@@ -167,7 +167,7 @@
 	<xsl:template match="publicationstmt" mode="#all">
 		<xsl:apply-templates  mode="#current" />
 	</xsl:template>
-	<xsl:template match="publisher[text()]" mode="findingaid">
+	<xsl:template match="publisher[normalize-space(.)]" mode="findingaid">
 		<rico:publishedBy rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}" />
 	</xsl:template>
 	<xsl:template match="date" mode="findingaid">
@@ -179,7 +179,7 @@
 	<xsl:template match="notestmt" mode="#all">
 		<xsl:apply-templates mode="#current" />
 	</xsl:template>
-	<xsl:template match="note[text()]" mode="findingaid">
+	<xsl:template match="note[normalize-space(.)]" mode="findingaid">
 		<rico:descriptiveNote rdf:parseType="Literal"><html:p xml:lang="{$LITERAL_LANG}"><xsl:apply-templates select="p/node()" mode="html" /></html:p></rico:descriptiveNote>
 	</xsl:template>
 	
@@ -188,7 +188,7 @@
 	<xsl:template match="profiledesc" mode="#all">
 		<xsl:apply-templates mode="#current" />
 	</xsl:template>
-	<xsl:template match="creation[text()]" mode="instantiation">
+	<xsl:template match="creation[normalize-space(.)]" mode="instantiation">
 		<rico:history xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rico:history>
 	</xsl:template>
 	<xsl:template match="langusage" mode="findingaid">
@@ -197,10 +197,10 @@
 	<xsl:template match="language[@langcode]" mode="findingaid">
 		<rico:hasLanguage rdf:resource="{ead2rico:URI-Language(@langcode)}"/>
 	</xsl:template>
-	<xsl:template match="descrules[text()]" mode="instantiation">
+	<xsl:template match="descrules[normalize-space(.)]" mode="instantiation">
 		<rico:regulatedBy rdf:resource="rule/rl010"/>
 	</xsl:template>
-	<xsl:template match="descrules[text()]" mode="findingaid">
+	<xsl:template match="descrules[normalize-space(.)]" mode="findingaid">
 		<!-- Reference to ISAD(G), to be changed if you don't follow the ISAD(G) model -->
 		<rico:regulatedBy rdf:resource="rule/rl009"/>
 	</xsl:template>
@@ -462,7 +462,7 @@
 		</rico:hasInstantiation>
 	</xsl:template>
 
-	<xsl:template match="daodesc">
+	<xsl:template match="daodesc[child::node()]">
 		<rico:descriptiveNote rdf:parseType="Literal">
 			<xsl:choose>
 				<xsl:when test="count(p) = 1">
@@ -755,7 +755,7 @@
 	
 	<!-- ***** did/unittitle for RecordResource and Instantiations ***** -->
 	
-	<xsl:template match="unittitle[text()]">
+	<xsl:template match="unittitle[normalize-space(.)]">
 		<rico:title xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rico:title>
 		<rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rdfs:label>
 		<!--  Also searches for potential embedded unitdate -->
@@ -764,7 +764,7 @@
 		<xsl:apply-templates select="geogname | persname | corpname | famname | genreform | subject" />
 	</xsl:template>
 	
-	<xsl:template match="unittitle[text()]" mode="instantiation">
+	<xsl:template match="unittitle[normalize-space(.)]" mode="instantiation">
 		<rico:title xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rico:title>
 		<rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rdfs:label>
 		<!--  Also searches for potential embedded unitdate -->
@@ -862,7 +862,7 @@
 
 	<!-- ***** did/repository or unitid[@repositorycode = 'FRDAFAN'] ***** -->
 	
-	<xsl:template match="repository" mode="#all">
+	<xsl:template match="repository[normalize-space(.)]" mode="#all">
 		<xsl:choose>
 			<xsl:when test="matches(normalize-space(.), 'Archives nationales de France', 'i') or matches(normalize-space(.), 'Archives nationales', 'i')">
 				<rico:heldBy rdf:resource="agent/005061"/>
@@ -1117,13 +1117,13 @@
         <xsl:apply-templates mode="#current" />
 	</xsl:template>	
 	
-	<xsl:template match="extent" mode="instantiation">
+	<xsl:template match="extent[normalize-space(.)]" mode="instantiation">
 		<rico:instantiationExtent  rdf:parseType="Literal">
             <html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></html:p>
         </rico:instantiationExtent>
 	</xsl:template>
 
-	<xsl:template match="dimensions" mode="instantiation">
+	<xsl:template match="dimensions[normalize-space(.)]" mode="instantiation">
 		<rico:carrierExtent rdf:parseType="Literal">
             <html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></html:p>
         </rico:carrierExtent>
@@ -1149,7 +1149,7 @@
 	
 	<!--  ***** physloc : only for Instantiation ***** -->
 	
-	<xsl:template match="physloc[text()]" mode="instantiation">
+	<xsl:template match="physloc[normalize-space(.)]" mode="instantiation">
 		<xsl:variable name="value">
 			<xsl:choose>
 				<xsl:when test="matches(text(), 'Pierrefitte', 'i')">place/FRAN_RI_005-d3ntxf5186--sga9u2l9iboc</xsl:when>
@@ -1175,7 +1175,7 @@
 
 	<!-- ***** Processing of formatting elements p, list, item, span ***** -->
 	
-	<xsl:template match="p" mode="html">
+	<xsl:template match="p[normalize-space(.)]" mode="html">
 		<xsl:choose>
 			<!-- if we have a list inside a p -->
 			<xsl:when test="list">
