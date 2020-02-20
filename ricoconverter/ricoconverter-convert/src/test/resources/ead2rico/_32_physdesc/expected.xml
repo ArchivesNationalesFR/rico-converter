@@ -42,6 +42,7 @@
         <rico:includes rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnust"/>
         <rico:includes rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnost"/>
         <rico:includes rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnyst"/>
+        <rico:includes rdf:resource="recordResource/058220-emptyExtent"/>
     </rico:RecordResource>
     <!-- c level -->
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
@@ -149,7 +150,18 @@
                 
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnyst"/>
             </rico:Instantiation>
-        </rico:hasInstantiation>
-        
+        </rico:hasInstantiation>        
+    </rico:RecordResource>
+    <rico:RecordResource rdf:about="recordResource/058220-emptyExtent">
+        <rico:includedIn rdf:resource="recordResource/058220-top"/>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-emptyExtent-i1">
+                <rico:instantiates rdf:resource="recordResource/058220-emptyExtent"/>
+                <!--  physfacet: if the @type has value 'd3nd9y3c6o-iu0j3xsmoisx' or 'd3nd9xpopj-ckdrv6ljeqeg' use hasRepresentationType; else, 
+                    use hasCarrierType -->
+                <rico:hasCarrierType rdf:resource="representationType/FRAN_RI_002-d3nd9yjlfg-j0aeuv1yo4o2"/>
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/emptyExtent"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>        
     </rico:RecordResource>
 </rdf:RDF>
