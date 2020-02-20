@@ -1,7 +1,7 @@
 @echo off
 PATH %PATH%;%JAVA_HOME%\bin\
 
-ECHO :: Welcome to Ric-O Converter ${project.version} ::
+ECHO :: Welcome to Ric-O Converter 0.9 ::
 ECHO.
 
 REM Test if java is installed
@@ -12,10 +12,10 @@ if %errorlevel%==1 (
 )
 
 REM Fetch java version e.g. 180171
-for /f tokens^=2-5^ delims^=.-_^" %%j in ('java -fullversion 2^>^&1') do set "jver=%%j%%k%%l%%m"
+for /f tokens^=2-5^ delims^=++.-_^" %%j in ('java -fullversion 2^>^&1') do set "jver=%%j%%k"
 REM ECHO %jver%
 
-if %jver% LSS 180000 (
+if %jver% LSS 18 (
 	ECHO Java version not supported. Please install Java 1.8 or newer.
 	exit
 )
@@ -28,7 +28,7 @@ if NOT %command% == "help" (
 	set /p parameterFile=Enter parameter file location [press Enter for "%parameterFile%"]:
 )
 
-SET fullCommandLine=java -Xmx1200M -Xms1200M -jar ricoconverter-cli-${project.version}-onejar.jar %command% @%parameterFile%
+SET fullCommandLine=java -Xmx1200M -Xms1200M -jar ricoconverter-cli-0.9-onejar.jar %command% @%parameterFile%
 ECHO %fullCommandLine%
 %fullCommandLine%
 pause
