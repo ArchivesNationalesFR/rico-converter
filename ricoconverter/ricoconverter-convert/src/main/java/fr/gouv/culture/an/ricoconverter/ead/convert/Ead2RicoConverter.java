@@ -162,10 +162,7 @@ public class Ead2RicoConverter {
 						// get the preprocessing result and recreate the source from it
 						source = new DOMSource(preprocessingResult.getNode());
 					}
-					
-					
-					// set a SystemId to resolve references to DTD
-					// source.setSystemId(inputFile);
+
 					
 					if(this.splittingTransformer != null) {
 						// post-process result of conversion
@@ -177,10 +174,8 @@ public class Ead2RicoConverter {
 						// prepare the split result and sets it a SystemId so relative URI references to output files are known
 						Result splitResult = new StreamResult(out);
 						splitResult.setSystemId(outputFile.toURI().toString());
-						// appky splitting transformation to the output of conversion
+						// apply splitting transformation to the output of conversion
 						this.split(new DOMSource(outputNode), splitResult);
-						// delete the dummy output file
-						outputFile.delete();
 					} else {
 						this.convert(source, new StreamResult(out));
 					}
@@ -208,6 +203,12 @@ public class Ead2RicoConverter {
 				}
 			} catch (IOException e1) {
 				throw new RicoConverterException(ErrorCode.DIRECTORY_OR_FILE_HANDLING_EXCEPTION, e1);
+			}
+			
+			// delete dummy.rdf only after the FOS on it is closed, otherwise Windows won't delete the File
+			if(this.splittingTransformer != null) {
+				// delete the dummy output file
+				outputFile.delete();
 			}
 			
 			if(!success) {
