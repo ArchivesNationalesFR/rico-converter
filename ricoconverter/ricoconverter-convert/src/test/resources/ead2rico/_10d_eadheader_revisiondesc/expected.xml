@@ -9,6 +9,7 @@
       <!-- for processing revisiondesc/change, we use Activity -->
       <rico:affectedBy>
          <rico:Activity>
+            <!-- case 1 : a date range with twice the same year and month-->
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth"
                >2015-03</rico:date>
             <rico:descriptiveNote xml:lang="fr">Révision de la description générale du fonds ; restructuration et corrections des unités de description relatives aux documents numérisés</rico:descriptiveNote>
@@ -16,14 +17,23 @@
       </rico:affectedBy>
       <rico:affectedBy>
          <rico:Activity>
-            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-04-17</rico:date>
+            <!-- case 3 : a date range with two different years-->
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-04-17</rico:date>
             <rico:descriptiveNote xml:lang="fr">DAFANCH00AP_0000400AP converted from EAD 1.0 to 2002 by v1to02.xsl (20030408).</rico:descriptiveNote>
          </rico:Activity>
       </rico:affectedBy>
       <rico:affectedBy>
          <rico:Activity>
+            <!-- case 4 : a date range with the same date twice-->
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-12-19</rico:date>
             <rico:descriptiveNote xml:lang="fr">La première version a été livrée au CHAN ainsi qu'au groupe RLG par la société AJLSM (info@ajlsm.com).</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:affectedBy>
+      <rico:affectedBy>
+         <rico:Activity>
+            <!-- case 5 : a single date -->
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-12-07</rico:date>
+            <rico:descriptiveNote xml:lang="fr">Ajout d'une indexation Personne Physique avec l'aide de Florence Clavaud</rico:descriptiveNote>
          </rico:Activity>
       </rico:affectedBy>
       <rico:hasInstantiation>

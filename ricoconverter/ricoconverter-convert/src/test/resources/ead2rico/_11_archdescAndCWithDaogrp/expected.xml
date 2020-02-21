@@ -14,7 +14,7 @@
 		      <rico:identifier>FRAN_IR_003666</rico:identifier>
 		      <rico:heldBy rdf:resource="agent/005061"/>
 		      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_003666"/>     
-		      
+		      <!--?? <owl:sameAs rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/exportXML.action?irId=FRAN_IR_003666"/>-->
 		   </rico:Instantiation>
       </rico:hasInstantiation>
    </rico:Record>
@@ -41,8 +41,7 @@
 		      <!-- here we can only specify the first and last image of the series of images that are integrated into the instantiation-->
 		    
 		      <rico:identifier>FRAN_0118_274_L#FRAN_0118_350_L</rico:identifier>
-      	    <!--it seems that image/jpeg is not a MIME type any more. -->
-      	      <dc:format xml:lang="en">image/jpeg</dc:format>
+		      <rico:encodingFormat xml:lang="en">image/jpeg</rico:encodingFormat>
 		      <!-- later on we should be able to refer to a IIIF sequence, using at least rdfs:seeAlso, or owl:sameAs -->
 		    <!-- something like: <rdfs:seeAlso rdf:resource="http://archivesnationales.culture.gouv.fr/iiif/003666-top/sequence/normal"/>-->
 		   </rico:Instantiation>
@@ -50,6 +49,10 @@
          
       <rico:includes
          rdf:resource="recordResource/003666-c-835pw5mwg-otyywby3qzqb"/>
+   	<rico:includes
+   		rdf:resource="recordResource/003666-c-7jg4i6fd5-18zjwwhf1ggm1"/>
+   	<rico:includes
+   		rdf:resource="recordResource/003666-123456"/>
       
    </rico:RecordResource>
 
@@ -76,14 +79,63 @@
 		      <rico:isDerivedFromInstantiation rdf:resource="instantiation/003666-c-835pw5mwg-otyywby3qzqb-i1"/>
 		      <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
 		      <rico:identifier>FRAN_0118_274_L</rico:identifier>
-              <!--it seems that image/jpeg is not a MIME type any more. -->
-              <dc:format xml:lang="en">image/jpeg</dc:format>
+		      <dc:format xml:lang="en">image/jpeg</dc:format>
 		      <!-- later on we should be able to link to an image online through the IIIF Image API-->
 		      <!-- for now we can use, for this unique image, the current permalink, with rdfs:seeAlso or owl:sameAs-->
 		      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_003666/c-835pw5mwg-otyywby3qzqb/FRAN_0118_274_L"/>
 		   </rico:Instantiation>
       </rico:hasInstantiation>
    </rico:RecordResource>
+	
+	<rico:RecordResource rdf:about="recordResource/003666-c-7jg4i6fd5-18zjwwhf1ggm1">
+		<rico:includedIn rdf:resource="recordResource/003666-top"/>
+		<rico:hasInstantiation>
+			<rico:Instantiation rdf:about="instantiation/003666-c-7jg4i6fd5-18zjwwhf1ggm1-i1">
+				<rico:instantiates rdf:resource="recordResource/003666-c-7jg4i6fd5-18zjwwhf1ggm1"/>
+				<rico:hasDerivedInstantiation rdf:resource="instantiation/003666-c-7jg4i6fd5-18zjwwhf1ggm1-i2"/>
+				<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_003666/c-7jg4i6fd5-18zjwwhf1ggm1"/>
+			</rico:Instantiation>
+		</rico:hasInstantiation>
+		<rico:hasInstantiation>
+			<rico:Instantiation rdf:about="instantiation/003666-c-7jg4i6fd5-18zjwwhf1ggm1-i2">
+				<rico:instantiates rdf:resource="recordResource/003666-c-7jg4i6fd5-18zjwwhf1ggm1"/>
+				<rico:isDerivedFromInstantiation rdf:resource="instantiation/003666-c-7jg4i6fd5-18zjwwhf1ggm1-i1"/>
+				<rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+				
+				<rico:identifier>FRAN_0109_00814_L#FRAN_0109_00813_L</rico:identifier>
+				
+				<dc:format xml:lang="en">image/jpeg</dc:format>
+				
+				<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_003666/c-7jg4i6fd5-18zjwwhf1ggm1/FRAN_0109_00814_L"/>
+				<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_003666/c-7jg4i6fd5-18zjwwhf1ggm1/FRAN_0109_00813_L"/>
+			</rico:Instantiation>
+		</rico:hasInstantiation>
+	</rico:RecordResource>
+	
+	<rico:RecordResource rdf:about="recordResource/003666-123456">
+		<rico:includedIn rdf:resource="recordResource/003666-top"/>
+		<rico:hasInstantiation>
+			<rico:Instantiation rdf:about="instantiation/003666-123456-i1">
+				<rico:instantiates rdf:resource="recordResource/003666-123456"/>
+				<rico:hasDerivedInstantiation rdf:resource="instantiation/003666-123456-i2"/>
+				<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_003666/123456"/>
+			</rico:Instantiation>
+		</rico:hasInstantiation>
+		<rico:hasInstantiation>
+			<rico:Instantiation rdf:about="instantiation/003666-123456-i2">
+				<rico:instantiates rdf:resource="recordResource/003666-123456"/>				
+				<rico:isDerivedFromInstantiation rdf:resource="instantiation/003666-123456-i1"/>
+				<rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+			
+				<rico:identifier>FRAN_0109_00814_L#FRAN_0109_00813_L</rico:identifier>
+				
+				<dc:format xml:lang="en">image/jpeg</dc:format>
+				
+				<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_003666/123456/FRAN_0109_00814_L"/>
+				<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_003666/123456/FRAN_0109_00813_L"/>
+			</rico:Instantiation>
+		</rico:hasInstantiation>
+	</rico:RecordResource>
    
   
 </rdf:RDF>

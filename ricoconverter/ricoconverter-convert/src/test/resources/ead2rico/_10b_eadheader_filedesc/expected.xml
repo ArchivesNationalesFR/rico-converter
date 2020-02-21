@@ -15,7 +15,17 @@
      
       <rico:createdBy rdf:resource="agent/005061"/>
       <rico:publishedBy rdf:resource="agent/005061"/>
+      <!-- case 1 -->
+      <!-- a date range, within the same year -->
       <rico:publicationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1979</rico:publicationDate>
+     
+      <!-- case 2 -->
+      <!-- a single date -->
+      <rico:publicationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1979-02-20</rico:publicationDate>
+      <!-- case 3 -->
+      <!-- a date range with 2 different years-->
+      <rico:publicationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1901-01-01</rico:publicationDate>
+      <rico:publicationDate rdf:parseType="Literal">XXe siècle</rico:publicationDate>
       <rico:descriptiveNote rdf:parseType="Literal">
          <html:p xml:lang="fr">Mention de note éventuelle</html:p></rico:descriptiveNote>
                

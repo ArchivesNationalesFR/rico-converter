@@ -16,7 +16,12 @@
             <address>
                <addressline>Pierrefitte-sur-Seine</addressline>
             </address>
+            <!-- Case 1 -->
             <date calendar="gregorian" era="ce" normal="1979-01-01/1979-12-31">1979</date>
+            <!-- Case 2 -->
+            <date calendar="gregorian" era="ce" normal="1979-02-20">20 février 1979</date>
+            <!--Case 3 (IR_003579.xml)-->
+            <date calendar="gregorian" era="ce" normal="1901-01-01/2000-12-31">XXe siècle</date>
          </publicationstmt>
          <notestmt>
             <note>
