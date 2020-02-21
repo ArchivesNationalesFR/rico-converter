@@ -25,7 +25,7 @@
       <!-- case 3 -->
       <!-- a date range with 2 different years-->
       <rico:publicationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1901-01-01</rico:publicationDate>
-      <rico:publicationDate rdf:parseType="Literal">XXe siècle</rico:publicationDate>
+      <rico:publicationDate xml:lang="fr">XXe siècle</rico:publicationDate>
       <rico:descriptiveNote rdf:parseType="Literal">
          <html:p xml:lang="fr">Mention de note éventuelle</html:p></rico:descriptiveNote>
                

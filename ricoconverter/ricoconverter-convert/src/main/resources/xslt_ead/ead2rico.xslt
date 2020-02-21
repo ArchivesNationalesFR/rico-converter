@@ -170,10 +170,21 @@
 	<xsl:template match="publisher[normalize-space(.)]" mode="findingaid">
 		<rico:publishedBy rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}" />
 	</xsl:template>
-	<xsl:template match="date" mode="findingaid">
-		<rico:publicationDate>
-			<xsl:call-template name="outputDateFromDateRange"><xsl:with-param name="normal" select="@normal"/></xsl:call-template>
-        </rico:publicationDate>
+	<xsl:template match="date[@normal]" mode="findingaid">		
+		<xsl:choose>
+			<xsl:when test="ead2rico:isDateRange(@normal)">
+				<!-- Date range in @normal -->
+				<rico:publicationDate><xsl:call-template name="outputDateFromDateRange"><xsl:with-param name="normal" select="@normal"/></xsl:call-template></rico:publicationDate>
+				<!-- If the date spans multiple years, also output it as a Literal -->
+				<xsl:if test="ead2rico:isDateRangeSpanningDifferentYears(@normal)">
+					<rico:publicationDate xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rico:publicationDate>
+				</xsl:if>
+			</xsl:when>
+			<xsl:when test="ead2rico:isDate(@normal)">
+				<!-- Single date in @normal -->
+				<rico:publicationDate><xsl:call-template name="dateWithDatatype"><xsl:with-param name="text" select="@normal" /></xsl:call-template></rico:publicationDate>
+			</xsl:when>
+		</xsl:choose>
 	</xsl:template>	
 	
 	<xsl:template match="notestmt" mode="#all">
@@ -214,7 +225,16 @@
 	<xsl:template match="change[item/text()]" mode="findingaid">
 	  <rico:affectedBy>
          <rico:Activity>
-            <rico:date><xsl:call-template name="outputDateFromDateRange"><xsl:with-param name="normal" select="date/@normal"/></xsl:call-template></rico:date>
+            <rico:date>
+            	<xsl:choose>
+	            	<xsl:when test="ead2rico:isDateRange(date/@normal)">
+						<xsl:call-template name="outputDateFromDateRange"><xsl:with-param name="normal" select="date/@normal"/></xsl:call-template>
+					</xsl:when>
+					<xsl:when test="ead2rico:isDate(date/@normal)">
+						<xsl:call-template name="dateWithDatatype"><xsl:with-param name="text" select="date/@normal"/></xsl:call-template>
+					</xsl:when>
+				</xsl:choose>
+            </rico:date>
             <rico:descriptiveNote xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(item)" /></rico:descriptiveNote>
          </rico:Activity>
       </rico:affectedBy>
@@ -393,11 +413,7 @@
 
 	<!-- ***** daogrp and daoloc processing : generates other Instantiations ***** -->
 
-	<xsl:template match="daogrp" mode="#all">
-		<!-- Don't process daodesc here -->
-		<xsl:apply-templates mode="#current" select="daoloc" />
-	</xsl:template>
-	<xsl:template match="daoloc" mode="reference">
+	<xsl:template match="daogrp" mode="reference">
 		<xsl:variable name="recordResourceId">
 			<xsl:call-template name="recordResourceId">
 				<xsl:with-param name="faId" select="$faId" />
@@ -405,11 +421,13 @@
 				<xsl:with-param name="recordResourceId" select="(ancestor::*[self::c or self::archdesc])[last()]/@id" />
 			</xsl:call-template>
 		</xsl:variable>
-		<!-- Add +2 to the offset of this daoloc element to build instantiation ID -->
-		<xsl:variable name="instantiationId" select="concat($recordResourceId, '-i', count(preceding-sibling::daoloc)+2)" />
-		<rico:hasDerivedInstantiation rdf:resource="{ead2rico:URI-Instantiation($instantiationId)}"/>		
+		<!-- Add +2 to the offset of this daogrp element to build instantiation ID -->
+		<xsl:variable name="instantiationId" select="concat($recordResourceId, '-i', count(preceding-sibling::daogrp)+2)" />
+		<rico:hasDerivedInstantiation rdf:resource="{ead2rico:URI-Instantiation($instantiationId)}"/>
 	</xsl:template>
-	<xsl:template match="daoloc">
+	
+	<xsl:template match="daogrp">
+
 		<xsl:variable name="recordResourceId">
 			<xsl:call-template name="recordResourceId">
 				<xsl:with-param name="faId" select="$faId" />
@@ -417,12 +435,8 @@
 				<xsl:with-param name="recordResourceId" select="(ancestor::*[self::c or self::archdesc])[last()]/@id" />
 			</xsl:call-template>
 		</xsl:variable>
-		<!-- Add +2 to the offset of this daoloc element to build instantiation ID -->
-		<xsl:variable name="instantiationId" select="concat($recordResourceId, '-i', count(preceding-sibling::daoloc)+2)" />
-		
-		<xsl:if test="contains(@href, ' ')">
-			<xsl:value-of select="ead2rico:warning($faId, 'DAOLOC_CONTAINS_SPACE', @href)" />
-		</xsl:if>
+		<!-- Add +2 to the offset of this daogrp element to build instantiation ID -->
+		<xsl:variable name="instantiationId" select="concat($recordResourceId, '-i', count(preceding-sibling::daogrp)+2)" />
 		
 		<!-- Inside this other Instantiation we only pick selected EAD elements, we don't reprocess all elements -->
 		<rico:hasInstantiation>
@@ -430,7 +444,7 @@
 				<rico:instantiates rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
 				
 				<!-- the image legend -->
-				<xsl:apply-templates select="../daodesc" />
+				<xsl:apply-templates select="daodesc" />
 				
 				<!-- pick only the unittitle in the other Instantiations -->
 				<!-- Finally, don't pick it :-) -->
@@ -451,15 +465,45 @@
 				<!-- We know it is a digital copy of the first instantiation -->
 				<rico:isDerivedFromInstantiation rdf:resource="{ead2rico:URI-Instantiation(concat($recordResourceId, '-i1'))}"/>
 				<rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>	
-				<rico:identifier><xsl:value-of select="replace(@href, '.msp', '')" /></rico:identifier>			
+				
+				<xsl:choose>
+					<xsl:when test="count(daoloc) = 1">
+						<rico:identifier><xsl:value-of select="replace(tokenize(daoloc/@href, '/')[last()], '.msp', '')" /></rico:identifier>	
+					</xsl:when>
+					<xsl:when test="count(daoloc) = 2">
+						<rico:identifier><xsl:value-of select="replace(tokenize(daoloc[1]/@href, '/')[last()], '.msp', '')" />#<xsl:value-of select="replace(tokenize(daoloc[2]/@href, '/')[last()], '.msp', '')" /></rico:identifier>
+					</xsl:when>
+					<xsl:otherwise>
+						<!-- More than 2 daoloc ? we don't know how to deal with that -->	
+					</xsl:otherwise>
+				</xsl:choose>
+						
 				<dc:format xml:lang="en">image/jpeg</dc:format>
 				<!-- here the creator is by default the archival institution: it either produced the digital instantiation image by its own, or asked a private company to produce it and then got it and aggregated it into its own archives -->
                 <rico:hasProvenance rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}"/>
-				<xsl:if test="not(contains(@href, '#'))">
-					<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/{/ead/eadheader/eadid}/{(ancestor::*[self::c or self::archdesc])[last()]/@id}/{replace(replace(@href, '.msp', ''), ' ', '%20')}"/>
-				</xsl:if>
+				
+				<xsl:apply-templates select="daoloc" />
 			</rico:Instantiation>
 		</rico:hasInstantiation>
+
+	</xsl:template>
+	
+	<xsl:template match="daoloc">
+		<xsl:if test="contains(@href, ' ')">
+			<xsl:value-of select="ead2rico:warning($faId, 'DAOLOC_CONTAINS_SPACE', @href)" />
+		</xsl:if>
+		
+		<xsl:choose>
+			<xsl:when test="starts-with(@href, 'http')">
+				<rdfs:seeAlso rdf:resource="{@href}"/>
+			</xsl:when>
+			<xsl:when test="not(contains(@href, '#'))">
+				<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/{/ead/eadheader/eadid}/{(ancestor::*[self::c or self::archdesc])[last()]/@id}/{replace(replace(@href, '.msp', ''), ' ', '%20')}"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<!-- We assume we have a file range like FRAN_0118_274_L.msp#FRAN_0118_350_L.msp and we can't generate an rdfs:seeAlso -->
+			</xsl:otherwise>
+		</xsl:choose>		
 	</xsl:template>
 
 	<xsl:template match="daodesc[child::node()]">
@@ -781,14 +825,14 @@
 				<xsl:choose>
 					<xsl:when test="ead2rico:isDateRange(@normal)">
 						<!-- Date range in @normal and a text() -->
-						<rico:beginningDate><xsl:call-template name="outputDate"><xsl:with-param name="text" select="normalize-space(substring-before(@normal, '/'))" /></xsl:call-template></rico:beginningDate>
-        				<rico:endDate><xsl:call-template name="outputDate"><xsl:with-param name="text" select="normalize-space(substring-after(@normal, '/'))" /></xsl:call-template></rico:endDate>
+						<rico:beginningDate><xsl:call-template name="dateWithDatatype"><xsl:with-param name="text" select="normalize-space(substring-before(@normal, '/'))" /></xsl:call-template></rico:beginningDate>
+        				<rico:endDate><xsl:call-template name="dateWithDatatype"><xsl:with-param name="text" select="normalize-space(substring-after(@normal, '/'))" /></xsl:call-template></rico:endDate>
 				        <!-- we may find emph inside the text(), so we join before normalize -->
 				        <rico:date xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(string-join(text(), ' '))" /></rico:date>
 					</xsl:when>
 					<xsl:when test="ead2rico:isDate(@normal)">
 						<!-- Single date in @normal and a text -->
-						<rico:date><xsl:call-template name="outputDate"><xsl:with-param name="text" select="@normal" /></xsl:call-template></rico:date>
+						<rico:date><xsl:call-template name="dateWithDatatype"><xsl:with-param name="text" select="@normal" /></xsl:call-template></rico:date>
 						<!-- we may find emph inside the text(), so we join before normalize -->
 						<rico:date xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(string-join(text(), ' '))" /></rico:date>
 					</xsl:when>
@@ -800,13 +844,13 @@
 				<xsl:choose>
 					<xsl:when test="ead2rico:isTextDateRange(text())">
 						<!-- Date range in text() -->
-						<rico:beginningDate><xsl:call-template name="outputDate"><xsl:with-param name="text" select="normalize-space(substring-before(text(), '-'))" /></xsl:call-template></rico:beginningDate>
-        				<rico:endDate><xsl:call-template name="outputDate"><xsl:with-param name="text" select="normalize-space(substring-after(text(), '-'))" /></xsl:call-template></rico:endDate>
+						<rico:beginningDate><xsl:call-template name="dateWithDatatype"><xsl:with-param name="text" select="normalize-space(substring-before(text(), '-'))" /></xsl:call-template></rico:beginningDate>
+        				<rico:endDate><xsl:call-template name="dateWithDatatype"><xsl:with-param name="text" select="normalize-space(substring-after(text(), '-'))" /></xsl:call-template></rico:endDate>
         				<rico:date xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(text())" /></rico:date>
 					</xsl:when>
 					<xsl:when test="ead2rico:isDate(text())">
 						<!-- Single date in text() -->
-						<rico:date><xsl:call-template name="outputDate"><xsl:with-param name="text" select="text()" /></xsl:call-template></rico:date>
+						<rico:date><xsl:call-template name="dateWithDatatype"><xsl:with-param name="text" select="text()" /></xsl:call-template></rico:date>
 						<rico:date xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(text())" /></rico:date>
 					</xsl:when>
 					<xsl:otherwise>
@@ -1277,16 +1321,16 @@
 		
 		<xsl:choose>
 			<xsl:when test="$begin = $end">
-				<xsl:call-template name="outputDate"><xsl:with-param name="text" select="$begin" /></xsl:call-template>
+				<xsl:call-template name="dateWithDatatype"><xsl:with-param name="text" select="$begin" /></xsl:call-template>
 			</xsl:when>
 			<xsl:when test="($begin != $end) and ($beginYearMonth = $endYearMonth)">
-				<xsl:call-template name="outputDate"><xsl:with-param name="text" select="$beginYearMonth" /></xsl:call-template>
+				<xsl:call-template name="dateWithDatatype"><xsl:with-param name="text" select="$beginYearMonth" /></xsl:call-template>
 			</xsl:when>
 			<xsl:when test="($begin != $end) and ($beginYearMonth != $endYearMonth) and ($beginYear = $endYear)">
-				<xsl:call-template name="outputDate"><xsl:with-param name="text" select="$beginYear" /></xsl:call-template>
+				<xsl:call-template name="dateWithDatatype"><xsl:with-param name="text" select="$beginYear" /></xsl:call-template>
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:value-of select="normalize-space($begin)"/>
+				<xsl:call-template name="dateWithDatatype"><xsl:with-param name="text" select="normalize-space($begin)" /></xsl:call-template>
 			</xsl:otherwise>
 		</xsl:choose>
     </xsl:template>
@@ -1325,8 +1369,23 @@
 		"/>  
 	</xsl:function>
 	
+	<xsl:function name="ead2rico:isDateRangeSpanningDifferentYears" as="xs:boolean">
+		<xsl:param name="normal"/>
+        
+        <xsl:variable name="begin" select="normalize-space(substring-before($normal, '/'))" />
+        <xsl:variable name="end" select="normalize-space(substring-after($normal, '/'))" />
+
+		<xsl:variable name="beginYearMonth" select="normalize-space(substring($begin, 1, 7))" />
+		<xsl:variable name="endYearMonth" select="normalize-space(substring($end, 1, 7))" />
+		
+		<xsl:variable name="beginYear" select="normalize-space(substring-before($beginYearMonth, '-'))" />
+		<xsl:variable name="endYear" select="normalize-space(substring-before($endYearMonth, '-'))" />
+		
+		<xsl:sequence select="$beginYear != $endYear" />
+	</xsl:function>
+	
 	<!-- Output a date value with the proper datatype based on the date format -->
-	<xsl:template name="outputDate">
+	<xsl:template name="dateWithDatatype">
         <xsl:param name="text"/>
 
 		<xsl:choose>
