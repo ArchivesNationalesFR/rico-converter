@@ -26,6 +26,7 @@
             	<rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
                 <rico:performs>
                     <rico:Activity>
+                        <!-- note that the following assertion is possible only with RiC-O v0.2, where OccupationType has become a subclass of ActivityType-->
                         <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msjgtw3-1ton3i1q2op31"/>
                     </rico:Activity>
                 </rico:performs> 

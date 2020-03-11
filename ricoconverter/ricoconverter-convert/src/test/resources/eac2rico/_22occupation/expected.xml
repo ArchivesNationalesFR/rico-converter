@@ -26,7 +26,7 @@
             <rico:performanceRelationHasSource>
                <rico:Activity>
                   <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005205-d699msj02xm-19qbb7wdtto3j"/>
-                  <!-- note that the following assertion is possible only after updating RiC-O v0.1 - OccupationType has become a subclass of ActivityType-->
+                  <!-- note that the following assertion is possible only with RiC-O v0.2, where OccupationType has become a subclass of ActivityType-->
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
                </rico:Activity>
             </rico:performanceRelationHasSource>
