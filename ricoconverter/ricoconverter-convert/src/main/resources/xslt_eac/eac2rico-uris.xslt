@@ -397,7 +397,16 @@
 	<xsl:function name="eac2rico:URI-RecordResource">
 		<xsl:param name="recordResourceId" />		
 		<!-- Note how # is changed into '-' -->
-		<xsl:value-of select="concat('recordSet', '/', translate(substring-after($recordResourceId, 'FRAN_IR_'), '#', '-'))" />
+		<xsl:choose>
+			<!--  if there is no anchor, we are referring to the top RecordResource so we add a final '-top' -->
+			<xsl:when test="string-length(substring-after($recordResourceId, 'FRAN_IR_')) = 6"> 
+				<xsl:value-of select="concat('recordResource', '/', substring-after($recordResourceId, 'FRAN_IR_'), '-top')" />
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="concat('recordResource', '/', translate(substring-after($recordResourceId, 'FRAN_IR_'), '#', '-'))" />
+			</xsl:otherwise>
+		</xsl:choose>
+		
 	</xsl:function>
 	
 	<xsl:function name="eac2rico:URI-Place">
