@@ -17,13 +17,14 @@
 	</identity>
     
 	<relations>
+		<!-- a resource relation whose target is a whole ANF EAD finding aid (the finding aid id is used for filling the xlink:href attribute -->
 		<resourceRelation
 			xmlns:xlink="http://www.w3.org/1999/xlink"
 			resourceRelationType="creatorOf" xlink:href="FRAN_IR_111111"
 			xlink:type="simple">
 			<relationEntry localType="archival">The Resource the entity has created</relationEntry>
 		</resourceRelation>
-		<!-- ajout d'une relation vers un composant c dans un IR -->
+		<!-- a resource relation whose target is a c component in a finding aid -->
 		<resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink"
 			resourceRelationType="creatorOf"
 			xlink:href="FRAN_IR_057306#c-grmqcmjabh-1fkw1foh8y5qu"
