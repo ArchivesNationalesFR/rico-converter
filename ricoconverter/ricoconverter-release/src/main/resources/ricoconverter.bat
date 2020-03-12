@@ -1,7 +1,7 @@
 @echo off
 PATH %PATH%;%JAVA_HOME%\bin\
 
-ECHO :: Welcome to Ric-O Converter 0.9 ::
+ECHO :: Welcome to Ric-O Converter ${project.version} ::
 ECHO.
 
 REM Test if java is installed
@@ -28,7 +28,7 @@ if NOT %command% == "help" (
 	set /p parameterFile=Enter parameter file location [press Enter for "%parameterFile%"]:
 )
 
-SET fullCommandLine=java -Xmx1200M -Xms1200M -jar ricoconverter-cli-0.9-onejar.jar %command% @%parameterFile%
+SET fullCommandLine=java -Xmx1200M -Xms1200M -jar ricoconverter-cli-${project.version}-onejar.jar %command% @%parameterFile%
 ECHO %fullCommandLine%
 %fullCommandLine%
 pause
