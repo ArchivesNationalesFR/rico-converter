@@ -6,6 +6,7 @@
    xml:base="http://data.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/004852">
    	  <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" /> 
+   	  <rico:regulatedBy rdf:resource="rule/rl009"/>
       <!-- for processing revisiondesc/change, we use Activity -->
       <rico:affectedBy>
          <rico:Activity>
@@ -39,6 +40,7 @@
       <rico:hasInstantiation>
 	    <rico:Instantiation rdf:about="instantiation/004852-i1">
 	   	  <rico:instantiates rdf:resource="record/004852"/>
+	   	  <rico:regulatedBy rdf:resource="rule/rl010"/>
 	      <dc:format xml:lang="en">text/xml</dc:format>
 	      <rico:identifier>FRAN_IR_004852</rico:identifier>
 	      <rico:heldBy rdf:resource="agent/005061"/>

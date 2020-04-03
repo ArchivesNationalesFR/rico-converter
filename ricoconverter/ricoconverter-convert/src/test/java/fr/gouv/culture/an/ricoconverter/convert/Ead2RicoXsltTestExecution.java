@@ -124,7 +124,15 @@ public class Ead2RicoXsltTestExecution implements Test {
 						.withTest(Input.fromNode(domResult.getNode()).build());
 				
 				// ignore some elements in general cases
-				if(!this.testFolder.getName().contains("origination") && !this.testFolder.getName().contains("repository") && !this.testFolder.getName().contains("FindingAid")) {
+				if(
+						!this.testFolder.getName().contains("origination")
+						&&
+						!this.testFolder.getName().contains("repository")
+						&&
+						!this.testFolder.getName().contains("FindingAid")
+						&&
+						!this.testFolder.getName().contains("eadheader")
+				) {
 					builder.withNodeFilter(node -> {						
 						boolean comparison = (
 								node.getNodeType() != Node.ELEMENT_NODE
@@ -137,6 +145,9 @@ public class Ead2RicoXsltTestExecution implements Test {
 										node.getLocalName().equals("FindingAid")
 										||
 										node.getLocalName().equals("seeAlso")
+										||
+										node.getLocalName().equals("regulatedBy")
+										
 								)
 						);
 						return comparison;

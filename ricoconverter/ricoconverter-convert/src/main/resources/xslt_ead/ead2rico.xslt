@@ -79,6 +79,8 @@
 			<xsl:if test="@scriptencoding = 'iso15924'">
 				<rico:regulatedBy rdf:resource="rule/rl008"/>
 			</xsl:if>
+			<!-- Reference to ISAD(G), to be changed if you don't follow the ISAD(G) model -->
+			<rico:regulatedBy rdf:resource="rule/rl009"/>
 	
 			<!-- process child elements in mode 'findingaid' -->
 			<xsl:apply-templates mode="findingaid" />
@@ -92,6 +94,8 @@
 			      <rico:instantiates rdf:resource="{ead2rico:URI-FindingAid($faId)}"/>
 			      <!-- process child elements again but this time in mode 'instantiation' -->
 			      <xsl:apply-templates mode="instantiation" />
+			      <!-- Always insert this regulatedBy on FindingAid's Instantiation in case of AN -->
+			      <rico:regulatedBy rdf:resource="rule/rl010"/>
 			      <dc:format xml:lang="en">text/xml</dc:format>
 			      <rico:identifier><xsl:value-of select="eadid" /></rico:identifier>	      
 			      <!-- Turn author URI into relative URI -->
@@ -208,13 +212,17 @@
 	<xsl:template match="language[@langcode]" mode="findingaid">
 		<rico:hasLanguage rdf:resource="{ead2rico:URI-Language(@langcode)}"/>
 	</xsl:template>
+	
+	<!-- The rico:regulatedBy is inserted systematically on the FindingAid + its Instantiation -->
+	<!--
 	<xsl:template match="descrules[normalize-space(.)]" mode="instantiation">
 		<rico:regulatedBy rdf:resource="rule/rl010"/>
 	</xsl:template>
 	<xsl:template match="descrules[normalize-space(.)]" mode="findingaid">
-		<!-- Reference to ISAD(G), to be changed if you don't follow the ISAD(G) model -->
+		Reference to ISAD(G), to be changed if you don't follow the ISAD(G) model
 		<rico:regulatedBy rdf:resource="rule/rl009"/>
 	</xsl:template>
+	-->
 	
 	<!-- ***** revisiondesc processing ***** -->
 	
