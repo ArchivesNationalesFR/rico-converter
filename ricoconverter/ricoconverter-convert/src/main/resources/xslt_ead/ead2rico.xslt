@@ -279,14 +279,27 @@
 			<xsl:apply-templates select="@* | (node() except (dsc | daogrp | processinfo | appraisal | originalsloc[not(descendant::ref)]))" />
 
 			<!-- process everything that needs to go inside a rico:history -->
-			<xsl:if test="processinfo or appraisal or did/origination[normalize-space(string-join(text()))] or originalsloc[not(descendant::ref)]">
-				<rico:history rdf:parseType="Literal">
-					<xsl:apply-templates select="processinfo" />
-					<xsl:apply-templates select="appraisal" />
-					<xsl:apply-templates select="did/origination" />
-					<xsl:apply-templates select="originalsloc" />
-				</rico:history>
-			</xsl:if>
+			<xsl:variable name="historyContent">
+				<xsl:apply-templates select="processinfo" />
+				<xsl:apply-templates select="appraisal" />
+				<xsl:apply-templates select="did/origination" />
+				<xsl:apply-templates select="originalsloc[not(descendant::ref)]" />
+			</xsl:variable>
+			<xsl:choose>
+				<xsl:when test="count($historyContent/*) > 1">
+					<!-- if more than one children, encapsulate in a div -->
+					<rico:history rdf:parseType="Literal">
+						<html:div>
+							<xsl:copy-of select="$historyContent" />
+						</html:div>
+					</rico:history>
+				</xsl:when>
+				<xsl:when test="count($historyContent/*) = 1">
+					<rico:history rdf:parseType="Literal">
+						<xsl:copy-of select="$historyContent" />
+					</rico:history>
+				</xsl:when>
+			</xsl:choose>
 			
 			<!-- if archdesc has no repository, output the default one -->
 			<xsl:if test="not(did/repository)">
@@ -301,17 +314,32 @@
 					<xsl:apply-templates select="daogrp" mode="reference" />
 					<!--  Recurse down. Note that origination is still processed here to match inner persname/corpname/famname -->
 					<xsl:apply-templates select="node() except (daogrp | custodhist | acqinfo | processinfo | appraisal)" mode="instantiation" />
+					
 					<!-- everything that goes in the 'rico:history' section -->
-					<xsl:if test="custodhist or acqinfo or processinfo or appraisal or did/origination[normalize-space(string-join(text()))]">
-						<rico:history rdf:parseType="Literal">
-							<!-- We want them in this order -->
-							<xsl:apply-templates select="custodhist"  mode="instantiation" />
-							<xsl:apply-templates select="acqinfo" mode="instantiation" />
-							<xsl:apply-templates select="processinfo" mode="instantiation" />
-							<xsl:apply-templates select="appraisal" mode="instantiation" />
-							<xsl:apply-templates select="did/origination" mode="instantiation" />
-						</rico:history>
-					</xsl:if>
+					<xsl:variable name="instantiationHistoryContent">
+						<!-- We want them in this order -->
+						<xsl:apply-templates select="custodhist"  mode="instantiation" />
+						<xsl:apply-templates select="acqinfo" mode="instantiation" />
+						<xsl:apply-templates select="processinfo" mode="instantiation" />
+						<xsl:apply-templates select="appraisal" mode="instantiation" />
+						<xsl:apply-templates select="did/origination" mode="instantiation" />
+					</xsl:variable>
+					<xsl:choose>
+						<xsl:when test="count($instantiationHistoryContent/*) > 1">
+							<!-- if more than one children, encapsulate in a div -->
+							<rico:history rdf:parseType="Literal">
+								<html:div>
+									<xsl:copy-of select="$instantiationHistoryContent" />
+								</html:div>
+							</rico:history>
+						</xsl:when>
+						<xsl:when test="count($instantiationHistoryContent/*) = 1">
+							<rico:history rdf:parseType="Literal">
+								<xsl:copy-of select="$instantiationHistoryContent" />
+							</rico:history>
+						</xsl:when>
+					</xsl:choose>
+					
 					<!-- if archdesc has no repository, output the default one -->
 					<xsl:if test="not(did/repository)">
 						<rico:heldBy rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}" />
@@ -373,15 +401,30 @@
 			<!--  Note that originalsloc is still processed here to match inner ref -->
 			<xsl:apply-templates select="@* | (node() except (c | daogrp | processinfo | appraisal | originalsloc[not(descendant::ref)]))" />
 			
-			<!-- everything that needs to go inside rico:history -->
-			<xsl:if test="processinfo or appraisal or did/origination[normalize-space(string-join(text()))] or originalsloc[not(descendant::ref)]">
-				<rico:history rdf:parseType="Literal">
-					<xsl:apply-templates select="processinfo" />
-					<xsl:apply-templates select="appraisal" />
-					<xsl:apply-templates select="did/origination" />
-					<xsl:apply-templates select="originalsloc" />
-				</rico:history>
-			</xsl:if>
+			
+			<!-- everything that goes in the 'rico:history' section -->
+			<xsl:variable name="historyContent">
+				<!-- We want them in this order -->
+				<xsl:apply-templates select="processinfo" />
+				<xsl:apply-templates select="appraisal" />
+				<xsl:apply-templates select="did/origination" />
+				<xsl:apply-templates select="originalsloc[not(descendant::ref)]" />
+			</xsl:variable>
+			<xsl:choose>
+				<xsl:when test="count($historyContent/*) > 1">
+					<!-- if more than one children, encapsulate in a div -->
+					<rico:history rdf:parseType="Literal">
+						<html:div>
+							<xsl:copy-of select="$historyContent" />
+						</html:div>
+					</rico:history>
+				</xsl:when>
+				<xsl:when test="count($historyContent/*) = 1">
+					<rico:history rdf:parseType="Literal">
+						<xsl:copy-of select="$historyContent" />
+					</rico:history>
+				</xsl:when>
+			</xsl:choose>
 			
 			<!--  The instantiation of this RecordResource -->
 			<rico:hasInstantiation>
@@ -391,17 +434,32 @@
 					<xsl:apply-templates select="daogrp" mode="reference" />
 					<!--  recurse down. Note that origination is still processed here to match inner persname/corpname/famname -->
 					<xsl:apply-templates select="node() except (daogrp | custodhist | acqinfo | processinfo | appraisal)" mode="instantiation" />
-					<!-- all the 'history' section -->
-					<xsl:if test="custodhist or acqinfo or processinfo or appraisal or did/origination[normalize-space(string-join(text()))]">
-						<rico:history rdf:parseType="Literal">
-							<!-- We want them in this order -->
-							<xsl:apply-templates select="custodhist"  mode="instantiation" />
-							<xsl:apply-templates select="acqinfo" mode="instantiation" />
-							<xsl:apply-templates select="processinfo" mode="instantiation" />
-							<xsl:apply-templates select="appraisal" mode="instantiation" />
-							<xsl:apply-templates select="did/origination" mode="instantiation" />
-						</rico:history>
-					</xsl:if>
+					
+					
+					<!-- everything that goes in the 'rico:history' section -->
+					<xsl:variable name="instantiationHistoryContent">
+						<!-- We want them in this order -->
+						<xsl:apply-templates select="custodhist"  mode="instantiation" />
+						<xsl:apply-templates select="acqinfo" mode="instantiation" />
+						<xsl:apply-templates select="processinfo" mode="instantiation" />
+						<xsl:apply-templates select="appraisal" mode="instantiation" />
+						<xsl:apply-templates select="did/origination" mode="instantiation" />
+					</xsl:variable>
+					<xsl:choose>
+						<xsl:when test="count($instantiationHistoryContent/*) > 1">
+							<!-- if more than one children, encapsulate in a div -->
+							<rico:history rdf:parseType="Literal">
+								<html:div>
+									<xsl:copy-of select="$instantiationHistoryContent" />
+								</html:div>
+							</rico:history>
+						</xsl:when>
+						<xsl:when test="count($instantiationHistoryContent/*) = 1">
+							<rico:history rdf:parseType="Literal">
+								<xsl:copy-of select="$instantiationHistoryContent" />
+							</rico:history>
+						</xsl:when>
+					</xsl:choose>
 					<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/{/ead/eadheader/eadid}/{@id}" />
 				</rico:Instantiation>
 			</rico:hasInstantiation>
@@ -1287,7 +1345,7 @@
 	</xsl:template>
 	<!-- Note how the extra space is preserved within mixed-content -->
 	<xsl:template match="text()" mode="html"><xsl:value-of select="normalize-space(.)" /><xsl:if test="ends-with(., ' ') and not(position() = last())"><xsl:value-of select="' '" /></xsl:if></xsl:template>
-	<!-- These are only for the bibliography (?) -->
+	<!-- These are only for the bibliography, or scopecontent -->
 	<xsl:template match="head" mode="html">
 		<html:h5><xsl:value-of select="normalize-space(.)" /></html:h5>
 	</xsl:template>
@@ -1308,6 +1366,15 @@
 	</xsl:template>
 	<xsl:template match="date" mode="html">
 		<html:time><xsl:apply-templates mode="html" /></html:time>
+	</xsl:template>
+	<xsl:template match="note" mode="html">
+		<xsl:apply-templates mode="html" />
+	</xsl:template>
+	<!-- inner scopecontent generate div -->
+	<xsl:template match="scopecontent" mode="html">
+		<html:div>
+			<xsl:apply-templates mode="html" />
+		</html:div>
 	</xsl:template>
 	
 	<!-- ***** Date ***** -->

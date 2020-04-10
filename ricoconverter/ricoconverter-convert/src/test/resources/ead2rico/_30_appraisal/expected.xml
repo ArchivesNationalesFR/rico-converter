@@ -34,13 +34,15 @@
                 <rico:instantiates rdf:resource="recordResource/058220-top"/>
                 <!-- when there is both custodhist and appraisal, use one rico:history and generate a div for each with a HTML header, then p etc. Process custodhist first, then acqinfo, then processinfo, then appraisal-->
                 <rico:history rdf:parseType="Literal">
-                    <html:div xml:lang="fr">
-                        <html:h4>Historique de la conservation</html:h4>
-                        <html:p>blah blah</html:p>
-                    </html:div>
-                    <html:div xml:lang="fr">
-                         <html:h4>Informations sur l'évaluation</html:h4>
-                        <html:p>Lors du classement de ces archives, environ 6 mètres linéaires de documents ont été éliminés. Il s'agit de doubles et de documentation sans lien direct avec le fonds.</html:p>
+                	<html:div>
+	                    <html:div xml:lang="fr">
+	                        <html:h4>Historique de la conservation</html:h4>
+	                        <html:p>blah blah</html:p>
+	                    </html:div>
+	                    <html:div xml:lang="fr">
+	                         <html:h4>Informations sur l'évaluation</html:h4>
+	                        <html:p>Lors du classement de ces archives, environ 6 mètres linéaires de documents ont été éliminés. Il s'agit de doubles et de documentation sans lien direct avec le fonds.</html:p>
+	                    </html:div>
                     </html:div>
                 </rico:history> 
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>               

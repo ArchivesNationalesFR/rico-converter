@@ -35,14 +35,16 @@
                 <rico:instantiates rdf:resource="recordResource/058220-top"/>
                 <!-- when there is both custodhist and process info, use one rico:history and generate a div for each with a HTML header, then p etc. Process custodhist first-->
                 <rico:history rdf:parseType="Literal">
-                    <html:div xml:lang="fr">
-                        <html:h4>Historique de la conservation</html:h4>
-                        <html:p>blah blah</html:p>
-                    </html:div>
-                    <html:div xml:lang="fr">
-                        <html:h4>Informations sur le traitement</html:h4>
-                        <html:p>Le présent inventaire organise...</html:p>
-                        <html:p>Les indications entre guillemets...</html:p>
+                	<html:div>
+	                    <html:div xml:lang="fr">
+	                        <html:h4>Historique de la conservation</html:h4>
+	                        <html:p>blah blah</html:p>
+	                    </html:div>
+	                    <html:div xml:lang="fr">
+	                        <html:h4>Informations sur le traitement</html:h4>
+	                        <html:p>Le présent inventaire organise...</html:p>
+	                        <html:p>Les indications entre guillemets...</html:p>
+	                    </html:div>
                     </html:div>
                 </rico:history>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
