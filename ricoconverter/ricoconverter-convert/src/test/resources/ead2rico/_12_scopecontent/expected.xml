@@ -36,6 +36,7 @@
             </rico:Instantiation>
         </rico:hasInstantiation>
         <rico:includes rdf:resource="recordResource/058220-c-835pw5mwg-otyywby3qzqb" />
+        <rico:includes rdf:resource="recordResource/058220-1_3_12"/>
     </rico:RecordResource>
     <!-- c level -->
     <rico:RecordResource rdf:about="recordResource/058220-c-835pw5mwg-otyywby3qzqb">   
@@ -55,6 +56,20 @@
             <rico:Instantiation rdf:about="instantiation/058220-c-835pw5mwg-otyywby3qzqb-i1">
                 <rico:instantiates rdf:resource="recordResource/058220-c-835pw5mwg-otyywby3qzqb"/>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c-835pw5mwg-otyywby3qzqb"/>               
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+    </rico:RecordResource>
+    <rico:RecordResource rdf:about="recordResource/058220-1_3_12">   
+        <rico:includedIn rdf:resource="recordResource/058220-top"/>
+        <rico:scopeAndContent rdf:parseType="Literal">
+            <html:div xml:lang="fr">
+                <html:p>1. Entrée n° 5067 du 20 juillet 2005.</html:p>
+            </html:div>
+        </rico:scopeAndContent>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-1_3_12-i1">
+                <rico:instantiates rdf:resource="recordResource/058220-1_3_12"/>
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c-1_3_12"/>               
             </rico:Instantiation>
         </rico:hasInstantiation>
     </rico:RecordResource>

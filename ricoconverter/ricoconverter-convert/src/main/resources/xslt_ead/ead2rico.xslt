@@ -1367,6 +1367,9 @@
 	<xsl:template match="date" mode="html">
 		<html:time><xsl:apply-templates mode="html" /></html:time>
 	</xsl:template>
+	<xsl:template match="note" mode="html">
+		<xsl:apply-templates mode="html" />
+	</xsl:template>
 	
 	<!-- ***** Date ***** -->
 		
