@@ -6,6 +6,7 @@
     </eadheader>
     <archdesc>
     	<otherfindaid>
+    	    <!-- Case 1 : otherfindaid with only text (in a list structure)-->
     		<list>
     			<item>20170046 Fonds papier et photographique de l'association régionale d'information et d'actions musicales en Île-de-France (1975-2017).</item>
     		</list>
@@ -16,6 +17,7 @@
 		    <c id="c34fnm316ofc-27kf8gfnest" level="otherlevel">
 		    	<otherfindaid>
 		    		<!--<head>Texte d'entête possible</head>  absent des IR AN -->
+		    	    <!-- Case 2 : otherfindaid with p containing only text -->
 		    		<p>20090424/1-220, École nationale supérieure d'architecture de Paris La Villette, 1974-1988</p>
 		    		<p>20100558/1-11, École nationale supérieure d'architecture de Paris La Villette, 1990</p>
 		    		<p>20110268/1-16, École nationale supérieure d'architecture de Paris La Villette, 1969-1985</p>
@@ -29,7 +31,15 @@
 	    	<c id="N0004">
 	    		<otherfindaid>
 	    			<p altrender="links">
+	    			    <!-- case 3: ref role="IR" with archref/@href, containing the local id of a finding aid in the ANF information system - the name of the file begins with 'FRAN_IR'-->
 	    				<ref role="IR">19840277/1 <archref href="FRAN_IR_021298">Premier ministre ; Secrétariat général du gouvernement, Par l'intermédiaire du premier ministre ; secrétaire général du gouvernement (Monsieur Marceau Long) 1973-1975</archref></ref>
+	    			    <!-- case 4: ref role="ANX", with extref/@href, containing the local id of a PDF finding aid - the name of the file begins with 'FRAN_ANX' -->
+	    			    <ref role="ANX">Consulter l'inventaire <extref href="FRAN_ANX_011471.pdf">FRAN_ANX_011471.pdf</extref>
+	    			    </ref>
+	    			   <!-- case 5: ref role="web" with extref/@href, containing the complete URL of an external finding aid-->
+	    			    <ref role="web">
+	    			        <extref href="http://www.bnf.fr/blah">Consulter l'inventaire suivant, sur le site web de la BnF</extref>
+	    			    </ref>
 	    			</p>
 	    		</otherfindaid>
 	    	</c>
@@ -37,6 +47,7 @@
 	    	<c id="N0005">
 		    	<otherfindaid>
 		    		<p altrender="links">
+		    		    <!-- case 6: same as case 3 in fact. ref role="IR" with archref/@href, containing the local id of a segment of a finding aid in the ANF information system-->
 		    			<ref role="IR">FRAN_IR_002433 <archref href="FRAN_IR_002433#c-22jejddiz--1qegiixo0y7s9">Archives du Conseil général des Ponts-et-Chaussées et du Conseil des Travaux
 		    				publics (1750-2013)#5e section : Affaires d'aménagement et d'environnement.#20160476/141-20160476/150</archref>
 		    			</ref>
