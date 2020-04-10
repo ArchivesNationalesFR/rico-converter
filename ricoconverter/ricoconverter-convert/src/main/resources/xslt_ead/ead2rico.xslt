@@ -1345,7 +1345,7 @@
 	</xsl:template>
 	<!-- Note how the extra space is preserved within mixed-content -->
 	<xsl:template match="text()" mode="html"><xsl:value-of select="normalize-space(.)" /><xsl:if test="ends-with(., ' ') and not(position() = last())"><xsl:value-of select="' '" /></xsl:if></xsl:template>
-	<!-- These are only for the bibliography (?) -->
+	<!-- These are only for the bibliography, or scopecontent -->
 	<xsl:template match="head" mode="html">
 		<html:h5><xsl:value-of select="normalize-space(.)" /></html:h5>
 	</xsl:template>
@@ -1369,6 +1369,12 @@
 	</xsl:template>
 	<xsl:template match="note" mode="html">
 		<xsl:apply-templates mode="html" />
+	</xsl:template>
+	<!-- inner scopecontent generate div -->
+	<xsl:template match="scopecontent" mode="html">
+		<html:div>
+			<xsl:apply-templates mode="html" />
+		</html:div>
 	</xsl:template>
 	
 	<!-- ***** Date ***** -->
