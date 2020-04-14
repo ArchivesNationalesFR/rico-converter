@@ -1287,6 +1287,11 @@
 	
 	<xsl:template match="p[normalize-space(.)]" mode="html">
 		<xsl:choose>
+			<!-- If p contains a ref and only refs... -->
+			<xsl:when test="ref and not(*[local-name(.) != 'ref']) and not(text()[normalize-space()])">
+				<!-- it is ignored, the refs below will generate their own p -->
+				<xsl:apply-templates mode="html" />
+			</xsl:when>
 			<!-- if we have a list inside a p -->
 			<xsl:when test="list">
 				<xsl:for-each select="*|text()">
@@ -1333,16 +1338,6 @@
 	<xsl:template match="lb" mode="html">
 		<html:br />
 	</xsl:template>
-	<xsl:template match="ref" mode="html">
-		<xsl:apply-templates mode="html" />
-	</xsl:template>
-	<xsl:template match="archref" mode="html">
-		<html:a href="{ead2rico:URL-IRorUD(@href)}"><xsl:apply-templates mode="html" /></html:a>
-	</xsl:template>
-	<xsl:template match="extref" mode="html">
-		<!--  we resolve relative links to a base URL -->
-		<html:a href="{if(not(starts-with(@href, 'http'))) then concat($BASE_URL_FOR_RELATIVE_LINKS, @href) else @href}"><xsl:apply-templates mode="html" /></html:a>
-	</xsl:template>
 	<!-- Note how the extra space is preserved within mixed-content -->
 	<xsl:template match="text()" mode="html"><xsl:value-of select="normalize-space(.)" /><xsl:if test="ends-with(., ' ') and not(position() = last())"><xsl:value-of select="' '" /></xsl:if></xsl:template>
 	<!-- These are only for the bibliography, or scopecontent -->
@@ -1375,6 +1370,28 @@
 		<html:div>
 			<xsl:apply-templates mode="html" />
 		</html:div>
+	</xsl:template>
+	
+	<!-- a ref that is under a p that contains only refs -->
+	<xsl:template match="ref[parent::p[ref and not(*[local-name(.) != 'ref']) and not(text()[normalize-space()]) ]]" mode="html">
+		<html:p><xsl:apply-templates mode="html" /></html:p>
+	</xsl:template>
+	<!-- a normal ref not under a p with only refs -->
+	<xsl:template match="ref" mode="html">
+		<xsl:apply-templates mode="html" />
+	</xsl:template>
+	<xsl:template match="archref" mode="html">
+		<html:a href="{ead2rico:URL-IRorUD(@href)}"><xsl:apply-templates mode="html" /></html:a>
+	</xsl:template>
+	<xsl:template match="extref[ancestor::ref[@role = 'web' or @role = 'WEB']]" mode="html">
+		<!--  we resolve relative links to a base URL -->
+		<xsl:variable name="href" select="if(not(starts-with(@href, 'http'))) then concat($BASE_URL_FOR_RELATIVE_LINKS, @href) else @href" />
+		<html:a href="{$href}"><xsl:apply-templates mode="html" /></html:a>
+	</xsl:template>
+	<xsl:template match="extref[ancestor::ref[@role = 'ANX']]" mode="html">
+		<!--  we resolve relative links to a base URL -->
+		<xsl:variable name="href" select="if(not(starts-with(@href, 'http'))) then concat($BASE_URL_FOR_RELATIVE_LINKS, @href) else @href" />
+		<html:a href="{$href}"><xsl:apply-templates mode="html" /></html:a>
 	</xsl:template>
 	
 	<!-- ***** Date ***** -->
