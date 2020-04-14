@@ -1,12 +1,18 @@
-# EAC-CPF to RiC-O
+# RiC-O converter
 
-Tool to convert EAC-CPF XML files to RiC-O RDF files (Records in Context).
+A tool to convert EAC-CPF and EAD 2002 XML files to RDF datasets conforming to Records in Contexts Ontology (RiC-O).
+This repository includes the converter, some examples files and documentation.
 
 
 # References
 
-- EAC-CPF XML schema : https://eac.staatsbibliothek-berlin.de/
-- Records in Context conceptual model : https://www.ica.org/fr/egad-ric
-- RiC-O OWL implementation of RIC : https://www.ica.org/fr/elaboration-du-modele-conceptuel-records-in-contexts-conceptual-model-ric-cm-et-de-l-ontologie
+- Encoded Archival Context-Corporate Bodies, Persons, Families  (EAC-CPF XML schema): https://eac.staatsbibliothek-berlin.de/
+- Encoded Archival Description (EAD): https://www.loc.gov/ead/
+- Records in Contexts-Conceptual model (RiC-CM) latest public version: https://www.ica.org/sites/default/files/ric-cm-0.2_preview.pdf
+- Records in Contexts-Ontology (RiC-O) latest official release: https://www.ica.org/standards/RiC/ontology
+- Records in Contexts-Ontology (RiC-O) information web site: https://ica-egad.github.io/RiC-O/
+
+
+
 
 
