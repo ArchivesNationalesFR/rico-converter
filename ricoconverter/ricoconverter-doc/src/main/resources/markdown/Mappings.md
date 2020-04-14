@@ -16,3 +16,7 @@ An entry point and informal documentation of how the ricoconverter maps EAC-CPF 
 
 The precise and formal specifications are given in the [Unit Tests](UnitTests.html), under `unit-tests/eac2rico`.
 
+## Examples
+
+Input (XML) example files can be found under `input-ead` and `input-eac`.
+
