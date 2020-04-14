@@ -87,10 +87,18 @@
 		<xsl:value-of select="concat('activityType/', $source, '-', $authfilenumber)" />
 	</xsl:function>
 	
-	<xsl:function name="ead2rico:URI-RepresentationType">
+	<xsl:function name="ead2rico:URI-RepresentationOrCarrierType">
 		<xsl:param name="authfilenumber" />
 		<xsl:param name="source" />
-		<xsl:value-of select="concat('representationType/', $source, '-', $authfilenumber)" />
+		<xsl:choose>
+			<xsl:when test="$authfilenumber = 'd3nd9y3c6o-iu0j3xsmoisx' or $authfilenumber = 'd3nd9xpopj-ckdrv6ljeqeg'">
+				<xsl:value-of select="concat('representationType/', $source, '-', $authfilenumber)" />
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="concat('carrierType/', $source, '-', $authfilenumber)" />
+			</xsl:otherwise>
+		</xsl:choose>
+		
 	</xsl:function>
 	
 	<xsl:function name="ead2rico:URL-IRorUD">

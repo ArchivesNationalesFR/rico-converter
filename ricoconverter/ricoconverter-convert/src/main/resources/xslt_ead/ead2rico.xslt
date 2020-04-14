@@ -1240,10 +1240,10 @@
 	</xsl:template>
 	
 	<xsl:template match="physfacet[@type = 'd3nd9y3c6o-iu0j3xsmoisx' or @type = 'd3nd9xpopj-ckdrv6ljeqeg']" mode="instantiation">
-		<rico:hasRepresentationType rdf:resource="{ead2rico:URI-RepresentationType(@type, @source)}"/>   
+		<rico:hasRepresentationType rdf:resource="{ead2rico:URI-RepresentationOrCarrierType(@type, @source)}"/>   
 	</xsl:template>
 	<xsl:template match="physfacet[not(@type = 'd3nd9y3c6o-iu0j3xsmoisx' or @type = 'd3nd9xpopj-ckdrv6ljeqeg')]" mode="instantiation">
-		<rico:hasCarrierType rdf:resource="{ead2rico:URI-RepresentationType(@type, @source)}"/>   
+		<rico:hasCarrierType rdf:resource="{ead2rico:URI-RepresentationOrCarrierType(@type, @source)}"/>   
 	</xsl:template>
 
 	<!--  ***** altformavail ***** -->
