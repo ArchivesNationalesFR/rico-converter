@@ -311,7 +311,7 @@
 				<rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($instantiationId)}">
 					<rico:instantiates rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
 					<!-- references to other digital copies -->
-					<xsl:apply-templates select="daogrp" mode="reference" />
+					<xsl:apply-templates select="daogrp | did/daogrp" mode="reference" />
 					<!--  Recurse down. Note that origination is still processed here to match inner persname/corpname/famname -->
 					<xsl:apply-templates select="node() except (daogrp | custodhist | acqinfo | processinfo | appraisal)" mode="instantiation" />
 					
@@ -431,7 +431,7 @@
 				<rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($instantiationId)}">
 					<rico:instantiates rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
 					<!-- references to other digital copies -->
-					<xsl:apply-templates select="daogrp" mode="reference" />
+					<xsl:apply-templates select="daogrp | did/daogrp" mode="reference" />
 					<!--  recurse down. Note that origination is still processed here to match inner persname/corpname/famname -->
 					<xsl:apply-templates select="node() except (daogrp | custodhist | acqinfo | processinfo | appraisal)" mode="instantiation" />
 					
