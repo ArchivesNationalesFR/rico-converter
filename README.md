@@ -9,7 +9,7 @@ The converter is written mostly using XSLT stylesheets, wrapped in a Java comman
 
 # License
 
-This project is licensed under the terms of the MIT license (see LICENSE.md).
+This project is licensed under the terms of the MIT license (see the [license file](LICENSE.md)).
 
 
 # Download
@@ -20,6 +20,7 @@ See the "Release" section to download an executable package of the converter.
 # Documentation
 
 Download a release of the converter, unzip, and open `documentation/index.html` to get comprehensive documentation on how to run RiC-O converter.
+Markdown source of the HTML documentation can be found under [ricoconverter/ricoconverter-doc/src/main/resources/markdown](ricoconverter/ricoconverter-doc/src/main/resources/markdown) (start with index.md).
 
 
 # References
