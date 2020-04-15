@@ -19,7 +19,7 @@
     <description>Release package of RiC-O Converter</description>
 
     <build>
-        <finalName>ricoconverter</finalName>
+        <finalName>ricoconverter-${project.version}</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
