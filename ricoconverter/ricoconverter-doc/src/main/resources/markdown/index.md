@@ -40,8 +40,8 @@ RiC-O converter is published under license ...
 
 ##Contact
 
-If you have question on RiC-O converter, you can contact :
+If you have questions on RiC-O converter, you can contact :
 
-- [Florence Clavaud](mailto:florence.clavaud@culture.gouv.fr) at Archives Nationales de France, who leads the development of the RiC-O ontology;
+- [Florence Clavaud](mailto:florence.clavaud@culture.gouv.fr) at Archives Nationales de France, who leads the development of RiC-O ontology;
 - [Pauline Charbonnier](mailto:pauline.charbonnier@culture.gouv.fr) at Archives Nationales de France;
 - [Thomas Francart](mailto:thomas.francart@sparna.fr) at [Sparna](http://sparna.fr), developper of RiC-O converter;
