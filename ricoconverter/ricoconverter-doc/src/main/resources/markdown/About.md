@@ -38,5 +38,7 @@ Of course, French archives, which have encoding practices quite similar to those
 
 You can access some slides (in French) on RiC-O Converter (presented on January 28, 2020), [here](https://f.hypotheses.org/wp-content/blogs.dir/2167/files/2020/02/20200128_4_RiCOConverter.pdf).
 
+If you or your institution are a member of ICA, you also can find an article on RiC-O Converter in [Flash (the ICA biannual newspaper, dated April 2020) n° 39](https://www.ica.org/en/flash).
+
 About the ANF projects: you can get more information (in French) [here](https://f.hypotheses.org/wp-content/blogs.dir/2167/files/2020/02/20200128_3_RiCauxAN_EnjeuxPremieresRealisations.pdf). You can also read this article (in French) written by Florence Clavaud: Transformer les métadonnées des Archives nationales en graphe de données : enjeux et premières réalisations, in _Les Archives nationales, une refondation pour le XXIe siècle, La Gazette des Archives_, n°254 (2019-2), Association des Archivistes Français, Paris, 2019, p. 59-88.
 
