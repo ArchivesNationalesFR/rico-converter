@@ -41,10 +41,30 @@
          </c>
          <!-- FRAN_IR_53810.xml-->
          <c id="123456">
+            
             <daogrp>
                <daoloc href="FRAN_0109_00814_L"/>
                <daoloc href="FRAN_0109_00813_L"/>
             </daogrp>
+            <!-- a second daogrp, child of c, like the one above. It may happen. -->
+            <daogrp>
+               <daodesc><p>une autre légende</p></daodesc>
+               <daoloc href="FRAN_0118_280_L.msp"/>
+            </daogrp>
+         </c>
+         <c id="i7899">
+            <!-- daogrp can also be a child of did -->
+            <did>
+               <daogrp>
+                  <daoloc href="FRAN_0109_00814_L"/>
+                  <daoloc href="FRAN_0109_00813_L"/>
+               </daogrp>
+               <daogrp>
+                  <daodesc><p>une autre légende</p></daodesc>
+                  <daoloc href="FRAN_0118_280_L.msp"/>
+               </daogrp>
+            </did>
+            
          </c>
       </dsc>
    </archdesc>
