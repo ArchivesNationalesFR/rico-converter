@@ -35,7 +35,7 @@ The documentation is divided in these sections :
 
 ##Licence
 
-RiC-O converter is published under license ...
+RiC-O converter is licensed under [MIT License](LICENSE.html).
 
 
 ##Contact
