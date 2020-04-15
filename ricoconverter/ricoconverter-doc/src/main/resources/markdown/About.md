@@ -23,9 +23,9 @@ In order to move forward to a far larger scale, the Archives nationales de Franc
 - be __configurable__;
 - be __precisely documented__;
 - be __open source and released under a free license__, to that it can be modified by any institution or person which would need to do so.
-- 
 
-The ANF therefore worked for a year with a small private company specializing in semantic web, information management and knowledge engineering, __[Sparna](http://www.sparna.fr/)__. __RiC-O Converter is the result of this project__. __The Department of digital innovation of the French Ministry of Culture funded and supported this project__, as part of the [semantic roadmap of the ministry](https://www.enssib.fr/bibliotheque-numerique/notices/64776-feuille-de-route-strategique-metadonnees-culturelles-et-transition-web-3-0) for which it is responsible.
+
+The ANF therefore worked for a year with a small private company specializing in semantic web, information management and knowledge engineering, __[Sparna](http://www.sparna.fr/)__. __RiC-O Converter is the result of this project__. __The Department of digital innovation of the French Ministry of Culture funded and supported this project__, as part of the [semantic roadmap of the ministry](https://www.enssib.fr/bibliotheque-numerique/documents/64776-feuille-de-route-strategique-metadonnees-culturelles-et-transition-web-3-0.pdf) for which it is responsible.
 
 The ANF now have converted all their EAD and EAC-CPF files metadata to RDF; and they are updating and enhancing the RDF resulting files. They also have converted to RDF (the main reference models being RiC-O and SKOS) the whole of their controlled vocabularies and lists of places. As they wish to add some semantic modules to their archival information system, they are  now exploring some leads through several projects, in order to define a global strategy.
 
