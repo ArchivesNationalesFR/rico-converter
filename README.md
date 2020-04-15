@@ -14,6 +14,8 @@ This repository includes the converter, some examples files and documentation.
 - Records in Contexts-Ontology (RiC-O) information web site: https://ica-egad.github.io/RiC-O/
 
 
+# License
 
+This project is licensed under the terms of the MIT license (see LICENSE.md).
 
 
