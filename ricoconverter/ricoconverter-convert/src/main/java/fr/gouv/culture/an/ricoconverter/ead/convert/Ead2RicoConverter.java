@@ -284,7 +284,15 @@ public class Ead2RicoConverter {
 											.withTest(Input.fromFile(outputFile).build());
 							
 							// ignore some elements in general cases
-							if(!f.getName().contains("origination") && !f.getName().contains("repository") && !f.getName().contains("FindingAid")) {
+							if(
+									!f.getName().contains("origination")
+									&&
+									!f.getName().contains("repository")
+									&&
+									!f.getName().contains("FindingAid")
+									&&
+									!f.getName().contains("eadheader")
+							) {
 								builder.withNodeFilter(node -> {						
 									boolean comparison = (
 											node.getNodeType() != Node.ELEMENT_NODE
@@ -297,6 +305,9 @@ public class Ead2RicoConverter {
 													node.getLocalName().equals("FindingAid")
 													||
 													node.getLocalName().equals("seeAlso")
+													||
+													node.getLocalName().equals("regulatedBy")
+													
 											)
 									);
 									return comparison;
