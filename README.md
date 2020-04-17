@@ -14,7 +14,7 @@ This project is licensed under the terms of the CeCILL-B license (equivalent to 
 
 # Download
 
-__[Download the latest release of RiC-O converter](/ArchivesNationalesFR/rico-converter/releases/latest)__.
+__[Download the latest release of RiC-O converter](https://github.com/ArchivesNationalesFR/rico-converter/releases/latest)__.
 
 See the "Releases" section to select a specific version for download.
 
