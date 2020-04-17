@@ -44,4 +44,4 @@ If you have questions on RiC-O converter, you can contact :
 
 - [Florence Clavaud](mailto:florence.clavaud@culture.gouv.fr) at [Archives nationales de France](http://www.archives-nationales.culture.gouv.fr/), who also leads the development of RiC-O ontology;
 - [Pauline Charbonnier](mailto:pauline.charbonnier@culture.gouv.fr) at [Archives nationales de France](http://www.archives-nationales.culture.gouv.fr/);
-- [Thomas Francart](mailto:thomas.francart@sparna.fr) at [Sparna](http://sparna.fr), developper of RiC-O converter.
+- [Thomas Francart](mailto:thomas.francart@sparna.fr) at [Sparna](http://sparna.fr), developper of RiC-O converter ([blog](http://blog.sparna.fr)).

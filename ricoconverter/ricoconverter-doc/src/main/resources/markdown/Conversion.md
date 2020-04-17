@@ -23,7 +23,8 @@ The EAC to RiC-O conversion is driven by a set of XSLT under the `xslt_eac` fold
 		- `membershipRelations`
 		- `workRelations`
 
-_Note that, even when no relations of a given type are generated, the corresponding file is still generated, with an empty RDF content._
+	_Note that, even when no relations of a given type are generated, the corresponding file is still generated, with an empty RDF content._
+
 3. **Deduplicate relations** :  once relations of the same type are grouped in the same file, the XSLT `eac2rico-deduplicate.xslt` is in charge of removing duplicated relations in this file (based on their URI), so that the same relation appears only once;
 
 ### EAC to RiC-O conversion without grouping and deduplication

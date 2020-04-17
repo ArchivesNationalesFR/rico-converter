@@ -9,7 +9,7 @@ An entry point and informal documentation of how the ricoconverter maps EAD 2002
 
 The precise and formal specifications are given in the [Unit Tests](UnitTests.html), under `unit-tests/ead2rico`.
 
-The following is a list of EAD 2002 elements that RiC-O Converter does not process, because this was considered irrelevant in in the RDF world:
+The following is a list of EAD 2002 elements that RiC-O Converter does not process, because this was considered irrelevant in the RDF world:
 
 - frontmatter;
 - runner;

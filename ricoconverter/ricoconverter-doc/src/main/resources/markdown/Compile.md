@@ -22,6 +22,6 @@ Simply run the following commands :
 	> mvn clean install
 
 
-The result of the compilation is generated under `ricoconverter-release/target/ricoconverter-release.zip`.
+The result of the compilation is generated under `ricoconverter-release/target/ricoconverter-release-{version}.zip`.
 
 Note that the compilation also runs the unit tests. To skip them, run `mvn -DskipTests clean install` instead of `mvn clean install`.
