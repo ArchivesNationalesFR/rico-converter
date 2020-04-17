@@ -35,7 +35,7 @@ The documentation is divided in these sections :
 
 ##Licence
 
-RiC-O converter is licensed under [MIT License](LICENSE.html).
+This project is licensed under the terms of the CeCILL-B license (equivalent to MIT license and close to a public domain license) (see the [license file in english](license.txt) or [in french](licence.txt)).
 
 
 ##Contact

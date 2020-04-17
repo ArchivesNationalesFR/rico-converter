@@ -9,7 +9,7 @@ The converter is written mostly using XSLT stylesheets, wrapped in a Java comman
 
 # License
 
-This project is licensed under the terms of the MIT license (see the [license file](LICENSE.md)).
+This project is licensed under the terms of the CeCILL-B license (equivalent to MIT license and close to a public domain license) (see the [license file in english](license.txt) or [in french](licence.txt)).
 
 
 # Download
