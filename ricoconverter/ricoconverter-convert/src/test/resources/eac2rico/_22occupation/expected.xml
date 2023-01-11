@@ -24,7 +24,7 @@
          <rico:PerformanceRelation rdf:about="performanceRelation/005205-d699msj02xm-19qbb7wdtto3j">
             <rico:performanceRelationHasTarget rdf:resource="agent/005205"/>
             <rico:performanceRelationHasSource>
-               <rico:Activity>
+               <rico:Activity rdf:nodeID="_Activity-a">
                   <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005205-d699msj02xm-19qbb7wdtto3j"/>
                   <!-- note that the following assertion is possible only with RiC-O v0.2, where OccupationType has become a subclass of ActivityType-->
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
@@ -32,11 +32,12 @@
             </rico:performanceRelationHasSource>
          </rico:PerformanceRelation>
       </rico:agentIsTargetOfPerformanceRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-a" />
       <rico:agentIsTargetOfPerformanceRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/005205-d3nyub73ic-1g5es55lb2lpf-19880101-20031231">
             <rico:performanceRelationHasTarget rdf:resource="agent/005205"/>
             <rico:performanceRelationHasSource>
-               <rico:Activity>
+               <rico:Activity rdf:nodeID="_Activity-b">
                   <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005205-d3nyub73ic-1g5es55lb2lpf-19880101-20031231"/>
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3nyub73ic-1g5es55lb2lpf"/>
                </rico:Activity>
@@ -48,5 +49,6 @@
             </rico:descriptiveNote>
          </rico:PerformanceRelation>
       </rico:agentIsTargetOfPerformanceRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-b" />
    </rico:Agent>
 </rdf:RDF>

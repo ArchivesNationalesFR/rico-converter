@@ -24,18 +24,19 @@
          <rico:PerformanceRelation rdf:about="performanceRelation/005205-d3nyugtbte--13rem7tfg1o1y">
             <rico:performanceRelationHasTarget rdf:resource="agent/005205"/>
             <rico:performanceRelationHasSource>
-               <rico:Activity>
+               <rico:Activity rdf:nodeID="_Activity-a">
                   <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005205-d3nyugtbte--13rem7tfg1o1y"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugtbte--13rem7tfg1o1y"/>
                </rico:Activity>
             </rico:performanceRelationHasSource>
          </rico:PerformanceRelation>
       </rico:agentIsTargetOfPerformanceRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-a" />
       <rico:agentIsTargetOfPerformanceRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/005205-d5bhvikvro-1p99atu7o3qwy-19090520-*">
             <rico:performanceRelationHasTarget rdf:resource="agent/005205"/>
             <rico:performanceRelationHasSource>
-               <rico:Activity>
+               <rico:Activity rdf:nodeID="_Activity-b">
                   <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005205-d5bhvikvro-1p99atu7o3qwy-19090520-*"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvikvro-1p99atu7o3qwy"/>
                </rico:Activity>
@@ -43,11 +44,12 @@
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1909-05-20</rico:beginningDate>
          </rico:PerformanceRelation>
       </rico:agentIsTargetOfPerformanceRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-b" />
       <rico:agentIsTargetOfPerformanceRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/005205-d5bhvikvro-1p99atu7o3qwy-19180523-19870523">
             <rico:performanceRelationHasTarget rdf:resource="agent/005205"/>
             <rico:performanceRelationHasSource>
-               <rico:Activity>
+               <rico:Activity rdf:nodeID="_Activity-c">
                   <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005205-d5bhvikvro-1p99atu7o3qwy-19180523-19870523"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvikvro-1p99atu7o3qwy"/>
                </rico:Activity>
@@ -59,5 +61,6 @@
             </rico:descriptiveNote>
          </rico:PerformanceRelation>
       </rico:agentIsTargetOfPerformanceRelation>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-c" />
    </rico:Agent>
 </rdf:RDF>

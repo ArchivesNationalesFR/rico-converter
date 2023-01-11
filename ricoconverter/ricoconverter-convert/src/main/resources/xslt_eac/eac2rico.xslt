@@ -592,8 +592,7 @@
 	<xsl:template match="eac:functions">
 		<xsl:apply-templates />
 	</xsl:template>
-	<xsl:template match="eac:function">
-		
+	<xsl:template match="eac:function">		
 		<rico:agentIsTargetOfPerformanceRelation>
 			<rico:PerformanceRelation>
 				<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-PerformanceRelation($recordId, eac:term/@vocabularySource, eac:dateRange/eac:fromDate/@standardDate, eac:dateRange/eac:toDate/@standardDate )" /></xsl:call-template>
@@ -601,7 +600,7 @@
 					<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
 				</rico:performanceRelationHasTarget>
 				<rico:performanceRelationHasSource>
-					<rico:Activity>
+					<rico:Activity rdf:nodeID="_Activity-{encode-for-uri(.)}">
 						<rico:activityIsSourceOfPerformanceRelation>
 							<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-PerformanceRelation($recordId, eac:term/@vocabularySource, eac:dateRange/eac:fromDate/@standardDate, eac:dateRange/eac:toDate/@standardDate )" /></xsl:call-template>
 						</rico:activityIsSourceOfPerformanceRelation>
@@ -613,6 +612,7 @@
 				<xsl:apply-templates />
 			</rico:PerformanceRelation>
 		</rico:agentIsTargetOfPerformanceRelation>
+		<rico:performsOrPerformed rdf:nodeID="_Activity-{encode-for-uri(.)}" />
 	</xsl:template>
 	
 	<!-- *** Occupations / Activities *** -->
@@ -627,7 +627,7 @@
 					<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
 				</rico:performanceRelationHasTarget>
 				<rico:performanceRelationHasSource>
-					<rico:Activity>
+					<rico:Activity rdf:nodeID="_Activity-{encode-for-uri(.)}">
 						<rico:activityIsSourceOfPerformanceRelation>
 							<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-PerformanceRelation($recordId, eac:term/@vocabularySource, eac:dateRange/eac:fromDate/@standardDate, eac:dateRange/eac:toDate/@standardDate )" /></xsl:call-template>
 						</rico:activityIsSourceOfPerformanceRelation>
@@ -641,6 +641,7 @@
 				<xsl:apply-templates />
 			</rico:PerformanceRelation>
 		</rico:agentIsTargetOfPerformanceRelation>
+		<rico:performsOrPerformed rdf:nodeID="_Activity-{encode-for-uri(.)}" />
 	</xsl:template>
 	
 	<!-- *** LegalStatuses *** -->
