@@ -5,49 +5,49 @@
          xmlns:dc="http://purl.org/dc/elements/1.1/">
    <rico:Record rdf:about="record/005205">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
-      <rico:describes rdf:resource="agent/005205"/>
+      <rico:describesOrDescribed rdf:resource="agent/005205"/>
       <rico:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-03-23</rico:creationDate>
       <rico:lastModificationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-28</rico:lastModificationDate>  
-   <rico:affectedBy>
+   <rico:isOrWasAffectedBy>
       <rico:Activity>
       	<rico:name xml:lang="fr">Dérivation (Import_SIA)</rico:name>
          <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
             >2013-04-23</rico:date>
       </rico:Activity>
-   </rico:affectedBy>
-      <rico:affectedBy>
+   </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
          <rico:Activity>
          	<rico:name xml:lang="fr">Création (par Alexis DOUCHIN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
                >2013-03-23</rico:date>
             <rico:descriptiveNote xml:lang="fr">ISNI inexistant. Notice d’autorité BnF inexistante. Notice Wikipédia inexistante.</rico:descriptiveNote>
          </rico:Activity>
-      </rico:affectedBy>   
-   <rico:affectedBy>
+      </rico:isOrWasAffectedBy>   
+   <rico:isOrWasAffectedBy>
       <rico:Activity>
       	 <rico:name xml:lang="fr">Révision (par Mission.referentiels MISSION.REFERENTIELS)</rico:name>
          <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-04-28</rico:date>
       </rico:Activity>
-   </rico:affectedBy>
-   <rico:affectedBy>
+   </rico:isOrWasAffectedBy>
+   <rico:isOrWasAffectedBy>
       <rico:Activity>
          <rico:name xml:lang="fr">Modification (par Easter Bunny)</rico:name> 
          <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-04-01</rico:date>
          <rico:descriptiveNote xml:lang="fr">Easter Bunny fake event</rico:descriptiveNote>
       </rico:Activity>
-   </rico:affectedBy>
+   </rico:isOrWasAffectedBy>
       <rico:hasInstantiation>
          <rico:Instantiation rdf:about="instantiation/005205">
-            <rico:instantiates rdf:resource="record/005205"/>
+            <rico:isInstantiationOf rdf:resource="record/005205"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_005205</rico:identifier>
-            <rico:heldBy rdf:resource="agent/005061"/>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005205"/> 
          </rico:Instantiation>
       </rico:hasInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/005205">
    	  <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
-      <rico:describedBy rdf:resource="record/005205"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/005205"/>
    </rico:Agent>
 </rdf:RDF>

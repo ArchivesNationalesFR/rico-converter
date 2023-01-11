@@ -7,30 +7,30 @@
          xmlns:dc="http://purl.org/dc/elements/1.1/">
    <rico:Record rdf:about="record/050571">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
-      <rico:describes rdf:resource="agent/050571"/>
+      <rico:describesOrDescribed rdf:resource="agent/050571"/>
       <rico:hasInstantiation>
          <rico:Instantiation rdf:about="instantiation/050571">
-            <rico:instantiates rdf:resource="record/050571"/>
+            <rico:isInstantiationOf rdf:resource="record/050571"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050571</rico:identifier>
-            <rico:heldBy rdf:resource="agent/005061"/>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050571"/> 
          </rico:Instantiation>
       </rico:hasInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050571">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
-      <rico:describedBy rdf:resource="record/050571"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/050571"/>
       <rdfs:label xml:lang="fr">The entity</rdfs:label>
-      <rico:hasAgentName>
+      <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/050571-The%20entity">
             <rdfs:label xml:lang="fr">The entity</rdfs:label>
             <rico:textualValue xml:lang="fr">The entity</rico:textualValue>
-            <rico:isAgentNameOf rdf:resource="agent/050571"/>
-            <rico:regulatedBy rdf:resource="rule/rl002"/>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/050571"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl002"/>
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
-      </rico:hasAgentName>
+      </rico:hasOrHadAgentName>
       <rico:personIsSourceOfAgentSubordinationRelation rdf:resource="agentHierarchicalRelation/050571-111111"/>
       <rico:personIsTargetOfAgentSubordinationRelation rdf:resource="agentHierarchicalRelation/999999-050571"/>
    </rico:Agent>
