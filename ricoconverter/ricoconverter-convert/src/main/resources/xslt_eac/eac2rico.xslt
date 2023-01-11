@@ -684,6 +684,9 @@
             <xsl:apply-templates />
          	</rico:TypeRelation>
       </rico:thingIsTargetOfTypeRelation>
+	  <rico:hasOrHadCategory>
+		<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-LegalStatus(eac:term/@vocabularySource)" /></xsl:call-template>
+	  </rico:hasOrHadCategory>
 		
 	</xsl:template>
 
