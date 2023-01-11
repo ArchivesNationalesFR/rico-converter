@@ -489,7 +489,8 @@
 						<rico:mandateRelationHasSource rdf:resource="{$ruleId}"/>           	
 		            	<xsl:apply-templates />
 					</rico:MandateRelation>
-				</rico:agentIsTargetOfMandateRelation>			
+				</rico:agentIsTargetOfMandateRelation>
+				<rico:authorizedBy rdf:resource="{$ruleId}" />
 			</xsl:when>
 			<!-- Unknown reference in the referential -->
 			<xsl:otherwise>			
@@ -497,14 +498,15 @@
 					<rico:MandateRelation>
 						<rico:mandateRelationHasTarget rdf:resource="{$agentUri}"/>
 						<rico:mandateRelationHasSource> 
-							<rico:Mandate>
+							<rico:Mandate rdf:nodeID="_Mandate-{generate-id()}">
 								<rico:title><xsl:value-of select="eac:citation/text()" /></rico:title>
 								<rdfs:seeAlso rdf:resource="{eac:citation/@xlink:href}" />
 							</rico:Mandate>
 						</rico:mandateRelationHasSource>
 		            	<xsl:apply-templates />
 					</rico:MandateRelation>
-				</rico:agentIsTargetOfMandateRelation>			
+				</rico:agentIsTargetOfMandateRelation>
+				<rico:authorizedBy rdf:nodeID="_Mandate-{generate-id()}" />		
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
@@ -514,13 +516,14 @@
 			<rico:MandateRelation>
 				<rico:mandateRelationHasTarget rdf:resource="{$agentUri}"/>
             	<rico:mandateRelationHasSource>
-            		<rico:Mandate>
+            		<rico:Mandate rdf:nodeID="_Mandate-{generate-id()}">
             			<rico:title><xsl:value-of select="eac:citation/text()" /></rico:title>
             		</rico:Mandate>
             	</rico:mandateRelationHasSource>
             	<xsl:apply-templates />
 			</rico:MandateRelation>
 		</rico:agentIsTargetOfMandateRelation>
+		<rico:authorizedBy rdf:nodeID="_Mandate-{generate-id()}" />
 	</xsl:template>
 	<xsl:template match="eac:mandate[not(eac:citation) and eac:descriptiveNote[count(eac:p) = 1]]">
 		
@@ -547,7 +550,8 @@
 						            	<!-- Don't process the descriptiveNote as normal -->
 						            	<xsl:apply-templates select="$theMandate/*[local-name() != descriptiveNote]" />
 									</rico:MandateRelation>
-								</rico:agentIsTargetOfMandateRelation>			
+								</rico:agentIsTargetOfMandateRelation>		
+								<rico:authorizedBy rdf:resource="{$ruleId}" />	
 							</xsl:when>
 							<!-- Unknown reference in the referential -->
 							<xsl:otherwise>			
@@ -555,7 +559,7 @@
 									<rico:MandateRelation>
 										<rico:mandateRelationHasTarget rdf:resource="{$agentUri}"/>
 										<rico:mandateRelationHasSource> 
-											<rico:Mandate>
+											<rico:Mandate rdf:nodeID="_Mandate-{encode-for-uri(.)}">
 												<rico:title><xsl:value-of select="$theDescriptiveNote" /></rico:title>
 												<rdfs:seeAlso rdf:resource="{.}" />
 											</rico:Mandate>
@@ -563,7 +567,8 @@
 						            	<!-- Don't process the descriptiveNote as normal -->
 						            	<xsl:apply-templates select="$theMandate/*[local-name() != descriptiveNote]" />
 									</rico:MandateRelation>
-								</rico:agentIsTargetOfMandateRelation>			
+								</rico:agentIsTargetOfMandateRelation>
+								<rico:authorizedBy rdf:nodeID="_Mandate-{encode-for-uri(.)}" />		
 							</xsl:otherwise>
 						</xsl:choose>
 				  </xsl:matching-substring>
