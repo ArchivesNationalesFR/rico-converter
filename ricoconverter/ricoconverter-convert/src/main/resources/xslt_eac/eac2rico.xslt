@@ -836,16 +836,14 @@
 	
 	<!-- cpfRelation cpfRelationType ='temporal-later' -->
 	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'temporal-later' and document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml'))]">
-        <rico:agentIsSourceOfAgentTemporalRelation>
-        	<xsl:call-template name="rdf-resource">
-        		<xsl:with-param name="uri" select="eac2rico:URI-AgentTemporalRelation(
+        <xsl:variable name="relationUri" select="eac2rico:URI-AgentTemporalRelation(
         			$recordId,
         			@xlink:href,
         			eac:dateRange/eac:fromDate/@standardDate,
-        			eac:dateRange/eac:toDate/@standardDate )"
-        		/>	
-        	</xsl:call-template>
-        </rico:agentIsSourceOfAgentTemporalRelation>
+        			eac:dateRange/eac:toDate/@standardDate )" />
+
+		<rico:agentIsSourceOfAgentTemporalRelation rdf:resource="{$relationUri}" />
+		<rico:hasSuccessor rdf:resource="{eac2rico:URI-AgentExternal(@xlink:href, document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml')))}" />
 	</xsl:template>	
 	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'temporal-later' and document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml'))]" mode="relations">
        	<rico:AgentTemporalRelation>
@@ -874,16 +872,14 @@
 
 	<!-- cpfRelation cpfRelationType ='temporal-earlier' -->
 	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'temporal-earlier' and document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml'))]">
-        <rico:agentIsTargetOfAgentTemporalRelation>
-        	<xsl:call-template name="rdf-resource">
-        		<xsl:with-param name="uri" select="eac2rico:URI-AgentTemporalRelation(
+        <xsl:variable name="relationUri" select="eac2rico:URI-AgentTemporalRelation(
         			@xlink:href,
         			$recordId,
         			eac:dateRange/eac:fromDate/@standardDate,
-        			eac:dateRange/eac:toDate/@standardDate )"
-        		/>	
-        	</xsl:call-template>
-        </rico:agentIsTargetOfAgentTemporalRelation>
+        			eac:dateRange/eac:toDate/@standardDate )" />
+		
+		<rico:agentIsTargetOfAgentTemporalRelation rdf:resource="{$relationUri}" />
+		<rico:isSuccessorOf rdf:resource="{eac2rico:URI-AgentExternal(@xlink:href, document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml')))}" />
 	</xsl:template>	
 	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'temporal-earlier' and document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml'))]" mode="relations">
        	<rico:AgentTemporalRelation>
