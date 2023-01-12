@@ -94,6 +94,8 @@
 			<isTargetOfProperty>rico:agentIsConnectedToAgentRelation</isTargetOfProperty>
 			<isSourceOfProperty>rico:agentIsConnectedToAgentRelation</isSourceOfProperty>
 			<label>Relation associative</label>
+			<shortcutIfSubjectIsSourceOfRelation>rico:isAgentAssociatedWithAgent</shortcutIfSubjectIsSourceOfRelation>
+			<shortcutIfSubjectIsTargetOfRelation>rico:isAgentAssociatedWithAgent</shortcutIfSubjectIsTargetOfRelation>
 		</AgentRelation>
 		<LeadershipRelation>
 			<baseType>rico:AgentHierarchicalRelation</baseType>
@@ -103,6 +105,8 @@
 			<isTargetOfProperty>rico:groupIsTargetOfLeadershipRelation</isTargetOfProperty>
 			<isSourceOfProperty>rico:personIsSourceOfLeadershipRelation</isSourceOfProperty>
 			<label>Relation de direction (leadership)</label>
+			<shortcutIfSubjectIsSourceOfRelation>rico:isOrWasLeaderOf</shortcutIfSubjectIsSourceOfRelation>
+			<shortcutIfSubjectIsTargetOfRelation>rico:hasOrHadLeader</shortcutIfSubjectIsTargetOfRelation>
 		</LeadershipRelation>
 		<AgentSubordinationRelation>
 			<baseType>rico:AgentHierarchicalRelation</baseType>
@@ -112,6 +116,8 @@
 			<isTargetOfProperty>rico:personIsTargetOfAgentSubordinationRelation</isTargetOfProperty>
 			<isSourceOfProperty>rico:personIsSourceOfAgentSubordinationRelation</isSourceOfProperty>
 			<label>Relation hiérarchique (de subordination)</label>
+			<shortcutIfSubjectIsSourceOfRelation>rico:</shortcutIfSubjectIsSourceOfRelation>
+			<shortcutIfSubjectIsTargetOfRelation>rico:</shortcutIfSubjectIsTargetOfRelation>
 		</AgentSubordinationRelation>
 		<MembershipRelation>
 			<baseType>rico:MembershipRelation</baseType>
@@ -122,6 +128,8 @@
 			<isTargetOfProperty>rico:personIsTargetOfMembershipRelation</isTargetOfProperty>
 			<isSourceOfProperty>rico:groupIsSourceOfMembershipRelation</isSourceOfProperty>
 			<label>Relation d'appartenance</label>
+			<shortcutIfSubjectIsSourceOfRelation>rico:hasOrHadMember</shortcutIfSubjectIsSourceOfRelation>
+			<shortcutIfSubjectIsTargetOfRelation>rico:isOrWasMemberOf</shortcutIfSubjectIsTargetOfRelation>
 		</MembershipRelation>
 		<WorkRelation>
 			<baseType>rico:WorkRelation</baseType>
@@ -132,6 +140,8 @@
 			<isTargetOfProperty>rico:agentHasWorkRelation</isTargetOfProperty>
 			<isSourceOfProperty>rico:agentHasWorkRelation</isSourceOfProperty>
 			<label>Relation professionnelle (de travail)</label>
+			<shortcutIfSubjectIsSourceOfRelation>rico:hasOrHadWorkRelationWith</shortcutIfSubjectIsSourceOfRelation>
+			<shortcutIfSubjectIsTargetOfRelation>rico:hasOrHadWorkRelationWith</shortcutIfSubjectIsTargetOfRelation>
 		</WorkRelation>
 	</xsl:variable>
 	
@@ -301,6 +311,8 @@
 			<isTargetOfProperty>rico:personHasFamilyRelation</isTargetOfProperty>
 			<isSourceOfProperty>rico:personHasFamilyRelation</isSourceOfProperty>
 			<label>Relation familiale</label>
+			<shortcutIfSubjectIsSourceOfRelation>rico:hasFamilyAssociationWith</shortcutIfSubjectIsSourceOfRelation>
+			<shortcutIfSubjectIsTargetOfRelation>rico:hasFamilyAssociationWith</shortcutIfSubjectIsTargetOfRelation>
 		</FamilyRelation>
 		<MembershipRelation>
 			<type>rico:MembershipRelation</type>
@@ -309,6 +321,8 @@
 			<isTargetOfProperty>rico:personIsTargetOfMembershipRelation</isTargetOfProperty>
 			<isSourceOfProperty>rico:groupIsSourceOfMembershipRelation</isSourceOfProperty>
 			<label>Relation d'appartenance</label>
+			<shortcutIfSubjectIsSourceOfRelation>rico:hasOrHadMember</shortcutIfSubjectIsSourceOfRelation>
+			<shortcutIfSubjectIsTargetOfRelation>rico:isOrWasMemberOf</shortcutIfSubjectIsTargetOfRelation>
 		</MembershipRelation>
 		<AgentRelation>
 			<type>rico:AgentToAgentRelation</type>
@@ -317,6 +331,8 @@
 			<isTargetOfProperty>rico:agentIsConnectedToAgentRelation</isTargetOfProperty>
 			<isSourceOfProperty>rico:agentIsConnectedToAgentRelation</isSourceOfProperty>
 			<label>Relation</label>
+			<shortcutIfSubjectIsSourceOfRelation>rico:isAgentAssociatedWithAgent</shortcutIfSubjectIsSourceOfRelation>
+			<shortcutIfSubjectIsTargetOfRelation>rico:isAgentAssociatedWithAgent</shortcutIfSubjectIsTargetOfRelation>
 		</AgentRelation>
 	</xsl:variable>
 
