@@ -747,6 +747,13 @@
         		/>	
         	</xsl:call-template>
         </xsl:element>
+
+		<!-- shortcut property -->
+		<xsl:element name="{$HIERARCHICAL_RELATION_CONFIG/*[local-name() = normalize-space($type)]/shortcutIfSubjectIsSourceOfRelation}">
+        	<xsl:call-template name="rdf-resource">
+        		<xsl:with-param name="uri" select="eac2rico:URI-AgentExternal(@xlink:href, document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml')))"/>	
+        	</xsl:call-template>
+        </xsl:element>
 	</xsl:template>	
 	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'hierarchical-child' and document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml'))]" mode="relations">
        	<rico:AgentHierarchicalRelation>
@@ -799,6 +806,12 @@
         		/>	
         	</xsl:call-template>
        	</xsl:element>
+		<!-- shortcut property -->
+		<xsl:element name="{$HIERARCHICAL_RELATION_CONFIG/*[local-name() = normalize-space($type)]/shortcutIfSubjectIsTargetOfRelation}">
+        	<xsl:call-template name="rdf-resource">
+        		<xsl:with-param name="uri" select="eac2rico:URI-AgentExternal(@xlink:href, document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml')))"/>	
+        	</xsl:call-template>
+        </xsl:element>
 	</xsl:template>	
 	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'hierarchical-parent' and document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml'))]" mode="relations">
        	<rico:AgentHierarchicalRelation>
@@ -1167,7 +1180,7 @@
 		         </rico:PlaceRelation>
 		      </rico:thingIsTargetOfPlaceRelation>
 		      
-		      <!-- Additionnally, generate the direct link hasLocation to the Place -->
+		      <!-- Additionnally, generate the direct link hasOrHadLocation to the Place -->
 		      <rico:hasOrHadLocation>
 					<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-Place(eac:placeEntry[@localType='nomLieu']/text())" /></xsl:call-template>
 			  </rico:hasOrHadLocation>

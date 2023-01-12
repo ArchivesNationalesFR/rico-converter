@@ -33,8 +33,11 @@
       </rico:hasOrHadAgentName>
       <rico:hasLegalStatus rdf:resource="http://data.culture.fr/thesaurus/resource/ark:/67717/7168c7ef-ca9d-4e7a-b915-bd5069766e3e"/>
       <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/999999-005205-19470101-19641231"/>
+      <rico:isOrWasSubdivisionOf rdf:resource="agent/999999" />
       <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005205-111111-19470101-19641231"/>
+      <rico:hasOrHadSubdivision rdf:resource="agent/111111" />
       <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/222222-005205"/>
+      <rico:isOrWasSubdivisionOf rdf:resource="agent/222222" />
    </rico:Agent>
    <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/999999-005205-19470101-19641231">
    	  <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>
