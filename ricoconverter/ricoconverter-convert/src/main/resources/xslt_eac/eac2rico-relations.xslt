@@ -116,8 +116,8 @@
 			<isTargetOfProperty>rico:personIsTargetOfAgentSubordinationRelation</isTargetOfProperty>
 			<isSourceOfProperty>rico:personIsSourceOfAgentSubordinationRelation</isSourceOfProperty>
 			<label>Relation hiérarchique (de subordination)</label>
-			<shortcutIfSubjectIsSourceOfRelation>rico:</shortcutIfSubjectIsSourceOfRelation>
-			<shortcutIfSubjectIsTargetOfRelation>rico:</shortcutIfSubjectIsTargetOfRelation>
+			<shortcutIfSubjectIsSourceOfRelation>rico:TO_BE_CHANGED</shortcutIfSubjectIsSourceOfRelation>
+			<shortcutIfSubjectIsTargetOfRelation>rico:TO_BE_CHANGED</shortcutIfSubjectIsTargetOfRelation>
 		</AgentSubordinationRelation>
 		<MembershipRelation>
 			<baseType>rico:MembershipRelation</baseType>

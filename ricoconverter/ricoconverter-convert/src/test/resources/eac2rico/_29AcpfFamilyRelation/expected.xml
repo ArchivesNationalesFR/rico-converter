@@ -32,7 +32,9 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:personHasFamilyRelation rdf:resource="familyRelation/009280-050571"/>
+      <rico:hasFamilyAssociationWith rdf:resource="agent/009280" />
       <rico:personIsTargetOfMembershipRelation rdf:resource="membershipRelation/050172-050571"/>
+      <rico:isOrWasMemberOf rdf:resource="agent/050172" />
    </rico:Agent>
    
    <rico:FamilyRelation rdf:about="familyRelation/009280-050571">

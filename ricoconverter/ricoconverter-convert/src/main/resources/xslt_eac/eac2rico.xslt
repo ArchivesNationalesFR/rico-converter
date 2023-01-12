@@ -955,6 +955,37 @@
         		/>	
         	</xsl:call-template>
         </xsl:element>
+
+		<!-- shortcut property -->
+		<xsl:variable name="shortcutElementName">
+			<xsl:choose>
+				<xsl:when test="$agentUri = $sourceEntity">
+					<xsl:value-of select="$ASSOCIATIVE_RELATION_CONFIG/*[local-name() = normalize-space($type)]/shortcutIfSubjectIsSourceOfRelation" />
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="$ASSOCIATIVE_RELATION_CONFIG/*[local-name() = normalize-space($type)]/shortcutIfSubjectIsTargetOfRelation" />
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:variable name="agentURI">
+			<xsl:choose>
+				<xsl:when test="$agentUri = $sourceEntity">
+					<!-- if this one was the source, pickup the target as shortcut value -->
+					<xsl:value-of select="$targetEntity" />
+				</xsl:when>
+				<xsl:otherwise>
+					<!-- if this one was the target, pickup the source as shortcut value -->
+					<xsl:value-of select="$sourceEntity" />
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<!-- Generates shortcut directly to the other connected agent -->
+		<xsl:element name="{$shortcutElementName}">
+        	<xsl:call-template name="rdf-resource">
+        		<xsl:with-param name="uri" select="$agentURI" />	
+        	</xsl:call-template>
+        </xsl:element>
+
 	</xsl:template>	
 	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'associative' and document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml'))]" mode="relations">
       	<!-- determine type, source and target of the relation -->
@@ -1044,6 +1075,36 @@
         			eac:dateRange/eac:fromDate/@standardDate,
         			eac:dateRange/eac:toDate/@standardDate )"
         		/>	
+        	</xsl:call-template>
+        </xsl:element>
+
+		<!-- shortcut property -->
+		<xsl:variable name="shortcutElementName">
+			<xsl:choose>
+				<xsl:when test="$agentUri = $sourceEntity">
+					<xsl:value-of select="$FAMILY_RELATION_CONFIG/*[local-name() = normalize-space($type)]/shortcutIfSubjectIsSourceOfRelation" />
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="$FAMILY_RELATION_CONFIG/*[local-name() = normalize-space($type)]/shortcutIfSubjectIsTargetOfRelation" />
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:variable name="agentURI">
+			<xsl:choose>
+				<xsl:when test="$agentUri = $sourceEntity">
+					<!-- if this one was the source, pickup the target as shortcut value -->
+					<xsl:value-of select="$targetEntity" />
+				</xsl:when>
+				<xsl:otherwise>
+					<!-- if this one was the target, pickup the source as shortcut value -->
+					<xsl:value-of select="$sourceEntity" />
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<!-- Generates shortcut directly to the other connected agent -->
+		<xsl:element name="{$shortcutElementName}">
+        	<xsl:call-template name="rdf-resource">
+        		<xsl:with-param name="uri" select="$agentURI" />	
         	</xsl:call-template>
         </xsl:element>
 	</xsl:template>	
