@@ -25,12 +25,12 @@ public class ArgumentsTestEad {
 	
 	@Parameter(
 			names = { "xslt" },
-			description = "Relative path to the XSLT file to be used to convert EAD to RiC-O. If not set, defaults to 'xslt_ead/ead2rico.xslt'.",
+			description = "Relative path to the XSLT file to be used to convert EAD to RiC-O. If not set, defaults to 'xslt_ead/main.xslt'.",
 			converter = FileConverter.class,
 			required = false,
 			validateWith = ExistingFileValidator.class
 	)
-	private File xslt = new File("xslt_ead/ead2rico.xslt");
+	private File xslt = new File("xslt_ead/main.xslt");
 
 	public File getUnitTests() {
 		return unitTests;

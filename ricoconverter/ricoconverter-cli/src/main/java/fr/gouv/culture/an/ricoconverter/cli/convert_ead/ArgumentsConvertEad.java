@@ -44,12 +44,12 @@ public class ArgumentsConvertEad {
 	
 	@Parameter(
 			names = { "xslt" },
-			description = "Relative path to the XSLT file to be used to convert EAD to RiC-O. If not set, defaults to 'xslt_ead/ead2rico.xslt'.",
+			description = "Relative path to the XSLT file to be used to convert EAD to RiC-O. If not set, defaults to 'xslt_ead/main.xslt'.",
 			converter = FileConverter.class,
 			required = false,
 			validateWith = ExistingFileValidator.class
 	)
-	protected File xslt = new File("xslt_ead/ead2rico.xslt");
+	protected File xslt = new File("xslt_ead/main.xslt");
 
 	@Parameter(
 			names = { "split" },
