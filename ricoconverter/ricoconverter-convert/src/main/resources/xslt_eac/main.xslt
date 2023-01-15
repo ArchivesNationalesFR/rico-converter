@@ -18,24 +18,24 @@
 	<xsl:output indent="yes" method="xml" />
 
 	<!-- 
-		This is the entry point stylesheet to convert EAD to RiC-O.
-		By default this XSLT does nothing by itself, and imports ead2rico.xslt which contains
+		This is the entry point stylesheet to convert EAC to RiC-O.
+		By default this XSLT does nothing by itself, and imports eac2rico.xslt which contains
 		all the conversion logic.
 		This stylesheet can be used to overwrite the behavior of certain templates from the
-		ead2rico.xslt stylesheet (template rules in an imported stylesheet have lower import precedence than template rules in the importing stylesheet).
+		eac2rico.xslt stylesheet (template rules in an imported stylesheet have lower import precedence than template rules in the importing stylesheet).
 	-->
-	<!-- Import ead2rico stylesheet -->
-	<xsl:import href="ead2rico.xslt" />
+	<!-- Import eac2rico stylesheet -->
+	<xsl:import href="eac2rico.xslt" />
 		
-	<!-- HERE : you can overwrite certain templates from ead2rico.xslt -->
-	<!-- For example, you could decide that "dimensions" mathes rico:carrierExtent with a <span>
-	instead of a <p> in the ead2rico stylesheet : -->
+	<!-- HERE : you can overwrite certain templates -->
+	<!-- For example, you could decide that cpfRelation to wikipedia yield a rdfs:comment with
+	a piece of text instead of a rdfs:seeAlso : -->
 
 	<!--
-	<xsl:template match="dimensions[normalize-space(.)]" mode="instantiation">
-		<rico:carrierExtent rdf:parseType="Literal">
-            <html:span xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></html:span>
-        </rico:carrierExtent>
+	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'identity']" mode="description">
+        <xsl:if test="contains(@xlink:href, 'wikipedia.org')">
+        	<rdfs:comment>Link to Wikipedia : <xsl:value-of select="@xlink:href" /></rdfs:comment>
+        </xsl:if>
 	</xsl:template>
 	-->
 
