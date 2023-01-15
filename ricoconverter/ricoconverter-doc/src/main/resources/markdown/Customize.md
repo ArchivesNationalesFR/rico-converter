@@ -14,7 +14,7 @@ Adjust the URI policy in `xslt_eac/eac2rico-uris.xslt` to customize how URIs are
 
 ### Adjust conversion logic
 
-The EAC to RiC-O conversion is driven by the XSLTs in the folder `xslt_eac`. To customize the EAC/CPF conversion, edit in this folder the main XSLT file under `eac2rico.xslt`; in addition, if you need to adjust something in the relations processing, you may need to adjust `eac2rico-relations.xslt` and `eac2rico-keywords.xml`.
+The EAC to RiC-O conversion is driven by the XSLTs in the folder `xslt_eac`. To customize the EAC/CPF conversion, edit in this folder the main XSLT file under `main.xslt`; this XSLT does nothing by itself and allows you to overwrite the behavior of `eac2rico.xslt`; in addition, if you need to adjust something in the relations processing, you may need to adjust `eac2rico-relations.xslt` and `eac2rico-keywords.xml`.
 
 When you adjust something in the XSLT, add new unit tests under `unit-tests/eac2rico`, or adjust existing unit tests, and [run the unit tests command](UnitTests.html) to validate your modification and check nothing is broken.
 
@@ -32,6 +32,6 @@ Adjust the URI policy in `xslt_ead/ead2rico-uris.xslt` to customize how URIs are
 
 ### Adjust conversion logic
 
-The EAC to RiC-O conversion is driven by the XSLTs in the folder `xslt_ead`. To customize the EAD conversion, edit in this folder the main XSLT file under `ead2rico.xslt`.
+The EAC to RiC-O conversion is driven by the XSLTs in the folder `xslt_ead`. To customize the EAD conversion, edit in this folder the main XSLT file under `main.xslt`. This XSLT does nothing by itself and allows you to overwrite the behavior of `ead2rico.xslt`
 
 When you adjust something in the XSLT, add new unit tests under `unit-tests/ead2rico`, or adjust existing unit tests, and [run the unit tests command](UnitTests.html) to validate your modification and check nothing is broken.
