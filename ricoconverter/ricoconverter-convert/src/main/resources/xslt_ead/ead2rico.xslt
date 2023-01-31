@@ -61,7 +61,7 @@
 		
 		<!--  FindingAid object -->
 		<rico:Record rdf:about="{ead2rico:URI-FindingAid($faId)}">	
-			<rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
+			<rico:hasOrHadDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
 	
 			<!--  Turn the attributes into isRegulatedBy pointing to Rules -->
 			<xsl:if test="@countryencoding = 'iso3166-1'">
