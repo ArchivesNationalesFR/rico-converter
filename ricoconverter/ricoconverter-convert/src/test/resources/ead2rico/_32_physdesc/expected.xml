@@ -9,7 +9,7 @@
     xml:base="http://data.archives-nationales.culture.gouv.fr/">
     <rico:Record rdf:about="record/058220">
         <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
-        <rico:describes rdf:resource="recordResource/058220-top"/>
+        <rico:describes rdf:resource="recordResource/top-058220"/>
       <rico:hasInstantiation>
          <rico:Instantiation rdf:about="instantiation/058220-i1">
             <rico:instantiates rdf:resource="record/058220"/>
@@ -21,13 +21,13 @@
       </rico:hasInstantiation>        
     </rico:Record>
     <!-- archdesc level -->
-    <rico:RecordResource rdf:about="recordResource/058220-top">
+    <rico:RecordResource rdf:about="recordResource/top-058220">
         <rico:describedBy rdf:resource="record/058220"/>
 
         <!-- do not process physdesc here-->
         <rico:hasInstantiation>
-            <rico:Instantiation rdf:about="instantiation/058220-top-i1">
-                <rico:instantiates rdf:resource="recordResource/058220-top"/>
+            <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+                <rico:instantiates rdf:resource="recordResource/top-058220"/>
                 <rico:physicalCharacteristics rdf:parseType="Literal">
                     <html:p xml:lang="fr">(1 carton (494AP/1)) 0,1 m.l.</html:p>
                 </rico:physicalCharacteristics>
@@ -46,7 +46,7 @@
     </rico:RecordResource>
     <!-- c level -->
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
-        <rico:includedIn rdf:resource="recordResource/058220-top"/>
+        <rico:includedIn rdf:resource="recordResource/top-058220"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">
                 <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
@@ -74,7 +74,7 @@
         </rico:hasInstantiation>
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnast">
-        <rico:includedIn rdf:resource="recordResource/058220-top"/>
+        <rico:includedIn rdf:resource="recordResource/top-058220"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnast-i1">
                 <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnast"/>
@@ -93,7 +93,7 @@
        
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnust">
-        <rico:includedIn rdf:resource="recordResource/058220-top"/>
+        <rico:includedIn rdf:resource="recordResource/top-058220"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnust-i1">
                 <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnust"/>
@@ -111,7 +111,7 @@
         
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnost">
-        <rico:includedIn rdf:resource="recordResource/058220-top"/>
+        <rico:includedIn rdf:resource="recordResource/top-058220"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnost-i1">
                 <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnost"/>
@@ -133,7 +133,7 @@
         
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnyst">
-        <rico:includedIn rdf:resource="recordResource/058220-top"/>
+        <rico:includedIn rdf:resource="recordResource/top-058220"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnyst-i1">
                 <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnyst"/>
@@ -153,7 +153,7 @@
         </rico:hasInstantiation>        
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-emptyExtent">
-        <rico:includedIn rdf:resource="recordResource/058220-top"/>
+        <rico:includedIn rdf:resource="recordResource/top-058220"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-emptyExtent-i1">
                 <rico:instantiates rdf:resource="recordResource/058220-emptyExtent"/>

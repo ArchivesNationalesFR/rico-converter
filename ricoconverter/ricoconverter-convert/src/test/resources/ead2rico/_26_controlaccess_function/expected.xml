@@ -9,7 +9,7 @@
     xml:base="http://data.archives-nationales.culture.gouv.fr/">
     <rico:Record rdf:about="record/058220">
         <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
-        <rico:describes rdf:resource="recordResource/058220-top"/>
+        <rico:describes rdf:resource="recordResource/top-058220"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-i1">
                 <rico:instantiates rdf:resource="record/058220"/>
@@ -20,7 +20,7 @@
             </rico:Instantiation>
         </rico:hasInstantiation>
     </rico:Record>
-    <rico:RecordResource rdf:about="recordResource/058220-top">
+    <rico:RecordResource rdf:about="recordResource/top-058220">
         <rico:describedBy rdf:resource="record/058220"/>
       <rico:isDocumentationOf>
          <rico:Activity>
@@ -34,8 +34,8 @@
       </rico:isDocumentationOf>
    
         <rico:hasInstantiation>
-             <rico:Instantiation rdf:about="instantiation/058220-top-i1">
-                 <rico:instantiates rdf:resource="recordResource/058220-top"/>   
+             <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+                 <rico:instantiates rdf:resource="recordResource/top-058220"/>   
                  <!--do not process controlaccess/function here-->
                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
              </rico:Instantiation>
@@ -44,7 +44,7 @@
     </rico:RecordResource>
     <!-- c level -->
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
-        <rico:includedIn rdf:resource="recordResource/058220-top"/>
+        <rico:includedIn rdf:resource="recordResource/top-058220"/>
       <rico:isDocumentationOf>
          <rico:Activity>
             <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyug261d--1cyxwnocz7hzo"/>

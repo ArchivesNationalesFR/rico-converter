@@ -9,7 +9,7 @@
     xml:base="http://data.archives-nationales.culture.gouv.fr/">
     <rico:Record rdf:about="record/058220">
     	<rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
-        <rico:describes rdf:resource="recordResource/058220-top"/>
+        <rico:describes rdf:resource="recordResource/top-058220"/>
 	      <rico:hasInstantiation>
 	         <rico:Instantiation rdf:about="instantiation/058220-i1">
 	            <rico:instantiates rdf:resource="record/058220"/>
@@ -21,13 +21,13 @@
 	      </rico:hasInstantiation>
     </rico:Record>
     <!-- archdesc level -->
-    <rico:RecordResource rdf:about="recordResource/058220-top">    
+    <rico:RecordResource rdf:about="recordResource/top-058220">    
         <rico:describedBy rdf:resource="record/058220"/>
         <rico:title xml:lang="fr">Archives des musées nationaux, -les musées nationaux pendant la Seconde Guerre Mondiale et l'évacuation des œuvres (série R)</rico:title>   
         <rdfs:label xml:lang="fr">Archives des musées nationaux, -les musées nationaux pendant la Seconde Guerre Mondiale et l'évacuation des œuvres (série R)</rdfs:label>
         <rico:hasInstantiation>
-            <rico:Instantiation rdf:about="instantiation/058220-top-i1">
-                <rico:instantiates rdf:resource="recordResource/058220-top"/>
+            <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+                <rico:instantiates rdf:resource="recordResource/top-058220"/>
                 <rico:title xml:lang="fr">Archives des musées nationaux, -les musées nationaux pendant la Seconde Guerre Mondiale et l'évacuation des œuvres (série R)</rico:title>   
                 <rdfs:label xml:lang="fr">Archives des musées nationaux, -les musées nationaux pendant la Seconde Guerre Mondiale et l'évacuation des œuvres (série R)</rdfs:label>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
@@ -38,7 +38,7 @@
     </rico:RecordResource>
     <!-- c level -->
     <rico:RecordResource rdf:about="recordResource/058220-c-25s2lche6kz-qfignk48spf8">
-    	<rico:includedIn rdf:resource="recordResource/058220-top"/>
+    	<rico:includedIn rdf:resource="recordResource/top-058220"/>
         <rico:title xml:lang="fr">Organisation : plans d'évacuation, premiers projets</rico:title>   
         <rdfs:label xml:lang="fr">Organisation : plans d'évacuation, premiers projets</rdfs:label>
         <rico:hasInstantiation>
@@ -52,7 +52,7 @@
     </rico:RecordResource>
     
     <rico:RecordResource rdf:about="recordResource/058220-c-2vzyex71j63-5dbz66jnzlaa">
-    	<rico:includedIn rdf:resource="recordResource/058220-top"/>
+    	<rico:includedIn rdf:resource="recordResource/top-058220"/>
         <rico:title xml:lang="fr">"Amberieux en Dombes"</rico:title>   
         <rdfs:label xml:lang="fr">"Amberieux en Dombes"</rdfs:label>
         <rico:hasInstantiation>

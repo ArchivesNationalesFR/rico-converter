@@ -9,7 +9,7 @@
     xml:base="http://data.archives-nationales.culture.gouv.fr/">
     <rico:Record rdf:about="record/058220">
     	  <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
-        <rico:describes rdf:resource="recordResource/058220-top"/>
+        <rico:describes rdf:resource="recordResource/top-058220"/>
 	      <rico:hasInstantiation>
 	         <rico:Instantiation rdf:about="instantiation/058220-i1">
 	            <rico:instantiates rdf:resource="record/058220"/>
@@ -21,7 +21,7 @@
 	      </rico:hasInstantiation>
     </rico:Record>
     <!-- archdesc level -->
-    <rico:RecordResource rdf:about="recordResource/058220-top">    
+    <rico:RecordResource rdf:about="recordResource/top-058220">    
         <rico:describedBy rdf:resource="record/058220"/>
         <rico:scopeAndContent rdf:parseType="Literal">
             <html:div xml:lang="fr">
@@ -30,8 +30,8 @@
             </html:div>
         </rico:scopeAndContent>
         <rico:hasInstantiation>
-            <rico:Instantiation rdf:about="instantiation/058220-top-i1">
-                <rico:instantiates rdf:resource="recordResource/058220-top"/>
+            <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+                <rico:instantiates rdf:resource="recordResource/top-058220"/>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>            
             </rico:Instantiation>
         </rico:hasInstantiation>
@@ -40,7 +40,7 @@
     </rico:RecordResource>
     <!-- c level -->
     <rico:RecordResource rdf:about="recordResource/058220-c-835pw5mwg-otyywby3qzqb">   
-        <rico:includedIn rdf:resource="recordResource/058220-top"/>
+        <rico:includedIn rdf:resource="recordResource/top-058220"/>
         <rico:scopeAndContent rdf:parseType="Literal">
             <html:div xml:lang="fr">
                 <html:p>1</html:p>
@@ -64,7 +64,7 @@
         </rico:hasInstantiation>
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-1_3_12">   
-        <rico:includedIn rdf:resource="recordResource/058220-top"/>
+        <rico:includedIn rdf:resource="recordResource/top-058220"/>
         <rico:scopeAndContent rdf:parseType="Literal">
             <html:div xml:lang="fr">
                 <html:p>1. Entrée n° 5067 du 20 juillet 2005.</html:p>

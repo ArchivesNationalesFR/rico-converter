@@ -9,7 +9,7 @@
     xml:base="http://data.archives-nationales.culture.gouv.fr/">
     <rico:Record rdf:about="record/058220">
         <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid"/>
-        <rico:describes rdf:resource="recordResource/058220-top"/>
+        <rico:describes rdf:resource="recordResource/top-058220"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-i1">
                 <rico:instantiates rdf:resource="record/058220"/>
@@ -20,7 +20,7 @@
             </rico:Instantiation>
         </rico:hasInstantiation>
     </rico:Record>
-    <rico:RecordResource rdf:about="recordResource/058220-top">
+    <rico:RecordResource rdf:about="recordResource/top-058220">
         <rico:describedBy rdf:resource="record/058220"/>
         <rico:title xml:lang="fr">Titre comprend un geogname : Corbonod</rico:title>   
         <rdfs:label xml:lang="fr">Titre comprend un geogname : Corbonod</rdfs:label>
@@ -30,8 +30,8 @@
         <rico:hasSubject rdf:resource="place/FRAN_RI_005-d3ntxekh7m-15nddn7svylpg"/>
         <!-- do not process geogname if it has no authfilenumber attribute -->
         <rico:hasInstantiation>
-             <rico:Instantiation rdf:about="instantiation/058220-top-i1">
-                 <rico:instantiates rdf:resource="recordResource/058220-top"/>
+             <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+                 <rico:instantiates rdf:resource="recordResource/top-058220"/>
                  <rico:title xml:lang="fr">Titre comprend un geogname : Corbonod</rico:title>   
                  <rdfs:label xml:lang="fr">Titre comprend un geogname : Corbonod</rdfs:label>
                  <rico:title xml:lang="fr">Titre comprend un geogname sans authfilenumber : Trifouilli</rico:title>   
@@ -44,7 +44,7 @@
     </rico:RecordResource>
     <!-- c controlaccess/geogname -->
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
-        <rico:includedIn rdf:resource="recordResource/058220-top"/>
+        <rico:includedIn rdf:resource="recordResource/top-058220"/>
         <rico:hasSubject rdf:resource="place/FRAN_RI_005-d3ntcoltno-1qp8irxkrrkjx"/>
         <rico:hasSubject rdf:resource="place/FRAN_RI_005-d3ntxekh7m-15nddn7svylpg"/>
         <rico:hasInstantiation>
@@ -69,7 +69,7 @@
     </rico:RecordResource>
     <!-- c unititle/geogname -->
     <rico:RecordResource rdf:about="recordResource/058220-c2vzyex76ypt-1d197pd5bylhj">
-        <rico:includedIn rdf:resource="recordResource/058220-top"/>
+        <rico:includedIn rdf:resource="recordResource/top-058220"/>
         <rico:title xml:lang="fr">Titre comprend un geogname : Corbonod</rico:title>   
         <rdfs:label xml:lang="fr">Titre comprend un geogname : Corbonod</rdfs:label>
         <rico:hasSubject rdf:resource="place/FRAN_RI_005-d3ntcoltno-1qp8irxkrrkjx"/>

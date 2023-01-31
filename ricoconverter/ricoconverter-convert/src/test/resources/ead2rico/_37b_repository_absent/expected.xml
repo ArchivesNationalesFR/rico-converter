@@ -10,7 +10,7 @@
     <rico:Record rdf:about="record/058220">
         <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
         <rico:regulatedBy rdf:resource="rule/rl009"/>
-        <rico:describes rdf:resource="recordResource/058220-top"/>
+        <rico:describes rdf:resource="recordResource/top-058220"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-i1">
                 <rico:instantiates rdf:resource="record/058220"/>
@@ -22,12 +22,12 @@
             </rico:Instantiation>
         </rico:hasInstantiation>
     </rico:Record>
-    <rico:RecordResource rdf:about="recordResource/058220-top">
+    <rico:RecordResource rdf:about="recordResource/top-058220">
         <rico:describedBy rdf:resource="record/058220"/> 
         <rico:heldBy rdf:resource="agent/005061"/>
         <rico:hasInstantiation>
-             <rico:Instantiation rdf:about="instantiation/058220-top-i1">
-                 <rico:instantiates rdf:resource="recordResource/058220-top"/>
+             <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+                 <rico:instantiates rdf:resource="recordResource/top-058220"/>
                  <rico:heldBy rdf:resource="agent/005061"/>
                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
              </rico:Instantiation>

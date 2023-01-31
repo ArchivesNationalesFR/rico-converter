@@ -32,13 +32,13 @@
          </rico:AgentName>
       </rico:hasAgentName>
       <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/111111-005205"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/111111-top"/>
+      <rico:isProvenanceOf rdf:resource="recordResource/top-111111"/>
       <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057306-c-grmqcmjabh-1fkw1foh8y5qu-005205"/>
       <rico:isProvenanceOf rdf:resource="recordResource/057306-c-grmqcmjabh-1fkw1foh8y5qu"/>
       <!-- nothing else here ; no RDF output for the third case ; just output a warning-->
    </rico:Agent>
    <rico:AgentOriginationRelation rdf:about="agentOriginationRelation/111111-005205">
-      <rico:agentOriginationRelationHasSource rdf:resource="recordResource/111111-top"/>
+      <rico:agentOriginationRelationHasSource rdf:resource="recordResource/top-111111"/>
       <rico:agentOriginationRelationHasTarget rdf:resource="agent/005205"/>
    </rico:AgentOriginationRelation>
    

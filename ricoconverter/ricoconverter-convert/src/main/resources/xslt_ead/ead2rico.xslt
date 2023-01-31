@@ -767,7 +767,7 @@
 		<xsl:variable name="recordResourceId">
 			<xsl:call-template name="recordResourceId">
 				<xsl:with-param name="faId" select="$otherFaId" />
-				<!-- This will insert '-top' if recordResourceId is empty -->
+				<!-- This will insert 'top-' if recordResourceId is empty -->
 				<xsl:with-param name="recordResourceId" select="if(contains(@href, '#')) then substring-after(@href, '#') else ''" />
 			</xsl:call-template>
 		</xsl:variable>
@@ -811,7 +811,7 @@
 		<xsl:variable name="recordResourceId">
 			<xsl:call-template name="recordResourceId">
 				<xsl:with-param name="faId" select="$otherFaId" />
-				<!-- This will insert '-top' if recordResourceId is empty -->
+				<!-- This will insert 'top-' if recordResourceId is empty -->
 				<xsl:with-param name="recordResourceId" select="if(contains(@href, '#')) then substring-after(@href, '#') else ''" />
 			</xsl:call-template>
 		</xsl:variable>

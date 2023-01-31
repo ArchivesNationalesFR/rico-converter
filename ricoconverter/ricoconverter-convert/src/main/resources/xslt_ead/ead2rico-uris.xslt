@@ -118,7 +118,7 @@
 		<xsl:param name="recordResourceId" />
 		
         <xsl:value-of
-            select="concat($faId, '-', (if ($recordResourceId) then $recordResourceId else 'top') )"
+            select="concat((if ($recordResourceId) then '' else 'top-'), $faId, (if ($recordResourceId) then concat('-', $recordResourceId) else '') )"
         />		
 	</xsl:template>
 	

@@ -9,7 +9,7 @@
     xml:base="http://data.archives-nationales.culture.gouv.fr/">
     <rico:Record rdf:about="record/058220">
     	<rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid"/>
-        <rico:describes rdf:resource="recordResource/058220-top"/>
+        <rico:describes rdf:resource="recordResource/top-058220"/>
 	      <rico:hasInstantiation>
 	         <rico:Instantiation rdf:about="instantiation/058220-i1">
 	            <rico:instantiates rdf:resource="record/058220"/>
@@ -21,11 +21,11 @@
 	      </rico:hasInstantiation>
     </rico:Record>
     <!-- archdesc level -->
-    <rico:RecordResource rdf:about="recordResource/058220-top">
+    <rico:RecordResource rdf:about="recordResource/top-058220">
         <rico:describedBy rdf:resource="record/058220"/>
         <rico:hasInstantiation>
-            <rico:Instantiation rdf:about="instantiation/058220-top-i1">
-                <rico:instantiates rdf:resource="recordResource/058220-top"/>
+            <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+                <rico:instantiates rdf:resource="recordResource/top-058220"/>
                 <rico:history rdf:parseType="Literal">
                     <html:div xml:lang="fr">
                         <html:h4>Historique de la conservation</html:h4>
@@ -39,7 +39,7 @@
     </rico:RecordResource>
     <!-- c level -->
     <rico:RecordResource rdf:about="recordResource/058220-c-25s2lche6kz-qfignk48spf8">
-    	<rico:includedIn rdf:resource="recordResource/058220-top"/>
+    	<rico:includedIn rdf:resource="recordResource/top-058220"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c-25s2lche6kz-qfignk48spf8-i1">
                 <rico:instantiates rdf:resource="recordResource/058220-c-25s2lche6kz-qfignk48spf8"/>
