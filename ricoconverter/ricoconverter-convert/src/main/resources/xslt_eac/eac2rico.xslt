@@ -648,7 +648,7 @@
 				<xsl:value-of select="eac2rico:warning($recordId, 'MISSING_VOCABULARYSOURCE_ON_LEGAL_STATUS', ./eac:term/text())" />
 			</xsl:when>
 			<xsl:otherwise>
-				<rico:hasLegalStatus><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-LegalStatus(eac:term/@vocabularySource)" /></xsl:call-template></rico:hasLegalStatus>		
+				<rico:hasOrHadLegalStatus><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-LegalStatus(eac:term/@vocabularySource)" /></xsl:call-template></rico:hasOrHadLegalStatus>		
 			</xsl:otherwise>
 		</xsl:choose>
 		
