@@ -5,7 +5,7 @@
    xmlns:dc="http://purl.org/dc/elements/1.1/">
    <!-- FC a discuter : on pourrait aussi utiliser html:p systématiquement ici, comme dans le cas où on a sourceEntry contenant descriptiveNote contenant p, uniquement dans le but d'homégénéiser la sortie rico:source-->
    <rico:Record rdf:about="record/005205">
-      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
+      <rico:hasOrHadDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describes rdf:resource="agent/005205"/>
       <rico:source xml:lang="fr">Journal officiel de la République française</rico:source>
       <rico:hasSource rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb135724950"/>
