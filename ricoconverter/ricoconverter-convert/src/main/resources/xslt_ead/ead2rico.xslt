@@ -1001,7 +1001,27 @@
 		<xsl:apply-templates />
 	</xsl:template>
 	<xsl:template match="language[@langcode]">
-		<rico:hasLanguage rdf:resource="{ead2rico:URI-Language(@langcode)}"/>
+		<xsl:choose>
+			<xsl:when test="ead2rico:isRicoRecordLevel(../../../@level)">
+				<!-- Record : always hasOrHadLanguage -->
+				<rico:hasOrHadLanguage rdf:resource="{ead2rico:URI-Language(@langcode)}"/>
+			</xsl:when>
+			<xsl:when test="ead2rico:isRicoRecordSetLevel(../../../@level)">
+				<!-- RecordSet : either a hasOrHadAllMembersWithLanguage if only a single value, or a someMembers property if there are multiple -->
+				<xsl:choose>
+					<xsl:when test="count(../language[@langcode]) = 1">
+						<rico:hasOrHadAllMembersWithLanguage rdf:resource="{ead2rico:URI-Language(@langcode)}"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<rico:hasOrHadSomeMembersWithLanguage rdf:resource="{ead2rico:URI-Language(@langcode)}"/>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:when>
+			<xsl:otherwise>
+				<!-- Unknown : use a generic, non RiC-O property -->
+				<dc:language rdf:resource="{ead2rico:URI-Language(@langcode)}" />
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 
 	<!--  ***** originalsloc (only for RecordResource) ***** -->
