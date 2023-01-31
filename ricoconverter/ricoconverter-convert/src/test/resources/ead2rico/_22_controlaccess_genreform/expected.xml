@@ -20,9 +20,12 @@
             </rico:Instantiation>
         </rico:hasInstantiation>
     </rico:Record>
+    <!-- RecordSet level -->
     <rico:RecordResource rdf:about="recordResource/058220-top">
         <rico:describedBy rdf:resource="record/058220"/>
-        <rico:hasDocumentaryFormType rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d41cch--81zpek4vv4lp"/>
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds"/>
+        <rico:hasOrHadSomeMembersWithDocumentaryFormType rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d41cch--81zpek4vv4lp"/>
         <rico:hasInstantiation>
              <rico:Instantiation rdf:about="instantiation/058220-top-i1">
                  <rico:instantiates rdf:resource="recordResource/058220-top"/>                 
@@ -30,16 +33,29 @@
              </rico:Instantiation>
          </rico:hasInstantiation>
          <rico:includes rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+         <rico:includes rdf:resource="recordResource/058220-unknown"/>
     </rico:RecordResource>
-    <!-- c level -->
+    <!-- Record level -->
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
         <rico:includedIn rdf:resource="recordResource/058220-top"/>
-        <rico:hasDocumentaryFormType rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d41cch--81zpek4vv4lp"/>
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
+        <rico:hasOrHadDocumentaryFormType rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d41cch--81zpek4vv4lp"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">                
                 <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"/>
             </rico:Instantiation>
         </rico:hasInstantiation>
-    </rico:RecordResource>   
+    </rico:RecordResource>
+    <!-- Unknown level -->
+    <rico:RecordResource rdf:about="recordResource/058220-unknown">
+        <rico:includedIn rdf:resource="recordResource/058220-top"/>
+        <dc:type rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d41cch--81zpek4vv4lp"/>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-unknown-i1">                
+                <rico:instantiates rdf:resource="recordResource/058220-unknown"/>
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/unknown"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+    </rico:RecordResource> 
 </rdf:RDF>

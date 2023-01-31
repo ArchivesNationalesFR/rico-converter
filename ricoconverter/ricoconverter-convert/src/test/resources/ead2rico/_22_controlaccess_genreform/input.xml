@@ -4,12 +4,20 @@
         <eadid>FRAN_IR_058220</eadid>
         <!-- the metadata of the finding aid -->
     </eadheader>
-    <archdesc>
+    <archdesc level="fonds">
+        <!-- genreform at a RecordSet level -->
         <controlaccess>
             <genreform authfilenumber="d5b8d41cch--81zpek4vv4lp" source="FRAN_RI_001">document photographique</genreform>
         </controlaccess>
         <dsc>
-            <c id="c34fnm316ofc-27kf8gfnest" level="otherlevel">
+            <!-- genreform at a Record level -->
+            <c id="c34fnm316ofc-27kf8gfnest" level="item">
+		        <controlaccess>
+		            <genreform authfilenumber="d5b8d41cch--81zpek4vv4lp" source="FRAN_RI_001">document photographique</genreform>
+		        </controlaccess>
+		    </c>
+            <!-- genreform at an unknown level -->
+            <c id="unknown">
 		        <controlaccess>
 		            <genreform authfilenumber="d5b8d41cch--81zpek4vv4lp" source="FRAN_RI_001">document photographique</genreform>
 		        </controlaccess>

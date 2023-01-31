@@ -650,16 +650,13 @@
 	</xsl:template>
 
 	<!-- ***** @level processing ***** -->
-	
+
 	<xsl:template match="@level">
 		<xsl:choose>
-			<xsl:when test=". = 'item'">
+			<xsl:when test="ead2rico:isRicoRecordLevel(.)">
 				<rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
 			</xsl:when>
-			<xsl:when test=". = 'otherlevel'">
-				<!-- nothing -->
-			</xsl:when>
-			<xsl:otherwise>
+			<xsl:when test="ead2rico:isRicoRecordSetLevel(.)">
 				<rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
 			    <!-- 
 				    RiC-O recordSetTypes :
@@ -694,10 +691,11 @@
 		        	<xsl:when test=". = 'collection'">
 		        		<rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection"/>
 		        	</xsl:when>
-		        	<xsl:when test=". = 'otherlevel'">
-		        		<!--  nothing (already matched above anyway) -->
-		        	</xsl:when>
+		        	<!--  'otherlevel' is already matched above -->
 		        </xsl:choose>
+			</xsl:when>
+			<xsl:otherwise>
+				<!-- nothing -->
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
@@ -1040,7 +1038,20 @@
 	</xsl:template>
 	
 	<xsl:template match="genreform[@authfilenumber]">
-		<rico:hasDocumentaryFormType rdf:resource="{ead2rico:URI-DocumentaryForm(@authfilenumber, @source)}"/>
+		<xsl:choose>
+			<xsl:when test="ead2rico:isRicoRecordLevel(../../@level)">
+				<rico:hasOrHadDocumentaryFormType rdf:resource="{ead2rico:URI-DocumentaryForm(@authfilenumber, @source)}"/>
+			</xsl:when>
+			<xsl:when test="ead2rico:isRicoRecordSetLevel(../../@level)">
+				<!-- someMembers property as we are not sure all children have the same dft -->
+				<rico:hasOrHadSomeMembersWithDocumentaryFormType rdf:resource="{ead2rico:URI-DocumentaryForm(@authfilenumber, @source)}"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<!-- we don't know if this is a Record or a RecordSet. Output a generic dc:type property -->
+				<dc:type rdf:resource="{ead2rico:URI-DocumentaryForm(@authfilenumber, @source)}" />
+			</xsl:otherwise>
+		</xsl:choose>
+		
 	</xsl:template>
 	
 	<xsl:template match="geogname[@authfilenumber]">
@@ -1427,6 +1438,17 @@
 		</xsl:choose>
     </xsl:template>
 		
+
+	<xsl:function name="ead2rico:isRicoRecordLevel" as="xs:boolean">
+		<xsl:param name="level"/>
+		<xsl:sequence select="$level = 'item'"/>  
+	</xsl:function>
+
+	<xsl:function name="ead2rico:isRicoRecordSetLevel" as="xs:boolean">
+		<xsl:param name="level"/>
+		<xsl:sequence select="$level and $level != 'item' and $level != 'otherlevel'"/>  
+	</xsl:function>
+
 		
 	<xsl:function name="ead2rico:isDateRange" as="xs:boolean">
 		<xsl:param name="text"/>
