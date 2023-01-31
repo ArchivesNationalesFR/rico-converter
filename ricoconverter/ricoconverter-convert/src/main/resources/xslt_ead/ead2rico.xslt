@@ -210,7 +210,7 @@
 		<xsl:apply-templates mode="#current" />
 	</xsl:template>
 	<xsl:template match="language[@langcode]" mode="findingaid">
-		<rico:hasLanguage rdf:resource="{ead2rico:URI-Language(@langcode)}"/>
+		<rico:hasOrHadLanguage rdf:resource="{ead2rico:URI-Language(@langcode)}"/>
 	</xsl:template>
 	
 	<!-- The rico:regulatedBy is inserted systematically on the FindingAid + its Instantiation -->

@@ -115,7 +115,7 @@
 	<!-- ***** languageDeclaration ***** -->
 	
 	<xsl:template match="eac:control/eac:languageDeclaration">
-		<rico:hasLanguage rdf:resource="{eac2rico:URI-Language(eac:language/@languageCode)}"/>
+		<rico:hasOrHadLanguage rdf:resource="{eac2rico:URI-Language(eac:language/@languageCode)}"/>
 	</xsl:template>
 	
 	<!-- ***** maintenanceHistory and maintenanceEvent -->
