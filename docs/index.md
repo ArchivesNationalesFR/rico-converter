@@ -5,7 +5,7 @@ _Home_
 Welcome to the **RiC-O converter documentation** ! RiC-O converter is a command-line tool to convert EAD and EAC files to RDF files expressed using [Records in Contexts ontology](https://www.ica.org/standards/RiC/RiC-O_v0-1.html).
 
 
-##Table of Contents
+## Table of Contents
 
 The documentation is divided in these sections :
 
@@ -33,12 +33,12 @@ The documentation is divided in these sections :
 - [EAD XSLT Error Codes](ErrorCodesXsltEad.html): reference list of the possible error codes during EAD conversion.
 
 
-##Licence
+## Licence
 
 This project is licensed under the terms of the CeCILL-B license (equivalent to MIT license and close to a public domain license) (see the [license file in english](license.txt) or [in french](licence.txt)).
 
 
-##Contact
+## Contact
 
 If you have questions on RiC-O converter, you can contact :
 

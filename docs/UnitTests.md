@@ -2,7 +2,7 @@
 
 # Unit Tests
 
-## Running unit tests
+## Running unit tests
 
 - To run unit tests, launch the batch with the command `test_ead` or `test_eac` depending if you want to run EAD or EAC tests.
 - The unit tests files are located under the subfolders `unit-tests/eac2rico` and `unit-tests/ead2rico`.
