@@ -28,7 +28,7 @@
       	 
 		      <rico:instantiates rdf:resource="recordResource/top-003666"/>
 		      <rico:hasDerivedInstantiation rdf:resource="instantiation/top-003666-i2"/>
-		      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_003666/top"/>
+      	   	<!-- this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_003666/top"/>-->
 		   </rico:Instantiation>
       </rico:hasInstantiation>
       <!-- if there is a daogrp, we consider the digital archival object as a distinct instantiation (digital surrogate) of the record resource; this second instantiation is derived from the first one-->

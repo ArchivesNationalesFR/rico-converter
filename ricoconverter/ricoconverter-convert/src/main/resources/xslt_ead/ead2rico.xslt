@@ -344,7 +344,7 @@
 					<xsl:if test="not(did/repository)">
 						<rico:heldBy rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}" />
 					</xsl:if>
-					<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/{/ead/eadheader/eadid}/top" />
+					<!-- this line would be what we could generate when the SIA generates such permalinks for archedec, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/{/ead/eadheader/eadid}/top" />-->
 				</rico:Instantiation>
 			</rico:hasInstantiation>			
 						
