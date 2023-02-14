@@ -2,7 +2,7 @@ _Home_
 
 # RiC-O Converter
 
-Welcome to the **RiC-O converter documentation** ! RiC-O converter is a command-line tool to convert EAD and EAC files to RDF files expressed using [Records in Contexts ontology](https://www.ica.org/standards/RiC/RiC-O_v0-1.html).
+Welcome to the **RiC-O converter documentation** ! RiC-O converter is a command-line tool to convert EAD and EAC files to RDF files expressed using [Records in Contexts ontology](https://www.ica.org/standards/RiC/ontology).
 
 
 ## Table of Contents
