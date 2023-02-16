@@ -890,9 +890,17 @@
 				<!-- both @normal and text() are present -->
 				<xsl:choose>
 					<xsl:when test="ead2rico:isDateRange(@normal)">
-						<!-- Date range in @normal and a text() -->
-						<rico:beginningDate><xsl:call-template name="dateWithDatatype"><xsl:with-param name="text" select="normalize-space(substring-before(@normal, '/'))" /></xsl:call-template></rico:beginningDate>
-        				<rico:endDate><xsl:call-template name="dateWithDatatype"><xsl:with-param name="text" select="normalize-space(substring-after(@normal, '/'))" /></xsl:call-template></rico:endDate>
+						<xsl:choose>
+							<xsl:when test="normalize-space(substring-before(@normal, '/')) = normalize-space(substring-after(@normal, '/'))">
+								<!-- single rico:date if the begin and end date are the same -->
+								<rico:date><xsl:call-template name="dateWithDatatype"><xsl:with-param name="text" select="normalize-space(substring-before(@normal, '/'))" /></xsl:call-template></rico:date>
+							</xsl:when>
+							<xsl:otherwise>
+								<!-- Date range in @normal and a text() -->
+								<rico:beginningDate><xsl:call-template name="dateWithDatatype"><xsl:with-param name="text" select="normalize-space(substring-before(@normal, '/'))" /></xsl:call-template></rico:beginningDate>
+        						<rico:endDate><xsl:call-template name="dateWithDatatype"><xsl:with-param name="text" select="normalize-space(substring-after(@normal, '/'))" /></xsl:call-template></rico:endDate>
+							</xsl:otherwise>
+						</xsl:choose>
 				        <!-- we may find emph inside the text(), so we join before normalize -->
 				        <rico:date xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(string-join(text(), ' '))" /></rico:date>
 					</xsl:when>

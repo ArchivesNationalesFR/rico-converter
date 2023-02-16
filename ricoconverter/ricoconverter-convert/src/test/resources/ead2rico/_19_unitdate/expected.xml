@@ -47,7 +47,11 @@
         <rico:date xml:lang="fr">années 20</rico:date>
         
         <!-- case 6: do nothing-->
-        
+
+        <!-- case 7 : rico:date -->
+        <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1926-01-01</rico:date>
+        <rico:date xml:lang="fr">Le 1er janvier 1926</rico:date>
+
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-top-i1">
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-top"/>
@@ -69,7 +73,11 @@
 		        <!-- case 5 -->
 		        <rico:date xml:lang="fr">années 20</rico:date>		        
 		        <!-- case 6: do nothing-->
-		        <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+                <!-- case 7 : rico:date -->
+                <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1926-01-01</rico:date>
+                <rico:date xml:lang="fr">Le 1er janvier 1926</rico:date>
+		        
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
             </rico:Instantiation>
         </rico:hasInstantiation>
         <!-- Note : if there is more than the primary instantiation, do not propagate the RecordResource dates to these instantiations -->
