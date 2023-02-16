@@ -9,43 +9,43 @@
     xml:base="http://data.archives-nationales.culture.gouv.fr/">
     <rico:Record rdf:about="record/055691">
     	  <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
-        <rico:describes rdf:resource="recordResource/top-055691"/>
+        <rico:describesOrDescribed rdf:resource="recordResource/top-055691"/>
 	      <rico:hasInstantiation>
 	         <rico:Instantiation rdf:about="instantiation/055691-i1">
-	            <rico:instantiates rdf:resource="record/055691"/>
+	            <rico:isInstantiationOf rdf:resource="record/055691"/>
 	            <dc:format xml:lang="en">text/xml</dc:format>
 	            <rico:identifier>FRAN_IR_055691</rico:identifier>
-	            <rico:heldBy rdf:resource="agent/005061"/>
+	            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
 	            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_055691"/>
 	         </rico:Instantiation>
 	      </rico:hasInstantiation>
     </rico:Record>
     <!-- archdesc level-->
     <rico:RecordResource rdf:about="recordResource/top-055691">
-        <rico:describedBy rdf:resource="record/055691"/>        
+        <rico:isOrWasDescribedBy rdf:resource="record/055691"/>        
         <rico:conditionsOfAccess rdf:parseType="Literal">
             <html:p xml:lang="fr">Librement communicable sous réserve de l'état matériel des documents.</html:p>
         </rico:conditionsOfAccess>        
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/top-055691-i1">
-                <rico:instantiates rdf:resource="recordResource/top-055691"/>
+                <rico:isInstantiationOf rdf:resource="recordResource/top-055691"/>
                 <rico:conditionsOfAccess rdf:parseType="Literal">
                     <html:p xml:lang="fr">Librement communicable sous réserve de l'état matériel des documents.</html:p>
                 </rico:conditionsOfAccess>
                 <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_055691/top"/>-->
             </rico:Instantiation>
         </rico:hasInstantiation>
-        <rico:includes rdf:resource="recordResource/055691-c-2vzyex8hc18--1o5wpcllauj9q"/>
+        <rico:includesOrIncluded rdf:resource="recordResource/055691-c-2vzyex8hc18--1o5wpcllauj9q"/>
     </rico:RecordResource>
     <!-- c level -->
     <rico:RecordResource rdf:about="recordResource/055691-c-2vzyex8hc18--1o5wpcllauj9q"> 
-    	<rico:includedIn rdf:resource="recordResource/top-055691"/>      
+    	<rico:isOrWasIncludedIn rdf:resource="recordResource/top-055691"/>      
         <rico:conditionsOfAccess rdf:parseType="Literal">
             <html:p xml:lang="fr">Communication libre</html:p>
         </rico:conditionsOfAccess>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/055691-c-2vzyex8hc18--1o5wpcllauj9q-i1">
-                <rico:instantiates rdf:resource="recordResource/055691-c-2vzyex8hc18--1o5wpcllauj9q"/>
+                <rico:isInstantiationOf rdf:resource="recordResource/055691-c-2vzyex8hc18--1o5wpcllauj9q"/>
                 <rico:hasDerivedInstantiation rdf:resource="instantiation/055691-c-2vzyex8hc18--1o5wpcllauj9q-i2"/>
                 <rico:conditionsOfAccess rdf:parseType="Literal">
                     <html:p xml:lang="fr">Communication libre</html:p>
@@ -55,7 +55,7 @@
         </rico:hasInstantiation>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/055691-c-2vzyex8hc18--1o5wpcllauj9q-i2">
-                <rico:instantiates rdf:resource="recordResource/055691-c-2vzyex8hc18--1o5wpcllauj9q"/>
+                <rico:isInstantiationOf rdf:resource="recordResource/055691-c-2vzyex8hc18--1o5wpcllauj9q"/>
                 <rico:conditionsOfAccess rdf:parseType="Literal">
                     <html:p xml:lang="fr">Communication libre</html:p>
                 </rico:conditionsOfAccess>

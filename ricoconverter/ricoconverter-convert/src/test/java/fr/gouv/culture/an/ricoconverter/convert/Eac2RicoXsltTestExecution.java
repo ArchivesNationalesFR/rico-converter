@@ -50,7 +50,7 @@ public class Eac2RicoXsltTestExecution implements Test {
 		this.testFolder = testFolder;
 		
 		// read the XSLT
-		InputStream xsltSource = this.getClass().getResourceAsStream("/xslt_eac/eac2rico.xslt");
+		InputStream xsltSource = this.getClass().getResourceAsStream("/xslt_eac/main.xslt");
 		
 		try {
 			Transformer t = TransformerBuilder.createSaxonProcessor().setUriResolver(new URIResolver() {

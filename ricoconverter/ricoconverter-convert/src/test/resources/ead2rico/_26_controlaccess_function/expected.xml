@@ -9,61 +9,61 @@
     xml:base="http://data.archives-nationales.culture.gouv.fr/">
     <rico:Record rdf:about="record/058220">
         <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
-        <rico:describes rdf:resource="recordResource/top-058220"/>
+        <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-i1">
-                <rico:instantiates rdf:resource="record/058220"/>
+                <rico:isInstantiationOf rdf:resource="record/058220"/>
                 <dc:format xml:lang="en">text/xml</dc:format>
                 <rico:identifier>FRAN_IR_058220</rico:identifier>
-                <rico:heldBy rdf:resource="agent/005061"/>
+                <rico:hasOrHadHolder rdf:resource="agent/005061"/>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>
             </rico:Instantiation>
         </rico:hasInstantiation>
     </rico:Record>
     <rico:RecordResource rdf:about="recordResource/top-058220">
-        <rico:describedBy rdf:resource="record/058220"/>
-      <rico:isDocumentationOf>
+        <rico:isOrWasDescribedBy rdf:resource="record/058220"/>
+      <rico:documents>
          <rico:Activity>
             <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvimhyx--nnjhi6uln1zi"/>
          </rico:Activity>
-      </rico:isDocumentationOf>
-      <rico:isDocumentationOf>
+      </rico:documents>
+      <rico:documents>
          <rico:Activity>
             <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvikan6-574lz876edtw"/>
          </rico:Activity>
-      </rico:isDocumentationOf>
+      </rico:documents>
    
         <rico:hasInstantiation>
              <rico:Instantiation rdf:about="instantiation/top-058220-i1">
-                 <rico:instantiates rdf:resource="recordResource/top-058220"/>   
+                 <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>   
                  <!--do not process controlaccess/function here-->
                  <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
              </rico:Instantiation>
          </rico:hasInstantiation>
-         <rico:includes rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+         <rico:includesOrIncluded rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
     </rico:RecordResource>
     <!-- c level -->
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
-        <rico:includedIn rdf:resource="recordResource/top-058220"/>
-      <rico:isDocumentationOf>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+      <rico:documents>
          <rico:Activity>
             <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyug261d--1cyxwnocz7hzo"/>
          </rico:Activity>
-      </rico:isDocumentationOf>
-      <rico:isDocumentationOf>
+      </rico:documents>
+      <rico:documents>
          <rico:Activity>
             <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugtbte--13rem7tfg1o1y"/>
          </rico:Activity>
-      </rico:isDocumentationOf>
-      <rico:isDocumentationOf>
+      </rico:documents>
+      <rico:documents>
          <rico:Activity>
             <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugqf1y-blcz6vh7uoov"/>
          </rico:Activity>
-      </rico:isDocumentationOf>
+      </rico:documents>
          
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">                
-                <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
                 <!--do not process controlaccess/function here-->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"/>
             </rico:Instantiation>

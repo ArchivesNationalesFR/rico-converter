@@ -9,19 +9,19 @@
     xml:base="http://data.archives-nationales.culture.gouv.fr/">
     <rico:Record rdf:about="record/058220">
         <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
-        <rico:describes rdf:resource="recordResource/top-058220"/>
+        <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-i1">
-                <rico:instantiates rdf:resource="record/058220"/>
+                <rico:isInstantiationOf rdf:resource="record/058220"/>
                 <dc:format xml:lang="en">text/xml</dc:format>
                 <rico:identifier>FRAN_IR_058220</rico:identifier>
-                <rico:heldBy rdf:resource="agent/005061"/>
+                <rico:hasOrHadHolder rdf:resource="agent/005061"/>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>
             </rico:Instantiation>
         </rico:hasInstantiation>
     </rico:Record>
     <rico:RecordResource rdf:about="recordResource/top-058220">
-        <rico:describedBy rdf:resource="record/058220"/>
+        <rico:isOrWasDescribedBy rdf:resource="record/058220"/>
         <rico:descriptiveNote rdf:parseType="Literal">
             <html:div xml:lang="fr">
             <html:h4>Document(s) en relation</html:h4>
@@ -31,21 +31,21 @@
         </rico:descriptiveNote>
         <rico:hasInstantiation>
              <rico:Instantiation rdf:about="instantiation/top-058220-i1">
-                 <rico:instantiates rdf:resource="recordResource/top-058220"/>    
+                 <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>    
                  <!-- do not process relatedmaterial here -->
                  <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
              </rico:Instantiation>
          </rico:hasInstantiation>
-        <rico:includes rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>     
-        <rico:includes rdf:resource="recordResource/058220-N0004"/>
-        <rico:includes rdf:resource="recordResource/058220-N0005"/>
-        <rico:includes rdf:resource="recordResource/058220-N00052"/>
-        <rico:includes rdf:resource="recordResource/058220-N0006"/>
-        <rico:includes rdf:resource="recordResource/058220-N0007"/>
+        <rico:includesOrIncluded rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>     
+        <rico:includesOrIncluded rdf:resource="recordResource/058220-N0004"/>
+        <rico:includesOrIncluded rdf:resource="recordResource/058220-N0005"/>
+        <rico:includesOrIncluded rdf:resource="recordResource/058220-N00052"/>
+        <rico:includesOrIncluded rdf:resource="recordResource/058220-N0006"/>
+        <rico:includesOrIncluded rdf:resource="recordResource/058220-N0007"/>
     </rico:RecordResource>
  
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
-        <rico:includedIn rdf:resource="recordResource/top-058220"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:descriptiveNote rdf:parseType="Literal">
             <html:div xml:lang="fr">
                 <html:h4>Document(s) en relation</html:h4>
@@ -69,7 +69,7 @@
         </rico:descriptiveNote>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">                
-                <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
                 <rico:hasDerivedInstantiation rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
                 <!-- do not process relatedmaterial here -->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"/>
@@ -77,7 +77,7 @@
         </rico:hasInstantiation>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2">                
-                <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
                 <rico:isDerivedFromInstantiation rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1"/>
                 <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
                 <rico:identifier>FRAN_0118_274_L</rico:identifier>
@@ -89,7 +89,7 @@
     </rico:RecordResource>
 
     <rico:RecordResource rdf:about="recordResource/058220-N0004">
-        <rico:includedIn rdf:resource="recordResource/top-058220"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:descriptiveNote rdf:parseType="Literal">
             <html:div xml:lang="fr">
             <html:h4>Document(s) en relation</html:h4>
@@ -98,7 +98,7 @@
          </rico:descriptiveNote>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-N0004-i1">                
-                <rico:instantiates rdf:resource="recordResource/058220-N0004"/>
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-N0004"/>
                 <!-- do not process relatedmaterial here -->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0004"/>
             </rico:Instantiation>
@@ -107,7 +107,7 @@
     
     <!--ref role="IR"-->
     <rico:RecordResource rdf:about="recordResource/058220-N0005">
-        <rico:includedIn rdf:resource="recordResource/top-058220"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:descriptiveNote rdf:parseType="Literal">
             <html:div xml:lang="fr">
                 <html:h4>Document(s) en relation</html:h4>
@@ -117,7 +117,7 @@
         <rico:isRecordResourceAssociatedWithRecordResource rdf:resource="recordResource/top-050904"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-N0005-i1">                
-                <rico:instantiates rdf:resource="recordResource/058220-N0005"/>
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-N0005"/>
                 <!-- do not process relatedmaterial here -->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0005"/>
             </rico:Instantiation>
@@ -126,7 +126,7 @@
 
 
     <rico:RecordResource rdf:about="recordResource/058220-N00052">
-        <rico:includedIn rdf:resource="recordResource/top-058220"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:descriptiveNote rdf:parseType="Literal">
             <html:div xml:lang="fr">
              <html:h4>Document(s) en relation</html:h4>               
@@ -136,7 +136,7 @@
         <rico:isRecordResourceAssociatedWithRecordResource rdf:resource="recordResource/017020-d_4_1"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-N00052-i1">                
-                <rico:instantiates rdf:resource="recordResource/058220-N00052"/>
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-N00052"/>
                 <!-- do not process relatedmaterial here -->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N00052"/>
             </rico:Instantiation>
@@ -145,7 +145,7 @@
     
     <!--ref role="WEB"-->
     <rico:RecordResource rdf:about="recordResource/058220-N0006">
-        <rico:includedIn rdf:resource="recordResource/top-058220"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:descriptiveNote rdf:parseType="Literal">
             <html:div xml:lang="fr">
                 <html:h4>Document(s) en relation</html:h4>
@@ -159,7 +159,7 @@
         <rico:isRecordResourceAssociatedWithRecordResource rdf:resource="recordResource/top-022636"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-N0006-i1">                
-                <rico:instantiates rdf:resource="recordResource/058220-N0006"/>
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-N0006"/>
                 <!-- do not process relatedmaterial here -->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0006"/>
             </rico:Instantiation>
@@ -168,7 +168,7 @@
     
     <!--ref role="ANX"-->
     <rico:RecordResource rdf:about="recordResource/058220-N0007">
-        <rico:includedIn rdf:resource="recordResource/top-058220"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:descriptiveNote rdf:parseType="Literal">
             <html:div xml:lang="fr">
                 <html:h4>Document(s) en relation</html:h4>
@@ -177,7 +177,7 @@
         </rico:descriptiveNote>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-N0007-i1">                
-                <rico:instantiates rdf:resource="recordResource/058220-N0007"/>
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-N0007"/>
                 <!-- do not process relatedmaterial here -->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0007"/>
             </rico:Instantiation>

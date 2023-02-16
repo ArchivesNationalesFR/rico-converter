@@ -1,18 +1,18 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:html="http://www.w3.org/1999/xhtml" xmlns:isni="http://isni.org/ontology#"
+   xmlns:html="http://www.w3.org/1999/xhtml" xmlns:isni="https://isni.org/ontology#"
    xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xml:base="http://data.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/003666">
    	  <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
-      <rico:describes rdf:resource="recordResource/top-003666"/>
+      <rico:describesOrDescribed rdf:resource="recordResource/top-003666"/>
       <rico:hasInstantiation>
 		   <rico:Instantiation rdf:about="instantiation/003666-i1">
-		      <rico:instantiates rdf:resource="record/003666"/>
+		      <rico:isInstantiationOf rdf:resource="record/003666"/>
 		      <dc:format xml:lang="en">text/xml</dc:format>
 		      <rico:identifier>FRAN_IR_003666</rico:identifier>
-		      <rico:heldBy rdf:resource="agent/005061"/>
+		      <rico:hasOrHadHolder rdf:resource="agent/005061"/>
 		      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_003666"/>     
 		      <!--?? <owl:sameAs rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/exportXML.action?irId=FRAN_IR_003666"/>-->
 		   </rico:Instantiation>
@@ -22,11 +22,11 @@
    <!-- The highest level Record resource, corresponding to archdesc, and its physical or digital primary instantiation
             If there is an @id, use {findingAidId}{@id}; if no @id for archdesc, use top-{findingAidId} -->
    <rico:RecordResource rdf:about="recordResource/top-003666">
-      <rico:describedBy rdf:resource="record/003666"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/003666"/>
       <rico:hasInstantiation>
       	   <rico:Instantiation rdf:about="instantiation/top-003666-i1">
       	 
-		      <rico:instantiates rdf:resource="recordResource/top-003666"/>
+		      <rico:isInstantiationOf rdf:resource="recordResource/top-003666"/>
 		      <rico:hasDerivedInstantiation rdf:resource="instantiation/top-003666-i2"/>
       	   	<!-- this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_003666/top"/>-->
 		   </rico:Instantiation>
@@ -35,7 +35,7 @@
       <rico:hasInstantiation>
       	   <rico:Instantiation rdf:about="instantiation/top-003666-i2">
       	     
-		      <rico:instantiates rdf:resource="recordResource/top-003666"/>
+		      <rico:isInstantiationOf rdf:resource="recordResource/top-003666"/>
 		      <rico:isDerivedFromInstantiation rdf:resource="instantiation/top-003666-i1"/>
 		      <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
 		      <!-- here we can only specify the first and last image of the series of images that are integrated into the instantiation-->
@@ -47,13 +47,13 @@
 		   </rico:Instantiation>
       </rico:hasInstantiation>
          
-      <rico:includes
+      <rico:includesOrIncluded
          rdf:resource="recordResource/003666-c-835pw5mwg-otyywby3qzqb"/>
-   	<rico:includes
+   	<rico:includesOrIncluded
    		rdf:resource="recordResource/003666-c-7jg4i6fd5-18zjwwhf1ggm1"/>
-   	<rico:includes
+   	<rico:includesOrIncluded
    		rdf:resource="recordResource/003666-123456"/>
-   	<rico:includes
+   	<rico:includesOrIncluded
    		rdf:resource="recordResource/003666-i7899"/>
    	
       
@@ -65,17 +65,17 @@
       In this file we should find the following, which corresponds to the 'foo' c element and its instantiations -->
    
    <rico:RecordResource rdf:about="recordResource/003666-c-835pw5mwg-otyywby3qzqb">
-      <rico:includedIn rdf:resource="recordResource/top-003666"/>
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/top-003666"/>
       <rico:hasInstantiation>
       	   <rico:Instantiation rdf:about="instantiation/003666-c-835pw5mwg-otyywby3qzqb-i1">
-		      <rico:instantiates rdf:resource="recordResource/003666-c-835pw5mwg-otyywby3qzqb"/>
+		      <rico:isInstantiationOf rdf:resource="recordResource/003666-c-835pw5mwg-otyywby3qzqb"/>
 		      <rico:hasDerivedInstantiation rdf:resource="instantiation/003666-c-835pw5mwg-otyywby3qzqb-i2"/>
 		      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_003666/c-835pw5mwg-otyywby3qzqb"/>
 		   </rico:Instantiation>
       </rico:hasInstantiation>
       <rico:hasInstantiation>
            <rico:Instantiation rdf:about="instantiation/003666-c-835pw5mwg-otyywby3qzqb-i2">
-		      <rico:instantiates rdf:resource="recordResource/003666-c-835pw5mwg-otyywby3qzqb"/>
+		      <rico:isInstantiationOf rdf:resource="recordResource/003666-c-835pw5mwg-otyywby3qzqb"/>
               <rico:descriptiveNote rdf:parseType="Literal">
               	<html:p xml:lang="fr">une légende</html:p>
               </rico:descriptiveNote>
@@ -91,17 +91,17 @@
    </rico:RecordResource>
 	
 	<rico:RecordResource rdf:about="recordResource/003666-c-7jg4i6fd5-18zjwwhf1ggm1">
-		<rico:includedIn rdf:resource="recordResource/top-003666"/>
+		<rico:isOrWasIncludedIn rdf:resource="recordResource/top-003666"/>
 		<rico:hasInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-c-7jg4i6fd5-18zjwwhf1ggm1-i1">
-				<rico:instantiates rdf:resource="recordResource/003666-c-7jg4i6fd5-18zjwwhf1ggm1"/>
+				<rico:isInstantiationOf rdf:resource="recordResource/003666-c-7jg4i6fd5-18zjwwhf1ggm1"/>
 				<rico:hasDerivedInstantiation rdf:resource="instantiation/003666-c-7jg4i6fd5-18zjwwhf1ggm1-i2"/>
 				<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_003666/c-7jg4i6fd5-18zjwwhf1ggm1"/>
 			</rico:Instantiation>
 		</rico:hasInstantiation>
 		<rico:hasInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-c-7jg4i6fd5-18zjwwhf1ggm1-i2">
-				<rico:instantiates rdf:resource="recordResource/003666-c-7jg4i6fd5-18zjwwhf1ggm1"/>
+				<rico:isInstantiationOf rdf:resource="recordResource/003666-c-7jg4i6fd5-18zjwwhf1ggm1"/>
 				<rico:isDerivedFromInstantiation rdf:resource="instantiation/003666-c-7jg4i6fd5-18zjwwhf1ggm1-i1"/>
 				<rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
 				
@@ -117,10 +117,10 @@
 	
 	<rico:RecordResource rdf:about="recordResource/003666-123456">
 		
-		<rico:includedIn rdf:resource="recordResource/top-003666"/>
+		<rico:isOrWasIncludedIn rdf:resource="recordResource/top-003666"/>
 		<rico:hasInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-123456-i1">
-				<rico:instantiates rdf:resource="recordResource/003666-123456"/>
+				<rico:isInstantiationOf rdf:resource="recordResource/003666-123456"/>
 				<!-- two digital instantiations derived from this first one -->
 				<rico:hasDerivedInstantiation rdf:resource="instantiation/003666-123456-i2"/>
 				<rico:hasDerivedInstantiation rdf:resource="instantiation/003666-123456-i3"/>
@@ -129,7 +129,7 @@
 		</rico:hasInstantiation>
 		<rico:hasInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-123456-i2">
-				<rico:instantiates rdf:resource="recordResource/003666-123456"/>				
+				<rico:isInstantiationOf rdf:resource="recordResource/003666-123456"/>				
 				<rico:isDerivedFromInstantiation rdf:resource="instantiation/003666-123456-i1"/>
 				<rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
 			
@@ -143,7 +143,7 @@
 		</rico:hasInstantiation>
 		<rico:hasInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-123456-i3">
-				<rico:instantiates rdf:resource="recordResource/003666-123456"/>
+				<rico:isInstantiationOf rdf:resource="recordResource/003666-123456"/>
 				<rico:descriptiveNote rdf:parseType="Literal">
 					<html:p xml:lang="fr">une autre légende</html:p>
 				</rico:descriptiveNote>				
@@ -159,10 +159,10 @@
 	
 	<rico:RecordResource rdf:about="recordResource/003666-i7899">
 		
-		<rico:includedIn rdf:resource="recordResource/top-003666"/>
+		<rico:isOrWasIncludedIn rdf:resource="recordResource/top-003666"/>
 		<rico:hasInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-i7899-i2">
-				<rico:instantiates rdf:resource="recordResource/003666-i7899"/>				
+				<rico:isInstantiationOf rdf:resource="recordResource/003666-i7899"/>				
 				<rico:isDerivedFromInstantiation rdf:resource="instantiation/003666-i7899-i1"/>
 				<rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
 				
@@ -177,7 +177,7 @@
 		</rico:hasInstantiation>
 		<rico:hasInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-i7899-i3">
-				<rico:instantiates rdf:resource="recordResource/003666-i7899"/>
+				<rico:isInstantiationOf rdf:resource="recordResource/003666-i7899"/>
 				<rico:descriptiveNote rdf:parseType="Literal">
 					<html:p xml:lang="fr">une autre légende</html:p>
 				</rico:descriptiveNote>				
@@ -193,7 +193,7 @@
 		</rico:hasInstantiation>
 		<rico:hasInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-i7899-i1">
-				<rico:instantiates rdf:resource="recordResource/003666-i7899"/>
+				<rico:isInstantiationOf rdf:resource="recordResource/003666-i7899"/>
 				<!-- two digital instantiations derived from this first one -->
 				<rico:hasDerivedInstantiation rdf:resource="instantiation/003666-i7899-i2"/>
 				<rico:hasDerivedInstantiation rdf:resource="instantiation/003666-i7899-i3"/>

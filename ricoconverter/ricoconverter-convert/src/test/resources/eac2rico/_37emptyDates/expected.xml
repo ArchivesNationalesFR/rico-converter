@@ -1,6 +1,6 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:isni="http://isni.org/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
          xmlns:owl="http://www.w3.org/2002/07/owl#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
@@ -8,31 +8,31 @@
          xmlns:dc="http://purl.org/dc/elements/1.1/">
    <rico:Record rdf:about="record/005205">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
-      <rico:describes rdf:resource="agent/005205"/>
+      <rico:describesOrDescribed rdf:resource="agent/005205"/>
       <rico:hasInstantiation>
          <rico:Instantiation rdf:about="instantiation/005205">
-            <rico:instantiates rdf:resource="record/005205"/>
+            <rico:isInstantiationOf rdf:resource="record/005205"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_005205</rico:identifier>
-            <rico:heldBy rdf:resource="agent/005061"/>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005205"/> 
          </rico:Instantiation>
       </rico:hasInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/005205">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
-      <rico:describedBy rdf:resource="record/005205"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/005205"/>
       <rdfs:label xml:lang="fr">The entity</rdfs:label>
-      <rico:hasAgentName>
+      <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/005205-The%20entity-19950518-*">
             <rdfs:label xml:lang="fr">The entity</rdfs:label>
             <rico:textualValue xml:lang="fr">The entity</rico:textualValue>
-            <rico:isAgentNameOf rdf:resource="agent/005205"/>
-            <rico:regulatedBy rdf:resource="rule/rl001"/>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/005205"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
             <rico:usedFromDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-05-18</rico:usedFromDate>
          </rico:AgentName>
-      </rico:hasAgentName>
+      </rico:hasOrHadAgentName>
       <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/005205-111111-19470101-*"/>
       <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005205-111111-*-19470101"/>
    </rico:Agent>
