@@ -1,15 +1,16 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 		 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xml:base="http://data.archives-nationales.culture.gouv.fr/"
-         xmlns:isni="http://isni.org/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:dc="http://purl.org/dc/elements/1.1/">
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:owl="http://www.w3.org/2002/07/owl#">
    <rico:Record rdf:about="record/005205">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
    	  <rico:describesOrDescribed rdf:resource="agent/005205"/>
-   	  <rdfs:seeAlso rdf:resource="http://isni.org/isni/0001000200031111" />
-   	  <rdfs:seeAlso rdf:resource="http://isni.org/isni/0001000200032222" />
-   	  <rdfs:seeAlso rdf:resource="http://isni.org/isni/0001000200039999" />
+   	  <rdfs:seeAlso rdf:resource="https://isni.org/isni/0001000200031111" />
+   	  <rdfs:seeAlso rdf:resource="https://isni.org/isni/0001000200032222" />
+   	  <rdfs:seeAlso rdf:resource="https://isni.org/isni/0001000200039999" />
       <rico:hasInstantiation>
          <rico:Instantiation rdf:about="instantiation/005205">
             <rico:isInstantiationOf rdf:resource="record/005205"/>
@@ -23,8 +24,8 @@
    <rico:Agent rdf:about="agent/005205">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:isOrWasDescribedBy rdf:resource="record/005205"/>
-      <isni:identifierValid>0001000200031111</isni:identifierValid>
-      <isni:identifierValid>0001000200032222</isni:identifierValid>
-      <isni:identifierValid>0001000200039999</isni:identifierValid>
+      <owl:sameAs rdf:resource="https://isni.org/isni/0001000200031111" />
+      <owl:sameAs rdf:resource="https://isni.org/isni/0001000200032222" />
+      <owl:sameAs rdf:resource="https://isni.org/isni/0001000200039999" />
    </rico:Agent>
 </rdf:RDF>

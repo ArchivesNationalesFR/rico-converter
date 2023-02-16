@@ -8,7 +8,7 @@
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
 	xmlns:eac2rico="http://data.archives-nationales.culture.gouv.fr/eac2rico/"
-	xmlns:isni="http://isni.org/ontology#"
+	xmlns:isni="https://isni.org/ontology#"
 	xmlns:eac="urn:isbn:1-931666-33-4"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
 	xmlns:html="http://www.w3.org/1999/xhtml"
@@ -283,10 +283,12 @@
 		<xsl:choose>
 			<xsl:when test="starts-with(text(), 'ISNI')">
 				<!-- Removes whitespace and potential column after "ISNI :" -->
-				<isni:identifierValid><xsl:value-of select="translate(substring-after(text(), 'ISNI'), ' :', '')" /></isni:identifierValid>
+				<!-- Encode the value just in case -->
+				<owl:sameAs rdf:resource="https://isni.org/isni/{encode-for-uri(translate(substring-after(text(), 'ISNI'), ' :', ''))}" />
 			</xsl:when>
 			<xsl:when test="@localType = 'ISNI'">
-				<isni:identifierValid><xsl:value-of select="translate(text(), ' ', '')" /></isni:identifierValid>
+				<!-- Encode the value just in case -->
+				<owl:sameAs rdf:resource="https://isni.org/isni/{encode-for-uri(translate(text(), ' ', ''))}" />
 			</xsl:when>
 			<xsl:when test="starts-with(text(), 'SIRET')">
 				<!-- Removes whitespace and potential column after "SIRET :" -->
@@ -312,10 +314,10 @@
 		<xsl:choose>
 			<xsl:when test="starts-with(text(), 'ISNI')">
 				<!-- Removes whitespace and potential column after "ISNI :" -->
-				<rdfs:seeAlso rdf:resource="http://isni.org/isni/{translate(substring-after(text(), 'ISNI'), ' :', '')}" />
+				<rdfs:seeAlso rdf:resource="https://isni.org/isni/{encode-for-uri(translate(substring-after(text(), 'ISNI'), ' :', ''))}" />
 			</xsl:when>
 			<xsl:when test="@localType = 'ISNI'">
-				<rdfs:seeAlso rdf:resource="http://isni.org/isni/{translate(text(), ' ', '')}" />
+				<rdfs:seeAlso rdf:resource="https://isni.org/isni/{encode-for-uri(translate(text(), ' ', ''))}" />
 			</xsl:when>
 			<xsl:otherwise>
 				<!-- output a warning ? -->
