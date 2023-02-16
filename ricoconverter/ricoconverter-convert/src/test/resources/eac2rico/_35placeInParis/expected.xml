@@ -6,30 +6,30 @@
    xmlns:dc="http://purl.org/dc/elements/1.1/">
    <rico:Record rdf:about="record/123456">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
-      <rico:describes rdf:resource="agent/123456"/>
+      <rico:describesOrDescribed rdf:resource="agent/123456"/>
       <rico:hasInstantiation>
          <rico:Instantiation rdf:about="instantiation/123456">
-            <rico:instantiates rdf:resource="record/123456"/>
+            <rico:isInstantiationOf rdf:resource="record/123456"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_123456</rico:identifier>
-            <rico:heldBy rdf:resource="agent/005061"/>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_123456"/> 
          </rico:Instantiation>
       </rico:hasInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/123456">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
-      <rico:describedBy rdf:resource="record/123456"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/123456"/>
       <rdfs:label xml:lang="fr">The entity</rdfs:label>
-      <rico:hasAgentName>
+      <rico:hasOrHadAgentName>
          <rico:AgentName rdf:about="agentName/123456-The%20entity">
             <rdfs:label xml:lang="fr">The entity</rdfs:label>
             <rico:textualValue xml:lang="fr">The entity</rico:textualValue>
-            <rico:isAgentNameOf rdf:resource="agent/123456"/>
-            <rico:regulatedBy rdf:resource="rule/rl001"/>
+            <rico:isOrWasAgentNameOf rdf:resource="agent/123456"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl001"/>
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
-      </rico:hasAgentName>
+      </rico:hasOrHadAgentName>
       <!-- case 1 -->
       <rico:thingIsTargetOfPlaceRelation>
          <rico:PlaceRelation>
@@ -45,7 +45,7 @@
             </rico:descriptiveNote>
          </rico:PlaceRelation>
       </rico:thingIsTargetOfPlaceRelation>
-      <rico:hasLocation rdf:resource="place/29%20rue%20d%27Ulm%2C%2075230%20Paris%2005"/>
+      <rico:hasOrHadLocation rdf:resource="place/29%20rue%20d%27Ulm%2C%2075230%20Paris%2005"/>
       <!-- case 2 -->
       <rico:thingIsTargetOfPlaceRelation>
          <rico:PlaceRelation>
@@ -53,18 +53,18 @@
             <rico:placeRelationHasSource rdf:resource="place/24%2C%20rue%20La%20Fayette"/>
          </rico:PlaceRelation>
       </rico:thingIsTargetOfPlaceRelation>
-      <rico:hasLocation rdf:resource="place/24%2C%20rue%20La%20Fayette"/>
+      <rico:hasOrHadLocation rdf:resource="place/24%2C%20rue%20La%20Fayette"/>
       <!-- case 3 -->
       <rico:thingIsTargetOfPlaceRelation>
          <rico:PlaceRelation>
             <rico:placeRelationHasTarget rdf:resource="agent/123456"/>
             <rico:placeRelationHasSource> <rico:Place>
                   <rdfs:label xml:lang="fr">Lieu dont l'adresse précise est indéterminée</rdfs:label>
-                  <rico:hasLocation rdf:resource="place/FRAN_RI_020-d3nyv28v37--w6fed6mpjd5r"/>
+                  <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_020-d3nyv28v37--w6fed6mpjd5r"/>
                </rico:Place>
             </rico:placeRelationHasSource> </rico:PlaceRelation>
       </rico:thingIsTargetOfPlaceRelation>
-      <rico:hasLocation rdf:resource="place/FRAN_RI_020-d3nyv28v37--w6fed6mpjd5r"/>
+      <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_020-d3nyv28v37--w6fed6mpjd5r"/>
       <!-- case 4 -->
       <rico:thingIsTargetOfPlaceRelation>
          <rico:PlaceRelation>
@@ -72,7 +72,7 @@
             <rico:placeRelationHasSource rdf:resource="place/au%20March%C3%A9-Neuf"/>
          </rico:PlaceRelation>
       </rico:thingIsTargetOfPlaceRelation>
-      <rico:hasLocation rdf:resource="place/au%20March%C3%A9-Neuf"/>
+      <rico:hasOrHadLocation rdf:resource="place/au%20March%C3%A9-Neuf"/>
       <!-- case 5 : not processed -->
       <!-- case 6 -->
       <rico:thingIsTargetOfPlaceRelation>
@@ -81,22 +81,22 @@
             <rico:placeRelationHasSource rdf:resource="place/FRAN_RI_026-d5bknx4v7j-1wqddent61siy"
             /> </rico:PlaceRelation>
       </rico:thingIsTargetOfPlaceRelation>
-      <rico:hasLocation rdf:resource="place/FRAN_RI_026-d5bknx4v7j-1wqddent61siy"/>
+      <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_026-d5bknx4v7j-1wqddent61siy"/>
       <!-- cases 7 and 8: not processed -->
    </rico:Agent>
    <!-- the places below should be output in a separated file, like the relations, since they can be referenced to by many place relations -->
    <rico:Place rdf:about="place/29%20rue%20d%27Ulm%2C%2075230%20Paris%2005">
       <rdfs:label xml:lang="fr">29 rue d'Ulm, 75230 Paris 05</rdfs:label>
-      <rico:hasLocation rdf:resource="place/FRAN_RI_025-d3nzdlud4x--106llaae0lz0b"/>
+      <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_025-d3nzdlud4x--106llaae0lz0b"/>
    </rico:Place>
    <rico:Place rdf:about="place/24%2C%20rue%20La%20Fayette">
       <rdfs:label xml:lang="fr">24, rue La Fayette</rdfs:label>
-      <rico:hasLocation rdf:resource="place/FRAN_RI_025-d3nzbmscto--2k2q239mkocu"/>
+      <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_025-d3nzbmscto--2k2q239mkocu"/>
    </rico:Place>
    <rico:Place rdf:about="place/au%20March%C3%A9-Neuf">
       <rdfs:label xml:lang="fr">au Marché-Neuf</rdfs:label>
-      <rico:hasLocation rdf:resource="place/FRAN_RI_024-d3nyvost68-1tq3k980risj5"/>
-      <rico:hasLocation rdf:resource="place/FRAN_RI_024-d3nyvoxbpe-1o35tgfsdunvx"/>
-      <rico:hasLocation rdf:resource="place/FRAN_RI_025-d3nzbx7zqf-v2ieo26jmuhp"/>
+      <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_024-d3nyvost68-1tq3k980risj5"/>
+      <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_024-d3nyvoxbpe-1o35tgfsdunvx"/>
+      <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_025-d3nzbx7zqf-v2ieo26jmuhp"/>
    </rico:Place>
 </rdf:RDF>

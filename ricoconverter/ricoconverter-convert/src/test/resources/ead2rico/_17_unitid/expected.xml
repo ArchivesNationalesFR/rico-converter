@@ -9,40 +9,40 @@
     xml:base="http://data.archives-nationales.culture.gouv.fr/">
     <rico:Record rdf:about="record/058220">
     	<rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
-        <rico:describes rdf:resource="recordResource/058220-top"/>
+        <rico:describesOrDescribed rdf:resource="recordResource/058220-top"/>
          <rico:hasInstantiation>
 	         <rico:Instantiation rdf:about="instantiation/058220-i1">
-	            <rico:instantiates rdf:resource="record/058220"/>
+	            <rico:isInstantiationOf rdf:resource="record/058220"/>
 	            <dc:format xml:lang="en">text/xml</dc:format>
 	            <rico:identifier>FRAN_IR_058220</rico:identifier>
-	            <rico:heldBy rdf:resource="agent/005061"/>
+	            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
 	            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>
 	         </rico:Instantiation>
 	      </rico:hasInstantiation>
     </rico:Record>
     <!-- archdesc level -->
     <rico:RecordResource rdf:about="recordResource/058220-top">    
-        <rico:describedBy rdf:resource="record/058220"/>       
+        <rico:isOrWasDescribedBy rdf:resource="record/058220"/>       
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-top-i1">
-                <rico:instantiates rdf:resource="recordResource/058220-top"/>
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-top"/>
                 <rico:identifier>20144792/1-20144792/363</rico:identifier>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
             </rico:Instantiation>
         </rico:hasInstantiation>
-        <rico:includes rdf:resource="recordResource/058220-c-25s2lche6kz-qfignk48spf8"/>
-        <rico:includes rdf:resource="recordResource/058220-c-2gvrjvsm9--13pxk5ufbbf3v"/>
-        <rico:includes rdf:resource="recordResource/058220-d_4_2"/>
-        <rico:includes rdf:resource="recordResource/058220-d_4"/>
-        <rico:includes rdf:resource="recordResource/058220-d_48"/>
+        <rico:includesOrIncluded rdf:resource="recordResource/058220-c-25s2lche6kz-qfignk48spf8"/>
+        <rico:includesOrIncluded rdf:resource="recordResource/058220-c-2gvrjvsm9--13pxk5ufbbf3v"/>
+        <rico:includesOrIncluded rdf:resource="recordResource/058220-d_4_2"/>
+        <rico:includesOrIncluded rdf:resource="recordResource/058220-d_4"/>
+        <rico:includesOrIncluded rdf:resource="recordResource/058220-d_48"/>
       
     </rico:RecordResource>
     <!-- c level -->
     <rico:RecordResource rdf:about="recordResource/058220-c-25s2lche6kz-qfignk48spf8">   
-    	<rico:includedIn rdf:resource="recordResource/058220-top"/>    
+    	<rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>    
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c-25s2lche6kz-qfignk48spf8-i1">               
-                <rico:instantiates rdf:resource="recordResource/058220-c-25s2lche6kz-qfignk48spf8"/>
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-c-25s2lche6kz-qfignk48spf8"/>
                 <rico:identifier>20144792/1-20144792/20</rico:identifier>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c-25s2lche6kz-qfignk48spf8"/>
             </rico:Instantiation>
@@ -50,10 +50,10 @@
     </rico:RecordResource>
     
     <rico:RecordResource rdf:about="recordResource/058220-c-2gvrjvsm9--13pxk5ufbbf3v">
-    	<rico:includedIn rdf:resource="recordResource/058220-top"/>   
+    	<rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>   
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c-2gvrjvsm9--13pxk5ufbbf3v-i1">               
-                <rico:instantiates rdf:resource="recordResource/058220-c-2gvrjvsm9--13pxk5ufbbf3v"/>
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-c-2gvrjvsm9--13pxk5ufbbf3v"/>
                 <!-- concat the two cote-de-consultation and pieces unitid values -->
                 <rico:identifier>400AP/20 Dossier 3</rico:identifier>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c-2gvrjvsm9--13pxk5ufbbf3v"/>
@@ -62,10 +62,10 @@
     </rico:RecordResource>
    
     <rico:RecordResource rdf:about="recordResource/058220-d_4_2">
-    	<rico:includedIn rdf:resource="recordResource/058220-top"/>
+    	<rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-d_4_2-i1">               
-                <rico:instantiates rdf:resource="recordResource/058220-d_4_2"/>
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-d_4_2"/>
                 <rico:identifier>AB/XIX/3467</rico:identifier>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/d_4_2"/>
             </rico:Instantiation>
@@ -73,10 +73,10 @@
     </rico:RecordResource>
     
     <rico:RecordResource rdf:about="recordResource/058220-d_4">
-    	<rico:includedIn rdf:resource="recordResource/058220-top"/>   
+    	<rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>   
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-d_4-i1">               
-                <rico:instantiates rdf:resource="recordResource/058220-d_4"/>
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-d_4"/>
                 <rico:identifier>AB/XIX/3466-AB/XIX/3947</rico:identifier>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/d_4"/>
             </rico:Instantiation>
@@ -84,10 +84,10 @@
     </rico:RecordResource>
     
     <rico:RecordResource rdf:about="recordResource/058220-d_48">
-    	<rico:includedIn rdf:resource="recordResource/058220-top"/>
+    	<rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-d_48-i1">               
-                <rico:instantiates rdf:resource="recordResource/058220-d_48"/>
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-d_48"/>
                 <rico:identifier>xxxxx</rico:identifier>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/d_48"/>
             </rico:Instantiation>

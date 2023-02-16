@@ -56,7 +56,7 @@
 		<rico:Record>
 			<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-Record(eac:recordId)" /></xsl:call-template>
 			<rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
-			<rico:describes><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template></rico:describes>
+			<rico:describesOrDescribed><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template></rico:describesOrDescribed>
 			
 			<xsl:apply-templates />
 			<xsl:apply-templates select="../eac:cpfDescription/eac:identity/eac:entityId" mode="description" />
@@ -65,15 +65,15 @@
 			<rico:hasInstantiation>
 	         <rico:Instantiation>
 	         	<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-Instantiation(eac:recordId)" /></xsl:call-template>
-	            <rico:instantiates rdf:resource="{eac2rico:URI-Record(eac:recordId)}"/>
+	            <rico:isInstantiationOf rdf:resource="{eac2rico:URI-Record(eac:recordId)}"/>
 	            <dc:format xml:lang="en">text/xml</dc:format>
 	            <rico:identifier><xsl:value-of select="eac:recordId" /></rico:identifier>
 	            <xsl:choose>
 					<xsl:when test="starts-with($AUTHOR_URI, $BASE_URI)">
-						<rico:heldBy rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}" />
+						<rico:hasOrHadHolder rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}" />
 					</xsl:when>
 					<xsl:otherwise>
-						<rico:heldBy rdf:resource="{$AUTHOR_URI}" />
+						<rico:hasOrHadHolder rdf:resource="{$AUTHOR_URI}" />
 					</xsl:otherwise>
 				</xsl:choose>
 				<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/{/eac:eac-cpf/eac:control/eac:recordId}" />
@@ -85,7 +85,7 @@
 
 	<!-- ***** conventionDeclaration on both the Record and the Instantiation -->
 
-	<!-- Generates rico:regulatedBy with hardcoded values depending on the entity type -->
+	<!-- Generates rico:isOrWasRegulatedBy with hardcoded values depending on the entity type -->
 	<xsl:template match="eac:control/eac:conventionDeclaration">
 		<xsl:apply-templates />
 	</xsl:template>
@@ -93,19 +93,19 @@
 		<xsl:variable name="entType" select="/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType" />
 		<xsl:choose>
 			<xsl:when test="$entType = 'corporateBody' or $entType = 'family'">
-				<rico:regulatedBy rdf:resource="rule/rl001" />
+				<rico:isOrWasRegulatedBy rdf:resource="rule/rl001" />
 			</xsl:when>
 			<xsl:when test="$entType = 'person'">
-				<rico:regulatedBy rdf:resource="rule/rl002" />
+				<rico:isOrWasRegulatedBy rdf:resource="rule/rl002" />
 			</xsl:when>
 		</xsl:choose>
-		<rico:regulatedBy rdf:resource="rule/rl003" />
-		<rico:regulatedBy rdf:resource="rule/rl004" />
+		<rico:isOrWasRegulatedBy rdf:resource="rule/rl003" />
+		<rico:isOrWasRegulatedBy rdf:resource="rule/rl004" />
 	</xsl:template>
 	
 	<!-- hardcoded value on the Instantiation that states this is encoded in EAC/CPF -->
 	<xsl:template match="eac:control/eac:conventionDeclaration" mode="instantiation">
-		<rico:regulatedBy rdf:resource="rule/rl011" />
+		<rico:isOrWasRegulatedBy rdf:resource="rule/rl011" />
 	</xsl:template>
 	
 	<xsl:template match="eac:control/eac:otherRecordId[text()]" mode="instantiation">
@@ -158,11 +158,11 @@
 	</xsl:template>
 	
 	<xsl:template match="eac:maintenanceEvent">	
-	   <rico:affectedBy>
+	   <rico:isOrWasAffectedBy>
 	      <rico:Activity>
 	      	 <xsl:apply-templates />
 	      </rico:Activity>
-	   </rico:affectedBy>
+	   </rico:isOrWasAffectedBy>
 	</xsl:template>
 	
 	<xsl:template match="eac:eventDateTime">
@@ -247,10 +247,10 @@
 	<xsl:template match="eac:maintenanceAgency">
 		<xsl:choose>
 			<xsl:when test="starts-with($AUTHOR_URI, $BASE_URI)">
-				<rico:createdBy rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}" />
+				<rico:hasCreator rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}" />
 			</xsl:when>
 			<xsl:otherwise>
-				<rico:createdBy rdf:resource="{$AUTHOR_URI}" />
+				<rico:hasCreator rdf:resource="{$AUTHOR_URI}" />
 			</xsl:otherwise>
 		</xsl:choose>
 		
@@ -269,7 +269,7 @@
 				<!-- TODO : error message -->
 				<xsl:otherwise></xsl:otherwise>
 			</xsl:choose>
-			<rico:describedBy><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-Record(../eac:control/eac:recordId)" /></xsl:call-template></rico:describedBy>
+			<rico:isOrWasDescribedBy><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-Record(../eac:control/eac:recordId)" /></xsl:call-template></rico:isOrWasDescribedBy>
 			<xsl:apply-templates />	
 		</rico:Agent>	
 	</xsl:template>
@@ -329,37 +329,37 @@
 	<!-- ** nameEntry ** -->
 	<xsl:template match="eac:nameEntry[@localType = 'autorisée']">
 		<rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="eac:part" /></rdfs:label>
-		<rico:hasAgentName>
+		<rico:hasOrHadAgentName>
 			<rico:AgentName>				
 				<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-AgentName($recordId, eac:part, eac:useDates/eac:dateRange/eac:fromDate//@standardDate, eac:useDates/eac:dateRange/eac:toDate//@standardDate)" /></xsl:call-template>
 				<rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="eac:part" /></rdfs:label>
 				<rico:textualValue xml:lang="{$LITERAL_LANG}"><xsl:value-of select="eac:part" /></rico:textualValue>
-				<rico:isAgentNameOf><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template></rico:isAgentNameOf>
+				<rico:isOrWasAgentNameOf><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template></rico:isOrWasAgentNameOf>
 				<!-- Authorized name are linked to the regulation depending on entityType -->
 				<xsl:choose>
 					<xsl:when test="/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType = 'corporateBody' or /eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType = 'family'">
-						<rico:regulatedBy rdf:resource="rule/rl001" />
+						<rico:isOrWasRegulatedBy rdf:resource="rule/rl001" />
 					</xsl:when>
 					<xsl:when test="/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType = 'person'">
-						<rico:regulatedBy rdf:resource="rule/rl002" />
+						<rico:isOrWasRegulatedBy rdf:resource="rule/rl002" />
 					</xsl:when>
 				</xsl:choose>
 				<rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
 				<xsl:apply-templates />
 			</rico:AgentName>
-		</rico:hasAgentName>
+		</rico:hasOrHadAgentName>
 	</xsl:template>
 	
 	<xsl:template match="eac:nameEntry[not(@localType != '')]">
-		<rico:hasAgentName>
+		<rico:hasOrHadAgentName>
 			<rico:AgentName>
 				<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-AgentName($recordId, eac:part, eac:useDates/eac:dateRange/eac:fromDate//@standardDate, eac:useDates/eac:dateRange/eac:toDate//@standardDate)" /></xsl:call-template>
 				<rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="eac:part" /></rdfs:label>
 				<rico:textualValue xml:lang="{$LITERAL_LANG}"><xsl:value-of select="eac:part" /></rico:textualValue>
-				<rico:isAgentNameOf><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template></rico:isAgentNameOf>
+				<rico:isOrWasAgentNameOf><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template></rico:isOrWasAgentNameOf>
 				<xsl:apply-templates />
 			</rico:AgentName>
-		</rico:hasAgentName>
+		</rico:hasOrHadAgentName>
 	</xsl:template>
 	
 	<xsl:template match="eac:description">
@@ -1165,9 +1165,9 @@
 		      </rico:thingIsTargetOfPlaceRelation>
 		      
 		      <!-- Additionnally, generate the direct link hasLocation to the Place -->
-		      <rico:hasLocation>
+		      <rico:hasOrHadLocation>
 					<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-Place(eac:placeEntry[@localType='nomLieu']/text())" /></xsl:call-template>
-			  </rico:hasLocation>
+			  </rico:hasOrHadLocation>
        			
        		</xsl:when>
        		<xsl:otherwise>
@@ -1346,9 +1346,9 @@
       </rico:thingIsTargetOfPlaceRelation>	  
 	  
 	  <!-- Additionnally, generate the direct link hasLocation to the referential -->
-      <rico:hasLocation>
+      <rico:hasOrHadLocation>
 			<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-Place(eac:placeEntry[@localType='nomLieu']/text())" /></xsl:call-template>
-	  </rico:hasLocation>
+	  </rico:hasOrHadLocation>
       
 	</xsl:template>
 
@@ -1371,11 +1371,11 @@
 		match="eac:placeEntry[exists(index-of(('voie', 'edifice', 'commune_rattachee', 'paroisse', 'quartier', 'arrondissement_actuel', 'arrondissement_ancien'), @localType)) and @vocabularySource]"
 		mode="hasLocation"	
 	>
-		<rico:hasLocation>
+		<rico:hasOrHadLocation>
 			<xsl:call-template name="rdf-resource">
 				<xsl:with-param name="uri" select="eac2rico:URI-Place-hasLocation(@vocabularySource, @localType)" />
 			</xsl:call-template>
-		</rico:hasLocation>
+		</rico:hasOrHadLocation>
 	</xsl:template>
 	
 	<!-- This is for a Place outside Paris -->
@@ -1383,11 +1383,11 @@
 		match="eac:placeEntry[@localType = 'lieu' and @vocabularySource]"
 		mode="hasLocation"	
 	>
-		<rico:hasLocation>
+		<rico:hasOrHadLocation>
 			<xsl:call-template name="rdf-resource">
 				<xsl:with-param name="uri" select="eac2rico:URI-Place-hasLocation(@vocabularySource, @localType)" />
 			</xsl:call-template>
-		</rico:hasLocation>
+		</rico:hasOrHadLocation>
 	</xsl:template>
 	<!-- Processing of formatting elements p, list, item, span -->
 	

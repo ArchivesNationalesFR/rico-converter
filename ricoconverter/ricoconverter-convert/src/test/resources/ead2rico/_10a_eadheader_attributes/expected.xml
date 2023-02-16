@@ -8,19 +8,19 @@
          xml:base="http://data.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/058220">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
-      <rico:regulatedBy rdf:resource="rule/rl005"/>
-      <rico:regulatedBy rdf:resource="rule/rl004"/>
-      <rico:regulatedBy rdf:resource="rule/rl006"/>
-      <rico:regulatedBy rdf:resource="rule/rl007"/>
-      <rico:regulatedBy rdf:resource="rule/rl008"/>
-      <rico:regulatedBy rdf:resource="rule/rl009"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl005"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl006"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl007"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl008"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl009"/>
       <rico:hasInstantiation>      
          <rico:Instantiation rdf:about="instantiation/058220-i1">
-	   	  <rico:instantiates rdf:resource="record/058220"/>
-	   	  <rico:regulatedBy rdf:resource="rule/rl010"/>
+	   	  <rico:isInstantiationOf rdf:resource="record/058220"/>
+	   	  <rico:isOrWasRegulatedBy rdf:resource="rule/rl010"/>
 	      <dc:format xml:lang="en">text/xml</dc:format>
 	      <rico:identifier>FRAN_IR_058220</rico:identifier>
-	      <rico:heldBy rdf:resource="agent/005061"/>
+	      <rico:hasOrHadHolder rdf:resource="agent/005061"/>
 	      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>  
 	      <!--?? <owl:sameAs rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/exportXML.action?irId=FRAN_IR_058220"/>-->
 	    </rico:Instantiation>
