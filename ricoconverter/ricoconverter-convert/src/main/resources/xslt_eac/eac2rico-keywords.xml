@@ -8,6 +8,11 @@
 		<Arcroles>
 			<Arcrole>isControlledBy</Arcrole>
 			<Arcrole>controls</Arcrole>
+			<!-- To be moved here if we want to generate an AgentControlRelation -->
+			<!--
+			<Arcrole currentEntityRole="source">isSuperiorOf</Arcrole>
+			<Arcrole currentEntityRole="target">isInferiorOf</Arcrole>
+			-->
 		</Arcroles>
 	</AgentControlRelation>
 	<LeadershipRelation>
@@ -28,12 +33,6 @@
 			<Arcrole>hasSubdivision</Arcrole>
 		</Arcroles>
 	</GroupSubdivisionRelation>
-	<AgentSubordinationRelation>
-		<Arcroles>
-			<Arcrole currentEntityRole="source">isSuperiorOf</Arcrole>
-			<Arcrole currentEntityRole="target">isInferiorOf</Arcrole>
-		</Arcroles>
-	</AgentSubordinationRelation>
 	<MembershipRelation>
 		<Arcroles>
 			<Arcrole currentEntityRole="target">personIsMemberOf</Arcrole>

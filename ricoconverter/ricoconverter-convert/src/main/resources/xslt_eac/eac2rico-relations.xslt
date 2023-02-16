@@ -98,15 +98,6 @@
 			<isSourceOfProperty>rico:personIsSourceOfLeadershipRelation</isSourceOfProperty>
 			<label>Relation de direction (leadership)</label>
 		</LeadershipRelation>
-		<AgentSubordinationRelation>
-			<baseType>rico:AgentHierarchicalRelation</baseType>
-			<extraType>https://www.ica.org/standards/RiC/ontology#AgentSubordinationRelation</extraType>
-			<targetProperty>rico:agentSubordinationRelationHasTarget</targetProperty>
-			<sourceProperty>rico:agentSubordinationRelationHasSource</sourceProperty>
-			<isTargetOfProperty>rico:personIsTargetOfAgentSubordinationRelation</isTargetOfProperty>
-			<isSourceOfProperty>rico:personIsSourceOfAgentSubordinationRelation</isSourceOfProperty>
-			<label>Relation hiérarchique (de subordination)</label>
-		</AgentSubordinationRelation>
 		<MembershipRelation>
 			<baseType>rico:MembershipRelation</baseType>
 			<!-- no extra type here -->
@@ -134,7 +125,6 @@
 		<xsl:param name="relation"  as="element()?"/>
 		<xsl:choose>
 			<xsl:when test="eac2rico:specifiesLeadershipRelation(@xlink:arcrole)">LeadershipRelation</xsl:when>
-			<xsl:when test="eac2rico:specifiesAgentSubordinationRelation(@xlink:arcrole)">AgentSubordinationRelation</xsl:when>
 			<xsl:when test="eac2rico:specifiesWorkRelation(@xlink:arcrole)">WorkRelation</xsl:when>
 			<xsl:when test="eac2rico:specifiesMembershipRelation(@xlink:arcrole)">MembershipRelation</xsl:when>
 	       	<!-- If we detect a specific keyword in the description... -->
@@ -402,11 +392,6 @@
 	<xsl:function name="eac2rico:specifiesLeadershipRelation" as="xs:boolean">
 		<xsl:param name="arcrole"  as="xs:string?" />
 		<xsl:sequence select="$KEYWORDS/AgentRelation/LeadershipRelation/Arcroles/Arcrole[text() = $arcrole] != ''" />
-	</xsl:function>
-	<!-- Tests if an xlink:arcrole attribute value indicates a AgentSubordinationRelation -->
-	<xsl:function name="eac2rico:specifiesAgentSubordinationRelation" as="xs:boolean">
-		<xsl:param name="arcrole"  as="xs:string?" />
-		<xsl:sequence select="$KEYWORDS/AgentRelation/AgentSubordinationRelation/Arcroles/Arcrole[text() = $arcrole] != ''" />
 	</xsl:function>
 	<!-- Tests if an xlink:arcrole attribute value indicates a WorkRelation -->
 	<xsl:function name="eac2rico:specifiesWorkRelation" as="xs:boolean">
