@@ -6,7 +6,7 @@
    xmlns:dc="http://purl.org/dc/elements/1.1/">
    <rico:Record rdf:about="record/000051">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
-      <rico:describes rdf:resource="agent/000051"/>
+      <rico:describesOrDescribed rdf:resource="agent/000051"/>
       <rico:source rdf:parseType="Literal"><html:p xml:lang="fr">Dardy-Cretin Michèle,
                <html:i>Histoire administrative du Ministère de la culture et de la communication, 1959-2012 : les services de l'administration centrale</html:i>, Paris, Comité d'histoire du Ministère de la Culture, 2012. </html:p></rico:source>
       <rico:source rdf:parseType="Literal"><html:p xml:lang="fr">Site Internet du ministère de la Culture et de la Communication. Disponible à l'adresse suivante : http://www.culturecommunication.gouv.fr/</html:p></rico:source>
@@ -24,16 +24,16 @@
       <rico:hasSource rdf:resource="https://fr.wikipedia.org/wiki/Victor_de_Persigny"/>
       <rico:hasInstantiation>
          <rico:Instantiation rdf:about="instantiation/000051">
-            <rico:instantiates rdf:resource="record/000051"/>
+            <rico:isInstantiationOf rdf:resource="record/000051"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_000051</rico:identifier>
-            <rico:heldBy rdf:resource="agent/005061"/>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_000051"/> 
          </rico:Instantiation>
       </rico:hasInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/000051">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
-      <rico:describedBy rdf:resource="record/000051"/>
+      <rico:isOrWasDescribedBy rdf:resource="record/000051"/>
    </rico:Agent>
 </rdf:RDF>

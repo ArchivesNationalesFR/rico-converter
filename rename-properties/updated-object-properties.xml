@@ -1,0 +1,2640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+    <!-- list of RiC-O 0.1 object properties that have changed name, domain, range, superproperty, or any other feature, in RiC-O 0.2 
+    For each property, a property XML element. The new names etc. can be found in the 'NEW_*' subelements-->
+    <!-- useful for converting RiC-O 0.1 datasets to RiC-O 0.2 ones-->
+    <!-- this file is not publicly available yet. Should be, once improved a bit-->
+    <!-- author: Florence Clavaud, ICA/EGAD, January 2021-->
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>accumulatedBy</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasAccumulator</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>accumulated by</english_label>
+        <NEW_LABEL>has accumulator</NEW_LABEL>
+        <subproperty_of>hasProvenance</subproperty_of>
+        <inverse_of>accumulates</inverse_of>
+        <NEW_INVERSE_OF>isAccumulatorOf</NEW_INVERSE_OF>
+        <domain>Instantiation ; RecordResource</domain>
+        <range>Agent</range>
+        <propertyChainAxiom>recordResourceOrInstantiationIsSourceOfAccumulationRelation/accumulationRelationHasTarget</propertyChainAxiom>
+        <definition>Connects a Record Resource or an Instantiation to the Agent that accumulates it,
+            be it intentionally (collecting) or not (receiving in the course of its
+            activities).</definition>
+        <corresponding_CM_component>RiC-R028 ('has accumulator'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition and
+            corresponding CM component.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>accumulates</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isAccumulatorOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>accumulates</english_label>
+        <NEW_LABEL>is accumulator of</NEW_LABEL>
+        <subproperty_of>isProvenanceOf</subproperty_of>
+        <inverse_of>accumulatedBy</inverse_of>
+        <NEW_INVERSE_OF>hasAccumulator</NEW_INVERSE_OF>
+        <domain>Agent</domain>
+        <range>Instantiation ; RecordResource</range>
+        <propertyChainAxiom>agentIsTargetOfAccumulationRelation/accumulationRelationHasSource</propertyChainAxiom>
+        <definition>Inverse of 'has accumulator' object property</definition>
+        <corresponding_CM_component>RiC-R028i ('is accumulator of'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition and
+            corresponding CM component.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>affectedBy</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasAffectedBy</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>affected by</english_label>
+        <NEW_LABEL>is or was affected by</NEW_LABEL>
+        <subproperty_of>involvedIn</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasParticipantIn</NEW_SUBPROPERTY_OF>
+        <inverse_of>affects</inverse_of>
+        <NEW_INVERSE_OF>affectsOrAffected</NEW_INVERSE_OF>
+        <domain>Thing</domain>
+        <range>Event</range>
+        <definition>Inverse of 'affects or affected' object property</definition>
+        <corresponding_CM_component>RiC-R059i ('is or was affected by'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition and
+            corresponding CM component.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>affects</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>affectsOrAffected</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>affects</english_label>
+        <NEW_LABEL>affects or affected</NEW_LABEL>
+        <subproperty_of>involves</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadParticipant</NEW_SUBPROPERTY_OF>
+        <inverse_of>affectedBy</inverse_of>
+        <NEW_INVERSE_OF>isOrWasAffectedBy</NEW_INVERSE_OF>
+        <domain>Event</domain>
+        <range>Thing</range>
+        <definition>Connects an Event to a Thing on which the Event has or had some significant
+            impact.</definition>
+        <corresponding_CM_component>RiC-R059 ('affects or affected'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition and
+            corresponding CM component. </NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>authorizes</object_property_name>
+        <english_label>authorizes</english_label>
+        <subproperty_of>isRuleAssociatedWith</subproperty_of>
+        <inverse_of>authorizedBy</inverse_of>
+        <domain>Mandate</domain>
+        <range>Agent</range>
+        <propertyChainAxiom>mandateIsSourceOfMandateRelation/mandateRelationHasTarget</propertyChainAxiom>
+        <definition>Connects a Mandate to the Agent that the Mandate gives the authority or
+            competencies to act.</definition>
+        <corresponding_CM_component>RiC-R067 ('authorizes' relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>fixed the CM corresponding component name.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>belongsToCategory</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadCategory</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>belongs to category</english_label>
+        <NEW_LABEL>has or had category</NEW_LABEL>
+        <subproperty_of>isRelatedTo</subproperty_of>
+        <inverse_of>isCategoryOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasCategoryOf</NEW_INVERSE_OF>
+        <domain>Thing</domain>
+        <range>Type</range>
+        <propertyChainAxiom>thingIsTargetOfTypeRelation/typeRelationHasSource</propertyChainAxiom>
+        <definition>Connects a Thing to a Type that categorizes or categorized it</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>belongsToDemographicGroup</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadDemographicGroup</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>belongs to demographic group</english_label>
+        <NEW_LABEL>has or had demographic group</NEW_LABEL>
+        <subproperty_of>belongsToCategory</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadCategory</NEW_SUBPROPERTY_OF>
+        <inverse_of>isDemographicGroupOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasDemographicGroupOf</NEW_INVERSE_OF>
+        <domain>Person</domain>
+        <NEW_DOMAIN>Person ; Group</NEW_DOMAIN>
+        <range>DemographicGroup</range>
+        <definition>Connects a Person or a Group to a Demographic Group to which it belongs or
+            belonged.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition,
+            domain.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>collectedBy</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasCollector</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>collected by</english_label>
+        <NEW_LABEL>has collector</NEW_LABEL>
+        <subproperty_of>accumulatedBy</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasAccumulator</NEW_SUBPROPERTY_OF>
+        <inverse_of>collects</inverse_of>
+        <NEW_INVERSE_OF>isCollectorOf</NEW_INVERSE_OF>
+        <domain>Instantiation ; RecordResource</domain>
+        <range>Agent</range>
+        <definition>Connects a Record Resource or an Instantiation to the Agent that collects it
+            intentionally (is a collector).</definition>
+        <corresponding_CM_component>RiC-R030 ('has collector' relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property and super property IRI, text
+            definition, domain.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>collects</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isCollectorOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>collects</english_label>
+        <NEW_LABEL>is collector of</NEW_LABEL>
+        <subproperty_of>accumulates</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isAccumulatorOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>collectedBy</inverse_of>
+        <NEW_INVERSE_OF>hasCollector</NEW_INVERSE_OF>
+        <domain>Agent</domain>
+        <range>Instantiation ; RecordResource</range>
+        <definition>Inverse of 'has collector' object property</definition>
+        <corresponding_CM_component>RiC-R030i ('is collector of'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property and super property IRI, text
+            definition, domain.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>containedBy</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasContainedBy</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>contained by</english_label>
+        <NEW_LABEL>is or was contained by</NEW_LABEL>
+        <subproperty_of>isAssociatedWithPlace ; isPartOf ; isPlaceAssociatedWith</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isAssociatedWithPlace ; isOrWasPartOf ;
+            isPlaceAssociatedWith</NEW_SUBPROPERTY_OF>
+        <inverse_of>contains</inverse_of>
+        <NEW_INVERSE_OF>containsOrContained</NEW_INVERSE_OF>
+        <domain>Place</domain>
+        <range>Place</range>
+        <definition>Inverse of 'contains or contained' object property</definition>
+        <corresponding_CM_component>RiC-R007i ('is or was contained by'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition,
+            corresponding CM component name.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>contains</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>containsOrContained</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>contains</english_label>
+        <NEW_LABEL>contains or contained</NEW_LABEL>
+        <subproperty_of>hasOrHadPart ; isAssociatedWithPlace ;
+            isPlaceAssociatedWith</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadPart ; isAssociatedWithPlace ;
+            isPlaceAssociatedWith</NEW_SUBPROPERTY_OF>
+        <inverse_of>containedBy</inverse_of>
+        <NEW_INVERSE_OF>isOrWasContainedBy</NEW_INVERSE_OF>
+        <domain>Place</domain>
+        <range>Place</range>
+        <definition>Connects a Place to a region that is or was within it.</definition>
+        <scope_note>Use for connecting two geographical or administrative regions.</scope_note>
+        <corresponding_CM_component>RiC-R007 ('contains or contained'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition,
+            corresponding CM component name ; added a scope note.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>controlledBy</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadController</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>controlled by</english_label>
+        <NEW_LABEL>has or had controller</NEW_LABEL>
+        <subproperty_of>isHierarchicallyInferiorTo ; isUnderAuthorityOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasSubordinateTo ; isOrWasUnderAuthorityOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>controls</inverse_of>
+        <NEW_INVERSE_OF>isOrWasControllerOf</NEW_INVERSE_OF>
+        <domain>Agent</domain>
+        <range>Agent</range>
+        <propertyChainAxiom>agentIsTargetOfAgentControlRelation/agentControlRelationHasSource</propertyChainAxiom>
+        <definition>Inverse of 'is or was controller of' object property</definition>
+        <corresponding_CM_component>RiC-R041i ('has or had controller'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition,
+            corresponding CM component name.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>controls</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasControllerOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>controls</english_label>
+        <NEW_LABEL>is or was controller of</NEW_LABEL>
+        <subproperty_of>hasAuthorityOver ; isHierarchicallySuperiorTo</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadAuthorityOver ; hasOrHadSubordinate</NEW_SUBPROPERTY_OF>
+        <inverse_of>controlledBy</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadController</NEW_INVERSE_OF>
+        <domain>Agent</domain>
+        <range>Agent</range>
+        <propertyChainAxiom>agentIsSourceOfAgentControlRelation/agentControlRelationHasTarget</propertyChainAxiom>
+        <definition>Connects an Agent to another Agent it controls or controlled via Activities,
+            i.e. controls by function.</definition>
+        <corresponding_CM_component>RiC-R041 ('is or was controller of'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition,
+            corresponding CM component name.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-fc</checked_by>
+        <object_property_name>createdBy</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasCreator</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>created by</english_label>
+        <NEW_LABEL>has creator</NEW_LABEL>
+        <subproperty_of>hasProvenance</subproperty_of>
+        <inverse_of>isCreatorOf</inverse_of>
+        <domain>Instantiation ; RecordResource</domain>
+        <range>Agent</range>
+        <definition>Connects a Record Resource or an Instantiation to an Agent that is either
+            responsible for all or some of the content of the Record Resource or is a contributor to
+            the genesis or production of an Instantiation.</definition>
+        <scope_note>Covers the definition of author in diplomatics, and any contribution to the
+            intellectual content of a Record Resource.</scope_note>
+        <corresponding_CM_component>RiC-R027 ('has creator' relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI and label.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-fc</checked_by>
+        <object_property_name>createdByMigrationFromInstantiation</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>migratedFrom</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>created by migration from instantiation</english_label>
+        <NEW_LABEL>migrated from</NEW_LABEL>
+        <subproperty_of>isDerivedFromInstantiation</subproperty_of>
+        <inverse_of>isMigratedIntoInstantiation</inverse_of>
+        <!--<NEW_INVERSE_OF>migratedTo</NEW_INVERSE_OF>-->
+        <NEW_INVERSE_OF>migratedInto</NEW_INVERSE_OF>
+        <domain>Instantiation</domain>
+        <range>Instantiation</range>
+        <propertyChainAxiom>instantiationIsTargetOfMigrationRelation/migrationRelationHasSource</propertyChainAxiom>
+        <definition>Inverse of 'migrated into' object property</definition>
+        <corresponding_CM_component>RiC-R015i ('migrated from'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition,
+            corresponding CM component name.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>describedBy</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasDescribedBy</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>described by</english_label>
+        <NEW_LABEL>is or was described by</NEW_LABEL>
+        <subproperty_of>isSubjectOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasSubjectOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>describes</inverse_of>
+        <NEW_INVERSE_OF>describesOrDescribed</NEW_INVERSE_OF>
+        <domain>Thing</domain>
+        <range>RecordResource</range>
+        <definition>Inverse of 'describes or described' object property</definition>
+        <corresponding_CM_component>RiC-R021i ('is or was described by'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition,
+            corresponding CM component name.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>describes</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>describesOrDescribed</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>describes</english_label>
+        <NEW_LABEL>describes or described</NEW_LABEL>
+        <subproperty_of>hasSubject</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadSubject</NEW_SUBPROPERTY_OF>
+        <inverse_of>describedBy</inverse_of>
+        <NEW_INVERSE_OF>isOrWasDescribedBy</NEW_INVERSE_OF>
+        <domain>RecordResource</domain>
+        <range>Thing</range>
+        <definition>Connects a Record Resource to a Thing that it describes</definition>
+        <scope_note>Can be used, among other situations, for specifying that some finding aid (a
+            Record that has Documentary Form Type Finding Aid) describes some Record
+            Set.</scope_note>
+        <corresponding_CM_component>RiC-R021 (describes or described)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition,
+            corresponding CM component name.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>documentedBy</object_property_name>
+        <english_label>documented by</english_label>
+        <subproperty_of>resultsIn</subproperty_of>
+        <NEW_SUBPROPERTY_OF>resultsOrResultedIn</NEW_SUBPROPERTY_OF>
+        <inverse_of>isDocumentationOf</inverse_of>
+        <NEW_INVERSE_OF>documents</NEW_INVERSE_OF>
+        <domain>Activity</domain>
+        <range>Instantiation ; RecordResource</range>
+        <definition>Inverse of 'documents' object property</definition>
+        <corresponding_CM_component>RiC-R033i ('documented by'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the inverse property IRI, the superproperty IRI and the
+            corresponding CML component name</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>enforcedBy</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasEnforcedBy</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>enforced by</english_label>
+        <NEW_LABEL>is or was enforced by</NEW_LABEL>
+        <subproperty_of>isRuleAssociatedWith</subproperty_of>
+        <inverse_of>isResponsibleForEnforcing</inverse_of>
+        <NEW_INVERSE_OF>isOrWasResponsibleForEnforcing</NEW_INVERSE_OF>
+        <domain>Rule</domain>
+        <range>Agent</range>
+        <definition>Connects a Rule to an Agent that enforces or enforced the Rule.</definition>
+        <corresponding_CM_component>RiC-R066 ('is or was enforced by'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition,
+            corresponding CM component name.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>existsIn</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>existsOrExistedIn</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>exists in</english_label>
+        <NEW_LABEL>exists or existed in</NEW_LABEL>
+        <subproperty_of>isAgentAssociatedWithAgent</subproperty_of>
+        <inverse_of>hasPosition</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadPosition</NEW_INVERSE_OF>
+        <domain>Position</domain>
+        <range>Group</range>
+        <propertyChainAxiom>positionIsSourceOfPositionToGroupRelation/positionToGroupRelationHasTarget</propertyChainAxiom>
+        <definition>Connects a Position to a Group in which that Position exists or existed, or that
+            is defined by that Group�s organizational structure.</definition>
+        <corresponding_CM_component>RiC-R056 ('exists or existed in'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition,
+            corresponding CM component name.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>expressedBy</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasExpressedBy</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>expressed by</english_label>
+        <NEW_LABEL>is or was expressed by</NEW_LABEL>
+        <subproperty_of>isRuleAssociatedWith</subproperty_of>
+        <inverse_of>expresses</inverse_of>
+        <NEW_INVERSE_OF>expressesOrExpressed</NEW_INVERSE_OF>
+        <domain>Rule</domain>
+        <range>RecordResource</range>
+        <definition>Connects a Rule to a Record Resource that expresses or expressed the
+            Rule.</definition>
+        <corresponding_CM_component>RiC-R064 ('is or was expressed by'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition,
+            corresponding CM component name.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>expresses</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>expressesOrExpressed</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>expresses</english_label>
+        <NEW_LABEL>expresses or expressed</NEW_LABEL>
+        <subproperty_of>isAssociatedWithRule</subproperty_of>
+        <inverse_of>expressedBy</inverse_of>
+        <NEW_INVERSE_OF>isOrWasExpressedBy</NEW_INVERSE_OF>
+        <domain>RecordResource</domain>
+        <range>Rule</range>
+        <definition>Inverse of 'is or was expressed by' object property</definition>
+        <corresponding_CM_component>RiC-R064i ('expresses or expressed'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition,
+            corresponding CM component name.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>follows</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>followsOrFollowed</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>follows</english_label>
+        <NEW_LABEL>follows or followed</NEW_LABEL>
+        <subproperty_of>isRelatedTo</subproperty_of>
+        <inverse_of>precedes</inverse_of>
+        <NEW_INVERSE_OF>precedesOrPreceded</NEW_INVERSE_OF>
+        <domain>Thing</domain>
+        <range>Thing</range>
+        <propertyChainAxiom>thingIsTargetOfSequentialRelation/sequentialRelationHasSource</propertyChainAxiom>
+        <definition>Inverse of 'precedesOrPreceded' object property</definition>
+        <corresponding_CM_component>RiC-R008i ('follows or followed'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition,
+            corresponding CM component name.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>followsInTime</object_property_name>
+        <english_label>follows in time</english_label>
+        <subproperty_of>follows</subproperty_of>
+        <NEW_SUBPROPERTY_OF>followsOrFollowed</NEW_SUBPROPERTY_OF>
+        <inverse_of>precedesInTime</inverse_of>
+        <domain>Thing</domain>
+        <range>Thing</range>
+        <propertyChainAxiom>thingIsTargetOfTemporalRelation/temporalRelationHasSource</propertyChainAxiom>
+        <definition>Inverse of 'precedes in time' object property</definition>
+        <corresponding_CM_component>RiC-R009i ('follows in time'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the superproperty IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>hasActivityType</object_property_name>
+        <english_label>has activity type</english_label>
+        <subproperty_of>belongsToCategory</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadCategory</NEW_SUBPROPERTY_OF>
+        <inverse_of>isActivityTypeOf</inverse_of>
+        <domain>Activity</domain>
+        <range>ActivityType</range>
+        <definition>Connects an Activity to an Activity Type that categorizes it.</definition>
+        <NEW_CHANGE_NOTE>changed the superproperty IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>hasAddressee</object_property_name>
+        <english_label>has addressee</english_label>
+        <subproperty_of>hasProvenance</subproperty_of>
+        <inverse_of>isAddresseeOf</inverse_of>
+        <domain>Instantiation ; RecordResource</domain>
+        <range>Agent</range>
+        <definition>Connects a Record Resource or an Instantiation to the Agent that it is addressed
+            to.</definition>
+        <scope_note>The identity of the addressee is (usually) evidenced by the Record Resource or
+            Instantiation itself.</scope_note>
+        <corresponding_CM_component>RiC-R032 ('has addressee' relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>added a scope note</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>hasAgentName</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadAgentName</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has agent name</english_label>
+        <NEW_LABEL>has or had agent name</NEW_LABEL>
+        <subproperty_of>hasName</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadName</NEW_SUBPROPERTY_OF>
+        <inverse_of>isAgentNameOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasAgentNameOf</NEW_INVERSE_OF>
+        <domain>Agent</domain>
+        <range>AgentName</range>
+        <definition>Connects an Agent and (one of) its present or past Agent Name.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>hasAncestor</object_property_name>
+        <english_label>has ancestor</english_label>
+        <subproperty_of>hasFamilyLinkWith ; isSuccessorOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasFamilyAssociationWith; isSuccessorOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasDescendant</inverse_of>
+        <domain>Person</domain>
+        <range>Person</range>
+        <propertyChainAxiom>personIsTargetOfDescendanceRelation/descendanceRelationHasSource</propertyChainAxiom>
+        <definition>Inverse of 'has descendant' object property</definition>
+        <corresponding_CM_component>RiC-R017i (has ancestor relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the superproperty IRIs.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>hasAppellation</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadAppellation</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has appellation</english_label>
+        <NEW_LABEL>has or had appellation</NEW_LABEL>
+        <subproperty_of>isRelatedTo</subproperty_of>
+        <inverse_of>isAppellationOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasAppellationOf</NEW_INVERSE_OF>
+        <domain>Thing</domain>
+        <range>Appellation</range>
+        <propertyChainAxiom>thingIsTargetOfAppellationRelation/appellationRelationHasSource</propertyChainAxiom>
+        <definition>Connects a Thing to an Appellation that is or was used for designating
+            it.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>hasAuthorityOver</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadAuthorityOver</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has authority over</english_label>
+        <NEW_LABEL>has or had authority over</NEW_LABEL>
+        <subproperty_of>isRelatedTo</subproperty_of>
+        <inverse_of>isUnderAuthorityOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasUnderAuthorityOf</NEW_INVERSE_OF>
+        <domain>Agent</domain>
+        <range>Thing</range>
+        <propertyChainAxiom>agentIsSourceOfAuthorityRelation/authorityRelationHasTarget</propertyChainAxiom>
+        <definition>Connects an Agent to a Thing the Agent has or had authority over</definition>
+        <corresponding_CM_component>RiC-R036 ('has or had authority over'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>hasCarrierType</object_property_name>
+        <english_label>has carrier type</english_label>
+        <subproperty_of>belongsToCategory</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadCategory</NEW_SUBPROPERTY_OF>
+        <inverse_of>isCarrierTypeOf</inverse_of>
+        <domain>Instantiation</domain>
+        <range>CarrierType</range>
+        <definition>Connects an Instantiation to a Carrier Type which categorizes its
+            carrier.</definition>
+        <NEW_CHANGE_NOTE>changed the superproperty IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>hasChild</object_property_name>
+        <english_label>has child</english_label>
+        <subproperty_of>hasDescendant</subproperty_of>
+        <inverse_of>hasParent</inverse_of>
+        <NEW_INVERSE_OF>isChildOf</NEW_INVERSE_OF>
+        <domain>Person</domain>
+        <range>Person</range>
+        <propertyChainAxiom>personIsSourceOfChildRelation/childRelationHasTarget</propertyChainAxiom>
+        <definition>Connects a Person to one of their children.</definition>
+        <corresponding_CM_component>RiC-R018 ('has child' relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the inverse property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>hasComponent</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadComponent</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has component</english_label>
+        <NEW_LABEL>has or had component</NEW_LABEL>
+        <subproperty_of>hasPart ; isInstantiationAssociatedWithInstantiation</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadPart ;
+            isInstantiationAssociatedWithInstantiation</NEW_SUBPROPERTY_OF>
+        <inverse_of>isComponentOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasComponentOf</NEW_INVERSE_OF>
+        <domain>Instantiation</domain>
+        <range>Instantiation</range>
+        <definition>Connects an Instantiation to one of its present or past component
+            instantiations</definition>
+        <corresponding_CM_component>RiC-R004 ('has or had component'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>hasConstituent</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadConstituent</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has constituent</english_label>
+        <NEW_LABEL>has or had constituent</NEW_LABEL>
+        <subproperty_of>hasPart ; isRecordResourceAssociatedWithRecordResource</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadPart ;
+            isRecordResourceAssociatedWithRecordResource</NEW_SUBPROPERTY_OF>
+        <inverse_of>isConstituentOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasConstituentOf</NEW_INVERSE_OF>
+        <domain>Record</domain>
+        <range>RecordPart</range>
+        <definition>Connects a Record to a Record Part that is or was a component of that
+            Record.</definition>
+        <corresponding_CM_component>RiC-R003 ('has or had constituent'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>hasContentOfType</object_property_name>
+        <english_label>has content of type</english_label>
+        <subproperty_of>belongsToCategory</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadCategory</NEW_SUBPROPERTY_OF>
+        <inverse_of>isContentTypeOf</inverse_of>
+        <domain>RecordResource</domain>
+        <!-- <NEW_DOMAIN>Record; Record Part</NEW_DOMAIN>-->
+        <NEW_DOMAIN>Record; RecordPart</NEW_DOMAIN>
+        <range>ContentType</range>
+        <definition>Connects a Record or a Record Part to a Content Type which categorizes its
+            content.</definition>
+        <NEW_CHANGE_NOTE>changed the text definition and superproperty IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>hasCoordinates</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadCoordinates</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has coordinates</english_label>
+        <subproperty_of>isRelatedTo</subproperty_of>
+        <inverse_of>isCoordinatesOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasCoordinatesOf</NEW_INVERSE_OF>
+        <domain>PhysicalLocation</domain>
+        <range>Coordinates</range>
+        <definition>Connects a Physical Location to its past or present coordinates in a reference
+            system.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>hasCorporateBodyType</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadCorporateBodyType</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has corporate body type</english_label>
+        <NEW_LABEL>has or had corporate body type</NEW_LABEL>
+        <subproperty_of>belongsToCategory</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadCategory</NEW_SUBPROPERTY_OF>
+        <inverse_of>isCorporateBodyTypeOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasCorporateBodyTypeOf</NEW_INVERSE_OF>
+        <domain>CorporateBody</domain>
+        <range>CorporateBodyType</range>
+        <definition>Connects a Corporate Body to a Corporate Body Type which categorizes or
+            categorized it.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>hasCorrespondent</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadCorrespondent</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has correspondent</english_label>
+        <NEW_LABEL>has or had correspondent</NEW_LABEL>
+        <subproperty_of>knows</subproperty_of>
+        <type>SymmetricProperty</type>
+        <domain>Person</domain>
+        <range>Person</range>
+        <propertyChainAxiom>personHasCorrespondenceRelation/correspondenceRelationConnects</propertyChainAxiom>
+        <definition>Connects two Persons that correspond or have corresponded with each other. This
+            relation is symmetric.</definition>
+        <corresponding_CM_component>RiC-R052 ('has or had correspondent'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, textual definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>hasDescendant</object_property_name>
+        <english_label>has descendant</english_label>
+        <subproperty_of>hasFamilyLinkWith ; isAntecedentOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasFamilyAssociationWith; hasSuccessor</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasAncestor</inverse_of>
+        <domain>Person</domain>
+        <range>Person</range>
+        <propertyChainAxiom>personIsSourceOfDescendanceRelation/descendanceRelationHasTarget</propertyChainAxiom>
+        <definition>Connects a Person to one of their descendants.</definition>
+        <corresponding_CM_component>RiC-R017 ('has descendant'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the superproperties IRIs.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>hasDocumentaryFormType</object_property_name>
+        <english_label>has documentary form type</english_label>
+        <subproperty_of>belongsToCategory</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadCategory</NEW_SUBPROPERTY_OF>
+        <inverse_of>isDocumentaryFormTypeOf</inverse_of>
+        <domain>Record ; RecordPart</domain>
+        <range>DocumentaryFormType</range>
+        <definition>Connects a Record or Record Part to its Documentary Form Type.</definition>
+        <NEW_CHANGE_NOTE>changed the superproperty IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>hasEventType</object_property_name>
+        <english_label>has event type</english_label>
+        <subproperty_of>belongsToCategory</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadCategory</NEW_SUBPROPERTY_OF>
+        <inverse_of>isEventTypeOf</inverse_of>
+        <domain>Event</domain>
+        <range>EventType</range>
+        <definition>Connects an Event to an Event Type which categorizes it.</definition>
+        <NEW_CHANGE_NOTE>changed the superproperty IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>hasFamilyLinkWith</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasFamilyAssociationWith</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has family link with</english_label>
+        <NEW_LABEL>has family association with</NEW_LABEL>
+        <subproperty_of>isAgentAssociatedWithAgent</subproperty_of>
+        <type>SymmetricProperty</type>
+        <domain>Person</domain>
+        <range>Person</range>
+        <propertyChainAxiom>personHasFamilyRelation/familyRelationConnects</propertyChainAxiom>
+        <definition>Connects two Persons that have some type of family link, i.e. belong to the same
+            family. This relation is symmetric.</definition>
+        <corresponding_CM_component>RiC-R047 ('has family association with'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, textual definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>hasFamilyType</object_property_name>
+        <english_label>has family type</english_label>
+        <subproperty_of>belongsToCategory</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadCategory</NEW_SUBPROPERTY_OF>
+        <inverse_of>isFamilyTypeOf</inverse_of>
+        <domain>Family</domain>
+        <range>FamilyType</range>
+        <definition>Connects a Family to a Family Type that categorizes it.</definition>
+        <NEW_CHANGE_NOTE>changed the superproperty IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>hasIdentifierType</object_property_name>
+        <english_label>has identifier type</english_label>
+        <subproperty_of>belongsToCategory</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadCategory</NEW_SUBPROPERTY_OF>
+        <inverse_of>isIdentifierTypeOf</inverse_of>
+        <domain>Identifier</domain>
+        <range>IdentifierType</range>
+        <definition>Connects an Identifier and an Identifier Type that categorizes it.</definition>
+        <change_note>Object property added along with IdentifierType class and isIdentifierTypeOf
+            object property. ; date :2020-10-19</change_note>
+        <NEW_CHANGE_NOTE>changed the superproperty IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>hasInstantiation</object_property_name>
+        <english_label>has instantiation</english_label>
+        <subproperty_of>isRelatedTo</subproperty_of>
+        <inverse_of>instantiates</inverse_of>
+        <NEW_INVERSE_OF>isInstantiationOf</NEW_INVERSE_OF>
+        <domain>RecordResource</domain>
+        <range>Instantiation</range>
+        <propertyChainAxiom>recordResourceIsSourceOfRecordResourceToInstantiationRelation/recordResourceToInstantiationRelationHasTarget</propertyChainAxiom>
+        <definition>Connects a Record Resource to one of its Instantiations.</definition>
+        <corresponding_CM_component>RiC-R025 ('has instantiation'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the inverse property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>hasIntellectualPropertyRightsOn</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasHolderOfIntellectualPropertyRightsOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has intellectual property rights on</english_label>
+        <NEW_LABEL>is or was holder of intellectual property rights of</NEW_LABEL>
+        <subproperty_of>hasAuthorityOver</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadAuthorityOver</NEW_SUBPROPERTY_OF>
+        <inverse_of>intellectualPropertyRightsHeldBy</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadIntellectualPropertyRightsHolder</NEW_INVERSE_OF>
+        <domain>Group ; Person ; Position</domain>
+        <range>Instantiation ; RecordResource</range>
+        <propertyChainAxiom>agentIsSourceOfIntellectualPropertyRightsRelation/intellectualPropertyRightsRelationHasTarget</propertyChainAxiom>
+        <definition>Connects an Agent to a Record Resource or Instantiation on which the Agent has
+            <!--</definition>
+    </property>
+    <property>
+        <Heading0>or had some intellectual property rights.Connects an Agent to a Record Resource or Instantiation on which the Agent has </Heading0>
+    </property>
+    <property>
+        <Heading0>or had some intellectual property rights.Connects an Agent to a Record Resource or Instantiation on which the Agent has </Heading0>
+    </property>
+    <property>
+        <Heading0>-->or
+            had some intellectual property rights.</definition>
+        <corresponding_CM_component>RiC-R040 ('is or was holder of intellectual property rights of'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI and textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>hasJurisdiction</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadJurisdiction</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has jurisdiction</english_label>
+        <NEW_LABEL>has or had jurisdiction</NEW_LABEL>
+        <subproperty_of>isAssociatedWithPlace</subproperty_of>
+        <inverse_of>isJurisdictionOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasJurisdictionOf</NEW_INVERSE_OF>
+        <domain>Agent</domain>
+        <range>Place</range>
+        <definition>Inverse of 'is or was jurisdiction of' object property.</definition>
+        <corresponding_CM_component>RiC-R076i ('has or had jurisdiction'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI and textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>hasLanguage</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadLanguage</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has language</english_label>
+        <NEW_LABEL>has or had language</NEW_LABEL>
+        <subproperty_of>isRelatedTo</subproperty_of>
+        <inverse_of>isLanguageOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasLanguageOf</NEW_INVERSE_OF>
+        <!-- <domain>Agent ; Record ; Record Part</domain>-->
+        <domain>Agent ; Record ; RecordPart</domain>
+        <range>Language</range>
+        <definition>Connects an Agent or Record Resource to a Language that it uses or
+            used.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI and textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>hasLegalStatus</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadLegalStatus</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has legal status</english_label>
+        <NEW_LABEL>has or had legal status</NEW_LABEL>
+        <subproperty_of>belongsToCategory</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadCategory</NEW_SUBPROPERTY_OF>
+        <inverse_of>isLegalStatusOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasLegalStatusOf</NEW_INVERSE_OF>
+        <!--<domain>Agent ; Record ; Record Part</domain>-->
+        <domain>Agent ; Record ; RecordPart</domain>
+        <range>LegalStatus</range>
+        <definition>Connects an Agent or Record Resource to a Legal Status which categorized or
+            categorizes it.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI and textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>hasLocation</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadLocation</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has location</english_label>
+        <NEW_LABEL>has or had location</NEW_LABEL>
+        <subproperty_of>isAssociatedWithPlace</subproperty_of>
+        <inverse_of>isLocationOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasLocationOf</NEW_INVERSE_OF>
+        <domain>Thing</domain>
+        <range>Place</range>
+        <definition>Inverse of 'is or was location of' object property.</definition>
+        <corresponding_CM_component>RiC-R075i ('has or had location'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI and textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>hasMainSubject</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadMainSubject</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has main subject</english_label>
+        <NEW_LABEL>has or had main subject</NEW_LABEL>
+        <subproperty_of>hasSubject</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadSubject</NEW_SUBPROPERTY_OF>
+        <inverse_of>isMainSubjectOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasMainSubjectOf</NEW_INVERSE_OF>
+        <domain>RecordResource</domain>
+        <range>Thing</range>
+        <definition>Connects a Record Resource to a Thing that is or was its main
+            subject.</definition>
+        <scope_note>Use for specifying, for example, that a Record Set of type personal file has
+            main subject some person, which would help end users to retrieve the main archival
+            resources about this person.</scope_note>
+        <corresponding_CM_component>RiC-R020 ('has or had main subject'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI and textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>hasMember</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadMember</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has member</english_label>
+        <NEW_LABEL>has or had member</NEW_LABEL>
+        <subproperty_of>isAgentAssociatedWithAgent</subproperty_of>
+        <inverse_of>isMemberOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasMemberOf</NEW_INVERSE_OF>
+        <domain>Group</domain>
+        <range>Person</range>
+        <propertyChainAxiom>groupIsSourceOfMembershipRelation/membershipRelationHasTarget</propertyChainAxiom>
+        <definition>Connects a Group to a Person that is or was a member of that Group.</definition>
+        <corresponding_CM_component>RiC-R055 ('has or had member'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI and textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>hasName</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadName</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has name</english_label>
+        <NEW_LABEL>has or had name</NEW_LABEL>
+        <subproperty_of>hasAppellation</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadAppellation</NEW_SUBPROPERTY_OF>
+        <inverse_of>isNameOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasNameOf</NEW_INVERSE_OF>
+        <domain>Thing</domain>
+        <range>Name</range>
+        <definition>Connects a Thing to one of its past or present Names.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, textual definition, super
+            property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>hasOccupationOfType</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadOccupationOfType</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has occupation of type</english_label>
+        <NEW_LABEL>has or had occupation of type</NEW_LABEL>
+        <subproperty_of>belongsToDemographicGroup</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadDemographicGroup</NEW_SUBPROPERTY_OF>
+        <inverse_of>isOccupationTypeOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasOccupationTypeOf</NEW_INVERSE_OF>
+        <domain>Person</domain>
+        <range>OccupationType</range>
+        <definition>Connects a Person to an Occupation Type that categorized or categorizes his/her
+            occupation (profession, trade or craft).</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, textual definition, super
+            property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>hasParent</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isChildOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has parent</english_label>
+        <NEW_LABEL>is child of</NEW_LABEL>
+        <subproperty_of>hasAncestor</subproperty_of>
+        <inverse_of>hasChild</inverse_of>
+        <domain>Person</domain>
+        <range>Person</range>
+        <definition>Inverse of 'has child' object property.</definition>
+        <corresponding_CM_component>RiC-R018i ('is child of' relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI and label.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>hasPart</object_property_name>
+        <!--<NEW_OBJECT_PROPERTY_NAME>hasOrHasPart</NEW_OBJECT_PROPERTY_NAME>-->
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadPart</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has part</english_label>
+        <NEW_LABEL>has or had part</NEW_LABEL>
+        <subproperty_of>isRelatedTo</subproperty_of>
+        <inverse_of>isPartOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasPartOf</NEW_INVERSE_OF>
+        <domain>Thing</domain>
+        <range>Thing</range>
+        <propertyChainAxiom>thingIsSourceOfWholePartRelation/wholePartRelationHasTarget</propertyChainAxiom>
+        <definition>Connects a Thing to a constitutive or component part of that Thing.</definition>
+        <scope_note>The end of existence of a whole/part relation may affect the integrity or nature
+            of the domain entity</scope_note>
+        <corresponding_CM_component>RiC-R002 (has or had part relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>hasPhysicalLocation</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadPhysicalLocation</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has physical location</english_label>
+        <NEW_LABEL>has or had physical location</NEW_LABEL>
+        <subproperty_of>isRelatedTo</subproperty_of>
+        <inverse_of>isPhysicalLocationOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasPhysicalLocationOf</NEW_INVERSE_OF>
+        <domain>Place</domain>
+        <range>PhysicalLocation</range>
+        <definition>Connects a Place to one of its past or present Physical Location.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>hasPlaceName</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadPlaceName</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has place name</english_label>
+        <NEW_LABEL>has or had place name</NEW_LABEL>
+        <subproperty_of>hasName</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadName</NEW_SUBPROPERTY_OF>
+        <inverse_of>isPlaceNameOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasPlaceNameOf</NEW_INVERSE_OF>
+        <domain>Place</domain>
+        <range>PlaceName</range>
+        <definition>Connects a Place to one of its past or present names.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition, super
+            property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>hasPlaceType</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadPlaceType</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has place type</english_label>
+        <NEW_LABEL>has or had place type</NEW_LABEL>
+        <subproperty_of>belongsToCategory</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadCategory</NEW_SUBPROPERTY_OF>
+        <inverse_of>isPlaceTypeOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasPlaceTypeOf</NEW_INVERSE_OF>
+        <domain>Place</domain>
+        <range>PlaceType</range>
+        <definition>Connects a Place to a Place Type that categorized or categorizes
+            it.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition, super
+            property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>hasPosition</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadPosition</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has position</english_label>
+        <NEW_LABEL>has or had position</NEW_LABEL>
+        <subproperty_of>isAgentAssociatedWithAgent</subproperty_of>
+        <inverse_of>existsIn</inverse_of>
+        <NEW_INVERSE_OF>existsOrExistedIn</NEW_INVERSE_OF>
+        <domain>Group</domain>
+        <range>Position</range>
+        <definition>Inverse of 'exists or existed in' object property.</definition>
+        <corresponding_CM_component>RiC-R056i ('has or had position'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition,
+            corresponding CM component name.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>hasProductionTechniqueType</object_property_name>
+        <english_label>has production technique type</english_label>
+        <subproperty_of>belongsToCategory</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadCategory</NEW_SUBPROPERTY_OF>
+        <inverse_of>isProductionTechniqueTypeOf</inverse_of>
+        <domain>Instantiation</domain>
+        <range>ProductionTechniqueType</range>
+        <definition>Connects an Instantiation to a Production Technique Type that categorizes its
+            production technique.</definition>
+        <NEW_CHANGE_NOTE>changed the super property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>hasRecordSetType</object_property_name>
+        <english_label>has record set type</english_label>
+        <subproperty_of>belongsToCategory</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadCategory</NEW_SUBPROPERTY_OF>
+        <inverse_of>isRecordSetTypeOf</inverse_of>
+        <domain>RecordSet</domain>
+        <range>RecordSetType</range>
+        <definition>Connects a Record Set to a Record Set Type that categorizes it.</definition>
+        <NEW_CHANGE_NOTE>changed the super property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>hasRepresentationType</object_property_name>
+        <english_label>has representation type</english_label>
+        <subproperty_of>belongsToCategory</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadCategory</NEW_SUBPROPERTY_OF>
+        <inverse_of>isRepresentationTypeOf</inverse_of>
+        <domain>Instantiation</domain>
+        <range>RepresentationType</range>
+        <definition>Connects an Instantiation to a Representation Type that categorizes its
+            representation type.</definition>
+        <NEW_CHANGE_NOTE>changed the super property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>hasRuleType</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadRuleType</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has rule type</english_label>
+        <NEW_LABEL>has or had rule type</NEW_LABEL>
+        <subproperty_of>belongsToCategory</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadCategory</NEW_SUBPROPERTY_OF>
+        <inverse_of>isRuleTypeOf</inverse_of>
+        <!-- NEW inverse of added manually-->
+        <NEW_INVERSE_OF>isOrWasRuleTypeOf</NEW_INVERSE_OF>
+        <domain>Rule</domain>
+        <range>RuleType</range>
+        <definition>Connects a Rule to a Rule Type that categorized or categorizes it.</definition>
+        <change_note>Object property added along with RuleType class and isRuleTypeOf object
+            property. ; date :2020-10-19</change_note>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition, super
+            property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>hasSibling</object_property_name>
+        <english_label>has sibling</english_label>
+        <subproperty_of>hasFamilyLinkWith</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasFamilyAssociationWith</NEW_SUBPROPERTY_OF>
+        <type>SymmetricProperty</type>
+        <domain>Person</domain>
+        <range>Person</range>
+        <propertyChainAxiom>personHasSiblingRelation/siblingRelationConnects</propertyChainAxiom>
+        <definition>Connects two Persons that are siblings. This relation is symmetric.</definition>
+        <corresponding_CM_component>RiC-R048 ('has sibling' relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the super property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>hasSpouse</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadSpouse</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has spouse</english_label>
+        <NEW_LABEL>has or had spouse</NEW_LABEL>
+        <subproperty_of>hasFamilyLinkWith</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasFamilyAssociationWith</NEW_SUBPROPERTY_OF>
+        <type>SymmetricProperty</type>
+        <domain>Person</domain>
+        <range>Person</range>
+        <propertyChainAxiom>personHasSpouseRelation/spouseRelationConnects</propertyChainAxiom>
+        <definition>Connects two Persons that are or were married. This relation is
+            symmetric.</definition>
+        <corresponding_CM_component>RiC-R049 ('has or had spouse'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition, super
+            property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>hasStudent</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadStudent</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has student</english_label>
+        <NEW_LABEL>has or had student</NEW_LABEL>
+        <subproperty_of>knows</subproperty_of>
+        <inverse_of>hasTeacher</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadTeacher</NEW_INVERSE_OF>
+        <domain>Person</domain>
+        <range>Person</range>
+        <propertyChainAxiom>personIsSourceOfTeachingRelation/teachingRelationHasTarget</propertyChainAxiom>
+        <definition>Inverse of 'has or had teacher' object property.</definition>
+        <corresponding_CM_component>RiC-R053i ('has or had student'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>hasSubEvent</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadSubevent</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has sub event</english_label>
+        <NEW_LABEL>has or had subevent</NEW_LABEL>
+        <subproperty_of>hasPart ; isAssociatedWithEvent ; isEventAssociatedWith</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadPart ; isAssociatedWithEvent ;
+            isEventAssociatedWith</NEW_SUBPROPERTY_OF>
+        <inverse_of>isSubEventOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasSubeventOf</NEW_INVERSE_OF>
+        <domain>Event</domain>
+        <range>Event</range>
+        <definition>Connects an Event to one of a series of Events that constitute the original,
+            broader, past or ongoing Event.</definition>
+        <scope_note>Since an Activity is a kind of Event, this Relation can also be used for
+            Activity.</scope_note>
+        <corresponding_CM_component>RiC-R006 ('has or had subevent'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition, super
+            property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>hasSubdivision</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadSubdivision</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has subdivision</english_label>
+        <NEW_LABEL>has or had subdivision</NEW_LABEL>
+        <subproperty_of>hasPart ; isHierarchicallySuperiorTo</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadPart ; hasOrHadSubordinate</NEW_SUBPROPERTY_OF>
+        <inverse_of>isSubdivisionOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasSubdivisionOf</NEW_INVERSE_OF>
+        <domain>Group</domain>
+        <range>Group</range>
+        <propertyChainAxiom>groupIsSourceOfGroupSubdivisionRelation/groupSubdivisionRelationHasTarget</propertyChainAxiom>
+        <definition>Connects a Group to one of its present or past subdivisions.</definition>
+        <!--</property>
+    <property>
+        <Heading0>"</Heading0>-->
+        <corresponding_CM_component>RiC-R005 ('has or hadsubdivision'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition, super
+            property IRIs.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>hasSubject</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadSubject</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has subject</english_label>
+        <NEW_LABEL>has or had subject</NEW_LABEL>
+        <subproperty_of>isRelatedTo</subproperty_of>
+        <inverse_of>isSubjectOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasSubjectOf</NEW_INVERSE_OF>
+        <domain>RecordResource</domain>
+        <range>Thing</range>
+        <definition>Connects a Record Resource to a Thing that is or was its subject.</definition>
+        <corresponding_CM_component>RiC-R019 ('has or had subject'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>hasTeacher</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadTeacher</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has teacher</english_label>
+        <NEW_LABEL>has or had teacher</NEW_LABEL>
+        <subproperty_of>knows</subproperty_of>
+        <inverse_of>hasStudent</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadStudent</NEW_INVERSE_OF>
+        <domain>Person</domain>
+        <range>Person</range>
+        <propertyChainAxiom>personIsTargetOfTeachingRelation/teachingRelationHasSource</propertyChainAxiom>
+        <definition>Connects a Person to another Person who is or was their student.</definition>
+        <corresponding_CM_component>RiC-R053 ('has or had teacher'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>hasTitle</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadTitle</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has title</english_label>
+        <NEW_LABEL>has or had title</NEW_LABEL>
+        <subproperty_of>hasName</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadName</NEW_SUBPROPERTY_OF>
+        <inverse_of>isTitleOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasTitleOf</NEW_INVERSE_OF>
+        <domain>Instantiation ; RecordResource ; Rule</domain>
+        <range>Title</range>
+        <definition>Connects a Record Resource, Instantiation or Rule to a title that is or was used
+            for designating it.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition, super
+            property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>heldBy</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadHolder</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>held by</english_label>
+        <NEW_LABEL>has or had holder</NEW_LABEL>
+        <subproperty_of>managedBy</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadManager</NEW_SUBPROPERTY_OF>
+        <inverse_of>isHolderOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasHolderOf</NEW_INVERSE_OF>
+        <domain>Instantiation ; RecordResource</domain>
+        <range>Agent</range>
+        <propertyChainAxiom>recordResourceOrInstantiationIsTargetOfRecordResourceHoldingRelation/recordResourceHoldingRelationHasSource</propertyChainAxiom>
+        <definition>Inverse of 'is or was holder of' object property.</definition>
+        <corresponding_CM_component>RiC-R039i ('has or had holder'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition, super
+            property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>identifiedBy</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadIdentifier</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>identified by</english_label>
+        <NEW_LABEL>has or had identifier</NEW_LABEL>
+        <!-- </property>
+    <property>
+        <Heading0>"</Heading0>-->
+        <subproperty_of>hasAppellation</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadAppellation</NEW_SUBPROPERTY_OF>
+        <inverse_of>identifies</inverse_of>
+        <NEW_INVERSE_OF>isOrWasIdentifierOf</NEW_INVERSE_OF>
+        <domain>Thing</domain>
+        <range>Identifier</range>
+        <definition>Connects a Thing to one of its past or present Identifiers.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition, super
+            property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>identifies</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasIdentifierOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>identifies</english_label>
+        <NEW_LABEL>is or was identifier of</NEW_LABEL>
+        <subproperty_of>isAppellationOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasAppellationOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>identifiedBy</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadIdentifier</NEW_INVERSE_OF>
+        <domain>Identifier</domain>
+        <range>Thing</range>
+        <definition>Connects an Identifier to a Thing that it identified or identifies.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition, super
+            property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>includedIn</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasIncludedIn</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>included in</english_label>
+        <NEW_LABEL>is or was included in</NEW_LABEL>
+        <subproperty_of>isRecordResourceAssociatedWithRecordResource</subproperty_of>
+        <inverse_of>includes</inverse_of>
+        <NEW_INVERSE_OF>includesOrIncluded</NEW_INVERSE_OF>
+        <domain>Record ; RecordSet</domain>
+        <range>RecordSet</range>
+        <definition>Inverse of 'includes or included' object property.</definition>
+        <corresponding_CM_component>RiC-R024i ('is or was included in'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>includes</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>includesOrIncluded</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>includes</english_label>
+        <NEW_LABEL>includes or included</NEW_LABEL>
+        <subproperty_of>isRecordResourceAssociatedWithRecordResource</subproperty_of>
+        <inverse_of>includedIn</inverse_of>
+        <NEW_INVERSE_OF>isOrWasIncludedIn</NEW_INVERSE_OF>
+        <domain>RecordSet</domain>
+        <range>Record ; RecordSet</range>
+        <definition>Connects a Record Set to a Record or Record Set it aggregates, or aggregated in
+            the past.</definition>
+        <scope_note>A Record or Record Set can be aggregated in one or many Record Sets
+            simultaneously or through time</scope_note>
+        <corresponding_CM_component>RiC-R024 ('includes or included'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>instantiates</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isInstantiationOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>instantiates</english_label>
+        <NEW_LABEL>is instantiation of</NEW_LABEL>
+        <subproperty_of>isRelatedTo</subproperty_of>
+        <inverse_of>hasInstantiation</inverse_of>
+        <domain>Instantiation</domain>
+        <range>RecordResource</range>
+        <propertyChainAxiom>instantiationIsTargetOfRecordResourceToInstantiationRelation/recordResourceToInstantiationRelationHasSource</propertyChainAxiom>
+        <definition>Inverse of 'has instantiation' object property.</definition>
+        <corresponding_CM_component>RiC-R025i ('is instantiation of'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI and label.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>intellectualPropertyRightsHeldBy</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadIntellectualPropertyRightsHolder</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>intellectual property rights held by</english_label>
+        <NEW_LABEL>has or had intellectual property rights holder</NEW_LABEL>
+        <!--  </property>
+    <property>
+        <Heading0>"</Heading0>-->
+        <subproperty_of>isUnderAuthorityOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasUnderAuthorityOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasIntellectualPropertyRightsOn</inverse_of>
+        <NEW_INVERSE_OF>isOrWasHolderOfIntellectualPropertyRightsOf</NEW_INVERSE_OF>
+        <domain>Instantiation ; RecordResource</domain>
+        <range>Group ; Person ; Position</range>
+        <propertyChainAxiom>recordResourceOrInstantiationIsTargetOfIntellectualPropertyRightsRelation/intellectualPropertyRightsRelationHasSource</propertyChainAxiom>
+        <definition>Inverse of 'is or was holder of intellectual property rights of' object
+            property</definition>
+        <corresponding_CM_component>RiC-R040i ('has or had intellectual property rights holder<!--</range>-->
+            <!--</property>
+    <property>
+        <Heading0>-->'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>involvedIn</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasParticipantIn</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>involved in</english_label>
+        <NEW_LABEL>is or was participant in</NEW_LABEL>
+        <subproperty_of>isAssociatedWithEvent</subproperty_of>
+        <inverse_of>involves</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadParticipant</NEW_INVERSE_OF>
+        <domain>Thing</domain>
+        <range>Event</range>
+        <definition>Inverse of 'has or had participant' object property.</definition>
+        <corresponding_CM_component>RiC-R058i ('is or was participant in'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>involves</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadParticipant</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>involves</english_label>
+        <NEW_LABEL>has or had participant</NEW_LABEL>
+        <subproperty_of>isEventAssociatedWith</subproperty_of>
+        <inverse_of>involvedIn</inverse_of>
+        <!--<NEW_INVERSE_OF>isOrWasParticipantOf</NEW_INVERSE_OF>-->
+        <NEW_INVERSE_OF>isOrWasParticipantIn</NEW_INVERSE_OF>
+        <domain>Event</domain>
+        <range>Thing</range>
+        <definition>Connects an Event to a Thing that is or was actively or passively involved in
+            it.</definition>
+        <!--</property>
+    <property>
+        <Heading0>Connects an Event to a Thing that is or was actively or passively involved in it.</Heading0>
+    </property>
+    <property>
+        <Heading0>"</Heading0>-->
+        <corresponding_CM_component>RiC-R058 ('has or had participant'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>isActivityTypeOf</object_property_name>
+        <english_label>is activity type of</english_label>
+        <subproperty_of>isCategoryOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasCategoryOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasActivityType</inverse_of>
+        <domain>ActivityType</domain>
+        <range>Activity</range>
+        <definition>Connects an Activity Type to an Activity that it categorizes.</definition>
+        <NEW_CHANGE_NOTE>changed the super property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>isAdjacentTo</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasAdjacentTo</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is adjacent to</english_label>
+        <NEW_LABEL>is or was adjacent to</NEW_LABEL>
+        <subproperty_of>isAssociatedWithPlace ; isPlaceAssociatedWith</subproperty_of>
+        <type>SymmetricProperty</type>
+        <domain>Place</domain>
+        <range>Place</range>
+        <definition>Connects two Places that are or were geographically adjacent. This is a
+            symmetric object property.</definition>
+        <corresponding_CM_component>RiC-R077 ('is or was adjacent to'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, textual definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>isAgentNameOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasAgentNameOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is agent name of</english_label>
+        <NEW_LABEL>is or was agent name of</NEW_LABEL>
+        <subproperty_of>isNameOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasNameOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasAgentName</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadAgentName</NEW_INVERSE_OF>
+        <domain>AgentName</domain>
+        <range>Agent</range>
+        <definition>Connects an Agent Name to an Agent it designates or designated.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>isAntecedentOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasSuccessor</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is antecedent of</english_label>
+        <NEW_LABEL>has successor</NEW_LABEL>
+        <subproperty_of>isAgentAssociatedWithAgent ; precedesInTime</subproperty_of>
+        <inverse_of>isSuccessorOf</inverse_of>
+        <domain>Agent</domain>
+        <range>Agent</range>
+        <propertyChainAxiom>agentIsSourceOfAgentTemporalRelation/agentTemporalRelationHasTarget</propertyChainAxiom>
+        <definition>Connects an Agent to another Agent that succeeds it
+            chronologically.</definition>
+        <scope_note>There may be zero to many intermediate Agents , ignored or unknown, between the
+            two connected Agents. Can be used when there is a transfer of function from the first
+            Agent to the second Agent.</scope_note>
+        <corresponding_CM_component>RIC-R016 ('has successor' relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI and label.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>isAppellationOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasAppellationOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is appellation of</english_label>
+        <NEW_LABEL>is or was appellation of</NEW_LABEL>
+        <subproperty_of>isRelatedTo</subproperty_of>
+        <inverse_of>hasAppellation</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadAppellation</NEW_INVERSE_OF>
+        <domain>Appellation</domain>
+        <range>Thing</range>
+        <definition>Connects an Appellation to a Thing that it designates or
+            designated.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>isCarrierTypeOf</object_property_name>
+        <english_label>is carrier type of</english_label>
+        <subproperty_of>isCategoryOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasCategoryOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasCarrierType</inverse_of>
+        <domain>CarrierType</domain>
+        <range>Instantiation</range>
+        <definition>Connects a Carrier Type to an Instantiation whose carrier it
+            categorizes.</definition>
+        <NEW_CHANGE_NOTE>Changed the super property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>isCategoryOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasCategoryOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is category of</english_label>
+        <NEW_LABEL>is or was category of</NEW_LABEL>
+        <subproperty_of>isRelatedTo</subproperty_of>
+        <inverse_of>belongsToCategory</inverse_of>
+        <!--<NEW_INVERSE_OF>belongsOrBelongedToCategory</NEW_INVERSE_OF>-->
+        <NEW_INVERSE_OF>hasOrHadCategory</NEW_INVERSE_OF>
+        <domain>Type</domain>
+        <range>Thing</range>
+        <propertyChainAxiom>typeIsSourceOfTypeRelation/typeRelationHasTarget</propertyChainAxiom>
+        <definition>Connects a Type (a category) to a Thing that it categorizes or
+            categorized.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>isComponentOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasComponentOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is component of</english_label>
+        <NEW_LABEL>is or was component of</NEW_LABEL>
+        <subproperty_of>isInstantiationAssociatedWithInstantiation ; isPartOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isInstantiationAssociatedWithInstantiation ;
+            isOrWasPartOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasComponent</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadComponent</NEW_INVERSE_OF>
+        <domain>Instantiation</domain>
+        <range>Instantiation</range>
+        <definition>Inverse of 'has or had component' object property.</definition>
+        <corresponding_CM_component>RiC-R004i ('is or was component of'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>isConstituentOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasConstituentOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is constituent of</english_label>
+        <NEW_LABEL>is or was constituent of</NEW_LABEL>
+        <subproperty_of>isPartOf ; isRecordResourceAssociatedWithRecordResource</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasPartOf ;
+            isRecordResourceAssociatedWithRecordResource</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasConstituent</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadConstituent</NEW_INVERSE_OF>
+        <domain>RecordPart</domain>
+        <range>Record</range>
+        <definition>Inverse of 'has or had constituent' object property.</definition>
+        <corresponding_CM_component>RiC-R003i ('is or was constituent of'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>isContentTypeOf</object_property_name>
+        <english_label>is content type of</english_label>
+        <subproperty_of>isCategoryOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasCategoryOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasContentOfType</inverse_of>
+        <domain>ContentType</domain>
+        <range>RecordResource</range>
+        <!-- <NEW_RANGE>Record ; Record Part</NEW_RANGE>-->
+        <NEW_RANGE>Record ; RecordPart</NEW_RANGE>
+        <definition>Connects a Content Type to a Record or Record Part whose content it
+            categorizes.</definition>
+        <NEW_CHANGE_NOTE>changed the text definition and super property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>isCoordinatesOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasCoordinatesOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is coordinates of</english_label>
+        <NEW_LABEL>is or was coordinates of</NEW_LABEL>
+        <subproperty_of>isRelatedTo</subproperty_of>
+        <inverse_of>hasCoordinates</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadCoordinates</NEW_INVERSE_OF>
+        <domain>Coordinates</domain>
+        <range>PhysicalLocation</range>
+        <definition>Connects an instance of Coordinates to a Physical Location it locates or located
+            on earth, according to some reference system.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>isCopyOf</object_property_name>
+        <english_label>is copy of</english_label>
+        <subproperty_of>followsInTime ; hasGeneticLinkToRecordResource</subproperty_of>
+        <inverse_of>hasCopy</inverse_of>
+        <domain>RecordResource</domain>
+        <range>RecordResource</range>
+        <definition>Inverse of 'has copy' object property.</definition>
+        <corresponding_CM_component>RiC-R012i (is copy of relation)</corresponding_CM_component>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>isCorporateBodyTypeOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasCorporateBodyTypeOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is corporate body type of</english_label>
+        <NEW_LABEL>is or was corporate body type of</NEW_LABEL>
+        <subproperty_of>isCategoryOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasCategoryOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasCorporateBodyType</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadCorporateBodyType</NEW_INVERSE_OF>
+        <domain>CorporateBodyType</domain>
+        <range>CorporateBody</range>
+        <definition>Connects a Corporate Body Type to a Corporate Body that it categorizes or
+            categorized.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>isCreatorOf</object_property_name>
+        <english_label>is creator of</english_label>
+        <subproperty_of>isProvenanceOf</subproperty_of>
+        <inverse_of>createdBy</inverse_of>
+        <NEW_INVERSE_OF>hasCreator</NEW_INVERSE_OF>
+        <domain>Agent</domain>
+        <range>Instantiation ; RecordResource</range>
+        <propertyChainAxiom>agentIsTargetOfCreationRelation/creationRelationHasSource</propertyChainAxiom>
+        <definition>Inverse of 'has creator' object property.</definition>
+        <corresponding_CM_component>RiC-R027i ('is creator of
+            'relation')</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>change the inverse property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>isDemographicGroupOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasDemographicGroupOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is demographic group of</english_label>
+        <NEW_LABEL>is or was demographic group of</NEW_LABEL>
+        <subproperty_of>isCategoryOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasCategoryOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>belongsToDemographicGroup</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadDemographicGroup</NEW_INVERSE_OF>
+        <domain>DemographicGroup</domain>
+        <range>Person</range>
+        <NEW_RANGE>Person ; Group</NEW_RANGE>
+        <definition>Connects a Demographic Group to a Person or Group which belongs or belonged to
+            it.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition,
+            range.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>isDocumentaryFormTypeOf</object_property_name>
+        <english_label>is documentary form type of</english_label>
+        <subproperty_of>isCategoryOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasCategoryOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasDocumentaryFormType</inverse_of>
+        <domain>DocumentaryFormType</domain>
+        <range>Record ; RecordPart</range>
+        <definition>Connects a Documentary Form Type to a Record or Record Part that it
+            categorizes.</definition>
+        <NEW_CHANGE_NOTE>changed the superproperty IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC-TW</checked_by>
+        <object_property_name>isDocumentationOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>documents</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is documentation of</english_label>
+        <NEW_LABEL>documents</NEW_LABEL>
+        <subproperty_of>resultsFrom</subproperty_of>
+        <NEW_SUBPROPERTY_OF>resultsOrResultedFrom</NEW_SUBPROPERTY_OF>
+        <inverse_of>documentedBy</inverse_of>
+        <domain>Instantiation ; RecordResource</domain>
+        <range>Activity</range>
+        <propertyChainAxiom>recordResourceOrInstantiationIsSourceOfActivityDocumentationRelation/activityDocumentationRelationHasTarget</propertyChainAxiom>
+        <definition>Connects a Record Resource or an Instantiation to the Activity that generates
+            the Record Resource or Instantiation.</definition>
+        <corresponding_CM_component>RiC-R033 ('documents' relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, superproperty IRI, corresponding CM component
+            name.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>isEventTypeOf</object_property_name>
+        <english_label>is event type of</english_label>
+        <subproperty_of>isCategoryOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasCategoryOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasEventType</inverse_of>
+        <domain>EventType</domain>
+        <range>Event</range>
+        <definition>Connects an Event Type to an Event that is categorizes.</definition>
+        <NEW_CHANGE_NOTE>changed the superproperty IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>isFamilyTypeOf</object_property_name>
+        <english_label>is family type of</english_label>
+        <subproperty_of>isCategoryOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasCategoryOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasFamilyType</inverse_of>
+        <domain>FamilyType</domain>
+        <range>Family</range>
+        <definition>Connects a Family Type to a Family that is categorizes.</definition>
+        <NEW_CHANGE_NOTE>changed the superproperty IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>isFunctionallyEquivalentTo</object_property_name>
+        <english_label>is functionally equivalent to</english_label>
+        <subproperty_of>isEquivalentTo ; isInstantiationAssociatedWithInstantiation</subproperty_of>
+        <type>SymmetricProperty</type>
+        <domain>Instantiation</domain>
+        <range>Instantiation</range>
+        <propertyChainAxiom>instantiationIsConnectedToFunctionalEquivalenceRelation/functionalEquivalenceRelationConnects</propertyChainAxiom>
+        <definition>Connects two Instantiations which may be considered as equivalent. This relation
+            is symmetric.</definition>
+        <scope_note>Two Instantiations, from some point of view, may be considered as equivalent.
+            This equivalence is usually based upon the fact that the Instantiations have at least
+            the same intellectual content (they instantiate the same Record Resource).</scope_note>
+        <corresponding_CM_component>RiC-R035 ('is functionally equivalent to'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the scope note.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>isHierarchicallyInferiorTo</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasSubordinateTo</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is hierarchically inferior to</english_label>
+        <NEW_LABEL>is or was subordinate to</NEW_LABEL>
+        <subproperty_of>isAgentAssociatedWithAgent</subproperty_of>
+        <inverse_of>isHierarchicallySuperiorTo</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadSubordinate</NEW_INVERSE_OF>
+        <domain>Agent</domain>
+        <range>Agent</range>
+        <propertyChainAxiom>agentIsTargetOfAgentHierarchicalRelation/agentHierarchicalRelationHasSource</propertyChainAxiom>
+        <definition>Inverse of 'has or had subordinate' object property.</definition>
+        <corresponding_CM_component>RiC-R045i ('is or was subordinate
+            to<!--/corresponding_CM_component>
+    </property>
+    <property>
+        <Heading0>-->'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>isHierarchicallySuperiorTo</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadSubordinate</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is hierarchically superior to</english_label>
+        <NEW_LABEL>has or had subordinate </NEW_LABEL>
+        <subproperty_of>isAgentAssociatedWithAgent</subproperty_of>
+        <inverse_of>isHierarchicallyInferiorTo</inverse_of>
+        <NEW_INVERSE_OF>isOrWasSubordinateTo</NEW_INVERSE_OF>
+        <domain>Agent</domain>
+        <range>Agent</range>
+        <propertyChainAxiom>agentIsSourceOfAgentHierarchicalRelation/agentHierarchicalRelationHasTarget</propertyChainAxiom>
+        <definition>Connects an Agent to an Agent that is hierarchically inferior.</definition>
+        <scope_note>The hierarchical relation can be an authority relation, or a whole/part relation
+            between two Groups</scope_note>
+        <corresponding_CM_component>RiC-R045 ('has or had subordinate '
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>isHolderOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasHolderOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is holder of</english_label>
+        <NEW_LABEL>is or was holder of</NEW_LABEL>
+        <subproperty_of>isManagerOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasManagerOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>heldBy</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadHolder</NEW_INVERSE_OF>
+        <domain>Agent</domain>
+        <range>Instantiation ; RecordResource</range>
+        <propertyChainAxiom>agentIsSourceOfRecordResourceHoldingRelation/recordResourceHoldingRelationHasTarget</propertyChainAxiom>
+        <definition>Connects an Agent to a Record Resource or Instantiation that the Agent holds or
+            held.</definition>
+        <corresponding_CM_component>RiC-R039 ('is or was holder of'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, super property IRI and text
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>isIdentifierTypeOf</object_property_name>
+        <english_label>is identifier type of</english_label>
+        <subproperty_of>isCategoryOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasCategoryOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasIdentifierType</inverse_of>
+        <domain>IdentifierType</domain>
+        <range>Identifier</range>
+        <definition>Connects an Identifier Type and an Identifier that it categorizes.</definition>
+        <change_note>Object property added along with IdentifierType class and hasIdentifierType
+            object property. ; date :2020-10-19</change_note>
+        <NEW_CHANGE_NOTE>changed the superproperty IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>isJurisdictionOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasJurisdictionOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is jurisdiction of</english_label>
+        <NEW_LABEL>is or was jurisdiction of</NEW_LABEL>
+        <subproperty_of>isPlaceAssociatedWith</subproperty_of>
+        <inverse_of>hasJurisdiction</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadJurisdiction</NEW_INVERSE_OF>
+        <domain>Place</domain>
+        <range>Agent</range>
+        <definition>Connects a Place to an Agent that has or had jurisdiction over the
+            Place.</definition>
+        <corresponding_CM_component>RiC-R076 ('is or was jurisdiction of'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>isLanguageOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasLanguageOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is language of</english_label>
+        <NEW_LABEL>is or was language of</NEW_LABEL>
+        <subproperty_of>isRelatedTo</subproperty_of>
+        <inverse_of>hasLanguage</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadLanguage</NEW_INVERSE_OF>
+        <domain>Language</domain>
+        <!-- <range>Agent ; Record ; Record Part</range>-->
+        <range>Agent ; Record ; RecordPart</range>
+        <definition>Connects a Language to an Agent, Record or Record Part that uses or used
+            it.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>isLeaderOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasLeaderOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is leader of</english_label>
+        <NEW_LABEL>is or was leader of</NEW_LABEL>
+        <subproperty_of>controls</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasControllerOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>ledBy</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadLeader</NEW_INVERSE_OF>
+        <domain>Person</domain>
+        <range>Group</range>
+        <propertyChainAxiom>personIsSourceOfLeadershipRelation/leadershipRelationHasTarget</propertyChainAxiom>
+        <definition>Connects a Person to the Group that Person leads or led in the
+            past.</definition>
+        <corresponding_CM_component>RiC-R042 ('is or was leader of'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, super property IRI, textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>isLegalStatusOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasLegalStatusOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is legal status of</english_label>
+        <NEW_LABEL>is or was legal status of</NEW_LABEL>
+        <subproperty_of>isCategoryOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasCategoryOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasLegalStatus</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadLegalStatus</NEW_INVERSE_OF>
+        <domain>LegalStatus</domain>
+        <!--<range>Agent ; Record ; Record Part</range>-->
+        <range>Agent ; Record ; RecordPart</range>
+        <definition>Connects a Legal Status to an Agent or Record Resource that it
+            categorizes.</definition>
+        <scope_note>Connects a Legal Status to an Agent, Record or Record Part that it categorized
+            or categorizes.</scope_note>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>isLocationOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasLocationOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is location of</english_label>
+        <NEW_LABEL>is or was location of</NEW_LABEL>
+        <subproperty_of>isPlaceAssociatedWith</subproperty_of>
+        <inverse_of>hasLocation</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadLocation</NEW_INVERSE_OF>
+        <domain>Place</domain>
+        <range>Thing</range>
+        <definition>Connects a Place to a Thing that is or was located in the Place.</definition>
+        <corresponding_CM_component>RiC-R075 ('is or was location of'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>isMainSubjectOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasMainSubjectOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is main subject of</english_label>
+        <NEW_LABEL>is or was main subject of</NEW_LABEL>
+        <subproperty_of>isSubjectOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasSubjectOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasMainSubject</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadMainSubject</NEW_INVERSE_OF>
+        <domain>Thing</domain>
+        <range>RecordResource</range>
+        <definition>Inverse of 'has or had main subject' object property.</definition>
+        <corresponding_CM_component>RiC-R020i (is or was main subject
+            of)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, super property IRI, textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>isManagerOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasManagerOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is manager of</english_label>
+        <NEW_LABEL>is or was manager of</NEW_LABEL>
+        <subproperty_of>hasAuthorityOver</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadAuthorityOver</NEW_SUBPROPERTY_OF>
+        <inverse_of>managedBy</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadManager</NEW_INVERSE_OF>
+        <domain>Agent</domain>
+        <range>Instantiation ; RecordResource</range>
+        <propertyChainAxiom>agentIsSourceOfManagementRelation/managementRelationHasTarget</propertyChainAxiom>
+        <definition>Connects an Agent to a Record Resource or Instantiation that the Agent managed
+            or manages.</definition>
+        <corresponding_CM_component>RiC-R038 ('is or was manager of'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, super property IRI, textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>isMemberOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasMemberOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is member of</english_label>
+        <NEW_LABEL>is or was member of</NEW_LABEL>
+        <subproperty_of>isAgentAssociatedWithAgent</subproperty_of>
+        <inverse_of>hasMember</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadMember</NEW_INVERSE_OF>
+        <domain>Person</domain>
+        <range>Group</range>
+        <propertyChainAxiom>personIsTargetOfMembershipRelation/membershipRelationHasSource</propertyChainAxiom>
+        <definition>Inverse of 'has or had member' object property.</definition>
+        <corresponding_CM_component>RiC-R055i ('is or was member of'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>isMigratedIntoInstantiation</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>migratedInto</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is migrated into instantiation</english_label>
+        <NEW_LABEL>migrated into</NEW_LABEL>
+        <subproperty_of>hasDerivedInstantiation</subproperty_of>
+        <inverse_of>createdByMigrationFromInstantiation</inverse_of>
+        <NEW_INVERSE_OF>migratedFrom</NEW_INVERSE_OF>
+        <domain>Instantiation</domain>
+        <range>Instantiation</range>
+        <propertyChainAxiom>instantiationIsSourceOfMigrationRelation/migrationRelationHasTarget</propertyChainAxiom>
+        <definition>Connects an Instantiation to a version it has been migrated to.</definition>
+        <scope_note>Use for digital instantiations.</scope_note>
+        <corresponding_CM_component>RiC-R015 ('migrated into' relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label and inverse property IRI. Added a scope
+            note.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>isNameOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasNameOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is name of</english_label>
+        <NEW_LABEL>is or was name of</NEW_LABEL>
+        <subproperty_of>isAppellationOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasAppellationOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasName</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadName</NEW_INVERSE_OF>
+        <domain>Name</domain>
+        <range>Thing</range>
+        <definition>Connects a Name to a Thing that it designated or designates.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, textual definition, super
+            property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>isOccupationTypeOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasOccupationTypeOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is occupation type of</english_label>
+        <NEW_LABEL>is or was occupation type of</NEW_LABEL>
+        <subproperty_of>isDemographicGroupOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasDemographicGroupOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasOccupationOfType</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadOccupationOfType</NEW_INVERSE_OF>
+        <domain>OccupationType</domain>
+        <range>Person</range>
+        <definition>Connects an Occupation Type to a Person whose occupation is or was categorized
+            by it.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, textual definition, super
+            property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>isOwnerOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasOwnerOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is owner of</english_label>
+        <NEW_LABEL>is or was owner of</NEW_LABEL>
+        <subproperty_of>hasAuthorityOver</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadAuthorityOver</NEW_SUBPROPERTY_OF>
+        <inverse_of>ownedBy</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadOwner</NEW_INVERSE_OF>
+        <domain>Group ; Person ; Position</domain>
+        <range>Thing</range>
+        <propertyChainAxiom>agentIsSourceOfOwnershipRelation/ownershipRelationHasTarget</propertyChainAxiom>
+        <definition>Connects a Group, Person or Position to a Thing that this Agent owns or
+            owned.</definition>
+        <corresponding_CM_component>RiC-R037 ('is or was owner of'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, textual definition, super
+            property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>isPartOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasPartOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is part of</english_label>
+        <NEW_LABEL>is or was part of</NEW_LABEL>
+        <subproperty_of>isRelatedTo</subproperty_of>
+        <inverse_of>hasPart</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadPart</NEW_INVERSE_OF>
+        <domain>Thing</domain>
+        <range>Thing</range>
+        <propertyChainAxiom>thingIsTargetOfWholePartRelation/wholePartRelationHasSource</propertyChainAxiom>
+        <definition>Inverse of 'has or had part' relation.</definition>
+        <corresponding_CM_component>RiC-R002i (is or was part of
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>isPhysicalLocationOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasPhysicalLocationOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is physical location of</english_label>
+        <NEW_LABEL>is or was physical location of</NEW_LABEL>
+        <subproperty_of>isRelatedTo</subproperty_of>
+        <inverse_of>hasPhysicalLocation</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadPhysicalLocation</NEW_INVERSE_OF>
+        <domain>PhysicalLocation</domain>
+        <range>Place</range>
+        <definition>Connects a Physical Location to a Place, when it is or was its
+            location.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, textual
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>isPlaceNameOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasPlaceNameOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is place name of</english_label>
+        <NEW_LABEL>is or was place name of</NEW_LABEL>
+        <subproperty_of>isNameOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasNameOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasPlaceName</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadPlaceName</NEW_INVERSE_OF>
+        <domain>PlaceName</domain>
+        <range>Place</range>
+        <definition>Connects a Place Name to a Place that was or is designated by it.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition, super
+            property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>isPlaceTypeOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasPlaceTypeOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is place type of</english_label>
+        <NEW_LABEL>is or was place type of</NEW_LABEL>
+        <subproperty_of>isCategoryOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasCategoryOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasPlaceType</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadPlaceType</NEW_INVERSE_OF>
+        <domain>PlaceType</domain>
+        <range>Place</range>
+        <definition>Connects a Place Type to a Place that is or was categorized by it.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition, super
+            property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>isProductionTechniqueTypeOf</object_property_name>
+        <english_label>is production technique type of</english_label>
+        <subproperty_of>isCategoryOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasCategoryOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasProductionTechniqueType</inverse_of>
+        <domain>ProductionTechniqueType</domain>
+        <range>Instantiation</range>
+        <definition>Connects a Production Technique Type to an Instantiation whose production
+            technique is categorized by it.</definition>
+        <NEW_CHANGE_NOTE>changed the super property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>isRecordSetTypeOf</object_property_name>
+        <english_label>is record set type of</english_label>
+        <subproperty_of>isCategoryOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasCategoryOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasRecordSetType</inverse_of>
+        <domain>RecordSetType</domain>
+        <range>RecordSet</range>
+        <definition>Connects a Record Set Type to a Record Set that it categorizes.</definition>
+        <NEW_CHANGE_NOTE>changed the super property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>isRepliedToBy</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasReply</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is replied to by</english_label>
+        <NEW_LABEL>has reply</NEW_LABEL>
+        <subproperty_of>isRecordResourceAssociatedWithRecordResource ;
+            precedesInTime</subproperty_of>
+        <inverse_of>repliesTo</inverse_of>
+        <NEW_INVERSE_OF>isReplyTo</NEW_INVERSE_OF>
+        <domain>RecordResource</domain>
+        <range>RecordResource</range>
+        <definition>Connects a Record Resource to a reply, usually in the form of
+            correspondence.</definition>
+        <!--</property>
+    <property>
+        <Heading0>Connects a Record Resource to a reply, usually in the form of correspondence.</Heading0>
+    </property>
+    <property>
+        <Heading0>Connects a Record Resource to a reply, usually in the form of correspondence.</Heading0>
+    </property>
+    <property>
+        <Heading0>"</Heading0>-->
+        <corresponding_CM_component>RiC-R013 ('has reply' relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>isRepresentationTypeOf</object_property_name>
+        <english_label>is representation type of</english_label>
+        <subproperty_of>isCategoryOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasCategoryOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasRepresentationType</inverse_of>
+        <domain>RepresentationType</domain>
+        <range>Instantiation</range>
+        <definition>Connects a Representation Type to an Instantiation that it
+            categorizes.</definition>
+        <NEW_CHANGE_NOTE>changed the super property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>isResponsibleForEnforcing</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasResponsibleForEnforcing</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is responsible for enforcing</english_label>
+        <NEW_LABEL>is or was responsible for enforcing</NEW_LABEL>
+        <subproperty_of>isAssociatedWithRule</subproperty_of>
+        <inverse_of>enforcedBy</inverse_of>
+        <NEW_INVERSE_OF>isOrWasEnforcedBy</NEW_INVERSE_OF>
+        <domain>Agent</domain>
+        <range>Rule</range>
+        <definition>Inverse of 'is or was enforced by' object property.</definition>
+        <corresponding_CM_component>RiC-R066i ('is or was responsible for enforcing'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition,
+            corresponding CM component name.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>isRuleTypeOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasRuleTypeOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is rule type of</english_label>
+        <NEW_LABEL>is or was rule type of</NEW_LABEL>
+        <subproperty_of>isCategoryOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasCategoryOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasRuleType</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadRuleType</NEW_INVERSE_OF>
+        <domain>RuleType</domain>
+        <range>Rule</range>
+        <definition>connects a Rule Type to a Rule that it categorized or categorizes.</definition>
+        <change_note>Object property added along with RuleType class and hasRuleType object
+            property. ; date :2020-10-19</change_note>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition, super
+            property URI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>isSubEventOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasSubeventOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is sub event of</english_label>
+        <NEW_LABEL>is or was subevent of</NEW_LABEL>
+        <subproperty_of>isAssociatedWithEvent ; isEventAssociatedWith ; isPartOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isAssociatedWithEvent ; isEventAssociatedWith ;
+            isOrWasPartOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasSubEvent</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadSubevent</NEW_INVERSE_OF>
+        <domain>Event</domain>
+        <range>Event</range>
+        <definition>Inverse of 'has or had subevent' object property.</definition>
+        <corresponding_CM_component>RiC-R006i ('is or was subevent of'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition, super
+            property URI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>isSubdivisionOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasSubdivisionOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is subdivision of</english_label>
+        <NEW_LABEL>is or was subdivision of</NEW_LABEL>
+        <subproperty_of>isHierarchicallyInferiorTo ; isPartOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasSubordinateTo; isOrWasPartOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasSubdivision</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadSubdivision</NEW_INVERSE_OF>
+        <domain>Group</domain>
+        <range>Group</range>
+        <propertyChainAxiom>groupIsTargetOfGroupSubdivisionRelation/groupSubdivisionRelationHasSource</propertyChainAxiom>
+        <definition>Inverse of 'has or had subdivision' object property.</definition>
+        <corresponding_CM_component>RiC-R005i ('is or was subdivision'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition, super
+            property IRIs.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>isSubjectOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasSubjectOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is subject of</english_label>
+        <NEW_LABEL>is or was subject of</NEW_LABEL>
+        <subproperty_of>isRelatedTo</subproperty_of>
+        <inverse_of>hasSubject</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadSubject</NEW_INVERSE_OF>
+        <domain>Thing</domain>
+        <range>RecordResource</range>
+        <definition>Inverse of 'has or had subject' object property.</definition>
+        <corresponding_CM_component>RIc-R019i ('is or was subject of'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>isSuccessorOf</object_property_name>
+        <english_label>is successor of</english_label>
+        <subproperty_of>followsInTime ; isAgentAssociatedWithAgent</subproperty_of>
+        <inverse_of>isAntecedentOf</inverse_of>
+        <NEW_INVERSE_OF>hasSuccessor</NEW_INVERSE_OF>
+        <domain>Agent</domain>
+        <range>Agent</range>
+        <propertyChainAxiom>agentIsTargetOfAgentTemporalRelation/agentTemporalRelationHasSource</propertyChainAxiom>
+        <definition>Inverse of 'has successor' object property.</definition>
+        <corresponding_CM_component>RiC-R016i (is successor of)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the inverse property IRI and the text definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>isTitleOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasTitleOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is title of</english_label>
+        <NEW_LABEL>is or was title of</NEW_LABEL>
+        <subproperty_of>isNameOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasNameOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>hasTitle</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadTitle</NEW_INVERSE_OF>
+        <domain>Title</domain>
+        <range>Instantiation ; RecordResource ; Rule</range>
+        <definition>Connects a Title to a Record Resource, Instantiation or Rule that it designated
+            or designates.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition, super
+            property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>isUnderAuthorityOf</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasUnderAuthorityOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>is under authority of</english_label>
+        <NEW_LABEL>is or was under authority of</NEW_LABEL>
+        <subproperty_of>isRelatedTo</subproperty_of>
+        <inverse_of>hasAuthorityOver</inverse_of>
+        <NEW_INVERSE_OF>hasOrHadAuthorityOver</NEW_INVERSE_OF>
+        <domain>Thing</domain>
+        <range>Agent</range>
+        <propertyChainAxiom>thingIsTargetOfAuthorityRelation/authorityRelationHasSource</propertyChainAxiom>
+        <definition>Inverse of 'has or had authority over' object property.</definition>
+        <corresponding_CM_component>RiC-R036i ('is or was under authority of'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>ledBy</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadLeader</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>led by</english_label>
+        <NEW_LABEL>has or had leader</NEW_LABEL>
+        <subproperty_of>controlledBy</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadController</NEW_SUBPROPERTY_OF>
+        <inverse_of>isLeaderOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasLeaderOf</NEW_INVERSE_OF>
+        <domain>Group</domain>
+        <range>Person</range>
+        <propertyChainAxiom>groupIsTargetOfLeadershipRelation/leadershipRelationHasSource</propertyChainAxiom>
+        <definition>Inverse of 'is or was leader of' object property.</definition>
+        <corresponding_CM_component>RiC-R042i ('has or had leader'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition, super
+            property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>managedBy</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadManager</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>managed by</english_label>
+        <NEW_LABEL>has or had manager</NEW_LABEL>
+        <subproperty_of>isUnderAuthorityOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasUnderAuthorityOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>isManagerOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasManagerOf</NEW_INVERSE_OF>
+        <domain>Instantiation ; RecordResource</domain>
+        <range>Agent</range>
+        <propertyChainAxiom>recordResourceOrInstantiationIsTargetOfManagementRelation/managementRelationHasSource</propertyChainAxiom>
+        <definition>Inverse of 'is or was manager of' object property.</definition>
+        <corresponding_CM_component>RiC-R038i ('is or was managed by'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition, super
+            property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>occupiedBy</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasOccupiedBy</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>occupied by</english_label>
+        <NEW_LABEL>is or was occupied by</NEW_LABEL>
+        <subproperty_of>isAgentAssociatedWithAgent</subproperty_of>
+        <inverse_of>occupies</inverse_of>
+        <NEW_INVERSE_OF>occupiesOrOccupied</NEW_INVERSE_OF>
+        <domain>Position</domain>
+        <range>Person</range>
+        <propertyChainAxiom>positionIsTargetOfPositionHoldingRelation/positionHoldingRelationHasSource</propertyChainAxiom>
+        <definition>Inverse of 'occupies or occupied' object property.</definition>
+        <corresponding_CM_component>RiC-R054i ('is or was occupied by'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>occupies</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>occupiesOrOccupied</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>occupies</english_label>
+        <NEW_LABEL>occupies or occupied</NEW_LABEL>
+        <subproperty_of>isAgentAssociatedWithAgent</subproperty_of>
+        <inverse_of>occupiedBy</inverse_of>
+        <NEW_INVERSE_OF>isOrWasOccupiedBy</NEW_INVERSE_OF>
+        <domain>Person</domain>
+        <range>Position</range>
+        <propertyChainAxiom>personIsSourceOfPositionHoldingRelation/positionHoldingRelationHasTarget</propertyChainAxiom>
+        <definition>Connects a Person to a Position they occupy or occupied.</definition>
+        <corresponding_CM_component>RiC-R054 ('occupies or occupied'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>overlaps</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>overlapsOrOverlapped</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>overlaps</english_label>
+        <NEW_LABEL>overlaps or overlapped</NEW_LABEL>
+        <subproperty_of>isAssociatedWithPlace ; isPlaceAssociatedWith</subproperty_of>
+        <type>SymmetricProperty</type>
+        <domain>Place</domain>
+        <range>Place</range>
+        <definition>Connects two Places that geographically overlap or overlapped. This object
+            property is symmetric.</definition>
+        <corresponding_CM_component>RiC-R078 ('overlaps or overlapped'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, text definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>ownedBy</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadOwner</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>owned by</english_label>
+        <NEW_LABEL>has or had owner</NEW_LABEL>
+        <subproperty_of>isUnderAuthorityOf</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasUnderAuthorityOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>isOwnerOf</inverse_of>
+        <NEW_INVERSE_OF>isOrWasOwnerOf</NEW_INVERSE_OF>
+        <domain>Thing</domain>
+        <range>Group ; Person ; Position</range>
+        <propertyChainAxiom>thingIsTargetOfOwnershipRelation/ownershipRelationHasSource</propertyChainAxiom>
+        <definition>Inverse of 'is or was owner of' object property.</definition>
+        <corresponding_CM_component>RiC-R037i ('has or had owner'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition, super
+            property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>performedBy</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasPerformedBy</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>performed by</english_label>
+        <NEW_LABEL>is or was performed by</NEW_LABEL>
+        <subproperty_of>involves</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasOrHadParticipant</NEW_SUBPROPERTY_OF>
+        <inverse_of>performs</inverse_of>
+        <NEW_INVERSE_OF>performsOrPerformed</NEW_INVERSE_OF>
+        <domain>Activity</domain>
+        <range>Agent</range>
+        <propertyChainAxiom>activityIsSourceOfPerformanceRelation/performanceRelationHasTarget</propertyChainAxiom>
+        <definition>Connects an Activity to an Agent that performed or performs the
+            Activity.</definition>
+        <corresponding_CM_component>RiC-R060 ('is or was performed by'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition, super
+            property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>performs</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>performsOrPerformed</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>performs</english_label>
+        <NEW_LABEL>performs or performed</NEW_LABEL>
+        <subproperty_of>involvedIn</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isOrWasParticipantIn</NEW_SUBPROPERTY_OF>
+        <inverse_of>performedBy</inverse_of>
+        <!--<NEW_INVERSE_OF>performsOrPerformedBy</NEW_INVERSE_OF>-->
+        <NEW_INVERSE_OF>isOrWasPerformedBy</NEW_INVERSE_OF>
+        <domain>Agent</domain>
+        <range>Activity</range>
+        <propertyChainAxiom>agentIsTargetOfPerformanceRelation/performanceRelationHasSource</propertyChainAxiom>
+        <definition>Inverse of 'is or was performed by' object property.</definition>
+        <corresponding_CM_component>RiC-R060i ('performs or performed'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition, super
+            property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>precedes</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>precedesOrPreceded</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>precedes</english_label>
+        <NEW_LABEL>precedes or preceded</NEW_LABEL>
+        <subproperty_of>isRelatedTo</subproperty_of>
+        <inverse_of>follows</inverse_of>
+        <NEW_INVERSE_OF>followsOrFollowed</NEW_INVERSE_OF>
+        <domain>Thing</domain>
+        <range>Thing</range>
+        <propertyChainAxiom>thingIsSourceOfSequentialRelation/sequentialRelationHasTarget</propertyChainAxiom>
+        <definition>Connects a Thing to a Thing that follows or followed it in some
+            sequence.</definition>
+        <scope_note>The relation does not specify by itself what criteria are used for ordering the
+            sequence. There may actually be zero to many intermediate Entities, ignored or unkown,
+            in the sequence between the two connected Things. Can be used, for example, for
+            specifying that some Record 'precedes' (has next) some Record within a Record
+            Set.</scope_note>
+        <corresponding_CM_component>RiC-R008 ('precedes or preceded'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text definition,
+            corresponding CM component name.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>precedesInTime</object_property_name>
+        <english_label>precedes in time</english_label>
+        <subproperty_of>precedesOrPreceded</subproperty_of>
+        <NEW_SUBPROPERTY_OF>precedesOrPreceded</NEW_SUBPROPERTY_OF>
+        <inverse_of>followsInTime</inverse_of>
+        <domain>Thing</domain>
+        <range>Thing</range>
+        <propertyChainAxiom>thingIsSourceOfTemporalRelation/temporalRelationHasTarget</propertyChainAxiom>
+        <definition>Connects a Thing to a Thing that follows it in chronological order.</definition>
+        <scope_note>There may actually be zero to many intermediate Entities, ignored or unknown, in
+            the chronological sequence between the two connected Entities.</scope_note>
+        <corresponding_CM_component>RiC-R009 ('precedes in time'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the superproperty IRI</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>publishedBy</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasPublisher</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>published by</english_label>
+        <NEW_LABEL>hasPublisher</NEW_LABEL>
+        <subproperty_of>isRelatedTo</subproperty_of>
+        <inverse_of>publishes</inverse_of>
+        <NEW_INVERSE_OF>isPublisherOf</NEW_INVERSE_OF>
+        <domain>RecordResource</domain>
+        <range>Agent</range>
+        <definition>Connects a Record resource to an Agent who published it.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>FC</checked_by>
+        <object_property_name>publishes</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isPublisherOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>publishes</english_label>
+        <NEW_LABEL>isPublisherOf</NEW_LABEL>
+        <subproperty_of>isRelatedTo</subproperty_of>
+        <inverse_of>publishedBy</inverse_of>
+        <NEW_INVERSE_OF>hasPublisher</NEW_INVERSE_OF>
+        <domain>Agent</domain>
+        <range>RecordResource</range>
+        <definition>Connects an Agent to a Record Resource that it published.</definition>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>receivedBy</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasReceiver</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>received by</english_label>
+        <NEW_LABEL>has receiver</NEW_LABEL>
+        <subproperty_of>accumulatedBy</subproperty_of>
+        <NEW_SUBPROPERTY_OF>hasAccumulator</NEW_SUBPROPERTY_OF>
+        <inverse_of>receives</inverse_of>
+        <NEW_INVERSE_OF>isReceiverOf</NEW_INVERSE_OF>
+        <domain>Instantiation ; RecordResource</domain>
+        <range>Agent</range>
+        <definition>Connects a Record Resource or an Instantiation to the Agent that receives it in
+            the course of its activities.</definition>
+        <corresponding_CM_component>RiC-R029 ('has receiver' relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, super property
+            IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>receives</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isReceiverOf</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>receives</english_label>
+        <NEW_LABEL>is receiver of</NEW_LABEL>
+        <subproperty_of>accumulates</subproperty_of>
+        <NEW_SUBPROPERTY_OF>isAccumulatorOf</NEW_SUBPROPERTY_OF>
+        <inverse_of>receivedBy</inverse_of>
+        <NEW_INVERSE_OF>hasReceiver</NEW_INVERSE_OF>
+        <domain>Agent</domain>
+        <range>Instantiation ; RecordResource</range>
+        <definition>Inverse of 'received by' object property.</definition>
+        <corresponding_CM_component>RiC-R029i ('is receiver of'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, super property
+            IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>regulatedBy</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isOrWasRegulatedBy</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>regulated by</english_label>
+        <NEW_LABEL>is or was regulated by</NEW_LABEL>
+        <subproperty_of>isAssociatedWithRule</subproperty_of>
+        <inverse_of>regulates</inverse_of>
+        <NEW_INVERSE_OF>regulatesOrRegulated</NEW_INVERSE_OF>
+        <domain>Thing</domain>
+        <range>Rule</range>
+        <definition>Inverse of the 'regulates or regulated' object property.</definition>
+        <corresponding_CM_component>RiC-R063i ('is or was regulated by'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>regulates</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>regulatesOrRegulated</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>regulates</english_label>
+        <NEW_LABEL>regulates or regulated</NEW_LABEL>
+        <subproperty_of>isRuleAssociatedWith</subproperty_of>
+        <inverse_of>regulatedBy</inverse_of>
+        <NEW_INVERSE_OF>isOrWasRegulatedBy</NEW_INVERSE_OF>
+        <domain>Rule</domain>
+        <range>Thing</range>
+        <definition>Connects a Rule to a Thing that it regulates or regulated</definition>
+        <corresponding_CM_component>RiC-R063 ('regulates or regulated'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>repliesTo</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>isReplyTo</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>replies to</english_label>
+        <NEW_LABEL>is reply to</NEW_LABEL>
+        <subproperty_of>followsInTime ;
+            isRecordResourceAssociatedWithRecordResource</subproperty_of>
+        <inverse_of>isRepliedToBy</inverse_of>
+        <NEW_INVERSE_OF>hasReply</NEW_INVERSE_OF>
+        <domain>RecordResource</domain>
+        <range>RecordResource</range>
+        <definition>Inverse of 'has reply' object property.</definition>
+        <corresponding_CM_component>RiC-R013i ('is reply to' relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>resultsFrom</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>resultsOrResultedFrom</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>results from</english_label>
+        <NEW_LABEL>results or resulted from</NEW_LABEL>
+        <subproperty_of>isAssociatedWithEvent</subproperty_of>
+        <inverse_of>resultsIn</inverse_of>
+        <NEW_INVERSE_OF>resultsOrResultedIn</NEW_INVERSE_OF>
+        <domain>Thing</domain>
+        <range>Event</range>
+        <definition>Inverse of 'results or resulted in' object property.</definition>
+        <corresponding_CM_component>RiC-R061i ('results or resulted from'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW</checked_by>
+        <object_property_name>resultsIn</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>resultsOrResultedIn</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>results in</english_label>
+        <NEW_LABEL>results or resulted in</NEW_LABEL>
+        <subproperty_of>isEventAssociatedWith</subproperty_of>
+        <inverse_of>resultsFrom</inverse_of>
+        <NEW_INVERSE_OF>resultsOrResultedFrom</NEW_INVERSE_OF>
+        <domain>Event</domain>
+        <range>Thing</range>
+        <definition>Connects an Event to a Thing that results or resulted from the
+            Event.</definition>
+        <corresponding_CM_component>RiC-R061 ('results or resulted in'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, inverse property IRI, text
+            definition.</NEW_CHANGE_NOTE>
+    </property>
+    <property>
+        <checked_by>TW-FC</checked_by>
+        <object_property_name>hasWorkRelationWith</object_property_name>
+        <NEW_OBJECT_PROPERTY_NAME>hasOrHadWorkRelationWith</NEW_OBJECT_PROPERTY_NAME>
+        <english_label>has or had work relation with</english_label>
+        <subproperty_of>isAgentAssociatedWithAgent</subproperty_of>
+        <type>SymmetricProperty</type>
+        <domain>Agent</domain>
+        <range>Agent</range>
+        <definition>Connects two Agents that have or had some type of work relation in the course of
+            their activities. This relation is symmetric.</definition>
+        <corresponding_CM_component>RiC-R046 ('has or had work relation with'
+            relation)</corresponding_CM_component>
+        <NEW_CHANGE_NOTE>changed the IRI, label, text definition.</NEW_CHANGE_NOTE>
+    </property>
+</properties>

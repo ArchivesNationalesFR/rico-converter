@@ -140,13 +140,13 @@ public class Ead2RicoXsltTestExecution implements Test {
 								!(
 										node.getLocalName().equals("hasProvenance")
 										||
-										node.getLocalName().equals("heldBy")
+										node.getLocalName().equals("hasOrHadHolder")
 										||
 										node.getLocalName().equals("FindingAid")
 										||
 										node.getLocalName().equals("seeAlso")
 										||
-										node.getLocalName().equals("regulatedBy")
+										node.getLocalName().equals("isOrWasRegulatedBy")
 										
 								)
 						);
