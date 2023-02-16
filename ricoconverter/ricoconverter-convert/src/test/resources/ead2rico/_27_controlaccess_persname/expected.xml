@@ -9,7 +9,7 @@
     xml:base="http://data.archives-nationales.culture.gouv.fr/">
     <rico:Record rdf:about="record/058220">
         <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
-        <rico:describesOrDescribed rdf:resource="recordResource/058220-top"/>
+        <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-i1">
                 <rico:isInstantiationOf rdf:resource="record/058220"/>
@@ -20,7 +20,7 @@
             </rico:Instantiation>
         </rico:hasInstantiation>
     </rico:Record>
-    <rico:RecordResource rdf:about="recordResource/058220-top">
+    <rico:RecordResource rdf:about="recordResource/top-058220">
         <rico:isOrWasDescribedBy rdf:resource="record/058220"/>
         <rico:title xml:lang="fr">Titre comprend un persname : Cardenti, Jean Jean Baptiste</rico:title>   
         <rdfs:label xml:lang="fr">Titre comprend un persname : Cardenti, Jean Jean Baptiste</rdfs:label>
@@ -40,11 +40,11 @@
         <rico:hasOrHadSubject rdf:resource="agent/050551"/>
         <rico:hasOrHadSubject rdf:resource="agent/FRAN_RI_012-d699mu3pkd2--ojwlhnvipuam"/>
         <rico:hasInstantiation>
-             <rico:Instantiation rdf:about="instantiation/058220-top-i1">
-                 <rico:isInstantiationOf rdf:resource="recordResource/058220-top"/>
+             <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+                 <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
                  <rico:title xml:lang="fr">Titre comprend un persname : Cardenti, Jean Jean Baptiste</rico:title>   
                  <rdfs:label xml:lang="fr">Titre comprend un persname : Cardenti, Jean Jean Baptiste</rdfs:label>                 
-                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+                 <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
              </rico:Instantiation>
          </rico:hasInstantiation>
         <rico:includesOrIncluded rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
@@ -54,7 +54,7 @@
     
     <!-- c/controlaccess/persname indexation libre -->
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:hasOrHadSubject>
             <rico:Agent>
                 <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -102,7 +102,7 @@
     
     <!-- c/controlaccess/persname + @authfilenumber -->
     <rico:RecordResource rdf:about="recordResource/058220-N0003">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:hasOrHadSubject rdf:resource="agent/FRAN_RI_012-d699mu3pkd2--ojwlhnvipuam"/>
         <rico:hasOrHadSubject rdf:resource="agent/FRAN_RI_012-d699mu4ru7l-gmy6mhkvdjc9"/>           
         <rico:hasInstantiation>
@@ -118,7 +118,7 @@
     
     <!-- c/did/unittitle/persname + @authfilenumber-->
     <rico:RecordResource rdf:about="recordResource/058220-N0004">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:title xml:lang="fr">Titre comprend trois persname : Bullet, Pierre (1639-1716) et Dupont, Louis ; Murat, Joachim (1767-1815)</rico:title>   
         <rdfs:label xml:lang="fr">Titre comprend trois persname : Bullet, Pierre (1639-1716) et Dupont, Louis ; Murat, Joachim (1767-1815)</rdfs:label>        
         <rico:hasOrHadSubject rdf:resource="agent/FRAN_RI_012-d699mu4ru7l-gmy6mhkvdjc9"/>

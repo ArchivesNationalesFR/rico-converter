@@ -9,7 +9,7 @@
     xml:base="http://data.archives-nationales.culture.gouv.fr/">
     <rico:Record rdf:about="record/058220">
     	<rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
-        <rico:describesOrDescribed rdf:resource="recordResource/058220-top"/>
+        <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
          <rico:hasInstantiation>
 	         <rico:Instantiation rdf:about="instantiation/058220-i1">
 	            <rico:isInstantiationOf rdf:resource="record/058220"/>
@@ -21,13 +21,13 @@
 	      </rico:hasInstantiation>
     </rico:Record>
     <!-- archdesc level -->
-    <rico:RecordResource rdf:about="recordResource/058220-top">    
+    <rico:RecordResource rdf:about="recordResource/top-058220">    
         <rico:isOrWasDescribedBy rdf:resource="record/058220"/>       
         <rico:hasInstantiation>
-            <rico:Instantiation rdf:about="instantiation/058220-top-i1">
-                <rico:isInstantiationOf rdf:resource="recordResource/058220-top"/>
+            <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+                <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
                 <rico:identifier>20144792/1-20144792/363</rico:identifier>
-                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+                <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
             </rico:Instantiation>
         </rico:hasInstantiation>
         <rico:includesOrIncluded rdf:resource="recordResource/058220-c-25s2lche6kz-qfignk48spf8"/>
@@ -39,7 +39,7 @@
     </rico:RecordResource>
     <!-- c level -->
     <rico:RecordResource rdf:about="recordResource/058220-c-25s2lche6kz-qfignk48spf8">   
-    	<rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>    
+    	<rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>    
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c-25s2lche6kz-qfignk48spf8-i1">               
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c-25s2lche6kz-qfignk48spf8"/>
@@ -50,7 +50,7 @@
     </rico:RecordResource>
     
     <rico:RecordResource rdf:about="recordResource/058220-c-2gvrjvsm9--13pxk5ufbbf3v">
-    	<rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>   
+    	<rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>   
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c-2gvrjvsm9--13pxk5ufbbf3v-i1">               
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c-2gvrjvsm9--13pxk5ufbbf3v"/>
@@ -62,7 +62,7 @@
     </rico:RecordResource>
    
     <rico:RecordResource rdf:about="recordResource/058220-d_4_2">
-    	<rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
+    	<rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-d_4_2-i1">               
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-d_4_2"/>
@@ -73,7 +73,7 @@
     </rico:RecordResource>
     
     <rico:RecordResource rdf:about="recordResource/058220-d_4">
-    	<rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>   
+    	<rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>   
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-d_4-i1">               
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-d_4"/>
@@ -84,7 +84,7 @@
     </rico:RecordResource>
     
     <rico:RecordResource rdf:about="recordResource/058220-d_48">
-    	<rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
+    	<rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-d_48-i1">               
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-d_48"/>

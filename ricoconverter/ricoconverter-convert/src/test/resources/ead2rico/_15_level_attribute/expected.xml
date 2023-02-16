@@ -15,16 +15,16 @@
         -->
     <rico:Record rdf:about="record/058220">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid"/>
-      <rico:describesOrDescribed rdf:resource="recordResource/058220-top"/>
-      <rico:describesOrDescribed rdf:resource="recordResource/058220-top"/>
-      <rico:describesOrDescribed rdf:resource="recordResource/058220-top"/>
-      <rico:describesOrDescribed rdf:resource="recordResource/058220-top"/>
-      <rico:describesOrDescribed rdf:resource="recordResource/058220-top"/>
-      <rico:describesOrDescribed rdf:resource="recordResource/058220-top"/>
-      <rico:describesOrDescribed rdf:resource="recordResource/058220-top"/>
-      <rico:describesOrDescribed rdf:resource="recordResource/058220-top"/>
-      <rico:describesOrDescribed rdf:resource="recordResource/058220-top"/>
-      <rico:describesOrDescribed rdf:resource="recordResource/058220-top"/>
+      <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
+      <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
+      <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
+      <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
+      <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
+      <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
+      <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
+      <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
+      <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
+      <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
       <rico:hasInstantiation>
          <rico:Instantiation rdf:about="instantiation/058220-i1">
             <rico:isInstantiationOf rdf:resource="record/058220"/>
@@ -37,40 +37,40 @@
     </rico:Record>
     
     <!-- cas 1 :  //archdesc[@level="fonds"]-->
-    <rico:RecordResource rdf:about="recordResource/058220-top">
+    <rico:RecordResource rdf:about="recordResource/top-058220">
     	<rico:isOrWasDescribedBy rdf:resource="record/058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds"/>
         <rico:hasInstantiation>
-         <rico:Instantiation rdf:about="instantiation/058220-top-i1">
-            <rico:isInstantiationOf rdf:resource="recordResource/058220-top"/>
-            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+         <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
+             <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
          </rico:Instantiation>
         </rico:hasInstantiation>
     </rico:RecordResource>
     <!-- cas 2 : //archdesc[@level="subfonds"]-->
-    <rico:RecordResource rdf:about="recordResource/058220-top">
+    <rico:RecordResource rdf:about="recordResource/top-058220">
     	<rico:isOrWasDescribedBy rdf:resource="record/058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         
         <rico:hasInstantiation>
-         <rico:Instantiation rdf:about="instantiation/058220-top-i1">
-            <rico:isInstantiationOf rdf:resource="recordResource/058220-top"/>
-            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+         <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
+             <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
          </rico:Instantiation>
         </rico:hasInstantiation>
     </rico:RecordResource>
     <!-- cas 3 : //archdesc[@level="series"] and dsc/c with @level or no @level -->
-    <rico:RecordResource rdf:about="recordResource/058220-top">
+    <rico:RecordResource rdf:about="recordResource/top-058220">
     	<rico:isOrWasDescribedBy rdf:resource="record/058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
         <rico:hasInstantiation>
-         <rico:Instantiation rdf:about="instantiation/058220-top-i1">
-            <rico:isInstantiationOf rdf:resource="recordResource/058220-top"/>
-            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+         <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
+             <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
          </rico:Instantiation>
         </rico:hasInstantiation>
         <rico:includesOrIncluded rdf:resource="recordResource/058220-a" />
@@ -89,7 +89,7 @@
     <!-- cas des //archdesc[@level="series"]/dsc//c-->
     <!-- //archdesc/dsc//c[@level="fonds"] -->
     <rico:RecordResource rdf:about="recordResource/058220-a">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds"/>   
@@ -102,7 +102,7 @@
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="subfonds"] -->
     <rico:RecordResource rdf:about="recordResource/058220-b">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
       
         <rico:hasInstantiation>
@@ -114,7 +114,7 @@
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="series"] -->
     <rico:RecordResource rdf:about="recordResource/058220-c">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>  
@@ -127,7 +127,7 @@
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="subseries"] -->
     <rico:RecordResource rdf:about="recordResource/058220-d">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
@@ -140,7 +140,7 @@
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="recordgrp"] -->
     <rico:RecordResource rdf:about="recordResource/058220-e">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasInstantiation>
           <rico:Instantiation rdf:about="instantiation/058220-e-i1">
@@ -151,7 +151,7 @@
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="subgrp"] -->
     <rico:RecordResource rdf:about="recordResource/058220-f">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasInstantiation>
           <rico:Instantiation rdf:about="instantiation/058220-f-i1">
@@ -162,7 +162,7 @@
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="file"] -->
     <rico:RecordResource rdf:about="recordResource/058220-g">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File"/>
@@ -175,7 +175,7 @@
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="item"] -->
     <rico:RecordResource rdf:about="recordResource/058220-c-835pw5mwg-otyywby3qzqb">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
         <rico:hasInstantiation>
           <rico:Instantiation rdf:about="instantiation/058220-c-835pw5mwg-otyywby3qzqb-i1">
@@ -186,7 +186,7 @@
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="collection"] -->
     <rico:RecordResource rdf:about="recordResource/058220-y">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection"/>
@@ -199,7 +199,7 @@
     </rico:RecordResource>
     <!-- //archdesc/dsc//c[@level="otherlevel"] -->
     <rico:RecordResource rdf:about="recordResource/058220-z">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>  
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>  
         <rico:hasInstantiation>
           <rico:Instantiation rdf:about="instantiation/058220-z-i1">
             <rico:isInstantiationOf rdf:resource="recordResource/058220-z"/>
@@ -209,7 +209,7 @@
     </rico:RecordResource>
     <!--   //archdesc/dsc//c[not(@level)]-->
     <rico:RecordResource rdf:about="recordResource/058220-abc">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/> 
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/> 
         <rico:hasInstantiation>
           <rico:Instantiation rdf:about="instantiation/058220-abc-i1">
             <rico:isInstantiationOf rdf:resource="recordResource/058220-abc"/>
@@ -220,84 +220,84 @@
     
     
     <!-- cas 4: //archdesc[@level="subseries"]-->
-    <rico:RecordResource rdf:about="recordResource/058220-top">
+    <rico:RecordResource rdf:about="recordResource/top-058220">
     	<rico:isOrWasDescribedBy rdf:resource="record/058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
         <rico:hasInstantiation>
-         <rico:Instantiation rdf:about="instantiation/058220-top-i1">
-            <rico:isInstantiationOf rdf:resource="recordResource/058220-top"/>
-            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+         <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
+             <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
          </rico:Instantiation>
         </rico:hasInstantiation>
     </rico:RecordResource>
     <!-- cas 5: //archdesc[@level="recordgrp"]-->
-    <rico:RecordResource rdf:about="recordResource/058220-top">
+    <rico:RecordResource rdf:about="recordResource/top-058220">
     	<rico:isOrWasDescribedBy rdf:resource="record/058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>    
         <rico:hasInstantiation>
-         <rico:Instantiation rdf:about="instantiation/058220-top-i1">
-            <rico:isInstantiationOf rdf:resource="recordResource/058220-top"/>
-            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+         <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
+             <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
          </rico:Instantiation>
         </rico:hasInstantiation>   
     </rico:RecordResource>
     <!-- cas 6 : //archdesc[@level="subgrp"]-->
-    <rico:RecordResource rdf:about="recordResource/058220-top">
+    <rico:RecordResource rdf:about="recordResource/top-058220">
     	<rico:isOrWasDescribedBy rdf:resource="record/058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>  
         <rico:hasInstantiation>
-         <rico:Instantiation rdf:about="instantiation/058220-top-i1">
-            <rico:isInstantiationOf rdf:resource="recordResource/058220-top"/>
-            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+         <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
+             <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
          </rico:Instantiation>
         </rico:hasInstantiation>     
     </rico:RecordResource>
     <!-- cas 7 : //archdesc[@level="file"] -->
-    <rico:RecordResource rdf:about="recordResource/058220-top">
+    <rico:RecordResource rdf:about="recordResource/top-058220">
     	<rico:isOrWasDescribedBy rdf:resource="record/058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File"/>
         <rico:hasInstantiation>
-         <rico:Instantiation rdf:about="instantiation/058220-top-i1">
-            <rico:isInstantiationOf rdf:resource="recordResource/058220-top"/>
-            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+         <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
+             <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
          </rico:Instantiation>
         </rico:hasInstantiation>
     </rico:RecordResource>
     <!-- cas 8 : //archdesc[@level="item"]-->
-    <rico:RecordResource rdf:about="recordResource/058220-top">
+    <rico:RecordResource rdf:about="recordResource/top-058220">
     	<rico:isOrWasDescribedBy rdf:resource="record/058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
         <rico:hasInstantiation>
-         <rico:Instantiation rdf:about="instantiation/058220-top-i1">
-            <rico:isInstantiationOf rdf:resource="recordResource/058220-top"/>
-            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+         <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
+             <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
          </rico:Instantiation>
         </rico:hasInstantiation>
     </rico:RecordResource>
     <!-- cas 9 : //archdesc[@level="collection"] -->
-    <rico:RecordResource rdf:about="recordResource/058220-top">
+    <rico:RecordResource rdf:about="recordResource/top-058220">
     	<rico:isOrWasDescribedBy rdf:resource="record/058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection"/>
         <rico:hasInstantiation>
-         <rico:Instantiation rdf:about="instantiation/058220-top-i1">
-            <rico:isInstantiationOf rdf:resource="recordResource/058220-top"/>
-            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+         <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
+             <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
          </rico:Instantiation>
         </rico:hasInstantiation>
     </rico:RecordResource>
     <!-- cas 10 : //archdesc[@level="otherlevel"]-->
-    <rico:RecordResource rdf:about="recordResource/058220-top">
+    <rico:RecordResource rdf:about="recordResource/top-058220">
     	<rico:isOrWasDescribedBy rdf:resource="record/058220"/>
         <rico:hasInstantiation>
-         <rico:Instantiation rdf:about="instantiation/058220-top-i1">
-            <rico:isInstantiationOf rdf:resource="recordResource/058220-top"/>
-            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+         <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
+             <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
          </rico:Instantiation>
         </rico:hasInstantiation>
     </rico:RecordResource>

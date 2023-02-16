@@ -9,7 +9,7 @@
     xml:base="http://data.archives-nationales.culture.gouv.fr/">
     <rico:Record rdf:about="record/058220">
     	<rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
-        <rico:describesOrDescribed rdf:resource="recordResource/058220-top"/>
+        <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
 	      <rico:hasInstantiation>
 	         <rico:Instantiation rdf:about="instantiation/058220-i1">
 	            <rico:isInstantiationOf rdf:resource="record/058220"/>
@@ -21,7 +21,7 @@
 	      </rico:hasInstantiation>
     </rico:Record>
     <!-- archdesc level -->
-    <rico:RecordResource rdf:about="recordResource/058220-top">
+    <rico:RecordResource rdf:about="recordResource/top-058220">
         <rico:isOrWasDescribedBy rdf:resource="record/058220"/>
         
         <!--case 1-->
@@ -53,8 +53,8 @@
         <rico:date xml:lang="fr">Le 1er janvier 1926</rico:date>
 
         <rico:hasInstantiation>
-            <rico:Instantiation rdf:about="instantiation/058220-top-i1">
-                <rico:isInstantiationOf rdf:resource="recordResource/058220-top"/>
+            <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+                <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
 		        <!--case 1-->
 		        <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1926-01-01</rico:beginningDate>
 		        <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-12-31</rico:endDate>
@@ -73,11 +73,13 @@
 		        <!-- case 5 -->
 		        <rico:date xml:lang="fr">années 20</rico:date>		        
 		        <!-- case 6: do nothing-->
+
                 <!-- case 7 : rico:date -->
                 <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1926-01-01</rico:date>
                 <rico:date xml:lang="fr">Le 1er janvier 1926</rico:date>
-		        
-                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+
+                <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
+
             </rico:Instantiation>
         </rico:hasInstantiation>
         <!-- Note : if there is more than the primary instantiation, do not propagate the RecordResource dates to these instantiations -->
@@ -86,7 +88,7 @@
     </rico:RecordResource>
     <!-- c level -->
     <rico:RecordResource rdf:about="recordResource/058220-c-25s2lche6kz-qfignk48spf8">
-    	<rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
+    	<rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1930-01-01</rico:beginningDate>
         <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1945-12-31</rico:endDate>
         <rico:date xml:lang="fr">1930-1945</rico:date>
@@ -102,7 +104,7 @@
         <!-- Note : if there is more than the primary instantiation, do not propagate the RecordResource dates to theses instantiations -->
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-c-7801hhtrn-g19n27mkod23">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:title xml:lang="fr">Année 1842 : 9 l.a.s. à son frère Charles.</rico:title>
         <rdfs:label xml:lang="fr">Année 1842 : 9 l.a.s. à son frère Charles.</rdfs:label>
         <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1842-01-01</rico:beginningDate>

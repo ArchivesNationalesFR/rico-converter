@@ -9,7 +9,7 @@
     xml:base="http://data.archives-nationales.culture.gouv.fr/">
     <rico:Record rdf:about="record/058220">
         <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
-        <rico:describesOrDescribed rdf:resource="recordResource/058220-top"/>
+        <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-i1">
                 <rico:isInstantiationOf rdf:resource="record/058220"/>
@@ -20,7 +20,7 @@
             </rico:Instantiation>
         </rico:hasInstantiation>
     </rico:Record>
-    <rico:RecordResource rdf:about="recordResource/058220-top">
+    <rico:RecordResource rdf:about="recordResource/top-058220">
         <rico:isOrWasDescribedBy rdf:resource="record/058220"/>
         <rico:title xml:lang="fr">Titre comprend un famname : Deschanel (famille)</rico:title>   
         <rdfs:label xml:lang="fr">Titre comprend un famname : Deschanel (famille)</rdfs:label>
@@ -64,11 +64,11 @@
             </rico:Agent>
         </rico:hasOrHadSubject>
         <rico:hasInstantiation>
-             <rico:Instantiation rdf:about="instantiation/058220-top-i1">
-                 <rico:isInstantiationOf rdf:resource="recordResource/058220-top"/>
+             <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+                 <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
                  <rico:title xml:lang="fr">Titre comprend un famname : Deschanel (famille)</rico:title>   
                  <rdfs:label xml:lang="fr">Titre comprend un famname : Deschanel (famille)</rdfs:label>                 
-                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+                 <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
              </rico:Instantiation>
          </rico:hasInstantiation>
         <rico:includesOrIncluded rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>     
@@ -77,7 +77,7 @@
     
     <!-- c/controlaccess/famname indexation libre -->
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:hasOrHadSubject>
             <rico:Agent>
                 <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Family"/>
@@ -113,7 +113,7 @@
     
     <!-- c/did/unittitle/famname -->
     <rico:RecordResource rdf:about="recordResource/058220-N0004">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:title xml:lang="fr">Titre comprend trois famname : Famille Napoléon et Famille Murat ; Aurillac (famille ; 1901-....)</rico:title>   
         <rdfs:label xml:lang="fr">Titre comprend trois famname : Famille Napoléon et Famille Murat ; Aurillac (famille ; 1901-....)</rdfs:label>
         <rico:hasOrHadSubject>

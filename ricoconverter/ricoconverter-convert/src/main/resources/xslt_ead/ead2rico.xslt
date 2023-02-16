@@ -344,7 +344,7 @@
 					<xsl:if test="not(did/repository)">
 						<rico:hasOrHadHolder rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}" />
 					</xsl:if>
-					<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/{/ead/eadheader/eadid}/top" />
+					<!-- this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/{/ead/eadheader/eadid}/top" />-->
 				</rico:Instantiation>
 			</rico:hasInstantiation>			
 						
@@ -767,7 +767,7 @@
 		<xsl:variable name="recordResourceId">
 			<xsl:call-template name="recordResourceId">
 				<xsl:with-param name="faId" select="$otherFaId" />
-				<!-- This will insert '-top' if recordResourceId is empty -->
+				<!-- This will insert 'top-' if recordResourceId is empty -->
 				<xsl:with-param name="recordResourceId" select="if(contains(@href, '#')) then substring-after(@href, '#') else ''" />
 			</xsl:call-template>
 		</xsl:variable>
@@ -811,7 +811,7 @@
 		<xsl:variable name="recordResourceId">
 			<xsl:call-template name="recordResourceId">
 				<xsl:with-param name="faId" select="$otherFaId" />
-				<!-- This will insert '-top' if recordResourceId is empty -->
+				<!-- This will insert 'top-' if recordResourceId is empty -->
 				<xsl:with-param name="recordResourceId" select="if(contains(@href, '#')) then substring-after(@href, '#') else ''" />
 			</xsl:call-template>
 		</xsl:variable>
