@@ -118,6 +118,16 @@
 			<isSourceOfProperty>rico:agentHasWorkRelation</isSourceOfProperty>
 			<label>Relation professionnelle (de travail)</label>
 		</WorkRelation>
+		<!-- Note how AgentControlRelation is present in both hierarchical and associative relation configs -->
+		<AgentControlRelation>
+			<baseType>rico:AgentHierarchicalRelation</baseType>
+			<extraType>https://www.ica.org/standards/RiC/ontology#AgentControlRelation</extraType>
+			<targetProperty>rico:agentControlRelationHasTarget</targetProperty>
+			<sourceProperty>rico:agentControlRelationHasSource</sourceProperty>
+			<isTargetOfProperty>rico:agentIsTargetOfAgentControlRelation</isTargetOfProperty>
+			<isSourceOfProperty>rico:agentIsSourceOfAgentControlRelation</isSourceOfProperty>
+			<label>Relation de contrôle</label>
+		</AgentControlRelation>
 	</xsl:variable>
 	
 	<!-- Determine the type of an associativeRelation; the type corresponds to the possible types in $ASSOCIATIVE_RELATION_CONFIG -->
@@ -127,6 +137,7 @@
 			<xsl:when test="eac2rico:specifiesLeadershipRelation(@xlink:arcrole)">LeadershipRelation</xsl:when>
 			<xsl:when test="eac2rico:specifiesWorkRelation(@xlink:arcrole)">WorkRelation</xsl:when>
 			<xsl:when test="eac2rico:specifiesMembershipRelation(@xlink:arcrole)">MembershipRelation</xsl:when>
+			<xsl:when test="eac2rico:specifiesAgentControlRelation(@xlink:arcrole)">AgentControlRelation</xsl:when>
 	       	<!-- If we detect a specific keyword in the description... -->
 	       	<xsl:when test="eac2rico:denotesLeadershipRelation(eac:descriptiveNote)">
 	       		<!-- ...read the description of the referenced entity... -->
