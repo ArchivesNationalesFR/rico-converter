@@ -302,6 +302,10 @@
 			<xsl:when test="@localType = 'SIREN'">
 				<rico:identifier>SIREN <xsl:value-of select="text()" /></rico:identifier>
 			</xsl:when>
+			<!-- Note : in case of Wikidata, no test if the text() starts with Wikidata -->
+			<xsl:when test="@localType = 'Wikidata'">
+				<owl:sameAs rdf:resource="http://www.wikidata.org/entity/{translate(text(), ' ', '')}"/>
+			</xsl:when>
 			<xsl:otherwise>
 				<!-- output a warning ? -->
 			</xsl:otherwise>
@@ -316,6 +320,10 @@
 			</xsl:when>
 			<xsl:when test="@localType = 'ISNI'">
 				<rdfs:seeAlso rdf:resource="http://isni.org/isni/{translate(text(), ' ', '')}" />
+			</xsl:when>
+			<!-- Note how we point to the URL of the Wikidata page, not to the URI -->
+			<xsl:when test="@localType = 'Wikidata'">
+				<rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/{translate(text(), ' ', '')}"/>
 			</xsl:when>
 			<xsl:otherwise>
 				<!-- output a warning ? -->
