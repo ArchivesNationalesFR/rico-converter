@@ -644,17 +644,18 @@
 	<xsl:template match="eac:legalStatuses">
 		<xsl:apply-templates />
 	</xsl:template>
+	<!-- legalStatus _without_ dates or description -->
 	<xsl:template match="eac:legalStatus[not(eac:dateRange/eac:fromDate) and not(eac:dateRange/eac:toDate) and not(eac:descriptiveNote)]">
 		<xsl:choose>
 			<xsl:when test="not(eac:term/@vocabularySource)">
 				<xsl:value-of select="eac2rico:warning($recordId, 'MISSING_VOCABULARYSOURCE_ON_LEGAL_STATUS', ./eac:term/text())" />
 			</xsl:when>
 			<xsl:otherwise>
-				<rico:hasLegalStatus><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-LegalStatus(eac:term/@vocabularySource)" /></xsl:call-template></rico:hasLegalStatus>		
+				<rico:hasOrHadCorporateBodyType><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-LegalStatus(eac:term/@vocabularySource)" /></xsl:call-template></rico:hasOrHadCorporateBodyType>		
 			</xsl:otherwise>
-		</xsl:choose>
-		
+		</xsl:choose>		
 	</xsl:template>
+	<!-- legalStatus _with_ dates or description -->
 	<xsl:template match="eac:legalStatus[eac:dateRange/eac:fromDate or eac:dateRange/eac:toDate or eac:descriptiveNote]">
 		<xsl:if test="not(eac:term/@vocabularySource)">
 			<xsl:value-of select="eac2rico:warning($recordId, 'MISSING_VOCABULARYSOURCE_ON_LEGAL_STATUS', ./eac:term/text())" />
@@ -679,8 +680,7 @@
             
             <xsl:apply-templates />
          	</rico:TypeRelation>
-      </rico:thingIsTargetOfTypeRelation>
-		
+      </rico:thingIsTargetOfTypeRelation>		
 	</xsl:template>
 
 	<!-- *** RELATIONS *** -->
