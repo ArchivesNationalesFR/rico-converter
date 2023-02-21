@@ -31,11 +31,11 @@
                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
              </rico:Instantiation>
          </rico:hasInstantiation>
-        <rico:includes rdf:resource="recordResource/058220-unknown-single"/>
-        <rico:includes rdf:resource="recordResource/058220-unknown-multiple"/>        
-        <rico:includes rdf:resource="recordResource/058220-record"/>
-        <rico:includes rdf:resource="recordResource/058220-recordset-single"/>
-        <rico:includes rdf:resource="recordResource/058220-recordset-multiple"/>
+        <rico:includesOrIncluded rdf:resource="recordResource/058220-unknown-single"/>
+        <rico:includesOrIncluded rdf:resource="recordResource/058220-unknown-multiple"/>        
+        <rico:includesOrIncluded rdf:resource="recordResource/058220-record"/>
+        <rico:includesOrIncluded rdf:resource="recordResource/058220-recordset-single"/>
+        <rico:includesOrIncluded rdf:resource="recordResource/058220-recordset-multiple"/>
     </rico:RecordResource>
 
     <!-- Unknown, single value -->

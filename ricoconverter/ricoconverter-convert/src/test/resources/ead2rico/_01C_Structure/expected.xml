@@ -30,8 +30,8 @@
 		</rico:Instantiation>     
       </rico:hasInstantiation>   
       
-      <rico:includes rdf:resource="recordResource/011222-foo" />
-      <rico:includes rdf:resource="recordResource/011222-klmn" />
+      <rico:includesOrIncluded rdf:resource="recordResource/011222-foo" />
+      <rico:includesOrIncluded rdf:resource="recordResource/011222-klmn" />
    </rico:RecordResource>
 
    <!-- then there should be, if the ad hoc parameter has been set, another RDF file for outputting the RDF data about the c elements (one file per c, child of archdesc)-->
@@ -45,7 +45,7 @@
 	      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_011222/foo"/>
 	   </rico:Instantiation>
      </rico:hasInstantiation>
-     <rico:includes>
+     <rico:includesOrIncluded>
      	  <rico:RecordResource rdf:about="recordResource/011222-abcdefg">
 	      <rico:includedIn rdf:resource="recordResource/011222-foo"/>
 	      <rico:hasInstantiation>
@@ -55,7 +55,7 @@
 			   </rico:Instantiation>
 	      </rico:hasInstantiation>
 	   </rico:RecordResource>
-     </rico:includes>
+     </rico:includesOrIncluded>
   </rico:RecordResource>
 
 	<!-- in the 2nd file we should find the following-->

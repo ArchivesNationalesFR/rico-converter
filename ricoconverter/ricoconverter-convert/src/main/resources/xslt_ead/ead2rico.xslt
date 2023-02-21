@@ -363,6 +363,7 @@
 		<xsl:apply-templates mode="#current" />
 	</xsl:template>
 	
+	<!-- Processes c under archdesc -->
 	<xsl:template match="c" mode="reference">
 		<xsl:variable name="recordResourceId">
 			<xsl:call-template name="recordResourceId">
@@ -371,7 +372,18 @@
 			</xsl:call-template>
 		</xsl:variable>
 	
-		<rico:includes rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+		<xsl:choose>
+			<xsl:when test="ead2rico:isRicoRecordSetLevel(../../@level)">
+				<rico:includesOrIncluded rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+			</xsl:when>
+			<xsl:when test="ead2rico:isRicoRecordLevel(../../@level)">
+				<rico:hasOrHadConstituent rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+			</xsl:when>
+			<xsl:otherwise>
+				<rico:hasOrHadPart rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+			</xsl:otherwise>
+		</xsl:choose>
+		
 	</xsl:template>
 	
 	<!-- ***** c processing : generates corresponding RecordResource and Instantiation ***** -->
@@ -467,11 +479,28 @@
 			<!-- generates other Instantiations -->
 			<xsl:apply-templates select="daogrp" />
 			
-			<!-- children c's : generate hasMember recursively (contrary to first level archdesc) -->
+			<!-- children c's : generate includesOrIncluded/hasOrHadConstituent/hasOrHadPart recursively (contrary to first level archdesc) -->
+			<!-- predicate depends on type of Record -->
+			<xsl:variable name="currentLevel" select="@level" />
 			<xsl:for-each select="c">
-				<rico:includes>
-					<xsl:apply-templates select="." />
-				</rico:includes>
+
+				<xsl:choose>
+					<xsl:when test="ead2rico:isRicoRecordSetLevel($currentLevel)">
+						<rico:includesOrIncluded>
+							<xsl:apply-templates select="." />
+						</rico:includesOrIncluded>
+					</xsl:when>
+					<xsl:when test="ead2rico:isRicoRecordLevel($currentLevel)">
+						<rico:hasOrHadConstituent>
+							<xsl:apply-templates select="." />
+						</rico:hasOrHadConstituent>
+					</xsl:when>
+					<xsl:otherwise>
+						<rico:hasOrHadPart>
+							<xsl:apply-templates select="." />
+						</rico:hasOrHadPart>
+					</xsl:otherwise>
+				</xsl:choose>
 			</xsl:for-each>
 		</rico:RecordResource>
 	</xsl:template>
