@@ -48,16 +48,6 @@
                 <include>${project.groupId}:ricoconverter-cli:jar:onejar:${project.version}</include>
             </includes>
         </dependencySet>
-        <!-- copy the documentation dependency in the zip -->
-        <dependencySet>
-            <useProjectArtifact>true</useProjectArtifact>
-            <useProjectAttachments>false</useProjectAttachments>
-            <unpack>true</unpack>
-            <outputDirectory>/</outputDirectory>
-            <includes>
-                <include>${project.groupId}:ricoconverter-doc:zip:documentation:${project.version}</include>
-            </includes>
-        </dependencySet>
         <!-- unzip the unit-tests -->
         <dependencySet>
             <useProjectArtifact>true</useProjectArtifact>
