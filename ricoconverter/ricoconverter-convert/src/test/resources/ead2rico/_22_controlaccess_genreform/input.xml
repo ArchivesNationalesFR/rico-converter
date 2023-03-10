@@ -10,10 +10,22 @@
             <genreform authfilenumber="d5b8d41cch--81zpek4vv4lp" source="FRAN_RI_001">document photographique</genreform>
         </controlaccess>
         <dsc>
-            <!-- genreform at a Record level -->
-            <c id="c34fnm316ofc-27kf8gfnest" level="item">
+            <!-- genreform at a Record level with known value as documentary form type -->
+            <c id="record-known" level="item">
 		        <controlaccess>
 		            <genreform authfilenumber="d5b8d41cch--81zpek4vv4lp" source="FRAN_RI_001">document photographique</genreform>
+		        </controlaccess>
+		    </c>
+            <!-- genreform at a Record level with known value as record state -->
+            <c id="record-known-state" level="item">
+		        <controlaccess>
+		            <genreform authfilenumber="d3m00w6tom1--17yz38y8bszt8" source="FRAN_RI_001">copie authentique</genreform>
+		        </controlaccess>
+		    </c>
+            <!-- genreform at a Record level with unknown value -->
+            <c id="record-unknown" level="item">
+		        <controlaccess>
+		            <genreform authfilenumber="UNKNOWN" source="FRAN_RI_001">unknown</genreform>
 		        </controlaccess>
 		    </c>
             <!-- genreform at an unknown level -->

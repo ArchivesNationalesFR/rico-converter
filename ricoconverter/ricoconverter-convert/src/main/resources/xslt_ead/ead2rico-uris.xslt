@@ -18,7 +18,23 @@
 	<!-- Load Languages from companion file -->
 	<xsl:param name="VOCABULARY_LANGUAGES">../vocabularies/referentiel_languages.rdf</xsl:param>
 	<xsl:variable name="LANGUAGES" select="document($VOCABULARY_LANGUAGES)" />
-	
+
+	<!-- Load documentary form types from companion file -->
+	<xsl:param name="VOCABULARY_DOCUMENTARY_FORM_TYPES">../vocabularies/FRAN_RI_001_documentaryFormTypes.rdf</xsl:param>
+	<!-- Selects all @rdf:about in the file -->
+	<xsl:variable name="DOCUMENTARY_FORM_TYPES_URI" select="document($VOCABULARY_DOCUMENTARY_FORM_TYPES)/rdf:RDF/skos:Concept/@rdf:about" />
+
+	<!-- Load record states from companion file -->
+	<xsl:param name="VOCABULARY_RECORD_STATES">../vocabularies/FRAN_RI_001_recordStates.rdf</xsl:param>
+	<!-- Selects all @rdf:about in the file -->
+	<xsl:variable name="RECORD_STATES_URI" select="document($VOCABULARY_RECORD_STATES)/rdf:RDF/skos:Concept/@rdf:about" />
+
+
+	<!-- Load record set types from companion file -->
+	<xsl:param name="VOCABULARY_RECORD_SET_TYPES">../vocabularies/FRAN_RI_001_recordSetTypes.rdf</xsl:param>
+	<!-- Selects all @rdf:about in the file -->
+	<xsl:variable name="RECORD_SET_TYPES_URI" select="document($VOCABULARY_RECORD_SET_TYPES)/rdf:RDF/skos:Concept/@rdf:about" />
+
 	<xsl:function name="ead2rico:URI-FindingAid">
 		<xsl:param name="faId" />
 		<xsl:value-of select="concat('record/', $faId)" />
@@ -46,10 +62,22 @@
 		<xsl:value-of select="$LANGUAGES/rdf:RDF/rico:Language[owl:sameAs/@rdf:resource = $idlocgov]/@rdf:about" />
 	</xsl:function>
 
-	<xsl:function name="ead2rico:URI-DocumentaryForm">
+	<xsl:function name="ead2rico:URI-DocumentaryFormType">
 		<xsl:param name="authfilenumber" />
 		<xsl:param name="source" />
 		<xsl:value-of select="concat('documentaryFormType/', $source, '-', $authfilenumber)" />
+	</xsl:function>
+
+	<xsl:function name="ead2rico:URI-RecordState">
+		<xsl:param name="authfilenumber" />
+		<xsl:param name="source" />
+		<xsl:value-of select="concat('recordState/', $source, '-', $authfilenumber)" />
+	</xsl:function>
+
+	<xsl:function name="ead2rico:URI-RecordSetType">
+		<xsl:param name="authfilenumber" />
+		<xsl:param name="source" />
+		<xsl:value-of select="concat('recordSetType/', $source, '-', $authfilenumber)" />
 	</xsl:function>
 
 	<xsl:function name="ead2rico:URI-Place">
@@ -121,7 +149,31 @@
             select="concat((if ($recordResourceId) then '' else 'top-'), $faId, (if ($recordResourceId) then concat('-', $recordResourceId) else '') )"
         />		
 	</xsl:template>
-	
+
+	<!-- Tests if the provided genreform XML element corresponds to a documentary form type-->
+	<xsl:function name="ead2rico:isDocumentaryFormType" as="xs:boolean">
+		<xsl:param name="genreform"/>
+
+		<xsl:variable name="dft-reference" select="ead2rico:URI-DocumentaryFormType($genreform/@authfilenumber, $genreform/@source)" />
+		<xsl:sequence select="(index-of($DOCUMENTARY_FORM_TYPES_URI, $dft-reference) > 0)" />
+	</xsl:function>
+
+	<!-- Tests if the provided genreform XML element corresponds to a record state -->
+	<xsl:function name="ead2rico:isRecordState" as="xs:boolean">
+		<xsl:param name="genreform"/>
+
+		<xsl:variable name="rs-reference" select="ead2rico:URI-RecordState($genreform/@authfilenumber, $genreform/@source)" />
+		<xsl:sequence select="(index-of($RECORD_STATES_URI, $rs-reference) > 0)" />
+	</xsl:function>
+
+	<!-- Tests if the provided genreform XML element corresponds to a record set type -->
+	<xsl:function name="ead2rico:isRecordSetType" as="xs:boolean">
+		<xsl:param name="genreform"/>
+
+		<xsl:variable name="rst-reference" select="ead2rico:URI-RecordSetType($genreform/@authfilenumber, $genreform/@source)" />
+		<xsl:sequence select="(index-of($RECORD_SET_TYPES_URI, $rst-reference) > 0)" />
+	</xsl:function>
+
 	<xsl:template name="rdf-about">
 		<xsl:param name="uri" />
 		<xsl:attribute name="about" namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#">

@@ -19,7 +19,8 @@
 	xmlns:isni="http://isni.org/ontology#"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
 	xmlns:html="http://www.w3.org/1999/xhtml"
-	exclude-result-prefixes="ead2rico xlink xs xsi xsl"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	exclude-result-prefixes="ead2rico xlink xs xsi xsl skos"
 >
 	<!-- Import URI stylesheet -->
 	<xsl:import href="ead2rico-uris.xslt" />
@@ -1097,17 +1098,51 @@
 	</xsl:template>
 	
 	<xsl:template match="genreform[@authfilenumber]">
+		
 		<xsl:choose>
 			<xsl:when test="ead2rico:isRicoRecordLevel(../../@level)">
-				<rico:hasDocumentaryFormType rdf:resource="{ead2rico:URI-DocumentaryForm(@authfilenumber, @source)}"/>
+				<xsl:choose>
+					<!-- if provided genreform is a documentary form type, use corresponding property -->				
+					<xsl:when test="ead2rico:isDocumentaryFormType(.)">
+						<rico:hasDocumentaryFormType rdf:resource="{ead2rico:URI-DocumentaryFormType(@authfilenumber, @source)}"/>
+					</xsl:when>
+					<!-- if provided genreform is a record state, use corresponding property -->				
+					<xsl:when test="ead2rico:isRecordState(.)">
+						<rico:hasRecordState rdf:resource="{ead2rico:URI-RecordState(@authfilenumber, @source)}"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<!-- Output a default property and generate a warning -->
+						<dc:type><xsl:value-of select="text()" /></dc:type>
+						<xsl:value-of select="ead2rico:warning($faId, 'UNKNOWN_GENREFORM', @authfilenumber)" />
+					</xsl:otherwise>
+				</xsl:choose>				
 			</xsl:when>
 			<xsl:when test="ead2rico:isRicoRecordSetLevel(../../@level)">
-				<!-- someMembers property as we are not sure all children have the same dft -->
-				<rico:hasOrHadSomeMembersWithDocumentaryFormType rdf:resource="{ead2rico:URI-DocumentaryForm(@authfilenumber, @source)}"/>
+
+				<xsl:choose>
+					<!-- if provided genreform is a documentary form type, use corresponding property -->				
+					<xsl:when test="ead2rico:isDocumentaryFormType(.)">
+						<!-- someMembers property as we are not sure all children have the same dft -->
+						<rico:hasOrHadSomeMembersWithDocumentaryFormType rdf:resource="{ead2rico:URI-DocumentaryFormType(@authfilenumber, @source)}"/>
+					</xsl:when>
+					<!-- if provided genreform is a record set type, use corresponding property -->				
+					<xsl:when test="ead2rico:isRecordSetType(.)">
+						<rico:hasRecordSetType rdf:resource="{ead2rico:URI-RecordSetType(@authfilenumber, @source)}"/>
+					</xsl:when>
+					<!-- if provided genreform is a record state, use corresponding property -->				
+					<xsl:when test="ead2rico:isRecordState(.)">
+						<rico:hasOrHadSomeMembersWithRecordState rdf:resource="{ead2rico:URI-RecordState(@authfilenumber, @source)}"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<!-- Output a default property and generate a warning -->
+						<dc:type><xsl:value-of select="text()" /></dc:type>
+						<xsl:value-of select="ead2rico:warning($faId, 'UNKNOWN_GENREFORM', @authfilenumber)" />
+					</xsl:otherwise>
+				</xsl:choose>
 			</xsl:when>
 			<xsl:otherwise>
 				<!-- we don't know if this is a Record or a RecordSet. Output a generic dc:type property -->
-				<dc:type rdf:resource="{ead2rico:URI-DocumentaryForm(@authfilenumber, @source)}" />
+				<dc:type><xsl:value-of select="text()" /></dc:type>
 			</xsl:otherwise>
 		</xsl:choose>
 		
@@ -1497,12 +1532,13 @@
 		</xsl:choose>
     </xsl:template>
 		
-
+	<!-- Tests if a level value corresponds to a Record -->
 	<xsl:function name="ead2rico:isRicoRecordLevel" as="xs:boolean">
 		<xsl:param name="level"/>
 		<xsl:sequence select="$level = 'item'"/>  
 	</xsl:function>
 
+	<!-- Tests if a level value corresponds to a RecordSet -->
 	<xsl:function name="ead2rico:isRicoRecordSetLevel" as="xs:boolean">
 		<xsl:param name="level"/>
 		<xsl:sequence select="$level and $level != 'item' and $level != 'otherlevel'"/>  

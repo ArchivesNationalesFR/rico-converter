@@ -32,25 +32,51 @@
                  <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
              </rico:Instantiation>
          </rico:hasInstantiation>
-         <rico:includesOrIncluded rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+         <rico:includesOrIncluded rdf:resource="recordResource/058220-record-known"/>
+         <rico:includesOrIncluded rdf:resource="recordResource/058220-record-known-state"/>
+         <rico:includesOrIncluded rdf:resource="recordResource/058220-record-unknown"/>
          <rico:includesOrIncluded rdf:resource="recordResource/058220-unknown"/>
     </rico:RecordResource>
-    <!-- Record level -->
-    <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
+    <!-- Record level and known value -->
+    <rico:RecordResource rdf:about="recordResource/058220-record-known">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
         <rico:hasDocumentaryFormType rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d41cch--81zpek4vv4lp"/>
         <rico:hasInstantiation>
-            <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">                
-                <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
-                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"/>
+            <rico:Instantiation rdf:about="instantiation/058220-record-known-i1">                
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-record-known"/>
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/record-known"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+    </rico:RecordResource>
+    <!-- Record level and known value as record state -->
+    <rico:RecordResource rdf:about="recordResource/058220-record-known-state">
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
+        <rico:hasRecordState rdf:resource="recordState/FRAN_RI_001-d3m00w6tom1--17yz38y8bszt8"/>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-record-known-state-i1">                
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-record-known-state"/>
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/record-known-state"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+    </rico:RecordResource>
+    <!-- Record level and unknown value -->
+    <rico:RecordResource rdf:about="recordResource/058220-record-unknown">
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
+        <dc:type>unknown</dc:type>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-record-unknown-i1">                
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-record-unknown"/>
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/record-unknown"/>
             </rico:Instantiation>
         </rico:hasInstantiation>
     </rico:RecordResource>
     <!-- Unknown level -->
     <rico:RecordResource rdf:about="recordResource/058220-unknown">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
-        <dc:type rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d41cch--81zpek4vv4lp"/>
+        <dc:type>document photographique</dc:type>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-unknown-i1">                
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-unknown"/>
