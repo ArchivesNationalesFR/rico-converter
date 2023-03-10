@@ -2,10 +2,10 @@ _Home_
 
 # RiC-O Converter
 
-Welcome to the **RiC-O converter documentation** ! RiC-O converter is a command-line tool to convert EAD and EAC files to RDF files expressed using [Records in Contexts ontology](https://www.ica.org/standards/RiC/RiC-O_v0-1.html).
+Welcome to the **RiC-O converter documentation** ! RiC-O converter is a command-line tool to convert EAD and EAC files to RDF files expressed using [Records in Contexts ontology](https://www.ica.org/standards/RiC/ontology).
 
 
-##Table of Contents
+## Table of Contents
 
 The documentation is divided in these sections :
 
@@ -33,15 +33,14 @@ The documentation is divided in these sections :
 - [EAD XSLT Error Codes](ErrorCodesXsltEad.html): reference list of the possible error codes during EAD conversion.
 
 
-##Licence
+## Licence
 
 This project is licensed under the terms of the CeCILL-B license (equivalent to MIT license and close to a public domain license) (see the [license file in english](license.txt) or [in french](licence.txt)).
 
 
-##Contact
+## Contact
 
 If you have questions on RiC-O converter, you can contact :
 
-- [Florence Clavaud](mailto:florence.clavaud@culture.gouv.fr) at [Archives nationales de France](http://www.archives-nationales.culture.gouv.fr/), who also leads the development of RiC-O ontology;
-- [Pauline Charbonnier](mailto:pauline.charbonnier@culture.gouv.fr) at [Archives nationales de France](http://www.archives-nationales.culture.gouv.fr/);
-- [Thomas Francart](mailto:thomas.francart@sparna.fr) at [Sparna](http://sparna.fr), developper of RiC-O converter ([blog](http://blog.sparna.fr)).
+- [Florence Clavaud](mailto:florence.clavaud@culture.gouv.fr), head of the Lab at the [Archives nationales de France](http://www.archives-nationales.culture.gouv.fr/), who also leads the development of RiC-O ontology;
+- [Thomas Francart](mailto:thomas.francart@sparna.fr) at [Sparna](http://sparna.fr), developer of RiC-O converter ([blog](http://blog.sparna.fr)).

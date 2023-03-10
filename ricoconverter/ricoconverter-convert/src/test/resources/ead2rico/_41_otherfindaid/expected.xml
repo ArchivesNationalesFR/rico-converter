@@ -9,19 +9,19 @@
     xml:base="http://data.archives-nationales.culture.gouv.fr/">
     <rico:Record rdf:about="record/058220">
         <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
-        <rico:describes rdf:resource="recordResource/058220-top"/>
+        <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-i1">
-                <rico:instantiates rdf:resource="record/058220"/>
+                <rico:isInstantiationOf rdf:resource="record/058220"/>
                 <dc:format xml:lang="en">text/xml</dc:format>
                 <rico:identifier>FRAN_IR_058220</rico:identifier>
-                <rico:heldBy rdf:resource="agent/005061"/>
+                <rico:hasOrHadHolder rdf:resource="agent/005061"/>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>
             </rico:Instantiation>
         </rico:hasInstantiation>
     </rico:Record>
-    <rico:RecordResource rdf:about="recordResource/058220-top">
-        <rico:describedBy rdf:resource="record/058220"/>
+    <rico:RecordResource rdf:about="recordResource/top-058220">
+        <rico:isOrWasDescribedBy rdf:resource="record/058220"/>
         <!-- case 1 -->
         <rico:descriptiveNote rdf:parseType="Literal">
             <html:div xml:lang="fr">
@@ -32,10 +32,10 @@
             </html:div>
         </rico:descriptiveNote>
         <rico:hasInstantiation>
-             <rico:Instantiation rdf:about="instantiation/058220-top-i1">
-                 <rico:instantiates rdf:resource="recordResource/058220-top"/>
+             <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+                 <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
                  <!-- do not process otherfindaid here -->
-                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+                 <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
              </rico:Instantiation>
          </rico:hasInstantiation>
         <rico:includesOrIncluded rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>     
@@ -44,7 +44,7 @@
     </rico:RecordResource>
     
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
-        <rico:includedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <!-- case 2 -->
         <rico:descriptiveNote rdf:parseType="Literal">
             <html:div xml:lang="fr">
@@ -56,7 +56,7 @@
         </rico:descriptiveNote>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">                
-                <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
                 <rico:hasDerivedInstantiation rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
                 <!-- do not process otherfindaid here -->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"/>
@@ -64,7 +64,7 @@
         </rico:hasInstantiation>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2">                
-                <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
                 <rico:isDerivedFromInstantiation rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1"/>
                 <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
                 <rico:identifier>FRAN_0118_274_L</rico:identifier>
@@ -76,7 +76,7 @@
     </rico:RecordResource>
     
     <rico:RecordResource rdf:about="recordResource/058220-N0004">
-        <rico:includedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
        
         <rico:descriptiveNote rdf:parseType="Literal">
             <html:div xml:lang="fr">
@@ -90,14 +90,14 @@
             </html:div>
         </rico:descriptiveNote>
         <!-- case 3: also  refer to the Record Resource described within the other finding aid. Such a case would theoretically imply that the 2 record resources are the same-->
-        <rico:isRecordResourceAssociatedWithRecordResource rdf:resource="recordResource/021298-top"/>
-        <rico:isSubjectOf rdf:resource="record/021298"/>
+        <rico:isRecordResourceAssociatedWithRecordResource rdf:resource="recordResource/top-021298"/>
+        <rico:isOrWasSubjectOf rdf:resource="record/021298"/>
         <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_021298"/>
       
       
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-N0004-i1">                
-                <rico:instantiates rdf:resource="recordResource/058220-N0004"/>
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-N0004"/>
                 <!-- do not process otherfindaid here -->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0004"/>
             </rico:Instantiation>
@@ -105,7 +105,7 @@
     </rico:RecordResource>
     
     <rico:RecordResource rdf:about="recordResource/058220-N0005">
-        <rico:includedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <!-- case 6: same as case 3 in fact.-->
         <rico:descriptiveNote rdf:parseType="Literal">
             <html:div xml:lang="fr">
@@ -116,11 +116,11 @@
         <!-- refer to the Record Resource described within the other finding aid. Such a case would theoretically imply that the 2 record resources are the same-->
         <rico:isRecordResourceAssociatedWithRecordResource rdf:resource="recordResource/002433-c-22jejddiz--1qegiixo0y7s9"/>
         <!-- refer to the whole finding aid-->
-        <rico:isSubjectOf rdf:resource="record/002433"/>
+        <rico:isOrWasSubjectOf rdf:resource="record/002433"/>
         <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_002433/c-22jejddiz--1qegiixo0y7s9"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-N0005-i1">                
-                <rico:instantiates rdf:resource="recordResource/058220-N0005"/>
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-N0005"/>
                 <!-- do not process otherfindaid here -->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0005"/>
             </rico:Instantiation>

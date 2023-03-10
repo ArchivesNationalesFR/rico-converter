@@ -2,7 +2,7 @@
 
 # Getting Started
 
-## Test drive the converter
+## Test drive the converter
 
 To run your first conversion :
 
@@ -38,7 +38,7 @@ In the converter release folder you will find the following directories :
   - `xslt_eac` : contains the XSLT files used by the `convert_eac` and `convert_eac_raw` commands to convert EAC to RiC-O; the main one is `eac2rico.xslt`;
   - `xslt_ead` : contains the XSLT files used by the `convert_ead` command to convert EAC to RiC-O; the main one is `ead2rico.xslt`;
 
-## Commands and parameters
+## Commands and parameters
 
 The converter contains a few commands, the main ones are `convert_eac` and  `convert_ead` to convert, as their name suggest, EAC and EAD files to RiC-O.
 

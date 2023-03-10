@@ -1,6 +1,6 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:html="http://www.w3.org/1999/xhtml"
-         xmlns:isni="http://isni.org/ontology#"
+         xmlns:isni="https://isni.org/ontology#"
          xmlns:owl="http://www.w3.org/2002/07/owl#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
@@ -8,13 +8,13 @@
          xml:base="http://data.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/004852">
    	  <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
-      <rico:regulatedBy rdf:resource="rule/rl009"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl009"/>
      
       <rico:title xml:lang="fr">Dossiers de carrière des magistrats (1848-1883) : Inventaire sommaire (BB/6(II)/1-BB/6(II)/434)</rico:title>
       <rdfs:label xml:lang="fr">Dossiers de carrière des magistrats (1848-1883) : Inventaire sommaire (BB/6(II)/1-BB/6(II)/434)</rdfs:label>
      
-      <rico:createdBy rdf:resource="agent/005061"/>
-      <rico:publishedBy rdf:resource="agent/005061"/>
+      <rico:hasCreator rdf:resource="agent/005061"/>
+      <rico:hasPublisher rdf:resource="agent/005061"/>
       <!-- case 1 -->
       <!-- a date range, within the same year -->
       <rico:publicationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1979</rico:publicationDate>
@@ -42,14 +42,14 @@
 
       <rico:hasInstantiation>      
          <rico:Instantiation rdf:about="instantiation/004852-i1">
-	   	  <rico:instantiates rdf:resource="record/004852"/>
+	   	  <rico:isInstantiationOf rdf:resource="record/004852"/>
 	      <!-- the title is duplicated here -->
 	      <rico:title xml:lang="fr">Dossiers de carrière des magistrats (1848-1883) : Inventaire sommaire (BB/6(II)/1-BB/6(II)/434)</rico:title>
 	      <rdfs:label xml:lang="fr">Dossiers de carrière des magistrats (1848-1883) : Inventaire sommaire (BB/6(II)/1-BB/6(II)/434)</rdfs:label>
-	      <rico:regulatedBy rdf:resource="rule/rl010"/>
+	      <rico:isOrWasRegulatedBy rdf:resource="rule/rl010"/>
 	      <dc:format xml:lang="en">text/xml</dc:format>
 	      <rico:identifier>FRAN_IR_004852</rico:identifier>
-	      <rico:heldBy rdf:resource="agent/005061"/>
+	      <rico:hasOrHadHolder rdf:resource="agent/005061"/>
 	      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_004852"/>
 	      
 	    </rico:Instantiation>

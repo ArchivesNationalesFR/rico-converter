@@ -53,7 +53,7 @@ public class Ead2RicoXsltTestExecution implements Test {
 		this.testFolder = testFolder;
 		
 		// read the XSLT
-		InputStream xsltSource = this.getClass().getResourceAsStream("/xslt_ead/ead2rico.xslt");
+		InputStream xsltSource = this.getClass().getResourceAsStream("/xslt_ead/main.xslt");
 		
 		try {
 			Transformer t = TransformerBuilder.createSaxonProcessor().setUriResolver(new URIResolver() {
@@ -140,13 +140,13 @@ public class Ead2RicoXsltTestExecution implements Test {
 								!(
 										node.getLocalName().equals("hasProvenance")
 										||
-										node.getLocalName().equals("heldBy")
+										node.getLocalName().equals("hasOrHadHolder")
 										||
 										node.getLocalName().equals("FindingAid")
 										||
 										node.getLocalName().equals("seeAlso")
 										||
-										node.getLocalName().equals("regulatedBy")
+										node.getLocalName().equals("isOrWasRegulatedBy")
 										
 								)
 						);

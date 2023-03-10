@@ -9,27 +9,27 @@
     xml:base="http://data.archives-nationales.culture.gouv.fr/">
     <rico:Record rdf:about="record/058220">
         <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid"/>
-        <rico:describes rdf:resource="recordResource/058220-top"/>
+        <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-i1">
-                <rico:instantiates rdf:resource="record/058220"/>
+                <rico:isInstantiationOf rdf:resource="record/058220"/>
                 <dc:format xml:lang="en">text/xml</dc:format>
                 <rico:identifier>FRAN_IR_058220</rico:identifier>
-                <rico:heldBy rdf:resource="agent/005061"/>
+                <rico:hasOrHadHolder rdf:resource="agent/005061"/>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>
             </rico:Instantiation>
         </rico:hasInstantiation>
     </rico:Record>
     <!-- RecordSet level -->
-    <rico:RecordResource rdf:about="recordResource/058220-top">
-        <rico:describedBy rdf:resource="record/058220"/>
+    <rico:RecordResource rdf:about="recordResource/top-058220">
+        <rico:isOrWasDescribedBy rdf:resource="record/058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds"/>
         <rico:hasOrHadSomeMembersWithDocumentaryFormType rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d41cch--81zpek4vv4lp"/>
         <rico:hasInstantiation>
-             <rico:Instantiation rdf:about="instantiation/058220-top-i1">
-                 <rico:instantiates rdf:resource="recordResource/058220-top"/>                 
-                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+             <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+                 <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>                 
+                 <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
              </rico:Instantiation>
          </rico:hasInstantiation>
          <rico:includesOrIncluded rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
@@ -37,12 +37,12 @@
     </rico:RecordResource>
     <!-- Record level -->
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
-        <rico:includedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
         <rico:hasDocumentaryFormType rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d41cch--81zpek4vv4lp"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">                
-                <rico:instantiates rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"/>
             </rico:Instantiation>
         </rico:hasInstantiation>

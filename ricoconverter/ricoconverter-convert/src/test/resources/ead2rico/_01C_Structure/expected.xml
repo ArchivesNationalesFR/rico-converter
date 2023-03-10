@@ -1,18 +1,18 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:html="http://www.w3.org/1999/xhtml" xmlns:isni="http://isni.org/ontology#"
+   xmlns:html="http://www.w3.org/1999/xhtml" xmlns:isni="https://isni.org/ontology#"
    xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xml:base="http://data.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/011222">
    	  <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
-      <rico:describes rdf:resource="recordResource/011222-top"/>
+      <rico:describesOrDescribed rdf:resource="recordResource/top-011222"/>
       <rico:hasInstantiation>
       	   <rico:Instantiation rdf:about="instantiation/011222-i1">
-		      <rico:instantiates rdf:resource="record/011222"/>
+		      <rico:isInstantiationOf rdf:resource="record/011222"/>
 		      <dc:format xml:lang="en">text/xml</dc:format>
 		      <rico:identifier>FRAN_IR_011222</rico:identifier>
-		      <rico:heldBy rdf:resource="agent/005061"/>
+		      <rico:hasOrHadHolder rdf:resource="agent/005061"/>
 		      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_011222"/>     
 		   </rico:Instantiation>
       </rico:hasInstantiation>
@@ -20,13 +20,13 @@
    
    
    <!-- The highest level Record resource, corresponding to archdesc, and its physical or digital primary instantiation
-            If there is an @id, use {findingAidId}{@id}; if no @id for archdesc, use {findingAidId}-top -->
-   <rico:RecordResource rdf:about="recordResource/011222-top">
-      <rico:describedBy rdf:resource="record/011222"/>
+            If there is an @id, use {findingAidId}{@id}; if no @id for archdesc, use top-{findingAidId} -->
+   <rico:RecordResource rdf:about="recordResource/top-011222">
+      <rico:isOrWasDescribedBy rdf:resource="record/011222"/>
       <rico:hasInstantiation>
-		<rico:Instantiation rdf:about="instantiation/011222-top-i1">
-		   <rico:instantiates rdf:resource="recordResource/011222-top"/>
-		   <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_011222/top"/>
+		<rico:Instantiation rdf:about="instantiation/top-011222-i1">
+		   <rico:isInstantiationOf rdf:resource="recordResource/top-011222"/>
+		   <!-- this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_011222/top"/>-->
 		</rico:Instantiation>     
       </rico:hasInstantiation>   
       
@@ -38,19 +38,19 @@
    <!-- so from the input.xml file, we should get 2 more files
       In the first file we should find the following, which corresponds to the 'foo' c element and its subcomponents -->  
    <rico:RecordResource rdf:about="recordResource/011222-foo">
-     <rico:includedIn rdf:resource="recordResource/011222-top"/>
+     <rico:isOrWasIncludedIn rdf:resource="recordResource/top-011222"/>
      <rico:hasInstantiation>
        <rico:Instantiation rdf:about="instantiation/011222-foo-i1">
-	      <rico:instantiates rdf:resource="recordResource/011222-foo"/>
+	      <rico:isInstantiationOf rdf:resource="recordResource/011222-foo"/>
 	      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_011222/foo"/>
 	   </rico:Instantiation>
      </rico:hasInstantiation>
      <rico:includesOrIncluded>
      	  <rico:RecordResource rdf:about="recordResource/011222-abcdefg">
-	      <rico:includedIn rdf:resource="recordResource/011222-foo"/>
+	      <rico:isOrWasIncludedIn rdf:resource="recordResource/011222-foo"/>
 	      <rico:hasInstantiation>
 	      	   <rico:Instantiation rdf:about="instantiation/011222-abcdefg-i1">
-			      <rico:instantiates rdf:resource="recordResource/011222-abcdefg"/>
+			      <rico:isInstantiationOf rdf:resource="recordResource/011222-abcdefg"/>
 			      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_011222/abcdefg"/>
 			   </rico:Instantiation>
 	      </rico:hasInstantiation>
@@ -60,10 +60,10 @@
 
 	<!-- in the 2nd file we should find the following-->
    <rico:RecordResource rdf:about="recordResource/011222-klmn">
-      <rico:includedIn rdf:resource="recordResource/011222-top"/>
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/top-011222"/>
       <rico:hasInstantiation>
       	   <rico:Instantiation rdf:about="instantiation/011222-klmn-i1">
-		      <rico:instantiates rdf:resource="recordResource/011222-klmn"/>
+		      <rico:isInstantiationOf rdf:resource="recordResource/011222-klmn"/>
 		      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_011222/klmn"/>
 		   </rico:Instantiation>
       </rico:hasInstantiation>   

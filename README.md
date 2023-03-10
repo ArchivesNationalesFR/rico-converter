@@ -22,12 +22,12 @@ See the "Releases" section to select a specific version for download.
 # Documentation
 
 Download a release of the converter, unzip, and open `documentation/index.html` to get comprehensive documentation on how to run RiC-O converter.
-Markdown source of the HTML documentation can be found under [ricoconverter/ricoconverter-doc/src/main/resources/markdown](ricoconverter/ricoconverter-doc/src/main/resources/markdown) (start with index.md).
+Markdown source of the HTML documentation can be found under [docs](https://github.com/ArchivesNationalesFR/rico-converter/tree/master/docs) (start with index.md).
 
 
 # References
 
-- Records in Contexts-Conceptual model (RiC-CM) latest public version (dated December 2019): https://www.ica.org/sites/default/files/ric-cm-0.2_preview.pdf
+- Records in Contexts-Conceptual model (RiC-CM) latest public version (dated July 2021): https://www.ica.org/sites/default/files/ric-cm-02_july2021_0.pdf
 - Records in Contexts-Ontology (RiC-O) latest official release: https://www.ica.org/standards/RiC/ontology
 - Records in Contexts-Ontology (RiC-O) information web site: https://ica-egad.github.io/RiC-O/
 - Encoded Archival Context-Corporate Bodies, Persons, Families  (EAC-CPF XML schema): https://eac.staatsbibliothek-berlin.de/

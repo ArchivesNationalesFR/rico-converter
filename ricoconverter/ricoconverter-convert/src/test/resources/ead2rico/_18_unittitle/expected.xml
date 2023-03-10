@@ -9,28 +9,28 @@
     xml:base="http://data.archives-nationales.culture.gouv.fr/">
     <rico:Record rdf:about="record/058220">
     	<rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
-        <rico:describes rdf:resource="recordResource/058220-top"/>
+        <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
 	      <rico:hasInstantiation>
 	         <rico:Instantiation rdf:about="instantiation/058220-i1">
-	            <rico:instantiates rdf:resource="record/058220"/>
+	            <rico:isInstantiationOf rdf:resource="record/058220"/>
 	            <dc:format xml:lang="en">text/xml</dc:format>
 	            <rico:identifier>FRAN_IR_058220</rico:identifier>
-	            <rico:heldBy rdf:resource="agent/005061"/>
+	            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
 	            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>
 	         </rico:Instantiation>
 	      </rico:hasInstantiation>
     </rico:Record>
     <!-- archdesc level -->
-    <rico:RecordResource rdf:about="recordResource/058220-top">    
-        <rico:describedBy rdf:resource="record/058220"/>
+    <rico:RecordResource rdf:about="recordResource/top-058220">    
+        <rico:isOrWasDescribedBy rdf:resource="record/058220"/>
         <rico:title xml:lang="fr">Archives des musées nationaux, -les musées nationaux pendant la Seconde Guerre Mondiale et l'évacuation des œuvres (série R)</rico:title>   
         <rdfs:label xml:lang="fr">Archives des musées nationaux, -les musées nationaux pendant la Seconde Guerre Mondiale et l'évacuation des œuvres (série R)</rdfs:label>
         <rico:hasInstantiation>
-            <rico:Instantiation rdf:about="instantiation/058220-top-i1">
-                <rico:instantiates rdf:resource="recordResource/058220-top"/>
+            <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+                <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
                 <rico:title xml:lang="fr">Archives des musées nationaux, -les musées nationaux pendant la Seconde Guerre Mondiale et l'évacuation des œuvres (série R)</rico:title>   
                 <rdfs:label xml:lang="fr">Archives des musées nationaux, -les musées nationaux pendant la Seconde Guerre Mondiale et l'évacuation des œuvres (série R)</rdfs:label>
-                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+                <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
             </rico:Instantiation>
         </rico:hasInstantiation>
         <rico:includesOrIncluded rdf:resource="recordResource/058220-c-25s2lche6kz-qfignk48spf8"/>
@@ -38,12 +38,12 @@
     </rico:RecordResource>
     <!-- c level -->
     <rico:RecordResource rdf:about="recordResource/058220-c-25s2lche6kz-qfignk48spf8">
-    	<rico:includedIn rdf:resource="recordResource/058220-top"/>
+    	<rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:title xml:lang="fr">Organisation : plans d'évacuation, premiers projets</rico:title>   
         <rdfs:label xml:lang="fr">Organisation : plans d'évacuation, premiers projets</rdfs:label>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c-25s2lche6kz-qfignk48spf8-i1">               
-                <rico:instantiates rdf:resource="recordResource/058220-c-25s2lche6kz-qfignk48spf8"/>
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-c-25s2lche6kz-qfignk48spf8"/>
                 <rico:title xml:lang="fr">Organisation : plans d'évacuation, premiers projets</rico:title>   
                 <rdfs:label xml:lang="fr">Organisation : plans d'évacuation, premiers projets</rdfs:label>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c-25s2lche6kz-qfignk48spf8"/>               
@@ -52,12 +52,12 @@
     </rico:RecordResource>
     
     <rico:RecordResource rdf:about="recordResource/058220-c-2vzyex71j63-5dbz66jnzlaa">
-    	<rico:includedIn rdf:resource="recordResource/058220-top"/>
+    	<rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:title xml:lang="fr">"Amberieux en Dombes"</rico:title>   
         <rdfs:label xml:lang="fr">"Amberieux en Dombes"</rdfs:label>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c-2vzyex71j63-5dbz66jnzlaa-i1">               
-                <rico:instantiates rdf:resource="recordResource/058220-c-2vzyex71j63-5dbz66jnzlaa"/>
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-c-2vzyex71j63-5dbz66jnzlaa"/>
                 <rico:hasDerivedInstantiation rdf:resource="instantiation/058220-c-2vzyex71j63-5dbz66jnzlaa-i2"/>
                 <rico:title xml:lang="fr">"Amberieux en Dombes"</rico:title>   
                 <rdfs:label xml:lang="fr">"Amberieux en Dombes"</rdfs:label>                
@@ -66,7 +66,7 @@
         </rico:hasInstantiation>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c-2vzyex71j63-5dbz66jnzlaa-i2">               
-                <rico:instantiates rdf:resource="recordResource/058220-c-2vzyex71j63-5dbz66jnzlaa"/>
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-c-2vzyex71j63-5dbz66jnzlaa"/>
                 <!-- do not process unittitle here -->
                 <rico:isDerivedFromInstantiation rdf:resource="instantiation/058220-c-2vzyex71j63-5dbz66jnzlaa-i1"/>
                 <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
