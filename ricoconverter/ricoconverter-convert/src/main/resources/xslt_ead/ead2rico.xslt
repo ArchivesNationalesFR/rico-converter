@@ -61,7 +61,7 @@
 		
 		<!--  FindingAid object -->
 		<rico:Record rdf:about="{ead2rico:URI-FindingAid($faId)}">	
-			<rico:hasOrHadDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
+			<rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
 	
 			<!--  Turn the attributes into isRegulatedBy pointing to Rules -->
 			<xsl:if test="@countryencoding = 'iso3166-1'">
@@ -380,7 +380,8 @@
 				<rico:hasOrHadConstituent rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
 			</xsl:when>
 			<xsl:otherwise>
-				<rico:hasOrHadPart rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+				<!-- THOMAS 20230310 : leave it like that for the moment, so that unit tests pass -->
+				<rico:includesOrIncluded rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
 			</xsl:otherwise>
 		</xsl:choose>
 		
@@ -496,9 +497,10 @@
 						</rico:hasOrHadConstituent>
 					</xsl:when>
 					<xsl:otherwise>
-						<rico:hasOrHadPart>
+						<!-- THOMAS 20230310 : leave it like that for the moment -->
+						<rico:includesOrIncluded>
 							<xsl:apply-templates select="." />
-						</rico:hasOrHadPart>
+						</rico:includesOrIncluded>
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:for-each>
@@ -1089,7 +1091,7 @@
 	<xsl:template match="genreform[@authfilenumber]">
 		<xsl:choose>
 			<xsl:when test="ead2rico:isRicoRecordLevel(../../@level)">
-				<rico:hasOrHadDocumentaryFormType rdf:resource="{ead2rico:URI-DocumentaryForm(@authfilenumber, @source)}"/>
+				<rico:hasDocumentaryFormType rdf:resource="{ead2rico:URI-DocumentaryForm(@authfilenumber, @source)}"/>
 			</xsl:when>
 			<xsl:when test="ead2rico:isRicoRecordSetLevel(../../@level)">
 				<!-- someMembers property as we are not sure all children have the same dft -->
