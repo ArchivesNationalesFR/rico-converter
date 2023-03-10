@@ -20,7 +20,7 @@
             </rico:Instantiation>
         </rico:hasInstantiation>
     </rico:Record>
-    <rico:RecordResource rdf:about="recordResource/058220-top">
+    <rico:RecordResource rdf:about="recordResource/top-058220">
         <rico:isOrWasDescribedBy rdf:resource="record/058220"/>
         <dc:language rdf:resource="language/FRAN_RI_100-name4"/> <!-- français -->
         <dc:language rdf:resource="language/FRAN_RI_100-name6"/> <!-- anglais -->
@@ -31,17 +31,17 @@
                  <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
              </rico:Instantiation>
          </rico:hasInstantiation>
-        <rico:includesOrIncluded rdf:resource="recordResource/058220-unknown-single"/>
-        <rico:includesOrIncluded rdf:resource="recordResource/058220-record"/>
-        <rico:includesOrIncluded rdf:resource="recordResource/058220-unknown-multiple"/>        
+        <rico:includesOrIncluded rdf:resource="recordResource/058220-unknown-single"/>        
+        <rico:includesOrIncluded rdf:resource="recordResource/058220-unknown-multiple"/>
+        <rico:includesOrIncluded rdf:resource="recordResource/058220-record"/>       
         <rico:includesOrIncluded rdf:resource="recordResource/058220-recordset-single"/>
         <rico:includesOrIncluded rdf:resource="recordResource/058220-recordset-multiple"/>
     </rico:RecordResource>
 
     <!-- Unknown, single value -->
-    <rico:RecordResource rdf:about="recordResource/058220-unknown-single">
-        <dc:language rdf:resource="language/FRAN_RI_100-name4"/> <!-- français -->
+    <rico:RecordResource rdf:about="recordResource/058220-unknown-single">        
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <dc:language rdf:resource="language/FRAN_RI_100-name4"/> <!-- français -->
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-unknown-single-i1"> 
             	<rico:isInstantiationOf rdf:resource="recordResource/058220-unknown-single"/>               
@@ -79,12 +79,12 @@
 
     <!-- Record -->
     <rico:RecordResource rdf:about="recordResource/058220-record">
-        <rico:includedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
         <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name6"/> <!-- anglais -->
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-record-i1"> 
-            	<rico:instantiates rdf:resource="recordResource/058220-record"/>               
+            	<rico:isInstantiationOf rdf:resource="recordResource/058220-record"/>               
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/record"/>
             </rico:Instantiation>
         </rico:hasInstantiation>
@@ -92,13 +92,13 @@
 
     <!-- RecordSet with single value -->
     <rico:RecordResource rdf:about="recordResource/058220-recordset-single">
-        <rico:includedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
         <rico:hasOrHadAllMembersWithLanguage rdf:resource="language/FRAN_RI_100-name6"/> <!-- anglais -->
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-recordset-single-i1"> 
-            	<rico:instantiates rdf:resource="recordResource/058220-recordset-single"/>               
+            	<rico:isInstantiationOf rdf:resource="recordResource/058220-recordset-single"/>               
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/recordset-single"/>
             </rico:Instantiation>
         </rico:hasInstantiation>
@@ -106,14 +106,14 @@
 
     <!-- RecordSet with multiple values -->
     <rico:RecordResource rdf:about="recordResource/058220-recordset-multiple">
-        <rico:includedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
         <rico:hasOrHadSomeMembersWithLanguage rdf:resource="language/FRAN_RI_100-name6"/> <!-- anglais -->
         <rico:hasOrHadSomeMembersWithLanguage rdf:resource="language/FRAN_RI_100-d-oss057ra-ggj18pxos22n"/> <!-- unknown = http://id.loc.gov/vocabulary/iso639-2/und-->
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-recordset-multiple-i1"> 
-            	<rico:instantiates rdf:resource="recordResource/058220-recordset-multiple"/>               
+            	<rico:isInstantiationOf rdf:resource="recordResource/058220-recordset-multiple"/>               
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/recordset-multiple"/>
             </rico:Instantiation>
         </rico:hasInstantiation>
