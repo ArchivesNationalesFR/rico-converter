@@ -1,12 +1,12 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:html="http://www.w3.org/1999/xhtml" xmlns:isni="http://isni.org/ontology#"
+   xmlns:html="http://www.w3.org/1999/xhtml" xmlns:isni="https://isni.org/ontology#"
    xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xml:base="http://data.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/003666">
    	  <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
-      <rico:describesOrDescribed rdf:resource="recordResource/003666-top"/>
+      <rico:describesOrDescribed rdf:resource="recordResource/top-003666"/>
       <rico:hasInstantiation>
 		   <rico:Instantiation rdf:about="instantiation/003666-i1">
 		      <rico:isInstantiationOf rdf:resource="record/003666"/>
@@ -20,30 +20,30 @@
    </rico:Record>
   
    <!-- The highest level Record resource, corresponding to archdesc, and its physical or digital primary instantiation
-            If there is an @id, use {findingAidId}{@id}; if no @id for archdesc, use {findingAidId}-top -->
-   <rico:RecordResource rdf:about="recordResource/003666-top">
+            If there is an @id, use {findingAidId}{@id}; if no @id for archdesc, use top-{findingAidId} -->
+   <rico:RecordResource rdf:about="recordResource/top-003666">
       <rico:isOrWasDescribedBy rdf:resource="record/003666"/>
       <rico:hasInstantiation>
-      	   <rico:Instantiation rdf:about="instantiation/003666-top-i1">
+      	   <rico:Instantiation rdf:about="instantiation/top-003666-i1">
       	 
-		      <rico:isInstantiationOf rdf:resource="recordResource/003666-top"/>
-		      <rico:hasDerivedInstantiation rdf:resource="instantiation/003666-top-i2"/>
-		      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_003666/top"/>
+		      <rico:isInstantiationOf rdf:resource="recordResource/top-003666"/>
+		      <rico:hasDerivedInstantiation rdf:resource="instantiation/top-003666-i2"/>
+      	   	<!-- this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_003666/top"/>-->
 		   </rico:Instantiation>
       </rico:hasInstantiation>
       <!-- if there is a daogrp, we consider the digital archival object as a distinct instantiation (digital surrogate) of the record resource; this second instantiation is derived from the first one-->
       <rico:hasInstantiation>
-      	   <rico:Instantiation rdf:about="instantiation/003666-top-i2">
+      	   <rico:Instantiation rdf:about="instantiation/top-003666-i2">
       	     
-		      <rico:isInstantiationOf rdf:resource="recordResource/003666-top"/>
-		      <rico:isDerivedFromInstantiation rdf:resource="instantiation/003666-top-i1"/>
+		      <rico:isInstantiationOf rdf:resource="recordResource/top-003666"/>
+		      <rico:isDerivedFromInstantiation rdf:resource="instantiation/top-003666-i1"/>
 		      <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
 		      <!-- here we can only specify the first and last image of the series of images that are integrated into the instantiation-->
 		    
 		      <rico:identifier>FRAN_0118_274_L#FRAN_0118_350_L</rico:identifier>
 		      <dc:format xml:lang="en">image/jpeg</dc:format>
 		      <!-- later on we should be able to refer to a IIIF sequence, using at least rdfs:seeAlso, or owl:sameAs -->
-		    <!-- something like: <rdfs:seeAlso rdf:resource="http://archivesnationales.culture.gouv.fr/iiif/003666-top/sequence/normal"/>-->
+		    <!-- something like: <rdfs:seeAlso rdf:resource="http://archivesnationales.culture.gouv.fr/iiif/top-003666/sequence/normal"/>-->
 		   </rico:Instantiation>
       </rico:hasInstantiation>
          
@@ -65,7 +65,7 @@
       In this file we should find the following, which corresponds to the 'foo' c element and its instantiations -->
    
    <rico:RecordResource rdf:about="recordResource/003666-c-835pw5mwg-otyywby3qzqb">
-      <rico:isOrWasIncludedIn rdf:resource="recordResource/003666-top"/>
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/top-003666"/>
       <rico:hasInstantiation>
       	   <rico:Instantiation rdf:about="instantiation/003666-c-835pw5mwg-otyywby3qzqb-i1">
 		      <rico:isInstantiationOf rdf:resource="recordResource/003666-c-835pw5mwg-otyywby3qzqb"/>
@@ -91,7 +91,7 @@
    </rico:RecordResource>
 	
 	<rico:RecordResource rdf:about="recordResource/003666-c-7jg4i6fd5-18zjwwhf1ggm1">
-		<rico:isOrWasIncludedIn rdf:resource="recordResource/003666-top"/>
+		<rico:isOrWasIncludedIn rdf:resource="recordResource/top-003666"/>
 		<rico:hasInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-c-7jg4i6fd5-18zjwwhf1ggm1-i1">
 				<rico:isInstantiationOf rdf:resource="recordResource/003666-c-7jg4i6fd5-18zjwwhf1ggm1"/>
@@ -117,7 +117,7 @@
 	
 	<rico:RecordResource rdf:about="recordResource/003666-123456">
 		
-		<rico:isOrWasIncludedIn rdf:resource="recordResource/003666-top"/>
+		<rico:isOrWasIncludedIn rdf:resource="recordResource/top-003666"/>
 		<rico:hasInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-123456-i1">
 				<rico:isInstantiationOf rdf:resource="recordResource/003666-123456"/>
@@ -159,7 +159,7 @@
 	
 	<rico:RecordResource rdf:about="recordResource/003666-i7899">
 		
-		<rico:isOrWasIncludedIn rdf:resource="recordResource/003666-top"/>
+		<rico:isOrWasIncludedIn rdf:resource="recordResource/top-003666"/>
 		<rico:hasInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-i7899-i2">
 				<rico:isInstantiationOf rdf:resource="recordResource/003666-i7899"/>				

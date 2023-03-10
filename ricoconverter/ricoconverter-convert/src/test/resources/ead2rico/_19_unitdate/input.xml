@@ -17,8 +17,10 @@
             <unitdate calendar="gregorian" era="ce">1888</unitdate>
             <!--case 5 : no @normal, a string in unitdate-->
             <unitdate calendar="gregorian" era="ce">années 20</unitdate>
-            <!-- case 6: unitdate is empty-->
+            <!--case 6: unitdate is empty-->
             <unitdate/>
+            <!--case 7: unitdate with the same begin and end date-->
+            <unitdate calendar="gregorian" era="ce" normal="1926-01-01 / 1926-01-01">Le 1er janvier 1926</unitdate>
         </did>
         <dsc>
             <c id="c-25s2lche6kz-qfignk48spf8" level="otherlevel">

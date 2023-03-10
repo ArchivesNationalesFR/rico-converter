@@ -9,7 +9,7 @@
     xml:base="http://data.archives-nationales.culture.gouv.fr/">
     <rico:Record rdf:about="record/058220">
         <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
-        <rico:describesOrDescribed rdf:resource="recordResource/058220-top"/>
+        <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
       <rico:hasInstantiation>
          <rico:Instantiation rdf:about="instantiation/058220-i1">
             <rico:isInstantiationOf rdf:resource="record/058220"/>
@@ -21,20 +21,20 @@
       </rico:hasInstantiation>        
     </rico:Record>
     <!-- archdesc level -->
-    <rico:RecordResource rdf:about="recordResource/058220-top">
+    <rico:RecordResource rdf:about="recordResource/top-058220">
         <rico:isOrWasDescribedBy rdf:resource="record/058220"/>
 
         <!-- do not process physdesc here-->
         <rico:hasInstantiation>
-            <rico:Instantiation rdf:about="instantiation/058220-top-i1">
-                <rico:isInstantiationOf rdf:resource="recordResource/058220-top"/>
+            <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+                <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
                 <rico:physicalCharacteristics rdf:parseType="Literal">
                     <html:p xml:lang="fr">(1 carton (494AP/1)) 0,1 m.l.</html:p>
                 </rico:physicalCharacteristics>
                 <rico:instantiationExtent  rdf:parseType="Literal">
                     <html:p xml:lang="fr">0,1 m.l.</html:p>
                 </rico:instantiationExtent>
-                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>
+                <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
             </rico:Instantiation>
         </rico:hasInstantiation>
         <rico:includesOrIncluded rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
@@ -46,7 +46,7 @@
     </rico:RecordResource>
     <!-- c level -->
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
@@ -74,7 +74,7 @@
         </rico:hasInstantiation>
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnast">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnast-i1">
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnast"/>
@@ -93,7 +93,7 @@
        
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnust">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnust-i1">
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnust"/>
@@ -111,7 +111,7 @@
         
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnost">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnost-i1">
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnost"/>
@@ -133,7 +133,7 @@
         
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnyst">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnyst-i1">
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnyst"/>
@@ -153,7 +153,7 @@
         </rico:hasInstantiation>        
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-emptyExtent">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/058220-top"/>
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-emptyExtent-i1">
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-emptyExtent"/>
