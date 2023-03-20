@@ -1113,6 +1113,7 @@
 					<xsl:otherwise>
 						<!-- Output a default property and generate a warning -->
 						<dc:type><xsl:value-of select="text()" /></dc:type>
+						<rico:type><xsl:value-of select="text()" /></rico:type>
 						<xsl:value-of select="ead2rico:warning($faId, 'UNKNOWN_GENREFORM', @authfilenumber)" />
 					</xsl:otherwise>
 				</xsl:choose>				
@@ -1136,6 +1137,7 @@
 					<xsl:otherwise>
 						<!-- Output a default property and generate a warning -->
 						<dc:type><xsl:value-of select="text()" /></dc:type>
+						<rico:type><xsl:value-of select="text()" /></rico:type>
 						<xsl:value-of select="ead2rico:warning($faId, 'UNKNOWN_GENREFORM', @authfilenumber)" />
 					</xsl:otherwise>
 				</xsl:choose>
@@ -1143,6 +1145,8 @@
 			<xsl:otherwise>
 				<!-- we don't know if this is a Record or a RecordSet. Output a generic dc:type property -->
 				<dc:type><xsl:value-of select="text()" /></dc:type>
+				<rico:type><xsl:value-of select="text()" /></rico:type>
+				<xsl:value-of select="ead2rico:warning($faId, 'UNKNOWN_RESOURCE_TYPE_WITH_GENREFORM', @authfilenumber)" />
 			</xsl:otherwise>
 		</xsl:choose>
 		

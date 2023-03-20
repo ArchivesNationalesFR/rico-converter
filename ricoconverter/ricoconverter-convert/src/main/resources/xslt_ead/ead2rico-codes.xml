@@ -15,4 +15,7 @@
 	<Code code="UNKNOWN_GENREFORM" level="warning">
 		<message xml:lang="en">unknown genreform value</message>
 	</Code>
+	<Code code="UNKNOWN_RESOURCE_TYPE_WITH_GENREFORM" level="warning">
+		<message xml:lang="en">Found @genreform, but could not reliably determine type of resource (Record or RecordSet or RecordPart), thus ignoring @genreform.</message>
+	</Code>
 </Codes>
