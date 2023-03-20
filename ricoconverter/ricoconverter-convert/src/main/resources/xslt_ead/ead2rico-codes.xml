@@ -15,7 +15,13 @@
 	<Code code="UNKNOWN_GENREFORM" level="warning">
 		<message xml:lang="en">unknown genreform value</message>
 	</Code>
-	<Code code="UNKNOWN_RESOURCE_TYPE_WITH_GENREFORM" level="warning">
+	<Code code="UNKNOWN_RESOURCE_TYPE_IN_GENREFORM" level="warning">
 		<message xml:lang="en">Found @genreform, but could not reliably determine type of resource (Record or RecordSet or RecordPart), thus ignoring @genreform.</message>
+	</Code>
+	<Code code="UNKNOWN_RESOURCE_TYPE_OF_ARCHDESC" level="warning">
+		<message xml:lang="en">Could not reliably determine type of archdesc (Record or RecordSet or RecordPart), thus using hasOrHadPart to refer to children</message>
+	</Code>
+	<Code code="UNKNOWN_RESOURCE_TYPE_OF_C" level="warning">
+		<message xml:lang="en">Could not reliably determine type of c (Record or RecordSet or RecordPart), thus using hasOrHadPart to refer to children</message>
 	</Code>
 </Codes>

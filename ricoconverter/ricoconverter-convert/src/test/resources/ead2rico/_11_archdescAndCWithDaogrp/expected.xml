@@ -23,6 +23,7 @@
             If there is an @id, use {findingAidId}{@id}; if no @id for archdesc, use top-{findingAidId} -->
    <rico:RecordResource rdf:about="recordResource/top-003666">
       <rico:isOrWasDescribedBy rdf:resource="record/003666"/>
+	  <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
       <rico:hasInstantiation>
       	   <rico:Instantiation rdf:about="instantiation/top-003666-i1">
       	 

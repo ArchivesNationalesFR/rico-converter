@@ -22,8 +22,9 @@
     </rico:Record>
     <rico:RecordResource rdf:about="recordResource/top-058220">
         <rico:isOrWasDescribedBy rdf:resource="record/058220"/>
-        <dc:language rdf:resource="language/FRAN_RI_100-name4"/> <!-- français -->
-        <dc:language rdf:resource="language/FRAN_RI_100-name6"/> <!-- anglais -->
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+        <rico:hasOrHadSomeMembersWithLanguage rdf:resource="language/FRAN_RI_100-name4"/> <!-- français -->
+        <rico:hasOrHadSomeMembersWithLanguage rdf:resource="language/FRAN_RI_100-name6"/> <!-- anglais -->
         <rico:hasInstantiation>
              <rico:Instantiation rdf:about="instantiation/top-058220-i1">
                  <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>

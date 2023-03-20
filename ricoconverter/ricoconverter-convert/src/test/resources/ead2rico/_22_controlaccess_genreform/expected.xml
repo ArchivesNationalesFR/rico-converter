@@ -24,7 +24,6 @@
     <rico:RecordResource rdf:about="recordResource/top-058220">
         <rico:isOrWasDescribedBy rdf:resource="record/058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
-        <rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds"/>
         <rico:hasOrHadSomeMembersWithDocumentaryFormType rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d41cch--81zpek4vv4lp"/>
         <rico:hasInstantiation>
              <rico:Instantiation rdf:about="instantiation/top-058220-i1">
@@ -66,6 +65,7 @@
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
         <dc:type>unknown</dc:type>
+        <rico:type>unknown</rico:type>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-record-unknown-i1">                
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-record-unknown"/>
@@ -77,6 +77,7 @@
     <rico:RecordResource rdf:about="recordResource/058220-unknown">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <dc:type>document photographique</dc:type>
+        <rico:type>document photographique</rico:type>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-unknown-i1">                
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-unknown"/>

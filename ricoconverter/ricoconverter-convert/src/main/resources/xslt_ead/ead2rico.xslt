@@ -381,8 +381,8 @@
 				<rico:hasOrHadConstituent rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
 			</xsl:when>
 			<xsl:otherwise>
-				<!-- THOMAS 20230310 : leave it like that for the moment, so that unit tests pass -->
-				<rico:includesOrIncluded rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+				<rico:hasOrHadPart rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+				<xsl:value-of select="ead2rico:warning($faId, 'UNKNOWN_RESOURCE_TYPE_OF_ARCHDESC', ../../@level)" />
 			</xsl:otherwise>
 		</xsl:choose>
 		
@@ -498,10 +498,10 @@
 						</rico:hasOrHadConstituent>
 					</xsl:when>
 					<xsl:otherwise>
-						<!-- THOMAS 20230310 : leave it like that for the moment -->
-						<rico:includesOrIncluded>
+						<rico:hasOrHadPart>
 							<xsl:apply-templates select="." />
-						</rico:includesOrIncluded>
+						</rico:hasOrHadPart>
+						<xsl:value-of select="ead2rico:warning($faId, 'UNKNOWN_RESOURCE_TYPE_OF_C', $currentLevel)" />
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:for-each>
@@ -1146,7 +1146,7 @@
 				<!-- we don't know if this is a Record or a RecordSet. Output a generic dc:type property -->
 				<dc:type><xsl:value-of select="text()" /></dc:type>
 				<rico:type><xsl:value-of select="text()" /></rico:type>
-				<xsl:value-of select="ead2rico:warning($faId, 'UNKNOWN_RESOURCE_TYPE_WITH_GENREFORM', @authfilenumber)" />
+				<xsl:value-of select="ead2rico:warning($faId, 'UNKNOWN_RESOURCE_TYPE_IN_GENREFORM', ../../@level)" />
 			</xsl:otherwise>
 		</xsl:choose>
 		
