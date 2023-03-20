@@ -24,9 +24,10 @@
 	
 	<!-- Stylesheet Parameters -->
 	<xsl:param name="BASE_URI">http://data.archives-nationales.culture.gouv.fr/</xsl:param>
-	<xsl:param name="AUTHOR_URI">http://data.archives-nationales.culture.gouv.fr/agent/005061</xsl:param>
+	<xsl:param name="AUTHOR_URI">http://data.archives-nationales.culture.gouv.fr/agent/005061</xsl:param>	
 	<xsl:param name="LITERAL_LANG">fr</xsl:param>
 	<xsl:param name="INPUT_FOLDER">.</xsl:param>
+	<xsl:param name="DEFAULT_LANGUAGE_IF_NO_LANGUAGECODE">fre</xsl:param>
 	
 	<!-- Load Keywords from companion file -->
 	<xsl:param name="KEYWORDS_FILE">eac2rico-keywords.xml</xsl:param>
@@ -115,7 +116,14 @@
 	<!-- ***** languageDeclaration ***** -->
 	
 	<xsl:template match="eac:control/eac:languageDeclaration">
-		<rico:hasOrHadLanguage rdf:resource="{eac2rico:URI-Language(eac:language/@languageCode)}"/>
+		<xsl:choose>
+			<xsl:when test="eac:language/@languageCode">
+        <rico:hasOrHadLanguage rdf:resource="{eac2rico:URI-Language(eac:language/@languageCode)}"/>
+			</xsl:when>
+			<xsl:otherwise>
+        <rico:hasOrHadLanguage rdf:resource="{eac2rico:URI-Language($DEFAULT_LANGUAGE_IF_NO_LANGUAGECODE)}"/>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 	
 	<!-- ***** maintenanceHistory and maintenanceEvent -->
