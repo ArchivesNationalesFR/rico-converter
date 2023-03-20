@@ -651,7 +651,7 @@
 				<xsl:value-of select="eac2rico:warning($recordId, 'MISSING_VOCABULARYSOURCE_ON_LEGAL_STATUS', ./eac:term/text())" />
 			</xsl:when>
 			<xsl:otherwise>
-				<rico:hasOrHadCorporateBodyType><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-LegalStatus(eac:term/@vocabularySource)" /></xsl:call-template></rico:hasOrHadCorporateBodyType>		
+				<rico:hasOrHadCorporateBodyType><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-CorporateBodyType(eac:term/@vocabularySource)" /></xsl:call-template></rico:hasOrHadCorporateBodyType>		
 			</xsl:otherwise>
 		</xsl:choose>		
 	</xsl:template>
@@ -675,7 +675,7 @@
 	            	<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
 	            </rico:typeRelationHasTarget>
 	            <rico:typeRelationHasSource>
-	            	<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-LegalStatus(eac:term/@vocabularySource)" /></xsl:call-template>
+	            	<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-CorporateBodyType(eac:term/@vocabularySource)" /></xsl:call-template>
 	            </rico:typeRelationHasSource>
             
             <xsl:apply-templates />

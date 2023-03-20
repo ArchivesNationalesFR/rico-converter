@@ -309,11 +309,9 @@
 		</xsl:choose>
 	</xsl:function>
 
-	
-	<xsl:function name="eac2rico:URI-LegalStatus">
+	<xsl:function name="eac2rico:URI-CorporateBodyType">
 		<xsl:param name="vocabularySource" />
-		<xsl:variable name="gincoId" select="concat('FRAN_RI_104.xml#', $vocabularySource)" />
-		<xsl:value-of select="$LEGAL_STATUSES/rdf:RDF/skos:Concept[ginco:id = $gincoId]/@rdf:about" />
+		<xsl:value-of select="concat('corporateBodyType/', 'FRAN_RI_104-', $vocabularySource)" />
 	</xsl:function>
 	
 	<xsl:function name="eac2rico:URI-MandateFromEli">
