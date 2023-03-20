@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<ead>
+    <eadheader>
+        <!-- the metadata of the finding aid -->
+        <eadid>FRAN_IR_058220</eadid>
+        
+    </eadheader>
+
+    <!-- Cas 1 : archdesc RecordSet explicitely -->
+    <archdesc level="series">            
+        <dsc>
+            <c id="a1" />
+        </dsc>
+    </archdesc>
+
+    <!-- Cas 3 : archdesc Unknown, implicetly a RecordSet -->
+    <archdesc>            
+        <dsc>
+            <!-- Cas 3.1 : c RecordSet -->
+            <c id="a3.1" level="subfonds">
+                <c id="a3.1-child" />
+            </c>
+            <!-- Cas 3.2 c Record -->
+            <c id="a3.2" level="item">
+                <c id="a3.2-child" />
+            </c>
+            <!-- Cas 3.3 c Unknown -->
+            <c id="a3.3">
+                <c id="a3.3-child" />
+            </c>
+        </dsc>
+    </archdesc>
+</ead>
+

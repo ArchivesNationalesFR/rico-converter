@@ -145,9 +145,17 @@
 		<xsl:param name="faId" />
 		<xsl:param name="recordResourceId" />
 		
-        <xsl:value-of
-            select="concat((if ($recordResourceId) then '' else 'top-'), $faId, (if ($recordResourceId) then concat('-', $recordResourceId) else '') )"
-        />		
+		<xsl:choose>
+			<xsl:when test="$recordResourceId = concat('top-',$faId)">
+				<xsl:value-of select="$recordResourceId" />
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of
+					select="concat((if ($recordResourceId) then '' else 'top-'), $faId, (if ($recordResourceId) then concat('-', $recordResourceId) else '') )"
+				/>		
+			</xsl:otherwise>
+		</xsl:choose>
+        
 	</xsl:template>
 
 	<!-- Tests if the provided genreform XML element corresponds to a documentary form type-->

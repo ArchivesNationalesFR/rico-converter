@@ -373,18 +373,8 @@
 			</xsl:call-template>
 		</xsl:variable>
 	
-		<xsl:choose>
-			<xsl:when test="ead2rico:isRicoRecordSetLevel(../../@level)">
-				<rico:includesOrIncluded rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
-			</xsl:when>
-			<xsl:when test="ead2rico:isRicoRecordLevel(../../@level)">
-				<rico:hasOrHadConstituent rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
-			</xsl:when>
-			<xsl:otherwise>
-				<rico:hasOrHadPart rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
-				<xsl:value-of select="ead2rico:warning($faId, 'UNKNOWN_RESOURCE_TYPE_OF_ARCHDESC', ../../@level)" />
-			</xsl:otherwise>
-		</xsl:choose>
+		<!-- We suppose that by default all archdesc are RecordSets, so always use includesOrIncluded -->
+		<rico:includesOrIncluded rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
 		
 	</xsl:template>
 	
@@ -402,13 +392,25 @@
 		<xsl:variable name="parentRecordResourceId">
 			<xsl:call-template name="recordResourceId">
 				<xsl:with-param name="faId" select="$faId" />
-				<xsl:with-param name="recordResourceId" select="parent::*/@id" />
+				<xsl:with-param name="recordResourceId" select="ancestor::*[local-name() = 'c' or local-name() = 'archdesc'][1]/@id" />
 			</xsl:call-template>
 		</xsl:variable>
 
 		<!-- RecordResource -->
 		<rico:RecordResource rdf:about="{ead2rico:URI-RecordResource($recordResourceId)}">
-			<rico:isOrWasIncludedIn rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />			
+
+			<!-- The inverse link to the parent depends on the incoming link, which depends on the type of the parent -->
+			<xsl:choose>
+				<xsl:when test="ead2rico:isRicoRecordSet(ancestor::*[local-name() = 'c' or local-name() = 'archdesc'][1])">
+					<rico:isOrWasIncludedIn rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />	
+				</xsl:when>
+				<xsl:when test="ead2rico:isRicoRecord(ancestor::*[local-name() = 'c' or local-name() = 'archdesc'][1])">
+					<rico:isOrWasConstituentOf rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />	
+				</xsl:when>
+				<xsl:otherwise>
+					<rico:isOrWasPartOf rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />					
+				</xsl:otherwise>
+			</xsl:choose>
 						
 			<!-- child c's and daogrp are processed after. Note we process also attributes to match @level -->
 			<!--  Note that origination is still processed here to match inner persname/corpname/famname -->
@@ -483,16 +485,15 @@
 			
 			<!-- children c's : generate includesOrIncluded/hasOrHadConstituent/hasOrHadPart recursively (contrary to first level archdesc) -->
 			<!-- predicate depends on type of Record -->
-			<xsl:variable name="currentLevel" select="@level" />
+			<xsl:variable name="currentC" select="." />
 			<xsl:for-each select="c">
-
 				<xsl:choose>
-					<xsl:when test="ead2rico:isRicoRecordSetLevel($currentLevel)">
+					<xsl:when test="ead2rico:isRicoRecordSet($currentC)">
 						<rico:includesOrIncluded>
 							<xsl:apply-templates select="." />
 						</rico:includesOrIncluded>
 					</xsl:when>
-					<xsl:when test="ead2rico:isRicoRecordLevel($currentLevel)">
+					<xsl:when test="ead2rico:isRicoRecord($currentC)">
 						<rico:hasOrHadConstituent>
 							<xsl:apply-templates select="." />
 						</rico:hasOrHadConstituent>
@@ -501,7 +502,7 @@
 						<rico:hasOrHadPart>
 							<xsl:apply-templates select="." />
 						</rico:hasOrHadPart>
-						<xsl:value-of select="ead2rico:warning($faId, 'UNKNOWN_RESOURCE_TYPE_OF_C', $currentLevel)" />
+						<xsl:value-of select="ead2rico:warning($faId, 'UNKNOWN_RESOURCE_TYPE_OF_C', $currentC/@level)" />
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:for-each>
@@ -685,10 +686,10 @@
 
 	<xsl:template match="@level">
 		<xsl:choose>
-			<xsl:when test="ead2rico:isRicoRecordLevel(.)">
+			<xsl:when test="ead2rico:isRicoRecord(..)">
 				<rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
 			</xsl:when>
-			<xsl:when test="ead2rico:isRicoRecordSetLevel(.)">
+			<xsl:when test="ead2rico:isRicoRecordSet(..)">
 				<rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
 			    <!-- 
 				    RiC-O recordSetTypes :
@@ -1042,11 +1043,11 @@
 	</xsl:template>
 	<xsl:template match="language[@langcode]">
 		<xsl:choose>
-			<xsl:when test="ead2rico:isRicoRecordLevel(../../../@level)">
+			<xsl:when test="ead2rico:isRicoRecord(../../..)">
 				<!-- Record : always hasOrHadLanguage -->
 				<rico:hasOrHadLanguage rdf:resource="{ead2rico:URI-Language(@langcode)}"/>
 			</xsl:when>
-			<xsl:when test="ead2rico:isRicoRecordSetLevel(../../../@level)">
+			<xsl:when test="ead2rico:isRicoRecordSet(../../..)">
 				<!-- RecordSet : either a hasOrHadAllMembersWithLanguage if only a single value, or a someMembers property if there are multiple -->
 				<xsl:choose>
 					<xsl:when test="count(../language[@langcode]) = 1">
@@ -1100,7 +1101,7 @@
 	<xsl:template match="genreform[@authfilenumber]">
 		
 		<xsl:choose>
-			<xsl:when test="ead2rico:isRicoRecordLevel(../../@level)">
+			<xsl:when test="ead2rico:isRicoRecord(../..)">
 				<xsl:choose>
 					<!-- if provided genreform is a documentary form type, use corresponding property -->				
 					<xsl:when test="ead2rico:isDocumentaryFormType(.)">
@@ -1118,7 +1119,7 @@
 					</xsl:otherwise>
 				</xsl:choose>				
 			</xsl:when>
-			<xsl:when test="ead2rico:isRicoRecordSetLevel(../../@level)">
+			<xsl:when test="ead2rico:isRicoRecordSet(../..)">
 
 				<xsl:choose>
 					<!-- if provided genreform is a documentary form type, use corresponding property -->				
@@ -1536,16 +1537,21 @@
 		</xsl:choose>
     </xsl:template>
 		
-	<!-- Tests if a level value corresponds to a Record -->
-	<xsl:function name="ead2rico:isRicoRecordLevel" as="xs:boolean">
-		<xsl:param name="level"/>
-		<xsl:sequence select="$level = 'item'"/>  
+	<!-- Tests if a c or archdesc element corresponds to a Record -->
+	<xsl:function name="ead2rico:isRicoRecord" as="xs:boolean">
+		<xsl:param name="cOrArchdesc"/>
+		<xsl:sequence select="$cOrArchdesc/@level = 'item'"/>  
 	</xsl:function>
 
-	<!-- Tests if a level value corresponds to a RecordSet -->
-	<xsl:function name="ead2rico:isRicoRecordSetLevel" as="xs:boolean">
-		<xsl:param name="level"/>
-		<xsl:sequence select="$level and $level != 'item' and $level != 'otherlevel'"/>  
+	<!-- Tests if a c or archdesc element corresponds to a RecordSet -->
+	<xsl:function name="ead2rico:isRicoRecordSet" as="xs:boolean">
+		<xsl:param name="cOrArchdesc"/>
+		<!-- if archdesc without an explicit level, consider it a RecordSet -->
+		<xsl:sequence select="
+			(local-name($cOrArchdesc) = 'archdesc' and not($cOrArchdesc/@level))
+			or
+			($cOrArchdesc/@level and $cOrArchdesc/@level != 'item' and $cOrArchdesc/@level != 'otherlevel')
+		"/>  
 	</xsl:function>
 
 		
