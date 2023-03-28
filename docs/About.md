@@ -36,6 +36,8 @@ Of course, French archives, which have encoding practices quite similar to those
 
 ## More information
 
+An article in English about RiC-O Converter was accepted in January 2023 by the Journal on Computing and Cultural Heritage (JOCCH): see [https://doi.org/10.1145/3583592](https://doi.org/10.1145/3583592). 
+
 You can access some slides (in French) on RiC-O Converter (presented on January 28, 2020), [here](https://f.hypotheses.org/wp-content/blogs.dir/2167/files/2020/02/20200128_4_RiCOConverter.pdf).
 
 If you or your institution are a member of ICA, you also can find an article on RiC-O Converter in [Flash (the ICA biannual newspaper, dated April 2020) n° 39](https://www.ica.org/en/flash).
