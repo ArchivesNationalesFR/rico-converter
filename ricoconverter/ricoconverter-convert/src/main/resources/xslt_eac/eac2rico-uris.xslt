@@ -14,10 +14,6 @@
 	xmlns:eac="urn:isbn:1-931666-33-4"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
 >
-			
-	<!-- Load LegalStatuses from companion file -->
-	<xsl:param name="VOCABULARY_LEGAL_STATUSES">../vocabularies/FRAN_RI_104_Ginco_legalStatuses.rdf</xsl:param>
-	<xsl:variable name="LEGAL_STATUSES" select="document($VOCABULARY_LEGAL_STATUSES)" />
 	
 	<!-- Load Rules from companion file -->
 	<xsl:param name="VOCABULARY_RULES">../vocabularies/referentiel_rules.rdf</xsl:param>
@@ -29,13 +25,10 @@
 	
 	<!-- We have both a template and a function 'URI-Agent'. The template works on the current notice, the function is used to compute the URI is relation values -->
 	<xsl:template name="URI-Agent">
-<!-- 		<xsl:value-of select="eac2rico:URI-Agent(/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType, /eac:eac-cpf/eac:control/eac:recordId)" /> -->
-		<xsl:value-of select="eac2rico:URI-Agent('agent', /eac:eac-cpf/eac:control/eac:recordId)" />
+		<xsl:value-of select="eac2rico:URI-Agent(/eac:eac-cpf/eac:control/eac:recordId)" />
 	</xsl:template>	
 	<xsl:function name="eac2rico:URI-Agent">
-		<xsl:param name="entityType" />
 		<xsl:param name="recordId" />		
-<!-- 		<xsl:value-of select="concat($entityType, '/', substring-after($recordId, 'FRAN_NP_'))" /> -->
 		<xsl:value-of select="concat('agent', '/', substring-after($recordId, 'FRAN_NP_'))" />
 	</xsl:function>	
 	
@@ -61,7 +54,7 @@
 
 		<xsl:value-of select="eac2rico:URI-Agent($externalEntityType, $externalEntityId)" />
 		-->
-		<xsl:value-of select="eac2rico:URI-Agent('agent', $externalEntityId)" />
+		<xsl:value-of select="eac2rico:URI-Agent($externalEntityId)" />
 	</xsl:function>	
 	
 	<!--  re-extract Agent ID from Agent URI -->
