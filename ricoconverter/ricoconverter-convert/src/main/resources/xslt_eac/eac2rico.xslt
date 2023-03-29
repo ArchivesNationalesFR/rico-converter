@@ -24,9 +24,10 @@
 	
 	<!-- Stylesheet Parameters -->
 	<xsl:param name="BASE_URI">http://data.archives-nationales.culture.gouv.fr/</xsl:param>
-	<xsl:param name="AUTHOR_URI">http://data.archives-nationales.culture.gouv.fr/agent/005061</xsl:param>
+	<xsl:param name="AUTHOR_URI">http://data.archives-nationales.culture.gouv.fr/agent/005061</xsl:param>	
 	<xsl:param name="LITERAL_LANG">fr</xsl:param>
 	<xsl:param name="INPUT_FOLDER">.</xsl:param>
+	<xsl:param name="DEFAULT_LANGUAGE_IF_NO_LANGUAGECODE">fre</xsl:param>
 	
 	<!-- Load Keywords from companion file -->
 	<xsl:param name="KEYWORDS_FILE">eac2rico-keywords.xml</xsl:param>
@@ -115,7 +116,14 @@
 	<!-- ***** languageDeclaration ***** -->
 	
 	<xsl:template match="eac:control/eac:languageDeclaration">
-		<rico:hasLanguage rdf:resource="{eac2rico:URI-Language(eac:language/@languageCode)}"/>
+		<xsl:choose>
+			<xsl:when test="eac:language/@languageCode">
+        <rico:hasOrHadLanguage rdf:resource="{eac2rico:URI-Language(eac:language/@languageCode)}"/>
+			</xsl:when>
+			<xsl:otherwise>
+        <rico:hasOrHadLanguage rdf:resource="{eac2rico:URI-Language($DEFAULT_LANGUAGE_IF_NO_LANGUAGECODE)}"/>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 	
 	<!-- ***** maintenanceHistory and maintenanceEvent -->
@@ -658,17 +666,18 @@
 	<xsl:template match="eac:legalStatuses">
 		<xsl:apply-templates />
 	</xsl:template>
+	<!-- legalStatus _without_ dates or description -->
 	<xsl:template match="eac:legalStatus[not(eac:dateRange/eac:fromDate) and not(eac:dateRange/eac:toDate) and not(eac:descriptiveNote)]">
 		<xsl:choose>
 			<xsl:when test="not(eac:term/@vocabularySource)">
 				<xsl:value-of select="eac2rico:warning($recordId, 'MISSING_VOCABULARYSOURCE_ON_LEGAL_STATUS', ./eac:term/text())" />
 			</xsl:when>
 			<xsl:otherwise>
-				<rico:hasLegalStatus><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-LegalStatus(eac:term/@vocabularySource)" /></xsl:call-template></rico:hasLegalStatus>		
+				<rico:hasOrHadCorporateBodyType><xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-CorporateBodyType(eac:term/@vocabularySource)" /></xsl:call-template></rico:hasOrHadCorporateBodyType>		
 			</xsl:otherwise>
-		</xsl:choose>
-		
+		</xsl:choose>		
 	</xsl:template>
+	<!-- legalStatus _with_ dates or description -->
 	<xsl:template match="eac:legalStatus[eac:dateRange/eac:fromDate or eac:dateRange/eac:toDate or eac:descriptiveNote]">
 		<xsl:if test="not(eac:term/@vocabularySource)">
 			<xsl:value-of select="eac2rico:warning($recordId, 'MISSING_VOCABULARYSOURCE_ON_LEGAL_STATUS', ./eac:term/text())" />
@@ -688,7 +697,7 @@
 	            	<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
 	            </rico:typeRelationHasTarget>
 	            <rico:typeRelationHasSource>
-	            	<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-LegalStatus(eac:term/@vocabularySource)" /></xsl:call-template>
+	            	<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-CorporateBodyType(eac:term/@vocabularySource)" /></xsl:call-template>
 	            </rico:typeRelationHasSource>
             
             <xsl:apply-templates />
