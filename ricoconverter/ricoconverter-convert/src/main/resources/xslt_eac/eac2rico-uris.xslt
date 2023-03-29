@@ -20,7 +20,7 @@
 	<xsl:variable name="RULES" select="document($VOCABULARY_RULES)" />
 	
 	<!-- Load Languages from companion file -->
-	<xsl:param name="VOCABULARY_LANGUAGES">../vocabularies/referentiel_languages.rdf</xsl:param>
+	<xsl:param name="VOCABULARY_LANGUAGES">../vocabularies/FRAN_RI_100_languages.rdf</xsl:param>
 	<xsl:variable name="LANGUAGES" select="document($VOCABULARY_LANGUAGES)" />
 	
 	<!-- We have both a template and a function 'URI-Agent'. The template works on the current notice, the function is used to compute the URI is relation values -->
@@ -32,9 +32,12 @@
 		<xsl:value-of select="concat('agent', '/', substring-after($recordId, 'FRAN_NP_'))" />
 	</xsl:function>	
 	
-	<!-- URI for an Agent described in an external file : now does not require to lookup the type in the external file -->
+	<!-- URI for an Agent described in an external file : now does not require to lookup the type in the external file
+		 We keep the externalEntityDescription parameter, but don't use it anymore.
+	 -->
 	<xsl:function name="eac2rico:URI-AgentExternal">
 		<xsl:param name="externalEntityId" />
+		<xsl:param name="externalEntityDescription" />
 		<xsl:value-of select="eac2rico:URI-Agent($externalEntityId)" />
 	</xsl:function>	
 	
@@ -58,11 +61,11 @@
 		<xsl:param name="langcode" />
 		<xsl:variable name="idlocgov" select="concat('http://id.loc.gov/vocabulary/iso639-2/', $langcode)" />
 
-		<xsl:if test="not( $LANGUAGES/rdf:RDF/rico:Language[owl:sameAs/@rdf:resource = $idlocgov] )">
+		<xsl:if test="not( $LANGUAGES/rdf:RDF/skos:Concept[skos:exactMatch/@rdf:resource = $idlocgov] )">
 			<xsl:value-of select="eac2rico:warning($recordId, 'UNKNOWN_LANGUAGE', $langcode)" />
 		</xsl:if>
 
-		<xsl:value-of select="$LANGUAGES/rdf:RDF/rico:Language[owl:sameAs/@rdf:resource = $idlocgov]/@rdf:about" />
+		<xsl:value-of select="$LANGUAGES/rdf:RDF/skos:Concept[skos:exactMatch/@rdf:resource = $idlocgov]/@rdf:about" />
 	</xsl:function>
 	
 	<xsl:function name="eac2rico:URI-AgentName">
