@@ -118,13 +118,12 @@
 	<xsl:template match="eac:control/eac:languageDeclaration">
 		<xsl:choose>
 			<xsl:when test="eac:language/@languageCode">
-				<rico:hasLanguage rdf:resource="{eac2rico:URI-Language(eac:language/@languageCode)}"/>
+        <rico:hasOrHadLanguage rdf:resource="{eac2rico:URI-Language(eac:language/@languageCode)}"/>
 			</xsl:when>
 			<xsl:otherwise>
-				<rico:hasLanguage rdf:resource="{eac2rico:URI-Language($DEFAULT_LANGUAGE_IF_NO_LANGUAGECODE)}"/>
+        <rico:hasOrHadLanguage rdf:resource="{eac2rico:URI-Language($DEFAULT_LANGUAGE_IF_NO_LANGUAGECODE)}"/>
 			</xsl:otherwise>
 		</xsl:choose>
-			
 	</xsl:template>
 	
 	<!-- ***** maintenanceHistory and maintenanceEvent -->

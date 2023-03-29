@@ -22,7 +22,8 @@
     </rico:Record>
     <!-- archdesc level-->
     <rico:RecordResource rdf:about="recordResource/top-055691">
-        <rico:isOrWasDescribedBy rdf:resource="record/055691"/>        
+        <rico:isOrWasDescribedBy rdf:resource="record/055691"/>
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>     
         <rico:conditionsOfAccess rdf:parseType="Literal">
             <html:p xml:lang="fr">Librement communicable sous réserve de l'état matériel des documents.</html:p>
         </rico:conditionsOfAccess>        
