@@ -109,13 +109,20 @@ public class Eac2RicoXsltTestExecution implements Test {
 				}
 			
 				System.out.println(nodeToString(domResult.getNode()));
-				Diff diff = DiffBuilder
+				DiffBuilder builder = DiffBuilder
 						.compare(Input.fromFile(expected).build())
 						.ignoreWhitespace()
 						.ignoreComments()
 						.checkForSimilar()
-						.withTest(Input.fromNode(domResult.getNode()).build())
-						.build();
+						.withTest(Input.fromNode(domResult.getNode()).build());
+				
+				// exclude rdf:nodeID attribute from comparison
+				builder.withAttributeFilter(attr -> {
+					return !attr.getNodeName().equals("rdf:nodeID");
+				});
+
+				Diff diff = builder.build();
+
 				if(diff.hasDifferences()) {
 					result.addFailure(this, new AssertionFailedError("Test failed on "+this.testFolder+":\n"+diff.toString()));
 				}

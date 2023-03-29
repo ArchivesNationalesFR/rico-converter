@@ -31,9 +31,10 @@
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasOrHadAgentName>
-
       <rico:agentIsSourceOfAgentControlRelation rdf:resource="agentHierarchicalRelation/050571-111111"/>
-      <rico:agentIsTargetOfAgentControlRelation rdf:resource="agentHierarchicalRelation/999999-050571"/>
+      <rico:isOrWasControllerOf rdf:resource="agent/111111" />
+      <rico:agentIsTargetOfAgentControlRelation rdf:resource="agentHierarchicalRelation/999999-050571"/>      
+      <rico:hasOrHadController rdf:resource="agent/999999" />
    </rico:Agent>
 
    <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/050571-111111">

@@ -33,7 +33,9 @@
       </rico:hasOrHadAgentName>
   
       <rico:groupIsTargetOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/999999-005205"/>
+      <rico:isOrWasSubdivisionOf rdf:resource="agent/999999" />
       <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005205-111111"/>
+      <rico:hasOrHadSubdivision rdf:resource="agent/111111" />
    </rico:Agent>
    <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/999999-005205">
    	  <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>
