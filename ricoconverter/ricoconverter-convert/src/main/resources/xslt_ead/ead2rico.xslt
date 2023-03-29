@@ -646,7 +646,9 @@
 		<rico:conditionsOfAccess rdf:parseType="Literal">
 			<xsl:choose>
 				<xsl:when test="count(p) = 1">
-					<html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(p)" /></html:p>
+					<xsl:if test="normalize-space(p)">
+						<html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(p)" /></html:p>
+					</xsl:if>
 				</xsl:when>
 				<xsl:otherwise>
 					<html:div xml:lang="{$LITERAL_LANG}">
@@ -663,7 +665,9 @@
 		<rico:conditionsOfUse rdf:parseType="Literal">
 			<xsl:choose>
 				<xsl:when test="count(p) = 1">
-					<html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(p)" /></html:p>
+					<xsl:if test="normalize-space(p)">
+						<html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(p)" /></html:p>
+					</xsl:if>
 				</xsl:when>
 				<xsl:otherwise>
 					<html:div xml:lang="{$LITERAL_LANG}">
@@ -881,7 +885,7 @@
 	
 	<!-- ***** did/unitid processing for instantiation only ***** -->
 	
-	<xsl:template match="unitid" mode="instantiation">
+	<xsl:template match="unitid[normalize-space(.)]" mode="instantiation">
 		<xsl:choose>
 			<xsl:when test="@type ='cote-de-consultation' and ((following-sibling::unitid | preceding-sibling::unitid)[@type = 'pieces'])">
 			<!-- join before normalize, in odd case where there are multiple unitid type="pieces" -->
@@ -1386,7 +1390,7 @@
 	
 	<!--  ***** bibliography ***** -->
 	
-	<xsl:template match="bibliography[text()]">
+	<xsl:template match="bibliography[normalize-space(.)]">
 		<rico:descriptiveNote rdf:parseType="Literal">
 			<html:div xml:lang="{$LITERAL_LANG}">
 				<html:h4>Bibliographie</html:h4>
