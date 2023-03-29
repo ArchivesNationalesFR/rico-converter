@@ -659,6 +659,7 @@
 				<xsl:apply-templates />
 			</rico:PerformanceRelation>
 		</rico:agentIsTargetOfPerformanceRelation>
+		<rico:hasOrHadOccupationOfType> <xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-OccupationType(eac:term/@vocabularySource)" /></xsl:call-template> </rico:hasOrHadOccupationOfType>
 		<rico:performsOrPerformed rdf:nodeID="_Activity-{generate-id(.)}" />
 	</xsl:template>
 	
