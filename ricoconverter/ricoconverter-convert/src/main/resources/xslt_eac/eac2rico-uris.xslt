@@ -32,28 +32,9 @@
 		<xsl:value-of select="concat('agent', '/', substring-after($recordId, 'FRAN_NP_'))" />
 	</xsl:function>	
 	
-	<!-- URI for an Agent described in an external file : lookup the file of this Agent based on its ID in the input folder, and reads the entityType in it -->
+	<!-- URI for an Agent described in an external file : now does not require to lookup the type in the external file -->
 	<xsl:function name="eac2rico:URI-AgentExternal">
 		<xsl:param name="externalEntityId" />
-		<xsl:param name="externalEntityDescription" />
-
-		<!-- Disable the type fetching to built external Agent URI. Keeping always '/agent' -->
-		<!--
-		<xsl:variable name="externalEntityTypeValue" select="$externalEntityDescription/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType" />
-
-		<xsl:variable name="externalEntityType">
-			<xsl:choose>
-				<xsl:when test="$externalEntityTypeValue">
-					<xsl:value-of select="$externalEntityTypeValue" />
-				</xsl:when>
-				<xsl:otherwise>
-					<xsl:text>agent</xsl:text>
-				</xsl:otherwise>
-			</xsl:choose>
-		</xsl:variable>
-
-		<xsl:value-of select="eac2rico:URI-Agent($externalEntityType, $externalEntityId)" />
-		-->
 		<xsl:value-of select="eac2rico:URI-Agent($externalEntityId)" />
 	</xsl:function>	
 	
