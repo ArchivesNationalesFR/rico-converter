@@ -24,7 +24,7 @@
          <rico:PerformanceRelation rdf:about="performanceRelation/005205-d699msj02xm-19qbb7wdtto3j">
             <rico:performanceRelationHasTarget rdf:resource="agent/005205"/>
             <rico:performanceRelationHasSource>
-               <rico:Activity>
+               <rico:Activity rdf:nodeID="_Activity-a">
                   <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005205-d699msj02xm-19qbb7wdtto3j"/>
                   <!-- the following assertion is now possible, since in RiC-O 0.2 OccupationType has become a subclass of ActivityType-->
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
@@ -34,11 +34,12 @@
       </rico:agentIsTargetOfPerformanceRelation>
       <!-- and, only in the case of a person having an activity categorized using an occupation type, we can add the following-->
       <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-a" />
       <rico:agentIsTargetOfPerformanceRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/005205-d3nyub73ic-1g5es55lb2lpf-19880101-20031231">
             <rico:performanceRelationHasTarget rdf:resource="agent/005205"/>
             <rico:performanceRelationHasSource>
-               <rico:Activity>
+               <rico:Activity rdf:nodeID="_Activity-b">
                   <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005205-d3nyub73ic-1g5es55lb2lpf-19880101-20031231"/>
                   <!-- the following assertion is now possible, since in RiC-O 0.2 OccupationType has become a subclass of ActivityType-->
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3nyub73ic-1g5es55lb2lpf"/>
@@ -53,5 +54,6 @@
       </rico:agentIsTargetOfPerformanceRelation>
       <!--  sams as above; new 'shortcut' inserted, only in this case of a person having an activity categorized using an occupation type-->
       <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyub73ic-1g5es55lb2lpf"/>
+      <rico:performsOrPerformed rdf:nodeID="_Activity-b" />
    </rico:Agent>
 </rdf:RDF>

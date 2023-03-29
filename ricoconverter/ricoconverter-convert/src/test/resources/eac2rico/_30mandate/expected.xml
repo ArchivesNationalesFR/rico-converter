@@ -28,6 +28,7 @@
             <rico:mandateRelationHasSource rdf:resource="rule/12abc-defghij"/>
          </rico:MandateRelation>
       </rico:agentIsTargetOfMandateRelation>
+      <rico:authorizedBy rdf:resource="rule/12abc-defghij" />
     
       <rico:agentIsTargetOfMandateRelation>
          <rico:MandateRelation rdf:about="ruleRelation/123456-56ghi-pqrstuv-2009-20120614">
@@ -39,12 +40,13 @@
                >2012-06-14</rico:endDate>
             <rico:descriptiveNote rdf:parseType="Literal"><html:p xml:lang="fr">une note</html:p></rico:descriptiveNote>
          </rico:MandateRelation> </rico:agentIsTargetOfMandateRelation>
-    
+      <rico:authorizedBy rdf:resource="rule/56ghi-pqrstuv" />
+
       <rico:agentIsTargetOfMandateRelation>
          <rico:MandateRelation>
             <rico:mandateRelationHasTarget rdf:resource="agent/123456"/>
             <rico:mandateRelationHasSource>
-               <rico:Mandate>
+               <rico:Mandate rdf:nodeID="_a">
                   <rico:title>Décret n° blablabla</rico:title>
                   <rdfs:seeAlso
                      rdf:resource="https://www.legifrance.gouv.fr/eli/decret/2012/08/03/ABCDEFBLA/jo/texte"
@@ -58,11 +60,13 @@
             <rico:descriptiveNote rdf:parseType="Literal"><html:p xml:lang="fr">une note</html:p></rico:descriptiveNote>
          </rico:MandateRelation>
       </rico:agentIsTargetOfMandateRelation>
+      <rico:authorizedBy rdf:nodeID="_a" />
+
       <rico:agentIsTargetOfMandateRelation>
          <rico:MandateRelation>
             <rico:mandateRelationHasTarget rdf:resource="agent/123456"/>
             <rico:mandateRelationHasSource>
-               <rico:Mandate>
+               <rico:Mandate rdf:nodeID="_b">
                   <rico:title>Décret n° etc.</rico:title>
                </rico:Mandate>
             </rico:mandateRelationHasSource>
@@ -72,5 +76,7 @@
             <rico:descriptiveNote rdf:parseType="Literal"><html:p xml:lang="fr">article 5</html:p></rico:descriptiveNote>
          </rico:MandateRelation>
       </rico:agentIsTargetOfMandateRelation>
+      <rico:authorizedBy rdf:nodeID="_b" />
+
    </rico:Agent>
 </rdf:RDF>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rico="https://www.ica.org/standards/RiC/ontology#" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xml:base="http://data.archives-nationales.culture.gouv.fr/">
+    <skos:ConceptScheme rdf:about="recordSetTypes">
+        <dc:description xml:lang="fr">Thésaurus des types de groupes de documents. Résulte de la
+            conversion automatique en RDF, conforme à SKOS et RiC-O 0.2, du référentiel XML
+            correspondant (une partie du fichier RI_001 des AN). Des enrichissements, modifications
+            de structure et alignements sont prévus dans les prochains mois.</dc:description>
+        <dc:source xml:lang="fr">FRAN_RI_001 (version 1.5 du 2 mai 2022)</dc:source>
+        <dc:title xml:lang="fr">Thésaurus des types de groupes de documents</dc:title>
+        <dcterms:creator>
+            <foaf:Organization>
+                <foaf:mbox>le-lab.archives-nationales@culture.gouv.fr</foaf:mbox>
+                <foaf:homepage>https://www.archives-nationales.culture.gouv.fr</foaf:homepage>
+                <foaf:name xml:lang="fr">Archives nationales (France). Lab</foaf:name>
+            </foaf:Organization>
+        </dcterms:creator>
+        <dcterms:created>2021-05-03</dcterms:created>
+        <dcterms:modified>2021-11</dcterms:modified>
+        <dcterms:modified>2022-03-20</dcterms:modified>
+        <dcterms:modified>2022-05-02T18:55:20.849+02:00</dcterms:modified>
+        <dc:coverage xml:lang="fr">du Moyen Âge à nos jours</dc:coverage>
+        <dc:language>fr-FR</dc:language>
+        <dc:type xml:lang="fr">Thésaurus</dc:type>
+        <dc:rights xml:lang="fr">Ces données étant des informations publiques, l'usager dispose d'un
+            droit non exclusif et gratuit de libre « réutilisation » à des fins commerciales ou non,
+            dans le monde entier et pour une durée illimitée. Il doit accompagner chaque rediffusion
+            des informations de l'indication précise de l'origine des métadonnées : « Archives
+            nationales (France) », date des métadonnées (mars 2022), nom du référentiel (fourni dans
+            le fichier Excel qui en donne la liste). Voir à ce sujet la page :
+            https://www.archives-nationales.culture.gouv.fr/fr/web/guest/reutilisation-des-donnees-publiques.</dc:rights>
+        <skos:historyNote rdf:parseType="Literal">
+            <html:ul>
+                <html:li xml:lang="fr">Mars-mai 2022 : regénéré le fichier. Enrichissement des
+                    métadonnés du vocabulaire. Ajout de quelques concepts passés d'instances de
+                    DocumentaryFormType à instances de RecordSetType (appel d'offres, marché public,
+                    cahier des charges).</html:li>
+            </html:ul>
+        </skos:historyNote>
+        <skos:hasTopConcept rdf:resource="recordSetType/FRAN_RI_001-d699mmxhwr0-4f15mrcy9b9z"/>
+        <skos:hasTopConcept rdf:resource="recordSetType/FRAN_RI_001-d3nd8ca17m--qyn56zgp674b"/>
+        <skos:hasTopConcept rdf:resource="recordSetType/FRAN_RI_001-d3nd8cbo9w-jdw4s47a0lci"/>
+        <skos:hasTopConcept rdf:resource="recordSetType/FRAN_RI_001-d3nd8cci0s-1bqyyf13o9pme"/>
+        <skos:hasTopConcept rdf:resource="recordSetType/FRAN_RI_001-d3nd8ce65v--xe8ix0edeukt"/>
+        <skos:hasTopConcept rdf:resource="recordSetType/FRAN_RI_001-d3nd8cezwr--157ia7fdkjhx3"/>
+        <skos:hasTopConcept rdf:resource="recordSetType/FRAN_RI_001-d3nd8cfuay--1quefl6bhk6ul"/>
+        <skos:hasTopConcept rdf:resource="recordSetType/FRAN_RI_001-d3nd8cibre-kscf8yk8onpp"/>
+        <skos:hasTopConcept rdf:resource="recordSetType/FRAN_RI_001-d3nd8cj5ib-dc6iwifilmf9"/>
+        <skos:hasTopConcept rdf:resource="recordSetType/FRAN_RI_001-d3nd8cjyto-q7qr9ug1zqo4"/>
+        <skos:hasTopConcept rdf:resource="recordSetType/FRAN_RI_001-d3nd8cow8a--zabuie4r0n54"/>
+        <skos:hasTopConcept rdf:resource="recordSetType/FRAN_RI_001-d3nd8cw9ss--1lp7knf1ldpoh"/>
+        <skos:hasTopConcept rdf:resource="recordSetType/FRAN_RI_001-d3nd8dlkjd--1kmymitgwuigp"/>
+        <skos:hasTopConcept rdf:resource="recordSetType/FRAN_RI_001-d3nd8f4djy--8fa0xkc87we9"/>
+    </skos:ConceptScheme>
+    <skos:Concept rdf:about="recordSetType/FRAN_RI_001-d699mmxhwr0-4f15mrcy9b9z">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="recordSetTypes"/>
+        <skos:prefLabel xml:lang="fr">correspondance</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">courrier</skos:altLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : RecordSetType</skos:editorialNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">nota : à revoir</skos:editorialNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="recordSetType/FRAN_RI_001-d3nd8ca17m--qyn56zgp674b">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="recordSetTypes"/>
+        <skos:prefLabel xml:lang="fr">documentation</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : RecordSetType</skos:editorialNote>
+        <skos:definition xml:lang="fr">Terme employé également dans les référentiels Matières et
+            Fonctions. </skos:definition>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">nota : à revoir</skos:editorialNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="recordSetType/FRAN_RI_001-d3nd8cbo9w-jdw4s47a0lci">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="recordSetTypes"/>
+        <skos:prefLabel xml:lang="fr">dossier d'agrément</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">dossier d'habilitation</skos:altLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : RecordSetType</skos:editorialNote>
+        <skos:definition xml:lang="fr">Terme plutôt utilisé en droit administratif. Il désigne
+            l'accord donné par une autorité à la nomination d'une personne ou à l'exécution d'un
+            projet nécessitant son autorisation ou son avis préalable. Agrément a le même sens
+            qu'habilitation. (S. Braudo, dictionnaire du droit privé. dictionnaire-juridique.com)
+        </skos:definition>
+    </skos:Concept>
+    <skos:Concept rdf:about="recordSetType/FRAN_RI_001-d3nd8cci0s-1bqyyf13o9pme">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="recordSetTypes"/>
+        <skos:prefLabel xml:lang="fr">dossier d'homologation</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : RecordSetType</skos:editorialNote>
+        <skos:definition xml:lang="fr">Procédure administrative de reconnaissance de la conformité
+            d'un produit à un ensemble de critères techniques. </skos:definition>
+        <skos:narrower rdf:resource="recordSetType/FRAN_RI_001-d3nd8cdd29-1ri1we8vt9ce1"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="recordSetType/FRAN_RI_001-d3nd8cdd29-1ri1we8vt9ce1">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="recordSetTypes"/>
+        <skos:prefLabel xml:lang="fr">autorisation de mise sur le marché</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">AMM</skos:altLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : RecordSetType</skos:editorialNote>
+        <skos:definition xml:lang="fr">Concerne les médicaments. </skos:definition>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">nota : à revoir</skos:editorialNote>
+        <skos:broader rdf:resource="recordSetType/FRAN_RI_001-d3nd8cci0s-1bqyyf13o9pme"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="recordSetType/FRAN_RI_001-d3nd8ce65v--xe8ix0edeukt">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="recordSetTypes"/>
+        <skos:prefLabel xml:lang="fr">dossier de client</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : RecordSetType</skos:editorialNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="recordSetType/FRAN_RI_001-d3nd8cezwr--157ia7fdkjhx3">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="recordSetTypes"/>
+        <skos:prefLabel xml:lang="fr">dossier de presse</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : RecordSetType</skos:editorialNote>
+        <skos:definition xml:lang="fr">Au sens de dossier constitué à l'attention de la presse.
+        </skos:definition>
+    </skos:Concept>
+    <skos:Concept rdf:about="recordSetType/FRAN_RI_001-d3nd8cfuay--1quefl6bhk6ul">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="recordSetTypes"/>
+        <skos:prefLabel xml:lang="fr">dossier de procédure judiciaire</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : RecordSetType</skos:editorialNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="recordSetType/FRAN_RI_001-d3nd8cibre-kscf8yk8onpp">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="recordSetTypes"/>
+        <skos:prefLabel xml:lang="fr">dossier de séance</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">document de séance</skos:altLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : RecordSetType</skos:editorialNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">nota : à revoir</skos:editorialNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="recordSetType/FRAN_RI_001-d3nd8cj5ib-dc6iwifilmf9">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="recordSetTypes"/>
+        <skos:prefLabel xml:lang="fr">dossier de subvention</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : RecordSetType</skos:editorialNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="recordSetType/FRAN_RI_001-d3nd8cjyto-q7qr9ug1zqo4">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="recordSetTypes"/>
+        <skos:prefLabel xml:lang="fr">dossier individuel</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : RecordSetType</skos:editorialNote>
+        <skos:definition xml:lang="fr">Ne pas utiliser pour les dossiers de carrière. </skos:definition>
+        <skos:relatedMatch
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/documentaryFormType/FRAN_RI_001-d3nd8cvghe-1kylp0q3gbg04"/>
+        <skos:narrower rdf:resource="recordSetType/FRAN_RI_001-d3nd8ckskl-1fpbimrh531ry"/>
+        <skos:narrower rdf:resource="recordSetType/FRAN_RI_001-d3nd8cllvy-1f7jrhcdttmq4"/>
+        <skos:narrower rdf:resource="recordSetType/FRAN_RI_001-d3nd8cmff3-1ud5h3oa1sps6"/>
+        <skos:narrower rdf:resource="recordSetType/FRAN_RI_001-d5b8d3hlfj--ekwb2m3tdgx5"/>
+        <skos:narrower rdf:resource="recordSetType/FRAN_RI_001-d3nd8cn960--1qszbt7djfspk"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="recordSetType/FRAN_RI_001-d3nd8ckskl-1fpbimrh531ry">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="recordSetTypes"/>
+        <skos:prefLabel xml:lang="fr">dossier de candidature</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : RecordSetType</skos:editorialNote>
+        <skos:broader rdf:resource="recordSetType/FRAN_RI_001-d3nd8cjyto-q7qr9ug1zqo4"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="recordSetType/FRAN_RI_001-d3nd8cllvy-1f7jrhcdttmq4">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="recordSetTypes"/>
+        <skos:prefLabel xml:lang="fr">dossier de carrière</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : RecordSetType</skos:editorialNote>
+        <skos:broader rdf:resource="recordSetType/FRAN_RI_001-d3nd8cjyto-q7qr9ug1zqo4"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="recordSetType/FRAN_RI_001-d3nd8cmff3-1ud5h3oa1sps6">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="recordSetTypes"/>
+        <skos:prefLabel xml:lang="fr">dossier de pension</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : RecordSetType</skos:editorialNote>
+        <skos:broader rdf:resource="recordSetType/FRAN_RI_001-d3nd8cjyto-q7qr9ug1zqo4"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="recordSetType/FRAN_RI_001-d5b8d3hlfj--ekwb2m3tdgx5">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="recordSetTypes"/>
+        <skos:prefLabel xml:lang="fr">dossier de scolarité</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">dossier d'élève</skos:altLabel>
+        <skos:altLabel xml:lang="fr">dossier d'étudiant</skos:altLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : RecordSetType</skos:editorialNote>
+        <skos:broader rdf:resource="recordSetType/FRAN_RI_001-d3nd8cjyto-q7qr9ug1zqo4"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="recordSetType/FRAN_RI_001-d3nd8cn960--1qszbt7djfspk">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="recordSetTypes"/>
+        <skos:prefLabel xml:lang="fr">dossier médical</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : RecordSetType</skos:editorialNote>
+        <skos:broader rdf:resource="recordSetType/FRAN_RI_001-d3nd8cjyto-q7qr9ug1zqo4"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="recordSetType/FRAN_RI_001-d3nd8cow8a--zabuie4r0n54">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="recordSetTypes"/>
+        <skos:prefLabel xml:lang="fr">dossier technique</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : RecordSetType</skos:editorialNote>
+    </skos:Concept>
+    <skos:Concept rdf:about="recordSetType/FRAN_RI_001-d3nd8cw9ss--1lp7knf1ldpoh">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="recordSetTypes"/>
+        <skos:prefLabel xml:lang="fr">fichier</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : RecordSetType</skos:editorialNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/04/2021</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:editorialNote xml:lang="fr">nota : à revoir</skos:editorialNote>
+        <skos:relatedMatch
+            rdf:resource="http://data.archives-nationales.culture.gouv.fr/documentaryFormType/FRAN_RI_001-d3nd8cun60--uh9evbx7ph8h"
+        />
+    </skos:Concept>
+    <skos:Concept rdf:about="recordSetType/FRAN_RI_001-d3nd8dlkjd--1kmymitgwuigp">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="recordSetTypes"/>
+        <skos:prefLabel xml:lang="fr">marché public</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : RecordSetType</skos:editorialNote>
+        <skos:note xml:lang="fr">Terme employé également dans le référentiel Matières.</skos:note>
+        <skos:narrower rdf:resource="recordSetType/FRAN_RI_001-d3nd8dmdur--4q7snyt2e84b"/>
+        <skos:narrower rdf:resource="recordSetType/FRAN_RI_001-d3nd8dn6yd--1b2eusmx6ugdx"/>
+        <skos:narrower rdf:resource="recordSetType/FRAN_RI_001-d3nd8do09r--olb51b53051g"/>
+        <skos:narrower rdf:resource="recordSetType/FRAN_RI_001-d3nd8dotdd--4l0yvjtye2r2"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="recordSetType/FRAN_RI_001-d3nd8dmdur--4q7snyt2e84b">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="recordSetTypes"/>
+        <skos:prefLabel xml:lang="fr">appel d'offres</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">dossier d'appel d'offres</skos:altLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : RecordSetType</skos:editorialNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/03/2022</dc:date>
+                <rdf:value xml:lang="fr">classe et forme alternative ajoutées le
+                    [14/03/2022]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:broader rdf:resource="recordSetType/FRAN_RI_001-d3nd8dlkjd--1kmymitgwuigp"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="recordSetType/FRAN_RI_001-d3nd8dn6yd--1b2eusmx6ugdx">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="recordSetTypes"/>
+        <skos:prefLabel xml:lang="fr">cahier des charges</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : RecordSetType</skos:editorialNote>
+        <skos:changeNote>
+            <rdf:Description>
+                <dc:date>14/03/2022</dc:date>
+                <rdf:value xml:lang="fr">classe ajoutée le [14/03/2022]</rdf:value>
+            </rdf:Description>
+        </skos:changeNote>
+        <skos:broader rdf:resource="recordSetType/FRAN_RI_001-d3nd8dlkjd--1kmymitgwuigp"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="recordSetType/FRAN_RI_001-d3nd8do09r--olb51b53051g">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="recordSetTypes"/>
+        <skos:prefLabel xml:lang="fr">dossier de consultation des entreprises</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : RecordSetType</skos:editorialNote>
+        <skos:broader rdf:resource="recordSetType/FRAN_RI_001-d3nd8dlkjd--1kmymitgwuigp"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="recordSetType/FRAN_RI_001-d3nd8dotdd--4l0yvjtye2r2">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="recordSetTypes"/>
+        <skos:prefLabel xml:lang="fr">dossier des ouvrages exécutés</skos:prefLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : RecordSetType</skos:editorialNote>
+        <skos:broader rdf:resource="recordSetType/FRAN_RI_001-d3nd8dlkjd--1kmymitgwuigp"/>
+    </skos:Concept>
+    <skos:Concept rdf:about="recordSetType/FRAN_RI_001-d3nd8f4djy--8fa0xkc87we9">
+        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSetType"/>
+        <skos:inScheme rdf:resource="recordSetTypes"/>
+        <skos:prefLabel xml:lang="fr">revue de presse</skos:prefLabel>
+        <skos:altLabel xml:lang="fr">panorama de presse</skos:altLabel>
+        <skos:editorialNote xml:lang="fr">classe RiC-O : RecordSetType</skos:editorialNote>
+    </skos:Concept>
+</rdf:RDF>

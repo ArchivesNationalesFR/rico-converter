@@ -22,7 +22,7 @@ See the "Releases" section to select a specific version for download.
 # Documentation
 
 Download a release of the converter, unzip, and open `documentation/index.html` to get comprehensive documentation on how to run RiC-O converter.
-Markdown source of the HTML documentation can be found under [ricoconverter/ricoconverter-doc/src/main/resources/markdown](ricoconverter/ricoconverter-doc/src/main/resources/markdown) (start with index.md).
+Markdown source of the HTML documentation can be found under [docs](https://github.com/ArchivesNationalesFR/rico-converter/tree/master/docs) (start with index.md).
 
 
 # References
