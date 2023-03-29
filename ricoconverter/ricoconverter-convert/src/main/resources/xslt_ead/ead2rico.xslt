@@ -274,10 +274,11 @@
 		<rico:RecordResource rdf:about="{ead2rico:URI-RecordResource($recordResourceId)}">
 			<rico:isOrWasDescribedBy rdf:resource="{ead2rico:URI-FindingAid($faId)}" />
 			
-			<!--  dsc is processed later, outside of RecordResource. Note we process also attributes to match @level -->
+			<!--  dsc is processed later, outside of RecordResource. Note we process the element with a special mode to test on its type. -->
 			<!--  Note that origination is still processed here to match inner persname/corpname/famname -->
 			<!--  Note that originalsloc is still processed here to match inner ref -->
-			<xsl:apply-templates select="@* | (node() except (dsc | daogrp | processinfo | appraisal | originalsloc[not(descendant::ref)]))" />
+			<xsl:apply-templates select="." mode="level" />
+			<xsl:apply-templates select="node() except (dsc | daogrp | processinfo | appraisal | originalsloc[not(descendant::ref)])" />
 
 			<!-- process everything that needs to go inside a rico:history -->
 			<xsl:variable name="historyContent">
@@ -412,10 +413,11 @@
 				</xsl:otherwise>
 			</xsl:choose>
 						
-			<!-- child c's and daogrp are processed after. Note we process also attributes to match @level -->
+			<!-- child c's and daogrp are processed after. Note that the current element is processed here with a special mode to determine its type -->
 			<!--  Note that origination is still processed here to match inner persname/corpname/famname -->
 			<!--  Note that originalsloc is still processed here to match inner ref -->
-			<xsl:apply-templates select="@* | (node() except (c | daogrp | processinfo | appraisal | originalsloc[not(descendant::ref)]))" />
+			<xsl:apply-templates select="." mode="level" />
+			<xsl:apply-templates select="node() except (c | daogrp | processinfo | appraisal | originalsloc[not(descendant::ref)])" />
 			
 			
 			<!-- everything that goes in the 'rico:history' section -->
@@ -682,14 +684,14 @@
         </rico:structure>
 	</xsl:template>
 
-	<!-- ***** @level processing ***** -->
+	<!-- ***** level processing on both c or archdesc ***** -->
 
-	<xsl:template match="@level">
+	<xsl:template match="c | archdesc" mode="level">
 		<xsl:choose>
-			<xsl:when test="ead2rico:isRicoRecord(..)">
+			<xsl:when test="ead2rico:isRicoRecord(.)">
 				<rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
 			</xsl:when>
-			<xsl:when test="ead2rico:isRicoRecordSet(..)">
+			<xsl:when test="ead2rico:isRicoRecordSet(.)">
 				<rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
 			    <!-- 
 				    RiC-O recordSetTypes :
@@ -700,28 +702,28 @@
 			        https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series
 		        -->
 		        <xsl:choose>
-		        	<xsl:when test=". = 'fonds'">
+		        	<xsl:when test="@level = 'fonds'">
 		        		<rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds"/>
 		        	</xsl:when>
-		        	<xsl:when test=". = 'subfonds'">
+		        	<xsl:when test="@level = 'subfonds'">
 		        		<!--  nothing -->
 		        	</xsl:when>
-		        	<xsl:when test=". = 'series'">
+		        	<xsl:when test="@level = 'series'">
 		        		<rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
 		        	</xsl:when>
-		        	<xsl:when test=". = 'subseries'">
+		        	<xsl:when test="@level = 'subseries'">
 		        		<rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
 		        	</xsl:when>
-		        	<xsl:when test=". = 'recordgrp'">
+		        	<xsl:when test="@level = 'recordgrp'">
 		        		<!--  nothing -->
 		        	</xsl:when>
-		        	<xsl:when test=". = 'subgrp'">
+		        	<xsl:when test="@level = 'subgrp'">
 		        		<!--  nothing -->
 		        	</xsl:when>
-		        	<xsl:when test=". = 'file'">
+		        	<xsl:when test="@level = 'file'">
 		        		<rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File"/>
 		        	</xsl:when>
-		        	<xsl:when test=". = 'collection'">
+		        	<xsl:when test="@level = 'collection'">
 		        		<rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection"/>
 		        	</xsl:when>
 		        	<!--  'otherlevel' is already matched above -->
