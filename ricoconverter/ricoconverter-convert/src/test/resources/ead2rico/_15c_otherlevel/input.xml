@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<ead>
+    <eadheader>
+        <!-- the metadata of the finding aid -->
+        <eadid>FRAN_IR_058220</eadid>        
+    </eadheader>
+
+    <!-- case 1 : we can match on the value -->
+    <archdesc level="otherlevel" otherlevel="sous-sous-série" />
+
+    <!-- case 2 : we can't match -->
+    <archdesc level="otherlevel" otherlevel="something unknown" />     
+</ead>
+

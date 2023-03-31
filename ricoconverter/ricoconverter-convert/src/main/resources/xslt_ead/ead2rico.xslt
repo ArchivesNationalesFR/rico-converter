@@ -38,6 +38,9 @@
 
 	<!--  Global variable for faId to reference it in functions -->
 	<xsl:variable name="faId" select="substring-after(/ead/eadheader/eadid, 'FRAN_IR_')" />
+
+	<!-- Pattern to be used to detect RecordSet from the @otherlevel attribute -->
+	<xsl:param name="OTHERLEVEL_RECORDSET_PATTERN">group|série|serie</xsl:param>
 	
 	<xsl:template match="/">
 		<rdf:RDF>
@@ -278,7 +281,7 @@
 			<!--  Note that origination is still processed here to match inner persname/corpname/famname -->
 			<!--  Note that originalsloc is still processed here to match inner ref -->
 			<xsl:apply-templates select="." mode="level" />
-			<xsl:apply-templates select="node() except (dsc | daogrp | processinfo | appraisal | originalsloc[not(descendant::ref)])" />
+			<xsl:apply-templates select="@otherlevel | (node() except (dsc | daogrp | processinfo | appraisal | originalsloc[not(descendant::ref)]))" />
 
 			<!-- process everything that needs to go inside a rico:history -->
 			<xsl:variable name="historyContent">
@@ -417,7 +420,7 @@
 			<!--  Note that origination is still processed here to match inner persname/corpname/famname -->
 			<!--  Note that originalsloc is still processed here to match inner ref -->
 			<xsl:apply-templates select="." mode="level" />
-			<xsl:apply-templates select="node() except (c | daogrp | processinfo | appraisal | originalsloc[not(descendant::ref)])" />
+			<xsl:apply-templates select="@otherlevel | (node() except (c | daogrp | processinfo | appraisal | originalsloc[not(descendant::ref)]))" />
 			
 			
 			<!-- everything that goes in the 'rico:history' section -->
@@ -733,6 +736,16 @@
 				<!-- nothing -->
 			</xsl:otherwise>
 		</xsl:choose>
+	</xsl:template>
+
+	<!-- ***** @otherlevel processing : this is used when determining the type in a function ***** -->
+	<!-- ***** but we need to generate a dc:type + rico:type in case it is unknown ***** -->
+	<xsl:template match="@otherlevel">
+		<xsl:if test="not(matches(.,$OTHERLEVEL_RECORDSET_PATTERN))">
+			<xsl:message><xsl:value-of select="concat($faId,' - ', 'UNKNOWN_VALUE_OF_OTHERLEVEL',' : ',.)" /></xsl:message>
+			<dc:type><xsl:value-of select="." /></dc:type>
+			<rico:type><xsl:value-of select="." /></rico:type>
+		</xsl:if>
 	</xsl:template>
 
 	<!-- ***** custodhist / acqinfo processing for instantiation only ***** -->
@@ -1548,11 +1561,22 @@
 	<!-- Tests if a c or archdesc element corresponds to a RecordSet -->
 	<xsl:function name="ead2rico:isRicoRecordSet" as="xs:boolean">
 		<xsl:param name="cOrArchdesc"/>
+
 		<!-- if archdesc without an explicit level, consider it a RecordSet -->
 		<xsl:sequence select="
 			(local-name($cOrArchdesc) = 'archdesc' and not($cOrArchdesc/@level))
 			or
-			($cOrArchdesc/@level and $cOrArchdesc/@level != 'item' and $cOrArchdesc/@level != 'otherlevel')
+			(
+				$cOrArchdesc/@level
+				and
+				$cOrArchdesc/@level != 'item'
+				and
+				(
+					$cOrArchdesc/@level != 'otherlevel'
+					or
+					matches($cOrArchdesc/@otherlevel,$OTHERLEVEL_RECORDSET_PATTERN)
+				)
+			)
 		"/>  
 	</xsl:function>
 
