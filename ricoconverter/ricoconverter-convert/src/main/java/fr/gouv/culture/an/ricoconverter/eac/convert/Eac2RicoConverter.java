@@ -300,13 +300,21 @@ public class Eac2RicoConverter {
 							
 							this.convert(new StreamSource(new FileInputStream(inputFile)), new StreamResult(out));
 
-							Diff diff = DiffBuilder
+
+							DiffBuilder builder = DiffBuilder
 									.compare(Input.fromFile(expectedFile).build())
 									.ignoreWhitespace()
 									.ignoreComments()
 									.checkForSimilar()
-									.withTest(Input.fromFile(outputFile).build())
-									.build();
+									.withTest(Input.fromFile(outputFile).build());
+							
+							// exclude rdf:nodeID attribute from comparison
+							builder.withAttributeFilter(attr -> {
+								return !attr.getNodeName().equals("rdf:nodeID");
+							});
+
+							Diff diff = builder.build();
+
 							if(diff.hasDifferences()) {
 								System.out.println(f.getName()+" : "+"FAILURE");
 								System.out.println(diff.toString());
