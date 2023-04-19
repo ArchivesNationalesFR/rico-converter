@@ -23,11 +23,8 @@
 	<xsl:output indent="yes" method="xml" />
 	
 	<!-- Stylesheet Parameters -->
-	<xsl:param name="BASE_URI">http://data.archives-nationales.culture.gouv.fr/</xsl:param>
-	<xsl:param name="AUTHOR_URI">http://data.archives-nationales.culture.gouv.fr/agent/005061</xsl:param>	
-	<xsl:param name="LITERAL_LANG">fr</xsl:param>
 	<xsl:param name="INPUT_FOLDER">.</xsl:param>
-	<xsl:param name="DEFAULT_LANGUAGE_IF_NO_LANGUAGECODE">fre</xsl:param>
+	
 	
 	<!-- Load Keywords from companion file -->
 	<xsl:param name="KEYWORDS_FILE">eac2rico-keywords.xml</xsl:param>

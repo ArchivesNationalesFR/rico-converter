@@ -20,7 +20,7 @@
 	<!-- ***** Stylesheet Parameters ***** -->
 
 	<!-- Pattern to be used to detect RecordSet from the @otherlevel attribute -->
-	<xsl:param name="OTHERLEVEL_RECORDSET_PATTERN">group|série|serie</xsl:param>
+	<xsl:param name="OTHERLEVEL_RECORDSET_PATTERN">dossier|fonds|serie|série|articles|groupe-de-pieces|collection|subgrp|sbgrp</xsl:param>
 	<xsl:param name="BASE_URI">http://data.archives-nationales.culture.gouv.fr/</xsl:param>
 	<xsl:param name="AUTHOR_URI">http://data.archives-nationales.culture.gouv.fr/agent/005061</xsl:param>
 	<xsl:param name="LITERAL_LANG">fr</xsl:param>

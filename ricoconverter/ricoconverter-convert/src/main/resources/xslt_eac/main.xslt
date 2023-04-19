@@ -17,6 +17,12 @@
 >
 	<xsl:output indent="yes" method="xml" />
 
+	<!-- ***** Stylesheet parameters ***** -->
+	<xsl:param name="BASE_URI">http://data.archives-nationales.culture.gouv.fr/</xsl:param>
+	<xsl:param name="AUTHOR_URI">http://data.archives-nationales.culture.gouv.fr/agent/005061</xsl:param>	
+	<xsl:param name="LITERAL_LANG">fr</xsl:param>
+	<xsl:param name="DEFAULT_LANGUAGE_IF_NO_LANGUAGECODE">fre</xsl:param>
+
 	<!-- 
 		This is the entry point stylesheet to convert EAC to RiC-O.
 		By default this XSLT does nothing by itself, and imports eac2rico.xslt which contains

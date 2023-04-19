@@ -732,7 +732,7 @@
 	<!-- ***** but we need to generate a dc:type + rico:type in case it is unknown ***** -->
 	<xsl:template match="@otherlevel">
 		<xsl:if test="not(matches(.,$OTHERLEVEL_RECORDSET_PATTERN))">
-			<xsl:message><xsl:value-of select="concat($faId,' - ', 'UNKNOWN_VALUE_OF_OTHERLEVEL',' : ',.)" /></xsl:message>
+			<xsl:message><xsl:value-of select="concat($faId,' - id ', ../@id ,' - ','UNKNOWN_VALUE_OF_OTHERLEVEL',' : ',.)" /></xsl:message>
 			<dc:type><xsl:value-of select="." /></dc:type>
 			<rico:type><xsl:value-of select="." /></rico:type>
 		</xsl:if>
