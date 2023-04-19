@@ -28,19 +28,9 @@
 	<xsl:import href="ead2rico-builtins.xslt" />
 
 	<xsl:output indent="yes" method="xml" />
-	
-	<!-- Stylesheet Parameters -->
-	<xsl:param name="BASE_URI">http://data.archives-nationales.culture.gouv.fr/</xsl:param>
-	<xsl:param name="AUTHOR_URI">http://data.archives-nationales.culture.gouv.fr/agent/005061</xsl:param>
-	<xsl:param name="LITERAL_LANG">fr</xsl:param>
-	<xsl:param name="INPUT_FOLDER">.</xsl:param>
-	<xsl:param name="BASE_URL_FOR_RELATIVE_LINKS">https://www.siv.archives-nationales.culture.gouv.fr/mm/media/download/</xsl:param>
 
 	<!--  Global variable for faId to reference it in functions -->
 	<xsl:variable name="faId" select="substring-after(/ead/eadheader/eadid, 'FRAN_IR_')" />
-
-	<!-- Pattern to be used to detect RecordSet from the @otherlevel attribute -->
-	<xsl:param name="OTHERLEVEL_RECORDSET_PATTERN">group|série|serie</xsl:param>
 	
 	<xsl:template match="/">
 		<rdf:RDF>
