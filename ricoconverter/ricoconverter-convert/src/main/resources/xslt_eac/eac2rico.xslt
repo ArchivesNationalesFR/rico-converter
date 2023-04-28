@@ -646,8 +646,6 @@
 						<rico:activityIsSourceOfPerformanceRelation>
 							<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-PerformanceRelation($recordId, eac:term/@vocabularySource, eac:dateRange/eac:fromDate/@standardDate, eac:dateRange/eac:toDate/@standardDate )" /></xsl:call-template>
 						</rico:activityIsSourceOfPerformanceRelation>
-						<!-- ***** Note : this is not conformant to RiC-O 0.1 as an OccupationType is currently not a subclass of ActivityType ***** -->
-						<!-- This will be fixed in RiC-O 0.2 -->
 						<rico:hasActivityType>
 							<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-OccupationType(eac:term/@vocabularySource)" /></xsl:call-template>
 						</rico:hasActivityType>
@@ -656,6 +654,7 @@
 				<xsl:apply-templates />
 			</rico:PerformanceRelation>
 		</rico:agentIsTargetOfPerformanceRelation>
+		<rico:hasOrHadOccupationOfType> <xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-OccupationType(eac:term/@vocabularySource)" /></xsl:call-template> </rico:hasOrHadOccupationOfType>
 		<rico:performsOrPerformed rdf:nodeID="_Activity-{generate-id(.)}" />
 	</xsl:template>
 	
