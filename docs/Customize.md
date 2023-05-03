@@ -6,11 +6,9 @@ Both the EAC and EAD conversion can be customized by passing some parameters and
 
 ## Customize EAC/CPF conversion
 
-### Adjust base URI and URI generation
+### Adjust general parameters
 
-Adjust the input parameter `xslt.BASE_URI` (in `parameters/convert_eac.properties`) to customise the root URI of all identifiers.
-
-Adjust the URI policy in `xslt_eac/eac2rico-uris.xslt` to customize how URIs are generated.
+You can adjust runtime parameters in `parameters/convert_eac.properties` to adjust e.g. input or output folders.
 
 ### Adjust XSLT parameters
 
@@ -28,11 +26,9 @@ When you adjust something in the XSLT conversion logic, add new unit tests under
 
 ## Customize EAD conversion
 
-### Adjust base URI and URI generation
+### Adjust general parameters
 
-Adjust the input parameter `xslt.BASE_URI` (in `parameters/convert_ead.properties`) to customise the root URI of all identifiers.
-
-Adjust the URI policy in `xslt_ead/ead2rico-uris.xslt` to customize how URIs are generated.
+You can adjust runtime parameters in `parameters/convert_ead.properties` to adjust e.g. input or output folders.
 
 ### Adjust XSLT parameters
 
