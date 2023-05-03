@@ -4,6 +4,8 @@
 
 ## Prerequisites
 
+To run the converter, you need a [Java Runtime Environment](https://www.java.com/fr/download/manual.jsp), version 8 or above.
+
 ## Download the converter
 
 Download the converter from the [release section of the Github repository](https://github.com/ArchivesNationalesFR/rico-converter/releases/latest), and unzip it.
