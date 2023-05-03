@@ -294,15 +294,18 @@
 				<!-- Removes whitespace and potential column after "SIRET :" -->
 				<rico:identifier>SIRET <xsl:value-of select="normalize-space(translate(substring-after(text(), 'SIRET'), ':', ''))" /></rico:identifier>
 			</xsl:when>
-			<xsl:when test="@localType = 'SIRET'">
+			<xsl:when test="@localType = 'SIRET' or @localType = 'numéro SIRET'">
 				<rico:identifier>SIRET <xsl:value-of select="text()" /></rico:identifier>
 			</xsl:when>
 			<xsl:when test="starts-with(text(), 'SIREN')">
 				<!-- Removes whitespace and potential column after "SIREN :" -->
 				<rico:identifier>SIREN <xsl:value-of select="normalize-space(translate(substring-after(text(), 'SIREN'), ':', ''))" /></rico:identifier>
 			</xsl:when>
-			<xsl:when test="@localType = 'SIREN'">
+			<xsl:when test="@localType = 'SIREN' or @localType = 'numéro SIREN'">
 				<rico:identifier>SIREN <xsl:value-of select="text()" /></rico:identifier>
+			</xsl:when>
+			<xsl:when test="@localType = 'numéro RNA'">
+				<rico:identifier>RNA <xsl:value-of select="text()" /></rico:identifier>
 			</xsl:when>
 			<xsl:otherwise>
 				<!-- output a warning ? -->
