@@ -16,7 +16,6 @@
     <rico:Record rdf:about="record/058220">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid"/>
       <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
-      <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
       <rico:hasInstantiation>
          <rico:Instantiation rdf:about="instantiation/058220-i1">
             <rico:isInstantiationOf rdf:resource="record/058220"/>
@@ -28,28 +27,17 @@
       </rico:hasInstantiation>
     </rico:Record>
     
-    <!-- case 1 : we can match on the value -->
+    <!-- case 1 : we can match on the value as RecordPart -->
     <rico:RecordResource rdf:about="recordResource/top-058220">
     	<rico:isOrWasDescribedBy rdf:resource="record/058220"/>
-        <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
-        <rico:hasInstantiation>
-         <rico:Instantiation rdf:about="instantiation/top-058220-i1">
-            <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
-         </rico:Instantiation>
-        </rico:hasInstantiation>
-    </rico:RecordResource>
-
-    <!-- case 2 : we can't match -->
-    <rico:RecordResource rdf:about="recordResource/top-058220">
-    	<rico:isOrWasDescribedBy rdf:resource="record/058220"/>
-      <dc:type>something unknown</dc:type>
-			<rico:type>something unknown</rico:type>        
-        <rico:hasInstantiation>
-         <rico:Instantiation rdf:about="instantiation/top-058220-i1">
-            <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
-         </rico:Instantiation>
-        </rico:hasInstantiation>
-    </rico:RecordResource>
-    
+         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordPart"/>
+         <dc:type>page-de-titre</dc:type>
+         <rico:type>page-de-titre</rico:type>  
+         <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+               <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
+            </rico:Instantiation>
+         </rico:hasInstantiation>
+    </rico:RecordResource>    
     
 </rdf:RDF>
