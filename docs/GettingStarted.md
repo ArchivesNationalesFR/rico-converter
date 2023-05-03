@@ -2,6 +2,12 @@
 
 # Getting Started
 
+## Prerequisites
+
+## Download the converter
+
+Download the converter from the [release section of the Github repository](https://github.com/ArchivesNationalesFR/rico-converter/releases/latest), and unzip it.
+
 ## Test drive the converter
 
 To run your first conversion :
