@@ -625,7 +625,8 @@
 
 	<!-- ***** scopecontent processing ***** -->
 	
-	<xsl:template match="scopecontent[child::node()]">
+	<!-- need at least some non-empty content  -->
+	<xsl:template match="scopecontent[normalize-space(.)]">
 		<rico:scopeAndContent rdf:parseType="Literal">
 			<xsl:choose>
 				<xsl:when test="count(p) = 1">
@@ -642,7 +643,8 @@
 
 	<!-- ***** accessrestrict for archdesc/c and instantiation ***** -->
 	
-	<xsl:template match="accessrestrict[child::node()]" mode="#all">
+	<!-- need at least some non-empty content  -->
+	<xsl:template match="accessrestrict[normalize-space(.)]" mode="#all">
 		<rico:conditionsOfAccess rdf:parseType="Literal">
 			<xsl:choose>
 				<xsl:when test="count(p) = 1">
@@ -661,7 +663,8 @@
 
 	<!-- ***** userestrict for archdesc/c and instantiation ***** -->
 	
-	<xsl:template match="userestrict[child::node()]" mode="#all">
+	<!-- need at least some non-empty content  -->
+	<xsl:template match="userestrict[normalize-space(.)]" mode="#all">
 		<rico:conditionsOfUse rdf:parseType="Literal">
 			<xsl:choose>
 				<xsl:when test="count(p) = 1">
@@ -680,7 +683,8 @@
 	
 	<!-- arrangement for archdesc/c -->
 
-	<xsl:template match="arrangement[child::node()]" mode="#all">
+	<!-- need at least some non-empty content  -->
+	<xsl:template match="arrangement[normalize-space(.)]" mode="#all">
 		<rico:structure rdf:parseType="Literal">
 			<html:div xml:lang="{$LITERAL_LANG}">
 				<xsl:apply-templates mode="html" />
@@ -741,14 +745,16 @@
 
 	<!-- ***** custodhist / acqinfo processing for instantiation only ***** -->
 	
-	<xsl:template match="custodhist[child::node()]" mode="instantiation">	
+	<!-- need at least some non-empty content  -->
+	<xsl:template match="custodhist[normalize-space(.)]" mode="instantiation">	
 		<html:div  xml:lang="{$LITERAL_LANG}">
             <html:h4>Historique de la conservation</html:h4>
             <xsl:apply-templates mode="html" />
         </html:div>
 	</xsl:template>
 
-	<xsl:template match="acqinfo[child::node()]" mode="instantiation">
+	<!-- need at least some non-empty content  -->
+	<xsl:template match="acqinfo[normalize-space(.)]" mode="instantiation">
 		<html:div  xml:lang="{$LITERAL_LANG}">
             <html:h4>Informations sur les modalités d’entrée</html:h4>
             <xsl:apply-templates mode="html" />
@@ -757,7 +763,8 @@
 
 	<!-- ***** processinfo is for RecordResource also ***** -->
 	
-	<xsl:template match="processinfo[child::node()]" mode="#all">
+	<!-- need at least some non-empty content  -->
+	<xsl:template match="processinfo[normalize-space(.)]" mode="#all">
 		<html:div  xml:lang="{$LITERAL_LANG}">
             <html:h4>Informations sur le traitement</html:h4>
             <xsl:apply-templates mode="html" />
@@ -766,7 +773,8 @@
 
 	<!-- ***** appraisal is for RecordResource also ***** -->
 	
-	<xsl:template match="appraisal[child::node()]" mode="#all">
+	<!-- need at least some non-empty content  -->
+	<xsl:template match="appraisal[normalize-space(.)]" mode="#all">
 		<html:div  xml:lang="{$LITERAL_LANG}">
             <html:h4>Informations sur l'évaluation</html:h4>
             <xsl:apply-templates mode="html" />
@@ -775,7 +783,8 @@
 	
 	<!-- ***** accruals ***** -->
 	
-	<xsl:template match="accruals[child::node()]">
+	<!-- need at least some non-empty content  -->
+	<xsl:template match="accruals[normalize-space(.)]">
 		<rico:accrual rdf:parseType="Literal">
 			<html:div xml:lang="{$LITERAL_LANG}">
 	            <xsl:apply-templates mode="html" />
