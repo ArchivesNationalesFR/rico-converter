@@ -19,7 +19,8 @@
 	xmlns:isni="http://isni.org/ontology#"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
 	xmlns:html="http://www.w3.org/1999/xhtml"
-	exclude-result-prefixes="ead2rico xlink xs xsi xsl"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	exclude-result-prefixes="ead2rico xlink xs xsi xsl skos"
 >
 	<!-- Import URI stylesheet -->
 	<xsl:import href="ead2rico-uris.xslt" />
@@ -27,13 +28,6 @@
 	<xsl:import href="ead2rico-builtins.xslt" />
 
 	<xsl:output indent="yes" method="xml" />
-	
-	<!-- Stylesheet Parameters -->
-	<xsl:param name="BASE_URI">http://data.archives-nationales.culture.gouv.fr/</xsl:param>
-	<xsl:param name="AUTHOR_URI">http://data.archives-nationales.culture.gouv.fr/agent/005061</xsl:param>
-	<xsl:param name="LITERAL_LANG">fr</xsl:param>
-	<xsl:param name="INPUT_FOLDER">.</xsl:param>
-	<xsl:param name="BASE_URL_FOR_RELATIVE_LINKS">https://www.siv.archives-nationales.culture.gouv.fr/mm/media/download/</xsl:param>
 
 	<!--  Global variable for faId to reference it in functions -->
 	<xsl:variable name="faId" select="substring-after(/ead/eadheader/eadid, 'FRAN_IR_')" />
@@ -210,7 +204,7 @@
 		<xsl:apply-templates mode="#current" />
 	</xsl:template>
 	<xsl:template match="language[@langcode]" mode="findingaid">
-		<rico:hasLanguage rdf:resource="{ead2rico:URI-Language(@langcode)}"/>
+		<rico:hasOrHadLanguage rdf:resource="{ead2rico:URI-Language(@langcode)}"/>
 	</xsl:template>
 	
 	<!-- The rico:isOrWasRegulatedBy is inserted systematically on the FindingAid + its Instantiation -->
@@ -273,10 +267,11 @@
 		<rico:RecordResource rdf:about="{ead2rico:URI-RecordResource($recordResourceId)}">
 			<rico:isOrWasDescribedBy rdf:resource="{ead2rico:URI-FindingAid($faId)}" />
 			
-			<!--  dsc is processed later, outside of RecordResource. Note we process also attributes to match @level -->
+			<!--  dsc is processed later, outside of RecordResource. Note we process the element with a special mode to test on its type. -->
 			<!--  Note that origination is still processed here to match inner persname/corpname/famname -->
 			<!--  Note that originalsloc is still processed here to match inner ref -->
-			<xsl:apply-templates select="@* | (node() except (dsc | daogrp | processinfo | appraisal | originalsloc[not(descendant::ref)]))" />
+			<xsl:apply-templates select="." mode="level" />
+			<xsl:apply-templates select="@otherlevel | (node() except (dsc | daogrp | processinfo | appraisal | originalsloc[not(descendant::ref)]))" />
 
 			<!-- process everything that needs to go inside a rico:history -->
 			<xsl:variable name="historyContent">
@@ -363,6 +358,7 @@
 		<xsl:apply-templates mode="#current" />
 	</xsl:template>
 	
+	<!-- Processes c under archdesc -->
 	<xsl:template match="c" mode="reference">
 		<xsl:variable name="recordResourceId">
 			<xsl:call-template name="recordResourceId">
@@ -371,7 +367,9 @@
 			</xsl:call-template>
 		</xsl:variable>
 	
+		<!-- We suppose that by default all archdesc are RecordSets, so always use includesOrIncluded -->
 		<rico:includesOrIncluded rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+		
 	</xsl:template>
 	
 	<!-- ***** c processing : generates corresponding RecordResource and Instantiation ***** -->
@@ -388,18 +386,31 @@
 		<xsl:variable name="parentRecordResourceId">
 			<xsl:call-template name="recordResourceId">
 				<xsl:with-param name="faId" select="$faId" />
-				<xsl:with-param name="recordResourceId" select="parent::*/@id" />
+				<xsl:with-param name="recordResourceId" select="ancestor::*[local-name() = 'c' or local-name() = 'archdesc'][1]/@id" />
 			</xsl:call-template>
 		</xsl:variable>
 
 		<!-- RecordResource -->
 		<rico:RecordResource rdf:about="{ead2rico:URI-RecordResource($recordResourceId)}">
-			<rico:isOrWasIncludedIn rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />			
+
+			<!-- The inverse link to the parent depends on the incoming link, which depends on the type of the parent -->
+			<xsl:choose>
+				<xsl:when test="ead2rico:isRicoRecordSet(ancestor::*[local-name() = 'c' or local-name() = 'archdesc'][1])">
+					<rico:isOrWasIncludedIn rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />	
+				</xsl:when>
+				<xsl:when test="ead2rico:isRicoRecord(ancestor::*[local-name() = 'c' or local-name() = 'archdesc'][1])">
+					<rico:isOrWasConstituentOf rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />	
+				</xsl:when>
+				<xsl:otherwise>
+					<rico:isOrWasPartOf rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />					
+				</xsl:otherwise>
+			</xsl:choose>
 						
-			<!-- child c's and daogrp are processed after. Note we process also attributes to match @level -->
+			<!-- child c's and daogrp are processed after. Note that the current element is processed here with a special mode to determine its type -->
 			<!--  Note that origination is still processed here to match inner persname/corpname/famname -->
 			<!--  Note that originalsloc is still processed here to match inner ref -->
-			<xsl:apply-templates select="@* | (node() except (c | daogrp | processinfo | appraisal | originalsloc[not(descendant::ref)]))" />
+			<xsl:apply-templates select="." mode="level" />
+			<xsl:apply-templates select="@otherlevel | (node() except (c | daogrp | processinfo | appraisal | originalsloc[not(descendant::ref)]))" />
 			
 			
 			<!-- everything that goes in the 'rico:history' section -->
@@ -467,11 +478,28 @@
 			<!-- generates other Instantiations -->
 			<xsl:apply-templates select="daogrp" />
 			
-			<!-- children c's : generate hasMember recursively (contrary to first level archdesc) -->
+			<!-- children c's : generate includesOrIncluded/hasOrHadConstituent/hasOrHadPart recursively (contrary to first level archdesc) -->
+			<!-- predicate depends on type of Record -->
+			<xsl:variable name="currentC" select="." />
 			<xsl:for-each select="c">
-				<rico:includesOrIncluded>
-					<xsl:apply-templates select="." />
-				</rico:includesOrIncluded>
+				<xsl:choose>
+					<xsl:when test="ead2rico:isRicoRecordSet($currentC)">
+						<rico:includesOrIncluded>
+							<xsl:apply-templates select="." />
+						</rico:includesOrIncluded>
+					</xsl:when>
+					<xsl:when test="ead2rico:isRicoRecord($currentC)">
+						<rico:hasOrHadConstituent>
+							<xsl:apply-templates select="." />
+						</rico:hasOrHadConstituent>
+					</xsl:when>
+					<xsl:otherwise>
+						<rico:hasOrHadPart>
+							<xsl:apply-templates select="." />
+						</rico:hasOrHadPart>
+						<xsl:value-of select="ead2rico:warning($faId, 'UNKNOWN_RESOURCE_TYPE_OF_C', $currentC/@level)" />
+					</xsl:otherwise>
+				</xsl:choose>
 			</xsl:for-each>
 		</rico:RecordResource>
 	</xsl:template>
@@ -649,17 +677,14 @@
         </rico:structure>
 	</xsl:template>
 
-	<!-- ***** @level processing ***** -->
-	
-	<xsl:template match="@level">
+	<!-- ***** level processing on both c or archdesc ***** -->
+
+	<xsl:template match="c | archdesc" mode="level">
 		<xsl:choose>
-			<xsl:when test=". = 'item'">
+			<xsl:when test="ead2rico:isRicoRecord(.)">
 				<rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
 			</xsl:when>
-			<xsl:when test=". = 'otherlevel'">
-				<!-- nothing -->
-			</xsl:when>
-			<xsl:otherwise>
+			<xsl:when test="ead2rico:isRicoRecordSet(.)">
 				<rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
 			    <!-- 
 				    RiC-O recordSetTypes :
@@ -670,36 +695,47 @@
 			        https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series
 		        -->
 		        <xsl:choose>
-		        	<xsl:when test=". = 'fonds'">
+		        	<xsl:when test="@level = 'fonds'">
 		        		<rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds"/>
 		        	</xsl:when>
-		        	<xsl:when test=". = 'subfonds'">
+		        	<xsl:when test="@level = 'subfonds'">
 		        		<!--  nothing -->
 		        	</xsl:when>
-		        	<xsl:when test=". = 'series'">
+		        	<xsl:when test="@level = 'series'">
 		        		<rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
 		        	</xsl:when>
-		        	<xsl:when test=". = 'subseries'">
+		        	<xsl:when test="@level = 'subseries'">
 		        		<rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
 		        	</xsl:when>
-		        	<xsl:when test=". = 'recordgrp'">
+		        	<xsl:when test="@level = 'recordgrp'">
 		        		<!--  nothing -->
 		        	</xsl:when>
-		        	<xsl:when test=". = 'subgrp'">
+		        	<xsl:when test="@level = 'subgrp'">
 		        		<!--  nothing -->
 		        	</xsl:when>
-		        	<xsl:when test=". = 'file'">
+		        	<xsl:when test="@level = 'file'">
 		        		<rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File"/>
 		        	</xsl:when>
-		        	<xsl:when test=". = 'collection'">
+		        	<xsl:when test="@level = 'collection'">
 		        		<rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection"/>
 		        	</xsl:when>
-		        	<xsl:when test=". = 'otherlevel'">
-		        		<!--  nothing (already matched above anyway) -->
-		        	</xsl:when>
+		        	<!--  'otherlevel' is already matched above -->
 		        </xsl:choose>
+			</xsl:when>
+			<xsl:otherwise>
+				<!-- nothing -->
 			</xsl:otherwise>
 		</xsl:choose>
+	</xsl:template>
+
+	<!-- ***** @otherlevel processing : this is used when determining the type in a function ***** -->
+	<!-- ***** but we need to generate a dc:type + rico:type in case it is unknown ***** -->
+	<xsl:template match="@otherlevel">
+		<xsl:if test="not(matches(.,$OTHERLEVEL_RECORDSET_PATTERN))">
+			<xsl:message><xsl:value-of select="concat($faId,' - id ', ../@id ,' - ','UNKNOWN_VALUE_OF_OTHERLEVEL',' : ',.)" /></xsl:message>
+			<dc:type><xsl:value-of select="." /></dc:type>
+			<rico:type><xsl:value-of select="." /></rico:type>
+		</xsl:if>
 	</xsl:template>
 
 	<!-- ***** custodhist / acqinfo processing for instantiation only ***** -->
@@ -1011,7 +1047,27 @@
 		<xsl:apply-templates />
 	</xsl:template>
 	<xsl:template match="language[@langcode]">
-		<rico:hasLanguage rdf:resource="{ead2rico:URI-Language(@langcode)}"/>
+		<xsl:choose>
+			<xsl:when test="ead2rico:isRicoRecord(../../..)">
+				<!-- Record : always hasOrHadLanguage -->
+				<rico:hasOrHadLanguage rdf:resource="{ead2rico:URI-Language(@langcode)}"/>
+			</xsl:when>
+			<xsl:when test="ead2rico:isRicoRecordSet(../../..)">
+				<!-- RecordSet : either a hasOrHadAllMembersWithLanguage if only a single value, or a someMembers property if there are multiple -->
+				<xsl:choose>
+					<xsl:when test="count(../language[@langcode]) = 1">
+						<rico:hasOrHadAllMembersWithLanguage rdf:resource="{ead2rico:URI-Language(@langcode)}"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<rico:hasOrHadSomeMembersWithLanguage rdf:resource="{ead2rico:URI-Language(@langcode)}"/>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:when>
+			<xsl:otherwise>
+				<!-- Unknown : use a generic, non RiC-O property -->
+				<dc:language rdf:resource="{ead2rico:URI-Language(@langcode)}" />
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 
 	<!--  ***** originalsloc (only for RecordResource) ***** -->
@@ -1048,7 +1104,58 @@
 	</xsl:template>
 	
 	<xsl:template match="genreform[@authfilenumber]">
-		<rico:hasDocumentaryFormType rdf:resource="{ead2rico:URI-DocumentaryForm(@authfilenumber, @source)}"/>
+		
+		<xsl:choose>
+			<xsl:when test="ead2rico:isRicoRecord(../..)">
+				<xsl:choose>
+					<!-- if provided genreform is a documentary form type, use corresponding property -->				
+					<xsl:when test="ead2rico:isDocumentaryFormType(.)">
+						<rico:hasDocumentaryFormType rdf:resource="{ead2rico:URI-DocumentaryFormType(@authfilenumber, @source)}"/>
+					</xsl:when>
+					<!-- if provided genreform is a record state, use corresponding property -->				
+					<xsl:when test="ead2rico:isRecordState(.)">
+						<rico:hasRecordState rdf:resource="{ead2rico:URI-RecordState(@authfilenumber, @source)}"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<!-- Output a default property and generate a warning -->
+						<dc:type><xsl:value-of select="text()" /></dc:type>
+						<rico:type><xsl:value-of select="text()" /></rico:type>
+						<xsl:value-of select="ead2rico:warning($faId, 'UNKNOWN_GENREFORM', @authfilenumber)" />
+					</xsl:otherwise>
+				</xsl:choose>				
+			</xsl:when>
+			<xsl:when test="ead2rico:isRicoRecordSet(../..)">
+
+				<xsl:choose>
+					<!-- if provided genreform is a documentary form type, use corresponding property -->				
+					<xsl:when test="ead2rico:isDocumentaryFormType(.)">
+						<!-- someMembers property as we are not sure all children have the same dft -->
+						<rico:hasOrHadSomeMembersWithDocumentaryFormType rdf:resource="{ead2rico:URI-DocumentaryFormType(@authfilenumber, @source)}"/>
+					</xsl:when>
+					<!-- if provided genreform is a record set type, use corresponding property -->				
+					<xsl:when test="ead2rico:isRecordSetType(.)">
+						<rico:hasRecordSetType rdf:resource="{ead2rico:URI-RecordSetType(@authfilenumber, @source)}"/>
+					</xsl:when>
+					<!-- if provided genreform is a record state, use corresponding property -->				
+					<xsl:when test="ead2rico:isRecordState(.)">
+						<rico:hasOrHadSomeMembersWithRecordState rdf:resource="{ead2rico:URI-RecordState(@authfilenumber, @source)}"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<!-- Output a default property and generate a warning -->
+						<dc:type><xsl:value-of select="text()" /></dc:type>
+						<rico:type><xsl:value-of select="text()" /></rico:type>
+						<xsl:value-of select="ead2rico:warning($faId, 'UNKNOWN_GENREFORM', @authfilenumber)" />
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:when>
+			<xsl:otherwise>
+				<!-- we don't know if this is a Record or a RecordSet. Output a generic dc:type property -->
+				<dc:type><xsl:value-of select="text()" /></dc:type>
+				<rico:type><xsl:value-of select="text()" /></rico:type>
+				<xsl:value-of select="ead2rico:warning($faId, 'UNKNOWN_RESOURCE_TYPE_IN_GENREFORM', ../../@level)" />
+			</xsl:otherwise>
+		</xsl:choose>
+		
 	</xsl:template>
 	
 	<xsl:template match="geogname[@authfilenumber]">
@@ -1435,6 +1542,34 @@
 		</xsl:choose>
     </xsl:template>
 		
+	<!-- Tests if a c or archdesc element corresponds to a Record -->
+	<xsl:function name="ead2rico:isRicoRecord" as="xs:boolean">
+		<xsl:param name="cOrArchdesc"/>
+		<xsl:sequence select="$cOrArchdesc/@level = 'item'"/>  
+	</xsl:function>
+
+	<!-- Tests if a c or archdesc element corresponds to a RecordSet -->
+	<xsl:function name="ead2rico:isRicoRecordSet" as="xs:boolean">
+		<xsl:param name="cOrArchdesc"/>
+
+		<!-- if archdesc without an explicit level, consider it a RecordSet -->
+		<xsl:sequence select="
+			(local-name($cOrArchdesc) = 'archdesc' and not($cOrArchdesc/@level))
+			or
+			(
+				$cOrArchdesc/@level
+				and
+				$cOrArchdesc/@level != 'item'
+				and
+				(
+					$cOrArchdesc/@level != 'otherlevel'
+					or
+					matches($cOrArchdesc/@otherlevel,$OTHERLEVEL_RECORDSET_PATTERN)
+				)
+			)
+		"/>  
+	</xsl:function>
+
 		
 	<xsl:function name="ead2rico:isDateRange" as="xs:boolean">
 		<xsl:param name="text"/>

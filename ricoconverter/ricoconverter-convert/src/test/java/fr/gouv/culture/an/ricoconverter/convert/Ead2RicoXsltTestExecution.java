@@ -137,17 +137,17 @@ public class Ead2RicoXsltTestExecution implements Test {
 						boolean comparison = (
 								node.getNodeType() != Node.ELEMENT_NODE
 								||
-								!(
+								!
+								(
 										node.getLocalName().equals("hasProvenance")
 										||
 										node.getLocalName().equals("hasOrHadHolder")
 										||
-										node.getLocalName().equals("FindingAid")
+										node.getLocalName().equals("Record")
 										||
 										node.getLocalName().equals("seeAlso")
 										||
 										node.getLocalName().equals("isOrWasRegulatedBy")
-										
 								)
 						);
 						return comparison;

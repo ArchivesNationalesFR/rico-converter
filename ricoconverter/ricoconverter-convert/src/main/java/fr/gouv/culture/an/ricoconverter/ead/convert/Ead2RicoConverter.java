@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -29,7 +30,9 @@ import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.XMLReaderFactory;
 import org.xmlunit.builder.DiffBuilder;
 import org.xmlunit.builder.Input;
+import org.xmlunit.diff.ComparisonResult;
 import org.xmlunit.diff.Diff;
+import org.xmlunit.diff.Difference;
 
 import fr.gouv.culture.an.ricoconverter.DefaultOutputFileBuilder;
 import fr.gouv.culture.an.ricoconverter.ErrorCode;
@@ -269,7 +272,7 @@ public class Ead2RicoConverter {
 					File outputFile = new File(f, "result.xml");
 					try {
 						try(FileOutputStream out = new FileOutputStream(outputFile)) {
-							log.info("Processing test : "+f.getName()+"...");
+							log.info("Processing test : '"+f.getName()+"'");
 							log.info("Overriding input folder XSLT param with "+f.getAbsolutePath());
 							this.ead2ricoTransformer.setParameter("INPUT_FOLDER", f.getAbsolutePath());
 							
@@ -293,25 +296,29 @@ public class Ead2RicoConverter {
 									&&
 									!f.getName().contains("eadheader")
 							) {
+								log.info("Will not compare some specific element names");
 								builder.withNodeFilter(node -> {						
+									
 									boolean comparison = (
 											node.getNodeType() != Node.ELEMENT_NODE
 											||
 											!(
-													node.getLocalName().equals("hasProvenance")
-													||
-													node.getLocalName().equals("heldBy")
-													||
-													node.getLocalName().equals("FindingAid")
-													||
-													node.getLocalName().equals("seeAlso")
-													||
-													node.getLocalName().equals("regulatedBy")
+												node.getLocalName().equals("hasProvenance")
+												||
+												node.getLocalName().equals("hasOrHadHolder")
+												||
+												node.getLocalName().equals("Record")
+												||
+												node.getLocalName().equals("seeAlso")
+												||
+												node.getLocalName().equals("isOrWasRegulatedBy")
 													
 											)
 									);
 									return comparison;
 								});
+							} else {
+								log.info("Comparing all element names. Test name is '"+f.getName()+"'");
 							}
 							
 							Diff diff = builder.build();
@@ -324,7 +331,11 @@ public class Ead2RicoConverter {
 //									.withTest(Input.fromFile(outputFile).build())
 //									.build();
 							
-							if(diff.hasDifferences()) {
+							List<Difference> differences = new ArrayList<>();
+							diff.getDifferences().forEach(differences::add);
+							
+							// ignore differences in tags ordering
+							if(differences.stream().anyMatch(d -> d.getResult() == ComparisonResult.DIFFERENT)) {
 								System.out.println(f.getName()+" : "+"FAILURE");
 								System.out.println(diff.toString());
 							} else {

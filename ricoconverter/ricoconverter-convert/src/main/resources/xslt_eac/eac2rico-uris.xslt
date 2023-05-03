@@ -14,54 +14,31 @@
 	xmlns:eac="urn:isbn:1-931666-33-4"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
 >
-			
-	<!-- Load LegalStatuses from companion file -->
-	<xsl:param name="VOCABULARY_LEGAL_STATUSES">../vocabularies/FRAN_RI_104_Ginco_legalStatuses.rdf</xsl:param>
-	<xsl:variable name="LEGAL_STATUSES" select="document($VOCABULARY_LEGAL_STATUSES)" />
 	
 	<!-- Load Rules from companion file -->
 	<xsl:param name="VOCABULARY_RULES">../vocabularies/referentiel_rules.rdf</xsl:param>
 	<xsl:variable name="RULES" select="document($VOCABULARY_RULES)" />
 	
 	<!-- Load Languages from companion file -->
-	<xsl:param name="VOCABULARY_LANGUAGES">../vocabularies/referentiel_languages.rdf</xsl:param>
+	<xsl:param name="VOCABULARY_LANGUAGES">../vocabularies/FRAN_RI_100_languages.rdf</xsl:param>
 	<xsl:variable name="LANGUAGES" select="document($VOCABULARY_LANGUAGES)" />
 	
 	<!-- We have both a template and a function 'URI-Agent'. The template works on the current notice, the function is used to compute the URI is relation values -->
 	<xsl:template name="URI-Agent">
-<!-- 		<xsl:value-of select="eac2rico:URI-Agent(/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType, /eac:eac-cpf/eac:control/eac:recordId)" /> -->
-		<xsl:value-of select="eac2rico:URI-Agent('agent', /eac:eac-cpf/eac:control/eac:recordId)" />
+		<xsl:value-of select="eac2rico:URI-Agent(/eac:eac-cpf/eac:control/eac:recordId)" />
 	</xsl:template>	
 	<xsl:function name="eac2rico:URI-Agent">
-		<xsl:param name="entityType" />
 		<xsl:param name="recordId" />		
-<!-- 		<xsl:value-of select="concat($entityType, '/', substring-after($recordId, 'FRAN_NP_'))" /> -->
 		<xsl:value-of select="concat('agent', '/', substring-after($recordId, 'FRAN_NP_'))" />
 	</xsl:function>	
 	
-	<!-- URI for an Agent described in an external file : lookup the file of this Agent based on its ID in the input folder, and reads the entityType in it -->
+	<!-- URI for an Agent described in an external file : now does not require to lookup the type in the external file
+		 We keep the externalEntityDescription parameter, but don't use it anymore.
+	 -->
 	<xsl:function name="eac2rico:URI-AgentExternal">
 		<xsl:param name="externalEntityId" />
 		<xsl:param name="externalEntityDescription" />
-
-		<!-- Disable the type fetching to built external Agent URI. Keeping always '/agent' -->
-		<!--
-		<xsl:variable name="externalEntityTypeValue" select="$externalEntityDescription/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:entityType" />
-
-		<xsl:variable name="externalEntityType">
-			<xsl:choose>
-				<xsl:when test="$externalEntityTypeValue">
-					<xsl:value-of select="$externalEntityTypeValue" />
-				</xsl:when>
-				<xsl:otherwise>
-					<xsl:text>agent</xsl:text>
-				</xsl:otherwise>
-			</xsl:choose>
-		</xsl:variable>
-
-		<xsl:value-of select="eac2rico:URI-Agent($externalEntityType, $externalEntityId)" />
-		-->
-		<xsl:value-of select="eac2rico:URI-Agent('agent', $externalEntityId)" />
+		<xsl:value-of select="eac2rico:URI-Agent($externalEntityId)" />
 	</xsl:function>	
 	
 	<!--  re-extract Agent ID from Agent URI -->
@@ -84,11 +61,11 @@
 		<xsl:param name="langcode" />
 		<xsl:variable name="idlocgov" select="concat('http://id.loc.gov/vocabulary/iso639-2/', $langcode)" />
 
-		<xsl:if test="not( $LANGUAGES/rdf:RDF/rico:Language[owl:sameAs/@rdf:resource = $idlocgov] )">
+		<xsl:if test="not( $LANGUAGES/rdf:RDF/skos:Concept[skos:exactMatch/@rdf:resource = $idlocgov] )">
 			<xsl:value-of select="eac2rico:warning($recordId, 'UNKNOWN_LANGUAGE', $langcode)" />
 		</xsl:if>
 
-		<xsl:value-of select="$LANGUAGES/rdf:RDF/rico:Language[owl:sameAs/@rdf:resource = $idlocgov]/@rdf:about" />
+		<xsl:value-of select="$LANGUAGES/rdf:RDF/skos:Concept[skos:exactMatch/@rdf:resource = $idlocgov]/@rdf:about" />
 	</xsl:function>
 	
 	<xsl:function name="eac2rico:URI-AgentName">
@@ -309,11 +286,9 @@
 		</xsl:choose>
 	</xsl:function>
 
-	
-	<xsl:function name="eac2rico:URI-LegalStatus">
+	<xsl:function name="eac2rico:URI-CorporateBodyType">
 		<xsl:param name="vocabularySource" />
-		<xsl:variable name="gincoId" select="concat('FRAN_RI_104.xml#', $vocabularySource)" />
-		<xsl:value-of select="$LEGAL_STATUSES/rdf:RDF/skos:Concept[ginco:id = $gincoId]/@rdf:about" />
+		<xsl:value-of select="concat('corporateBodyType/', 'FRAN_RI_104-', $vocabularySource)" />
 	</xsl:function>
 	
 	<xsl:function name="eac2rico:URI-MandateFromEli">

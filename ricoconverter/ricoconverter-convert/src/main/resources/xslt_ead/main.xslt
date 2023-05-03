@@ -17,6 +17,15 @@
 >
 	<xsl:output indent="yes" method="xml" />
 
+	<!-- ***** Stylesheet Parameters ***** -->
+
+	<!-- Pattern to be used to detect RecordSet from the @otherlevel attribute -->
+	<xsl:param name="OTHERLEVEL_RECORDSET_PATTERN">dossier|fonds|serie|série|articles|groupe-de-pieces|collection|subgrp|sbgrp</xsl:param>
+	<xsl:param name="BASE_URI">http://data.archives-nationales.culture.gouv.fr/</xsl:param>
+	<xsl:param name="AUTHOR_URI">http://data.archives-nationales.culture.gouv.fr/agent/005061</xsl:param>
+	<xsl:param name="LITERAL_LANG">fr</xsl:param>
+	<xsl:param name="BASE_URL_FOR_RELATIVE_LINKS">https://www.siv.archives-nationales.culture.gouv.fr/mm/media/download/</xsl:param>
+
 	<!-- 
 		This is the entry point stylesheet to convert EAD to RiC-O.
 		By default this XSLT does nothing by itself, and imports ead2rico.xslt which contains

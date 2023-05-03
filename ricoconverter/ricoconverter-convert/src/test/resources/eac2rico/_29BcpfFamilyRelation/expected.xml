@@ -32,7 +32,9 @@
       </rico:hasOrHadAgentName>
       <rico:groupIsSourceOfMembershipRelation
          rdf:resource="membershipRelation/050172-051622"/>
+      <rico:hasOrHadMember rdf:resource="agent/051622" />
       <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/010112-050172"/>
+      <rico:isAgentAssociatedWithAgent rdf:resource="agent/010112" />
    </rico:Agent>
    <rico:MembershipRelation rdf:about="membershipRelation/050172-051622">
       <rico:membershipRelationHasSource rdf:resource="agent/050172"/>

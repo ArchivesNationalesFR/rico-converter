@@ -8,6 +8,9 @@
 		<Arcroles>
 			<Arcrole>isControlledBy</Arcrole>
 			<Arcrole>controls</Arcrole>
+			<!-- From an associative relation config -->
+			<Arcrole currentEntityRole="source">isSuperiorOf</Arcrole>
+			<Arcrole currentEntityRole="target">isInferiorOf</Arcrole>
 		</Arcroles>
 	</AgentControlRelation>
 	<LeadershipRelation>
@@ -28,12 +31,6 @@
 			<Arcrole>hasSubdivision</Arcrole>
 		</Arcroles>
 	</GroupSubdivisionRelation>
-	<AgentSubordinationRelation>
-		<Arcroles>
-			<Arcrole currentEntityRole="source">isSuperiorOf</Arcrole>
-			<Arcrole currentEntityRole="target">isInferiorOf</Arcrole>
-		</Arcroles>
-	</AgentSubordinationRelation>
 	<MembershipRelation>
 		<Arcroles>
 			<Arcrole currentEntityRole="target">personIsMemberOf</Arcrole>

@@ -4,7 +4,7 @@
         <eadid>FRAN_IR_058220</eadid>
         <!-- the metadata of the finding aid -->
     </eadheader>
-    <archdesc>
+    <archdesc level="recordgrp">
         <did>
                 <langmaterial>
                     <language langcode="fre">Français</language>
@@ -12,7 +12,8 @@
                 </langmaterial>   
         </did>           
         <dsc>
-            <c id="c34fnm316ofc-27kf8gfnest" level="otherlevel">
+            <!-- language on a RecordResource of unknown type, single value -->
+            <c id="unknown-single" level="otherlevel">
                 <did>
                     <langmaterial>
                         <language langcode="fre">Français</language>
@@ -22,7 +23,33 @@
                     <daoloc href="FRAN_0118_274_L.msp"/>
                 </daogrp>
             </c>
-            <c id="c34fnm316ofc-27kf8gfnast" level="otherlevel">
+            <!-- language on a RecordResource of unknown type, multiple value -->
+            <c id="unknown-multiple" level="otherlevel">
+            <did>
+                <langmaterial>
+                    <language langcode="eng">Anglais</language>
+                    <language langcode="und">Unknown</language>
+                </langmaterial>
+            </did>
+            </c>
+            <!-- language on a Record -->
+            <c id="record" level="item">
+            <did>
+                <langmaterial>
+                    <language langcode="eng">Anglais</language>
+                </langmaterial>
+            </did>
+            </c>
+            <!-- language on a RecordSet, single value -->
+            <c id="recordset-single" level="series">
+            <did>
+                <langmaterial>
+                    <language langcode="eng">Anglais</language>
+                </langmaterial>
+            </did>
+            </c>
+            <!-- language on a RecordSet, multiple value -->
+            <c id="recordset-multiple" level="series">
             <did>
                 <langmaterial>
                     <language langcode="eng">Anglais</language>

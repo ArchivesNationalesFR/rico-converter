@@ -32,7 +32,9 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:agentIsTargetOfAgentTemporalRelation rdf:resource="agentTemporalRelation/111111-005205-19950518-*"/>
+      <rico:isSuccessorOf rdf:resource="agent/111111" /> 
       <rico:agentIsSourceOfAgentTemporalRelation rdf:resource="agentTemporalRelation/005205-999999-19740608-20170102"/>
+      <rico:hasSuccessor rdf:resource="agent/999999" />
    </rico:Agent>
    <rico:AgentTemporalRelation rdf:about="agentTemporalRelation/111111-005205-19950518-*">
       <rico:agentTemporalRelationHasTarget rdf:resource="agent/005205"/>
