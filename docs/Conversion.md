@@ -6,7 +6,7 @@
 
 The EAC to RiC-O conversion is driven by a set of XSLT under the `xslt_eac` folder. The conversion steps are as follow :
 
-1. **Main Conversion** :  the main conversion is implemented in `eac2rico.xslt`. It calls in turn the following other files :
+1. **Main Conversion** :  the entry point for the convertion is `main.xslt` that only contains a few parameters, and import the main conversion stylesheet : `eac2rico.xslt`. This calls in turn the following other files :
 	1. `eac2rico-uris.xslt` : defines how URIs are generated;
 	1. `eac2rico-relations.xslt` : everything related to the conversion of relations; this in turns relies on `eac2rico-keywords.xml` that defines keywords to be matched in the input files to determine the type of the relation in some cases;
 	1. `eac2rico-codes.xml` : defines error codes used for EAC conversion;
@@ -38,7 +38,7 @@ This can be useful to debug precise output of a given input EAC file.
 The EAD to RiC-O conversion is driven by a set of XSLT under the `xslt_ead` folder. The conversion steps are as follow :
 
 1. **EAD preprocessing (audience filtering)** : if a filtering on the @audience property is required (it is by default), the XSLT `ead2rico-preprocessing.xslt` is applied on the input file; otherwise, the original file is directly processed;
-2. **Main conversion** : the main conversion is implemented in `ead2rico.xslt`. It calls in turn the following other files :
+2. **Main conversion** : the entry point for the convertion is `main.xslt` that only contains a few parameters, and import the main conversion stylesheet `ead2rico.xslt`. This calls in turn the following other files :
 	- `ead2rico-uris.xslt` : defines how URIs are generated;
 	- `ead2rico-codes.xml` : defines error codes used for EAD conversion;
 	- `ead2rico-builtins.xslt` : a rewrite and extension of builtins XSLT template for EAD conversion;
