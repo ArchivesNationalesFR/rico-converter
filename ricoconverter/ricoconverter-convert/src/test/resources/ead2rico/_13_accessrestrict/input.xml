@@ -16,6 +16,8 @@
                 <accessrestrict>
                     <p>Communication libre</p>
                 </accessrestrict>
+                <!-- test on an empty accessrestrict - this should not be converted in the output -->
+                <accessrestrict><p></p></accessrestrict>
                 <daogrp>
                     <daoloc href="FRAN_0118_274_L.msp"/>
                 </daogrp>
