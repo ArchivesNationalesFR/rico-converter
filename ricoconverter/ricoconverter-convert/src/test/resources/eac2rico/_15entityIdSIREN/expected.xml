@@ -6,22 +6,21 @@
          xmlns:dc="http://purl.org/dc/elements/1.1/">
    <rico:Record rdf:about="record/005205">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
-   	<rico:describesOrDescribed rdf:resource="agent/005205"/>
+   	  <rico:describesOrDescribed rdf:resource="agent/005205"/>
       <rico:hasInstantiation>
-         <rico:Instantiation rdf:about="instantiation/005205">
-            <rico:isInstantiationOf rdf:resource="record/005205"/>
-            <dc:format xml:lang="en">text/xml</dc:format>
-            <rico:identifier>FRAN_NP_005205</rico:identifier>
-            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
-            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005205"/> 
-         </rico:Instantiation>
+      <rico:Instantiation rdf:about="instantiation/005205">
+         <rico:isInstantiationOf rdf:resource="record/005205"/>
+         <dc:format xml:lang="en">text/xml</dc:format>
+         <rico:identifier>FRAN_NP_005205</rico:identifier>
+         <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+         <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005205"/> 
+      </rico:Instantiation>
       </rico:hasInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/005205">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:isOrWasDescribedBy rdf:resource="record/005205"/>
-      <rico:identifier>SIRET 501 524 029 00086</rico:identifier>
-      <rico:identifier>SIRET 32910830200046</rico:identifier>
-      <rico:identifier>SIRET 130 008 121 00019</rico:identifier>
-   </rico:Agent>
+      <rico:identifier>SIREN 229840004</rico:identifier>
+      <rico:identifier>SIREN 313 523 235</rico:identifier>
+    </rico:Agent>
 </rdf:RDF>
