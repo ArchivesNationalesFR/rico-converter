@@ -16,19 +16,19 @@
     <!-- Cas 3 : archdesc Unknown, implicetly a RecordSet -->
     <archdesc>            
         <dsc>
-            <!-- Cas 3.1 : c RecordSet -->
+            <!-- Cas 3.1 : c RecordSet == rico:includesOrIncluded -->
             <c id="a3.1" level="subfonds">
                 <c id="a3.1-child" />
             </c>
-            <!-- Cas 3.2 c Record -->
+            <!-- Cas 3.2 c Record == rico:hasOrHadConstituent -->
             <c id="a3.2" level="item">
                 <c id="a3.2-child" />
             </c>
-            <!-- Cas 3.3 c Unknown -->
+            <!-- Cas 3.3 c Unknown == rico:hasOrHadPart -->
             <c id="a3.3">
                 <c id="a3.3-child" />
             </c>
-            <!-- Cas 3.4 c RecordPart -->
+            <!-- Cas 3.4 c Unknown with RecordPart children == rico:hasOrHadPart and child is typed as RecordPart -->
             <c id="a3.4">
                 <c id="a3.4-child" level="otherlevel" otherlevel="page-de-titre" />
             </c>
