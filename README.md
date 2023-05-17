@@ -6,24 +6,9 @@ This repository includes the converter, some examples files and documentation.
 
 The converter is written mostly using XSLT stylesheets, wrapped in a Java command-line application.
 
-
-# License
-
-This project is licensed under the terms of the CeCILL-B license (equivalent to MIT license and close to a public domain license) (see the [license file in english](license.txt) or [in french](licence.txt)).
-
-
-# Download
-
-__[Download the latest release of RiC-O converter](https://github.com/ArchivesNationalesFR/rico-converter/releases/latest)__.
-
-See the "Releases" section to select a specific version for download.
-
-
 # Documentation
 
-Download a release of the converter, unzip, and open `documentation/index.html` to get comprehensive documentation on how to run RiC-O converter.
-Markdown source of the HTML documentation can be found under [docs](https://github.com/ArchivesNationalesFR/rico-converter/tree/master/docs) (start with index.md).
-
+The documentation can be found at **https://archivesnationalesfr.github.io/rico-converter**
 
 # References
 

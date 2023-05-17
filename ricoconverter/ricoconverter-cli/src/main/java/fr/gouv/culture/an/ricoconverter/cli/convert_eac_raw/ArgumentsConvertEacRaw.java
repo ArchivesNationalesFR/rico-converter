@@ -51,41 +51,6 @@ public class ArgumentsConvertEacRaw {
 	)
 	protected File xslt = new File("xslt_eac/main.xslt");
 	
-	@Parameter(
-			names = { "xslt.BASE_URI" },
-			description = "The BASE_URI parameter for the XSLT conversion. Indicates the root of the URI that will be generated. If not set, defaults to 'http://data.archives-nationales.culture.gouv.fr/'.",
-			required = false
-	)
-	protected String xsltBaseUri = "http://data.archives-nationales.culture.gouv.fr/";
-
-	@Parameter(
-			names = { "xslt.AUTHOR_URI" },
-			description = "The AUTHOR_URI parameter for the XSLT conversion. Indicates the URI to be used as value for authors. If not set, defaults to 'http://data.archives-nationales.culture.gouv.fr/agent/005061'.",
-			required = false
-	)
-	protected String xsltAuthorUri = "http://data.archives-nationales.culture.gouv.fr/agent/005061";
-
-	@Parameter(
-			names = { "xslt.LITERAL_LANG" },
-			description = "The LITERAL_LANG parameter for the XSLT conversion. Indicates the language code that will be inserted for literal values. If not set, defaults to 'fr'.",
-			required = false
-	)
-	protected String xsltLiteralLang = "fr";
-	
-	@Parameter(
-			names = { "xslt.VOCABULARY_LEGAL_STATUSES" },
-			description = "The VOCABULARY_LEGAL_STATUSES parameter for the XSLT conversion. Indicates the path to the vocabulary file of legal statuses, relative to the XSLT. If not set, defaults to '../vocabularies/FRAN_RI_104_Ginco_legalStatuses.rdf'.",
-			required = false
-	)
-	protected String xsltVocabularyLegalStatuses = null;
-
-	@Parameter(
-			names = { "xslt.VOCABULARY_RULES" },
-			description = "The VOCABULARY_RULES parameter for the XSLT conversion. Indicates the path to the vocabulary file of rules, relative to the XSLT. If not set, defaults to '../vocabularies/referentiel_rules.rdf'.",
-			required = false
-	)
-	protected String xsltVocabularyRules = null;
-	
 	public File getInput() {
 		return input;
 	}
@@ -110,36 +75,12 @@ public class ArgumentsConvertEacRaw {
 		this.xslt = xslt;
 	}
 
-	public String getXsltBaseUri() {
-		return xsltBaseUri;
-	}
-
-	public void setXsltBaseUri(String xsltBaseUri) {
-		this.xsltBaseUri = xsltBaseUri;
-	}
-
 	public File getError() {
 		return error;
 	}
 
 	public void setError(File error) {
 		this.error = error;
-	}
-
-	public String getXsltAuthorUri() {
-		return xsltAuthorUri;
-	}
-
-	public String getXsltLiteralLang() {
-		return xsltLiteralLang;
-	}
-
-	public String getXsltVocabularyLegalStatuses() {
-		return xsltVocabularyLegalStatuses;
-	}
-
-	public String getXsltVocabularyRules() {
-		return xsltVocabularyRules;
 	}
 	
 }

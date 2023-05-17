@@ -2,6 +2,14 @@
 
 # Getting Started
 
+## Prerequisites
+
+To run the converter, you need a [Java Runtime Environment](https://www.java.com/fr/download/manual.jsp), version 8 or above.
+
+## Download the converter
+
+Download the converter from the [release section of the Github repository](https://github.com/ArchivesNationalesFR/rico-converter/releases/latest), and unzip it.
+
 ## Test drive the converter
 
 To run your first conversion :
@@ -29,12 +37,11 @@ To print the help message and get the details of all the possible commands and o
 
 In the converter release folder you will find the following directories :
 
-  - `documentation` : contains this documentation :-)
   - `input-eac` : the default folder that contains the EAC files to be converted with the `convert_eac` (or `convert_eac_raw`) command;
   - `input_ead` : the default folder that contains the EAD files to be converted with the `convert_ead` command;
   - `parameters` : contains the parameter files for each command; you need to modify these files if you want to adjust the options of a command;
   - `unit-tests` : contains the unit test files used by the `test_eac` and `test_ead` commands;
-  - `vocabularies` : contains a few controlled vocabularies needed by the conversion process : languages, rules and legal statuses;
+  - `vocabularies` : contains a few controlled vocabularies needed by the conversion process : languages, rules, record states, record set types, documentary form types;
   - `xslt_eac` : contains the XSLT files used by the `convert_eac` and `convert_eac_raw` commands to convert EAC to RiC-O; the main one is `eac2rico.xslt`;
   - `xslt_ead` : contains the XSLT files used by the `convert_ead` command to convert EAC to RiC-O; the main one is `ead2rico.xslt`;
 
@@ -52,9 +59,9 @@ Note that you can make a copy of a parameter file under a different name to save
 
 Probably the parameters you may want to adjust the more frequently are the input and output folders of the conversion commands; by default, the conversion commands works with the following folders :
 
-  - EAD conversion (command `convert_ead`) reads the files to be converted from the `input-ead` folder and outputs the result of the conversion in a folder named `output-ead-<date_of_day>`, e.g. `output-ead-20190718`;
-  - EAC conversion (command `convert_eac`) reads the files to be converted from the `input-eac` folder and outputs the result of the conversion in a folder named `output-eac-<date_of_day>`, e.g. `output-eac-20190718`;
-  - both of these command outputs files in error in a folder named `error-<date_of_day>`, e.g. `error-20190718`;
+  - EAD conversion (command `convert_ead`) reads the files to be converted from the `input-ead` folder and outputs the result of the conversion in a folder named `output-ead-<date>`, e.g. `output-ead-20190718`;
+  - EAC conversion (command `convert_eac`) reads the files to be converted from the `input-eac` folder and outputs the result of the conversion in a folder named `output-eac-<date>`, e.g. `output-eac-20190718`;
+  - both of these command outputs files in error in a folder named `error-<date>`, e.g. `error-20190718`;
   - both of the commands generate log files in the folder `log`;
   - both of the commands might create files in the folder `work`;
 

@@ -32,7 +32,7 @@ public class ConvertEad implements CommandIfc {
 				throw new RicoConverterException(ErrorCode.INPUT_IS_NOT_A_DIRECTORY, "Input parameter "+args.getInput()+" is not a directory.");
 			}
 			
-			Ead2RicoConverterFactory factory = new Ead2RicoConverterFactory(args);
+			Ead2RicoConverterFactory factory = new Ead2RicoConverterFactory();
 			Ead2RicoConverter converter = factory.createConverter(
 					args.getXslt(),
 					args.getOutput(),

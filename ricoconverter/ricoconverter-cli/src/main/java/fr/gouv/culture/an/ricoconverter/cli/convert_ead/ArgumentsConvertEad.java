@@ -82,27 +82,6 @@ public class ArgumentsConvertEad {
 	)
 	protected String filterAudienceExternal = "false";
 	
-	@Parameter(
-			names = { "xslt.BASE_URI" },
-			description = "The BASE_URI parameter for the XSLT conversion. Indicates the root of the URI that will be generated. If not set, defaults to 'http://data.archives-nationales.culture.gouv.fr/'.",
-			required = false
-	)
-	protected String xsltBaseUri = "http://data.archives-nationales.culture.gouv.fr/";
-
-	@Parameter(
-			names = { "xslt.AUTHOR_URI" },
-			description = "The AUTHOR_URI parameter for the XSLT conversion. Indicates the URI to be used as value for authors. If not set, defaults to 'http://data.archives-nationales.culture.gouv.fr/agent	/005061'.",
-			required = false
-	)
-	protected String xsltAuthorUri = "http://data.archives-nationales.culture.gouv.fr/agent/005061";
-
-	@Parameter(
-			names = { "xslt.LITERAL_LANG" },
-			description = "The LITERAL_LANG parameter for the XSLT conversion. Indicates the language code that will be inserted for literal values. If not set, defaults to 'fr'.",
-			required = false
-	)
-	protected String xsltLiteralLang = "fr";
-	
 	public File getInput() {
 		return input;
 	}
@@ -127,28 +106,12 @@ public class ArgumentsConvertEad {
 		this.xslt = xslt;
 	}
 
-	public String getXsltBaseUri() {
-		return xsltBaseUri;
-	}
-
-	public void setXsltBaseUri(String xsltBaseUri) {
-		this.xsltBaseUri = xsltBaseUri;
-	}
-
 	public File getError() {
 		return error;
 	}
 
 	public void setError(File error) {
 		this.error = error;
-	}
-
-	public String getXsltAuthorUri() {
-		return xsltAuthorUri;
-	}
-
-	public String getXsltLiteralLang() {
-		return xsltLiteralLang;
 	}
 
 	public String getSplit() {
