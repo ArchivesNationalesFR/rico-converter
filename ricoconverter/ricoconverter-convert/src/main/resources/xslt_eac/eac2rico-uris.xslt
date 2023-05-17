@@ -16,11 +16,9 @@
 >
 	
 	<!-- Load Rules from companion file -->
-	<xsl:param name="VOCABULARY_RULES">../vocabularies/referentiel_rules.rdf</xsl:param>
 	<xsl:variable name="RULES" select="document($VOCABULARY_RULES)" />
 	
 	<!-- Load Languages from companion file -->
-	<xsl:param name="VOCABULARY_LANGUAGES">../vocabularies/FRAN_RI_100_languages.rdf</xsl:param>
 	<xsl:variable name="LANGUAGES" select="document($VOCABULARY_LANGUAGES)" />
 	
 	<!-- We have both a template and a function 'URI-Agent'. The template works on the current notice, the function is used to compute the URI is relation values -->

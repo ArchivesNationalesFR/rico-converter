@@ -33,32 +33,14 @@ import net.sf.saxon.serialize.MessageWarner;
 
 public class Ead2RicoConverterFactory {
 
+	private static final String XSLT_PARAMETER_INPUT_FOLDER = "INPUT_FOLDER";
+
 	private Logger log = LoggerFactory.getLogger(Ead2RicoConverterFactory.class.getName());
 	
-	private static final String XSLT_PARAMETER_BASE_URI = "BASE_URI";
-	private static final String XSLT_PARAMETER_AUTHOR_URI = "AUTHOR_URI";
-	private static final String XSLT_PARAMETER_LITERAL_LANG = "LITERAL_LANG";
-	private static final String XSLT_PARAMETER_INPUT_FOLDER = "INPUT_FOLDER";
-	
-	private String baseRdfUri;
-	private String authorUri;
-	private String literalLang;
 	private File splitXslt = new File("xslt_ead/ead2rico-split.xslt");
 	private File preprocessingXslt = new File("xslt_ead/ead2rico-preprocessing.xslt");
 	
-	public Ead2RicoConverterFactory(ArgumentsConvertEad args) {
-		this(args.getXsltBaseUri(), args.getXsltAuthorUri(), args.getXsltLiteralLang());
-	}
-	
-	public Ead2RicoConverterFactory(
-			String baseRdfUri,
-			String authorUri,
-			String literalLang
-	) {
-		super();
-		this.baseRdfUri = baseRdfUri;
-		this.authorUri = authorUri;
-		this.literalLang = literalLang;
+	public Ead2RicoConverterFactory() {
 	}
 
 	public Ead2RicoConverter createConverter(File xslt, File outputDirectory, File errorDirectory, File inputDirectory, boolean split, boolean filterAudienceInternal, boolean filterAudienceExternal) throws RicoConverterException {
@@ -94,15 +76,6 @@ public class Ead2RicoConverterFactory {
 			throw new RicoConverterException(ErrorCode.XSLT_PARSING_ERROR, e);
 		}
 		// sets XSLT parameters
-		if(this.baseRdfUri != null) {
-			transformer.setParameter(XSLT_PARAMETER_BASE_URI, this.baseRdfUri);
-		}
-		if(this.authorUri != null) {
-			transformer.setParameter(XSLT_PARAMETER_AUTHOR_URI, this.authorUri);
-		}
-		if(this.literalLang != null) {
-			transformer.setParameter(XSLT_PARAMETER_LITERAL_LANG, this.literalLang);
-		}
 		String relativeInputFolder = xslt.getParentFile().toPath().relativize(inputDirectory.toPath()).toString();
 		log.info("Found relative path of input folder from XSLT : {}", relativeInputFolder);
 		transformer.setParameter(XSLT_PARAMETER_INPUT_FOLDER, relativeInputFolder);

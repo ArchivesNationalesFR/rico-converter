@@ -28,7 +28,7 @@ public class TestEad implements CommandIfc {
 			}
 			
 			ArgumentsConvertEad defaultArgs = new ArgumentsConvertEad();
-			Ead2RicoConverterFactory factory = new Ead2RicoConverterFactory(defaultArgs);			
+			Ead2RicoConverterFactory factory = new Ead2RicoConverterFactory();			
 			Ead2RicoConverter converter = factory.createConverter(
 					args.getXslt(),
 					defaultArgs.getOutput(),

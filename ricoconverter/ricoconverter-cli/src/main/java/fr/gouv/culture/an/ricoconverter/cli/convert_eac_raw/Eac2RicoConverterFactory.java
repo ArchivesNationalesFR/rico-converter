@@ -31,36 +31,14 @@ public class Eac2RicoConverterFactory {
 
 	private Logger log = LoggerFactory.getLogger(Eac2RicoConverterFactory.class.getName());
 	
-	private static final String XSLT_PARAMETER_BASE_URI = "BASE_URI";
-	private static final String XSLT_PARAMETER_AUTHOR_URI = "AUTHOR_URI";
-	private static final String XSLT_PARAMETER_LITERAL_LANG = "LITERAL_LANG";
 	private static final String XSLT_PARAMETER_INPUT_FOLDER = "INPUT_FOLDER";
-	private static final String XSLT_PARAMETER_VOCABULARY_LEGAL_STATUSES = "VOCABULARY_LEGAL_STATUSES";
-	private static final String XSLT_PARAMETER_VOCABULARY_RULES = "VOCABULARY_RULES";
-	
-	private String baseRdfUri;
-	private String authorUri;
-	private String literalLang;
-	private String vocabularyLegalStatuses;
-	private String vocabularyRules;
 	
 	public Eac2RicoConverterFactory(ArgumentsConvertEacRaw args) {
-		this(args.getXsltBaseUri(), args.getXsltAuthorUri(), args.getXsltLiteralLang(), args.getXsltVocabularyLegalStatuses(), args.getXsltVocabularyRules());
+		this();
 	}
 	
-	public Eac2RicoConverterFactory(
-			String baseRdfUri,
-			String authorUri,
-			String literalLang,
-			String vocabularyLegalStatuses,
-			String vocabularyRules
-	) {
+	public Eac2RicoConverterFactory() {
 		super();
-		this.baseRdfUri = baseRdfUri;
-		this.authorUri = authorUri;
-		this.literalLang = literalLang;
-		this.vocabularyLegalStatuses = vocabularyLegalStatuses;
-		this.vocabularyRules = vocabularyRules;
 	}
 
 	public Eac2RicoConverter createConverter(File xslt, File outputDirectory, File errorDirectory, File inputDirectory) throws RicoConverterException {
@@ -97,21 +75,6 @@ public class Eac2RicoConverterFactory {
 			throw new RicoConverterException(ErrorCode.XSLT_PARSING_ERROR, e);
 		}
 		// sets XSLT parameters
-		if(this.baseRdfUri != null) {
-			transformer.setParameter(XSLT_PARAMETER_BASE_URI, this.baseRdfUri);
-		}
-		if(this.authorUri != null) {
-			transformer.setParameter(XSLT_PARAMETER_AUTHOR_URI, this.authorUri);
-		}
-		if(this.literalLang != null) {
-			transformer.setParameter(XSLT_PARAMETER_LITERAL_LANG, this.literalLang);
-		}
-		if(this.vocabularyLegalStatuses != null) {
-			transformer.setParameter(XSLT_PARAMETER_VOCABULARY_LEGAL_STATUSES, this.vocabularyLegalStatuses);
-		}
-		if(this.vocabularyRules != null) {
-			transformer.setParameter(XSLT_PARAMETER_VOCABULARY_RULES, this.vocabularyRules);
-		}
 		String relativeInputFolder = xslt.getParentFile().toPath().relativize(inputDirectory.toPath()).toString();
 		log.info("Found relative path of input folder from XSLT : {}", relativeInputFolder);
 		transformer.setParameter(XSLT_PARAMETER_INPUT_FOLDER, relativeInputFolder);

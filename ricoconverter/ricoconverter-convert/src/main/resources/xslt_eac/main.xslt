@@ -18,10 +18,24 @@
 	<xsl:output indent="yes" method="xml" />
 
 	<!-- ***** Stylesheet parameters ***** -->
+
+	<!-- Indicates the root of the URI that will be generated -->
 	<xsl:param name="BASE_URI">http://data.archives-nationales.culture.gouv.fr/</xsl:param>
+
+	<!-- Indicates the URI to be used as value for authors -->
 	<xsl:param name="AUTHOR_URI">http://data.archives-nationales.culture.gouv.fr/agent/005061</xsl:param>	
+
+	<!-- Indicates the language code that will be inserted for literal values -->
 	<xsl:param name="LITERAL_LANG">fr</xsl:param>
+
+	<!-- default language to use if the record has no language -->
 	<xsl:param name="DEFAULT_LANGUAGE_IF_NO_LANGUAGECODE">fre</xsl:param>
+
+	<!-- Indicates the path to the vocabulary file of rules, relative to the XSLT -->
+	<xsl:param name="VOCABULARY_RULES">../vocabularies/referentiel_rules.rdf</xsl:param>
+
+	<!-- Indicates the path to the vocabulary file of languages, relative to the XSLT -->
+	<xsl:param name="VOCABULARY_LANGUAGES">../vocabularies/FRAN_RI_100_languages.rdf</xsl:param>
 
 	<!-- 
 		This is the entry point stylesheet to convert EAC to RiC-O.

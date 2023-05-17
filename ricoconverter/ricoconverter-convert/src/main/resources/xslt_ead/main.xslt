@@ -21,10 +21,26 @@
 
 	<!-- Pattern to be used to detect RecordSet from the @otherlevel attribute -->
 	<xsl:param name="OTHERLEVEL_RECORDSET_PATTERN">dossier|fonds|serie|série|articles|groupe-de-pieces|collection|subgrp|sbgrp</xsl:param>
+	
+	<!-- Indicates the root of the URI that will be generated -->
 	<xsl:param name="BASE_URI">http://data.archives-nationales.culture.gouv.fr/</xsl:param>
+
+	<!-- Indicates the URI to be used as value for authors -->
 	<xsl:param name="AUTHOR_URI">http://data.archives-nationales.culture.gouv.fr/agent/005061</xsl:param>
+
+	<!-- Indicates the language code that will be inserted for literal values. -->
 	<xsl:param name="LITERAL_LANG">fr</xsl:param>
+
+	<!-- Indicates the base URL to use when processing relative links -->
 	<xsl:param name="BASE_URL_FOR_RELATIVE_LINKS">https://www.siv.archives-nationales.culture.gouv.fr/mm/media/download/</xsl:param>
+
+	<xsl:param name="VOCABULARY_LANGUAGES">../vocabularies/referentiel_languages.rdf</xsl:param>
+
+	<xsl:param name="VOCABULARY_DOCUMENTARY_FORM_TYPES">../vocabularies/FRAN_RI_001_documentaryFormTypes.rdf</xsl:param>
+
+	<xsl:param name="VOCABULARY_RECORD_STATES">../vocabularies/FRAN_RI_001_recordStates.rdf</xsl:param>
+
+	<xsl:param name="VOCABULARY_RECORD_SET_TYPES">../vocabularies/FRAN_RI_001_recordSetTypes.rdf</xsl:param>
 
 	<!-- 
 		This is the entry point stylesheet to convert EAD to RiC-O.

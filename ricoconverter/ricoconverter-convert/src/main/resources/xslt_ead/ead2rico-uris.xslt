@@ -16,22 +16,18 @@
 >
 	
 	<!-- Load Languages from companion file -->
-	<xsl:param name="VOCABULARY_LANGUAGES">../vocabularies/referentiel_languages.rdf</xsl:param>
 	<xsl:variable name="LANGUAGES" select="document($VOCABULARY_LANGUAGES)" />
 
 	<!-- Load documentary form types from companion file -->
-	<xsl:param name="VOCABULARY_DOCUMENTARY_FORM_TYPES">../vocabularies/FRAN_RI_001_documentaryFormTypes.rdf</xsl:param>
 	<!-- Selects all @rdf:about in the file -->
 	<xsl:variable name="DOCUMENTARY_FORM_TYPES_URI" select="document($VOCABULARY_DOCUMENTARY_FORM_TYPES)/rdf:RDF/skos:Concept/@rdf:about" />
 
 	<!-- Load record states from companion file -->
-	<xsl:param name="VOCABULARY_RECORD_STATES">../vocabularies/FRAN_RI_001_recordStates.rdf</xsl:param>
 	<!-- Selects all @rdf:about in the file -->
 	<xsl:variable name="RECORD_STATES_URI" select="document($VOCABULARY_RECORD_STATES)/rdf:RDF/skos:Concept/@rdf:about" />
 
 
 	<!-- Load record set types from companion file -->
-	<xsl:param name="VOCABULARY_RECORD_SET_TYPES">../vocabularies/FRAN_RI_001_recordSetTypes.rdf</xsl:param>
 	<!-- Selects all @rdf:about in the file -->
 	<xsl:variable name="RECORD_SET_TYPES_URI" select="document($VOCABULARY_RECORD_SET_TYPES)/rdf:RDF/skos:Concept/@rdf:about" />
 
