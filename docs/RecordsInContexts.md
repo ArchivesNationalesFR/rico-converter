@@ -15,7 +15,7 @@ RiC has three components for now:
 
 Since the end of March 2020, __RiC-O sources are available on GitHub ([https://github.com/ICA-EGAD/RiC-O](https://github.com/ICA-EGAD/RiC-O))__, along with some examples and diagrams. You will find there the latest version of RiC-O. The GitHub repository comes with __a small information web site ([https://ica-egad.github.io/RiC-O/](https://ica-egad.github.io/RiC-O/))__; this is where you will find the latest news on RiC-O.
 
-The current versions of RiC are drafts; however, they are mature enough to be used, and quite close to __RiC-IAD, RiC-CM and RiC-O v1.0, which will be released before October 2023, as an official recommendation of ICA.__
+The current versions of RiC are drafts; however, they are mature enough to be used, and quite close to __RiC-IAD, RiC-CM and RiC-O v1.0, which will be released by the beginning of October 2023, as an official recommendation of ICA.__
 
 If you want to get the latest news on RiC, you can also get the main information from [the ICA website](https://www.ica.org/en).
 
