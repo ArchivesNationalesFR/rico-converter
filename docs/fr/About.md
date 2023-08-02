@@ -1,4 +1,4 @@
-[_Home_](index.html) > About
+[_Home_](index.md) > About
 
 # À propos de RiC-O Converter
 
@@ -83,8 +83,8 @@ pensons donc que le convertisseur RiC-O peut être utile à de nombreuses instit
 conversion des fichiers EAD est effectuée séparément de celle des fichiers EAC-CPF__. Ainsi, si vous disposez uniquement de 
 fichiers EAD ou seulement de fichiers EAC-CPF, vous pouvez l'utiliser. De plus, __le logiciel, placé sous licence 
 CeCILL-B (équivalent à la licence MIT), et peut ainsi être modifié pour s'adapter à un projet spécifique, et également 
-largement redistribué__. La documentation disponible en anglais et français (voir les [mappings](https://archivesnationalesfr.github.io/rico-converter/Mappings.html) EAD vers RiC-O et EAC-CPF vers 
-RiC-O, ainsi que les [tests unitaires](https://archivesnationalesfr.github.io/rico-converter/UnitTests.html)) a été pensée pour faciliter ces adaptations. Un bon développeur XSLT, connaissant les formats 
+largement redistribué__. La documentation disponible en anglais et français (voir les [mappings](Mappings.md) EAD vers RiC-O et EAC-CPF vers 
+RiC-O, ainsi que les [tests unitaires](UnitTests.md)) a été pensée pour faciliter ces adaptations. Un bon développeur XSLT, connaissant les formats 
 des métadonnées sources et ayant pris un peu de temps pour comprendre les principes fondamentaux de RiC-O, __peut 
 facilement adapter RiC-O Converter__. Enfin, les ANF et Sparna continuent de le développer. 
 Après RiC-O Converter 2, ils travailleront très probablement sur une version 3 de l'outil, 

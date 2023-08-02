@@ -1,4 +1,4 @@
-[_Home_](index.html) > Error Codes
+[_Home_](index.md) > Error Codes
 # Error Codes
 
 ## XSLT_PARSING_ERROR
@@ -11,7 +11,7 @@
 
 ## CONVERSION_XSLT_ERROR
   - code : 3
-  - definition : Indicates an error happened during the XSLT conversion; the error will usually contain an XSLT error code documented in the [XSLT Error Codes page](ErrorCodesXslt.html).
+  - definition : Indicates an error happened during the XSLT conversion; the error will usually contain an XSLT error code documented in the [XSLT Error Codes page](ErrorCodesXslt.md).
 
 ## CONFIGURATION_EXCEPTION
   - code : 4

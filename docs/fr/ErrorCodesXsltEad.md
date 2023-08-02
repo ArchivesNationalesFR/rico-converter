@@ -1,4 +1,4 @@
-[_Accueil_](index.html) > Les codes d'erreurs EAD XSLT
+[_Accueil_](index.md) > Les codes d'erreurs EAD XSLT
 
 # Les codes d'erreurs de conversion EAD en RiC-O
 

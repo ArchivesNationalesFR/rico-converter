@@ -1,11 +1,11 @@
-[Accueil](index.html) > Compiler RiC-O Converter
+[Accueil](index.md) > Compiler RiC-O Converter
 
 # Compiler RiC-O Converter
 
 Si vous avez simplement besoin d'ajuster le contenu des feuilles de style XSLT 
 de conversion, vous pouvez le faire sans avoir besoin de recompiler, car ces fichiers ne 
 sont pas inclus dans le convertisseur. Consultez 
-[Comment personnaliser la conversion](Customize.html) pour cela.
+[Comment personnaliser la conversion](Customize.md) pour cela.
 Cependant, vous souhaiterez peut-être modifier le comportement du Wrapper Java des XSLT. 
 Cela est nécessaire uniquement si vous souhaitez ajouter de nouvelles commandes au 
 convertisseur ou ajouter de nouveaux paramètres aux commandes. Cette documentation explique 

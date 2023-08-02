@@ -1,4 +1,4 @@
-[_Home_](index.html) > Common Problems
+[_Home_](index.md) > Common Problems
 
 # Common Problems
 
