@@ -1,4 +1,6 @@
 
+# RiC-O Converter documentation
+
 Welcome to the **RiC-O converter documentation** !
 
 --> Read the [documentation in English](en)
