@@ -1,4 +1,4 @@
-[Accueil](index.html) > Personnaliser la conversion
+[Accueil](index.md) > Personnaliser la conversion
 
 # Personnaliser la conversion
 
@@ -38,7 +38,7 @@ vous devrez peut-être ajuster `eac2rico-relations.xslt` et
 Lorsque vous ajustez des éléments dans la logique de conversion XSLT, 
 il est nécessaire d'ajouter de nouveaux tests unitaires sous 
 `unit-tests/eac2rico`, ou d'ajuster les tests unitaires existants, et 
-[exécutez la commande de tests unitaires](UnitTests.html) pour valider 
+[exécutez la commande de tests unitaires](UnitTests.md) pour valider 
 votre modification et vérifier que tout est correct.
 
 `ead2rico-arrange.xslt` et `ead2rico-deduplicate.xslt` sont utilisés 
@@ -79,5 +79,5 @@ permet d'adapter certains comportements plus facilement.
 Lorsque vous ajustez des éléments dans la logique de conversion XSLT, 
 il est nécessaire d'ajouter de nouveaux tests unitaires sous 
 `unit-tests/ead2rico`, ou d'ajuster les tests unitaires existants, et 
-[exécutez la commande de tests unitaires](UnitTests.html) pour valider 
+[exécutez la commande de tests unitaires](UnitTests.md) pour valider 
 votre modification et vérifier que tout est correct.

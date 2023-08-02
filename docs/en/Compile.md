@@ -1,8 +1,8 @@
-[_Home_](index.html) > Compile RiC-O converter
+[_Home_](index.md) > Compile RiC-O converter
 
 # Compile RiC-O converter
 
-If you simply need to adjust the content of the conversion XSLT stylesheets, you can do so without the need to recompile, as these files are not bundled inside the converter. See [How to customize the conversion](Customize.html).
+If you simply need to adjust the content of the conversion XSLT stylesheets, you can do so without the need to recompile, as these files are not bundled inside the converter. See [How to customize the conversion](Customize.md).
 You may however want to change the way the Java wrapper of the XSLTs behave. This is needed only if you want to add new commands to the converter, or add new parameters to the commands. This documentation explain how to do so.
 
 ## Obtain the source of the converter

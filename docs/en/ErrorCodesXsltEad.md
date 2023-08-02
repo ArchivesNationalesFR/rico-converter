@@ -1,4 +1,4 @@
-[_Home_](index.html) > EAD XSLT Error Codes
+[_Home_](index.md) > EAD XSLT Error Codes
 # EAD 2 RiC-O XSLT Error Codes
 
 ## Warning codes and messages

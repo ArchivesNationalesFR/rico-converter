@@ -1,4 +1,4 @@
-[_Home_](index.html) > Getting Started
+[_Home_](index.md) > Getting Started
 
 # Getting Started
 

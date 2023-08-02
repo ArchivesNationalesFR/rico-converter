@@ -1,4 +1,4 @@
-[_Accueil_](index.html) > Pour commencer
+[_Accueil_](index.md) > Pour commencer
 
 # Pour commencer
 

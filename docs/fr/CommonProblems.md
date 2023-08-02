@@ -1,4 +1,4 @@
-[Accueil](index.html) > Problèmes courants
+[Accueil](index.md) > Problèmes courants
 
 # Problèmes courants
 

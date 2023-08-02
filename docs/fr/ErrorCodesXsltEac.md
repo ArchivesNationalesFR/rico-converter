@@ -1,4 +1,4 @@
-[_Accueil_](index.html) > Les codes d'erreurs EAC XSLT
+[_Accueil_](index.md) > Les codes d'erreurs EAC XSLT
 
 # Les codes d'erreurs de conversion EAC en RiC-O
 
