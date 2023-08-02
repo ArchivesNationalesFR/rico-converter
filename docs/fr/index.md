@@ -12,9 +12,9 @@ La documentation se compose des rubriques suivantes :
 
 ### Au sujet de RiC-CM et RiC-O
 
-- [RiC-CM et RiC-O](RecordsInContexts.html) : consultez cette page pour en savoir plus sur le modèle conceptuel et l'ontologie Records in Contexts ;
-- [À propos du projet RiC-O converter](About.html) : comprendre le projet RiC-O Converter ;
-- [Mappings](Mappings.html) : découvrez comment les fichiers EAD et EAC sont mappés sur l'ontologie RiC par le convertisseur.
+- [RiC-CM et RiC-O](RecordsInContexts) : consultez cette page pour en savoir plus sur le modèle conceptuel et l'ontologie Records in Contexts ;
+- [À propos du projet RiC-O converter](About) : comprendre le projet RiC-O Converter ;
+- [Mappings](Mappings) : découvrez comment les fichiers EAD et EAC sont mappés sur l'ontologie RiC par le convertisseur.
 
 ### La documentation technique de RiC-O converter
 
@@ -33,7 +33,7 @@ La documentation se compose des rubriques suivantes :
 
 ## Licence
 
-Ce projet est distribué sous les termes de la licence CeCILL-B (équivalente à une licence MIT et proche d'une licence du domaine public) (voir le [fichier de licence en anglais](license.txt) ou [en français](licence.txt)).
+Ce projet est distribué sous les termes de la licence CeCILL-B (équivalente à une licence MIT et proche d'une licence du domaine public) (voir le [fichier de licence en anglais](../en/license.txt) ou [en français](licence.txt)).
 
 ## Contact
 
