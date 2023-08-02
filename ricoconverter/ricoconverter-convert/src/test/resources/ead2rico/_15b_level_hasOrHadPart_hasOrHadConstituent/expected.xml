@@ -59,6 +59,7 @@
       <rico:includesOrIncluded rdf:resource="recordResource/058220-a3.1" />
       <rico:includesOrIncluded rdf:resource="recordResource/058220-a3.2" />
       <rico:includesOrIncluded rdf:resource="recordResource/058220-a3.3" />
+      <rico:includesOrIncluded rdf:resource="recordResource/058220-a3.4" />
     </rico:RecordResource>
 
     <!-- cas 3.1 : c RecordSet -->
@@ -128,5 +129,31 @@
           </rico:RecordResource>
         </rico:hasOrHadPart>
     </rico:RecordResource>
-      
+
+    <!-- cas 3.4 : c RecordPart -->
+    <rico:RecordResource rdf:about="recordResource/058220-a3.4">
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/> 
+        <rico:hasInstantiation>
+          <rico:Instantiation rdf:about="instantiation/058220-a3.4-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/058220-a3.4"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/a3.4"/>
+          </rico:Instantiation>
+        </rico:hasInstantiation>
+        <rico:hasOrHadPart>
+          <rico:RecordResource rdf:about="recordResource/058220-a3.4-child">
+            <rico:isOrWasPartOf rdf:resource="recordResource/058220-a3.4"/>
+            <!-- This is a RecordPart, hence using isOrWasPartOf -->
+            <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordPart"/>
+            <dc:type>page-de-titre</dc:type>
+            <rico:type>page-de-titre</rico:type>  
+            <rico:hasInstantiation>
+                <rico:Instantiation rdf:about="instantiation/058220-a3.4-child-i1">
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-a3.4-child"/>
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/a3.4-child"/>
+            </rico:Instantiation>
+            </rico:hasInstantiation>
+          </rico:RecordResource>
+        </rico:hasOrHadPart>
+    </rico:RecordResource>
+
 </rdf:RDF>

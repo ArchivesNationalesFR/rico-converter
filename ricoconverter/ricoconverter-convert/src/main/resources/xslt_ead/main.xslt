@@ -21,6 +21,7 @@
 
 	<!-- Pattern to be used to detect RecordSet from the @otherlevel attribute -->
 	<xsl:param name="OTHERLEVEL_RECORDSET_PATTERN">dossier|fonds|serie|série|articles|groupe-de-pieces|collection|subgrp|sbgrp</xsl:param>
+	<xsl:param name="OTHERLEVEL_RECORDPART_PATTERN">page-de-titre|groupe-de-page|groupes-de-page|groupe-depage</xsl:param>
 	
 	<!-- Indicates the root of the URI that will be generated -->
 	<xsl:param name="BASE_URI">http://data.archives-nationales.culture.gouv.fr/</xsl:param>

@@ -730,6 +730,9 @@
 		        	<!--  'otherlevel' is already matched above -->
 		        </xsl:choose>
 			</xsl:when>
+			<xsl:when test="ead2rico:isRicoRecordPart(.)">
+				<rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordPart"/>
+			</xsl:when>
 			<xsl:otherwise>
 				<!-- nothing -->
 			</xsl:otherwise>
@@ -737,13 +740,10 @@
 	</xsl:template>
 
 	<!-- ***** @otherlevel processing : this is used when determining the type in a function ***** -->
-	<!-- ***** but we need to generate a dc:type + rico:type in case it is unknown ***** -->
+	<!-- ***** but we need to generate a dc:type + rico:type systematically ***** -->
 	<xsl:template match="@otherlevel">
-		<xsl:if test="not(matches(.,$OTHERLEVEL_RECORDSET_PATTERN))">
-			<xsl:message><xsl:value-of select="concat($faId,' - id ', ../@id ,' - ','UNKNOWN_VALUE_OF_OTHERLEVEL',' : ',.)" /></xsl:message>
-			<dc:type><xsl:value-of select="." /></dc:type>
-			<rico:type><xsl:value-of select="." /></rico:type>
-		</xsl:if>
+		<dc:type><xsl:value-of select="." /></dc:type>
+		<rico:type><xsl:value-of select="." /></rico:type>
 	</xsl:template>
 
 	<!-- ***** custodhist / acqinfo processing for instantiation only ***** -->
@@ -1580,6 +1580,20 @@
 					matches($cOrArchdesc/@otherlevel,$OTHERLEVEL_RECORDSET_PATTERN)
 				)
 			)
+		"/>  
+	</xsl:function>
+
+	<!-- Tests if a c or archdesc element corresponds to a RecordPart -->
+	<xsl:function name="ead2rico:isRicoRecordPart" as="xs:boolean">
+		<xsl:param name="cOrArchdesc"/>
+
+		<!-- if archdesc without an explicit level, consider it a RecordSet -->
+		<xsl:sequence select="
+			$cOrArchdesc/@level = 'otherlevel'
+			and
+			$cOrArchdesc/@otherlevel
+			and
+			matches($cOrArchdesc/@otherlevel,$OTHERLEVEL_RECORDPART_PATTERN)
 		"/>  
 	</xsl:function>
 
