@@ -5,7 +5,7 @@
 
 
 ----
-
+<br />
 
 ![French flag](https://github.com/madebybowtie/FlagKit/raw/master/Assets/PNG/FR.png) Bienvenue sur la **documentation du convertisseur RiC-O** !
 
