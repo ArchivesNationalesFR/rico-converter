@@ -94,7 +94,7 @@ Nous espérons qu'une communauté plus large se formera pour poursuivre les dév
 ## Informations supplémentaires 
 
 Un __article en anglais sur RiC-O Converter a été accepté en janvier 2023 par le Journal on Computing and Cultural 
-Heritage__ (JOCCH) et est maintenant disponible en ligne : voir [https://doi.org/10.1145/3583592](https://doi.org/10.1145/3583592). 
+Heritage__ (JOCCH) et est désormais publié dans le volume 16, n° 3 (Septembre 2023) de cette revue : voir [https://doi.org/10.1145/3583592](https://doi.org/10.1145/3583592). 
 Cet article mentionne le [démonstrateur ANF Sparnatural](https://sparna-git.github.io/sparnatural-demonstrateur-an/), 
 qui propose une interface conviviale pour explorer et visualiser un graphe de connaissances d'environ 59 millions 
 de triplets RDF/RiC-O produits à l'aide de RiC-O Converter (les données sont disponibles [ici](https://github.com/ArchivesNationalesFR/Sparnatural_prototype_data)).
