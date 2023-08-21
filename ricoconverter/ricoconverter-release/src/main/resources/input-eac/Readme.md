@@ -1,6 +1,6 @@
 # Example EAC-CPF files
 
-Date of this example set: April 16, 2020
+Date of this example set: August 21, 2023
 
 Language(s) used: French
 
@@ -14,4 +14,6 @@ These source files have been published online. You can access an HTML version of
 
 If you want to access an HTML version (then a PDF version) of one of the authority records, type its permalink, using the following pattern: https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/{AR_Id}, where '{AR_id}' is the name of the EAC-CPF file (and the value of the /eac-cpf/control/recordId element in the file).
 
-These source files are provided as example files but __do not represent the variety of the 15.000 authority records that the ANF hold__, or always conform to the local best practice as recommended in the application guidelines used in the ANF. They have been chosen because they are linked to the EAD files also provided, and because an earlier version of them was used for the French RDF/RiC proof of concept released in February 2018 ([PIAAF](https://piaaf.demo.logilab.fr)).
+These source files are provided as example files but __do not represent the variety of the 16.000 authority records that the ANF have created and manage__, or always conform to the local best practice as recommended in the application guidelines used in the ANF. They have been chosen because they are linked to the EAD files also provided, and because an earlier version of most of them was used for the French RDF/RiC proof of concept released in February 2018 ([PIAAF](https://piaaf.demo.logilab.fr)).
+
+You can also access these files (or a different version of them), and the whole of the authority records on archival creators created and managed by the AnF, in XML/EAC-CPF and in RDF, here: [https://github.com/ArchivesNationalesFR/Referentiels](https://github.com/ArchivesNationalesFR/Referentiels) (in the agents/producteurs subfolder of the main branch or of the release).
