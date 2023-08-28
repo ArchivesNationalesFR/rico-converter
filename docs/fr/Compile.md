@@ -2,7 +2,7 @@
 
 # Compiler RiC-O Converter
 
-Si vous avez simplement besoin d'ajuster le contenu des feuilles de style XSLT 
+Si vous avez simplement besoin d’ajuster le contenu des feuilles de style XSLT 
 de conversion, vous pouvez le faire sans avoir besoin de recompiler, car ces fichiers ne 
 sont pas inclus dans le convertisseur. Consultez 
 [Comment personnaliser la conversion](Customize.md) pour cela.
@@ -17,7 +17,7 @@ Pour compiler, vous devez obtenir les fichiers sources du projet.
 
 ## Prérequis : Java et Maven
 
-Vous avez besoin d'un [JDK](https://jdk.java.net/) installé, 
+Vous avez besoin d’un [JDK](https://jdk.java.net/) installé, 
 de la version 1.8 ou une version plus récente, sur la machine sur laquelle vous 
 souhaitez compiler le convertisseur, ainsi que de [Maven](https://maven.apache.org/).
 

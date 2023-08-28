@@ -1,8 +1,8 @@
-[_Accueil_](index.md) > Les codes d'erreurs EAD XSLT
+[_Accueil_](index.md) > Les codes d’erreurs EAD XSLT
 
-# Les codes d'erreurs de conversion EAD en RiC-O
+# Les codes d’erreurs de conversion EAD en RiC-O
 
-## Codes et messages d'avertissement
+## Codes et messages d’avertissement
 
 ### ORIGINALSLOC_LOOKS_LIKE_A_FILE_PATH
   - code : ORIGINALSLOC_LOOKS_LIKE_A_FILE_PATH
@@ -27,7 +27,7 @@
 ### UNKNOWN_RESOURCE_TYPE_IN_GENREFORM
   - code : UNKNOWN_RESOURCE_TYPE_IN_GENREFORM
   - message : Found @genreform, but could not reliably determine type of resource (Record or RecordSet or RecordPart), thus ignoring @genreform.
-  - [traduction du message] : Un attribut *@genreform* a bien été trouvé, mais ne pouvant pas déterminer de manière fiable le type de ressource (*Record* ou *RecordSet* ou *RecordPart*), l'attribut *@genreform* a été ignoré.
+  - [traduction du message] : Un attribut *@genreform* a bien été trouvé, mais ne pouvant pas déterminer de manière fiable le type de ressource (*Record* ou *RecordSet* ou *RecordPart*), l’attribut *@genreform* a été ignoré.
 
 ### UNKNOWN_RESOURCE_TYPE_OF_C
   - code : UNKNOWN_RESOURCE_TYPE_OF_C
@@ -35,9 +35,9 @@
   - [traduction du message] : Impossible de déterminer de manière fiable le type de *c* (*Record* ou *RecordSet* ou *RecordPart*), *hasOrHadPart* a été utilisé pour faire référence aux éléments enfants.
 
 
-## Codes et messages d'erreurs
+## Codes et messages d’erreurs
 
 ### DAOLOC_CONTAINS_SPACE
   - code : DAOLOC_CONTAINS_SPACE
   - message : daoloc contains a space character
-  - [traduction du message] : *daoloc* contient un caractère d'espacement
+  - [traduction du message] : *daoloc* contient un caractère d’espacement

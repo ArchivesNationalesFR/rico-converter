@@ -9,13 +9,13 @@
 - Chaque test unitaire correspond à un sous-dossier qui présente la même structure :
 	- `input.xml` est un petit fichier EAC-CPF ou EAD ;
 	- `expected.xml` est le résultat attendu de la conversion par la feuille de style XSL ;
-	- `result.xml` est généré lors de l'exécution des tests unitaires.
+	- `result.xml` est généré lors de l’exécution des tests unitaires.
 - Le journal de la console affiche un message "success"/"FAILURE" pour chaque test unitaire exécuté.
 
 
 ### Certains éléments XML sont ignorés
 
-Comme les éléments XML testés représentent une petite fraction de l'ensemble du contenu de chaque document XML, et pour faciliter la maintenance des tests unitaires, certains éléments XML ne sont _pas vérifiés_ pour chaque test unitaire. **Cela signifie que le fichier `expected.xml` peut légèrement différer des résultats de conversion réels.** Les éléments XML qui peuvent différer sont les suivants :
+Comme les éléments XML testés représentent une petite fraction de l’ensemble du contenu de chaque document XML, et pour faciliter la maintenance des tests unitaires, certains éléments XML ne sont _pas vérifiés_ pour chaque test unitaire. **Cela signifie que le fichier `expected.xml` peut légèrement différer des résultats de conversion réels.** Les éléments XML qui peuvent différer sont les suivants :
 
 - rico:hasProvenance
 - rico:heldBy
