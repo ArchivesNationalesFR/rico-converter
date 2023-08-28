@@ -35,7 +35,7 @@ Nous donnons ci-dessous une liste des éléments EAD 2002 que RiC-O Converter ne
 
 ## EAC vers RiC-O
 
-Vous trouverez un point d’entrée, sous la forme d’une documentation non technique, sur la manière dont RiC-O Converter fait correspondre le contenu des fichiers EAC-CPF avec les composants de RiC-O 0.2, dans le fichier Excel [EAC_to_RiC-O_0.2_documentation.xlsx](../EAC_to_RiC-O_0.2_documentation.xlsx).
+Vous trouverez un point d’entrée, sous la forme d’une documentation non technique, sur la manière dont RiC-O Converter fait correspondre le contenu des fichiers EAC-CPF avec les composants de RiC-O 0.2, dans le fichier Excel [EAC_to_Ric-O_0.2_documentation.xlsx](../EAC_to_Ric-O_0.2_documentation.xlsx).
 
 Les spécifications précises et formelles de la conversion des fichiers EAC-CPF sont fournies dans le répertoire [Unit Tests](UnitTests.md), sous-répertoire `unit-tests/eac2rico`.
 

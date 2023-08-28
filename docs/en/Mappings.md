@@ -36,7 +36,7 @@ The following is a list of EAD 2002 elements that RiC-O converter does not proce
 
 ## EAC to RiC-O
 
-An entry point and informal documentation of how the ricoconverter maps EAC-CPF files to RiC-O v0.1 can be read in the Excel file [EAC_to_RiC-O_0.2_documentation.xlsx](../EAC_to_RiC-O_0.2_documentation.xlsx).
+An entry point and informal documentation of how the ricoconverter maps EAC-CPF files to RiC-O v0.1 can be read in the Excel file [EAC_to_Ric-O_0.2_documentation.xlsx](../EAC_to_Ric-O_0.2_documentation.xlsx).
 
 The precise and formal specifications are given in the [Unit Tests](UnitTests.md), under `unit-tests/eac2rico`.
 
