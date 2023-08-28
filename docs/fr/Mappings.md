@@ -4,7 +4,7 @@
 
 ## EAD vers RiC-O
 
-Une documentation sur la manière dont RiC-O Converter fait correspondre le contenu des fichiers EAD 2002 avec les composants de RiC-O 0.2 se trouve dans le fichier Excel [EAD_to_RiC-O_0.2_documentation.xlsx](../EAD_to_RiC-O_0.2_documentation.xlsx). Ce tableau de correspondance est utile pour faire le lien entre EAD et RiC-O mais c'est pas une spécification formelle et ne documente pas tous les cas.
+Une documentation sur la manière dont RiC-O Converter fait correspondre le contenu des fichiers EAD 2002 avec les composants de RiC-O 0.2 se trouve dans le fichier Excel [EAD_to_RiC-O_0.2_documentation.xlsx](../EAD_to_RiC-O_0.2_documentation.xlsx). Ce tableau de correspondance est utile pour faire le lien entre EAD et RiC-O mais n’est pas une spécification formelle et ne documente pas tous les cas.
 
 Les spécifications précises et formelles de la conversion des fichiers EAD 2002 sont fournies sous la forme de tests unitaires dans le répertoire [Unit Tests](UnitTests.md), sous-répertoire `unit-tests/ead2rico`.
 
@@ -35,7 +35,7 @@ Nous donnons ci-dessous une liste des éléments EAD 2002 que RiC-O Converter ne
 
 ## EAC vers RiC-O
 
-Une documentation non technique, sur la manière dont RiC-O Converter fait correspondre le contenu des fichiers EAC-CPF avec les composants de RiC-O 0.2 se trouve dans le fichier Excel [EAC_to_Ric-O_0.2_documentation.xlsx](../EAC_to_Ric-O_0.2_documentation.xlsx). Ce tableau de correspondance est utile pour faire le lien entre EAC et RiC-O mais c'est pas une spécification formelle et ne documente pas tous les cas.
+Une documentation non technique, sur la manière dont RiC-O Converter fait correspondre le contenu des fichiers EAC-CPF avec les composants de RiC-O 0.2 se trouve dans le fichier Excel [EAC_to_Ric-O_0.2_documentation.xlsx](../EAC_to_Ric-O_0.2_documentation.xlsx). Ce tableau de correspondance est utile pour faire le lien entre EAC et RiC-O mais n’est pas une spécification formelle et ne documente pas tous les cas.
 
 Les spécifications précises et formelles de la conversion des fichiers EAC-CPF sont fournies sous forme de tests unitaires dans le répertoire [Unit Tests](UnitTests.md), sous-répertoire `unit-tests/eac2rico`.
 
