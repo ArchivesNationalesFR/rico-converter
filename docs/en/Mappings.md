@@ -5,9 +5,9 @@
 
 ## EAD to RiC-O
 
-An entry point and informal documentation of how the ricoconverter maps EAD 2002 files to RiC-O v0.2 can be read in the Excel file [EAD_to_RiC-O_0.2_documentation.xlsx](../EAD_to_RiC-O_0.2_documentation.xlsx).
+A documentation of how the ricoconverter maps EAD 2002 files to RiC-O v0.2 can be read in the Excel file [EAD_to_RiC-O_0.2_documentation.xlsx](../EAD_to_RiC-O_0.2_documentation.xlsx). This mapping table is useful to transition from EAD to RiC-O, but this is not a formal specification and does not document all precise cases.
 
-The precise and formal specifications are given in the [Unit Tests](UnitTests.md), under `unit-tests/ead2rico`.
+The precise and formal specifications are given in the form of unit tests in the [Unit Tests](UnitTests.md), under `unit-tests/ead2rico`.
 
 The following is a list of EAD 2002 elements that RiC-O Converter does not process, because this was considered irrelevant in the RDF world:
 
@@ -36,9 +36,9 @@ The following is a list of EAD 2002 elements that RiC-O converter does not proce
 
 ## EAC to RiC-O
 
-An entry point and informal documentation of how the ricoconverter maps EAC-CPF files to RiC-O v0.1 can be read in the Excel file [EAC_to_Ric-O_0.2_documentation.xlsx](../EAC_to_Ric-O_0.2_documentation.xlsx).
+A documentation of how the ricoconverter maps EAC-CPF files to RiC-O v0.2 can be read in the Excel file [EAC_to_Ric-O_0.2_documentation.xlsx](../EAC_to_Ric-O_0.2_documentation.xlsx). This mapping table is useful to transition from EAC to RiC-O, but this is not a formal specification and does not document all precise cases.
 
-The precise and formal specifications are given in the [Unit Tests](UnitTests.md), under `unit-tests/eac2rico`.
+The precise and formal specifications are given in the form of unit tests in the [Unit Tests](UnitTests.md), under `unit-tests/eac2rico`.
 
 The ANF use almost all the EAC-CPF elements. However a few elements are not mapped to RiC-O, and not processed by the current version of RiC-O Converter. Let us quote the following ones, that the ANF do not use for now:
 

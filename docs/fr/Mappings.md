@@ -4,9 +4,9 @@
 
 ## EAD vers RiC-O
 
-Vous trouverez un point d’entrée, sous la forme d’une documentation non technique, sur la manière dont RiC-O Converter fait correspondre le contenu des fichiers EAD 2002 avec les composants de RiC-O 0.2, dans le fichier Excel [EAD_to_RiC-O_0.2_documentation.xlsx](../EAD_to_RiC-O_0.2_documentation.xlsx).
+Une documentation sur la manière dont RiC-O Converter fait correspondre le contenu des fichiers EAD 2002 avec les composants de RiC-O 0.2 se trouve dans le fichier Excel [EAD_to_RiC-O_0.2_documentation.xlsx](../EAD_to_RiC-O_0.2_documentation.xlsx). Ce tableau de correspondance est utile pour faire le lien entre EAD et RiC-O mais c'est pas une spécification formelle et ne documente pas tous les cas.
 
-Les spécifications précises et formelles de la conversion des fichiers EAD 2002 sont fournies dans le répertoire [Unit Tests](UnitTests.md), sous-répertoire `unit-tests/ead2rico`.
+Les spécifications précises et formelles de la conversion des fichiers EAD 2002 sont fournies sous la forme de tests unitaires dans le répertoire [Unit Tests](UnitTests.md), sous-répertoire `unit-tests/ead2rico`.
 
 RiC-O Converter ne prend pas en compte les éléments EAD 2002 suivants, car cela a été considéré non pertinent dans l’univers RDF : 
 
@@ -35,9 +35,9 @@ Nous donnons ci-dessous une liste des éléments EAD 2002 que RiC-O Converter ne
 
 ## EAC vers RiC-O
 
-Vous trouverez un point d’entrée, sous la forme d’une documentation non technique, sur la manière dont RiC-O Converter fait correspondre le contenu des fichiers EAC-CPF avec les composants de RiC-O 0.2, dans le fichier Excel [EAC_to_Ric-O_0.2_documentation.xlsx](../EAC_to_Ric-O_0.2_documentation.xlsx).
+Une documentation non technique, sur la manière dont RiC-O Converter fait correspondre le contenu des fichiers EAC-CPF avec les composants de RiC-O 0.2 se trouve dans le fichier Excel [EAC_to_Ric-O_0.2_documentation.xlsx](../EAC_to_Ric-O_0.2_documentation.xlsx). Ce tableau de correspondance est utile pour faire le lien entre EAC et RiC-O mais c'est pas une spécification formelle et ne documente pas tous les cas.
 
-Les spécifications précises et formelles de la conversion des fichiers EAC-CPF sont fournies dans le répertoire [Unit Tests](UnitTests.md), sous-répertoire `unit-tests/eac2rico`.
+Les spécifications précises et formelles de la conversion des fichiers EAC-CPF sont fournies sous forme de tests unitaires dans le répertoire [Unit Tests](UnitTests.md), sous-répertoire `unit-tests/eac2rico`.
 
 Les ANF utilisent la très grande majorité des éléments EAC-CPF. Cependant quelques éléments ne sont actuellement pas traités par la version actuelle de RiC-O Converter. Voici une liste de ces éléments, que les ANF n’utilisent pas pour le moment :
 
