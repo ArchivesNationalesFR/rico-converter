@@ -5,7 +5,7 @@
 
 ## EAD to RiC-O
 
-An entry point and informal documentation of how the ricoconverter maps EAD 2002 files to RiC-O v0.1 can be read in the Excel file [EAD to Ric-O 0.1 documentation.xlsx](../EAD_to_Ric-O_0.1_documentation.xlsx).
+An entry point and informal documentation of how the ricoconverter maps EAD 2002 files to RiC-O v0.2 can be read in the Excel file [EAD_to_RiC-O_0.2_documentation.xlsx](../EAD_to_RiC-O_0.2_documentation.xlsx).
 
 The precise and formal specifications are given in the [Unit Tests](UnitTests.md), under `unit-tests/ead2rico`.
 
@@ -19,6 +19,7 @@ The following is a list of EAD 2002 elements that RiC-O converter does not proce
 
 - abbr and expan;
 - abstract;
+- address (in publicationstmt);
 - bioghist (the ANF most often use EAC-CPF files for encoding the biography and history of the agents that created or accumulated the archival fonds);
 - blockquote;
 - chronlist;
@@ -26,20 +27,25 @@ The following is a list of EAD 2002 elements that RiC-O converter does not proce
 - fileplan;
 - listhead;
 - materialspec;
+- name;
 - phystech;
 - prefercite;
-- table.
-
+- sponsor (in titlestmt);
+- table (and its subelements);
+- title.
 
 ## EAC to RiC-O
 
-An entry point and informal documentation of how the ricoconverter maps EAC-CPF files to RiC-O v0.1 can be read in the Excel file [EAC to Ric-O 0.1 documentation.xlsx](../EAC_to_Ric-O_0.1_documentation.xlsx).
+An entry point and informal documentation of how the ricoconverter maps EAC-CPF files to RiC-O v0.1 can be read in the Excel file [EAC_to_RiC-O_0.2_documentation.xlsx](../EAC_to_RiC-O_0.2_documentation.xlsx).
 
 The precise and formal specifications are given in the [Unit Tests](UnitTests.md), under `unit-tests/eac2rico`.
 
 The ANF use almost all the EAC-CPF elements. However a few elements are not mapped to RiC-O, and not processed by the current version of RiC-O Converter. Let us quote the following ones, that the ANF do not use for now:
 
 - the subelements of [nameEntry](https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-nameEntry) (except part and useDates);
+- [nameEntryParallel] (https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-nameEntryParallel);
+- [languageUsed] (https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-languageUsed);
+- [localDescription] (https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-localDescription);
 - [abstract](https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-abstract) and [chronList](https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-chronList) (subelements of biogHist);
 - [address](https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-address) (subelement of place);
 - [objectBinWrap](https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-objectBinWrap),  [objectXMLWrap](https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-objectXMLWrap);
