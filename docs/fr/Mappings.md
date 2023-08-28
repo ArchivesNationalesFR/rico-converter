@@ -41,13 +41,13 @@ Les spécifications précises et formelles de la conversion des fichiers EAC-CPF
 
 Les ANF utilisent la très grande majorité des éléments EAC-CPF. Cependant quelques éléments ne sont actuellement pas traités par la version actuelle de RiC-O Converter. Voici une liste de ces éléments, que les ANF n’utilisent pas pour le moment :
 
-- les sous-éléments de [nameEntry](https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-nameEntry) (à l’exception de part et de useDates);
-- [nameEntryParallel](https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-nameEntryParallel);
-- [languageUsed](https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-languageUsed);
-- [localDescription](https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-localDescription);
-- [abstract](https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-abstract) et [chronList](https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-chronList) (sous-éléments de biogHist);
-- [address](https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-address) (sous-élément de place);
-- [objectBinWrap](https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-objectBinWrap),  [objectXMLWrap](https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-objectXMLWrap);
+- les sous-éléments de [nameEntry](https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-nameEntry) (à l’exception de part et de useDates) ;
+- [nameEntryParallel](https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-nameEntryParallel) ;
+- [languageUsed](https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-languageUsed) ;
+- [localDescription](https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-localDescription) ;
+- [abstract](https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-abstract) et [chronList](https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-chronList) (sous-éléments de biogHist) ;
+- [address](https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-address) (sous-élément de place) ;
+- [objectBinWrap](https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-objectBinWrap),  [objectXMLWrap](https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-objectXMLWrap) ;
 - [functionRelation](https://eac.staatsbibliothek-berlin.de/schema/taglibrary/cpfTagLibrary2019_EN.html#elem-functionRelation).
 
 
