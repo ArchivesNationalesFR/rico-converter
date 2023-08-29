@@ -65,8 +65,11 @@
 				
 				<xsl:choose>
 					<!-- if this is the only relation with an inverse missing, issue a warning -->
+					<!-- But not for AgentOriginationRelation -->
 					<xsl:when test="count(following-sibling::*[@rdf:about = $thisUri]) = 0">
-						<xsl:value-of select="eac2rico:warning('', 'RELATION_IN_ONE_DIRECTION_ONLY', $thisUri)" />
+						<xsl:if test="local-name(.) != AgentOriginationRelation">
+							<xsl:value-of select="eac2rico:warning('', 'RELATION_IN_ONE_DIRECTION_ONLY', $thisUri)" />
+						</xsl:if>
 					</xsl:when>
 					<!-- if the relation is in the file more than twice, issued a warning -->
 					<xsl:when test="count(following-sibling::*[@rdf:about = $thisUri]) > 1">
