@@ -552,9 +552,9 @@
 				<!-- pick also userestrict -->
 				<xsl:apply-templates select="(ancestor::*[self::c or self::archdesc])[last()]/userestrict" mode="instantiation" />
 				
-				<!-- pick also did/repository or did/unitid[@repositorycode = 'FRDAFAN'] -->
+				<!-- pick also did/repository or did/unitid -->
 				<xsl:apply-templates select="(ancestor::*[self::c or self::archdesc])[last()]/did/repository" mode="instantiation" />
-				<xsl:apply-templates select="(ancestor::*[self::c or self::archdesc])[last()]/did/unitid[@repositorycode = 'FRDAFAN']" mode="instantiation" />
+				<xsl:apply-templates select="(ancestor::*[self::c or self::archdesc])[last()]/did/unitid" mode="instantiation" />
 				
 				<!-- We know it is a digital copy of the first instantiation -->
 				<rico:isDerivedFromInstantiation rdf:resource="{ead2rico:URI-Instantiation(concat($recordResourceId, '-i1'))}"/>
@@ -910,6 +910,11 @@
 				<rico:identifier><xsl:value-of select="." /></rico:identifier>
 			</xsl:otherwise>
 		</xsl:choose>
+
+		<!-- add hasOrHadHolder if code is FRDAFAN - there is a corresponding template for record resources below -->
+		<xsl:if test="@repositorycode = 'FRDAFAN'">
+			<rico:hasOrHadHolder rdf:resource="agent/005061"/>
+		</xsl:if>
 	</xsl:template>
 	
 	<!-- ***** did/unittitle for RecordResource and Instantiations ***** -->
@@ -1049,7 +1054,8 @@
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
-	<xsl:template match="unitid[@repositorycode = 'FRDAFAN']" mode="#all">
+
+	<xsl:template match="unitid[@repositorycode = 'FRDAFAN']">
 		<rico:hasOrHadHolder rdf:resource="agent/005061"/>
 	</xsl:template>
 
