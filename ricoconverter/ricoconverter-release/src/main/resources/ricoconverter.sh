@@ -14,7 +14,13 @@ then
 	parameterFile=${parameterFile:-$parameterFile_default}
 fi
 
-export fullCommandLine="java -Xmx1200M -Xms1200M -jar ricoconverter-cli-${project.version}-onejar.jar $command @$parameterFile"
+parameterFileOption=""
+if [ $parameterFile != "" ]
+then
+	parameterFileOption=@$parameterFile
+fi
+
+export fullCommandLine="java -Xmx1200M -Xms1200M -jar ricoconverter-cli-${project.version}-onejar.jar $command @$parameterFileOption"
 echo $fullCommandLine
 $fullCommandLine
 read -p "Appuyer sur Entrée pour continuer ..."

@@ -1,7 +1,7 @@
 @echo off
 PATH %PATH%;%JAVA_HOME%\bin\
 
-ECHO :: Welcome to Ric-O Converter ${project.version} ::
+ECHO :: Welcome to Ric-O Converter 2.0.0-beta ::
 ECHO.
 
 REM Test if java is installed
@@ -23,12 +23,17 @@ if %jver% LSS 18 (
 SET command=convert_eac
 set /p command=Enter command to execute (convert_eac, convert_eac_raw, convert_ead, test_eac, test_ead, version, help) [press Enter for "%command%"]:
 
-SET parameterFile=parameters/%command%.properties
-if NOT %command% == "help" (
-	set /p parameterFile=Enter parameter file location [press Enter for "%parameterFile%"]:
+SET parameterFile_default=parameters/%command%.properties
+SET parameterFile=
+if NOT %command% == help (
+	set /p parameterFile=Enter parameter file location [press Enter for "%parameterFile_default%"]:
 )
 
-SET fullCommandLine=java -Xmx1200M -Xms1200M -jar ricoconverter-cli-${project.version}-onejar.jar %command% @%parameterFile%
+if NOT !%parameterFile% == ! (
+	set parameterFileOption=@%parameterFile%
+)
+
+SET fullCommandLine=java -Xmx1200M -Xms1200M -jar ricoconverter-cli-2.0.0-beta-onejar.jar %command% %parameterFileOption%
 ECHO %fullCommandLine%
 %fullCommandLine%
 pause
