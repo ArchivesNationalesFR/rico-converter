@@ -193,7 +193,7 @@
 	   
 	   <rico:name xml:lang="{$LITERAL_LANG}"><xsl:value-of select="$eventTypeLabel" /> (<xsl:value-of select="$agentLabel" />)</rico:name>
 	</xsl:template>
-	<xsl:template match="eac:eventDescription">
+	<xsl:template match="eac:eventDescription[normalize-space(.)]">
 		<rico:descriptiveNote xml:lang="{$LITERAL_LANG}"><xsl:value-of select="." /></rico:descriptiveNote> 
 	</xsl:template>
 	
@@ -202,7 +202,7 @@
 	<xsl:template match="eac:sources">			
 		<xsl:apply-templates />
 	</xsl:template>
-	<xsl:template match="eac:source[eac:sourceEntry]">			
+	<xsl:template match="eac:source[eac:sourceEntry[normalize-space(.)]]">			
 		<xsl:choose>
 			<!--  if sourceEntry is an http URI, generates a rico:hasSource -->
 			<xsl:when test="starts-with(eac:sourceEntry,'http') and not(contains(eac:sourceEntry, ' '))">
@@ -227,7 +227,7 @@
 			</xsl:otherwise>
 		</xsl:choose>		
 	</xsl:template>
-	<xsl:template match="eac:source[eac:descriptiveNote and not(eac:sourceEntry)]">			
+	<xsl:template match="eac:source[eac:descriptiveNote[normalize-space(.)] and not(eac:sourceEntry)]">			
 		<xsl:for-each select="eac:descriptiveNote/eac:p">
 			<rico:source  rdf:parseType="Literal"><html:p xml:lang="{$LITERAL_LANG}">
 				<xsl:apply-templates select="node()"></xsl:apply-templates>
@@ -1495,11 +1495,13 @@
 	</xsl:template>
 	
 	<!-- This one detects all 'p' that have only one child element and that child is a span -->
-	<xsl:template match="eac:p[count(eac:span)=1 and count(child::node())=1]">
+	<!-- use priority to desambiguate with template immediately following -->
+	<xsl:template match="eac:p[count(eac:span)=1 and count(child::node())=1]" priority="0.51">
 		<!--  Generate a title -->
 		<html:h2><xsl:value-of select="normalize-space(eac:span)" /></html:h2>
 	</xsl:template>
-	<xsl:template match="eac:p">
+	<!-- play on priority so that the the title temlate right above is taken in priority -->
+	<xsl:template match="eac:p[normalize-space(.)]" priority="0.5">
 		<html:p><xsl:apply-templates /></html:p>
 	</xsl:template>
 	<xsl:template match="eac:p/text()"><xsl:value-of select="normalize-space(.)" /></xsl:template>
