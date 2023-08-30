@@ -10,7 +10,7 @@
 	xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
 	xmlns:ead2rico="http://data.archives-nationales.culture.gouv.fr/ead2rico/"
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:isni="http://isni.org/ontology#"
+	xmlns:isni="https://isni.org/ontology#"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
 	xmlns:html="http://www.w3.org/1999/xhtml"
 	exclude-result-prefixes="ead2rico xlink xs xsi xsl"
