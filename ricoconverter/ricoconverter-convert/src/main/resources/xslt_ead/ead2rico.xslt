@@ -16,7 +16,7 @@
 	xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
 	xmlns:ead2rico="http://data.archives-nationales.culture.gouv.fr/ead2rico/"
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:isni="http://isni.org/ontology#"
+	xmlns:isni="https://isni.org/ontology#"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
 	xmlns:html="http://www.w3.org/1999/xhtml"
 	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
@@ -497,7 +497,10 @@
 						<rico:hasOrHadPart>
 							<xsl:apply-templates select="." />
 						</rico:hasOrHadPart>
+						<!--
+						This is outputting a lot of messages, commenting for now
 						<xsl:value-of select="ead2rico:warning($faId, 'UNKNOWN_RESOURCE_TYPE_OF_C', $currentC/@level)" />
+						-->
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:for-each>
@@ -622,8 +625,10 @@
 	<xsl:template match="scopecontent[normalize-space(.)]">
 		<rico:scopeAndContent rdf:parseType="Literal">
 			<xsl:choose>
-				<xsl:when test="count(p) = 1">
-					<html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(p)" /></html:p>
+				<xsl:when test="count(p) = 1 and not(
+					p[1]/ref and not(p[1]/*[local-name(.) != 'ref']) and not(p[1]/text()[normalize-space()])
+				)">
+					<html:p xml:lang="{$LITERAL_LANG}"><xsl:apply-templates select="p/*" mode="html" /></html:p>
 				</xsl:when>
 				<xsl:otherwise>
 					<html:div xml:lang="{$LITERAL_LANG}">

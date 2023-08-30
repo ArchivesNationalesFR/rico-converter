@@ -38,6 +38,7 @@
         </rico:hasInstantiation>
         <rico:includesOrIncluded rdf:resource="recordResource/058220-c-835pw5mwg-otyywby3qzqb" />
         <rico:includesOrIncluded rdf:resource="recordResource/058220-1_3_12"/>
+        <rico:includesOrIncluded rdf:resource="recordResource/058220-xxx"/>
     </rico:RecordResource>
     <!-- c level -->
     <rico:RecordResource rdf:about="recordResource/058220-c-835pw5mwg-otyywby3qzqb">   
@@ -75,6 +76,20 @@
             <rico:Instantiation rdf:about="instantiation/058220-1_3_12-i1">
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-1_3_12"/>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c-1_3_12"/>               
+            </rico:Instantiation>
+        </rico:hasInstantiation>
+    </rico:RecordResource>
+    <rico:RecordResource rdf:about="recordResource/058220-xxx">   
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:scopeAndContent rdf:parseType="Literal">
+            <html:div xml:lang="fr">
+                <html:p>Accès aux instruments de recherche de tous les notaires de l’étude XXI<html:a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_041643">Archives de l'étude XXI</html:a></html:p>
+            </html:div>
+        </rico:scopeAndContent>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-xxx-i1">
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-xxx"/>
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c-xxx"/>               
             </rico:Instantiation>
         </rico:hasInstantiation>
     </rico:RecordResource>
