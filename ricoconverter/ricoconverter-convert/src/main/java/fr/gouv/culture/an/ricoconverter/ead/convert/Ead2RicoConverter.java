@@ -143,6 +143,12 @@ public class Ead2RicoConverter {
 			if(this.splittingTransformer != null) {
 				// splitting activated
 				// output file name is considered a directory name
+				// if not, this means the script was ran without split,
+				// and we are running it with split activated in the same output dir
+				if(outputFile.exists() && !outputFile.isDirectory()) {
+					throw new RicoConverterException(ErrorCode.DIRECTORY_OR_FILE_HANDLING_EXCEPTION, "Output file exists but is not a directory : "+outputFile.getName()+" - clean output folder or choose a different output folder");
+				}
+
 				outputFile.mkdir();
 				outputFile = new File(outputFile, "dummy.rdf");
 			}
