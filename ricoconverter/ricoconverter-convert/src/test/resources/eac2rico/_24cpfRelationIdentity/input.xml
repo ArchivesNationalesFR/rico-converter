@@ -69,6 +69,15 @@
                <p>Notice Wikidata</p>
             </descriptiveNote>
          </cpfRelation>
+	     <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
+	        cpfRelationType="identity"
+	        xlink:href="https://www.afictitiouslinkeddatawebsite.com/123456."
+	        xlink:type="simple">
+	        <relationEntry>a URI that we can process (starts with http and has no space), after removing the final dot</relationEntry>
+	        <descriptiveNote>
+	           <p>Fictitious example</p>
+	        </descriptiveNote>
+	     </cpfRelation>
          <cpfRelation xmlns:xlink="http://www.w3.org/1999/xlink"
                       cpfRelationType="identity"
                       xlink:href="What is this ???"
