@@ -362,7 +362,16 @@
            </xsl:when>
 
            <xsl:otherwise>
-               <xsl:value-of select="$lnk"/>
+		   		<!-- remove potential last dot -->
+               <xsl:choose>
+					<xsl:when test="ends-with($lnk,'.')">
+						<xsl:value-of select="substring($lnk,1,string-length($lnk)-1)"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:value-of select="$lnk"/>
+					</xsl:otherwise>
+			   </xsl:choose>
+			   
            </xsl:otherwise>
        </xsl:choose>
 	</xsl:template>
