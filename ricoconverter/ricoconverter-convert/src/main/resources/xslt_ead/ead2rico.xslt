@@ -810,38 +810,42 @@
 			</html:div>
 		</rico:descriptiveNote>
 		<!-- look for archref -->
-		<xsl:apply-templates select="descendant::archref" />
+		<xsl:apply-templates select="descendant::archref | descendant::extref" />
 	</xsl:template>
-	<xsl:template match="archref[ancestor::otherfindaid]">
+	<xsl:template match="archref[ancestor::otherfindaid] | extref[ancestor::otherfindaid and ancestor::ref[@role='IR']]">
 		<xsl:variable name="otherFaId">
 			<!--  Extract everything before # if needed -->
 			<xsl:value-of select="if(contains(@href, '#')) then substring-before(substring-after(@href, 'FRAN_IR_'), '#') else substring-after(@href, 'FRAN_IR_')" />
 		</xsl:variable> 
-		
-		<xsl:variable name="recordResourceId">
-			<xsl:call-template name="recordResourceId">
-				<xsl:with-param name="faId" select="$otherFaId" />
-				<!-- This will insert 'top-' if recordResourceId is empty -->
-				<xsl:with-param name="recordResourceId" select="if(contains(@href, '#')) then substring-after(@href, '#') else ''" />
-			</xsl:call-template>
-		</xsl:variable>
-		
-		<xsl:variable name="recordResourceUri">
-			<xsl:value-of select="ead2rico:URI-RecordResource($recordResourceId)" />
-		</xsl:variable>
-		<xsl:variable name="findingAidUri">
-			<xsl:value-of select="ead2rico:URI-FindingAid($otherFaId)" />
-		</xsl:variable>
-		<xsl:variable name="seeAlsoUrl">
-			<!-- Add extra path to URL if the recordResourceId is known -->
-			<xsl:value-of select="concat('https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_', $otherFaId, (if(contains(@href, '#')) then concat('/', substring-after(@href, '#')) else ''))" />
-		</xsl:variable>
-		
-		<rico:isRecordResourceAssociatedWithRecordResource rdf:resource="{$recordResourceUri}"/>
-        <rico:isOrWasSubjectOf rdf:resource="{$findingAidUri}"/>
-        <rdfs:seeAlso rdf:resource="{$seeAlsoUrl}"/>
+
+		<!-- just make sure we don't output anything if FA id parsing fails -->		
+		<xsl:if test="$otherFaId">
+			<xsl:variable name="recordResourceId">
+				<xsl:call-template name="recordResourceId">
+					<xsl:with-param name="faId" select="$otherFaId" />
+					<!-- This will insert 'top-' if recordResourceId is empty -->
+					<xsl:with-param name="recordResourceId" select="if(contains(@href, '#')) then substring-after(@href, '#') else ''" />
+				</xsl:call-template>
+			</xsl:variable>
+			
+			<xsl:variable name="recordResourceUri">
+				<xsl:value-of select="ead2rico:URI-RecordResource($recordResourceId)" />
+			</xsl:variable>
+			<xsl:variable name="findingAidUri">
+				<xsl:value-of select="ead2rico:URI-FindingAid($otherFaId)" />
+			</xsl:variable>
+			<xsl:variable name="seeAlsoUrl">
+				<!-- Add extra path to URL if the recordResourceId is known -->
+				<xsl:value-of select="concat('https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_', $otherFaId, (if(contains(@href, '#')) then concat('/', substring-after(@href, '#')) else ''))" />
+			</xsl:variable>
+			
+			<rico:isRecordResourceAssociatedWithRecordResource rdf:resource="{$recordResourceUri}"/>
+			<rico:isOrWasSubjectOf rdf:resource="{$findingAidUri}"/>
+			<rdfs:seeAlso rdf:resource="{$seeAlsoUrl}"/>
+		</xsl:if>
 	</xsl:template>
-	
+
+
 	<!-- ***** relatedmaterial ***** -->
 	
 	<xsl:template match="relatedmaterial[list/item or p]">
@@ -1519,7 +1523,7 @@
 	<xsl:template match="ref" mode="html">
 		<xsl:apply-templates mode="html" />
 	</xsl:template>
-	<xsl:template match="archref" mode="html">
+	<xsl:template match="archref | extref[ancestor::ref[@role = 'IR']]" mode="html">
 		<html:a href="{ead2rico:URL-IRorUD(@href)}"><xsl:apply-templates mode="html" /></html:a>
 	</xsl:template>
 	<xsl:template match="extref[ancestor::ref[@role = 'web' or @role = 'WEB']]" mode="html">
@@ -1527,7 +1531,7 @@
 		<xsl:variable name="href" select="if(not(starts-with(@href, 'http'))) then concat($BASE_URL_FOR_RELATIVE_LINKS, @href) else @href" />
 		<html:a href="{$href}"><xsl:apply-templates mode="html" /></html:a>
 	</xsl:template>
-	<xsl:template match="extref[ancestor::ref[@role = 'ANX']]" mode="html">
+	<xsl:template match="extref[ancestor::ref[@role = 'ANX' or @role='anx']]" mode="html">
 		<!--  we resolve relative links to a base URL -->
 		<xsl:variable name="href" select="if(not(starts-with(@href, 'http'))) then concat($BASE_URL_FOR_RELATIVE_LINKS, @href) else @href" />
 		<html:a href="{$href}"><xsl:apply-templates mode="html" /></html:a>

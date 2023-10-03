@@ -23,14 +23,18 @@ public class Ead2RicoXsltTest {
         File testDir = new File("src/test/resources/ead2rico");
         List<File> sortedList = Arrays.asList(testDir.listFiles());
         Collections.sort(sortedList);
+		String testParameter = System.getProperty("testDir");
+		if(testParameter != null) {
+			System.out.println("test parameter detected : '"+testParameter+"'");
+		}
         for (File aDir : sortedList) {
         	if(
         			aDir.isDirectory()
         			&&
         			(
-        					System.getProperty("test") == null
+        					testParameter == null
         					||
-        					System.getProperty("test").equals(aDir.getName())
+        					testParameter.equals(aDir.getName())
         			)
         	) {
         		ts.addTest(new Ead2RicoXsltTestExecution(aDir));

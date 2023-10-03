@@ -88,7 +88,7 @@
                 <html:p>Consulter l'inventaire <html:a href="https://www.siv.archives-nationales.culture.gouv.fr/mm/media/download/FRAN_ANX_011471.pdf">FRAN_ANX_011471.pdf</html:a></html:p>
                 <!-- case 4b: ref role="anx"; same as case 4 -->
                 <html:p>
-                    <html:a href="https://www.siv.archives-nationales.culture.gouv.fr/mm/media/download/RAN_ANX_008009.pdf">Documents du Minutier central concernant les peintres, sculpteurs et graveurs au XVIIe siècle (1600-1650), par Marie-Antoinette Fleury, tome I, Paris, S.E.V.P.E.N, 1969, LXXXIV-974 p.</html:a>
+                    <html:a href="https://www.siv.archives-nationales.culture.gouv.fr/mm/media/download/FRAN_ANX_008009.pdf">Documents du Minutier central concernant les peintres, sculpteurs et graveurs au XVIIe siècle (1600-1650), par Marie-Antoinette Fleury, tome I, Paris, S.E.V.P.E.N, 1969, LXXXIV-974 p.</html:a>
                 </html:p>
                 <!-- case 5: role='web' and a link to an external finding aid online-->
                 <html:p><html:a href="http://www.bnf.fr/blah">http://www.bnf.fr/blah</html:a> : inventaire sur le site web de la BnF.</html:p>
@@ -122,18 +122,19 @@
         </rico:descriptiveNote>
         <!-- refer to the Record Resource described within the other finding aid. Such a case would theoretically imply that the 2 record resources are the same-->
         <rico:isRecordResourceAssociatedWithRecordResource rdf:resource="recordResource/002433-c-22jejddiz--1qegiixo0y7s9"/>
-        <rico:isRecordResourceAssociatedWithRecordResource rdf:resource="recordResource/top-059633"/>
         <!-- refer to the whole finding aids-->
         <rico:isOrWasSubjectOf rdf:resource="record/002433"/>
-        <rico:isOrWasSubjectOf rdf:resource="record/059633"/>
         <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_002433/c-22jejddiz--1qegiixo0y7s9"/>
+        <!-- extref reference -->
+        <rico:isRecordResourceAssociatedWithRecordResource rdf:resource="recordResource/top-059633"/>
+        <rico:isOrWasSubjectOf rdf:resource="record/059633"/>
         <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_059633"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-N0005-i1">                
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-N0005"/>
                 <!-- do not process otherfindaid here -->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0005"/>
-             </rico:Instantiation>
+            </rico:Instantiation>
         </rico:hasInstantiation>       
     </rico:RecordResource>
 </rdf:RDF>
