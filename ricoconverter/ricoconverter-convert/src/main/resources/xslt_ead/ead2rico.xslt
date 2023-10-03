@@ -858,9 +858,10 @@
 		<!-- look for archref -->
 		<xsl:apply-templates select="descendant::archref" />
 		<xsl:apply-templates select="descendant::extref" />
+		<xsl:apply-templates select="descendant::ref" />
 	</xsl:template>
-	<!-- Surprinsingly the same template works for archref or extref -->
-	<xsl:template match="archref | extref[starts-with(@href, 'https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/')]">
+	<!-- Surprinsingly the same template works for archref or extref or ref -->
+	<xsl:template match="archref | extref[starts-with(@href, 'https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/')] | ref[@role='WEB' and starts-with(@href, 'https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/')]">
 		<xsl:variable name="otherFaId">
 			<!--  Extract everything before # if needed -->
 			<xsl:value-of select="if(contains(@href, '#')) then substring-before(substring-after(@href, 'FRAN_IR_'), '#') else substring-after(@href, 'FRAN_IR_')" />
@@ -1481,8 +1482,8 @@
 	<xsl:template match="lb" mode="html">
 		<html:br />
 	</xsl:template>
-	<!-- Note how the extra space is preserved within mixed-content -->
-	<xsl:template match="text()" mode="html"><xsl:value-of select="normalize-space(.)" /><xsl:if test="ends-with(., ' ') and not(position() = last())"><xsl:value-of select="' '" /></xsl:if></xsl:template>
+	<!-- Note how the extra space is preserved within mixed-content, at beginning or end -->
+	<xsl:template match="text()" mode="html"><xsl:if test="starts-with(., ' ') and not(position() = 1)"><xsl:value-of select="' '" /></xsl:if><xsl:value-of select="normalize-space(.)" /><xsl:if test="ends-with(., ' ') and not(position() = last())"><xsl:value-of select="' '" /></xsl:if></xsl:template>
 	<!-- These are only for the bibliography, or scopecontent -->
 	<xsl:template match="head" mode="html">
 		<html:h5><xsl:value-of select="normalize-space(.)" /></html:h5>
@@ -1519,22 +1520,40 @@
 	<xsl:template match="ref[parent::p[ref and not(*[local-name(.) != 'ref']) and not(text()[normalize-space()]) ]]" mode="html">
 		<html:p><xsl:apply-templates mode="html" /></html:p>
 	</xsl:template>
+	<xsl:template match="ref[@role='WEB' and starts-with(@href, 'https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/')]" mode="html">
+		<html:p><html:a href="{@href}"><xsl:apply-templates mode="html" /></html:a></html:p>
+	</xsl:template>
 	<!-- a normal ref not under a p with only refs -->
 	<xsl:template match="ref" mode="html">
 		<xsl:apply-templates mode="html" />
 	</xsl:template>
 	<xsl:template match="archref | extref[ancestor::ref[@role = 'IR']]" mode="html">
-		<html:a href="{ead2rico:URL-IRorUD(@href)}"><xsl:apply-templates mode="html" /></html:a>
+		<xsl:variable name="href" select="ead2rico:URL-IRorUD(@href)" />
+		<xsl:choose>
+			<xsl:when test="not(contains($href, ' '))">
+				<html:a href="{$href}"><xsl:apply-templates mode="html" /></html:a>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:apply-templates mode="html" />
+			</xsl:otherwise>
+		</xsl:choose>
+		
 	</xsl:template>
-	<xsl:template match="extref[ancestor::ref[@role = 'web' or @role = 'WEB']]" mode="html">
+	<xsl:template match="extref[ancestor::ref[@role = 'web' or @role = 'WEB' or @role = 'ANX' or @role='anx']]" mode="html">
 		<!--  we resolve relative links to a base URL -->
-		<xsl:variable name="href" select="if(not(starts-with(@href, 'http'))) then concat($BASE_URL_FOR_RELATIVE_LINKS, @href) else @href" />
-		<html:a href="{$href}"><xsl:apply-templates mode="html" /></html:a>
-	</xsl:template>
-	<xsl:template match="extref[ancestor::ref[@role = 'ANX' or @role='anx']]" mode="html">
-		<!--  we resolve relative links to a base URL -->
-		<xsl:variable name="href" select="if(not(starts-with(@href, 'http'))) then concat($BASE_URL_FOR_RELATIVE_LINKS, @href) else @href" />
-		<html:a href="{$href}"><xsl:apply-templates mode="html" /></html:a>
+		<xsl:variable name="href" select="
+			if(not(starts-with(@href, 'http'))) then 
+				concat($BASE_URL_FOR_RELATIVE_LINKS, @href)
+			else 
+				@href" />
+		<xsl:choose>
+			<xsl:when test="not(contains($href, ' '))">
+				<html:a href="{if(ends-with($href,'.')) then substring($href, 1, string-length($href)-1) else $href}"><xsl:apply-templates mode="html" /></html:a>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:apply-templates mode="html" />
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 	
 	<!-- ***** Date ***** -->
