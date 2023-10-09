@@ -36,6 +36,10 @@
 	    			    <!-- case 4: ref role="ANX", with extref/@href, containing the local id of a PDF finding aid - the name of the file begins with 'FRAN_ANX' -->
 	    			    <ref role="ANX">Consulter l'inventaire <extref href="FRAN_ANX_011471.pdf">FRAN_ANX_011471.pdf</extref>
 	    			    </ref>
+	    			    <!-- case 4b: ref role="anx"; same as for case 4 -->
+	    			    <ref role="anx">
+	    			       <extref href="FRAN_ANX_008009.pdf">Documents du Minutier central concernant les peintres, sculpteurs et graveurs au XVIIe siècle (1600-1650), par Marie-Antoinette Fleury, tome I, Paris, S.E.V.P.E.N, 1969, LXXXIV-974 p.</extref>
+	    			    </ref>
 	    			   <!-- case 5: ref role="web" with extref/@href, containing the complete URL of an external finding aid-->
 	    			    <ref role="web">
 	    			        <extref href="http://www.bnf.fr/blah">http://www.bnf.fr/blah</extref> : inventaire sur le site web de la BnF.
@@ -51,6 +55,8 @@
 		    			<ref role="IR">FRAN_IR_002433 <archref href="FRAN_IR_002433#c-22jejddiz--1qegiixo0y7s9">Archives du Conseil général des Ponts-et-Chaussées et du Conseil des Travaux
 		    				publics (1750-2013)#5e section : Affaires d'aménagement et d'environnement.#20160476/141-20160476/150</archref>
 		    			</ref>
+		    		    <!-- case 7: ref role="IR" with extref/@href; to be processed just like archref/@href-->
+		    		    <ref role="IR">Index des noms géographiques, de personnes et de matières par Paul MARICHAL (F/17/1001 à 1480 et F/17*/1 à 3252)<extref href="FRAN_IR_059633">Fichier Marichal F/17</extref></ref>
 		    		</p>
 		    	</otherfindaid>
 	    	</c>

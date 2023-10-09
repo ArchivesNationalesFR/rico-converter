@@ -14,8 +14,6 @@ Pour le moment, RiC a trois composants principaux :
 
 Depuis fin mars 2020, le fichier source de __RiC-O sont disponibles sur GitHub ([https://github.com/ICA-EGAD/RiC-O](https://github.com/ICA-EGAD/RiC-O))__, ainsi que quelques exemples et diagrammes. Vous y trouverez la dernière version de RiC-O. Le dépôt GitHub est accompagné __d’un petit site Web d’informations ([https://ica-egad.github.io/RiC-O/](https://ica-egad.github.io/RiC-O/))__ ; vous y trouverez les dernières nouvelles sur l’ontologie.
 
-Les versions actuelles de RiC sont des projets (il ne s’agit pas, pour le moment, de recommendations officielles) ; cependant, ils sont suffisamment matures pour être utilisés, et proches de RiC-CM et RiC-O v1.0, qui seront publiés avant octobre 2023, en tant que recommandation officielle de l’ICA.
-
 Si vous souhaitez obtenir les dernières nouvelles sur le RiC, vous pouvez aussi consulter [le site Web de l’ICA] (https://www.ica.org/fr).
 
 Vous pouvez également rejoindre le groupe ["Records in Contexts users"](https://groups.google.com/g/Records_in_Contexts_users) récemment créé sur Google groups. C’est à cet endroit que vous pouvez fournir ou obtenir des informations sur RiC et sur les événements concernant cette norme, contacter la communauté des personnes qui sont intéressées par cette norme ou qui l’utilisent déjà, poser des questions, discuter des problèmes et projets de mise en œuvre en cours ou à venir.
