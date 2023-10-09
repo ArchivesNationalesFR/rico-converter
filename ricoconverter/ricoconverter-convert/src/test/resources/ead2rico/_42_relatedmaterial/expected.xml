@@ -43,6 +43,9 @@
         <rico:includesOrIncluded rdf:resource="recordResource/058220-N00052"/>
         <rico:includesOrIncluded rdf:resource="recordResource/058220-N0006"/>
         <rico:includesOrIncluded rdf:resource="recordResource/058220-N0007"/>
+        <rico:includesOrIncluded rdf:resource="recordResource/058220-N0008"/>
+        <rico:includesOrIncluded rdf:resource="recordResource/058220-N0009"/>
+        <rico:includesOrIncluded rdf:resource="recordResource/058220-N0010"/>
     </rico:RecordResource>
  
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
@@ -184,4 +187,56 @@
             </rico:Instantiation>
         </rico:hasInstantiation>       
     </rico:RecordResource>
-</rdf:RDF>
+    
+    <!-- ref/@href: same as for ref/extref/@href -->
+    <rico:RecordResource rdf:about="recordResource/058220-N0008">
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:descriptiveNote rdf:parseType="Literal">
+            <html:div xml:lang="fr">
+                <html:h4>Document(s) en relation</html:h4>
+                <html:p><html:a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_003996">Voir l'inventaire détaillé et les rapports numérisés</html:a></html:p>
+            </html:div>
+        </rico:descriptiveNote>
+        <rico:isRecordResourceAssociatedWithRecordResource rdf:resource="recordResource/top-003996"/>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-N0008-i1">                
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-N0008"/>
+                <!-- do not process relatedmaterial here -->
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0008"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>       
+    </rico:RecordResource>
+    <rico:RecordResource rdf:about="recordResource/058220-N0009">
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:descriptiveNote rdf:parseType="Literal">
+            <html:div xml:lang="fr">
+                <html:h4>Document(s) en relation</html:h4>
+                <html:p>19930138/15-16 : comptes-rendus d'assemblée plénière, rapports des commissions du CST. 1979-1985.</html:p>
+           </html:div>
+        </rico:descriptiveNote>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-N0009-i1">                
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-N0009"/>
+                <!-- do not process relatedmaterial here -->
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0009"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation>   
+    </rico:RecordResource>
+    <rico:RecordResource rdf:about="recordResource/058220-N0010">
+        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:descriptiveNote rdf:parseType="Literal">
+            <html:div xml:lang="fr">
+                <html:h4>Document(s) en relation</html:h4>
+                <html:p>Ministère de l'Artisanat, du Commerce et du Tourisme. <html:i>Conseil national du tourisme : histoire, organisation, publications</html:i>. [<html:a href="https://www.entreprises.gouv.fr/files/files/directions_services/tourisme/acteurs/cnt/livret-CNT.html">En ligne : consulté le 13/05/2019</html:a>
+                ].</html:p>
+            </html:div>
+        </rico:descriptiveNote>
+        <rico:hasInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-N0010-i1">                
+                <rico:isInstantiationOf rdf:resource="recordResource/058220-N0010"/>
+                <!-- do not process relatedmaterial here -->
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0010"/>
+            </rico:Instantiation>
+        </rico:hasInstantiation> 
+    </rico:RecordResource>
+    </rdf:RDF>
