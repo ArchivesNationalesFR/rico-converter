@@ -81,7 +81,7 @@ stockage et d’échange. Même si différentes pratiques peuvent être observé
 mêmes modèles de référence, au sein desquels certains éléments ou attributs sont systématiquement utilisés. Nous 
 pensons donc que le convertisseur RiC-O peut être utile à de nombreuses institutions autres que les ANF. À Noter que __la 
 conversion des fichiers EAD est effectuée séparément de celle des fichiers EAC-CPF__. Ainsi, si vous disposez uniquement de 
-fichiers EAD ou seulement de fichiers EAC-CPF, vous pouvez l’utiliser. De plus, __le logiciel, placé sous licence 
+fichiers EAD ou seulement de fichiers EAC-CPF, vous pouvez l’utiliser. De plus, __le logiciel est placé sous licence 
 CeCILL-B (équivalent à la licence MIT), et peut ainsi être modifié pour s’adapter à un projet spécifique, et également 
 largement redistribué__. La documentation disponible en anglais et français (voir les [mappings](Mappings.md) EAD vers RiC-O et EAC-CPF vers 
 RiC-O, ainsi que les [tests unitaires](UnitTests.md)) a été pensée pour faciliter ces adaptations. Un bon développeur XSLT, connaissant les formats 
