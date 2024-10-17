@@ -577,7 +577,7 @@
 									<rico:MandateRelation>
 										<rico:mandateRelationHasTarget rdf:resource="{$agentUri}"/>
 										<rico:mandateRelationHasSource> 
-											<rico:Mandate rdf:nodeID="_Mandate-{encode-for-uri(.)}">
+											<rico:Mandate rdf:nodeID="_Mandate-{replace(., '[^a-zA-Z0-9]', '_')}">
 												<rico:title><xsl:value-of select="$theDescriptiveNote" /></rico:title>
 												<rdfs:seeAlso rdf:resource="{.}" />
 											</rico:Mandate>
@@ -586,7 +586,7 @@
 						            	<xsl:apply-templates select="$theMandate/*[local-name() != descriptiveNote]" />
 									</rico:MandateRelation>
 								</rico:agentIsTargetOfMandateRelation>
-								<rico:authorizedBy rdf:nodeID="_Mandate-{encode-for-uri(.)}" />		
+								<rico:authorizedBy rdf:nodeID="_Mandate-{replace(., '[^a-zA-Z0-9]', '_')}" />		
 							</xsl:otherwise>
 						</xsl:choose>
 				  </xsl:matching-substring>
