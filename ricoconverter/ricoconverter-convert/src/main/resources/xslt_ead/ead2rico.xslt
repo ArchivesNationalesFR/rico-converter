@@ -346,7 +346,7 @@
 			<!-- generates other Instantiations if any -->
 			<xsl:apply-templates select="daogrp" />
 			
-			<!--  references to RecordResources, generates rico:includesOrIncluded -->
+			<!--  references to RecordResources, generates rico:directlyIncludes -->
 			<xsl:apply-templates select="dsc" mode="reference" />
 		</rico:RecordResource>
 		
@@ -367,8 +367,8 @@
 			</xsl:call-template>
 		</xsl:variable>
 	
-		<!-- We suppose that by default all archdesc are RecordSets, so always use includesOrIncluded -->
-		<rico:includesOrIncluded rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+		<!-- We suppose that by default all archdesc are RecordSets, so always use directlyIncludes -->
+		<rico:directlyIncludes rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
 		
 	</xsl:template>
 	
@@ -478,15 +478,15 @@
 			<!-- generates other Instantiations -->
 			<xsl:apply-templates select="daogrp" />
 			
-			<!-- children c's : generate includesOrIncluded/hasOrHadConstituent/hasOrHadPart recursively (contrary to first level archdesc) -->
+			<!-- children c's : generate directlyIncludes/hasOrHadConstituent/hasOrHadPart recursively (contrary to first level archdesc) -->
 			<!-- predicate depends on type of Record -->
 			<xsl:variable name="currentC" select="." />
 			<xsl:for-each select="c">
 				<xsl:choose>
 					<xsl:when test="ead2rico:isRicoRecordSet($currentC)">
-						<rico:includesOrIncluded>
+						<rico:directlyIncludes>
 							<xsl:apply-templates select="." />
-						</rico:includesOrIncluded>
+						</rico:directlyIncludes>
 					</xsl:when>
 					<xsl:when test="ead2rico:isRicoRecord($currentC)">
 						<rico:hasOrHadConstituent>

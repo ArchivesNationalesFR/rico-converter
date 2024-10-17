@@ -36,9 +36,9 @@
                 <!-- this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->            
             </rico:Instantiation>
         </rico:hasInstantiation>
-        <rico:includesOrIncluded rdf:resource="recordResource/058220-c-835pw5mwg-otyywby3qzqb" />
-        <rico:includesOrIncluded rdf:resource="recordResource/058220-1_3_12"/>
-        <rico:includesOrIncluded rdf:resource="recordResource/058220-xxx"/>
+        <rico:directlyIncludes rdf:resource="recordResource/058220-c-835pw5mwg-otyywby3qzqb" />
+        <rico:directlyIncludes rdf:resource="recordResource/058220-1_3_12"/>
+        <rico:directlyIncludes rdf:resource="recordResource/058220-xxx"/>
     </rico:RecordResource>
     <!-- c level -->
     <rico:RecordResource rdf:about="recordResource/058220-c-835pw5mwg-otyywby3qzqb">   

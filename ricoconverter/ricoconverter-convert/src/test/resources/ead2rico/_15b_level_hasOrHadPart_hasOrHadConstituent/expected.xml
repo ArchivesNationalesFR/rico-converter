@@ -34,7 +34,7 @@
           <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
         </rico:Instantiation>
       </rico:hasInstantiation>
-      <rico:includesOrIncluded rdf:resource="recordResource/058220-a1" />
+      <rico:directlyIncludes rdf:resource="recordResource/058220-a1" />
     </rico:RecordResource>
 
     <rico:RecordResource rdf:about="recordResource/058220-a1">
@@ -56,10 +56,10 @@
           <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
         </rico:Instantiation>
       </rico:hasInstantiation>
-      <rico:includesOrIncluded rdf:resource="recordResource/058220-a3.1" />
-      <rico:includesOrIncluded rdf:resource="recordResource/058220-a3.2" />
-      <rico:includesOrIncluded rdf:resource="recordResource/058220-a3.3" />
-      <rico:includesOrIncluded rdf:resource="recordResource/058220-a3.4" />
+      <rico:directlyIncludes rdf:resource="recordResource/058220-a3.1" />
+      <rico:directlyIncludes rdf:resource="recordResource/058220-a3.2" />
+      <rico:directlyIncludes rdf:resource="recordResource/058220-a3.3" />
+      <rico:directlyIncludes rdf:resource="recordResource/058220-a3.4" />
     </rico:RecordResource>
 
     <!-- cas 3.1 : c RecordSet -->
@@ -72,7 +72,7 @@
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/a3.1"/>
           </rico:Instantiation>
         </rico:hasInstantiation>
-        <rico:includesOrIncluded>
+        <rico:directlyIncludes>
           <rico:RecordResource rdf:about="recordResource/058220-a3.1-child">
             <rico:isOrWasIncludedIn rdf:resource="recordResource/058220-a3.1"/>
             <rico:hasInstantiation>
@@ -82,7 +82,7 @@
             </rico:Instantiation>
             </rico:hasInstantiation>
           </rico:RecordResource>
-        </rico:includesOrIncluded>
+        </rico:directlyIncludes>
     </rico:RecordResource>
 
     <!-- cas 3.2 : c Record -->
