@@ -26,6 +26,8 @@
 			<label>Relation hiérarchique</label>
 			<shortcutIfSubjectIsSourceOfRelation>rico:hasOrHadSubordinate</shortcutIfSubjectIsSourceOfRelation>
 			<shortcutIfSubjectIsTargetOfRelation>rico:isOrWasSubordinateTo</shortcutIfSubjectIsTargetOfRelation>
+			<shortcutIfSubjectIsSourceOfRelation_current>rico:hasDirectSubordinate</shortcutIfSubjectIsSourceOfRelation_current>
+			<shortcutIfSubjectIsTargetOfRelation_current>rico:isDirectSubordinateTo</shortcutIfSubjectIsTargetOfRelation_current>
 		</AgentHierarchicalRelation>
 		<GroupSubdivisionRelation>
 			<extraType>https://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation</extraType>
@@ -36,6 +38,8 @@
 			<label>Relation de subdivision</label>
 			<shortcutIfSubjectIsSourceOfRelation>rico:hasOrHadSubdivision</shortcutIfSubjectIsSourceOfRelation>
 			<shortcutIfSubjectIsTargetOfRelation>rico:isOrWasSubdivisionOf</shortcutIfSubjectIsTargetOfRelation>
+			<shortcutIfSubjectIsSourceOfRelation_current>rico:hasOrHadSubdivision</shortcutIfSubjectIsSourceOfRelation_current>
+			<shortcutIfSubjectIsTargetOfRelation_current>rico:isOrWasSubdivisionOf</shortcutIfSubjectIsTargetOfRelation_current>
 		</GroupSubdivisionRelation>
 		<AgentControlRelation>
 			<extraType>https://www.ica.org/standards/RiC/ontology#AgentControlRelation</extraType>
@@ -46,6 +50,8 @@
 			<label>Relation de contrôle</label>
 			<shortcutIfSubjectIsSourceOfRelation>rico:isOrWasControllerOf</shortcutIfSubjectIsSourceOfRelation>
 			<shortcutIfSubjectIsTargetOfRelation>rico:hasOrHadController</shortcutIfSubjectIsTargetOfRelation>
+			<shortcutIfSubjectIsSourceOfRelation_current>rico:isOrWasControllerOf</shortcutIfSubjectIsSourceOfRelation_current>
+			<shortcutIfSubjectIsTargetOfRelation_current>rico:hasOrHadController</shortcutIfSubjectIsTargetOfRelation_current>
 		</AgentControlRelation>
 	</xsl:variable>
 	
