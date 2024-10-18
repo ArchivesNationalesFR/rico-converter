@@ -31,21 +31,21 @@
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasOrHadAgentName>
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/005205-111111-20101114-20111231"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/005205-111111-20101114-20111231"/>
       <rico:isAgentAssociatedWithAgent rdf:resource="agent/111111" />
-      <rico:agentIsConnectedToAgentRelation rdf:resource="agentToAgentRelation/000000-005205"/>
+      <rico:thingIsConnectedToRelation rdf:resource="agentToAgentRelation/000000-005205"/>
       <rico:isAgentAssociatedWithAgent rdf:resource="agent/000000" />
    </rico:Agent>
    <rico:AgentToAgentRelation rdf:about="agentToAgentRelation/005205-111111-20101114-20111231">
-      <rico:agentRelationConnects rdf:resource="agent/005205"/>
-      <rico:agentRelationConnects rdf:resource="agent/111111"/>
+      <rico:relationConnects rdf:resource="agent/005205"/>
+      <rico:relationConnects rdf:resource="agent/111111"/>
       <rdfs:label xml:lang="fr">Relation associative entre "The entity" et "The associated entity with higher ID", début : 14 novembre 2010, fin : 2011</rdfs:label>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-11-14</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-12-31</rico:endDate>
    </rico:AgentToAgentRelation>
    <rico:AgentToAgentRelation rdf:about="agentToAgentRelation/000000-005205">
-      <rico:agentRelationConnects rdf:resource="agent/000000"/>
-      <rico:agentRelationConnects rdf:resource="agent/005205"/>
+      <rico:relationConnects rdf:resource="agent/000000"/>
+      <rico:relationConnects rdf:resource="agent/005205"/>
       <rdfs:label xml:lang="fr">Relation associative entre "The associated entity with lower ID" et "The entity"</rdfs:label>
    </rico:AgentToAgentRelation>
 </rdf:RDF>
