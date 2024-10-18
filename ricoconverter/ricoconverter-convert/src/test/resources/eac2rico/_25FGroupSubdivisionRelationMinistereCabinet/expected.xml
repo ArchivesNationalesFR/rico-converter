@@ -32,13 +32,13 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5bloo2gwk-sgl3fc00gzgl"/>
-      <rico:groupIsSourceOfGroupSubdivisionRelation rdf:resource="agentHierarchicalRelation/005205-111111"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/005205-111111"/>
       <rico:hasOrHadSubdivision rdf:resource="agent/111111" />
    </rico:Agent>
    <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/005205-111111">
      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation"/>
-      <rico:groupSubdivisionRelationHasTarget rdf:resource="agent/111111"/>
-      <rico:groupSubdivisionRelationHasSource rdf:resource="agent/005205"/>
+      <rico:relationHasTarget rdf:resource="agent/111111"/>
+      <rico:relationHasSource rdf:resource="agent/005205"/>
       <rdfs:label xml:lang="fr">Relation de subdivision entre "Ministère X" et "Cabinet du ministère X"</rdfs:label>
    </rico:AgentHierarchicalRelation>
 </rdf:RDF>
