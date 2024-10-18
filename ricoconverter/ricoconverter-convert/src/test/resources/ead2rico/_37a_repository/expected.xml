@@ -39,6 +39,7 @@
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnast"/>
         <rico:hasOrHadHolder rdf:resource="agent/005061"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">
@@ -64,6 +65,8 @@
     
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnast">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnost"/>
         <rico:hasOrHadHolder rdf:resource="agent/005061"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnast-i1"> 
@@ -76,6 +79,7 @@
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnost">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnast"/>
         <rico:hasOrHadHolder>
             <rico:Agent>
                 <rdfs:label xml:lang="fr">Ecole pratique des hautes études</rdfs:label>

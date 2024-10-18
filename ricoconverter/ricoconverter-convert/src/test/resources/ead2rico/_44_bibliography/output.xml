@@ -1,0 +1,139 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/058220">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl009"/>
+      <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/058220-i1">
+            <rico:isInstantiationOf rdf:resource="record/058220"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl010"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_IR_058220</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:RecordResource rdf:about="recordResource/top-058220">
+      <rico:isOrWasDescribedBy rdf:resource="record/058220"/>
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:h4>Bibliographie</html:h4>
+            <html:p>BUNGENER, PICARD. Quelles recherches pour le Sida ? : note présentée à la direction générale de l'Inserm. Paris. 1991. 13 p.</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:h4>Bibliographie</html:h4>
+            <html:h5>Périodiques</html:h5>
+            <html:ul>
+               <html:li>
+                  <html:i>L'exploitation scientifique des archives</html:i>, sous la direction de François Rouquet, Rennes : Ed. Apogée, 2005.</html:li>
+               <html:li>Rafic Boustani et Philippe Fargues,<html:i>Atlas du monde arabe</html:i>, Paris, Bordas, 2003.</html:li>
+            </html:ul>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:h4>Bibliographie</html:h4>
+            <html:p>
+               <html:span class="persname_auteur">Philippe Fargues</html:span>, <html:cite>La transition de la fécondité dans les pays arabes,</html:cite>
+               <html:cite>Cahiers de la Méditerranée</html:cite>, <html:span class="imprint">
+                  <html:time>année 1990</html:time>
+               </html:span>, Volume 40, Numéro 1, pp. 1-39.</html:p>
+            <html:p>Yvert (Benoît), <html:cite>Dictionnaire des Ministres (1789-1989)</html:cite> , Paris, 1990, pages 559-561.</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/top-058220-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+      <rico:directlyIncludes rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+      <rico:directlyIncludes rdf:resource="recordResource/058220-N0004"/>
+      <rico:directlyIncludes rdf:resource="recordResource/058220-N0005"/>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+      <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-N0004"/>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:h4>Bibliographie</html:h4>
+            <html:p>Publié dans :CANTAREL-BESSON, Yveline,<html:i>La naissance du Musée du Louvre</html:i>, 1981</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+            <rico:hasDerivedInstantiation rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2">
+            <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+            <rico:isDerivedFromInstantiation rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1"/>
+            <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
+            <rico:identifier>FRAN_0118_274_L</rico:identifier>
+            <dc:format xml:lang="en">image/jpeg</dc:format>
+            <rico:hasProvenance rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest/FRAN_0118_274_L"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/058220-N0004">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+      <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+      <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-N0005"/>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:h4>Bibliographie</html:h4>
+            <html:p>site internet :</html:p>
+            <html:ul>
+               <html:li>http://www.bergerie-nationale.educagri.fr/bergerie-nationale/histoire/</html:li>
+            </html:ul>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/058220-N0004-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/058220-N0004"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0004"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/058220-N0005">
+      <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+      <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-N0004"/>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:h4>Bibliographie</html:h4>
+            <html:p>Pouvreau, <html:i>Les graffiti du camp de Drancy...</html:i>, 2013, p. 23</html:p>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:descriptiveNote rdf:parseType="Literal">
+         <html:div xml:lang="fr">
+            <html:h4>Bibliographie</html:h4>
+            <html:ul>
+               <html:li>Yann Potin, <html:i>1830 : la révolution des Archives.</html:i> Dans "L'Histoire", 2011/4 (N°363).</html:li>
+               <html:li>Febvre L., 2014, <html:i>Michelet, créateur de l’histoire de France.</html:i>Cours au Collège de France, 1943-44, Paris, Vuibert, 445 p. Édition établie par Brigitte Mazon et Yann Potin.</html:li>
+            </html:ul>
+         </html:div>
+      </rico:descriptiveNote>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/058220-N0005-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/058220-N0005"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0005"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+</rdf:RDF>

@@ -90,6 +90,7 @@
     <!-- //archdesc/dsc//c[@level="fonds"] -->
     <rico:RecordResource rdf:about="recordResource/058220-a">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-b"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds"/>   
@@ -103,6 +104,8 @@
     <!-- //archdesc/dsc//c[@level="subfonds"] -->
     <rico:RecordResource rdf:about="recordResource/058220-b">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-a"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-c"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
       
         <rico:hasInstantiation>
@@ -115,6 +118,8 @@
     <!-- //archdesc/dsc//c[@level="series"] -->
     <rico:RecordResource rdf:about="recordResource/058220-c">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-b"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-d"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>  
@@ -128,6 +133,8 @@
     <!-- //archdesc/dsc//c[@level="subseries"] -->
     <rico:RecordResource rdf:about="recordResource/058220-d">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-c"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-e"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
@@ -141,6 +148,8 @@
     <!-- //archdesc/dsc//c[@level="recordgrp"] -->
     <rico:RecordResource rdf:about="recordResource/058220-e">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-d"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-f"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasInstantiation>
           <rico:Instantiation rdf:about="instantiation/058220-e-i1">
@@ -152,6 +161,8 @@
     <!-- //archdesc/dsc//c[@level="subgrp"] -->
     <rico:RecordResource rdf:about="recordResource/058220-f">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-e"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-g"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasInstantiation>
           <rico:Instantiation rdf:about="instantiation/058220-f-i1">
@@ -163,6 +174,8 @@
     <!-- //archdesc/dsc//c[@level="file"] -->
     <rico:RecordResource rdf:about="recordResource/058220-g">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-f"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-c-835pw5mwg-otyywby3qzqb"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#File"/>
@@ -176,6 +189,8 @@
     <!-- //archdesc/dsc//c[@level="item"] -->
     <rico:RecordResource rdf:about="recordResource/058220-c-835pw5mwg-otyywby3qzqb">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-g"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-y"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
         <rico:hasInstantiation>
           <rico:Instantiation rdf:about="instantiation/058220-c-835pw5mwg-otyywby3qzqb-i1">
@@ -187,6 +202,8 @@
     <!-- //archdesc/dsc//c[@level="collection"] -->
     <rico:RecordResource rdf:about="recordResource/058220-y">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-c-835pw5mwg-otyywby3qzqb"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-z"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType
             rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Collection"/>
@@ -200,6 +217,8 @@
     <!-- //archdesc/dsc//c[@level="otherlevel"] -->
     <rico:RecordResource rdf:about="recordResource/058220-z">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>  
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-y"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-abc"/>
         <rico:hasInstantiation>
           <rico:Instantiation rdf:about="instantiation/058220-z-i1">
             <rico:isInstantiationOf rdf:resource="recordResource/058220-z"/>
@@ -210,6 +229,7 @@
     <!--   //archdesc/dsc//c[not(@level)]-->
     <rico:RecordResource rdf:about="recordResource/058220-abc">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/> 
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-z"/>
         <rico:hasInstantiation>
           <rico:Instantiation rdf:about="instantiation/058220-abc-i1">
             <rico:isInstantiationOf rdf:resource="recordResource/058220-abc"/>

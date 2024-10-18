@@ -405,6 +405,10 @@
 					<rico:isOrWasPartOf rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />					
 				</xsl:otherwise>
 			</xsl:choose>
+
+			<!-- link to siblings of the RecordResource -->
+			<xsl:apply-templates select="preceding-sibling::c[1]" mode="preceding-sibling" />
+			<xsl:apply-templates select="following-sibling::c[1]" mode="following-sibling" />
 						
 			<!-- child c's and daogrp are processed after. Note that the current element is processed here with a special mode to determine its type -->
 			<!--  Note that origination is still processed here to match inner persname/corpname/famname -->
@@ -507,6 +511,29 @@
 		</rico:RecordResource>
 	</xsl:template>
 
+	<!-- link to siblings of the RecordResource -->
+	<xsl:template match="c" mode="following-sibling">
+		<xsl:variable name="recordResourceId">
+			<xsl:call-template name="recordResourceId">
+				<xsl:with-param name="faId" select="$faId" />
+				<xsl:with-param name="recordResourceId" select="@id" />
+			</xsl:call-template>
+		</xsl:variable>
+	
+		<rico:directlyPrecedesInSequence rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+	</xsl:template>
+
+	<!-- link to siblings of the RecordResource -->
+	<xsl:template match="c" mode="preceding-sibling">
+		<xsl:variable name="recordResourceId">
+			<xsl:call-template name="recordResourceId">
+				<xsl:with-param name="faId" select="$faId" />
+				<xsl:with-param name="recordResourceId" select="@id" />
+			</xsl:call-template>
+		</xsl:variable>
+	
+		<rico:directlyFollowsInSequence rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+	</xsl:template>
 
 	<!-- ***** daogrp and daoloc processing : generates other Instantiations ***** -->
 
