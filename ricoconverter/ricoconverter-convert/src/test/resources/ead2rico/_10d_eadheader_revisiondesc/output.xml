@@ -1,0 +1,47 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/004852">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl009"/>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2015-03</rico:date>
+            <rico:descriptiveNote xml:lang="fr">Révision de la description générale du fonds ; restructuration et corrections des unités de description relatives aux documents numérisés</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-04-17</rico:date>
+            <rico:descriptiveNote xml:lang="fr">DAFANCH00AP_0000400AP converted from EAD 1.0 to 2002 by v1to02.xsl (20030408).</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-12-19</rico:date>
+            <rico:descriptiveNote xml:lang="fr">La première version a été livrée au CHAN ainsi qu'au groupe RLG par la société AJLSM (info@ajlsm.com).</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:isOrWasAffectedBy>
+         <rico:Activity>
+            <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-12-07</rico:date>
+            <rico:descriptiveNote xml:lang="fr">Ajout d'une indexation Personne Physique avec l'aide de Florence Clavaud</rico:descriptiveNote>
+         </rico:Activity>
+      </rico:isOrWasAffectedBy>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/004852-i1">
+            <rico:isInstantiationOf rdf:resource="record/004852"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl010"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FRAN_IR_004852</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_004852"/>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+</rdf:RDF>

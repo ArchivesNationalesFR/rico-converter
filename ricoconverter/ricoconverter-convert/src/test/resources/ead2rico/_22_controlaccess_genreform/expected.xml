@@ -39,6 +39,7 @@
     <!-- Record level and known value -->
     <rico:RecordResource rdf:about="recordResource/058220-record-known">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-record-known-state"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
         <rico:hasDocumentaryFormType rdf:resource="documentaryFormType/FRAN_RI_001-d5b8d41cch--81zpek4vv4lp"/>
         <rico:hasInstantiation>
@@ -51,6 +52,8 @@
     <!-- Record level and known value as record state -->
     <rico:RecordResource rdf:about="recordResource/058220-record-known-state">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-record-known"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-record-unknown"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
         <rico:hasRecordState rdf:resource="recordState/FRAN_RI_001-d3m00w6tom1--17yz38y8bszt8"/>
         <rico:hasInstantiation>
@@ -63,6 +66,8 @@
     <!-- Record level and unknown value -->
     <rico:RecordResource rdf:about="recordResource/058220-record-unknown">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-record-known-state"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-unknown"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
         <dc:type>unknown</dc:type>
         <rico:type>unknown</rico:type>
@@ -76,6 +81,7 @@
     <!-- Unknown level -->
     <rico:RecordResource rdf:about="recordResource/058220-unknown">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-record-unknown"/>
         <dc:type>document photographique</dc:type>
         <rico:type>document photographique</rico:type>
         <rico:hasInstantiation>

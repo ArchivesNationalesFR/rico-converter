@@ -67,6 +67,7 @@
    
    <rico:RecordResource rdf:about="recordResource/003666-c-835pw5mwg-otyywby3qzqb">
       <rico:isOrWasIncludedIn rdf:resource="recordResource/top-003666"/>
+      <rico:directlyPrecedesInSequence rdf:resource="recordResource/003666-c-7jg4i6fd5-18zjwwhf1ggm1"/>
       <rico:hasInstantiation>
       	   <rico:Instantiation rdf:about="instantiation/003666-c-835pw5mwg-otyywby3qzqb-i1">
 		      <rico:isInstantiationOf rdf:resource="recordResource/003666-c-835pw5mwg-otyywby3qzqb"/>
@@ -93,6 +94,8 @@
 	
 	<rico:RecordResource rdf:about="recordResource/003666-c-7jg4i6fd5-18zjwwhf1ggm1">
 		<rico:isOrWasIncludedIn rdf:resource="recordResource/top-003666"/>
+		<rico:directlyFollowsInSequence rdf:resource="recordResource/003666-c-835pw5mwg-otyywby3qzqb"/>
+      <rico:directlyPrecedesInSequence rdf:resource="recordResource/003666-123456"/>
 		<rico:hasInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-c-7jg4i6fd5-18zjwwhf1ggm1-i1">
 				<rico:isInstantiationOf rdf:resource="recordResource/003666-c-7jg4i6fd5-18zjwwhf1ggm1"/>
@@ -117,8 +120,9 @@
 	</rico:RecordResource>
 	
 	<rico:RecordResource rdf:about="recordResource/003666-123456">
-		
 		<rico:isOrWasIncludedIn rdf:resource="recordResource/top-003666"/>
+		<rico:directlyFollowsInSequence rdf:resource="recordResource/003666-c-7jg4i6fd5-18zjwwhf1ggm1"/>
+      <rico:directlyPrecedesInSequence rdf:resource="recordResource/003666-i7899"/>
 		<rico:hasInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-123456-i1">
 				<rico:isInstantiationOf rdf:resource="recordResource/003666-123456"/>
@@ -159,8 +163,8 @@
 	</rico:RecordResource>
 	
 	<rico:RecordResource rdf:about="recordResource/003666-i7899">
-		
 		<rico:isOrWasIncludedIn rdf:resource="recordResource/top-003666"/>
+		<rico:directlyFollowsInSequence rdf:resource="recordResource/003666-123456"/>
 		<rico:hasInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-i7899-i2">
 				<rico:isInstantiationOf rdf:resource="recordResource/003666-i7899"/>				
