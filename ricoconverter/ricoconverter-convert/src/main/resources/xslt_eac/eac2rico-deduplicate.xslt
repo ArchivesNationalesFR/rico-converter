@@ -7,7 +7,7 @@
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-	xmlns:eac2rico="http://data.archives-nationales.culture.gouv.fr/eac2rico/"
+	xmlns:eac2rico="https://rdf.archivesnationales.fr/eac2rico/"
 	xmlns:isni="https://isni.org/ontology#"
 	xmlns:eac="urn:isbn:1-931666-33-4"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
