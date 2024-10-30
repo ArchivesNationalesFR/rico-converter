@@ -1410,6 +1410,7 @@
         </rico:carrierExtent>
 	</xsl:template>
 	
+	<!-- This first value ending by isx indicate that it is a digital archive. So use hasOrHadDigitalInstantiation to link the RR to the Instantiation -->
 	<xsl:template match="physfacet[@type = 'd3nd9y3c6o-iu0j3xsmoisx' or @type = 'd3nd9xpopj-ckdrv6ljeqeg']" mode="instantiation">
 		<rico:hasRepresentationType rdf:resource="{ead2rico:URI-RepresentationOrCarrierType(@type, @source)}"/>   
 	</xsl:template>
