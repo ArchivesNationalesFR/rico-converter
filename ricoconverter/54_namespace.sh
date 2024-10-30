@@ -1,0 +1,1 @@
+find -type f -exec sed -i 's/http:\/\/data\.archives-nationales\.culture\.gouv\.fr\//https:\/\/rdf\.archivesnationales\.fr\//g' {} +
