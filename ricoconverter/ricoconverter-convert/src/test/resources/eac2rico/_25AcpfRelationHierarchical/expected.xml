@@ -32,9 +32,9 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <rico:agentIsTargetOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/999999-005205-19470101-19641231"/>
-      <rico:isOrWasSubordinateTo rdf:resource="agent/999999" />
+      <rico:wasSubordinateTo rdf:resource="agent/999999" />
       <rico:agentIsSourceOfAgentHierarchicalRelation rdf:resource="agentHierarchicalRelation/005205-111111-19470101-19641231"/>
-      <rico:hasOrHadSubordinate rdf:resource="agent/111111" />
+      <rico:hadSubordinate rdf:resource="agent/111111" />
    </rico:Agent>
    <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/999999-005205-19470101-19641231">
       <rico:agentHierarchicalRelationHasTarget rdf:resource="agent/005205"/>

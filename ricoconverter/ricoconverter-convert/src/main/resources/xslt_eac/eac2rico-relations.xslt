@@ -28,7 +28,7 @@
 			<shortcutIfSubjectIsTargetOfRelation>rico:isOrWasSubordinateTo</shortcutIfSubjectIsTargetOfRelation>
 			<shortcutIfSubjectIsSourceOfRelation_current>rico:hasDirectSubordinate</shortcutIfSubjectIsSourceOfRelation_current>
 			<shortcutIfSubjectIsTargetOfRelation_current>rico:isDirectSubordinateTo</shortcutIfSubjectIsTargetOfRelation_current>
-			<shortcutIfSubjectIsSourceOfRelation_past>rico:hadSubordinate</shortcutIfSubjectIsSourceOfRelation_path>
+			<shortcutIfSubjectIsSourceOfRelation_past>rico:hadSubordinate</shortcutIfSubjectIsSourceOfRelation_past>
 			<shortcutIfSubjectIsTargetOfRelation_past>rico:wasSubordinateTo</shortcutIfSubjectIsTargetOfRelation_past>
 		</AgentHierarchicalRelation>
 		<GroupSubdivisionRelation>
@@ -42,7 +42,7 @@
 			<shortcutIfSubjectIsTargetOfRelation>rico:isOrWasSubdivisionOf</shortcutIfSubjectIsTargetOfRelation>
 			<shortcutIfSubjectIsSourceOfRelation_current>rico:hasDirectSubdivision</shortcutIfSubjectIsSourceOfRelation_current>
 			<shortcutIfSubjectIsTargetOfRelation_current>rico:isDirectSubdivisionOf</shortcutIfSubjectIsTargetOfRelation_current>
-			<shortcutIfSubjectIsSourceOfRelation_past>rico:hadSubdivision</shortcutIfSubjectIsSourceOfRelation_path>
+			<shortcutIfSubjectIsSourceOfRelation_past>rico:hadSubdivision</shortcutIfSubjectIsSourceOfRelation_past>
 			<shortcutIfSubjectIsTargetOfRelation_past>rico:wasSubdivisionOf</shortcutIfSubjectIsTargetOfRelation_past>
 		</GroupSubdivisionRelation>
 		<AgentControlRelation>
@@ -56,7 +56,7 @@
 			<shortcutIfSubjectIsTargetOfRelation>rico:hasOrHadController</shortcutIfSubjectIsTargetOfRelation>
 			<shortcutIfSubjectIsSourceOfRelation_current>rico:isOrWasControllerOf</shortcutIfSubjectIsSourceOfRelation_current>
 			<shortcutIfSubjectIsTargetOfRelation_current>rico:hasOrHadController</shortcutIfSubjectIsTargetOfRelation_current>
-			<shortcutIfSubjectIsSourceOfRelation_past>rico:isOrWasControllerOf</shortcutIfSubjectIsSourceOfRelation_path>
+			<shortcutIfSubjectIsSourceOfRelation_past>rico:isOrWasControllerOf</shortcutIfSubjectIsSourceOfRelation_past>
 			<shortcutIfSubjectIsTargetOfRelation_past>rico:hasOrHadController</shortcutIfSubjectIsTargetOfRelation_past>
 		</AgentControlRelation>
 	</xsl:variable>
