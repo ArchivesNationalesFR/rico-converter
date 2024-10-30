@@ -38,8 +38,8 @@
 			<label>Relation de subdivision</label>
 			<shortcutIfSubjectIsSourceOfRelation>rico:hasOrHadSubdivision</shortcutIfSubjectIsSourceOfRelation>
 			<shortcutIfSubjectIsTargetOfRelation>rico:isOrWasSubdivisionOf</shortcutIfSubjectIsTargetOfRelation>
-			<shortcutIfSubjectIsSourceOfRelation_current>rico:hasOrHadSubdivision</shortcutIfSubjectIsSourceOfRelation_current>
-			<shortcutIfSubjectIsTargetOfRelation_current>rico:isOrWasSubdivisionOf</shortcutIfSubjectIsTargetOfRelation_current>
+			<shortcutIfSubjectIsSourceOfRelation_current>rico:hasDirectSubdivision</shortcutIfSubjectIsSourceOfRelation_current>
+			<shortcutIfSubjectIsTargetOfRelation_current>rico:isDirectSubdivisionOf</shortcutIfSubjectIsTargetOfRelation_current>
 		</GroupSubdivisionRelation>
 		<AgentControlRelation>
 			<extraType>https://www.ica.org/standards/RiC/ontology#AgentControlRelation</extraType>
