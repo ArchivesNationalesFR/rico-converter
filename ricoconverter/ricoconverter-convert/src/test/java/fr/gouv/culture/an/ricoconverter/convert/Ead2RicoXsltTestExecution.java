@@ -118,6 +118,8 @@ public class Ead2RicoXsltTestExecution implements Test {
 		
 			System.out.println(nodeToString(domResult.getNode()));
 
+			/*
+			Uncomment to have the output of the test written in the test directory
 			try {
 				File outputFile = new File(this.testFolder, "output.xml");
 				if(!outputFile.exists()) {
@@ -128,6 +130,7 @@ public class Ead2RicoXsltTestExecution implements Test {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
+			*/
 			
 			if(expected.exists()) {
 
