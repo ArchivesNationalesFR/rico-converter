@@ -769,9 +769,15 @@
 		<!-- shortcut property -->
 		<xsl:variable name="shortcutProperty">
 			<xsl:choose>
-				<xsl:when test="not(eac:dateRange/eac:toDate)">
+				<!-- When there is no known end date, but the begin date is known, we consider that the relation is current -->
+				<xsl:when test="eac:dateRange/eac:fromDate and not(eac:dateRange/eac:toDate)">
 					<xsl:value-of select="$HIERARCHICAL_RELATION_CONFIG/*[local-name() = normalize-space($type)]/shortcutIfSubjectIsSourceOfRelation_current" />
 				</xsl:when>
+				<!-- When there is both the begin and end date known (implicitely in the past), we consider that the relation is past -->
+				<xsl:when test="eac:dateRange/eac:fromDate and eac:dateRange/eac:toDate">
+					<xsl:value-of select="$HIERARCHICAL_RELATION_CONFIG/*[local-name() = normalize-space($type)]/shortcutIfSubjectIsSourceOfRelation_past" />
+				</xsl:when>
+				<!-- No dates, we use the generic relation -->
 				<xsl:otherwise>
 					<xsl:value-of select="$HIERARCHICAL_RELATION_CONFIG/*[local-name() = normalize-space($type)]/shortcutIfSubjectIsSourceOfRelation" />
 				</xsl:otherwise>
@@ -837,12 +843,17 @@
         	</xsl:call-template>
        	</xsl:element>
 		<!-- shortcut property -->
-				<!-- shortcut property -->
 		<xsl:variable name="shortcutProperty">
 			<xsl:choose>
-				<xsl:when test="not(eac:dateRange/eac:toDate)">
+				<!-- When there is no known end date, but the begin date is known, we consider that the relation is current -->
+				<xsl:when test="eac:dateRange/eac:fromDate and not(eac:dateRange/eac:toDate)">
 					<xsl:value-of select="$HIERARCHICAL_RELATION_CONFIG/*[local-name() = normalize-space($type)]/shortcutIfSubjectIsTargetOfRelation_current" />
 				</xsl:when>
+				<!-- When there is both the begin and end date known (implicitely in the past), we consider that the relation is past -->
+				<xsl:when test="eac:dateRange/eac:fromDate and eac:dateRange/eac:toDate">
+					<xsl:value-of select="$HIERARCHICAL_RELATION_CONFIG/*[local-name() = normalize-space($type)]/shortcutIfSubjectIsTargetOfRelation_past" />
+				</xsl:when>				
+				<!-- No dates, we use the generic relation -->
 				<xsl:otherwise>
 					<xsl:value-of select="$HIERARCHICAL_RELATION_CONFIG/*[local-name() = normalize-space($type)]/shortcutIfSubjectIsTargetOfRelation" />
 				</xsl:otherwise>
