@@ -2,7 +2,7 @@
 <xsl:stylesheet version="2.0" 
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-	xmlns:eac2rico="https://rdf.archivesnationales.fr/eac2rico/"
+	xmlns:eac2rico="https://rdf.archives-nationales.culture.gouv.fr/eac2rico/"
 >
 	<xsl:output indent="yes" method="text" />
 	
