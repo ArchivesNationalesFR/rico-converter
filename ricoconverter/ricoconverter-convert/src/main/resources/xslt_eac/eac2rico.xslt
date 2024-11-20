@@ -194,7 +194,7 @@
 	   <rico:name xml:lang="{$LITERAL_LANG}"><xsl:value-of select="$eventTypeLabel" /> (<xsl:value-of select="$agentLabel" />)</rico:name>
 	</xsl:template>
 	<xsl:template match="eac:eventDescription[normalize-space(.)]">
-		<rico:descriptiveNote xml:lang="{$LITERAL_LANG}"><xsl:value-of select="." /></rico:descriptiveNote> 
+		<rico:generalDescription xml:lang="{$LITERAL_LANG}"><xsl:value-of select="." /></rico:generalDescription> 
 	</xsl:template>
 	
 	<!-- *** sources/source/sourceEntry *** -->
@@ -472,12 +472,12 @@
 	</xsl:template>
 	
 	<xsl:template match="eac:structureOrGenealogy[normalize-space(.) != '']">
-		<rico:descriptiveNote rdf:parseType="Literal">
+		<rico:generalDescription rdf:parseType="Literal">
 			<html:div xml:lang="{$LITERAL_LANG}">
 				<h4>Organisation interne ou généalogie</h4>
 				<xsl:apply-templates />
 			</html:div>
-		</rico:descriptiveNote>
+		</rico:generalDescription>
 	</xsl:template>
 	
 	<xsl:template match="eac:generalContext[normalize-space(.) != '']">
@@ -1523,10 +1523,10 @@
 	
 	<!-- If we have a single 'p', don't wrap with a div -->
 	<xsl:template match="eac:descriptiveNote[count(eac:p) = 1]">
-		<rico:descriptiveNote rdf:parseType="Literal"><html:p xml:lang="{$LITERAL_LANG}"><xsl:apply-templates select="eac:p/node()" /></html:p></rico:descriptiveNote>
+		<rico:generalDescription rdf:parseType="Literal"><html:p xml:lang="{$LITERAL_LANG}"><xsl:apply-templates select="eac:p/node()" /></html:p></rico:generalDescription>
 	</xsl:template>
 	<xsl:template match="eac:descriptiveNote[count(eac:p) > 1]">
-		<rico:descriptiveNote rdf:parseType="Literal"><html:div xml:lang="{$LITERAL_LANG}"><xsl:apply-templates /></html:div></rico:descriptiveNote>
+		<rico:generalDescription rdf:parseType="Literal"><html:div xml:lang="{$LITERAL_LANG}"><xsl:apply-templates /></html:div></rico:generalDescription>
 	</xsl:template>
 	
 	<!-- This one detects all 'p' that have only one child element and that child is a span -->

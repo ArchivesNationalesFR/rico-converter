@@ -23,14 +23,14 @@
     <rico:RecordResource rdf:about="recordResource/top-058220">
         <rico:isOrWasDescribedBy rdf:resource="record/058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
-        <rico:descriptiveNote rdf:parseType="Literal">
+        <rico:generalDescription rdf:parseType="Literal">
             <html:div xml:lang="fr">
             <html:h4>Bibliographie</html:h4>
                 <html:p>BUNGENER, PICARD. Quelles recherches pour le Sida ? : note présentée à la direction générale de l'Inserm. Paris. 1991. 13 p.</html:p>
                 
             </html:div>
-        </rico:descriptiveNote>
-        <rico:descriptiveNote rdf:parseType="Literal">
+        </rico:generalDescription>
+        <rico:generalDescription rdf:parseType="Literal">
             <html:div xml:lang="fr">
                 <html:h4>Bibliographie</html:h4>
                 <html:h5>Périodiques</html:h5>
@@ -41,8 +41,8 @@
              
                 
             </html:div>
-        </rico:descriptiveNote>
-        <rico:descriptiveNote rdf:parseType="Literal">
+        </rico:generalDescription>
+        <rico:generalDescription rdf:parseType="Literal">
             <html:div xml:lang="fr">
                 <html:h4>Bibliographie</html:h4>
             <html:p>
@@ -51,7 +51,7 @@
             
                 <html:p>Yvert (Benoît), <html:cite>Dictionnaire des Ministres (1789-1989)</html:cite>, Paris, 1990, pages 559-561.</html:p>
             </html:div>  
-        </rico:descriptiveNote>
+        </rico:generalDescription>
         <rico:hasInstantiation>
              <rico:Instantiation rdf:about="instantiation/top-058220-i1">
                  <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>    
@@ -68,13 +68,13 @@
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-N0004"/>
-        <rico:descriptiveNote rdf:parseType="Literal">
+        <rico:generalDescription rdf:parseType="Literal">
             <html:div xml:lang="fr">
                 <html:h4>Bibliographie</html:h4>
                 <html:p>Publié dans :CANTAREL-BESSON, Yveline, 
                     <html:i>La naissance du Musée du Louvre</html:i>, 1981</html:p>
             </html:div>
-        </rico:descriptiveNote>
+        </rico:generalDescription>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">                
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
@@ -100,7 +100,7 @@
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
         <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-N0005"/>
-        <rico:descriptiveNote rdf:parseType="Literal">
+        <rico:generalDescription rdf:parseType="Literal">
             <html:div xml:lang="fr">
                 <html:h4>Bibliographie</html:h4>
                 <html:p>site internet :</html:p>
@@ -108,7 +108,7 @@
                     <html:li>http://www.bergerie-nationale.educagri.fr/bergerie-nationale/histoire/</html:li>
                 </html:ul>
             </html:div>
-         </rico:descriptiveNote>
+         </rico:generalDescription>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-N0004-i1">                
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-N0004"/>
@@ -121,13 +121,13 @@
     <rico:RecordResource rdf:about="recordResource/058220-N0005">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-N0004"/>
-        <rico:descriptiveNote rdf:parseType="Literal">
+        <rico:generalDescription rdf:parseType="Literal">
             <html:div xml:lang="fr">
                 <html:h4>Bibliographie</html:h4>
                 <html:p>Pouvreau, <html:i>Les graffiti du camp de Drancy...</html:i>, 2013, p. 23</html:p>
             </html:div>
-        </rico:descriptiveNote>  
-        <rico:descriptiveNote  rdf:parseType="Literal">
+        </rico:generalDescription>  
+        <rico:generalDescription  rdf:parseType="Literal">
             <html:div xml:lang="fr">
              <html:h4>Bibliographie</html:h4>
             <html:ul>
@@ -135,7 +135,7 @@
                 <html:li>Febvre L., 2014, <html:i>Michelet, créateur de l’histoire de France. </html:i>Cours au Collège de France, 1943-44, Paris, Vuibert, 445 p. Édition établie par Brigitte Mazon et Yann Potin.</html:li>
             </html:ul>
             </html:div>
-        </rico:descriptiveNote>
+        </rico:generalDescription>
      
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-N0005-i1">                
