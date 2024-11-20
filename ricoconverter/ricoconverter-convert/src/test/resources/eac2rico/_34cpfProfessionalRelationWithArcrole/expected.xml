@@ -31,13 +31,13 @@
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasOrHadAgentName>
-      <rico:agentHasWorkRelation rdf:resource="workRelation/005205-999999"/>
+      <rico:thingIsConnectedToRelation rdf:resource="workRelation/005205-999999"/>
       <rico:hasOrHadWorkRelationWith rdf:resource="agent/999999" />
    
    </rico:Agent>
    <rico:WorkRelation rdf:about="workRelation/005205-999999">	
-      <rico:workRelationConnects rdf:resource="agent/005205"/>
-      <rico:workRelationConnects rdf:resource="agent/999999"/>
+      <rico:relationConnects rdf:resource="agent/005205"/>
+      <rico:relationConnects rdf:resource="agent/999999"/>
       <rdfs:label xml:lang="fr">Relation professionnelle (de travail) entre "The entity" et "Bibliothèque nationale de France"</rdfs:label>
       <rico:descriptiveNote rdf:parseType="Literal"><html:p xml:lang="fr">Ces deux entités travaillent ensemble pour gérer le dépôt légal du web.</html:p></rico:descriptiveNote>
    </rico:WorkRelation>

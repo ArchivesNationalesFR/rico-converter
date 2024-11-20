@@ -31,16 +31,16 @@
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasOrHadAgentName>
-      <rico:agentIsSourceOfAgentControlRelation rdf:resource="agentHierarchicalRelation/050571-111111"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/050571-111111"/>
       <rico:isOrWasControllerOf rdf:resource="agent/111111" />
-      <rico:agentIsTargetOfAgentControlRelation rdf:resource="agentHierarchicalRelation/999999-050571"/>      
+      <rico:thingIsTargetOfRelation rdf:resource="agentHierarchicalRelation/999999-050571"/>      
       <rico:hasOrHadController rdf:resource="agent/999999" />
    </rico:Agent>
 
    <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/050571-111111">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentControlRelation"/>
-      <rico:agentControlRelationHasSource rdf:resource="agent/050571"/>
-      <rico:agentControlRelationHasTarget rdf:resource="agent/111111"/>
+      <rico:relationHasSource rdf:resource="agent/050571"/>
+      <rico:relationHasTarget rdf:resource="agent/111111"/>
       <rdfs:label xml:lang="fr">Relation de contrôle entre "The entity" et "The inferior person"</rdfs:label>
       <rico:descriptiveNote rdf:parseType="Literal">
          <html:p xml:lang="fr">Cette personne a encadré "the inferior person" pendant 8 ans.</html:p>
@@ -48,8 +48,8 @@
    </rico:AgentHierarchicalRelation>
    <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/999999-050571">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentControlRelation"/>
-      <rico:agentControlRelationHasSource rdf:resource="agent/999999"/>
-      <rico:agentControlRelationHasTarget rdf:resource="agent/050571"/>
+      <rico:relationHasSource rdf:resource="agent/999999"/>
+      <rico:relationHasTarget rdf:resource="agent/050571"/>
       <rdfs:label xml:lang="fr">Relation de contrôle entre "The superior person" et "The entity"</rdfs:label>
       <rico:descriptiveNote rdf:parseType="Literal">
          <html:p xml:lang="fr">Cette personne a été placée sous l'autorité hiérarchique de "the superior person" pendant trois ans.</html:p>

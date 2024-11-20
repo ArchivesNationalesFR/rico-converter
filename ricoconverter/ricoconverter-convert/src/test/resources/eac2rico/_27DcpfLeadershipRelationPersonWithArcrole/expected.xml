@@ -32,13 +32,13 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
      
-      <rico:personIsSourceOfLeadershipRelation rdf:resource="agentHierarchicalRelation/005205-111111-19450101-19501130"/>
+      <rico:thingIsSourceOfRelation rdf:resource="agentHierarchicalRelation/005205-111111-19450101-19501130"/>
       <rico:isOrWasLeaderOf rdf:resource="agent/111111" />
    </rico:Agent>
    <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/005205-111111-19450101-19501130">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#LeadershipRelation"/>
-      <rico:leadershipRelationHasSource rdf:resource="agent/005205"/>
-      <rico:leadershipRelationHasTarget rdf:resource="agent/111111"/>
+      <rico:relationHasSource rdf:resource="agent/005205"/>
+      <rico:relationHasTarget rdf:resource="agent/111111"/>
       <rdfs:label xml:lang="fr">Relation de direction (leadership) entre "The entity" et "The associated corporate body", début : 1945, fin : novembre 1950</rdfs:label>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
          >1945-01-01</rico:beginningDate>

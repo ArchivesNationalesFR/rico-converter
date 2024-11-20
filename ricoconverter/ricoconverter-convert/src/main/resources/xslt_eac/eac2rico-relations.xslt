@@ -19,30 +19,30 @@
 		<AgentHierarchicalRelation>
 			<!-- no extra type here -->
 			<extraType></extraType>
-			<targetProperty>rico:agentHierarchicalRelationHasTarget</targetProperty>
-			<sourceProperty>rico:agentHierarchicalRelationHasSource</sourceProperty>
-			<isTargetOfProperty>rico:agentIsTargetOfAgentHierarchicalRelation</isTargetOfProperty>
-			<isSourceOfProperty>rico:agentIsSourceOfAgentHierarchicalRelation</isSourceOfProperty>
+			<targetProperty>rico:relationHasTarget</targetProperty>
+			<sourceProperty>rico:relationHasSource</sourceProperty>
+			<isTargetOfProperty>rico:thingIsTargetOfRelation</isTargetOfProperty>
+			<isSourceOfProperty>rico:thingIsSourceOfRelation</isSourceOfProperty>
 			<label>Relation hiérarchique</label>
 			<shortcutIfSubjectIsSourceOfRelation>rico:hasOrHadSubordinate</shortcutIfSubjectIsSourceOfRelation>
 			<shortcutIfSubjectIsTargetOfRelation>rico:isOrWasSubordinateTo</shortcutIfSubjectIsTargetOfRelation>
 		</AgentHierarchicalRelation>
 		<GroupSubdivisionRelation>
 			<extraType>https://www.ica.org/standards/RiC/ontology#GroupSubdivisionRelation</extraType>
-			<targetProperty>rico:groupSubdivisionRelationHasTarget</targetProperty>
-			<sourceProperty>rico:groupSubdivisionRelationHasSource</sourceProperty>
-			<isTargetOfProperty>rico:groupIsTargetOfGroupSubdivisionRelation</isTargetOfProperty>
-			<isSourceOfProperty>rico:groupIsSourceOfGroupSubdivisionRelation</isSourceOfProperty>
+			<targetProperty>rico:relationHasTarget</targetProperty>
+			<sourceProperty>rico:relationHasSource</sourceProperty>
+			<isTargetOfProperty>rico:thingIsTargetOfRelation</isTargetOfProperty>
+			<isSourceOfProperty>rico:thingIsSourceOfRelation</isSourceOfProperty>
 			<label>Relation de subdivision</label>
 			<shortcutIfSubjectIsSourceOfRelation>rico:hasOrHadSubdivision</shortcutIfSubjectIsSourceOfRelation>
 			<shortcutIfSubjectIsTargetOfRelation>rico:isOrWasSubdivisionOf</shortcutIfSubjectIsTargetOfRelation>
 		</GroupSubdivisionRelation>
 		<AgentControlRelation>
 			<extraType>https://www.ica.org/standards/RiC/ontology#AgentControlRelation</extraType>
-			<targetProperty>rico:agentControlRelationHasTarget</targetProperty>
-			<sourceProperty>rico:agentControlRelationHasSource</sourceProperty>
-			<isTargetOfProperty>rico:agentIsTargetOfAgentControlRelation</isTargetOfProperty>
-			<isSourceOfProperty>rico:agentIsSourceOfAgentControlRelation</isSourceOfProperty>
+			<targetProperty>rico:relationHasTarget</targetProperty>
+			<sourceProperty>rico:relationHasSource</sourceProperty>
+			<isTargetOfProperty>rico:thingIsTargetOfRelation</isTargetOfProperty>
+			<isSourceOfProperty>rico:thingIsSourceOfRelation</isSourceOfProperty>
 			<label>Relation de contrôle</label>
 			<shortcutIfSubjectIsSourceOfRelation>rico:isOrWasControllerOf</shortcutIfSubjectIsSourceOfRelation>
 			<shortcutIfSubjectIsTargetOfRelation>rico:hasOrHadController</shortcutIfSubjectIsTargetOfRelation>
@@ -89,10 +89,10 @@
 			<baseType>rico:AgentToAgentRelation</baseType>
 			<!-- no extra type here -->
 			<extraType></extraType>
-			<targetProperty>rico:agentRelationConnects</targetProperty>
-			<sourceProperty>rico:agentRelationConnects</sourceProperty>
-			<isTargetOfProperty>rico:agentIsConnectedToAgentRelation</isTargetOfProperty>
-			<isSourceOfProperty>rico:agentIsConnectedToAgentRelation</isSourceOfProperty>
+			<targetProperty>rico:relationConnects</targetProperty>
+			<sourceProperty>rico:relationConnects</sourceProperty>
+			<isTargetOfProperty>rico:thingIsConnectedToRelation</isTargetOfProperty>
+			<isSourceOfProperty>rico:thingIsConnectedToRelation</isSourceOfProperty>
 			<label>Relation associative</label>
 			<shortcutIfSubjectIsSourceOfRelation>rico:isAgentAssociatedWithAgent</shortcutIfSubjectIsSourceOfRelation>
 			<shortcutIfSubjectIsTargetOfRelation>rico:isAgentAssociatedWithAgent</shortcutIfSubjectIsTargetOfRelation>
@@ -100,10 +100,10 @@
 		<LeadershipRelation>
 			<baseType>rico:AgentHierarchicalRelation</baseType>
 			<extraType>https://www.ica.org/standards/RiC/ontology#LeadershipRelation</extraType>
-			<targetProperty>rico:leadershipRelationHasTarget</targetProperty>
-			<sourceProperty>rico:leadershipRelationHasSource</sourceProperty>
-			<isTargetOfProperty>rico:groupIsTargetOfLeadershipRelation</isTargetOfProperty>
-			<isSourceOfProperty>rico:personIsSourceOfLeadershipRelation</isSourceOfProperty>
+			<targetProperty>rico:relationHasTarget</targetProperty>
+			<sourceProperty>rico:relationHasSource</sourceProperty>
+			<isTargetOfProperty>rico:thingIsTargetOfRelation</isTargetOfProperty>
+			<isSourceOfProperty>rico:thingIsSourceOfRelation</isSourceOfProperty>
 			<label>Relation de direction (leadership)</label>
 			<shortcutIfSubjectIsSourceOfRelation>rico:isOrWasLeaderOf</shortcutIfSubjectIsSourceOfRelation>
 			<shortcutIfSubjectIsTargetOfRelation>rico:hasOrHadLeader</shortcutIfSubjectIsTargetOfRelation>
@@ -112,10 +112,10 @@
 			<baseType>rico:MembershipRelation</baseType>
 			<!-- no extra type here -->
 			<extraType></extraType>
-			<targetProperty>rico:membershipRelationHasTarget</targetProperty>
-			<sourceProperty>rico:membershipRelationHasSource</sourceProperty>
-			<isTargetOfProperty>rico:personIsTargetOfMembershipRelation</isTargetOfProperty>
-			<isSourceOfProperty>rico:groupIsSourceOfMembershipRelation</isSourceOfProperty>
+			<targetProperty>rico:relationHasTarget</targetProperty>
+			<sourceProperty>rico:relationHasSource</sourceProperty>
+			<isTargetOfProperty>rico:thingIsTargetOfRelation</isTargetOfProperty>
+			<isSourceOfProperty>rico:thingIsSourceOfRelation</isSourceOfProperty>
 			<label>Relation d'appartenance</label>
 			<shortcutIfSubjectIsSourceOfRelation>rico:hasOrHadMember</shortcutIfSubjectIsSourceOfRelation>
 			<shortcutIfSubjectIsTargetOfRelation>rico:isOrWasMemberOf</shortcutIfSubjectIsTargetOfRelation>
@@ -124,10 +124,10 @@
 			<baseType>rico:WorkRelation</baseType>
 			<!-- no extra type here -->
 			<extraType></extraType>
-			<targetProperty>rico:workRelationConnects</targetProperty>
-			<sourceProperty>rico:workRelationConnects</sourceProperty>
-			<isTargetOfProperty>rico:agentHasWorkRelation</isTargetOfProperty>
-			<isSourceOfProperty>rico:agentHasWorkRelation</isSourceOfProperty>
+			<targetProperty>rico:relationConnects</targetProperty>
+			<sourceProperty>rico:relationConnects</sourceProperty>
+			<isTargetOfProperty>rico:thingIsConnectedToRelation</isTargetOfProperty>
+			<isSourceOfProperty>rico:thingIsConnectedToRelation</isSourceOfProperty>
 			<label>Relation professionnelle (de travail)</label>
 			<shortcutIfSubjectIsSourceOfRelation>rico:hasOrHadWorkRelationWith</shortcutIfSubjectIsSourceOfRelation>
 			<shortcutIfSubjectIsTargetOfRelation>rico:hasOrHadWorkRelationWith</shortcutIfSubjectIsTargetOfRelation>
@@ -136,10 +136,10 @@
 		<AgentControlRelation>
 			<baseType>rico:AgentHierarchicalRelation</baseType>
 			<extraType>https://www.ica.org/standards/RiC/ontology#AgentControlRelation</extraType>
-			<targetProperty>rico:agentControlRelationHasTarget</targetProperty>
-			<sourceProperty>rico:agentControlRelationHasSource</sourceProperty>
-			<isTargetOfProperty>rico:agentIsTargetOfAgentControlRelation</isTargetOfProperty>
-			<isSourceOfProperty>rico:agentIsSourceOfAgentControlRelation</isSourceOfProperty>
+			<targetProperty>rico:relationHasTarget</targetProperty>
+			<sourceProperty>rico:relationHasSource</sourceProperty>
+			<isTargetOfProperty>rico:thingIsTargetOfRelation</isTargetOfProperty>
+			<isSourceOfProperty>rico:thingIsSourceOfRelation</isSourceOfProperty>
 			<label>Relation de contrôle</label>
 			<shortcutIfSubjectIsSourceOfRelation>rico:isOrWasControllerOf</shortcutIfSubjectIsSourceOfRelation>
 			<shortcutIfSubjectIsTargetOfRelation>rico:hasOrHadController</shortcutIfSubjectIsTargetOfRelation>
@@ -307,30 +307,30 @@
 	<xsl:variable name="FAMILY_RELATION_CONFIG">
 		<FamilyRelation>
 			<type>rico:FamilyRelation</type>
-			<targetProperty>rico:familyRelationConnects</targetProperty>
-			<sourceProperty>rico:familyRelationConnects</sourceProperty>
-			<isTargetOfProperty>rico:personHasFamilyRelation</isTargetOfProperty>
-			<isSourceOfProperty>rico:personHasFamilyRelation</isSourceOfProperty>
+			<targetProperty>rico:relationConnects</targetProperty>
+			<sourceProperty>rico:relationConnects</sourceProperty>
+			<isTargetOfProperty>rico:thingIsConnectedToRelation</isTargetOfProperty>
+			<isSourceOfProperty>rico:thingIsConnectedToRelation</isSourceOfProperty>
 			<label>Relation familiale</label>
 			<shortcutIfSubjectIsSourceOfRelation>rico:hasFamilyAssociationWith</shortcutIfSubjectIsSourceOfRelation>
 			<shortcutIfSubjectIsTargetOfRelation>rico:hasFamilyAssociationWith</shortcutIfSubjectIsTargetOfRelation>
 		</FamilyRelation>
 		<MembershipRelation>
 			<type>rico:MembershipRelation</type>
-			<targetProperty>rico:membershipRelationHasTarget</targetProperty>
-			<sourceProperty>rico:membershipRelationHasSource</sourceProperty>
-			<isTargetOfProperty>rico:personIsTargetOfMembershipRelation</isTargetOfProperty>
-			<isSourceOfProperty>rico:groupIsSourceOfMembershipRelation</isSourceOfProperty>
+			<targetProperty>rico:relationHasTarget</targetProperty>
+			<sourceProperty>rico:relationHasSource</sourceProperty>
+			<isTargetOfProperty>rico:thingIsTargetOfRelation</isTargetOfProperty>
+			<isSourceOfProperty>rico:thingIsSourceOfRelation</isSourceOfProperty>
 			<label>Relation d'appartenance</label>
 			<shortcutIfSubjectIsSourceOfRelation>rico:hasOrHadMember</shortcutIfSubjectIsSourceOfRelation>
 			<shortcutIfSubjectIsTargetOfRelation>rico:isOrWasMemberOf</shortcutIfSubjectIsTargetOfRelation>
 		</MembershipRelation>
 		<AgentRelation>
 			<type>rico:AgentToAgentRelation</type>
-			<targetProperty>rico:agentRelationConnects</targetProperty>
-			<sourceProperty>rico:agentRelationConnects</sourceProperty>
-			<isTargetOfProperty>rico:agentIsConnectedToAgentRelation</isTargetOfProperty>
-			<isSourceOfProperty>rico:agentIsConnectedToAgentRelation</isSourceOfProperty>
+			<targetProperty>rico:relationConnects</targetProperty>
+			<sourceProperty>rico:relationConnects</sourceProperty>
+			<isTargetOfProperty>rico:thingIsConnectedToRelation</isTargetOfProperty>
+			<isSourceOfProperty>rico:thingIsConnectedToRelation</isSourceOfProperty>
 			<label>Relation</label>
 			<shortcutIfSubjectIsSourceOfRelation>rico:isAgentAssociatedWithAgent</shortcutIfSubjectIsSourceOfRelation>
 			<shortcutIfSubjectIsTargetOfRelation>rico:isAgentAssociatedWithAgent</shortcutIfSubjectIsTargetOfRelation>
