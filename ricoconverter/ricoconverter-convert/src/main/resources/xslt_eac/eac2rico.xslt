@@ -767,11 +767,29 @@
         </xsl:element>
 
 		<!-- shortcut property -->
-		<xsl:element name="{$HIERARCHICAL_RELATION_CONFIG/*[local-name() = normalize-space($type)]/shortcutIfSubjectIsSourceOfRelation}">
-        	<xsl:call-template name="rdf-resource">
-        		<xsl:with-param name="uri" select="eac2rico:URI-AgentExternal(@xlink:href, document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml')))"/>	
-        	</xsl:call-template>
-        </xsl:element>
+		<xsl:variable name="shortcutProperty">
+			<xsl:choose>
+				<!-- When there is no known end date, but the begin date is known, we consider that the relation is current -->
+				<xsl:when test="eac:dateRange/eac:fromDate[text()] and not(eac:dateRange/eac:toDate[text()])">
+					<xsl:value-of select="$HIERARCHICAL_RELATION_CONFIG/*[local-name() = normalize-space($type)]/shortcutIfSubjectIsSourceOfRelation_current" />
+				</xsl:when>
+				<!-- When there is both the begin and end date known (implicitely in the past), we consider that the relation is past -->
+				<xsl:when test="eac:dateRange/eac:fromDate[text()] and eac:dateRange/eac:toDate[text()]">
+					<xsl:value-of select="$HIERARCHICAL_RELATION_CONFIG/*[local-name() = normalize-space($type)]/shortcutIfSubjectIsSourceOfRelation_past" />
+				</xsl:when>
+				<!-- No dates, we use the generic relation -->
+				<xsl:otherwise>
+					<xsl:value-of select="$HIERARCHICAL_RELATION_CONFIG/*[local-name() = normalize-space($type)]/shortcutIfSubjectIsSourceOfRelation" />
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+
+		<xsl:element name="{$shortcutProperty}">
+			<xsl:call-template name="rdf-resource">
+				<xsl:with-param name="uri" select="eac2rico:URI-AgentExternal(@xlink:href, document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml')))"/>	
+			</xsl:call-template>
+		</xsl:element>
+
 	</xsl:template>	
 	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'hierarchical-child' and document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml'))]" mode="relations">
        	<rico:AgentHierarchicalRelation>
@@ -825,7 +843,24 @@
         	</xsl:call-template>
        	</xsl:element>
 		<!-- shortcut property -->
-		<xsl:element name="{$HIERARCHICAL_RELATION_CONFIG/*[local-name() = normalize-space($type)]/shortcutIfSubjectIsTargetOfRelation}">
+		<xsl:variable name="shortcutProperty">
+			<xsl:choose>
+				<!-- When there is no known end date, but the begin date is known, we consider that the relation is current -->
+				<xsl:when test="eac:dateRange/eac:fromDate[text()] and not(eac:dateRange/eac:toDate[text()])">
+					<xsl:value-of select="$HIERARCHICAL_RELATION_CONFIG/*[local-name() = normalize-space($type)]/shortcutIfSubjectIsTargetOfRelation_current" />
+				</xsl:when>
+				<!-- When there is both the begin and end date known (implicitely in the past), we consider that the relation is past -->
+				<xsl:when test="eac:dateRange/eac:fromDate[text()] and eac:dateRange/eac:toDate[text()]">
+					<xsl:value-of select="$HIERARCHICAL_RELATION_CONFIG/*[local-name() = normalize-space($type)]/shortcutIfSubjectIsTargetOfRelation_past" />
+				</xsl:when>				
+				<!-- No dates, we use the generic relation -->
+				<xsl:otherwise>
+					<xsl:value-of select="$HIERARCHICAL_RELATION_CONFIG/*[local-name() = normalize-space($type)]/shortcutIfSubjectIsTargetOfRelation" />
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+
+		<xsl:element name="{$shortcutProperty}">
         	<xsl:call-template name="rdf-resource">
         		<xsl:with-param name="uri" select="eac2rico:URI-AgentExternal(@xlink:href, document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml')))"/>	
         	</xsl:call-template>
