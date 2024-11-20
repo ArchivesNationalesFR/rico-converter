@@ -12,7 +12,7 @@
         <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
         <rico:hasOrHadDigitalInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-i1">
-                <rico:isInstantiationOf rdf:resource="record/058220"/>
+                <rico:isOrWasDigitalInstantiationOf rdf:resource="record/058220"/>
                 <dc:format xml:lang="en">text/xml</dc:format>
                 <rico:identifier>FRAN_IR_058220</rico:identifier>
                 <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -27,7 +27,7 @@
         <!-- do not process physloc here -->        
         <rico:hasOrHadInstantiation>
              <rico:Instantiation rdf:about="instantiation/top-058220-i1">
-                 <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
+                 <rico:isOrWasInstantiationOf rdf:resource="recordResource/top-058220"/>
                  <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_005-d3ntxf5186--sga9u2l9iboc"/> <!-- Pierrefitte-sur-Seine -->
                  <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
              </rico:Instantiation>
@@ -43,7 +43,7 @@
         <!-- do not process physloc here -->
         <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">  
-                <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+                <rico:isOrWasInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
                 <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
                 <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_005-d3ntxf5186--sga9u2l9iboc"/>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"/>
@@ -51,7 +51,7 @@
         </rico:hasOrHadInstantiation>
         <rico:hasOrHadDigitalInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2">                
-                <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+                <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
                 <rico:isDerivedFromInstantiation rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1"/>
                 <!-- do not process physloc here -->
                 <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
@@ -69,7 +69,7 @@
         <!-- do not process physloc here -->
         <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnast-i1"> 
-            	<rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnast"/>               
+            	<rico:isOrWasInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnast"/>               
                 <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_005-d3nttf3j17--1blvnjnk2kli0"/> <!-- Fontainebleau -->              
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnast"/>
             </rico:Instantiation>
@@ -82,7 +82,7 @@
         <!-- do not process physloc here -->
         <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnust-i1">
-            <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnust"/>                  
+            <rico:isOrWasInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnust"/>                  
                 <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_005-d5bdppt147--176wwvjcctrx0"/>  <!-- Paris -->             
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnust"/>
             </rico:Instantiation>

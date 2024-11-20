@@ -19,7 +19,7 @@
       <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
       <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/058220-i1">
-            <rico:isInstantiationOf rdf:resource="record/058220"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/058220"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_IR_058220</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -36,7 +36,7 @@
          <rico:type>sous-sous-série</rico:type>   
          <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/top-058220-i1">
-               <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
+               <rico:isOrWasInstantiationOf rdf:resource="recordResource/top-058220"/>
             </rico:Instantiation>
          </rico:hasOrHadInstantiation>
     </rico:RecordResource>
@@ -48,7 +48,7 @@
 		<rico:type>something unknown</rico:type>        
       <rico:hasOrHadInstantiation>
          <rico:Instantiation rdf:about="instantiation/top-058220-i1">
-            <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
+            <rico:isOrWasInstantiationOf rdf:resource="recordResource/top-058220"/>
          </rico:Instantiation>
       </rico:hasOrHadInstantiation>
     </rico:RecordResource>

@@ -86,7 +86,7 @@
 				<!--  FindingAid Instantiation -->
 			    <rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($fiInstantiationId)}">
 			      <!-- link back to parent URI -->
-			      <rico:isInstantiationOf rdf:resource="{ead2rico:URI-FindingAid($faId)}"/>
+			      <rico:isOrWasDigitalInstantiationOf rdf:resource="{ead2rico:URI-FindingAid($faId)}"/>
 			      <!-- process child elements again but this time in mode 'instantiation' -->
 			      <xsl:apply-templates mode="instantiation" />
 			      <!-- Always insert this regulatedBy on FindingAid's Instantiation in case of AN -->
@@ -305,16 +305,27 @@
 			<!-- The instantiation of the RecordResource -->
 
 			<xsl:variable name="instantiationLink">
-				<xsl:choose>
-					<!-- This value ending by isx indicates that it is a digital archive. So we use a specific link to the Instantiation -->
-					<xsl:when test="did/physdesc/physfacet[@type = 'd3nd9y3c6o-iu0j3xsmoisx']">rico:hasOrHadDigitalInstantiation</xsl:when>
-					<xsl:otherwise>rico:hasOrHadInstantiation</xsl:otherwise>
-				</xsl:choose>
+				<predicates>
+					<xsl:choose>
+						<!-- This value ending by isx indicates that it is a digital archive. So we use a specific link to the Instantiation -->
+						<xsl:when test="did/physdesc/physfacet[@type = 'd3nd9y3c6o-iu0j3xsmoisx']">
+							<resourceToInstantiation>rico:hasOrHadDigitalInstantiation</resourceToInstantiation>
+							<instantiationToResource>rico:isOrWasDigitalInstantiationOf</instantiationToResource>
+						</xsl:when>
+						<xsl:otherwise>
+							<resourceToInstantiation>rico:hasOrHadInstantiation</resourceToInstantiation>
+							<instantiationToResource>rico:isOrWasInstantiationOf</instantiationToResource>						
+						</xsl:otherwise>
+					</xsl:choose>
+				</predicates>
 			</xsl:variable>
 
-			<xsl:element name="{$instantiationLink}">
+			<xsl:element name="{$instantiationLink/predicates/resourceToInstantiation}">
 				<rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($instantiationId)}">
-					<rico:isInstantiationOf rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+					<xsl:element name="{$instantiationLink/predicates/instantiationToResource}">
+						<xsl:attribute name="rdf:resource"><xsl:value-of select="ead2rico:URI-RecordResource($recordResourceId)" /></xsl:attribute>
+					</xsl:element>
+
 					<!-- references to other digital copies -->
 					<xsl:apply-templates select="daogrp | did/daogrp" mode="reference" />
 					<!--  Recurse down. Note that origination is still processed here to match inner persname/corpname/famname -->
@@ -452,17 +463,27 @@
 			</xsl:choose>
 			
 			<!--  The instantiation of this RecordResource -->
-			<xsl:variable name="instantiationLink">
-				<xsl:choose>
-					<!-- This value ending by isx indicates that it is a digital archive. So we use a specific link to the Instantiation -->
-					<xsl:when test="did/physdesc/physfacet[@type = 'd3nd9y3c6o-iu0j3xsmoisx']">rico:hasOrHadDigitalInstantiation</xsl:when>
-					<xsl:otherwise>rico:hasOrHadInstantiation</xsl:otherwise>
-				</xsl:choose>
+			<xsl:variable name="instantiationLink" >
+				<predicates>
+					<xsl:choose>
+						<!-- This value ending by isx indicates that it is a digital archive. So we use a specific link to the Instantiation -->
+						<xsl:when test="did/physdesc/physfacet[@type = 'd3nd9y3c6o-iu0j3xsmoisx']">
+							<resourceToInstantiation>rico:hasOrHadDigitalInstantiation</resourceToInstantiation>
+							<instantiationToResource>rico:isOrWasDigitalInstantiationOf</instantiationToResource>
+						</xsl:when>
+						<xsl:otherwise>
+							<resourceToInstantiation>rico:hasOrHadInstantiation</resourceToInstantiation>
+							<instantiationToResource>rico:isOrWasInstantiationOf</instantiationToResource>						
+						</xsl:otherwise>
+					</xsl:choose>
+				</predicates>
 			</xsl:variable>
 
-			<xsl:element name="{$instantiationLink}">
+			<xsl:element name="{$instantiationLink/predicates/resourceToInstantiation}">
 				<rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($instantiationId)}">
-					<rico:isInstantiationOf rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+					<xsl:element name="{$instantiationLink/predicates/instantiationToResource}">
+						<xsl:attribute name="rdf:resource"><xsl:value-of select="ead2rico:URI-RecordResource($recordResourceId)" /></xsl:attribute>
+					</xsl:element>
 					<!-- references to other digital copies -->
 					<xsl:apply-templates select="daogrp | did/daogrp" mode="reference" />
 					<!--  recurse down. Note that origination is still processed here to match inner persname/corpname/famname -->
@@ -584,7 +605,7 @@
 		<!-- We are inside a daogrp, this is necessarily a digital instantiation -->
 		<rico:hasOrHadDigitalInstantiation>
 			<rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($instantiationId)}">
-				<rico:isInstantiationOf rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+				<rico:isOrWasDigitalInstantiationOf rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
 				
 				<!-- the image legend -->
 				<xsl:apply-templates select="daodesc" />

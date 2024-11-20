@@ -64,7 +64,7 @@
 			<rico:hasOrHadDigitalInstantiation>
 	         <rico:Instantiation>
 	         	<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-Instantiation(eac:recordId)" /></xsl:call-template>
-	            <rico:isInstantiationOf rdf:resource="{eac2rico:URI-Record(eac:recordId)}"/>
+	            <rico:isOrWasDigitalInstantiationOf rdf:resource="{eac2rico:URI-Record(eac:recordId)}"/>
 	            <dc:format xml:lang="en">text/xml</dc:format>
 	            <rico:identifier><xsl:value-of select="eac:recordId" /></rico:identifier>
 	            <xsl:choose>

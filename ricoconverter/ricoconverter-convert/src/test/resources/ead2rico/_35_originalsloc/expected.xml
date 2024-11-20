@@ -12,7 +12,7 @@
         <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
         <rico:hasOrHadDigitalInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-i1">
-                <rico:isInstantiationOf rdf:resource="record/058220"/>
+                <rico:isOrWasDigitalInstantiationOf rdf:resource="record/058220"/>
                 <dc:format xml:lang="en">text/xml</dc:format>
                 <rico:identifier>FRAN_IR_058220</rico:identifier>
                 <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -32,7 +32,7 @@
         </rico:history>     
         <rico:hasOrHadInstantiation>
              <rico:Instantiation rdf:about="instantiation/top-058220-i1">
-                 <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
+                 <rico:isOrWasInstantiationOf rdf:resource="recordResource/top-058220"/>
                                              
                  <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
              </rico:Instantiation>
@@ -51,14 +51,14 @@
         </rico:history>
         <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">                
-                <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+                <rico:isOrWasInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
                 <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"/>
             </rico:Instantiation>
         </rico:hasOrHadInstantiation>
         <rico:hasOrHadDigitalInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2">                
-                <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+                <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
                 <rico:isDerivedFromInstantiation rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1"/>
                 <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
                 <rico:identifier>FRAN_0118_274_L</rico:identifier>
@@ -78,7 +78,7 @@
         </rico:hasGeneticLinkToRecordResource>
         <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnist-i1">                
-              	<rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnist"/>
+              	<rico:isOrWasInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnist"/>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnist"/>
             </rico:Instantiation>
         </rico:hasOrHadInstantiation>

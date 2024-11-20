@@ -10,7 +10,7 @@
       <rico:describesOrDescribed rdf:resource="recordResource/top-011222"/>
       <rico:hasOrHadDigitalInstantiation>
       	<rico:Instantiation rdf:about="instantiation/011222-i1">
-		      <rico:isInstantiationOf rdf:resource="record/011222"/>
+		      <rico:isOrWasDigitalInstantiationOf rdf:resource="record/011222"/>
 		      <dc:format xml:lang="en">text/xml</dc:format>
 		      <rico:identifier>FRAN_IR_011222</rico:identifier>
 		      <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -27,7 +27,7 @@
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
       <rico:hasOrHadInstantiation>
 		<rico:Instantiation rdf:about="instantiation/top-011222-i1">
-		   <rico:isInstantiationOf rdf:resource="recordResource/top-011222"/>
+		   <rico:isOrWasInstantiationOf rdf:resource="recordResource/top-011222"/>
 		   <!-- this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_011222/top"/>-->
 		</rico:Instantiation>     
       </rico:hasOrHadInstantiation>   

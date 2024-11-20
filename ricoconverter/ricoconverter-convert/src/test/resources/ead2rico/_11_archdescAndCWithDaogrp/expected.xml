@@ -9,7 +9,7 @@
       <rico:describesOrDescribed rdf:resource="recordResource/top-003666"/>
       <rico:hasOrHadDigitalInstantiation>
 		   <rico:Instantiation rdf:about="instantiation/003666-i1">
-		      <rico:isInstantiationOf rdf:resource="record/003666"/>
+		      <rico:isOrWasDigitalInstantiationOf rdf:resource="record/003666"/>
 		      <dc:format xml:lang="en">text/xml</dc:format>
 		      <rico:identifier>FRAN_IR_003666</rico:identifier>
 		      <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -27,7 +27,7 @@
       <rico:hasOrHadInstantiation>
       	   <rico:Instantiation rdf:about="instantiation/top-003666-i1">
       	 
-		      <rico:isInstantiationOf rdf:resource="recordResource/top-003666"/>
+		      <rico:isOrWasInstantiationOf rdf:resource="recordResource/top-003666"/>
 		      <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/top-003666-i2"/>
       	   	<!-- this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_003666/top"/>-->
 		   </rico:Instantiation>
@@ -36,7 +36,7 @@
       <rico:hasOrHadDigitalInstantiation>
       	   <rico:Instantiation rdf:about="instantiation/top-003666-i2">
       	     
-		      <rico:isInstantiationOf rdf:resource="recordResource/top-003666"/>
+		      <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/top-003666"/>
 		      <rico:isDerivedFromInstantiation rdf:resource="instantiation/top-003666-i1"/>
 		      <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
 		      <!-- here we can only specify the first and last image of the series of images that are integrated into the instantiation-->
@@ -70,14 +70,14 @@
       <rico:directlyPrecedesInSequence rdf:resource="recordResource/003666-c-7jg4i6fd5-18zjwwhf1ggm1"/>
       <rico:hasOrHadInstantiation>
       	   <rico:Instantiation rdf:about="instantiation/003666-c-835pw5mwg-otyywby3qzqb-i1">
-		      <rico:isInstantiationOf rdf:resource="recordResource/003666-c-835pw5mwg-otyywby3qzqb"/>
+		      <rico:isOrWasInstantiationOf rdf:resource="recordResource/003666-c-835pw5mwg-otyywby3qzqb"/>
 		      <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/003666-c-835pw5mwg-otyywby3qzqb-i2"/>
 		      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_003666/c-835pw5mwg-otyywby3qzqb"/>
 		   </rico:Instantiation>
       </rico:hasOrHadInstantiation>
       <rico:hasOrHadDigitalInstantiation>
            <rico:Instantiation rdf:about="instantiation/003666-c-835pw5mwg-otyywby3qzqb-i2">
-		      <rico:isInstantiationOf rdf:resource="recordResource/003666-c-835pw5mwg-otyywby3qzqb"/>
+		      <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/003666-c-835pw5mwg-otyywby3qzqb"/>
               <rico:descriptiveNote rdf:parseType="Literal">
               	<html:p xml:lang="fr">une légende</html:p>
               </rico:descriptiveNote>
@@ -98,14 +98,14 @@
       <rico:directlyPrecedesInSequence rdf:resource="recordResource/003666-123456"/>
 		<rico:hasOrHadInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-c-7jg4i6fd5-18zjwwhf1ggm1-i1">
-				<rico:isInstantiationOf rdf:resource="recordResource/003666-c-7jg4i6fd5-18zjwwhf1ggm1"/>
+				<rico:isOrWasInstantiationOf rdf:resource="recordResource/003666-c-7jg4i6fd5-18zjwwhf1ggm1"/>
 				<rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/003666-c-7jg4i6fd5-18zjwwhf1ggm1-i2"/>
 				<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_003666/c-7jg4i6fd5-18zjwwhf1ggm1"/>
 			</rico:Instantiation>
 		</rico:hasOrHadInstantiation>
 		<rico:hasOrHadDigitalInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-c-7jg4i6fd5-18zjwwhf1ggm1-i2">
-				<rico:isInstantiationOf rdf:resource="recordResource/003666-c-7jg4i6fd5-18zjwwhf1ggm1"/>
+				<rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/003666-c-7jg4i6fd5-18zjwwhf1ggm1"/>
 				<rico:isDerivedFromInstantiation rdf:resource="instantiation/003666-c-7jg4i6fd5-18zjwwhf1ggm1-i1"/>
 				<rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
 				
@@ -125,7 +125,7 @@
       <rico:directlyPrecedesInSequence rdf:resource="recordResource/003666-i7899"/>
 		<rico:hasOrHadInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-123456-i1">
-				<rico:isInstantiationOf rdf:resource="recordResource/003666-123456"/>
+				<rico:isOrWasInstantiationOf rdf:resource="recordResource/003666-123456"/>
 				<!-- two digital instantiations derived from this first one -->
 				<rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/003666-123456-i2"/>
 				<rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/003666-123456-i3"/>
@@ -134,7 +134,7 @@
 		</rico:hasOrHadInstantiation>
 		<rico:hasOrHadDigitalInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-123456-i2">
-				<rico:isInstantiationOf rdf:resource="recordResource/003666-123456"/>				
+				<rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/003666-123456"/>				
 				<rico:isDerivedFromInstantiation rdf:resource="instantiation/003666-123456-i1"/>
 				<rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
 			
@@ -148,7 +148,7 @@
 		</rico:hasOrHadDigitalInstantiation>
 		<rico:hasOrHadDigitalInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-123456-i3">
-				<rico:isInstantiationOf rdf:resource="recordResource/003666-123456"/>
+				<rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/003666-123456"/>
 				<rico:descriptiveNote rdf:parseType="Literal">
 					<html:p xml:lang="fr">une autre légende</html:p>
 				</rico:descriptiveNote>				
@@ -167,7 +167,7 @@
 		<rico:directlyFollowsInSequence rdf:resource="recordResource/003666-123456"/>
 		<rico:hasOrHadDigitalInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-i7899-i2">
-				<rico:isInstantiationOf rdf:resource="recordResource/003666-i7899"/>				
+				<rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/003666-i7899"/>				
 				<rico:isDerivedFromInstantiation rdf:resource="instantiation/003666-i7899-i1"/>
 				<rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
 				
@@ -182,7 +182,7 @@
 		</rico:hasOrHadDigitalInstantiation>
 		<rico:hasOrHadDigitalInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-i7899-i3">
-				<rico:isInstantiationOf rdf:resource="recordResource/003666-i7899"/>
+				<rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/003666-i7899"/>
 				<rico:descriptiveNote rdf:parseType="Literal">
 					<html:p xml:lang="fr">une autre légende</html:p>
 				</rico:descriptiveNote>				
@@ -198,7 +198,7 @@
 		</rico:hasOrHadDigitalInstantiation>
 		<rico:hasOrHadInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-i7899-i1">
-				<rico:isInstantiationOf rdf:resource="recordResource/003666-i7899"/>
+				<rico:isOrWasInstantiationOf rdf:resource="recordResource/003666-i7899"/>
 				<!-- two digital instantiations derived from this first one -->
 				<rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/003666-i7899-i2"/>
 				<rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/003666-i7899-i3"/>
