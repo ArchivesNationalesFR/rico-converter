@@ -20,47 +20,47 @@
    <rico:Agent rdf:about="agent/005205">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:isOrWasDescribedBy rdf:resource="record/005205"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/005205-d3nyugtbte--13rem7tfg1o1y">
-            <rico:performanceRelationHasTarget rdf:resource="agent/005205"/>
-            <rico:performanceRelationHasSource>
+            <rico:relationHasTarget rdf:resource="agent/005205"/>
+            <rico:relationHasSource>
                <rico:Activity rdf:nodeID="_Activity-a">
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005205-d3nyugtbte--13rem7tfg1o1y"/>
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/005205-d3nyugtbte--13rem7tfg1o1y"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d3nyugtbte--13rem7tfg1o1y"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
       <rico:performsOrPerformed rdf:nodeID="_Activity-a" />
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/005205-d5bhvikvro-1p99atu7o3qwy-19090520-*">
-            <rico:performanceRelationHasTarget rdf:resource="agent/005205"/>
-            <rico:performanceRelationHasSource>
+            <rico:relationHasTarget rdf:resource="agent/005205"/>
+            <rico:relationHasSource>
                <rico:Activity rdf:nodeID="_Activity-b">
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005205-d5bhvikvro-1p99atu7o3qwy-19090520-*"/>
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/005205-d5bhvikvro-1p99atu7o3qwy-19090520-*"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvikvro-1p99atu7o3qwy"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1909-05-20</rico:beginningDate>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
       <rico:performsOrPerformed rdf:nodeID="_Activity-b" />
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/005205-d5bhvikvro-1p99atu7o3qwy-19180523-19870523">
-            <rico:performanceRelationHasTarget rdf:resource="agent/005205"/>
-            <rico:performanceRelationHasSource>
+            <rico:relationHasTarget rdf:resource="agent/005205"/>
+            <rico:relationHasSource>
                <rico:Activity rdf:nodeID="_Activity-c">
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005205-d5bhvikvro-1p99atu7o3qwy-19180523-19870523"/>
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/005205-d5bhvikvro-1p99atu7o3qwy-19180523-19870523"/>
                   <rico:hasActivityType rdf:resource="activityType/FRAN_RI_011-d5bhvikvro-1p99atu7o3qwy"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1918-05-23</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-05-23</rico:endDate>
             <rico:descriptiveNote rdf:parseType="Literal">
  	           <html:p xml:lang="fr">Blah</html:p>
             </rico:descriptiveNote>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
       <rico:performsOrPerformed rdf:nodeID="_Activity-c" />
    </rico:Agent>
 </rdf:RDF>

@@ -31,22 +31,22 @@
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasOrHadAgentName>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/111111-005205"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/top-111111"/>
-      <rico:agentIsTargetOfAgentOriginationRelation rdf:resource="agentOriginationRelation/057306-c-grmqcmjabh-1fkw1foh8y5qu-005205"/>
-      <rico:isProvenanceOf rdf:resource="recordResource/057306-c-grmqcmjabh-1fkw1foh8y5qu"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentOriginationRelation/111111-005205"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-111111"/>
+      <rico:thingIsTargetOfRelation rdf:resource="agentOriginationRelation/057306-c-grmqcmjabh-1fkw1foh8y5qu-005205"/>
+      <rico:isOrganicProvenanceOf rdf:resource="recordResource/057306-c-grmqcmjabh-1fkw1foh8y5qu"/>
       <!-- nothing else here ; no RDF output for the third case ; just output a warning-->
    </rico:Agent>
-   <rico:AgentOriginationRelation rdf:about="agentOriginationRelation/111111-005205">
-      <rico:agentOriginationRelationHasSource rdf:resource="recordResource/top-111111"/>
-      <rico:agentOriginationRelationHasTarget rdf:resource="agent/005205"/>
-   </rico:AgentOriginationRelation>
+   <rico:OrganicProvenanceRelation rdf:about="agentOriginationRelation/111111-005205">
+      <rico:relationHasSource rdf:resource="recordResource/top-111111"/>
+      <rico:relationHasTarget rdf:resource="agent/005205"/>
+   </rico:OrganicProvenanceRelation>
    
-   <rico:AgentOriginationRelation rdf:about="agentOriginationRelation/057306-c-grmqcmjabh-1fkw1foh8y5qu-005205">
-      <rico:agentOriginationRelationHasSource rdf:resource="recordResource/057306-c-grmqcmjabh-1fkw1foh8y5qu"/>
-      <rico:agentOriginationRelationHasTarget rdf:resource="agent/005205"/>
+   <rico:OrganicProvenanceRelation rdf:about="agentOriginationRelation/057306-c-grmqcmjabh-1fkw1foh8y5qu-005205">
+      <rico:relationHasSource rdf:resource="recordResource/057306-c-grmqcmjabh-1fkw1foh8y5qu"/>
+      <rico:relationHasTarget rdf:resource="agent/005205"/>
       <rico:descriptiveNote rdf:parseType="Literal">
          <html:p xml:lang="fr">Archives de l'UNVDC</html:p>
       </rico:descriptiveNote>
-   </rico:AgentOriginationRelation>
+   </rico:OrganicProvenanceRelation>
 </rdf:RDF>

@@ -110,15 +110,15 @@
 			</rdf:RDF>
 		</xsl:result-document>
 		
-		<!-- Generate a single output document to gather rico:AgentOriginationRelation... -->
-		<xsl:message>Arranging rico:AgentOriginationRelation...</xsl:message>	
+		<!-- Generate a single output document to gather rico:OrganicProvenanceRelation... -->
+		<xsl:message>Arranging rico:OrganicProvenanceRelation...</xsl:message>	
 		<xsl:result-document href="{concat($OUTPUT_RELATIONS_FOLDER, '/', 'FRAN_agentOriginationRelations.rdf')}" method="xml" encoding="utf-8" indent="yes">
 			<rdf:RDF>
 				<xsl:attribute name="xml:base" select="$BASE_URI" />
 				<!-- Iterate again... -->
 				<xsl:for-each select="$inputCollection">		
-					<!-- Collect all nodes rico:AgentOriginationRelation -->
-					<xsl:apply-templates select="rdf:RDF/rico:AgentOriginationRelation" mode="copyMe"/>						
+					<!-- Collect all nodes rico:OrganicProvenanceRelation -->
+					<xsl:apply-templates select="rdf:RDF/rico:OrganicProvenanceRelation" mode="copyMe"/>						
 				</xsl:for-each>
 			</rdf:RDF>
 		</xsl:result-document>
@@ -158,7 +158,7 @@
 			 	not(self::rico:FamilyRelation) and
 			 	not(self::rico:MembershipRelation) and
 			 	not(self::rico:WorkRelation) and
-			 	not(self::rico:AgentOriginationRelation) and
+			 	not(self::rico:OrganicProvenanceRelation) and
 			 	not(self::rico:Place)
 			]"/>
 		</xsl:copy>
