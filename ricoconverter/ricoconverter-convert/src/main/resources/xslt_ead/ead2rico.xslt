@@ -396,7 +396,7 @@
 			<!-- The inverse link to the parent depends on the incoming link, which depends on the type of the parent -->
 			<xsl:choose>
 				<xsl:when test="ead2rico:isRicoRecordSet(ancestor::*[local-name() = 'c' or local-name() = 'archdesc'][1])">
-					<rico:isOrWasIncludedIn rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />	
+					<rico:isDirectlyIncludedIn rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />	
 				</xsl:when>
 				<xsl:when test="ead2rico:isRicoRecord(ancestor::*[local-name() = 'c' or local-name() = 'archdesc'][1])">
 					<rico:isOrWasConstituentOf rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />	
