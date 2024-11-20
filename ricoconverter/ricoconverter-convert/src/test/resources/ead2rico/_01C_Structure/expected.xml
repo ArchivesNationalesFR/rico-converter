@@ -3,7 +3,7 @@
    xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/011222">
    	  <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
       <rico:describesOrDescribed rdf:resource="recordResource/top-011222"/>
@@ -41,6 +41,7 @@
       In the first file we should find the following, which corresponds to the 'foo' c element and its subcomponents -->  
    <rico:RecordResource rdf:about="recordResource/011222-foo">
      <rico:isOrWasIncludedIn rdf:resource="recordResource/top-011222"/>
+     <rico:directlyPrecedesInSequence rdf:resource="recordResource/011222-klmn" />
      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
      <rico:hasInstantiation>
        <rico:Instantiation rdf:about="instantiation/011222-foo-i1">
@@ -64,6 +65,7 @@
 	<!-- in the 2nd file we should find the following-->
    <rico:RecordResource rdf:about="recordResource/011222-klmn">
       <rico:isOrWasIncludedIn rdf:resource="recordResource/top-011222"/>
+      <rico:directlyFollowsInSequence rdf:resource="recordResource/011222-foo" />
       <rico:hasInstantiation>
       	   <rico:Instantiation rdf:about="instantiation/011222-klmn-i1">
 		      <rico:isInstantiationOf rdf:resource="recordResource/011222-klmn"/>

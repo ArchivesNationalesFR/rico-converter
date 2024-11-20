@@ -6,7 +6,7 @@
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xml:base="http://data.archives-nationales.culture.gouv.fr/">
+    xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
     <rico:Record rdf:about="record/058220">
         <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid"/>
         <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
@@ -46,12 +46,13 @@
     <!-- c controlaccess/geogname -->
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-c2vzyex76ypt-1d197pd5bylhj"/>
         <rico:hasOrHadSubject rdf:resource="place/FRAN_RI_005-d3ntcoltno-1qp8irxkrrkjx"/>
         <rico:hasOrHadSubject rdf:resource="place/FRAN_RI_005-d3ntxekh7m-15nddn7svylpg"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">                
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
-                <rico:hasDerivedInstantiation rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
+                <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
                 <!--do not process controlaccess/geogname here-->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"/>
             </rico:Instantiation>
@@ -71,6 +72,7 @@
     <!-- c unititle/geogname -->
     <rico:RecordResource rdf:about="recordResource/058220-c2vzyex76ypt-1d197pd5bylhj">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
         <rico:title xml:lang="fr">Titre comprend un geogname : Corbonod</rico:title>   
         <rdfs:label xml:lang="fr">Titre comprend un geogname : Corbonod</rdfs:label>
         <rico:hasOrHadSubject rdf:resource="place/FRAN_RI_005-d3ntcoltno-1qp8irxkrrkjx"/>

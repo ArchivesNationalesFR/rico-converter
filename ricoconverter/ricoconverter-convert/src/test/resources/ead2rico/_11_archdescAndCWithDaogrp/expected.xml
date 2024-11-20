@@ -3,7 +3,7 @@
    xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xml:base="http://data.archives-nationales.culture.gouv.fr/">
+   xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <rico:Record rdf:about="record/003666">
    	  <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
       <rico:describesOrDescribed rdf:resource="recordResource/top-003666"/>
@@ -28,7 +28,7 @@
       	   <rico:Instantiation rdf:about="instantiation/top-003666-i1">
       	 
 		      <rico:isInstantiationOf rdf:resource="recordResource/top-003666"/>
-		      <rico:hasDerivedInstantiation rdf:resource="instantiation/top-003666-i2"/>
+		      <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/top-003666-i2"/>
       	   	<!-- this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_003666/top"/>-->
 		   </rico:Instantiation>
       </rico:hasInstantiation>
@@ -67,10 +67,11 @@
    
    <rico:RecordResource rdf:about="recordResource/003666-c-835pw5mwg-otyywby3qzqb">
       <rico:isOrWasIncludedIn rdf:resource="recordResource/top-003666"/>
+      <rico:directlyPrecedesInSequence rdf:resource="recordResource/003666-c-7jg4i6fd5-18zjwwhf1ggm1"/>
       <rico:hasInstantiation>
       	   <rico:Instantiation rdf:about="instantiation/003666-c-835pw5mwg-otyywby3qzqb-i1">
 		      <rico:isInstantiationOf rdf:resource="recordResource/003666-c-835pw5mwg-otyywby3qzqb"/>
-		      <rico:hasDerivedInstantiation rdf:resource="instantiation/003666-c-835pw5mwg-otyywby3qzqb-i2"/>
+		      <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/003666-c-835pw5mwg-otyywby3qzqb-i2"/>
 		      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_003666/c-835pw5mwg-otyywby3qzqb"/>
 		   </rico:Instantiation>
       </rico:hasInstantiation>
@@ -93,10 +94,12 @@
 	
 	<rico:RecordResource rdf:about="recordResource/003666-c-7jg4i6fd5-18zjwwhf1ggm1">
 		<rico:isOrWasIncludedIn rdf:resource="recordResource/top-003666"/>
+		<rico:directlyFollowsInSequence rdf:resource="recordResource/003666-c-835pw5mwg-otyywby3qzqb"/>
+      <rico:directlyPrecedesInSequence rdf:resource="recordResource/003666-123456"/>
 		<rico:hasInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-c-7jg4i6fd5-18zjwwhf1ggm1-i1">
 				<rico:isInstantiationOf rdf:resource="recordResource/003666-c-7jg4i6fd5-18zjwwhf1ggm1"/>
-				<rico:hasDerivedInstantiation rdf:resource="instantiation/003666-c-7jg4i6fd5-18zjwwhf1ggm1-i2"/>
+				<rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/003666-c-7jg4i6fd5-18zjwwhf1ggm1-i2"/>
 				<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_003666/c-7jg4i6fd5-18zjwwhf1ggm1"/>
 			</rico:Instantiation>
 		</rico:hasInstantiation>
@@ -117,14 +120,15 @@
 	</rico:RecordResource>
 	
 	<rico:RecordResource rdf:about="recordResource/003666-123456">
-		
 		<rico:isOrWasIncludedIn rdf:resource="recordResource/top-003666"/>
+		<rico:directlyFollowsInSequence rdf:resource="recordResource/003666-c-7jg4i6fd5-18zjwwhf1ggm1"/>
+      <rico:directlyPrecedesInSequence rdf:resource="recordResource/003666-i7899"/>
 		<rico:hasInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-123456-i1">
 				<rico:isInstantiationOf rdf:resource="recordResource/003666-123456"/>
 				<!-- two digital instantiations derived from this first one -->
-				<rico:hasDerivedInstantiation rdf:resource="instantiation/003666-123456-i2"/>
-				<rico:hasDerivedInstantiation rdf:resource="instantiation/003666-123456-i3"/>
+				<rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/003666-123456-i2"/>
+				<rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/003666-123456-i3"/>
 				<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_003666/123456"/>
 			</rico:Instantiation>
 		</rico:hasInstantiation>
@@ -159,8 +163,8 @@
 	</rico:RecordResource>
 	
 	<rico:RecordResource rdf:about="recordResource/003666-i7899">
-		
 		<rico:isOrWasIncludedIn rdf:resource="recordResource/top-003666"/>
+		<rico:directlyFollowsInSequence rdf:resource="recordResource/003666-123456"/>
 		<rico:hasInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-i7899-i2">
 				<rico:isInstantiationOf rdf:resource="recordResource/003666-i7899"/>				
@@ -196,8 +200,8 @@
 			<rico:Instantiation rdf:about="instantiation/003666-i7899-i1">
 				<rico:isInstantiationOf rdf:resource="recordResource/003666-i7899"/>
 				<!-- two digital instantiations derived from this first one -->
-				<rico:hasDerivedInstantiation rdf:resource="instantiation/003666-i7899-i2"/>
-				<rico:hasDerivedInstantiation rdf:resource="instantiation/003666-i7899-i3"/>
+				<rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/003666-i7899-i2"/>
+				<rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/003666-i7899-i3"/>
 				<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_003666/i7899"/>
 			</rico:Instantiation>
 		</rico:hasInstantiation>

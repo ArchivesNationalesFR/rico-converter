@@ -6,7 +6,7 @@
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xml:base="http://data.archives-nationales.culture.gouv.fr/">
+    xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
     <rico:Record rdf:about="record/058220">
         <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
         <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
@@ -49,6 +49,7 @@
  
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-N0004"/>
         <rico:descriptiveNote rdf:parseType="Literal">
             <html:div xml:lang="fr">
                 <html:h4>Document(s) séparé(s)</html:h4>
@@ -58,7 +59,7 @@
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">                
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
-                <rico:hasDerivedInstantiation rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
+                <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
                 <!-- do not process separatedmaterial here -->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"/>
             </rico:Instantiation>
@@ -78,6 +79,8 @@
 
     <rico:RecordResource rdf:about="recordResource/058220-N0004">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-N0005"/>
         <rico:descriptiveNote rdf:parseType="Literal">
             <html:div xml:lang="fr">
              <html:h4>Document(s) séparé(s)</html:h4>
@@ -105,6 +108,8 @@
     <!--ref role="IR"-->
     <rico:RecordResource rdf:about="recordResource/058220-N0005">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-N0004"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-N0006"/>
         <rico:descriptiveNote rdf:parseType="Literal">
             <html:div xml:lang="fr">
                 <html:h4>Document(s) séparé(s)</html:h4>
@@ -126,6 +131,8 @@
     
     <rico:RecordResource rdf:about="recordResource/058220-N0006">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-N0005"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-N0007"/>
         <rico:descriptiveNote rdf:parseType="Literal">
             <html:div xml:lang="fr">
                 <html:h4>Document(s) séparé(s)</html:h4>
@@ -146,6 +153,8 @@
     <!--ref role="WEB"-->
     <rico:RecordResource rdf:about="recordResource/058220-N0007">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-N0006"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-N0008"/>
         <rico:descriptiveNote rdf:parseType="Literal">
             <html:div xml:lang="fr">
                 <html:h4>Document(s) séparé(s)</html:h4>
@@ -169,6 +178,7 @@
     <!--ref role="ANX"-->
     <rico:RecordResource rdf:about="recordResource/058220-N0008">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-N0007"/>
         <rico:descriptiveNote rdf:parseType="Literal">
             <html:div xml:lang="fr">
                 <html:h4>Document(s) séparé(s)</html:h4>

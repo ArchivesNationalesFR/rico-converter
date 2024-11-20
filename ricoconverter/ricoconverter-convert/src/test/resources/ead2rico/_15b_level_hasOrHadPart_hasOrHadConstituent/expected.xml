@@ -6,7 +6,7 @@
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xml:base="http://data.archives-nationales.culture.gouv.fr/">
+    xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
     <rico:Record rdf:about="record/058220">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid"/>
       <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
@@ -65,6 +65,7 @@
     <!-- cas 3.1 : c RecordSet -->
     <rico:RecordResource rdf:about="recordResource/058220-a3.1">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/> 
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-a3.2"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasInstantiation>
           <rico:Instantiation rdf:about="instantiation/058220-a3.1-i1">
@@ -88,6 +89,8 @@
     <!-- cas 3.2 : c Record -->
     <rico:RecordResource rdf:about="recordResource/058220-a3.2">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/> 
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-a3.1"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-a3.3"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
         <rico:hasInstantiation>
           <rico:Instantiation rdf:about="instantiation/058220-a3.2-i1">
@@ -111,6 +114,8 @@
     <!-- cas 3.3 : c Unknown -->
     <rico:RecordResource rdf:about="recordResource/058220-a3.3">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/> 
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-a3.2"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-a3.4"/>
         <rico:hasInstantiation>
           <rico:Instantiation rdf:about="instantiation/058220-a3.3-i1">
             <rico:isInstantiationOf rdf:resource="recordResource/058220-a3.3"/>
@@ -133,6 +138,7 @@
     <!-- cas 3.4 : c RecordPart -->
     <rico:RecordResource rdf:about="recordResource/058220-a3.4">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/> 
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-a3.3"/>
         <rico:hasInstantiation>
           <rico:Instantiation rdf:about="instantiation/058220-a3.4-i1">
             <rico:isInstantiationOf rdf:resource="recordResource/058220-a3.4"/>

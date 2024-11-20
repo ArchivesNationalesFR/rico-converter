@@ -14,7 +14,7 @@
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-	xmlns:ead2rico="http://data.archives-nationales.culture.gouv.fr/ead2rico/"
+	xmlns:ead2rico="https://rdf.archives-nationales.culture.gouv.fr/ead2rico/"
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns:isni="https://isni.org/ontology#"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -405,6 +405,10 @@
 					<rico:isOrWasPartOf rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />					
 				</xsl:otherwise>
 			</xsl:choose>
+
+			<!-- link to siblings of the RecordResource -->
+			<xsl:apply-templates select="preceding-sibling::c[1]" mode="preceding-sibling" />
+			<xsl:apply-templates select="following-sibling::c[1]" mode="following-sibling" />
 						
 			<!-- child c's and daogrp are processed after. Note that the current element is processed here with a special mode to determine its type -->
 			<!--  Note that origination is still processed here to match inner persname/corpname/famname -->
@@ -507,6 +511,29 @@
 		</rico:RecordResource>
 	</xsl:template>
 
+	<!-- link to siblings of the RecordResource -->
+	<xsl:template match="c" mode="following-sibling">
+		<xsl:variable name="recordResourceId">
+			<xsl:call-template name="recordResourceId">
+				<xsl:with-param name="faId" select="$faId" />
+				<xsl:with-param name="recordResourceId" select="@id" />
+			</xsl:call-template>
+		</xsl:variable>
+	
+		<rico:directlyPrecedesInSequence rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+	</xsl:template>
+
+	<!-- link to siblings of the RecordResource -->
+	<xsl:template match="c" mode="preceding-sibling">
+		<xsl:variable name="recordResourceId">
+			<xsl:call-template name="recordResourceId">
+				<xsl:with-param name="faId" select="$faId" />
+				<xsl:with-param name="recordResourceId" select="@id" />
+			</xsl:call-template>
+		</xsl:variable>
+	
+		<rico:directlyFollowsInSequence rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+	</xsl:template>
 
 	<!-- ***** daogrp and daoloc processing : generates other Instantiations ***** -->
 
@@ -520,7 +547,7 @@
 		</xsl:variable>
 		<!-- Add +2 to the offset of this daogrp element to build instantiation ID -->
 		<xsl:variable name="instantiationId" select="concat($recordResourceId, '-i', count(preceding-sibling::daogrp)+2)" />
-		<rico:hasDerivedInstantiation rdf:resource="{ead2rico:URI-Instantiation($instantiationId)}"/>
+		<rico:hasOrHadDerivedInstantiation rdf:resource="{ead2rico:URI-Instantiation($instantiationId)}"/>
 	</xsl:template>
 	
 	<xsl:template match="daogrp">
@@ -1383,6 +1410,7 @@
         </rico:carrierExtent>
 	</xsl:template>
 	
+	<!-- This first value ending by isx indicate that it is a digital archive. So use hasOrHadDigitalInstantiation to link the RR to the Instantiation -->
 	<xsl:template match="physfacet[@type = 'd3nd9y3c6o-iu0j3xsmoisx' or @type = 'd3nd9xpopj-ckdrv6ljeqeg']" mode="instantiation">
 		<rico:hasRepresentationType rdf:resource="{ead2rico:URI-RepresentationOrCarrierType(@type, @source)}"/>   
 	</xsl:template>

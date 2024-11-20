@@ -6,7 +6,7 @@
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xml:base="http://data.archives-nationales.culture.gouv.fr/">
+    xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
     <rico:Record rdf:about="record/058220">
     	  <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
         <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
@@ -43,6 +43,7 @@
     <!-- c level -->
     <rico:RecordResource rdf:about="recordResource/058220-c-835pw5mwg-otyywby3qzqb">   
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-1_3_12"/>
         <rico:scopeAndContent rdf:parseType="Literal">
             <html:div xml:lang="fr">
                 <html:p>1</html:p>
@@ -67,6 +68,8 @@
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-1_3_12">   
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-c-835pw5mwg-otyywby3qzqb"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-xxx"/>
         <rico:scopeAndContent rdf:parseType="Literal">
             <html:div xml:lang="fr">
                 <html:p>1. Entrée n° 5067 du 20 juillet 2005.</html:p>
@@ -81,6 +84,7 @@
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-xxx">   
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-1_3_12"/>
         <rico:scopeAndContent rdf:parseType="Literal">
             <html:div xml:lang="fr">
                 <html:p>Accès aux instruments de recherche de tous les notaires de l’étude XXI<html:a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_041643">Archives de l'étude XXI</html:a></html:p>

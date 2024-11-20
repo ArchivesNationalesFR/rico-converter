@@ -6,7 +6,7 @@
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xml:base="http://data.archives-nationales.culture.gouv.fr/">
+    xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
     <rico:Record rdf:about="record/055691">
     	  <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
         <rico:describesOrDescribed rdf:resource="recordResource/top-055691"/>
@@ -47,7 +47,7 @@
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/055691-c-2vzyex8hc18--1o5wpcllauj9q-i1">
                 <rico:isInstantiationOf rdf:resource="recordResource/055691-c-2vzyex8hc18--1o5wpcllauj9q"/>
-                <rico:hasDerivedInstantiation rdf:resource="instantiation/055691-c-2vzyex8hc18--1o5wpcllauj9q-i2"/>
+                <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/055691-c-2vzyex8hc18--1o5wpcllauj9q-i2"/>
                 <rico:conditionsOfAccess rdf:parseType="Literal">
                     <html:p xml:lang="fr">Communication libre</html:p>
                 </rico:conditionsOfAccess>

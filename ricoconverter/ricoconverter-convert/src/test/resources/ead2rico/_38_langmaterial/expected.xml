@@ -6,7 +6,7 @@
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xml:base="http://data.archives-nationales.culture.gouv.fr/">
+    xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
     <rico:Record rdf:about="record/058220">
         <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
         <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
@@ -42,12 +42,13 @@
     <!-- Unknown, single value -->
     <rico:RecordResource rdf:about="recordResource/058220-unknown-single">        
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-unknown-multiple"/>
         <dc:language rdf:resource="language/FRAN_RI_100-name4"/> <!-- français -->
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-unknown-single-i1"> 
             	<rico:isInstantiationOf rdf:resource="recordResource/058220-unknown-single"/>               
                 <!-- do not process langmaterial here -->
-                <rico:hasDerivedInstantiation rdf:resource="instantiation/058220-unknown-single-i2"/>
+                <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/058220-unknown-single-i2"/>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/unknown-single"/>
             </rico:Instantiation>
         </rico:hasInstantiation>
@@ -67,6 +68,8 @@
     <!-- Unknown, multiple values -->
     <rico:RecordResource rdf:about="recordResource/058220-unknown-multiple">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-unknown-single"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-record"/>
         <dc:language rdf:resource="language/FRAN_RI_100-name6"/> <!-- anglais -->
         <dc:language rdf:resource="language/FRAN_RI_100-d-oss057ra-ggj18pxos22n"/> <!-- unknown = http://id.loc.gov/vocabulary/iso639-2/und-->
         <rico:hasInstantiation>
@@ -81,6 +84,8 @@
     <!-- Record -->
     <rico:RecordResource rdf:about="recordResource/058220-record">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-unknown-multiple"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-recordset-single"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
         <rico:hasOrHadLanguage rdf:resource="language/FRAN_RI_100-name6"/> <!-- anglais -->
         <rico:hasInstantiation>
@@ -94,6 +99,8 @@
     <!-- RecordSet with single value -->
     <rico:RecordResource rdf:about="recordResource/058220-recordset-single">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-record"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-recordset-multiple"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
         <rico:hasOrHadAllMembersWithLanguage rdf:resource="language/FRAN_RI_100-name6"/> <!-- anglais -->
@@ -108,6 +115,7 @@
     <!-- RecordSet with multiple values -->
     <rico:RecordResource rdf:about="recordResource/058220-recordset-multiple">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-recordset-single"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
         <rico:hasOrHadSomeMembersWithLanguage rdf:resource="language/FRAN_RI_100-name6"/> <!-- anglais -->

@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+<rdf:RDF xmlns:cc="http://creativecommons.org/ns#"
          xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:dcterms="http://purl.org/dc/terms/"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:cc="http://creativecommons.org/ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
          xmlns:html="http://www.w3.org/1999/xhtml"
-         xml:base="http://data.archives-nationales.culture.gouv.fr/">
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
    <skos:ConceptScheme rdf:about="recordStates">
-      <dc:description xml:lang="fr">Thésaurus des états des documents. Résulte de la conversion automatique en RDF, conforme à SKOS et RiC-O 0.2, du référentiel XML correspondant (une partie du fichier RI_001 des AN). Des enrichissements, modifications de structure et alignements sont prévus  dans les prochains mois.</dc:description>
-      <dc:source xml:lang="fr">FRAN_RI_001 (version 1.5 du 2 mai 2022)</dc:source>
+      <dc:description xml:lang="fr">Thésaurus des états des documents. Résulte de la conversion automatique en RDF, conforme à SKOS et RiC-O 1.0.1, du référentiel XML correspondant (une partie du fichier RI_001 des AN). Des enrichissements, modifications de structure et alignements sont prévus  dans les prochains mois.</dc:description>
+      <dc:source xml:lang="fr">FRAN_RI_001 (export du SIA des AnF du 6 août 2024,
+                        version 1.8 dans le SIA)</dc:source>
       <dc:title xml:lang="fr">Thésaurus des états des documents</dc:title>
       <dcterms:creator>
          <foaf:Organization>
@@ -23,31 +24,495 @@
       </dcterms:creator>
       <dcterms:created>2021-05-03</dcterms:created>
       <dcterms:modified>2022-03-20</dcterms:modified>
-      <dcterms:modified>2022-05-02T18:55:20.849+02:00</dcterms:modified>
+      <dcterms:modified>2024-10-10T17:22:42.9550014+02:00</dcterms:modified>
       <dc:coverage xml:lang="fr">du Moyen Âge à nos jours</dc:coverage>
       <dc:language>fr-FR</dc:language>
       <dc:type xml:lang="fr">Thésaurus</dc:type>
-      <dc:rights xml:lang="fr">Ces données étant des informations publiques, l'usager dispose d'un droit non exclusif et gratuit de libre « réutilisation » à des fins commerciales ou non, dans le monde entier et pour une durée illimitée. Il doit accompagner chaque rediffusion des informations de l'indication précise de l'origine des métadonnées : « Archives nationales (France) », date des métadonnées (mars 2022), nom du référentiel (fourni dans le fichier Excel qui en donne la liste). Voir à ce sujet la page : https://www.archives-nationales.culture.gouv.fr/fr/web/guest/reutilisation-des-donnees-publiques.</dc:rights>
+      <dc:rights xml:lang="fr">Ces données étant des informations publiques, l'usager dispose d'un droit non exclusif
+        et gratuit de libre « réutilisation » à des fins commerciales ou non, dans le monde entier
+        et pour une durée illimitée. Il doit accompagner chaque rediffusion des informations de
+        l'indication précise de l'origine des métadonnées : « Archives nationales (France) », date
+        des métadonnées (mars 2022), nom du référentiel (fourni dans le fichier Excel qui en donne
+        la liste). Voir à ce sujet la page :
+        https://www.archives-nationales.culture.gouv.fr/fr/web/guest/reutilisation-des-donnees-publiques.</dc:rights>
       <skos:historyNote rdf:parseType="Literal">
          <html:ul>
-            <html:li xml:lang="fr">Mars-avril 2022 : regénéré le fichier. Enrichissement des métadonnées du vocabulaire.</html:li>
+            <html:li xml:lang="fr">Août 2024 : regénéré le fichier. Cette version
+                                compte 28 nouveaux concepts, organisés hiérarchiquement, dotés de
+                                définitions et alignés sur le Vocabulaire international de la
+                                diplomatique (VID). Mise à jour des métadonnées du
+                                vocabulaire.</html:li>
+            <html:li xml:lang="fr">Mars-avril 2022 : regénéré le fichier.
+                                Enrichissement des métadonnées du vocabulaire. Suppression de notes
+                                éditoriales et historiques non pertinentes.</html:li>
          </html:ul>
       </skos:historyNote>
-      <skos:hasTopConcept rdf:resource="recordState/FRAN_RI_001-d3m00w6tom1--17yz38y8bszt8"/>
+      <skos:hasTopConcept rdf:resource="recordState/FRAN_RI_001-d-89k2fzkds-1rmtuqnnbvqit"/>
+      <skos:hasTopConcept rdf:resource="recordState/FRAN_RI_001-d-8ei2cwezk-1scr9ty21hz3i"/>
+      <skos:hasTopConcept rdf:resource="recordState/FRAN_RI_001-d-8gu34w3wc-i08b51usfmd0"/>
+      <skos:hasTopConcept rdf:resource="recordState/FRAN_RI_001-d-8k77oqc4c-1war2n2wabgsr"/>
+      <skos:hasTopConcept rdf:resource="recordState/FRAN_RI_001-d-9c14mgab0-z8mie52bzecy"/>
+      <skos:hasTopConcept rdf:resource="recordState/FRAN_RI_001-d-2k426mipg--o7n1lnwbqn9d"/>
+      <skos:hasTopConcept rdf:resource="recordState/FRAN_RI_001-d3m00w8d8du-pzakwhqg5tcm"/>
+      <skos:hasTopConcept rdf:resource="recordState/FRAN_RI_001-d-60xqn2has--17fino3q6vkd2"/>
+      <skos:hasTopConcept rdf:resource="recordState/FRAN_RI_001-d-9j5dy8s0o--1u0p8mem64d5i"/>
+      <skos:hasTopConcept rdf:resource="recordState/FRAN_RI_001-d-9k5tdaqbw-1q4a9hjowdxpn"/>
+      <skos:hasTopConcept rdf:resource="recordState/FRAN_RI_001-d-9x8mc47lo-xpvj9ptlr334"/>
+      <skos:hasTopConcept rdf:resource="recordState/FRAN_RI_001-d-9oxibeb3c--16hvck1r0czmr"/>
+      <skos:hasTopConcept rdf:resource="recordState/FRAN_RI_001-d-9s35wkq84--1stqkyj0x2wvk"/>
+      <skos:hasTopConcept rdf:resource="recordState/FRAN_RI_001-d-2ohlxtgj4-1hjq3ru3j7j3s"/>
+      <skos:hasTopConcept rdf:resource="recordState/FRAN_RI_001-d-2p6rcoolo--ab4uj2xpl9bj"/>
    </skos:ConceptScheme>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-89k2fzkds-1rmtuqnnbvqit">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:topConceptOf rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">ampliation</skos:prefLabel>
+      <skos:definition xml:lang="fr">« Une ampliation est une expédition en forme spécialement solennelle d'un acte dont on a établi une autre expédition en forme plus simple. A l'époque contemporaine, le mot désigne, au contraire, une expédition, destinée à l'intéressé, d'un acte comportant des mesures le concernant, souvent établie sous la forme d'un extrait d'une minute originale, laquelle est conservée dans les archives du service d'origine. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 40.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [19/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_99"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-8ei2cwezk-1scr9ty21hz3i">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:topConceptOf rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">brouillard</skos:prefLabel>
+      <skos:definition xml:lang="fr">« Un brouillard est la première rédaction d'un registre de comptabilité, généralement tenu au fur et à mesure des opérations et qui, étant susceptible de corrections, permet l'établissement du livre de comptes définitif.  » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 88.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [19/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_351"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-8gu34w3wc-i08b51usfmd0">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:topConceptOf rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">brouillon</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">premier jet</skos:altLabel>
+      <skos:definition xml:lang="fr">« Un brouillon ou premier jet est un projet informel de rédaction d'un texte, auquel peuvent être ensuite apportées toutes les corrections nécessaires. Il peut correspondre à un acte qui finalement n'a pas été dressé ou l'a été avec un contenu ou dans une forme différente. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 88.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [19/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_349"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-8k77oqc4c-1war2n2wabgsr">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:topConceptOf rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">copie</skos:prefLabel>
+      <skos:definition xml:lang="fr">« Une copie (lat.: copia, exemplum, transcriptum, transumptum) est une transcription littérale d'un texte antérieur. Une copie peut être authentique ou informe. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 32.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [19/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_53"/>
+      <skos:narrower rdf:resource="recordState/FRAN_RI_001-d3m00w6tom1--17yz38y8bszt8"/>
+      <skos:narrower rdf:resource="recordState/FRAN_RI_001-d-8rcewtjuo-1iih9sd7ft00z"/>
+      <skos:narrower rdf:resource="recordState/FRAN_RI_001-d-8s25ss3us-1b1easskq1gz2"/>
+      <skos:narrower rdf:resource="recordState/FRAN_RI_001-d-8l7sr97nk-dbrollg6e657"/>
+      <skos:narrower rdf:resource="recordState/FRAN_RI_001-d-8t3d5vx80--13q42ggc3d3tv"/>
+      <skos:narrower rdf:resource="recordState/FRAN_RI_001-d-8tx8o7th0--ksmkod8w8asj"/>
+   </skos:Concept>
    <skos:Concept rdf:about="recordState/FRAN_RI_001-d3m00w6tom1--17yz38y8bszt8">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
       <skos:inScheme rdf:resource="recordStates"/>
       <skos:prefLabel xml:lang="fr">copie authentique</skos:prefLabel>
       <skos:altLabel xml:lang="fr">expédition juridictionnelle</skos:altLabel>
       <skos:altLabel xml:lang="fr">expédition notariale</skos:altLabel>
-      <skos:editorialNote xml:lang="fr">classe RiC-O : RecordState</skos:editorialNote>
+      <skos:definition xml:lang="fr">« Une copie authentique (lat.: copia authentica) est une copie qui, établie dans une certaine forme, comporte des éléments de validation destinés à lui donner pleine foi. Cette marque d’authenticité juridique ne préjuge nullement de la sincérité de la pièce copiée. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 32.) </skos:definition>
       <skos:changeNote>
          <rdf:Description>
-            <dc:date>14/04/2021</dc:date>
-            <rdf:value xml:lang="fr">classe ajoutée le [14/04/2021]</rdf:value>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">définition et relation VID préparées par J.-F. Moufflet [2024] ; ajoutées par le Lab le [19/07/2024]</rdf:value>
          </rdf:Description>
       </skos:changeNote>
-      <skos:editorialNote xml:lang="fr">nota : à revoir</skos:editorialNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_54"/>
+      <skos:related rdf:resource="recordState/FRAN_RI_001-d-9gwynw27k--10mwh2owqrqdi"/>
+      <skos:related rdf:resource="recordState/FRAN_RI_001-d-2k426mipg--o7n1lnwbqn9d"/>
+      <skos:broader rdf:resource="recordState/FRAN_RI_001-d-8k77oqc4c-1war2n2wabgsr"/>
+      <skos:narrower rdf:resource="recordState/FRAN_RI_001-d-95syv5nvo-usflanrzxtkg"/>
+      <skos:narrower rdf:resource="recordState/FRAN_RI_001-d-97at5bjsw--u688kxdppcy9"/>
+      <skos:narrower rdf:resource="recordState/FRAN_RI_001-d-985uqpl3s-1k3i4yfl1myau"/>
+      <skos:narrower rdf:resource="recordState/FRAN_RI_001-d-98yheu10c--1dhxakzzoeqts"/>
+      <skos:narrower rdf:resource="recordState/FRAN_RI_001-d-99t1j5n3c--1obbuv2ji4yy2"/>
+      <skos:narrower rdf:resource="recordState/FRAN_RI_001-d-9ag71ol70-l5bgs9hqcofr"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-95syv5nvo-usflanrzxtkg">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">copie conforme</skos:prefLabel>
+      <skos:altLabel xml:lang="fr">copie certifiée</skos:altLabel>
+      <skos:definition xml:lang="fr">« Une copie conforme ou certifiée est une copie dont une autorité publique certifie la conformité matérielle du texte avec celui du document qui a servi à la transcription. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 33.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [19/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_62"/>
+      <skos:broader rdf:resource="recordState/FRAN_RI_001-d3m00w6tom1--17yz38y8bszt8"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-97at5bjsw--u688kxdppcy9">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">copie de chancellerie</skos:prefLabel>
+      <skos:definition xml:lang="fr">« Une copie de chancellerie est la copie d'un original, établie par la chancellerie même qui a procédé à l'expédition de cet original. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 33.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [19/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_57"/>
+      <skos:broader rdf:resource="recordState/FRAN_RI_001-d3m00w6tom1--17yz38y8bszt8"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-985uqpl3s-1k3i4yfl1myau">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">copie enregistrée</skos:prefLabel>
+      <skos:definition xml:lang="fr">« Une copie enregistrée (lat. : copia registrata, litterae registratae, registrum) est une transcription faite par un service qui a autorité pour enregistrer les actes et leur donner ainsi un caractère d'authenticité. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 33.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [19/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_58"/>
+      <skos:broader rdf:resource="recordState/FRAN_RI_001-d3m00w6tom1--17yz38y8bszt8"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-98yheu10c--1dhxakzzoeqts">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">copie judiciaire</skos:prefLabel>
+      <skos:definition xml:lang="fr">« Une copie judiciaire est une copie dressée sur l'ordre d'un juge et (ou) pourvue d'un certificat d'authenticité de celui-ci. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 33.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [19/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_60"/>
+      <skos:broader rdf:resource="recordState/FRAN_RI_001-d3m00w6tom1--17yz38y8bszt8"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-99t1j5n3c--1obbuv2ji4yy2">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">copie notariée</skos:prefLabel>
+      <skos:definition xml:lang="fr">« Une copie notariée est une copie qui comporte un certificat d'authenticité de la main d'un ou de plusieurs notaires. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 33.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [19/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_59"/>
+      <skos:broader rdf:resource="recordState/FRAN_RI_001-d3m00w6tom1--17yz38y8bszt8"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-9ag71ol70-l5bgs9hqcofr">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">copie sous le sceau</skos:prefLabel>
+      <skos:definition xml:lang="fr">« Une copie sous le sceau est une copie dont l’authenticité est attestée par l'apposition du sceau d'une autorité. En Angleterre, cette pratique est dite exemplification. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 33.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [19/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_61"/>
+      <skos:broader rdf:resource="recordState/FRAN_RI_001-d3m00w6tom1--17yz38y8bszt8"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-8rcewtjuo-1iih9sd7ft00z">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">copie collationnée</skos:prefLabel>
+      <skos:definition xml:lang="fr">« Une copie collationnée est la transcription d'un document que le copiste atteste avoir dûment conférée mot à mot (lat.: collatio) au modèle qu'il reproduit sans pour autant avoir autorité pour délivrer un certificat d'authenticité. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 33.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [19/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_63"/>
+      <skos:broader rdf:resource="recordState/FRAN_RI_001-d-8k77oqc4c-1war2n2wabgsr"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-8s25ss3us-1b1easskq1gz2">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">copie figurée</skos:prefLabel>
+      <skos:definition xml:lang="fr">« Une copie figurée est une copie dont l'auteur s'efforce de reproduire matériellement l'écriture et (ou), en tout ou en partie, la disposition d'un*original antérieur, notamment certains éléments de celui-ci (caractères spéciaux, souscriptions, éléments figurés tels que monogramme ou rota). » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 33.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [19/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_56"/>
+      <skos:broader rdf:resource="recordState/FRAN_RI_001-d-8k77oqc4c-1war2n2wabgsr"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-8l7sr97nk-dbrollg6e657">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">copie informe</skos:prefLabel>
+      <skos:definition xml:lang="fr">« Une copie informe est une copie d'un document, ne comportant aucune marque d'authenticité juridique apposée par une autorité. Établie par un érudit qualifié, une copie informe peut évidemment présenter une qualité de texte que n'offre pas toujours une copie authentique qui serait dressée par une autorité plus ou moins compétente dans la lecture ou la critique des documents. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 32.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [19/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_55"/>
+      <skos:broader rdf:resource="recordState/FRAN_RI_001-d-8k77oqc4c-1war2n2wabgsr"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-8t3d5vx80--13q42ggc3d3tv">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">copie insérée</skos:prefLabel>
+      <skos:definition xml:lang="fr">« La copie insérée (lat.: insertum), au sens technique du terme, est la transcription d'une acte antérieur, visant à éclairer, à compléter, à donner pleine valeur juridique à l'acte dans lequel il se trouve transcrit. Ainsi peuvent être insérés les pouvoirs de procureurs ou mandataires intervenant à la demande de l'une ou de l'autre des parties, les commissions délivrées à des commissaires, des certificats de toute nature portant sur l'habileté juridique des contractants ou attestant leurs droits sur la chose, ou encore des titres antérieurs etc. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 34.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [19/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_66"/>
+      <skos:broader rdf:resource="recordState/FRAN_RI_001-d-8k77oqc4c-1war2n2wabgsr"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-8tx8o7th0--ksmkod8w8asj">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">copie libre</skos:prefLabel>
+      <skos:definition xml:lang="fr">« Une copie libre est, dans les pays qui connaissent ou ont connu une administration fiscale du Timbre, une copie établie sur un papier ou un parchemin “libre”, c'est-à-dire non timbré. Elle s'oppose à une copie sur papier timbré. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 34.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [19/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_64"/>
+      <skos:broader rdf:resource="recordState/FRAN_RI_001-d-8k77oqc4c-1war2n2wabgsr"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-9c14mgab0-z8mie52bzecy">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:topConceptOf rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">duplicata</skos:prefLabel>
+      <skos:definition xml:lang="fr">« Les duplicata furent, d'abord, des originaux multiples. Par la suite, ce sont des exemplaires reproduisant exactement l'original dressé par la chancellerie même ou le bureau d'écriture et destiné à tenir lieu de cet original. Si plusieurs duplicata sont ainsi établis, on les dit triplícala ou, éventuellement, multiplicata. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 31.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [19/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_45"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-2k426mipg--o7n1lnwbqn9d">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:topConceptOf rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">expédition</skos:prefLabel>
+      <skos:definition xml:lang="fr">« L'expédition d'un acte est soit l'original lui-même, soit l'exemplaire mis en forme (grossoyé) par la chancellerie ou le bureau d'écriture, destiné - dans l'un et l'autre cas - à être remis à la partie intéressée, qui généralement le conserve à titre de preuve. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 31.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>31/07/2024</dc:date>
+            <rdf:value xml:lang="fr">ajouté par le Lab le [31/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_46"/>
+      <skos:related rdf:resource="recordState/FRAN_RI_001-d3m00w6tom1--17yz38y8bszt8"/>
+      <skos:narrower rdf:resource="recordState/FRAN_RI_001-d-2k9q1mtvk-msa3c8uc0tqi"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-2k9q1mtvk-msa3c8uc0tqi">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">réexpédition</skos:prefLabel>
+      <skos:definition xml:lang="fr">« Une réexpédition (ou seconde expédition) d’un acte est un nouvel exemplaire de cet acte, établi subséquemment et dans les mêmes formes que la première expédition. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 31.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [31/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_47"/>
+      <skos:example>
+         <rico:Record rdf:about="record/032408/c-42z60pvde--1qz2ibgsexpbn">
+            <rico:title xml:lang="fr">Deuxième bulle d’Innocent IV Quotiens pro communi qui approuve les statuts de l’Université de Paris.</rico:title>
+            <rico:identifier xml:lang="fr">cote M//65/A, n° 2</rico:identifier>
+         </rico:Record>
+      </skos:example>
+      <skos:broader rdf:resource="recordState/FRAN_RI_001-d-2k426mipg--o7n1lnwbqn9d"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d3m00w8d8du-pzakwhqg5tcm">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:topConceptOf rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">extrait d'acte</skos:prefLabel>
+      <skos:definition xml:lang="fr">« Un extrait est une copie textuelle de certains éléments d'un document. S'il porte une marque d'authenticité, on le dit authentique. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 38.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">définition préparée par J.-F. Moufflet [2024] ; modifié par le Lab le [19/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_87"/>
+      <skos:narrower rdf:resource="recordState/FRAN_RI_001-d-9gwynw27k--10mwh2owqrqdi"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-9gwynw27k--10mwh2owqrqdi">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">extrait authentique</skos:prefLabel>
+      <skos:definition xml:lang="fr">« Un extrait authentique est une expédition partielle d'un acte faite par une autorité habile à la délivrer. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 90.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [19/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_364"/>
+      <skos:related rdf:resource="recordState/FRAN_RI_001-d3m00w6tom1--17yz38y8bszt8"/>
+      <skos:broader rdf:resource="recordState/FRAN_RI_001-d3m00w8d8du-pzakwhqg5tcm"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-60xqn2has--17fino3q6vkd2">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:topConceptOf rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">minute</skos:prefLabel>
+      <skos:definition xml:lang="fr">« La minute peut, au Bas Moyen Age, être définie comme la première rédaction d'un acte, dont le texte est établi "ne varietur" de telle façon qu'il puisse servir de matrice à l'expédition de l'acte et à d'éventuelles réexpéditions. Elle est généralement allégée des formules de style et peut ne comporter qu'une simple indication de la présence de clauses qui figureront au long sur l'expédition. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 88.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [31/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_353"/>
+      <skos:relatedMatch rdf:resource="https://rdf.archives-nationales.culture.gouv.fr/documentaryFormType/FRAN_RI_001-d3nd89r14z-1fb7upmwc7u9n"/>
+      <skos:narrower rdf:resource="recordState/FRAN_RI_001-d-64b7ejzp4-1ec7ktnhrg2j"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-64b7ejzp4-1ec7ktnhrg2j">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">minute originale</skos:prefLabel>
+      <skos:definition xml:lang="fr">« Une minute originale est la rédaction définitive d'un acte –comportant éventuellement toutes les corrections ou modifications de texte – qui constitue la matrice d'où l'on peut tirer des expéditions et qui se conserve dans les archives de son auteur. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 39.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [31/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_98"/>
+      <skos:related rdf:resource="recordState/FRAN_RI_001-d-9j5dy8s0o--1u0p8mem64d5i"/>
+      <skos:broader rdf:resource="recordState/FRAN_RI_001-d-60xqn2has--17fino3q6vkd2"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-9j5dy8s0o--1u0p8mem64d5i">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:topConceptOf rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">original</skos:prefLabel>
+      <skos:definition xml:lang="fr">« L'original (lat: originale ; dans des documents médiévaux et chez des auteurs anciens, parfois exemplar ou autographum) est le document primitif où est consignée pour la première fois sous sa forme définitive la volonté de l'auteur de l'acte et qui est destiné à faire foi. C'est donc l'acte parfait qui est, soit revêtu des marques de validation, soit dressé dans des conditions d'authenticité qui lui permettent de faire foi par lui-même. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 30.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [19/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_42"/>
+      <skos:related rdf:resource="recordState/FRAN_RI_001-d-64b7ejzp4-1ec7ktnhrg2j"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-9k5tdaqbw-1q4a9hjowdxpn">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:topConceptOf rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">originaux multiples</skos:prefLabel>
+      <skos:definition xml:lang="fr">« Les originaux multiples sont des exemplaires d'un même acte dressés simultanément, ou bien pour être remis aux diverses parties intéressées, ou bien pour en assurer la conservation. La multiplication des exemplaires peut aussi être faite par un service d'écriture, afin de les transmettre par des voies différentes au destinataire dès lors qu'il y a danger qu'un exemplaire unique puisse se perdre ou bien, en cas de guerre, qu'il vienne à être intercepté. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 30.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [19/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_43"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-9x8mc47lo-xpvj9ptlr334">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:topConceptOf rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">projet d'acte</skos:prefLabel>
+      <skos:definition xml:lang="fr">« Un projet d'acte est une première rédaction destinée, avant toute décision à son sujet, à être soumise pour avis ou pour étude à une autorité, à un ayant droit ou à des personnes compétentes, et susceptibles de tous les amendements. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 88.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [19/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_352"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-9oxibeb3c--16hvck1r0czmr">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:topConceptOf rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">pseudo-copie</skos:prefLabel>
+      <skos:definition xml:lang="fr">« Une pseudo-copie est un acte qui se présente comme une copie, soit indépendante, soit incorporée dans un autre acte (vidimus par exemple), soit encore sous la forme d'une édition, mais dont l'existence n'a pas de réalité. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 43.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [19/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_118"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-9s35wkq84--1stqkyj0x2wvk">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:topConceptOf rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">pseudo-original</skos:prefLabel>
+      <skos:definition xml:lang="fr">« Un pseudo-original est un acte faux qui se présente avec toutes les apparences d'un original, y compris des marques de validation. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 43.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [19/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_117"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-2ohlxtgj4-1hjq3ru3j7j3s">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:topConceptOf rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">rénovation</skos:prefLabel>
+      <skos:definition xml:lang="fr">« La rénovation d'un acte est le renouvellement de cet acte, établi par son auteur (ou sa chancellerie) à la demande de la partie intéressée pour lui tenir lieu d'une expédition perdue ou pour lui permettre de disposer d'un autre exemplaire. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 31.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [31/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_48"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="recordState/FRAN_RI_001-d-2p6rcoolo--ab4uj2xpl9bj">
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordState"/>
+      <skos:inScheme rdf:resource="recordStates"/>
+      <skos:topConceptOf rdf:resource="recordStates"/>
+      <skos:prefLabel xml:lang="fr">transcription</skos:prefLabel>
+      <skos:definition xml:lang="fr">« Une transcription est à la fois l'action de transcrire et le résultat de cette opération. Transcrire est reporter un texte d'une pièce sur une autre, par exemple la minute sur l'expédition, ou bien la minute ou l'expédition sur un registre. » (source : Vocabulaire international de diplomatique, 2e éd., 1997, p. 32.) </skos:definition>
+      <skos:changeNote>
+         <rdf:Description>
+            <dc:date>2024</dc:date>
+            <rdf:value xml:lang="fr">préparé par J.-F. Moufflet [2024] ; ajouté par le Lab le [31/07/2024]</rdf:value>
+         </rdf:Description>
+      </skos:changeNote>
+      <skos:exactMatch rdf:resource="http://www.cei.lmu.de/VID/#VID_52"/>
    </skos:Concept>
 </rdf:RDF>

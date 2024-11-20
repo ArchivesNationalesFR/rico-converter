@@ -6,7 +6,7 @@
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xml:base="http://data.archives-nationales.culture.gouv.fr/">
+    xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
     <rico:Record rdf:about="record/058220">
         <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
         <rico:isOrWasRegulatedBy rdf:resource="rule/rl009"/>
@@ -51,6 +51,7 @@
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-N0003"/>
         <rico:hasProvenance rdf:resource="agent/051804"/>
         <rico:hasProvenance rdf:resource="agent/051182"/>
         <rico:hasProvenance rdf:resource="agent/051570"/>
@@ -58,7 +59,7 @@
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">                
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
-                <rico:hasDerivedInstantiation rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
+                <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
                 <rico:hasProvenance rdf:resource="agent/051804"/>
                 <rico:hasProvenance rdf:resource="agent/051182"/>
                 <rico:hasProvenance rdf:resource="agent/051570"/>
@@ -81,6 +82,8 @@
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-N0003">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-N0004"/>
         <rico:hasProvenance rdf:resource="agent/050039"/>
         <rico:history rdf:parseType="Literal">
             <html:div xml:lang="fr">
@@ -104,6 +107,7 @@
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-N0004">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-N0003"/>
         <rico:hasProvenance>
             <rico:Agent>
                 <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Family"/>

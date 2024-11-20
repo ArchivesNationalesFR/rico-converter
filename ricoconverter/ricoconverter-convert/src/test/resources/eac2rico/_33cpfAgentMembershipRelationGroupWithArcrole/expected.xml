@@ -1,6 +1,6 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-   xml:base="http://data.archives-nationales.culture.gouv.fr/"
+   xml:base="https://rdf.archives-nationales.culture.gouv.fr/"
    xmlns:html="http://www.w3.org/1999/xhtml" xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
    xmlns:owl="http://www.w3.org/2002/07/owl#"
    xmlns:dc="http://purl.org/dc/elements/1.1/">
@@ -31,14 +31,14 @@
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasOrHadAgentName>
-      <rico:groupIsSourceOfMembershipRelation
+      <rico:thingIsSourceOfRelation
         rdf:resource="membershipRelation/456789-111111"/>
       <rico:hasOrHadMember rdf:resource="agent/111111" />
    </rico:Agent>
   
    <rico:MembershipRelation rdf:about="membershipRelation/456789-111111">
-      <rico:membershipRelationHasSource rdf:resource="agent/456789"/>
-      <rico:membershipRelationHasTarget rdf:resource="agent/111111"/>
+      <rico:relationHasSource rdf:resource="agent/456789"/>
+      <rico:relationHasTarget rdf:resource="agent/111111"/>
       <rdfs:label xml:lang="fr">Relation d'appartenance entre "The entity" et "The person member"</rdfs:label>
       <rico:descriptiveNote rdf:parseType="Literal">
          <html:p xml:lang="fr">"The entity" a compté parmi ses membres "The person member" dès sa création.</html:p>

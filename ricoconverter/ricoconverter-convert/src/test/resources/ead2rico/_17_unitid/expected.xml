@@ -6,7 +6,7 @@
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xml:base="http://data.archives-nationales.culture.gouv.fr/">
+    xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
     <rico:Record rdf:about="record/058220">
     	<rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
         <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
@@ -40,7 +40,8 @@
     </rico:RecordResource>
     <!-- c level -->
     <rico:RecordResource rdf:about="recordResource/058220-c-25s2lche6kz-qfignk48spf8">   
-    	<rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>    
+    	<rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/> 
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-c-2gvrjvsm9--13pxk5ufbbf3v"/>  
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c-25s2lche6kz-qfignk48spf8-i1">               
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c-25s2lche6kz-qfignk48spf8"/>
@@ -52,6 +53,8 @@
     
     <rico:RecordResource rdf:about="recordResource/058220-c-2gvrjvsm9--13pxk5ufbbf3v">
     	<rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>   
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-c-25s2lche6kz-qfignk48spf8"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-d_4_2"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c-2gvrjvsm9--13pxk5ufbbf3v-i1">               
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c-2gvrjvsm9--13pxk5ufbbf3v"/>
@@ -64,6 +67,8 @@
    
     <rico:RecordResource rdf:about="recordResource/058220-d_4_2">
     	<rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-c-2gvrjvsm9--13pxk5ufbbf3v"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-d_4"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-d_4_2-i1">               
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-d_4_2"/>
@@ -75,6 +80,8 @@
     
     <rico:RecordResource rdf:about="recordResource/058220-d_4">
     	<rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>   
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-d_4_2"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-d_48"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-d_4-i1">               
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-d_4"/>
@@ -86,6 +93,7 @@
     
     <rico:RecordResource rdf:about="recordResource/058220-d_48">
     	<rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-d_4"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-d_48-i1">               
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-d_48"/>
