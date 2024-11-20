@@ -8,7 +8,7 @@
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
-	xmlns:ead2rico="http://data.archives-nationales.culture.gouv.fr/ead2rico/"
+	xmlns:ead2rico="https://rdf.archives-nationales.culture.gouv.fr/ead2rico/"
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns:isni="https://isni.org/ontology#"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -24,10 +24,10 @@
 	<xsl:param name="OTHERLEVEL_RECORDPART_PATTERN">page-de-titre|groupe-de-page|groupes-de-page|groupe-depage</xsl:param>
 	
 	<!-- Indicates the root of the URI that will be generated -->
-	<xsl:param name="BASE_URI">http://data.archives-nationales.culture.gouv.fr/</xsl:param>
+	<xsl:param name="BASE_URI">https://rdf.archives-nationales.culture.gouv.fr/</xsl:param>
 
 	<!-- Indicates the URI to be used as value for authors -->
-	<xsl:param name="AUTHOR_URI">http://data.archives-nationales.culture.gouv.fr/agent/005061</xsl:param>
+	<xsl:param name="AUTHOR_URI">https://rdf.archives-nationales.culture.gouv.fr/agent/005061</xsl:param>
 
 	<!-- Indicates the language code that will be inserted for literal values. -->
 	<xsl:param name="LITERAL_LANG">fr</xsl:param>
