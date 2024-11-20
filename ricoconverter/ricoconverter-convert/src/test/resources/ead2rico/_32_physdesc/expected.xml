@@ -48,6 +48,7 @@
     <!-- c level -->
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnast"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
@@ -76,6 +77,8 @@
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnast">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnust"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnast-i1">
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnast"/>
@@ -95,6 +98,8 @@
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnust">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnast"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnost"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnust-i1">
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnust"/>
@@ -113,6 +118,8 @@
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnost">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnust"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnyst"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnost-i1">
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnost"/>
@@ -135,6 +142,8 @@
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnyst">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnost"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-emptyExtent"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnyst-i1">
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnyst"/>
@@ -155,6 +164,7 @@
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-emptyExtent">
         <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnyst"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-emptyExtent-i1">
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-emptyExtent"/>

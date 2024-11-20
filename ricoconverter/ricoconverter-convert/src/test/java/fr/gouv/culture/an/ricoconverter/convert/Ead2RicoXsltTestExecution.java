@@ -2,6 +2,8 @@ package fr.gouv.culture.an.ricoconverter.convert;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.io.StringWriter;
@@ -23,6 +25,8 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
+import javax.xml.transform.Result;
+
 import org.w3c.dom.Node;
 import org.xmlunit.builder.DiffBuilder;
 import org.xmlunit.builder.Input;
@@ -30,6 +34,7 @@ import org.xmlunit.diff.ComparisonResult;
 import org.xmlunit.diff.DefaultNodeMatcher;
 import org.xmlunit.diff.Diff;
 import org.xmlunit.diff.Difference;
+
 
 import fr.gouv.culture.an.ricoconverter.RicoConverterException;
 import fr.gouv.culture.an.ricoconverter.ead.convert.Ead2RicoConverter;
@@ -112,6 +117,20 @@ public class Ead2RicoXsltTestExecution implements Test {
 			}
 		
 			System.out.println(nodeToString(domResult.getNode()));
+
+			/*
+			Uncomment to have the output of the test written in the test directory
+			try {
+				File outputFile = new File(this.testFolder, "output.xml");
+				if(!outputFile.exists()) {
+					outputFile.createNewFile();
+				}
+				FileOutputStream fos = new FileOutputStream(outputFile);
+				this.serialize(domResult.getNode(), new StreamResult(fos));
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			*/
 			
 			if(expected.exists()) {
 
@@ -174,11 +193,17 @@ public class Ead2RicoXsltTestExecution implements Test {
 	
 	private String nodeToString(Node node) {
 		StringWriter sw = new StringWriter();
+		this.serialize(node, new StreamResult(sw));
+		return sw.toString();
+	}
+
+	private String serialize(Node node, Result result) {
+		StringWriter sw = new StringWriter();
 		try {
 			Transformer t = TransformerFactory.newInstance().newTransformer();
 			t.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
 			t.setOutputProperty(OutputKeys.INDENT, "yes");
-			t.transform(new DOMSource(node), new StreamResult(sw));
+			t.transform(new DOMSource(node), result);
 		} catch (TransformerException te) {
 			System.out.println("nodeToString Transformer Exception");
 		}
