@@ -604,7 +604,7 @@
 						
 				<dc:format xml:lang="en">image/jpeg</dc:format>
 				<!-- here the creator is by default the archival institution: it either produced the digital instantiation image by its own, or asked a private company to produce it and then got it and aggregated it into its own archives -->
-                <rico:hasProvenance rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}"/>
+                <rico:hasOrganicProvenance rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}"/>
 				
 				<xsl:apply-templates select="daoloc" />
 			</rico:Instantiation>
@@ -1041,7 +1041,7 @@
 	
 	<!-- origination reference with an @authfilenumber -->
 	<xsl:template match="(origination/corpname | origination/persname | origination/famname)[@authfilenumber]">
-		<rico:hasProvenance rdf:resource="{ead2rico:URI-AgentFromFRAN_NP(@authfilenumber)}"/>
+		<rico:hasOrganicProvenance rdf:resource="{ead2rico:URI-AgentFromFRAN_NP(@authfilenumber)}"/>
 	</xsl:template>
 
 	<!-- origination reference without an @authfilenumber -->
@@ -1055,7 +1055,7 @@
 			</xsl:choose>
 		</xsl:variable>
 		
-		<rico:hasProvenance>
+		<rico:hasOrganicProvenance>
             <rico:Agent>
                 <rdf:type rdf:resource="{$type}"/>
                 <rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rdfs:label>
@@ -1066,7 +1066,7 @@
                     </rico:AgentName>
                 </rico:hasOrHadAgentName>
             </rico:Agent>
-        </rico:hasProvenance>
+        </rico:hasOrganicProvenance>
 	</xsl:template>
 
 	<!-- ***** did/repository or unitid[@repositorycode = 'FRDAFAN'] ***** -->
