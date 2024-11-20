@@ -547,7 +547,7 @@
 		</xsl:variable>
 		<!-- Add +2 to the offset of this daogrp element to build instantiation ID -->
 		<xsl:variable name="instantiationId" select="concat($recordResourceId, '-i', count(preceding-sibling::daogrp)+2)" />
-		<rico:hasDerivedInstantiation rdf:resource="{ead2rico:URI-Instantiation($instantiationId)}"/>
+		<rico:hasOrHadDerivedInstantiation rdf:resource="{ead2rico:URI-Instantiation($instantiationId)}"/>
 	</xsl:template>
 	
 	<xsl:template match="daogrp">
