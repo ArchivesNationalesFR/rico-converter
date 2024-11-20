@@ -10,7 +10,7 @@
     <rico:Record rdf:about="record/058220">
         <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
         <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
-        <rico:hasInstantiation>
+        <rico:hasOrHadDigitalInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-i1">
                 <rico:isInstantiationOf rdf:resource="record/058220"/>
                 <dc:format xml:lang="en">text/xml</dc:format>
@@ -18,7 +18,7 @@
                 <rico:hasOrHadHolder rdf:resource="agent/005061"/>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>
             </rico:Instantiation>
-        </rico:hasInstantiation>
+        </rico:hasOrHadDigitalInstantiation>
     </rico:Record>
     <rico:RecordResource rdf:about="recordResource/top-058220">
         <rico:isOrWasDescribedBy rdf:resource="record/058220"/>
@@ -40,14 +40,14 @@
         <!-- archdesc/controlaccess/persname +@authfilenumber-->
         <rico:hasOrHadSubject rdf:resource="agent/050551"/>
         <rico:hasOrHadSubject rdf:resource="agent/FRAN_RI_012-d699mu3pkd2--ojwlhnvipuam"/>
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
              <rico:Instantiation rdf:about="instantiation/top-058220-i1">
                  <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
                  <rico:title xml:lang="fr">Titre comprend un persname : Cardenti, Jean Jean Baptiste</rico:title>   
                  <rdfs:label xml:lang="fr">Titre comprend un persname : Cardenti, Jean Jean Baptiste</rdfs:label>                 
                  <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
              </rico:Instantiation>
-         </rico:hasInstantiation>
+         </rico:hasOrHadInstantiation>
         <rico:directlyIncludes rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
         <rico:directlyIncludes rdf:resource="recordResource/058220-N0003"/>      
         <rico:directlyIncludes rdf:resource="recordResource/058220-N0004"/>
@@ -81,15 +81,15 @@
                 </rico:hasOrHadAgentName>
             </rico:Agent>
         </rico:hasOrHadSubject>
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">                
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
                 <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
                 <!--do not process controlaccess/persname here-->   
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"/>
             </rico:Instantiation>
-        </rico:hasInstantiation>
-        <rico:hasInstantiation>
+        </rico:hasOrHadInstantiation>
+        <rico:hasOrHadDigitalInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2">                
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
                 <rico:isDerivedFromInstantiation rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1"/>
@@ -99,7 +99,7 @@
                 <!--do not process controlaccess/persname here-->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest/FRAN_0118_274_L"/>
             </rico:Instantiation>
-        </rico:hasInstantiation>        
+        </rico:hasOrHadDigitalInstantiation>        
     </rico:RecordResource>
     
     <!-- c/controlaccess/persname + @authfilenumber -->
@@ -109,13 +109,13 @@
         <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-N0004"/>
         <rico:hasOrHadSubject rdf:resource="agent/FRAN_RI_012-d699mu3pkd2--ojwlhnvipuam"/>
         <rico:hasOrHadSubject rdf:resource="agent/FRAN_RI_012-d699mu4ru7l-gmy6mhkvdjc9"/>           
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-N0003-i1">                
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-N0003"/>
                 <!--do not process controlaccess/persname here-->                
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0003"/>
             </rico:Instantiation>
-        </rico:hasInstantiation>       
+        </rico:hasOrHadInstantiation>       
     </rico:RecordResource>    
     
   
@@ -140,7 +140,7 @@
             </rico:Agent>
         </rico:hasOrHadSubject>
         <rico:hasOrHadSubject rdf:resource="agent/050551"/>
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-N0004-i1">                
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-N0004"/>
                 <rico:title xml:lang="fr">Titre comprend trois persname : Bullet, Pierre (1639-1716) et Dupont, Louis ; Murat, Joachim (1767-1815)</rico:title>   
@@ -148,6 +148,6 @@
                 <!--do not process unittitle/persname here-->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0004"/>
             </rico:Instantiation>
-        </rico:hasInstantiation>       
+        </rico:hasOrHadInstantiation>       
     </rico:RecordResource>
 </rdf:RDF>

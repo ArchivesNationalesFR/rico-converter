@@ -10,7 +10,7 @@
     <rico:Record rdf:about="record/058220">
     	<rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
         <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
-	      <rico:hasInstantiation>
+	      <rico:hasOrHadDigitalInstantiation>
 	         <rico:Instantiation rdf:about="instantiation/058220-i1">
 	            <rico:isInstantiationOf rdf:resource="record/058220"/>
 	            <dc:format xml:lang="en">text/xml</dc:format>
@@ -18,7 +18,7 @@
 	            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
 	            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>
 	         </rico:Instantiation>
-	      </rico:hasInstantiation>
+	      </rico:hasOrHadDigitalInstantiation>
     </rico:Record>
     <!-- archdesc level -->
     <rico:RecordResource rdf:about="recordResource/top-058220">
@@ -53,7 +53,7 @@
         <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1926-01-01</rico:date>
         <rico:date xml:lang="fr">Le 1er janvier 1926</rico:date>
 
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/top-058220-i1">
                 <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
 		        <!--case 1-->
@@ -82,7 +82,7 @@
                 <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
 
             </rico:Instantiation>
-        </rico:hasInstantiation>
+        </rico:hasOrHadInstantiation>
         <!-- Note : if there is more than the primary instantiation, do not propagate the RecordResource dates to these instantiations -->
         <rico:directlyIncludes rdf:resource="recordResource/058220-c-25s2lche6kz-qfignk48spf8"/>
         <rico:directlyIncludes rdf:resource="recordResource/058220-c-7801hhtrn-g19n27mkod23"/>
@@ -94,7 +94,7 @@
         <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1930-01-01</rico:beginningDate>
         <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1945-12-31</rico:endDate>
         <rico:date xml:lang="fr">1930-1945</rico:date>
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c-25s2lche6kz-qfignk48spf8-i1">
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c-25s2lche6kz-qfignk48spf8"/>
                 <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1930-01-01</rico:beginningDate>
@@ -102,7 +102,7 @@
                 <rico:date xml:lang="fr">1930-1945</rico:date>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c-25s2lche6kz-qfignk48spf8"/>
             </rico:Instantiation>
-        </rico:hasInstantiation>
+        </rico:hasOrHadInstantiation>
         <!-- Note : if there is more than the primary instantiation, do not propagate the RecordResource dates to theses instantiations -->
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-c-7801hhtrn-g19n27mkod23">
@@ -113,7 +113,7 @@
         <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1842-01-01</rico:beginningDate>
         <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1842-12-31</rico:endDate>
         <rico:date xml:lang="fr">1842</rico:date>
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c-7801hhtrn-g19n27mkod23-i1">
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c-7801hhtrn-g19n27mkod23"/>
                 <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/058220-c-7801hhtrn-g19n27mkod23-i2"/>
@@ -124,8 +124,8 @@
                 <rico:date xml:lang="fr">1842</rico:date>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c-7801hhtrn-g19n27mkod23"/>
             </rico:Instantiation>
-        </rico:hasInstantiation>
-        <rico:hasInstantiation>
+        </rico:hasOrHadInstantiation>
+        <rico:hasOrHadDigitalInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c-7801hhtrn-g19n27mkod23-i2">               
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c-7801hhtrn-g19n27mkod23"/>
                 <!-- do not process unitdate here -->
@@ -136,6 +136,6 @@
                 <dc:format xml:lang="en">image/jpeg</dc:format>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c-7801hhtrn-g19n27mkod23"/>            
             </rico:Instantiation>
-        </rico:hasInstantiation>
+        </rico:hasOrHadDigitalInstantiation>
     </rico:RecordResource>
 </rdf:RDF>

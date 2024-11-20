@@ -10,7 +10,7 @@
     <rico:Record rdf:about="record/055691">
     	  <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
         <rico:describesOrDescribed rdf:resource="recordResource/top-055691"/>
-	      <rico:hasInstantiation>
+	      <rico:hasOrHadDigitalInstantiation>
 	         <rico:Instantiation rdf:about="instantiation/055691-i1">
 	            <rico:isInstantiationOf rdf:resource="record/055691"/>
 	            <dc:format xml:lang="en">text/xml</dc:format>
@@ -18,7 +18,7 @@
 	            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
 	            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_055691"/>
 	         </rico:Instantiation>
-	      </rico:hasInstantiation>
+	      </rico:hasOrHadDigitalInstantiation>
     </rico:Record>
     <!-- archdesc level-->
     <rico:RecordResource rdf:about="recordResource/top-055691">
@@ -27,7 +27,7 @@
         <rico:conditionsOfAccess rdf:parseType="Literal">
             <html:p xml:lang="fr">Librement communicable sous réserve de l'état matériel des documents.</html:p>
         </rico:conditionsOfAccess>        
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/top-055691-i1">
                 <rico:isInstantiationOf rdf:resource="recordResource/top-055691"/>
                 <rico:conditionsOfAccess rdf:parseType="Literal">
@@ -35,7 +35,7 @@
                 </rico:conditionsOfAccess>
                 <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_055691/top"/>-->
             </rico:Instantiation>
-        </rico:hasInstantiation>
+        </rico:hasOrHadInstantiation>
         <rico:directlyIncludes rdf:resource="recordResource/055691-c-2vzyex8hc18--1o5wpcllauj9q"/>
     </rico:RecordResource>
     <!-- c level -->
@@ -44,7 +44,7 @@
         <rico:conditionsOfAccess rdf:parseType="Literal">
             <html:p xml:lang="fr">Communication libre</html:p>
         </rico:conditionsOfAccess>
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/055691-c-2vzyex8hc18--1o5wpcllauj9q-i1">
                 <rico:isInstantiationOf rdf:resource="recordResource/055691-c-2vzyex8hc18--1o5wpcllauj9q"/>
                 <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/055691-c-2vzyex8hc18--1o5wpcllauj9q-i2"/>
@@ -53,8 +53,8 @@
                 </rico:conditionsOfAccess>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_055691/c-2vzyex8hc18--1o5wpcllauj9q"/>
             </rico:Instantiation>
-        </rico:hasInstantiation>
-        <rico:hasInstantiation>
+        </rico:hasOrHadInstantiation>
+        <rico:hasOrHadDigitalInstantiation>
             <rico:Instantiation rdf:about="instantiation/055691-c-2vzyex8hc18--1o5wpcllauj9q-i2">
                 <rico:isInstantiationOf rdf:resource="recordResource/055691-c-2vzyex8hc18--1o5wpcllauj9q"/>
                 <rico:conditionsOfAccess rdf:parseType="Literal">
@@ -66,6 +66,6 @@
                  <dc:format xml:lang="en">image/jpeg</dc:format>
                  <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_055691/c-2vzyex8hc18--1o5wpcllauj9q/FRAN_0118_274_L"/>                
             </rico:Instantiation>
-        </rico:hasInstantiation>
+        </rico:hasOrHadDigitalInstantiation>
     </rico:RecordResource>
 </rdf:RDF>

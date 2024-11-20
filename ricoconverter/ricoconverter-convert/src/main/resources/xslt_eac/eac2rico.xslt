@@ -60,7 +60,8 @@
 			<xsl:apply-templates select="../eac:cpfDescription/eac:identity/eac:entityId" mode="description" />
 			<xsl:apply-templates select="../eac:cpfDescription/eac:relations/eac:cpfRelation[@cpfRelationType = 'identity']" mode="description" />
 			
-			<rico:hasInstantiation>
+			<!-- Since this is an XMLfile , we use hasOrHadDigitalInstantiation -->
+			<rico:hasOrHadDigitalInstantiation>
 	         <rico:Instantiation>
 	         	<xsl:call-template name="rdf-about"><xsl:with-param name="uri" select="eac2rico:URI-Instantiation(eac:recordId)" /></xsl:call-template>
 	            <rico:isInstantiationOf rdf:resource="{eac2rico:URI-Record(eac:recordId)}"/>
@@ -77,7 +78,7 @@
 				<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/{/eac:eac-cpf/eac:control/eac:recordId}" />
 				<xsl:apply-templates mode="instantiation" />
 	         </rico:Instantiation>
-	      </rico:hasInstantiation>
+	      </rico:hasOrHadDigitalInstantiation>
 		</rico:Record>
 	</xsl:template>
 

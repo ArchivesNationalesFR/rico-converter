@@ -22,7 +22,7 @@
       <rico:hasSource rdf:resource="http://fr.wikipedia.org/wiki/Thomas_Arthur_de_Lally-Tollendal"/>
       <rico:source rdf:parseType="Literal"><html:p xml:lang="fr">Notice Wikipedia en https : https://fr.wikipedia.org/wiki/Victor_de_Persigny</html:p></rico:source>
       <rico:hasSource rdf:resource="https://fr.wikipedia.org/wiki/Victor_de_Persigny"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/000051">
             <rico:isInstantiationOf rdf:resource="record/000051"/>
             <dc:format xml:lang="en">text/xml</dc:format>
@@ -30,7 +30,7 @@
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_000051"/> 
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/000051">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>

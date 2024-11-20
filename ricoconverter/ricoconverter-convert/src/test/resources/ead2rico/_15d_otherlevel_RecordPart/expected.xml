@@ -16,7 +16,7 @@
     <rico:Record rdf:about="record/058220">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid"/>
       <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/058220-i1">
             <rico:isInstantiationOf rdf:resource="record/058220"/>
             <dc:format xml:lang="en">text/xml</dc:format>
@@ -24,7 +24,7 @@
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
     </rico:Record>
     
     <!-- case 1 : we can match on the value as RecordPart -->
@@ -33,11 +33,11 @@
          <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordPart"/>
          <dc:type>page-de-titre</dc:type>
          <rico:type>page-de-titre</rico:type>  
-         <rico:hasInstantiation>
+         <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/top-058220-i1">
                <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
             </rico:Instantiation>
-         </rico:hasInstantiation>
+         </rico:hasOrHadInstantiation>
     </rico:RecordResource>    
     
 </rdf:RDF>

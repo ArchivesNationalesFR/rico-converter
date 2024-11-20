@@ -10,7 +10,7 @@
     <rico:Record rdf:about="record/058220">
         <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
         <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
-        <rico:hasInstantiation>
+        <rico:hasOrHadDigitalInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-i1">
                 <rico:isInstantiationOf rdf:resource="record/058220"/>
                 <dc:format xml:lang="en">text/xml</dc:format>
@@ -18,7 +18,7 @@
                 <rico:hasOrHadHolder rdf:resource="agent/005061"/>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>
             </rico:Instantiation>
-        </rico:hasInstantiation>
+        </rico:hasOrHadDigitalInstantiation>
     </rico:Record>
     <rico:RecordResource rdf:about="recordResource/top-058220">
         <rico:isOrWasDescribedBy rdf:resource="record/058220"/>
@@ -52,13 +52,13 @@
                 <html:p>Yvert (Benoît), <html:cite>Dictionnaire des Ministres (1789-1989)</html:cite>, Paris, 1990, pages 559-561.</html:p>
             </html:div>  
         </rico:descriptiveNote>
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
              <rico:Instantiation rdf:about="instantiation/top-058220-i1">
                  <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>    
                  <!-- do not process bibliography here -->
                  <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
              </rico:Instantiation>
-         </rico:hasInstantiation>
+         </rico:hasOrHadInstantiation>
         <rico:directlyIncludes rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>     
         <rico:directlyIncludes rdf:resource="recordResource/058220-N0004"/>
         <rico:directlyIncludes rdf:resource="recordResource/058220-N0005"/>
@@ -75,15 +75,15 @@
                     <html:i>La naissance du Musée du Louvre</html:i>, 1981</html:p>
             </html:div>
         </rico:descriptiveNote>
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">                
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
                 <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
                 <!-- do not process bibliography here -->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"/>
             </rico:Instantiation>
-        </rico:hasInstantiation>
-        <rico:hasInstantiation>
+        </rico:hasOrHadInstantiation>
+        <rico:hasOrHadDigitalInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2">                
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
                 <rico:isDerivedFromInstantiation rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1"/>
@@ -93,7 +93,7 @@
                 <!-- do not process bibliography here -->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest/FRAN_0118_274_L"/>
             </rico:Instantiation>
-        </rico:hasInstantiation>        
+        </rico:hasOrHadDigitalInstantiation>        
     </rico:RecordResource>
 
     <rico:RecordResource rdf:about="recordResource/058220-N0004">
@@ -109,13 +109,13 @@
                 </html:ul>
             </html:div>
          </rico:descriptiveNote>
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-N0004-i1">                
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-N0004"/>
                 <!-- do not process bibliography here -->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0004"/>
             </rico:Instantiation>
-        </rico:hasInstantiation>       
+        </rico:hasOrHadInstantiation>       
     </rico:RecordResource>
     
     <rico:RecordResource rdf:about="recordResource/058220-N0005">
@@ -137,13 +137,13 @@
             </html:div>
         </rico:descriptiveNote>
      
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-N0005-i1">                
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-N0005"/>
                 <!-- do not process bibliography here -->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0005"/>
             </rico:Instantiation>
-        </rico:hasInstantiation>       
+        </rico:hasOrHadInstantiation>       
     </rico:RecordResource>
     
    

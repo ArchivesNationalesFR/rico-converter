@@ -10,7 +10,7 @@
     <rico:Record rdf:about="record/058220">
         <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
         <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
-        <rico:hasInstantiation>
+        <rico:hasOrHadDigitalInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-i1">
                 <rico:isInstantiationOf rdf:resource="record/058220"/>
                 <dc:format xml:lang="en">text/xml</dc:format>
@@ -18,7 +18,7 @@
                 <rico:hasOrHadHolder rdf:resource="agent/005061"/>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>
             </rico:Instantiation>
-        </rico:hasInstantiation>
+        </rico:hasOrHadDigitalInstantiation>
     </rico:Record>
     <rico:RecordResource rdf:about="recordResource/top-058220">
         <rico:isOrWasDescribedBy rdf:resource="record/058220"/>
@@ -32,13 +32,13 @@
                     <html:p>Archives de Maryse Marpsat, chercheuse à l'Insee et à l'Ined</html:p>
             </html:div>
         </rico:descriptiveNote>
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
              <rico:Instantiation rdf:about="instantiation/top-058220-i1">
                  <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>    
                  <!-- do not process separatedmaterial here -->
                  <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
              </rico:Instantiation>
-         </rico:hasInstantiation>
+         </rico:hasOrHadInstantiation>
         <rico:directlyIncludes rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>     
         <rico:directlyIncludes rdf:resource="recordResource/058220-N0004"/>
         <rico:directlyIncludes rdf:resource="recordResource/058220-N0005"/>
@@ -56,15 +56,15 @@
                 <html:p>Voir aussi le versement conservé par la mission sous la cote interne DGS/2003/002 boite 2 sur le retrait possible de lots de médicaments dérivés du sang par la firme Baxter.</html:p>
             </html:div>
         </rico:descriptiveNote>
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">                
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
                 <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
                 <!-- do not process separatedmaterial here -->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"/>
             </rico:Instantiation>
-        </rico:hasInstantiation>
-        <rico:hasInstantiation>
+        </rico:hasOrHadInstantiation>
+        <rico:hasOrHadDigitalInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2">                
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
                 <rico:isDerivedFromInstantiation rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1"/>
@@ -74,7 +74,7 @@
                 <!-- do not process separatedmaterial here -->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest/FRAN_0118_274_L"/>
             </rico:Instantiation>
-        </rico:hasInstantiation>        
+        </rico:hasOrHadDigitalInstantiation>        
     </rico:RecordResource>
 
     <rico:RecordResource rdf:about="recordResource/058220-N0004">
@@ -96,13 +96,13 @@
                 </html:ul>
             </html:div>
          </rico:descriptiveNote>
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-N0004-i1">                
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-N0004"/>
                 <!-- do not process separatedmaterial here -->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0004"/>
             </rico:Instantiation>
-        </rico:hasInstantiation>       
+        </rico:hasOrHadInstantiation>       
     </rico:RecordResource>
     
     <!--ref role="IR"-->
@@ -120,13 +120,13 @@
         </rico:descriptiveNote>       
         <rico:isRecordResourceAssociatedWithRecordResource rdf:resource="recordResource/top-055665"/>
         
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-N0005-i1">                
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-N0005"/>
                 <!-- do not process separatedmaterial here -->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0005"/>
             </rico:Instantiation>
-        </rico:hasInstantiation>       
+        </rico:hasOrHadInstantiation>       
     </rico:RecordResource>
     
     <rico:RecordResource rdf:about="recordResource/058220-N0006">
@@ -141,13 +141,13 @@
         </rico:descriptiveNote>       
         <rico:isRecordResourceAssociatedWithRecordResource rdf:resource="recordResource/017020-d_4_1"/>
        
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-N0006-i1">                
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-N0006"/>
                 <!-- do not process separatedmaterial here -->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0006"/>
             </rico:Instantiation>
-        </rico:hasInstantiation>       
+        </rico:hasOrHadInstantiation>       
     </rico:RecordResource>
     
     <!--ref role="WEB"-->
@@ -166,13 +166,13 @@
                      [1958-2016])</html:p>
             </html:div>
         </rico:descriptiveNote>
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-N0007-i1">                
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-N0007"/>
                 <!-- do not process separatedmaterial here -->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0007"/>
             </rico:Instantiation>
-        </rico:hasInstantiation>       
+        </rico:hasOrHadInstantiation>       
     </rico:RecordResource>
     
     <!--ref role="ANX"-->
@@ -185,12 +185,12 @@
                 <html:p>Consulter l'annexe ci-joint<html:a href="https://www.siv.archives-nationales.culture.gouv.fr/mm/media/download/FRAN_ANX_012194.pdf">Table des sigles</html:a></html:p>
             </html:div>
         </rico:descriptiveNote>
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-N0008-i1">                
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-N0008"/>
                 <!-- do not process separatedmaterial here -->
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/N0008"/>
             </rico:Instantiation>
-        </rico:hasInstantiation>       
+        </rico:hasOrHadInstantiation>       
     </rico:RecordResource>
 </rdf:RDF>
