@@ -309,7 +309,7 @@ public class Ead2RicoConverter {
 											node.getNodeType() != Node.ELEMENT_NODE
 											||
 											!(
-												node.getLocalName().equals("hasProvenance")
+												node.getLocalName().equals("hasOrganicProvenance")
 												||
 												node.getLocalName().equals("hasOrHadHolder")
 												||

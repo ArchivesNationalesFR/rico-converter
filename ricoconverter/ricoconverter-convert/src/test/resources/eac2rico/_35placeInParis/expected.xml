@@ -31,56 +31,56 @@
          </rico:AgentName>
       </rico:hasOrHadAgentName>
       <!-- case 1 -->
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/123456"/>
-            <rico:placeRelationHasSource
+            <rico:relationHasTarget rdf:resource="agent/123456"/>
+            <rico:relationHasSource
                rdf:resource="place/29%20rue%20d%27Ulm%2C%2075230%20Paris%2005"/>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
                >1963-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
                >1968-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:generalDescription rdf:parseType="Literal">
                <html:p xml:lang="fr">A note.</html:p>
-            </rico:descriptiveNote>
+            </rico:generalDescription>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/29%20rue%20d%27Ulm%2C%2075230%20Paris%2005"/>
       <!-- case 2 -->
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/123456"/>
-            <rico:placeRelationHasSource rdf:resource="place/24%2C%20rue%20La%20Fayette"/>
+            <rico:relationHasTarget rdf:resource="agent/123456"/>
+            <rico:relationHasSource rdf:resource="place/24%2C%20rue%20La%20Fayette"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/24%2C%20rue%20La%20Fayette"/>
       <!-- case 3 -->
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/123456"/>
-            <rico:placeRelationHasSource> <rico:Place>
+            <rico:relationHasTarget rdf:resource="agent/123456"/>
+            <rico:relationHasSource> <rico:Place>
                   <rdfs:label xml:lang="fr">Lieu dont l'adresse précise est indéterminée</rdfs:label>
                   <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_020-d3nyv28v37--w6fed6mpjd5r"/>
                </rico:Place>
-            </rico:placeRelationHasSource> </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation>
+            </rico:relationHasSource> </rico:PlaceRelation>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_020-d3nyv28v37--w6fed6mpjd5r"/>
       <!-- case 4 -->
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/123456"/>
-            <rico:placeRelationHasSource rdf:resource="place/au%20March%C3%A9-Neuf"/>
+            <rico:relationHasTarget rdf:resource="agent/123456"/>
+            <rico:relationHasSource rdf:resource="place/au%20March%C3%A9-Neuf"/>
          </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/au%20March%C3%A9-Neuf"/>
       <!-- case 5 : not processed -->
       <!-- case 6 -->
-      <rico:thingIsTargetOfPlaceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PlaceRelation>
-            <rico:placeRelationHasTarget rdf:resource="agent/123456"/>
-            <rico:placeRelationHasSource rdf:resource="place/FRAN_RI_026-d5bknx4v7j-1wqddent61siy"
+            <rico:relationHasTarget rdf:resource="agent/123456"/>
+            <rico:relationHasSource rdf:resource="place/FRAN_RI_026-d5bknx4v7j-1wqddent61siy"
             /> </rico:PlaceRelation>
-      </rico:thingIsTargetOfPlaceRelation>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_026-d5bknx4v7j-1wqddent61siy"/>
       <!-- cases 7 and 8: not processed -->
    </rico:Agent>

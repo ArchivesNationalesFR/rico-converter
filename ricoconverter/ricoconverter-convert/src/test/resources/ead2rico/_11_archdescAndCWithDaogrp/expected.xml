@@ -78,7 +78,7 @@
       <rico:hasOrHadDigitalInstantiation>
            <rico:Instantiation rdf:about="instantiation/003666-c-835pw5mwg-otyywby3qzqb-i2">
 		      <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/003666-c-835pw5mwg-otyywby3qzqb"/>
-              <rico:descriptiveNote rdf:parseType="Literal">
+              <rico:generalDescription rdf:parseType="Literal">
               	<html:p xml:lang="fr">une légende</html:p>
               </rico:descriptiveNote>
 		      <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/003666-c-835pw5mwg-otyywby3qzqb-i1"/>
@@ -141,7 +141,7 @@
 				<rico:identifier>FRAN_0109_00814_L#FRAN_0109_00813_L</rico:identifier>
 				
 				<dc:format xml:lang="en">image/jpeg</dc:format>
-				<rico:hasProvenance rdf:resource="agent/005061"/>
+				<rico:hasOrganicProvenance rdf:resource="agent/005061"/>
 				<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_003666/123456/FRAN_0109_00814_L"/>
 				<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_003666/123456/FRAN_0109_00813_L"/>
 			</rico:Instantiation>
@@ -149,14 +149,14 @@
 		<rico:hasOrHadDigitalInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-123456-i3">
 				<rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/003666-123456"/>
-				<rico:descriptiveNote rdf:parseType="Literal">
+				<rico:generalDescription rdf:parseType="Literal">
 					<html:p xml:lang="fr">une autre légende</html:p>
 				</rico:descriptiveNote>				
 				<rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/003666-123456-i1"/>
 				<rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
 				<rico:identifier>FRAN_0118_280_L</rico:identifier>				
 				<dc:format xml:lang="en">image/jpeg</dc:format>
-				<rico:hasProvenance rdf:resource="agent/005061"/>
+				<rico:hasOrganicProvenance rdf:resource="agent/005061"/>
 				<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_003666/123456/FRAN_0118_280_L"/>
 			</rico:Instantiation>
 		</rico:hasOrHadDigitalInstantiation>
@@ -175,7 +175,7 @@
 				
 				<dc:format xml:lang="en">image/jpeg</dc:format>
 				
-				<rico:hasProvenance rdf:resource="agent/005061"/>
+				<rico:hasOrganicProvenance rdf:resource="agent/005061"/>
 				<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_003666/i7899/FRAN_0109_00814_L"/>
 				<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_003666/i7899/FRAN_0109_00813_L"/>
 			</rico:Instantiation>
@@ -183,7 +183,7 @@
 		<rico:hasOrHadDigitalInstantiation>
 			<rico:Instantiation rdf:about="instantiation/003666-i7899-i3">
 				<rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/003666-i7899"/>
-				<rico:descriptiveNote rdf:parseType="Literal">
+				<rico:generalDescription rdf:parseType="Literal">
 					<html:p xml:lang="fr">une autre légende</html:p>
 				</rico:descriptiveNote>				
 				<rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/003666-i7899-i1"/>
@@ -192,7 +192,7 @@
 				<rico:identifier>FRAN_0118_280_L</rico:identifier>
 				
 				<dc:format xml:lang="en">image/jpeg</dc:format>
-				<rico:hasProvenance rdf:resource="agent/005061"/>
+				<rico:hasOrganicProvenance rdf:resource="agent/005061"/>
 				<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_003666/i7899/FRAN_0118_280_L"/>
 			</rico:Instantiation>
 		</rico:hasOrHadDigitalInstantiation>
