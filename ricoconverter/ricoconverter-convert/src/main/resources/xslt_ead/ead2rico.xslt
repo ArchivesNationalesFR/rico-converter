@@ -396,7 +396,7 @@
 			<!-- The inverse link to the parent depends on the incoming link, which depends on the type of the parent -->
 			<xsl:choose>
 				<xsl:when test="ead2rico:isRicoRecordSet(ancestor::*[local-name() = 'c' or local-name() = 'archdesc'][1])">
-					<rico:isOrWasIncludedIn rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />	
+					<rico:isDirectlyIncludedIn rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />	
 				</xsl:when>
 				<xsl:when test="ead2rico:isRicoRecord(ancestor::*[local-name() = 'c' or local-name() = 'archdesc'][1])">
 					<rico:isOrWasConstituentOf rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />	
@@ -820,11 +820,11 @@
 	
 	<!-- need at least some non-empty content  -->
 	<xsl:template match="accruals[normalize-space(.)]">
-		<rico:accrual rdf:parseType="Literal">
+		<rico:accruals rdf:parseType="Literal">
 			<html:div xml:lang="{$LITERAL_LANG}">
 	            <xsl:apply-templates mode="html" />
 	        </html:div>
-        </rico:accrual>
+        </rico:accruals>
 	</xsl:template>
 	
 	<!-- ***** otherfindaid ***** -->
@@ -1391,9 +1391,9 @@
 	<xsl:template match="physdesc" mode="instantiation">
 		<!-- Output only if we have some text inside -->
 		<xsl:if test="normalize-space(string-join(text())) != ''">
-	        <rico:physicalCharacteristics rdf:parseType="Literal">
+	        <rico:physicalCharacteristicsNote rdf:parseType="Literal">
 	        	<html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></html:p>
-	        </rico:physicalCharacteristics>
+	        </rico:physicalCharacteristicsNote>
         </xsl:if>
         <xsl:apply-templates mode="#current" />
 	</xsl:template>	

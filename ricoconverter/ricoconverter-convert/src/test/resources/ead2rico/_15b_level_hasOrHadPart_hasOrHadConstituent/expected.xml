@@ -38,7 +38,7 @@
     </rico:RecordResource>
 
     <rico:RecordResource rdf:about="recordResource/058220-a1">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/> 
+        <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-058220"/> 
         <rico:hasInstantiation>
           <rico:Instantiation rdf:about="instantiation/058220-a1-i1">
             <rico:isInstantiationOf rdf:resource="recordResource/058220-a1"/>
@@ -64,7 +64,7 @@
 
     <!-- cas 3.1 : c RecordSet -->
     <rico:RecordResource rdf:about="recordResource/058220-a3.1">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/> 
+        <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-058220"/> 
         <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-a3.2"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasInstantiation>
@@ -75,7 +75,7 @@
         </rico:hasInstantiation>
         <rico:directlyIncludes>
           <rico:RecordResource rdf:about="recordResource/058220-a3.1-child">
-            <rico:isOrWasIncludedIn rdf:resource="recordResource/058220-a3.1"/>
+            <rico:isDirectlyIncludedIn rdf:resource="recordResource/058220-a3.1"/>
             <rico:hasInstantiation>
                 <rico:Instantiation rdf:about="instantiation/058220-a3.1-child-i1">
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-a3.1-child"/>
@@ -88,7 +88,7 @@
 
     <!-- cas 3.2 : c Record -->
     <rico:RecordResource rdf:about="recordResource/058220-a3.2">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/> 
+        <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-058220"/> 
         <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-a3.1"/>
         <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-a3.3"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
@@ -113,7 +113,7 @@
 
     <!-- cas 3.3 : c Unknown -->
     <rico:RecordResource rdf:about="recordResource/058220-a3.3">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/> 
+        <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-058220"/> 
         <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-a3.2"/>
         <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-a3.4"/>
         <rico:hasInstantiation>
@@ -137,7 +137,7 @@
 
     <!-- cas 3.4 : c RecordPart -->
     <rico:RecordResource rdf:about="recordResource/058220-a3.4">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/> 
+        <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-058220"/> 
         <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-a3.3"/>
         <rico:hasInstantiation>
           <rico:Instantiation rdf:about="instantiation/058220-a3.4-i1">
