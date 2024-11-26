@@ -6,15 +6,15 @@
    xmlns:dc="http://purl.org/dc/elements/1.1/">
    <rico:Record rdf:about="record/005061">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
-      <rico:describesOrDescribed rdf:resource="agent/005061"/><rico:hasInstantiation>
+      <rico:describesOrDescribed rdf:resource="agent/005061"/><rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/005061">
-            <rico:isInstantiationOf rdf:resource="record/005061"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/005061"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_005061</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005061"/> 
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/005061">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>

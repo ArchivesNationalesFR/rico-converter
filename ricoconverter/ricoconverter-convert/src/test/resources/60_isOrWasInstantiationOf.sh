@@ -1,0 +1,1 @@
+find -type f -exec sed -i 's/rico:isInstantiationOf/rico:isOrWasInstantiationOf/g' {} +

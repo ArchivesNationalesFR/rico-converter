@@ -8,9 +8,9 @@
          rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/099999"/>
       <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q903209"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/099999">
-            <rico:isInstantiationOf rdf:resource="record/099999"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/099999"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_099999</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
@@ -18,7 +18,7 @@
                rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_099999"
             />
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/099999">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>

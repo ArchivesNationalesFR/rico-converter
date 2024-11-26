@@ -81,32 +81,33 @@
 	
 			<!-- Generates an Instantiation of the FindingAid in a child element -->
 			<xsl:apply-templates select="../archdesc" mode="reference" />
-			<rico:hasInstantiation>
+			<!-- Since this is an XML we use the generic rico:hasOrHadDigitalInstantiation on the finding aid -->
+			<rico:hasOrHadDigitalInstantiation>
 				<!--  FindingAid Instantiation -->
 			    <rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($fiInstantiationId)}">
-					<!-- link back to parent URI -->
-					<rico:isInstantiationOf rdf:resource="{ead2rico:URI-FindingAid($faId)}"/>
-					<!-- process child elements again but this time in mode 'instantiation' -->
-					<xsl:apply-templates mode="instantiation" />
-					<!-- Always insert this regulatedBy on FindingAid's Instantiation in case of AN -->
-					<rico:isOrWasRegulatedBy rdf:resource="rule/rl010"/>
-					<dc:format xml:lang="en">text/xml</dc:format>
-					<rico:identifier><xsl:value-of select="eadid" /></rico:identifier>	      
-					<!-- Turn author URI into relative URI -->
-					<xsl:choose>
-						<xsl:when test="starts-with($AUTHOR_URI, $BASE_URI)">
-							<rico:hasOrHadHolder rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}" />
-						</xsl:when>
-						<xsl:otherwise>
-							<rico:hasOrHadHolder rdf:resource="{$AUTHOR_URI}" />
-						</xsl:otherwise>
-					</xsl:choose>
-					<!-- output rdfs:seeAlso only for IR coming from ANF, based on eadid structure -->
-					<xsl:if test="starts-with(eadid,'FRAN_IR_')">
-						<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/{eadid}"/> 
-					</xsl:if>
+			      <!-- link back to parent URI -->
+			      <rico:isOrWasDigitalInstantiationOf rdf:resource="{ead2rico:URI-FindingAid($faId)}"/>
+			      <!-- process child elements again but this time in mode 'instantiation' -->
+			      <xsl:apply-templates mode="instantiation" />
+			      <!-- Always insert this regulatedBy on FindingAid's Instantiation in case of AN -->
+			      <rico:isOrWasRegulatedBy rdf:resource="rule/rl010"/>
+			      <dc:format xml:lang="en">text/xml</dc:format>
+			      <rico:identifier><xsl:value-of select="eadid" /></rico:identifier>	      
+			      <!-- Turn author URI into relative URI -->
+			      <xsl:choose>
+					<xsl:when test="starts-with($AUTHOR_URI, $BASE_URI)">
+						<rico:hasOrHadHolder rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}" />
+					</xsl:when>
+					<xsl:otherwise>
+						<rico:hasOrHadHolder rdf:resource="{$AUTHOR_URI}" />
+					</xsl:otherwise>
+				  </xsl:choose>
+            <!-- output rdfs:seeAlso only for IR coming from ANF, based on eadid structure -->
+					  <xsl:if test="starts-with(eadid,'FRAN_IR_')">
+			        <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/{eadid}"/> 
+            </xsl:if>
 			    </rico:Instantiation>
-			</rico:hasInstantiation>
+			</rico:hasOrHadDigitalInstantiation>
 		</rico:Record>
 		
 	</xsl:template>
@@ -305,9 +306,29 @@
 			</xsl:if>
 
 			<!-- The instantiation of the RecordResource -->
-			<rico:hasInstantiation>
+
+			<xsl:variable name="instantiationLink">
+				<predicates>
+					<xsl:choose>
+						<!-- This value ending by isx indicates that it is a digital archive. So we use a specific link to the Instantiation -->
+						<xsl:when test="did/physdesc/physfacet[@type = 'd3nd9y3c6o-iu0j3xsmoisx']">
+							<resourceToInstantiation>rico:hasOrHadDigitalInstantiation</resourceToInstantiation>
+							<instantiationToResource>rico:isOrWasDigitalInstantiationOf</instantiationToResource>
+						</xsl:when>
+						<xsl:otherwise>
+							<resourceToInstantiation>rico:hasOrHadInstantiation</resourceToInstantiation>
+							<instantiationToResource>rico:isOrWasInstantiationOf</instantiationToResource>						
+						</xsl:otherwise>
+					</xsl:choose>
+				</predicates>
+			</xsl:variable>
+
+			<xsl:element name="{$instantiationLink/predicates/resourceToInstantiation}">
 				<rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($instantiationId)}">
-					<rico:isInstantiationOf rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+					<xsl:element name="{$instantiationLink/predicates/instantiationToResource}">
+						<xsl:attribute name="rdf:resource"><xsl:value-of select="ead2rico:URI-RecordResource($recordResourceId)" /></xsl:attribute>
+					</xsl:element>
+
 					<!-- references to other digital copies -->
 					<xsl:apply-templates select="daogrp | did/daogrp" mode="reference" />
 					<!--  Recurse down. Note that origination is still processed here to match inner persname/corpname/famname -->
@@ -344,7 +365,7 @@
 					</xsl:if>
 					<!-- this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/{/ead/eadheader/eadid}/top" />-->
 				</rico:Instantiation>
-			</rico:hasInstantiation>			
+			</xsl:element>		
 						
 			<!-- generates other Instantiations if any -->
 			<xsl:apply-templates select="daogrp" />
@@ -445,9 +466,27 @@
 			</xsl:choose>
 			
 			<!--  The instantiation of this RecordResource -->
-			<rico:hasInstantiation>
+			<xsl:variable name="instantiationLink" >
+				<predicates>
+					<xsl:choose>
+						<!-- This value ending by isx indicates that it is a digital archive. So we use a specific link to the Instantiation -->
+						<xsl:when test="did/physdesc/physfacet[@type = 'd3nd9y3c6o-iu0j3xsmoisx']">
+							<resourceToInstantiation>rico:hasOrHadDigitalInstantiation</resourceToInstantiation>
+							<instantiationToResource>rico:isOrWasDigitalInstantiationOf</instantiationToResource>
+						</xsl:when>
+						<xsl:otherwise>
+							<resourceToInstantiation>rico:hasOrHadInstantiation</resourceToInstantiation>
+							<instantiationToResource>rico:isOrWasInstantiationOf</instantiationToResource>						
+						</xsl:otherwise>
+					</xsl:choose>
+				</predicates>
+			</xsl:variable>
+
+			<xsl:element name="{$instantiationLink/predicates/resourceToInstantiation}">
 				<rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($instantiationId)}">
-					<rico:isInstantiationOf rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+					<xsl:element name="{$instantiationLink/predicates/instantiationToResource}">
+						<xsl:attribute name="rdf:resource"><xsl:value-of select="ead2rico:URI-RecordResource($recordResourceId)" /></xsl:attribute>
+					</xsl:element>
 					<!-- references to other digital copies -->
 					<xsl:apply-templates select="daogrp | did/daogrp" mode="reference" />
 					<!--  recurse down. Note that origination is still processed here to match inner persname/corpname/famname -->
@@ -483,7 +522,7 @@
 						<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/{/ead/eadheader/eadid}/{@id}" />
 					</xsl:if>
 				</rico:Instantiation>
-			</rico:hasInstantiation>
+			</xsl:element>
 			
 			<!-- generates other Instantiations -->
 			<xsl:apply-templates select="daogrp" />
@@ -569,9 +608,10 @@
 		<xsl:variable name="instantiationId" select="concat($recordResourceId, '-i', count(preceding-sibling::daogrp)+2)" />
 		
 		<!-- Inside this other Instantiation we only pick selected EAD elements, we don't reprocess all elements -->
-		<rico:hasInstantiation>
+		<!-- We are inside a daogrp, this is necessarily a digital instantiation -->
+		<rico:hasOrHadDigitalInstantiation>
 			<rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($instantiationId)}">
-				<rico:isInstantiationOf rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+				<rico:isOrWasDigitalInstantiationOf rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
 				
 				<!-- the image legend -->
 				<xsl:apply-templates select="daodesc" />
@@ -593,7 +633,7 @@
 				<xsl:apply-templates select="(ancestor::*[self::c or self::archdesc])[last()]/did/unitid" mode="instantiation" />
 				
 				<!-- We know it is a digital copy of the first instantiation -->
-				<rico:isDerivedFromInstantiation rdf:resource="{ead2rico:URI-Instantiation(concat($recordResourceId, '-i1'))}"/>
+				<rico:isOrWasDerivedFromInstantiation rdf:resource="{ead2rico:URI-Instantiation(concat($recordResourceId, '-i1'))}"/>
 				<rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>	
 				
 				<xsl:choose>
@@ -614,7 +654,7 @@
 				
 				<xsl:apply-templates select="daoloc" />
 			</rico:Instantiation>
-		</rico:hasInstantiation>
+		</rico:hasOrHadDigitalInstantiation>
 
 	</xsl:template>
 	

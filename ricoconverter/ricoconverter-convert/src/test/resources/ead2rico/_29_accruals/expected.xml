@@ -10,15 +10,15 @@
     <rico:Record rdf:about="record/058220">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
       <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/058220-i1">
-            <rico:isInstantiationOf rdf:resource="record/058220"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/058220"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_IR_058220</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
     </rico:Record>
     <!-- archdesc level -->
     <rico:RecordResource rdf:about="recordResource/top-058220">
@@ -29,13 +29,13 @@
                 <html:p>Fonds clos.</html:p>
             </html:div>
         </rico:accruals>
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/top-058220-i1">
-                <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
+                <rico:isOrWasInstantiationOf rdf:resource="recordResource/top-058220"/>
                 <!--do not process accruals here-->
                 <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->        
             </rico:Instantiation>
-        </rico:hasInstantiation>
+        </rico:hasOrHadInstantiation>
         <rico:directlyIncludes rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
     </rico:RecordResource>
     <!-- c level -->
@@ -46,14 +46,14 @@
                 <html:p>Ce fonds est susceptible de s'accroître avec des archives papiers et électroniques. Tout n'a pas pu être collecté en 2013 et Anne Tursz est encore en fonction.</html:p>
             </html:div>
         </rico:accruals>
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">
                 <!--do not process accruals here-->         
-                <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
+                <rico:isOrWasInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
                 <rdfs:seeAlso
                     rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"
                 />
             </rico:Instantiation>
-        </rico:hasInstantiation>
+        </rico:hasOrHadInstantiation>
     </rico:RecordResource>
 </rdf:RDF>

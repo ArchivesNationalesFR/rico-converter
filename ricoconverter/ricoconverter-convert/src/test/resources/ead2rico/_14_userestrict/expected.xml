@@ -10,15 +10,15 @@
     <rico:Record rdf:about="record/058220">
     	  <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
         <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/058220-i1">
-            <rico:isInstantiationOf rdf:resource="record/058220"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/058220"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_IR_058220</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
     </rico:Record>
     <!-- archdesc level -->
     <rico:RecordResource rdf:about="recordResource/top-058220">        
@@ -28,15 +28,15 @@
             <html:p xml:lang="fr">Mention obligatoire : cliché Archives nationales/Fonds LAPIE. Toute réutilisation est soumise au respect du Code de la propriété intellectuelle.</html:p>
         </rico:conditionsOfUse>
         
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/top-058220-i1">
-                <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
+                <rico:isOrWasInstantiationOf rdf:resource="recordResource/top-058220"/>
                 <rico:conditionsOfUse rdf:parseType="Literal">
                     <html:p xml:lang="fr">Mention obligatoire : cliché Archives nationales/Fonds LAPIE. Toute réutilisation est soumise au respect du Code de la propriété intellectuelle.</html:p>
                 </rico:conditionsOfUse>
                 <!--this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/top"/>-->
             </rico:Instantiation>
-        </rico:hasInstantiation>
+        </rico:hasOrHadInstantiation>
         <rico:directlyIncludes rdf:resource="recordResource/058220-c-2vzyex8hc18--1o5wpcllauj9q"/>
     </rico:RecordResource>
     <!-- c level-->
@@ -45,28 +45,28 @@
         <rico:conditionsOfUse rdf:parseType="Literal">
             <html:p xml:lang="fr">Mention obligatoire : cliché Archives nationales/Fonds LAPIE. Toute réutilisation est soumise au respect du Code de la propriété intellectuelle.</html:p>
         </rico:conditionsOfUse>
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c-2vzyex8hc18--1o5wpcllauj9q-i1">
-                <rico:isInstantiationOf rdf:resource="recordResource/058220-c-2vzyex8hc18--1o5wpcllauj9q"/>
+                <rico:isOrWasInstantiationOf rdf:resource="recordResource/058220-c-2vzyex8hc18--1o5wpcllauj9q"/>
                 <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/058220-c-2vzyex8hc18--1o5wpcllauj9q-i2"/>
                 <rico:conditionsOfUse rdf:parseType="Literal">
                     <html:p xml:lang="fr">Mention obligatoire : cliché Archives nationales/Fonds LAPIE. Toute réutilisation est soumise au respect du Code de la propriété intellectuelle.</html:p>
                 </rico:conditionsOfUse>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c-2vzyex8hc18--1o5wpcllauj9q"/>
             </rico:Instantiation>
-        </rico:hasInstantiation>
-        <rico:hasInstantiation>
+        </rico:hasOrHadInstantiation>
+        <rico:hasOrHadDigitalInstantiation>
 	         <rico:Instantiation rdf:about="instantiation/058220-c-2vzyex8hc18--1o5wpcllauj9q-i2">
-	            <rico:isInstantiationOf rdf:resource="recordResource/058220-c-2vzyex8hc18--1o5wpcllauj9q"/>
+	            <rico:isOrWasDigitalInstantiationOf rdf:resource="recordResource/058220-c-2vzyex8hc18--1o5wpcllauj9q"/>
 	            <rico:conditionsOfUse rdf:parseType="Literal">
 	               <html:p xml:lang="fr">Mention obligatoire : cliché Archives nationales/Fonds LAPIE. Toute réutilisation est soumise au respect du Code de la propriété intellectuelle.</html:p>
 	            </rico:conditionsOfUse>
-	            <rico:isDerivedFromInstantiation rdf:resource="instantiation/058220-c-2vzyex8hc18--1o5wpcllauj9q-i1"/>
+	            <rico:isOrWasDerivedFromInstantiation rdf:resource="instantiation/058220-c-2vzyex8hc18--1o5wpcllauj9q-i1"/>
 	            <rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>
 	            <rico:identifier>FRAN_0118_274_L</rico:identifier>
 	            <dc:format xml:lang="en">image/jpeg</dc:format>
 	            <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/FRAN_IR_058220/c-2vzyex8hc18--1o5wpcllauj9q/FRAN_0118_274_L"/>
 	         </rico:Instantiation>
-        </rico:hasInstantiation>
+        </rico:hasOrHadDigitalInstantiation>
     </rico:RecordResource>
 </rdf:RDF>

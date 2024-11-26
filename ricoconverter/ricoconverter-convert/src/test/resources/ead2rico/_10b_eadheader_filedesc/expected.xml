@@ -40,9 +40,9 @@
          </html:div>
       </rico:history>
 
-      <rico:hasInstantiation>      
+      <rico:hasOrHadDigitalInstantiation>      
          <rico:Instantiation rdf:about="instantiation/004852-i1">
-	   	  <rico:isInstantiationOf rdf:resource="record/004852"/>
+	   	  <rico:isOrWasDigitalInstantiationOf rdf:resource="record/004852"/>
 	      <!-- the title is duplicated here -->
 	      <rico:title xml:lang="fr">Dossiers de carrière des magistrats (1848-1883) : Inventaire sommaire (BB/6(II)/1-BB/6(II)/434)</rico:title>
 	      <rdfs:label xml:lang="fr">Dossiers de carrière des magistrats (1848-1883) : Inventaire sommaire (BB/6(II)/1-BB/6(II)/434)</rdfs:label>
@@ -53,7 +53,7 @@
 	      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_004852"/>
 	      
 	    </rico:Instantiation>
-   </rico:hasInstantiation>
+   </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
 
 </rdf:RDF>
