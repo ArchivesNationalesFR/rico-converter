@@ -1,0 +1,55 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:isni="https://isni.org/ontology#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
+         xml:base="https://rdf.archives-nationales.culture.gouv.fr/">
+   <rico:Record rdf:about="record/FR-593509801_Liste_mss">
+      <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl005"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl004"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl006"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl007"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl008"/>
+      <rico:isOrWasRegulatedBy rdf:resource="rule/rl009"/>
+      <rico:describesOrDescribed rdf:resource="recordResource/top-FR-593509801_Liste_mss"/>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/FR-593509801_Liste_mss-i1">
+            <rico:isInstantiationOf rdf:resource="record/FR-593509801_Liste_mss"/>
+            <rico:isOrWasRegulatedBy rdf:resource="rule/rl010"/>
+            <dc:format xml:lang="en">text/xml</dc:format>
+            <rico:identifier>FR-593509801_Liste mss</rico:identifier>
+            <rico:hasOrHadHolder rdf:resource="agent/005061"/>
+            <!-- no rdfs:seeAlso here -->
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:Record>
+   <rico:RecordResource rdf:about="recordResource/top-FR-593509801_Liste_mss">
+      <rico:isOrWasDescribedBy rdf:resource="record/FR-593509801_Liste_mss"/>
+      <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
+      <rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Fonds"/>
+      <rico:title xml:lang="fr">Manuscrits de la BU SHS du SCD de l'université de Lille</rico:title>
+      <rdfs:label xml:lang="fr">Manuscrits de la BU SHS du SCD de l'université de Lille</rdfs:label>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/top-FR-593509801_Liste_mss-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/top-FR-593509801_Liste_mss"/>
+            <rico:title xml:lang="fr">Manuscrits de la BU SHS du SCD de l'université de Lille</rico:title>
+            <rdfs:label xml:lang="fr">Manuscrits de la BU SHS du SCD de l'université de Lille</rdfs:label>
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+      <rico:directlyIncludes rdf:resource="recordResource/FR-593509801_Liste_mss-D48030001"/>
+   </rico:RecordResource>
+   <rico:RecordResource rdf:about="recordResource/FR-593509801_Liste_mss-D48030001">
+      <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-FR-593509801_Liste_mss"/>
+      <dc:type>notice</dc:type>
+      <rico:type>notice</rico:type>
+      <rico:hasInstantiation>
+         <rico:Instantiation rdf:about="instantiation/FR-593509801_Liste_mss-D48030001-i1">
+            <rico:isInstantiationOf rdf:resource="recordResource/FR-593509801_Liste_mss-D48030001"/>
+            <!-- no rdfs:seeAlso here -->
+         </rico:Instantiation>
+      </rico:hasInstantiation>
+   </rico:RecordResource>
+</rdf:RDF>
