@@ -820,11 +820,11 @@
 	
 	<!-- need at least some non-empty content  -->
 	<xsl:template match="accruals[normalize-space(.)]">
-		<rico:accrual rdf:parseType="Literal">
+		<rico:accruals rdf:parseType="Literal">
 			<html:div xml:lang="{$LITERAL_LANG}">
 	            <xsl:apply-templates mode="html" />
 	        </html:div>
-        </rico:accrual>
+        </rico:accruals>
 	</xsl:template>
 	
 	<!-- ***** otherfindaid ***** -->
@@ -1391,9 +1391,9 @@
 	<xsl:template match="physdesc" mode="instantiation">
 		<!-- Output only if we have some text inside -->
 		<xsl:if test="normalize-space(string-join(text())) != ''">
-	        <rico:physicalCharacteristics rdf:parseType="Literal">
+	        <rico:physicalCharacteristicsNote rdf:parseType="Literal">
 	        	<html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></html:p>
-	        </rico:physicalCharacteristics>
+	        </rico:physicalCharacteristicsNote>
         </xsl:if>
         <xsl:apply-templates mode="#current" />
 	</xsl:template>	
