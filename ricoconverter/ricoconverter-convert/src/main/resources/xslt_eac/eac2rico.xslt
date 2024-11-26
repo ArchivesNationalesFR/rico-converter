@@ -909,7 +909,7 @@
         			eac:dateRange/eac:fromDate/@standardDate,
         			eac:dateRange/eac:toDate/@standardDate )" />
 
-		<rico:agentIsSourceOfAgentTemporalRelation rdf:resource="{$relationUri}" />
+		<rico:thingIsSourceOfRelation rdf:resource="{$relationUri}" />
 		<rico:hasSuccessor rdf:resource="{eac2rico:URI-AgentExternal(@xlink:href, document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml')))}" />
 	</xsl:template>	
 	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'temporal-later' and document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml'))]" mode="relations">
@@ -922,12 +922,12 @@
         			eac:dateRange/eac:toDate/@standardDate )"
         		/>	
         	</xsl:call-template>
-        	<rico:agentTemporalRelationHasTarget>
+        	<rico:relationHasTarget>
         		<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-AgentExternal(@xlink:href, document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml')))" /></xsl:call-template>
-        	</rico:agentTemporalRelationHasTarget>
-        	<rico:agentTemporalRelationHasSource>
+        	</rico:relationHasTarget>
+        	<rico:relationHasSource>
         		<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
-        	</rico:agentTemporalRelationHasSource>
+        	</rico:relationHasSource>
         	<xsl:variable name="thisName" select="normalize-space(/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:nameEntry[@localType = 'autorisée']/eac:part)" />
         	<xsl:variable name="otherName" select="document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml'))/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:nameEntry[@localType = 'autorisée']/eac:part" />
         	<xsl:variable name="thatName" select="if($otherName != '') then $otherName else eac:relationEntry" />
@@ -945,7 +945,7 @@
         			eac:dateRange/eac:fromDate/@standardDate,
         			eac:dateRange/eac:toDate/@standardDate )" />
 		
-		<rico:agentIsTargetOfAgentTemporalRelation rdf:resource="{$relationUri}" />
+		<rico:thingIsTargetOfRelation rdf:resource="{$relationUri}" />
 		<rico:isSuccessorOf rdf:resource="{eac2rico:URI-AgentExternal(@xlink:href, document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml')))}" />
 	</xsl:template>	
 	<xsl:template match="eac:cpfRelation[@cpfRelationType = 'temporal-earlier' and document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml'))]" mode="relations">
@@ -958,12 +958,12 @@
         			eac:dateRange/eac:toDate/@standardDate )"
         		/>	
         	</xsl:call-template>
-        	<rico:agentTemporalRelationHasTarget>
+        	<rico:relationHasTarget>
         		<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="$agentUri" /></xsl:call-template>
-        	</rico:agentTemporalRelationHasTarget>
-        	<rico:agentTemporalRelationHasSource>
+        	</rico:relationHasTarget>
+        	<rico:relationHasSource>
         		<xsl:call-template name="rdf-resource"><xsl:with-param name="uri" select="eac2rico:URI-AgentExternal(@xlink:href, document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml')))" /></xsl:call-template>     		
-        	</rico:agentTemporalRelationHasSource>
+        	</rico:relationHasSource>
         	<xsl:variable name="thisName" select="normalize-space(/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:nameEntry[@localType = 'autorisée']/eac:part)" />
         	<xsl:variable name="otherName" select="document(concat($INPUT_FOLDER, '/', @xlink:href, '.xml'))/eac:eac-cpf/eac:cpfDescription/eac:identity/eac:nameEntry[@localType = 'autorisée']/eac:part" />
         	<xsl:variable name="thatName" select="if($otherName != '') then $otherName else eac:relationEntry" />
