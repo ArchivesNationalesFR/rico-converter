@@ -65,4 +65,15 @@
 	</xsl:template>
 	-->
 
+	<!-- Another simplistic example to overwrite the creation of URIs of Persons pointing to IdRef : -->
+	<!--
+	
+		<xsl:function name="ead2rico:URI-Agent">
+			<xsl:param name="authfilenumber" />
+			<xsl:param name="source" />
+			<xsl:value-of select="concat('http://www.idref.fr/',$authfilenumber,'/id')" />
+		</xsl:function>
+	
+	-->
+
 </xsl:stylesheet>
