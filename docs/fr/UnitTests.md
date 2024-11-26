@@ -17,10 +17,10 @@
 
 Comme les éléments XML testés représentent une petite fraction de l’ensemble du contenu de chaque document XML, et pour faciliter la maintenance des tests unitaires, certains éléments XML ne sont _pas vérifiés_ pour chaque test unitaire. **Cela signifie que le fichier `expected.xml` peut légèrement différer des résultats de conversion réels.** Les éléments XML qui peuvent différer sont les suivants :
 
-- rico:hasProvenance
-- rico:heldBy
-- rico:seeAlso
-- rico:regulatedBy
+- `rico:hasProvenance`
+- `rico:heldBy`
+- `rico:seeAlso`
+- `rico:regulatedBy`
 
 
 ### Créer de nouveaux tests unitaires

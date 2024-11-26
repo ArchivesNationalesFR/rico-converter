@@ -40,8 +40,8 @@ Dans le dossier de *release* du convertisseur, vous trouverez les répertoires s
    - `parameters` : contient les fichiers de paramètres pour chaque commande ; vous devez modifier ces fichiers si vous souhaitez ajuster les options d’une commande ;
    - `unit-tests` : contient les fichiers de tests unitaires utilisés par les commandes `test_eac` et `test_ead` ;
    - `vocabularies` : contient quelques vocabulaires contrôlés nécessaires au processus de conversion : langues, règles, états des enregistrements, types de jeux d’enregistrements, types de formulaires documentaires ;
-   - `xslt_eac` : contient les fichiers XSLT utilisés par les commandes `convert_eac` et `convert_eac_raw` pour convertir EAC en RiC-O ; le principal fichier est `eac2rico.xslt` ;
-   - `xslt_ead` : contient les fichiers XSLT utilisés par la commande `convert_ead` pour convertir EAC en RiC-O ; le principal fichier est `ead2rico.xslt`.
+   - `xslt_eac` : contient les fichiers XSLT utilisés par les commandes `convert_eac` et `convert_eac_raw` pour convertir EAC en RiC-O ; la feuille de style qui est le point d'entrée du convertisseur est `main.xslt` que vous pouvez modifier pour surcharger les comportements de la feuille de style principale qui est `eac2rico.xslt` ;
+   - `xslt_ead` : contient les fichiers XSLT utilisés par la commande `convert_ead` pour convertir EAC en RiC-O ; la feuille de style qui est le point d'entrée du convertisseur est `main.xslt` que vous pouvez modifier pour surcharger les comportements de la feuille de style principale qui est `eac2rico.xslt` ;
 
 ## Commandes et paramètres
 

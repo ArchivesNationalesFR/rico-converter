@@ -59,25 +59,23 @@ dossiers d’entrée ou de sortie.
 
 ### Ajuster les paramètres XSLT
 
-La conversion de EAD vers RiC-O est pilotée par les fichiers XSLT 
-situés dans le dossier `xslt_ead`. Une première étape pour adapter la 
-conversion consiste à modifier les paramètres XSLT déclarés dans 
-`main.xslt`, tels que le code de langue pour les littéraux générés ou 
-les motifs pour détecter les RecordSet ou RecordParts dans les 
-attributs @otherlevel.
+La conversion de EAD vers RiC-O est pilotée par les fichiers XSLT situés dans le dossier `xslt_ead`. Une première étape pour adapter la conversion consiste à modifier les paramètres XSLT déclarés dans 
+`main.xslt`, tels que le code de langue pour les littéraux générés ou les motifs pour détecter les RecordSet ou RecordParts dans les attributs @otherlevel.
 
 ### Ajuster la logique de conversion
 
-La logique de conversion complète se trouve dans `ead2rico.xslt`. 
-Pour personnaliser davantage la logique de conversion de EAD, vous 
-pouvez remplacer les modèles de cette feuille de style en les 
-redéclarant dans `main.xslt` avec un comportement différent. 
-Les modèles que vous écrivez dans `main.xslt` auront la priorité sur les 
-modèles de `ead2rico.xslt` avec le même attribut `match`, ce qui vous 
-permet d’adapter certains comportements plus facilement.
+La logique de conversion complète se trouve dans `ead2rico.xslt`. Pour personnaliser davantage la logique de conversion de EAD, vous pouvez remplacer les modèles de cette feuille de style en les 
+redéclarant dans `main.xslt` avec un comportement différent. Les modèles que vous écrivez dans `main.xslt` auront la priorité sur les modèles de `ead2rico.xslt` avec le même attribut `match`, ce qui vous permet d’adapter certains comportements plus facilement.
 
-Lorsque vous ajustez des éléments dans la logique de conversion XSLT, 
-il est nécessaire d’ajouter de nouveaux tests unitaires sous 
-`unit-tests/ead2rico`, ou d’ajuster les tests unitaires existants, et 
-[exécutez la commande de tests unitaires](UnitTests.md) pour valider 
-votre modification et vérifier que tout est correct.
+Par exemple vous pouvez modifier les règles de génération des URI vers les Agents:
+
+```xml
+<xsl:function name="ead2rico:URI-Agent">
+	<xsl:param name="authfilenumber" />
+	<xsl:param name="source" />
+	<xsl:value-of select="concat('http://www.idref.fr/',$authfilenumber,'/id')" />
+</xsl:function>
+```
+
+Lorsque vous ajustez des éléments dans la logique de conversion XSLT, il est nécessaire d’ajouter de nouveaux tests unitaires sous `unit-tests/ead2rico`, ou d’ajuster les tests unitaires existants, et 
+[exécutez la commande de tests unitaires](UnitTests.md) pour valider votre modification et vérifier que tout est correct.
