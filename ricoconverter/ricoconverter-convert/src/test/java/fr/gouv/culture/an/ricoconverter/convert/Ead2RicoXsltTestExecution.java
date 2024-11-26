@@ -158,7 +158,7 @@ public class Ead2RicoXsltTestExecution implements Test {
 								||
 								!
 								(
-										node.getLocalName().equals("hasProvenance")
+										node.getLocalName().equals("hasOrganicProvenance")
 										||
 										node.getLocalName().equals("hasOrHadHolder")
 										||
