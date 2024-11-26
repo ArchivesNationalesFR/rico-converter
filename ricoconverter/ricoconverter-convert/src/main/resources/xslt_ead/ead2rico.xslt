@@ -627,7 +627,7 @@
 				<xsl:apply-templates select="(ancestor::*[self::c or self::archdesc])[last()]/did/unitid" mode="instantiation" />
 				
 				<!-- We know it is a digital copy of the first instantiation -->
-				<rico:isDerivedFromInstantiation rdf:resource="{ead2rico:URI-Instantiation(concat($recordResourceId, '-i1'))}"/>
+				<rico:isOrWasDerivedFromInstantiation rdf:resource="{ead2rico:URI-Instantiation(concat($recordResourceId, '-i1'))}"/>
 				<rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>	
 				
 				<xsl:choose>
