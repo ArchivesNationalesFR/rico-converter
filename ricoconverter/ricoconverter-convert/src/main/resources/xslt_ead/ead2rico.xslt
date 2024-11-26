@@ -30,7 +30,7 @@
 	<xsl:output indent="yes" method="xml" />
 
 	<!--  Global variable for faId to reference it in functions -->
-	<xsl:variable name="faId" select="substring-after(/ead/eadheader/eadid, 'FRAN_IR_')" />
+	<xsl:variable name="faId" select="if(starts-with(/ead/eadheader/eadid, 'FRAN_IR_')) then substring-after(/ead/eadheader/eadid, 'FRAN_IR_') else encode-for-uri(translate(/ead/eadheader/eadid,' ','_'))" />
 	
 	<xsl:template match="/">
 		<rdf:RDF>
@@ -102,7 +102,10 @@
 						<rico:hasOrHadHolder rdf:resource="{$AUTHOR_URI}" />
 					</xsl:otherwise>
 				  </xsl:choose>
-			      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/{eadid}"/> 
+            <!-- output rdfs:seeAlso only for IR coming from ANF, based on eadid structure -->
+					  <xsl:if test="starts-with(eadid,'FRAN_IR_')">
+			        <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/{eadid}"/> 
+            </xsl:if>
 			    </rico:Instantiation>
 			</rico:hasOrHadDigitalInstantiation>
 		</rico:Record>
@@ -360,7 +363,7 @@
 					<xsl:if test="not(did/repository)">
 						<rico:hasOrHadHolder rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}" />
 					</xsl:if>
-					<!-- this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/{/ead/eadheader/eadid}/top" />-->
+					<!-- this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/{/ead/eadheader/eadid}/top" />-->
 				</rico:Instantiation>
 			</xsl:element>		
 						
@@ -514,7 +517,10 @@
 							</rico:history>
 						</xsl:when>
 					</xsl:choose>
-					<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/{/ead/eadheader/eadid}/{@id}" />
+					<!-- output rdfs:seeAlso only for IR coming from ANF, based on eadid structure -->
+					<xsl:if test="starts-with(/ead/eadheader/eadid,'FRAN_IR_')">
+						<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/{/ead/eadheader/eadid}/{@id}" />
+					</xsl:if>
 				</rico:Instantiation>
 			</xsl:element>
 			
@@ -662,7 +668,10 @@
 				<rdfs:seeAlso rdf:resource="{@href}"/>
 			</xsl:when>
 			<xsl:when test="not(contains(@href, '#'))">
-				<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/{/ead/eadheader/eadid}/{(ancestor::*[self::c or self::archdesc])[last()]/@id}/{replace(replace(@href, '.msp', ''), ' ', '%20')}"/>
+				<!-- output the rdfs:seeAlso only in the case the IR comes from ANF, based on eadid structure -->
+				<xsl:if test="starts-with(/ead/eadheader/eadid, 'FRAN_IR_')">
+					<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/{/ead/eadheader/eadid}/{(ancestor::*[self::c or self::archdesc])[last()]/@id}/{replace(replace(@href, '.msp', ''), ' ', '%20')}"/>
+				</xsl:if>
 			</xsl:when>
 			<xsl:otherwise>
 				<!-- We assume we have a file range like FRAN_0118_274_L.msp#FRAN_0118_350_L.msp and we can't generate an rdfs:seeAlso -->
