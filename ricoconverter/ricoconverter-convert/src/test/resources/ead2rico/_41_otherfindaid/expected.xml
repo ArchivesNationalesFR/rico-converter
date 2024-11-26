@@ -24,14 +24,14 @@
         <rico:isOrWasDescribedBy rdf:resource="record/058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <!-- case 1 -->
-        <rico:descriptiveNote rdf:parseType="Literal">
+        <rico:generalDescription rdf:parseType="Literal">
             <html:div xml:lang="fr">
                 <html:h4>Autre(s) instrument(s) de recherche</html:h4>
                 <html:ul>
                     <html:li>20170046 Fonds papier et photographique de l'association régionale d'information et d'actions musicales en Île-de-France (1975-2017).</html:li>
                 </html:ul>
             </html:div>
-        </rico:descriptiveNote>
+        </rico:generalDescription>
         <rico:hasInstantiation>
              <rico:Instantiation rdf:about="instantiation/top-058220-i1">
                  <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
@@ -45,17 +45,17 @@
     </rico:RecordResource>
     
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-N0004"/>
         <!-- case 2 -->
-        <rico:descriptiveNote rdf:parseType="Literal">
+        <rico:generalDescription rdf:parseType="Literal">
             <html:div xml:lang="fr">
                 <html:h4>Autre(s) instrument(s) de recherche</html:h4>
                 <html:p>20090424/1-220, École nationale supérieure d'architecture de Paris La Villette, 1974-1988</html:p>
                 <html:p>20100558/1-11, École nationale supérieure d'architecture de Paris La Villette, 1990</html:p>
                 <html:p>20110268/1-16, École nationale supérieure d'architecture de Paris La Villette, 1969-1985</html:p>
             </html:div>
-        </rico:descriptiveNote>
+        </rico:generalDescription>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">                
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
@@ -78,10 +78,10 @@
     </rico:RecordResource>
     
     <rico:RecordResource rdf:about="recordResource/058220-N0004">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
         <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-N0005"/>
-        <rico:descriptiveNote rdf:parseType="Literal">
+        <rico:generalDescription rdf:parseType="Literal">
             <html:div xml:lang="fr">
                 <html:h4>Autre(s) instrument(s) de recherche</html:h4>
                 <!-- case 3 : role="IR" and a link to a local finding aid -->
@@ -95,7 +95,7 @@
                 <!-- case 5: role='web' and a link to an external finding aid online-->
                 <html:p><html:a href="http://www.bnf.fr/blah">http://www.bnf.fr/blah</html:a> : inventaire sur le site web de la BnF.</html:p>
             </html:div>
-        </rico:descriptiveNote>
+        </rico:generalDescription>
         <!-- case 3: also  refer to the Record Resource described within the other finding aid. Such a case would theoretically imply that the 2 record resources are the same-->
         <rico:isRecordResourceAssociatedWithRecordResource rdf:resource="recordResource/top-021298"/>
         <rico:isOrWasSubjectOf rdf:resource="record/021298"/>
@@ -112,9 +112,9 @@
     </rico:RecordResource>
     
     <rico:RecordResource rdf:about="recordResource/058220-N0005">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-N0004"/>
-         <rico:descriptiveNote rdf:parseType="Literal">
+         <rico:generalDescription rdf:parseType="Literal">
             <html:div xml:lang="fr">
                 <html:h4>Autre(s) instrument(s) de recherche</html:h4>
                 <!-- case 6: same as case 3 in fact.-->
@@ -122,7 +122,7 @@
                 <!-- case 7: ref role="IR" with extref/@href; to be processed just like archref/@href-->
                 <html:p>Index des noms géographiques, de personnes et de matières par Paul MARICHAL (F/17/1001 à 1480 et F/17*/1 à 3252)<html:a href="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_059633">Fichier Marichal F/17</html:a></html:p>
             </html:div>
-        </rico:descriptiveNote>
+        </rico:generalDescription>
         <!-- refer to the Record Resource described within the other finding aid. Such a case would theoretically imply that the 2 record resources are the same-->
         <rico:isRecordResourceAssociatedWithRecordResource rdf:resource="recordResource/002433-c-22jejddiz--1qegiixo0y7s9"/>
         <!-- refer to the whole finding aids-->

@@ -29,9 +29,9 @@
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/top-058220-i1">
                 <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
-                <rico:physicalCharacteristics rdf:parseType="Literal">
+                <rico:physicalCharacteristicsNote rdf:parseType="Literal">
                     <html:p xml:lang="fr">(1 carton (494AP/1)) 0,1 m.l.</html:p>
-                </rico:physicalCharacteristics>
+                </rico:physicalCharacteristicsNote>
                 <rico:instantiationExtent  rdf:parseType="Literal">
                     <html:p xml:lang="fr">0,1 m.l.</html:p>
                 </rico:instantiationExtent>
@@ -47,15 +47,15 @@
     </rico:RecordResource>
     <!-- c level -->
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnast"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
                 <rico:hasOrHadDerivedInstantiation rdf:resource="instantiation/058220-c34fnm316ofc-27kf8gfnest-i2"/>
-                <rico:physicalCharacteristics rdf:parseType="Literal">
+                <rico:physicalCharacteristicsNote rdf:parseType="Literal">
                         <html:p xml:lang="fr">2 registr. in 4°, rel. basane vert.</html:p>
-                </rico:physicalCharacteristics> 
+                </rico:physicalCharacteristicsNote> 
                 <rdfs:seeAlso
                     rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/c34fnm316ofc-27kf8gfnest"
                 />
@@ -76,15 +76,15 @@
         </rico:hasInstantiation>
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnast">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
         <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnust"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnast-i1">
                 <rico:isInstantiationOf rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnast"/>
-                <rico:physicalCharacteristics rdf:parseType="Literal">                    
+                <rico:physicalCharacteristicsNote rdf:parseType="Literal">                    
                     <html:p xml:lang="fr">18 x 11 cm ; 24 feuilles</html:p>
-                </rico:physicalCharacteristics>  
+                </rico:physicalCharacteristicsNote>  
                 <rico:carrierExtent rdf:parseType="Literal">
                     <html:p xml:lang="fr">18 x 11 cm</html:p>
                 </rico:carrierExtent>
@@ -97,7 +97,7 @@
        
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnust">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnast"/>
         <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnost"/>
         <rico:hasInstantiation>
@@ -117,7 +117,7 @@
         
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnost">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnust"/>
         <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnyst"/>
         <rico:hasInstantiation>
@@ -141,7 +141,7 @@
         
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnyst">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnost"/>
         <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-emptyExtent"/>
         <rico:hasInstantiation>
@@ -163,7 +163,7 @@
         </rico:hasInstantiation>        
     </rico:RecordResource>
     <rico:RecordResource rdf:about="recordResource/058220-emptyExtent">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnyst"/>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-emptyExtent-i1">

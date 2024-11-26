@@ -189,7 +189,7 @@
 		<xsl:apply-templates mode="#current" />
 	</xsl:template>
 	<xsl:template match="note[normalize-space(.)]" mode="findingaid">
-		<rico:descriptiveNote rdf:parseType="Literal"><html:p xml:lang="{$LITERAL_LANG}"><xsl:apply-templates select="p/node()" mode="html" /></html:p></rico:descriptiveNote>
+		<rico:generalDescription rdf:parseType="Literal"><html:p xml:lang="{$LITERAL_LANG}"><xsl:apply-templates select="p/node()" mode="html" /></html:p></rico:generalDescription>
 	</xsl:template>
 	
 	<!-- ***** profiledesc processing ***** -->
@@ -237,7 +237,7 @@
 					</xsl:when>
 				</xsl:choose>
             </rico:date>
-            <rico:descriptiveNote xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(item)" /></rico:descriptiveNote>
+            <rico:generalDescription xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(item)" /></rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
 	</xsl:template>
@@ -396,7 +396,7 @@
 			<!-- The inverse link to the parent depends on the incoming link, which depends on the type of the parent -->
 			<xsl:choose>
 				<xsl:when test="ead2rico:isRicoRecordSet(ancestor::*[local-name() = 'c' or local-name() = 'archdesc'][1])">
-					<rico:isOrWasIncludedIn rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />	
+					<rico:isDirectlyIncludedIn rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />	
 				</xsl:when>
 				<xsl:when test="ead2rico:isRicoRecord(ancestor::*[local-name() = 'c' or local-name() = 'archdesc'][1])">
 					<rico:isOrWasConstituentOf rdf:resource="{ead2rico:URI-RecordResource($parentRecordResourceId)}" />	
@@ -631,7 +631,7 @@
 	</xsl:template>
 
 	<xsl:template match="daodesc[child::node()]">
-		<rico:descriptiveNote rdf:parseType="Literal">
+		<rico:generalDescription rdf:parseType="Literal">
 			<xsl:choose>
 				<xsl:when test="count(p) = 1">
 					<html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(p)" /></html:p>
@@ -642,7 +642,7 @@
 					</html:div>
 				</xsl:otherwise>
 			</xsl:choose>
-		</rico:descriptiveNote>
+		</rico:generalDescription>
 	</xsl:template>
 
 
@@ -820,22 +820,22 @@
 	
 	<!-- need at least some non-empty content  -->
 	<xsl:template match="accruals[normalize-space(.)]">
-		<rico:accrual rdf:parseType="Literal">
+		<rico:accruals rdf:parseType="Literal">
 			<html:div xml:lang="{$LITERAL_LANG}">
 	            <xsl:apply-templates mode="html" />
 	        </html:div>
-        </rico:accrual>
+        </rico:accruals>
 	</xsl:template>
 	
 	<!-- ***** otherfindaid ***** -->
 	
 	<xsl:template match="otherfindaid[list/item or p]">
-		<rico:descriptiveNote rdf:parseType="Literal">
+		<rico:generalDescription rdf:parseType="Literal">
             <html:div xml:lang="{$LITERAL_LANG}">
             	<html:h4>Autre(s) instrument(s) de recherche</html:h4>
 				<xsl:apply-templates mode="html" />
 			</html:div>
-		</rico:descriptiveNote>
+		</rico:generalDescription>
 		<!-- look for archref -->
 		<xsl:apply-templates select="descendant::archref | descendant::extref" />
 	</xsl:template>
@@ -876,12 +876,12 @@
 	<!-- ***** relatedmaterial ***** -->
 	
 	<xsl:template match="relatedmaterial[list/item or p]">
-		<rico:descriptiveNote rdf:parseType="Literal">
+		<rico:generalDescription rdf:parseType="Literal">
             <html:div xml:lang="{$LITERAL_LANG}">
             	<html:h4>Document(s) en relation</html:h4>
 				<xsl:apply-templates mode="html" />
 			</html:div>
-		</rico:descriptiveNote>
+		</rico:generalDescription>
 		<!-- look for archref -->
 		<xsl:apply-templates select="descendant::archref" />
 		<xsl:apply-templates select="descendant::extref" />
@@ -913,12 +913,12 @@
 	<!-- ***** separatedmaterial ***** -->
 	
 	<xsl:template match="separatedmaterial[list/item or p]">
-		<rico:descriptiveNote rdf:parseType="Literal">
+		<rico:generalDescription rdf:parseType="Literal">
             <html:div xml:lang="{$LITERAL_LANG}">
             	<html:h4>Document(s) séparé(s)</html:h4>
 				<xsl:apply-templates mode="html" />
 			</html:div>
-		</rico:descriptiveNote>
+		</rico:generalDescription>
 		<!-- look for archref -->
 		<xsl:apply-templates select="descendant::archref" />
 		<xsl:apply-templates select="descendant::extref" />
@@ -1146,7 +1146,7 @@
             <rico:RecordResource>
                 <rico:title xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rico:title>
                 <xsl:if test="extref/@href">
-                	<rico:descriptiveNote xml:lang="{$LITERAL_LANG}">Lien : <xsl:value-of select="extref/@href" /></rico:descriptiveNote>
+                	<rico:generalDescription xml:lang="{$LITERAL_LANG}">Lien : <xsl:value-of select="extref/@href" /></rico:generalDescription>
                 </xsl:if>
                 
             </rico:RecordResource>
@@ -1391,9 +1391,9 @@
 	<xsl:template match="physdesc" mode="instantiation">
 		<!-- Output only if we have some text inside -->
 		<xsl:if test="normalize-space(string-join(text())) != ''">
-	        <rico:physicalCharacteristics rdf:parseType="Literal">
+	        <rico:physicalCharacteristicsNote rdf:parseType="Literal">
 	        	<html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></html:p>
-	        </rico:physicalCharacteristics>
+	        </rico:physicalCharacteristicsNote>
         </xsl:if>
         <xsl:apply-templates mode="#current" />
 	</xsl:template>	
@@ -1421,12 +1421,12 @@
 	<!--  ***** altformavail ***** -->
 	
 	<xsl:template match="altformavail" >
-		<rico:descriptiveNote rdf:parseType="Literal">
+		<rico:generalDescription rdf:parseType="Literal">
 			<html:div xml:lang="{$LITERAL_LANG}">
 				<html:h4>Documents de substitution</html:h4>
 				<xsl:apply-templates mode="html" />
 			</html:div>
-       </rico:descriptiveNote>
+       </rico:generalDescription>
 	</xsl:template>
 	
 	<!--  ***** physloc : only for Instantiation ***** -->
@@ -1447,12 +1447,12 @@
 	<!--  ***** bibliography ***** -->
 	
 	<xsl:template match="bibliography[normalize-space(.)]">
-		<rico:descriptiveNote rdf:parseType="Literal">
+		<rico:generalDescription rdf:parseType="Literal">
 			<html:div xml:lang="{$LITERAL_LANG}">
 				<html:h4>Bibliographie</html:h4>
 				<xsl:apply-templates mode="html" />
 			</html:div>
-       </rico:descriptiveNote>
+       </rico:generalDescription>
 	</xsl:template>
 
 	<!-- ***** Processing of formatting elements p, list, item, span ***** -->

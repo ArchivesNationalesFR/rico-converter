@@ -41,7 +41,7 @@
 
     <!-- Unknown, single value -->
     <rico:RecordResource rdf:about="recordResource/058220-unknown-single">        
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-unknown-multiple"/>
         <dc:language rdf:resource="language/FRAN_RI_100-name4"/> <!-- français -->
         <rico:hasInstantiation>
@@ -67,7 +67,7 @@
     
     <!-- Unknown, multiple values -->
     <rico:RecordResource rdf:about="recordResource/058220-unknown-multiple">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-unknown-single"/>
         <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-record"/>
         <dc:language rdf:resource="language/FRAN_RI_100-name6"/> <!-- anglais -->
@@ -83,7 +83,7 @@
 
     <!-- Record -->
     <rico:RecordResource rdf:about="recordResource/058220-record">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-unknown-multiple"/>
         <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-recordset-single"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
@@ -98,7 +98,7 @@
 
     <!-- RecordSet with single value -->
     <rico:RecordResource rdf:about="recordResource/058220-recordset-single">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-record"/>
         <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-recordset-multiple"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
@@ -114,7 +114,7 @@
 
     <!-- RecordSet with multiple values -->
     <rico:RecordResource rdf:about="recordResource/058220-recordset-multiple">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-recordset-single"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
         <rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>

@@ -24,19 +24,19 @@
     <rico:RecordResource rdf:about="recordResource/top-058220">
         <rico:isOrWasDescribedBy rdf:resource="record/058220"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
-        <rico:descriptiveNote rdf:parseType="Literal">
+        <rico:generalDescription rdf:parseType="Literal">
            <html:div xml:lang="fr">
            	   <html:h4>Documents de substitution</html:h4>
                <html:p>Ces entretiens sont consultables à Génériques (sur rendez-vous), aux Archives nationales et à la Bibliothèque de documentation internationale contemporiane.</html:p>
                <html:p>Un extrait de chaque témoignage est consultable dans Odysséo.</html:p>
            </html:div>
-       </rico:descriptiveNote>
-        <rico:descriptiveNote rdf:parseType="Literal">
+       </rico:generalDescription>
+        <rico:generalDescription rdf:parseType="Literal">
         	<html:div xml:lang="fr">
         		<html:h4>Documents de substitution</html:h4>
             	<html:p>Un extrait de chaque témoignage est consultable dans Odysséo.</html:p>
             </html:div>
-        </rico:descriptiveNote>
+        </rico:generalDescription>
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/top-058220-i1">
                 <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
@@ -48,14 +48,14 @@
     </rico:RecordResource>
     <!-- c level -->
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
-        <rico:isOrWasIncludedIn rdf:resource="recordResource/top-058220"/>
-        <rico:descriptiveNote rdf:parseType="Literal">
+        <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:generalDescription rdf:parseType="Literal">
             <html:div xml:lang="fr">
             	<html:h4>Documents de substitution</html:h4>
                 <html:p>Microfilm : 2 MI 190</html:p>
                 <html:p>Ces registres ont été numérisés ; les images sont librement accessibles sur les postes informatiques de la Salle des inventaires du site de Pierrefitte-sur-Seine (se renseigner auprès de la présidence de salle).</html:p>
             </html:div>
-        </rico:descriptiveNote>
+        </rico:generalDescription>
       
         <rico:hasInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnest-i1">
