@@ -67,7 +67,7 @@ qui propose une interface conviviale pour explorer et visualiser un graphe de co
 Vous pouvez aussi accéder à des diapositives (en français) sur RiC-O Converter (présentées le 28 janvier 2020), [ici](https://f.hypotheses.org/wp-content/blogs.dir/2167/files/2020/02/20200128_4_RiCOConverter.pdf).
 
 
-Si vous ou votre institution êtes membre de l’ICA, vous pouvez également trouver un article sur RiC-O Converter dans le [Flash (the ICA biannual newspaper, dated April 2020) n° 39](https://www.ica.org/en/flash).
+Si vous ou votre institution êtes membre de l’ICA, vous pouvez également trouver un article sur RiC-O Converter dans [Flash, le journal semestriel de l'ICA, numéro 39, daté d’avril 2020](https://www.ica.org/en/flash).
 
 Concernant les projets des ANF : la présentation suivante, faite à Lausanne (Suisse) en décembre 2022, en français, donne une mise à jour sur tous les projets en cours : [diapositives](https://enc.hal.science/hal-03957469) ; [enregistrement vidéo](https://rec.unil.ch/videos/florence-clavaud-ric-aux-archives-nationales-de-france-enjeux-realisation-perspectives/). 
 Vous pouvez également lire cet article (en français) écrit par Florence Clavaud : 
