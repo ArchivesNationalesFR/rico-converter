@@ -17,10 +17,10 @@
 
 As the XML elements under test represent a small fraction of the whole content of each XML documents, and to ease the maintenance of unit tests, some XML elements are _not checked_ for each unit tests. **This means the `expected.xml` file may slightly differ from the actual conversion results.** The XML elements that can differ are :
 
-- `rico:hasProvenance`
-- `rico:heldBy`
-- `rico:seeAlso`
-- `rico:regulatedBy`
+- `rico:hasOrganicProvenance`
+- `rico:hasOrHadHolder`
+- `rdfs:seeAlso`
+- `rico:isOrWasRegulatedBy`
 
 
 ### Creating new unit tests

@@ -20,7 +20,7 @@ Nous donnons ci-dessous une liste des éléments EAD 2002 que RiC-O Converter ne
 - `abstract` ;
 - `address` (dans `publicationstmt`) ;
 - `bioghist` (les ANF utilisent le plus souvent des fichiers EAC-CPF pour encoder la biographie ou l’historique des agents qui ont produit ou accumlé les fonds d’archives que l’institution conserve) ;
-- `blockquote`` ;
+- `blockquote` ;
 - `chronlist` ;
 - `dao` ;
 - `fileplan` ;
