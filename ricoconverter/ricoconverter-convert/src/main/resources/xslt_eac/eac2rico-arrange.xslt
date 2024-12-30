@@ -112,7 +112,7 @@
 		
 		<!-- Generate a single output document to gather rico:OrganicProvenanceRelation... -->
 		<xsl:message>Arranging rico:OrganicProvenanceRelation...</xsl:message>	
-		<xsl:result-document href="{concat($OUTPUT_RELATIONS_FOLDER, '/', 'FRAN_agentOriginationRelations.rdf')}" method="xml" encoding="utf-8" indent="yes">
+		<xsl:result-document href="{concat($OUTPUT_RELATIONS_FOLDER, '/', 'FRAN_organicProvenanceRelations.rdf')}" method="xml" encoding="utf-8" indent="yes">
 			<rdf:RDF>
 				<xsl:attribute name="xml:base" select="$BASE_URI" />
 				<!-- Iterate again... -->
