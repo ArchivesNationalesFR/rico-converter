@@ -519,7 +519,8 @@
 						<rico:relationHasSource> 
 							<rico:Mandate rdf:nodeID="_Mandate-{generate-id()}">
 								<rico:title><xsl:value-of select="eac:citation/text()" /></rico:title>
-								<rdfs:seeAlso rdf:resource="{eac:citation/@xlink:href}" />
+								<!-- we found one example with a space in the URI -->
+								<rdfs:seeAlso rdf:resource="{replace(eac:citation/@xlink:href, ' ', '%22')}" />
 							</rico:Mandate>
 						</rico:relationHasSource>
 		            	<xsl:apply-templates />
