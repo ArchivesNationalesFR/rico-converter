@@ -1,6 +1,6 @@
 # Example EAC-CPF files
 
-Date of this example set: August 21, 2023
+Date of this example set: April 2024
 
 Language(s) used: French
 
