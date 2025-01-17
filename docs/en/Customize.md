@@ -38,4 +38,14 @@ The EAD to RiC-O conversion is driven by the XSLTs in the folder `xslt_ead`. A f
 
 The complete conversion logic is in `ead2rico.xslt`. To further customize the EAD conversion logic, you can override the templates of this XSLT by redeclaring them in `main.xslt` with a different behavior. Templates you write inside `main.xslt` have precedence over the templates from `ead2rico.xslt` with the same `match` attribute, allowing you to adapt some behavior more easily.
 
+For example you can override the URI generation rules to refer to Agents:
+
+```xml
+<xsl:function name="ead2rico:URI-Agent">
+	<xsl:param name="authfilenumber" />
+	<xsl:param name="source" />
+	<xsl:value-of select="concat('http://www.idref.fr/',$authfilenumber,'/id')" />
+</xsl:function>
+```
+
 When you adjust something in the XSLT, add new unit tests under `unit-tests/ead2rico`, or adjust existing unit tests, and [run the unit tests command](UnitTests.md) to validate your modification and check nothing is broken.
