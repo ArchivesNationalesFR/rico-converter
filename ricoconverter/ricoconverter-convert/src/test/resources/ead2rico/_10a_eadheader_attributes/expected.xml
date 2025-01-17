@@ -14,9 +14,9 @@
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl007"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl008"/>
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl009"/>
-      <rico:hasInstantiation>      
+      <rico:hasOrHadDigitalInstantiation>      
          <rico:Instantiation rdf:about="instantiation/058220-i1">
-	   	  <rico:isInstantiationOf rdf:resource="record/058220"/>
+	   	  <rico:isOrWasDigitalInstantiationOf rdf:resource="record/058220"/>
 	   	  <rico:isOrWasRegulatedBy rdf:resource="rule/rl010"/>
 	      <dc:format xml:lang="en">text/xml</dc:format>
 	      <rico:identifier>FRAN_IR_058220</rico:identifier>
@@ -24,6 +24,6 @@
 	      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>  
 	      <!--?? <owl:sameAs rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/rechercheconsultation/consultation/ir/exportXML.action?irId=FRAN_IR_058220"/>-->
 	    </rico:Instantiation>
-   </rico:hasInstantiation>
+   </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
 </rdf:RDF>

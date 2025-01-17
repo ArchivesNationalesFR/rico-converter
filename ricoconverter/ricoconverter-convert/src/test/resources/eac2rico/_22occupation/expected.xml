@@ -7,51 +7,51 @@
    <rico:Record rdf:about="record/005205">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
       <rico:describesOrDescribed rdf:resource="agent/005205"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/005205">
-            <rico:isInstantiationOf rdf:resource="record/005205"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/005205"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_005205</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005205"/> 
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/005205">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
       <rico:isOrWasDescribedBy rdf:resource="record/005205"/>
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/005205-d699msj02xm-19qbb7wdtto3j">
-            <rico:performanceRelationHasTarget rdf:resource="agent/005205"/>
-            <rico:performanceRelationHasSource>
+            <rico:relationHasTarget rdf:resource="agent/005205"/>
+            <rico:relationHasSource>
                <rico:Activity rdf:nodeID="_Activity-a">
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005205-d699msj02xm-19qbb7wdtto3j"/>
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/005205-d699msj02xm-19qbb7wdtto3j"/>
                   <!-- the following assertion is now possible, since in RiC-O 0.2 OccupationType has become a subclass of ActivityType-->
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
       <!-- and, only in the case of a person having an activity categorized using an occupation type, we can add the following-->
       <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d699msj02xm-19qbb7wdtto3j"/>
       <rico:performsOrPerformed rdf:nodeID="_Activity-a" />
-      <rico:agentIsTargetOfPerformanceRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:PerformanceRelation rdf:about="performanceRelation/005205-d3nyub73ic-1g5es55lb2lpf-19880101-20031231">
-            <rico:performanceRelationHasTarget rdf:resource="agent/005205"/>
-            <rico:performanceRelationHasSource>
+            <rico:relationHasTarget rdf:resource="agent/005205"/>
+            <rico:relationHasSource>
                <rico:Activity rdf:nodeID="_Activity-b">
-                  <rico:activityIsSourceOfPerformanceRelation rdf:resource="performanceRelation/005205-d3nyub73ic-1g5es55lb2lpf-19880101-20031231"/>
+                  <rico:thingIsSourceOfRelation rdf:resource="performanceRelation/005205-d3nyub73ic-1g5es55lb2lpf-19880101-20031231"/>
                   <!-- the following assertion is now possible, since in RiC-O 0.2 OccupationType has become a subclass of ActivityType-->
                   <rico:hasActivityType rdf:resource="occupationType/FRAN_RI_010-d3nyub73ic-1g5es55lb2lpf"/>
                </rico:Activity>
-            </rico:performanceRelationHasSource>
+            </rico:relationHasSource>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-12-31</rico:endDate>
-            <rico:descriptiveNote rdf:parseType="Literal">
+            <rico:generalDescription rdf:parseType="Literal">
                <html:p xml:lang="fr">Recteur de l'académie d'Orléans (1988-1991), de Nantes (1997-1998), de Montpellier (1998-2000), de Reims (2000-2003).</html:p>
-            </rico:descriptiveNote>
+            </rico:generalDescription>
          </rico:PerformanceRelation>
-      </rico:agentIsTargetOfPerformanceRelation>
+      </rico:thingIsTargetOfRelation>
       <!--  sams as above; new 'shortcut' inserted, only in this case of a person having an activity categorized using an occupation type-->
       <rico:hasOrHadOccupationOfType rdf:resource="occupationType/FRAN_RI_010-d3nyub73ic-1g5es55lb2lpf"/>
       <rico:performsOrPerformed rdf:nodeID="_Activity-b" />

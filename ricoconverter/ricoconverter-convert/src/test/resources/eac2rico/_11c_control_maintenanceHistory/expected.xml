@@ -20,7 +20,7 @@
          	<rico:name xml:lang="fr">Création (par Alexis DOUCHIN)</rico:name>
             <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
                >2013-03-23</rico:date>
-            <rico:descriptiveNote xml:lang="fr">ISNI inexistant. Notice d’autorité BnF inexistante. Notice Wikipédia inexistante.</rico:descriptiveNote>
+            <rico:generalDescription xml:lang="fr">ISNI inexistant. Notice d’autorité BnF inexistante. Notice Wikipédia inexistante.</rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>   
    <rico:isOrWasAffectedBy>
@@ -33,18 +33,18 @@
       <rico:Activity>
          <rico:name xml:lang="fr">Modification (par Easter Bunny)</rico:name> 
          <rico:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-04-01</rico:date>
-         <rico:descriptiveNote xml:lang="fr">Easter Bunny fake event</rico:descriptiveNote>
+         <rico:generalDescription xml:lang="fr">Easter Bunny fake event</rico:generalDescription>
       </rico:Activity>
    </rico:isOrWasAffectedBy>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/005205">
-            <rico:isInstantiationOf rdf:resource="record/005205"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/005205"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_005205</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005205"/> 
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/005205">
    	  <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>

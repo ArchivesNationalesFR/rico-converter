@@ -30,7 +30,7 @@
 	<xsl:output indent="yes" method="xml" />
 
 	<!--  Global variable for faId to reference it in functions -->
-	<xsl:variable name="faId" select="substring-after(/ead/eadheader/eadid, 'FRAN_IR_')" />
+	<xsl:variable name="faId" select="if(starts-with(/ead/eadheader/eadid, 'FRAN_IR_')) then substring-after(/ead/eadheader/eadid, 'FRAN_IR_') else encode-for-uri(translate(/ead/eadheader/eadid,' ','_'))" />
 	
 	<xsl:template match="/">
 		<rdf:RDF>
@@ -81,11 +81,12 @@
 	
 			<!-- Generates an Instantiation of the FindingAid in a child element -->
 			<xsl:apply-templates select="../archdesc" mode="reference" />
-			<rico:hasInstantiation>
+			<!-- Since this is an XML we use the generic rico:hasOrHadDigitalInstantiation on the finding aid -->
+			<rico:hasOrHadDigitalInstantiation>
 				<!--  FindingAid Instantiation -->
 			    <rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($fiInstantiationId)}">
 			      <!-- link back to parent URI -->
-			      <rico:isInstantiationOf rdf:resource="{ead2rico:URI-FindingAid($faId)}"/>
+			      <rico:isOrWasDigitalInstantiationOf rdf:resource="{ead2rico:URI-FindingAid($faId)}"/>
 			      <!-- process child elements again but this time in mode 'instantiation' -->
 			      <xsl:apply-templates mode="instantiation" />
 			      <!-- Always insert this regulatedBy on FindingAid's Instantiation in case of AN -->
@@ -101,9 +102,12 @@
 						<rico:hasOrHadHolder rdf:resource="{$AUTHOR_URI}" />
 					</xsl:otherwise>
 				  </xsl:choose>
-			      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/{eadid}"/> 
+            <!-- output rdfs:seeAlso only for IR coming from ANF, based on eadid structure -->
+					  <xsl:if test="starts-with(eadid,'FRAN_IR_')">
+			        <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/{eadid}"/> 
+            </xsl:if>
 			    </rico:Instantiation>
-			</rico:hasInstantiation>
+			</rico:hasOrHadDigitalInstantiation>
 		</rico:Record>
 		
 	</xsl:template>
@@ -189,7 +193,7 @@
 		<xsl:apply-templates mode="#current" />
 	</xsl:template>
 	<xsl:template match="note[normalize-space(.)]" mode="findingaid">
-		<rico:descriptiveNote rdf:parseType="Literal"><html:p xml:lang="{$LITERAL_LANG}"><xsl:apply-templates select="p/node()" mode="html" /></html:p></rico:descriptiveNote>
+		<rico:generalDescription rdf:parseType="Literal"><html:p xml:lang="{$LITERAL_LANG}"><xsl:apply-templates select="p/node()" mode="html" /></html:p></rico:generalDescription>
 	</xsl:template>
 	
 	<!-- ***** profiledesc processing ***** -->
@@ -237,7 +241,7 @@
 					</xsl:when>
 				</xsl:choose>
             </rico:date>
-            <rico:descriptiveNote xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(item)" /></rico:descriptiveNote>
+            <rico:generalDescription xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(item)" /></rico:generalDescription>
          </rico:Activity>
       </rico:isOrWasAffectedBy>
 	</xsl:template>
@@ -302,9 +306,29 @@
 			</xsl:if>
 
 			<!-- The instantiation of the RecordResource -->
-			<rico:hasInstantiation>
+
+			<xsl:variable name="instantiationLink">
+				<predicates>
+					<xsl:choose>
+						<!-- This value ending by isx indicates that it is a digital archive. So we use a specific link to the Instantiation -->
+						<xsl:when test="did/physdesc/physfacet[@type = 'd3nd9y3c6o-iu0j3xsmoisx']">
+							<resourceToInstantiation>rico:hasOrHadDigitalInstantiation</resourceToInstantiation>
+							<instantiationToResource>rico:isOrWasDigitalInstantiationOf</instantiationToResource>
+						</xsl:when>
+						<xsl:otherwise>
+							<resourceToInstantiation>rico:hasOrHadInstantiation</resourceToInstantiation>
+							<instantiationToResource>rico:isOrWasInstantiationOf</instantiationToResource>						
+						</xsl:otherwise>
+					</xsl:choose>
+				</predicates>
+			</xsl:variable>
+
+			<xsl:element name="{$instantiationLink/predicates/resourceToInstantiation}">
 				<rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($instantiationId)}">
-					<rico:isInstantiationOf rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+					<xsl:element name="{$instantiationLink/predicates/instantiationToResource}">
+						<xsl:attribute name="rdf:resource"><xsl:value-of select="ead2rico:URI-RecordResource($recordResourceId)" /></xsl:attribute>
+					</xsl:element>
+
 					<!-- references to other digital copies -->
 					<xsl:apply-templates select="daogrp | did/daogrp" mode="reference" />
 					<!--  Recurse down. Note that origination is still processed here to match inner persname/corpname/famname -->
@@ -339,9 +363,9 @@
 					<xsl:if test="not(did/repository)">
 						<rico:hasOrHadHolder rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}" />
 					</xsl:if>
-					<!-- this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/{/ead/eadheader/eadid}/top" />-->
+					<!-- this line would be what we could generate when the information system of the ANF handles such a permalink for the archdesc description unit, which is not the case yet <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/{/ead/eadheader/eadid}/top" />-->
 				</rico:Instantiation>
-			</rico:hasInstantiation>			
+			</xsl:element>		
 						
 			<!-- generates other Instantiations if any -->
 			<xsl:apply-templates select="daogrp" />
@@ -442,9 +466,27 @@
 			</xsl:choose>
 			
 			<!--  The instantiation of this RecordResource -->
-			<rico:hasInstantiation>
+			<xsl:variable name="instantiationLink" >
+				<predicates>
+					<xsl:choose>
+						<!-- This value ending by isx indicates that it is a digital archive. So we use a specific link to the Instantiation -->
+						<xsl:when test="did/physdesc/physfacet[@type = 'd3nd9y3c6o-iu0j3xsmoisx']">
+							<resourceToInstantiation>rico:hasOrHadDigitalInstantiation</resourceToInstantiation>
+							<instantiationToResource>rico:isOrWasDigitalInstantiationOf</instantiationToResource>
+						</xsl:when>
+						<xsl:otherwise>
+							<resourceToInstantiation>rico:hasOrHadInstantiation</resourceToInstantiation>
+							<instantiationToResource>rico:isOrWasInstantiationOf</instantiationToResource>						
+						</xsl:otherwise>
+					</xsl:choose>
+				</predicates>
+			</xsl:variable>
+
+			<xsl:element name="{$instantiationLink/predicates/resourceToInstantiation}">
 				<rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($instantiationId)}">
-					<rico:isInstantiationOf rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+					<xsl:element name="{$instantiationLink/predicates/instantiationToResource}">
+						<xsl:attribute name="rdf:resource"><xsl:value-of select="ead2rico:URI-RecordResource($recordResourceId)" /></xsl:attribute>
+					</xsl:element>
 					<!-- references to other digital copies -->
 					<xsl:apply-templates select="daogrp | did/daogrp" mode="reference" />
 					<!--  recurse down. Note that origination is still processed here to match inner persname/corpname/famname -->
@@ -475,9 +517,12 @@
 							</rico:history>
 						</xsl:when>
 					</xsl:choose>
-					<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/{/ead/eadheader/eadid}/{@id}" />
+					<!-- output rdfs:seeAlso only for IR coming from ANF, based on eadid structure -->
+					<xsl:if test="starts-with(/ead/eadheader/eadid,'FRAN_IR_')">
+						<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/{/ead/eadheader/eadid}/{@id}" />
+					</xsl:if>
 				</rico:Instantiation>
-			</rico:hasInstantiation>
+			</xsl:element>
 			
 			<!-- generates other Instantiations -->
 			<xsl:apply-templates select="daogrp" />
@@ -563,9 +608,10 @@
 		<xsl:variable name="instantiationId" select="concat($recordResourceId, '-i', count(preceding-sibling::daogrp)+2)" />
 		
 		<!-- Inside this other Instantiation we only pick selected EAD elements, we don't reprocess all elements -->
-		<rico:hasInstantiation>
+		<!-- We are inside a daogrp, this is necessarily a digital instantiation -->
+		<rico:hasOrHadDigitalInstantiation>
 			<rico:Instantiation rdf:about="{ead2rico:URI-Instantiation($instantiationId)}">
-				<rico:isInstantiationOf rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
+				<rico:isOrWasDigitalInstantiationOf rdf:resource="{ead2rico:URI-RecordResource($recordResourceId)}" />
 				
 				<!-- the image legend -->
 				<xsl:apply-templates select="daodesc" />
@@ -587,7 +633,7 @@
 				<xsl:apply-templates select="(ancestor::*[self::c or self::archdesc])[last()]/did/unitid" mode="instantiation" />
 				
 				<!-- We know it is a digital copy of the first instantiation -->
-				<rico:isDerivedFromInstantiation rdf:resource="{ead2rico:URI-Instantiation(concat($recordResourceId, '-i1'))}"/>
+				<rico:isOrWasDerivedFromInstantiation rdf:resource="{ead2rico:URI-Instantiation(concat($recordResourceId, '-i1'))}"/>
 				<rico:hasProductionTechniqueType rdf:resource="http://data.culture.fr/thesaurus/page/ark:/67717/a243a805-beb9-4f48-b537-18d1e11be48f"/>	
 				
 				<xsl:choose>
@@ -604,11 +650,11 @@
 						
 				<dc:format xml:lang="en">image/jpeg</dc:format>
 				<!-- here the creator is by default the archival institution: it either produced the digital instantiation image by its own, or asked a private company to produce it and then got it and aggregated it into its own archives -->
-                <rico:hasProvenance rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}"/>
+                <rico:hasOrganicProvenance rdf:resource="{replace($AUTHOR_URI, $BASE_URI, '')}"/>
 				
 				<xsl:apply-templates select="daoloc" />
 			</rico:Instantiation>
-		</rico:hasInstantiation>
+		</rico:hasOrHadDigitalInstantiation>
 
 	</xsl:template>
 	
@@ -622,7 +668,10 @@
 				<rdfs:seeAlso rdf:resource="{@href}"/>
 			</xsl:when>
 			<xsl:when test="not(contains(@href, '#'))">
-				<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/{/ead/eadheader/eadid}/{(ancestor::*[self::c or self::archdesc])[last()]/@id}/{replace(replace(@href, '.msp', ''), ' ', '%20')}"/>
+				<!-- output the rdfs:seeAlso only in the case the IR comes from ANF, based on eadid structure -->
+				<xsl:if test="starts-with(/ead/eadheader/eadid, 'FRAN_IR_')">
+					<rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/media/{/ead/eadheader/eadid}/{(ancestor::*[self::c or self::archdesc])[last()]/@id}/{replace(replace(@href, '.msp', ''), ' ', '%20')}"/>
+				</xsl:if>
 			</xsl:when>
 			<xsl:otherwise>
 				<!-- We assume we have a file range like FRAN_0118_274_L.msp#FRAN_0118_350_L.msp and we can't generate an rdfs:seeAlso -->
@@ -631,7 +680,7 @@
 	</xsl:template>
 
 	<xsl:template match="daodesc[child::node()]">
-		<rico:descriptiveNote rdf:parseType="Literal">
+		<rico:generalDescription rdf:parseType="Literal">
 			<xsl:choose>
 				<xsl:when test="count(p) = 1">
 					<html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(p)" /></html:p>
@@ -642,7 +691,7 @@
 					</html:div>
 				</xsl:otherwise>
 			</xsl:choose>
-		</rico:descriptiveNote>
+		</rico:generalDescription>
 	</xsl:template>
 
 
@@ -820,22 +869,22 @@
 	
 	<!-- need at least some non-empty content  -->
 	<xsl:template match="accruals[normalize-space(.)]">
-		<rico:accrual rdf:parseType="Literal">
+		<rico:accruals rdf:parseType="Literal">
 			<html:div xml:lang="{$LITERAL_LANG}">
 	            <xsl:apply-templates mode="html" />
 	        </html:div>
-        </rico:accrual>
+        </rico:accruals>
 	</xsl:template>
 	
 	<!-- ***** otherfindaid ***** -->
 	
 	<xsl:template match="otherfindaid[list/item or p]">
-		<rico:descriptiveNote rdf:parseType="Literal">
+		<rico:generalDescription rdf:parseType="Literal">
             <html:div xml:lang="{$LITERAL_LANG}">
             	<html:h4>Autre(s) instrument(s) de recherche</html:h4>
 				<xsl:apply-templates mode="html" />
 			</html:div>
-		</rico:descriptiveNote>
+		</rico:generalDescription>
 		<!-- look for archref -->
 		<xsl:apply-templates select="descendant::archref | descendant::extref" />
 	</xsl:template>
@@ -876,12 +925,12 @@
 	<!-- ***** relatedmaterial ***** -->
 	
 	<xsl:template match="relatedmaterial[list/item or p]">
-		<rico:descriptiveNote rdf:parseType="Literal">
+		<rico:generalDescription rdf:parseType="Literal">
             <html:div xml:lang="{$LITERAL_LANG}">
             	<html:h4>Document(s) en relation</html:h4>
 				<xsl:apply-templates mode="html" />
 			</html:div>
-		</rico:descriptiveNote>
+		</rico:generalDescription>
 		<!-- look for archref -->
 		<xsl:apply-templates select="descendant::archref" />
 		<xsl:apply-templates select="descendant::extref" />
@@ -913,12 +962,12 @@
 	<!-- ***** separatedmaterial ***** -->
 	
 	<xsl:template match="separatedmaterial[list/item or p]">
-		<rico:descriptiveNote rdf:parseType="Literal">
+		<rico:generalDescription rdf:parseType="Literal">
             <html:div xml:lang="{$LITERAL_LANG}">
             	<html:h4>Document(s) séparé(s)</html:h4>
 				<xsl:apply-templates mode="html" />
 			</html:div>
-		</rico:descriptiveNote>
+		</rico:generalDescription>
 		<!-- look for archref -->
 		<xsl:apply-templates select="descendant::archref" />
 		<xsl:apply-templates select="descendant::extref" />
@@ -1041,7 +1090,7 @@
 	
 	<!-- origination reference with an @authfilenumber -->
 	<xsl:template match="(origination/corpname | origination/persname | origination/famname)[@authfilenumber]">
-		<rico:hasProvenance rdf:resource="{ead2rico:URI-AgentFromFRAN_NP(@authfilenumber)}"/>
+		<rico:hasOrganicProvenance rdf:resource="{ead2rico:URI-AgentFromFRAN_NP(@authfilenumber)}"/>
 	</xsl:template>
 
 	<!-- origination reference without an @authfilenumber -->
@@ -1055,7 +1104,7 @@
 			</xsl:choose>
 		</xsl:variable>
 		
-		<rico:hasProvenance>
+		<rico:hasOrganicProvenance>
             <rico:Agent>
                 <rdf:type rdf:resource="{$type}"/>
                 <rdfs:label xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rdfs:label>
@@ -1066,7 +1115,7 @@
                     </rico:AgentName>
                 </rico:hasOrHadAgentName>
             </rico:Agent>
-        </rico:hasProvenance>
+        </rico:hasOrganicProvenance>
 	</xsl:template>
 
 	<!-- ***** did/repository or unitid[@repositorycode = 'FRDAFAN'] ***** -->
@@ -1146,7 +1195,7 @@
             <rico:RecordResource>
                 <rico:title xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></rico:title>
                 <xsl:if test="extref/@href">
-                	<rico:descriptiveNote xml:lang="{$LITERAL_LANG}">Lien : <xsl:value-of select="extref/@href" /></rico:descriptiveNote>
+                	<rico:generalDescription xml:lang="{$LITERAL_LANG}">Lien : <xsl:value-of select="extref/@href" /></rico:generalDescription>
                 </xsl:if>
                 
             </rico:RecordResource>
@@ -1391,9 +1440,9 @@
 	<xsl:template match="physdesc" mode="instantiation">
 		<!-- Output only if we have some text inside -->
 		<xsl:if test="normalize-space(string-join(text())) != ''">
-	        <rico:physicalCharacteristics rdf:parseType="Literal">
+	        <rico:physicalCharacteristicsNote rdf:parseType="Literal">
 	        	<html:p xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></html:p>
-	        </rico:physicalCharacteristics>
+	        </rico:physicalCharacteristicsNote>
         </xsl:if>
         <xsl:apply-templates mode="#current" />
 	</xsl:template>	
@@ -1421,12 +1470,12 @@
 	<!--  ***** altformavail ***** -->
 	
 	<xsl:template match="altformavail" >
-		<rico:descriptiveNote rdf:parseType="Literal">
+		<rico:generalDescription rdf:parseType="Literal">
 			<html:div xml:lang="{$LITERAL_LANG}">
 				<html:h4>Documents de substitution</html:h4>
 				<xsl:apply-templates mode="html" />
 			</html:div>
-       </rico:descriptiveNote>
+       </rico:generalDescription>
 	</xsl:template>
 	
 	<!--  ***** physloc : only for Instantiation ***** -->
@@ -1447,12 +1496,12 @@
 	<!--  ***** bibliography ***** -->
 	
 	<xsl:template match="bibliography[normalize-space(.)]">
-		<rico:descriptiveNote rdf:parseType="Literal">
+		<rico:generalDescription rdf:parseType="Literal">
 			<html:div xml:lang="{$LITERAL_LANG}">
 				<html:h4>Bibliographie</html:h4>
 				<xsl:apply-templates mode="html" />
 			</html:div>
-       </rico:descriptiveNote>
+       </rico:generalDescription>
 	</xsl:template>
 
 	<!-- ***** Processing of formatting elements p, list, item, span ***** -->

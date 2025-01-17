@@ -8,15 +8,15 @@
    <rico:Record rdf:about="record/005205">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
       <rico:describesOrDescribed rdf:resource="agent/005205"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/005205">
-            <rico:isInstantiationOf rdf:resource="record/005205"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/005205"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_005205</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005205"/> 
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/005205">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
@@ -47,6 +47,6 @@
       <rico:relationHasSource rdf:resource="agent/005205"/>
       <rdfs:label xml:lang="fr">Relation hiérarchique entre "The entity" et "The child of the entity", début : 1947</rdfs:label>
       <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1947-01-01</rico:beginningDate>
-      <rico:descriptiveNote rdf:parseType="Literal"><html:p xml:lang="fr">This is a note on a relation</html:p></rico:descriptiveNote>
+      <rico:generalDescription rdf:parseType="Literal"><html:p xml:lang="fr">This is a note on a relation</html:p></rico:generalDescription>
    </rico:AgentHierarchicalRelation>
 </rdf:RDF>

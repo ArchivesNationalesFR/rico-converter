@@ -9,9 +9,9 @@
    <rico:Record rdf:about="record/011222">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid" />
       <rico:isOrWasRegulatedBy rdf:resource="rule/rl009"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
 		   <rico:Instantiation rdf:about="instantiation/011222-i1">
-		      <rico:isInstantiationOf rdf:resource="record/011222"/>
+		      <rico:isOrWasDigitalInstantiationOf rdf:resource="record/011222"/>
 		      <rico:isOrWasRegulatedBy rdf:resource="rule/rl010"/>
 		      <dc:format xml:lang="en">text/xml</dc:format>
 		      <rico:identifier>FRAN_IR_011222</rico:identifier>
@@ -19,6 +19,6 @@
 		      <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_011222"/> 
 		  
 		   </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
 </rdf:RDF>

@@ -7,15 +7,15 @@
    <rico:Record rdf:about="record/050171">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
       <rico:describesOrDescribed rdf:resource="agent/050171"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050171">
-            <rico:isInstantiationOf rdf:resource="record/050171"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050171"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050171</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050171"/> 
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050171">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -49,8 +49,8 @@
          >1946-01-01</rico:beginningDate>
       <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
          >1950-02-23</rico:endDate>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      <rico:generalDescription rdf:parseType="Literal">
          <html:p xml:lang="fr">"The entity" a été affecté à la DGS lors de la création de cette direction.</html:p>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
    </rico:MembershipRelation>
 </rdf:RDF>

@@ -6,46 +6,46 @@
    xmlns:dc="http://purl.org/dc/elements/1.1/">
    <rico:Record rdf:about="record/005061">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
-      <rico:describesOrDescribed rdf:resource="agent/005061"/><rico:hasInstantiation>
+      <rico:describesOrDescribed rdf:resource="agent/005061"/><rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/005061">
-            <rico:isInstantiationOf rdf:resource="record/005061"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/005061"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_005061</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005061"/> 
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/005061">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:isOrWasDescribedBy rdf:resource="record/005061"/>
-      <rico:thingIsTargetOfTypeRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:TypeRelation
             rdf:about="relationToType/005061-d5blonaxbw--1mt8t42bokzts-18500101-20061223">
-            <rico:typeRelationHasTarget rdf:resource="agent/005061"/>
-            <rico:typeRelationHasSource
+            <rico:relationHasTarget rdf:resource="agent/005061"/>
+            <rico:relationHasSource
                rdf:resource="corporateBodyType/FRAN_RI_104-d5blonaxbw--1mt8t42bokzts"/>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
                >1850-01-01</rico:beginningDate>
             <rico:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
                >2006-12-23</rico:endDate>
          </rico:TypeRelation>
-      </rico:thingIsTargetOfTypeRelation>
+      </rico:thingIsTargetOfRelation>
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blonaxbw--1mt8t42bokzts" />
-      <rico:thingIsTargetOfTypeRelation>
+      <rico:thingIsTargetOfRelation>
          <rico:TypeRelation rdf:about="relationToType/005061-d5blokqhb2-71c8sqtdbid4-20061224-*">
-            <rico:typeRelationHasTarget rdf:resource="agent/005061"/>
-            <rico:typeRelationHasSource
+            <rico:relationHasTarget rdf:resource="agent/005061"/>
+            <rico:relationHasSource
                rdf:resource="corporateBodyType/FRAN_RI_104-d5blokqhb2-71c8sqtdbid4"/>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
                >2006-12-24</rico:beginningDate>
-            <!-- <rico:descriptiveNote xml:lang="fr">Arrêté du 24 décembre 2006</rico:descriptiveNote> -->
+            <!-- <rico:generalDescription xml:lang="fr">Arrêté du 24 décembre 2006</rico:generalDescription> -->
             <!-- ou bien, en utilisant html:p histoire de traiter tous les éléments p de la même manière (sachant que pour les AN actuellement c'est inutile : il n'y a pas de contenu mixte dans descriptiveNote/p, juste du texte) -->
-             <rico:descriptiveNote rdf:parseType="Literal">
+             <rico:generalDescription rdf:parseType="Literal">
 	            <html:p xml:lang="fr">Arrêté du 24 décembre 2006</html:p>
-             </rico:descriptiveNote>
+             </rico:generalDescription>
          </rico:TypeRelation>
-      </rico:thingIsTargetOfTypeRelation> 
+      </rico:thingIsTargetOfRelation> 
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blokqhb2-71c8sqtdbid4" />
    </rico:Agent>
 </rdf:RDF>

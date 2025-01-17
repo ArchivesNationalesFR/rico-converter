@@ -35,7 +35,7 @@
 	<!-- Indicates the base URL to use when processing relative links -->
 	<xsl:param name="BASE_URL_FOR_RELATIVE_LINKS">https://www.siv.archives-nationales.culture.gouv.fr/mm/media/download/</xsl:param>
 
-	<xsl:param name="VOCABULARY_LANGUAGES">../vocabularies/referentiel_languages.rdf</xsl:param>
+	<xsl:param name="VOCABULARY_LANGUAGES">../vocabularies/FRAN_RI_100_languages.rdf</xsl:param>
 
 	<xsl:param name="VOCABULARY_DOCUMENTARY_FORM_TYPES">../vocabularies/FRAN_RI_001_documentaryFormTypes.rdf</xsl:param>
 
@@ -63,6 +63,17 @@
             <html:span xml:lang="{$LITERAL_LANG}"><xsl:value-of select="normalize-space(.)" /></html:span>
         </rico:carrierExtent>
 	</xsl:template>
+	-->
+
+	<!-- Another simplistic example to overwrite the creation of URIs of Persons pointing to IdRef : -->
+	<!--
+	
+		<xsl:function name="ead2rico:URI-Agent">
+			<xsl:param name="authfilenumber" />
+			<xsl:param name="source" />
+			<xsl:value-of select="concat('http://www.idref.fr/',$authfilenumber,'/id')" />
+		</xsl:function>
+	
 	-->
 
 </xsl:stylesheet>

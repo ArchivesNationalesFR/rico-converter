@@ -43,7 +43,7 @@
 					<xsl:copy-of select="rico:hasOrHadLocation" />
 					<xsl:for-each select="/rdf:RDF/rico:Place[@rdf:about = $thisUri and count(preceding-sibling::rico:Place[@rdf:about = $thisUri]) > 0]/rico:hasOrHadLocation">
 						<xsl:variable name="theOtherLocation" select="." />
-						<xsl:if test="not($thePlace/rico:hasOrHadLocation[@rdf:resource = $theOtherLocation/@rdf:resource])">
+						<xsl:if test="count(../preceding-sibling::rico:Place[(@rdf:about = $thisUri) and (rico:hasOrHadLocation/@rdf:resource = $theOtherLocation/@rdf:resource)]) = 0">
 							<xsl:value-of select="eac2rico:warning('', 'MERGE_ADDITIONAL_LOCATION_ON_PLACE', concat($thisUri, ' : ', $theOtherLocation/@rdf:resource))" />
 							<xsl:copy-of select="." />
 						</xsl:if>

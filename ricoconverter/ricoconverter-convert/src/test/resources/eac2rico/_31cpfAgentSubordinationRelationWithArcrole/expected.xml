@@ -8,15 +8,15 @@
    <rico:Record rdf:about="record/050571">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
       <rico:describesOrDescribed rdf:resource="agent/050571"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/050571">
-            <rico:isInstantiationOf rdf:resource="record/050571"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/050571"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_050571</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050571"/> 
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/050571">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Person"/>
@@ -42,17 +42,17 @@
       <rico:relationHasSource rdf:resource="agent/050571"/>
       <rico:relationHasTarget rdf:resource="agent/111111"/>
       <rdfs:label xml:lang="fr">Relation de contrôle entre "The entity" et "The inferior person"</rdfs:label>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      <rico:generalDescription rdf:parseType="Literal">
          <html:p xml:lang="fr">Cette personne a encadré "the inferior person" pendant 8 ans.</html:p>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
    </rico:AgentHierarchicalRelation>
    <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/999999-050571">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentControlRelation"/>
       <rico:relationHasSource rdf:resource="agent/999999"/>
       <rico:relationHasTarget rdf:resource="agent/050571"/>
       <rdfs:label xml:lang="fr">Relation de contrôle entre "The superior person" et "The entity"</rdfs:label>
-      <rico:descriptiveNote rdf:parseType="Literal">
+      <rico:generalDescription rdf:parseType="Literal">
          <html:p xml:lang="fr">Cette personne a été placée sous l'autorité hiérarchique de "the superior person" pendant trois ans.</html:p>
-      </rico:descriptiveNote>
+      </rico:generalDescription>
    </rico:AgentHierarchicalRelation>
 </rdf:RDF>

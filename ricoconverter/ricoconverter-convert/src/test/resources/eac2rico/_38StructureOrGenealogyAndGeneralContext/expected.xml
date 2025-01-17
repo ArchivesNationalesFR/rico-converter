@@ -7,20 +7,20 @@
    <rico:Record rdf:about="record/005205">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord" />
    	<rico:describesOrDescribed rdf:resource="agent/005205"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/005205">
-            <rico:isInstantiationOf rdf:resource="record/005205"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/005205"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_NP_005205</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_005205"/> 
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
    </rico:Record>
    <rico:Agent rdf:about="agent/005205">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#CorporateBody"/>
       <rico:isOrWasDescribedBy rdf:resource="record/005205"/>
-	  <rico:descriptiveNote rdf:parseType="Literal">
+	  <rico:generalDescription rdf:parseType="Literal">
 	  	 <html:div xml:lang="fr">
 	  	 	 <h4>Organisation interne ou généalogie</h4>
 	         <html:p>1</html:p>
@@ -35,7 +35,7 @@
 	            <html:u>underline</html:u> et <html:b>bold</html:b> et <html:i>italic</html:i>
 	         </html:p> 
          </html:div>
-	  </rico:descriptiveNote>
+	  </rico:generalDescription>
       <rico:history rdf:parseType="Literal">
          <html:div xml:lang="fr">
          	<h4>Contexte général</h4>

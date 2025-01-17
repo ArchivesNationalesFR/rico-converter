@@ -11,15 +11,15 @@
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#FindingAid"/>
       <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
       <rico:describesOrDescribed rdf:resource="recordResource/top-058220"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/058220-i1">
-            <rico:isInstantiationOf rdf:resource="record/058220"/>
+            <rico:isOrWasDigitalInstantiationOf rdf:resource="record/058220"/>
             <dc:format xml:lang="en">text/xml</dc:format>
             <rico:identifier>FRAN_IR_058220</rico:identifier>
             <rico:hasOrHadHolder rdf:resource="agent/005061"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/FRAN_IR_058220"/>
          </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadDigitalInstantiation>
     </rico:Record>
     
   <!-- *** archdesc elements *** -->
@@ -29,33 +29,33 @@
     	<rico:isOrWasDescribedBy rdf:resource="record/058220"/>
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
       <rico:hasRecordSetType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/recordSetTypes#Series"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadInstantiation>
         <rico:Instantiation rdf:about="instantiation/top-058220-i1">
-          <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
+          <rico:isOrWasInstantiationOf rdf:resource="recordResource/top-058220"/>
         </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadInstantiation>
       <rico:directlyIncludes rdf:resource="recordResource/058220-a1" />
     </rico:RecordResource>
 
     <rico:RecordResource rdf:about="recordResource/058220-a1">
         <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-058220"/> 
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
           <rico:Instantiation rdf:about="instantiation/058220-a1-i1">
-            <rico:isInstantiationOf rdf:resource="recordResource/058220-a1"/>
+            <rico:isOrWasInstantiationOf rdf:resource="recordResource/058220-a1"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/a1"/>
           </rico:Instantiation>
-        </rico:hasInstantiation>  
+        </rico:hasOrHadInstantiation>  
     </rico:RecordResource>
 
     <!-- cas 3 : archdesc Unknown -->
     <rico:RecordResource rdf:about="recordResource/top-058220">
     	<rico:isOrWasDescribedBy rdf:resource="record/058220"/>
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
-      <rico:hasInstantiation>
+      <rico:hasOrHadInstantiation>
         <rico:Instantiation rdf:about="instantiation/top-058220-i1">
-          <rico:isInstantiationOf rdf:resource="recordResource/top-058220"/>
+          <rico:isOrWasInstantiationOf rdf:resource="recordResource/top-058220"/>
         </rico:Instantiation>
-      </rico:hasInstantiation>
+      </rico:hasOrHadInstantiation>
       <rico:directlyIncludes rdf:resource="recordResource/058220-a3.1" />
       <rico:directlyIncludes rdf:resource="recordResource/058220-a3.2" />
       <rico:directlyIncludes rdf:resource="recordResource/058220-a3.3" />
@@ -67,21 +67,21 @@
         <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-058220"/> 
         <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-a3.2"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordSet"/>
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
           <rico:Instantiation rdf:about="instantiation/058220-a3.1-i1">
-            <rico:isInstantiationOf rdf:resource="recordResource/058220-a3.1"/>
+            <rico:isOrWasInstantiationOf rdf:resource="recordResource/058220-a3.1"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/a3.1"/>
           </rico:Instantiation>
-        </rico:hasInstantiation>
+        </rico:hasOrHadInstantiation>
         <rico:directlyIncludes>
           <rico:RecordResource rdf:about="recordResource/058220-a3.1-child">
             <rico:isDirectlyIncludedIn rdf:resource="recordResource/058220-a3.1"/>
-            <rico:hasInstantiation>
+            <rico:hasOrHadInstantiation>
                 <rico:Instantiation rdf:about="instantiation/058220-a3.1-child-i1">
-                <rico:isInstantiationOf rdf:resource="recordResource/058220-a3.1-child"/>
+                <rico:isOrWasInstantiationOf rdf:resource="recordResource/058220-a3.1-child"/>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/a3.1-child"/>
             </rico:Instantiation>
-            </rico:hasInstantiation>
+            </rico:hasOrHadInstantiation>
           </rico:RecordResource>
         </rico:directlyIncludes>
     </rico:RecordResource>
@@ -92,21 +92,21 @@
         <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-a3.1"/>
         <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-a3.3"/>
         <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
           <rico:Instantiation rdf:about="instantiation/058220-a3.2-i1">
-            <rico:isInstantiationOf rdf:resource="recordResource/058220-a3.2"/>
+            <rico:isOrWasInstantiationOf rdf:resource="recordResource/058220-a3.2"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/a3.2"/>
           </rico:Instantiation>
-        </rico:hasInstantiation>
+        </rico:hasOrHadInstantiation>
         <rico:hasOrHadConstituent>
           <rico:RecordResource rdf:about="recordResource/058220-a3.2-child">
             <rico:isOrWasConstituentOf rdf:resource="recordResource/058220-a3.2"/>
-            <rico:hasInstantiation>
+            <rico:hasOrHadInstantiation>
                 <rico:Instantiation rdf:about="instantiation/058220-a3.2-child-i1">
-                <rico:isInstantiationOf rdf:resource="recordResource/058220-a3.2-child"/>
+                <rico:isOrWasInstantiationOf rdf:resource="recordResource/058220-a3.2-child"/>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/a3.2-child"/>
             </rico:Instantiation>
-            </rico:hasInstantiation>
+            </rico:hasOrHadInstantiation>
           </rico:RecordResource>
         </rico:hasOrHadConstituent>
     </rico:RecordResource>
@@ -116,21 +116,21 @@
         <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-058220"/> 
         <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-a3.2"/>
         <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-a3.4"/>
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
           <rico:Instantiation rdf:about="instantiation/058220-a3.3-i1">
-            <rico:isInstantiationOf rdf:resource="recordResource/058220-a3.3"/>
+            <rico:isOrWasInstantiationOf rdf:resource="recordResource/058220-a3.3"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/a3.3"/>
           </rico:Instantiation>
-        </rico:hasInstantiation>
+        </rico:hasOrHadInstantiation>
         <rico:hasOrHadPart>
           <rico:RecordResource rdf:about="recordResource/058220-a3.3-child">
             <rico:isOrWasPartOf rdf:resource="recordResource/058220-a3.3"/>
-            <rico:hasInstantiation>
+            <rico:hasOrHadInstantiation>
                 <rico:Instantiation rdf:about="instantiation/058220-a3.3-child-i1">
-                <rico:isInstantiationOf rdf:resource="recordResource/058220-a3.3-child"/>
+                <rico:isOrWasInstantiationOf rdf:resource="recordResource/058220-a3.3-child"/>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/a3.3-child"/>
             </rico:Instantiation>
-            </rico:hasInstantiation>
+            </rico:hasOrHadInstantiation>
           </rico:RecordResource>
         </rico:hasOrHadPart>
     </rico:RecordResource>
@@ -139,12 +139,12 @@
     <rico:RecordResource rdf:about="recordResource/058220-a3.4">
         <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-058220"/> 
         <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-a3.3"/>
-        <rico:hasInstantiation>
+        <rico:hasOrHadInstantiation>
           <rico:Instantiation rdf:about="instantiation/058220-a3.4-i1">
-            <rico:isInstantiationOf rdf:resource="recordResource/058220-a3.4"/>
+            <rico:isOrWasInstantiationOf rdf:resource="recordResource/058220-a3.4"/>
             <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/a3.4"/>
           </rico:Instantiation>
-        </rico:hasInstantiation>
+        </rico:hasOrHadInstantiation>
         <rico:hasOrHadPart>
           <rico:RecordResource rdf:about="recordResource/058220-a3.4-child">
             <rico:isOrWasPartOf rdf:resource="recordResource/058220-a3.4"/>
@@ -152,12 +152,12 @@
             <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordPart"/>
             <dc:type>page-de-titre</dc:type>
             <rico:type>page-de-titre</rico:type>  
-            <rico:hasInstantiation>
+            <rico:hasOrHadInstantiation>
                 <rico:Instantiation rdf:about="instantiation/058220-a3.4-child-i1">
-                <rico:isInstantiationOf rdf:resource="recordResource/058220-a3.4-child"/>
+                <rico:isOrWasInstantiationOf rdf:resource="recordResource/058220-a3.4-child"/>
                 <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/a3.4-child"/>
             </rico:Instantiation>
-            </rico:hasInstantiation>
+            </rico:hasOrHadInstantiation>
           </rico:RecordResource>
         </rico:hasOrHadPart>
     </rico:RecordResource>
