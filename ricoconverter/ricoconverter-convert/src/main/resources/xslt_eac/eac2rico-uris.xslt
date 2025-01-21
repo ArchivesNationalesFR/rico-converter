@@ -342,6 +342,15 @@
                    	 	<xsl:otherwise><xsl:value-of select="$lnk"/><xsl:text>#about</xsl:text></xsl:otherwise>
                    	 </xsl:choose>
                    </xsl:when>
+				   <xsl:when test="contains($lnk, 'ark.bnf.fr/ark:/12148/')">
+					 <xsl:text>https://data.bnf.fr/ark:/12148/</xsl:text>
+                     <xsl:value-of select="substring-after($lnk, 'ark.bnf.fr/ark:/12148/')"/>
+                     <xsl:text>#about</xsl:text>
+				   </xsl:when>
+				   <!-- output something by default, otherwise we risk having an empty <owl:sameAs rdf:resource="" /> -->
+				   <xsl:otherwise>
+				   		<xsl:value-of select="$lnk"/>
+				   </xsl:otherwise>
                </xsl:choose>
            </xsl:when>
            <!-- links to Wikipedia -->
