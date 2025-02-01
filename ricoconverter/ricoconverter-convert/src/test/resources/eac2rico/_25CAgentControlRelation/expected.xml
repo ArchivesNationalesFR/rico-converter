@@ -41,13 +41,13 @@
     <rico:relationHasTarget rdf:resource="agent/005205"/>
     <rico:relationHasSource rdf:resource="agent/999999"/>
     <rdfs:label xml:lang="fr">Relation de contrôle entre "The parent of the entity" et "The entity"</rdfs:label>
-    <rico:generalDescription rdf:parseType="Literal"><html:p xml:lang="fr">This note contains the word tutelle</html:p></rico:generalDescription>
+    <rico:note rdf:parseType="Literal"><html:p xml:lang="fr">This note contains the word tutelle</html:p></rico:note>
    </rico:AgentHierarchicalRelation>
    <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/005205-111111">
     <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentControlRelation"/>
     <rico:relationHasTarget rdf:resource="agent/111111"/>
     <rico:relationHasSource rdf:resource="agent/005205"/>
       <rdfs:label xml:lang="fr">Relation de contrôle entre "The entity" et "The child of the entity"</rdfs:label>
-      <rico:generalDescription rdf:parseType="Literal"><html:p xml:lang="fr">This note contains the word <html:b>CoNtrôLe</html:b> in a span and with upper case letters</html:p></rico:generalDescription>
+      <rico:note rdf:parseType="Literal"><html:p xml:lang="fr">This note contains the word <html:b>CoNtrôLe</html:b> in a span and with upper case letters</html:p></rico:note>
    </rico:AgentHierarchicalRelation>
 </rdf:RDF>

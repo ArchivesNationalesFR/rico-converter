@@ -42,17 +42,17 @@
       <rico:relationHasSource rdf:resource="agent/050571"/>
       <rico:relationHasTarget rdf:resource="agent/111111"/>
       <rdfs:label xml:lang="fr">Relation de contrôle entre "The entity" et "The inferior person"</rdfs:label>
-      <rico:generalDescription rdf:parseType="Literal">
+      <rico:note rdf:parseType="Literal">
          <html:p xml:lang="fr">Cette personne a encadré "the inferior person" pendant 8 ans.</html:p>
-      </rico:generalDescription>
+      </rico:note>
    </rico:AgentHierarchicalRelation>
    <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/999999-050571">
       <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentControlRelation"/>
       <rico:relationHasSource rdf:resource="agent/999999"/>
       <rico:relationHasTarget rdf:resource="agent/050571"/>
       <rdfs:label xml:lang="fr">Relation de contrôle entre "The superior person" et "The entity"</rdfs:label>
-      <rico:generalDescription rdf:parseType="Literal">
+      <rico:note rdf:parseType="Literal">
          <html:p xml:lang="fr">Cette personne a été placée sous l'autorité hiérarchique de "the superior person" pendant trois ans.</html:p>
-      </rico:generalDescription>
+      </rico:note>
    </rico:AgentHierarchicalRelation>
 </rdf:RDF>
