@@ -1525,10 +1525,10 @@
 	
 	<!-- If we have a single 'p', don't wrap with a div -->
 	<xsl:template match="eac:descriptiveNote[count(eac:p) = 1]">
-		<rico:generalDescription rdf:parseType="Literal"><html:p xml:lang="{$LITERAL_LANG}"><xsl:apply-templates select="eac:p/node()" /></html:p></rico:generalDescription>
+		<rico:note rdf:parseType="Literal"><html:p xml:lang="{$LITERAL_LANG}"><xsl:apply-templates select="eac:p/node()" /></html:p></rico:note>
 	</xsl:template>
 	<xsl:template match="eac:descriptiveNote[count(eac:p) > 1]">
-		<rico:generalDescription rdf:parseType="Literal"><html:div xml:lang="{$LITERAL_LANG}"><xsl:apply-templates /></html:div></rico:generalDescription>
+		<rico:note rdf:parseType="Literal"><html:div xml:lang="{$LITERAL_LANG}"><xsl:apply-templates /></html:div></rico:note>
 	</xsl:template>
 	
 	<!-- This one detects all 'p' that have only one child element and that child is a span -->

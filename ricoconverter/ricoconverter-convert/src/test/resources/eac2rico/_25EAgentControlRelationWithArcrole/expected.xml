@@ -41,13 +41,13 @@
     <rico:relationHasTarget rdf:resource="agent/005205"/>
     <rico:relationHasSource rdf:resource="agent/999999"/>
     <rdfs:label xml:lang="fr">Relation de contrôle entre "The controlling entity" et "The entity"</rdfs:label>
-    <rico:generalDescription rdf:parseType="Literal"><html:p xml:lang="fr">Cette entité a été sous l'autorité de l'entité cible</html:p></rico:generalDescription>
+    <rico:note rdf:parseType="Literal"><html:p xml:lang="fr">Cette entité a été sous l'autorité de l'entité cible</html:p></rico:note>
    </rico:AgentHierarchicalRelation>
    <rico:AgentHierarchicalRelation rdf:about="agentHierarchicalRelation/005205-111111">
     <rdf:type rdf:resource="https://www.ica.org/standards/RiC/ontology#AgentControlRelation"/>
     <rico:relationHasTarget rdf:resource="agent/111111"/>
     <rico:relationHasSource rdf:resource="agent/005205"/>
       <rdfs:label xml:lang="fr">Relation de contrôle entre "The entity" et "The controlled entity"</rdfs:label>
-      <rico:generalDescription rdf:parseType="Literal"><html:p xml:lang="fr">Cette entité a exercé un contrôle sur les activités de l'entité cible etc.</html:p></rico:generalDescription>
+      <rico:note rdf:parseType="Literal"><html:p xml:lang="fr">Cette entité a exercé un contrôle sur les activités de l'entité cible etc.</html:p></rico:note>
    </rico:AgentHierarchicalRelation>
 </rdf:RDF>
