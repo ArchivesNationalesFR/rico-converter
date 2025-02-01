@@ -39,11 +39,11 @@
                rdf:resource="corporateBodyType/FRAN_RI_104-d5blokqhb2-71c8sqtdbid4"/>
             <rico:beginningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
                >2006-12-24</rico:beginningDate>
-            <!-- <rico:generalDescription xml:lang="fr">Arrêté du 24 décembre 2006</rico:generalDescription> -->
+            <!-- <rico:note xml:lang="fr">Arrêté du 24 décembre 2006</rico:note> -->
             <!-- ou bien, en utilisant html:p histoire de traiter tous les éléments p de la même manière (sachant que pour les AN actuellement c'est inutile : il n'y a pas de contenu mixte dans descriptiveNote/p, juste du texte) -->
-             <rico:generalDescription rdf:parseType="Literal">
+             <rico:note rdf:parseType="Literal">
 	            <html:p xml:lang="fr">Arrêté du 24 décembre 2006</html:p>
-             </rico:generalDescription>
+             </rico:note>
          </rico:TypeRelation>
       </rico:thingIsTargetOfRelation> 
       <rico:hasOrHadCorporateBodyType rdf:resource="corporateBodyType/FRAN_RI_104-d5blokqhb2-71c8sqtdbid4" />
