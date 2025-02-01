@@ -205,13 +205,13 @@
 	</xsl:template>
 	<xsl:template match="eac:source[eac:sourceEntry[normalize-space(.)]]">			
 		<xsl:choose>
-			<!--  if sourceEntry is an http URI, generates a rico:hasSource -->
+			<!--  if sourceEntry is an http URI, generates a rico:recordResourceHasSourceOfInformation -->
 			<xsl:when test="starts-with(eac:sourceEntry,'http') and not(contains(eac:sourceEntry, ' '))">
-				<rico:hasSource rdf:resource="{normalize-space(eac:sourceEntry)}" />
+				<rico:recordResourceHasSourceOfInformation rdf:resource="{normalize-space(eac:sourceEntry)}" />
 			</xsl:when>
-			<!-- Otherwise, generates a rico:source -->
+			<!-- Otherwise, generates a rico:recordResourceSourceOfInformation -->
 			<xsl:otherwise>
-				<rico:source xml:lang="{$LITERAL_LANG}">
+				<rico:recordResourceSourceOfInformation xml:lang="{$LITERAL_LANG}">
 					<!-- If the value starts with an hyphen, remove it -->
 					<xsl:choose>
 						<xsl:when test="starts-with(normalize-space(eac:sourceEntry), '-')">
@@ -224,26 +224,26 @@
 					<xsl:if test="@xlink:href[normalize-space(.) != '']">
                         <xsl:value-of select="concat(' (', normalize-space(@xlink:href), ')')"/>
                     </xsl:if>
-				</rico:source>
+				</rico:recordResourceSourceOfInformation>
 			</xsl:otherwise>
 		</xsl:choose>		
 	</xsl:template>
 	<xsl:template match="eac:source[eac:descriptiveNote[normalize-space(.)] and not(eac:sourceEntry)]">			
 		<xsl:for-each select="eac:descriptiveNote/eac:p">
-			<rico:source  rdf:parseType="Literal"><html:p xml:lang="{$LITERAL_LANG}">
+			<rico:recordResourceSourceOfInformation  rdf:parseType="Literal"><html:p xml:lang="{$LITERAL_LANG}">
 				<xsl:apply-templates select="node()"></xsl:apply-templates>
-			</html:p></rico:source>
+			</html:p></rico:recordResourceSourceOfInformation>
 
-			<!--  In addition to the generation of the literal value, we extract certain URI and generate rico:hasSource to these URIs -->
+			<!--  In addition to the generation of the literal value, we extract certain URI and generate rico:recordResourceHasSourceOfInformation to these URIs -->
 			  <xsl:analyze-string select="." regex="(http|https)://catalogue.bnf.fr/[^\s)\]\.;,]*">		
 			    <xsl:matching-substring>
-			      <rico:hasSource rdf:resource="{regex-group(0)}" />
+			      <rico:recordResourceHasSourceOfInformation rdf:resource="{regex-group(0)}" />
 			    </xsl:matching-substring>		
 			  </xsl:analyze-string>
 	
 			  <xsl:analyze-string select="." regex="(http|https)://fr.wikipedia.org/wiki/[^\s)\]\.;,]*">		
 			    <xsl:matching-substring>
-			      <rico:hasSource rdf:resource="{regex-group(0)}" />
+			      <rico:recordResourceHasSourceOfInformation rdf:resource="{regex-group(0)}" />
 			    </xsl:matching-substring>		
 			  </xsl:analyze-string>
 
