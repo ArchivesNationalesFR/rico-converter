@@ -3,14 +3,14 @@
    xml:base="https://rdf.archives-nationales.culture.gouv.fr/"
    xmlns:rico="https://www.ica.org/standards/RiC/ontology#"
    xmlns:dc="http://purl.org/dc/elements/1.1/">
-   <!-- FC a discuter : on pourrait aussi utiliser html:p systématiquement ici, comme dans le cas où on a sourceEntry contenant descriptiveNote contenant p, uniquement dans le but d'homégénéiser la sortie rico:source-->
+   <!-- FC a discuter : on pourrait aussi utiliser html:p systématiquement ici, comme dans le cas où on a sourceEntry contenant descriptiveNote contenant p, uniquement dans le but d'homégénéiser la sortie rico:recordResourceSourceOfInformation-->
    <rico:Record rdf:about="record/005205">
       <rico:hasDocumentaryFormType rdf:resource="https://www.ica.org/standards/RiC/vocabularies/documentaryFormTypes#AuthorityRecord"/>
       <rico:describesOrDescribed rdf:resource="agent/005205"/>
-      <rico:source xml:lang="fr">Journal officiel de la République française</rico:source>
-      <rico:hasSource rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb135724950"/>
-      <rico:source xml:lang="fr">Exemple (http://exemple.fr)</rico:source>
-      <rico:source xml:lang="fr">Archives nationales : fonds Largeau (302AP)</rico:source>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Journal officiel de la République française</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceHasSourceOfInformation rdf:resource="http://catalogue.bnf.fr/ark:/12148/cb135724950"/>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Exemple (http://exemple.fr)</rico:recordResourceSourceOfInformation>
+      <rico:recordResourceSourceOfInformation xml:lang="fr">Archives nationales : fonds Largeau (302AP)</rico:recordResourceSourceOfInformation>
       <rico:hasOrHadDigitalInstantiation>
          <rico:Instantiation rdf:about="instantiation/005205">
             <rico:isOrWasDigitalInstantiationOf rdf:resource="record/005205"/>
