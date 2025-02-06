@@ -193,7 +193,7 @@
 		<xsl:apply-templates mode="#current" />
 	</xsl:template>
 	<xsl:template match="note[normalize-space(.)]" mode="findingaid">
-		<rico:generalDescription rdf:parseType="Literal"><html:p xml:lang="{$LITERAL_LANG}"><xsl:apply-templates select="p/node()" mode="html" /></html:p></rico:generalDescription>
+		<rico:note rdf:parseType="Literal"><html:p xml:lang="{$LITERAL_LANG}"><xsl:apply-templates select="p/node()" mode="html" /></html:p></rico:note>
 	</xsl:template>
 	
 	<!-- ***** profiledesc processing ***** -->
