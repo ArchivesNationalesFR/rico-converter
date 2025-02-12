@@ -24,7 +24,7 @@ SET command=convert_eac
 set /p command=Enter command to execute (convert_eac, convert_eac_raw, convert_ead, test_eac, test_ead, version, help) [press Enter for "%command%"]:
 
 SET parameterFile_default=parameters/%command%.properties
-SET parameterFile=
+SET parameterFile=%parameterFile_default%
 if NOT %command% == help (
 	set /p parameterFile=Enter parameter file location [press Enter for "%parameterFile_default%"]:
 )
