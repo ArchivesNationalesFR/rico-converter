@@ -5,7 +5,7 @@
 
 ## EAD to RiC-O
 
-A documentation of how the ricoconverter maps EAD 2002 files to RiC-O v1.0.2 can be read in the Excel file [EAD_to_RiC-O_1.0.2_documentation.xlsx](../EAD_to_RiC-O_1.0.2_documentation.xlsx). This mapping table is useful to transition from EAD to RiC-O, but this is not a formal specification and does not document all precise cases. Previous mappings to RiC-0 0.2 remain available in the [previous mappings table](../previous-mappings-RiC-O-0.2/EAD_to_RiC-O_0.2_documentation.xlsx).
+A documentation of how the ricoconverter maps EAD 2002 files to RiC-O v1.1 can be read in the Excel file [EAD_to_RiC-O_1.1_documentation.xlsx](../EAD_to_RiC-O_1.1_documentation.xlsx). This mapping table is useful to transition from EAD to RiC-O, but this is not a formal specification and does not document all precise cases. Previous mappings to RiC-0 0.2 remain available in the [previous mappings table](../previous-mappings-RiC-O-0.2/EAD_to_RiC-O_0.2_documentation.xlsx).
 
 The precise and formal specifications are given in the form of unit tests in the [Unit Tests](UnitTests.md), under `unit-tests/ead2rico`.
 
@@ -36,7 +36,7 @@ The following is a list of EAD 2002 elements that RiC-O converter does not proce
 
 ## EAC to RiC-O
 
-A documentation of how the ricoconverter maps EAC-CPF files to RiC-O v1.0.2 can be read in the Excel file [EAC_to_Ric-O_1.0.2_documentation.xlsx](../EAC_to_RiC-O_1.0.2_documentation.xlsx). This mapping table is useful to transition from EAC to RiC-O, but this is not a formal specification and does not document all precise cases. Previous mappings to RiC-0 0.2 remain available in the [previous mappings table](../previous-mappings-RiC-O-0.2/EAC_to_RiC-O_0.2_documentation.xlsx).
+A documentation of how the ricoconverter maps EAC-CPF files to RiC-O v1.1 can be read in the Excel file [EAC_to_Ric-O_1.1_documentation.xlsx](../EAC_to_RiC-O_1.1_documentation.xlsx). This mapping table is useful to transition from EAC to RiC-O, but this is not a formal specification and does not document all precise cases. Previous mappings to RiC-0 0.2 remain available in the [previous mappings table](../previous-mappings-RiC-O-0.2/EAC_to_RiC-O_0.2_documentation.xlsx).
 
 The precise and formal specifications are given in the form of unit tests in the [Unit Tests](UnitTests.md), under `unit-tests/eac2rico`.
 
