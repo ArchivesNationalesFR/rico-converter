@@ -1594,10 +1594,12 @@
 	</xsl:template>
 	
 	<!-- a ref that is under a p that contains only refs -->
-	<xsl:template match="ref[parent::p[ref and not(*[local-name(.) != 'ref']) and not(text()[normalize-space()]) ]]" mode="html">
+	<!-- use priority to desambiguate with template immediately following -->
+	<xsl:template match="ref[parent::p[ref and not(*[local-name(.) != 'ref']) and not(text()[normalize-space()]) ]]" mode="html" priority="0.5">
 		<html:p><xsl:apply-templates mode="html" /></html:p>
 	</xsl:template>
-	<xsl:template match="ref[@role='WEB' and starts-with(@href, 'https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/')]" mode="html">
+	<!-- higher priority than template immediatly above, so that this one wins -->
+	<xsl:template match="ref[@role='WEB' and starts-with(@href, 'https://www.siv.archives-nationales.culture.gouv.fr/siv/IR/')]" mode="html"  priority="0.51">
 		<html:p><html:a href="{@href}"><xsl:apply-templates mode="html" /></html:a></html:p>
 	</xsl:template>
 	<!-- a normal ref not under a p with only refs -->
