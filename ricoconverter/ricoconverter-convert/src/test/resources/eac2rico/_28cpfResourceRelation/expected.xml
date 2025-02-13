@@ -31,18 +31,18 @@
             <rico:type xml:lang="fr">nom d'agent : forme préférée</rico:type>
          </rico:AgentName>
       </rico:hasOrHadAgentName>
-      <rico:thingIsTargetOfRelation rdf:resource="agentOriginationRelation/111111-005205"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/111111-005205"/>
       <rico:isOrganicProvenanceOf rdf:resource="recordResource/top-111111"/>
-      <rico:thingIsTargetOfRelation rdf:resource="agentOriginationRelation/057306-c-grmqcmjabh-1fkw1foh8y5qu-005205"/>
+      <rico:thingIsTargetOfRelation rdf:resource="organicProvenanceRelation/057306-c-grmqcmjabh-1fkw1foh8y5qu-005205"/>
       <rico:isOrganicProvenanceOf rdf:resource="recordResource/057306-c-grmqcmjabh-1fkw1foh8y5qu"/>
       <!-- nothing else here ; no RDF output for the third case ; just output a warning-->
    </rico:Agent>
-   <rico:OrganicProvenanceRelation rdf:about="agentOriginationRelation/111111-005205">
+   <rico:OrganicProvenanceRelation rdf:about="organicProvenanceRelation/111111-005205">
       <rico:relationHasSource rdf:resource="recordResource/top-111111"/>
       <rico:relationHasTarget rdf:resource="agent/005205"/>
    </rico:OrganicProvenanceRelation>
    
-   <rico:OrganicProvenanceRelation rdf:about="agentOriginationRelation/057306-c-grmqcmjabh-1fkw1foh8y5qu-005205">
+   <rico:OrganicProvenanceRelation rdf:about="organicProvenanceRelation/057306-c-grmqcmjabh-1fkw1foh8y5qu-005205">
       <rico:relationHasSource rdf:resource="recordResource/057306-c-grmqcmjabh-1fkw1foh8y5qu"/>
       <rico:relationHasTarget rdf:resource="agent/005205"/>
       <rico:note rdf:parseType="Literal">

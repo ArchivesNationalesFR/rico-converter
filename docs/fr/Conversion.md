@@ -33,7 +33,7 @@ hiérarchie du dossier de sortie. Le dossier de sortie final ressemble
    - `places` : contient les lieux ;
    - `relations` : contient les relations, dans les fichiers suivants :
      - `agentHierarchicalRelations`
-     - `agentOriginationRelations`
+     - `organicProvenanceRelations`
      - `agentTemporalRelations`
      - `agentToAgentRelations`
      - `familyRelations`

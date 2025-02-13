@@ -1218,7 +1218,7 @@
 	<xsl:template match="eac:resourceRelation[@resourceRelationType = 'creatorOf' and @xlink:href != '']">
         <rico:thingIsTargetOfRelation>
         	<xsl:call-template name="rdf-resource">
-        		<xsl:with-param name="uri" select="eac2rico:URI-OriginationRelation(
+        		<xsl:with-param name="uri" select="eac2rico:URI-OrganicProvenanceRelation(
         			@xlink:href,
         			$recordId,
         			eac:dateRange/eac:fromDate/@standardDate,
@@ -1233,7 +1233,7 @@
 	<xsl:template match="eac:resourceRelation[@resourceRelationType = 'creatorOf' and @xlink:href != '']" mode="relations">
         <rico:OrganicProvenanceRelation>
         	<xsl:call-template name="rdf-about">
-        		<xsl:with-param name="uri" select="eac2rico:URI-OriginationRelation(
+        		<xsl:with-param name="uri" select="eac2rico:URI-OrganicProvenanceRelation(
         			@xlink:href,
         			$recordId,
         			eac:dateRange/eac:fromDate/@standardDate,

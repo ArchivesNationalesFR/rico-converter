@@ -227,7 +227,7 @@
 	</xsl:function>
 
 
-	<xsl:function name="eac2rico:URI-OriginationRelation">
+	<xsl:function name="eac2rico:URI-OrganicProvenanceRelation">
 		<xsl:param name="recordResource" />
 		<xsl:param name="entity" />
 		<xsl:param name="fromDate" />
@@ -238,7 +238,7 @@
 		<xsl:variable name="entityId" select="substring-after($entity, 'FRAN_NP_')" />
 		
 		<xsl:value-of select="eac2rico:URI-Anything(
-			'agentOriginationRelation',
+			'organicProvenanceRelation',
    			$recordResourceId,
    			$entityId,
    			$fromDate,

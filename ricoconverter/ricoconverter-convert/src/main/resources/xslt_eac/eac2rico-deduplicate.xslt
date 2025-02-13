@@ -65,9 +65,9 @@
 				
 				<xsl:choose>
 					<!-- if this is the only relation with an inverse missing, issue a warning -->
-					<!-- But not for AgentOriginationRelation -->
+					<!-- But not for OrganicProvenanceRelation -->
 					<xsl:when test="count(following-sibling::*[@rdf:about = $thisUri]) = 0">
-						<xsl:if test="local-name(.) != AgentOriginationRelation">
+						<xsl:if test="local-name(.) != OrganicProvenanceRelation">
 							<xsl:value-of select="eac2rico:warning('', 'RELATION_IN_ONE_DIRECTION_ONLY', $thisUri)" />
 						</xsl:if>
 					</xsl:when>

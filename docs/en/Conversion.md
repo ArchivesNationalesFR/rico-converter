@@ -16,7 +16,7 @@ The EAC to RiC-O conversion is driven by a set of XSLT under the `xslt_eac` fold
 	- `places` : contains Places;
 	- `relations` : contains relations, in the following files :
 		- `agentHierarchicalRelations`
-		- `agentOriginationRelations`
+		- `organicProvenanceRelations`
 		- `agentTemporalRelations`
 		- `agentToAgentRelations`
 		- `familyRelations`
