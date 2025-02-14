@@ -1537,7 +1537,7 @@
 		<!--  Generate a title -->
 		<html:h2><xsl:value-of select="normalize-space(eac:span)" /></html:h2>
 	</xsl:template>
-	<!-- play on priority so that the the title temlate right above is taken in priority -->
+	<!-- play on priority so that the the title template right above is taken in priority -->
 	<xsl:template match="eac:p[normalize-space(.)]" priority="0.5">
 		<html:p><xsl:apply-templates /></html:p>
 	</xsl:template>
