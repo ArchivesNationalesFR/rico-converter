@@ -1483,10 +1483,10 @@
 	<xsl:template match="physloc[normalize-space(.)]" mode="instantiation">
 		<xsl:variable name="value">
 			<xsl:choose>
-				<xsl:when test="matches(text(), 'Pierrefitte', 'i')">place/FRAN_RI_005-d3ntxf5186--sga9u2l9iboc</xsl:when>
-				<xsl:when test="matches(text(), 'Pierrefitte-sur-Seine', 'i')">place/FRAN_RI_005-d3ntxf5186--sga9u2l9iboc</xsl:when>
-				<xsl:when test="matches(text(), 'Fontainebleau', 'i')">place/FRAN_RI_005-d3nttf3j17--1blvnjnk2kli0</xsl:when>
-				<xsl:when test="matches(text(), 'Paris', 'i')">place/FRAN_RI_005-d5bdppt147--176wwvjcctrx0</xsl:when>
+				<xsl:when test="matches(normalize-space(.), 'Pierrefitte', 'i')">place/FRAN_RI_005-d3ntxf5186--sga9u2l9iboc</xsl:when>
+				<xsl:when test="matches(normalize-space(.), 'Pierrefitte-sur-Seine', 'i')">place/FRAN_RI_005-d3ntxf5186--sga9u2l9iboc</xsl:when>
+				<xsl:when test="matches(normalize-space(.), 'Fontainebleau', 'i')">place/FRAN_RI_005-d3nttf3j17--1blvnjnk2kli0</xsl:when>
+				<xsl:when test="matches(normalize-space(.), 'Paris', 'i')">place/FRAN_RI_005-d5bdppt147--176wwvjcctrx0</xsl:when>
 				<xsl:otherwise><xsl:value-of select="ead2rico:warning($faId, 'UNEXPECTED_PHYSLOC', text())" /></xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>

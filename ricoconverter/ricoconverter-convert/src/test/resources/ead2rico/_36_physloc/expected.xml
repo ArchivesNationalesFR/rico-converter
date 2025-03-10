@@ -35,6 +35,7 @@
         <rico:directlyIncludes rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnest"/>
         <rico:directlyIncludes rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnast"/>
         <rico:directlyIncludes rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnust"/>
+        <rico:directlyIncludes rdf:resource="recordResource/058220-triggers-error"/>
     </rico:RecordResource>
     
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnest">
@@ -79,6 +80,7 @@
     <rico:RecordResource rdf:about="recordResource/058220-c34fnm316ofc-27kf8gfnust">
         <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-058220"/>
         <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnast"/>
+        <rico:directlyPrecedesInSequence rdf:resource="recordResource/058220-triggers-error"/>
         <!-- do not process physloc here -->
         <rico:hasOrHadInstantiation>
             <rico:Instantiation rdf:about="instantiation/058220-c34fnm316ofc-27kf8gfnust-i1">
@@ -88,6 +90,18 @@
             </rico:Instantiation>
         </rico:hasOrHadInstantiation>
     </rico:RecordResource>       
-    
+
+    <rico:RecordResource rdf:about="recordResource/058220-triggers-error">
+        <rico:isDirectlyIncludedIn rdf:resource="recordResource/top-058220"/>
+        <rico:directlyFollowsInSequence rdf:resource="recordResource/058220-c34fnm316ofc-27kf8gfnust"/>
+        <rico:hasOrHadInstantiation>
+            <rico:Instantiation rdf:about="instantiation/058220-triggers-error-i1">
+            <rico:isOrWasInstantiationOf rdf:resource="recordResource/058220-triggers-error"/>                  
+                <rico:hasOrHadLocation rdf:resource="place/FRAN_RI_005-d5bdppt147--176wwvjcctrx0"/>  <!-- Paris -->             
+                <rdfs:seeAlso rdf:resource="https://www.siv.archives-nationales.culture.gouv.fr/siv/UD/FRAN_IR_058220/triggers-error"/>
+            </rico:Instantiation>
+        </rico:hasOrHadInstantiation>
+    </rico:RecordResource>      
+
     
 </rdf:RDF>
